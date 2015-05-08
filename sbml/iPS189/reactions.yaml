@@ -1,0 +1,1014 @@
+- id: R_ACGApts
+  name: R_N_Acetyl_D_glucosamine_transport_via_PEP_Pyr_PTS
+  equation: '|M_acgam_e[Extra_organism]| + |M_pep_c[Cytosol]| => |M_acgam6p_c[Cytosol]|
+    + |M_pyr_c[Cytosol]|'
+- id: R_ACKr
+  name: R_acetate_kinase
+  equation: '|M_ac_c[Cytosol]| + |M_atp_c[Cytosol]| <=> |M_actp_c[Cytosol]| + |M_adp_c[Cytosol]|'
+- id: R_ACOAt
+  name: R_Acyl_Coenzyme_A_transport
+  equation: '|M_acoa_e[Extra_organism]| => |M_acoa_c[Cytosol]|'
+- id: R_ACt6
+  name: R_acetate_transport_in/out_via_proton_symport
+  equation: '|M_ac_e[Extra_organism]| + |M_h_e[Extra_organism]| <=> |M_ac_c[Cytosol]|
+    + |M_h_c[Cytosol]|'
+- id: R_ADEt2
+  name: R_adenine_transport_via_proton_symport__reversible_
+  equation: '|M_ade_e[Extra_organism]| + |M_h_e[Extra_organism]| <=> |M_ade_c[Cytosol]|
+    + |M_h_c[Cytosol]|'
+- id: R_ADK1
+  name: R_adenylate_kinase
+  equation: '|M_amp_c[Cytosol]| + |M_atp_c[Cytosol]| <=> (2) |M_adp_c[Cytosol]|'
+- id: R_ADK2
+  name: R_adenylate_kinase__Inorganic_triphosphate_
+  equation: '|M_amp_c[Cytosol]| + |M_pppi_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+- id: R_ADPT
+  name: R_adenine_phosphoribosyltransferase
+  equation: '|M_ade_c[Cytosol]| + |M_prpp_c[Cytosol]| => |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+- id: R_AGPAT
+  name: R_1_acylglycerol_3_phosphate_O_acyltransferase
+  equation: '|M_1ag3p_c[Cytosol]| + |M_acoa_c[Cytosol]| => |M_12dag3p_c[Cytosol]|
+    + |M_coa_c[Cytosol]|'
+- id: R_AKGD
+  name: R_2_oxoglutarate_dehydrogenase
+  equation: '|M_akg_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_co2_c[Cytosol]|
+    + |M_nadh_c[Cytosol]| + |M_succoa_c[Cytosol]|'
+- id: R_AKGt2
+  name: R_2_oxoglutarate_transport_in_via_proton_symport
+  equation: '|M_akg_e[Extra_organism]| + |M_h_e[Extra_organism]| => |M_akg_c[Cytosol]|
+    + |M_h_c[Cytosol]|'
+- id: R_ALATRS
+  name: R_Alanyl_tRNA_synthetase
+  equation: '|M_ala_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_trnaala_c[Cytosol]| =>
+    |M_alatrna_c[Cytosol]| + |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+- id: R_ALDD2x
+  name: R_aldehyde_dehydrogenase__acetaldehyde__NAD_
+  equation: '|M_acald_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_ac_c[Cytosol]|
+    + (2) |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|'
+- id: R_ALDD2y
+  name: R_aldehyde_dehydrogenase__acetaldehyde__NADP_
+  equation: '|M_acald_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_nadp_c[Cytosol]| <=>
+    |M_ac_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]|'
+- id: R_AMPEP1
+  name: R_aminopeptidase
+  equation: '|M_ala_L_asp_L_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_ala_L_c[Cytosol]|
+    + |M_asp_L_c[Cytosol]|'
+- id: R_AMPEP10
+  name: R_aminopeptidase
+  equation: '|M_gly_glu_L_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_gly_c[Cytosol]|
+    + |M_glu_L_c[Cytosol]|'
+- id: R_AMPEP11
+  name: R_aminopeptidase
+  equation: '|M_gly_met_L_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_gly_c[Cytosol]|
+    + |M_met_L_c[Cytosol]|'
+- id: R_AMPEP12
+  name: R_aminopeptidase
+  equation: '|M_h2o_c[Cytosol]| + |M_met_L_ala_L_c[Cytosol]| <=> |M_met_L_c[Cytosol]|
+    + |M_ala_L_c[Cytosol]|'
+- id: R_AMPEP13
+  name: R_aminopeptidase
+  equation: '|M_gly_asp_L_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_gly_c[Cytosol]|
+    + |M_asp_L_c[Cytosol]|'
+- id: R_AMPEP14
+  name: R_aminopeptidase
+  equation: '|M_gly_pro_L_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_gly_c[Cytosol]|
+    + |M_pro_L_c[Cytosol]|'
+- id: R_AMPEP2
+  name: R_aminopeptidase
+  equation: '|M_ala_L_gln_L_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_ala_L_c[Cytosol]|
+    + |M_gln_L_c[Cytosol]|'
+- id: R_AMPEP3
+  name: R_aminopeptidase
+  equation: '|M_ala_L_glu_L_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_ala_L_c[Cytosol]|
+    + |M_glu_L_c[Cytosol]|'
+- id: R_AMPEP4
+  name: R_aminopeptidase
+  equation: '|M_L_alagly_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_ala_L_c[Cytosol]|
+    + |M_gly_c[Cytosol]|'
+- id: R_AMPEP5
+  name: R_aminopeptidase
+  equation: '|M_ala_L_his_L_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_ala_L_c[Cytosol]|
+    + |M_his_L_c[Cytosol]|'
+- id: R_AMPEP6
+  name: R_aminopeptidase
+  equation: '|M_ala_L_leu_L_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_ala_L_c[Cytosol]|
+    + |M_leu_L_c[Cytosol]|'
+- id: R_AMPEP7
+  name: R_aminopeptidase
+  equation: '|M_ala_L_thr_L_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_ala_L_c[Cytosol]|
+    + |M_thr_L_c[Cytosol]|'
+- id: R_AMPEP8
+  name: R_aminopeptidase
+  equation: '|M_gly_asn_L_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_gly_c[Cytosol]|
+    + |M_asn_L_c[Cytosol]|'
+- id: R_AMPEP9
+  name: R_aminopeptidase
+  equation: '|M_gly_gln_L_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_gly_c[Cytosol]|
+    + |M_gln_L_c[Cytosol]|'
+- id: R_ARBTpts
+  name: R_arbutin_transport_via_PEP_Pyr_PTS
+  equation: '|M_arbt_e[Extra_organism]| + |M_pep_c[Cytosol]| => |M_arbt6p_c[Cytosol]|
+    + |M_pyr_c[Cytosol]|'
+- id: R_ARGTRS
+  name: R_Arginyl_tRNA_synthetase
+  equation: '|M_arg_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_trnaarg_c[Cytosol]| =>
+    |M_amp_c[Cytosol]| + |M_argtrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+- id: R_ARGt2
+  name: R_L_arginine_transport_in_via_proton_symport
+  equation: '|M_arg_L_e[Extra_organism]| + |M_h_e[Extra_organism]| => |M_arg_L_c[Cytosol]|
+    + |M_h_c[Cytosol]|'
+- id: R_ASNTRS
+  name: R_Asparaginyl_tRNA_synthetase
+  equation: '|M_asn_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_trnaasn_c[Cytosol]| =>
+    |M_amp_c[Cytosol]| + |M_asntrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+- id: R_ASNt2
+  name: R_L_asparagine_transport_in_via_proton_symport
+  equation: '|M_asn_L_e[Extra_organism]| + |M_h_e[Extra_organism]| => |M_asn_L_c[Cytosol]|
+    + |M_h_c[Cytosol]|'
+- id: R_ASPTRS
+  name: R_Aspartyl_tRNA_synthetase
+  equation: '|M_asp_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_trnaasp_c[Cytosol]| =>
+    |M_amp_c[Cytosol]| + |M_asptrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+- id: R_ATPHs
+  name: R_ATP_amine_hydrolysis__spontaneous_
+  equation: '|M_atp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_itp_c[Cytosol]|
+    + |M_nh4_c[Cytosol]|'
+- id: R_ATPM
+  name: R_ATP_maintenance_requirement
+  equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
+    + |M_pi_c[Cytosol]|'
+- id: R_ATPS4r
+  name: R_ATP_synthase__four_protons_for_one_ATP_
+  equation: '|M_adp_c[Cytosol]| + (4) |M_h_e[Extra_organism]| + |M_pi_c[Cytosol]|
+    <=> |M_atp_c[Cytosol]| + (3) |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]|'
+- id: R_Biomass
+  name: R_Biomass
+  equation: (0.266900) |M_alatrna_c[Cytosol]| + (0.193000) |M_argtrna_c[Cytosol]|
+    + (0.148000) |M_asntrna_c[Cytosol]| + (0.148000) |M_asptrna_c[Cytosol]| + (0.056700)
+    |M_cystrna_c[Cytosol]| + (0.260300) |M_glntrna_c[Cytosol]| + (0.260400) |M_glutrna_c[Cytosol]|
+    + (0.408300) |M_glytrna_c[Cytosol]| + (0.081700) |M_histrna_c[Cytosol]| + (0.269900)
+    |M_iletrna_c[Cytosol]| + (0.346400) |M_leutrna_c[Cytosol]| + (0.323100) |M_lystrna_c[Cytosol]|
+    + (0.113300) |M_mettrna_c[Cytosol]| + (0.175900) |M_phetrna_c[Cytosol]| + (0.160600)
+    |M_protrna_c[Cytosol]| + (0.216200) |M_sertrna_c[Cytosol]| + (0.186300) |M_thrtrna_c[Cytosol]|
+    + (0.054300) |M_trptrna_c[Cytosol]| + (0.110800) |M_tyrtrna_c[Cytosol]| + (0.306700)
+    |M_valtrna_c[Cytosol]| + (0.005700) |M_fmettrna_c[Cytosol]| + (0.062200) |M_gtp_c[Cytosol]|
+    + (0.038400) |M_ctp_c[Cytosol]| + (0.041500) |M_utp_c[Cytosol]| + (0.023000)
+    |M_datp_c[Cytosol]| + (0.017400) |M_dgtp_c[Cytosol]| + (0.017400) |M_dctp_c[Cytosol]|
+    + (0.022900) |M_dttp_c[Cytosol]| + (0.706300) |M_k_c[Cytosol]| + (0.011843) |M_nh4_c[Cytosol]|
+    + (0.101700) |M_mg2_c[Cytosol]| + (0.003200) |M_ca2_c[Cytosol]| + (0.007106)
+    |M_fe2_c[Cytosol]| + (0.003400) |M_fe3_c[Cytosol]| + (0.003158) |M_cu2_c[Cytosol]|
+    + (0.003158) |M_mn2_c[Cytosol]| + (0.003158) |M_mobd_c[Cytosol]| + (0.003158)
+    |M_cobalt2_c[Cytosol]| + (0.003158) |M_zn2_c[Cytosol]| + (0.003158) |M_ni2_c[Cytosol]|
+    + (0.004737) |M_cl_c[Cytosol]| + (0.003948) |M_so4_c[Cytosol]| + (0.000300) |M_mql7_c[Cytosol]|
+    + (0.000400) |M_10fthf_c[Cytosol]| + (0.016200) |M_nad_c[Cytosol]| + (0.000900)
+    |M_nadp_c[Cytosol]| + (0.000576) |M_coa_c[Cytosol]| + (0.000223) |M_fad_c[Cytosol]|
+    + (0.000223) |M_thf_c[Cytosol]| + (0.000223) |M_mlthf_c[Cytosol]| + (0.000223)
+    |M_thmpp_c[Cytosol]| + (0.000223) |M_pydx5p_c[Cytosol]| + (0.000223) |M_amet_c[Cytosol]|
+    + (0.000223) |M_ribflv_c[Cytosol]| + (0.007000) |M_spmd_c[Cytosol]| + (0.035000)
+    |M_ptrc_c[Cytosol]| + (0.000500) |M_tcam_c[Cytosol]| + (0.000200) |M_teich_45_c[Cytosol]|
+    + (0.000200) |M_t12dg_c[Cytosol]| + (9.857000) |M_atp_c[Cytosol]| + (5.714000)
+    |M_h2o_c[Cytosol]| => (0.266900) |M_trnaala_c[Cytosol]| + (0.193000) |M_trnaarg_c[Cytosol]|
+    + (0.148000) |M_trnaasn_c[Cytosol]| + (0.148000) |M_trnaasp_c[Cytosol]| + (0.056700)
+    |M_trnacys_c[Cytosol]| + (0.520700) |M_trnaglu_c[Cytosol]| + (0.408300) |M_trnagly_c[Cytosol]|
+    + (0.081700) |M_trnahis_c[Cytosol]| + (0.269900) |M_trnaile_c[Cytosol]| + (0.346400)
+    |M_trnaleu_c[Cytosol]| + (0.323100) |M_trnalys_c[Cytosol]| + (0.119000) |M_trnamet_c[Cytosol]|
+    + (0.175900) |M_trnaphe_c[Cytosol]| + (0.160600) |M_trnapro_c[Cytosol]| + (0.216200)
+    |M_trnaser_c[Cytosol]| + (0.186300) |M_trnathr_c[Cytosol]| + (0.054300) |M_trnatrp_c[Cytosol]|
+    + (0.110800) |M_trnatyr_c[Cytosol]| + (0.306700) |M_trnaval_c[Cytosol]| + (9.806500)
+    |M_adp_c[Cytosol]| + (9.806500) |M_h_c[Cytosol]| + (0.272400) |M_ppi_c[Cytosol]|
+    + (9.792100) |M_pi_c[Cytosol]|
+- id: R_CA2abc
+  name: R_calcium_efflux__via_ABC_system
+  equation: '|M_atp_c[Cytosol]| + |M_ca2_e[Extra_organism]| + |M_h2o_c[Cytosol]|
+    => |M_adp_c[Cytosol]| + |M_ca2_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+- id: R_CDGPT
+  name: R_CDPdiacylglycerol_sn_glycerol_3_phosphate_3_phosphatidyltransferase
+  equation: '|M_cdpdag_c[Cytosol]| + |M_glyc3p_c[Cytosol]| => |M_cmp_c[Cytosol]|
+    + |M_h_c[Cytosol]| + |M_pglyp_c[Cytosol]|'
+- id: R_CELBpts
+  name: R_cellobiose_transport_via_PEP_Pyr_PTS
+  equation: '|M_cellb_e[Extra_organism]| + |M_pep_c[Cytosol]| => |M_6pgg_c[Cytosol]|
+    + |M_pyr_c[Cytosol]|'
+- id: R_CHOLK
+  name: R_Choline_kinase
+  equation: '|M_atp_c[Cytosol]| + |M_chol_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_cholp_c[Cytosol]|
+    + |M_h_c[Cytosol]|'
+- id: R_CO2t
+  name: R_CO2_transporter_via_diffusion
+  equation: '|M_co2_e[Extra_organism]| <=> |M_co2_c[Cytosol]|'
+- id: R_COAt
+  name: R_Coenzyme_A__transport
+  equation: '|M_coa_e[Extra_organism]| => |M_coa_c[Cytosol]|'
+- id: R_CSNt2
+  name: R_cytosine_transport_in_via_proton_symport
+  equation: '|M_csn_e[Extra_organism]| + |M_h_e[Extra_organism]| => |M_csn_c[Cytosol]|
+    + |M_h_c[Cytosol]|'
+- id: R_CYSTRS
+  name: R_Cysteinyl_tRNA_synthetase
+  equation: '|M_atp_c[Cytosol]| + |M_cys_L_c[Cytosol]| + |M_trnacys_c[Cytosol]| =>
+    |M_amp_c[Cytosol]| + |M_cystrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+- id: R_CYTD
+  name: R_cytidine_deaminase
+  equation: '|M_cytd_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_nh4_c[Cytosol]|
+    + |M_uri_c[Cytosol]|'
+- id: R_CYTDK1
+  name: R_cytidine_kinase__ATP_
+  equation: '|M_atp_c[Cytosol]| + |M_cytd_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_cmp_c[Cytosol]|
+    + |M_h_c[Cytosol]|'
+- id: R_CYTDK2
+  name: R_cytidine_kinase__GTP_
+  equation: '|M_cytd_c[Cytosol]| + |M_gtp_c[Cytosol]| => |M_cmp_c[Cytosol]| + |M_gdp_c[Cytosol]|
+    + |M_h_c[Cytosol]|'
+- id: R_CYTDK3
+  name: R_cytidine_kinase__ITP_
+  equation: '|M_cytd_c[Cytosol]| + |M_itp_c[Cytosol]| => |M_cmp_c[Cytosol]| + |M_h_c[Cytosol]|
+    + |M_idp_c[Cytosol]|'
+- id: R_CYTK1
+  name: R_cytidylate_kinase__CMP_
+  equation: '|M_atp_c[Cytosol]| + |M_cmp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_cdp_c[Cytosol]|'
+- id: R_CYTK2
+  name: R_cytidylate_kinase__dCMP_
+  equation: '|M_atp_c[Cytosol]| + |M_dcmp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dcdp_c[Cytosol]|'
+- id: R_Clt
+  name: R_chlorideion_transport_out_via_diffusion
+  equation: '|M_cl_e[Extra_organism]| <=> |M_cl_c[Cytosol]|'
+- id: R_Coabc
+  name: R_Cobalt_transport_via_ABC_system
+  equation: '|M_atp_c[Cytosol]| + |M_cobalt2_e[Extra_organism]| + |M_h2o_c[Cytosol]|
+    => |M_adp_c[Cytosol]| + |M_cobalt2_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+- id: R_Cuabc
+  name: R_Copper_transport_via_ABC_system
+  equation: '|M_atp_c[Cytosol]| + |M_cu2_e[Extra_organism]| + |M_h2o_c[Cytosol]|
+    => |M_adp_c[Cytosol]| + |M_cu2_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+- id: R_DADK
+  name: R_deoxyadenylate_kinase
+  equation: '|M_atp_c[Cytosol]| + |M_damp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dadp_c[Cytosol]|'
+- id: R_DATPHs
+  name: R_dATP_amine_hydrolysis__spontaneous_
+  equation: '|M_datp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_ditp_c[Cytosol]|
+    + |M_nh4_c[Cytosol]|'
+- id: R_DATPt
+  name: R_Dinucleoside_transport__dATP_
+  equation: '|M_datp_e[Extra_organism]| => |M_datp_c[Cytosol]|'
+- id: R_DCYTD
+  name: R_deoxycytidine_deaminase
+  equation: '|M_dcyt_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_duri_c[Cytosol]|
+    + |M_nh4_c[Cytosol]|'
+- id: R_DGK1
+  name: R_deoxyguanylate_kinase__dGMP_ATP_
+  equation: '|M_atp_c[Cytosol]| + |M_dgmp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dgdp_c[Cytosol]|'
+- id: R_DGTPt
+  name: R_Dinucleoside_transport__dGTP_
+  equation: '|M_dgtp_e[Extra_organism]| => |M_dgtp_c[Cytosol]|'
+- id: R_DHFOR2
+  name: R_dihydrofolate_reductase
+  equation: '|M_dhf_c[Cytosol]| + |M_nadp_c[Cytosol]| <=> |M_fol_c[Cytosol]| + |M_nadph_c[Cytosol]|'
+- id: R_DHFOR3
+  name: R_dihydrofolate_reductase
+  equation: '|M_fol_c[Cytosol]| + |M_h_c[Cytosol]| + (2) |M_nadph_c[Cytosol]| <=>
+    (2) |M_nadp_c[Cytosol]| + |M_thf_c[Cytosol]|'
+- id: R_DHFR
+  name: R_dihydrofolate_reductase
+  equation: '|M_dhf_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| <=> |M_nadp_c[Cytosol]|
+    + |M_thf_c[Cytosol]|'
+- id: R_DIPEPabc1
+  name: R_Dipeptide_transport_via_ABC_system__ala_asp_
+  equation: '|M_ala_L_asp_L_e[Extra_organism]| + |M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]|
+    => |M_adp_c[Cytosol]| + |M_ala_L_asp_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+- id: R_DIPEPabc10
+  name: R_Dipeptide_transport_via_ABC_system__gly_glu_
+  equation: '|M_atp_c[Cytosol]| + |M_gly_glu_L_e[Extra_organism]| + |M_h2o_c[Cytosol]|
+    => |M_adp_c[Cytosol]| + |M_gly_glu_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+- id: R_DIPEPabc11
+  name: R_Dipeptide_transport_via_ABC_system__gly_met_
+  equation: '|M_atp_c[Cytosol]| + |M_gly_met_L_e[Extra_organism]| + |M_h2o_c[Cytosol]|
+    => |M_adp_c[Cytosol]| + |M_gly_met_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+- id: R_DIPEPabc12
+  name: R_Dipeptide_transport_via_ABC_system__met_ala_
+  equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_met_L_ala_L_e[Extra_organism]|
+    => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_met_L_ala_L_c[Cytosol]| + |M_pi_c[Cytosol]|'
+- id: R_DIPEPabc13
+  name: R_Dipeptide_transport_via_ABC_system__gly_asp_
+  equation: '|M_atp_c[Cytosol]| + |M_gly_asp_L_e[Extra_organism]| + |M_h2o_c[Cytosol]|
+    => |M_adp_c[Cytosol]| + |M_gly_asp_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+- id: R_DIPEPabc14
+  name: R_Dipeptide_transport_via_ABC_system__gly_pro_L_
+  equation: '|M_atp_c[Cytosol]| + |M_gly_pro_L_e[Extra_organism]| + |M_h2o_c[Cytosol]|
+    => |M_adp_c[Cytosol]| + |M_gly_pro_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+- id: R_DIPEPabc15
+  name: R_Dipeptide_transport_via_ABC_system__cgly_
+  equation: '|M_atp_c[Cytosol]| + |M_cgly_e[Extra_organism]| + |M_h2o_c[Cytosol]|
+    => |M_adp_c[Cytosol]| + |M_cgly_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+- id: R_DIPEPabc2
+  name: R_Dipeptide_transport_via_ABC_system__ala_gln_
+  equation: '|M_ala_L_gln_L_e[Extra_organism]| + |M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]|
+    => |M_adp_c[Cytosol]| + |M_ala_L_gln_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+- id: R_DIPEPabc3
+  name: R_Dipeptide_transport_via_ABC_system__ala_glu_
+  equation: '|M_ala_L_glu_L_e[Extra_organism]| + |M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]|
+    => |M_adp_c[Cytosol]| + |M_ala_L_glu_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+- id: R_DIPEPabc4
+  name: R_Dipeptide_transport_via_ABC_system__ala_gly_
+  equation: '|M_L_alagly_e[Extra_organism]| + |M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]|
+    => |M_L_alagly_c[Cytosol]| + |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+- id: R_DIPEPabc5
+  name: R_Dipeptide_transport_via_ABC_system__ala_his_
+  equation: '|M_ala_L_his_L_e[Extra_organism]| + |M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]|
+    => |M_adp_c[Cytosol]| + |M_ala_L_his_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+- id: R_DIPEPabc6
+  name: R_Dipeptide_transport_via_ABC_system__ala_leu_
+  equation: '|M_ala_L_leu_L_e[Extra_organism]| + |M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]|
+    => |M_adp_c[Cytosol]| + |M_ala_L_leu_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+- id: R_DIPEPabc7
+  name: R_Dipeptide_transport_via_ABC_system__ala_thr_
+  equation: '|M_ala_L_thr_L_e[Extra_organism]| + |M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]|
+    => |M_adp_c[Cytosol]| + |M_ala_L_thr_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+- id: R_DIPEPabc8
+  name: R_Dipeptide_transport_via_ABC_system__gly_asn_
+  equation: '|M_atp_c[Cytosol]| + |M_gly_asn_L_e[Extra_organism]| + |M_h2o_c[Cytosol]|
+    => |M_adp_c[Cytosol]| + |M_gly_asn_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+- id: R_DIPEPabc9
+  name: R_Dipeptide_transport_via_ABC_system__gly_gln_
+  equation: '|M_atp_c[Cytosol]| + |M_gly_gln_L_e[Extra_organism]| + |M_h2o_c[Cytosol]|
+    => |M_adp_c[Cytosol]| + |M_gly_gln_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+- id: R_DRPAr
+  name: R_Deoxyribose_phosphate_aldolase
+  equation: '|M_2dr5p_c[Cytosol]| <=> |M_acald_c[Cytosol]| + |M_g3p_c[Cytosol]|'
+- id: R_DTMPK
+  name: R_dTMP_kinase
+  equation: '|M_atp_c[Cytosol]| + |M_dtmp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dtdp_c[Cytosol]|'
+- id: R_DURIPP
+  name: R_purine_nucleoside_phosphatase__deoxyuridine_
+  equation: '|M_duri_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_2dr1p_c[Cytosol]| + |M_ura_c[Cytosol]|'
+- id: R_DXPS
+  name: R_1_deoxy_D_xylulose_5_phosphate_synthase
+  equation: '|M_g3p_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pyr_c[Cytosol]| => |M_co2_c[Cytosol]|
+    + |M_dxyl5p_c[Cytosol]|'
+- id: R_ENO
+  name: R_enolase
+  equation: '|M_2pg_c[Cytosol]| <=> |M_h2o_c[Cytosol]| + |M_pep_c[Cytosol]|'
+- id: R_F1PK
+  name: R_fructose_1_phosphate_kinase
+  equation: '|M_atp_c[Cytosol]| + |M_f1p_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_fdp_c[Cytosol]|
+    + |M_h_c[Cytosol]|'
+- id: R_FBA
+  name: R_fructose_bisphosphate_aldolase
+  equation: '|M_fdp_c[Cytosol]| <=> |M_dhap_c[Cytosol]| + |M_g3p_c[Cytosol]|'
+- id: R_FBA2
+  name: R_D_Fructose_1_phosphate_D_glyceraldehyde_3_phosphate_lyase
+  equation: '|M_f1p_c[Cytosol]| <=> |M_dhap_c[Cytosol]| + |M_glyald_c[Cytosol]|'
+- id: R_FE2abc
+  name: R_iron__II__transport_via_ABC_system
+  equation: '|M_atp_c[Cytosol]| + |M_fe2_e[Extra_organism]| + |M_h2o_c[Cytosol]|
+    => |M_adp_c[Cytosol]| + |M_fe2_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+- id: R_FE3abc
+  name: R_iron__III__transport_via_ABC_system
+  equation: '|M_atp_c[Cytosol]| + |M_fe3_e[Extra_organism]| + |M_h2o_c[Cytosol]|
+    => |M_adp_c[Cytosol]| + |M_fe3_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+- id: R_FMETTRS
+  name: R_Methionyl_tRNA_formyltransferase
+  equation: '|M_10fthf_c[Cytosol]| + |M_mettrna_c[Cytosol]| => |M_fmettrna_c[Cytosol]|
+    + |M_thf_c[Cytosol]|'
+- id: R_FMNATr
+  name: R_FMN_adenylyltransferase
+  equation: '|M_atp_c[Cytosol]| + |M_fmn_c[Cytosol]| + |M_h_c[Cytosol]| <=> |M_fad_c[Cytosol]|
+    + |M_ppi_c[Cytosol]|'
+- id: R_FOLt
+  name: R_folate_transport_via_proton_simport
+  equation: '|M_fol_e[Extra_organism]| + |M_h_e[Extra_organism]| <=> |M_fol_c[Cytosol]|
+    + |M_h_c[Cytosol]|'
+- id: R_FRUpts
+  name: R_D_fructose_transport_via_PEP_Pyr_PTS
+  equation: '|M_fru_e[Extra_organism]| + |M_pep_c[Cytosol]| => |M_f1p_c[Cytosol]|
+    + |M_pyr_c[Cytosol]|'
+- id: R_G1PACT
+  name: R_glucosamine_1_phosphate_N_acetyltransferase
+  equation: '|M_accoa_c[Cytosol]| + |M_gam1p_c[Cytosol]| => |M_acgam1p_c[Cytosol]|
+    + |M_coa_c[Cytosol]| + |M_h_c[Cytosol]|'
+- id: R_G3PD4
+  name: R_glycerol_3_phosphate_dehydrogenase__menaquinone_7_
+  equation: '|M_glyc3p_c[Cytosol]| + |M_mqn7_c[Cytosol]| => |M_dhap_c[Cytosol]| +
+    |M_mql7_c[Cytosol]|'
+- id: R_G3POA
+  name: R_glycerol_3_phosphate_O_acyltransferase
+  equation: '|M_glyc3p_c[Cytosol]| + |M_acoa_c[Cytosol]| => |M_1ag3p_c[Cytosol]|
+    + |M_coa_c[Cytosol]|'
+- id: R_G6PI
+  name: R_Glucose_6_phosphate_isomerase
+  equation: '|M_g6p_c[Cytosol]| <=> |M_g6p_B_c[Cytosol]|'
+- id: R_GALU
+  name: R_UTP_glucose_1_phosphate_uridylyltransferase
+  equation: '|M_g1p_c[Cytosol]| + |M_h_c[Cytosol]| + |M_utp_c[Cytosol]| <=> |M_ppi_c[Cytosol]|
+    + |M_udpg_c[Cytosol]|'
+- id: R_GALabc
+  name: R_D_galactose_transport_via_ABC_system
+  equation: '|M_atp_c[Cytosol]| + |M_gal_e[Extra_organism]| + |M_h2o_c[Cytosol]|
+    => |M_adp_c[Cytosol]| + |M_gal_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+- id: R_GAMpts
+  name: R_D_glucosamine_transport_via_PEP_Pyr_PTS
+  equation: '|M_gam_e[Extra_organism]| + |M_pep_c[Cytosol]| => |M_gam6p_c[Cytosol]|
+    + |M_pyr_c[Cytosol]|'
+- id: R_GAPD
+  name: R_glyceraldehyde_3_phosphate_dehydrogenase__NAD_
+  equation: '|M_g3p_c[Cytosol]| + |M_nad_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_13dpg_c[Cytosol]|
+    + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|'
+- id: R_GHMT
+  name: R_glycine_hydroxymethyltransferase
+  equation: '|M_ser_L_c[Cytosol]| + |M_thf_c[Cytosol]| <=> |M_gly_c[Cytosol]| + |M_h2o_c[Cytosol]|
+    + |M_mlthf_c[Cytosol]|'
+- id: R_GK1
+  name: R_guanylate_kinase__GMP_ATP_
+  equation: '|M_atp_c[Cytosol]| + |M_gmp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_gdp_c[Cytosol]|'
+- id: R_GK2
+  name: R_guanylate_kinase__GMP_dATP_
+  equation: '|M_datp_c[Cytosol]| + |M_gmp_c[Cytosol]| <=> |M_dadp_c[Cytosol]| + |M_gdp_c[Cytosol]|'
+- id: R_GLCpts
+  name: R_D_glucose_transport_via_PEP_Pyr_PTS
+  equation: '|M_glc_D_e[Extra_organism]| + |M_pep_c[Cytosol]| => |M_g6p_c[Cytosol]|
+    + |M_pyr_c[Cytosol]|'
+- id: R_GLNMT
+  name: R_glutamine_N5_methyltransferase
+  equation: '|M_gln_L_c[Cytosol]| + |M_amet_c[Cytosol]| => |M_ahcys_c[Cytosol]| +
+    |M_C03153_c[Cytosol]|'
+- id: R_GLUDy
+  name: R_glutamate_dehydrogenase__NADP_
+  equation: '|M_glu_L_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_nadp_c[Cytosol]| <=>
+    |M_akg_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| + |M_nh4_c[Cytosol]|'
+- id: R_GLUTRS
+  name: R_Glutamyl_tRNA_synthetase
+  equation: '|M_atp_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_trnaglu_c[Cytosol]| =>
+    |M_amp_c[Cytosol]| + |M_glutrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+- id: R_GLUt6
+  name: R_L_glutamate_transport_in/out_via_proton_symporter
+  equation: '|M_glu_L_e[Extra_organism]| + |M_h_e[Extra_organism]| <=> |M_glu_L_c[Cytosol]|
+    + |M_h_c[Cytosol]|'
+- id: R_GLXAT
+  name: R_glutamyl_tRNA_Gln__amidotransferase
+  equation: '|M_atp_c[Cytosol]| + |M_gln_L_c[Cytosol]| + |M_glutrna_c[Cytosol]| <=>
+    |M_glu_L_c[Cytosol]| + |M_adp_c[Cytosol]| + |M_glntrna_c[Cytosol]| + |M_pi_c[Cytosol]|'
+- id: R_GLYC3Pabc
+  name: R_sn_Glycerol_3_phosphate_transport_via_ABC_system
+  equation: '|M_atp_c[Cytosol]| + |M_glyc3p_e[Extra_organism]| + |M_h2o_c[Cytosol]|
+    => |M_adp_c[Cytosol]| + |M_glyc3p_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+- id: R_GLYCt
+  name: R_glycerol_transport
+  equation: '|M_glyc_c[Cytosol]| <=> |M_glyc_e[Extra_organism]|'
+- id: R_GLYK
+  name: R_glycerol_kinase
+  equation: '|M_atp_c[Cytosol]| + |M_glyc_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_glyc3p_c[Cytosol]|
+    + |M_h_c[Cytosol]|'
+- id: R_GLYTRS
+  name: R_Glycyl_tRNA_synthetase
+  equation: '|M_atp_c[Cytosol]| + |M_gly_c[Cytosol]| + |M_trnagly_c[Cytosol]| =>
+    |M_amp_c[Cytosol]| + |M_glytrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+- id: R_GTPHs
+  name: R_GTP_amine_hydrolysis__spontaneous_
+  equation: '|M_gtp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_nh4_c[Cytosol]|
+    + |M_xtp_c[Cytosol]|'
+- id: R_GTPt
+  name: R_Nucleoside_transport__GTP_
+  equation: '|M_gtp_e[Extra_organism]| => |M_gtp_c[Cytosol]|'
+- id: R_GUAD
+  name: R_guanine_deaminase
+  equation: '|M_gua_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_nh4_c[Cytosol]|
+    + |M_xan_c[Cytosol]|'
+- id: R_GUAPRTr
+  name: R_guanine_phosphoribosyltransferase
+  equation: '|M_gua_c[Cytosol]| + |M_prpp_c[Cytosol]| <=> |M_gmp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+- id: R_H2Ot5
+  name: R_H2O_transport_via_diffusion
+  equation: '|M_h2o_e[Extra_organism]| <=> |M_h2o_c[Cytosol]|'
+- id: R_HISTRS
+  name: R_Histidyl_tRNA_synthetase
+  equation: '|M_atp_c[Cytosol]| + |M_his_L_c[Cytosol]| + |M_trnahis_c[Cytosol]| =>
+    |M_amp_c[Cytosol]| + |M_histrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+- id: R_HISt2
+  name: R_L_histidine_transport_in_via_proton_symport
+  equation: '|M_h_e[Extra_organism]| + |M_his_L_e[Extra_organism]| => |M_h_c[Cytosol]|
+    + |M_his_L_c[Cytosol]|'
+- id: R_HXPRTr
+  name: R_hypoxanthine_phosphoribosyltransferase__Hypoxanthine_
+  equation: '|M_hxan_c[Cytosol]| + |M_prpp_c[Cytosol]| <=> |M_imp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+- id: R_ILETRS
+  name: R_Isoleucyl_tRNA_synthetase
+  equation: '|M_atp_c[Cytosol]| + |M_ile_L_c[Cytosol]| + |M_trnaile_c[Cytosol]| =>
+    |M_amp_c[Cytosol]| + |M_iletrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+- id: R_ILEt2
+  name: R_L_isoleucine_transport_in_via_proton_symport
+  equation: '|M_h_e[Extra_organism]| + |M_ile_L_e[Extra_organism]| => |M_h_c[Cytosol]|
+    + |M_ile_L_c[Cytosol]|'
+- id: R_INS2D
+  name: R_inositol_2_dehydrogenase
+  equation: '|M_inost_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_2ins_c[Cytosol]| + |M_h_c[Cytosol]|
+    + |M_nadh_c[Cytosol]|'
+- id: R_INSCR
+  name: R_inositol_catabolic_reactions__lumped_
+  equation: '|M_2ins_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_dhap_c[Cytosol]|
+    + (2) |M_h_c[Cytosol]| + |M_msa_c[Cytosol]|'
+- id: R_INSK
+  name: R_inosine_kinase
+  equation: '|M_atp_c[Cytosol]| + |M_ins_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
+    + |M_imp_c[Cytosol]|'
+- id: R_Kt2i
+  name: R_potassium_irreversible_transport_via_proton_symporter
+  equation: '|M_h_e[Extra_organism]| + |M_k_e[Extra_organism]| => |M_h_c[Cytosol]|
+    + |M_k_c[Cytosol]|'
+- id: R_LDH_L
+  name: R_L_lactate_dehydrogenase
+  equation: '|M_lac_L_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|
+    + |M_pyr_c[Cytosol]|'
+- id: R_LEUTRS
+  name: R_Leucyl_tRNA_synthetase
+  equation: '|M_atp_c[Cytosol]| + |M_leu_L_c[Cytosol]| + |M_trnaleu_c[Cytosol]| =>
+    |M_amp_c[Cytosol]| + |M_leutrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+- id: R_LEUt6
+  name: R_L_leucine_transport_in/out_via_proton_symport
+  equation: '|M_h_e[Extra_organism]| + |M_leu_L_e[Extra_organism]| <=> |M_h_c[Cytosol]|
+    + |M_leu_L_c[Cytosol]|'
+- id: R_LYSTRS
+  name: R_Lysyl_tRNA_synthetase
+  equation: '|M_atp_c[Cytosol]| + |M_lys_L_c[Cytosol]| + |M_trnalys_c[Cytosol]| =>
+    |M_amp_c[Cytosol]| + |M_lystrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+- id: R_LYSt3
+  name: R_L_lysine_transport_out_via_proton_antiport
+  equation: '|M_h_e[Extra_organism]| + |M_lys_L_c[Cytosol]| => |M_h_c[Cytosol]| +
+    |M_lys_L_e[Extra_organism]|'
+- id: R_L_LACt2
+  name: R_L_lactate_reversible_transport_via_proton_symport
+  equation: '|M_h_e[Extra_organism]| + |M_lac_L_e[Extra_organism]| <=> |M_h_c[Cytosol]|
+    + |M_lac_L_c[Cytosol]|'
+- id: R_MALTpts
+  name: R_maltose_transport_via_PEP_Pyr_PTS
+  equation: '|M_malt_e[Extra_organism]| + |M_pep_c[Cytosol]| => |M_malt6p_c[Cytosol]|
+    + |M_pyr_c[Cytosol]|'
+- id: R_MANpts
+  name: R_D_mannose_transport_via_PEP_Pyr_PTS
+  equation: '|M_man_e[Extra_organism]| + |M_pep_c[Cytosol]| => |M_man6p_c[Cytosol]|
+    + |M_pyr_c[Cytosol]|'
+- id: R_METAT
+  name: R_methionine_adenosyltransferase
+  equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_met_L_c[Cytosol]| => |M_amet_c[Cytosol]|
+    + |M_pi_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+- id: R_METSR_R1
+  name: R_L_methionine_R_oxide_reductase__trdrd_
+  equation: '|M_metox_R_c[Cytosol]| + |M_trdrd_c[Cytosol]| => |M_h2o_c[Cytosol]|
+    + |M_met_L_c[Cytosol]| + |M_trdox_c[Cytosol]|'
+- id: R_METSR_R2
+  name: R_L_methionine_R_oxide__H2O2_
+  equation: '|M_h2o2_c[Cytosol]| + |M_met_L_c[Cytosol]| => |M_h2o_c[Cytosol]| + |M_metox_R_c[Cytosol]|'
+- id: R_METSR_S1
+  name: R_L_methionine_S_oxide_reductase__trdrd_
+  equation: '|M_metox_c[Cytosol]| + |M_trdrd_c[Cytosol]| => |M_h2o_c[Cytosol]| +
+    |M_met_L_c[Cytosol]| + |M_trdox_c[Cytosol]|'
+- id: R_METSR_S2
+  name: R_L_methionine_S_oxide_reductase__H2O2_
+  equation: '|M_h2o2_c[Cytosol]| + |M_met_L_c[Cytosol]| => |M_h2o_c[Cytosol]| + |M_metox_c[Cytosol]|'
+- id: R_METTRS
+  name: R_Methionyl_tRNA_synthetase
+  equation: '|M_atp_c[Cytosol]| + |M_met_L_c[Cytosol]| + |M_trnamet_c[Cytosol]| =>
+    |M_amp_c[Cytosol]| + |M_mettrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+- id: R_METt6
+  name: R_L_methionine_transport_in/out_via_proton_symport
+  equation: '|M_h_e[Extra_organism]| + |M_met_L_e[Extra_organism]| <=> |M_h_c[Cytosol]|
+    + |M_met_L_c[Cytosol]|'
+- id: R_MG2abc
+  name: R_Magnesium_transport
+  equation: '|M_atp_c[Cytosol]| + |M_mg2_e[Extra_organism]| + |M_h2o_c[Cytosol]|
+    => |M_adp_c[Cytosol]| + |M_mg2_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+- id: R_MLN7t
+  name: R_Menaquinone_transport
+  equation: '|M_mqn7_e[Extra_organism]| => |M_mqn7_c[Cytosol]|'
+- id: R_MMSAD3
+  name: R_methylmalonate_semialdehyde_dehydrogenase__malonic_semialdehyde_
+  equation: '|M_coa_c[Cytosol]| + |M_msa_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_accoa_c[Cytosol]|
+    + |M_co2_c[Cytosol]| + |M_nadh_c[Cytosol]|'
+- id: R_MNLpts
+  name: R_mannitol_transport_via_PEP_Pyr_PTS
+  equation: '|M_mnl_e[Extra_organism]| + |M_pep_c[Cytosol]| => |M_mnl1p_c[Cytosol]|
+    + |M_pyr_c[Cytosol]|'
+- id: R_MNabc
+  name: R_manganese_transport_via_ABC_system
+  equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_mn2_e[Extra_organism]|
+    => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_mn2_c[Cytosol]| + |M_pi_c[Cytosol]|'
+- id: R_MOBDabc
+  name: R_molybdate_transport_via_ABC_system
+  equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_mobd_e[Extra_organism]|
+    => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_mobd_c[Cytosol]| + |M_pi_c[Cytosol]|'
+- id: R_MTHFC
+  name: R_methenyltetrahydrofolate_cyclohydrolase
+  equation: '|M_h2o_c[Cytosol]| + |M_methf_c[Cytosol]| <=> |M_10fthf_c[Cytosol]|
+    + |M_h_c[Cytosol]|'
+- id: R_MTHFD
+  name: R_methylenetetrahydrofolate_dehydrogenase__NADP_
+  equation: '|M_mlthf_c[Cytosol]| + |M_nadp_c[Cytosol]| <=> |M_methf_c[Cytosol]|
+    + |M_nadph_c[Cytosol]|'
+- id: R_NACUP
+  name: R_Nicotinic_acid_uptake
+  equation: '|M_nac_e[Extra_organism]| => |M_nac_c[Cytosol]|'
+- id: R_NADH5
+  name: R_NADH_dehydrogenase__Menaquinone_7___2_protons_
+  equation: (3) |M_h_c[Cytosol]| + |M_mqn7_c[Cytosol]| + |M_nadh_c[Cytosol]| => (2)
+    |M_h_e[Extra_organism]| + |M_mql7_c[Cytosol]| + |M_nad_c[Cytosol]|
+- id: R_NADK
+  name: R_NAD_kinase
+  equation: '|M_atp_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
+    + |M_nadp_c[Cytosol]|'
+- id: R_NADS1
+  name: R_NAD_synthase__nh4_
+  equation: '|M_atp_c[Cytosol]| + |M_dnad_c[Cytosol]| + |M_nh4_c[Cytosol]| => |M_amp_c[Cytosol]|
+    + |M_h_c[Cytosol]| + |M_nad_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+- id: R_NAMNPP
+  name: R_nicotinic_acid_mononucleotide_pyrophosphorylase
+  equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_nac_c[Cytosol]| + |M_prpp_c[Cytosol]|
+    => |M_adp_c[Cytosol]| + |M_nicrnt_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+- id: R_NDPK1
+  name: R_nucleoside_diphosphate_kinase__ATP_GDP_
+  equation: '|M_atp_c[Cytosol]| + |M_gdp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_gtp_c[Cytosol]|'
+- id: R_NDPK2
+  name: R_nucleoside_diphosphate_kinase__ATP_UDP_
+  equation: '|M_atp_c[Cytosol]| + |M_udp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_utp_c[Cytosol]|'
+- id: R_NDPK3
+  name: R_nucleoside_diphosphate_kinase__ATP_CDP_
+  equation: '|M_atp_c[Cytosol]| + |M_cdp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_ctp_c[Cytosol]|'
+- id: R_NDPK4
+  name: R_nucleoside_diphosphate_kinase__ATP_dTDP_
+  equation: '|M_atp_c[Cytosol]| + |M_dtdp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dttp_c[Cytosol]|'
+- id: R_NDPK5
+  name: R_nucleoside_diphosphate_kinase__ATP_dGDP_
+  equation: '|M_atp_c[Cytosol]| + |M_dgdp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dgtp_c[Cytosol]|'
+- id: R_NDPK6
+  name: R_nucleoside_diphosphate_kinase__ATP_dUDP_
+  equation: '|M_atp_c[Cytosol]| + |M_dudp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dutp_c[Cytosol]|'
+- id: R_NDPK7
+  name: R_nucleoside_diphosphate_kinase__ATP_dCDP_
+  equation: '|M_atp_c[Cytosol]| + |M_dcdp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dctp_c[Cytosol]|'
+- id: R_NDPK8
+  name: R_nucleoside_diphosphate_kinase__ATP_dADP_
+  equation: '|M_atp_c[Cytosol]| + |M_dadp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_datp_c[Cytosol]|'
+- id: R_NDPK9
+  name: R_nucleoside_diphophate_kinase__ATP_IDP_
+  equation: '|M_atp_c[Cytosol]| + |M_idp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_itp_c[Cytosol]|'
+- id: R_NH4t
+  name: R_ammonia_transport_via_diffusion
+  equation: '|M_nh4_e[Extra_organism]| <=> |M_nh4_c[Cytosol]|'
+- id: R_NIabc
+  name: R_nickel_transport_via_ABC_system
+  equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_ni2_e[Extra_organism]|
+    => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_ni2_c[Cytosol]| + |M_pi_c[Cytosol]|'
+- id: R_NMNATr
+  name: R_nicotinamide_nucleotide_adenylyltransferase
+  equation: '|M_atp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nmn_c[Cytosol]| <=> |M_nad_c[Cytosol]|
+    + |M_ppi_c[Cytosol]|'
+- id: R_NNATr
+  name: R_nicotinate_nucleotide_adenylyltransferase
+  equation: '|M_atp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nicrnt_c[Cytosol]| <=> |M_dnad_c[Cytosol]|
+    + |M_ppi_c[Cytosol]|'
+- id: R_OHPHM
+  name: R_2_octaprenyl_6_hydroxyphenol_methylase
+  equation: '|M_2ohph_c[Cytosol]| + |M_amet_c[Cytosol]| => |M_2omph_c[Cytosol]| +
+    |M_ahcys_c[Cytosol]| + |M_h_c[Cytosol]|'
+- id: R_PAP
+  name: R_phosphatidic_acid_phosphatase
+  equation: '|M_12dag3p_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_12dgr_c[Cytosol]|
+    + |M_pi_c[Cytosol]|'
+- id: R_PBUTT
+  name: R_phosphate_butyryltransferase
+  equation: '|M_btcoa_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_butpi_c[Cytosol]| +
+    |M_coa_c[Cytosol]|'
+- id: R_PDH
+  name: R_pyruvate_dehydrogenase
+  equation: '|M_coa_c[Cytosol]| + |M_nad_c[Cytosol]| + |M_pyr_c[Cytosol]| => |M_accoa_c[Cytosol]|
+    + |M_co2_c[Cytosol]| + |M_nadh_c[Cytosol]|'
+- id: R_PFK
+  name: R_phosphofructokinase
+  equation: '|M_atp_c[Cytosol]| + |M_f6p_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_fdp_c[Cytosol]|
+    + |M_h_c[Cytosol]|'
+- id: R_PGAMT
+  name: R_phosphoglucosamine_mutase
+  equation: '|M_gam1p_c[Cytosol]| <=> |M_gam6p_c[Cytosol]|'
+- id: R_PGI
+  name: R_glucose_6_phosphate_isomerase
+  equation: '|M_g6p_c[Cytosol]| <=> |M_f6p_c[Cytosol]|'
+- id: R_PGK
+  name: R_phosphoglycerate_kinase
+  equation: '|M_13dpg_c[Cytosol]| + |M_adp_c[Cytosol]| <=> |M_3pg_c[Cytosol]| + |M_atp_c[Cytosol]|'
+- id: R_PGM
+  name: R_phosphoglycerate_mutase
+  equation: '|M_3pg_c[Cytosol]| <=> |M_2pg_c[Cytosol]|'
+- id: R_PGMT
+  name: R_phosphoglucomutase
+  equation: '|M_g1p_c[Cytosol]| <=> |M_g6p_c[Cytosol]|'
+- id: R_PHCYT
+  name: R_phosphatidate_cytidylyltransferase
+  equation: '|M_12dag3p_c[Cytosol]| + |M_ctp_c[Cytosol]| + |M_h_c[Cytosol]| => |M_cdpdag_c[Cytosol]|
+    + |M_ppi_c[Cytosol]|'
+- id: R_PHETRS
+  name: R_Phenylalanyl_tRNA_synthetase
+  equation: '|M_atp_c[Cytosol]| + |M_phe_L_c[Cytosol]| + |M_trnaphe_c[Cytosol]| =>
+    |M_amp_c[Cytosol]| + |M_phetrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+- id: R_PHEt6
+  name: R_L_phenylalanine_transport_in/out_via_proton_symport
+  equation: '|M_h_e[Extra_organism]| + |M_phe_L_e[Extra_organism]| <=> |M_h_c[Cytosol]|
+    + |M_phe_L_c[Cytosol]|'
+- id: R_PIabc
+  name: R_phosphate_transport_via_ABC_system
+  equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_pi_e[Extra_organism]| =>
+    |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + (2) |M_pi_c[Cytosol]|'
+- id: R_PMANM
+  name: R_phosphomannomutase
+  equation: '|M_man1p_c[Cytosol]| <=> |M_man6p_c[Cytosol]|'
+- id: R_PPA
+  name: R_inorganic_diphosphatase
+  equation: '|M_h2o_c[Cytosol]| + |M_ppi_c[Cytosol]| => |M_h_c[Cytosol]| + (2) |M_pi_c[Cytosol]|'
+- id: R_PPAK
+  name: R_Propionate_kinase
+  equation: '|M_adp_c[Cytosol]| + |M_ppap_c[Cytosol]| <=> |M_atp_c[Cytosol]| + |M_ppa_c[Cytosol]|'
+- id: R_PPAt6
+  name: R_propionate_transport_in/out_via_proton_symport
+  equation: '|M_h_e[Extra_organism]| + |M_ppa_e[Extra_organism]| <=> |M_h_c[Cytosol]|
+    + |M_ppa_c[Cytosol]|'
+- id: R_PROTRS
+  name: R_Prolyl_tRNA_synthetase
+  equation: '|M_atp_c[Cytosol]| + |M_pro_L_c[Cytosol]| + |M_trnapro_c[Cytosol]| =>
+    |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_protrna_c[Cytosol]|'
+- id: R_PROt2
+  name: R_L_proline_transport_in_via_proton_symport
+  equation: '|M_h_e[Extra_organism]| + |M_pro_L_e[Extra_organism]| => |M_h_c[Cytosol]|
+    + |M_pro_L_c[Cytosol]|'
+- id: R_PRPPS
+  name: R_phosphoribosylpyrophosphate_synthetase
+  equation: '|M_atp_c[Cytosol]| + |M_r5p_c[Cytosol]| <=> |M_amp_c[Cytosol]| + |M_h_c[Cytosol]|
+    + |M_prpp_c[Cytosol]|'
+- id: R_PSUDS
+  name: R_pseudouridylate_synthase
+  equation: '|M_r5p_c[Cytosol]| + |M_ura_c[Cytosol]| => |M_h2o_c[Cytosol]| + |M_psd5p_c[Cytosol]|'
+- id: R_PTA2r
+  name: R_Phosphate_acetyltransferase
+  equation: '|M_pi_c[Cytosol]| + |M_ppcoa_c[Cytosol]| <=> |M_coa_c[Cytosol]| + |M_ppap_c[Cytosol]|'
+- id: R_PTAr
+  name: R_phosphotransacetylase
+  equation: '|M_accoa_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_actp_c[Cytosol]| + |M_coa_c[Cytosol]|'
+- id: R_PTRCORNt7
+  name: R_putrescine/ornithine_antiporter
+  equation: '|M_orn_L_c[Cytosol]| + |M_ptrc_e[Extra_organism]| <=> |M_orn_L_e[Extra_organism]|
+    + |M_ptrc_c[Cytosol]|'
+- id: R_PTRCabc
+  name: R_putrescine_transport_via_ABC_system
+  equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_ptrc_e[Extra_organism]|
+    => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_ptrc_c[Cytosol]|'
+- id: R_PTRCt2
+  name: R_putrescine_transport_in_via_proton_symport__reversible
+  equation: '|M_h_e[Extra_organism]| + |M_ptrc_e[Extra_organism]| <=> |M_h_c[Cytosol]|
+    + |M_ptrc_c[Cytosol]|'
+- id: R_PUNP1
+  name: R_purine_nucleoside_phosphorylase__Adenosine_
+  equation: '|M_adn_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_ade_c[Cytosol]| + |M_r1p_c[Cytosol]|'
+- id: R_PUNP2
+  name: R_purine_nucleoside_phosphorylase__Deoxyadenosine_
+  equation: '|M_dad_2_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_2dr1p_c[Cytosol]| +
+    |M_ade_c[Cytosol]|'
+- id: R_PUNP3
+  name: R_purine_nucleoside_phosphorylase__Guanosine_
+  equation: '|M_gsn_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_gua_c[Cytosol]| + |M_r1p_c[Cytosol]|'
+- id: R_PUNP4
+  name: R_purine_nucleoside_phosphorylase__Deoxyguanosine_
+  equation: '|M_dgsn_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_2dr1p_c[Cytosol]| + |M_gua_c[Cytosol]|'
+- id: R_PUNP5
+  name: R_purine_nucleoside_phosphorylase__Inosine_
+  equation: '|M_ins_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_hxan_c[Cytosol]| + |M_r1p_c[Cytosol]|'
+- id: R_PUNP6
+  name: R_purine_nucleoside_phosphorylase__Deoxyinosine_
+  equation: '|M_din_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_2dr1p_c[Cytosol]| + |M_hxan_c[Cytosol]|'
+- id: R_PUNP7
+  name: R_purine_nucleoside_phosphorylase__Xanthosine_
+  equation: '|M_pi_c[Cytosol]| + |M_xtsn_c[Cytosol]| <=> |M_r1p_c[Cytosol]| + |M_xan_c[Cytosol]|'
+- id: R_PYDXK
+  name: R_pyridoxal_kinase__Pyridoxal_
+  equation: '|M_atp_c[Cytosol]| + |M_pydx_c[Cytosol]| => |M_adp_c[Cytosol]| + (2)
+    |M_h_c[Cytosol]| + |M_pydx5p_c[Cytosol]|'
+- id: R_PYDXt
+  name: R_Pyridoxal_transport
+  equation: '|M_pydx_e[Extra_organism]| => |M_pydx_c[Cytosol]|'
+- id: R_PYK
+  name: R_pyruvate_kinase
+  equation: '|M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pep_c[Cytosol]| => |M_atp_c[Cytosol]|
+    + |M_pyr_c[Cytosol]|'
+- id: R_PYNP1r
+  name: R_pyrimidine_nucleoside_phosphorylase__cytosine_
+  equation: '|M_csn_c[Cytosol]| + |M_r1p_c[Cytosol]| <=> |M_cytd_c[Cytosol]| + |M_pi_c[Cytosol]|'
+- id: R_PYNP2
+  name: R_pyrimidine_nucleoside_phosphorylase__uracil_
+  equation: '|M_pi_c[Cytosol]| + |M_uri_c[Cytosol]| <=> |M_r1p_c[Cytosol]| + |M_ura_c[Cytosol]|'
+- id: R_RBFK
+  name: R_riboflavin_kinase
+  equation: '|M_atp_c[Cytosol]| + |M_ribflv_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_fmn_c[Cytosol]|
+    + |M_h_c[Cytosol]|'
+- id: R_RBK
+  name: R_ribokinase
+  equation: '|M_atp_c[Cytosol]| + |M_rib_D_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
+    + |M_r5p_c[Cytosol]|'
+- id: R_RIBFLVt2
+  name: R_riboflavin_transport_in_via_proton_symport
+  equation: '|M_h_e[Extra_organism]| + |M_ribflv_e[Extra_organism]| => |M_h_c[Cytosol]|
+    + |M_ribflv_c[Cytosol]|'
+- id: R_RIBabc
+  name: R_D_ribose_transport_via_ABC_system
+  equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_rib_D_e[Extra_organism]|
+    => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_rib_D_c[Cytosol]|'
+- id: R_RNDR1
+  name: R_ribonucleoside_diphosphate_reductase__ADP_
+  equation: '|M_adp_c[Cytosol]| + |M_trdrd_c[Cytosol]| => |M_dadp_c[Cytosol]| + |M_h2o_c[Cytosol]|
+    + |M_trdox_c[Cytosol]|'
+- id: R_RNDR2
+  name: R_ribonucleoside_diphosphate_reductase__GDP_
+  equation: '|M_gdp_c[Cytosol]| + |M_trdrd_c[Cytosol]| => |M_dgdp_c[Cytosol]| + |M_h2o_c[Cytosol]|
+    + |M_trdox_c[Cytosol]|'
+- id: R_RNDR3
+  name: R_ribonucleoside_diphosphate_reductase__CDP_
+  equation: '|M_cdp_c[Cytosol]| + |M_trdrd_c[Cytosol]| => |M_dcdp_c[Cytosol]| + |M_h2o_c[Cytosol]|
+    + |M_trdox_c[Cytosol]|'
+- id: R_RNDR4
+  name: R_ribonucleoside_diphosphate_reductase__UDP_
+  equation: '|M_trdrd_c[Cytosol]| + |M_udp_c[Cytosol]| => |M_dudp_c[Cytosol]| + |M_h2o_c[Cytosol]|
+    + |M_trdox_c[Cytosol]|'
+- id: R_RPE
+  name: R_ribulose_5_phosphate_3_epimerase
+  equation: '|M_ru5p_D_c[Cytosol]| <=> |M_xu5p_D_c[Cytosol]|'
+- id: R_RPI
+  name: R_ribose_5_phosphate_isomerase
+  equation: '|M_r5p_c[Cytosol]| <=> |M_ru5p_D_c[Cytosol]|'
+- id: R_SALCpts
+  name: R_salicin_transport_via_PEP_Pyr_PTS
+  equation: '|M_pep_c[Cytosol]| + |M_salcn_e[Extra_organism]| => |M_pyr_c[Cytosol]|
+    + |M_salc6p_c[Cytosol]|'
+- id: R_SERTRS
+  name: R_Seryl_tRNA_synthetase
+  equation: '|M_atp_c[Cytosol]| + |M_ser_L_c[Cytosol]| + |M_trnaser_c[Cytosol]| =>
+    |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_sertrna_c[Cytosol]|'
+- id: R_SERt2
+  name: R_L_serine_transport_in_via_proton_symport
+  equation: '|M_h_e[Extra_organism]| + |M_ser_L_e[Extra_organism]| => |M_h_c[Cytosol]|
+    + |M_ser_L_c[Cytosol]|'
+- id: R_SO4t2
+  name: R_sulfate_transport_in_via_proton_symport
+  equation: '|M_h_e[Extra_organism]| + |M_so4_e[Extra_organism]| => |M_h_c[Cytosol]|
+    + |M_so4_c[Cytosol]|'
+- id: R_SPMDabc
+  name: R_spermidine_transport_via_ABC_system
+  equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_spmd_e[Extra_organism]|
+    => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_spmd_c[Cytosol]|'
+- id: R_SUCpts
+  name: R_sucrose_transport_via_PEP_Pyr_PTS
+  equation: '|M_pep_c[Cytosol]| + |M_sucr_e[Extra_organism]| => |M_pyr_c[Cytosol]|
+    + |M_suc6p_c[Cytosol]|'
+- id: R_TECA4S
+  name: R_minor_teichoic_acid_synthesis__n=30_
+  equation: (30) |M_h2o_c[Cytosol]| + (30) |M_uacgala_c[Cytosol]| + (30) |M_udpg_c[Cytosol]|
+    => (60) |M_h_c[Cytosol]| + |M_tcam_c[Cytosol]| + (30) |M_udp_c[Cytosol]| + (30)
+    |M_ump_c[Cytosol]|
+- id: R_TEICH45
+  name: R_teichuronic_acid__n=45___unlinked__GalNAc_GlcA_repeated
+  equation: (45) |M_uacgala_c[Cytosol]| + (45) |M_udpglcur_c[Cytosol]| <=> (45) |M_h_c[Cytosol]|
+    + |M_teich_45_c[Cytosol]| + (45) |M_udp_c[Cytosol]| + (45) |M_ump_c[Cytosol]|
+- id: R_THDPO
+  name: R_thiol_peroxidase
+  equation: '|M_h2o2_c[Cytosol]| + |M_trdrd_c[Cytosol]| => (2) |M_h2o_c[Cytosol]|
+    + |M_trdox_c[Cytosol]|'
+- id: R_THM2t2
+  name: R_Thiamine_transport_in_via_proton_symport
+  equation: '|M_h_e[Extra_organism]| + |M_thm_e[Extra_organism]| => |M_h_c[Cytosol]|
+    + |M_thm_c[Cytosol]|'
+- id: R_THMDt2
+  name: R_thymidine_transport_in_via_proton_symport
+  equation: '|M_h_e[Extra_organism]| + |M_thymd_e[Extra_organism]| => |M_h_c[Cytosol]|
+    + |M_thymd_c[Cytosol]|'
+- id: R_THRTRS
+  name: R_Threonyl_tRNA_synthetase
+  equation: '|M_atp_c[Cytosol]| + |M_thr_L_c[Cytosol]| + |M_trnathr_c[Cytosol]| =>
+    |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_thrtrna_c[Cytosol]|'
+- id: R_THZPSN
+  name: R_thiazole_phosphate_synthesis
+  equation: '|M_atp_c[Cytosol]| + |M_cys_L_c[Cytosol]| + |M_dxyl5p_c[Cytosol]| +
+    |M_tyr_L_c[Cytosol]| => |M_4hba_c[Cytosol]| + |M_4mpetz_c[Cytosol]| + |M_ala_L_c[Cytosol]|
+    + |M_amp_c[Cytosol]| + |M_co2_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]|
+    + |M_ppi_c[Cytosol]|'
+- id: R_TKT1
+  name: R_transketolase
+  equation: '|M_r5p_c[Cytosol]| + |M_xu5p_D_c[Cytosol]| <=> |M_g3p_c[Cytosol]| +
+    |M_s7p_c[Cytosol]|'
+- id: R_TKT2
+  name: R_transketolase
+  equation: '|M_e4p_c[Cytosol]| + |M_xu5p_D_c[Cytosol]| <=> |M_f6p_c[Cytosol]| +
+    |M_g3p_c[Cytosol]|'
+- id: R_TMDK1
+  name: R_thymidine_kinase__ATP_thymidine_
+  equation: '|M_atp_c[Cytosol]| + |M_thymd_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_dtmp_c[Cytosol]|
+    + |M_h_c[Cytosol]|'
+- id: R_TMDPK
+  name: R_thiamine_diphosphokinase
+  equation: '|M_atp_c[Cytosol]| + |M_thm_c[Cytosol]| => |M_amp_c[Cytosol]| + |M_h_c[Cytosol]|
+    + |M_thmpp_c[Cytosol]|'
+- id: R_TMDPP
+  name: R_thymidine_phosphorylase
+  equation: '|M_pi_c[Cytosol]| + |M_thymd_c[Cytosol]| <=> |M_2dr1p_c[Cytosol]| +
+    |M_thym_c[Cytosol]|'
+- id: R_TMDS
+  name: R_thymidylate_synthase
+  equation: '|M_dump_c[Cytosol]| + |M_mlthf_c[Cytosol]| => |M_dhf_c[Cytosol]| + |M_dtmp_c[Cytosol]|'
+- id: R_TPI
+  name: R_triose_phosphate_isomerase
+  equation: '|M_dhap_c[Cytosol]| <=> |M_g3p_c[Cytosol]|'
+- id: R_TRDR
+  name: R_thioredoxin_reductase__NADPH_
+  equation: '|M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| + |M_trdox_c[Cytosol]| => |M_nadp_c[Cytosol]|
+    + |M_trdrd_c[Cytosol]|'
+- id: R_TREpts
+  name: R_trehalose_transport_via_PEP_Pyr_PTS
+  equation: '|M_pep_c[Cytosol]| + |M_tre_e[Extra_organism]| => |M_pyr_c[Cytosol]|
+    + |M_tre6p_c[Cytosol]|'
+- id: R_TRIA
+  name: R_membrane_alanyl_aminopeptidase
+  equation: '|M_cgly_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_cys_L_c[Cytosol]| +
+    |M_gly_c[Cytosol]|'
+- id: R_TRPTRS
+  name: R_Tryptophanyl_tRNA_synthetase
+  equation: '|M_atp_c[Cytosol]| + |M_trnatrp_c[Cytosol]| + |M_trp_L_c[Cytosol]| =>
+    |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_trptrna_c[Cytosol]|'
+- id: R_TRPt2
+  name: R_L_tryptophan_transport_in_via_proton_symport
+  equation: '|M_h_e[Extra_organism]| + |M_trp_L_e[Extra_organism]| => |M_h_c[Cytosol]|
+    + |M_trp_L_c[Cytosol]|'
+- id: R_TYRTRS
+  name: R_Tyrosyl_tRNA_synthetase
+  equation: '|M_atp_c[Cytosol]| + |M_trnatyr_c[Cytosol]| + |M_tyr_L_c[Cytosol]| =>
+    |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_tyrtrna_c[Cytosol]|'
+- id: R_TYRt2
+  name: R_tyrosine_peroxisomal_transport_via_proton_symport
+  equation: '|M_h_c[Cytosol]| + |M_tyr_L_c[Cytosol]| <=> |M_h_e[Extra_organism]|
+    + |M_tyr_L_e[Extra_organism]|'
+- id: R_UAG4E
+  name: R_UDP_N_acetylglucosamine_4_epimerase
+  equation: '|M_uacgam_c[Cytosol]| => |M_uacgala_c[Cytosol]|'
+- id: R_UAGDP
+  name: R_UDP_N_acetylglucosamine_diphosphorylase
+  equation: '|M_acgam1p_c[Cytosol]| + |M_h_c[Cytosol]| + |M_utp_c[Cytosol]| => |M_ppi_c[Cytosol]|
+    + |M_uacgam_c[Cytosol]|'
+- id: R_UDPG4E
+  name: R_UDPglucose_4_epimerase
+  equation: '|M_udpg_c[Cytosol]| <=> |M_udpgal_c[Cytosol]|'
+- id: R_UDPGALM
+  name: R_UDPgalactopyranose_mutase
+  equation: '|M_udpgal_c[Cytosol]| => |M_udpgalfur_c[Cytosol]|'
+- id: R_UDPGD
+  name: R_UDPglucose_6_dehydrogenase
+  equation: '|M_h2o_c[Cytosol]| + (2) |M_nad_c[Cytosol]| + |M_udpg_c[Cytosol]| <=>
+    (3) |M_h_c[Cytosol]| + (2) |M_nadh_c[Cytosol]| + |M_udpglcur_c[Cytosol]|'
+- id: R_UGT1
+  name: R_UDP_glucosyltransferase__monoglucosyl_
+  equation: '|M_12dgr_c[Cytosol]| + |M_udpg_c[Cytosol]| => |M_h_c[Cytosol]| + |M_m12dg_c[Cytosol]|
+    + |M_udp_c[Cytosol]|'
+- id: R_UGT2
+  name: R_UDP_glucosyltransferase__diglucosyl_
+  equation: '|M_m12dg_c[Cytosol]| + |M_udpg_c[Cytosol]| => |M_h_c[Cytosol]| + |M_d12dg_c[Cytosol]|
+    + |M_udp_c[Cytosol]|'
+- id: R_UGT3
+  name: R_UDP_glucosyltransferase__triglucosyl_
+  equation: '|M_d12dg_c[Cytosol]| + |M_udpg_c[Cytosol]| => |M_h_c[Cytosol]| + |M_t12dg_c[Cytosol]|
+    + |M_udp_c[Cytosol]|'
+- id: R_UPPRT
+  name: R_uracil_phosphoribosyltransferase
+  equation: '|M_prpp_c[Cytosol]| + |M_ura_c[Cytosol]| => |M_ppi_c[Cytosol]| + |M_ump_c[Cytosol]|'
+- id: R_URAt2
+  name: R_uracil_transport_in_via_proton_symport
+  equation: '|M_h_e[Extra_organism]| + |M_ura_e[Extra_organism]| => |M_h_c[Cytosol]|
+    + |M_ura_c[Cytosol]|'
+- id: R_URIDK1
+  name: R_uridylate_kinase__UMP_
+  equation: '|M_atp_c[Cytosol]| + |M_ump_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_udp_c[Cytosol]|'
+- id: R_URIDK3
+  name: R_uridylate_kinase__dUMP_
+  equation: '|M_atp_c[Cytosol]| + |M_dump_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dudp_c[Cytosol]|'
+- id: R_URIK1
+  name: R_uridine_kinase__ATP_Uridine_
+  equation: '|M_atp_c[Cytosol]| + |M_uri_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
+    + |M_ump_c[Cytosol]|'
+- id: R_URIK2
+  name: R_uridine_kinase__GTP_Uridine_
+  equation: '|M_gtp_c[Cytosol]| + |M_uri_c[Cytosol]| => |M_gdp_c[Cytosol]| + |M_h_c[Cytosol]|
+    + |M_ump_c[Cytosol]|'
+- id: R_URIK3
+  name: R_uridine_kinase__ITP_Uridine_
+  equation: '|M_itp_c[Cytosol]| + |M_uri_c[Cytosol]| => |M_h_c[Cytosol]| + |M_idp_c[Cytosol]|
+    + |M_ump_c[Cytosol]|'
+- id: R_VALTRS
+  name: R_Valyl_tRNA_synthetase
+  equation: '|M_atp_c[Cytosol]| + |M_trnaval_c[Cytosol]| + |M_val_L_c[Cytosol]| =>
+    |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_valtrna_c[Cytosol]|'
+- id: R_VALt2
+  name: R_L_valine_transport_in_via_proton_symport
+  equation: '|M_h_e[Extra_organism]| + |M_val_L_e[Extra_organism]| => |M_h_c[Cytosol]|
+    + |M_val_L_c[Cytosol]|'
+- id: R_ZN2t4
+  name: R_zinc_transport_out_via_antiport
+  equation: '|M_h_e[Extra_organism]| + |M_k_e[Extra_organism]| + |M_zn2_c[Cytosol]|
+    => |M_h_c[Cytosol]| + |M_k_c[Cytosol]| + |M_zn2_e[Extra_organism]|'

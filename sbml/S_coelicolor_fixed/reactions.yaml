@@ -1,0 +1,3990 @@
+- id: R_1
+  name: glucokinase-glc
+  equation: '|M_ATP_c_None_| + |M_GLC_c_None_| <=> |M_ADP_c_None_| + |M_GLC6P_c_None_|'
+  subsystem: Exchange
+- id: R_10
+  name: Glyceraldehyde 3-phosphate dehydrogenase (phosphorylating)
+  equation: '|M_NAD_c_None_| + |M_PI_c_None_| + |M_GAP_c_None_| <=> |M_H_c_None_|
+    + |M_DPG_c_None_| + |M_NADH_c_None_|'
+  subsystem: Exchange
+- id: R_100
+  name: Alpha-galactosidase
+  equation: '|M_WATER_c_None_| + |M_MELI_c_None_| <=> |M_GLC_c_None_| + |M_GLAC_c_None_|'
+  subsystem: Exchange
+- id: R_101
+  name: glucose-1-phosphate cytidylyltransferase
+  equation: '|M_DTTP_c_None_| + |M_GLC1P_c_None_| <=> |M_PPI_c_None_| + |M_TDPDGLUCOSE_c_None_|'
+  subsystem: Exchange
+- id: R_102
+  name: UDP-glucose 4-epimerase
+  equation: '|M_TDPDGLUCOSE_c_None_| <=> |M_TDPGAL_c_None_|'
+  subsystem: Exchange
+- id: R_103
+  name: Galactokinase
+  equation: '|M_ATP_c_None_| + |M_GALC_c_None_| <=> |M_GALC1P_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_104
+  name: UTP--hexose-1-phosphate uridylyltransferase
+  equation: '|M_GALC1P_c_None_| + |M_UTP_c_None_| <=> |M_PPI_c_None_| + |M_UDPGAL_c_None_|'
+  subsystem: Exchange
+- id: R_105
+  name: UDP-glucose 4-epimerase
+  equation: '|M_UDPGAL_c_None_| <=> |M_UDPGLU_c_None_|'
+  subsystem: Exchange
+- id: R_106
+  name: UDP-glucose 6-dehydrogenase
+  equation: '|M_WATER_c_None_| + (2) |M_NAD_c_None_| + |M_UDPGLU_c_None_| <=> (2)
+    |M_NADH_c_None_| + (2) |M_H_c_None_| + |M_UDPGLUCUR_c_None_|'
+  subsystem: Exchange
+- id: R_107
+  name: UTP--glucose-1-phosphate uridylyltransferase
+  equation: '|M_UTP_c_None_| + |M_GLC1P_c_None_| <=> |M_PPI_c_None_| + |M_UDPGLU_c_None_|'
+  subsystem: Exchange
+- id: R_108
+  name: trehalose-phosphate synthase
+  equation: '|M_GLC6P_c_None_| + |M_UDPGLU_c_None_| <=> |M_TRE6P_c_None_| + |M_UDP_c_None_|'
+  subsystem: Exchange
+- id: R_109
+  name: trehalose synthase treS  (TreS Pathway)
+  equation: '|M_MLT_c_None_| <=> |M_TRE_c_None_|'
+  subsystem: Exchange
+- id: R_11
+  name: Phosphoglycerate mutase
+  equation: '|M_G3P_c_None_| <=> |M_PG2_c_None_|'
+  subsystem: Exchange
+- id: R_110
+  name: Beta-galactosidase
+  equation: '|M_WATER_c_None_| + |M_LACTOSE_c_None_| <=> |M_GLC_c_None_| + |M_GLAC_c_None_|'
+  subsystem: Exchange
+- id: R_111
+  name: Alpha-galactosidase
+  equation: '|M_GALACTINOL_c_None_| + |M_WATER_c_None_| <=> |M_MYOINOSITOL_c_None_|
+    + |M_GLAC_c_None_|'
+  subsystem: Exchange
+- id: R_112
+  name: Alpha-galactosidase
+  equation: '|M_RAF_c_None_| + |M_WATER_c_None_| <=> |M_SUCROSE_c_None_| + |M_GLAC_c_None_|'
+  subsystem: Exchange
+- id: R_113
+  name: Alpha-galactosidase
+  equation: '|M_STACHYOSE_c_None_| + |M_WATER_c_None_| <=> |M_GLAC_c_None_| + |M_RAF_c_None_|'
+  subsystem: Exchange
+- id: R_114
+  name: Alpha-galactosidase
+  equation: '|M_EPM_c_None_| + |M_WATER_c_None_| <=> |M_GLAC_c_None_| + |M_MAN_c_None_|'
+  subsystem: Exchange
+- id: R_115
+  name: Alpha-galactosidase
+  equation: '|M_GGL_c_None_| + |M_WATER_c_None_| <=> |M_GLAC_c_None_| + |M_GL_c_None_|'
+  subsystem: Exchange
+- id: R_116
+  name: Alpha-galactosidase
+  equation: '|M_MELIT_c_None_| + |M_WATER_c_None_| <=> |M_SOT_c_None_| + |M_GLAC_c_None_|'
+  subsystem: Exchange
+- id: R_117
+  name: Alpha-glucosidase
+  equation: '|M_MLT_c_None_| + |M_WATER_c_None_| <=> (2) |M_GLC_c_None_|'
+  subsystem: Exchange
+- id: R_118
+  name: Alpha-glucosidase
+  equation: '|M_SUCROSE_c_None_| + |M_WATER_c_None_| <=> |M_GLC_c_None_| + |M_FRU_c_None_|'
+  subsystem: Exchange
+- id: R_119
+  name: Polyphosphate-glucose phosphotransferase
+  equation: '|M_PIn_c_None_| + |M_bGLC_c_None_| <=> |M_bGLC6P_c_None_| + |M_PIn1_c_None_|'
+  subsystem: Exchange
+- id: R_12
+  name: Phosphopyruvate hydratase
+  equation: '|M_PG2_c_None_| <=> |M_WATER_c_None_| + |M_PEP_c_None_|'
+  subsystem: Exchange
+- id: R_120
+  name: Polyphosphate-glucose phosphotransferase
+  equation: '|M_PIn_c_None_| + |M_GLC_c_None_| <=> |M_PIn1_c_None_| + |M_GLC6P_c_None_|'
+  subsystem: Exchange
+- id: R_121
+  name: Aldose 1-epimerase
+  equation: '|M_bGLC_c_None_| <=> |M_GLC_c_None_|'
+  subsystem: Exchange
+- id: R_122
+  name: 6-phospho-beta-glucosidase
+  equation: '|M_SAL6P_c_None_| + |M_WATER_c_None_| <=> |M_HXMP_c_None_| + |M_GLC6P_c_None_|'
+  subsystem: Exchange
+- id: R_123
+  name: 6-phospho-beta-glucosidase
+  equation: '|M_SAL6P_c_None_| + |M_WATER_c_None_| <=> |M_bGLC6P_c_None_| + |M_HXMP_c_None_|'
+  subsystem: Exchange
+- id: R_124
+  name: Xylose isomerase
+  equation: '|M_XYL_c_None_| <=> |M_DXYL_c_None_|'
+  subsystem: Exchange
+- id: R_125
+  name: D-arabinitol 4-dehydrogenase
+  equation: '|M_DARABITOL_c_None_| + |M_NAD_c_None_| <=> |M_DXYL_c_None_| + |M_NADH_c_None_|
+    + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_126
+  name: D-lyxose ketol-isomerase
+  equation: '|M_LLYXOSE_c_None_| <=> |M_DLYXOSE_c_None_|'
+  subsystem: Exchange
+- id: R_127
+  name: D-lyxose ketol-isomerase
+  equation: '|M_DXYL_c_None_| <=> |M_DLYXOSE_c_None_|'
+  subsystem: Exchange
+- id: R_128
+  name: Xylulokinase
+  equation: '|M_ATP_c_None_| + |M_DXYL_c_None_| <=> |M_XYL5P_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_129
+  name: Polyphosphate kinase
+  equation: '|M_ATP_c_None_| + |M_PIn1_c_None_| <=> |M_ADP_c_None_| + |M_PIn_c_None_|'
+  subsystem: Exchange
+- id: R_13
+  name: Pyruvate kinase
+  equation: '|M_ADP_c_None_| + |M_PEP_c_None_| <=> |M_ATP_c_None_| + |M_PYR_c_None_|'
+  subsystem: Exchange
+- id: R_130
+  name: carbamoylphosphate synthetase large chain/carbamoyl-phosphate synthase, pyrimidine-specific,
+    small chain
+  equation: (2) |M_ATP_c_None_| + |M_WATER_c_None_| + |M_HCO3_c_None_| + |M_GLN_c_None_|
+    + |M_H_c_None_| <=> |M_PI_c_None_| + |M_CARBAMOYLP_c_None_| + (2) |M_ADP_c_None_|
+    + |M_GLT_c_None_|
+  subsystem: Exchange
+- id: R_131
+  name: Aspartate carbamoyltransferase
+  equation: '|M_CARBAMOYLP_c_None_| + |M_ASP_c_None_| <=> |M_CARBAMYULASP_c_None_|
+    + |M_PI_c_None_|'
+  subsystem: Exchange
+- id: R_132
+  name: Dihydroorotase
+  equation: '|M_CARBAMYULASP_c_None_| <=> |M_WATER_c_None_| + |M_DIHOROT_c_None_|'
+  subsystem: Exchange
+- id: R_133
+  name: Dihydroorotate oxidase
+  equation: '|M_MK_c_None_| + |M_DIHOROT_c_None_| <=> |M_OROTATE_c_None_| + |M_MKH2_c_None_|'
+  subsystem: Exchange
+- id: R_134
+  name: Dihydroorotate oxidase
+  equation: '|M_DIHOROT_c_None_| + |M_O2_c_None_| <=> |M_H2O2_c_None_| + |M_OROTATE_c_None_|'
+  subsystem: Exchange
+- id: R_135
+  name: Orotate phosphoribosyltransferase
+  equation: '|M_PRPP_c_None_| + |M_OROTATE_c_None_| <=> |M_PPI_c_None_| + |M_ORO5P_c_None_|'
+  subsystem: Exchange
+- id: R_136
+  name: Orotidine-5'-phosphate decarboxylase
+  equation: '|M_ORO5P_c_None_| <=> |M_UMP_c_None_| + |M_CO2_c_None_|'
+  subsystem: Exchange
+- id: R_137
+  name: cytidylate kinase
+  equation: '|M_ATP_c_None_| + |M_UMP_c_None_| <=> |M_ADP_c_None_| + |M_UDP_c_None_|'
+  subsystem: Exchange
+- id: R_138
+  name: ADDED
+  equation: '|M_URI_c_None_| + |M_GTP_c_None_| <=> |M_UMP_c_None_| + |M_GDP_c_None_|'
+  subsystem: Exchange
+- id: R_139
+  name: Adenosine kinase
+  equation: '|M_UMP_c_None_| + |M_WATER_c_None_| <=> |M_PI_c_None_| + |M_URI_c_None_|'
+  subsystem: Exchange
+- id: R_14
+  name: D-lactate dehydrogenase
+  equation: '|M_NADH_c_None_| + |M_H_c_None_| + |M_PYR_c_None_| <=> |M_LAC_c_None_|
+    + |M_NAD_c_None_|'
+  subsystem: Exchange
+- id: R_140
+  name: Uridine phosphorylase
+  equation: '|M_URI_c_None_| + |M_PI_c_None_| <=> |M_R1P_c_None_| + |M_URA_c_None_|'
+  subsystem: Exchange
+- id: R_141
+  name: Nucleoside-diphosphate kinase
+  equation: '|M_ATP_c_None_| + |M_UDP_c_None_| <=> |M_UTP_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_142
+  name: CTP synthetase
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_GLN_c_None_| + |M_UTP_c_None_|
+    <=> |M_PI_c_None_| + |M_ADP_c_None_| + |M_CTP_c_None_| + |M_GLT_c_None_|'
+  subsystem: Exchange
+- id: R_143
+  name: CTP synthetase
+  equation: '|M_ATP_c_None_| + |M_NH3_c_None_| + |M_UTP_c_None_| <=> |M_PI_c_None_|
+    + |M_ADP_c_None_| + |M_CTP_c_None_|'
+  subsystem: Exchange
+- id: R_144
+  name: nucleoside-diphosphate kinase
+  equation: '|M_CTP_c_None_| + |M_ADP_c_None_| <=> |M_ATP_c_None_| + |M_CDP_c_None_|'
+  subsystem: Exchange
+- id: R_145
+  name: ribonucleoside-diphosphate reductase
+  equation: '|M_CDP_c_None_| + |M_RThioredoxin_c_None_| <=> |M_DCDP_c_None_| + |M_OXTHIOREDOXIN_c_None_|
+    + |M_WATER_c_None_|'
+  subsystem: Exchange
+- id: R_146
+  name: Adenosine kinase
+  equation: '|M_DCMP_c_None_| + |M_WATER_c_None_| <=> |M_DC_c_None_| + |M_PI_c_None_|'
+  subsystem: Exchange
+- id: R_147
+  name: nucleoside-diphosphate kinase
+  equation: '|M_ATP_c_None_| + |M_DCDP_c_None_| <=> |M_DCTP_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_148
+  name: thymidine kinase
+  equation: '|M_ATP_c_None_| + |M_DU_c_None_| <=> |M_DUMP_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_149
+  name: dCTP deaminase
+  equation: '|M_CTP_c_None_| + |M_WATER_c_None_| <=> |M_UTP_c_None_| + |M_NH3_c_None_|'
+  subsystem: Exchange
+- id: R_15
+  name: acetate--CoA ligase
+  equation: '|M_ATP_c_None_| + |M_COA_c_None_| + |M_AC_c_None_| <=> |M_AMP_c_None_|
+    + |M_PPI_c_None_| + |M_ACOA_c_None_|'
+  subsystem: Exchange
+- id: R_150
+  name: dCTP deaminase
+  equation: '|M_DCTP_c_None_| + |M_WATER_c_None_| <=> |M_NH3_c_None_| + |M_DUTP_c_None_|'
+  subsystem: Exchange
+- id: R_151
+  name: ucleoside triphosphate pyrophosphohydrolase
+  equation: '|M_DTTP_c_None_| + |M_WATER_c_None_| <=> |M_PPI_c_None_| + |M_DTMP_c_None_|'
+  subsystem: Exchange
+- id: R_152
+  name: ucleoside triphosphate pyrophosphohydrolase
+  equation: '|M_DGTP_c_None_| + |M_WATER_c_None_| <=> |M_PPI_c_None_| + |M_DGMP_c_None_|'
+  subsystem: Exchange
+- id: R_153
+  name: ucleoside triphosphate pyrophosphohydrolase
+  equation: '|M_DCTP_c_None_| + |M_WATER_c_None_| <=> |M_PPI_c_None_| + |M_DCMP_c_None_|'
+  subsystem: Exchange
+- id: R_154
+  name: ucleoside triphosphate pyrophosphohydrolase
+  equation: '|M_CTP_c_None_| + |M_WATER_c_None_| <=> |M_CMP_c_None_| + |M_PPI_c_None_|'
+  subsystem: Exchange
+- id: R_155
+  name: ucleoside triphosphate pyrophosphohydrolase
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| <=> |M_PPI_c_None_| + |M_AMP_c_None_|'
+  subsystem: Exchange
+- id: R_156
+  name: ucleoside triphosphate pyrophosphohydrolase
+  equation: '|M_GTP_c_None_| + |M_WATER_c_None_| <=> |M_GMP_c_None_| + |M_PPI_c_None_|'
+  subsystem: Exchange
+- id: R_157
+  name: ucleoside triphosphate pyrophosphohydrolase
+  equation: '|M_ITP_c_None_| + |M_WATER_c_None_| <=> |M_PPI_c_None_| + |M_IMP_c_None_|'
+  subsystem: Exchange
+- id: R_158
+  name: ucleoside triphosphate pyrophosphohydrolase
+  equation: '|M_UTP_c_None_| + |M_WATER_c_None_| <=> |M_UMP_c_None_| + |M_PPI_c_None_|'
+  subsystem: Exchange
+- id: R_159
+  name: dUTP pyrophosphatase
+  equation: '|M_DUTP_c_None_| + |M_WATER_c_None_| <=> |M_PPI_c_None_| + |M_DUMP_c_None_|'
+  subsystem: Exchange
+- id: R_16
+  name: Malate dehydrogenase (oxaloacetate decarboxylating)
+  equation: '|M_NAD_c_None_| + |M_MAL_c_None_| <=> |M_PYR_c_None_| + |M_CO2_c_None_|
+    + |M_NADH_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_160
+  name: Nucleoside-diphosphate kinase
+  equation: '|M_ATP_c_None_| + |M_DTDP_c_None_| <=> |M_DTTP_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_161
+  name: Thymidylate kinase
+  equation: '|M_ATP_c_None_| + |M_DTMP_c_None_| <=> |M_DTDP_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_162
+  name: thymidylate synthase
+  equation: '|M_METHTHF_c_None_| + |M_DUMP_c_None_| + |M_FADH2_c_None_| <=> |M_DTMP_c_None_|
+    + |M_FAD_c_None_| + |M_THF_c_None_|'
+  subsystem: Exchange
+- id: R_163
+  name: Thymidylate kinase
+  equation: '|M_ATP_c_None_| + |M_TMP_c_None_| <=> |M_ADP_c_None_| + |M_TDP_c_None_|'
+  subsystem: Exchange
+- id: R_164
+  name: Cytidylate kinase
+  equation: '|M_ATP_c_None_| + |M_DCMP_c_None_| <=> |M_DCDP_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_165
+  name: Cytidylate kinase
+  equation: '|M_ATP_c_None_| + |M_CMP_c_None_| <=> |M_ADP_c_None_| + |M_CDP_c_None_|'
+  subsystem: Exchange
+- id: R_166
+  name: Adenosine kinase
+  equation: '|M_DTMP_c_None_| + |M_WATER_c_None_| <=> |M_DT_c_None_| + |M_PI_c_None_|'
+  subsystem: Exchange
+- id: R_167
+  name: Adenosine kinase
+  equation: '|M_CMP_c_None_| + |M_WATER_c_None_| <=> |M_CYTD_c_None_| + |M_PI_c_None_|'
+  subsystem: Exchange
+- id: R_168
+  name: Cytidine deaminase
+  equation: '|M_DC_c_None_| + |M_WATER_c_None_| <=> |M_NH3_c_None_| + |M_DU_c_None_|'
+  subsystem: Exchange
+- id: R_169
+  name: Cytidine deaminase
+  equation: '|M_CYTD_c_None_| + |M_WATER_c_None_| <=> |M_URI_c_None_| + |M_NH3_c_None_|'
+  subsystem: Exchange
+- id: R_17
+  name: Malate dehydrogenase (oxaloacetate decarboxylating) (NADP+)
+  equation: '|M_NADP_c_None_| + |M_MAL_c_None_| <=> |M_CO2_c_None_| + |M_PYR_c_None_|
+    + |M_NADPH_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_170
+  name: Thymidine kinase
+  equation: '|M_DT_c_None_| + |M_ATP_c_None_| <=> |M_ADP_c_None_| + |M_TMP_c_None_|'
+  subsystem: Exchange
+- id: R_171
+  name: Thymidine phosphorylase
+  equation: '|M_DT_c_None_| + |M_PI_c_None_| <=> |M_THYMINE_c_None_| + |M_DR1P_c_None_|'
+  subsystem: Exchange
+- id: R_172
+  name: Uracil phosphoribosyltransferase
+  equation: '|M_URA_c_None_| + |M_PRPP_c_None_| <=> |M_PPI_c_None_| + |M_UMP_c_None_|'
+  subsystem: Exchange
+- id: R_173
+  name: ribose-phosphate diphosphokinase
+  equation: '|M_ATP_c_None_| + |M_R5P_c_None_| <=> |M_AMP_c_None_| + |M_PRPP_c_None_|'
+  subsystem: Exchange
+- id: R_174
+  name: Amidophosphoribosyltransferase
+  equation: '|M_WATER_c_None_| + |M_GLN_c_None_| + |M_PRPP_c_None_| <=> |M_BRIBAMINP_c_None_|
+    + |M_PPI_c_None_| + |M_GLT_c_None_|'
+  subsystem: Exchange
+- id: R_175
+  name: Phosphoribosylamine--glycine ligase
+  equation: '|M_ATP_c_None_| + |M_BRIBAMINP_c_None_| + |M_GLY_c_None_| <=> |M_PI_c_None_|
+    + |M_PRGLYCINEAMIDE_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_176
+  name: phosphoribosylformylglycinamidine synthetase
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_GLN_c_None_| + |M_RFGLYCINEAMIDEP_c_None_|
+    <=> |M_PI_c_None_| + |M_GLT_c_None_| + |M_ADP_c_None_| + |M_PRFGLYCINEAMIDE_c_None_|'
+  subsystem: Exchange
+- id: R_177
+  name: phosphoribosylformylglycinamidine cyclo-ligase
+  equation: '|M_ATP_c_None_| + |M_PRFGLYCINEAMIDE_c_None_| <=> |M_PI_c_None_| + |M_ADP_c_None_|
+    + |M_PRAIMIDAZOLE_c_None_|'
+  subsystem: Exchange
+- id: R_178
+  name: Phosphoribosylaminoimidazole carboxylase
+  equation: '|M_CO2_c_None_| + |M_PRAIMIDAZOLE_c_None_| <=> |M_PRIBCAIMID_c_None_|'
+  subsystem: Exchange
+- id: R_179
+  name: Phosphoribosylaminoimidazole-succinocarboxamide synthetase
+  equation: '|M_ATP_c_None_| + |M_ASP_c_None_| + |M_PRIBCAIMID_c_None_| <=> |M_PI_c_None_|
+    + |M_PR4SAIMID_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_18
+  name: Pyruvate,water dikinase
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_PYR_c_None_| <=> |M_PI_c_None_|
+    + |M_AMP_c_None_| + |M_PEP_c_None_|'
+  subsystem: Exchange
+- id: R_180
+  name: Adenylosuccinate lyase
+  equation: '|M_PR4SAIMID_c_None_| <=> |M_FUM_c_None_| + |M_AICAR_c_None_|'
+  subsystem: Exchange
+- id: R_181
+  name: Adenine phosphoribosyltransferase
+  equation: '|M_PRPP_c_None_| + |M_AIC_c_None_| <=> |M_AICAR_c_None_| + |M_PPI_c_None_|'
+  subsystem: Exchange
+- id: R_182
+  name: Phosphoribosylaminoimidazolecarboxamide formyltransferase
+  equation: '|M_AICAR_c_None_| + |M_F10THF_c_None_| <=> |M_THF_c_None_| + |M_PRIBFCARBOXAMIDE_c_None_|'
+  subsystem: Exchange
+- id: R_183
+  name: IMP cyclohydrolase
+  equation: '|M_PRIBFCARBOXAMIDE_c_None_| <=> |M_WATER_c_None_| + |M_IMP_c_None_|'
+  subsystem: Exchange
+- id: R_184
+  name: Adenosine kinase
+  equation: '|M_ATP_c_None_| + |M_ADN_c_None_| <=> |M_ADP_c_None_| + |M_AMP_c_None_|'
+  subsystem: Exchange
+- id: R_185
+  name: Adenosine kinase
+  equation: '|M_AMP_c_None_| + |M_WATER_c_None_| <=> |M_PI_c_None_| + |M_ADN_c_None_|'
+  subsystem: Exchange
+- id: R_186
+  name: Xanthenosine kinase
+  equation: '|M_XNSN5P_c_None_| + |M_WATER_c_None_| <=> |M_XNSN_c_None_| + |M_PI_c_None_|'
+  subsystem: Exchange
+- id: R_187
+  name: Guanosine kinase
+  equation: '|M_GMP_c_None_| + |M_WATER_c_None_| <=> |M_GSN_c_None_| + |M_PI_c_None_|'
+  subsystem: Exchange
+- id: R_188
+  name: Inosine kinase
+  equation: '|M_WATER_c_None_| + |M_IMP_c_None_| <=> |M_PI_c_None_| + |M_INS_c_None_|'
+  subsystem: Exchange
+- id: R_189
+  name: Adenosine kinase
+  equation: '|M_WATER_c_None_| + |M_DAMP_c_None_| <=> |M_PI_c_None_| + |M_DA_c_None_|'
+  subsystem: Exchange
+- id: R_19
+  name: Pyruvate,phosphate dikinase
+  equation: '|M_ATP_c_None_| + |M_PYR_c_None_| + |M_PI_c_None_| <=> |M_PPI_c_None_|
+    + |M_AMP_c_None_| + |M_PEP_c_None_|'
+  subsystem: Exchange
+- id: R_190
+  name: Guanosine kinase
+  equation: '|M_DGMP_c_None_| + |M_WATER_c_None_| <=> |M_PI_c_None_| + |M_DG_c_None_|'
+  subsystem: Exchange
+- id: R_191
+  name: Thymidine phosphorylase
+  equation: '|M_INS_c_None_| + |M_PI_c_None_| <=> |M_HYXN_c_None_| + |M_R1P_c_None_|'
+  subsystem: Exchange
+- id: R_192
+  name: Thymidine phosphorylase
+  equation: '|M_DIN_c_None_| + |M_PI_c_None_| <=> |M_HYXN_c_None_| + |M_DR1P_c_None_|'
+  subsystem: Exchange
+- id: R_193
+  name: Thymidine phosphorylase
+  equation: '|M_PI_c_None_| + |M_DA_c_None_| <=> |M_AD_c_None_| + |M_DR1P_c_None_|'
+  subsystem: Exchange
+- id: R_194
+  name: GMP synthetase (glutamine-hydrolysing)
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_XNSN5P_c_None_| + |M_GLN_c_None_|
+    <=> |M_PPI_c_None_| + |M_AMP_c_None_| + |M_GLT_c_None_| + |M_GMP_c_None_|'
+  subsystem: Exchange
+- id: R_195
+  name: Guanylate kinase
+  equation: '|M_ATP_c_None_| + |M_GMP_c_None_| <=> |M_GDP_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_196
+  name: Guanylate kinase
+  equation: '|M_ATP_c_None_| + |M_DGMP_c_None_| <=> |M_ADP_c_None_| + |M_DGDP_c_None_|'
+  subsystem: Exchange
+- id: R_197
+  name: Adenylate cyclase
+  equation: '|M_ATP_c_None_| <=> |M_CAMP_c_None_| + |M_PPI_c_None_|'
+  subsystem: Exchange
+- id: R_198
+  name: Adenylate cyclase
+  equation: '|M_GTP_c_None_| <=> |M_PPI_c_None_| + |M_CGMP_c_None_|'
+  subsystem: Exchange
+- id: R_199
+  name: Nucleoside-diphosphate kinase
+  equation: '|M_ATP_c_None_| + |M_IDP_c_None_| <=> |M_ADP_c_None_| + |M_ITP_c_None_|'
+  subsystem: Exchange
+- id: R_2
+  name: glucokinase-bglc
+  equation: '|M_ATP_c_None_| + |M_bGLC_c_None_| <=> |M_bGLC6P_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_20
+  name: Phosphoenolpyruvate carboxylase
+  equation: '|M_CO2_c_None_| + |M_WATER_c_None_| + |M_PEP_c_None_| <=> |M_PI_c_None_|
+    + |M_OXACET_c_None_|'
+  subsystem: Exchange
+- id: R_200
+  name: Nucleoside-diphosphate kinase
+  equation: '|M_ATP_c_None_| + |M_DUDP_c_None_| <=> |M_ADP_c_None_| + |M_DUTP_c_None_|'
+  subsystem: Exchange
+- id: R_201
+  name: ribonucleoside-diphosphate reductase
+  equation: '|M_RThioredoxin_c_None_| + |M_UDP_c_None_| <=> |M_DUDP_c_None_| + |M_WATER_c_None_|
+    + |M_OXTHIOREDOXIN_c_None_|'
+  subsystem: Exchange
+- id: R_202
+  name: Hypoxanthine phosphoribosyltransferase
+  equation: '|M_AD_c_None_| + |M_PRPP_c_None_| <=> |M_PPI_c_None_| + |M_AMP_c_None_|'
+  subsystem: Exchange
+- id: R_203
+  name: Hypoxanthine phosphoribosyltransferase
+  equation: '|M_HYXN_c_None_| + |M_PRPP_c_None_| <=> |M_IMP_c_None_| + |M_PPI_c_None_|'
+  subsystem: Exchange
+- id: R_204
+  name: Xanthine-guanine phosphoribosyltransferase
+  equation: '|M_GN_c_None_| + |M_PRPP_c_None_| <=> |M_GMP_c_None_| + |M_PPI_c_None_|'
+  subsystem: Exchange
+- id: R_205
+  name: Xanthine-guanine phosphoribosyltransferase
+  equation: '|M_XAN_c_None_| + |M_PRPP_c_None_| <=> |M_XNSN5P_c_None_| + |M_PPI_c_None_|'
+  subsystem: Exchange
+- id: R_206
+  name: Purine-nucleoside phosphorylase
+  equation: '|M_GN_c_None_| + |M_DR1P_c_None_| <=> |M_DG_c_None_| + |M_PI_c_None_|'
+  subsystem: Exchange
+- id: R_207
+  name: putative purine nucleoside phosphorylase
+  equation: '|M_XNSN_c_None_| + |M_PI_c_None_| <=> |M_XAN_c_None_| + |M_R1P_c_None_|'
+  subsystem: Exchange
+- id: R_208
+  name: Purine-nucleoside phosphorylase
+  equation: '|M_GSN_c_None_| + |M_PI_c_None_| <=> |M_GN_c_None_| + |M_R1P_c_None_|'
+  subsystem: Exchange
+- id: R_209
+  name: Purine-nucleoside phosphorylase
+  equation: '|M_ADN_c_None_| + |M_PI_c_None_| <=> |M_AD_c_None_| + |M_R1P_c_None_|'
+  subsystem: Exchange
+- id: R_21
+  name: Phosphoenolpyruvate carboxykinase (ATP)
+  equation: '|M_ATP_c_None_| + |M_OXACET_c_None_| <=> |M_PEP_c_None_| + |M_ADP_c_None_|
+    + |M_CO2_c_None_|'
+  subsystem: Exchange
+- id: R_210
+  name: Adenine phosphoribosyltransferase
+  equation: '|M_AD_c_None_| + |M_PRPP_c_None_| <=> |M_PPI_c_None_| + |M_AMP_c_None_|'
+  subsystem: Exchange
+- id: R_211
+  name: Adenosine deaminase
+  equation: '|M_ADN_c_None_| + |M_WATER_c_None_| <=> |M_NH3_c_None_| + |M_INS_c_None_|'
+  subsystem: Exchange
+- id: R_212
+  name: Adenosine deaminase
+  equation: '|M_DA_c_None_| + |M_WATER_c_None_| <=> |M_DIN_c_None_| + |M_NH3_c_None_|'
+  subsystem: Exchange
+- id: R_213
+  name: Purine-nucleoside phosphorylase
+  equation: '|M_URA_c_None_| + |M_DR1P_c_None_| <=> |M_DU_c_None_| + |M_PI_c_None_|'
+  subsystem: Exchange
+- id: R_214
+  name: Xanthine dehydrogenase
+  equation: '|M_WATER_c_None_| + |M_HYXN_c_None_| + |M_NAD_c_None_| <=> |M_XAN_c_None_|
+    + |M_NADH_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_215
+  name: Xanthine dehydrogenase
+  equation: '|M_NAD_c_None_| + |M_XAN_c_None_| + |M_WATER_c_None_| <=> |M_NADH_c_None_|
+    + |M_URATE_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_216
+  name: urate oxidase
+  equation: '|M_O2_c_None_| + |M_URATE_c_None_| + |M_WATER_c_None_| <=> |M_HIU_c_None_|
+    + |M_CO2_c_None_| + |M_H2O2_c_None_|'
+  subsystem: Exchange
+- id: R_217
+  name: spontaneous
+  equation: '|M_HIU_c_None_| + |M_WATER_c_None_| <=> |M_ALLANTOIN_c_None_|'
+  subsystem: Exchange
+- id: R_218
+  name: Allantoinase
+  equation: '|M_ALLANTOIN_c_None_| + |M_WATER_c_None_| <=> |M_ALLANTOATE_c_None_|'
+  subsystem: Exchange
+- id: R_219
+  name: Allantoicase
+  equation: '|M_WATER_c_None_| + |M_ALLANTOATE_c_None_| <=> |M_UREA_c_None_| + |M_UGLYCOLATE_c_None_|'
+  subsystem: Exchange
+- id: R_22
+  name: Phosphoglycerate kinase
+  equation: '|M_ATP_c_None_| + |M_G3P_c_None_| <=> |M_ADP_c_None_| + |M_DPG_c_None_|'
+  subsystem: Exchange
+- id: R_220
+  name: Ureidoglycolate hydrolase
+  equation: '|M_UGLYCOLATE_c_None_| + |M_WATER_c_None_| <=> |M_CO2_c_None_| + (2)
+    |M_NH3_c_None_| + |M_GLYOX_c_None_|'
+  subsystem: Exchange
+- id: R_221
+  name: Deoxyguanosinetriphosphate triphosphohydrolase
+  equation: '|M_GTP_c_None_| + |M_WATER_c_None_| <=> |M_P3I_c_None_| + |M_GSN_c_None_|'
+  subsystem: Exchange
+- id: R_222
+  name: Deoxyguanosinetriphosphate triphosphohydrolase
+  equation: '|M_DGTP_c_None_| + |M_WATER_c_None_| <=> |M_P3I_c_None_| + |M_DG_c_None_|'
+  subsystem: Exchange
+- id: R_223
+  name: GTP diphosphokinase
+  equation: '|M_GTP_c_None_| + |M_ATP_c_None_| <=> |M_GDPTP_c_None_| + |M_AMP_c_None_|'
+  subsystem: Exchange
+- id: R_224
+  name: pppGpp 5'-phosphohydrolase
+  equation: '|M_GDPTP_c_None_| + |M_WATER_c_None_| <=> |M_GU5DP3DP_c_None_| + |M_PI_c_None_|'
+  subsystem: Exchange
+- id: R_225
+  name: Guanosine-3',5'-bis(diphosphate) 3'-pyrophosphohydrolase
+  equation: '|M_GU5DP3DP_c_None_| + |M_WATER_c_None_| <=> |M_GDP_c_None_| + |M_PPI_c_None_|'
+  subsystem: Exchange
+- id: R_226
+  name: adenylosuccinate synthetase
+  equation: '|M_ASP_c_None_| + |M_GTP_c_None_| + |M_IMP_c_None_| <=> |M_ADENYLOSUCC_c_None_|
+    + |M_GDP_c_None_| + |M_PI_c_None_|'
+  subsystem: Exchange
+- id: R_227
+  name: Adenylosuccinate lyase
+  equation: '|M_ADENYLOSUCC_c_None_| <=> |M_FUM_c_None_| + |M_AMP_c_None_|'
+  subsystem: Exchange
+- id: R_228
+  name: Adenylate kinase
+  equation: '|M_ATP_c_None_| + |M_DAMP_c_None_| <=> |M_DADP_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_229
+  name: Adenylate kinase
+  equation: '|M_ATP_c_None_| + |M_AMP_c_None_| <=> (2) |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_23
+  name: alcohol dehydrogenase
+  equation: '|M_NADH_c_None_| + |M_H_c_None_| + |M_ACAL_c_None_| <=> |M_ETH_c_None_|
+    + |M_NAD_c_None_|'
+  subsystem: Exchange
+- id: R_230
+  name: ribonucleoside-diphosphate reductase
+  equation: '|M_RThioredoxin_c_None_| + |M_ADP_c_None_| <=> |M_DADP_c_None_| + |M_WATER_c_None_|
+    + |M_OXTHIOREDOXIN_c_None_|'
+  subsystem: Exchange
+- id: R_231
+  name: nucleoside-diphosphate kinase
+  equation: '|M_ATP_c_None_| + |M_DADP_c_None_| <=> |M_ADP_c_None_| + |M_DATP_c_None_|'
+  subsystem: Exchange
+- id: R_232
+  name: IMP dehydrogenase
+  equation: '|M_WATER_c_None_| + |M_NAD_c_None_| + |M_IMP_c_None_| <=> |M_XNSN5P_c_None_|
+    + |M_NADH_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_233
+  name: nucleoside-diphosphate kinase
+  equation: '|M_ATP_c_None_| + |M_GDP_c_None_| <=> |M_ADP_c_None_| + |M_GTP_c_None_|'
+  subsystem: Exchange
+- id: R_234
+  name: ribonucleoside-diphosphate reductase
+  equation: '|M_GDP_c_None_| + |M_RThioredoxin_c_None_| <=> |M_WATER_c_None_| + |M_OXTHIOREDOXIN_c_None_|
+    + |M_DGDP_c_None_|'
+  subsystem: Exchange
+- id: R_235
+  name: nucleoside-diphosphate kinase
+  equation: '|M_ATP_c_None_| + |M_DGDP_c_None_| <=> |M_ADP_c_None_| + |M_DGTP_c_None_|'
+  subsystem: Exchange
+- id: R_236
+  name: Thiamine kinase
+  equation: '|M_ATP_c_None_| + |M_THIAMINE_c_None_| <=> |M_THP_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_237
+  name: Hydroxymethylpyrimidine kinase
+  equation: '|M_ATP_c_None_| + |M_HMP_c_None_| <=> |M_AHMMPYRP_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_238
+  name: Phosphomethylpyrimidine kinase
+  equation: '|M_ATP_c_None_| + |M_AHMMPYRP_c_None_| <=> |M_AHMMPYRPP_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_239
+  name: Thiamine-phosphate pyrophosphorylase
+  equation: '|M_AHMMPYRPP_c_None_| + |M_THZP_c_None_| + |M_H_c_None_| <=> |M_PPI_c_None_|
+    + |M_THP_c_None_|'
+  subsystem: Exchange
+- id: R_24
+  name: Alcohol dehydrogenase (NADP+)
+  equation: '|M_ETH_c_None_| + |M_NADP_c_None_| <=> |M_ACAL_c_None_| + |M_NADPH_c_None_|
+    + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_240
+  name: Thiamine-phosphate kinase
+  equation: '|M_ATP_c_None_| + |M_THP_c_None_| <=> |M_THPP_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_241
+  name: nucleoside triphosphate phosphohydrolase
+  equation: '|M_WATER_c_None_| + |M_THPP_c_None_| <=> |M_PI_c_None_| + |M_THP_c_None_|'
+  subsystem: Exchange
+- id: R_242
+  name: Thiamine kinase
+  equation: '|M_ATP_c_None_| + |M_THIAMINE_c_None_| <=> |M_THP_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_243
+  name: 1-deoxy-D-xylulose-5-phosphate synthase
+  equation: '|M_PYR_c_None_| + |M_GAP_c_None_| <=> |M_DX5P_c_None_| + |M_CO2_c_None_|'
+  subsystem: Exchange
+- id: R_244
+  name: 1-deoxy-D-xylulose-5-phosphate reductoisomerase
+  equation: '|M_H_c_None_| + |M_NADPH_c_None_| + |M_DX5P_c_None_| <=> |M_MEP_c_None_|
+    + |M_NADP_c_None_|'
+  subsystem: Exchange
+- id: R_245
+  name: 2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase
+  equation: '|M_CTP_c_None_| + |M_MEP_c_None_| <=> |M_PPI_c_None_| + |M_DP2CME_c_None_|'
+  subsystem: Exchange
+- id: R_246
+  name: 4-(cytidine 5'-diphospho)-2-C-methyl-D-erythritol kinase
+  equation: '|M_ATP_c_None_| + |M_DP2CME_c_None_| <=> |M_ADP_c_None_| + |M_DP2CMEP_c_None_|'
+  subsystem: Exchange
+- id: R_247
+  name: 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase
+  equation: '|M_DP2CMEP_c_None_| <=> |M_CMP_c_None_| + |M_MECYCLOP_c_None_|'
+  subsystem: Exchange
+- id: R_248
+  name: 4-hydroxy-3-methylbut-2-en-1-yl diphosphate synthase
+  equation: '|M_NADH_c_None_| + |M_MECYCLOP_c_None_| + |M_H_c_None_| <=> |M_HMBDIP_c_None_|
+    + |M_NAD_c_None_| + |M_WATER_c_None_|'
+  subsystem: Exchange
+- id: R_249
+  name: 4-hydroxy-3-methylbut-2-enyl diphosphate reductase
+  equation: '|M_HMBDIP_c_None_| + |M_NADPH_c_None_| + |M_H_c_None_| <=> |M_WATER_c_None_|
+    + |M_NADP_c_None_| + |M_D3IPENTYLPP_c_None_|'
+  subsystem: Exchange
+- id: R_25
+  name: Pyruvate dehydrogenase (cytochrome)
+  equation: '|M_WATER_c_None_| + |M_PYR_c_None_| + |M_UBIQON_c_None_| <=> |M_CO2_c_None_|
+    + |M_AC_c_None_| + |M_UBIQOL_c_None_|'
+  subsystem: Exchange
+- id: R_250
+  name: 4-hydroxy-3-methylbut-2-enyl diphosphate reductase
+  equation: '|M_HMBDIP_c_None_| + |M_NADH_c_None_| + |M_H_c_None_| <=> |M_WATER_c_None_|
+    + |M_D3IPENTYLPP_c_None_| + |M_NAD_c_None_|'
+  subsystem: Exchange
+- id: R_251
+  name: 4-hydroxy-3-methylbut-2-enyl diphosphate reductase
+  equation: '|M_HMBDIP_c_None_| + |M_NADH_c_None_| + |M_H_c_None_| <=> |M_WATER_c_None_|
+    + |M_DMPP_c_None_| + |M_NAD_c_None_|'
+  subsystem: Exchange
+- id: R_252
+  name: 4-hydroxy-3-methylbut-2-enyl diphosphate reductase
+  equation: '|M_HMBDIP_c_None_| + |M_NADPH_c_None_| + |M_H_c_None_| <=> |M_WATER_c_None_|
+    + |M_DMPP_c_None_| + |M_NADP_c_None_|'
+  subsystem: Exchange
+- id: R_253
+  name: Isopentenyl-diphosphate delta-isomerase
+  equation: '|M_D3IPENTYLPP_c_None_| <=> |M_DMPP_c_None_|'
+  subsystem: Exchange
+- id: R_254
+  name: Dimethylallyltransferase
+  equation: '|M_D3IPENTYLPP_c_None_| + |M_DMPP_c_None_| <=> |M_GPP_c_None_| + |M_PPI_c_None_|'
+  subsystem: Exchange
+- id: R_255
+  name: geranyltranstransferase
+  equation: '|M_D3IPENTYLPP_c_None_| + |M_GPP_c_None_| <=> |M_PPI_c_None_| + |M_FARPP_c_None_|'
+  subsystem: Exchange
+- id: R_256
+  name: farnesyltranstransferase
+  equation: '|M_D3IPENTYLPP_c_None_| + |M_FARPP_c_None_| <=> |M_PPI_c_None_| + |M_GGPP_c_None_|'
+  subsystem: Exchange
+- id: R_257
+  name: spontaneous
+  equation: '|M_D3IPENTYLPP_c_None_| + |M_GGPP_c_None_| <=> |M_PPI_c_None_| + |M_PPPP_c_None_|'
+  subsystem: Exchange
+- id: R_258
+  name: trans-pentaprenyltranstransferase
+  equation: '|M_D3IPENTYLPP_c_None_| + |M_PPPP_c_None_| <=> |M_PPI_c_None_| + |M_HPPP_c_None_|'
+  subsystem: Exchange
+- id: R_259
+  name: trans-hexaprenyltranstransferase
+  equation: '|M_D3IPENTYLPP_c_None_| + |M_HPPP_c_None_| <=> |M_HEPPP_c_None_| + |M_PPI_c_None_|'
+  subsystem: Exchange
+- id: R_26
+  name: Aldehyde dehydrogenase (NAD+)
+  equation: '|M_ACAL_c_None_| + |M_WATER_c_None_| + |M_NAD_c_None_| <=> |M_NADH_c_None_|
+    + |M_AC_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_260
+  name: trans-hexaprenyltranstransferase
+  equation: '|M_D3IPENTYLPP_c_None_| + |M_HEPPP_c_None_| <=> |M_OPP_c_None_| + |M_PPI_c_None_|'
+  subsystem: Exchange
+- id: R_261
+  name: trans-octaprenyltranstransferase
+  equation: '|M_D3IPENTYLPP_c_None_| + |M_OPP_c_None_| <=> |M_NPP_c_None_| + |M_PPI_c_None_|'
+  subsystem: Exchange
+- id: R_262
+  name: Asparaginase
+  equation: '|M_ASN_c_None_| + |M_WATER_c_None_| <=> |M_NH3_c_None_| + |M_ASP_c_None_|'
+  subsystem: Exchange
+- id: R_263
+  name: Aspartate 1-decarboxylase
+  equation: '|M_ASP_c_None_| <=> |M_CO2_c_None_| + |M_BALA_c_None_|'
+  subsystem: Exchange
+- id: R_264
+  name: L-aspartate oxidase
+  equation: '|M_WATER_c_None_| + |M_O2_c_None_| + |M_ASP_c_None_| <=> |M_NH3_c_None_|
+    + |M_H2O2_c_None_| + |M_OXACET_c_None_|'
+  subsystem: Exchange
+- id: R_265
+  name: Acetolactate synthase
+  equation: (2) |M_PYR_c_None_| <=> |M_ALAC_c_None_| + |M_CO2_c_None_|
+  subsystem: Exchange
+- id: R_266
+  name: Ketol-acid reductoisomerase
+  equation: '|M_ALAC_c_None_| + |M_NADPH_c_None_| + |M_H_c_None_| <=> |M_DIVALER_c_None_|
+    + |M_NADP_c_None_|'
+  subsystem: Exchange
+- id: R_267
+  name: Dihydroxy-acid dehydratase
+  equation: '|M_DIVALER_c_None_| <=> |M_WATER_c_None_| + |M_KISOVALERATE_c_None_|'
+  subsystem: Exchange
+- id: R_268
+  name: Branched-chain amino acid aminotransferase
+  equation: '|M_GLT_c_None_| + |M_KISOVALERATE_c_None_| <=> |M_AKG_c_None_| + |M_VAL_c_None_|'
+  subsystem: Exchange
+- id: R_269
+  name: Threonine dehydratase
+  equation: '|M_SER_c_None_| <=> |M_NH3_c_None_| + |M_PYR_c_None_|'
+  subsystem: Exchange
+- id: R_27
+  name: putative acetyl CoA carboxylase (alpha and beta subunits)
+  equation: '|M_ATP_c_None_| + |M_HCO3_c_None_| + |M_H_c_None_| + |M_ACOA_c_None_|
+    <=> |M_MALCOA_c_None_| + |M_PI_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_270
+  name: Threonine dehydratase
+  equation: '|M_THR_c_None_| <=> |M_NH3_c_None_| + |M_OXOBUTANOATE_c_None_|'
+  subsystem: Exchange
+- id: R_271
+  name: Acetolactate synthase
+  equation: '|M_OXOBUTANOATE_c_None_| + |M_PYR_c_None_| <=> |M_CO2_c_None_| + |M_AHBUT_c_None_|'
+  subsystem: Exchange
+- id: R_272
+  name: Ketol-acid reductoisomerase
+  equation: '|M_AHBUT_c_None_| + |M_NADPH_c_None_| + |M_H_c_None_| <=> |M_KMV_c_None_|
+    + |M_NADP_c_None_|'
+  subsystem: Exchange
+- id: R_273
+  name: Dihydroxy-acid dehydratase
+  equation: '|M_KMV_c_None_| <=> |M_WATER_c_None_| + |M_KMVALERATE_c_None_|'
+  subsystem: Exchange
+- id: R_274
+  name: Branched-chain amino acid aminotransferase
+  equation: '|M_GLT_c_None_| + |M_KMVALERATE_c_None_| <=> |M_AKG_c_None_| + |M_ILE_c_None_|'
+  subsystem: Exchange
+- id: R_275
+  name: 2-isopropylmalate synthase
+  equation: '|M_KISOVALERATE_c_None_| + |M_ACOA_c_None_| <=> |M_COA_c_None_| + |M_CHISOCARPOATE_c_None_|'
+  subsystem: Exchange
+- id: R_276
+  name: 3-isopropylmalate dehydratase
+  equation: '|M_CHISOCARPOATE_c_None_| + |M_WATER_c_None_| <=> |M_THCISOCAPROATE_c_None_|'
+  subsystem: Exchange
+- id: R_277
+  name: 3-isopropylmalate dehydrogenase
+  equation: '|M_THCISOCAPROATE_c_None_| + |M_NAD_c_None_| <=> |M_CMO_c_None_| + |M_NADH_c_None_|
+    + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_278
+  name: spontaneous
+  equation: '|M_CMO_c_None_| <=> |M_CO2_c_None_| + |M_MPENTANOATE_c_None_|'
+  subsystem: Exchange
+- id: R_279
+  name: Branched-chain amino acid aminotransferase
+  equation: '|M_GLT_c_None_| + |M_MPENTANOATE_c_None_| <=> |M_LEU_c_None_| + |M_AKG_c_None_|'
+  subsystem: Exchange
+- id: R_28
+  name: putative acetyl CoA carboxylase (alpha and beta subunits)
+  equation: '|M_H_c_None_| + |M_ACOA_c_None_| + |M_CCCP_c_None_| <=> |M_BCCP_c_None_|
+    + |M_MALCOA_c_None_|'
+  subsystem: Exchange
+- id: R_280
+  name: Amino-acid N-acetyltransferase
+  equation: '|M_GLT_c_None_| + |M_ACOA_c_None_| <=> |M_AGLU_c_None_| + |M_COA_c_None_|'
+  subsystem: Exchange
+- id: R_281
+  name: Acetylglutamate kinase
+  equation: '|M_ATP_c_None_| + |M_AGLU_c_None_| <=> |M_NAGLUP_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_282
+  name: N-acetyl-gamma-glutamyl-phosphate reductase
+  equation: '|M_H_c_None_| + |M_NADPH_c_None_| + |M_NAGLUP_c_None_| <=> |M_NADP_c_None_|
+    + |M_PI_c_None_| + |M_NAGLUSALD_c_None_|'
+  subsystem: Exchange
+- id: R_283
+  name: Acetylornithine aminotransferase
+  equation: '|M_GLT_c_None_| + |M_NAGLUSALD_c_None_| <=> |M_NAACORN_c_None_| + |M_AKG_c_None_|'
+  subsystem: Exchange
+- id: R_284
+  name: Glutamate N-acetyltransferase
+  equation: '|M_GLT_c_None_| + |M_NAACORN_c_None_| <=> |M_AGLU_c_None_| + |M_ORN_c_None_|'
+  subsystem: Exchange
+- id: R_285
+  name: Ornithine carbamoyltransferase
+  equation: '|M_CARBAMOYLP_c_None_| + |M_ORN_c_None_| <=> |M_PI_c_None_| + |M_CITR_c_None_|'
+  subsystem: Exchange
+- id: R_286
+  name: argininosuccinate synthetase
+  equation: '|M_ATP_c_None_| + |M_ASP_c_None_| + |M_CITR_c_None_| <=> |M_PPI_c_None_|
+    + |M_AMP_c_None_| + |M_ARGSUCC_c_None_|'
+  subsystem: Exchange
+- id: R_287
+  name: Argininosuccinate lyase
+  equation: '|M_ARGSUCC_c_None_| <=> |M_FUM_c_None_| + |M_ARG_c_None_|'
+  subsystem: Exchange
+- id: R_288
+  name: Homoserine kinase
+  equation: '|M_ATP_c_None_| + |M_HOMOSER_c_None_| <=> |M_OPHSER_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_289
+  name: Threonine synthase
+  equation: '|M_WATER_c_None_| + |M_OPHSER_c_None_| <=> |M_THR_c_None_| + |M_PI_c_None_|'
+  subsystem: Exchange
+- id: R_29
+  name: Pyruvate carboxylase
+  equation: '|M_ATP_c_None_| + |M_HCO3_c_None_| + |M_PYR_c_None_| <=> |M_PI_c_None_|
+    + |M_ADP_c_None_| + |M_OXACET_c_None_|'
+  subsystem: Exchange
+- id: R_290
+  name: L-Allothreonine acetaldehyde-lyase
+  equation: '|M_ACAL_c_None_| + |M_GLY_c_None_| <=> |M_THR_c_None_|'
+  subsystem: Exchange
+- id: R_291
+  name: Aspartate aminotransferase
+  equation: '|M_OXACET_c_None_| + |M_GLT_c_None_| <=> |M_ASP_c_None_| + |M_AKG_c_None_|'
+  subsystem: Exchange
+- id: R_292
+  name: Serine O-acetyltransferase
+  equation: '|M_ACOA_c_None_| + |M_SER_c_None_| <=> |M_COA_c_None_| + |M_ASER_c_None_|'
+  subsystem: Exchange
+- id: R_293
+  name: Cysteine synthase
+  equation: '|M_H2S_c_None_| + |M_ASER_c_None_| <=> |M_AC_c_None_| + |M_CYS_c_None_|'
+  subsystem: Exchange
+- id: R_294
+  name: Glutamate--ammonia ligase
+  equation: '|M_ATP_c_None_| + |M_NH3_c_None_| + |M_GLT_c_None_| <=> |M_GLN_c_None_|
+    + |M_PI_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_295
+  name: Glutamate dehydrogenase (NADP+)
+  equation: '|M_NH3_c_None_| + |M_NADPH_c_None_| + |M_AKG_c_None_| + |M_H_c_None_|
+    <=> |M_WATER_c_None_| + |M_NADP_c_None_| + |M_GLT_c_None_|'
+  subsystem: Exchange
+- id: R_296
+  name: glutamate synthase (NADPH)
+  equation: '|M_NAD_c_None_| + (2) |M_GLT_c_None_| <=> |M_GLN_c_None_| + |M_NADH_c_None_|
+    + |M_AKG_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_297
+  name: glutamate synthase (NADPH)
+  equation: '|M_GLN_c_None_| + |M_NADPH_c_None_| + |M_AKG_c_None_| + |M_H_c_None_|
+    <=> |M_NADP_c_None_| + (2) |M_GLT_c_None_|'
+  subsystem: Exchange
+- id: R_298
+  name: aminotransferase AlaT
+  equation: '|M_ALA_c_None_| + |M_AKG_c_None_| <=> |M_PYR_c_None_| + |M_GLT_c_None_|'
+  subsystem: Exchange
+- id: R_299
+  name: Glutaminase
+  equation: '|M_GLN_c_None_| + |M_WATER_c_None_| <=> |M_GLT_c_None_| + |M_NH3_c_None_|'
+  subsystem: Exchange
+- id: R_3
+  name: Phosphoglucomutase g1p
+  equation: '|M_GLC1P_c_None_| <=> |M_GLC6P_c_None_|'
+  subsystem: Exchange
+- id: R_30
+  name: Phosphoenolpyruvate carboxykinase (GTP)
+  equation: '|M_PEP_c_None_| + |M_GDP_c_None_| + |M_CO2_c_None_| <=> |M_GTP_c_None_|
+    + |M_OXACET_c_None_|'
+  subsystem: Exchange
+- id: R_300
+  name: Glycine hydroxymethyltransferase
+  equation: '|M_THF_c_None_| + |M_SER_c_None_| <=> |M_WATER_c_None_| + |M_GLY_c_None_|
+    + |M_METHTHF_c_None_|'
+  subsystem: Exchange
+- id: R_301
+  name: ATP phosphoribosyltransferase
+  equation: '|M_ATP_c_None_| + |M_PRPP_c_None_| <=> |M_PRIBATP_c_None_| + |M_PPI_c_None_|'
+  subsystem: Exchange
+- id: R_302
+  name: Phosphoribosyl-ATP pyrophosphatase
+  equation: '|M_PRIBATP_c_None_| + |M_WATER_c_None_| <=> |M_PPI_c_None_| + |M_PRIBAMP_c_None_|'
+  subsystem: Exchange
+- id: R_303
+  name: Phosphoribosyl-AMP cyclohydrolase
+  equation: '|M_PRIBAMP_c_None_| + |M_WATER_c_None_| <=> |M_PRIBOFAICARP_c_None_|'
+  subsystem: Exchange
+- id: R_304
+  name: N-(5'-phospho-D-ribosylformimino)-5-amino-1-(5''-phosphoribosyl)-4- imidazole
+    carboxamide isomerase
+  equation: '|M_PRIBOFAICARP_c_None_| <=> |M_PRIBULOFAICARP_c_None_|'
+  subsystem: Exchange
+- id: R_305
+  name: imidazole glycerol phosphate synthase
+  equation: '|M_GLN_c_None_| + |M_PRIBULOFAICARP_c_None_| <=> |M_DEIGP_c_None_| +
+    |M_AICAR_c_None_| + |M_GLT_c_None_|'
+  subsystem: Exchange
+- id: R_306
+  name: Imidazoleglycerol-phosphate dehydratase
+  equation: '|M_DEIGP_c_None_| <=> |M_WATER_c_None_| + |M_IACETOLP_c_None_|'
+  subsystem: Exchange
+- id: R_307
+  name: Histidinol-phosphate aminotransferase
+  equation: '|M_GLT_c_None_| + |M_IACETOLP_c_None_| <=> |M_AKG_c_None_| + |M_HISTIDINOLP_c_None_|'
+  subsystem: Exchange
+- id: R_308
+  name: Histidinol-phosphatase
+  equation: '|M_HISTIDINOLP_c_None_| + |M_WATER_c_None_| <=> |M_HISTIDINOL_c_None_|
+    + |M_PI_c_None_|'
+  subsystem: Exchange
+- id: R_309
+  name: Histidinol dehydrogenase
+  equation: '|M_HISTIDINOL_c_None_| + |M_WATER_c_None_| + (2) |M_NAD_c_None_| <=>
+    |M_HIS_c_None_| + (2) |M_NADH_c_None_| + (2) |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_31
+  name: Citrate (si)-synthase
+  equation: '|M_WATER_c_None_| + |M_ACOA_c_None_| + |M_OXACET_c_None_| <=> |M_COA_c_None_|
+    + |M_CIT_c_None_|'
+  subsystem: Exchange
+- id: R_310
+  name: dihydrodipicolinate synthase
+  equation: '|M_PYR_c_None_| + |M_ASPSALD_c_None_| <=> (2) |M_WATER_c_None_| + |M_DDCOL_c_None_|'
+  subsystem: Exchange
+- id: R_311
+  name: Dihydrodipicolinate reductase
+  equation: '|M_NADPH_c_None_| + |M_H_c_None_| + |M_DDCOL_c_None_| <=> |M_D1PDICARBOXYLATE_c_None_|
+    + |M_NADP_c_None_|'
+  subsystem: Exchange
+- id: R_312
+  name: 2,3,4,5-tetrahydropyridine-2-carboxylate N-succinyltransferase
+  equation: '|M_SUCCOA_c_None_| + |M_WATER_c_None_| + |M_D1PDICARBOXYLATE_c_None_|
+    <=> |M_COA_c_None_| + |M_NSUC2A6KP_c_None_|'
+  subsystem: Exchange
+- id: R_313
+  name: Succinyldiaminopimelate aminotransferase
+  equation: '|M_GLT_c_None_| + |M_NSUC2A6KP_c_None_| <=> |M_NSUC26DAP_c_None_| +
+    |M_AKG_c_None_|'
+  subsystem: Exchange
+- id: R_314
+  name: Succinyl-diaminopimelate desuccinylase
+  equation: '|M_NSUC26DAP_c_None_| + |M_WATER_c_None_| <=> |M_DAPIM_c_None_| + |M_SUCC_c_None_|'
+  subsystem: Exchange
+- id: R_315
+  name: Diaminopimelate epimerase
+  equation: '|M_DAPIM_c_None_| <=> |M_MDAPIM_c_None_|'
+  subsystem: Exchange
+- id: R_316
+  name: Diaminopimelate decarboxylase
+  equation: '|M_MDAPIM_c_None_| <=> |M_CO2_c_None_| + |M_LYS_c_None_|'
+  subsystem: Exchange
+- id: R_317
+  name: homoserine O-succinyltransferase
+  equation: '|M_SUCCOA_c_None_| + |M_HOMOSER_c_None_| <=> |M_COA_c_None_| + |M_OSUCHSER_c_None_|'
+  subsystem: Exchange
+- id: R_318
+  name: Cystathionine beta-lyase
+  equation: '|M_WATER_c_None_| + |M_CYSTATHIONINE_c_None_| <=> |M_PYR_c_None_| +
+    |M_HOMOCYC_c_None_| + |M_NH3_c_None_|'
+  subsystem: Exchange
+- id: R_319
+  name: cystathionine gamma-synthase
+  equation: '|M_OSUCHSER_c_None_| + |M_CYS_c_None_| <=> |M_SUCC_c_None_| + |M_CYSTATHIONINE_c_None_|'
+  subsystem: Exchange
+- id: R_32
+  name: Citrate lyase
+  equation: '|M_CIT_c_None_| <=> |M_AC_c_None_| + |M_OXACET_c_None_|'
+  subsystem: Exchange
+- id: R_320
+  name: cystathionine gamma-synthase
+  equation: '|M_OSUCHSER_c_None_| + |M_H2S_c_None_| <=> |M_SUCC_c_None_| + |M_HOMOCYC_c_None_|'
+  subsystem: Exchange
+- id: R_321
+  name: L-homocysteine S-methyltransferase
+  equation: '|M_HOMOCYC_c_None_| + |M_SAMET_c_None_| <=> |M_AHOMOCYC_c_None_| + |M_MET_c_None_|'
+  subsystem: Exchange
+- id: R_322
+  name: 5-methyltetrahydrofolate--homocysteine S-methyltransferase
+  equation: '|M_HOMOCYC_c_None_| + |M_MTHF_c_None_| <=> |M_MET_c_None_| + |M_THF_c_None_|'
+  subsystem: Exchange
+- id: R_323
+  name: 5-methyltetrahydropteroyltriglutamate--homocysteine S-methyltransferase
+  equation: '|M_M5THTGLU_c_None_| + |M_HOMOCYC_c_None_| <=> |M_THTGLU_c_None_| +
+    |M_MET_c_None_|'
+  subsystem: Exchange
+- id: R_324
+  name: Glycerate kinase
+  equation: '|M_DGLYCERATE_c_None_| + |M_ATP_c_None_| <=> |M_ADP_c_None_| + |M_G3P_c_None_|'
+  subsystem: Exchange
+- id: R_325
+  name: Phosphoglycerate dehydrogenase
+  equation: '|M_G3P_c_None_| + |M_NAD_c_None_| <=> |M_HPYRP_c_None_| + |M_NADH_c_None_|
+    + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_326
+  name: Phosphoserine aminotransferase
+  equation: '|M_HPYRP_c_None_| + |M_GLT_c_None_| <=> |M_SER3P_c_None_| + |M_AKG_c_None_|'
+  subsystem: Exchange
+- id: R_327
+  name: Phosphoserine phosphatase
+  equation: '|M_SER3P_c_None_| + |M_WATER_c_None_| <=> |M_PI_c_None_| + |M_SER_c_None_|'
+  subsystem: Exchange
+- id: R_328
+  name: Glutamate 5-kinase
+  equation: '|M_ATP_c_None_| + |M_GLT_c_None_| <=> |M_GLU5P_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_329
+  name: Glutamate-5-semialdehyde dehydrogenase
+  equation: '|M_NADPH_c_None_| + |M_GLU5P_c_None_| + |M_H_c_None_| <=> |M_NADP_c_None_|
+    + |M_PI_c_None_| + |M_GGSALD_c_None_|'
+  subsystem: Exchange
+- id: R_33
+  name: Citrate lyase
+  equation: '|M_CIT_c_None_| <=> |M_THISOCIT_c_None_|'
+  subsystem: Exchange
+- id: R_330
+  name: spontaneous
+  equation: '|M_GGSALD_c_None_| <=> |M_WATER_c_None_| + |M_P5C_c_None_|'
+  subsystem: Exchange
+- id: R_331
+  name: pyrroline-5-carboxylate reductase
+  equation: '|M_NADPH_c_None_| + |M_NADH_c_None_| + |M_P5C_c_None_| <=> |M_PRO_c_None_|
+    + |M_NAD_c_None_| + |M_NADP_c_None_|'
+  subsystem: Exchange
+- id: R_332
+  name: Chorismate mutase
+  equation: '|M_CHORISMATE_c_None_| <=> |M_PREPHENATE_c_None_|'
+  subsystem: Exchange
+- id: R_333
+  name: Prephenate dehydratase
+  equation: '|M_PREPHENATE_c_None_| <=> |M_PHPYR_c_None_| + |M_WATER_c_None_| + |M_CO2_c_None_|'
+  subsystem: Exchange
+- id: R_334
+  name: prephenate dehydrogenase
+  equation: '|M_NAD_c_None_| + |M_PREPHENATE_c_None_| <=> |M_CO2_c_None_| + |M_PHPPYR_c_None_|
+    + |M_NADH_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_335
+  name: Cystathionine beta-synthase
+  equation: '|M_HOMOCYC_c_None_| + |M_SER_c_None_| <=> |M_WATER_c_None_| + |M_CYSTATHIONINE_c_None_|'
+  subsystem: Exchange
+- id: R_336
+  name: Cystathionine gamma-lyase
+  equation: '|M_CYSTATHIONINE_c_None_| + |M_WATER_c_None_| <=> |M_CYS_c_None_| +
+    |M_NH3_c_None_| + |M_OXOBUTANOATE_c_None_|'
+  subsystem: Exchange
+- id: R_337
+  name: cystathionine gamma-synthase
+  equation: '|M_OSUCHSER_c_None_| + |M_WATER_c_None_| <=> |M_SUCC_c_None_| + |M_NH3_c_None_|
+    + |M_OXOBUTANOATE_c_None_|'
+  subsystem: Exchange
+- id: R_338
+  name: Anthranilate synthase
+  equation: '|M_CHORISMATE_c_None_| + |M_GLN_c_None_| <=> |M_GLT_c_None_| + |M_PYR_c_None_|
+    + |M_AN_c_None_|'
+  subsystem: Exchange
+- id: R_339
+  name: Anthranilate phosphoribosyltransferase
+  equation: '|M_AN_c_None_| + |M_PRPP_c_None_| <=> |M_PPI_c_None_| + |M_N5PRANTHRA_c_None_|'
+  subsystem: Exchange
+- id: R_34
+  name: Aconitate hydratase 2
+  equation: '|M_CIT_c_None_| <=> |M_WATER_c_None_| + |M_CACONITATE_c_None_|'
+  subsystem: Exchange
+- id: R_340
+  name: Phosphoribosylanthranilate isomerase
+  equation: '|M_N5PRANTHRA_c_None_| <=> |M_CPADRIBULOSEP_c_None_|'
+  subsystem: Exchange
+- id: R_341
+  name: indole-3-glycerol-phosphate synthase
+  equation: '|M_CPADRIBULOSEP_c_None_| <=> |M_CO2_c_None_| + |M_I3GLP_c_None_| +
+    |M_WATER_c_None_|'
+  subsystem: Exchange
+- id: R_342
+  name: Tryptophan synthase alpha subunit
+  equation: '|M_SER_c_None_| + |M_I3GLP_c_None_| <=> |M_WATER_c_None_| + |M_GAP_c_None_|
+    + |M_TRP_c_None_|'
+  subsystem: Exchange
+- id: R_343
+  name: Tryptophan synthase alpha subunit
+  equation: '|M_I3GLP_c_None_| <=> |M_GAP_c_None_| + |M_INDOLE_c_None_|'
+  subsystem: Exchange
+- id: R_344
+  name: Tryptophan synthase alpha subunit
+  equation: '|M_SER_c_None_| + |M_INDOLE_c_None_| <=> |M_WATER_c_None_| + |M_TRP_c_None_|'
+  subsystem: Exchange
+- id: R_345
+  name: tryptophan 2,3-dioxygenase
+  equation: '|M_TRP_c_None_| + |M_O2_c_None_| <=> |M_FKYN_c_None_|'
+  subsystem: Exchange
+- id: R_346
+  name: N-Formylkynurenine amidohydrolase
+  equation: '|M_FKYN_c_None_| + |M_WATER_c_None_| <=> |M_FOR_c_None_| + |M_KYN_c_None_|'
+  subsystem: Exchange
+- id: R_347
+  name: L-Kynurenine hydrolase
+  equation: '|M_KYN_c_None_| + |M_WATER_c_None_| <=> |M_AN_c_None_| + |M_ALA_c_None_|'
+  subsystem: Exchange
+- id: R_348
+  name: Formylkynurenine hydrolase
+  equation: '|M_FKYN_c_None_| + |M_WATER_c_None_| <=> |M_ALA_c_None_| + |M_FAN_c_None_|'
+  subsystem: Exchange
+- id: R_349
+  name: N-Formylanthranilate amidohydrolase
+  equation: '|M_WATER_c_None_| + |M_FAN_c_None_| <=> |M_AN_c_None_| + |M_FOR_c_None_|'
+  subsystem: Exchange
+- id: R_35
+  name: Aconitate hydratase 3
+  equation: '|M_CACONITATE_c_None_| + |M_WATER_c_None_| <=> |M_THISOCIT_c_None_|'
+  subsystem: Exchange
+- id: R_350
+  name: Tyrosine aminotransferase
+  equation: '|M_AKG_c_None_| + |M_TYR_c_None_| <=> |M_GLT_c_None_| + |M_PHPPYR_c_None_|'
+  subsystem: Exchange
+- id: R_351
+  name: 4-hydroxyphenylpyruvate dioxygenase
+  equation: '|M_PHPPYR_c_None_| + |M_O2_c_None_| <=> |M_HOMOGENTISATE_c_None_| +
+    |M_CO2_c_None_|'
+  subsystem: Exchange
+- id: R_352
+  name: Homogentisate 1,2-dioxygenase
+  equation: '|M_O2_c_None_| + |M_HOMOGENTISATE_c_None_| <=> |M_MACETOACETATE_c_None_|'
+  subsystem: Exchange
+- id: R_353
+  name: maleylacetoacetate isomerase
+  equation: '|M_MACETOACETATE_c_None_| <=> |M_FACETOACETATE_c_None_|'
+  subsystem: Exchange
+- id: R_354
+  name: Fumarylacetoacetase
+  equation: '|M_FACETOACETATE_c_None_| + |M_WATER_c_None_| <=> |M_KBUT_c_None_| +
+    |M_FUM_c_None_|'
+  subsystem: Exchange
+- id: R_355
+  name: aspartate transaminase
+  equation: '|M_AKG_c_None_| + |M_PHE_c_None_| <=> |M_GLT_c_None_| + |M_PHPYR_c_None_|'
+  subsystem: Exchange
+- id: R_356
+  name: phenylpyruvate decarboxylase
+  equation: '|M_PHPYR_c_None_| <=> |M_PHAC_c_None_| + |M_CO2_c_None_|'
+  subsystem: Exchange
+- id: R_357
+  name: phenylpyruvate decarboxylase
+  equation: '|M_NAD_c_None_| + |M_WATER_c_None_| + |M_PHAC_c_None_| <=> |M_NADH_c_None_|
+    + |M_H_c_None_| + |M_PAC_c_None_|'
+  subsystem: Exchange
+- id: R_358
+  name: Phenylacetate--CoA ligase
+  equation: '|M_ATP_c_None_| + |M_COA_c_None_| + |M_PAC_c_None_| <=> |M_PPI_c_None_|
+    + |M_AMP_c_None_| + |M_PACCOA_c_None_|'
+  subsystem: Exchange
+- id: R_359
+  name: Arginine deiminase
+  equation: '|M_ARG_c_None_| + |M_WATER_c_None_| <=> |M_NH3_c_None_| + |M_CITR_c_None_|'
+  subsystem: Exchange
+- id: R_36
+  name: Isocitrate lyase
+  equation: '|M_THISOCIT_c_None_| <=> |M_SUCC_c_None_| + |M_GLYOX_c_None_|'
+  subsystem: Exchange
+- id: R_360
+  name: Urease
+  equation: '|M_UREA_c_None_| + |M_WATER_c_None_| <=> |M_CO2_c_None_| + (2) |M_NH3_c_None_|'
+  subsystem: Exchange
+- id: R_361
+  name: Arginine decarboxylase
+  equation: '|M_ARG_c_None_| <=> |M_CO2_c_None_| + |M_AGMATHINE_c_None_|'
+  subsystem: Exchange
+- id: R_362
+  name: Agmatinase
+  equation: '|M_WATER_c_None_| + |M_AGMATHINE_c_None_| <=> |M_UREA_c_None_| + |M_PUTRESCINE_c_None_|'
+  subsystem: Exchange
+- id: R_363
+  name: Ornithine--oxo-acid aminotransferase
+  equation: '|M_AKG_c_None_| + |M_ORN_c_None_| <=> |M_GGSALD_c_None_| + |M_GLT_c_None_|'
+  subsystem: Exchange
+- id: R_364
+  name: pyrroline-5-carboxylate reductase
+  equation: '|M_NADPH_c_None_| + |M_P35C_c_None_| + |M_NADH_c_None_| <=> |M_NAD_c_None_|
+    + |M_NADP_c_None_| + |M_HPRO_c_None_|'
+  subsystem: Exchange
+- id: R_365
+  name: 4-hydroxy-2-oxoglutarate aldolase
+  equation: '|M_HYDROXYAKG_c_None_| <=> |M_PYR_c_None_| + |M_GLYOX_c_None_|'
+  subsystem: Exchange
+- id: R_366
+  name: Aspartate aminotransferase
+  equation: '|M_GLT_c_None_| + |M_HYDROXYAKG_c_None_| <=> |M_L4HG_c_None_| + |M_AKG_c_None_|'
+  subsystem: Exchange
+- id: R_367
+  name: 1-pyrroline-5-carboxylate dehydrogenase
+  equation: (2) |M_WATER_c_None_| + |M_NAD_c_None_| + |M_P35C_c_None_| <=> |M_NADH_c_None_|
+    + |M_H_c_None_| + |M_E4HG_c_None_|
+  subsystem: Exchange
+- id: R_368
+  name: 1-pyrroline-5-carboxylate dehydrogenase
+  equation: (2) |M_WATER_c_None_| + |M_NADP_c_None_| + |M_P35C_c_None_| <=> |M_NADPH_c_None_|
+    + |M_H_c_None_| + |M_E4HG_c_None_|
+  subsystem: Exchange
+- id: R_369
+  name: 1-pyrroline-5-carboxylate dehydrogenase
+  equation: '|M_H_c_None_| + |M_NADH_c_None_| + |M_E4HG_c_None_| <=> |M_NAD_c_None_|
+    + |M_WATER_c_None_| + |M_L4HGSA_c_None_|'
+  subsystem: Exchange
+- id: R_37
+  name: Isocitrate dehydrogenase (NADP+)
+  equation: '|M_NADP_c_None_| + |M_THISOCIT_c_None_| <=> |M_CO2_c_None_| + |M_NADPH_c_None_|
+    + |M_AKG_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_370
+  name: 1-pyrroline-5-carboxylate dehydrogenase
+  equation: (2) |M_WATER_c_None_| + |M_P5C_c_None_| + |M_NAD_c_None_| <=> |M_NADH_c_None_|
+    + |M_GLT_c_None_| + |M_H_c_None_|
+  subsystem: Exchange
+- id: R_371
+  name: 1-pyrroline-5-carboxylate dehydrogenase
+  equation: '|M_WATER_c_None_| + |M_GGSALD_c_None_| + |M_NAD_c_None_| <=> |M_NADH_c_None_|
+    + |M_GLT_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_372
+  name: asparagine synthetase (glutamine-hydrolysing)
+  equation: '|M_ATP_c_None_| + |M_ASP_c_None_| + |M_GLN_c_None_| + |M_WATER_c_None_|
+    <=> |M_PPI_c_None_| + |M_AMP_c_None_| + |M_GLT_c_None_| + |M_ASN_c_None_|'
+  subsystem: Exchange
+- id: R_373
+  name: Methionine adenosyltransferase
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_MET_c_None_| <=> |M_SAMET_c_None_|
+    + |M_PI_c_None_| + |M_PPI_c_None_|'
+  subsystem: Exchange
+- id: R_374
+  name: Adenosylhomocysteinase
+  equation: '|M_AHOMOCYC_c_None_| + |M_WATER_c_None_| <=> |M_ADN_c_None_| + |M_HOMOCYC_c_None_|'
+  subsystem: Exchange
+- id: R_375
+  name: SAM-dependent methyltransferase
+  equation: '|M_SAMET_c_None_| + |M_CYTOSINE_c_None_| <=> |M_M5CSN_c_None_| + |M_AHOMOCYC_c_None_|'
+  subsystem: Exchange
+- id: R_376
+  name: 5-Methylcytosine aminohydrolase
+  equation: '|M_M5CSN_c_None_| + |M_WATER_c_None_| <=> |M_THYMINE_c_None_| + |M_NH3_c_None_|'
+  subsystem: Exchange
+- id: R_377
+  name: Spermidine synthase
+  equation: '|M_H_c_None_| + |M_SPERMINE_c_None_| + |M_MTADENOSINE_c_None_| <=> |M_SPERMIDINE_c_None_|
+    + |M_SAMETA_c_None_|'
+  subsystem: Exchange
+- id: R_378
+  name: methylthio-D-ribosyltransferase
+  equation: '|M_PI_c_None_| + |M_MTADENOSINE_c_None_| <=> |M_AD_c_None_| + |M_MTRP_c_None_|'
+  subsystem: Exchange
+- id: R_379
+  name: Spermidine synthase
+  equation: '|M_MTRP_c_None_| <=> |M_MTRIP_c_None_|'
+  subsystem: Exchange
+- id: R_38
+  name: Oxoglutarate dehydrogenase (lipoamide)
+  equation: '|M_AKG_c_None_| + |M_LIPOAMIDE_c_None_| <=> |M_SSUCDLIPOAMIDE_c_None_|
+    + |M_CO2_c_None_|'
+  subsystem: Exchange
+- id: R_380
+  name: L-serine ammonia-lyase
+  equation: '|M_SER_c_None_| <=> |M_NH3_c_None_| + |M_PYR_c_None_|'
+  subsystem: Exchange
+- id: R_381
+  name: alanine dehydrogenase
+  equation: '|M_WATER_c_None_| + |M_NAD_c_None_| + |M_ALA_c_None_| <=> |M_PYR_c_None_|
+    + |M_NH3_c_None_| + |M_NADH_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_382
+  name: Glutamate decarboxylase
+  equation: '|M_GLT_c_None_| <=> |M_GABA_c_None_| + |M_CO2_c_None_|'
+  subsystem: Exchange
+- id: R_383
+  name: 4-aminobutyrate aminotransferase
+  equation: '|M_AKG_c_None_| + |M_GABA_c_None_| <=> |M_GLT_c_None_| + |M_SUCCALD_c_None_|'
+  subsystem: Exchange
+- id: R_384
+  name: 4-aminobutyrate aminotransferase
+  equation: '|M_PYR_c_None_| + |M_GABA_c_None_| <=> |M_ALA_c_None_| + |M_SUCCALD_c_None_|'
+  subsystem: Exchange
+- id: R_385
+  name: Succinate-semialdehyde dehydrogenase (NAD(P)+)
+  equation: '|M_WATER_c_None_| + |M_NAD_c_None_| + |M_SUCCALD_c_None_| <=> |M_SUCC_c_None_|
+    + |M_NADH_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_386
+  name: Glycine C-acetyltransferase
+  equation: '|M_COA_c_None_| + |M_AOXOBUT_c_None_| <=> |M_GLY_c_None_| + |M_ACOA_c_None_|'
+  subsystem: Exchange
+- id: R_387
+  name: Dihydrolipoamide dehydrogenase
+  equation: '|M_NAD_c_None_| + |M_DDLGCVH_c_None_| <=> |M_NADH_c_None_| + |M_PLIPOYLLYSINE_c_None_|
+    + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_388
+  name: Glycine dehydrogenase (decarboxylating)
+  equation: '|M_GLY_c_None_| + |M_PLIPOYLLYSINE_c_None_| <=> |M_AMDLGCVH_c_None_|
+    + |M_CO2_c_None_|'
+  subsystem: Exchange
+- id: R_389
+  name: Aminomethyltransferase
+  equation: '|M_THF_c_None_| + |M_AMDLGCVH_c_None_| <=> |M_NH3_c_None_| + |M_DDLGCVH_c_None_|
+    + |M_METHTHF_c_None_|'
+  subsystem: Exchange
+- id: R_39
+  name: Dihydrolipoamide S-succinyltransferase
+  equation: '|M_COA_c_None_| + |M_SSUCDLIPOAMIDE_c_None_| <=> |M_SUCCOA_c_None_|
+    + |M_DHLAMIDE_c_None_|'
+  subsystem: Exchange
+- id: R_390
+  name: Aminomethyltransferase
+  equation: '|M_NAD_c_None_| + |M_THF_c_None_| + |M_GLY_c_None_| <=> |M_CO2_c_None_|
+    + |M_NH3_c_None_| + |M_METHTHF_c_None_| + |M_NADH_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_391
+  name: Dihydrolipoamide dehydrogenase
+  equation: '|M_DHLAMIDE_c_None_| + |M_NAD_c_None_| <=> |M_LIPOAMIDE_c_None_| + |M_NADH_c_None_|
+    + (2) |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_392
+  name: Histidine ammonia-lyase
+  equation: '|M_HIS_c_None_| <=> |M_NH3_c_None_| + |M_UROCANATE_c_None_|'
+  subsystem: Exchange
+- id: R_393
+  name: Urocanate hydratase
+  equation: '|M_UROCANATE_c_None_| + |M_WATER_c_None_| <=> |M_IMI5PROP_c_None_|'
+  subsystem: Exchange
+- id: R_394
+  name: Imidazolonepropionase
+  equation: '|M_IMI5PROP_c_None_| + |M_WATER_c_None_| <=> |M_NFORMIGLU_c_None_|'
+  subsystem: Exchange
+- id: R_395
+  name: formimidoylglutamase
+  equation: '|M_NFORMIGLU_c_None_| + |M_WATER_c_None_| <=> |M_GLT_c_None_| + |M_FORMAMIDE_c_None_|'
+  subsystem: Exchange
+- id: R_396
+  name: Cystathionine gamma-lyase
+  equation: '|M_CYS_c_None_| + |M_WATER_c_None_| <=> |M_PYR_c_None_| + |M_H2S_c_None_|
+    + |M_NH3_c_None_|'
+  subsystem: Exchange
+- id: R_397
+  name: lysine decarboxylase
+  equation: '|M_LYS_c_None_| <=> |M_CADA_c_None_| + |M_CO2_c_None_|'
+  subsystem: Exchange
+- id: R_398
+  name: cadaverine aminotransferase
+  equation: '|M_CADA_c_None_| + |M_AKG_c_None_| <=> |M_WATER_c_None_| + |M_PIPER_c_None_|
+    + |M_GLT_c_None_|'
+  subsystem: Exchange
+- id: R_399
+  name: piperideine dehydrogenase
+  equation: (2) |M_WATER_c_None_| + |M_NAD_c_None_| + |M_PIPER_c_None_| <=> |M_NADH_c_None_|
+    + |M_H_c_None_| + |M_AMINOVAL_c_None_|
+  subsystem: Exchange
+- id: R_4
+  name: Glucose-6-phosphate isomerase 1
+  equation: '|M_GLC6P_c_None_| <=> |M_F6P_c_None_|'
+  subsystem: Exchange
+- id: R_40
+  name: 2-oxoglutarate synthase
+  equation: (2) |M_FERI_c_None_| + |M_COA_c_None_| + |M_AKG_c_None_| <=> |M_CO2_c_None_|
+    + |M_SUCCOA_c_None_| + (2) |M_FERO_c_None_| + (2) |M_H_c_None_|
+  subsystem: Exchange
+- id: R_400
+  name: 5-aminovalerate transaminase
+  equation: '|M_AKG_c_None_| + |M_AMINOVAL_c_None_| <=> |M_GLT_c_None_| + |M_GLUTSEMI_c_None_|'
+  subsystem: Exchange
+- id: R_401
+  name: glutarate-semialdehyde dehydrogenase
+  equation: '|M_WATER_c_None_| + |M_GLUTSEMI_c_None_| + |M_NAD_c_None_| <=> |M_GLUT_c_None_|
+    + |M_H_c_None_| + |M_NADH_c_None_|'
+  subsystem: Exchange
+- id: R_402
+  name: glutarate:CoA ligase (ADP-forming)
+  equation: '|M_ATP_c_None_| + |M_GLUT_c_None_| + |M_COA_c_None_| <=> |M_GLUTCOA_c_None_|
+    + |M_PI_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_403
+  name: Oxoglutarate dehydrogenase (lipoamide)
+  equation: '|M_NAD_c_None_| + |M_COA_c_None_| + |M_OADIPATE_c_None_| <=> |M_CO2_c_None_|
+    + |M_GLUTCOA_c_None_| + |M_NADH_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_404
+  name: glutaryl-CoA dehydrogenase
+  equation: '|M_GLUTCOA_c_None_| + (2) |M_NAD_c_None_| <=> |M_CO2_c_None_| + |M_CROTCOA_c_None_|
+    + (2) |M_NADH_c_None_|'
+  subsystem: Exchange
+- id: R_405
+  name: Enoyl-CoA hydratase
+  equation: '|M_CROTCOA_c_None_| + |M_WATER_c_None_| <=> |M_H3BUTCOA_c_None_|'
+  subsystem: Exchange
+- id: R_406
+  name: 3-hydroxybutyryl-CoA dehydrogenase
+  equation: '|M_NAD_c_None_| + |M_H3BUTCOA_c_None_| <=> |M_H_c_None_| + |M_NADH_c_None_|
+    + |M_AACETYLCOA_c_None_|'
+  subsystem: Exchange
+- id: R_407
+  name: 3-hydroxybutyryl-CoA dehydrogenase
+  equation: '|M_NADP_c_None_| + |M_H3BUTCOA_c_None_| <=> |M_AACETYLCOA_c_None_| +
+    |M_H_c_None_| + |M_NADPH_c_None_|'
+  subsystem: Exchange
+- id: R_408
+  name: 3-hydroxybutyryl-CoA epimerase
+  equation: '|M_H3BUTCOA_c_None_| <=> |M_RH3BUTCOA_c_None_|'
+  subsystem: Exchange
+- id: R_409
+  name: 3-hydroxybutyrate dehydrogenase
+  equation: '|M_NAD_c_None_| + |M_RH3BUT_c_None_| <=> |M_H_c_None_| + |M_KBUT_c_None_|
+    + |M_NADH_c_None_|'
+  subsystem: Exchange
+- id: R_41
+  name: Succinate--CoA ligase (ADP-forming)
+  equation: '|M_SUCCOA_c_None_| + |M_PI_c_None_| + |M_ADP_c_None_| <=> |M_ATP_c_None_|
+    + |M_COA_c_None_| + |M_SUCC_c_None_|'
+  subsystem: Exchange
+- id: R_410
+  name: Acetoacetate--CoA ligase
+  equation: '|M_ATP_c_None_| + |M_COA_c_None_| + |M_KBUT_c_None_| <=> |M_PPI_c_None_|
+    + |M_AACETYLCOA_c_None_| + |M_AMP_c_None_|'
+  subsystem: Exchange
+- id: R_411
+  name: 3-oxoacid CoA-transferase scoA, scoB
+  equation: '|M_KBUT_c_None_| + |M_SUCCOA_c_None_| <=> |M_SUCC_c_None_| + |M_AACETYLCOA_c_None_|'
+  subsystem: Exchange
+- id: R_412
+  name: 3-methyl-2-oxobutanoate dehydrogenase (lipoamide)
+  equation: (2) |M_FERI_c_None_| + |M_KMVALERATE_c_None_| + |M_COA_c_None_| <=> |M_CO2_c_None_|
+    + |M_MB2COA_c_None_| + (2) |M_FERO_c_None_| + (2) |M_H_c_None_|
+  subsystem: Exchange
+- id: R_413
+  name: Butyryl-CoA dehydrogenase
+  equation: '|M_MK_c_None_| + |M_MB2COA_c_None_| <=> |M_TIGCOA_c_None_| + |M_MKH2_c_None_|'
+  subsystem: Exchange
+- id: R_414
+  name: Enoyl-CoA hydratase
+  equation: '|M_TIGCOA_c_None_| + |M_WATER_c_None_| <=> |M_MHBUTCOA_c_None_|'
+  subsystem: Exchange
+- id: R_415
+  name: 3-hydroxyacyl-CoA dehydrogenase
+  equation: '|M_NAD_c_None_| + |M_MHBUTCOA_c_None_| <=> |M_MAACOA_c_None_| + |M_H_c_None_|
+    + |M_NADH_c_None_|'
+  subsystem: Exchange
+- id: R_416
+  name: Acetyl-CoA C-acyltransferase
+  equation: '|M_COA_c_None_| + |M_MAACOA_c_None_| <=> |M_PROPIONYLCOA_c_None_| +
+    |M_ACOA_c_None_|'
+  subsystem: Exchange
+- id: R_417
+  name: Propionyl-CoA carboxylase
+  equation: '|M_ATP_c_None_| + |M_HCO3_c_None_| + |M_PROPIONYLCOA_c_None_| <=> |M_PI_c_None_|
+    + |M_SMMCOA_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_418
+  name: methylmalonyl-CoA epimerase
+  equation: '|M_SMMCOA_c_None_| <=> |M_MMCOA_c_None_|'
+  subsystem: Exchange
+- id: R_419
+  name: Methylmalonyl-CoA mutase
+  equation: '|M_MMCOA_c_None_| <=> |M_SUCCOA_c_None_|'
+  subsystem: Exchange
+- id: R_42
+  name: Succinate dehydrogenase
+  equation: '|M_FUM_c_None_| + |M_FADH2_c_None_| <=> |M_SUCC_c_None_| + |M_FAD_c_None_|'
+  subsystem: Exchange
+- id: R_420
+  name: 3-methyl-2-oxobutanoate dehydrogenase (lipoamide)
+  equation: (2) |M_FERI_c_None_| + |M_COA_c_None_| + |M_MPENTANOATE_c_None_| <=>
+    |M_CO2_c_None_| + |M_MB3COA_c_None_| + (2) |M_FERO_c_None_| + (2) |M_H_c_None_|
+  subsystem: Exchange
+- id: R_421
+  name: Butyryl-CoA dehydrogenase
+  equation: '|M_MK_c_None_| + |M_MB3COA_c_None_| <=> |M_MCROTCOA_c_None_| + |M_MKH2_c_None_|'
+  subsystem: Exchange
+- id: R_422
+  name: Enoyl-CoA hydratase
+  equation: '|M_MCROTCOA_c_None_| + |M_WATER_c_None_| <=> |M_ISOVALCOA_c_None_|'
+  subsystem: Exchange
+- id: R_423
+  name: Methylcrotonyl-CoA carboxylase
+  equation: '|M_ATP_c_None_| + |M_HCO3_c_None_| + |M_MCROTCOA_c_None_| <=> |M_PI_c_None_|
+    + |M_ADP_c_None_| + |M_T3METGLUCOA_c_None_|'
+  subsystem: Exchange
+- id: R_424
+  name: putative enoyl-CoA hydratase
+  equation: '|M_T3METGLUCOA_c_None_| + |M_WATER_c_None_| <=> |M_HMGCOA_c_None_|'
+  subsystem: Exchange
+- id: R_425
+  name: Hydroxymethylglutaryl-CoA lyase
+  equation: '|M_HMGCOA_c_None_| <=> |M_ACOA_c_None_| + |M_KBUT_c_None_|'
+  subsystem: Exchange
+- id: R_426
+  name: 3-methyl-2-oxobutanoate dehydrogenase (lipoamide)
+  equation: (2) |M_FERI_c_None_| + |M_COA_c_None_| + |M_KISOVALERATE_c_None_| <=>
+    |M_CO2_c_None_| + |M_ISOBUTCOA_c_None_| + |M_H_c_None_| + (2) |M_FERO_c_None_|
+  subsystem: Exchange
+- id: R_427
+  name: Butyryl-CoA dehydrogenase
+  equation: '|M_ISOBUTCOA_c_None_| + |M_MK_c_None_| <=> |M_MKH2_c_None_| + |M_MCCOA_c_None_|'
+  subsystem: Exchange
+- id: R_428
+  name: Enoyl-CoA hydratase
+  equation: '|M_MCCOA_c_None_| + |M_WATER_c_None_| <=> |M_HISOBUTCOA_c_None_|'
+  subsystem: Exchange
+- id: R_429
+  name: 3-hydroxyisobutyryl-CoA hydrolase
+  equation: '|M_WATER_c_None_| + |M_HISOBUTCOA_c_None_| <=> |M_COA_c_None_| + |M_HISOBUT_c_None_|'
+  subsystem: Exchange
+- id: R_43
+  name: Succinate dehydrogenase
+  equation: '|M_UBIQOL_c_None_| + |M_FUM_c_None_| <=> |M_UBIQON_c_None_| + |M_SUCC_c_None_|'
+  subsystem: Exchange
+- id: R_430
+  name: 3-hydroxyacyl-CoA dehydrogenase
+  equation: '|M_HISOBUT_c_None_| + |M_NAD_c_None_| <=> |M_MMALONATEALD_c_None_| +
+    |M_NADH_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_431
+  name: Methylmalonate-semialdehyde dehydrogenase (acylating)
+  equation: '|M_NAD_c_None_| + |M_COA_c_None_| + |M_MMALONATEALD_c_None_| <=> |M_CO2_c_None_|
+    + |M_PROPIONYLCOA_c_None_| + |M_NADH_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_432
+  name: Aldehyde dehydrogenase (NAD+)
+  equation: '|M_NAD_c_None_| + |M_MMALONATEALD_c_None_| + |M_WATER_c_None_| <=> |M_NADH_c_None_|
+    + |M_MMAL_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_433
+  name: Aldehyde dehydrogenase (NAD+)
+  equation: '|M_COA_c_None_| + |M_MMAL_c_None_| <=> |M_MMCOA_c_None_| + |M_WATER_c_None_|'
+  subsystem: Exchange
+- id: R_434
+  name: L-threonine 3-dehydrogenase
+  equation: '|M_THR_c_None_| + |M_NAD_c_None_| <=> |M_NADH_c_None_| + |M_AOXOBUT_c_None_|
+    + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_435
+  name: spontaneous
+  equation: '|M_AOXOBUT_c_None_| <=> |M_CO2_c_None_| + |M_AACETONE_c_None_|'
+  subsystem: Exchange
+- id: R_436
+  name: (R)-aminopropanol dehydrogenase
+  equation: '|M_AACETONE_c_None_| + |M_H_c_None_| + |M_NADH_c_None_| <=> |M_NAD_c_None_|
+    + |M_APROPANOL_c_None_|'
+  subsystem: Exchange
+- id: R_437
+  name: Ornithine decarboxylase
+  equation: '|M_ORN_c_None_| <=> |M_CO2_c_None_| + |M_PUTRESCINE_c_None_|'
+  subsystem: Exchange
+- id: R_438
+  name: Spermidine synthase
+  equation: '|M_PUTRESCINE_c_None_| + |M_SAMETA_c_None_| <=> |M_SPERMIDINE_c_None_|
+    + |M_H_c_None_| + |M_MTADENOSINE_c_None_|'
+  subsystem: Exchange
+- id: R_439
+  name: Adenosylmethionine decarboxylase
+  equation: '|M_SAMET_c_None_| + |M_H_c_None_| <=> |M_SAMETA_c_None_| + |M_CO2_c_None_|'
+  subsystem: Exchange
+- id: R_44
+  name: Fumarate hydratase
+  equation: '|M_WATER_c_None_| + |M_FUM_c_None_| <=> |M_MAL_c_None_|'
+  subsystem: Exchange
+- id: R_440
+  name: Diaminobutyrate--pyruvate aminotransferase
+  equation: '|M_ASPSALD_c_None_| + |M_ALA_c_None_| <=> |M_PYR_c_None_| + |M_LIBUTANOATE_c_None_|'
+  subsystem: Exchange
+- id: R_441
+  name: Diaminobutyrate--pyruvate aminotransferase
+  equation: '|M_GLT_c_None_| + |M_ASPSALD_c_None_| <=> |M_LIBUTANOATE_c_None_| +
+    |M_AKG_c_None_|'
+  subsystem: Exchange
+- id: R_442
+  name: acetyltransferase
+  equation: '|M_LIBUTANOATE_c_None_| + |M_ACOA_c_None_| <=> |M_NADBUT_c_None_| +
+    |M_COA_c_None_|'
+  subsystem: Exchange
+- id: R_443
+  name: L-ectoine synthase
+  equation: '|M_NADBUT_c_None_| <=> |M_ECTOINE_c_None_| + |M_WATER_c_None_|'
+  subsystem: Exchange
+- id: R_444
+  name: Aspartate kinase
+  equation: '|M_ATP_c_None_| + |M_ASP_c_None_| <=> |M_BASPARTYLP_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_445
+  name: Aspartate-semialdehyde dehydrogenase
+  equation: '|M_BASPARTYLP_c_None_| + |M_NADPH_c_None_| + |M_H_c_None_| <=> |M_NADP_c_None_|
+    + |M_PI_c_None_| + |M_ASPSALD_c_None_|'
+  subsystem: Exchange
+- id: R_446
+  name: Homoserine dehydrogenase
+  equation: '|M_NADPH_c_None_| + |M_H_c_None_| + |M_ASPSALD_c_None_| <=> |M_NADP_c_None_|
+    + |M_HOMOSER_c_None_|'
+  subsystem: Exchange
+- id: R_447
+  name: Glycerophosphodiester glycerophosphohydrolase
+  equation: '|M_G3PI_c_None_| + |M_WATER_c_None_| <=> |M_GL3P_c_None_| + |M_MYOINOSITOL_c_None_|'
+  subsystem: Exchange
+- id: R_448
+  name: Myo-inositol-1(or 4)-monophosphatase
+  equation: '|M_MINO1P_c_None_| + |M_WATER_c_None_| <=> |M_PI_c_None_| + |M_MYOINOSITOL_c_None_|'
+  subsystem: Exchange
+- id: R_449
+  name: Myo-inositol 2-dehydrogenase
+  equation: '|M_MYOINOSITOL_c_None_| + |M_NAD_c_None_| <=> |M_K2MINOSITOL_c_None_|
+    + |M_NADH_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_45
+  name: Malate dehydrogenase
+  equation: '|M_MAL_c_None_| + |M_NAD_c_None_| <=> |M_OXACET_c_None_| + |M_NADH_c_None_|
+    + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_450
+  name: myo-inositol catabolism protein IolE
+  equation: '|M_K2MINOSITOL_c_None_| <=> |M_WATER_c_None_| + |M_DKDI_c_None_|'
+  subsystem: Exchange
+- id: R_451
+  name: myo-inositol catabolism protein IolD
+  equation: '|M_DKDI_c_None_| + |M_WATER_c_None_| <=> |M_DGA_c_None_|'
+  subsystem: Exchange
+- id: R_452
+  name: myo-inositol catabolism protein IolB
+  equation: '|M_DGA_c_None_| <=> |M_DKH_c_None_|'
+  subsystem: Exchange
+- id: R_453
+  name: 5-dehydro-2-deoxygluconokinase
+  equation: '|M_ATP_c_None_| + |M_DKH_c_None_| <=> |M_DKHP_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_454
+  name: 2-Deoxy-5-keto-D-gluconic acid 6-phosphate Dihydroxyacetone phosphate lyase
+  equation: '|M_DKHP_c_None_| <=> |M_GAP_c_None_| + |M_MSALD_c_None_|'
+  subsystem: Exchange
+- id: R_455
+  name: methylmalonic acid semialdehyde dehydrogenase
+  equation: '|M_NAD_c_None_| + |M_COA_c_None_| + |M_MSALD_c_None_| <=> |M_CO2_c_None_|
+    + |M_ACOA_c_None_| + |M_H_c_None_| + |M_NADH_c_None_|'
+  subsystem: Exchange
+- id: R_456
+  name: Glucosamine--fructose-6-phosphate aminotransferase (isomerizing)
+  equation: '|M_GLN_c_None_| + |M_F6P_c_None_| <=> |M_GLT_c_None_| + |M_GA6P_c_None_|'
+  subsystem: Exchange
+- id: R_457
+  name: Glucosamine-6-phosphate isomerase
+  equation: '|M_GA6P_c_None_| + |M_WATER_c_None_| <=> |M_F6P_c_None_| + |M_NH3_c_None_|'
+  subsystem: Exchange
+- id: R_458
+  name: N-acetylglucosamine-6-phosphate deacetylase
+  equation: '|M_WATER_c_None_| + |M_NADGLUCOSA6P_c_None_| <=> |M_AC_c_None_| + |M_GA6P_c_None_|'
+  subsystem: Exchange
+- id: R_459
+  name: phosphoglucosamine mutase
+  equation: '|M_GA6P_c_None_| <=> |M_GLUCOSAMINE1P_c_None_|'
+  subsystem: Exchange
+- id: R_46
+  name: D-glucose dehydrogenase (NAD(P)+)
+  equation: '|M_GLC_c_None_| + |M_NAD_c_None_| <=> |M_NADH_c_None_| + |M_GLCLAC_c_None_|'
+  subsystem: Exchange
+- id: R_460
+  name: Glucosamine-1-phosphate N-acetyltransferase
+  equation: '|M_GLUCOSAMINE1P_c_None_| + |M_ACOA_c_None_| <=> |M_NADGLUCOSA1P_c_None_|
+    + |M_COA_c_None_|'
+  subsystem: Exchange
+- id: R_461
+  name: UDP-N-acetylglucosamine pyrophosphorylase
+  equation: '|M_NADGLUCOSA1P_c_None_| + |M_UTP_c_None_| <=> |M_PPI_c_None_| + |M_UDPNAG_c_None_|'
+  subsystem: Exchange
+- id: R_462
+  name: UDP-N-acetylglucosamine 1-carboxyvinyltransferase
+  equation: '|M_PEP_c_None_| + |M_UDPNAG_c_None_| <=> |M_PI_c_None_| + |M_UDPACCVGLUCOS_c_None_|'
+  subsystem: Exchange
+- id: R_463
+  name: UDP-N-acetylmuramate dehydrogenase
+  equation: '|M_UDPACCVGLUCOS_c_None_| + |M_NADPH_c_None_| + |M_H_c_None_| <=> |M_UDPNAM_c_None_|
+    + |M_NADP_c_None_|'
+  subsystem: Exchange
+- id: R_464
+  name: UDP-N-acetylmuramate--alanine ligase
+  equation: '|M_ATP_c_None_| + |M_UDPNAM_c_None_| + |M_ALA_c_None_| <=> |M_PI_c_None_|
+    + |M_ADP_c_None_| + |M_UDPACMURALA_c_None_|'
+  subsystem: Exchange
+- id: R_465
+  name: Glutamate racemase
+  equation: '|M_GLT_c_None_| <=> |M_GLU_c_None_|'
+  subsystem: Exchange
+- id: R_466
+  name: UDP-N-acetylmuramoylalanine--D-glutamate ligase
+  equation: '|M_ATP_c_None_| + |M_UDPACMURALA_c_None_| + |M_GLT_c_None_| <=> |M_UDPAAGLU_c_None_|
+    + |M_PI_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_467
+  name: UDP-N-acetylmuramoylalanyl-D-glutamate--2,6-diaminopimelate ligase
+  equation: '|M_ATP_c_None_| + |M_UDPAAGLU_c_None_| + |M_MDAPIM_c_None_| <=> |M_PI_c_None_|
+    + |M_ADP_c_None_| + |M_H_c_None_| + |M_UDPAAGMDHDIOATE_c_None_|'
+  subsystem: Exchange
+- id: R_468
+  name: Alanine racemase
+  equation: '|M_DALA_c_None_| <=> |M_ALA_c_None_|'
+  subsystem: Exchange
+- id: R_469
+  name: D-alanine--D-alanine ligase
+  equation: '|M_ATP_c_None_| + (2) |M_DALA_c_None_| <=> |M_ALAALA_c_None_| + |M_ADP_c_None_|
+    + |M_PI_c_None_|'
+  subsystem: Exchange
+- id: R_47
+  name: 'cytochrome bd oxidase  '
+  equation: (0.5) |M_O2_c_None_| + |M_MKH2_c_None_| + (4) |M_H_c_None_| <=> |M_MK_c_None_|
+    + (4) |M_H_e_None_| + |M_WATER_c_None_|
+  subsystem: Exchange
+- id: R_470
+  name: Pantothenate kinase
+  equation: '|M_ATP_c_None_| + |M_PANT_c_None_| <=> |M_PANTOTHENP_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_471
+  name: Phosphopantothenate--cysteine ligase
+  equation: '|M_CYS_c_None_| + |M_CTP_c_None_| + |M_PANTOTHENP_c_None_| <=> |M_R4PPTCYC_c_None_|
+    + |M_PPI_c_None_| + |M_CMP_c_None_|'
+  subsystem: Exchange
+- id: R_472
+  name: Phosphopantothenoylcysteine decarboxylase
+  equation: '|M_R4PPTCYC_c_None_| <=> |M_CO2_c_None_| + |M_PANTP_c_None_|'
+  subsystem: Exchange
+- id: R_473
+  name: Pantetheine-phosphate adenylyltransferase
+  equation: '|M_ATP_c_None_| + |M_PANTP_c_None_| <=> |M_DPCOA_c_None_| + |M_PPI_c_None_|'
+  subsystem: Exchange
+- id: R_474
+  name: Dephospho-CoA kinase
+  equation: '|M_ATP_c_None_| + |M_DPCOA_c_None_| <=> |M_COA_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_475
+  name: Holo-[acyl-carrier protein] synthase
+  equation: '|M_COA_c_None_| <=> |M_PAP_c_None_| + |M_ACP_c_None_|'
+  subsystem: Exchange
+- id: R_476
+  name: 3',5'-bisphosphate nucleotidase
+  equation: '|M_PAP_c_None_| + |M_WATER_c_None_| <=> |M_AMP_c_None_| + |M_PI_c_None_|'
+  subsystem: Exchange
+- id: R_477
+  name: nicotinamidase
+  equation: '|M_NICOTINAMIDE_c_None_| + |M_WATER_c_None_| <=> |M_NH3_c_None_| + |M_NAC_c_None_|'
+  subsystem: Exchange
+- id: R_478
+  name: Purine-nucleoside phosphorylase
+  equation: '|M_NAC_c_None_| + |M_R1P_c_None_| <=> |M_NTNUCS_c_None_| + |M_PI_c_None_|'
+  subsystem: Exchange
+- id: R_479
+  name: Nicotinate phosphoribosyltransferase
+  equation: '|M_PRPP_c_None_| + |M_NAC_c_None_| <=> |M_PPI_c_None_| + |M_NTNUC_c_None_|'
+  subsystem: Exchange
+- id: R_48
+  name: 'cytochrome bc1-aa3 supercomplex  '
+  equation: (0.5) |M_O2_c_None_| + |M_MKH2_c_None_| + (2) |M_H_c_None_| <=> |M_MK_c_None_|
+    + (2) |M_H_e_None_| + |M_WATER_c_None_|
+  subsystem: Exchange
+- id: R_480
+  name: Nicotinate D-ribonucleotide phosphohydrolase
+  equation: '|M_NTNUCS_c_None_| + |M_PI_c_None_| <=> |M_WATER_c_None_| + |M_NTNUC_c_None_|'
+  subsystem: Exchange
+- id: R_481
+  name: Deamino-NAD+ nucleotidohydrolase
+  equation: '|M_DEAMIDONAD_c_None_| + |M_WATER_c_None_| <=> |M_AMP_c_None_| + |M_NTNUC_c_None_|'
+  subsystem: Exchange
+- id: R_482
+  name: Nicotinate-nucleotide adenylyltransferase
+  equation: '|M_ATP_c_None_| + |M_NTNUC_c_None_| <=> |M_PPI_c_None_| + |M_DEAMIDONAD_c_None_|'
+  subsystem: Exchange
+- id: R_483
+  name: Nicotinate-nucleotide pyrophosphorylase (carboxylating)
+  equation: '|M_PRPP_c_None_| + |M_QUINOLINATE_c_None_| + |M_H_c_None_| <=> |M_CO2_c_None_|
+    + |M_PPI_c_None_| + |M_NTNUC_c_None_|'
+  subsystem: Exchange
+- id: R_484
+  name: quinolinate synthetase
+  equation: '|M_DHAP_c_None_| + |M_IMINOASPARTATE_c_None_| <=> |M_QUINOLINATE_c_None_|
+    + |M_PI_c_None_| + (2) |M_WATER_c_None_|'
+  subsystem: Exchange
+- id: R_485
+  name: L-aspartate oxidase
+  equation: '|M_ASP_c_None_| + |M_FAD_c_None_| <=> |M_IMINOASPARTATE_c_None_| + |M_FADH2_c_None_|'
+  subsystem: Exchange
+- id: R_486
+  name: L-aspartate oxidase
+  equation: '|M_ASP_c_None_| + |M_O2_c_None_| <=> |M_H2O2_c_None_| + |M_IMINOASPARTATE_c_None_|'
+  subsystem: Exchange
+- id: R_487
+  name: L-aspartate oxidase
+  equation: '|M_UBIQON_c_None_| + |M_ASP_c_None_| <=> |M_UBIQOL_c_None_| + |M_IMINOASPARTATE_c_None_|'
+  subsystem: Exchange
+- id: R_488
+  name: L-aspartate oxidase
+  equation: '|M_MK_c_None_| + |M_ASP_c_None_| <=> |M_IMINOASPARTATE_c_None_| + |M_MKH2_c_None_|'
+  subsystem: Exchange
+- id: R_489
+  name: NAD(+) synthetase (glutamine-hydrolysing)
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_DEAMIDONAD_c_None_| + |M_GLN_c_None_|
+    <=> |M_AMP_c_None_| + |M_PPI_c_None_| + |M_GLT_c_None_| + |M_NAD_c_None_|'
+  subsystem: Exchange
+- id: R_49
+  name: Gluconolactonase
+  equation: '|M_GLCLAC_c_None_| + |M_WATER_c_None_| <=> |M_GLUC_c_None_|'
+  subsystem: Exchange
+- id: R_490
+  name: NAD+ diphosphatase
+  equation: '|M_NAD_c_None_| + |M_WATER_c_None_| <=> |M_NMN_c_None_| + |M_AMP_c_None_|'
+  subsystem: Exchange
+- id: R_491
+  name: Nicotinate-nucleotide adenylyltransferase
+  equation: '|M_ATP_c_None_| + |M_NMN_c_None_| + |M_H_c_None_| <=> |M_NAD_c_None_|
+    + |M_PPI_c_None_|'
+  subsystem: Exchange
+- id: R_492
+  name: Adenosine kinase
+  equation: '|M_RNICOT_c_None_| + |M_PI_c_None_| <=> |M_WATER_c_None_| + |M_NMN_c_None_|'
+  subsystem: Exchange
+- id: R_493
+  name: Purine-nucleoside phosphorylase
+  equation: '|M_NICOTINAMIDE_c_None_| + |M_R1P_c_None_| <=> |M_RNICOT_c_None_| +
+    |M_PI_c_None_|'
+  subsystem: Exchange
+- id: R_494
+  name: NAD(P) transhydrogenase
+  equation: '|M_NADPH_c_None_| + |M_NAD_c_None_| <=> |M_NADP_c_None_| + |M_NADH_c_None_|'
+  subsystem: Exchange
+- id: R_495
+  name: NAD kinase
+  equation: '|M_ATP_c_None_| + |M_NAD_c_None_| <=> |M_NADP_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_496
+  name: NADH dehydrogenase (ubiquinone)
+  equation: '|M_NADH_c_None_| + |M_H_c_None_| + |M_UBIQON_c_None_| <=> |M_UBIQOL_c_None_|
+    + |M_NAD_c_None_|'
+  subsystem: Exchange
+- id: R_497
+  name: thioredoxin reductase (NADPH)
+  equation: '|M_OXTHIOREDOXIN_c_None_| + |M_NADPH_c_None_| + |M_H_c_None_| <=> |M_RThioredoxin_c_None_|
+    + |M_NADP_c_None_|'
+  subsystem: Exchange
+- id: R_498
+  name: 8-amino-7-oxononanoate synthase
+  equation: '|M_ALA_c_None_| + |M_CHEXANOYLCOA_c_None_| <=> |M_A8OXO7NONANOATE_c_None_|
+    + |M_COA_c_None_| + |M_CO2_c_None_|'
+  subsystem: Exchange
+- id: R_499
+  name: Adenosylmethionine--8-amino-7-oxononanoate aminotransferase
+  equation: '|M_A8OXO7NONANOATE_c_None_| + |M_SAMET_c_None_| <=> |M_SA4M2OXBUTANOATE_c_None_|
+    + |M_DIAMINONONANOATE_c_None_|'
+  subsystem: Exchange
+- id: R_5
+  name: Glucose-6-phosphate isomerase 2
+  equation: '|M_bGLC6P_c_None_| <=> |M_GLC6P_c_None_|'
+  subsystem: Exchange
+- id: R_50
+  name: Gluconokinase
+  equation: '|M_ATP_c_None_| + |M_GLUC_c_None_| <=> |M_P6GLUCONATE_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_500
+  name: dethiobiotin synthetase
+  equation: '|M_ATP_c_None_| + |M_CO2_c_None_| + |M_DIAMINONONANOATE_c_None_| <=>
+    |M_PI_c_None_| + |M_ADP_c_None_| + |M_DETHIOBIOTIN_c_None_|'
+  subsystem: Exchange
+- id: R_501
+  name: biotin synthase
+  equation: (2) |M_SAMET_c_None_| + |M_S_c_None_| + |M_DETHIOBIOTIN_c_None_| <=>
+    (2) |M_CH33ADO_c_None_| + (2) |M_MET_c_None_| + |M_BIOTIN_c_None_|
+  subsystem: Exchange
+- id: R_502
+  name: biotin-[acetyl-CoA carboxylase] synthetase
+  equation: '|M_BIOTIN_c_None_| + |M_ATP_c_None_| <=> |M_B5AMP_c_None_| + |M_PPI_c_None_|'
+  subsystem: Exchange
+- id: R_503
+  name: biotin-[acetyl-CoA carboxylase] synthetase
+  equation: '|M_B5AMP_c_None_| + |M_ACARB_c_None_| <=> |M_AMP_c_None_| + |M_BCCP_c_None_|'
+  subsystem: Exchange
+- id: R_504
+  name: biotin-carboxyl-carrier-protein:carbon-dioxide ligase (ADP-forming)
+  equation: '|M_ATP_c_None_| + |M_HCO3_c_None_| + |M_BCCP_c_None_| <=> |M_PI_c_None_|
+    + |M_CCCP_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_505
+  name: GTP cyclohydrolase I
+  equation: '|M_GTP_c_None_| + |M_WATER_c_None_| <=> |M_FPNTP_c_None_|'
+  subsystem: Exchange
+- id: R_506
+  name: GTP cyclohydrolase I
+  equation: '|M_FPNTP_c_None_| + |M_WATER_c_None_| <=> |M_DPNTP_c_None_| + |M_FOR_c_None_|'
+  subsystem: Exchange
+- id: R_507
+  name: GTP cyclohydrolase I
+  equation: '|M_DPNTP_c_None_| <=> |M_DTTOAO_c_None_|'
+  subsystem: Exchange
+- id: R_508
+  name: GTP cyclohydrolase I
+  equation: '|M_DTTOAO_c_None_| <=> |M_WATER_c_None_| + |M_DNPTERINP3_c_None_|'
+  subsystem: Exchange
+- id: R_509
+  name: ATP-dependent DNA helicase
+  equation: '|M_DNPTERINP3_c_None_| + |M_WATER_c_None_| <=> |M_DNPTERINP_c_None_|
+    + |M_PI_c_None_|'
+  subsystem: Exchange
+- id: R_51
+  name: L-ribulose-5-phosphate 4-epimerase
+  equation: '|M_LRIBULOSE5P_c_None_| <=> |M_XYL5P_c_None_|'
+  subsystem: Exchange
+- id: R_510
+  name: ATP-dependent DNA helicase
+  equation: '|M_DNPTERINP_c_None_| + |M_WATER_c_None_| <=> |M_DNPTERIN_c_None_| +
+    |M_PI_c_None_|'
+  subsystem: Exchange
+- id: R_511
+  name: alkaline phosphatase
+  equation: '|M_DNPTERINP3_c_None_| + (3) |M_WATER_c_None_| <=> |M_DNPTERIN_c_None_|
+    + (3) |M_PI_c_None_|'
+  subsystem: Exchange
+- id: R_512
+  name: Dihydroneopterin aldolase
+  equation: '|M_DNPTERIN_c_None_| <=> |M_GLYCOLALD_c_None_| + |M_AHMDPTERIDINE_c_None_|'
+  subsystem: Exchange
+- id: R_513
+  name: 2-amino-4-hydroxy-6-hydroxymethyldihydropteridine pyrophosphokinase
+  equation: '|M_ATP_c_None_| + |M_AHMDPTERIDINE_c_None_| <=> |M_AMP_c_None_| + |M_DPTERINPP_c_None_|'
+  subsystem: Exchange
+- id: R_514
+  name: Aminodeoxychorismate synthase
+  equation: '|M_GLN_c_None_| + |M_CHORISMATE_c_None_| <=> |M_GLT_c_None_| + |M_ADCHOR_c_None_|'
+  subsystem: Exchange
+- id: R_515
+  name: Aminodeoxychorismate lyase
+  equation: '|M_ADCHOR_c_None_| <=> |M_PABENZOATE_c_None_| + |M_PYR_c_None_|'
+  subsystem: Exchange
+- id: R_516
+  name: Dihydropteroate synthase
+  equation: '|M_PABENZOATE_c_None_| + |M_DPTERINPP_c_None_| <=> |M_PPI_c_None_| +
+    |M_DIHTDROPTEROATE_c_None_|'
+  subsystem: Exchange
+- id: R_517
+  name: Dihydropteroate synthase
+  equation: '|M_AHMDPTERIDINE_c_None_| + |M_PABENZOATE_c_None_| <=> |M_WATER_c_None_|
+    + |M_DIHTDROPTEROATE_c_None_|'
+  subsystem: Exchange
+- id: R_518
+  name: dihydrofolate synthetase
+  equation: '|M_ATP_c_None_| + |M_DIHTDROPTEROATE_c_None_| + |M_GLT_c_None_| <=>
+    |M_DHFOL_c_None_| + |M_PI_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_519
+  name: Dihydrofolate reductase
+  equation: '|M_NADPH_c_None_| + |M_H_c_None_| + |M_DHFOL_c_None_| <=> |M_THF_c_None_|
+    + |M_NADP_c_None_|'
+  subsystem: Exchange
+- id: R_52
+  name: ribulose phosphate 3-epimerase
+  equation: '|M_XYL5P_c_None_| <=> |M_RIBUL1P_c_None_|'
+  subsystem: Exchange
+- id: R_520
+  name: tetrahydrofolate synthase
+  equation: '|M_ATP_c_None_| + |M_THF_c_None_| + |M_GLT_c_None_| <=> |M_PI_c_None_|
+    + |M_ADP_c_None_| + |M_H_c_None_| + |M_THFGLU_c_None_|'
+  subsystem: Exchange
+- id: R_521
+  name: Methenyltetrahydrofolate cyclohydrolase
+  equation: '|M_WATER_c_None_| + |M_METHENYLTHF_c_None_| <=> |M_F10THF_c_None_| +
+    |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_522
+  name: Methylenetetrahydrofolate dehydrogenase (NADP+)
+  equation: '|M_NADP_c_None_| + |M_METHTHF_c_None_| <=> |M_METHENYLTHF_c_None_| +
+    |M_NADPH_c_None_|'
+  subsystem: Exchange
+- id: R_523
+  name: Aminomethyltransferase
+  equation: '|M_F10THF_c_None_| + |M_WATER_c_None_| <=> |M_F5THF_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_524
+  name: Aminomethyltransferase
+  equation: '|M_WATER_c_None_| + |M_METHENYLTHF_c_None_| <=> |M_F5THF_c_None_| +
+    |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_525
+  name: Methylenetetrahydrofolate reductase (NADPH)
+  equation: '|M_METHTHF_c_None_| + |M_NADPH_c_None_| + |M_H_c_None_| <=> |M_MTHF_c_None_|
+    + |M_NADP_c_None_|'
+  subsystem: Exchange
+- id: R_526
+  name: Formyltetrahydrofolate deformylase
+  equation: '|M_F10THF_c_None_| + |M_WATER_c_None_| <=> |M_THF_c_None_| + |M_FOR_c_None_|'
+  subsystem: Exchange
+- id: R_527
+  name: Phosphoribosylglycinamide formyltransferase
+  equation: '|M_PRGLYCINEAMIDE_c_None_| + |M_F10THF_c_None_| <=> |M_RFGLYCINEAMIDEP_c_None_|
+    + |M_THF_c_None_|'
+  subsystem: Exchange
+- id: R_528
+  name: 3,4-dihydroxy-2-butanone 4-phosphate synthase
+  equation: '|M_RIBUL1P_c_None_| <=> |M_HBUTP_c_None_| + |M_FOR_c_None_|'
+  subsystem: Exchange
+- id: R_529
+  name: GTP cyclohydrolase II
+  equation: (3) |M_WATER_c_None_| + |M_GTP_c_None_| <=> |M_PPI_c_None_| + |M_DPRAPYR_c_None_|
+    + |M_FOR_c_None_|
+  subsystem: Exchange
+- id: R_53
+  name: ribokinase
+  equation: '|M_ATP_c_None_| + |M_RIB_c_None_| <=> |M_R5P_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_530
+  name: diaminohydroxyphosphoribosylaminopyrimidine deaminase
+  equation: '|M_DPRAPYR_c_None_| + |M_WATER_c_None_| <=> |M_A6PRsylAU_c_None_| +
+    |M_NH3_c_None_|'
+  subsystem: Exchange
+- id: R_531
+  name: 5-amino-6-(5-phosphoribosylamino)uracil reductase
+  equation: '|M_A6PRsylAU_c_None_| + |M_NADPH_c_None_| + |M_H_c_None_| <=> |M_A6PRtylAU_c_None_|
+    + |M_NADP_c_None_|'
+  subsystem: Exchange
+- id: R_532
+  name: phosphatase
+  equation: '|M_A6PRtylAU_c_None_| + |M_WATER_c_None_| <=> |M_PI_c_None_| + |M_ARA1H3HPYRDIONE_c_None_|'
+  subsystem: Exchange
+- id: R_533
+  name: Riboflavin synthase
+  equation: '|M_ARA1H3HPYRDIONE_c_None_| + |M_HBUTP_c_None_| <=> |M_PI_c_None_| +
+    |M_DRLUMAZINE_c_None_| + (2) |M_WATER_c_None_|'
+  subsystem: Exchange
+- id: R_534
+  name: Riboflavin synthase
+  equation: (2) |M_DRLUMAZINE_c_None_| <=> |M_ARA1H3HPYRDIONE_c_None_| + |M_RIBOFLAVIN_c_None_|
+  subsystem: Exchange
+- id: R_535
+  name: Riboflavin kinase
+  equation: '|M_ATP_c_None_| + |M_RIBOFLAVIN_c_None_| <=> |M_ADP_c_None_| + |M_FMN_c_None_|'
+  subsystem: Exchange
+- id: R_536
+  name: FMN adenylyltransferase
+  equation: '|M_ATP_c_None_| + |M_FMN_c_None_| <=> |M_FAD_c_None_| + |M_PPI_c_None_|'
+  subsystem: Exchange
+- id: R_537
+  name: glycerol-3-phosphate O-acyltransferase
+  equation: (0.294) |M_C150ACP_c_None_| + (0.262) |M_C160ACP_c_None_| + |M_GL3P_c_None_|
+    + (0.293) |M_C170ACP_c_None_| + (0.057) |M_C181ACP_c_None_| + (0.094) |M_C140ACP_c_None_|
+    <=> |M_ACP_c_None_| + |M_AGL3P_c_None_|
+  subsystem: Exchange
+- id: R_538
+  name: glycerone-phosphate O-acyltransferase
+  equation: (0.294) |M_C150ACP_c_None_| + (0.262) |M_C160ACP_c_None_| + (0.057) |M_C181ACP_c_None_|
+    + (0.293) |M_C170ACP_c_None_| + |M_DHAP_c_None_| + (0.094) |M_C140ACP_c_None_|
+    <=> |M_ACP_c_None_| + |M_ADHAP_c_None_|
+  subsystem: Exchange
+- id: R_539
+  name: acylglycerone-phosphate reductase
+  equation: '|M_ADHAP_c_None_| + |M_NADPH_c_None_| + |M_H_c_None_| <=> |M_AGL3P_c_None_|
+    + |M_NADP_c_None_|'
+  subsystem: Exchange
+- id: R_54
+  name: Ribokinase
+  equation: '|M_ATP_c_None_| + |M_DRIB_c_None_| <=> |M_DR5P_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_540
+  name: Glycerol-3-phosphate dehydrogenase (NAD(P)+)
+  equation: '|M_NADPH_c_None_| + |M_H_c_None_| + |M_DHAP_c_None_| <=> |M_NADP_c_None_|
+    + |M_GL3P_c_None_|'
+  subsystem: Exchange
+- id: R_541
+  name: 1-acylglycerol-3-phosphate O-acyltransferase
+  equation: (0.294) |M_C150ACP_c_None_| + (0.293) |M_C170ACP_c_None_| + (0.262) |M_C160ACP_c_None_|
+    + |M_AGL3P_c_None_| + (0.057) |M_C181ACP_c_None_| + (0.094) |M_C140ACP_c_None_|
+    <=> |M_ACP_c_None_| + |M_PHOSPHATIDATE_c_None_|
+  subsystem: Exchange
+- id: R_542
+  name: phosphatidate cytidylyltransferase
+  equation: '|M_CTP_c_None_| + |M_PHOSPHATIDATE_c_None_| <=> |M_PPI_c_None_| + |M_CDPDIACYLGLYCEROL_c_None_|'
+  subsystem: Exchange
+- id: R_543
+  name: CDP-diacylglycerol--serine O-phosphatidyltransferase
+  equation: '|M_SER_c_None_| + |M_CDPDIACYLGLYCEROL_c_None_| <=> |M_CMP_c_None_|
+    + |M_PSER_c_None_|'
+  subsystem: Exchange
+- id: R_544
+  name: Phosphatidylserine decarboxylase
+  equation: '|M_PSER_c_None_| <=> |M_CO2_c_None_| + |M_PE_c_None_|'
+  subsystem: Exchange
+- id: R_545
+  name: CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltransferase
+  equation: '|M_CDPDIACYLGLYCEROL_c_None_| + |M_GL3P_c_None_| <=> |M_CMP_c_None_|
+    + |M_PGP_c_None_|'
+  subsystem: Exchange
+- id: R_546
+  name: Phosphatidylglycerophosphatase
+  equation: '|M_PGP_c_None_| + |M_WATER_c_None_| <=> |M_PG_c_None_| + |M_PI_c_None_|'
+  subsystem: Exchange
+- id: R_547
+  name: cardiolipin synthase
+  equation: (2) |M_PG_c_None_| <=> |M_CDL_c_None_| + |M_GL_c_None_|
+  subsystem: Exchange
+- id: R_548
+  name: 2-dehydro-3-deoxyphosphoheptonate aldolase
+  equation: '|M_WATER_c_None_| + |M_PEP_c_None_| + |M_ERY4P_c_None_| <=> |M_PI_c_None_|
+    + |M_DAHP_c_None_|'
+  subsystem: Exchange
+- id: R_549
+  name: 3-dehydroquinate synthase
+  equation: '|M_DAHP_c_None_| <=> |M_DQUINATE_c_None_| + |M_PI_c_None_|'
+  subsystem: Exchange
+- id: R_55
+  name: Deoxyribose-phosphate aldolase
+  equation: '|M_DR5P_c_None_| <=> |M_ACAL_c_None_| + |M_GAP_c_None_|'
+  subsystem: Exchange
+- id: R_550
+  name: 3-dehydroquinate dehydratase
+  equation: '|M_DQUINATE_c_None_| <=> |M_WATER_c_None_| + |M_DSHIK_c_None_|'
+  subsystem: Exchange
+- id: R_551
+  name: Shikimate 5-dehydrogenase
+  equation: '|M_NADPH_c_None_| + |M_H_c_None_| + |M_DSHIK_c_None_| <=> |M_SHIKIMATE_c_None_|
+    + |M_NADP_c_None_|'
+  subsystem: Exchange
+- id: R_552
+  name: shikimate-kinase
+  equation: '|M_ATP_c_None_| + |M_SHIKIMATE_c_None_| <=> |M_SHIKIMATE5P_c_None_|
+    + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_553
+  name: 3-phosphoshikimate 1-carboxyvinyltransferase
+  equation: '|M_PEP_c_None_| + |M_SHIKIMATE5P_c_None_| <=> |M_EPSHIKP_c_None_| +
+    |M_PI_c_None_|'
+  subsystem: Exchange
+- id: R_554
+  name: Chorismate synthase
+  equation: '|M_EPSHIKP_c_None_| <=> |M_CHORISMATE_c_None_| + |M_PI_c_None_|'
+  subsystem: Exchange
+- id: R_555
+  name: hydroxypyruvate isomerase
+  equation: '|M_HYDROXYPYRUVATE_c_None_| <=> |M_TARTALD_c_None_|'
+  subsystem: Exchange
+- id: R_556
+  name: Tartronate-semialdehyde synthase
+  equation: (2) |M_GLYOX_c_None_| <=> |M_TARTALD_c_None_| + |M_CO2_c_None_|
+  subsystem: Exchange
+- id: R_557
+  name: 2-hydroxy-3-oxopropionate reductase
+  equation: '|M_H_c_None_| + |M_NADPH_c_None_| + |M_TARTALD_c_None_| <=> |M_DGLYCERATE_c_None_|
+    + |M_NADP_c_None_|'
+  subsystem: Exchange
+- id: R_558
+  name: Phosphate acetyltransferase
+  equation: '|M_PI_c_None_| + |M_ACOA_c_None_| <=> |M_COA_c_None_| + |M_ACETYLEP_c_None_|'
+  subsystem: Exchange
+- id: R_559
+  name: Acetate kinase
+  equation: '|M_ADP_c_None_| + |M_ACETYLEP_c_None_| <=> |M_ATP_c_None_| + |M_AC_c_None_|'
+  subsystem: Exchange
+- id: R_56
+  name: Phosphoglucomutase dr1p
+  equation: '|M_DR1P_c_None_| <=> |M_R5P_c_None_|'
+  subsystem: Exchange
+- id: R_560
+  name: Acylphosphatase
+  equation: '|M_AC_c_None_| + |M_PI_c_None_| <=> |M_WATER_c_None_| + |M_ACETYLEP_c_None_|'
+  subsystem: Exchange
+- id: R_561
+  name: pyruvate dehydrogenase (acetyl-transferring)
+  equation: '|M_PYR_c_None_| + |M_LIPOAMIDE_c_None_| <=> |M_ADLIPO_c_None_| + |M_CO2_c_None_|'
+  subsystem: Exchange
+- id: R_562
+  name: dihydrolipoyllysine-residue acetyltransferase
+  equation: '|M_COA_c_None_| + |M_ADLIPO_c_None_| <=> |M_DHLAMIDE_c_None_| + |M_ACOA_c_None_|'
+  subsystem: Exchange
+- id: R_563
+  name: Catalase
+  equation: (2) |M_H2O2_c_None_| <=> (2) |M_WATER_c_None_| + |M_O2_c_None_|
+  subsystem: Exchange
+- id: R_564
+  name: Superoxide dismutase
+  equation: (2) |M_SUPEROXIDE_c_None_| + (2) |M_H_c_None_| <=> |M_H2O2_c_None_| +
+    |M_O2_c_None_|
+  subsystem: Exchange
+- id: R_565
+  name: glycolaldehyde dehydrogenase
+  equation: '|M_WATER_c_None_| + |M_GLYCOLALD_c_None_| + |M_NAD_c_None_| <=> |M_GLYCOLATE_c_None_|
+    + |M_NADH_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_566
+  name: (S)-2-hydroxy-acid oxidase
+  equation: '|M_UBIQON_c_None_| + |M_GLYCOLATE_c_None_| <=> |M_UBIQOL_c_None_| +
+    |M_GLYOX_c_None_|'
+  subsystem: Exchange
+- id: R_567
+  name: (S)-2-hydroxy-acid oxidase
+  equation: '|M_GLYCOLATE_c_None_| + |M_MK_c_None_| <=> |M_MKH2_c_None_| + |M_GLYOX_c_None_|'
+  subsystem: Exchange
+- id: R_568
+  name: (S)-2-hydroxy-acid oxidase
+  equation: '|M_GLYCOLATE_c_None_| + |M_O2_c_None_| <=> |M_H2O2_c_None_| + |M_GLYOX_c_None_|'
+  subsystem: Exchange
+- id: R_569
+  name: catalase
+  equation: '|M_ETH_c_None_| + |M_H2O2_c_None_| <=> |M_ACAL_c_None_| + (2) |M_WATER_c_None_|'
+  subsystem: Exchange
+- id: R_57
+  name: Phosphoglucomutase r1p
+  equation: '|M_R1P_c_None_| <=> |M_R5P_c_None_|'
+  subsystem: Exchange
+- id: R_570
+  name: Glycerol kinase
+  equation: '|M_ATP_c_None_| + |M_GL_c_None_| <=> |M_ADP_c_None_| + |M_GL3P_c_None_|'
+  subsystem: Exchange
+- id: R_571
+  name: Glycerol-3-phosphate dehydrogenase
+  equation: '|M_UBIQON_c_None_| + |M_GL3P_c_None_| <=> |M_UBIQOL_c_None_| + |M_DHAP_c_None_|'
+  subsystem: Exchange
+- id: R_572
+  name: Glycerol-3-phosphate dehydrogenase
+  equation: '|M_GL3P_c_None_| + |M_MK_c_None_| <=> |M_DHAP_c_None_| + |M_MKH2_c_None_|'
+  subsystem: Exchange
+- id: R_573
+  name: Glycerol-3-phosphate dehydrogenase
+  equation: '|M_GL3P_c_None_| + |M_FAD_c_None_| <=> |M_DHAP_c_None_| + |M_FADH2_c_None_|'
+  subsystem: Exchange
+- id: R_574
+  name: Alcohol dehydrogenase (NADP+)
+  equation: '|M_NADP_c_None_| + |M_GL_c_None_| <=> |M_T3_c_None_| + |M_H_c_None_|
+    + |M_NADPH_c_None_|'
+  subsystem: Exchange
+- id: R_575
+  name: Aldehyde dehydrogenase (NAD+)
+  equation: '|M_WATER_c_None_| + |M_T3_c_None_| + |M_NAD_c_None_| <=> |M_DGLYCERATE_c_None_|
+    + |M_NADH_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_576
+  name: alcohol dehydrogenase
+  equation: '|M_H_c_None_| + |M_T3_c_None_| + |M_NADH_c_None_| <=> |M_GL_c_None_|
+    + |M_NAD_c_None_|'
+  subsystem: Exchange
+- id: R_577
+  name: alcohol dehydrogenase
+  equation: '|M_GL_c_None_| + |M_NAD_c_None_| <=> |M_GLYCERON_c_None_| + |M_NADH_c_None_|
+    + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_578
+  name: alcohol dehydrogenase
+  equation: '|M_ATP_c_None_| + |M_GLYCERON_c_None_| <=> |M_ADP_c_None_| + |M_DHAP_c_None_|'
+  subsystem: Exchange
+- id: R_579
+  name: phosphate acetyltransferase
+  equation: '|M_OXOBUTANOATE_c_None_| + |M_O2_c_None_| + |M_PI_c_None_| <=> |M_CO2_c_None_|
+    + |M_PROPIONYLP_c_None_| + |M_WATER_c_None_|'
+  subsystem: Exchange
+- id: R_58
+  name: fructose-bisphosphate aldolase 2
+  equation: '|M_ERY4P_c_None_| + |M_GAP_c_None_| <=> |M_S17BP_c_None_|'
+  subsystem: Exchange
+- id: R_580
+  name: acetate kinase
+  equation: '|M_PROPIONYLP_c_None_| + |M_ADP_c_None_| <=> |M_ATP_c_None_| + |M_PROPANOATE_c_None_|'
+  subsystem: Exchange
+- id: R_581
+  name: acetyl-CoA synthetase
+  equation: '|M_PROPANOATE_c_None_| + |M_ATP_c_None_| <=> |M_PADNLT_c_None_| + |M_PPI_c_None_|'
+  subsystem: Exchange
+- id: R_582
+  name: acetyl-CoA synthetase
+  equation: '|M_PADNLT_c_None_| + |M_COA_c_None_| <=> |M_AMP_c_None_| + |M_PROPIONYLCOA_c_None_|'
+  subsystem: Exchange
+- id: R_583
+  name: phosphate acetyltransferase
+  equation: '|M_PI_c_None_| + |M_PROPIONYLCOA_c_None_| <=> |M_COA_c_None_| + |M_PROPIONYLP_c_None_|'
+  subsystem: Exchange
+- id: R_584
+  name: Butyryl-CoA dehydrogenase
+  equation: '|M_PROPIONYLCOA_c_None_| + |M_FAD_c_None_| <=> |M_ACRCOA_c_None_| +
+    |M_FADH2_c_None_|'
+  subsystem: Exchange
+- id: R_585
+  name: enoyl-CoA hydratase
+  equation: '|M_ACRCOA_c_None_| + |M_WATER_c_None_| <=> |M_HPCOA_c_None_|'
+  subsystem: Exchange
+- id: R_586
+  name: unknown enzyme
+  equation: '|M_HPCOA_c_None_| + |M_NADP_c_None_| <=> |M_OPCOA_c_None_| + |M_NADPH_c_None_|
+    + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_587
+  name: unknown enzyme
+  equation: '|M_NADPH_c_None_| + |M_OPCOA_c_None_| + |M_H_c_None_| + |M_O2_c_None_|
+    <=> |M_WATER_c_None_| + |M_NADP_c_None_| + |M_MALCOA_c_None_|'
+  subsystem: Exchange
+- id: R_588
+  name: vanillate monooxygenase
+  equation: '|M_VANILLATE_c_None_| + |M_NADH_c_None_| + (0.5) |M_O2_c_None_| + |M_H_c_None_|
+    <=> |M_NAD_c_None_| + |M_DIBENZOATE_c_None_| + |M_FOR_c_None_| + |M_WATER_c_None_|'
+  subsystem: Exchange
+- id: R_589
+  name: Protocatechuate 3,4-dioxygenase
+  equation: '|M_DIBENZOATE_c_None_| + |M_O2_c_None_| <=> |M_C3MUCO_c_None_|'
+  subsystem: Exchange
+- id: R_59
+  name: Phosphoric-monoester hydrolases
+  equation: '|M_WATER_c_None_| + |M_S17BP_c_None_| <=> |M_PI_c_None_| + |M_SHEPTP_c_None_|'
+  subsystem: Exchange
+- id: R_590
+  name: 3-carboxy-cis,cis-muconate cycloisomerase
+  equation: '|M_C3MUCO_c_None_| <=> |M_C2DOF5ACET_c_None_|'
+  subsystem: Exchange
+- id: R_591
+  name: 4-carboxymuconolactone decarboxylase
+  equation: '|M_C2DOF5ACET_c_None_| <=> |M_CO2_c_None_| + |M_OAELAC_c_None_|'
+  subsystem: Exchange
+- id: R_592
+  name: 3-oxoadipate enol-lactonase
+  equation: '|M_OAELAC_c_None_| + |M_WATER_c_None_| <=> |M_KADIPATE_c_None_|'
+  subsystem: Exchange
+- id: R_593
+  name: 3-oxoacid CoA-transferase
+  equation: '|M_KADIPATE_c_None_| + |M_SUCCOA_c_None_| <=> |M_SUCC_c_None_| + |M_KADCOA_c_None_|'
+  subsystem: Exchange
+- id: R_594
+  name: 'acetyl-CoA acetyltransferase '
+  equation: '|M_COA_c_None_| + |M_KADCOA_c_None_| <=> |M_SUCCOA_c_None_| + |M_ACOA_c_None_|'
+  subsystem: Exchange
+- id: R_595
+  name: Salicylate 1-monooxygenase
+  equation: '|M_NADH_c_None_| + |M_O2_c_None_| + |M_SALICYLATE_c_None_| + |M_H_c_None_|
+    <=> |M_CO2_c_None_| + |M_NAD_c_None_| + |M_CATECHOL_c_None_| + |M_WATER_c_None_|'
+  subsystem: Exchange
+- id: R_596
+  name: Sulfate adenylyltransferase
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_SLF_c_None_| <=> |M_APS_c_None_|
+    + |M_PPI_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_597
+  name: Adenylylsulfate kinase
+  equation: '|M_ATP_c_None_| + |M_APS_c_None_| <=> |M_ADP_c_None_| + |M_PAPS_c_None_|'
+  subsystem: Exchange
+- id: R_598
+  name: Phosphoadenylyl-sulfate reductase (thioredoxin)
+  equation: '|M_RThioredoxin_c_None_| + |M_PAPS_c_None_| <=> |M_PAP_c_None_| + |M_OXTHIOREDOXIN_c_None_|
+    + |M_H2SO3_c_None_|'
+  subsystem: Exchange
+- id: R_599
+  name: Sulfite reductase (NADPH)
+  equation: (3) |M_NADPH_c_None_| + |M_H2SO3_c_None_| <=> |M_H2S_c_None_| + (3) |M_NADP_c_None_|
+    + (3) |M_WATER_c_None_|
+  subsystem: Exchange
+- id: R_6
+  name: Glucose-6-phosphate isomerase 3
+  equation: '|M_bGLC6P_c_None_| <=> |M_F6P_c_None_|'
+  subsystem: Exchange
+- id: R_60
+  name: Transketolase
+  equation: '|M_XYL5P_c_None_| + |M_R5P_c_None_| <=> |M_SHEPTP_c_None_| + |M_GAP_c_None_|'
+  subsystem: Exchange
+- id: R_600
+  name: nitrate reductase
+  equation: '|M_NO3_c_None_| + |M_MKH2_c_None_| <=> |M_MK_c_None_| + (2) |M_H_c_None_|
+    + |M_NO2_c_None_|'
+  subsystem: Exchange
+- id: R_601
+  name: nitrite/sulphite reductase
+  equation: (2) |M_WATER_c_None_| + (6) |M_FERO_c_None_| + |M_NO2_c_None_| <=> |M_NH3_c_None_|
+    + (6) |M_FERI_c_None_| + (7) |M_H_c_None_|
+  subsystem: Exchange
+- id: R_602
+  name: nitrite/sulphite reductase
+  equation: (3) |M_NADPH_c_None_| + |M_NO2_c_None_| + (3) |M_H_c_None_| <=> |M_NH3_c_None_|
+    + (2) |M_WATER_c_None_| + (3) |M_NADP_c_None_|
+  subsystem: Exchange
+- id: R_603
+  name: Carbonate dehydratase
+  equation: '|M_CO2_c_None_| + |M_WATER_c_None_| <=> |M_H2CO3_c_None_|'
+  subsystem: Exchange
+- id: R_604
+  name: putative gamma-glutamyltranspeptidase
+  equation: '|M_CYSGLY_c_None_| + |M_WATER_c_None_| <=> |M_GLY_c_None_| + |M_CYS_c_None_|'
+  subsystem: Exchange
+- id: R_605
+  name: glutathione peroxidase
+  equation: '|M_H2O2_c_None_| + (2) |M_GSH_c_None_| <=> |M_GSSG_c_None_| + (2) |M_WATER_c_None_|'
+  subsystem: Exchange
+- id: R_606
+  name: gamma-glutamyltransferase
+  equation: '|M_WATER_c_None_| + |M_GSH_c_None_| <=> |M_GLT_c_None_| + |M_CYSGLY_c_None_|'
+  subsystem: Exchange
+- id: R_607
+  name: 3-methyl-2-oxobutanoate hydroxymethyltransferase
+  equation: '|M_KISOVALERATE_c_None_| + |M_WATER_c_None_| + |M_METHTHF_c_None_| <=>
+    |M_THF_c_None_| + |M_DDPAN_c_None_|'
+  subsystem: Exchange
+- id: R_608
+  name: 2-dehydropantoate 2-reductase
+  equation: '|M_NADPH_c_None_| + |M_H_c_None_| + |M_DDPAN_c_None_| <=> |M_PANTOATE_c_None_|
+    + |M_NADP_c_None_|'
+  subsystem: Exchange
+- id: R_609
+  name: Pantoate--beta-alanine ligase
+  equation: '|M_ATP_c_None_| + |M_BALA_c_None_| + |M_PANTOATE_c_None_| <=> |M_PPI_c_None_|
+    + |M_AMP_c_None_| + |M_PANT_c_None_|'
+  subsystem: Exchange
+- id: R_61
+  name: Transaldolase
+  equation: '|M_GAP_c_None_| + |M_SHEPTP_c_None_| <=> |M_F6P_c_None_| + |M_ERY4P_c_None_|'
+  subsystem: Exchange
+- id: R_610
+  name: 4-aminobutyrate aminotransferase
+  equation: '|M_AKG_c_None_| + |M_BALA_c_None_| <=> |M_GLT_c_None_| + |M_MSALD_c_None_|'
+  subsystem: Exchange
+- id: R_611
+  name: malonate-semialdehyde dehydrogenase
+  equation: '|M_WATER_c_None_| + |M_MSALD_c_None_| + |M_NAD_c_None_| <=> |M_MALONATE_c_None_|
+    + |M_NADH_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_612
+  name: Choline dehydrogenase
+  equation: '|M_CHOLINE_c_None_| + |M_FAD_c_None_| <=> |M_FADH2_c_None_| + |M_BETAINEALD_c_None_|'
+  subsystem: Exchange
+- id: R_613
+  name: betaine aldehyde:oxygen oxidoreductase
+  equation: '|M_WATER_c_None_| + |M_O2_c_None_| + |M_BETAINEALD_c_None_| <=> |M_H2O2_c_None_|
+    + |M_BETAINE_c_None_|'
+  subsystem: Exchange
+- id: R_614
+  name: Betaine-aldehyde dehydrogenase
+  equation: '|M_WATER_c_None_| + |M_BETAINEALD_c_None_| + |M_NAD_c_None_| <=> |M_NADH_c_None_|
+    + (2) |M_H_c_None_| + |M_BETAINE_c_None_|'
+  subsystem: Exchange
+- id: R_615
+  name: isochorismate synthase
+  equation: '|M_CHORISMATE_c_None_| <=> |M_ICHOR_c_None_|'
+  subsystem: Exchange
+- id: R_616
+  name: 2-succinyl-6-hydroxy-2,4-cyclohexadiene-1-carboxylate synthase
+  equation: '|M_ICHOR_c_None_| + |M_AKG_c_None_| <=> |M_PYR_c_None_| + |M_CO2_c_None_|
+    + |M_SHCHC_c_None_|'
+  subsystem: Exchange
+- id: R_617
+  name: o-succinylbenzoate synthase
+  equation: '|M_SHCHC_c_None_| <=> |M_WATER_c_None_| + |M_OSB_c_None_|'
+  subsystem: Exchange
+- id: R_618
+  name: o-succinylbenzoate-CoA ligase
+  equation: '|M_ATP_c_None_| + |M_COA_c_None_| + |M_OSB_c_None_| <=> |M_OSBCOA_c_None_|
+    + |M_PPI_c_None_| + |M_AMP_c_None_|'
+  subsystem: Exchange
+- id: R_619
+  name: naphthoate synthase
+  equation: '|M_OSBCOA_c_None_| <=> |M_COA_c_None_| + |M_DHN_c_None_|'
+  subsystem: Exchange
+- id: R_62
+  name: Ribose 5-phosphate epimerase
+  equation: '|M_RIBUL1P_c_None_| <=> |M_R5P_c_None_|'
+  subsystem: Exchange
+- id: R_620
+  name: '1,4-dihydroxy-2-naphthoate prenyltransferase '
+  equation: '|M_DHN_c_None_| + |M_NPP_c_None_| <=> |M_PPI_c_None_| + |M_DMK_c_None_|
+    + |M_CO2_c_None_|'
+  subsystem: Exchange
+- id: R_621
+  name: demethylmenaquinone methyltransferase
+  equation: '|M_SAMET_c_None_| + |M_DMK_c_None_| <=> |M_MKH2_c_None_| + |M_AHOMOCYC_c_None_|'
+  subsystem: Exchange
+- id: R_622
+  name: catalase
+  equation: '|M_H2O2_c_None_| + |M_METH_c_None_| <=> |M_FORMAL_c_None_| + (2) |M_WATER_c_None_|'
+  subsystem: Exchange
+- id: R_623
+  name: formate dehydrogenase
+  equation: '|M_NAD_c_None_| + |M_FOR_c_None_| <=> |M_CO2_c_None_| + |M_NADH_c_None_|
+    + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_624
+  name: malate synthase
+  equation: '|M_ACOA_c_None_| + |M_WATER_c_None_| + |M_GLYOX_c_None_| <=> |M_COA_c_None_|
+    + |M_MAL_c_None_|'
+  subsystem: Exchange
+- id: R_63
+  name: Transketolase
+  equation: '|M_XYL5P_c_None_| + |M_ERY4P_c_None_| <=> |M_F6P_c_None_| + |M_GAP_c_None_|'
+  subsystem: Exchange
+- id: R_635
+  name: Toluene dioxygenase
+  equation: '|M_TOLUENE_c_None_| + |M_NADH_c_None_| + |M_H_c_None_| + |M_O2_c_None_|
+    <=> |M_NAD_c_None_| + |M_TOLUENECISDHDIOL_c_None_|'
+  subsystem: Exchange
+- id: R_636
+  name: cyclase
+  equation: '|M_HKVALERATE_c_None_| <=> |M_ACAL_c_None_| + |M_PYR_c_None_|'
+  subsystem: Exchange
+- id: R_637
+  name: 2-oxopent-4-enoate hydratase
+  equation: '|M_OXOPENTENOATE_c_None_| + |M_WATER_c_None_| <=> |M_HKVALERATE_c_None_|'
+  subsystem: Exchange
+- id: R_638
+  name: 2-oxopent-4-enoate hydratase
+  equation: '|M_WATER_c_None_| + |M_OXOPENTENOATE_c_None_| <=> |M_PYR_c_None_| +
+    |M_ACAL_c_None_|'
+  subsystem: Exchange
+- id: R_639
+  name: 5-aminolevulinate synthase
+  equation: '|M_SUCCOA_c_None_| + |M_GLY_c_None_| <=> |M_COA_c_None_| + |M_CO2_c_None_|
+    + |M_A5LEVULINATE_c_None_|'
+  subsystem: Exchange
+- id: R_64
+  name: Glucose-6-phosphate 1-dehydrogenase
+  equation: '|M_NAD_c_None_| + |M_GLC6P_c_None_| <=> |M_H_c_None_| + |M_NADH_c_None_|
+    + |M_D6PGDLAC_c_None_|'
+  subsystem: Exchange
+- id: R_640
+  name: glutamate---tRNA ligase
+  equation: '|M_ATP_c_None_| + |M_GLT_c_None_| <=> |M_PPI_c_None_| + |M_trnaGLT_c_None_|
+    + |M_AMP_c_None_|'
+  subsystem: Exchange
+- id: R_641
+  name: Glutamate-1-semialdehyde 2,1-aminomutase
+  equation: '|M_NADPH_c_None_| + |M_trnaGLT_c_None_| <=> |M_GGSALD_c_None_| + |M_NADP_c_None_|'
+  subsystem: Exchange
+- id: R_642
+  name: Glutamate-1-semialdehyde 2,1-aminomutase
+  equation: '|M_GGSALD_c_None_| <=> |M_A5LEVULINATE_c_None_|'
+  subsystem: Exchange
+- id: R_643
+  name: Porphobilinogen synthase
+  equation: (2) |M_A5LEVULINATE_c_None_| <=> (2) |M_WATER_c_None_| + |M_PORPHOBILINOGEN_c_None_|
+  subsystem: Exchange
+- id: R_644
+  name: Hydroxymethylbilane synthase
+  equation: '|M_WATER_c_None_| + (4) |M_PORPHOBILINOGEN_c_None_| <=> (4) |M_NH3_c_None_|
+    + |M_HYDROXYMETHYLBILANE_c_None_|'
+  subsystem: Exchange
+- id: R_645
+  name: uroporphyrinogen-III synthase
+  equation: '|M_HYDROXYMETHYLBILANE_c_None_| <=> |M_WATER_c_None_| + |M_UROPORPHYRINOGEN3_c_None_|'
+  subsystem: Exchange
+- id: R_646
+  name: Uroporphyrinogen decarboxylase
+  equation: '|M_UROPORPHYRINOGEN3_c_None_| <=> (4) |M_CO2_c_None_| + |M_COPROPORPHYRINOGEN3_c_None_|'
+  subsystem: Exchange
+- id: R_647
+  name: putative oxygen-independent coproporphyrinogen III oxidase
+  equation: (2) |M_SAMET_c_None_| + |M_COPROPORPHYRINOGEN3_c_None_| <=> (2) |M_CH33ADO_c_None_|
+    + (2) |M_MET_c_None_| + |M_PROTOPORPHYRINOGEN_c_None_| + (2) |M_CO2_c_None_|
+  subsystem: Exchange
+- id: R_648
+  name: Protoporphyrinogen oxidase
+  equation: (2) |M_PROTOPORPHYRINOGEN_c_None_| + (3) |M_O2_c_None_| <=> (6) |M_WATER_c_None_|
+    + (2) |M_PROTOPORPHYRIN9_c_None_|
+  subsystem: Exchange
+- id: R_649
+  name: Ferrochelatase
+  equation: '|M_PROTOPORPHYRIN9_c_None_| + |M_FE_c_None_| <=> |M_PROTOHEME_c_None_|
+    + (2) |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_65
+  name: Glucose-6-phosphate 1-dehydrogenase
+  equation: '|M_GLC6P_c_None_| + |M_NADP_c_None_| <=> |M_D6PGDLAC_c_None_| + |M_H_c_None_|
+    + |M_NADPH_c_None_|'
+  subsystem: Exchange
+- id: R_650
+  name: cytochrome oxidase assembly factor
+  equation: '|M_WATER_c_None_| + |M_FARPP_c_None_| + |M_PROTOHEME_c_None_| <=> |M_PPI_c_None_|
+    + |M_HEMEO_c_None_|'
+  subsystem: Exchange
+- id: R_651
+  name: cytochrome oxidase assembly factor
+  equation: '|M_HEMEO_c_None_| <=> |M_HEME_c_None_|'
+  subsystem: Exchange
+- id: R_652
+  name: uroporphyrin-III methyltransferase
+  equation: '|M_SAMET_c_None_| + |M_UROPORPHYRINOGEN3_c_None_| <=> |M_PRECORRIN1_c_None_|
+    + |M_AHOMOCYC_c_None_|'
+  subsystem: Exchange
+- id: R_653
+  name: uroporphyrin-III methyltransferase
+  equation: '|M_SAMET_c_None_| + |M_PRECORRIN1_c_None_| <=> |M_DSHCLORIN_c_None_|
+    + |M_AHOMOCYC_c_None_|'
+  subsystem: Exchange
+- id: R_654
+  name: uroporphyrin-III methyltransferase
+  equation: '|M_NAD_c_None_| + |M_DSHCLORIN_c_None_| <=> |M_H_c_None_| + |M_NADH_c_None_|
+    + |M_SIROHYDROCHLORIN_c_None_|'
+  subsystem: Exchange
+- id: R_655
+  name: Sirohydrochlorin ferrochelatase
+  equation: '|M_FE_c_None_| + |M_SIROHYDROCHLORIN_c_None_| <=> |M_SIROHEME_c_None_|
+    + (2) |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_656
+  name: Precorrin-2 C20-methyltransferase
+  equation: '|M_SAMET_c_None_| + |M_DSHCLORIN_c_None_| <=> |M_PRECORRIN3A_c_None_|
+    + |M_AHOMOCYC_c_None_|'
+  subsystem: Exchange
+- id: R_657
+  name: precorrin-3B synthase
+  equation: '|M_PRECORRIN3A_c_None_| + |M_NADH_c_None_| + |M_H_c_None_| + |M_O2_c_None_|
+    <=> |M_WATER_c_None_| + |M_NAD_c_None_| + |M_PRECORRIN3B_c_None_|'
+  subsystem: Exchange
+- id: R_658
+  name: Precorrin-3B C17-methyltransferase
+  equation: '|M_SAMET_c_None_| + |M_PRECORRIN3B_c_None_| <=> |M_AHOMOCYC_c_None_|
+    + |M_PRECORRIN4B_c_None_|'
+  subsystem: Exchange
+- id: R_659
+  name: Precorrin-4 C11-methyltransferase
+  equation: '|M_SAMET_c_None_| + |M_PRECORRIN4B_c_None_| <=> |M_AHOMOCYC_c_None_|
+    + |M_PRECORRIN5_c_None_|'
+  subsystem: Exchange
+- id: R_66
+  name: 6-phosphogluconolactonase
+  equation: '|M_D6PGDLAC_c_None_| + |M_WATER_c_None_| <=> |M_P6GLUCONATE_c_None_|'
+  subsystem: Exchange
+- id: R_660
+  name: S-adenosyl-L-methionine:precorrin-5 C1-methyltransferase
+  equation: '|M_SAMET_c_None_| + |M_WATER_c_None_| + |M_PRECORRIN5_c_None_| <=> |M_AHOMOCYC_c_None_|
+    + |M_PRCN_c_None_| + |M_AC_c_None_|'
+  subsystem: Exchange
+- id: R_661
+  name: Precorrin-6X reductase
+  equation: '|M_NADPH_c_None_| + |M_H_c_None_| + |M_PRCN_c_None_| <=> |M_PRECORRIN6B_c_None_|
+    + |M_NADP_c_None_|'
+  subsystem: Exchange
+- id: R_662
+  name: Precorrin-6Y C5,15-methyltransferase (decarboxylating)
+  equation: (2) |M_SAMET_c_None_| + |M_PRECORRIN6B_c_None_| <=> (2) |M_AHOMOCYC_c_None_|
+    + |M_PRECORRIN8X_c_None_| + |M_CO2_c_None_|
+  subsystem: Exchange
+- id: R_663
+  name: Precorrin-8X methylmutase
+  equation: '|M_PRECORRIN8X_c_None_| <=> |M_HGBYRINATE_c_None_|'
+  subsystem: Exchange
+- id: R_664
+  name: Hydrogenobyrinic acid a,c-diamide synthase (glutamine-hydrolyzing)
+  equation: (2) |M_ATP_c_None_| + (2) |M_WATER_c_None_| + (2) |M_GLN_c_None_| + |M_HGBYRINATE_c_None_|
+    <=> (2) |M_PI_c_None_| + (2) |M_ADP_c_None_| + (2) |M_GLT_c_None_| + |M_HGBYRINATED_c_None_|
+  subsystem: Exchange
+- id: R_665
+  name: Cobaltochelatase
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_HGBYRINATED_c_None_| + |M_COBALT_c_None_|
+    <=> |M_PI_c_None_| + |M_CAACDIM2_c_None_| + |M_ADP_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_666
+  name: cob(II)yrinic acid a,c-diamide reductase
+  equation: '|M_CAACDIM2_c_None_| + |M_NADH_c_None_| <=> |M_NAD_c_None_| + |M_CAACDIM1_c_None_|'
+  subsystem: Exchange
+- id: R_667
+  name: cob(I)yrinic acid a,c-diamide adenosyltransferase
+  equation: '|M_ATP_c_None_| + |M_CAACDIM1_c_None_| <=> |M_ACACDIM_c_None_| + |M_PI_c_None_|
+    + |M_PPI_c_None_|'
+  subsystem: Exchange
+- id: R_668
+  name: Adenosylcobyric acid synthase (glutamine-hydrolyzing)
+  equation: '|M_ACACDIM_c_None_| + (4) |M_WATER_c_None_| + (4) |M_ATP_c_None_| +
+    (4) |M_GLN_c_None_| <=> |M_ACOBYRATE_c_None_| + (4) |M_PI_c_None_| + (4) |M_ADP_c_None_|
+    + (4) |M_GLT_c_None_|'
+  subsystem: Exchange
+- id: R_669
+  name: adenosylcobinamide-phosphate synthase CobD
+  equation: '|M_ACOBYRATE_c_None_| + |M_APROPANOL_c_None_| <=> |M_ACOBINAMIDE_c_None_|'
+  subsystem: Exchange
+- id: R_67
+  name: phosphogluconate dehydrogenase
+  equation: '|M_P6GLUCONATE_c_None_| + |M_NAD_c_None_| <=> |M_CO2_c_None_| + |M_NADH_c_None_|
+    + |M_RIBUL1P_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_670
+  name: adenosylcobinamide kinase
+  equation: '|M_ACOBINAMIDE_c_None_| + |M_ATP_c_None_| <=> |M_ACOBINAMIDEP_c_None_|
+    + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_671
+  name: Adenosylcobinamide-phosphate guanylyltransferase
+  equation: '|M_ACOBINAMIDEP_c_None_| + |M_GTP_c_None_| <=> |M_ACOBINAMIDEGDP_c_None_|
+    + |M_PPI_c_None_|'
+  subsystem: Exchange
+- id: R_672
+  name: Nicotinate-nucleotide-dimethylbenzimidazole phosphoribosyltransferase
+  equation: '|M_DBENZIMIDAZOLE_c_None_| + |M_NTNUC_c_None_| <=> |M_NAC_c_None_| +
+    |M_H_c_None_| + |M_ARIBAZOLE5P_c_None_|'
+  subsystem: Exchange
+- id: R_673
+  name: Nicotinate-nucleotide-dimethylbenzimidazole phosphoribosyltransferase
+  equation: '|M_ARIBAZOLE5P_c_None_| + |M_WATER_c_None_| <=> |M_ARIBAZOLE_c_None_|
+    + |M_PI_c_None_|'
+  subsystem: Exchange
+- id: R_674
+  name: adenosylcobinamide-GDP ribazoletransferase
+  equation: '|M_ARIBAZOLE_c_None_| + |M_ACOBINAMIDEGDP_c_None_| <=> |M_ACOBALAMIN_c_None_|
+    + |M_GMP_c_None_|'
+  subsystem: Exchange
+- id: R_675
+  name: 'putative inorganic pyrophosphatase '
+  equation: '|M_PPI_c_None_| + |M_WATER_c_None_| <=> (2) |M_PI_c_None_|'
+  subsystem: Exchange
+- id: R_676
+  name: putative ferredoxin/ferredoxin-NADP reductase
+  equation: '|M_NADP_c_None_| + |M_FERO_c_None_| <=> |M_FERI_c_None_| + |M_H_c_None_|
+    + |M_NADPH_c_None_|'
+  subsystem: Exchange
+- id: R_677
+  name: glycerol-3-phosphate cytidylyltransferase
+  equation: '|M_CTP_c_None_| + |M_GL3P_c_None_| <=> |M_CDPGL_c_None_| + |M_PPI_c_None_|'
+  subsystem: Exchange
+- id: R_678
+  name: CDP-glycerol glycerophosphotransferase
+  equation: (12) |M_CDPGL_c_None_| <=> (12) |M_CMP_c_None_| + |M_POLYGP_c_None_|
+  subsystem: Exchange
+- id: R_679
+  name: '[acyl-carrier-protein] S-malonyltransferase'
+  equation: '|M_ACP_c_None_| + |M_MALCOA_c_None_| <=> |M_COA_c_None_| + |M_MALACP_c_None_|'
+  subsystem: Exchange
+- id: R_68
+  name: 2-deoxy-D-gluconate 3-dehydrogenase
+  equation: '|M_NAD_c_None_| + |M_DDG_c_None_| <=> |M_KDG_c_None_| + |M_NADH_c_None_|
+    + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_680
+  name: 3-oxoacyl-[acyl-carrier-protein] synthase
+  equation: '|M_ACP_c_None_| + |M_ACOA_c_None_| <=> |M_COA_c_None_| + |M_ACACP_c_None_|'
+  subsystem: Exchange
+- id: R_681
+  name: Butaryl-[acyl-carrier protein] synthesis (lumped reaction)
+  equation: (2) |M_NADPH_c_None_| + |M_MALACP_c_None_| + |M_ACACP_c_None_| <=> |M_CO2_c_None_|
+    + |M_C040ACP_c_None_| + (2) |M_NADP_c_None_| + |M_ACP_c_None_|
+  subsystem: Exchange
+- id: R_682
+  name: Hexanoyl-[acyl-carrier protein] synthesis (lumped reaction)
+  equation: (4) |M_NADPH_c_None_| + (2) |M_MALACP_c_None_| + |M_ACACP_c_None_| <=>
+    (2) |M_CO2_c_None_| + (2) |M_ACP_c_None_| + (4) |M_NADP_c_None_| + |M_C060ACP_c_None_|
+  subsystem: Exchange
+- id: R_683
+  name: Octanoyl-[acyl-carrier protein] synthesis (lumped reaction)
+  equation: (6) |M_NADPH_c_None_| + |M_ACACP_c_None_| + (3) |M_MALACP_c_None_| <=>
+    (3) |M_CO2_c_None_| + (3) |M_ACP_c_None_| + (6) |M_NADP_c_None_| + |M_C080ACP_c_None_|
+  subsystem: Exchange
+- id: R_684
+  name: Decanoyl-[acyl-carrier protein] synthesis (lumped reaction)
+  equation: (8) |M_NADPH_c_None_| + (4) |M_MALACP_c_None_| + |M_ACACP_c_None_| <=>
+    (4) |M_CO2_c_None_| + (4) |M_ACP_c_None_| + (8) |M_NADP_c_None_| + |M_C100ACP_c_None_|
+  subsystem: Exchange
+- id: R_685
+  name: Dodecanoyl-[acyl-carrier protein] synthesis (lumped reaction)
+  equation: (10) |M_NADPH_c_None_| + (5) |M_MALACP_c_None_| + |M_ACACP_c_None_| <=>
+    (5) |M_CO2_c_None_| + (5) |M_ACP_c_None_| + (10) |M_NADP_c_None_| + |M_C120ACP_c_None_|
+  subsystem: Exchange
+- id: R_686
+  name: Tetradecanoyl-[acyl-carrier protein] synthesis (lumped reaction)
+  equation: (12) |M_NADPH_c_None_| + (6) |M_MALACP_c_None_| + |M_ACACP_c_None_| <=>
+    (6) |M_CO2_c_None_| + (6) |M_ACP_c_None_| + (12) |M_NADP_c_None_| + |M_C140ACP_c_None_|
+  subsystem: Exchange
+- id: R_687
+  name: Hexadecanoyl-[acyl-carrier protein] synthesis (lumped reaction)
+  equation: (14) |M_NADPH_c_None_| + (7) |M_MALACP_c_None_| + |M_ACACP_c_None_| <=>
+    (7) |M_CO2_c_None_| + (7) |M_ACP_c_None_| + (14) |M_NADP_c_None_| + |M_C160ACP_c_None_|
+  subsystem: Exchange
+- id: R_688
+  name: Oleoyl-[acyl-carrier protein] synthesis (lumped reaction)
+  equation: (15) |M_NADPH_c_None_| + (8) |M_MALACP_c_None_| + |M_ACACP_c_None_| <=>
+    (8) |M_CO2_c_None_| + (8) |M_ACP_c_None_| + (15) |M_NADP_c_None_| + |M_C181ACP_c_None_|
+  subsystem: Exchange
+- id: R_689
+  name: '[acyl-carrier-protein] S-malonyltransferase'
+  equation: '|M_ACP_c_None_| + |M_PROPIONYLCOA_c_None_| <=> |M_COA_c_None_| + |M_PROPIONYLACP_c_None_|'
+  subsystem: Exchange
+- id: R_69
+  name: 2-dehydro-3-deoxygluconokinase
+  equation: '|M_ATP_c_None_| + |M_KDG_c_None_| <=> |M_ADP_c_None_| + |M_KD6PGLUCONATE_c_None_|'
+  subsystem: Exchange
+- id: R_690
+  name: Pentadecanoyl-[acyl-carrier protein] synthesis (lumped reaction)
+  equation: '|M_PROPIONYLACP_c_None_| + (6) |M_MALACP_c_None_| + (12) |M_NADPH_c_None_|
+    <=> |M_C150ACP_c_None_| + (6) |M_ACP_c_None_| + (6) |M_CO2_c_None_| + (12) |M_NADP_c_None_|'
+  subsystem: Exchange
+- id: R_691
+  name: Heptadecanoyl-[acyl-carrier protein] synthesis (lumped reaction)
+  equation: '|M_PROPIONYLACP_c_None_| + (7) |M_MALACP_c_None_| + (14) |M_NADPH_c_None_|
+    <=> (7) |M_CO2_c_None_| + (7) |M_ACP_c_None_| + (14) |M_NADP_c_None_| + |M_C170ACP_c_None_|'
+  subsystem: Exchange
+- id: R_692
+  name: 'acetoacetyl-CoA thiolase '
+  equation: (2) |M_ACOA_c_None_| <=> |M_AACETYLCOA_c_None_| + |M_COA_c_None_|
+  subsystem: Exchange
+- id: R_693
+  name: butanoyl-CoA synthesis (lumped reaction)
+  equation: (2) |M_NADH_c_None_| + |M_AACETYLCOA_c_None_| <=> |M_C040COA_c_None_|
+    + (2) |M_NAD_c_None_|
+  subsystem: Exchange
+- id: R_694
+  name: hexanoyl-CoA synthesis (lumped reaction)
+  equation: '|M_ACOA_c_None_| + |M_AACETYLCOA_c_None_| + (4) |M_NADH_c_None_| <=>
+    (4) |M_NAD_c_None_| + |M_COA_c_None_| + |M_C060COA_c_None_|'
+  subsystem: Exchange
+- id: R_695
+  name: octanoyl-CoA synthesis (lumped reaction)
+  equation: (2) |M_ACOA_c_None_| + |M_AACETYLCOA_c_None_| + (6) |M_NADH_c_None_|
+    <=> (6) |M_NAD_c_None_| + |M_C080COA_c_None_| + (2) |M_COA_c_None_|
+  subsystem: Exchange
+- id: R_696
+  name: decanoyl-CoA synthesis (lumped reaction)
+  equation: (3) |M_ACOA_c_None_| + |M_AACETYLCOA_c_None_| + (8) |M_NADH_c_None_|
+    <=> (8) |M_NAD_c_None_| + (3) |M_COA_c_None_| + |M_C100COA_c_None_|
+  subsystem: Exchange
+- id: R_697
+  name: dodecanoyl-CoA synthesis (lumped reaction)
+  equation: (4) |M_ACOA_c_None_| + |M_AACETYLCOA_c_None_| + (10) |M_NADH_c_None_|
+    <=> (10) |M_NAD_c_None_| + (4) |M_COA_c_None_| + |M_C120COA_c_None_|
+  subsystem: Exchange
+- id: R_698
+  name: tetradecanoyl-CoA synthesis (lumped reaction)
+  equation: (5) |M_ACOA_c_None_| + |M_AACETYLCOA_c_None_| + (12) |M_NADH_c_None_|
+    <=> (12) |M_NAD_c_None_| + (5) |M_COA_c_None_| + |M_C140COA_c_None_|
+  subsystem: Exchange
+- id: R_699
+  name: hexadecanoyl-CoA synthesis (lumped reaction)
+  equation: (6) |M_ACOA_c_None_| + |M_AACETYLCOA_c_None_| + (14) |M_NADH_c_None_|
+    <=> (14) |M_NAD_c_None_| + |M_C160COA_c_None_| + (6) |M_COA_c_None_|
+  subsystem: Exchange
+- id: R_7
+  name: 6-phosphofructokinase
+  equation: '|M_ATP_c_None_| + |M_F6P_c_None_| <=> |M_F16DP_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_70
+  name: 2-dehydro-3-deoxyphosphogluconate aldolase
+  equation: '|M_KD6PGLUCONATE_c_None_| <=> |M_GAP_c_None_| + |M_PYR_c_None_|'
+  subsystem: Exchange
+- id: R_700
+  name: acylCoA synthases
+  equation: '|M_ATP_c_None_| + |M_COA_c_None_| + |M_HEXANOATE_c_None_| <=> |M_C060COA_c_None_|
+    + |M_PPI_c_None_| + |M_AMP_c_None_|'
+  subsystem: Exchange
+- id: R_701
+  name: acylCoA synthases
+  equation: '|M_ATP_c_None_| + |M_COA_c_None_| + |M_OCTANOATE_c_None_| <=> |M_PPI_c_None_|
+    + |M_C080COA_c_None_| + |M_AMP_c_None_|'
+  subsystem: Exchange
+- id: R_702
+  name: acylCoA synthases
+  equation: '|M_ATP_c_None_| + |M_DECANOATE_c_None_| + |M_COA_c_None_| <=> |M_PPI_c_None_|
+    + |M_AMP_c_None_| + |M_C100COA_c_None_|'
+  subsystem: Exchange
+- id: R_703
+  name: acylCoA synthases
+  equation: '|M_ATP_c_None_| + |M_COA_c_None_| + |M_DODECANOATE_c_None_| <=> |M_PPI_c_None_|
+    + |M_AMP_c_None_| + |M_C120COA_c_None_|'
+  subsystem: Exchange
+- id: R_704
+  name: acylCoA synthases
+  equation: '|M_ATP_c_None_| + |M_COA_c_None_| + |M_TETRADECANOATE_c_None_| <=> |M_C140COA_c_None_|
+    + |M_PPI_c_None_| + |M_AMP_c_None_|'
+  subsystem: Exchange
+- id: R_705
+  name: acylCoA synthases
+  equation: '|M_HEXADECANOATE_c_None_| + |M_COA_c_None_| + |M_ATP_c_None_| <=> |M_PPI_c_None_|
+    + |M_C160COA_c_None_| + |M_AMP_c_None_|'
+  subsystem: Exchange
+- id: R_706
+  name: acylCoA synthases
+  equation: '|M_ATP_c_None_| + |M_COA_c_None_| + |M_HEPTADECANOATE_c_None_| <=> |M_PPI_c_None_|
+    + |M_C160COA_c_None_| + |M_AMP_c_None_|'
+  subsystem: Exchange
+- id: R_707
+  name: acyl-CoA dehydrogenase fadE1-36 AND enoyl-CoA hydratase/isomerase echA1-21
+    AND 3-hydroxyacyl-CoA dehydrogenase fadB2-5 AND acetyl-CoA C-acetyltransferase
+    fadA2-12
+  equation: '|M_C170COA_c_None_| + |M_NAD_c_None_| + |M_FAD_c_None_| + |M_COA_c_None_|
+    <=> |M_AACETYLCOA_c_None_| + |M_NADH_c_None_| + |M_C160COA_c_None_| + |M_FADH2_c_None_|'
+  subsystem: Exchange
+- id: R_708
+  name: acyl-CoA dehydrogenase fadE1-36 AND enoyl-CoA hydratase/isomerase echA1-21
+    AND 3-hydroxyacyl-CoA dehydrogenase fadB2-5 AND acetyl-CoA C-acetyltransferase
+    fadA2-12
+  equation: '|M_NAD_c_None_| + |M_FAD_c_None_| + |M_C160COA_c_None_| + |M_COA_c_None_|
+    <=> |M_AACETYLCOA_c_None_| + |M_C140COA_c_None_| + |M_NADH_c_None_| + |M_FADH2_c_None_|'
+  subsystem: Exchange
+- id: R_709
+  name: acyl-CoA dehydrogenase fadE1-36 AND enoyl-CoA hydratase/isomerase echA1-21
+    AND 3-hydroxyacyl-CoA dehydrogenase fadB2-5 AND acetyl-CoA C-acetyltransferase
+    fadA2-13
+  equation: '|M_C140COA_c_None_| + |M_FAD_c_None_| + |M_COA_c_None_| + |M_NAD_c_None_|
+    <=> |M_FADH2_c_None_| + |M_AACETYLCOA_c_None_| + |M_NADH_c_None_| + |M_C120COA_c_None_|'
+  subsystem: Exchange
+- id: R_71
+  name: L-arabinose isomerase
+  equation: '|M_LRIBULOSE_c_None_| <=> |M_LARABINOSE_c_None_|'
+  subsystem: Exchange
+- id: R_710
+  name: acyl-CoA dehydrogenase fadE1-36 AND enoyl-CoA hydratase/isomerase echA1-21
+    AND 3-hydroxyacyl-CoA dehydrogenase fadB2-5 AND acetyl-CoA C-acetyltransferase
+    fadA2-14
+  equation: '|M_NAD_c_None_| + |M_FAD_c_None_| + |M_COA_c_None_| + |M_C120COA_c_None_|
+    <=> |M_AACETYLCOA_c_None_| + |M_NADH_c_None_| + |M_FADH2_c_None_| + |M_C100COA_c_None_|'
+  subsystem: Exchange
+- id: R_711
+  name: acyl-CoA dehydrogenase fadE1-36 AND enoyl-CoA hydratase/isomerase echA1-21
+    AND 3-hydroxyacyl-CoA dehydrogenase fadB2-5 AND acetyl-CoA C-acetyltransferase
+    fadA2-15
+  equation: '|M_NAD_c_None_| + |M_FAD_c_None_| + |M_COA_c_None_| + |M_C100COA_c_None_|
+    <=> |M_NADH_c_None_| + |M_AACETYLCOA_c_None_| + |M_C080COA_c_None_| + |M_FADH2_c_None_|'
+  subsystem: Exchange
+- id: R_712
+  name: acyl-CoA dehydrogenase fadE1-36 AND enoyl-CoA hydratase/isomerase echA1-21
+    AND 3-hydroxyacyl-CoA dehydrogenase fadB2-5 AND acetyl-CoA C-acetyltransferase
+    fadA2-16
+  equation: '|M_NAD_c_None_| + |M_FAD_c_None_| + |M_C080COA_c_None_| + |M_COA_c_None_|
+    <=> |M_AACETYLCOA_c_None_| + |M_NADH_c_None_| + |M_C060COA_c_None_| + |M_FADH2_c_None_|'
+  subsystem: Exchange
+- id: R_713
+  name: acyl-CoA dehydrogenase fadE1-36 AND enoyl-CoA hydratase/isomerase echA1-21
+    AND 3-hydroxyacyl-CoA dehydrogenase fadB2-5 AND acetyl-CoA C-acetyltransferase
+    fadA2-17
+  equation: '|M_FAD_c_None_| + |M_COA_c_None_| + |M_C060COA_c_None_| + |M_NAD_c_None_|
+    <=> |M_FADH2_c_None_| + |M_AACETYLCOA_c_None_| + |M_NADH_c_None_| + |M_C040COA_c_None_|'
+  subsystem: Exchange
+- id: R_714
+  name: acyl-CoA dehydrogenase fadE1-36 AND enoyl-CoA hydratase/isomerase echA1-21
+    AND 3-hydroxyacyl-CoA dehydrogenase fadB2-5 AND acetyl-CoA C-acetyltransferase
+    fadA2-18
+  equation: '|M_NAD_c_None_| + |M_FAD_c_None_| + |M_COA_c_None_| + |M_C040COA_c_None_|
+    <=> (2) |M_AACETYLCOA_c_None_| + |M_NADH_c_None_| + |M_FADH2_c_None_|'
+  subsystem: Exchange
+- id: R_715
+  name: Hexanoyl-CoA:[acyl-carrier-protein] S-acetyltransferase
+  equation: '|M_COA_c_None_| + |M_C060ACP_c_None_| <=> |M_ACP_c_None_| + |M_C060COA_c_None_|'
+  subsystem: Exchange
+- id: R_72
+  name: aldehyde reductase
+  equation: '|M_NADH_c_None_| + |M_LARABINOSE_c_None_| + |M_H_c_None_| <=> |M_NAD_c_None_|
+    + |M_ARABITOL_c_None_|'
+  subsystem: Exchange
+- id: R_73
+  name: L-arabinitol 2-dehydrogenase
+  equation: '|M_ARABITOL_c_None_| + |M_NAD_c_None_| <=> |M_LRIBULOSE_c_None_| + |M_NADH_c_None_|
+    + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_74
+  name: L-arabinitol 4-dehydrogenase
+  equation: '|M_ARABITOL_c_None_| + |M_NAD_c_None_| <=> |M_LXYLULOSE_c_None_| + |M_NADH_c_None_|
+    + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_75
+  name: ribulokinase
+  equation: '|M_ATP_c_None_| + |M_LRIBULOSE_c_None_| <=> |M_ADP_c_None_| + |M_LRIBULOSE5P_c_None_|'
+  subsystem: Exchange
+- id: R_76
+  name: isomerase
+  equation: '|M_LRIBULOSE5P_c_None_| <=> |M_LXYLULOSE5P_c_None_|'
+  subsystem: Exchange
+- id: R_77
+  name: L-xylulokinase
+  equation: '|M_LXYLULOSE5P_c_None_| + |M_ADP_c_None_| <=> |M_ATP_c_None_| + |M_LXYLULOSE_c_None_|'
+  subsystem: Exchange
+- id: R_78
+  name: sugar isomerase
+  equation: '|M_LLYXOSE_c_None_| <=> |M_LXYLULOSE_c_None_|'
+  subsystem: Exchange
+- id: R_79
+  name: D-iditol 2-dehydrogenase
+  equation: '|M_NAD_c_None_| + |M_XYLITOL_c_None_| <=> |M_LXYLULOSE_c_None_| + |M_NADH_c_None_|
+    + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_8
+  name: Fructose-bisphosphatase
+  equation: '|M_F16DP_c_None_| + |M_WATER_c_None_| <=> |M_F6P_c_None_| + |M_PI_c_None_|'
+  subsystem: Exchange
+- id: R_80
+  name: aldehyde reductase
+  equation: '|M_H_c_None_| + |M_XYL_c_None_| + |M_NADH_c_None_| <=> |M_XYLITOL_c_None_|
+    + |M_NAD_c_None_|'
+  subsystem: Exchange
+- id: R_81
+  name: D-xylulose reductase
+  equation: '|M_NAD_c_None_| + |M_XYLITOL_c_None_| <=> |M_DXYL_c_None_| + |M_NADH_c_None_|
+    + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_82
+  name: L-rhamnose isomerase
+  equation: '|M_RMN_c_None_| <=> |M_RHAMN_c_None_|'
+  subsystem: Exchange
+- id: R_83
+  name: rhamnulokinase
+  equation: '|M_ATP_c_None_| + |M_RHAMN_c_None_| <=> |M_RHAMN1P_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_84
+  name: rhamnulose-1-phosphate aldolase
+  equation: '|M_RHAMN1P_c_None_| <=> |M_DHAP_c_None_| + |M_LACTAL_c_None_|'
+  subsystem: Exchange
+- id: R_85
+  name: lactaldehyde dehydrogenase
+  equation: '|M_WATER_c_None_| + |M_LACTAL_c_None_| + |M_NAD_c_None_| <=> |M_LLAC_c_None_|
+    + |M_NADH_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_86
+  name: 'beta-glucosidase '
+  equation: '|M_CELB_c_None_| + |M_WATER_c_None_| <=> (2) |M_GLC_c_None_|'
+  subsystem: Exchange
+- id: R_87
+  name: trehalose phosphatase
+  equation: '|M_TRE6P_c_None_| + |M_WATER_c_None_| <=> |M_TRE_c_None_| + |M_PI_c_None_|'
+  subsystem: Exchange
+- id: R_88
+  name: alpha,alpha-trehalase
+  equation: '|M_TRE_c_None_| + |M_WATER_c_None_| <=> (2) |M_GLC_c_None_|'
+  subsystem: Exchange
+- id: R_89
+  name: Mannokinase
+  equation: '|M_ATP_c_None_| + |M_MAN_c_None_| <=> |M_ADP_c_None_| + |M_MAN6P_c_None_|'
+  subsystem: Exchange
+- id: R_9
+  name: Fructose-bisphosphate aldolase
+  equation: '|M_F16DP_c_None_| <=> |M_DHAP_c_None_| + |M_GAP_c_None_|'
+  subsystem: Exchange
+- id: R_90
+  name: Mannose-6-phosphate isomerase
+  equation: '|M_MAN6P_c_None_| <=> |M_F6P_c_None_|'
+  subsystem: Exchange
+- id: R_91
+  name: Phosphomannomutase
+  equation: '|M_MAN1P_c_None_| <=> |M_MAN6P_c_None_|'
+  subsystem: Exchange
+- id: R_92
+  name: Mannose-1-phosphate guanylyltransferase
+  equation: '|M_GTP_c_None_| + |M_MAN1P_c_None_| <=> |M_GMAN_c_None_| + |M_PPI_c_None_|'
+  subsystem: Exchange
+- id: R_93
+  name: GDP-mannose 4,6-dehydratase
+  equation: '|M_GMAN_c_None_| <=> |M_WATER_c_None_| + |M_G4D6DMAN_c_None_|'
+  subsystem: Exchange
+- id: R_94
+  name: Triosephosphate isomerase
+  equation: '|M_GAP_c_None_| <=> |M_DHAP_c_None_|'
+  subsystem: Exchange
+- id: R_95
+  name: D-fructose 1-phosphotransferase
+  equation: '|M_ATP_c_None_| + |M_FRU_c_None_| <=> |M_F1P_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_96
+  name: 1-phosphofructokinase
+  equation: '|M_ATP_c_None_| + |M_F1P_c_None_| <=> |M_F16DP_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_97
+  name: Fructose-bisphosphate aldolase
+  equation: '|M_F1P_c_None_| <=> |M_T3_c_None_| + |M_GAP_c_None_|'
+  subsystem: Exchange
+- id: R_98
+  name: Fructokinase
+  equation: '|M_ATP_c_None_| + |M_FRU_c_None_| <=> |M_F6P_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_99
+  name: Xylose isomerase
+  equation: '|M_GLC_c_None_| <=> |M_FRU_c_None_|'
+  subsystem: Exchange
+- id: R_ACALinout
+  name: acetaldehyde transport via facilitated diffusion
+  equation: '|M_ACAL_e_None_| <=> |M_ACAL_c_None_|'
+  subsystem: Exchange
+- id: R_ACTout
+  name: actinorhodin efflux via diffusion
+  equation: '|M_ACT_c_None_| <=> |M_ACT_e_None_|'
+  subsystem: Exchange
+- id: R_ACinout
+  name: acetate transport via proton symport
+  equation: '|M_AC_e_None_| + |M_H_e_None_| <=> |M_AC_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_ADNinout
+  name: adenosine transport via proton symport
+  equation: '|M_ADN_e_None_| + |M_H_e_None_| <=> |M_H_c_None_| + |M_ADN_c_None_|'
+  subsystem: Exchange
+- id: R_ADinout
+  name: adenine transport via proton symport
+  equation: '|M_AD_e_None_| + |M_H_e_None_| <=> |M_AD_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_AKGinout
+  name: 2-oxoglutarate transport via proton symport
+  equation: '|M_H_e_None_| + |M_AKG_e_None_| <=> |M_AKG_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_ALAin
+  name: L-alanine transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_ALA_e_None_| <=> |M_PI_c_None_|
+    + |M_ALA_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_ANout
+  name: anthranilate transport via facilitated diffusion
+  equation: '|M_AN_c_None_| <=> |M_AN_e_None_|'
+  subsystem: Exchange
+- id: R_ARGin
+  name: L-arginine transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_ARG_e_None_| + |M_WATER_c_None_| <=> |M_ARG_c_None_|
+    + |M_PI_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_ARGinORNout
+  name: arginine/ornithine antiporter
+  equation: '|M_ARG_e_None_| + |M_ORN_c_None_| <=> |M_ORN_e_None_| + |M_ARG_c_None_|'
+  subsystem: Exchange
+- id: R_ASNin
+  name: 'L-asparagine transport via ABC system/putative L-asparagine permease '
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_ASN_e_None_| <=> |M_PI_c_None_|
+    + |M_ADP_c_None_| + |M_ASN_c_None_|'
+  subsystem: Exchange
+- id: R_ASPin1
+  name: L-aspartate transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_ASP_e_None_| <=> |M_PI_c_None_|
+    + |M_ADP_c_None_| + |M_ASP_c_None_|'
+  subsystem: Exchange
+- id: R_ASPin2
+  name: L-aspartate transport in via proton symport
+  equation: '|M_ASP_e_None_| + |M_H_e_None_| <=> |M_H_c_None_| + |M_ASP_c_None_|'
+  subsystem: Exchange
+- id: R_ASPin3
+  name: L-aspartate transport via proton symport (2 H)
+  equation: '|M_ASP_e_None_| + (2) |M_H_e_None_| <=> (2) |M_H_c_None_| + |M_ASP_c_None_|'
+  subsystem: Exchange
+- id: R_ASPin4
+  name: L-asparate transport via proton symport (3 H)
+  equation: '|M_ASP_e_None_| + (3) |M_H_e_None_| <=> (3) |M_H_c_None_| + |M_ASP_c_None_|'
+  subsystem: Exchange
+- id: R_CDAout
+  name: CDA efflux via diffusion
+  equation: '|M_CDA_c_None_| <=> |M_CDA_e_None_|'
+  subsystem: Exchange
+- id: R_CELBin
+  name: 'cellobiose transport via ABC system/putative cellobiose transport permease '
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_CELB_e_None_| <=> |M_PI_c_None_|
+    + |M_ADP_c_None_| + |M_CELB_c_None_|'
+  subsystem: Exchange
+- id: R_CHOLINEin
+  name: choline transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_CHOLINE_e_None_| <=> |M_PI_c_None_|
+    + |M_ADP_c_None_| + |M_CHOLINE_c_None_|'
+  subsystem: Exchange
+- id: R_CHOLINEinout
+  name: choline transport via proton symport
+  equation: '|M_H_e_None_| + |M_CHOLINE_e_None_| <=> |M_H_c_None_| + |M_CHOLINE_c_None_|'
+  subsystem: Exchange
+- id: R_CITRinout
+  name: citrulline transport via facilitated diffusion
+  equation: '|M_CITR_c_None_| <=> |M_CITR_e_None_|'
+  subsystem: Exchange
+- id: R_CITinSUCCout
+  name: citrate transport via succinate antiport
+  equation: '|M_SUCC_c_None_| + |M_CIT_e_None_| <=> |M_CIT_c_None_| + |M_SUCC_e_None_|'
+  subsystem: Exchange
+- id: R_CITinout
+  name: citrate transport via protone symport
+  equation: (3) |M_H_e_None_| + |M_CIT_e_None_| <=> |M_CIT_c_None_| + (3) |M_H_c_None_|
+  subsystem: Exchange
+- id: R_CO2inout
+  name: CO2 transport via diffusion
+  equation: '|M_CO2_e_None_| <=> |M_CO2_c_None_|'
+  subsystem: Exchange
+- id: R_CYSin
+  name: L-cysteine transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_CYS_e_None_| <=> |M_PI_c_None_|
+    + |M_CYS_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_CYTDinout
+  name: cytidine transport via proton symport
+  equation: '|M_H_e_None_| + |M_CYTD_e_None_| <=> |M_CYTD_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_CYTSinout
+  name: 'cytosine transport via proton symport/putative cytosine permease '
+  equation: '|M_CYTS_e_None_| + |M_H_e_None_| <=> |M_CYTS_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_DALAinout
+  name: D-alanine transport via proton symport
+  equation: '|M_DALA_e_None_| + |M_H_e_None_| <=> |M_DALA_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_DAPIMin
+  name: 2,6-diaminopimelic acid transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_DAPIM_e_None_| <=> |M_DAPIM_c_None_|
+    + |M_PI_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_DARABINOSEin1
+  name: D-arabinose transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_DARABINOSE_e_None_| + |M_WATER_c_None_| <=> |M_DARABINOSE_c_None_|
+    + |M_PI_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_DARABITOLin
+  name: D-arabitol transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_DARABITOL_e_None_| <=> |M_PI_c_None_|
+    + |M_ADP_c_None_| + |M_DARABITOL_c_None_|'
+  subsystem: Exchange
+- id: R_DAinout
+  name: deoxyadenosine transport via proton symport
+  equation: '|M_DA_e_None_| + |M_H_e_None_| <=> |M_H_c_None_| + |M_DA_c_None_|'
+  subsystem: Exchange
+- id: R_DCinout
+  name: deoxycytidine transport via proton symport
+  equation: '|M_DC_e_None_| + |M_H_e_None_| <=> |M_DC_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_DGLYCERATEna
+  name: D-glycerate transport via sodium symport
+  equation: '|M_Na_e_None_| + |M_DGLYCERATE_e_None_| <=> |M_DGLYCERATE_c_None_| +
+    |M_Na_c_None_|'
+  subsystem: Exchange
+- id: R_DGinout
+  name: deoxyguanosine transport via proton symport
+  equation: '|M_DG_e_None_| + |M_H_e_None_| <=> |M_H_c_None_| + |M_DG_c_None_|'
+  subsystem: Exchange
+- id: R_DINinout
+  name: deoxyinosine transport via proton symport
+  equation: '|M_H_e_None_| + |M_DIN_e_None_| <=> |M_DIN_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_DLYXOSEin
+  name: D-lyxose transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_DLYXOSE_e_None_| <=> |M_DLYXOSE_c_None_|
+    + |M_PI_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_DSERinout
+  name: D-serine transport via proton symport
+  equation: '|M_DSER_e_None_| + |M_H_e_None_| <=> |M_H_c_None_| + |M_DSER_c_None_|'
+  subsystem: Exchange
+- id: R_DTinout
+  name: thymidine transport via proton symport
+  equation: '|M_DT_e_None_| + |M_H_e_None_| <=> |M_DT_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_DUinout
+  name: deoxyuridine transport via proton symport
+  equation: '|M_DU_e_None_| + |M_H_e_None_| <=> |M_DU_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_ETHinout
+  name: ethanol transport via proton symport
+  equation: '|M_ETH_e_None_| + |M_H_e_None_| <=> |M_ETH_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_FANinout
+  name: formyl-anthranilate transport via facilitated diffusion
+  equation: '|M_FAN_e_None_| <=> |M_FAN_c_None_|'
+  subsystem: Exchange
+- id: R_FEin
+  name: iron transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_FE_e_None_| <=> |M_PI_c_None_|
+    + |M_ADP_c_None_| + |M_FE_c_None_|'
+  subsystem: Exchange
+- id: R_FORinout
+  name: formate transport via diffusion
+  equation: '|M_FOR_e_None_| <=> |M_FOR_c_None_|'
+  subsystem: Exchange
+- id: R_FRUin1
+  name: fructose transport via PEP:PTS/putative fructose-specific permease
+  equation: '|M_PEP_c_None_| + |M_FRU_e_None_| <=> |M_PYR_c_None_| + |M_F6P_c_None_|'
+  subsystem: Exchange
+- id: R_FRUin2
+  name: fructose transport via PEP:PTS
+  equation: '|M_FRU_e_None_| + |M_PEP_c_None_| <=> |M_F1P_c_None_| + |M_PYR_c_None_|'
+  subsystem: Exchange
+- id: R_FUMin1
+  name: fumarate transport via proton symport (2 H)
+  equation: '|M_FUM_e_None_| + (2) |M_H_e_None_| <=> |M_FUM_c_None_| + (2) |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_FUMin2
+  name: fumarate transport via proton symport (3 H)
+  equation: '|M_FUM_e_None_| + (3) |M_H_e_None_| <=> |M_FUM_c_None_| + (3) |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_FUMinSUCCout
+  name: succinate/fumarate antiporter
+  equation: '|M_SUCC_c_None_| + |M_FUM_e_None_| <=> |M_FUM_c_None_| + |M_SUCC_e_None_|'
+  subsystem: Exchange
+- id: R_GABAinout
+  name: 4-aminobutyrate transport via proton symport
+  equation: '|M_GABA_e_None_| + |M_H_e_None_| <=> |M_H_c_None_| + |M_GABA_c_None_|'
+  subsystem: Exchange
+- id: R_GL3Pin
+  name: glycerol-3-phosphate/phosphate antiporter
+  equation: '|M_WATER_c_None_| + |M_ATP_c_None_| + |M_GL3P_e_None_| <=> |M_GL3P_c_None_|
+    + |M_PI_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_GL3PinPIout
+  name: glycerol-3-phosphate/phosphate antiporter
+  equation: '|M_GL3P_e_None_| + |M_PI_c_None_| <=> |M_GL3P_c_None_| + |M_PI_e_None_|'
+  subsystem: Exchange
+- id: R_GLACin
+  name: galactose transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_GLAC_e_None_| <=> |M_PI_c_None_|
+    + |M_ADP_c_None_| + |M_GLAC_c_None_|'
+  subsystem: Exchange
+- id: R_GLACinH
+  name: D-galactose transport in via proton symport
+  equation: '|M_GLAC_e_None_| + |M_H_e_None_| <=> |M_GLAC_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_GLAMin
+  name: D-glucosamine transport via PEP:PTS
+  equation: '|M_PEP_c_None_| + |M_GLAM_e_None_| <=> |M_PYR_c_None_| + |M_GA6P_c_None_|'
+  subsystem: Exchange
+- id: R_GLCin
+  name: glucose transport via PEP:PTS
+  equation: '|M_GLC_e_None_| + |M_PEP_c_None_| <=> |M_PYR_c_None_| + |M_GLC6P_c_None_|'
+  subsystem: Exchange
+- id: R_GLCinH
+  name: D-glucose uptake via proton symport
+  equation: '|M_GLC_e_None_| + |M_H_e_None_| <=> |M_GLC_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_GLNin
+  name: L-glutamine transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_GLN_e_None_| <=> |M_GLN_c_None_|
+    + |M_PI_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_GLTin
+  name: 'glutamate uptake system ATP-binding protein '
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_GLT_e_None_| <=> |M_PI_c_None_|
+    + |M_ADP_c_None_| + |M_GLT_c_None_|'
+  subsystem: Exchange
+- id: R_GLTna
+  name: Glutamate transport via sodium symport
+  equation: '|M_GLT_e_None_| + |M_Na_e_None_| <=> |M_GLT_c_None_| + |M_Na_c_None_|'
+  subsystem: Exchange
+- id: R_GLTout
+  name: L-glutamate efflux via proton symport
+  equation: '|M_GLT_c_None_| + |M_H_c_None_| <=> |M_GLT_e_None_| + |M_H_e_None_|'
+  subsystem: Exchange
+- id: R_GLUCinout
+  name: D-gluconate transport via proton symport/putative gluconate permease
+  equation: '|M_GLUC_e_None_| + |M_H_e_None_| <=> |M_GLUC_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_GLYCOLATEinout
+  name: glycolate transport via diffusion
+  equation: '|M_GLYCOLATE_e_None_| <=> |M_GLYCOLATE_c_None_|'
+  subsystem: Exchange
+- id: R_GLYCOLATEinoutH
+  name: glycolate transport via proton transport
+  equation: '|M_GLYCOLATE_e_None_| + |M_H_e_None_| <=> |M_GLYCOLATE_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_GLYin
+  name: glycine transport via proton symport
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_GLY_e_None_| <=> |M_GLY_c_None_|
+    + |M_PI_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_GLYinout
+  name: glycine transport via proton symport
+  equation: '|M_GLY_e_None_| + |M_H_e_None_| <=> |M_H_c_None_| + |M_GLY_c_None_|'
+  subsystem: Exchange
+- id: R_GLinout
+  name: 'glycerol transport via channel/putative glycerol uptake facilitator protein '
+  equation: '|M_GL_e_None_| <=> |M_GL_c_None_|'
+  subsystem: Exchange
+- id: R_GNinout
+  name: guanine transport via facilitated diffusion
+  equation: '|M_GN_e_None_| <=> |M_GN_c_None_|'
+  subsystem: Exchange
+- id: R_GSNinout
+  name: guanosine transport via proton symport
+  equation: '|M_GSN_e_None_| + |M_H_e_None_| <=> |M_GSN_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_HISin1
+  name: L-histidine transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_HIS_e_None_| <=> |M_HIS_c_None_|
+    + |M_PI_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_HISinout
+  name: L-histidine transport via proton symport
+  equation: '|M_HIS_e_None_| + |M_H_e_None_| <=> |M_HIS_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_HMPinout
+  name: 2-(Hydroxymethyl)phenol transport via diffusion
+  equation: '|M_HMP_e_None_| <=> |M_HMP_c_None_|'
+  subsystem: Exchange
+- id: R_HXMPt
+  name: 2-(hydroxymethyl)phenol transport in/out via proton symport
+  equation: '|M_HXMP_e_None_| + |M_H_e_None_| <=> |M_HXMP_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_HYXNinout
+  name: hypoxanthine transport via facilitated diffusion
+  equation: '|M_HYXN_e_None_| <=> |M_HYXN_c_None_|'
+  subsystem: Exchange
+- id: R_ILEin1
+  name: L-isoleucine transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_ILE_e_None_| <=> |M_PI_c_None_|
+    + |M_ADP_c_None_| + |M_ILE_c_None_|'
+  subsystem: Exchange
+- id: R_ILEinout
+  name: L-isoleucine transport via proton symport
+  equation: '|M_ILE_e_None_| + |M_H_e_None_| <=> |M_H_c_None_| + |M_ILE_c_None_|'
+  subsystem: Exchange
+- id: R_INDOLEinout
+  name: Iindole transport via proton transport
+  equation: '|M_INDOLE_e_None_| + |M_H_e_None_| <=> |M_INDOLE_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_INSinout
+  name: inosine transport via proton symport
+  equation: '|M_INS_e_None_| + |M_H_e_None_| <=> |M_INS_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_KDGinout
+  name: 2-dehydro-3-deoxy-D-gluconate transport via proton symport
+  equation: '|M_KDG_e_None_| + |M_H_e_None_| <=> |M_KDG_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_Kinout
+  name: potasium transport via proton transport
+  equation: '|M_K_e_None_| + |M_H_e_None_| <=> |M_K_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_LACTOSEin
+  name: lactose transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_LACTOSE_e_None_| <=> |M_PI_c_None_|
+    + |M_ADP_c_None_| + |M_LACTOSE_c_None_|'
+  subsystem: Exchange
+- id: R_LACinout
+  name: D-lactate transport via proton symport
+  equation: '|M_H_e_None_| + |M_LAC_e_None_| <=> |M_LAC_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_LARABINOSEin1
+  name: L-arabinose transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_LARABINOSE_e_None_| <=> |M_LARABINOSE_c_None_|
+    + |M_PI_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_LARABINOSEin2
+  name: L-arabinose transport via proton symport
+  equation: '|M_H_e_None_| + |M_LARABINOSE_e_None_| <=> |M_LARABINOSE_c_None_| +
+    |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_LEUin1
+  name: L-leucine transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_LEU_e_None_| + |M_WATER_c_None_| <=> |M_LEU_c_None_|
+    + |M_PI_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_LEUinout
+  name: L-leucine transport via proton symport
+  equation: '|M_H_e_None_| + |M_LEU_e_None_| <=> |M_LEU_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_LLACinout
+  name: 'L-lactate transport via proton symport/putative L-lactate permease '
+  equation: '|M_LLAC_e_None_| + |M_H_e_None_| <=> |M_LLAC_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_LLYXOSEin
+  name: L-lyxose transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_LLYXOSE_e_None_| <=> |M_LLYXOSE_c_None_|
+    + |M_PI_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_LYSin1
+  name: L-lysine transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_LYS_e_None_| <=> |M_PI_c_None_|
+    + |M_ADP_c_None_| + |M_LYS_c_None_|'
+  subsystem: Exchange
+- id: R_LYSinCADAout
+  name: lysine/cadaverine antiporter
+  equation: '|M_CADA_c_None_| + |M_LYS_e_None_| + |M_H_e_None_| <=> |M_LYS_c_None_|
+    + |M_H_c_None_| + |M_CADA_e_None_|'
+  subsystem: Exchange
+- id: R_LYSinout
+  name: L-lysine reversible transport via proton symport
+  equation: '|M_H_e_None_| + |M_LYS_e_None_| <=> |M_LYS_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_MALin1
+  name: malate transport via proton symport (2 H)
+  equation: (2) |M_H_e_None_| + |M_MAL_e_None_| <=> |M_MAL_c_None_| + (2) |M_H_c_None_|
+  subsystem: Exchange
+- id: R_MALin2
+  name: malate transport via proton symport (3 H)
+  equation: (3) |M_H_e_None_| + |M_MAL_e_None_| <=> |M_MAL_c_None_| + (3) |M_H_c_None_|
+  subsystem: Exchange
+- id: R_MANNITOLin
+  name: D-mannitol transport via PEP:PTS
+  equation: '|M_MANNITOL_e_None_| + |M_PEP_c_None_| <=> |M_PYR_c_None_| + |M_MANNITOL1P_c_None_|'
+  subsystem: Exchange
+- id: R_MANin
+  name: D-mannose transport via PEP:PTS
+  equation: '|M_PEP_c_None_| + |M_MAN_e_None_| <=> |M_PYR_c_None_| + |M_MAN6P_c_None_|'
+  subsystem: Exchange
+- id: R_MELIinout
+  name: melibiose transport via proton symport
+  equation: '|M_H_e_None_| + |M_MELI_e_None_| <=> |M_H_c_None_| + |M_MELI_c_None_|'
+  subsystem: Exchange
+- id: R_METin
+  name: L-methionine transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_MET_e_None_| <=> |M_MET_c_None_|
+    + |M_PI_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_MLTin
+  name: Maltose transport via PEP:PTS
+  equation: '|M_MLT_e_None_| + |M_PEP_c_None_| <=> |M_MLT6P_c_None_| + |M_PYR_c_None_|'
+  subsystem: Exchange
+- id: R_MLTinATP
+  name: maltose transport via ABC system/putative maltose-binding protein
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_MLT_e_None_| <=> |M_PI_c_None_|
+    + |M_ADP_c_None_| + |M_MLT_c_None_|'
+  subsystem: Exchange
+- id: R_NACinout
+  name: nicotinic acid transport via facilitated diffusion
+  equation: '|M_NAC_e_None_| <=> |M_NAC_c_None_|'
+  subsystem: Exchange
+- id: R_NH3inout
+  name: ammonia transport via diffusion
+  equation: '|M_NH3_e_None_| <=> |M_NH3_c_None_|'
+  subsystem: Exchange
+- id: R_NO2inout
+  name: nitrite transport via proton transport
+  equation: '|M_NO2_e_None_| + |M_H_e_None_| <=> |M_H_c_None_| + |M_NO2_c_None_|'
+  subsystem: Exchange
+- id: R_NO3inout
+  name: nitrate transport via diffusion
+  equation: '|M_NO3_e_None_| <=> |M_NO3_c_None_|'
+  subsystem: Exchange
+- id: R_Naout1
+  name: 'sodium proton antiporter (H:NA is 1:1)/putative sodium:solute symporter '
+  equation: '|M_Na_c_None_| + |M_H_e_None_| <=> |M_Na_e_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_Naout2
+  name: 'sodium proton antiporter (H:NA is 2)/putative sodium:solute symporter '
+  equation: '|M_Na_c_None_| + (2) |M_H_e_None_| <=> |M_Na_e_None_| + (2) |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_Naout3
+  name: 'sodium proton antiporter (H:NA is 1.5)/putative sodium:solute symporter '
+  equation: (2) |M_Na_c_None_| + (3) |M_H_e_None_| <=> |M_Na_e_None_| + (3) |M_H_c_None_|
+  subsystem: Exchange
+- id: R_O2inout
+  name: oxygen transport via diffusion
+  equation: '|M_O2_e_None_| <=> |M_O2_c_None_|'
+  subsystem: Exchange
+- id: R_ORNin
+  name: ornithine transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_ORN_e_None_| + |M_WATER_c_None_| <=> |M_ORN_c_None_|
+    + |M_PI_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_PACout
+  name: phenylacetic acid transport via facilitated diffusion
+  equation: '|M_PAC_c_None_| <=> |M_PAC_e_None_|'
+  subsystem: Exchange
+- id: R_PHEinout
+  name: L-phenylalanine transport via proton symport
+  equation: '|M_PHE_e_None_| + |M_H_e_None_| <=> |M_PHE_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_PIin
+  name: 'phosphate transport via ABC system/phosphate-binding protein precursor '
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_PI_e_None_| <=> |M_ADP_c_None_|
+    + (2) |M_PI_c_None_|'
+  subsystem: Exchange
+- id: R_PIinout
+  name: 'phosphate reversible transport via symport/ phosphate transport protein '
+  equation: '|M_PI_e_None_| + |M_H_e_None_| <=> |M_PI_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_PROPANOATEinout
+  name: propanoate transport via proton symport
+  equation: '|M_H_e_None_| + |M_PROPANOATE_e_None_| <=> |M_PROPANOATE_c_None_| +
+    |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_PROin1
+  name: L-proline transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_PRO_e_None_| + |M_WATER_c_None_| <=> |M_PRO_c_None_|
+    + |M_PI_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_PROinout
+  name: L-proline transport via proton symport
+  equation: '|M_H_e_None_| + |M_PRO_e_None_| <=> |M_PRO_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_PROna
+  name: L-proline transport via sodium symport
+  equation: '|M_Na_e_None_| + |M_PRO_e_None_| <=> |M_PRO_c_None_| + |M_Na_c_None_|'
+  subsystem: Exchange
+- id: R_PYRinout
+  name: pyruvate transport via proton symport
+  equation: '|M_H_e_None_| + |M_PYR_e_None_| <=> |M_PYR_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_REDout
+  name: RED efflux via diffusion
+  equation: '|M_PYRAPCP_c_None_| <=> |M_PYRAPCP_e_None_|'
+  subsystem: Exchange
+- id: R_RIBin
+  name: D-ribose transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_RIB_e_None_| <=> |M_RIB_c_None_|
+    + |M_PI_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_RMNin
+  name: potasium transport via proton transport
+  equation: '|M_RMN_e_None_| + |M_H_e_None_| <=> |M_H_c_None_| + |M_RMN_c_None_|'
+  subsystem: Exchange
+- id: R_SALICINin
+  name: salicin transport via PEP:PTS
+  equation: '|M_PEP_c_None_| + |M_SALICIN_e_None_| <=> |M_PYR_c_None_| + |M_SAL6P_c_None_|'
+  subsystem: Exchange
+- id: R_SERinout
+  name: L-serine transport via proton symport
+  equation: '|M_SER_e_None_| + |M_H_e_None_| <=> |M_H_c_None_| + |M_SER_c_None_|'
+  subsystem: Exchange
+- id: R_SERna
+  name: L-serine transport via sodium symport
+  equation: '|M_SER_e_None_| + |M_Na_e_None_| <=> |M_SER_c_None_| + |M_Na_c_None_|'
+  subsystem: Exchange
+- id: R_SLFin
+  name: sulfate transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_SLF_e_None_| <=> |M_SLF_c_None_|
+    + |M_PI_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_SOTin
+  name: D-sorbitol transport via PEP:PTS
+  equation: '|M_PEP_c_None_| + |M_SOT_e_None_| <=> |M_PYR_c_None_| + |M_SOT_c_None_|'
+  subsystem: Exchange
+- id: R_SPERMIDINEin
+  name: SPERMIDINE transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_SPERMIDINE_e_None_| <=> |M_SPERMIDINE_c_None_|
+    + |M_PI_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_SUCCin1
+  name: succinate transport via proton symport (2 H)
+  equation: (2) |M_H_e_None_| + |M_SUCC_e_None_| <=> |M_SUCC_c_None_| + (2) |M_H_c_None_|
+  subsystem: Exchange
+- id: R_SUCCin2
+  name: succintate transport via proton symport (3 H)
+  equation: (3) |M_H_e_None_| + |M_SUCC_e_None_| <=> |M_SUCC_c_None_| + (3) |M_H_c_None_|
+  subsystem: Exchange
+- id: R_SUCCout
+  name: succinate efflux via proton symport
+  equation: '|M_SUCC_c_None_| + |M_H_c_None_| <=> |M_H_e_None_| + |M_SUCC_e_None_|'
+  subsystem: Exchange
+- id: R_SUCROSEin
+  name: sucrose transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_SUCROSE_e_None_| <=> |M_SUCROSE_c_None_|
+    + |M_PI_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_T3inout
+  name: glyceraldehyde transport via facilitated diffusion
+  equation: '|M_T3_e_None_| <=> |M_T3_c_None_|'
+  subsystem: Exchange
+- id: R_TARTRATEinSUCCout
+  name: tartrate/succinate antiporter
+  equation: '|M_SUCC_c_None_| + |M_TARTRATE_e_None_| <=> |M_SUCC_e_None_| + |M_TARTRATE_c_None_|'
+  subsystem: Exchange
+- id: R_THRin1
+  name: L-threonine transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_THR_e_None_| <=> |M_PI_c_None_|
+    + |M_ADP_c_None_| + |M_THR_c_None_|'
+  subsystem: Exchange
+- id: R_THRin2
+  name: L-threonine transport via proton symport
+  equation: '|M_THR_e_None_| + |M_H_e_None_| <=> |M_THR_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_THRna
+  name: L-threonine transport via sodium symport
+  equation: '|M_THR_e_None_| + |M_Na_e_None_| <=> |M_THR_c_None_| + |M_Na_c_None_|'
+  subsystem: Exchange
+- id: R_THYMINEin
+  name: THYMINE transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_THYMINE_e_None_| <=> |M_PI_c_None_|
+    + |M_ADP_c_None_| + |M_THYMINE_c_None_|'
+  subsystem: Exchange
+- id: R_TREin
+  name: trehalose transport via PEP:PTS
+  equation: '|M_PEP_c_None_| + |M_TRE_e_None_| <=> |M_TRE6P_c_None_| + |M_PYR_c_None_|'
+  subsystem: Exchange
+- id: R_TRPinout
+  name: L-tryptophan transport via proton symport
+  equation: '|M_TRP_e_None_| + |M_H_e_None_| <=> |M_H_c_None_| + |M_TRP_c_None_|'
+  subsystem: Exchange
+- id: R_TYRinout
+  name: L-tyrosine transport via proton symport
+  equation: '|M_TYR_e_None_| + |M_H_e_None_| <=> |M_H_c_None_| + |M_TYR_c_None_|'
+  subsystem: Exchange
+- id: R_UDPNAGin
+  name: N-actetyl glocoseamine transport via PEP:PTS
+  equation: '|M_PEP_c_None_| + |M_UDPNAG_e_None_| <=> |M_PYR_c_None_| + |M_NADGLUCOSA6P_c_None_|'
+  subsystem: Exchange
+- id: R_UPout
+  name: undecylprodigiosin transport
+  equation: '|M_UP_c_None_| <=> |M_UP_e_None_|'
+  subsystem: Exchange
+- id: R_URAinout
+  name: uracil transport via proton symport
+  equation: '|M_URA_e_None_| + |M_H_e_None_| <=> |M_H_c_None_| + |M_URA_c_None_|'
+  subsystem: Exchange
+- id: R_UREAinout
+  name: urea transport via facilitate diffusion
+  equation: '|M_UREA_e_None_| <=> |M_UREA_c_None_|'
+  subsystem: Exchange
+- id: R_URIinout
+  name: uridine transport via proton symport
+  equation: '|M_URI_e_None_| + |M_H_e_None_| <=> |M_H_c_None_| + |M_URI_c_None_|'
+  subsystem: Exchange
+- id: R_VALin1
+  name: L-valine transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_VAL_e_None_| <=> |M_PI_c_None_|
+    + |M_ADP_c_None_| + |M_VAL_c_None_|'
+  subsystem: Exchange
+- id: R_VALinout
+  name: L-valine transport via proton symport
+  equation: '|M_VAL_e_None_| + |M_H_e_None_| <=> |M_VAL_c_None_| + |M_H_c_None_|'
+  subsystem: Exchange
+- id: R_XANinout
+  name: xanthine transport via facilitated diffusion
+  equation: '|M_XAN_e_None_| <=> |M_XAN_c_None_|'
+  subsystem: Exchange
+- id: R_XYLITOLin
+  name: xylitol transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_XYLITOL_e_None_| <=> |M_PI_c_None_|
+    + |M_ADP_c_None_| + |M_XYLITOL_c_None_|'
+  subsystem: Exchange
+- id: R_XYLin1
+  name: D-xylose transport via ABC system
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_XYL_e_None_| <=> |M_PI_c_None_|
+    + |M_ADP_c_None_| + |M_XYL_c_None_|'
+  subsystem: Exchange
+- id: R_XYLin2
+  name: D-xylose transport via proton symport
+  equation: '|M_XYL_e_None_| + |M_H_e_None_| <=> |M_H_c_None_| + |M_XYL_c_None_|'
+  subsystem: Exchange
+- id: R_act
+  name: hypothetical protein
+  equation: '|M_O2_c_None_| + |M_C32H26O12_c_None_| <=> |M_ACT_c_None_|'
+  subsystem: Exchange
+- id: R_act1
+  name: actinorhodin polyketide beta-ketoacyl synthase
+  equation: (8) |M_MALCOA_c_None_| + |M_ACOA_c_None_| <=> (7) |M_COA_c_None_| + |M_C16H17O8_c_None_|
+    + (7) |M_CO2_c_None_|
+  subsystem: Exchange
+- id: R_act2
+  name: ketoacyl reductase
+  equation: (2) |M_NADPH_c_None_| + |M_C16H17O8_c_None_| <=> (2) |M_NADP_c_None_|
+    + |M_C16H19O8_c_None_|
+  subsystem: Exchange
+- id: R_act3
+  name: ketoacyl reductase
+  equation: '|M_NADPH_c_None_| + |M_C16H19O8_c_None_| <=> |M_NADP_c_None_| + |M_C16H20O9_c_None_|'
+  subsystem: Exchange
+- id: R_act4
+  name: 'actinorhodin polyketide synthase  bifunctional cyclase/dehydratase '
+  equation: '|M_C16H20O9_c_None_| <=> (2) |M_WATER_c_None_| + |M_C16H16O7_c_None_|'
+  subsystem: Exchange
+- id: R_act5
+  name: cyclase
+  equation: '|M_C16H16O7_c_None_| <=> |M_WATER_c_None_| + |M_C16H14O6_1_c_None_|'
+  subsystem: Exchange
+- id: R_act6
+  name: dehydrogenase
+  equation: (2) |M_NADPH_c_None_| + |M_C16H14O6_1_c_None_| <=> (2) |M_NADP_c_None_|
+    + |M_C16H16O5_c_None_|
+  subsystem: Exchange
+- id: R_act7
+  name: hypothetical protein
+  equation: '|M_NAD_c_None_| + |M_WATER_c_None_| + |M_C16H16O5_c_None_| + (0.5) |M_O2_c_None_|
+    <=> |M_H_c_None_| + |M_NADH_c_None_| + |M_C16H14O5_c_None_|'
+  subsystem: Exchange
+- id: R_act8
+  name: 'actinorhodin polyketide dimerase  '
+  equation: '|M_WATER_c_None_| + (2) |M_NAD_c_None_| + |M_C16H14O5_c_None_| <=> (2)
+    |M_NADH_c_None_| + |M_C16H14O6_c_None_|'
+  subsystem: Exchange
+- id: R_act9
+  name: 'actinorhodin polyketide dimerase  '
+  equation: '|M_NAD_c_None_| + (2) |M_C16H14O6_c_None_| <=> |M_C32H26O12_c_None_|
+    + |M_H_c_None_| + |M_NADH_c_None_|'
+  subsystem: Exchange
+- id: R_biomass
+  name: BIOMASS SYNTHESIS
+  equation: (0.412) |M_PROTEIN_c_None_| + (0.03) |M_SMALLMOLECULES_c_None_| + (47)
+    |M_ATP_c_None_| + (0.066) |M_TEICH_c_None_| + (0.167) |M_RNA_c_None_| + (0.11)
+    |M_PEPTIDOGLYCAN_c_None_| + (0.018) |M_TAG_c_None_| + (0.044) |M_CARBOHYDRATE_c_None_|
+    + (0.027) |M_PHOSPHOLIPID_c_None_| + (0.036) |M_DNA_c_None_| <=> (47) |M_PI_c_None_|
+    + (47) |M_ADP_c_None_|
+  subsystem: Exchange
+- id: R_cda
+  name: tailoring
+  equation: (3) |M_ASP_c_None_| + |M_SER_c_None_| + |M_GLY_c_None_| + |M_PHYDROXYASN_c_None_|
+    + |M_LHPG_c_None_| + (2) |M_TRP_c_None_| + |M_EHCOA_c_None_| + |M_THR_c_None_|
+    + |M_MGLT_c_None_| <=> |M_CDA_c_None_|
+  subsystem: Exchange
+- id: R_cda1
+  name: hexanoyl-CoA oxidase
+  equation: '|M_FAD_c_None_| + |M_C060COA_c_None_| <=> |M_THCOA_c_None_| + |M_FADH2_c_None_|'
+  subsystem: Exchange
+- id: R_cda2
+  name: salicylate hydroxylase/hexenoyl-CoA monooxygenase
+  equation: '|M_THCOA_c_None_| + (0.5) |M_O2_c_None_| + |M_FADH2_c_None_| <=> |M_FAD_c_None_|
+    + |M_EHCOA_c_None_|'
+  subsystem: Exchange
+- id: R_cda3
+  name: 4-hydroxyphenylpyruvic acid dioxygenase/4-hydroxymandelate synthase
+  equation: '|M_PHPPYR_c_None_| + |M_O2_c_None_| <=> |M_L4HMACID_c_None_| + |M_CO2_c_None_|'
+  subsystem: Exchange
+- id: R_cda4
+  name: glycolate oxidase/4-hydroxymandelate oxidase
+  equation: '|M_L4HMACID_c_None_| + (0.5) |M_O2_c_None_| <=> |M_WATER_c_None_| +
+    |M_HPGLYOXYLATE_c_None_|'
+  subsystem: Exchange
+- id: R_cda5
+  name: aminotransferase/4-hydroxyphenylglycine aminotransferase
+  equation: '|M_GLT_c_None_| + |M_HPGLYOXYLATE_c_None_| <=> |M_AKG_c_None_| + |M_LHPG_c_None_|'
+  subsystem: Exchange
+- id: R_cda6
+  name: glutamate-3-methyltransferase
+  equation: '|M_GLT_c_None_| + |M_MTHF_c_None_| <=> |M_MGLT_c_None_| + |M_THF_c_None_|'
+  subsystem: Exchange
+- id: R_cda7
+  name: oxygenase/asparagine oxygenase
+  equation: '|M_ASN_c_None_| + (0.5) |M_O2_c_None_| <=> |M_WATER_c_None_| + |M_HYDROXYASN_c_None_|'
+  subsystem: Exchange
+- id: R_cda8
+  name: myo-inositol phosphate synthase
+  equation: '|M_ATP_c_None_| + |M_HYDROXYASN_c_None_| <=> |M_PHYDROXYASN_c_None_|
+    + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_dna
+  name: DNA synthesis (lumped reaction)
+  equation: (4.4) |M_ATP_c_None_| + (1.169) |M_DCTP_c_None_| + (1.169) |M_DGTP_c_None_|
+    + (0.448) |M_DATP_c_None_| + (0.448) |M_DTTP_c_None_| <=> (3.236) |M_PPI_c_None_|
+    + (4.4) |M_PI_c_None_| + |M_DNA_c_None_| + (4.4) |M_ADP_c_None_|
+  subsystem: Exchange
+- id: R_h2
+  name: proton transport
+  equation: '|M_H_c_None_| <=> |M_H_e_None_|'
+  subsystem: Exchange
+- id: R_maintenance
+  name: H(+)-transporting two-sector ATPase
+  equation: '|M_ATP_c_None_| + |M_WATER_c_None_| + |M_H_c_None_| <=> |M_PI_c_None_|
+    + |M_ADP_c_None_| + (4) |M_H_e_None_|'
+  subsystem: Exchange
+- id: R_pepgly
+  name: peptidoglycan synthesis (lumped reaction)
+  equation: (5.026) |M_ATP_c_None_| + (1.014) |M_GLU_c_None_| + (0.973) |M_GLY_c_None_|
+    + (1.9) |M_ALAALA_c_None_| + (1.14) |M_MDAPIM_c_None_| + (1.007) |M_UDPNAM_c_None_|
+    + (1.197) |M_UDPNAG_c_None_| + (0.95) |M_ALA_c_None_| <=> |M_PEPTIDOGLYCAN_c_None_|
+    + (1.007) |M_UMP_c_None_| + (1.197) |M_UDP_c_None_| + (5.026) |M_PI_c_None_|
+    + (5.026) |M_ADP_c_None_| + (0.95) |M_DALA_e_None_|
+  subsystem: Exchange
+- id: R_phoslip
+  name: phospholipids biosynthesis (artificial reaction)
+  equation: (0.052) |M_CDL_c_None_| + (1.089) |M_PE_c_None_| + (0.25) |M_PG_c_None_|
+    <=> |M_PHOSPHOLIPID_c_None_|
+  subsystem: Exchange
+- id: R_polysach
+  name: polysaccharide biosynthesis
+  equation: (1.897) |M_UDPNAG_c_None_| + (3.794) |M_UDPGAL_c_None_| <=> |M_CARBOHYDRATE_c_None_|
+    + (5.691) |M_UDP_c_None_|
+  subsystem: Exchange
+- id: R_protein
+  name: protein synthesis (lumped reaction)
+  equation: (40) |M_ATP_c_None_| + (0.391) |M_ASP_c_None_| + (0.165) |M_CYS_c_None_|
+    + (0.238) |M_PHE_c_None_| + (0.742) |M_LEU_c_None_| + (0.797) |M_VAL_c_None_|
+    + (0.459) |M_SER_c_None_| + (0.465) |M_THR_c_None_| + (1.35) |M_ALA_c_None_|
+    + (0.422) |M_PRO_c_None_| + (0.159) |M_TYR_c_None_| + (2.015) |M_GLY_c_None_|
+    + (0.499) |M_LYS_c_None_| + (0.352) |M_ARG_c_None_| + (0.477) |M_ILE_c_None_|
+    + (0.382) |M_GLN_c_None_| + (0.131) |M_HIS_c_None_| + (0.221) |M_MET_c_None_|
+    + (0.379) |M_GLT_c_None_| + (0.394) |M_ASN_c_None_| + (0.059) |M_TRP_c_None_|
+    <=> |M_PROTEIN_c_None_| + (40) |M_ADP_c_None_| + (40) |M_PI_c_None_|
+  subsystem: Exchange
+- id: R_red1
+  name: 3-oxoacyl-(acyl carrier protein) synthase III
+  equation: '|M_ACOA_c_None_| + (5) |M_MALCOA_c_None_| <=> (6) |M_COA_c_None_| +
+    (5) |M_CO2_c_None_| + |M_qDDT_c_None_|'
+  subsystem: Exchange
+- id: R_red10
+  name: 8-amino-7-oxononanoate synthase
+  equation: '|M_SER_c_None_| + |M_nACPPKT_c_None_| <=> |M_HBM_c_None_| + |M_CO2_c_None_|'
+  subsystem: Exchange
+- id: R_red11
+  name: RedV protein
+  equation: '|M_NADP_c_None_| + |M_HBM_c_None_| <=> |M_HBC_c_None_| + |M_NADPH_c_None_|'
+  subsystem: Exchange
+- id: R_red12
+  name: hypothetical protein
+  equation: '|M_HBC_c_None_| + |M_SAMET_c_None_| <=> |M_MBC_c_None_| + |M_AHOMOCYC_c_None_|'
+  subsystem: Exchange
+- id: R_red13
+  name: phosphoenolpyruvate-utilizing enzyme
+  equation: '|M_ATP_c_None_| + |M_UDPYRROLE_c_None_| + |M_MBC_c_None_| <=> |M_UP_c_None_|
+    + |M_PI_c_None_| + |M_ADP_c_None_|'
+  subsystem: Exchange
+- id: R_red2
+  name: polyketide synthase
+  equation: '|M_qDDT_c_None_| <=> |M_CO2_c_None_| + |M_DDMT_c_None_|'
+  subsystem: Exchange
+- id: R_red3
+  name: polyketide synthase
+  equation: '|M_DDMT_c_None_| <=> |M_CO2_c_None_| + |M_KMT_c_None_|'
+  subsystem: Exchange
+- id: R_red4
+  name: polyketide synthase
+  equation: '|M_GLY_c_None_| + |M_KMT_c_None_| <=> |M_KUDPYRROLE_c_None_| + |M_CO2_c_None_|'
+  subsystem: Exchange
+- id: R_red5
+  name: oxidoreductase
+  equation: '|M_NADPH_c_None_| + |M_KUDPYRROLE_c_None_| <=> |M_WATER_c_None_| + |M_UDPYRROLE_c_None_|
+    + |M_NADP_c_None_|'
+  subsystem: Exchange
+- id: R_red6
+  name: peptide synthase
+  equation: '|M_ATP_c_None_| + |M_PRO_c_None_| <=> |M_ADP_c_None_| + |M_oPROCT_c_None_|
+    + |M_PI_c_None_|'
+  subsystem: Exchange
+- id: R_red7
+  name: acyl-CoA dehydrogenase
+  equation: '|M_oPROCT_c_None_| <=> |M_oPYRROLECT_c_None_|'
+  subsystem: Exchange
+- id: R_red8
+  name: polyketide synthase RedX
+  equation: '|M_oPYRROLECT_c_None_| <=> |M_xksPYRROLECT_c_None_|'
+  subsystem: Exchange
+- id: R_red9
+  name: 8-amino-7-oxononanoate synthase
+  equation: '|M_xksPYRROLECT_c_None_| <=> |M_CO2_c_None_| + |M_nACPPKT_c_None_|'
+  subsystem: Exchange
+- id: R_rna
+  name: RNA synthesis (lumped reaction)
+  equation: (1.25) |M_ATP_c_None_| + (0.662) |M_UTP_c_None_| + (0.826) |M_GTP_c_None_|
+    + (1.031) |M_CTP_c_None_| <=> (3.119) |M_PPI_c_None_| + (1.25) |M_PI_c_None_|
+    + (1.25) |M_ADP_c_None_| + |M_RNA_c_None_|
+  subsystem: Exchange
+- id: R_smole
+  name: small molecules pool (artificial reaction)
+  equation: (0.012) |M_ACP_c_None_| + (0.188) |M_NAD_c_None_| + (0.274) |M_FMN_c_None_|
+    + (0.168) |M_NADP_c_None_| + (0.146) |M_MK_c_None_| + (0.159) |M_FAD_c_None_|
+    + (0.281) |M_THF_c_None_| + (0.163) |M_COA_c_None_| <=> |M_SMALLMOLECULES_c_None_|
+  subsystem: Exchange
+- id: R_tag
+  name: triacylglycerol (TAG) synthesis
+  equation: (1.244) |M_GL3P_c_None_| + (1.677) |M_C150ACP_c_None_| + (0.421) |M_C160ACP_c_None_|
+    + (0.014) |M_C181ACP_c_None_| + (1.57) |M_C170ACP_c_None_| + (0.05) |M_C140ACP_c_None_|
+    <=> (3.732) |M_ACP_c_None_| + (1.244) |M_PI_c_None_| + |M_TAG_c_None_|
+  subsystem: Exchange
+- id: R_teich
+  name: teichoic acid biosynthesis
+  equation: (0.129) |M_ATP_c_None_| + (0.129) |M_UDPNAG_c_None_| + (0.129) |M_LYS_c_None_|
+    + (0.518) |M_POLYGP_c_None_| <=> |M_TEICH_c_None_| + (0.129) |M_PI_c_None_| +
+    (0.129) |M_UDP_c_None_| + (0.129) |M_ADP_c_None_|
+  subsystem: Exchange
+- id: R_waterin
+  name: water transport
+  equation: '|M_WATER_c_None_| <=> |M_WATER_e_None_|'
+  subsystem: Exchange

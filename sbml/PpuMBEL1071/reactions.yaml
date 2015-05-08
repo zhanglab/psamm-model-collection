@@ -1,0 +1,2199 @@
+- id: AA_aroA
+  equation: '|SME3P[cell]| + |PEP[cell]| <=> |a_3PSME[cell]| + |PI[cell]|'
+- id: AA_aroB
+  equation: '|a_3DDAH7P[cell]| => |DQT[cell]| + |PI[cell]|'
+- id: AA_aroC
+  equation: '|a_3PSME[cell]| => |PI[cell]| + |CHOR[cell]|'
+- id: AA_aroD
+  equation: '|DQT[cell]| <=> |DHSK[cell]|'
+- id: AA_aroE
+  equation: '|DHSK[cell]| + |NADPH[cell]| <=> |SME[cell]| + |NADP[cell]|'
+- id: AA_aroFGH
+  equation: '|E4P[cell]| + |PEP[cell]| => |PI[cell]| + |a_3DDAH7P[cell]|'
+- id: AA_aroKL
+  equation: '|SME[cell]| + |ATP[cell]| => |ADP[cell]| + |SME3P[cell]|'
+- id: AA_pheA1
+  equation: '|CHOR[cell]| => |PHEN[cell]|'
+- id: AA_pheA2
+  equation: '|ASP[cell]| + |PHEN[cell]| => |OA[cell]| + |PTYR[cell]|'
+- id: AA_pheB
+  equation: '|PTYR[cell]| => |PHE[cell]| + |CO2[cell]|'
+- id: AA_trpBA
+  equation: '|IGP[cell]| + |SER[cell]| => |G3P[cell]| + |TRP[cell]|'
+- id: AA_trpCF1
+  equation: '|NPRAN[cell]| => |CPAD5P[cell]|'
+- id: AA_trpCF2
+  equation: '|CPAD5P[cell]| => |CO2[cell]| + |IGP[cell]|'
+- id: AA_trpEGD
+  equation: '|CHOR[cell]| + |GLN[cell]| => |GLU[cell]| + |PYR[cell]| + |AN[cell]|'
+- id: AA_trpGD
+  equation: '|AN[cell]| + |PRPP[cell]| => |PPI[cell]| + |NPRAN[cell]|'
+- id: AA_tyrA
+  equation: '|PHEN[cell]| => |CO2[cell]| + |PHPYR[cell]|'
+- id: AA_tyrB
+  equation: '|PHPYR[cell]| + |GLU[cell]| <=> |AKG[cell]| + |TYR[cell]|'
+- id: ADD1
+  equation: '|a_4MOP[cell]| + |COA[cell]| + |NAD[cell]| => |IVCOA[cell]| + |CO2[cell]|
+    + |NADH[cell]|'
+- id: ADD2
+  equation: '|MCTCOA[cell]| + |ATP[cell]| + |CO2[cell]| => |MGLUCOA[cell]| + |ADP[cell]|
+    + |PI[cell]|'
+- id: ADD3
+  equation: '|MGLUCOA[cell]| => |H3MCOA[cell]|'
+- id: ADD4
+  equation: '|OIVAL[cell]| + |COA[cell]| + |NAD[cell]| => |MPPCOA[cell]| + |CO2[cell]|
+    + |NADH[cell]|'
+- id: ADD5
+  equation: '|HIBUTCOA[cell]| => |HIBUT[cell]| + |COA[cell]|'
+- id: ADD6
+  equation: '|a_3MOP[cell]| + |COA[cell]| + |NAD[cell]| => |a_2MBTCOA[cell]| + |CO2[cell]|
+    + |NADH[cell]|'
+- id: ATPM
+  equation: '|ATP[cell]| => |ADP[cell]| + |PI[cell]|'
+- id: BOX_04epi
+  equation: '|SHBHACOA[cell]| => |RHBHACOA[cell]|'
+- id: BOX_04fabG
+  equation: '|HBOCOA[cell]| => |RHBHACOA[cell]|'
+- id: BOX_04fadA
+  equation: '|COA[cell]| + |HBOCOA[cell]| => (2) |ACCOA[cell]|'
+- id: BOX_04fadBX1
+  equation: '|HBECOA[cell]| => |SHBHACOA[cell]|'
+- id: BOX_04fadBX2
+  equation: '|SHBHACOA[cell]| + |NAD[cell]| => |HBOCOA[cell]| + |NADH[cell]|'
+- id: BOX_04fadE
+  equation: '|HBACOA[cell]| + |FAD[cell]| => |HBECOA[cell]| + |FADH2[cell]|'
+- id: BOX_04phaJ
+  equation: '|HBECOA[cell]| => |RHBHACOA[cell]|'
+- id: BOX_06epi
+  equation: '|SHHXHACOA[cell]| => |RHHXHACOA[cell]|'
+- id: BOX_06fabG
+  equation: '|HHXOCOA[cell]| => |RHHXHACOA[cell]|'
+- id: BOX_06fadA
+  equation: '|COA[cell]| + |HHXOCOA[cell]| => |HBACOA[cell]| + |ACCOA[cell]|'
+- id: BOX_06fadBX1
+  equation: '|HHXECOA[cell]| + |H2O[cell]| => |SHHXHACOA[cell]|'
+- id: BOX_06fadBX2
+  equation: '|SHHXHACOA[cell]| + |NAD[cell]| => |HHXOCOA[cell]| + |NADH[cell]|'
+- id: BOX_06fadE
+  equation: '|HHXACOA[cell]| + |FAD[cell]| => |HHXECOA[cell]| + |FADH2[cell]|'
+- id: BOX_06phaJ
+  equation: '|HHXECOA[cell]| => |RHHXHACOA[cell]|'
+- id: BOX_08epi
+  equation: '|SHOHACOA[cell]| => |RHOHACOA[cell]|'
+- id: BOX_08fabG
+  equation: '|HOOCOA[cell]| => |RHOHACOA[cell]|'
+- id: BOX_08fadA
+  equation: '|COA[cell]| + |HOOCOA[cell]| => |HHXACOA[cell]| + |ACCOA[cell]|'
+- id: BOX_08fadBX1
+  equation: '|HOECOA[cell]| => |SHOHACOA[cell]|'
+- id: BOX_08fadBX2
+  equation: '|SHOHACOA[cell]| + |NAD[cell]| => |HOOCOA[cell]| + |NADH[cell]|'
+- id: BOX_08fadE
+  equation: '|HOACOA[cell]| + |FAD[cell]| => |HOECOA[cell]| + |FADH2[cell]|'
+- id: BOX_08phaJ
+  equation: '|HOECOA[cell]| => |RHOHACOA[cell]|'
+- id: BOX_10epi
+  equation: '|SHDHACOA[cell]| => |RHDHACOA[cell]|'
+- id: BOX_10fabG
+  equation: '|HDOCOA[cell]| => |RHDHACOA[cell]|'
+- id: BOX_10fadA
+  equation: '|COA[cell]| + |HDOCOA[cell]| => |HOACOA[cell]| + |ACCOA[cell]|'
+- id: BOX_10fadBX1
+  equation: '|HDECOA[cell]| => |SHDHACOA[cell]|'
+- id: BOX_10fadBX2
+  equation: '|SHDHACOA[cell]| + |NAD[cell]| => |HDOCOA[cell]| + |NADH[cell]|'
+- id: BOX_10fadE
+  equation: '|HDACOA[cell]| + |FAD[cell]| => |HDECOA[cell]| + |FADH2[cell]|'
+- id: BOX_10phaJ
+  equation: '|HDECOA[cell]| => |RHDHACOA[cell]|'
+- id: BOX_12epi
+  equation: '|SHDDHACOA[cell]| => |RHDDHACOA[cell]|'
+- id: BOX_12fabG
+  equation: '|HDDOCOA[cell]| => |RHDDHACOA[cell]|'
+- id: BOX_12fadA
+  equation: '|COA[cell]| + |HDDOCOA[cell]| => |HDACOA[cell]| + |ACCOA[cell]|'
+- id: BOX_12fadBX1
+  equation: '|HDDECOA[cell]| => |SHDDHACOA[cell]|'
+- id: BOX_12fadBX2
+  equation: '|SHDDHACOA[cell]| + |NAD[cell]| => |HDDOCOA[cell]| + |NADH[cell]|'
+- id: BOX_12fadE
+  equation: '|HDDACOA[cell]| + |FAD[cell]| => |HDDECOA[cell]| + |FADH2[cell]|'
+- id: BOX_12phaJ
+  equation: '|HDDECOA[cell]| => |RHDDHACOA[cell]|'
+- id: BOX_14epi
+  equation: '|SHTDHACOA[cell]| => |RHTDHACOA[cell]|'
+- id: BOX_14fabG
+  equation: '|HTDOCOA[cell]| => |RHTDHACOA[cell]|'
+- id: BOX_14fadA
+  equation: '|COA[cell]| + |HTDOCOA[cell]| => |HDDACOA[cell]| + |ACCOA[cell]|'
+- id: BOX_14fadBX1
+  equation: '|HTDECOA[cell]| => |SHTDHACOA[cell]|'
+- id: BOX_14fadBX2
+  equation: '|SHTDHACOA[cell]| + |NAD[cell]| => |HTDOCOA[cell]| + |NADH[cell]|'
+- id: BOX_14fadE
+  equation: '|HTDACOA[cell]| + |FAD[cell]| => |HTDECOA[cell]| + |FADH2[cell]|'
+- id: BOX_14phaJ
+  equation: '|HTDECOA[cell]| => |RHTDHACOA[cell]|'
+- id: DEG_QuiA
+  equation: '|DQT[cell]| => |DHBZ[cell]|'
+- id: ED_eda
+  equation: '|KDPG[cell]| <=> |PYR[cell]| + |G3P[cell]|'
+- id: ED_edd
+  equation: '|D6PGC[cell]| <=> |KDPG[cell]|'
+- id: ED_gnuK
+  equation: '|GLUC[cell]| + |ATP[cell]| => |D6PGC[cell]| + |ADP[cell]|'
+- id: ED_kguD
+  equation: '|K6PG[cell]| + |NADPH[cell]| => |D6PGC[cell]| + |NADP[cell]|'
+- id: ED_kguK
+  equation: '|KDG[cell]| + |ATP[cell]| => |K6PG[cell]| + |ADP[cell]|'
+- id: FAS_B
+  equation: '|ACACP[cell]| + |MALACP[cell]| + (2) |NADPH[cell]| => (2) |NADP[cell]|
+    + |C040ACP[cell]| + |CO2[cell]| + |ACP[cell]|'
+- id: FAS_D
+  equation: '|ACACP[cell]| + (4) |MALACP[cell]| + (8) |NADPH[cell]| => (8) |NADP[cell]|
+    + |C100ACP[cell]| + (4) |CO2[cell]| + (4) |ACP[cell]|'
+- id: FAS_DD
+  equation: '|ACACP[cell]| + (5) |MALACP[cell]| + (10) |NADPH[cell]| => (10) |NADP[cell]|
+    + |C120ACP[cell]| + (5) |CO2[cell]| + (5) |ACP[cell]|'
+- id: FAS_HD
+  equation: '|ACACP[cell]| + (7) |MALACP[cell]| + (14) |NADPH[cell]| => (14) |NADP[cell]|
+    + |C160ACP[cell]| + (7) |CO2[cell]| + (7) |ACP[cell]|'
+- id: FAS_HX
+  equation: '|ACACP[cell]| + (2) |MALACP[cell]| + (4) |NADPH[cell]| => (4) |NADP[cell]|
+    + |C060ACP[cell]| + (2) |CO2[cell]| + (2) |ACP[cell]|'
+- id: FAS_O
+  equation: '|ACACP[cell]| + (3) |MALACP[cell]| + (6) |NADPH[cell]| => (6) |NADP[cell]|
+    + |C080ACP[cell]| + (3) |CO2[cell]| + (3) |ACP[cell]|'
+- id: FAS_OD
+  equation: '|ACACP[cell]| + (8) |MALACP[cell]| + (16) |NADPH[cell]| => (16) |NADP[cell]|
+    + |C180ACP[cell]| + (8) |CO2[cell]| + (8) |ACP[cell]|'
+- id: FAS_ODU1
+  equation: '|ACACP[cell]| + (5) |MALACP[cell]| + (9) |NADPH[cell]| => (9) |NADP[cell]|
+    + |C121ACP[cell]| + (5) |CO2[cell]| + (5) |ACP[cell]|'
+- id: FAS_ODU2
+  equation: '|ACACP[cell]| + (6) |MALACP[cell]| + (11) |NADPH[cell]| => (11) |NADP[cell]|
+    + |C141ACP[cell]| + (6) |CO2[cell]| + (6) |ACP[cell]|'
+- id: FAS_ODU3
+  equation: '|ACACP[cell]| + (7) |MALACP[cell]| + (13) |NADPH[cell]| => (13) |NADP[cell]|
+    + |C161ACP[cell]| + (7) |CO2[cell]| + (7) |ACP[cell]|'
+- id: FAS_ODU4
+  equation: '|ACACP[cell]| + (8) |MALACP[cell]| + (15) |NADPH[cell]| => (15) |NADP[cell]|
+    + |C181ACP[cell]| + (8) |CO2[cell]| + (8) |ACP[cell]|'
+- id: FAS_TD
+  equation: '|ACACP[cell]| + (6) |MALACP[cell]| + (12) |NADPH[cell]| => (12) |NADP[cell]|
+    + |C140ACP[cell]| + (6) |CO2[cell]| + (6) |ACP[cell]|'
+- id: FRUC_aceK
+  equation: '|F2P[cell]| => |FRU[cell]| + |PI[cell]|'
+- id: FRUC_adh
+  equation: '|SOT[cell]| + |NAD[cell]| <=> |FRU[cell]| + |NADH[cell]|'
+- id: FRUC_fda
+  equation: '|F1P[cell]| => |DHAP[cell]| + |T3[cell]|'
+- id: FRUC_fruK
+  equation: '|F1P[cell]| + |ATP[cell]| <=> |FDP[cell]| + |ADP[cell]|'
+- id: FRUC_gbd
+  equation: '|S6P[cell]| + |NADP[cell]| <=> |SB1P[cell]| + |NADPH[cell]|'
+- id: GALC_galE
+  equation: '|UDPG[cell]| <=> |UDPGAL[cell]|'
+- id: GALC_galU
+  equation: '|G1P[cell]| + |UTP[cell]| <=> |UDPG[cell]| + |PPI[cell]|'
+- id: GALC_gbd
+  equation: '|bGLAC[cell]| + |NADPH[cell]| <=> |a_3KbGALC[cell]| + |NADP[cell]|'
+- id: GALC_glcp
+  equation: '|GLYCOGEN[cell]| + |PI[cell]| => |G1P[cell]|'
+- id: GALC_glcs1
+  equation: '|ADPG[cell]| => |ADP[cell]| + |GLYCOGEN[cell]|'
+- id: GALC_glgc
+  equation: '|ATP[cell]| + |G1P[cell]| => |PPI[cell]| + |ADPG[cell]|'
+- id: GLY_R1
+  equation: '|ACAL[cell]| + |NADH[cell]| <=> |ETH[cell]| + |NAD[cell]|'
+- id: GLY_R2
+  equation: '|AC[cell]| + |NADH[cell]| <=> |ACAL[cell]| + |NAD[cell]|'
+- id: GLY_eno
+  equation: '|a_2PG[cell]| <=> |PEP[cell]|'
+- id: GLY_fad
+  equation: '|ATP[cell]| + |AC[cell]| + |COA[cell]| => |AMP[cell]| + |PPI[cell]|
+    + |ACCOA[cell]|'
+- id: GLY_fbp
+  equation: '|FDP[cell]| => |F6P[cell]| + |PI[cell]|'
+- id: GLY_fda
+  equation: '|FDP[cell]| <=> |G3P[cell]| + |DHAP[cell]|'
+- id: GLY_gap
+  equation: '|G3P[cell]| + |PI[cell]| + |NAD[cell]| <=> |NADH[cell]| + |a_13PDG[cell]|'
+- id: GLY_pgi1
+  equation: '|G6P[cell]| <=> |bDG6P[cell]|'
+- id: GLY_pgi2
+  equation: '|G6P[cell]| <=> |F6P[cell]|'
+- id: GLY_pgi3
+  equation: '|bDG6P[cell]| <=> |F6P[cell]|'
+- id: GLY_pgk
+  equation: '|a_13PDG[cell]| + |ADP[cell]| <=> |a_3PG[cell]| + |ATP[cell]|'
+- id: GLY_pgm
+  equation: '|a_3PG[cell]| <=> |a_2PG[cell]|'
+- id: GLY_pykAF
+  equation: '|PEP[cell]| + |ADP[cell]| => |PYR[cell]| + |ATP[cell]|'
+- id: GLY_qedH
+  equation: '|ETH[cell]| + |PQQ[cell]| => |PQQH2[cell]| + |ACAL[cell]|'
+- id: GLY_tpiA
+  equation: '|DHAP[cell]| <=> |G3P[cell]|'
+- id: GLY_xanA
+  equation: '|G6P[cell]| <=> |G1P[cell]|'
+- id: I106
+  equation: (5) |GLY[cell]| + |UPPMN_GN_LADGNMDDADA[cell]| => |UPPMN_GN_LADGNMD_G_5DADA[cell]|
+- id: I107
+  equation: '|PPEPTIDO[cell]| + |DALA[cell]| => |PEPTIDO[cell]|'
+- id: I108
+  equation: '|DB4P[cell]| + |A6RP[cell]| => |D8RL[cell]| + |PI[cell]|'
+- id: I109
+  equation: '|A6RP5P2[cell]| => |A6RP[cell]| + |PI[cell]|'
+- id: I116
+  equation: '|RL5P[cell]| => |DB4P[cell]| + |FORM[cell]|'
+- id: I51
+  equation: '|GLAL[cell]| + |NAD[cell]| => |NADH[cell]| + |GLYCOLATE[cell]|'
+- id: I96
+  equation: '|SAH[cell]| => |HCYS[cell]| + |ADN[cell]|'
+- id: MANN_R1
+  equation: '|MAN6P[cell]| <=> |F6P[cell]|'
+- id: MANN_algA
+  equation: '|GDP[cell]| + |MAN1P[cell]| => |PI[cell]| + |GDPMAN[cell]|'
+- id: MANN_algD
+  equation: '|GDPMAN[cell]| + (2) |NAD[cell]| => |GMANU[cell]| + (2) |NADH[cell]|'
+- id: MANN_algL
+  equation: '|ALGNT[cell]| => |OLGRNS[cell]|'
+- id: MANN_gmd
+  equation: '|GDPMAN[cell]| => |G4D6DMAN[cell]|'
+- id: MANN_phaG
+  equation: '|GDPMAN[cell]| + |MANN[cell]| => |GDP[cell]| + |MANN1[cell]|'
+- id: MANN_xanA
+  equation: '|MAN6P[cell]| <=> |MAN1P[cell]|'
+- id: NNnicD
+  equation: '|NFM[cell]| => |MALEM[cell]| + |FORM[cell]|'
+- id: OXY_atpS
+  equation: '|ADP[cell]| + |PI[cell]| + (4) |Hxt[cell]| <=> |ATP[cell]|'
+- id: OXY_cyt1
+  equation: '|QH2[cell]| + (0.5) |O2[cell]| => |Q[cell]| + (2) |Hxt[cell]|'
+- id: OXY_cyt2
+  equation: '|QH2[cell]| + (0.5) |O2[cell]| => |Q[cell]| + (4) |Hxt[cell]|'
+- id: OXY_pet1
+  equation: '|QH2[cell]| + (2) |FCYTC[cell]| => |Q[cell]| + (2) |FOCYTC[cell]|'
+- id: OXY_pet2
+  equation: (2) |FOCYTC[cell]| + (0.5) |O2[cell]| => (2) |FCYTC[cell]|
+- id: OXY_ppa
+  equation: '|PPI[cell]| => (2) |PI[cell]| + |Hxt[cell]|'
+- id: OXY_ppk
+  equation: '|ATP[cell]| + |PPI[cell]| => |ADP[cell]| + |PPPI[cell]|'
+- id: PHA_Synth
+  equation: (0.016) |PHTD[cell]| + (0.165) |PHDD[cell]| + (0.743) |PHD[cell]| + (0.069)
+    |PHO[cell]| <=> (0.169) |PHA[cell]|
+- id: PHB_BSynth
+  equation: '|RHBHACOA[cell]| <=> |PHB[cell]| + |COA[cell]|'
+- id: PHB_Synth
+  equation: '|C040ACP[cell]| => |PHB[cell]| + |ACP[cell]|'
+- id: PHDD_BSynth
+  equation: '|RHDDHACOA[cell]| <=> |PHDD[cell]| + |COA[cell]|'
+- id: PHDD_Synth
+  equation: '|C120ACP[cell]| => |PHDD[cell]| + |ACP[cell]|'
+- id: PHD_BSynth
+  equation: '|RHDHACOA[cell]| <=> |PHD[cell]| + |COA[cell]|'
+- id: PHD_Synth
+  equation: '|C100ACP[cell]| => |PHD[cell]| + |ACP[cell]|'
+- id: PHHX_BSynth
+  equation: '|RHHXHACOA[cell]| <=> |PHHX[cell]| + |COA[cell]|'
+- id: PHHX_Synth
+  equation: '|C060ACP[cell]| => |PHHX[cell]| + |ACP[cell]|'
+- id: PHO_BSynth
+  equation: '|RHOHACOA[cell]| <=> |PHO[cell]| + |COA[cell]|'
+- id: PHO_Synth
+  equation: '|C080ACP[cell]| => |PHO[cell]| + |ACP[cell]|'
+- id: PHTD_BSynth
+  equation: '|RHTDHACOA[cell]| <=> |PHTD[cell]| + |COA[cell]|'
+- id: PHTD_Synth
+  equation: '|C140ACP[cell]| => |PHTD[cell]| + |ACP[cell]|'
+- id: PPP_R1
+  equation: '|GLUC[cell]| + |FAD[cell]| <=> |DHGL[cell]| + |FADH2[cell]|'
+- id: PPP_R2
+  equation: '|DALT[cell]| => |KDG[cell]|'
+- id: PPP_R3
+  equation: '|UDPG[cell]| + (2) |NAD[cell]| => |UDPDGLUC[cell]| + (2) |NADH[cell]|'
+- id: PPP_gcd
+  equation: '|GLC[cell]| + |Q[cell]| => |G15L[cell]| + |QH2[cell]|'
+- id: PPP_gnd
+  equation: '|D6PGC[cell]| + |NADP[cell]| => |NADPH[cell]| + |CO2[cell]| + |RL5P[cell]|'
+- id: PPP_pgl
+  equation: '|D6PGL[cell]| => |D6PGC[cell]|'
+- id: PPP_rbsK
+  equation: '|RIB[cell]| + |ATP[cell]| => |R5P[cell]| + |ADP[cell]|'
+- id: PPP_rpe
+  equation: '|RL5P[cell]| <=> |X5P[cell]|'
+- id: PPP_rpiA
+  equation: '|RL5P[cell]| <=> |R5P[cell]|'
+- id: PPP_tal
+  equation: '|G3P[cell]| + |S7P[cell]| <=> |E4P[cell]| + |F6P[cell]|'
+- id: PPP_tktA1
+  equation: '|R5P[cell]| + |X5P[cell]| <=> |G3P[cell]| + |S7P[cell]|'
+- id: PPP_tktA2
+  equation: '|X5P[cell]| + |E4P[cell]| <=> |F6P[cell]| + |G3P[cell]|'
+- id: PPP_xanA
+  equation: '|R1P[cell]| <=> |R5P[cell]|'
+- id: PPP_zwf
+  equation: '|G6P[cell]| + |NADP[cell]| <=> |D6PGL[cell]| + |NADPH[cell]|'
+- id: PYR_ldhA
+  equation: '|LAC[cell]| + |NAD[cell]| <=> |PYR[cell]| + |NADH[cell]|'
+- id: PYR_oadA
+  equation: '|MAL[cell]| + |NAD[cell]| => |PYR[cell]| + |CO2[cell]| + |NADH[cell]|'
+- id: PYR_ppc
+  equation: '|PEP[cell]| + |CO2[cell]| => |OA[cell]| + |PI[cell]|'
+- id: PYR_pta
+  equation: '|ACETYLP[cell]| + |COA[cell]| <=> |ACCOA[cell]| + |PI[cell]|'
+- id: R0071
+  equation: '|DGAL[cell]| => |D4DG[cell]|'
+- id: R0072
+  equation: '|GCL[cell]| + |NAD[cell]| <=> |GLUCR[cell]| + |NADH[cell]|'
+- id: R0073
+  equation: '|D4DG[cell]| <=> |a_25DOP[cell]| + |CO2[cell]|'
+- id: R0074
+  equation: '|GLUCR[cell]| => |D4DG[cell]|'
+- id: R0075
+  equation: '|a_2D3DX[cell]| + |NAD[cell]| <=> |a_5H24DP[cell]| + |NADH[cell]|'
+- id: R0076
+  equation: '|ASB[cell]| => |MDAC[cell]|'
+- id: R0077
+  equation: '|MLT[cell]| => (2) |GLC[cell]|'
+- id: R0079
+  equation: '|DGLS[cell]| => |ROH[cell]| + |GLC[cell]|'
+- id: R0080
+  equation: '|CBIO[cell]| => (2) |bDGLC[cell]|'
+- id: R0084
+  equation: '|F6P[cell]| + |GLN[cell]| => |GLU[cell]| + |GA6P[cell]|'
+- id: R0085
+  equation: '|ACCOA[cell]| + |GA1P[cell]| => |NAGA1P[cell]| + |COA[cell]|'
+- id: R0086
+  equation: '|UTP[cell]| + |NAGA1P[cell]| => |UDPNAG[cell]| + |PPI[cell]|'
+- id: R0087
+  equation: '|UDPNAG[cell]| + |PEP[cell]| => |UDPNAGEP[cell]| + |PI[cell]|'
+- id: R0088
+  equation: '|UDPNAGEP[cell]| + |NADPH[cell]| => |UDPNAM[cell]| + |NADP[cell]|'
+- id: R0090
+  equation: '|CHBIO[cell]| => (2) |NADG[cell]|'
+- id: R0092
+  equation: '|ACMAM[cell]| + |PI[cell]| <=> |NAM6P[cell]|'
+- id: R0093
+  equation: '|UDPNAG[cell]| <=> |UACMAM[cell]|'
+- id: R0094
+  equation: '|UDPNAG[cell]| <=> |ACMAM[cell]| + |UDP[cell]|'
+- id: R0095
+  equation: '|DTDPGLU[cell]| <=> |DTGAL[cell]|'
+- id: R0098
+  equation: '|UDPGAL[cell]| + (2) |NAD[cell]| <=> |UGAT[cell]| + (2) |NADH[cell]|'
+- id: R0099
+  equation: '|DTDPGLU[cell]| + (2) |NADP[cell]| => |DTGC[cell]| + (2) |NADPH[cell]|'
+- id: R0100
+  equation: '|DTDP4D6DG[cell]| => |GDP4D6DM[cell]|'
+- id: R0101
+  equation: '|GDP4D6DM[cell]| + |NADPH[cell]| => |GDPRMN[cell]| + |NADP[cell]|'
+- id: R0102
+  equation: '|ACAL[cell]| + |NAD[cell]| => |NADH[cell]| + |AC[cell]|'
+- id: R0109
+  equation: '|OA[cell]| => |PYR[cell]| + |CO2[cell]|'
+- id: R0110
+  equation: '|RGT[cell]| + |MTG[cell]| => |LTG[cell]|'
+- id: R0111
+  equation: '|LTG[cell]| => |RGT[cell]| + |LAC[cell]|'
+- id: R0112
+  equation: '|PYR[cell]| + |COA[cell]| + |NAD[cell]| => |ACCOA[cell]| + |CO2[cell]|
+    + |NADH[cell]|'
+- id: R0113
+  equation: '|LLAC[cell]| + (2) |FCYTC[cell]| => |PYR[cell]| + (2) |FOCYT[cell]|'
+- id: R0114
+  equation: '|ATP[cell]| + |PYR[cell]| => |AMP[cell]| + |PEP[cell]| + |PI[cell]|'
+- id: R0115
+  equation: '|MAL[cell]| + |FAD[cell]| => |FADH2[cell]| + |OA[cell]|'
+- id: R0116
+  equation: '|ACCOA[cell]| + |GLX[cell]| => |MAL[cell]| + |COA[cell]|'
+- id: R0118
+  equation: '|FORM[cell]| + |NAD[cell]| => |CO2[cell]| + |NADH[cell]|'
+- id: R0119
+  equation: '|H3OP[cell]| + |NADH[cell]| => |DGLYCERATE[cell]| + |NAD[cell]|'
+- id: R0120
+  equation: '|HYDROXYAKG[cell]| => |PYR[cell]| + |GLX[cell]|'
+- id: R0121
+  equation: '|a_2PPG[cell]| => |GLYCOLATE[cell]| + |PI[cell]|'
+- id: R0123
+  equation: (2) |GLX[cell]| => |H3OP[cell]| + |CO2[cell]|
+- id: R0124
+  equation: '|ICIT[cell]| => |SUCC[cell]| + |GLX[cell]|'
+- id: R0125
+  equation: '|HPYR[cell]| <=> |H3OP[cell]|'
+- id: R0127
+  equation: '|HPYR[cell]| + |NADPH[cell]| => |DGLYCERATE[cell]| + |NADP[cell]|'
+- id: R0128
+  equation: '|GLYCOLATE[cell]| + |Q[cell]| <=> |GLX[cell]| + |QH2[cell]|'
+- id: R0129
+  equation: '|GLYCOLATE[cell]| + |O2[cell]| => |GLX[cell]| + |H2O2[cell]|'
+- id: R0130
+  equation: '|PPIP[cell]| + |COA[cell]| <=> |PPCOA[cell]| + |PI[cell]|'
+- id: R0131
+  equation: '|HPCOA[cell]| + |NADP[cell]| <=> |OPCOA[cell]| + |NADPH[cell]|'
+- id: R0132
+  equation: '|OPCOA[cell]| + |O2[cell]| + |NADPH[cell]| <=> |MALCOA[cell]| + |NADP[cell]|'
+- id: R0133
+  equation: '|P1AL[cell]| + |NAD[cell]| => |PROPYNOATE[cell]| + |NADH[cell]|'
+- id: R0134
+  equation: (2) |ACCOA[cell]| <=> |COA[cell]| + |AACCOA[cell]|
+- id: R0135
+  equation: '|bALA[cell]| + |AKG[cell]| <=> |a_3OPPA[cell]| + |GLU[cell]|'
+- id: R0136
+  equation: '|ALA[cell]| + |a_3OPPA[cell]| <=> |PYR[cell]| + |bALA[cell]|'
+- id: R0137
+  equation: '|HPCOA[cell]| + |PI[cell]| + |ADP[cell]| <=> |HPPA[cell]| + |COA[cell]|
+    + |ATP[cell]|'
+- id: R0138
+  equation: '|HPCOA[cell]| <=> |PNCOA[cell]|'
+- id: R0139
+  equation: '|ETFLA[cell]| + |PPCOA[cell]| <=> |RTFLA[cell]| + |PNCOA[cell]|'
+- id: R0140
+  equation: '|ATP[cell]| + |PROP[cell]| <=> |PPI[cell]| + |PPADY[cell]|'
+- id: R0141
+  equation: '|PPADY[cell]| + |COA[cell]| <=> |AMP[cell]| + |PPCOA[cell]|'
+- id: R0142
+  equation: '|PPADY[cell]| + |COA[cell]| <=> |AMP[cell]| + |PPCOA[cell]|'
+- id: R0143
+  equation: '|ATP[cell]| + |PPCOA[cell]| + |CO2[cell]| => |ADP[cell]| + |PI[cell]|
+    + |MOPCOA[cell]|'
+- id: R0144
+  equation: '|METHMASAL[cell]| + |COA[cell]| + |NAD[cell]| => |PPCOA[cell]| + |CO2[cell]|
+    + |NADH[cell]|'
+- id: R0145
+  equation: '|PPCOA[cell]| + |OA[cell]| => |MCIT[cell]| + |COA[cell]|'
+- id: R0146
+  equation: '|MCIT[cell]| => |MACO[cell]|'
+- id: R0147
+  equation: '|MICIT[cell]| <=> |PYR[cell]| + |SUCC[cell]|'
+- id: R0149
+  equation: '|SUCC[cell]| + |FAD[cell]| => |FADH2[cell]| + |FUM[cell]|'
+- id: R0150
+  equation: '|SUCCSAL[cell]| + |NAD[cell]| => |SUCC[cell]| + |NADH[cell]|'
+- id: R0151
+  equation: '|GABA[cell]| + |AKG[cell]| => |SUCCSAL[cell]| + |GLU[cell]|'
+- id: R0152
+  equation: '|B1OL[cell]| + |PQQ[cell]| => |B1AL[cell]| + |PQQH2[cell]|'
+- id: R0153
+  equation: '|B1AL[cell]| + |NAD[cell]| => |BTNO[cell]| + |NADH[cell]|'
+- id: R0154
+  equation: '|HBUT[cell]| + |NAD[cell]| <=> |AAC[cell]| + |NADH[cell]|'
+- id: R0156
+  equation: '|RHBCOA[cell]| => |PHB[cell]|'
+- id: R0157
+  equation: '|SHBCOA[cell]| <=> |RHBCOA[cell]|'
+- id: R0158
+  equation: '|C040COA[cell]| + |NAD[cell]| <=> |CTCOA[cell]| + |NADH[cell]|'
+- id: R0159
+  equation: '|SHBCOA[cell]| <=> |CTCOA[cell]|'
+- id: R0161
+  equation: '|SHBCOA[cell]| + |NADP[cell]| <=> |AACCOA[cell]| + |NADPH[cell]|'
+- id: R0162
+  equation: '|SUCCOA[cell]| + |AAC[cell]| <=> |SUCC[cell]| + |AACCOA[cell]|'
+- id: R0163
+  equation: '|G1COA[cell]| <=> |HGCOA[cell]|'
+- id: R0164
+  equation: '|H3MCOA[cell]| => |ACCOA[cell]| + |AAC[cell]|'
+- id: R0165
+  equation: '|BUTANAL[cell]| + |NADH[cell]| <=> |BUTANOL[cell]| + |NAD[cell]|'
+- id: R0166
+  equation: '|ATP[cell]| + |ITC[cell]| + |COA[cell]| <=> |ADP[cell]| + |PI[cell]|
+    + |ITCCOA[cell]|'
+- id: R0167
+  equation: '|a_3OPPA[cell]| + |COA[cell]| + |NAD[cell]| => |ACCOA[cell]| + |CO2[cell]|
+    + |NADH[cell]|'
+- id: R0168
+  equation: '|INO1P[cell]| => |MI[cell]| + |PI[cell]|'
+- id: R0169
+  equation: '|INO3P[cell]| => |MI[cell]| + |PI[cell]|'
+- id: R0170
+  equation: '|INO4P[cell]| => |MI[cell]| + |PI[cell]|'
+- id: R0171
+  equation: '|NADH[cell]| + |Q[cell]| => |NAD[cell]| + |QH2[cell]|'
+- id: R0172
+  equation: '|NADH[cell]| + |Q[cell]| => |NAD[cell]| + |QH2[cell]| + (3) |Hxt[cell]|'
+- id: R0179
+  equation: '|DHAP[cell]| + |E4P[cell]| => |S17BP[cell]|'
+- id: R0180
+  equation: '|MEOH[cell]| + |PQQ[cell]| <=> |PQQH2[cell]| + |FALD[cell]|'
+- id: R0181
+  equation: (2) |FOCYTC[cell]| + (2) |FALD[cell]| + |O2[cell]| => (2) |CYTC[cell]|
+    + (2) |FORM[cell]| + (4) |Hxt[cell]|
+- id: R0182
+  equation: '|MEOH[cell]| + |H2O2[cell]| => |FALD[cell]|'
+- id: R0183
+  equation: '|HMGT[cell]| + |NAD[cell]| <=> |FMGT[cell]| + |NADH[cell]|'
+- id: R0185
+  equation: '|RL5P[cell]| + |FALD[cell]| => |A3H6P[cell]|'
+- id: R0186
+  equation: '|A3H6P[cell]| <=> |F6P[cell]|'
+- id: R0188
+  equation: '|ATP[cell]| + |CABM[cell]| => |ADP[cell]| + |CAP[cell]|'
+- id: R0189
+  equation: '|ATP[cell]| + |NH3[cell]| + |CO2[cell]| <=> |ADP[cell]| + |CAP[cell]|'
+- id: R0190
+  equation: '|METTHF[cell]| + |NADH[cell]| + |CO2[cell]| + |NH3[cell]| => |GLY[cell]|
+    + |THF[cell]| + |NAD[cell]|'
+- id: R0192
+  equation: '|DALA[cell]| + |FAD[cell]| => |PYR[cell]| + |NH3[cell]| + |FADH[cell]|'
+- id: R0193
+  equation: '|NO2[cell]| + (3) |NADH[cell]| => (3) |NAD[cell]| + |NH3[cell]|'
+- id: R0194
+  equation: '|ASP[cell]| => |FUM[cell]| + |NH3[cell]|'
+- id: R0196
+  equation: '|ASP[cell]| + |NH3[cell]| <=> |ASN[cell]|'
+- id: R0198
+  equation: '|AKG[cell]| + |GLN[cell]| + |NADPH[cell]| => |NADP[cell]| + (2) |GLU[cell]|'
+- id: R0199
+  equation: '|SO4[cell]| + |ATP[cell]| + |GTP[cell]| => |APS[cell]| + |GDP[cell]|
+    + |PPI[cell]| + |PI[cell]|'
+- id: R0200
+  equation: '|APS[cell]| + |ATP[cell]| => |ADP[cell]| + |PAPS[cell]|'
+- id: R0201
+  equation: '|PAPS[cell]| + |RTHIO[cell]| => |OTHIO[cell]| + |SO3[cell]| + |PAP[cell]|'
+- id: R0202
+  equation: '|SO3[cell]| + (3) |NADPH[cell]| <=> |H2S[cell]| + (3) |NADP[cell]| +
+    (4) |Hxt[cell]|'
+- id: R0203
+  equation: '|ACCOA[cell]| + |ATP[cell]| + |CO2[cell]| => |MALCOA[cell]| + |ADP[cell]|
+    + |PI[cell]|'
+- id: R0204
+  equation: '|MALCOA[cell]| + |ACP[cell]| <=> |MALACP[cell]| + |COA[cell]|'
+- id: R0205
+  equation: '|ACCOA[cell]| + |ACP[cell]| => |ACACP[cell]| + |COA[cell]|'
+- id: R0212
+  equation: '|ATP[cell]| + (8) |COA[cell]| + (7) |FAD[cell]| + |C160[cell]| + (7)
+    |NAD[cell]| => (8) |ACCOA[cell]| + |AMP[cell]| + (7) |FADH2[cell]| + (7) |NADH[cell]|
+    + |PPI[cell]|'
+- id: R0213
+  equation: '|ATP[cell]| + (5) |COA[cell]| + (4) |FAD[cell]| + |C100[cell]| + (4)
+    |NAD[cell]| => (5) |ACCOA[cell]| + |AMP[cell]| + (4) |FADH2[cell]| + (4) |NADH[cell]|
+    + |PPI[cell]|'
+- id: R0214
+  equation: '|ATP[cell]| + (3) |COA[cell]| + (2) |FAD[cell]| + |C060[cell]| + (2)
+    |NAD[cell]| => (3) |ACCOA[cell]| + |AMP[cell]| + (2) |FADH2[cell]| + (2) |NADH[cell]|
+    + |PPI[cell]|'
+- id: R0215
+  equation: '|PYR[cell]| + |G3P[cell]| => |DX5P[cell]| + |CO2[cell]|'
+- id: R0216
+  equation: '|DX5P[cell]| + |NADPH[cell]| => |MDE4P[cell]| + |NADP[cell]|'
+- id: R0217
+  equation: '|MDE4P[cell]| + |CTP[cell]| => |CDPMDE[cell]| + |PPI[cell]|'
+- id: R0218
+  equation: '|CDPMDE[cell]| + |ATP[cell]| => |a_2PCDPMDE[cell]| + |ADP[cell]|'
+- id: R0219
+  equation: '|a_2PCDPMDE[cell]| => |MDECPP[cell]| + |CMP[cell]|'
+- id: R0220
+  equation: '|MDECPP[cell]| + |NADH[cell]| => |NAD[cell]| + |HMB4PP[cell]|'
+- id: R0221
+  equation: '|HMB4PP[cell]| + |NADH[cell]| => |NAD[cell]| + |IPP[cell]|'
+- id: R0222
+  equation: '|DMPP[cell]| + |IPP[cell]| => |GPP[cell]| + |PPI[cell]|'
+- id: R0223
+  equation: '|GPP[cell]| + |IPP[cell]| => |FPP[cell]| + |PPI[cell]|'
+- id: R0224
+  equation: '|RVK[cell]| + |NADH[cell]| => |VK[cell]| + |NAD[cell]|'
+- id: R0225
+  equation: '|GL[cell]| + |ATP[cell]| => |GL3P[cell]| + |ADP[cell]|'
+- id: R0226
+  equation: '|GL[cell]| + |NAD[cell]| <=> |T3[cell]| + |NADH[cell]|'
+- id: R0228
+  equation: '|T3[cell]| + |NAD[cell]| <=> |NADH[cell]| + |DGLYCERATE[cell]|'
+- id: R0229
+  equation: '|DGLYCERATE[cell]| + |ATP[cell]| => |a_3PG[cell]| + |ADP[cell]|'
+- id: R0230
+  equation: '|DGR[cell]| => |AGCR[cell]| + |C160[cell]|'
+- id: R0231
+  equation: '|TAGCR[cell]| => |DGR[cell]| + |C160[cell]|'
+- id: R0232
+  equation: '|GL3P[cell]| + |Q[cell]| => |DHAP[cell]| + |QH2[cell]|'
+- id: R0233
+  equation: '|IMP[cell]| => |INS[cell]| + |PI[cell]|'
+- id: R0234
+  equation: '|XMP[cell]| => |XTSINE[cell]| + |PI[cell]|'
+- id: R0235
+  equation: '|PA[cell]| + |CTP[cell]| => |CDPDG[cell]| + |PPI[cell]|'
+- id: R0236
+  equation: '|CDPDG[cell]| + |SER[cell]| <=> |CMP[cell]| + |PS[cell]|'
+- id: R0237
+  equation: '|PS[cell]| => |PE[cell]| + |CO2[cell]|'
+- id: R0238
+  equation: '|DHAP[cell]| + |NADPH[cell]| <=> |GL3P[cell]| + |NADP[cell]|'
+- id: R0239
+  equation: '|CDPDG[cell]| + |GL3P[cell]| <=> |CMP[cell]| + |PGP[cell]|'
+- id: R0240
+  equation: '|PGP[cell]| => |PI[cell]| + |PG[cell]|'
+- id: R0241
+  equation: '|CDPDG[cell]| + |PG[cell]| => |CMP[cell]| + |CL[cell]|'
+- id: R0242
+  equation: '|GL3P[cell]| + |ACOA[cell]| => |AGL3P[cell]| + |COA[cell]|'
+- id: R0243
+  equation: '|R5P[cell]| + |ATP[cell]| <=> |PRPP[cell]| + |AMP[cell]|'
+- id: R0244
+  equation: '|PRPP[cell]| + |GLN[cell]| => |PRAM[cell]| + |PPI[cell]| + |GLU[cell]|'
+- id: R0245
+  equation: '|PRAM[cell]| + |ATP[cell]| + |GLY[cell]| => |GAR[cell]| + |ADP[cell]|
+    + |PI[cell]|'
+- id: R0246
+  equation: '|GAR[cell]| + |FTHF[cell]| => |FGAR[cell]| + |THF[cell]|'
+- id: R0247
+  equation: '|FGAR[cell]| + |ATP[cell]| + |GLN[cell]| => |FGAM[cell]| + |GLU[cell]|
+    + |ADP[cell]| + |PI[cell]|'
+- id: R0248
+  equation: '|FGAM[cell]| + |ATP[cell]| => |AIR[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: R0249
+  equation: '|AIR[cell]| + |CO2[cell]| + |ATP[cell]| => |CAIR[cell]| + |ADP[cell]|
+    + |PI[cell]|'
+- id: R0250
+  equation: '|CAIR[cell]| + |ATP[cell]| + |ASP[cell]| <=> |SAICAR[cell]| + |ADP[cell]|
+    + |PI[cell]|'
+- id: R0251
+  equation: '|SAICAR[cell]| <=> |AICAR[cell]| + |FUM[cell]|'
+- id: R0252
+  equation: '|AICAR[cell]| + |FTHF[cell]| => |PRFICA[cell]| + |THF[cell]|'
+- id: R0253
+  equation: '|PRFICA[cell]| <=> |IMP[cell]|'
+- id: R0254
+  equation: '|IMP[cell]| + |GTP[cell]| + |ASP[cell]| => |DCAMP[cell]| + |GDP[cell]|
+    + |PI[cell]|'
+- id: R0255
+  equation: '|DCAMP[cell]| => |FUM[cell]| + |AMP[cell]|'
+- id: R0256
+  equation: '|IMP[cell]| + |NAD[cell]| => |XMP[cell]| + |NADH[cell]|'
+- id: R0257
+  equation: '|XMP[cell]| + |ATP[cell]| + |GLN[cell]| => |GMP[cell]| + |GLU[cell]|
+    + |AMP[cell]| + |PPI[cell]|'
+- id: R0258
+  equation: '|ATP[cell]| + |XMP[cell]| + |NH3[cell]| => |AMP[cell]| + |PPI[cell]|
+    + |GMP[cell]|'
+- id: R0259
+  equation: '|ATP[cell]| => |cAMP[cell]| + |PPI[cell]|'
+- id: R0260
+  equation: '|GTP[cell]| => |cGMP[cell]| + |PPI[cell]|'
+- id: R0261
+  equation: '|DGMP[cell]| + |ATP[cell]| <=> |DGDP[cell]| + |ADP[cell]|'
+- id: R0262
+  equation: '|IDP[cell]| + |ATP[cell]| <=> |ITP[cell]| + |ADP[cell]|'
+- id: R0263
+  equation: '|AD[cell]| + |PRPP[cell]| => |PPI[cell]| + |AMP[cell]|'
+- id: R0264
+  equation: '|GN[cell]| + |PRPP[cell]| => |PPI[cell]| + |GMP[cell]|'
+- id: R0265
+  equation: '|HYXN[cell]| + |PRPP[cell]| => |PPI[cell]| + |IMP[cell]|'
+- id: R0266
+  equation: '|XAN[cell]| + |PRPP[cell]| => |PPI[cell]| + |XMP[cell]|'
+- id: R0267
+  equation: '|DGTP[cell]| => |DG[cell]| + |PPPI[cell]|'
+- id: R0268
+  equation: '|ATP[cell]| + |GTP[cell]| => |pppGpp[cell]| + |AMP[cell]|'
+- id: R0269
+  equation: '|ppGpp[cell]| => |GDP[cell]| + |PPI[cell]|'
+- id: R0270
+  equation: '|ATP[cell]| + |AMP[cell]| => (2) |ADP[cell]|'
+- id: R0271
+  equation: '|ADP[cell]| + |RTHIO[cell]| => |DADP[cell]| + |OTHIO[cell]|'
+- id: R0272
+  equation: '|DADP[cell]| + |ATP[cell]| <=> |DATP[cell]| + |ADP[cell]|'
+- id: R0273
+  equation: '|GMP[cell]| + |ATP[cell]| <=> |GDP[cell]| + |ADP[cell]|'
+- id: R0274
+  equation: '|GDP[cell]| + |ATP[cell]| <=> |GTP[cell]| + |ADP[cell]|'
+- id: R0275
+  equation: '|GDP[cell]| + |RTHIO[cell]| => |DGDP[cell]| + |OTHIO[cell]|'
+- id: R0276
+  equation: '|DGDP[cell]| + |ATP[cell]| <=> |DGTP[cell]| + |ADP[cell]|'
+- id: R0277
+  equation: '|ARIB[cell]| => |AMP[cell]| + |R5P[cell]|'
+- id: R0278
+  equation: '|ATP[cell]| + |DAMP[cell]| <=> |ADP[cell]| + |DADP[cell]|'
+- id: R0279
+  equation: '|pppGpp[cell]| <=> |ppGpp[cell]| + |PI[cell]|'
+- id: R0280
+  equation: '|AppppA[cell]| => (2) |ADP[cell]|'
+- id: R0281
+  equation: '|AICAR[cell]| + |PPI[cell]| <=> |A4IZM[cell]| + |PRPP[cell]|'
+- id: R0282
+  equation: '|DGMP[cell]| => |DG[cell]| + |PI[cell]|'
+- id: R0283
+  equation: '|GMP[cell]| => |GSN[cell]| + |PI[cell]|'
+- id: R0293
+  equation: '|GMP[cell]| + |PPI[cell]| <=> |GN[cell]| + |PRPP[cell]|'
+- id: R0294
+  equation: '|DAMP[cell]| <=> |DA[cell]| + |PI[cell]|'
+- id: R0301
+  equation: '|AMP[cell]| => |ADN[cell]| + |PI[cell]|'
+- id: R0302
+  equation: '|AMP[cell]| => |AD[cell]| + |R5P[cell]|'
+- id: R0303
+  equation: '|DA[cell]| <=> |DIN[cell]| + |NH3[cell]|'
+- id: R0304
+  equation: '|ADN[cell]| => |AD[cell]| + |RIB[cell]|'
+- id: R0305
+  equation: '|ADN[cell]| => |INS[cell]| + |NH3[cell]|'
+- id: R0306
+  equation: '|INS[cell]| => |HYXN[cell]| + |RIB[cell]|'
+- id: R0309
+  equation: '|XTSINE[cell]| => |XAN[cell]| + |RIB[cell]|'
+- id: R0311
+  equation: '|GSN[cell]| => |GN[cell]| + |RIB[cell]|'
+- id: R0315
+  equation: '|CAP[cell]| + |ASP[cell]| => |CAASP[cell]| + |PI[cell]|'
+- id: R0316
+  equation: '|CAASP[cell]| <=> |DOROA[cell]|'
+- id: R0318
+  equation: '|DOROA[cell]| + |Q[cell]| => |QH2[cell]| + |OROA[cell]|'
+- id: R0319
+  equation: '|OROA[cell]| + |PRPP[cell]| <=> |PPI[cell]| + |OMP[cell]|'
+- id: R0320
+  equation: '|OMP[cell]| => |CO2[cell]| + |UMP[cell]|'
+- id: R0321
+  equation: '|ATP[cell]| + |UMP[cell]| <=> |ADP[cell]| + |UDP[cell]|'
+- id: R0322
+  equation: '|UDP[cell]| + |ATP[cell]| <=> |UTP[cell]| + |ADP[cell]|'
+- id: R0323
+  equation: '|UTP[cell]| + |GLN[cell]| + |ATP[cell]| => |GLU[cell]| + |CTP[cell]|
+    + |ADP[cell]| + |PI[cell]|'
+- id: R0324
+  equation: '|ATP[cell]| + |UTP[cell]| + |NH3[cell]| => |ADP[cell]| + |PI[cell]|
+    + |CTP[cell]|'
+- id: R0325
+  equation: '|CDP[cell]| + |ATP[cell]| <=> |CTP[cell]| + |ADP[cell]|'
+- id: R0326
+  equation: '|CDP[cell]| + |RTHIO[cell]| => |DCDP[cell]| + |OTHIO[cell]|'
+- id: R0327
+  equation: '|DCDP[cell]| + |ATP[cell]| <=> |DCTP[cell]| + |ADP[cell]|'
+- id: R0328
+  equation: '|DCTP[cell]| => |DUTP[cell]| + |NH3[cell]|'
+- id: R0329
+  equation: '|DUTP[cell]| => |PPI[cell]| + |DUMP[cell]|'
+- id: R0330
+  equation: '|DTDP[cell]| + |ATP[cell]| <=> |DTTP[cell]| + |ADP[cell]|'
+- id: R0331
+  equation: '|CMP[cell]| + |ATP[cell]| <=> |ADP[cell]| + |CDP[cell]|'
+- id: R0332
+  equation: '|OTHIO[cell]| + |NADPH[cell]| => |RTHIO[cell]| + |NADP[cell]|'
+- id: R0333
+  equation: '|DCMP[cell]| + |ATP[cell]| <=> |ADP[cell]| + |DCDP[cell]|'
+- id: R0334
+  equation: '|URA[cell]| + |PRPP[cell]| => |UMP[cell]| + |PPI[cell]|'
+- id: R0335
+  equation: '|URA[cell]| + |R5P[cell]| <=> |PURI5P[cell]|'
+- id: R0336
+  equation: '|DUMP[cell]| + |METTHF[cell]| => |DHF[cell]| + |DTMP[cell]|'
+- id: R0337
+  equation: '|DUDP[cell]| + |ATP[cell]| <=> |DUTP[cell]| + |ADP[cell]|'
+- id: R0338
+  equation: '|UDP[cell]| + |RTHIO[cell]| => |OTHIO[cell]| + |DUDP[cell]|'
+- id: R0341
+  equation: '|CTP[cell]| => |UTP[cell]| + |NH3[cell]|'
+- id: R0344
+  equation: '|CMP[cell]| => |CYTD[cell]| + |PI[cell]|'
+- id: R0345
+  equation: '|CYTS[cell]| => |URA[cell]| + |NH3[cell]|'
+- id: R0346
+  equation: '|a_3URDPP[cell]| => |bALA[cell]| + |CO2[cell]| + |NH3[cell]|'
+- id: R0347
+  equation: '|DCMP[cell]| => |DC[cell]| + |PI[cell]|'
+- id: R0350
+  equation: '|DTMP[cell]| => |DT[cell]| + |PI[cell]|'
+- id: R0351
+  equation: '|a_5MCYT[cell]| => |DT[cell]| + |NH3[cell]|'
+- id: R0352
+  equation: '|URBUT[cell]| => |AMBUT[cell]| + |CO2[cell]| + |NH3[cell]|'
+- id: R0353
+  equation: '|UMP[cell]| => |URI[cell]| + |PI[cell]|'
+- id: R0354
+  equation: '|GLU[cell]| + |NH3[cell]| + |ATP[cell]| => |GLN[cell]| + |ADP[cell]|
+    + |PI[cell]|'
+- id: R0355
+  equation: '|AKG[cell]| + |NH3[cell]| + |NADPH[cell]| <=> |GLU[cell]| + |NADP[cell]|'
+- id: R0356
+  equation: '|GLN[cell]| + (2) |ATP[cell]| + |CO2[cell]| => |GLU[cell]| + |CAP[cell]|
+    + (2) |ADP[cell]| + |PI[cell]|'
+- id: R0357
+  equation: '|ATP[cell]| + |GLU[cell]| + |CYS[cell]| => |ADP[cell]| + |PI[cell]|
+    + |GCYS[cell]|'
+- id: R0358
+  equation: '|ATP[cell]| + |GCYS[cell]| + |GLY[cell]| => |ADP[cell]| + |PI[cell]|
+    + |RGT[cell]|'
+- id: R0360
+  equation: '|OGT[cell]| + |NADPH[cell]| => |NADP[cell]| + (2) |RGT[cell]|'
+- id: R0361
+  equation: '|GLN[cell]| => |GLU[cell]| + |NH3[cell]|'
+- id: R0362
+  equation: '|GLU[cell]| => |GABA[cell]| + |CO2[cell]|'
+- id: R0367
+  equation: '|ASP[cell]| + |GLN[cell]| + |ATP[cell]| => |ASN[cell]| + |GLU[cell]|
+    + |AMP[cell]| + |PPI[cell]|'
+- id: R0369
+  equation: '|ASP[cell]| + |O2[cell]| => |OA[cell]| + |NH3[cell]| + |H2O2[cell]|'
+- id: R0373
+  equation: '|ASP[cell]| + |ATP[cell]| <=> |ADP[cell]| + |BASP[cell]|'
+- id: R0374
+  equation: '|BASP[cell]| + |NADPH[cell]| <=> |NADP[cell]| + |PI[cell]| + |ASPSA[cell]|'
+- id: R0375
+  equation: '|ASPSA[cell]| + |NADPH[cell]| <=> |NADP[cell]| + |HSER[cell]|'
+- id: R0376
+  equation: '|HSER[cell]| + |ATP[cell]| => |ADP[cell]| + |PHSER[cell]|'
+- id: R0377
+  equation: '|PHSER[cell]| => |THR[cell]| + |PI[cell]|'
+- id: R0378
+  equation: '|a_3PG[cell]| + |NAD[cell]| <=> |NADH[cell]| + |PHP[cell]|'
+- id: R0379
+  equation: '|PHP[cell]| + |GLU[cell]| <=> |AKG[cell]| + |a_3PSER[cell]|'
+- id: R0380
+  equation: '|a_3PSER[cell]| => |PI[cell]| + |SER[cell]|'
+- id: R0381
+  equation: '|THF[cell]| + |SER[cell]| <=> |GLY[cell]| + |METTHF[cell]|'
+- id: R0382
+  equation: '|THR[cell]| <=> |GLY[cell]| + |ACAL[cell]|'
+- id: R0383
+  equation: '|THF[cell]| + |SAP[cell]| => |METTHF[cell]| + |NH3[cell]| + |DHLIPOYLPROTEIN[cell]|'
+- id: R0384
+  equation: '|GLY[cell]| + |LIPOYLPROTEIN[cell]| => |SAP[cell]| + |CO2[cell]|'
+- id: R0385
+  equation: '|DHLIPOYLPROTEIN[cell]| + |NAD[cell]| => |NADH[cell]| + |LIPOYLPROTEIN[cell]|'
+- id: R0386
+  equation: '|SER[cell]| => |PYR[cell]| + |NH3[cell]|'
+- id: R0387
+  equation: '|THR[cell]| => |OBUT[cell]| + |NH3[cell]|'
+- id: R0388
+  equation: '|LLCT[cell]| <=> |CYS[cell]| + |NH3[cell]| + |OBUT[cell]|'
+- id: R0389
+  equation: '|CHOL[cell]| + |NAD[cell]| => |BETAH[cell]| + |NADH[cell]|'
+- id: R0390
+  equation: '|BETAH[cell]| + |NAD[cell]| => |BET[cell]| + |NADH[cell]|'
+- id: R0391
+  equation: '|BETAH[cell]| + |NADP[cell]| => |BET[cell]| + |NADPH[cell]|'
+- id: R0392
+  equation: '|SARC[cell]| + |O2[cell]| => |GLY[cell]| + |FALD[cell]| + |H2O2[cell]|'
+- id: R0394
+  equation: '|GLU[cell]| + |ASPSA[cell]| => |AKG[cell]| + |DAMBUT[cell]|'
+- id: R0395
+  equation: '|MTG[cell]| + |NADPH[cell]| => |HAC[cell]| + |NADP[cell]|'
+- id: R0399
+  equation: '|CYS[cell]| + |OSLHSER[cell]| => |LLCT[cell]| + |SUCC[cell]|'
+- id: R0400
+  equation: '|HCYS[cell]| + |MTHF[cell]| <=> |THF[cell]| + |MET[cell]|'
+- id: R0401
+  equation: '|MTHPG[cell]| + |HCYS[cell]| => |THPG[cell]| + |MET[cell]|'
+- id: R0402
+  equation: '|ACCOA[cell]| + |HSER[cell]| <=> |COA[cell]| + |OAHSER[cell]|'
+- id: R0403
+  equation: '|OSLHSER[cell]| + |H2S[cell]| <=> |HCYS[cell]| + |SUCC[cell]|'
+- id: R0404
+  equation: '|OSLHSER[cell]| <=> |SUCC[cell]| + |OBUT[cell]| + |NH3[cell]|'
+- id: R0406
+  equation: '|MET[cell]| + |ATP[cell]| => |PPI[cell]| + |PI[cell]| + |SAM[cell]|'
+- id: R0407
+  equation: '|SAH[cell]| => |SRLH[cell]| + |AD[cell]|'
+- id: R0409
+  equation: '|OAHSER[cell]| + |CYS[cell]| <=> |LLCT[cell]| + |AC[cell]|'
+- id: R0410
+  equation: '|OAHSER[cell]| + |H2S[cell]| => |HCYS[cell]| + |AC[cell]|'
+- id: R0411
+  equation: '|OAHSER[cell]| + |THSUL[cell]| + |RTHIO[cell]| => |HCYS[cell]| + |SO3[cell]|
+    + |OTHIO[cell]| + |AC[cell]|'
+- id: R0414
+  equation: '|CYS[cell]| => |H2S[cell]| + |PYR[cell]| + |NH3[cell]|'
+- id: R0415
+  equation: '|SER[cell]| + |ACCOA[cell]| <=> |COA[cell]| + |ASER[cell]|'
+- id: R0416
+  equation: '|ASER[cell]| + |H2S[cell]| => |CYS[cell]| + |AC[cell]|'
+- id: R0417
+  equation: '|SER[cell]| => |AACL[cell]|'
+- id: R0418
+  equation: '|CYSI[cell]| => |PYR[cell]| + |NH3[cell]| + |TCYS[cell]|'
+- id: R0419
+  equation: '|MCPYR[cell]| + |GLU[cell]| => |CYS[cell]| + |AKG[cell]|'
+- id: R0420
+  equation: '|CYST[cell]| + |AKG[cell]| <=> |SFPYR[cell]| + |GLU[cell]|'
+- id: R0421
+  equation: '|SFALA[cell]| + |AKG[cell]| => |SFIPYR[cell]| + |GLU[cell]|'
+- id: R0422
+  equation: '|ASER[cell]| + |THSUL[cell]| => |SSCYS[cell]| + |AC[cell]|'
+- id: R0424
+  equation: '|ASER[cell]| + |THSUL[cell]| + |RTHIO[cell]| => |CYS[cell]| + |SO3[cell]|
+    + |OTHIO[cell]| + |AC[cell]|'
+- id: R0425
+  equation: (2) |PYR[cell]| => |ACLAC[cell]| + |CO2[cell]|
+- id: R0426
+  equation: '|ACLAC[cell]| + |NADPH[cell]| <=> |NADP[cell]| + |DHMVA[cell]|'
+- id: R0427
+  equation: '|DHMVA[cell]| => |OIVAL[cell]|'
+- id: R0428
+  equation: '|OIVAL[cell]| + |GLU[cell]| <=> |AKG[cell]| + |VAL[cell]|'
+- id: R0429
+  equation: '|OIVAL[cell]| + |NH3[cell]| + |NADH[cell]| => |VAL[cell]| + |NAD[cell]|'
+- id: R0431
+  equation: '|PYR[cell]| + |OBUT[cell]| => |ABUT[cell]| + |CO2[cell]|'
+- id: R0432
+  equation: '|ABUT[cell]| + |NADPH[cell]| <=> |NADP[cell]| + |DHMP[cell]|'
+- id: R0433
+  equation: '|DHMP[cell]| => |a_3MOP[cell]|'
+- id: R0434
+  equation: '|a_3MOP[cell]| + |GLU[cell]| <=> |AKG[cell]| + |ILE[cell]|'
+- id: R0435
+  equation: '|a_3MOP[cell]| + |NH3[cell]| + |NADH[cell]| => |ILE[cell]| + |NAD[cell]|'
+- id: R0437
+  equation: '|ACCOA[cell]| + |OIVAL[cell]| => |COA[cell]| + |IPPMAL[cell]|'
+- id: R0438
+  equation: '|IPPMAL[cell]| <=> |a_2IPM[cell]|'
+- id: R0439
+  equation: '|a_2IPM[cell]| <=> |a_3IPM[cell]|'
+- id: R0440
+  equation: '|a_3IPM[cell]| + |NAD[cell]| <=> |NADH[cell]| + |OICAP[cell]|'
+- id: R0441
+  equation: '|OICAP[cell]| => |a_4MOP[cell]| + |CO2[cell]|'
+- id: R0442
+  equation: '|a_4MOP[cell]| + |GLU[cell]| <=> |AKG[cell]| + |LEU[cell]|'
+- id: R0444
+  equation: '|HIBUT[cell]| + |NAD[cell]| => |METHMASAL[cell]| + |NADH[cell]|'
+- id: R0445
+  equation: '|LEU[cell]| + |NAD[cell]| <=> |a_4MOP[cell]| + |NH3[cell]| + |NADH[cell]|'
+- id: R0446
+  equation: '|bLEU[cell]| + |NAD[cell]| => |O4MP[cell]| + |NH3[cell]| + |NADH[cell]|'
+- id: R0448
+  equation: '|a_4MOP[cell]| => |SMBDH[cell]| + |CO2[cell]|'
+- id: R0449
+  equation: '|SMBDH[cell]| + |COA[cell]| => |IVCOA[cell]|'
+- id: R0450
+  equation: '|IVCOA[cell]| + |FAD[cell]| => |MCTCOA[cell]| + |FADH2[cell]|'
+- id: R0451
+  equation: '|IVCOA[cell]| + |FAD[cell]| <=> |MCTCOA[cell]| + |FADH2[cell]|'
+- id: R0452
+  equation: '|HIVCOA[cell]| <=> |MCTCOA[cell]|'
+- id: R0454
+  equation: '|OIVAL[cell]| => |S2MDH[cell]| + |CO2[cell]|'
+- id: R0456
+  equation: '|S2MDH[cell]| + |COA[cell]| => |MPPCOA[cell]|'
+- id: R0457
+  equation: '|MPPCOA[cell]| + |O2[cell]| => |a_2MPECOA[cell]|'
+- id: R0458
+  equation: '|MPPCOA[cell]| + |FAD[cell]| <=> |a_2MPECOA[cell]| + |FADH2[cell]|'
+- id: R0459
+  equation: '|a_2MPECOA[cell]| => |HIBUTCOA[cell]|'
+- id: R0461
+  equation: '|ALA[cell]| + |METHMASAL[cell]| <=> |PYR[cell]| + |AMBUT[cell]|'
+- id: R0462
+  equation: '|AMBUT[cell]| + |AKG[cell]| <=> |METHMASAL[cell]| + |GLU[cell]|'
+- id: R0463
+  equation: '|METHMASAL[cell]| + |NAD[cell]| => |METHYLMALONATE[cell]| + |NADH[cell]|'
+- id: R0465
+  equation: '|a_3MOP[cell]| => |S2MBDH[cell]| + |CO2[cell]|'
+- id: R0466
+  equation: '|S2MBDH[cell]| + |COA[cell]| => |a_2MBTCOA[cell]|'
+- id: R0467
+  equation: '|a_2MBTCOA[cell]| + |O2[cell]| => |a_2MBECOA[cell]|'
+- id: R0468
+  equation: '|a_2MBTCOA[cell]| + |FAD[cell]| <=> |a_2MBECOA[cell]| + |FADH2[cell]|'
+- id: R0469
+  equation: '|a_2MBECOA[cell]| => |a_3H2MBCOA[cell]|'
+- id: R0470
+  equation: '|a_3H2MBCOA[cell]| + |NAD[cell]| <=> |a_2MATACOA[cell]| + |NADH[cell]|'
+- id: R0471
+  equation: '|COA[cell]| + |a_2MATACOA[cell]| => |PPCOA[cell]| + |ACCOA[cell]|'
+- id: R0472
+  equation: '|ASPSA[cell]| + |PYR[cell]| => |DHDP[cell]|'
+- id: R0473
+  equation: '|DHDP[cell]| + |NADPH[cell]| => |NADP[cell]| + |TDHDP[cell]|'
+- id: R0474
+  equation: '|TDHDP[cell]| + |SUCCOA[cell]| => |SAOPIM[cell]| + |COA[cell]|'
+- id: R0475
+  equation: '|SAOPIM[cell]| + |GLU[cell]| <=> |SDAPIM[cell]| + |AKG[cell]|'
+- id: R0476
+  equation: '|SDAPIM[cell]| => |DAPIM[cell]| + |SUCC[cell]|'
+- id: R0477
+  equation: '|DAPIM[cell]| <=> |MDAPIM[cell]|'
+- id: R0478
+  equation: '|MDAPIM[cell]| => |LYS[cell]| + |CO2[cell]|'
+- id: R0480
+  equation: '|OAP[cell]| => |GDHLA[cell]| + |CO2[cell]|'
+- id: R0481
+  equation: '|GDHLA[cell]| + |COA[cell]| <=> |GCOA[cell]|'
+- id: R0482
+  equation: '|CTCOA[cell]| => |SHBCOA[cell]|'
+- id: R0484
+  equation: '|LYS[cell]| + |ACCOA[cell]| <=> |N6AL[cell]| + |COA[cell]|'
+- id: R0485
+  equation: '|a_5AAPT[cell]| + |NADH[cell]| + |CO2[cell]| <=> |AM2OXH[cell]| + |NAD[cell]|'
+- id: R0486
+  equation: '|HN6TL[cell]| => |TMANB[cell]| + |GLY[cell]|'
+- id: R0487
+  equation: '|TMANB[cell]| + |NAD[cell]| => |TMANBT[cell]| + |NADH[cell]|'
+- id: R0488
+  equation: '|P5C[cell]| + |NAD[cell]| => |NADH[cell]| + |GLU[cell]|'
+- id: R0489
+  equation: '|GLUGSAL[cell]| + |NAD[cell]| => |NADH[cell]| + |GLU[cell]|'
+- id: R0490
+  equation: '|GLUGSAL[cell]| => |P5C[cell]|'
+- id: R0492
+  equation: '|SUCGLU5S[cell]| + |NAD[cell]| <=> |SUCGLU[cell]| + |NADH[cell]|'
+- id: R0493
+  equation: '|SUCARG[cell]| <=> |N2SORN[cell]| + |CO2[cell]| + (2) |NH3[cell]|'
+- id: R0494
+  equation: '|SUCCOA[cell]| + |ARG[cell]| => |COA[cell]| + |SUCARG[cell]|'
+- id: R0495
+  equation: '|ARG[cell]| => |CITR[cell]| + |NH3[cell]|'
+- id: R0497
+  equation: '|ORN[cell]| => |PRO[cell]| + |NH3[cell]|'
+- id: R0498
+  equation: '|T4HP[cell]| + |FAD[cell]| => |P3H5C[cell]| + |FADH2[cell]|'
+- id: R0499
+  equation: '|P3H5C[cell]| + |NAD[cell]| => |E4HGLU[cell]| + |NADH[cell]|'
+- id: R0500
+  equation: '|E4HGLU[cell]| + |NAD[cell]| <=> |HGLUSA[cell]| + |NADH[cell]|'
+- id: R0501
+  equation: '|P3H5C[cell]| <=> |HGLUSA[cell]|'
+- id: R0503
+  equation: '|P3H5C[cell]| + |NADH[cell]| => |T4HP[cell]| + |NAD[cell]|'
+- id: R0504
+  equation: '|SUCGLU[cell]| => |GLU[cell]| + |SUCC[cell]|'
+- id: R0505
+  equation: '|ORN[cell]| => |PTRC[cell]| + |CO2[cell]|'
+- id: R0506
+  equation: '|AGM[cell]| => |UREA[cell]| + |PTRC[cell]|'
+- id: R0507
+  equation: '|ARG[cell]| => |CO2[cell]| + |AGM[cell]|'
+- id: R0508
+  equation: '|N4ACAB[cell]| + |NAD[cell]| => |ACAB[cell]| + |NADH[cell]|'
+- id: R0509
+  equation: '|ABUTA[cell]| + |NADP[cell]| <=> |GABA[cell]| + |NADPH[cell]|'
+- id: R0512
+  equation: '|PRPP[cell]| + |ATP[cell]| <=> |PPI[cell]| + |PRBATP[cell]|'
+- id: R0513
+  equation: '|PRBATP[cell]| => |PPI[cell]| + |PRBAMP[cell]|'
+- id: R0514
+  equation: '|PRBAMP[cell]| => |PRFP[cell]|'
+- id: R0515
+  equation: '|PRFP[cell]| => |PRLP[cell]|'
+- id: R0516
+  equation: '|PRLP[cell]| + |GLN[cell]| => |GLU[cell]| + |AICAR[cell]| + |DIG3P[cell]|'
+- id: R0517
+  equation: '|DIG3P[cell]| => |IMACP[cell]|'
+- id: R0518
+  equation: '|IMACP[cell]| + |GLU[cell]| <=> |AKG[cell]| + |HISOLP[cell]|'
+- id: R0519
+  equation: '|HISOL[cell]| + (2) |NAD[cell]| => |HIS[cell]| + (2) |NADH[cell]|'
+- id: R0520
+  equation: '|HIS[cell]| => |UCNA[cell]| + |NH3[cell]|'
+- id: R0521
+  equation: '|UCNA[cell]| => |IDZP[cell]|'
+- id: R0522
+  equation: '|IDZP[cell]| => |FMMGLU[cell]|'
+- id: R0523
+  equation: '|FMMGLU[cell]| => |GLU[cell]| + |FMM[cell]|'
+- id: R0524
+  equation: '|HIS[cell]| + |SAM[cell]| => |NPMHIS[cell]| + |SAH[cell]|'
+- id: R0525
+  equation: '|HIS[cell]| => |HISTAMINE[cell]| + |CO2[cell]|'
+- id: R0526
+  equation: '|IDZATAH[cell]| + |NAD[cell]| <=> |IDZ4AC[cell]| + |NADH[cell]|'
+- id: R0529
+  equation: '|PHPYR[cell]| + |O2[cell]| => |HOMOGEN[cell]| + |CO2[cell]|'
+- id: R0530
+  equation: '|HOMOGEN[cell]| + |O2[cell]| => |MACTAC[cell]|'
+- id: R0531
+  equation: '|HOMOGEN[cell]| + |O2[cell]| => |GTAH[cell]| + |CO2[cell]|'
+- id: R0532
+  equation: '|MACTAC[cell]| => |FUMACTAC[cell]|'
+- id: R0533
+  equation: '|FUMACTAC[cell]| => |AAC[cell]| + |FUM[cell]|'
+- id: R0534
+  equation: '|a_2HHPDD[cell]| => |a_4H2OHEP[cell]|'
+- id: R0535
+  equation: '|a_2OHEPED[cell]| => |a_4H2OHEP[cell]|'
+- id: R0536
+  equation: '|ATP[cell]| + |a_4HPHEAC[cell]| + |COA[cell]| => |AMP[cell]| + |PPI[cell]|
+    + |a_4HPHEACCOA[cell]|'
+- id: R0537
+  equation: '|a_4HPHEACCOA[cell]| + |GLY[cell]| => |a_4HPHEACG[cell]| + |COA[cell]|'
+- id: R0538
+  equation: '|TYR[cell]| => |TYRM[cell]| + |CO2[cell]|'
+- id: R0539
+  equation: '|DHPHE[cell]| => |AE12BZ[cell]| + |CO2[cell]|'
+- id: R0540
+  equation: '|MTYRM[cell]| + |SAM[cell]| => |HORD[cell]| + |SAH[cell]|'
+- id: R0541
+  equation: '|DHPHEG[cell]| + |NAD[cell]| <=> |DHMAH[cell]| + |NADH[cell]|'
+- id: R0542
+  equation: '|PHE[cell]| + |AKG[cell]| <=> |PHPYR[cell]| + |GLU[cell]|'
+- id: R0543
+  equation: '|PHPYR[cell]| + |O2[cell]| => |a_2HPHEAC[cell]| + |CO2[cell]|'
+- id: R0544
+  equation: '|PHE[cell]| => |PHEAM[cell]| + |CO2[cell]|'
+- id: R0545
+  equation: '|DPHE[cell]| + |FAD[cell]| => |PHPYR[cell]| + |NH3[cell]| + |FADH2[cell]|'
+- id: R0546
+  equation: '|ATP[cell]| + |PHEACT[cell]| + |COA[cell]| => |AMP[cell]| + |PPI[cell]|
+    + |a_4PHEACCOA[cell]|'
+- id: R0547
+  equation: '|a_4PHEACCOA[cell]| + |GLY[cell]| => |a_4PHEACG[cell]| + |COA[cell]|'
+- id: R0548
+  equation: '|a_5HKN[cell]| => |a_5HKNN[cell]| + |CO2[cell]|'
+- id: R0549
+  equation: '|a_5HTRY[cell]| => |SEROTONIN[cell]| + |CO2[cell]|'
+- id: R0550
+  equation: '|TRP[cell]| => |TRYP[cell]| + |CO2[cell]|'
+- id: R0551
+  equation: '|a_5HIDACTAL[cell]| + |NAD[cell]| => |a_5HIDAC[cell]| + |NADH[cell]|'
+- id: R0552
+  equation: '|I3ACT[cell]| + |NAD[cell]| => |I3AC[cell]| + |NADH[cell]|'
+- id: R0553
+  equation: '|XTHE[cell]| => |a_8MTXN[cell]|'
+- id: R0554
+  equation: (2) |HANTH[cell]| + (2) |O2[cell]| => |CINVLIN[cell]| + (2) |H2O2[cell]|
+- id: R0555
+  equation: '|OAP[cell]| + |COA[cell]| + |NAD[cell]| => |GCOA[cell]| + |CO2[cell]|
+    + |NADH[cell]|'
+- id: R0570
+  equation: '|IGP[cell]| => |INDOLE[cell]| + |G3P[cell]|'
+- id: R0571
+  equation: '|SER[cell]| + |INDOLE[cell]| => |TRP[cell]|'
+- id: R0575
+  equation: '|PHEN[cell]| + |NAD[cell]| => |PHPYR[cell]| + |CO2[cell]| + |NADH[cell]|'
+- id: R0579
+  equation: '|TH4P[cell]| + |NADP[cell]| => |P3H5C[cell]| + |NADPH[cell]|'
+- id: R0580
+  equation: '|PHE[cell]| + |TTRHBP[cell]| + |O2[cell]| => |TYR[cell]| + |DHBP[cell]|'
+- id: R0582
+  equation: '|GLU[cell]| + |ATP[cell]| => |ADP[cell]| + |GLUP[cell]|'
+- id: R0583
+  equation: '|GLUP[cell]| + |NADPH[cell]| => |NADP[cell]| + |PI[cell]| + |GLUGSAL[cell]|'
+- id: R0584
+  equation: '|P5C[cell]| + |NADPH[cell]| <=> |PRO[cell]| + |NADP[cell]|'
+- id: R0585
+  equation: '|GLU[cell]| + |ACCOA[cell]| => |COA[cell]| + |NAGLU[cell]|'
+- id: R0586
+  equation: '|NAGLU[cell]| + |ATP[cell]| => |ADP[cell]| + |NAGLUP[cell]|'
+- id: R0587
+  equation: '|NAGLUP[cell]| + |NADPH[cell]| <=> |NADP[cell]| + |PI[cell]| + |NAGLUS[cell]|'
+- id: R0588
+  equation: '|NAGLUS[cell]| + |GLU[cell]| <=> |AKG[cell]| + |NAORN[cell]|'
+- id: R0589
+  equation: '|NAORN[cell]| => |AC[cell]| + |ORN[cell]|'
+- id: R0590
+  equation: '|NAORN[cell]| + |GLU[cell]| => |ORN[cell]| + |NAGLU[cell]|'
+- id: R0591
+  equation: '|ORN[cell]| + |CAP[cell]| <=> |CITR[cell]| + |PI[cell]|'
+- id: R0592
+  equation: '|CITR[cell]| + |ASP[cell]| + |ATP[cell]| <=> |AMP[cell]| + |PPI[cell]|
+    + |ARGSUCC[cell]|'
+- id: R0593
+  equation: '|ARGSUCC[cell]| <=> |FUM[cell]| + |ARG[cell]|'
+- id: R0594
+  equation: '|ATP[cell]| + |MHDTN[cell]| => |ADP[cell]| + |PI[cell]| + |CBSARC[cell]|'
+- id: R0595
+  equation: '|a_3URDPP[cell]| <=> |bALA[cell]| + |CO2[cell]| + |NH3[cell]|'
+- id: R0596
+  equation: '|bAMPAL[cell]| + |NAD[cell]| => |bALA[cell]| + |NADH[cell]|'
+- id: R0597
+  equation: '|FAD[cell]| + |PPCOA[cell]| <=> |FADH2[cell]| + |PNCOA[cell]|'
+- id: R0598
+  equation: '|GLUPEP[cell]| + |TAU[cell]| => |PEPTIDE[cell]| + |GLUTAU[cell]|'
+- id: R0599
+  equation: '|TAU[cell]| + |AKG[cell]| + |O2[cell]| => |SO3[cell]| + |AMACAL[cell]|
+    + |SUCC[cell]| + |CO2[cell]|'
+- id: R0600
+  equation: '|CLLT[cell]| => |H2AEP[cell]|'
+- id: R0601
+  equation: '|CLLT[cell]| + |PYR[cell]| <=> |PPACAL[cell]| + |ALA[cell]|'
+- id: R0602
+  equation: '|MCOBL[cell]| + |PPACAL[cell]| => |HPPP[cell]| + |VB12[cell]|'
+- id: R0603
+  equation: '|GLUPEP[cell]| + |SEMSC[cell]| => |PEPTIDE[cell]| + |GGSEMSC[cell]|'
+- id: R0604
+  equation: '|PPHSER[cell]| + |SENCYS[cell]| => |SLCYSTH[cell]| + |PI[cell]|'
+- id: R0605
+  equation: '|ATHSER[cell]| + |SENCYS[cell]| => |SLCYSTH[cell]| + |AC[cell]|'
+- id: R0606
+  equation: '|SUCHSER[cell]| + |SENCYS[cell]| => |SLCYSTH[cell]| + |SUCC[cell]|'
+- id: R0607
+  equation: '|SLCYSTH[cell]| => |SENCYS[cell]| + |NH3[cell]| + |OBUT[cell]|'
+- id: R0609
+  equation: '|SLNMET[cell]| => |MTHSNL[cell]| + |NH3[cell]| + |OBUT[cell]|'
+- id: R0610
+  equation: '|ATP[cell]| + |SLNMET[cell]| => |PI[cell]| + |PPI[cell]| + |SEANSMET[cell]|'
+- id: R0611
+  equation: '|ASER[cell]| + |SELD[cell]| => |SENCYS[cell]| + |AC[cell]|'
+- id: R0612
+  equation: '|ATP[cell]| + |SELD[cell]| => |AMP[cell]| + |SLNPP[cell]| + |PI[cell]|'
+- id: R0614
+  equation: '|SELT[cell]| + (3) |NADP[cell]| => |SELD[cell]| + (3) |NADPH[cell]|'
+- id: R0615
+  equation: '|ATP[cell]| + |SELN[cell]| <=> |PPI[cell]| + |ADNSEL[cell]|'
+- id: R0616
+  equation: '|ATP[cell]| + |ADNSEL[cell]| => |ADP[cell]| + |PPADSEL[cell]|'
+- id: R0617
+  equation: '|CNGLCS[cell]| => |CYNHR[cell]| + |GLC[cell]|'
+- id: R0618
+  equation: '|HCYSI[cell]| + (2) |CN[cell]| => |AAGCB[cell]| + |HCYS[cell]| + |THCYN[cell]|'
+- id: R0619
+  equation: '|CYALA[cell]| + |GLU[cell]| => |rGLUCYA[cell]|'
+- id: R0620
+  equation: '|CYALA[cell]| + |GLU[cell]| => |rGLUAPP[cell]| + |CO2[cell]|'
+- id: R0621
+  equation: '|DGLU[cell]| <=> |GLU[cell]|'
+- id: R0622
+  equation: '|GLN[cell]| => |DGLU[cell]| + |NH3[cell]|'
+- id: R0623
+  equation: '|DALA[cell]| <=> |ALA[cell]|'
+- id: R0624
+  equation: (2) |DALA[cell]| + |ATP[cell]| <=> |ALAALA[cell]| + |ADP[cell]| + |PI[cell]|
+- id: R0626
+  equation: '|bDG6P[cell]| + |NADP[cell]| => |D6PGL[cell]| + |NADPH[cell]|'
+- id: R0627
+  equation: '|H2O2[cell]| + (2) |RGT[cell]| <=> |OGT[cell]|'
+- id: R0628
+  equation: '|RGT[cell]| => |CYSGLY[cell]| + |GLU[cell]|'
+- id: R0629
+  equation: '|RGT[cell]| + |LAMACID[cell]| => |CYSGLY[cell]| + |GLUAM[cell]|'
+- id: R0630
+  equation: '|CYSGLY[cell]| => |CYS[cell]| + |GLY[cell]|'
+- id: R0631
+  equation: '|RX[cell]| + |RGT[cell]| => |HX[cell]| + |RSGLTH[cell]|'
+- id: R0632
+  equation: '|RSGLTH[cell]| => |RSALGLY[cell]| + |GLU[cell]|'
+- id: R0633
+  equation: '|RSALAGLY[cell]| => |RSALA[cell]| + |GLY[cell]|'
+- id: R0634
+  equation: '|UDPNAG[cell]| + |UDCP[cell]| => |UMP[cell]| + |UNAGA[cell]|'
+- id: R0635
+  equation: '|UDPNAG[cell]| => |UACMAM[cell]|'
+- id: R0636
+  equation: (2) |NAD[cell]| + |UACMAM[cell]| => (2) |NADH[cell]| + |UACMAMU[cell]|
+- id: R0637
+  equation: '|UACMAM[cell]| + |UNAGA[cell]| => |UDP[cell]| + |UNAGAMU[cell]|'
+- id: R0638
+  equation: '|DTTP[cell]| + |G1P[cell]| => |DTDPGLU[cell]| + |PPI[cell]|'
+- id: R0639
+  equation: '|DTDPGLU[cell]| => |DTDP4D6DG[cell]|'
+- id: R0641
+  equation: '|DTDP4D6DM[cell]| + |NADPH[cell]| => |DTDPRMN[cell]| + |NADP[cell]|'
+- id: R0642
+  equation: '|ACCOA[cell]| + |DTDP4ADDG[cell]| => |COA[cell]| + |DTDP4AADDG[cell]|'
+- id: R0643
+  equation: '|DTDP4AADDG[cell]| + |UNAGAMU[cell]| => |DTDP[cell]| + |UNAGAMUF[cell]|'
+- id: R0644
+  equation: '|UNAGAMUF[cell]| => |UDCPP[cell]| + |OANTIGEN[cell]|'
+- id: R0645
+  equation: '|UDPGAL[cell]| => |UDPGALFUR[cell]|'
+- id: R0646
+  equation: '|C140ACP[cell]| + |UDPNAG[cell]| <=> |ACP[cell]| + |UDPG2AA[cell]|'
+- id: R0647
+  equation: '|UDPG2AA[cell]| => |UDPG2A[cell]| + |AC[cell]|'
+- id: R0648
+  equation: '|UDPG2A[cell]| + |C140ACP[cell]| => |ACP[cell]| + |UDPG23A[cell]|'
+- id: R0649
+  equation: '|UDPG23A[cell]| => |UMP[cell]| + |LIPX[cell]|'
+- id: R0650
+  equation: '|LIPX[cell]| + |UDPG23A[cell]| => |UDP[cell]| + |DISAC1P[cell]|'
+- id: R0651
+  equation: '|DISAC1P[cell]| + |ATP[cell]| => |ADP[cell]| + |LIPIV[cell]|'
+- id: R0652
+  equation: '|LIPIV[cell]| + |CMPKDO[cell]| => |KDOLIPIV[cell]| + |CMP[cell]|'
+- id: R0653
+  equation: '|KDOLIPIV[cell]| + |CMPKDO[cell]| => |K2LIPIV[cell]| + |CMP[cell]|'
+- id: R0654
+  equation: '|K2LIPIV[cell]| + |C140ACP[cell]| => |LIPA[cell]| + |ACP[cell]|'
+- id: R0655
+  equation: '|RL5P[cell]| <=> |A5P[cell]|'
+- id: R0656
+  equation: '|PEP[cell]| + |A5P[cell]| => |KDOP[cell]| + |PI[cell]|'
+- id: R0657
+  equation: '|KDOP[cell]| => |KDO[cell]| + |PI[cell]|'
+- id: R0658
+  equation: '|KDO[cell]| + |CTP[cell]| => |PPI[cell]| + |CMPKDO[cell]|'
+- id: R0659
+  equation: '|S7P[cell]| + |ATP[cell]| => |ADPHEP[cell]| + |PPI[cell]|'
+- id: R0660
+  equation: '|K2LIPIV[cell]| + |C120ACP[cell]| => |LIPA[cell]| + |ACP[cell]|'
+- id: R0662
+  equation: '|DGR[cell]| + |ATP[cell]| => |ADP[cell]| + |PA[cell]|'
+- id: R0664
+  equation: '|UDPNAM[cell]| + |ALA[cell]| + |ATP[cell]| => |ADP[cell]| + |PI[cell]|
+    + |UDPNAMA[cell]|'
+- id: R0665
+  equation: '|UDPNAMA[cell]| + |DGLU[cell]| + |ATP[cell]| => |UDPNAMAG[cell]| + |ADP[cell]|
+    + |PI[cell]|'
+- id: R0666
+  equation: '|UDCPP[cell]| => |UDCP[cell]| + |PI[cell]|'
+- id: R0667
+  equation: '|UDPNAMAG[cell]| + |MDAPIM[cell]| + |ATP[cell]| => |UDPMNLADGMD[cell]|
+    + |ADP[cell]| + |PI[cell]|'
+- id: R0668
+  equation: '|UDPMNLADGMD[cell]| + |ALAALA[cell]| + |ATP[cell]| => |UDPMNLADGMDDADA[cell]|
+    + |ADP[cell]| + |PI[cell]|'
+- id: R0669
+  equation: '|UDPMNLADGMDDADA[cell]| + |UDCP[cell]| => |UPPMNLADGMDDADA[cell]| +
+    |UMP[cell]|'
+- id: R0670
+  equation: '|UPPMNLADGMDDADA[cell]| + |UDPNAG[cell]| => |UPPMN_GN_LADGMDDADA[cell]|
+    + |UDP[cell]|'
+- id: R0671
+  equation: '|UPPMN_GN_LADGMDDADA[cell]| + |ATP[cell]| + |NH3[cell]| => |UPPMN_GN_LADGNMDDADA[cell]|
+    + |ADP[cell]| + |PI[cell]|'
+- id: R0672
+  equation: '|UPPMN_GN_LADGNMD_G_5DADA[cell]| => |UDCPP[cell]| + |PPEPTIDO[cell]|'
+- id: R0673
+  equation: '|ACALA[cell]| => |ACMUR[cell]| + |ALA[cell]|'
+- id: R0675
+  equation: '|AIR[cell]| + |NAD[cell]| => |AHM[cell]| + (2) |FORM[cell]| + |NADH[cell]|'
+- id: R0676
+  equation: '|AHM[cell]| + |ATP[cell]| => |AHMP[cell]| + |ADP[cell]|'
+- id: R0677
+  equation: '|AHMP[cell]| + |ATP[cell]| => |AHMPP[cell]| + |ADP[cell]|'
+- id: R0678
+  equation: '|THZP[cell]| + |AHMPP[cell]| => |THMP[cell]| + |PPI[cell]|'
+- id: R0679
+  equation: '|THMP[cell]| + |ADP[cell]| <=> |THIAMIN[cell]| + |ATP[cell]|'
+- id: R0680
+  equation: '|THMP[cell]| + |ATP[cell]| <=> |THMPP[cell]| + |ADP[cell]|'
+- id: R0681
+  equation: '|GTP[cell]| => |D6RP5P[cell]| + |FORM[cell]| + |PPI[cell]|'
+- id: R0682
+  equation: '|D6RP5P[cell]| => |A6RP5P[cell]| + |NH3[cell]|'
+- id: R0683
+  equation: '|A6RP5P[cell]| + |NADPH[cell]| => |A6RP5P2[cell]| + |NADP[cell]|'
+- id: R0685
+  equation: (2) |D8RL[cell]| => |RIBFLAV[cell]| + |A6RP[cell]|
+- id: R0686
+  equation: '|RIBFLAV[cell]| + |ATP[cell]| => |FMN[cell]| + |ADP[cell]|'
+- id: R0687
+  equation: '|FMN[cell]| + |ATP[cell]| => |FAD[cell]| + |PPI[cell]|'
+- id: R0688
+  equation: '|RIBFLAV[cell]| => |DMBZMZ[cell]|'
+- id: R0689
+  equation: '|NACN[cell]| + |DMBZMZ[cell]| => |NAC[cell]| + |PPARDBZ[cell]|'
+- id: R0690
+  equation: '|PPARDBZ[cell]| => |aRIBAZOLE[cell]| + |PI[cell]|'
+- id: R0691
+  equation: '|E4P[cell]| + |NAD[cell]| <=> |ER4P[cell]| + |NADH[cell]|'
+- id: R0692
+  equation: '|ER4P[cell]| + |NAD[cell]| <=> |OHB[cell]| + |NADH[cell]|'
+- id: R0693
+  equation: '|OHB[cell]| + |GLU[cell]| <=> |PHT[cell]| + |AKG[cell]|'
+- id: R0694
+  equation: '|PHT[cell]| => |a_4HLT[cell]| + |PI[cell]|'
+- id: R0695
+  equation: '|a_4HLT[cell]| => |PYRDX[cell]|'
+- id: R0696
+  equation: '|PHT[cell]| + |NAD[cell]| => |a_3A2OPP[cell]| + |NADH[cell]| + |CO2[cell]|'
+- id: R0697
+  equation: '|a_3A2OPP[cell]| + |DX5P[cell]| => |P5P[cell]| + |PI[cell]|'
+- id: R0698
+  equation: '|PYRDX[cell]| + |ATP[cell]| => |P5P[cell]| + |ADP[cell]|'
+- id: R0700
+  equation: '|P5P[cell]| + |O2[cell]| => |PL5P[cell]| + |H2O2[cell]|'
+- id: R0702
+  equation: '|PL[cell]| + |ATP[cell]| => |PL5P[cell]| + |ADP[cell]|'
+- id: R0703
+  equation: '|PDLA5P[cell]| + |O2[cell]| => |PL5P[cell]| + |H2O2[cell]| + |NH3[cell]|'
+- id: R0704
+  equation: '|PDLA[cell]| + |ATP[cell]| => |PDLA5P[cell]| + |ADP[cell]|'
+- id: R0706
+  equation: '|PYRDX[cell]| + |O2[cell]| <=> |PL[cell]| + |H2O2[cell]|'
+- id: R0707
+  equation: '|PL[cell]| + |O2[cell]| + |NH3[cell]| <=> |PDLA[cell]| + |H2O2[cell]|'
+- id: R0708
+  equation: '|ASP[cell]| + |O2[cell]| => |IMNASP[cell]| + |H2O2[cell]|'
+- id: R0709
+  equation: '|IMNASP[cell]| + |DHAP[cell]| => |QA[cell]| + |PI[cell]|'
+- id: R0710
+  equation: '|QA[cell]| + |PRPP[cell]| => |NACN[cell]| + |CO2[cell]| + |PPI[cell]|'
+- id: R0711
+  equation: '|NAC[cell]| + |PRPP[cell]| <=> |NACN[cell]| + |PPI[cell]|'
+- id: R0712
+  equation: '|NACN[cell]| + |ATP[cell]| => |PPI[cell]| + |NAAD[cell]|'
+- id: R0713
+  equation: '|NACN[cell]| => |NACD[cell]| + |PI[cell]|'
+- id: R0714
+  equation: '|ATP[cell]| + |NAMN[cell]| <=> |PPI[cell]| + |NAD[cell]|'
+- id: R0715
+  equation: '|NAMN[cell]| => |NAMD[cell]| + |PI[cell]|'
+- id: R0716
+  equation: '|NAMD[cell]| => |NAM[cell]| + |RIB[cell]|'
+- id: R0717
+  equation: '|NAAD[cell]| + |ATP[cell]| + |GLN[cell]| => |NAD[cell]| + |AMP[cell]|
+    + |PPI[cell]| + |GLU[cell]|'
+- id: R0718
+  equation: '|NADP[cell]| + |NADH[cell]| <=> |NADPH[cell]| + |NAD[cell]|'
+- id: R0719
+  equation: '|NAD[cell]| + |ATP[cell]| => |NADP[cell]| + |ADP[cell]|'
+- id: R0722
+  equation: '|OIVAL[cell]| + |METTHF[cell]| => |AKP[cell]| + |THF[cell]|'
+- id: R0723
+  equation: '|AKP[cell]| + |NADPH[cell]| => |NADP[cell]| + |PANT[cell]|'
+- id: R0724
+  equation: '|PANT[cell]| + |bALA[cell]| + |ATP[cell]| => |AMP[cell]| + |PPI[cell]|
+    + |PNTO[cell]|'
+- id: R0725
+  equation: '|a_4PPNTO[cell]| + |CTP[cell]| + |CYS[cell]| => |CMP[cell]| + |PPI[cell]|
+    + |a_4PPNCYS[cell]|'
+- id: R0726
+  equation: '|a_4PPNCYS[cell]| => |CO2[cell]| + |a_4PPNTE[cell]|'
+- id: R0727
+  equation: '|a_4PPNTE[cell]| + |ATP[cell]| <=> |PPI[cell]| + |DPCOA[cell]|'
+- id: R0728
+  equation: '|DPCOA[cell]| + |ATP[cell]| => |ADP[cell]| + |COA[cell]|'
+- id: R0729
+  equation: '|ACP[cell]| => |a_4PPNTE[cell]| + |APACP[cell]|'
+- id: R0730
+  equation: '|ALA[cell]| + |CHCOA[cell]| <=> |CO2[cell]| + |COA[cell]| + |AONA[cell]|'
+- id: R0731
+  equation: '|SAM[cell]| + |AONA[cell]| <=> |SAMOB[cell]| + |DANNA[cell]|'
+- id: R0732
+  equation: '|CO2[cell]| + |DANNA[cell]| + |ATP[cell]| <=> |DTB[cell]| + |PI[cell]|
+    + |ADP[cell]|'
+- id: R0733
+  equation: '|DTB[cell]| + |CYS[cell]| => |ALA[cell]| + |BT[cell]|'
+- id: R0734
+  equation: '|ATP[cell]| + |BT[cell]| <=> |PPI[cell]| + |BT5AMP[cell]|'
+- id: R0735
+  equation: '|BT5AMP[cell]| + |APCARX[cell]| => |AMP[cell]| + |HLCARX[cell]|'
+- id: R0736
+  equation: '|GTP[cell]| => |FORM[cell]| + |AHTD[cell]|'
+- id: R0737
+  equation: '|AHTD[cell]| => |DHP[cell]| + |PPI[cell]|'
+- id: R0738
+  equation: '|DHP[cell]| => |AHHMP[cell]| + |GLAL[cell]|'
+- id: R0739
+  equation: '|AHHMP[cell]| + |ATP[cell]| => |AMP[cell]| + |AHHMD[cell]|'
+- id: R0740
+  equation: '|CHOR[cell]| + |GLN[cell]| => |ADCHOR[cell]| + |GLU[cell]|'
+- id: R0741
+  equation: '|ADCHOR[cell]| => |PYR[cell]| + |PABA[cell]|'
+- id: R0742
+  equation: '|PABA[cell]| + |AHHMD[cell]| => |PPI[cell]| + |DHPT[cell]|'
+- id: R0743
+  equation: '|PABA[cell]| + |AHHMP[cell]| => |DHPT[cell]|'
+- id: R0744
+  equation: '|DHPT[cell]| + |ATP[cell]| + |GLU[cell]| => |ADP[cell]| + |PI[cell]|
+    + |DHF[cell]|'
+- id: R0745
+  equation: '|DHF[cell]| + |NADPH[cell]| => |NADP[cell]| + |THF[cell]|'
+- id: R0747
+  equation: '|DHF[cell]| + |NADP[cell]| <=> |FOL[cell]| + |NADPH[cell]|'
+- id: R0749
+  equation: '|FOL[cell]| + |NADPH[cell]| => |THF[cell]| + |NADP[cell]|'
+- id: R0750
+  equation: '|THF[cell]| + |ATP[cell]| + |GLU[cell]| <=> |ADP[cell]| + |PI[cell]|
+    + |THFG[cell]|'
+- id: R0751
+  equation: '|AHTD[cell]| => |PYTHP[cell]| + |PPPI[cell]|'
+- id: R0752
+  equation: '|DHBP[cell]| + |NADH[cell]| <=> |TTRHBP[cell]| + |NAD[cell]|'
+- id: R0753
+  equation: '|METTHF[cell]| + |NADP[cell]| <=> |METHF[cell]| + |NADPH[cell]|'
+- id: R0754
+  equation: '|METHF[cell]| <=> |FTHF[cell]|'
+- id: R0755
+  equation: '|METTHF[cell]| + |NADH[cell]| => |MTHF[cell]| + |NAD[cell]|'
+- id: R0756
+  equation: '|URGLY[cell]| => |GLX[cell]| + (2) |NH3[cell]| + |CO2[cell]|'
+- id: R0757
+  equation: '|FTHF[cell]| => |FORM[cell]| + |THF[cell]|'
+- id: R0759
+  equation: '|GAR[cell]| + |METHF[cell]| => |FGAR[cell]| + |THF[cell]|'
+- id: R0760
+  equation: '|METHF[cell]| => |a_5FTHF[cell]|'
+- id: R0761
+  equation: '|GLU[cell]| + |TGLU[cell]| + |ATP[cell]| => |GTRNA[cell]| + |AMP[cell]|
+    + |PPI[cell]|'
+- id: R0762
+  equation: '|GTRNA[cell]| + |NADPH[cell]| => |GSA[cell]| + |NADP[cell]| + |TGLU[cell]|'
+- id: R0763
+  equation: '|GSA[cell]| => |ALAV[cell]|'
+- id: R0764
+  equation: (2) |ALAV[cell]| => |PBG[cell]|
+- id: R0765
+  equation: (4) |PBG[cell]| => |HMB[cell]| + (4) |NH3[cell]|
+- id: R0766
+  equation: '|HMB[cell]| => |UPRG[cell]|'
+- id: R0767
+  equation: '|SAM[cell]| + |UPRG[cell]| => |SAH[cell]| + |PC2[cell]|'
+- id: R0768
+  equation: '|PC2[cell]| + |NAD[cell]| => |NADH[cell]| + |SHCL[cell]|'
+- id: R0769
+  equation: '|SHCL[cell]| => |SHEME[cell]|'
+- id: R0770
+  equation: '|UPRG[cell]| => (4) |CO2[cell]| + |CPP[cell]|'
+- id: R0771
+  equation: '|CPP[cell]| + (2) |SAM[cell]| => |PPHG[cell]| + (2) |CO2[cell]| + (2)
+    |MET[cell]| + (2) |DA[cell]|'
+- id: R0772
+  equation: '|CPP[cell]| + |O2[cell]| => |PPHG[cell]| + (2) |CO2[cell]|'
+- id: R0773
+  equation: '|PPIX[cell]| => |PTH[cell]|'
+- id: R0774
+  equation: '|UPRGI[cell]| => |CPPI[cell]| + (4) |CO2[cell]|'
+- id: R0775
+  equation: '|ATP[cell]| + |PPIX[cell]| + |MG[cell]| => |ADP[cell]| + |PI[cell]|
+    + |MGPPIX[cell]|'
+- id: R0776
+  equation: '|SAM[cell]| + |PC2[cell]| => |SAH[cell]| + |PC3A[cell]|'
+- id: R0777
+  equation: '|PC3A[cell]| + |O2[cell]| => |PC3B[cell]|'
+- id: R0778
+  equation: '|SAM[cell]| + |PC3B[cell]| => |SAH[cell]| + |PC4[cell]|'
+- id: R0779
+  equation: '|SAM[cell]| + |PC4[cell]| => |SAH[cell]| + |PC5[cell]|'
+- id: R0780
+  equation: '|PC5[cell]| + |SAM[cell]| => |PC6A[cell]| + |AC[cell]| + |SAH[cell]|'
+- id: R0781
+  equation: '|PC6A[cell]| + |NADPH[cell]| => |PC6B[cell]| + |NADP[cell]|'
+- id: R0782
+  equation: (2) |SAM[cell]| + |PC6B[cell]| => (2) |SAH[cell]| + |PC8X[cell]| + |CO2[cell]|
+- id: R0783
+  equation: '|PC8X[cell]| => |HYGBYR[cell]|'
+- id: R0784
+  equation: '|HYGBYR[cell]| + (2) |GLN[cell]| + (2) |ATP[cell]| => |HYGACDM[cell]|
+    + (2) |PI[cell]| + (2) |GLU[cell]| + (2) |ADP[cell]|'
+- id: R0785
+  equation: '|HYGACDM[cell]| + |COBALT[cell]| + |ATP[cell]| => |COB2ACDM[cell]| +
+    |PI[cell]| + |ADP[cell]|'
+- id: R0786
+  equation: '|COB2ACDM[cell]| + |NADH[cell]| => |COB1ACDM[cell]| + |NAD[cell]|'
+- id: R0787
+  equation: '|COB1ACDM[cell]| + |ATP[cell]| <=> |ADCOBACD[cell]| + |PPPI[cell]|'
+- id: R0788
+  equation: '|ADCOBACD[cell]| + (4) |GLN[cell]| + (4) |ATP[cell]| => |ADCOHEX[cell]|
+    + (4) |GLU[cell]| + (4) |PI[cell]| + (4) |ADP[cell]|'
+- id: R0789
+  equation: '|ADCOHEX[cell]| + |a_1APP2OL[cell]| => |ADCOMN[cell]|'
+- id: R0790
+  equation: '|ADCOMN[cell]| + |ATP[cell]| => |ADCOMNP[cell]| + |ADP[cell]|'
+- id: R0791
+  equation: '|ADCOMN[cell]| + |GTP[cell]| => |ADCOMNP[cell]| + |GDP[cell]|'
+- id: R0792
+  equation: '|ADCOHEX[cell]| + |D1AP2OP[cell]| + |ATP[cell]| => |ADCOMNP[cell]| +
+    |ADP[cell]| + |PI[cell]|'
+- id: R0793
+  equation: '|ADCOMNP[cell]| + |GTP[cell]| => |ADGCOMN[cell]| + |PPI[cell]|'
+- id: R0794
+  equation: '|ADGCOMN[cell]| + |aRIBAZOLE[cell]| => |VB12COZ[cell]| + |GMP[cell]|'
+- id: R0795
+  equation: '|DMK[cell]| + |SAM[cell]| => |SAH[cell]| + |MKH2[cell]|'
+- id: R0796
+  equation: '|PTNPHQ[cell]| + |SAM[cell]| => |PHQ[cell]| + |SAH[cell]|'
+- id: R0797
+  equation: '|CHOR[cell]| => |a_4HBZ[cell]| + |PYR[cell]|'
+- id: R0798
+  equation: '|a_4HBZ[cell]| + |OPP[cell]| => |O4HBZ[cell]| + |PPI[cell]|'
+- id: R0799
+  equation: '|O4HBZ[cell]| => |CO2[cell]| + |a_2OPPP[cell]|'
+- id: R0800
+  equation: '|a_2OPPP[cell]| + |O2[cell]| + |NADPH[cell]| => |a_2O6H[cell]| + |NADP[cell]|'
+- id: R0801
+  equation: '|a_2O6H[cell]| + |SAM[cell]| => |a_2OPMP[cell]| + |SAH[cell]|'
+- id: R0802
+  equation: '|a_2OPMP[cell]| + |O2[cell]| + |NADPH[cell]| => |a_2OPMB[cell]| + |NADP[cell]|'
+- id: R0803
+  equation: '|a_2OPMB[cell]| + |SAM[cell]| => |a_2OPMMB[cell]| + |SAH[cell]|'
+- id: R0804
+  equation: '|a_2OPMMB[cell]| + |O2[cell]| + |NADPH[cell]| => |a_2OMHMB[cell]| +
+    |NADP[cell]|'
+- id: R0805
+  equation: '|a_2OMHMB[cell]| + |SAM[cell]| => |Q[cell]| + |SAH[cell]|'
+- id: R0808
+  equation: '|HPMMBZQ[cell]| + |O2[cell]| + |NADPH[cell]| => |HPMHMBZQ[cell]| + |NADP[cell]|'
+- id: R0880
+  equation: '|Hxt[cell]| <=> |URI[cell]|'
+- id: R0935
+  equation: '|HOPT[cell]| => |ACAL[cell]| + |PYR[cell]|'
+- id: R0936
+  equation: '|OCRO[cell]| => |HOPT[cell]| + |CO2[cell]|'
+- id: R0937
+  equation: '|PPYR[cell]| => |PPAC[cell]| + |CO2[cell]|'
+- id: R0938
+  equation: '|HXSP[cell]| => |SALC[cell]| + |CO2[cell]|'
+- id: R0939
+  equation: '|DTC[cell]| => |DST[cell]| + |CO2[cell]|'
+- id: R0940
+  equation: '|CMAR[cell]| => |HST[cell]| + |CO2[cell]|'
+- id: R0941
+  equation: '|PHPYR[cell]| => |a_4HAC[cell]| + |CO2[cell]|'
+- id: R0942
+  equation: '|THFG[cell]| + |ATP[cell]| + |GLU[cell]| <=> |ADP[cell]| + |PI[cell]|
+    + |THFPG[cell]|'
+- id: R0943
+  equation: '|AMBL[cell]| + |NAD[cell]| => |GABA[cell]| + |NADH[cell]|'
+- id: R0944
+  equation: '|N4ACAMBL[cell]| + |NAD[cell]| => |a_4ACAMBA[cell]| + |NADH[cell]|'
+- id: R0945
+  equation: '|SMTDR1P[cell]| <=> |SMTDRB1P[cell]|'
+- id: R0946
+  equation: '|a_5MTA[cell]| => |AD[cell]| + |a_5MDR[cell]|'
+- id: R0947
+  equation: '|GL3PETHAM[cell]| => |ETHAM[cell]| + |GL3P[cell]|'
+- id: R0948
+  equation: '|GL3PCHOL[cell]| => |CHOL[cell]| + |GL3P[cell]|'
+- id: R0949
+  equation: '|ETHAM[cell]| <=> |ACAL[cell]| + |NH3[cell]|'
+- id: R0951
+  equation: '|BUTANAL[cell]| + |NADPH[cell]| <=> |BUTANOL[cell]| + |NADP[cell]|'
+- id: R0952
+  equation: '|IMZACAL[cell]| + |NAD[cell]| => |IMZAC[cell]| + |NADH[cell]|'
+- id: R0953
+  equation: '|MALEM[cell]| => |MALE[cell]| + |NH3[cell]|'
+- id: R0954
+  equation: (2) |COB2ACDM[cell]| + |FMN[cell]| => (2) |COB1ACDM[cell]| + |FMNH2[cell]|
+- id: R0955
+  equation: '|GA6P[cell]| <=> |GA1P[cell]|'
+- id: R0959
+  equation: '|ATP[cell]| + |CYS[cell]| + |DX5P[cell]| + |TYR[cell]| => |a_4HBA[cell]|
+    + |THZP[cell]| + |ALA[cell]| + |AMP[cell]| + |CO2[cell]| + |PPI[cell]|'
+- id: R0961
+  equation: '|CHFAM[cell]| => |CHAM[cell]| + |FORM[cell]|'
+- id: R0962
+  equation: '|HH[cell]| + |NADP[cell]| => |OHO[cell]| + |NADPH[cell]|'
+- id: R0963
+  equation: '|ADIP[cell]| + |COA[cell]| + |ATP[cell]| => |ADIPCOA[cell]| + |AMP[cell]|
+    + |PPI[cell]|'
+- id: R0964
+  equation: '|a_5C2PCOA[cell]| => |a_3HADIPCOA[cell]|'
+- id: R0965
+  equation: '|a_3HADIPCOA[cell]| + |NAD[cell]| => |a_3OADIPCOA[cell]| + |NADH[cell]|'
+- id: R0966
+  equation: '|GGPP[cell]| + (7) |IPP[cell]| => |UDCPP[cell]| + (7) |PPI[cell]|'
+- id: R0967
+  equation: '|a_3IP6OH[cell]| + |COA[cell]| + |ATP[cell]| => |a_3IP6OHCOA[cell]|
+    + |ADP[cell]| + |PI[cell]|'
+- id: R0968
+  equation: '|a_3IP6OH[cell]| + |COA[cell]| + |ATP[cell]| => |a_3IP6OHCOA[cell]|
+    + |AMP[cell]| + |PPI[cell]|'
+- id: R0969
+  equation: '|PRLC[cell]| + |COA[cell]| + |ATP[cell]| => |PRLCOA[cell]| + |ADP[cell]|
+    + |PI[cell]|'
+- id: R0970
+  equation: '|PRLC[cell]| + |COA[cell]| + |ATP[cell]| => |PRLCOA[cell]| + |AMP[cell]|
+    + |PPI[cell]|'
+- id: R0971
+  equation: '|a_3IP6OHS[cell]| => |a_3IP6OHCOAS[cell]|'
+- id: R0972
+  equation: '|a_2M5IPH25Cc[cell]| + |ATP[cell]| + |COA[cell]| => |a_2M5IPH25COAc[cell]|
+    + |AMP[cell]| + |PI[cell]|'
+- id: R0973
+  equation: '|a_2M5IPH25Ct[cell]| + |ATP[cell]| + |COA[cell]| => |a_2M5IPH25COAt[cell]|
+    + |AMP[cell]| + |PI[cell]|'
+- id: R0974
+  equation: '|LMDOL[cell]| => |H2OLM[cell]|'
+- id: R0975
+  equation: '|PIN[cell]| => |PICVOL[cell]|'
+- id: R0976
+  equation: '|PRLAH[cell]| + |NAD[cell]| => |PRLC[cell]| + |NADH[cell]|'
+- id: R0977
+  equation: '|PRLCOA[cell]| => |a_2H4IPCHCCOA[cell]|'
+- id: R0978
+  equation: '|PICVOL[cell]| => |PICVN[cell]|'
+- id: R0979
+  equation: '|a_3H26DM5MHCOA[cell]| + |NAD[cell]| => |a_26DM5M3OHCOA[cell]| + |NADH[cell]|'
+- id: R0980
+  equation: '|a_2M5IPH25COAc[cell]| => |a_3H26DM5MHCOA[cell]|'
+- id: R0981
+  equation: '|a_2M5IPH25COAt[cell]| => |a_3H26DM5MHCOA[cell]|'
+- id: R0982
+  equation: '|a_26DM5M3OHCOA[cell]| + |COA[cell]| => |a_3IPB3ECOA[cell]| + |PPCOA[cell]|'
+- id: R0983
+  equation: '|a_3IPB3ECOA[cell]| => |a_3IPB3EC[cell]| + |COA[cell]|'
+- id: R0984
+  equation: '|bG2HCOUM[cell]| => |COUMT[cell]| + |GLC[cell]|'
+- id: R0985
+  equation: '|COUMT[cell]| => |COUM[cell]|'
+- id: R0986
+  equation: '|THSTB[cell]| => |TTHSTB[cell]|'
+- id: R0993
+  equation: '|HH[cell]| + |NADP[cell]| => |OHO[cell]| + |NADPH[cell]|'
+- id: R0994
+  equation: '|ADIP[cell]| + |COA[cell]| + |ATP[cell]| => |ADIPCOA[cell]| + |AMP[cell]|
+    + |PPI[cell]|'
+- id: R0995
+  equation: '|a_5C2PCOA[cell]| => |a_3HADIPCOA[cell]|'
+- id: R0996
+  equation: '|a_3HADIPCOA[cell]| + |NAD[cell]| => |a_3OADIPCOA[cell]| + |NADH[cell]|'
+- id: R0997
+  equation: '|TCHCATOL[cell]| + |O2[cell]| => |TCHMUC[cell]|'
+- id: R0998
+  equation: '|CHCATOL[cell]| + |O2[cell]| => |CHMUC[cell]|'
+- id: R0999
+  equation: '|HBNQ[cell]| => |BZQ[cell]|'
+- id: R1000
+  equation: '|THBN[cell]| <=> |HBNQ[cell]|'
+- id: R1001
+  equation: '|NICATOL[cell]| + |O2[cell]| => |THBN[cell]| + |NO2[cell]|'
+- id: R1002
+  equation: '|a_4HBZ[cell]| + |O2[cell]| + |NADPH[cell]| => |DHBZ[cell]| + |NADP[cell]|'
+- id: R1003
+  equation: '|VNL[cell]| + |O2[cell]| + |NADH[cell]| => |DHBZ[cell]| + |NAD[cell]|
+    + |FALD[cell]|'
+- id: R1004
+  equation: '|DHBZ[cell]| + |O2[cell]| => |a_3CMUC[cell]|'
+- id: R1006
+  equation: '|SFLN[cell]| + |OH[cell]| => |SO3[cell]| + |MLAC[cell]|'
+- id: R1007
+  equation: '|CHETOH[cell]| + |PQQ[cell]| => |CHETAL[cell]| + |PQQH2[cell]|'
+- id: R1008
+  equation: '|CHETAL[cell]| + |NAD[cell]| => |CHAC[cell]| + |NADH[cell]|'
+- id: R1009
+  equation: '|ACLE[cell]| => |ACAL[cell]|'
+- id: R1010
+  equation: '|ETYO[cell]| + |COA[cell]| + |NAD[cell]| => |ACCOA[cell]| + |NADH[cell]|'
+- id: R1011
+  equation: '|HNAPTHO[cell]| + |NADH[cell]| + |O2[cell]| => |NAPTHDOL[cell]| + |CO2[cell]|
+    + |NAD[cell]|'
+- id: R1012
+  equation: '|SALC[cell]| + |O2[cell]| + |NADH[cell]| => |CATOL[cell]| + |CO2[cell]|
+    + |NAD[cell]|'
+- id: R1013
+  equation: '|MACO[cell]| <=> |MICIT[cell]|'
+- id: R1015
+  equation: '|BZ[cell]| + |NADH[cell]| + |O2[cell]| => |BZ12DOL[cell]| + |NAD[cell]|'
+- id: R1016
+  equation: '|BZ[cell]| + |NADPH[cell]| + |O2[cell]| => |BZ12DOL[cell]| + |NADP[cell]|'
+- id: R1017
+  equation: '|BZ12DOL[cell]| + |NAD[cell]| => |CATOL[cell]| + |NADH[cell]| + |CO2[cell]|'
+- id: R1018
+  equation: '|a_6HCHECBCOA[cell]| => |a_26DHCHCBCOA[cell]|'
+- id: R1019
+  equation: '|a_6O2HCHCBCOA[cell]| => |HPIMCOA[cell]|'
+- id: R1020
+  equation: '|a_23DHPIMCOA[cell]| => |HPIMCOA[cell]|'
+- id: R1021
+  equation: '|HPIMCOA[cell]| + |NAD[cell]| => |OPIMCOA[cell]| + |NADH[cell]|'
+- id: R1022
+  equation: '|OPIMCOA[cell]| + |COA[cell]| => |GCOA[cell]| + |ACCOA[cell]|'
+- id: R1023
+  equation: '|GCOA[cell]| + |FAD[cell]| => |G1COA[cell]| + |CO2[cell]| + |FADH2[cell]|'
+- id: R1024
+  equation: '|G1COA[cell]| => |CTCOA[cell]| + |CO2[cell]|'
+- id: R1025
+  equation: '|CTCOA[cell]| => |RHBCOA[cell]|'
+- id: R1026
+  equation: '|RHBCOA[cell]| + |NADP[cell]| => |AACCOA[cell]| + |NADPH[cell]|'
+- id: R1027
+  equation: '|CATOL[cell]| + |O2[cell]| => |MUCA[cell]|'
+- id: R1028
+  equation: '|MUCA[cell]| <=> |MULAC[cell]|'
+- id: R1029
+  equation: '|MULAC[cell]| <=> |a_2O23DHFAC[cell]|'
+- id: R1030
+  equation: '|a_2O23DHFAC[cell]| => |OADIP[cell]|'
+- id: R1031
+  equation: '|SUCCOA[cell]| + |OADIP[cell]| => |SUCC[cell]| + |OADIPCOA[cell]|'
+- id: R1032
+  equation: '|COA[cell]| + |OADIPCOA[cell]| => |SUCCOA[cell]| + |ACCOA[cell]|'
+- id: R1033
+  equation: '|GALL[cell]| + |O2[cell]| => |a_2PY46DC[cell]|'
+- id: R1034
+  equation: '|a_3CMUC[cell]| => |a_4CMUCNLAC[cell]|'
+- id: R1035
+  equation: '|a_4CMUCNLAC[cell]| <=> |a_2O23DHFAC[cell]| + |CO2[cell]|'
+- id: R1038
+  equation: '|a_2H3MBNPYR[cell]| => |MSLACAH[cell]| + |PYR[cell]|'
+- id: R1039
+  equation: '|MSALC[cell]| + |O2[cell]| + |NADH[cell]| => |MCATOL[cell]| + |NAD[cell]|
+    + |CO2[cell]|'
+- id: R1040
+  equation: '|HMNAPTH[cell]| + |NAD[cell]| => |NAPTHAH[cell]| + |NADH[cell]|'
+- id: R1041
+  equation: '|a_12DH12DH8CNAPTH[cell]| => |a_12DH8CNAPTH[cell]|'
+- id: R1042
+  equation: '|a_2H3CBNPYR[cell]| => |FSALAC[cell]| + |PYR[cell]|'
+- id: R1043
+  equation: '|NAPTHMSUCCOA[cell]| => |NAPTHMESUCCOA[cell]|'
+- id: R1044
+  equation: '|NAPTHMESUCCOA[cell]| => |NAPTHHMSUCCOA[cell]|'
+- id: R1045
+  equation: '|NAPTHHMSUCCOA[cell]| => |NAPTHOMSUCCOA[cell]|'
+- id: R1046
+  equation: '|NAPTHOMSUCCOA[cell]| + |COA[cell]| => |NAPTHOCOA[cell]| + |SUCCOA[cell]|'
+- id: R1047
+  equation: '|MSALC4[cell]| + |O2[cell]| + |NADH[cell]| => |MCATOL4[cell]| + |NAD[cell]|
+    + |CO2[cell]|'
+- id: R1048
+  equation: '|a_2H4HMBNPYR[cell]| => |HMSALCAH[cell]| + |PYR[cell]|'
+- id: R1049
+  equation: '|HMSALC[cell]| + |O2[cell]| + |NADH[cell]| => |HMCATOL[cell]| + |NAD[cell]|
+    + |CO2[cell]|'
+- id: R1050
+  equation: '|HMNAPTH2[cell]| + |NAD[cell]| => |NAPTHAH2[cell]| + |NADH[cell]|'
+- id: R1055
+  equation: '|VN[cell]| + |NAD[cell]| => |VNL[cell]| + |NADH[cell]|'
+- id: R1057
+  equation: '|NTBZ[cell]| => |CATOL[cell]|'
+- id: R1058
+  equation: '|SLIM[cell]| + |O2[cell]| + |NADPH[cell]| => |PRLOH[cell]| + |NADP[cell]|'
+- id: R1059
+  equation: '|PRLOH[cell]| + |NAD[cell]| => |PRLAH[cell]| + |NADH[cell]|'
+- id: R1062
+  equation: '|H2O[cell]| + |a_4OMC[cell]| => |a_4C4H2OADIP[cell]|'
+- id: R1063
+  equation: '|a_4C4H2OADIP[cell]| => |PYR[cell]| + |OA[cell]|'
+- id: R1065
+  equation: '|CMAR[cell]| => |a_4HBZ[cell]|'
+- id: R1067
+  equation: '|CONOL[cell]| + |NADP[cell]| => |CONAL[cell]| + |NADPH[cell]|'
+- id: R1068
+  equation: '|CONAL[cell]| + |NAD[cell]| => |FER[cell]| + |NADH[cell]|'
+- id: R1069
+  equation: '|ATP[cell]| + |FER[cell]| + |COA[cell]| => |AMP[cell]| + |PPI[cell]|
+    + |FERCOA[cell]|'
+- id: R1070
+  equation: '|FERCOA[cell]| => |VN[cell]| + |ACCOA[cell]|'
+- id: R1071
+  equation: '|CAFF[cell]| => |DHBZ[cell]|'
+- id: R1074
+  equation: '|PHEACAL[cell]| + |NAD[cell]| => |PHEACT[cell]| + |NADH[cell]|'
+- id: R1075
+  equation: '|PHEAM[cell]| + |O2[cell]| => |PHEACAL[cell]| + |NH3[cell]| + |H2O2[cell]|'
+- id: R1077
+  equation: '|AGL3P[cell]| + |ACOA[cell]| => |PA[cell]| + |COA[cell]|'
+- id: R1078
+  equation: '|AKG[cell]| + |ALA[cell]| <=> |GLU[cell]| + |PYR[cell]|'
+- id: R1079
+  equation: '|HSER[cell]| + |SUCCOA[cell]| => |COA[cell]| + |OSLHSER[cell]|'
+- id: R1080
+  equation: '|PAP[cell]| => |AMP[cell]| + |PI[cell]|'
+- id: R1085
+  equation: '|QT[cell]| + |NAD[cell]| => |DQT[cell]| + |NADH[cell]|'
+- id: R1086
+  equation: '|a_4PHEACT[cell]| => |a_4HPHEAC[cell]|'
+- id: R1087
+  equation: '|a_4HPHEAC[cell]| + |O2[cell]| + |NADH[cell]| => |HOMOGEN[cell]| + |NAD[cell]|'
+- id: R1089
+  equation: '|NAC[cell]| + |NADP[cell]| => |HNAC[cell]| + |NADPH[cell]|'
+- id: R1090
+  equation: '|O2[cell]| + (2) |HNAC[cell]| => (2) |DHPY[cell]| + (2) |CO2[cell]|'
+- id: R1091
+  equation: '|DHPY[cell]| + |O2[cell]| => |NFM[cell]|'
+- id: R1092
+  equation: '|MALE[cell]| => |FUM[cell]|'
+- id: R1093
+  equation: '|LYS[cell]| + |O2[cell]| => |AVALAM[cell]| + |CO2[cell]|'
+- id: R1094
+  equation: '|AVALAM[cell]| => |AVAL[cell]| + |NH3[cell]|'
+- id: R1095
+  equation: '|AVAL[cell]| + |AKG[cell]| <=> |GLRSAH[cell]| + |GLU[cell]|'
+- id: R1096
+  equation: '|GLRSAH[cell]| + |NAD[cell]| => |GLR[cell]| + |NADH[cell]|'
+- id: R1097
+  equation: '|GLR[cell]| + |ATP[cell]| + |COA[cell]| => |GCOA[cell]| + |ADP[cell]|
+    + |PI[cell]|'
+- id: R1098
+  equation: '|DLYS[cell]| + |AKG[cell]| => |AMOHEX[cell]| + |DALA[cell]|'
+- id: R1099
+  equation: '|AMOHEX[cell]| <=> |PIPD2CAR[cell]|'
+- id: R1100
+  equation: '|PIPD2CAR[cell]| + |NADPH[cell]| <=> |PIPC[cell]| + |NADP[cell]|'
+- id: R1101
+  equation: '|PIPC[cell]| + |O2[cell]| => |PIPD6CAR[cell]| + |H2O2[cell]|'
+- id: R1102
+  equation: '|PIPD6CAR[cell]| <=> |AMADIPSAH[cell]|'
+- id: R1103
+  equation: '|AMADIPSAH[cell]| + |NAD[cell]| => |AMADIP[cell]| + |NADH[cell]|'
+- id: R1104
+  equation: '|AMADIP[cell]| + |AKG[cell]| <=> |OAP[cell]| + |GLU[cell]|'
+- id: R1105
+  equation: '|AA[cell]| <=> |DAA[cell]|'
+- id: R1106
+  equation: '|DLYS[cell]| <=> |LYS[cell]|'
+- id: R2001
+  equation: '|ATP[cell]| + |C140[cell]| + |COA[cell]| => |AMP[cell]| + |PPI[cell]|
+    + |HTDACOA[cell]|'
+- id: R2002
+  equation: '|ATP[cell]| + |C120[cell]| + |COA[cell]| => |AMP[cell]| + |PPI[cell]|
+    + |HDDACOA[cell]|'
+- id: R2003
+  equation: '|ATP[cell]| + |C100[cell]| + |COA[cell]| => |AMP[cell]| + |PPI[cell]|
+    + |HDACOA[cell]|'
+- id: R2004
+  equation: '|ATP[cell]| + |C080[cell]| + |COA[cell]| => |AMP[cell]| + |PPI[cell]|
+    + |HOACOA[cell]|'
+- id: R2005
+  equation: '|ATP[cell]| + |C060[cell]| + |COA[cell]| => |AMP[cell]| + |PPI[cell]|
+    + |HHXACOA[cell]|'
+- id: R2006
+  equation: '|ATP[cell]| + |C040[cell]| + |COA[cell]| => |AMP[cell]| + |PPI[cell]|
+    + |HBACOA[cell]|'
+- id: R2007
+  equation: '|C140ACP[cell]| => |C140[cell]| + |ACP[cell]|'
+- id: R2008
+  equation: '|C120ACP[cell]| => |C120[cell]| + |ACP[cell]|'
+- id: R2009
+  equation: '|C100ACP[cell]| => |C100[cell]| + |ACP[cell]|'
+- id: R2010
+  equation: '|C080ACP[cell]| => |C080[cell]| + |ACP[cell]|'
+- id: R2011
+  equation: '|C060ACP[cell]| => |C060[cell]| + |ACP[cell]|'
+- id: R2012
+  equation: '|C040ACP[cell]| => |C040[cell]| + |ACP[cell]|'
+- id: R_Biomass
+  equation: (0.5) |PROTEIN[cell]| + (0.028) |DNA[cell]| + (0.2) |RNA[cell]| + (0.3)
+    |PHOSPHOLIPID[cell]| + (0.03) |CAV[cell]| + (0.025) |LPS[cell]| + (0.2266) |PEPTIDO[cell]|
+    + (2.9) |ATP[cell]| => (2.9) |ADP[cell]| + (2.9) |PI[cell]|
+- id: R_Cofvit
+  equation: (0.145) |COA[cell]| + (0.141) |FAD[cell]| + (0.243) |FMN[cell]| + (0.167)
+    |NAD[cell]| + (0.149) |NADP[cell]| + (0.249) |THF[cell]| => |CAV[cell]|
+- id: R_DNA
+  equation: (0.621) |DATP[cell]| + (0.997) |DCTP[cell]| + (0.621) |DTTP[cell]| +
+    (0.997) |DGTP[cell]| + (4.4) |ATP[cell]| => (4.4) |ADP[cell]| + (4.4) |PI[cell]|
+    + |DNA[cell]|
+- id: R_LPS
+  equation: (1.908) |LIPA[cell]| + (3.229) |ADPHEP[cell]| + (16.96) |UDPG[cell]|
+    + (29.03) |UDPNAG[cell]| + (5.64) |NAGA1P[cell]| => |LPS[cell]| + (3.229) |ADP[cell]|
+    + (46) |UDP[cell]|
+- id: R_Peptido
+  equation: (1.01) |UDPNAM[cell]| + (1.012) |UDPNAG[cell]| + (2.185) |ALAALA[cell]|
+    + (1.092) |ALA[cell]| + (1.168) |MDAPIM[cell]| + (1.157) |DGLU[cell]| + (0.025)
+    |GLY[cell]| + (0.055) |SER[cell]| + (0.016) |THR[cell]| + (0.014) |LEU[cell]|
+    + (0.129) |LYS[cell]| + (0.018) |ASP[cell]| + (6.788) |ATP[cell]| + |PPEPTIDO[cell]|
+    => |PEPTIDO[cell]| + (1.012) |UDP[cell]| + (1.01) |UMP[cell]| + (6.788) |ADP[cell]|
+    + (6.788) |PI[cell]|
+- id: R_Phospholipid
+  equation: (0.944) |PE[cell]| + (0.306) |PG[cell]| + (0.074) |CL[cell]| => |PHOSPHOLIPID[cell]|
+- id: R_Protein
+  equation: (2.54256) |ALA[cell]| + (1.166434) |ARG[cell]| + (2.23596) |ASN[cell]|
+    + (2.23596) |ASP[cell]| + (0.080219) |CYS[cell]| + (2.389426) |GLN[cell]| + (2.389426)
+    |GLU[cell]| + (2.488502) |GLY[cell]| + (0.491274) |HIS[cell]| + (1.179365) |ILE[cell]|
+    + (2.084902) |LEU[cell]| + (1.366511) |LYS[cell]| + (0.461356) |MET[cell]| +
+    (0.776364) |PHE[cell]| + (1.183293) |PRO[cell]| + (1.1742) |SER[cell]| + (1.26003)
+    |THR[cell]| + (0.002456) |TRP[cell]| + (0.267417) |TYR[cell]| + (1.851398) |VAL[cell]|
+    + (40) |ATP[cell]| => (40) |ADP[cell]| + (40) |PI[cell]| + |PROTEIN[cell]|
+- id: R_RNA
+  equation: (1.63) |ATP[cell]| + (0.339) |GTP[cell]| + (0.25) |CTP[cell]| + (0.27)
+    |UTP[cell]| => (1.25) |ADP[cell]| + (1.25) |PI[cell]| + |RNA[cell]|
+- id: SPON_FMM
+  equation: '|FMM[cell]| => |FORM[cell]| + |NH3[cell]|'
+- id: TCA_accC
+  equation: '|PYR[cell]| + |ATP[cell]| + |CO2[cell]| => |OA[cell]| + |ADP[cell]|
+    + |PI[cell]|'
+- id: TCA_acnAB
+  equation: '|CIT[cell]| <=> |ICIT[cell]|'
+- id: TCA_fumC
+  equation: '|FUM[cell]| <=> |MAL[cell]|'
+- id: TCA_gltA
+  equation: '|ACCOA[cell]| + |OA[cell]| => |COA[cell]| + |CIT[cell]|'
+- id: TCA_icd
+  equation: '|ICIT[cell]| + |NADP[cell]| <=> |NADPH[cell]| + |AKG[cell]| + |CO2[cell]|'
+- id: TCA_kgdAB
+  equation: '|AKG[cell]| + |COA[cell]| + |NAD[cell]| => |SUCCOA[cell]| + |CO2[cell]|
+    + |NADH[cell]|'
+- id: TCA_mdh
+  equation: '|MAL[cell]| + |NAD[cell]| <=> |NADH[cell]| + |OA[cell]|'
+- id: TCA_sdhBA
+  equation: '|SUCC[cell]| + |Q[cell]| => |FUM[cell]| + |QH2[cell]|'
+- id: TCA_sucDC
+  equation: '|ADP[cell]| + |PI[cell]| + |SUCCOA[cell]| <=> |ATP[cell]| + |SUCC[cell]|
+    + |COA[cell]|'
+- id: TRANS_AC
+  equation: '|Hxt[cell]| <=> |AC[cell]|'
+- id: TRANS_ADN
+  equation: '|Hxt[cell]| => |ADN[cell]|'
+- id: TRANS_ADNr
+  equation: '|Hxt[cell]| <=> |ADN[cell]|'
+- id: TRANS_AKG1
+  equation: '|Hxt[cell]| => |AKG[cell]|'
+- id: TRANS_AKG2
+  equation: ' => |AKG[cell]| + |MAL[cell]|'
+- id: TRANS_ALA
+  equation: '|Hxt[cell]| => |ALA[cell]|'
+- id: TRANS_ALAABC
+  equation: '|ATP[cell]| => |ALA[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_ALANa
+  equation: ' <=> |ALA[cell]| + |Na[cell]|'
+- id: TRANS_ARGABC
+  equation: '|ATP[cell]| => |ARG[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_ASNABC
+  equation: '|ATP[cell]| => |ASN[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_ASP
+  equation: '|Hxt[cell]| => |ASP[cell]|'
+- id: TRANS_ASPABC
+  equation: '|ATP[cell]| => |ASP[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_C060
+  equation: '|C060xt[cell]| => |C060[cell]|'
+- id: TRANS_C140
+  equation: '|C140xt[cell]| => |C140[cell]|'
+- id: TRANS_CIT
+  equation: '|Hxt[cell]| <=> |CIT[cell]|'
+- id: TRANS_CYSABC
+  equation: '|ATP[cell]| => |CYS[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_CYTD
+  equation: '|Hxt[cell]| <=> |CYTD[cell]|'
+- id: TRANS_Cd1
+  equation: '|Cdxt[cell]| + |ATP[cell]| => |Cd[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_Cd2
+  equation: '|Cd[cell]| + |ATP[cell]| => |Cdxt[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_Cu
+  equation: '|Cu[cell]| + |ATP[cell]| => |Cuxt[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_DA
+  equation: '|Hxt[cell]| => |DA[cell]|'
+- id: TRANS_DALA
+  equation: '|Hxt[cell]| => |DALA[cell]|'
+- id: TRANS_DALAABC
+  equation: '|ATP[cell]| => |DALA[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_DC
+  equation: '|Hxt[cell]| => |DC[cell]|'
+- id: TRANS_DG
+  equation: '|Hxt[cell]| => |DG[cell]|'
+- id: TRANS_DGLUABC
+  equation: '|ATP[cell]| => |DGLU[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_DIN
+  equation: '|Hxt[cell]| => |DIN[cell]|'
+- id: TRANS_DINr
+  equation: '|Hxt[cell]| <=> |DIN[cell]|'
+- id: TRANS_DT
+  equation: '|Hxt[cell]| => |DT[cell]|'
+- id: TRANS_DU
+  equation: '|Hxt[cell]| => |DU[cell]|'
+- id: TRANS_FRUPTS
+  equation: '|PEP[cell]| => |PYR[cell]| + |F1P[cell]|'
+- id: TRANS_FUM
+  equation: '|Hxt[cell]| => |FUM[cell]|'
+- id: TRANS_GL3P
+  equation: '|Hxt[cell]| <=> |GL3P[cell]|'
+- id: TRANS_GLAC
+  equation: '|ATP[cell]| => |GLAC[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_GLN
+  equation: '|ATP[cell]| => |GLN[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_GLU
+  equation: '|Hxt[cell]| => |GLU[cell]|'
+- id: TRANS_GLUABC
+  equation: '|ATP[cell]| => |GLU[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_GLUC
+  equation: '|Hxt[cell]| => |GLUC[cell]|'
+- id: TRANS_GLYABC
+  equation: '|ATP[cell]| => |GLY[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_GLYNa
+  equation: ' <=> |GLY[cell]| + |Na[cell]|'
+- id: TRANS_GSN
+  equation: '|Hxt[cell]| => |GSN[cell]|'
+- id: TRANS_GSNr
+  equation: '|Hxt[cell]| <=> |GSN[cell]|'
+- id: TRANS_HISABC
+  equation: '|ATP[cell]| => |HIS[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_HOMOGEN
+  equation: '|HOMOGENxt[cell]| => |HOMOGEN[cell]|'
+- id: TRANS_ILE
+  equation: '|Hxt[cell]| => |ILE[cell]|'
+- id: TRANS_ILEABC
+  equation: '|ATP[cell]| => |ILE[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_INS
+  equation: '|Hxt[cell]| => |INS[cell]|'
+- id: TRANS_INSr
+  equation: '|Hxt[cell]| <=> |INS[cell]|'
+- id: TRANS_K1
+  equation: '|Kxt[cell]| + |ATP[cell]| => |K[cell]| + |ADP[cell]| + |Pi[cell]|'
+- id: TRANS_K2
+  equation: '|Kxt[cell]| => |K[cell]|'
+- id: TRANS_K3
+  equation: '|K[cell]| + |Hxt[cell]| => |Kxt[cell]|'
+- id: TRANS_LAC
+  equation: '|Hxt[cell]| <=> |LAC[cell]|'
+- id: TRANS_LEU
+  equation: '|Hxt[cell]| => |LEU[cell]|'
+- id: TRANS_LEUABC
+  equation: '|ATP[cell]| => |LEU[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_LYS
+  equation: '|Hxt[cell]| => |LYS[cell]|'
+- id: TRANS_LYSABC
+  equation: '|ATP[cell]| => |LYS[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_LYSe
+  equation: '|LYS[cell]| + |Hxt[cell]| => '
+- id: TRANS_MAL
+  equation: '|Hxt[cell]| => |MAL[cell]|'
+- id: TRANS_MAN
+  equation: '|ATP[cell]| => |MAN6P[cell]| + |ADP[cell]|'
+- id: TRANS_METABC
+  equation: '|ATP[cell]| => |MET[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_MLT
+  equation: '|ATP[cell]| => |MLT[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_Mg
+  equation: '|Mgxt[cell]| + |ATP[cell]| => |Mg[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_Na1
+  equation: '|Na[cell]| + (2) |Hxt[cell]| => '
+- id: TRANS_Na2
+  equation: '(2) |Na[cell]| + (3) |Hxt[cell]| => '
+- id: TRANS_ORNARGat
+  equation: '|ARG[cell]| <=> |ORN[cell]|'
+- id: TRANS_PHEABC
+  equation: '|ATP[cell]| => |PHE[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_PI
+  equation: '|Hxt[cell]| <=> |PI[cell]|'
+- id: TRANS_PIABC
+  equation: '|ATP[cell]| => |ADP[cell]| + (2) |PI[cell]|'
+- id: TRANS_PNTO
+  equation: ' => |PNTO[cell]| + |Na[cell]|'
+- id: TRANS_PRO
+  equation: '|Hxt[cell]| => |PRO[cell]|'
+- id: TRANS_PROABC
+  equation: '|ATP[cell]| => |PRO[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_PYR
+  equation: '|Hxt[cell]| <=> |PYR[cell]|'
+- id: TRANS_RIB
+  equation: '|ATP[cell]| => |RIB[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_RMN
+  equation: '|Hxt[cell]| <=> |RMN[cell]|'
+- id: TRANS_SERABC
+  equation: '|ATP[cell]| => |SER[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_SO4
+  equation: '|Hxt[cell]| => |SO4[cell]|'
+- id: TRANS_SO4ABC
+  equation: '|ATP[cell]| => |SO4[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_SUCABC
+  equation: '|ATP[cell]| => |SUC6P[cell]| + |ADP[cell]|'
+- id: TRANS_SUCC
+  equation: '|Hxt[cell]| <=> |SUCC[cell]|'
+- id: TRANS_TAU
+  equation: '|TAUxt[cell]| + |ATP[cell]| => |TAU[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_THR
+  equation: '|Hxt[cell]| => |THR[cell]|'
+- id: TRANS_THRABC
+  equation: '|ATP[cell]| => |THR[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_TRPABC
+  equation: '|ATP[cell]| => |TRP[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_TYRABC
+  equation: '|ATP[cell]| => |TYR[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_URA
+  equation: '|Hxt[cell]| => |URA[cell]|'
+- id: TRANS_URI
+  equation: '|Hxt[cell]| => |URI[cell]|'
+- id: TRANS_VAL
+  equation: '|Hxt[cell]| => |VAL[cell]|'
+- id: TRANS_VALABC
+  equation: '|ATP[cell]| => |VAL[cell]| + |ADP[cell]| + |PI[cell]|'
+- id: TRANS_glk
+  equation: '|ATP[cell]| => |G6P[cell]| + |ADP[cell]|'
+- id: TRANS_glk2
+  equation: '|ATP[cell]| => |bDG6P[cell]| + |ADP[cell]|'
+- id: Test1
+  equation: '|FALD[cell]| + |NAD[cell]| => |FORM[cell]| + |NADH[cell]|'
+- id: Y1
+  equation: '|GL3P[cell]| + (0.067) |C100ACP[cell]| + (0.182) |C120ACP[cell]| + (0.018)
+    |C140ACP[cell]| + (0.587) |C160ACP[cell]| + (0.046) |C180ACP[cell]| + (0.1) |C181ACP[cell]|
+    => |AGL3P[cell]| + |ACP[cell]|'
+- id: Y2
+  equation: '|AGL3P[cell]| + (0.067) |C100ACP[cell]| + (0.182) |C120ACP[cell]| +
+    (0.018) |C140ACP[cell]| + (0.587) |C160ACP[cell]| + (0.046) |C180ACP[cell]| +
+    (0.1) |C181ACP[cell]| => |PA[cell]| + |ACP[cell]|'
+- id: m10
+  equation: '|HEPPP[cell]| + |IPP[cell]| => |OPP[cell]| + |PPI[cell]|'
+- id: m11
+  equation: '|DTMP[cell]| + |ATP[cell]| <=> |DTDP[cell]| + |ADP[cell]|'
+- id: m14
+  equation: '|HISOLP[cell]| => |PI[cell]| + |HISOL[cell]|'
+- id: m17
+  equation: '|PNTO[cell]| + |ATP[cell]| => |ADP[cell]| + |a_4PPNTO[cell]|'
+- id: m18
+  equation: '|ASP[cell]| => |CO2[cell]| + |bALA[cell]|'
+- id: m5
+  equation: '|IPP[cell]| <=> |DMPP[cell]|'
+- id: m6
+  equation: '|FPP[cell]| + |IPP[cell]| => |GGPP[cell]| + |PPI[cell]|'
+- id: m7
+  equation: '|GGPP[cell]| + |IPP[cell]| => |PPPP[cell]| + |PPI[cell]|'
+- id: m8
+  equation: '|PPPP[cell]| + |IPP[cell]| => |HPPP[cell]| + |PPI[cell]|'
+- id: m9
+  equation: '|HPPP[cell]| + |IPP[cell]| => |HEPPP[cell]| + |PPI[cell]|'

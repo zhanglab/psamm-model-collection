@@ -1,0 +1,2831 @@
+- id: R_2PGK
+  name: _2-phosphoglycerate kinase
+  equation: '|M_2pg_c[C_c]| + |M_atp_c[C_c]| => |M_23dpg_c[C_c]| + |M_adp_c[C_c]|
+    + |M_h_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_2PLS
+  name: _2-phospho-L-lactate synthase
+  equation: '|M_gtp_c[C_c]| + |M_lac_DASH_L_c[C_c]| => |M_2plac_DASH_L_c[C_c]| +
+    |M_gdp_c[C_c]| + |M_h_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_4ABZt2r
+  name: _4-Aminobenzoate transport via symport
+  equation: '|M_4abz_e[C_e]| + |M_h_e[C_e]| <=> |M_4abz_c[C_c]| + |M_h_c[C_c]|'
+  subsystem: Transport
+- id: R_4KFBPP
+  name: _4-ketofructose 1,6-bisphosphate phosphatase
+  equation: '|M_4kfbp_c[C_c]| => |M_dkdofp_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_5HBZIDS
+  name: _5-hydroxybenzimidazole synthase
+  equation: '|M_ribflv_c[C_c]| => |M_5hbzid_c[C_c]| + |M_unknown_rbfdeg_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_7MHS
+  name: _7-mercaptoheptanoate synthase
+  equation: '|M_7ohp_c[C_c]| + |M_cys_DASH_L_c[C_c]| + |M_h_c[C_c]| + |M_nadh_c[C_c]|
+    => |M_7mhp_c[C_c]| + |M_nad_c[C_c]| + |M_ser_DASH_L_c[C_c]|'
+  subsystem: Coenzyme B Biosynthesis
+- id: R_7MHTS
+  name: _7-mercaptoheptanoylthreonine synthase
+  equation: '|M_7mhp_c[C_c]| + |M_atp_c[C_c]| + |M_thr_DASH_L_c[C_c]| => |M_7mht_c[C_c]|
+    + |M_adp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Coenzyme B Biosynthesis
+- id: R_ABTA
+  name: _4-aminobutyrate transaminase
+  equation: '|M_4abut_c[C_c]| + |M_akg_c[C_c]| => |M_glu_DASH_L_c[C_c]| + |M_sucsal_c[C_c]|'
+  subsystem: Glutamate metabolism
+- id: R_ACACT1
+  name: acetyl-CoA C-acetyltransferase
+  equation: (2) |M_accoa_c[C_c]| => |M_aacoa_c[C_c]| + |M_coa_c[C_c]|
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_ACBIPGT
+  name: Adenosyl cobinamide phosphate guanyltransferase
+  equation: '|M_adocbip_c[C_c]| + |M_gtp_c[C_c]| + |M_h_c[C_c]| => |M_agdpcbi_c[C_c]|
+    + |M_ppi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_ACCOAL2r
+  name: acetate-CoA ligase (ADP-forming)
+  equation: '|M_atp_c[C_c]| + |M_coa_c[C_c]| + |M_ppa_c[C_c]| <=> |M_adp_c[C_c]|
+    + |M_pi_c[C_c]| + |M_ppcoa_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_ACGK
+  name: acetylglutamate kinase
+  equation: '|M_acglu_c[C_c]| + |M_atp_c[C_c]| => |M_acg5p_c[C_c]| + |M_adp_c[C_c]|'
+  subsystem: Amino Acid Metabolism
+- id: R_ACGS
+  name: N-acetylglutamate synthase
+  equation: '|M_accoa_c[C_c]| + |M_glu_DASH_L_c[C_c]| => |M_acglu_c[C_c]| + |M_coa_c[C_c]|
+    + |M_h_c[C_c]|'
+  subsystem: Amino Acid Metabolism
+- id: R_ACHBS
+  name: _2-aceto-2-hydroxybutanoate synthase
+  equation: '|M_2obut_c[C_c]| + |M_h_c[C_c]| + |M_pyr_c[C_c]| => |M_2ahbut_c[C_c]|
+    + |M_co2_c[C_c]|'
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+- id: R_ACKr
+  name: acetate kinase
+  equation: '|M_ac_c[C_c]| + |M_atp_c[C_c]| <=> |M_actp_c[C_c]| + |M_adp_c[C_c]|'
+  subsystem: Methanogenesis
+- id: R_ACLDC
+  name: acetolactate decarboxylase
+  equation: '|M_alac_DASH_S_c[C_c]| + |M_h_c[C_c]| => |M_actn_DASH_R_c[C_c]| + |M_co2_c[C_c]|'
+  subsystem: Other
+- id: R_ACLS
+  name: acetolactate synthase
+  equation: '|M_h_c[C_c]| + (2) |M_pyr_c[C_c]| => |M_alac_DASH_S_c[C_c]| + |M_co2_c[C_c]|'
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+- id: R_ACONMT
+  name: Trans-aconitate methyltransferase
+  equation: '|M_acon_DASH_T_c[C_c]| + |M_amet_c[C_c]| => |M_aconm_c[C_c]| + |M_ahcys_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_ACONT
+  name: aconitase
+  equation: '|M_cit_c[C_c]| <=> |M_icit_c[C_c]|'
+  subsystem: Citric Acid Cycle
+- id: R_ACOTA
+  name: acetylornithine transaminase
+  equation: '|M_acorn_c[C_c]| + |M_akg_c[C_c]| <=> |M_acg5sa_c[C_c]| + |M_glu_DASH_L_c[C_c]|'
+  subsystem: Amino Acid Metabolism
+- id: R_ACP1_FMN
+  name: acid phosphatase (FMN)
+  equation: '|M_fmn_c[C_c]| + |M_h2o_c[C_c]| => |M_pi_c[C_c]| + |M_ribflv_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_ACS2
+  name: acetyl-CoA synthase (propionate)
+  equation: '|M_atp_c[C_c]| + |M_coa_c[C_c]| + |M_ppa_c[C_c]| => |M_amp_c[C_c]| +
+    |M_ppcoa_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_ACTNt2r
+  name: (R)-acetoin transport via proton symport
+  equation: '|M_actn_DASH_R_e[C_e]| + |M_h_e[C_e]| <=> |M_actn_DASH_R_c[C_c]| + |M_h_c[C_c]|'
+  subsystem: Transport
+- id: R_ACYP
+  name: acylphosphatase
+  equation: '|M_13dpg_c[C_c]| + |M_h2o_c[C_c]| => |M_3pg_c[C_c]| + |M_h_c[C_c]| +
+    |M_pi_c[C_c]|'
+  subsystem: Glycolysis/Gluconeogenesis
+- id: R_ACYP_2
+  name: acylphosphatase (2)
+  equation: '|M_actp_c[C_c]| + |M_h2o_c[C_c]| => |M_ac_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_ACt2r
+  name: acetate reversible transport via proton symport
+  equation: '|M_ac_e[C_e]| + |M_h_e[C_e]| <=> |M_ac_c[C_c]| + |M_h_c[C_c]|'
+  subsystem: Transport
+- id: R_ADCPS2
+  name: adenosylcobinamide-phosphate synthase
+  equation: '|M_adcobhex_c[C_c]| + |M_applp_c[C_c]| + |M_atp_c[C_c]| => |M_adocbip_c[C_c]|
+    + |M_adp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_ADCYRS
+  name: adenosylcobyric acid synthase (glutamine-hydrolysing)
+  equation: '|M_adcobdam_c[C_c]| + (4) |M_atp_c[C_c]| + (4) |M_gln_DASH_L_c[C_c]|
+    + (4) |M_h2o_c[C_c]| => |M_adcobhex_c[C_c]| + (4) |M_adp_c[C_c]| + (4) |M_glu_DASH_L_c[C_c]|
+    + (4) |M_h_c[C_c]| + (4) |M_pi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_ADD
+  name: adenine deaminase
+  equation: '|M_ade_c[C_c]| + |M_h_c[C_c]| + |M_h2o_c[C_c]| => |M_hxan_c[C_c]| +
+    |M_nh4_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_ADK1
+  name: adenylate kinase
+  equation: '|M_amp_c[C_c]| + |M_atp_c[C_c]| <=> (2) |M_adp_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_ADK2
+  name: adenylate kinase (Inorganic triphosphate)
+  equation: '|M_amp_c[C_c]| + |M_pppi_c[C_c]| <=> |M_adp_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_ADK3
+  name: adentylate kinase (GTP)
+  equation: '|M_amp_c[C_c]| + |M_gtp_c[C_c]| <=> |M_adp_c[C_c]| + |M_gdp_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_ADK4
+  name: adentylate kinase (ITP)
+  equation: '|M_amp_c[C_c]| + |M_itp_c[C_c]| <=> |M_adp_c[C_c]| + |M_idp_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_ADKd
+  name: adenylate kinase (d form)
+  equation: '|M_damp_c[C_c]| + |M_datp_c[C_c]| <=> (2) |M_dadp_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_ADNCYC
+  name: adenylate cyclase
+  equation: '|M_atp_c[C_c]| => |M_camp_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_ADNK1
+  name: adenosine kinase
+  equation: '|M_adn_c[C_c]| + |M_atp_c[C_c]| => |M_adp_c[C_c]| + |M_amp_c[C_c]| +
+    |M_h_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_ADOCBIAH
+  name: Adenosyl cobinamide amidohydrolase
+  equation: '|M_adocbi_c[C_c]| + |M_h2o_c[C_c]| => |M_adcobhex_c[C_c]| + |M_appl_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_ADOCBLS2
+  name: Adenosylcobalamin 5'-phosphate synthase
+  equation: '|M_agdpcbi_c[C_c]| + |M_r5hbzi_c[C_c]| => |M_adocblhbi_c[C_c]| + |M_gmp_c[C_c]|
+    + |M_h_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_ADPT
+  name: adenine phosphoribosyltransferase
+  equation: '|M_ade_c[C_c]| + |M_prpp_c[C_c]| => |M_amp_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_ADSL1
+  name: adenylosuccinate lyase
+  equation: '|M_dcamp_c[C_c]| => |M_amp_c[C_c]| + |M_fum_c[C_c]|'
+  subsystem: Alanine and Aspartate Metabolism
+- id: R_ADSL2
+  name: adenylosuccinate lyase
+  equation: '|M_25aics_c[C_c]| => |M_aicar_c[C_c]| + |M_fum_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_ADSS
+  name: adenylosuccinate synthase
+  equation: '|M_asp_DASH_L_c[C_c]| + |M_gtp_c[C_c]| + |M_imp_c[C_c]| => |M_dcamp_c[C_c]|
+    + |M_gdp_c[C_c]| + (2) |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Alanine and Aspartate Metabolism
+- id: R_AGAIAGT
+  name: archaeatidylinositol N-acetylglucosaminyltransferase
+  equation: '|M_dpgpi_c[C_c]| + |M_uacgam_c[C_c]| => |M_agdpgpi_c[C_c]| + |M_h_c[C_c]|
+    + |M_udp_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_AGAID
+  name: N-acetylglucosaminylarchaeatidylinositol deacetylase
+  equation: '|M_agdpgpi_c[C_c]| + |M_h2o_c[C_c]| => |M_ac_c[C_c]| + |M_gdpgpi_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_AGMT
+  name: agmatinase
+  equation: '|M_agm_c[C_c]| + |M_h2o_c[C_c]| => |M_ptrc_c[C_c]| + |M_urea_c[C_c]|'
+  subsystem: Arginine and Proline Metabolism
+- id: R_AGPR
+  name: N-acetyl-g-glutamyl-phosphate reductase
+  equation: '|M_acg5sa_c[C_c]| + |M_nadp_c[C_c]| + |M_pi_c[C_c]| <=> |M_acg5p_c[C_c]|
+    + |M_h_c[C_c]| + |M_nadph_c[C_c]|'
+  subsystem: Amino Acid Metabolism
+- id: R_AHC
+  name: adenosylhomocysteinase
+  equation: '|M_ahcys_c[C_c]| + |M_h2o_c[C_c]| <=> |M_adn_c[C_c]| + |M_hcys_DASH_L_c[C_c]|'
+  subsystem: Methionine Metabolism
+- id: R_AHGDx
+  name: (S)-alpha-hydroxyglutarate dehydrogenase
+  equation: '|M_S2hglut_c[C_c]| + |M_nad_c[C_c]| <=> |M_akg_c[C_c]| + |M_h_c[C_c]|
+    + |M_nadh_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_AHMMPS
+  name: _4-amino-5-hydroxymethyl-2-methylpyrimidine synthetase
+  equation: '|M_air_c[C_c]| + (2) |M_h_c[C_c]| => |M_4ahmmp_c[C_c]| + |M_gcald_c[C_c]|
+    + |M_pi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_AHSERL2
+  name: O-acetylhomoserine (thiol)-lyase
+  equation: '|M_achms_c[C_c]| + |M_h2s_c[C_c]| => |M_ac_c[C_c]| + |M_h_c[C_c]| +
+    |M_hcys_DASH_L_c[C_c]|'
+  subsystem: Methionine Metabolism
+- id: R_AHXDH
+  name: _6-aminohexanoate-dimer hydrolase
+  equation: '|M_6ax6ax_c[C_c]| + |M_h2o_c[C_c]| => (2) |M_6ax_c[C_c]|'
+  subsystem: Other
+- id: R_AICART
+  name: phosphoribosylaminoimidazolecarboxamide formyltransferase
+  equation: '|M_10fthf_c[C_c]| + |M_aicar_c[C_c]| <=> |M_fprica_c[C_c]| + |M_thf_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_AIRC2
+  name: phosphoribosylaminoimidazole carboxylase
+  equation: '|M_air_c[C_c]| + |M_atp_c[C_c]| + |M_hco3_c[C_c]| => |M_5caiz_c[C_c]|
+    + |M_adp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_AIRC3
+  name: phosphoribosylaminoimidazole carboxylase (mutase rxn)
+  equation: '|M_5aizc_c[C_c]| <=> |M_5caiz_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_AKACAL
+  name: alpha-ketoadipate:CoA ligase
+  equation: '|M_accoa_c[C_c]| + |M_h2o_c[C_c]| + |M_ohexa_c[C_c]| => |M_Rh2cit_c[C_c]|
+    + |M_coa_c[C_c]| + |M_h_c[C_c]|'
+  subsystem: Coenzyme B Biosynthesis
+- id: R_AKGCAL
+  name: alpha-ketoglutarate:CoA ligase
+  equation: '|M_accoa_c[C_c]| + |M_akg_c[C_c]| => |M_coa_c[C_c]| + |M_h_c[C_c]| +
+    |M_hacon_DASH_T_c[C_c]|'
+  subsystem: Coenzyme B Biosynthesis
+- id: R_AKP1
+  name: alkaline phosphatase (Dihydroneopterin)
+  equation: '|M_ahdt_c[C_c]| + (3) |M_h2o_c[C_c]| => |M_dhnpt_c[C_c]| + (2) |M_h_c[C_c]|
+    + (3) |M_pi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_AKPCAL
+  name: alpha-ketopimelate:CoA ligase
+  equation: '|M_accoa_c[C_c]| + |M_h2o_c[C_c]| + |M_ohepa_c[C_c]| => |M_Rh3cit_c[C_c]|
+    + |M_coa_c[C_c]| + |M_h_c[C_c]|'
+  subsystem: Coenzyme B Biosynthesis
+- id: R_AKSCAL
+  name: alpha-ketosubmerate:CoA ligase
+  equation: '|M_2ood_c[C_c]| + |M_accoa_c[C_c]| + |M_h2o_c[C_c]| => |M_glyc_DASH_R_c[C_c]|
+    + |M_pmcoa_c[C_c]|'
+  subsystem: Coenzyme B Biosynthesis
+- id: R_AKSDC
+  name: alpha-ketosubmerate decarboxylase
+  equation: '|M_2ood_c[C_c]| + |M_h_c[C_c]| => |M_7ohp_c[C_c]| + |M_co2_c[C_c]|'
+  subsystem: Coenzyme B Biosynthesis
+- id: R_ALACt2r
+  name: acetolactate reversible transport via proton symport
+  equation: '|M_alac_DASH_S_e[C_e]| + |M_h_e[C_e]| <=> |M_alac_DASH_S_c[C_c]| + |M_h_c[C_c]|'
+  subsystem: Transport
+- id: R_ALATA_L
+  name: L-alanine transaminase
+  equation: '|M_akg_c[C_c]| + |M_ala_DASH_L_c[C_c]| <=> |M_glu_DASH_L_c[C_c]| + |M_pyr_c[C_c]|'
+  subsystem: Alanine and Aspartate Metabolism
+- id: R_ALATRS
+  name: Alanyl-tRNA synthetase
+  equation: '|M_ala_DASH_L_c[C_c]| + |M_atp_c[C_c]| + |M_trnaala_c[C_c]| => |M_alatrna_c[C_c]|
+    + |M_amp_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Alanine and Aspartate Metabolism
+- id: R_ALAt4r
+  name: Alanine-Sodium symporter
+  equation: '|M_ala_DASH_L_e[C_e]| + |M_na1_e[C_e]| <=> |M_ala_DASH_L_c[C_c]| + |M_na1_c[C_c]|'
+  subsystem: Transport
+- id: R_ALCD20y
+  name: alcohol dehydrogenase (2-propanol) (NADP)
+  equation: '|M_2ppoh_c[C_c]| + |M_nadp_c[C_c]| <=> |M_acetone_c[C_c]| + |M_h_c[C_c]|
+    + |M_nadph_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_ALCD2y
+  name: alcohol dehydrogenase (ethanol, NADP)
+  equation: '|M_etoh_c[C_c]| + |M_nadp_c[C_c]| <=> |M_acald_c[C_c]| + |M_h_c[C_c]|
+    + |M_nadph_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_ALDD1
+  name: aldehyde dehydrogenase (formaldehyde, NAD)
+  equation: '|M_fald_c[C_c]| + |M_h2o_c[C_c]| + |M_nad_c[C_c]| => |M_for_c[C_c]|
+    + (2) |M_h_c[C_c]| + |M_nadh_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_ALDD2x
+  name: aldehyde dehydrogenase (acetaldehyde, NAD)
+  equation: '|M_acald_c[C_c]| + |M_h2o_c[C_c]| + |M_nad_c[C_c]| => |M_ac_c[C_c]|
+    + (2) |M_h_c[C_c]| + |M_nadh_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_ALKP
+  name: alkaline phosphatase
+  equation: '|M_dhap_c[C_c]| + |M_h2o_c[C_c]| => |M_dha_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_AMAOTr
+  name: adenosylmethionine-8-amino-7-oxononanoate transaminase
+  equation: '|M_8aonn_c[C_c]| + |M_amet_c[C_c]| <=> |M_amob_c[C_c]| + |M_dann_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_ANPRT
+  name: anthranilate phosphoribosyltransferase
+  equation: '|M_anth_c[C_c]| + |M_prpp_c[C_c]| => |M_ppi_c[C_c]| + |M_pran_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_ANS
+  name: anthranilate synthase
+  equation: '|M_chor_c[C_c]| + |M_gln_DASH_L_c[C_c]| => |M_anth_c[C_c]| + |M_glu_DASH_L_c[C_c]|
+    + |M_h_c[C_c]| + |M_pyr_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_AOXSr
+  name: _8-amino-7-oxononanoate synthase
+  equation: '|M_ala_DASH_L_c[C_c]| + |M_h_c[C_c]| + |M_pmcoa_c[C_c]| <=> |M_8aonn_c[C_c]|
+    + |M_co2_c[C_c]| + |M_coa_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_APPLP
+  name: aminopropanol phosphorylase
+  equation: '|M_appl_c[C_c]| + |M_atp_c[C_c]| => |M_adp_c[C_c]| + |M_applp_c[C_c]|
+    + |M_h_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_ARGDC
+  name: arginine decarboxylase
+  equation: '|M_arg_DASH_L_c[C_c]| + |M_h_c[C_c]| => |M_agm_c[C_c]| + |M_co2_c[C_c]|'
+  subsystem: Glutamate metabolism
+- id: R_ARGDr
+  name: arginine deiminase
+  equation: '|M_arg_DASH_L_c[C_c]| + |M_h2o_c[C_c]| <=> |M_citr_DASH_L_c[C_c]| +
+    |M_nh4_c[C_c]|'
+  subsystem: Arginine and Proline Metabolism
+- id: R_ARGSL
+  name: argininosuccinate lyase
+  equation: '|M_argsuc_c[C_c]| <=> |M_arg_DASH_L_c[C_c]| + |M_fum_c[C_c]|'
+  subsystem: Alanine and Aspartate Metabolism
+- id: R_ARGSS
+  name: argininosuccinate synthase
+  equation: '|M_asp_DASH_L_c[C_c]| + |M_atp_c[C_c]| + |M_citr_DASH_L_c[C_c]| => |M_amp_c[C_c]|
+    + |M_argsuc_c[C_c]| + |M_h_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Alanine and Aspartate Metabolism
+- id: R_ARGTRS
+  name: Arginyl-tRNA synthetase
+  equation: '|M_arg_DASH_L_c[C_c]| + |M_atp_c[C_c]| + |M_trnaarg_c[C_c]| => |M_amp_c[C_c]|
+    + |M_argtrna_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Arginine and Proline Metabolism
+- id: R_ASADi
+  name: aspartate-semialdehyde dehydrogenase, irreversible
+  equation: '|M_4pasp_c[C_c]| + |M_h_c[C_c]| + |M_nadph_c[C_c]| => |M_aspsa_c[C_c]|
+    + |M_nadp_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Alanine and Aspartate Metabolism
+- id: R_ASD
+  name: archaetidylserine decarboxylase
+  equation: '|M_dpgps_c[C_c]| + |M_h_c[C_c]| => |M_co2_c[C_c]| + |M_dpgpe_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_ASNN
+  name: L-asparaginase
+  equation: '|M_asn_DASH_L_c[C_c]| + |M_h2o_c[C_c]| => |M_asp_DASH_L_c[C_c]| + |M_nh4_c[C_c]|'
+  subsystem: Alanine and Aspartate Metabolism
+- id: R_ASNS1
+  name: asparagine synthase (glutamine-hydrolysing)
+  equation: '|M_asp_DASH_L_c[C_c]| + |M_atp_c[C_c]| + |M_gln_DASH_L_c[C_c]| + |M_h2o_c[C_c]|
+    => |M_amp_c[C_c]| + |M_asn_DASH_L_c[C_c]| + |M_glu_DASH_L_c[C_c]| + |M_h_c[C_c]|
+    + |M_ppi_c[C_c]|'
+  subsystem: Alanine and Aspartate Metabolism
+- id: R_ASP1DC
+  name: aspartate 1-decarboxylase
+  equation: '|M_asp_DASH_L_c[C_c]| + |M_h_c[C_c]| => |M_ala_DASH_B_c[C_c]| + |M_co2_c[C_c]|'
+  subsystem: Alanine and Aspartate Metabolism
+- id: R_ASPCT
+  name: aspartate carbamoyltransferase
+  equation: '|M_asp_DASH_L_c[C_c]| + |M_cbp_c[C_c]| => |M_cbasp_c[C_c]| + |M_h_c[C_c]|
+    + |M_pi_c[C_c]|'
+  subsystem: Alanine and Aspartate Metabolism
+- id: R_ASPKi
+  name: aspartate kinase, irreversible
+  equation: '|M_asp_DASH_L_c[C_c]| + |M_atp_c[C_c]| => |M_4pasp_c[C_c]| + |M_adp_c[C_c]|'
+  subsystem: Alanine and Aspartate Metabolism
+- id: R_ASPTA
+  name: aspartate transaminase
+  equation: '|M_akg_c[C_c]| + |M_asp_DASH_L_c[C_c]| <=> |M_glu_DASH_L_c[C_c]| + |M_oaa_c[C_c]|'
+  subsystem: Alanine and Aspartate Metabolism
+- id: R_ASPTRS
+  name: Aspartyl-tRNA synthetase
+  equation: '|M_asp_DASH_L_c[C_c]| + |M_atp_c[C_c]| + |M_trnaasp_c[C_c]| => |M_amp_c[C_c]|
+    + |M_asptrna_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Alanine and Aspartate Metabolism
+- id: R_ATGH
+  name: archaetidylglycerol hydrogenase
+  equation: '|M_dggpg_c[C_c]| + (8) |M_h_c[C_c]| + (8) |M_nadph_c[C_c]| => |M_dpgpg_c[C_c]|
+    + (8) |M_nadp_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_ATIH
+  name: archaetidylinositol hydrogenase
+  equation: '|M_dggpi_c[C_c]| + (8) |M_h_c[C_c]| + (8) |M_nadph_c[C_c]| => |M_dpgpi_c[C_c]|
+    + (8) |M_nadp_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_ATPM
+  name: ATP maintenance requirement
+  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| => |M_adp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Other
+- id: R_ATPPRT
+  name: ATP phosphoribosyltransferase
+  equation: '|M_atp_c[C_c]| + |M_prpp_c[C_c]| => |M_ppi_c[C_c]| + |M_prbatp_c[C_c]|'
+  subsystem: Histidine Metabolism
+- id: R_ATPS1
+  name: H+-exporting ATPase
+  equation: '|M_atp_c[C_c]| + |M_h_c[C_c]| + |M_h2o_c[C_c]| => |M_adp_c[C_c]| + (2)
+    |M_h_e[C_e]| + |M_pi_c[C_c]|'
+  subsystem: Transport
+- id: R_ATPS4r
+  name: ATP synthase (four protons for one ATP)
+  equation: '|M_adp_c[C_c]| + (4) |M_h_e[C_e]| + |M_pi_c[C_c]| <=> |M_atp_c[C_c]|
+    + (3) |M_h_c[C_c]| + |M_h2o_c[C_c]|'
+  subsystem: Methanogenesis
+- id: R_ATRZCH
+  name: atrazine chlorohydrolase
+  equation: '|M_atrz_c[C_c]| + |M_h2o_c[C_c]| => |M_cl_c[C_c]| + |M_h_c[C_c]| + |M_hatrz_c[C_c]|'
+  subsystem: Other
+- id: R_ATSH
+  name: archaetidylserine hydrogenase
+  equation: '|M_dgggps_c[C_c]| + (8) |M_h_c[C_c]| + (8) |M_nadph_c[C_c]| => |M_dpgps_c[C_c]|
+    + (8) |M_nadp_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_BACCL
+  name: biotin-[acetyl-CoA-carboxylase] ligase
+  equation: '|M_atp_c[C_c]| + |M_btn_c[C_c]| + |M_h_c[C_c]| => |M_btamp_c[C_c]| +
+    |M_ppi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_BLAT
+  name: beta-lysine acetyltransferase
+  equation: '|M_36dahx_c[C_c]| + |M_accoa_c[C_c]| => |M_coa_c[C_c]| + |M_h_c[C_c]|
+    + |M_nabl_c[C_c]|'
+  subsystem: Threonine and Lysine Metabolism
+- id: R_BRFAPS
+  name: beta-ribofuranosylaminobenzene 5'-phosphate synthase
+  equation: '|M_4abz_c[C_c]| + |M_h_c[C_c]| + |M_prpp_c[C_c]| => |M_Brfap_c[C_c]|
+    + |M_co2_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: R_BTNt2i
+  name: Biotin uptake
+  equation: '|M_btn_e[C_e]| + |M_h_e[C_e]| => |M_btn_c[C_c]| + |M_h_c[C_c]|'
+  subsystem: Transport
+- id: R_BTS3r
+  name: biotin synthase
+  equation: '|M_dtbt_c[C_c]| + (2) |M_s_c[C_c]| <=> |M_btn_c[C_c]| + |M_h2s_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_CA2abc
+  name: calcium transport via ABC system
+  equation: '|M_atp_c[C_c]| + |M_ca2_e[C_e]| + |M_h2o_c[C_c]| => |M_adp_c[C_c]| +
+    |M_ca2_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Transport
+- id: R_CAT
+  name: catalase
+  equation: (2) |M_h2o2_c[C_c]| => (2) |M_h2o_c[C_c]| + |M_o2_c[C_c]|
+  subsystem: Other
+- id: R_CAt6
+  name: calcium / sodium antiporter
+  equation: '|M_ca2_c[C_c]| + |M_na1_e[C_e]| <=> |M_ca2_e[C_e]| + |M_na1_c[C_c]|'
+  subsystem: Transport
+- id: R_CBIAT
+  name: Cobinamide adenyltransferase
+  equation: '|M_atp_c[C_c]| + |M_cbi_c[C_c]| + |M_h_c[C_c]| <=> |M_adocbi_c[C_c]|
+    + |M_pppi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_CBIabc
+  name: Cobinamide transport via ABC system
+  equation: '|M_atp_c[C_c]| + |M_cbi_e[C_e]| + |M_h2o_c[C_c]| => |M_adp_c[C_c]| +
+    |M_cbi_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Transport
+- id: R_CBL1HBIabc
+  name: Cob(1)alamin-HBI transport via ABC system
+  equation: '|M_atp_c[C_c]| + |M_cbl1hbi_e[C_e]| + |M_h2o_c[C_c]| => |M_adp_c[C_c]|
+    + |M_cbl1hbi_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Transport
+- id: R_CBL1abc
+  name: Cob(1)alamin transport via ABC system
+  equation: '|M_atp_c[C_c]| + |M_cbl1_e[C_e]| + |M_h2o_c[C_c]| => |M_adp_c[C_c]|
+    + |M_cbl1_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Transport
+- id: R_CBLAT2
+  name: cob(I)alamin-HBI adenosyltransferase
+  equation: '|M_atp_c[C_c]| + |M_cbl1hbi_c[C_c]| + |M_h_c[C_c]| => |M_adocblhbi_c[C_c]|
+    + |M_pppi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_CBLD
+  name: cob(I)alamin degradation
+  equation: '|M_cbl1_c[C_c]| => |M_cbi_c[C_c]| + |M_unknown_cbl1deg_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_CBPS
+  name: carbamoyl-phosphate synthase (glutamine-hydrolysing)
+  equation: (2) |M_atp_c[C_c]| + |M_gln_DASH_L_c[C_c]| + |M_h2o_c[C_c]| + |M_hco3_c[C_c]|
+    => (2) |M_adp_c[C_c]| + |M_cbp_c[C_c]| + |M_glu_DASH_L_c[C_c]| + (2) |M_h_c[C_c]|
+    + |M_pi_c[C_c]|
+  subsystem: Glutamate metabolism
+- id: R_CD2abc1
+  name: cadmium transport out via ABC system
+  equation: '|M_atp_c[C_c]| + |M_cd2_c[C_c]| + |M_h2o_c[C_c]| => |M_adp_c[C_c]| +
+    |M_cd2_e[C_e]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Transport
+- id: R_CD2abc2
+  name: cadmium transport in via ABC system
+  equation: '|M_atp_c[C_c]| + |M_cd2_e[C_e]| + |M_h2o_c[C_c]| => |M_adp_c[C_c]| +
+    |M_cd2_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Transport
+- id: R_CDGGGPP3
+  name: CDP-alcohol phosphatidyltransferase (glycerol 1-phosphate)
+  equation: '|M_cdgggp_c[C_c]| + |M_glyc1p_c[C_c]| => |M_cmp_c[C_c]| + |M_dggpgp_c[C_c]|
+    + |M_h_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_CDGGGPP4
+  name: CDP-alcohol phosphatidyltransferase (glycerol 1-phosphate) (hydroxy)
+  equation: '|M_3hcdgggp_c[C_c]| + |M_glyc1p_c[C_c]| => |M_3hdggpgp_c[C_c]| + |M_cmp_c[C_c]|
+    + |M_h_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_CDGGGS
+  name: CDP-2,3-di-O-geranylgeranyl-sn-glycerol synthase
+  equation: '|M_ctp_c[C_c]| + |M_dgggp_c[C_c]| + |M_h_c[C_c]| => |M_cdgggp_c[C_c]|
+    + |M_ppi_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_CDGGGS2
+  name: CDP-2-O-(3'-hydroxy)geranyl-3-O-geranyl-sn-glycerol synthase
+  equation: '|M_3hdgggp_c[C_c]| + |M_ctp_c[C_c]| + |M_h_c[C_c]| => |M_3hcdgggp_c[C_c]|
+    + |M_ppi_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_CDGGGSAT
+  name: CDP-2,3-di-O-geranylgeranyl-sn-glyceroserine O-archaetidyltransferase
+  equation: '|M_cdgggp_c[C_c]| + |M_ser_DASH_L_c[C_c]| => |M_cmp_c[C_c]| + |M_dgggps_c[C_c]|
+    + |M_h_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_CDGGGSAT2
+  name: CDP-2-O-(3'-hydroxy)geranyl-3-O-geranyl-sn-glyceroserine O-archaetidyltransferase
+  equation: '|M_3hcdgggp_c[C_c]| + |M_ser_DASH_L_c[C_c]| => |M_3hdgggps_c[C_c]| +
+    |M_cmp_c[C_c]| + |M_h_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_CDGGIPT
+  name: CDP-digeranyl-sn-glycero-myo-inositol 3-phosphatidyltransferase
+  equation: '|M_cdgggp_c[C_c]| + |M_inost_c[C_c]| => |M_cmp_c[C_c]| + |M_dggpi_c[C_c]|
+    + |M_h_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_CDGGIPT2
+  name: CDP-digeranyl-sn-glycero-myo-inositol 3-phosphatidyltransferase (3' hydroxy)
+  equation: '|M_3hcdgggp_c[C_c]| + |M_inost_c[C_c]| => |M_3hdggpi_c[C_c]| + |M_cmp_c[C_c]|
+    + |M_h_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_CDPGH
+  name: cyclic 2,3-diphosphoglycerate hydrolase
+  equation: '|M_cdpg_c[C_c]| + |M_h2o_c[C_c]| => |M_23dpg_c[C_c]| + (2) |M_h_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_CDPGS
+  name: cyclic 2,3-diphosphoglycerate synthase
+  equation: '|M_23dpg_c[C_c]| + |M_atp_c[C_c]| + |M_h_c[C_c]| => |M_adp_c[C_c]| +
+    |M_cdpg_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_CF3Ha
+  name: coenzyme F390 hydrolase (ATP)
+  equation: '|M_f390a_c[C_c]| + |M_h2o_c[C_c]| => |M_amp_c[C_c]| + |M_f420_DASH_2_c[C_c]|
+    + |M_h_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_CF3Hg
+  name: coenzyme F390 hydrolase (GTP)
+  equation: '|M_f390g_c[C_c]| + |M_h2o_c[C_c]| => |M_f420_DASH_2_c[C_c]| + |M_gmp_c[C_c]|
+    + |M_h_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_CF3Sa
+  name: coenzyme F390 synthetase (ATP)
+  equation: '|M_atp_c[C_c]| + |M_f420_DASH_2_c[C_c]| => |M_f390a_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_CF3Sg
+  name: coenzyme F390 synthetase (GTP)
+  equation: '|M_f420_DASH_2_c[C_c]| + |M_gtp_c[C_c]| => |M_f390g_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_CH2ACH
+  name: cis-(homo)2aconitate hydrolase
+  equation: '|M_h2acon_DASH_C_c[C_c]| + |M_h2o_c[C_c]| <=> |M_tih2cit_c[C_c]|'
+  subsystem: Coenzyme B Biosynthesis
+- id: R_CH3ACH
+  name: cis-(homo)3aconitate hydrolase
+  equation: '|M_h2o_c[C_c]| + |M_h3acon_DASH_C_c[C_c]| <=> |M_tih3cit_c[C_c]|'
+  subsystem: Coenzyme B Biosynthesis
+- id: R_CH4St
+  name: Methanethiol Transport
+  equation: '|M_ch4s_e[C_e]| <=> |M_ch4s_c[C_c]|'
+  subsystem: Transport
+- id: R_CH4t
+  name: Methane Transport
+  equation: '|M_ch4_e[C_e]| <=> |M_ch4_c[C_c]|'
+  subsystem: Transport
+- id: R_CHACH
+  name: cis-homoaconitate hydrolase
+  equation: '|M_h2o_c[C_c]| + |M_hacon_DASH_C_c[C_c]| <=> |M_ihcit_DASH_T_c[C_c]|'
+  subsystem: Coenzyme B Biosynthesis
+- id: R_CHORM
+  name: chorismate mutase
+  equation: '|M_chor_c[C_c]| => |M_pphn_c[C_c]|'
+  subsystem: Amino Acid Metabolism
+- id: R_CHORS
+  name: chorismate synthase
+  equation: '|M_3psme_c[C_c]| => |M_chor_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_CMLDC
+  name: _4-carboxymuconolactone decarboxylase
+  equation: '|M_2c25dho_c[C_c]| => |M_5odhf2a_c[C_c]| + |M_co2_c[C_c]| + |M_h_c[C_c]|'
+  subsystem: Other
+- id: R_CO2t
+  name: CO2 transporter via diffusion
+  equation: '|M_co2_e[C_e]| <=> |M_co2_c[C_c]|'
+  subsystem: Transport
+- id: R_COBALTt5
+  name: cobalt transport in/out via permease (no H+)
+  equation: '|M_cobalt2_c[C_c]| <=> |M_cobalt2_e[C_e]|'
+  subsystem: Transport
+- id: R_COBS
+  name: coenzyme b synthatse
+  equation: '|M_7mht_c[C_c]| + |M_atp_c[C_c]| => |M_adp_c[C_c]| + |M_cob_c[C_c]|
+    + |M_h_c[C_c]|'
+  subsystem: Coenzyme B Biosynthesis
+- id: R_COCHL
+  name: cobaltochelatase
+  equation: '|M_atp_c[C_c]| + |M_cobalt2_c[C_c]| + |M_h2o_c[C_c]| + |M_hgbam_c[C_c]|
+    => |M_adp_c[C_c]| + |M_co2dam_c[C_c]| + (2) |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_CODH2
+  name: carbon monoxide dehydrogenase / acetyl-CoA synthase 2
+  equation: '|M_co_c[C_c]| + (2) |M_fdox_c[C_c]| + |M_h2o_c[C_c]| => |M_co2_c[C_c]|
+    + (2) |M_fdred_c[C_c]| + (2) |M_h_c[C_c]|'
+  subsystem: Methanogenesis
+- id: R_CODHr
+  name: carbon monoxide dehydrogenase / acetyl-CoA synthase
+  equation: '|M_accoa_c[C_c]| + (2) |M_fdox_c[C_c]| + |M_h2o_c[C_c]| + |M_h4spt_c[C_c]|
+    <=> |M_co2_c[C_c]| + |M_coa_c[C_c]| + (2) |M_fdred_c[C_c]| + (2) |M_h_c[C_c]|
+    + |M_mh4spt_c[C_c]|'
+  subsystem: Methanogenesis
+- id: R_COMS
+  name: coenzyme M synthase
+  equation: '|M_h2o_c[C_c]| + |M_sec_c[C_c]| => |M_com_c[C_c]| + |M_nh4_c[C_c]| +
+    |M_pyr_c[C_c]|'
+  subsystem: Coenzyme M Biosynthesis
+- id: R_COabc
+  name: Cobalt transport via ABC system
+  equation: '|M_atp_c[C_c]| + |M_cobalt2_e[C_e]| + |M_h2o_c[C_c]| => |M_adp_c[C_c]|
+    + |M_cobalt2_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Transport
+- id: R_COt
+  name: CO transporter via diffusion
+  equation: '|M_co_c[C_c]| <=> |M_co_e[C_e]|'
+  subsystem: Transport
+- id: R_CPC2MT
+  name: precorrin-2 C20-methyltransferase
+  equation: '|M_amet_c[C_c]| + |M_copre2_c[C_c]| => |M_ahcys_c[C_c]| + |M_copre3_c[C_c]|
+    + |M_h_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_CPC3MT
+  name: precorrin-3B C17-methyltransferase
+  equation: '|M_amet_c[C_c]| + |M_copre3_c[C_c]| => |M_ahcys_c[C_c]| + |M_copre4_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_CPC4MT
+  name: precorrin-4 C11-methyltransferase
+  equation: '|M_amet_c[C_c]| + |M_copre4_c[C_c]| => |M_ahcys_c[C_c]| + |M_copre5_c[C_c]|
+    + |M_h_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_CPC5MT
+  name: precorrin-5 C1-methyltransferase
+  equation: '|M_amet_c[C_c]| + |M_copre5_c[C_c]| + |M_h2o_c[C_c]| => |M_acald_c[C_c]|
+    + |M_ahcys_c[C_c]| + |M_copre6_c[C_c]| + |M_h_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_CPC6MT
+  name: precorrin-6Y C5,15-methyltransferase (decarboxylating)
+  equation: (2) |M_amet_c[C_c]| + |M_codhpre6_c[C_c]| => (2) |M_ahcys_c[C_c]| + |M_co2_c[C_c]|
+    + |M_copre8_c[C_c]| + |M_h_c[C_c]|
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_CPC6R
+  name: precorrin-6A reductase
+  equation: '|M_copre6_c[C_c]| + |M_h_c[C_c]| + |M_nadph_c[C_c]| => |M_codhpre6_c[C_c]|
+    + |M_nadp_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_CPC8MM
+  name: precorrin-8X methylmutase
+  equation: '|M_copre8_c[C_c]| <=> |M_cobya_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_CS
+  name: citrate synthase
+  equation: '|M_accoa_c[C_c]| + |M_h2o_c[C_c]| + |M_oaa_c[C_c]| => |M_cit_c[C_c]|
+    + |M_coa_c[C_c]| + |M_h_c[C_c]|'
+  subsystem: Citric Acid Cycle
+- id: R_CSND
+  name: Cytosine deaminase
+  equation: '|M_csn_c[C_c]| + |M_h_c[C_c]| + |M_h2o_c[C_c]| => |M_nh4_c[C_c]| + |M_ura_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_CTPS1
+  name: CTP synthase (NH3)
+  equation: '|M_atp_c[C_c]| + |M_nh4_c[C_c]| + |M_utp_c[C_c]| => |M_adp_c[C_c]| +
+    |M_ctp_c[C_c]| + (2) |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_CTPS2
+  name: CTP synthase (glutamine)
+  equation: '|M_atp_c[C_c]| + |M_gln_DASH_L_c[C_c]| + |M_h2o_c[C_c]| + |M_utp_c[C_c]|
+    => |M_adp_c[C_c]| + |M_ctp_c[C_c]| + |M_glu_DASH_L_c[C_c]| + (2) |M_h_c[C_c]|
+    + |M_pi_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_CYRDAAT
+  name: cob(I)yrinic acid a,c-diamide adenosyltransferase
+  equation: '|M_atp_c[C_c]| + |M_co1dam_c[C_c]| + |M_h_c[C_c]| => |M_adcobdam_c[C_c]|
+    + |M_pppi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_CYRDAR
+  name: cob(II)yrinic acid a,c-diamide reductase
+  equation: (2) |M_co2dam_c[C_c]| + |M_nadh_c[C_c]| => (2) |M_co1dam_c[C_c]| + |M_h_c[C_c]|
+    + |M_nad_c[C_c]|
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_CYRDAS
+  name: Cob(II)yrinate a,c-diamide synthase (glutamine-hydrolysing)
+  equation: (2) |M_atp_c[C_c]| + |M_cobya_c[C_c]| + (2) |M_gln_DASH_L_c[C_c]| + |M_h2o_c[C_c]|
+    => (2) |M_adp_c[C_c]| + |M_co2dam_c[C_c]| + (2) |M_glu_DASH_L_c[C_c]| + |M_h_c[C_c]|
+    + |M_ppi_c[C_c]|
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_CYSDS
+  name: Cysteine Desulfhydrase
+  equation: '|M_cys_DASH_L_c[C_c]| + |M_h2o_c[C_c]| => |M_h2s_c[C_c]| + |M_nh4_c[C_c]|
+    + |M_pyr_c[C_c]|'
+  subsystem: Cysteine Metabolism
+- id: R_CYSSr
+  name: cysteine synthase (reversible)
+  equation: '|M_acser_c[C_c]| + |M_h2s_c[C_c]| <=> |M_ac_c[C_c]| + |M_cys_DASH_L_c[C_c]|
+    + |M_h_c[C_c]|'
+  subsystem: Cysteine Metabolism
+- id: R_CYSTRS
+  name: Cysteinyl-tRNA synthetase
+  equation: '|M_atp_c[C_c]| + |M_cys_DASH_L_c[C_c]| + |M_trnacys_c[C_c]| => |M_amp_c[C_c]|
+    + |M_cystrna_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Cysteine Metabolism
+- id: R_CYSt2r
+  name: L-cysteine reversible transport via proton symport
+  equation: '|M_cys_DASH_L_e[C_e]| + |M_h_e[C_e]| <=> |M_cys_DASH_L_c[C_c]| + |M_h_c[C_c]|'
+  subsystem: Transport
+- id: R_CYTK1
+  name: cytidylate kinase (CMP)
+  equation: '|M_atp_c[C_c]| + |M_cmp_c[C_c]| <=> |M_adp_c[C_c]| + |M_cdp_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_CYTK2
+  name: cytidylate kinase (dCMP)
+  equation: '|M_atp_c[C_c]| + |M_dcmp_c[C_c]| <=> |M_adp_c[C_c]| + |M_dcdp_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_Clt
+  name: chlorideion transport out via diffusion
+  equation: '|M_cl_e[C_e]| <=> |M_cl_c[C_c]|'
+  subsystem: Transport
+- id: R_Cuabc
+  name: Copper transport via ABC system
+  equation: '|M_atp_c[C_c]| + |M_cu2_e[C_e]| + |M_h2o_c[C_c]| => |M_adp_c[C_c]| +
+    |M_cu2_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Transport
+- id: R_Cut1
+  name: Copper export via ATPase
+  equation: '|M_atp_c[C_c]| + |M_cu2_c[C_c]| + |M_h2o_c[C_c]| => |M_adp_c[C_c]| +
+    |M_cu2_e[C_e]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Transport
+- id: R_DADK
+  name: deoxyadenylate kinase
+  equation: '|M_atp_c[C_c]| + |M_damp_c[C_c]| <=> |M_adp_c[C_c]| + |M_dadp_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_DAPDC
+  name: diaminopimelate decarboxylase
+  equation: '|M_26dap_DASH_M_c[C_c]| + |M_h_c[C_c]| => |M_co2_c[C_c]| + |M_lys_DASH_L_c[C_c]|'
+  subsystem: Threonine and Lysine Metabolism
+- id: R_DAPDH
+  name: diaminopimelate dehydrogenase
+  equation: (2) |M_h_c[C_c]| + |M_nadph_c[C_c]| + |M_nh4_c[C_c]| + |M_thdp_c[C_c]|
+    => |M_26dap_DASH_M_c[C_c]| + |M_nadp_c[C_c]|
+  subsystem: Threonine and Lysine Metabolism
+- id: R_DB4PS
+  name: _3,4-Dihydroxy-2-butanone-4-phosphate synthase
+  equation: '|M_ru5p_DASH_D_c[C_c]| => |M_db4p_c[C_c]| + |M_for_c[C_c]| + |M_h_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_DBTSr
+  name: dethiobiotin synthase
+  equation: '|M_atp_c[C_c]| + |M_co2_c[C_c]| + |M_dann_c[C_c]| <=> |M_adp_c[C_c]|
+    + |M_dtbt_c[C_c]| + (3) |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_DCMPDA
+  name: dCMP deaminase
+  equation: '|M_dcmp_c[C_c]| + |M_h_c[C_c]| + |M_h2o_c[C_c]| <=> |M_dump_c[C_c]|
+    + |M_nh4_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_DCTPD
+  name: dCTP deaminase
+  equation: '|M_dctp_c[C_c]| + |M_h_c[C_c]| + |M_h2o_c[C_c]| => |M_dutp_c[C_c]| +
+    |M_nh4_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_DGGGPS
+  name: digeranylgeranylglyceryl phosphate synthase
+  equation: '|M_ggdp_c[C_c]| + |M_gggp_c[C_c]| => |M_dgggp_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_DGGGPS2
+  name: _2-O-(3-hydroxy)geranyl-3-O-geranyl-sn-glycerol synthase
+  equation: '|M_3hggdp_c[C_c]| + |M_gggp_c[C_c]| => |M_3hdgggp_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_DGGPGP
+  name: digeranyl-sn-glycerol-1-phospho-3'-sn-glycerol phosphatase
+  equation: '|M_dggpgp_c[C_c]| + |M_h2o_c[C_c]| => |M_dggpg_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_DGGPGP2
+  name: digeranyl-sn-glycerol-1-phospho-3'-sn-glycerol phosphatase (hydroxy)
+  equation: '|M_3hdggpgp_c[C_c]| + |M_h2o_c[C_c]| => |M_3hdggpg_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_DHAD1
+  name: dihydroxy-acid dehydratase (2,3-dihydroxy-3-methylbutanoate)
+  equation: '|M_23dhmb_c[C_c]| => |M_3mob_c[C_c]| + |M_h2o_c[C_c]|'
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+- id: R_DHAD2
+  name: Dihydroxy-acid dehydratase (2,3-dihydroxy-3-methylpentanoate)
+  equation: '|M_23dhmp_c[C_c]| => |M_3mop_c[C_c]| + |M_h2o_c[C_c]|'
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+- id: R_DHDPRy
+  name: dihydrodipicolinate reductase (NADPH)
+  equation: '|M_23dhdp_c[C_c]| + |M_h_c[C_c]| + |M_nadph_c[C_c]| => |M_nadp_c[C_c]|
+    + |M_thdp_c[C_c]|'
+  subsystem: Threonine and Lysine Metabolism
+- id: R_DHDPS
+  name: dihydrodipicolinate synthase
+  equation: '|M_aspsa_c[C_c]| + |M_pyr_c[C_c]| => |M_23dhdp_c[C_c]| + |M_h_c[C_c]|
+    + (2) |M_h2o_c[C_c]|'
+  subsystem: Threonine and Lysine Metabolism
+- id: R_DHFR
+  name: dihydrofolate reductase
+  equation: '|M_dhf_c[C_c]| + |M_h_c[C_c]| + |M_nadph_c[C_c]| <=> |M_nadp_c[C_c]|
+    + |M_thf_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_DHFS
+  name: dihydrofolate synthase
+  equation: '|M_atp_c[C_c]| + |M_dhpt_c[C_c]| + |M_glu_DASH_L_c[C_c]| => |M_adp_c[C_c]|
+    + |M_dhf_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_DHNPA2
+  name: dihydroneopterin aldolase
+  equation: '|M_dhnpt_c[C_c]| => |M_6hmhpt_c[C_c]| + |M_gcald_c[C_c]|'
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: R_DHORD7
+  name: dihydroorotic acid dehydrogenase (f420)
+  equation: '|M_dhor_DASH_S_c[C_c]| + |M_f420_DASH_2_c[C_c]| <=> |M_f420_DASH_2h2_c[C_c]|
+    + |M_orot_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_DHORTS
+  name: dihydroorotase
+  equation: '|M_dhor_DASH_S_c[C_c]| + |M_h2o_c[C_c]| <=> |M_cbasp_c[C_c]| + |M_h_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_DHPCPH
+  name: _7,8-dihydronepterin 2' :3'-cyclicphosphate hydrolase
+  equation: '|M_dhp23cp_c[C_c]| + |M_h2o_c[C_c]| => |M_dhpmp_c[C_c]| + |M_h_c[C_c]|'
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: R_DHPM1
+  name: dihydropyrimidinase (5,6-dihydrouracil)
+  equation: '|M_56dura_c[C_c]| + |M_h2o_c[C_c]| => |M_cala_c[C_c]| + |M_h_c[C_c]|'
+  subsystem: Other
+- id: R_DHPM2
+  name: dihydropyrimidinase (dihydrothymine)
+  equation: '|M_56dthm_c[C_c]| + |M_h2o_c[C_c]| => |M_3uib_c[C_c]| + |M_h_c[C_c]|'
+  subsystem: Other
+- id: R_DHPS2
+  name: dihydropteroate synthase
+  equation: '|M_4abz_c[C_c]| + |M_6hmhptpp_c[C_c]| => |M_dhpt_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_DHPS3
+  name: _7,8 dihydropteroate synthase (methanopterin)
+  equation: '|M_6hmhptpp_c[C_c]| + |M_Brfap_c[C_c]| => |M_dhrfap_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: R_DHQD
+  name: _3-dehydroquinate dehydratase
+  equation: '|M_3dhq_c[C_c]| <=> |M_3dhsk_c[C_c]| + |M_h2o_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_DHQS2
+  name: _3-dehydroquinate synthase
+  equation: '|M_dohdu_c[C_c]| => |M_3dhq_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_DIPS
+  name: diphthine synthase
+  equation: '|M_amet_c[C_c]| + |M_caphis_c[C_c]| => |M_ahcys_c[C_c]| + |M_cmaphis_c[C_c]|
+    + |M_h_c[C_c]|'
+  subsystem: Amino Acid Metabolism
+- id: R_DKFPR
+  name: _6-deoxy-5-ketofructose 1-phosphate reductase
+  equation: '|M_dkfp_c[C_c]| + |M_h_c[C_c]| + |M_nadh_c[C_c]| <=> |M_dkmp_c[C_c]|
+    + |M_nad_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_DKFPS
+  name: _6-deoxy-5-ketofructose 1-phosphate synthase
+  equation: '|M_dkdofp_c[C_c]| + |M_h_c[C_c]| + |M_nadh_c[C_c]| => |M_dkfp_c[C_c]|
+    + |M_nad_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_DKMPASPL
+  name: _6-deoxy-5-ketomannitol 1-phosphate:L-aspartate semialdehyde ligase
+  equation: '|M_aspsa_c[C_c]| + |M_dkmp_c[C_c]| => |M_dohau_c[C_c]| + |M_g3p_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_DMAMT
+  name: Dimethylamine methyltransferase
+  equation: '|M_com_c[C_c]| + |M_dma_c[C_c]| => |M_mcom_c[C_c]| + |M_mma_c[C_c]|'
+  subsystem: Methanogenesis
+- id: R_DMATT
+  name: dimethylallyltranstransferase
+  equation: '|M_dmpp_c[C_c]| + |M_ipdp_c[C_c]| => |M_grdp_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_DMATT2
+  name: dimethylallyltranstransferase (3-hydroxy)
+  equation: '|M_ipdp_c[C_c]| + |M_m3hdp_c[C_c]| => |M_3hgrdp_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_DMAt
+  name: Dimethylamine symport
+  equation: '|M_dma_e[C_e]| + |M_h_e[C_e]| <=> |M_dma_c[C_c]| + |M_h_c[C_c]|'
+  subsystem: Transport
+- id: R_DMHDRFS
+  name: _7,8-didemethyl-8-hydroxy-5-deazariboflavin synthetase
+  equation: '|M_34hpp_c[C_c]| + |M_4r5au_c[C_c]| + |M_h2o_c[C_c]| + (2) |M_nadp_c[C_c]|
+    => |M_ddhrb_c[C_c]| + (2) |M_h_c[C_c]| + (2) |M_nadph_c[C_c]| + |M_nh4_c[C_c]|
+    + |M_oxa_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_DMSt
+  name: Dimethyl sulfide Transport
+  equation: '|M_dms_e[C_e]| <=> |M_dms_c[C_c]|'
+  subsystem: Transport
+- id: R_DNMPPA
+  name: Dihydroneopterin monophosphate dephosphorylase
+  equation: '|M_dhpmp_c[C_c]| + |M_h2o_c[C_c]| => |M_dhnpt_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: R_DOHDUS
+  name: _3,7-dideoxy-D-threo-hepto-2,6-diulosonate synthase
+  equation: '|M_dohau_c[C_c]| + |M_h2o_c[C_c]| + |M_nad_c[C_c]| => |M_dohdu_c[C_c]|
+    + |M_h_c[C_c]| + |M_nadh_c[C_c]| + |M_nh4_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_DPCOAK
+  name: dephospho-CoA kinase
+  equation: '|M_atp_c[C_c]| + |M_dpcoa_c[C_c]| => |M_adp_c[C_c]| + |M_coa_c[C_c]|
+    + |M_h_c[C_c]|'
+  subsystem: Coenzyme A Biosynthesis
+- id: R_DPGase
+  name: Diphosphoglycerate phosphatase
+  equation: '|M_23dpg_c[C_c]| + |M_h2o_c[C_c]| => |M_3pg_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_DPMVD
+  name: diphosphomevalonate decarboxylase
+  equation: '|M_5dpmev_c[C_c]| + |M_atp_c[C_c]| => |M_adp_c[C_c]| + |M_co2_c[C_c]|
+    + |M_ipdp_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_DPMVD2
+  name: diphosphomevalonate decarboxylase 2
+  equation: '|M_5dpmev_c[C_c]| + |M_h_c[C_c]| => |M_co2_c[C_c]| + |M_m3hdp_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_DPR
+  name: _2-dehydropantoate 2-reductase
+  equation: '|M_2dhp_c[C_c]| + |M_h_c[C_c]| + |M_nadph_c[C_c]| => |M_nadp_c[C_c]|
+    + |M_pant_DASH_R_c[C_c]|'
+  subsystem: Coenzyme A Biosynthesis
+- id: R_DROPPRx
+  name: _2,5-diamino-6-ribosylamino-4(3H)-pyrimidinone 5'-phosphate reductase
+  equation: '|M_25dhpp_c[C_c]| + |M_h_c[C_c]| + |M_nadh_c[C_c]| => |M_25dthpp_c[C_c]|
+    + |M_nad_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_DROPPRy
+  name: _2,5-diamino-6-ribosylamino-4(3H)-pyrimidinone 5'-phosphate reductase (nadph)
+  equation: '|M_25dhpp_c[C_c]| + |M_h_c[C_c]| + |M_nadph_c[C_c]| => |M_25dthpp_c[C_c]|
+    + |M_nadp_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_DRTPPD
+  name: _2,5-diamino-6-ribitylamino-4(3H)-pyrimidinone 5'-phosphate deaminase
+  equation: '|M_25dthpp_c[C_c]| + |M_h_c[C_c]| + |M_h2o_c[C_c]| => |M_5aprbu_c[C_c]|
+    + |M_nh4_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_DTMPK
+  name: dTMP kinase
+  equation: '|M_atp_c[C_c]| + |M_dtmp_c[C_c]| <=> |M_adp_c[C_c]| + |M_dtdp_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_DURIPP
+  name: deoxyuridine phosphorylase
+  equation: '|M_duri_c[C_c]| + |M_pi_c[C_c]| <=> |M_2dr1p_c[C_c]| + |M_ura_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_ECHH_10
+  name: Ech Hydrogenase
+  equation: (2) |M_fdred_c[C_c]| + (3) |M_h_c[C_c]| <=> (2) |M_fdox_c[C_c]| + |M_h_e[C_e]|
+    + |M_h2_c[C_c]|
+  subsystem: Methanogenesis
+- id: R_ENO
+  name: enolase
+  equation: '|M_2pg_c[C_c]| <=> |M_h2o_c[C_c]| + |M_pep_c[C_c]|'
+  subsystem: Glycolysis/Gluconeogenesis
+- id: R_ETHAt6
+  name: ethanolamine transport in/out via proton symport
+  equation: '|M_etha_e[C_e]| + |M_h_e[C_e]| <=> |M_etha_c[C_c]| + |M_h_c[C_c]|'
+  subsystem: Transport
+- id: R_F430S1
+  name: coenzyme F430 precursor synthase 1 (aminase)
+  equation: (2) |M_atp_c[C_c]| + |M_dscl_c[C_c]| + (2) |M_gln_DASH_L_c[C_c]| + (2)
+    |M_h2o_c[C_c]| + |M_ni2_c[C_c]| => (2) |M_adp_c[C_c]| + |M_f430p1_c[C_c]| + (2)
+    |M_glu_DASH_L_c[C_c]| + (5) |M_h_c[C_c]| + (2) |M_pi_c[C_c]|
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_F430S2
+  name: coenzyme F430 precursor synthase 2 (reduction)
+  equation: '|M_f430p1_c[C_c]| + (2) |M_h_c[C_c]| + |M_nadh_c[C_c]| => |M_f430p2_c[C_c]|
+    + |M_nad_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_F430S3
+  name: coenzyme F430 precursor synthase 3 (reduction)
+  equation: '|M_f430p2_c[C_c]| + |M_h_c[C_c]| + |M_nadh_c[C_c]| => |M_f430p3_c[C_c]|
+    + |M_nad_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_F430S4
+  name: coenzyme F430 precursor synthase 4 (cyclization)
+  equation: '|M_f430p3_c[C_c]| => |M_sf430a_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_F430S5
+  name: coenzyme F430 precursor synthase 5 (cyclization)
+  equation: '|M_h_c[C_c]| + |M_sf430a_c[C_c]| => |M_f430_c[C_c]| + |M_h2o_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_F4D
+  name: F420 Deydrogenase
+  equation: '|M_f420_DASH_2h2_c[C_c]| + (1.8) |M_h_c[C_c]| + |M_mphen_c[C_c]| =>
+    |M_f420_DASH_2_c[C_c]| + (1.8) |M_h_e[C_e]| + |M_mphenh2_c[C_c]|'
+  subsystem: Methanogenesis
+- id: R_F4H2O
+  name: F420H2 oxidase
+  equation: (2) |M_f420_DASH_2h2_c[C_c]| + |M_o2_c[C_c]| <=> (2) |M_f420_DASH_2_c[C_c]|
+    + (2) |M_h2o_c[C_c]|
+  subsystem: Other
+- id: R_F4MTSPD
+  name: coenzyme F420-dependent N(5) N(10)-methenyltetrahydrosarcinapterin dehydrogenase
+  equation: '|M_f420_DASH_2h2_c[C_c]| + |M_menylh4spt_c[C_c]| <=> |M_f420_DASH_2_c[C_c]|
+    + |M_h_c[C_c]| + |M_mleneh4spt_c[C_c]|'
+  subsystem: Methanogenesis
+- id: R_F4MTSPR
+  name: coenzyme F420-dependent N(5) N(10)-methenyltetrahydrosarcinapterin reductase
+  equation: '|M_f420_DASH_2h2_c[C_c]| + |M_mleneh4spt_c[C_c]| <=> |M_f420_DASH_2_c[C_c]|
+    + |M_mh4spt_c[C_c]|'
+  subsystem: Methanogenesis
+- id: R_F4NH
+  name: F420-noneducing Hydrogenase
+  equation: (1.8) |M_h_c[C_c]| + |M_h2_e[C_e]| + |M_mphen_c[C_c]| => (1.8) |M_h_e[C_e]|
+    + |M_mphenh2_c[C_c]|
+  subsystem: Methanogenesis
+- id: R_F4NPR
+  name: F420 dependent NADP reductase
+  equation: '|M_f420_DASH_2_c[C_c]| + |M_h_c[C_c]| + |M_nadph_c[C_c]| <=> |M_f420_DASH_2h2_c[C_c]|
+    + |M_nadp_c[C_c]|'
+  subsystem: Methanogenesis
+- id: R_F4RHi
+  name: F420-Reducing Hydrogenase
+  equation: '|M_f420_DASH_2_c[C_c]| + |M_h2_c[C_c]| => |M_f420_DASH_2h2_c[C_c]|'
+  subsystem: Methanogenesis
+- id: R_FBA
+  name: fructose-bisphosphate aldolase
+  equation: '|M_fdp_c[C_c]| <=> |M_dhap_c[C_c]| + |M_g3p_c[C_c]|'
+  subsystem: Glycolysis/Gluconeogenesis
+- id: R_FBA2
+  name: D-Fructose 1-phosphate D-glyceraldehyde-3-phosphate-lyase
+  equation: '|M_f1p_c[C_c]| <=> |M_dhap_c[C_c]| + |M_glyald_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_FBP
+  name: fructose-bisphosphatase
+  equation: '|M_fdp_c[C_c]| + |M_h2o_c[C_c]| => |M_f6p_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Glycolysis/Gluconeogenesis
+- id: R_FBPO
+  name: fructose-bisphosphate oxidase
+  equation: '|M_fdp_c[C_c]| + |M_nad_c[C_c]| => |M_4kfbp_c[C_c]| + |M_h_c[C_c]| +
+    |M_nadh_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_FCLPA
+  name: L-fuculose 1-phosphate aldolase
+  equation: '|M_fc1p_c[C_c]| <=> |M_dhap_c[C_c]| + |M_lald_DASH_L_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_FDH
+  name: formate dehydrogenase
+  equation: '|M_for_c[C_c]| + |M_nad_c[C_c]| => |M_co2_c[C_c]| + |M_nadh_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_FE2abc
+  name: iron (II) transport via ABC system
+  equation: '|M_atp_c[C_c]| + |M_fe2_e[C_e]| + |M_h2o_c[C_c]| => |M_adp_c[C_c]| +
+    |M_fe2_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Transport
+- id: R_FE3abc
+  name: iron (III) transport via ABC system
+  equation: '|M_atp_c[C_c]| + |M_fe3_e[C_e]| + |M_h2o_c[C_c]| => |M_adp_c[C_c]| +
+    |M_fe3_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Transport
+- id: R_FEDCabc
+  name: iron (III) dicitrate transport via ABC system
+  equation: '|M_atp_c[C_c]| + (2) |M_cit_e[C_e]| + |M_fe3_e[C_e]| + |M_h2o_c[C_c]|
+    => |M_adp_c[C_c]| + (2) |M_cit_c[C_c]| + |M_fe3_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Transport
+- id: R_FMETTRS
+  name: Methionyl-tRNA formyltransferase
+  equation: '|M_10fthf_c[C_c]| + |M_mettrna_c[C_c]| => |M_fmettrna_c[C_c]| + |M_h_c[C_c]|
+    + |M_thf_c[C_c]|'
+  subsystem: Methionine Metabolism
+- id: R_FMFD_b_
+  name: formylmethanofuran dehydrogenase (b)
+  equation: '|M_co2_c[C_c]| + (2) |M_fdred_c[C_c]| + |M_h_c[C_c]| + |M_mfr_LPAREN_b_RPAREN__c[C_c]|
+    <=> (2) |M_fdox_c[C_c]| + |M_formmfr_LPAREN_b_RPAREN__c[C_c]| + |M_h2o_c[C_c]|'
+  subsystem: Methanogenesis
+- id: R_FMFTSPFT_b_
+  name: formylmethanofuran:H4SPT N-formyltransferase (b)
+  equation: '|M_formmfr_LPAREN_b_RPAREN__c[C_c]| + |M_h_c[C_c]| + |M_h4spt_c[C_c]|
+    <=> |M_formh4spt_c[C_c]| + |M_mfr_LPAREN_b_RPAREN__c[C_c]|'
+  subsystem: Methanogenesis
+- id: R_FOLR2
+  name: folate reductase
+  equation: '|M_fol_c[C_c]| + |M_nadph_c[C_c]| => |M_dhf_c[C_c]| + |M_nadp_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_FOLt
+  name: folate transport via proton simport
+  equation: '|M_fol_e[C_e]| + |M_h_e[C_e]| <=> |M_fol_c[C_c]| + |M_h_c[C_c]|'
+  subsystem: Transport
+- id: R_FRTT
+  name: farnesyltranstransferase
+  equation: '|M_frdp_c[C_c]| + |M_ipdp_c[C_c]| => |M_ggdp_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_FRTT2
+  name: farnesyltranstransferase (3-hyroxy)
+  equation: '|M_3hfrdp_c[C_c]| + |M_ipdp_c[C_c]| => |M_3hggdp_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_FUM
+  name: fumarase
+  equation: '|M_fum_c[C_c]| + |M_h2o_c[C_c]| <=> |M_mal_DASH_L_c[C_c]|'
+  subsystem: Citric Acid Cycle
+- id: R_G1PACT
+  name: glucosamine-1-phosphate N-acetyltransferase
+  equation: '|M_accoa_c[C_c]| + |M_gam1p_c[C_c]| => |M_acgam1p_c[C_c]| + |M_coa_c[C_c]|
+    + |M_h_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_G1PDH
+  name: glycerol-1-phosphate dehydrogenase (NAD)
+  equation: '|M_dhap_c[C_c]| + |M_h_c[C_c]| + |M_nadh_c[C_c]| <=> |M_glyc1p_c[C_c]|
+    + |M_nad_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_G1PTT
+  name: glucose-1-phosphate thymidylyltransferase
+  equation: '|M_dttp_c[C_c]| + |M_g1p_c[C_c]| + |M_h_c[C_c]| => |M_dtdpglu_c[C_c]|
+    + |M_ppi_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_G1SATi
+  name: glutamate-1-semialdehyde aminotransferase
+  equation: '|M_glu1sa_c[C_c]| => |M_5aop_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_G5SADr
+  name: L-glutamate 5-semialdehyde dehydratase, reversible
+  equation: '|M_glu5sa_c[C_c]| <=> |M_1pyr5c_c[C_c]| + |M_h_c[C_c]| + |M_h2o_c[C_c]|'
+  subsystem: Proline Biosynthesis
+- id: R_G5SD2
+  name: glutamate-5-semialdehyde dehydrogenase
+  equation: '|M_glu5p_c[C_c]| + |M_h_c[C_c]| + |M_nadh_c[C_c]| => |M_glu5sa_c[C_c]|
+    + |M_nad_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Proline Biosynthesis
+- id: R_G6PDH3
+  name: glucose 6-phosphate dehydrogenase (F420-Dependent)
+  equation: '|M_f420_DASH_2_c[C_c]| + |M_g6p_c[C_c]| => |M_6pgl_c[C_c]| + |M_f420_DASH_2h2_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_GALT
+  name: galactose-1-phosphate uridylyltransferase
+  equation: '|M_gal1p_c[C_c]| + |M_h_c[C_c]| + |M_utp_c[C_c]| <=> |M_ppi_c[C_c]|
+    + |M_udpgal_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_GALUi
+  name: UTP-glucose-1-phosphate uridylyltransferase (irreversible)
+  equation: '|M_g1p_c[C_c]| + |M_h_c[C_c]| + |M_utp_c[C_c]| => |M_ppi_c[C_c]| + |M_udpg_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_GAPD
+  name: glyceraldehyde-3-phosphate dehydrogenase
+  equation: '|M_g3p_c[C_c]| + |M_nad_c[C_c]| + |M_pi_c[C_c]| <=> |M_13dpg_c[C_c]|
+    + |M_h_c[C_c]| + |M_nadh_c[C_c]|'
+  subsystem: Glycolysis/Gluconeogenesis
+- id: R_GAPD_nadp_
+  name: glyceraldehyde-3-phosphate dehydrogenase (NAD(P)+) (phosphorylating)
+  equation: '|M_g3p_c[C_c]| + |M_nadp_c[C_c]| + |M_pi_c[C_c]| <=> |M_13dpg_c[C_c]|
+    + |M_h_c[C_c]| + |M_nadph_c[C_c]|'
+  subsystem: Glycolysis/Gluconeogenesis
+- id: R_GARFT
+  name: phosphoribosylglycinamide formyltransferase
+  equation: '|M_10fthf_c[C_c]| + |M_gar_c[C_c]| <=> |M_fgam_c[C_c]| + |M_h_c[C_c]|
+    + |M_thf_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_GCALDt
+  name: Glycoaldehydye reversible transport
+  equation: '|M_gcald_e[C_e]| <=> |M_gcald_c[C_c]|'
+  subsystem: Transport
+- id: R_GDMANE
+  name: GDP-4-dehydro-6-deoxy-D-mannose epimerase
+  equation: '|M_gdpddman_c[C_c]| => |M_gdpofuc_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_GF4GL_0
+  name: gamma-F420-0:gamma-L-glutamate ligase
+  equation: '|M_f420_DASH_0_c[C_c]| + |M_glu_DASH_L_c[C_c]| + |M_gtp_c[C_c]| => |M_f420_DASH_1_c[C_c]|
+    + |M_gdp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_GF4GL_1
+  name: gamma-F420-1:gamma-L-glutamate ligase
+  equation: '|M_f420_DASH_1_c[C_c]| + |M_glu_DASH_L_c[C_c]| + |M_gtp_c[C_c]| => |M_f420_DASH_2_c[C_c]|
+    + |M_gdp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_GF4GL_2
+  name: gamma-F420-2:gamma-L-glutamate ligase
+  equation: '|M_f420_DASH_2_c[C_c]| + |M_glu_DASH_L_c[C_c]| + |M_gtp_c[C_c]| => |M_f420_DASH_3_c[C_c]|
+    + |M_gdp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_GF4GL_3
+  name: gamma-F420-3:gamma-L-glutamate ligase
+  equation: '|M_f420_DASH_3_c[C_c]| + |M_glu_DASH_L_c[C_c]| + |M_gtp_c[C_c]| => |M_f420_DASH_4_c[C_c]|
+    + |M_gdp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_GF4GL_4
+  name: gamma-F420-4:gamma-L-glutamate ligase
+  equation: '|M_f420_DASH_4_c[C_c]| + |M_glu_DASH_L_c[C_c]| + |M_gtp_c[C_c]| => |M_f420_DASH_5_c[C_c]|
+    + |M_gdp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_GF4GL_5
+  name: gamma-F420-5:gamma-L-glutamate ligase
+  equation: '|M_f420_DASH_5_c[C_c]| + |M_glu_DASH_L_c[C_c]| + |M_gtp_c[C_c]| => |M_f420_DASH_6_c[C_c]|
+    + |M_gdp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_GF4GL_6
+  name: gamma-F420-6:gamma-L-glutamate ligase
+  equation: '|M_f420_DASH_6_c[C_c]| + |M_glu_DASH_L_c[C_c]| + |M_gtp_c[C_c]| => |M_f420_DASH_7_c[C_c]|
+    + |M_gdp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_GF6PTA
+  name: glutamine-fructose-6-phosphate transaminase
+  equation: '|M_f6p_c[C_c]| + |M_gln_DASH_L_c[C_c]| => |M_gam6p_c[C_c]| + |M_glu_DASH_L_c[C_c]|'
+  subsystem: Glutamate metabolism
+- id: R_GGGPS
+  name: geranylgeranylglyceryl phosphate synthase
+  equation: '|M_ggdp_c[C_c]| + |M_glyc1p_c[C_c]| => |M_gggp_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_GHMT2
+  name: glycine hydroxymethyltransferase
+  equation: '|M_ser_DASH_L_c[C_c]| + |M_thf_c[C_c]| => |M_gly_c[C_c]| + |M_h2o_c[C_c]|
+    + |M_mlthf_c[C_c]|'
+  subsystem: Glycine and Serine Metabolism
+- id: R_GK1
+  name: guanylate kinase (GMP:ATP)
+  equation: '|M_atp_c[C_c]| + |M_gmp_c[C_c]| <=> |M_adp_c[C_c]| + |M_gdp_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_GK__adp_
+  name: ADP-specific glucokinase
+  equation: '|M_adp_c[C_c]| + |M_glc_DASH_D_c[C_c]| => |M_amp_c[C_c]| + |M_g6p_c[C_c]|
+    + |M_h_c[C_c]|'
+  subsystem: Glycolysis/Gluconeogenesis
+- id: R_GLCGSD
+  name: glucan 1,4-alpha-glucosidase
+  equation: '|M_glycogen_c[C_c]| + |M_h2o_c[C_c]| => |M_glc_DASH_D_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_GLCNt2r
+  name: D-gluconate transport via proton symport, reversible
+  equation: '|M_glcn_e[C_e]| + |M_h_e[C_e]| <=> |M_glcn_c[C_c]| + |M_h_c[C_c]|'
+  subsystem: Transport
+- id: R_GLCP
+  name: glycogen phosphorylase
+  equation: '|M_glycogen_c[C_c]| + |M_pi_c[C_c]| => |M_g1p_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_GLCS2
+  name: glycogen synthase (UDPGlc)
+  equation: '|M_udpg_c[C_c]| => |M_glycogen_c[C_c]| + |M_h_c[C_c]| + |M_udp_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_GLNS
+  name: glutamine synthetase
+  equation: '|M_atp_c[C_c]| + |M_glu_DASH_L_c[C_c]| + |M_nh4_c[C_c]| => |M_adp_c[C_c]|
+    + |M_gln_DASH_L_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Glutamine Metabolism
+- id: R_GLNTRAT
+  name: glutamyl-tRNA(Gln) amidotransferase
+  equation: '|M_atp_c[C_c]| + |M_gln_DASH_L_c[C_c]| + |M_glutrna_LPAREN_gln_RPAREN__c[C_c]|
+    + |M_h2o_c[C_c]| => |M_adp_c[C_c]| + |M_glntrna_c[C_c]| + |M_glu_DASH_L_c[C_c]|
+    + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Glutamine Metabolism
+- id: R_GLU5K
+  name: glutamate 5-kinase
+  equation: '|M_atp_c[C_c]| + |M_glu_DASH_L_c[C_c]| => |M_adp_c[C_c]| + |M_glu5p_c[C_c]|'
+  subsystem: Amino Acid Metabolism
+- id: R_GLUDC
+  name: Glutamate Decarboxylase
+  equation: '|M_glu_DASH_L_c[C_c]| + |M_h_c[C_c]| => |M_4abut_c[C_c]| + |M_co2_c[C_c]|'
+  subsystem: Glutamate metabolism
+- id: R_GLUDxi
+  name: glutamate dehydrogenase (NAD)
+  equation: '|M_glu_DASH_L_c[C_c]| + |M_h2o_c[C_c]| + |M_nad_c[C_c]| => |M_akg_c[C_c]|
+    + |M_h_c[C_c]| + |M_nadh_c[C_c]| + |M_nh4_c[C_c]|'
+  subsystem: Glutamate metabolism
+- id: R_GLUDyi
+  name: glutamate dehydrogenase (NADP)
+  equation: '|M_akg_c[C_c]| + |M_h_c[C_c]| + |M_nadph_c[C_c]| + |M_nh4_c[C_c]| =>
+    |M_glu_DASH_L_c[C_c]| + |M_h2o_c[C_c]| + |M_nadp_c[C_c]|'
+  subsystem: Glutamate metabolism
+- id: R_GLUPRT
+  name: glutamine phosphoribosyldiphosphate amidotransferase
+  equation: '|M_gln_DASH_L_c[C_c]| + |M_h2o_c[C_c]| + |M_prpp_c[C_c]| => |M_glu_DASH_L_c[C_c]|
+    + |M_ppi_c[C_c]| + |M_pram_c[C_c]|'
+  subsystem: Glutamate metabolism
+- id: R_GLUS_F420_
+  name: glutamate synthase (F420)
+  equation: '|M_akg_c[C_c]| + |M_f420_DASH_2h2_c[C_c]| + |M_gln_DASH_L_c[C_c]| =>
+    |M_f420_DASH_2_c[C_c]| + (2) |M_glu_DASH_L_c[C_c]|'
+  subsystem: Glutamate Metabolism
+- id: R_GLUTRR
+  name: glutamyl-tRNA reductase
+  equation: '|M_glutrna_c[C_c]| + |M_h_c[C_c]| + |M_nadph_c[C_c]| => |M_glu1sa_c[C_c]|
+    + |M_nadp_c[C_c]| + |M_trnaglu_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_GLUTRS
+  name: Glutamyl-tRNA synthetase
+  equation: '|M_atp_c[C_c]| + |M_glu_DASH_L_c[C_c]| + |M_trnaglu_c[C_c]| => |M_amp_c[C_c]|
+    + |M_glutrna_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Glutamine Metabolism
+- id: R_GLUTRS_Gln_
+  name: Glutamyl-tRNA synthetase (Gln)
+  equation: '|M_atp_c[C_c]| + |M_glu_DASH_L_c[C_c]| + |M_trnagln_c[C_c]| => |M_amp_c[C_c]|
+    + |M_glutrna_LPAREN_gln_RPAREN__c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Glutamine Metabolism
+- id: R_GLUt2r
+  name: L-glutamate transport via proton symport, reversible
+  equation: '|M_glu_DASH_L_e[C_e]| + |M_h_e[C_e]| <=> |M_glu_DASH_L_c[C_c]| + |M_h_c[C_c]|'
+  subsystem: Transport
+- id: R_GLYALDt
+  name: Glyceraldehyde facilitated diffusion
+  equation: '|M_glyald_e[C_e]| <=> |M_glyald_c[C_c]|'
+  subsystem: Transport
+- id: R_GLYBabc
+  name: Glycine betaine transport via ABC system
+  equation: '|M_atp_c[C_c]| + |M_glyb_e[C_e]| + |M_h2o_c[C_c]| => |M_adp_c[C_c]|
+    + |M_glyb_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Transport
+- id: R_GLYCt
+  name: glycerol transport via channel
+  equation: '|M_glyc_c[C_c]| <=> |M_glyc_e[C_e]|'
+  subsystem: Transport
+- id: R_GLYTRS
+  name: Glycyl-tRNA synthetase
+  equation: '|M_atp_c[C_c]| + |M_gly_c[C_c]| + |M_trnagly_c[C_c]| => |M_amp_c[C_c]|
+    + |M_glytrna_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Glycine and Serine Metabolism
+- id: R_GLYt4r
+  name: glycine reversible transport via sodium symport
+  equation: '|M_gly_e[C_e]| + |M_na1_e[C_e]| <=> |M_gly_c[C_c]| + |M_na1_c[C_c]|'
+  subsystem: Transport
+- id: R_GMAND
+  name: GDP-D-mannose dehydratase
+  equation: '|M_gdpmann_c[C_c]| => |M_gdpddman_c[C_c]| + |M_h2o_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_GMPS
+  name: GMP synthase
+  equation: '|M_atp_c[C_c]| + |M_nh4_c[C_c]| + |M_xmp_c[C_c]| => |M_amp_c[C_c]| +
+    |M_gmp_c[C_c]| + (2) |M_h_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_GMPS2
+  name: GMP synthase
+  equation: '|M_atp_c[C_c]| + |M_gln_DASH_L_c[C_c]| + |M_h2o_c[C_c]| + |M_xmp_c[C_c]|
+    => |M_amp_c[C_c]| + |M_glu_DASH_L_c[C_c]| + |M_gmp_c[C_c]| + (2) |M_h_c[C_c]|
+    + |M_ppi_c[C_c]|'
+  subsystem: Glutamine Metabolism
+- id: R_GOFUCR
+  name: GDP-4-oxo-L-fucose reductase
+  equation: '|M_gdpofuc_c[C_c]| + |M_h_c[C_c]| + |M_nadph_c[C_c]| => |M_gdpfuc_c[C_c]|
+    + |M_nadp_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_GRTT
+  name: geranyltranstransferase
+  equation: '|M_grdp_c[C_c]| + |M_ipdp_c[C_c]| => |M_frdp_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_GRTT2
+  name: geranyltranstransferase (3-hydroxy)
+  equation: '|M_3hgrdp_c[C_c]| + |M_ipdp_c[C_c]| => |M_3hfrdp_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_GTHOr
+  name: glutathione oxidoreductase
+  equation: '|M_gthox_c[C_c]| + |M_h_c[C_c]| + |M_nadph_c[C_c]| <=> (2) |M_gthrd_c[C_c]|
+    + |M_nadp_c[C_c]|'
+  subsystem: Glutamate metabolism
+- id: R_GTPCIII
+  name: GTP cyclohydrolase III
+  equation: '|M_gtp_c[C_c]| + (2) |M_h2o_c[C_c]| => |M_for_c[C_c]| + |M_h_c[C_c]|
+    + |M_ptp_c[C_c]|'
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: R_GUAD
+  name: guanine deaminase
+  equation: '|M_gua_c[C_c]| + |M_h_c[C_c]| + |M_h2o_c[C_c]| => |M_nh4_c[C_c]| + |M_xan_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_GUAPRT
+  name: guanine phosphoribosyltransferase
+  equation: '|M_gua_c[C_c]| + |M_prpp_c[C_c]| => |M_gmp_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_H2MPTR
+  name: dihydromethanoterin reductase
+  equation: '|M_f420_DASH_2h2_c[C_c]| + |M_h2mpt_c[C_c]| => |M_f420_DASH_2_c[C_c]|
+    + |M_h4mpt_c[C_c]|'
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: R_H2Ot
+  name: H2O transport via diffusion
+  equation: '|M_h2o_e[C_e]| <=> |M_h2o_c[C_c]|'
+  subsystem: Transport
+- id: R_H2St
+  name: h2s transport (diffusion)
+  equation: '|M_h2s_e[C_e]| <=> |M_h2s_c[C_c]|'
+  subsystem: Transport
+- id: R_H2td
+  name: hydrogen transport
+  equation: '|M_h2_c[C_c]| <=> |M_h2_e[C_e]|'
+  subsystem: Transport
+- id: R_H4MPTGL__atp_
+  name: tetrahydromethanopterin glutamate lyase (ATP)
+  equation: '|M_atp_c[C_c]| + |M_glu_DASH_L_c[C_c]| + |M_h4mpt_c[C_c]| => |M_adp_c[C_c]|
+    + |M_h_c[C_c]| + |M_h4spt_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: R_H4MPTGL_gtp_
+  name: tetrahydromethanopterin glutamate lyase (GTP)
+  equation: '|M_glu_DASH_L_c[C_c]| + |M_gtp_c[C_c]| + |M_h4mpt_c[C_c]| => |M_gdp_c[C_c]|
+    + |M_h_c[C_c]| + |M_h4spt_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: R_H4MPTS10
+  name: tetrahydromethanopterin synthesis reaction 10
+  equation: '|M_dhadrp_c[C_c]| + |M_h2o_c[C_c]| => |M_dhadr_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: R_H4MPTS11
+  name: tetrahydromethanopterin synthesis reaction 11
+  equation: '|M_dhadr_c[C_c]| + |M_prpp_c[C_c]| => |M_dhadrpr_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: R_H4MPTS12
+  name: tetrahydromethanopterin synthesis reaction 12
+  equation: '|M_atp_c[C_c]| + |M_dhadrpr_c[C_c]| => |M_adp_c[C_c]| + |M_dhadrdpr_c[C_c]|'
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: R_H4MPTS13
+  name: tetrahydromethanopterin synthesis reaction 13
+  equation: '|M_atp_c[C_c]| + |M_dhadrdpr_c[C_c]| => |M_adp_c[C_c]| + |M_dhadrtpr_c[C_c]|'
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: R_H4MPTS14
+  name: tetrahydromethanopterin synthesis reaction 14
+  equation: '|M_S2hglut_c[C_c]| + |M_dhadrtpr_c[C_c]| => |M_dmh2mpt_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: R_H4MPTS15
+  name: tetrahydromethanopterin synthesis reaction 15
+  equation: '|M_amet_c[C_c]| + |M_dmh2mpt_c[C_c]| => |M_ahcys_c[C_c]| + |M_h_c[C_c]|
+    + |M_mmh2mpt_c[C_c]|'
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: R_H4MPTS16
+  name: tetrahydromethanopterin synthesis reaction 16
+  equation: '|M_amet_c[C_c]| + |M_mmh2mpt_c[C_c]| => |M_ahcys_c[C_c]| + |M_h_c[C_c]|
+    + |M_h2mpt_c[C_c]|'
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: R_H4MPTS9
+  name: tetrahydromethanopterin synthesis reaction 9
+  equation: '|M_dhrfap_c[C_c]| + |M_f420_DASH_2h2_c[C_c]| => |M_dhadrp_c[C_c]| +
+    |M_f420_DASH_2_c[C_c]|'
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: R_HASD
+  name: hydroxyarchaetidylserine decarboxylase
+  equation: '|M_3hdpgps_c[C_c]| + |M_h_c[C_c]| => |M_3hdpgpe_c[C_c]| + |M_co2_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_HATGH
+  name: hydroxyarchaetidylglycerol hydrogenase
+  equation: '|M_3hdggpg_c[C_c]| + (7) |M_h_c[C_c]| + (7) |M_nadph_c[C_c]| => |M_3hdpgpg_c[C_c]|
+    + (7) |M_nadp_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_HATIH
+  name: hydroxyarchaetidylinositol hydrogenase
+  equation: '|M_3hdggpi_c[C_c]| + (7) |M_h_c[C_c]| + (7) |M_nadph_c[C_c]| => |M_3hdpgpi_c[C_c]|
+    + (7) |M_nadp_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_HATSH
+  name: hydroxyarchaetidylserine hydrogenase
+  equation: '|M_3hdgggps_c[C_c]| + (7) |M_h_c[C_c]| + (7) |M_nadph_c[C_c]| => |M_3hdpgps_c[C_c]|
+    + (7) |M_nadp_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_HCITS
+  name: homocitrate synthase
+  equation: '|M_accoa_c[C_c]| + |M_akg_c[C_c]| + |M_h2o_c[C_c]| => |M_coa_c[C_c]|
+    + |M_h_c[C_c]| + |M_hcit_c[C_c]|'
+  subsystem: Threonine and Lysine Metabolism
+- id: R_HCO3E
+  name: HCO3 equilibration reaction
+  equation: '|M_co2_c[C_c]| + |M_h2o_c[C_c]| <=> |M_h_c[C_c]| + |M_hco3_c[C_c]|'
+  subsystem: Other
+- id: R_HDR
+  name: Heterodisulphide reductase
+  equation: (1.8) |M_h_c[C_c]| + |M_hsfd_c[C_c]| + |M_mphenh2_c[C_c]| => |M_cob_c[C_c]|
+    + |M_com_c[C_c]| + (1.8) |M_h_e[C_e]| + |M_mphen_c[C_c]|
+  subsystem: Methanogenesis
+- id: R_HETZK
+  name: hydroxyethylthiazole kinase
+  equation: '|M_4mhetz_c[C_c]| + |M_atp_c[C_c]| => |M_4mpetz_c[C_c]| + |M_adp_c[C_c]|
+    + |M_h_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_HEX7
+  name: hexokinase (D-fructose:ATP)
+  equation: '|M_atp_c[C_c]| + |M_fru_c[C_c]| => |M_adp_c[C_c]| + |M_f6p_c[C_c]| +
+    |M_h_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_HISDC
+  name: histidine decarboxylase
+  equation: '|M_h_c[C_c]| + |M_his_DASH_L_c[C_c]| => |M_co2_c[C_c]| + |M_hista_c[C_c]|'
+  subsystem: Histidine Metabolism
+- id: R_HISTD
+  name: histidinol dehydrogenase
+  equation: '|M_h2o_c[C_c]| + |M_histd_c[C_c]| + (2) |M_nad_c[C_c]| => (3) |M_h_c[C_c]|
+    + |M_his_DASH_L_c[C_c]| + (2) |M_nadh_c[C_c]|'
+  subsystem: Histidine Metabolism
+- id: R_HISTP
+  name: histidinol-phosphatase
+  equation: '|M_h2o_c[C_c]| + |M_hisp_c[C_c]| => |M_histd_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Histidine Metabolism
+- id: R_HISTRS
+  name: Histidyl-tRNA synthetase
+  equation: '|M_atp_c[C_c]| + |M_his_DASH_L_c[C_c]| + |M_trnahis_c[C_c]| => |M_amp_c[C_c]|
+    + |M_histrna_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Histidine Metabolism
+- id: R_HKt
+  name: H+/K+ gastric/non-gastric P-ATPase and ABC ATPase
+  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_k_e[C_e]| => |M_adp_c[C_c]| + |M_h_e[C_e]|
+    + |M_k_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Transport
+- id: R_HMBS
+  name: hydroxymethylbilane synthase
+  equation: '|M_h2o_c[C_c]| + (4) |M_ppbng_c[C_c]| => |M_hmbil_c[C_c]| + (4) |M_nh4_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_HMGCOARi
+  name: Hydroxymethylglutaryl CoA reductase (ir)
+  equation: (2) |M_h_c[C_c]| + |M_hmgcoa_c[C_c]| + (2) |M_nadph_c[C_c]| => |M_coa_c[C_c]|
+    + |M_mev_DASH_R_c[C_c]| + (2) |M_nadp_c[C_c]|
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_HMGCOASi
+  name: Hydroxymethylglutaryl CoA synthase (ir)
+  equation: '|M_aacoa_c[C_c]| + |M_accoa_c[C_c]| + |M_h2o_c[C_c]| => |M_coa_c[C_c]|
+    + |M_h_c[C_c]| + |M_hmgcoa_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_HMPK1
+  name: hydroxymethylpyrimidine kinase (ATP)
+  equation: '|M_4ahmmp_c[C_c]| + |M_atp_c[C_c]| => |M_4ampm_c[C_c]| + |M_adp_c[C_c]|
+    + |M_h_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_HPACt2r
+  name: ydroxyphenylacetate transport in via proton symporter
+  equation: '|M_4hphac_e[C_e]| + |M_h_e[C_e]| <=> |M_4hphac_c[C_c]| + |M_h_c[C_c]|'
+  subsystem: Transport
+- id: R_HPPK2
+  name: _6-hydroxymethyl-dihydropterin pyrophosphokinase
+  equation: '|M_6hmhpt_c[C_c]| + |M_atp_c[C_c]| => |M_6hmhptpp_c[C_c]| + |M_amp_c[C_c]|
+    + |M_h_c[C_c]|'
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: R_HSDy
+  name: homoserine dehydrogenase (NADPH)
+  equation: '|M_hom_DASH_L_c[C_c]| + |M_nadp_c[C_c]| <=> |M_aspsa_c[C_c]| + |M_h_c[C_c]|
+    + |M_nadph_c[C_c]|'
+  subsystem: Alanine and Aspartate Metabolism
+- id: R_HSERTA
+  name: homoserine O-trans-acetylase
+  equation: '|M_accoa_c[C_c]| + |M_hom_DASH_L_c[C_c]| <=> |M_achms_c[C_c]| + |M_coa_c[C_c]|'
+  subsystem: Methionine Metabolism
+- id: R_HSK
+  name: homoserine kinase
+  equation: '|M_atp_c[C_c]| + |M_hom_DASH_L_c[C_c]| => |M_adp_c[C_c]| + |M_h_c[C_c]|
+    + |M_phom_c[C_c]|'
+  subsystem: Threonine and Lysine Metabolism
+- id: R_HSPMS
+  name: homospermidine synthase
+  equation: (2) |M_ptrc_c[C_c]| => |M_hspmd_c[C_c]| + |M_nh4_c[C_c]|
+  subsystem: Central Metabolism
+- id: R_HSTPT
+  name: histidinol-phosphate transaminase
+  equation: '|M_glu_DASH_L_c[C_c]| + |M_imacp_c[C_c]| => |M_akg_c[C_c]| + |M_hisp_c[C_c]|'
+  subsystem: Histidine Metabolism
+- id: R_HXPRT
+  name: hypoxanthine phosphoribosyltransferase (Hypoxanthine)
+  equation: '|M_hxan_c[C_c]| + |M_prpp_c[C_c]| => |M_imp_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_ICDHyr
+  name: isocitrate dehydrogenase (NADP)
+  equation: '|M_icit_c[C_c]| + |M_nadp_c[C_c]| <=> |M_akg_c[C_c]| + |M_co2_c[C_c]|
+    + |M_nadph_c[C_c]|'
+  subsystem: Citric Acid Cycle
+- id: R_IG3PS
+  name: Imidazole-glycerol-3-phosphate synthase
+  equation: '|M_gln_DASH_L_c[C_c]| + |M_prlp_c[C_c]| => |M_aicar_c[C_c]| + |M_eig3p_c[C_c]|
+    + |M_glu_DASH_L_c[C_c]| + |M_h_c[C_c]|'
+  subsystem: Histidine Metabolism
+- id: R_IGPDH
+  name: imidazoleglycerol-phosphate dehydratase
+  equation: '|M_eig3p_c[C_c]| => |M_h2o_c[C_c]| + |M_imacp_c[C_c]|'
+  subsystem: Histidine Metabolism
+- id: R_IGPS
+  name: indole-3-glycerol-phosphate synthase
+  equation: '|M_2cpr5p_c[C_c]| + |M_h_c[C_c]| => |M_3ig3p_c[C_c]| + |M_co2_c[C_c]|
+    + |M_h2o_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_ILETA
+  name: isoleucine transaminase
+  equation: '|M_akg_c[C_c]| + |M_ile_DASH_L_c[C_c]| <=> |M_3mop_c[C_c]| + |M_glu_DASH_L_c[C_c]|'
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+- id: R_ILETRS
+  name: Isoleucyl-tRNA synthetase
+  equation: '|M_atp_c[C_c]| + |M_ile_DASH_L_c[C_c]| + |M_trnaile_c[C_c]| => |M_amp_c[C_c]|
+    + |M_iletrna_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+- id: R_ILEt2r
+  name: L-isoleucine reversible transport via proton symport
+  equation: '|M_h_e[C_e]| + |M_ile_DASH_L_e[C_e]| <=> |M_h_c[C_c]| + |M_ile_DASH_L_c[C_c]|'
+  subsystem: Transport
+- id: R_IMPC
+  name: IMP cyclohydrolase
+  equation: '|M_h2o_c[C_c]| + |M_imp_c[C_c]| <=> |M_fprica_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_IMPD
+  name: IMP dehydrogenase
+  equation: '|M_h2o_c[C_c]| + |M_imp_c[C_c]| + |M_nad_c[C_c]| => |M_h_c[C_c]| + |M_nadh_c[C_c]|
+    + |M_xmp_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_IND3ACt2r
+  name: indole-3-acetate transport via proton symport
+  equation: '|M_h_c[C_c]| + |M_ind3ac_c[C_c]| <=> |M_h_e[C_e]| + |M_ind3ac_e[C_e]|'
+  subsystem: Transport
+- id: R_INS2D
+  name: inositol 2-dehydrogenase
+  equation: '|M_inost_c[C_c]| + |M_nad_c[C_c]| => |M_2ins_c[C_c]| + |M_h_c[C_c]|
+    + |M_nadh_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_IOR
+  name: indolepyruvate ferredoxin oxidoreductase
+  equation: '|M_coa_c[C_c]| + (2) |M_fdox_c[C_c]| + |M_indpyr_c[C_c]| <=> |M_co2_c[C_c]|
+    + (2) |M_fdred_c[C_c]| + |M_h_c[C_c]| + |M_indaccoa_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_IOR2
+  name: indolepyruvate ferredoxin oxidoreductase (phenylpyvurate)
+  equation: '|M_coa_c[C_c]| + (2) |M_fdox_c[C_c]| + |M_phpyr_c[C_c]| <=> |M_co2_c[C_c]|
+    + (2) |M_fdred_c[C_c]| + |M_h_c[C_c]| + |M_phaccoa_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_IOR3
+  name: indolepyruvate ferredoxin oxidoreductase (hydroxyphenylpyvurate)
+  equation: '|M_34hpp_c[C_c]| + |M_coa_c[C_c]| + (2) |M_fdox_c[C_c]| <=> |M_co2_c[C_c]|
+    + (2) |M_fdred_c[C_c]| + |M_h_c[C_c]| + |M_hphaccoa_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_IPDDI3x
+  name: isopentenyl diphosphate isomerase (type3)
+  equation: '|M_f420_DASH_2_c[C_c]| + |M_h_c[C_c]| + |M_ipdp_c[C_c]| + |M_nadh_c[C_c]|
+    => |M_dmpp_c[C_c]| + |M_f420_DASH_2h2_c[C_c]| + |M_nad_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_IPDDI3y
+  name: isopentenyl diphosphate isomerase (type3)
+  equation: '|M_f420_DASH_2_c[C_c]| + |M_h_c[C_c]| + |M_ipdp_c[C_c]| + |M_nadph_c[C_c]|
+    => |M_dmpp_c[C_c]| + |M_f420_DASH_2h2_c[C_c]| + |M_nadp_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_IPMD
+  name: _3-isopropylmalate dehydrogenase
+  equation: '|M_3c2hmp_c[C_c]| + |M_nad_c[C_c]| => |M_3c4mop_c[C_c]| + |M_h_c[C_c]|
+    + |M_nadh_c[C_c]|'
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+- id: R_IPPMIa
+  name: _3-isopropylmalate dehydratase
+  equation: '|M_3c2hmp_c[C_c]| <=> |M_2ippm_c[C_c]| + |M_h2o_c[C_c]|'
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+- id: R_IPPMIb
+  name: _2-isopropylmalate hydratase
+  equation: '|M_2ippm_c[C_c]| + |M_h2o_c[C_c]| <=> |M_3c3hmp_c[C_c]|'
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+- id: R_IPPS
+  name: _2-isopropylmalate synthase
+  equation: '|M_3mob_c[C_c]| + |M_accoa_c[C_c]| + |M_h2o_c[C_c]| => |M_3c3hmp_c[C_c]|
+    + |M_coa_c[C_c]| + |M_h_c[C_c]|'
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+- id: R_KARA1
+  name: ketol-acid reductoisomerase (2,3-dihydroxy-3-methylbutanoate)
+  equation: '|M_23dhmb_c[C_c]| + |M_nadp_c[C_c]| <=> |M_alac_DASH_S_c[C_c]| + |M_h_c[C_c]|
+    + |M_nadph_c[C_c]|'
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+- id: R_KARA2
+  name: ketol-acid reductoisomerase (2-Acetolactate)
+  equation: '|M_2ahbut_c[C_c]| + |M_h_c[C_c]| + |M_nadph_c[C_c]| <=> |M_23dhmp_c[C_c]|
+    + |M_nadp_c[C_c]|'
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+- id: R_Kt2
+  name: potassium transport in via proton symport
+  equation: '|M_h_e[C_e]| + |M_k_e[C_e]| => |M_h_c[C_c]| + |M_k_c[C_c]|'
+  subsystem: Transport
+- id: R_Kt2r
+  name: potassium reversible transport  via proton symport
+  equation: '|M_h_e[C_e]| + |M_k_e[C_e]| <=> |M_h_c[C_c]| + |M_k_c[C_c]|'
+  subsystem: Transport
+- id: R_LDH_L
+  name: L-lactate dehydrogenase
+  equation: '|M_lac_DASH_L_c[C_c]| + |M_nad_c[C_c]| <=> |M_h_c[C_c]| + |M_nadh_c[C_c]|
+    + |M_pyr_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_LEUTA
+  name: leucine transaminase
+  equation: '|M_akg_c[C_c]| + |M_leu_DASH_L_c[C_c]| <=> |M_4mop_c[C_c]| + |M_glu_DASH_L_c[C_c]|'
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+- id: R_LEUTRS
+  name: Leucyl-tRNA synthetase
+  equation: '|M_atp_c[C_c]| + |M_leu_DASH_L_c[C_c]| + |M_trnaleu_c[C_c]| => |M_amp_c[C_c]|
+    + |M_leutrna_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+- id: R_LEUt2r
+  name: L-leucine reversible transport via proton symport
+  equation: '|M_h_e[C_e]| + |M_leu_DASH_L_e[C_e]| <=> |M_h_c[C_c]| + |M_leu_DASH_L_c[C_c]|'
+  subsystem: Transport
+- id: R_LPFPLT
+  name: LPPG:Fo 2-phospho-L-lactate transferase
+  equation: '|M_ddhrb_c[C_c]| + |M_lppg_c[C_c]| => |M_f420_DASH_0_c[C_c]| + |M_gmp_c[C_c]|
+    + |M_h_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_LPPGS
+  name: LPPG synthetase
+  equation: '|M_2plac_DASH_L_c[C_c]| + |M_gtp_c[C_c]| + |M_h_c[C_c]| => |M_lppg_c[C_c]|
+    + |M_ppi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_LYSAM
+  name: lysine 2,3-aminomutase
+  equation: '|M_lys_DASH_L_c[C_c]| <=> |M_36dahx_c[C_c]|'
+  subsystem: Threonine and Lysine Metabolism
+- id: R_LYSTRS
+  name: Lysyl-tRNA synthetase
+  equation: '|M_atp_c[C_c]| + |M_lys_DASH_L_c[C_c]| + |M_trnalys_c[C_c]| => |M_amp_c[C_c]|
+    + |M_lystrna_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Threonine and Lysine Metabolism
+- id: R_LYSt3r
+  name: L-lysine transport out via proton antiport reversible
+  equation: '|M_h_e[C_e]| + |M_lys_DASH_L_c[C_c]| <=> |M_h_c[C_c]| + |M_lys_DASH_L_e[C_e]|'
+  subsystem: Transport
+- id: R_MAN1PT2r
+  name: mannose-1-phosphate guanylyltransferase (GDP) reversible
+  equation: '|M_gdp_c[C_c]| + |M_h_c[C_c]| + |M_man1p_c[C_c]| <=> |M_gdpmann_c[C_c]|
+    + |M_pi_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_MAN6PI
+  name: mannose-6-phosphate isomerase
+  equation: '|M_man6p_c[C_c]| <=> |M_f6p_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_MCMMT
+  name: 'Methanol: coenzyme M methyltransferase'
+  equation: '|M_com_c[C_c]| + |M_meoh_c[C_c]| => |M_h2o_c[C_c]| + |M_mcom_c[C_c]|'
+  subsystem: Methanogenesis
+- id: R_MCR
+  name: Methyl-coenzyme M reductase
+  equation: '|M_cob_c[C_c]| + |M_mcom_c[C_c]| => |M_ch4_c[C_c]| + |M_hsfd_c[C_c]|'
+  subsystem: Methanogenesis
+- id: R_MDH
+  name: malate dehydrogenase
+  equation: '|M_mal_DASH_L_c[C_c]| + |M_nad_c[C_c]| <=> |M_h_c[C_c]| + |M_nadh_c[C_c]|
+    + |M_oaa_c[C_c]|'
+  subsystem: Citric Acid Cycle
+- id: R_MDHi2
+  name: malate dehydrogenase (other direction)
+  equation: '|M_h_c[C_c]| + |M_nadh_c[C_c]| + |M_oaa_c[C_c]| => |M_mal_DASH_L_c[C_c]|
+    + |M_nad_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_MDHy
+  name: malate dehydrogenase (NADP+)
+  equation: '|M_mal_DASH_L_c[C_c]| + |M_nadp_c[C_c]| <=> |M_h_c[C_c]| + |M_nadph_c[C_c]|
+    + |M_oaa_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_ME1_rev
+  name: malic enzyme
+  equation: '|M_mal_DASH_L_c[C_c]| + |M_nad_c[C_c]| <=> |M_co2_c[C_c]| + |M_nadh_c[C_c]|
+    + |M_pyr_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_MEOHt2
+  name: Methanol diffusion
+  equation: '|M_meoh_e[C_e]| <=> |M_meoh_c[C_c]|'
+  subsystem: Transport
+- id: R_METAT
+  name: methionine adenosyltransferase
+  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_met_DASH_L_c[C_c]| => |M_amet_c[C_c]|
+    + |M_pi_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Methionine Metabolism
+- id: R_METGL
+  name: methionine g-lyase
+  equation: '|M_h2o_c[C_c]| + |M_met_DASH_L_c[C_c]| => |M_2obut_c[C_c]| + |M_ch4s_c[C_c]|
+    + |M_nh4_c[C_c]|'
+  subsystem: Methionine Metabolism
+- id: R_METS
+  name: methionine synthase
+  equation: '|M_5mthf_c[C_c]| + |M_hcys_DASH_L_c[C_c]| => |M_h_c[C_c]| + |M_met_DASH_L_c[C_c]|
+    + |M_thf_c[C_c]|'
+  subsystem: Methionine Metabolism
+- id: R_METTRS
+  name: Methionyl-tRNA synthetase
+  equation: '|M_atp_c[C_c]| + |M_met_DASH_L_c[C_c]| + |M_trnamet_c[C_c]| => |M_amp_c[C_c]|
+    + |M_mettrna_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Methionine Metabolism
+- id: R_MEVK1
+  name: mevalonate kinase (atp)
+  equation: '|M_atp_c[C_c]| + |M_mev_DASH_R_c[C_c]| => |M_5pmev_c[C_c]| + |M_adp_c[C_c]|
+    + |M_h_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_MG2abc
+  name: magnesium transport via ABC system
+  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_mg2_e[C_e]| => |M_adp_c[C_c]| +
+    |M_h_c[C_c]| + |M_mg2_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Transport
+- id: R_MGt5
+  name: magnesium transport in/out via permease (no H+)
+  equation: '|M_mg2_c[C_c]| <=> |M_mg2_e[C_e]|'
+  subsystem: Transport
+- id: R_MI1PP
+  name: myo-inositol 1-phosphatase
+  equation: '|M_h2o_c[C_c]| + |M_mi1p_DASH_D_c[C_c]| => |M_inost_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_MI1PS
+  name: myo-Inositol-1-phosphate synthase
+  equation: '|M_g6p_c[C_c]| => |M_mi1p_DASH_D_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_MMAMT
+  name: Monomethylamine methyltransferase
+  equation: '|M_com_c[C_c]| + |M_mma_c[C_c]| => |M_mcom_c[C_c]| + |M_nh4_c[C_c]|'
+  subsystem: Methanogenesis
+- id: R_MMAt
+  name: Monomethylamine symport
+  equation: '|M_h_e[C_e]| + |M_mma_e[C_e]| <=> |M_h_c[C_c]| + |M_mma_c[C_c]|'
+  subsystem: Transport
+- id: R_MNabc
+  name: manganese transport via ABC system
+  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_mn2_e[C_e]| => |M_adp_c[C_c]| +
+    |M_h_c[C_c]| + |M_mn2_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Transport
+- id: R_MOBDabc
+  name: molybdate transport via ABC system
+  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_mobd_e[C_e]| => |M_adp_c[C_c]|
+    + |M_h_c[C_c]| + |M_mobd_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Transport
+- id: R_MOHMT
+  name: _3-methyl-2-oxobutanoate hydroxymethyltransferase
+  equation: '|M_3mob_c[C_c]| + |M_h2o_c[C_c]| + |M_mlthf_c[C_c]| => |M_2dhp_c[C_c]|
+    + |M_thf_c[C_c]|'
+  subsystem: Coenzyme A Biosynthesis
+- id: R_MPML
+  name: Mg-protoporphyrin IX magnesium-lyase
+  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_mg2_c[C_c]| + |M_ppp9_c[C_c]| <=>
+    |M_adp_c[C_c]| + (3) |M_h_c[C_c]| + |M_mppp9_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_MTAP
+  name: _5'-methylthioadenosine phosphorylase
+  equation: '|M_5mta_c[C_c]| + |M_pi_c[C_c]| => |M_5mdr1p_c[C_c]| + |M_ade_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_MTCMMT
+  name: 'Methylthiol: coenzyme M methyltransferase'
+  equation: '|M_com_c[C_c]| + |M_dms_c[C_c]| => |M_ch4s_c[C_c]| + |M_mcom_c[C_c]|'
+  subsystem: Methanogenesis
+- id: R_MTHFC
+  name: methenyltetrahydrofolate cyclohydrolase
+  equation: '|M_h2o_c[C_c]| + |M_methf_c[C_c]| <=> |M_10fthf_c[C_c]| + |M_h_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_MTHFD2i
+  name: methylenetetrahydrofolate dehydrogenase (NAD)
+  equation: '|M_mlthf_c[C_c]| + |M_nad_c[C_c]| => |M_methf_c[C_c]| + |M_nadh_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_MTHFR3
+  name: _5,10-methylenetetrahydrofolatereductase (NADPH)
+  equation: (2) |M_h_c[C_c]| + |M_mlthf_c[C_c]| + |M_nadph_c[C_c]| => |M_5mthf_c[C_c]|
+    + |M_nadp_c[C_c]|
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_MTSPC
+  name: Methenyl-H4SPt cyclohydrolase
+  equation: '|M_formh4spt_c[C_c]| + |M_h_c[C_c]| <=> |M_h2o_c[C_c]| + |M_menylh4spt_c[C_c]|'
+  subsystem: Methanogenesis
+- id: R_MTSPCMMT
+  name: 'Methyl-H4SPT: coenzyme M methyltransferase'
+  equation: '|M_com_c[C_c]| + |M_mh4spt_c[C_c]| + (1.7) |M_na1_c[C_c]| <=> |M_h4spt_c[C_c]|
+    + |M_mcom_c[C_c]| + (1.7) |M_na1_e[C_e]|'
+  subsystem: Methanogenesis
+- id: R_Mb_biomass_30
+  name: Mb Biomass function
+  equation: (0.002698) |M_3hdpgpe_c[C_c]| + (0.01012) |M_3hdpgpg_c[C_c]| + (0.01349)
+    |M_3hdpgpi_c[C_c]| + (0.01147) |M_3hdpgps_c[C_c]| + (0.00005) |M_accoa_c[C_c]|
+    + (0.00474) |M_adocblhbi_c[C_c]| + (0.5621) |M_ala_DASH_L_c[C_c]| + (0.001) |M_amp_c[C_c]|
+    + (0.3237) |M_arg_DASH_L_c[C_c]| + (0.2638) |M_asn_DASH_L_c[C_c]| + (0.2638)
+    |M_asp_DASH_L_c[C_c]| + (30.1846) |M_atp_c[C_c]| + (0.000006) |M_coa_c[C_c]|
+    + (0.0005) |M_cob_c[C_c]| + (0.02056) |M_com_c[C_c]| + (0.1379) |M_ctp_c[C_c]|
+    + (0.1002) |M_cys_DASH_L_c[C_c]| + (0.03312) |M_datp_c[C_c]| + (0.02153) |M_dctp_c[C_c]|
+    + (0.02153) |M_dgtp_c[C_c]| + (0.000674) |M_dpgpe_c[C_c]| + (0.000674) |M_dpgpg_c[C_c]|
+    + (0.002698) |M_dpgpi_c[C_c]| + (0.001349) |M_dpgps_c[C_c]| + (0.03312) |M_dttp_c[C_c]|
+    + (0.000005) |M_f390a_c[C_c]| + (0.000005) |M_f390g_c[C_c]| + (0.000043) |M_f420_DASH_2_c[C_c]|
+    + (0.000026) |M_f420_DASH_3_c[C_c]| + (0.000374) |M_f420_DASH_4_c[C_c]| + (0.000299)
+    |M_f420_DASH_5_c[C_c]| + (0.000011) |M_f420_DASH_6_c[C_c]| + (0.000001) |M_f420_DASH_7_c[C_c]|
+    + (0.002) |M_f430_c[C_c]| + (0.01619) |M_gdpgpi_c[C_c]| + (0.288) |M_gln_DASH_L_c[C_c]|
+    + (0.288) |M_glu_DASH_L_c[C_c]| + (0.6704) |M_gly_c[C_c]| + (0.01543) |M_glycogen_c[C_c]|
+    + (0.2222) |M_gtp_c[C_c]| + (30) |M_h2o_c[C_c]| + (0.02362) |M_h4spt_c[C_c]|
+    + (0.1037) |M_his_DASH_L_c[C_c]| + (0.0047) |M_hspmd_c[C_c]| + (0.3179) |M_ile_DASH_L_c[C_c]|
+    + (0.493) |M_leu_DASH_L_c[C_c]| + (0.3755) |M_lys_DASH_L_c[C_c]| + (0.1682) |M_met_DASH_L_c[C_c]|
+    + (0.00215) |M_nad_c[C_c]| + (0.00005) |M_nadh_c[C_c]| + (0.00013) |M_nadp_c[C_c]|
+    + (0.0004) |M_nadph_c[C_c]| + (0.2027) |M_phe_DASH_L_c[C_c]| + (0.2419) |M_pro_DASH_L_c[C_c]|
+    + (0.0262) |M_ptrc_c[C_c]| + (0.2361) |M_ser_DASH_L_c[C_c]| + (0.000003) |M_succoa_c[C_c]|
+    + (0.000061) |M_thf_c[C_c]| + (0.2776) |M_thr_DASH_L_c[C_c]| + (0.0622) |M_trp_DASH_L_c[C_c]|
+    + (0.1509) |M_tyr_DASH_L_c[C_c]| + (0.1489) |M_utp_c[C_c]| + (0.4631) |M_val_DASH_L_c[C_c]|
+    => (29.998) |M_adp_c[C_c]| + (29.99755) |M_h_c[C_c]| + (30) |M_pi_c[C_c]| + (0.799)
+    |M_ppi_c[C_c]|
+- id: R_N2tr
+  name: Nitrogen exchange, diffusion
+  equation: '|M_n2_e[C_e]| <=> |M_n2_c[C_c]|'
+  subsystem: Transport
+- id: R_NACUP
+  name: Nicotinic acid uptake
+  equation: '|M_nac_e[C_e]| => |M_nac_c[C_c]|'
+  subsystem: Transport
+- id: R_NADK
+  name: NAD kinase
+  equation: '|M_atp_c[C_c]| + |M_nad_c[C_c]| => |M_adp_c[C_c]| + |M_h_c[C_c]| + |M_nadp_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_NADS1
+  name: NAD synthase (nh3)
+  equation: '|M_atp_c[C_c]| + |M_dnad_c[C_c]| + |M_nh4_c[C_c]| => |M_amp_c[C_c]|
+    + |M_h_c[C_c]| + |M_nad_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Glutamine Metabolism
+- id: R_NADS2
+  name: NAD synthase (glutamine-hydrolysing)
+  equation: '|M_atp_c[C_c]| + |M_dnad_c[C_c]| + |M_gln_DASH_L_c[C_c]| + |M_h2o_c[C_c]|
+    => |M_amp_c[C_c]| + |M_glu_DASH_L_c[C_c]| + |M_h_c[C_c]| + |M_nad_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Glutamine Metabolism
+- id: R_NAPRTr
+  name: NAPRTase (rev)
+  equation: '|M_h_c[C_c]| + |M_nac_c[C_c]| + |M_prpp_c[C_c]| <=> |M_nicrnt_c[C_c]|
+    + |M_ppi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_NAt3_1
+  name: sodium proton antiporter (H:NA is 1:1)
+  equation: '|M_h_e[C_e]| + |M_na1_c[C_c]| <=> |M_h_c[C_c]| + |M_na1_e[C_e]|'
+  subsystem: Transport
+- id: R_NBAHH
+  name: Nalpha-(beta-alanyl)-L-histidine hydrolase
+  equation: '|M_carn_c[C_c]| + |M_h2o_c[C_c]| <=> |M_ala_DASH_B_c[C_c]| + |M_his_DASH_L_c[C_c]|'
+  subsystem: Histidine Metabolism
+- id: R_NDPK1
+  name: nucleoside-diphosphate kinase (ATP:GDP)
+  equation: '|M_atp_c[C_c]| + |M_gdp_c[C_c]| <=> |M_adp_c[C_c]| + |M_gtp_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_NDPK2
+  name: nucleoside-diphosphate kinase (ATP:UDP)
+  equation: '|M_atp_c[C_c]| + |M_udp_c[C_c]| <=> |M_adp_c[C_c]| + |M_utp_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_NDPK3
+  name: nucleoside-diphosphate kinase (ATP:CDP)
+  equation: '|M_atp_c[C_c]| + |M_cdp_c[C_c]| <=> |M_adp_c[C_c]| + |M_ctp_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_NDPK4
+  name: nucleoside-diphosphate kinase (ATP:dTDP)
+  equation: '|M_atp_c[C_c]| + |M_dtdp_c[C_c]| <=> |M_adp_c[C_c]| + |M_dttp_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_NDPK5
+  name: nucleoside-diphosphate kinase (ATP:dGDP)
+  equation: '|M_atp_c[C_c]| + |M_dgdp_c[C_c]| <=> |M_adp_c[C_c]| + |M_dgtp_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_NDPK6
+  name: nucleoside-diphosphate kinase (ATP:dUDP)
+  equation: '|M_atp_c[C_c]| + |M_dudp_c[C_c]| <=> |M_adp_c[C_c]| + |M_dutp_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_NDPK7
+  name: nucleoside-diphosphate kinase (ATP:dCDP)
+  equation: '|M_atp_c[C_c]| + |M_dcdp_c[C_c]| <=> |M_adp_c[C_c]| + |M_dctp_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_NDPK8
+  name: nucleoside-diphosphate kinase (ATP:dADP)
+  equation: '|M_atp_c[C_c]| + |M_dadp_c[C_c]| <=> |M_adp_c[C_c]| + |M_datp_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_NDPK9
+  name: nucleoside-diphosphate kinase (ATP:IDP)
+  equation: '|M_atp_c[C_c]| + |M_idp_c[C_c]| <=> |M_adp_c[C_c]| + |M_itp_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_NH4t
+  name: ammonia reversible transport
+  equation: '|M_nh4_e[C_e]| <=> |M_nh4_c[C_c]|'
+  subsystem: Transport
+- id: R_NIT_n1p4
+  name: nitrogenase
+  equation: (32) |M_atp_c[C_c]| + (8) |M_fdred_c[C_c]| + (32) |M_h2o_c[C_c]| + |M_n2_c[C_c]|
+    => (32) |M_adp_c[C_c]| + (8) |M_fdox_c[C_c]| + (6) |M_h_c[C_c]| + |M_h2_c[C_c]|
+    + (2) |M_nh4_c[C_c]| + (32) |M_pi_c[C_c]|
+  subsystem: Other
+- id: R_NIabc
+  name: nickel transport via ABC system
+  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_ni2_e[C_e]| => |M_adp_c[C_c]| +
+    |M_h_c[C_c]| + |M_ni2_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Transport
+- id: R_NIt5
+  name: nickel transport in/out via permease (no H+)
+  equation: '|M_ni2_c[C_c]| <=> |M_ni2_e[C_e]|'
+  subsystem: Transport
+- id: R_NMNAT
+  name: nicotinamide-nucleotide adenylyltransferase
+  equation: '|M_atp_c[C_c]| + |M_h_c[C_c]| + |M_nmn_c[C_c]| => |M_nad_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_NN5HBPRT
+  name: Nicotinate-nucleotide 5-hydroxybenzimidazole phosphoribosyltransferase
+  equation: '|M_5hbzid_c[C_c]| + |M_nicrnt_c[C_c]| => |M_5pr5hbz_c[C_c]| + |M_h_c[C_c]|
+    + |M_nac_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_NNAT
+  name: nicotinate-nucleotide adenylyltransferase
+  equation: '|M_atp_c[C_c]| + |M_h_c[C_c]| + |M_nicrnt_c[C_c]| => |M_dnad_c[C_c]|
+    + |M_ppi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_NNDPR
+  name: nicotinate-nucleotide diphosphorylase (carboxylating)
+  equation: (2) |M_h_c[C_c]| + |M_prpp_c[C_c]| + |M_quln_c[C_c]| => |M_co2_c[C_c]|
+    + |M_nicrnt_c[C_c]| + |M_ppi_c[C_c]|
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_NTP1
+  name: nucleoside-triphosphatase (ATP)
+  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| => |M_adp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_NTP2
+  name: nucleoside-triphosphatase (dATP)
+  equation: '|M_datp_c[C_c]| + |M_h2o_c[C_c]| => |M_dadp_c[C_c]| + |M_h_c[C_c]| +
+    |M_pi_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_NTP3
+  name: nucleoside-triphosphatase (GTP)
+  equation: '|M_gtp_c[C_c]| + |M_h2o_c[C_c]| => |M_gdp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_NTP4
+  name: nucleoside-triphosphatase (dGTP)
+  equation: '|M_dgtp_c[C_c]| + |M_h2o_c[C_c]| => |M_dgdp_c[C_c]| + |M_h_c[C_c]| +
+    |M_pi_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_NTP5
+  name: nucleoside-triphosphatase (CTP)
+  equation: '|M_ctp_c[C_c]| + |M_h2o_c[C_c]| => |M_cdp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_NTP6
+  name: nucleoside-triphosphatase (dCTP)
+  equation: '|M_dctp_c[C_c]| + |M_h2o_c[C_c]| => |M_dcdp_c[C_c]| + |M_h_c[C_c]| +
+    |M_pi_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_NTP7
+  name: nucleoside-triphosphatase (UTP)
+  equation: '|M_h2o_c[C_c]| + |M_utp_c[C_c]| => |M_h_c[C_c]| + |M_pi_c[C_c]| + |M_udp_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_NTP8
+  name: nucleoside-triphosphatase (dUTP)
+  equation: '|M_dutp_c[C_c]| + |M_h2o_c[C_c]| => |M_dudp_c[C_c]| + |M_h_c[C_c]| +
+    |M_pi_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_NTP9
+  name: nucleoside-triphosphatase (dTTP)
+  equation: '|M_dttp_c[C_c]| + |M_h2o_c[C_c]| => |M_dtdp_c[C_c]| + |M_h_c[C_c]| +
+    |M_pi_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_NTRIR2x
+  name: nitrite Reductase (NADH)
+  equation: (5) |M_h_c[C_c]| + (3) |M_nadh_c[C_c]| + |M_no2_c[C_c]| => (2) |M_h2o_c[C_c]|
+    + (3) |M_nad_c[C_c]| + |M_nh4_c[C_c]|
+  subsystem: Nitrogen Metabolism
+- id: R_NTRIR2y
+  name: nitrite Reductase (NADPH)
+  equation: (5) |M_h_c[C_c]| + (3) |M_nadph_c[C_c]| + |M_no2_c[C_c]| => (2) |M_h2o_c[C_c]|
+    + (3) |M_nadp_c[C_c]| + |M_nh4_c[C_c]|
+  subsystem: Nitrogen Metabolism
+- id: R_NaKt_1
+  name: Na+/K+ exchanging ATPase _ 1
+  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_k_e[C_e]| + |M_na1_c[C_c]| => |M_adp_c[C_c]|
+    + |M_h_c[C_c]| + |M_k_c[C_c]| + |M_na1_e[C_e]| + |M_pi_c[C_c]|'
+  subsystem: Transport
+- id: R_OCBT
+  name: ornithine carbamoyltransferase
+  equation: '|M_cbp_c[C_c]| + |M_orn_c[C_c]| <=> |M_citr_DASH_L_c[C_c]| + |M_h_c[C_c]|
+    + |M_pi_c[C_c]|'
+  subsystem: Arginine and Proline Metabolism
+- id: R_OMCDC
+  name: _2-Oxo-4-methyl-3-carboxypentanoate decarboxylation
+  equation: '|M_3c4mop_c[C_c]| + |M_h_c[C_c]| => |M_4mop_c[C_c]| + |M_co2_c[C_c]|'
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+- id: R_OMPDC
+  name: orotidine-5'-phosphate decarboxylase
+  equation: '|M_h_c[C_c]| + |M_orot5p_c[C_c]| => |M_co2_c[C_c]| + |M_ump_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_OORr
+  name: _2-oxoglutarate synthase (reversible)
+  equation: '|M_akg_c[C_c]| + |M_coa_c[C_c]| + (2) |M_fdox_c[C_c]| <=> |M_co2_c[C_c]|
+    + (2) |M_fdred_c[C_c]| + |M_h_c[C_c]| + |M_succoa_c[C_c]|'
+  subsystem: Citric Acid Cycle
+- id: R_OPAH
+  name: _5-Oxoproline amidohydrolase (ATP-hydrolysing)
+  equation: '|M_5oxpro_c[C_c]| + |M_atp_c[C_c]| + (2) |M_h2o_c[C_c]| <=> |M_adp_c[C_c]|
+    + |M_glu_DASH_L_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Amino Acid Metabolism
+- id: R_ORNCD
+  name: ornithine cyclodeaminase
+  equation: '|M_orn_c[C_c]| => |M_nh4_c[C_c]| + |M_pro_DASH_L_c[C_c]|'
+  subsystem: Arginine and Proline Metabolism
+- id: R_ORNDC
+  name: Ornithine Decarboxylase
+  equation: '|M_h_c[C_c]| + |M_orn_c[C_c]| => |M_co2_c[C_c]| + |M_ptrc_c[C_c]|'
+  subsystem: Arginine and Proline Metabolism
+- id: R_ORNTAC
+  name: ornithine transacetylase
+  equation: '|M_acorn_c[C_c]| + |M_glu_DASH_L_c[C_c]| <=> |M_acglu_c[C_c]| + |M_orn_c[C_c]|'
+  subsystem: Amino Acid Metabolism
+- id: R_ORPT
+  name: orotate phosphoribosyltransferase
+  equation: '|M_orot5p_c[C_c]| + |M_ppi_c[C_c]| <=> |M_orot_c[C_c]| + |M_prpp_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_OXADC
+  name: oxalate decarboxylase
+  equation: '|M_h_c[C_c]| + |M_oxa_c[C_c]| => |M_co2_c[C_c]| + |M_for_c[C_c]|'
+  subsystem: Other
+- id: R_P5CRx
+  name: pyrroline-5-carboxylate reductase
+  equation: '|M_1pyr5c_c[C_c]| + (2) |M_h_c[C_c]| + |M_nadh_c[C_c]| => |M_nad_c[C_c]|
+    + |M_pro_DASH_L_c[C_c]|'
+  subsystem: Arginine and Proline Metabolism
+- id: R_PACCOAL
+  name: phenylacetate-CoA ligase
+  equation: '|M_atp_c[C_c]| + |M_coa_c[C_c]| + |M_pac_c[C_c]| => |M_amp_c[C_c]| +
+    |M_phaccoa_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_PACCOAL2
+  name: phenylacetate-CoA ligase (hydroxyphenylacetate)
+  equation: '|M_4hphac_c[C_c]| + |M_atp_c[C_c]| + |M_coa_c[C_c]| => |M_amp_c[C_c]|
+    + |M_hphaccoa_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_PACCOAL3
+  name: phenylacetate-CoA ligase (indoleacetate)
+  equation: '|M_atp_c[C_c]| + |M_coa_c[C_c]| + |M_ind3ac_c[C_c]| => |M_amp_c[C_c]|
+    + |M_indaccoa_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_PACt2r
+  name: phenylacetate transport in via proton symporter
+  equation: '|M_h_e[C_e]| + |M_pac_e[C_e]| <=> |M_h_c[C_c]| + |M_pac_c[C_c]|'
+  subsystem: Transport
+- id: R_PANTS
+  name: pantothenate synthase
+  equation: '|M_ala_DASH_B_c[C_c]| + |M_atp_c[C_c]| + |M_pant_DASH_R_c[C_c]| => |M_amp_c[C_c]|
+    + |M_h_c[C_c]| + |M_pnto_DASH_R_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Coenzyme A Biosynthesis
+- id: R_PAPSR
+  name: phosphoadenylyl-sulfate reductase (thioredoxin)
+  equation: '|M_paps_c[C_c]| + |M_trdrd_c[C_c]| => (2) |M_h_c[C_c]| + |M_pap_c[C_c]|
+    + |M_so3_c[C_c]| + |M_trdox_c[C_c]|'
+  subsystem: Cysteine Metabolism
+- id: R_PC
+  name: pyruvate carboxylase
+  equation: '|M_atp_c[C_c]| + |M_hco3_c[C_c]| + |M_pyr_c[C_c]| => |M_adp_c[C_c]|
+    + |M_h_c[C_c]| + |M_oaa_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Alanine and Aspartate Metabolism
+- id: R_PFK__adp_
+  name: ADP-specific phosphofructokinase
+  equation: '|M_adp_c[C_c]| + |M_f6p_c[C_c]| => |M_amp_c[C_c]| + |M_fdp_c[C_c]| +
+    |M_h_c[C_c]|'
+  subsystem: Glycolysis/Gluconeogenesis
+- id: R_PGAMT
+  name: phosphoglucosamine mutase
+  equation: '|M_gam1p_c[C_c]| <=> |M_gam6p_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_PGCD
+  name: phosphoglycerate dehydrogenase
+  equation: '|M_3pg_c[C_c]| + |M_nad_c[C_c]| => |M_3php_c[C_c]| + |M_h_c[C_c]| +
+    |M_nadh_c[C_c]|'
+  subsystem: Glycine and Serine Metabolism
+- id: R_PGI
+  name: glucose-6-phosphate isomerase
+  equation: '|M_g6p_c[C_c]| <=> |M_f6p_c[C_c]|'
+  subsystem: Glycolysis/Gluconeogenesis
+- id: R_PGK
+  name: phosphoglycerate kinase
+  equation: '|M_3pg_c[C_c]| + |M_atp_c[C_c]| <=> |M_13dpg_c[C_c]| + |M_adp_c[C_c]|'
+  subsystem: Glycolysis/Gluconeogenesis
+- id: R_PGLYCP
+  name: Phosphoglycolate phosphatase
+  equation: '|M_2pglyc_c[C_c]| + |M_h2o_c[C_c]| => |M_glyclt_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_PGM
+  name: phosphoglycerate mutase
+  equation: '|M_2pg_c[C_c]| <=> |M_3pg_c[C_c]|'
+  subsystem: Glycolysis/Gluconeogenesis
+- id: R_PGMT
+  name: phosphoglucomutase
+  equation: '|M_g1p_c[C_c]| <=> |M_g6p_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_PHETA1
+  name: phenylalanine transaminase
+  equation: '|M_akg_c[C_c]| + |M_phe_DASH_L_c[C_c]| <=> |M_glu_DASH_L_c[C_c]| + |M_phpyr_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_PHETRS
+  name: Phenylalanyl-tRNA synthetase
+  equation: '|M_atp_c[C_c]| + |M_phe_DASH_L_c[C_c]| + |M_trnaphe_c[C_c]| => |M_amp_c[C_c]|
+    + |M_phetrna_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_PIabc
+  name: phosphate transport via ABC system
+  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_pi_e[C_e]| => |M_adp_c[C_c]| +
+    |M_h_c[C_c]| + (2) |M_pi_c[C_c]|'
+  subsystem: Transport
+- id: R_PMANM
+  name: phosphomannomutase
+  equation: '|M_man1p_c[C_c]| <=> |M_man6p_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_PMDPHT
+  name: pyrimidine phosphatase
+  equation: '|M_5aprbu_c[C_c]| + |M_h2o_c[C_c]| => |M_4r5au_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_PMEVK
+  name: phosphomevalonate kinase
+  equation: '|M_5pmev_c[C_c]| + |M_atp_c[C_c]| => |M_5dpmev_c[C_c]| + |M_adp_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_PMPK
+  name: phosphomethylpyrimidine kinase
+  equation: '|M_4ampm_c[C_c]| + |M_atp_c[C_c]| => |M_2mahmp_c[C_c]| + |M_adp_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_PNTK
+  name: pantothenate kinase
+  equation: '|M_atp_c[C_c]| + |M_pnto_DASH_R_c[C_c]| => |M_4ppan_c[C_c]| + |M_adp_c[C_c]|
+    + |M_h_c[C_c]|'
+  subsystem: Coenzyme A Biosynthesis
+- id: R_PNTOt2
+  name: Pantothenate reversible transport via proton symport
+  equation: '|M_h_e[C_e]| + |M_pnto_DASH_R_e[C_e]| <=> |M_h_c[C_c]| + |M_pnto_DASH_R_c[C_c]|'
+  subsystem: Transport
+- id: R_POR2
+  name: pyruvate synthase
+  equation: '|M_coa_c[C_c]| + (2) |M_fdox_c[C_c]| + |M_pyr_c[C_c]| <=> |M_accoa_c[C_c]|
+    + |M_co2_c[C_c]| + (2) |M_fdred_c[C_c]| + |M_h_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_POR3
+  name: pyruvate synthase
+  equation: '|M_2obut_c[C_c]| + |M_coa_c[C_c]| + (2) |M_fdox_c[C_c]| <=> |M_co2_c[C_c]|
+    + (2) |M_fdred_c[C_c]| + |M_h_c[C_c]| + |M_ppcoa_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_PPA
+  name: inorganic diphosphatase
+  equation: '|M_h2o_c[C_c]| + |M_ppi_c[C_c]| => |M_h_c[C_c]| + (2) |M_pi_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_PPAKr
+  name: Propionate kinase
+  equation: '|M_adp_c[C_c]| + |M_ppap_c[C_c]| <=> |M_atp_c[C_c]| + |M_ppa_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_PPA_1
+  name: inorganic diphosphatase (one proton translocation)
+  equation: '|M_h2o_c[C_c]| + |M_ppi_c[C_c]| => |M_h_e[C_e]| + (2) |M_pi_c[C_c]|'
+  subsystem: Transport
+- id: R_PPBNGS
+  name: porphobilinogen synthase
+  equation: (2) |M_5aop_c[C_c]| => |M_h_c[C_c]| + (2) |M_h2o_c[C_c]| + |M_ppbng_c[C_c]|
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_PPCDC
+  name: phosphopantothenoylcysteine decarboxylase
+  equation: '|M_4ppcys_c[C_c]| + |M_h_c[C_c]| => |M_co2_c[C_c]| + |M_pan4p_c[C_c]|'
+  subsystem: Coenzyme A Biosynthesis
+- id: R_PPDK
+  name: Pyruvate,phosphate dikinase.
+  equation: '|M_atp_c[C_c]| + |M_pi_c[C_c]| + |M_pyr_c[C_c]| => |M_amp_c[C_c]| +
+    |M_h_c[C_c]| + |M_pep_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_PPK2
+  name: polyphosphate kinase
+  equation: '|M_atp_c[C_c]| + |M_ppi_c[C_c]| => |M_adp_c[C_c]| + |M_pppi_c[C_c]|'
+  subsystem: Other
+- id: R_PPNCL2
+  name: phosphopantothenate-cysteine ligase
+  equation: '|M_4ppan_c[C_c]| + |M_ctp_c[C_c]| + |M_cys_DASH_L_c[C_c]| => |M_4ppcys_c[C_c]|
+    + |M_cmp_c[C_c]| + |M_h_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Coenzyme A Biosynthesis
+- id: R_PPND
+  name: prephenate dehydrogenase
+  equation: '|M_nad_c[C_c]| + |M_pphn_c[C_c]| => |M_34hpp_c[C_c]| + |M_co2_c[C_c]|
+    + |M_nadh_c[C_c]|'
+  subsystem: Amino Acid Metabolism
+- id: R_PPNDH
+  name: prephenate dehydratase
+  equation: '|M_h_c[C_c]| + |M_pphn_c[C_c]| => |M_co2_c[C_c]| + |M_h2o_c[C_c]| +
+    |M_phpyr_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_PPS
+  name: phosphoenolpyruvate synthase
+  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_pyr_c[C_c]| => |M_amp_c[C_c]| +
+    (2) |M_h_c[C_c]| + |M_pep_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Glycolysis/Gluconeogenesis
+- id: R_PRAGSr
+  name: phosphoribosylglycinamide synthase
+  equation: '|M_atp_c[C_c]| + |M_gly_c[C_c]| + |M_pram_c[C_c]| <=> |M_adp_c[C_c]|
+    + |M_gar_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_PRAIS
+  name: phosphoribosylaminoimidazole synthase
+  equation: '|M_atp_c[C_c]| + |M_fpram_c[C_c]| => |M_adp_c[C_c]| + |M_air_c[C_c]|
+    + (2) |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_PRAIi
+  name: phosphoribosylanthranilate isomerase (irreversible)
+  equation: '|M_pran_c[C_c]| => |M_2cpr5p_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_PRAMPC
+  name: phosphoribosyl-AMP cyclohydrolase
+  equation: '|M_h2o_c[C_c]| + |M_prbamp_c[C_c]| => |M_prfp_c[C_c]|'
+  subsystem: Histidine Metabolism
+- id: R_PRASCS
+  name: phosphoribosylaminoimidazolesuccinocarboxamide synthase
+  equation: '|M_5aizc_c[C_c]| + |M_asp_DASH_L_c[C_c]| + |M_atp_c[C_c]| <=> |M_25aics_c[C_c]|
+    + |M_adp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_PRATPP
+  name: phosphoribosyl-ATP pyrophosphatase
+  equation: '|M_h2o_c[C_c]| + |M_prbatp_c[C_c]| => |M_h_c[C_c]| + |M_ppi_c[C_c]|
+    + |M_prbamp_c[C_c]|'
+  subsystem: Histidine Metabolism
+- id: R_PRFGS
+  name: phosphoribosylformylglycinamidine synthase
+  equation: '|M_atp_c[C_c]| + |M_fgam_c[C_c]| + |M_gln_DASH_L_c[C_c]| + |M_h2o_c[C_c]|
+    => |M_adp_c[C_c]| + |M_fpram_c[C_c]| + |M_glu_DASH_L_c[C_c]| + |M_h_c[C_c]| +
+    |M_pi_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_PRMICIi
+  name: _1-(5-phosphoribosyl)-5-[(5-phosphoribosylamino)methylideneamino)imidazole-4-carboxamide
+    isomerase (irreversible)
+  equation: '|M_prfp_c[C_c]| => |M_prlp_c[C_c]|'
+  subsystem: Histidine Metabolism
+- id: R_PROTRS
+  name: Prolyl-tRNA synthetase
+  equation: '|M_atp_c[C_c]| + |M_pro_DASH_L_c[C_c]| + |M_trnapro_c[C_c]| => |M_amp_c[C_c]|
+    + |M_ppi_c[C_c]| + |M_protrna_c[C_c]|'
+  subsystem: Arginine and Proline Metabolism
+- id: R_PROabc
+  name: L-proline transport via ABC system
+  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_pro_DASH_L_e[C_e]| => |M_adp_c[C_c]|
+    + |M_h_c[C_c]| + |M_pi_c[C_c]| + |M_pro_DASH_L_c[C_c]|'
+  subsystem: Transport
+- id: R_PROt2
+  name: L-proline transport in via proton symport
+  equation: '|M_h_e[C_e]| + |M_pro_DASH_L_e[C_e]| => |M_h_c[C_c]| + |M_pro_DASH_L_c[C_c]|'
+  subsystem: Transport
+- id: R_PRPPP
+  name: phosphoribosylpyrophosphate phosphatase
+  equation: '|M_h2o_c[C_c]| + |M_prpp_c[C_c]| => |M_h_c[C_c]| + |M_pi_c[C_c]| + |M_r15bp_c[C_c]|'
+  subsystem: Other
+- id: R_PRPPS
+  name: phosphoribosylpyrophosphate synthetase
+  equation: '|M_atp_c[C_c]| + |M_r5p_c[C_c]| <=> |M_amp_c[C_c]| + |M_h_c[C_c]| +
+    |M_prpp_c[C_c]|'
+  subsystem: Histidine Metabolism
+- id: R_PSCVT
+  name: _3-phosphoshikimate 1-carboxyvinyltransferase
+  equation: '|M_pep_c[C_c]| + |M_skm5p_c[C_c]| <=> |M_3psme_c[C_c]| + |M_pi_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_PSERT
+  name: phosphoserine transaminase
+  equation: '|M_3php_c[C_c]| + |M_glu_DASH_L_c[C_c]| => |M_akg_c[C_c]| + |M_pser_DASH_L_c[C_c]|'
+  subsystem: Glycine and Serine Metabolism
+- id: R_PSLP
+  name: _2-phosphosulfolactate phosphatase
+  equation: '|M_h2o_c[C_c]| + |M_slp_DASH_L_c[C_c]| => |M_pi_c[C_c]| + |M_sl_DASH_L_c[C_c]|'
+  subsystem: Coenzyme M Biosynthesis
+- id: R_PSLS
+  name: phosphosulfolactate synthase
+  equation: '|M_h_c[C_c]| + |M_pep_c[C_c]| + |M_so3_c[C_c]| => |M_slp_DASH_L_c[C_c]|'
+  subsystem: Coenzyme M Biosynthesis
+- id: R_PSP_L
+  name: phosphoserine phosphatase (L-serine)
+  equation: '|M_h2o_c[C_c]| + |M_pser_DASH_L_c[C_c]| => |M_pi_c[C_c]| + |M_ser_DASH_L_c[C_c]|'
+  subsystem: Glycine and Serine Metabolism
+- id: R_PTAr
+  name: phosphotransacetylase
+  equation: '|M_accoa_c[C_c]| + |M_pi_c[C_c]| <=> |M_actp_c[C_c]| + |M_coa_c[C_c]|'
+  subsystem: Methanogenesis
+- id: R_PTHPS
+  name: _6-pyruvoyltetrahydropterin synthase
+  equation: '|M_ahdt_c[C_c]| => |M_6pthp_c[C_c]| + |M_pppi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_PTPATi
+  name: pantetheine-phosphate adenylyltransferase
+  equation: '|M_atp_c[C_c]| + |M_h_c[C_c]| + |M_pan4p_c[C_c]| => |M_dpcoa_c[C_c]|
+    + |M_ppi_c[C_c]|'
+  subsystem: Coenzyme A Biosynthesis
+- id: R_PYK
+  name: pyruvate kinase
+  equation: '|M_adp_c[C_c]| + |M_h_c[C_c]| + |M_pep_c[C_c]| => |M_atp_c[C_c]| + |M_pyr_c[C_c]|'
+  subsystem: Glycolysis/Gluconeogenesis
+- id: R_PYRDC
+  name: pyruvate decarboxylase
+  equation: '|M_h_c[C_c]| + |M_pyr_c[C_c]| => |M_acald_c[C_c]| + |M_co2_c[C_c]|'
+  subsystem: Glycolysis/Gluconeogenesis
+- id: R_PYRt2
+  name: pyruvate transport in via proton symport
+  equation: '|M_h_e[C_e]| + |M_pyr_e[C_e]| => |M_h_c[C_c]| + |M_pyr_c[C_c]|'
+  subsystem: Transport
+- id: R_QULNS
+  name: quinolinate synthase
+  equation: '|M_dhap_c[C_c]| + |M_iasp_c[C_c]| => (2) |M_h2o_c[C_c]| + |M_pi_c[C_c]|
+    + |M_quln_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_RBFSa
+  name: riboflavin synthase
+  equation: '|M_4r5au_c[C_c]| + |M_db4p_c[C_c]| => |M_dmlz_c[C_c]| + (2) |M_h2o_c[C_c]|
+    + |M_pi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_RBFSb
+  name: riboflavin synthase
+  equation: (2) |M_dmlz_c[C_c]| => |M_4r5au_c[C_c]| + |M_ribflv_c[C_c]|
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_RBK
+  name: ribokinase
+  equation: '|M_atp_c[C_c]| + |M_rib_DASH_D_c[C_c]| => |M_adp_c[C_c]| + |M_h_c[C_c]|
+    + |M_r5p_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_RBPC
+  name: ribulose-bisphosphate carboxylase
+  equation: '|M_co2_c[C_c]| + |M_h2o_c[C_c]| + |M_rb15bp_c[C_c]| => (2) |M_3pg_c[C_c]|
+    + (2) |M_h_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_RBPI
+  name: ribose 1,5-bisphosphate isomerase
+  equation: '|M_r15bp_c[C_c]| => |M_rb15bp_c[C_c]|'
+  subsystem: Other
+- id: R_RH2CD
+  name: (R)-(homo)2citrate dehydratase
+  equation: '|M_Rh2cit_c[C_c]| <=> |M_h2acon_DASH_C_c[C_c]| + |M_h2o_c[C_c]|'
+  subsystem: Coenzyme B Biosynthesis
+- id: R_RH3CD
+  name: (R)-(homo)3citrate dehydratase
+  equation: '|M_Rh3cit_c[C_c]| <=> |M_h2o_c[C_c]| + |M_h3acon_DASH_C_c[C_c]|'
+  subsystem: Coenzyme B Biosynthesis
+- id: R_RIBFLVt2
+  name: riboflavin transport in via proton symport
+  equation: '|M_h_e[C_e]| + |M_ribflv_e[C_e]| => |M_h_c[C_c]| + |M_ribflv_c[C_c]|'
+  subsystem: Transport
+- id: R_RNDR1
+  name: ribonucleoside-diphosphate reductase (ADP)
+  equation: '|M_adp_c[C_c]| + |M_trdrd_c[C_c]| => |M_dadp_c[C_c]| + |M_h2o_c[C_c]|
+    + |M_trdox_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_RNDR2
+  name: ribonucleoside-diphosphate reductase (GDP)
+  equation: '|M_gdp_c[C_c]| + |M_trdrd_c[C_c]| => |M_dgdp_c[C_c]| + |M_h2o_c[C_c]|
+    + |M_trdox_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_RNDR3
+  name: ribonucleoside-diphosphate reductase (CDP)
+  equation: '|M_cdp_c[C_c]| + |M_trdrd_c[C_c]| => |M_dcdp_c[C_c]| + |M_h2o_c[C_c]|
+    + |M_trdox_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_RNDR4
+  name: ribonucleoside-diphosphate reductase (UDP)
+  equation: '|M_trdrd_c[C_c]| + |M_udp_c[C_c]| => |M_dudp_c[C_c]| + |M_h2o_c[C_c]|
+    + |M_trdox_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_RNTR1
+  name: ribonucleoside-triphosphate reductase (ATP)
+  equation: '|M_atp_c[C_c]| + |M_trdrd_c[C_c]| => |M_datp_c[C_c]| + |M_h2o_c[C_c]|
+    + |M_trdox_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_RNTR2
+  name: ribonucleoside-triphosphate reductase (GTP)
+  equation: '|M_gtp_c[C_c]| + |M_trdrd_c[C_c]| => |M_dgtp_c[C_c]| + |M_h2o_c[C_c]|
+    + |M_trdox_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_RNTR3
+  name: ribonucleoside-triphosphate reductase (CTP)
+  equation: '|M_ctp_c[C_c]| + |M_trdrd_c[C_c]| => |M_dctp_c[C_c]| + |M_h2o_c[C_c]|
+    + |M_trdox_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_RNTR4
+  name: ribonucleoside-triphosphate reductase (UTP)
+  equation: '|M_trdrd_c[C_c]| + |M_utp_c[C_c]| => |M_dutp_c[C_c]| + |M_h2o_c[C_c]|
+    + |M_trdox_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_RPE
+  name: ribulose 5-phosphate 3-epimerase
+  equation: '|M_ru5p_DASH_D_c[C_c]| <=> |M_xu5p_DASH_D_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_RPI
+  name: ribose-5-phosphate isomerase
+  equation: '|M_r5p_c[C_c]| <=> |M_ru5p_DASH_D_c[C_c]|'
+  subsystem: Histidine Metabolism
+- id: R_RZ5PP2
+  name: alpha-ribazole 5-phosphate phosphatase
+  equation: '|M_5pr5hbz_c[C_c]| + |M_h2o_c[C_c]| => |M_pi_c[C_c]| + |M_r5hbzi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_SECS
+  name: sulfoethylcysteine synthase
+  equation: '|M_2tcc_c[C_c]| + |M_h_c[C_c]| + |M_nadh_c[C_c]| => |M_nad_c[C_c]| +
+    |M_sec_c[C_c]|'
+  subsystem: Coenzyme M Biosynthesis
+- id: R_SERAT
+  name: serine O-acetyltransferase
+  equation: '|M_accoa_c[C_c]| + |M_ser_DASH_L_c[C_c]| <=> |M_acser_c[C_c]| + |M_coa_c[C_c]|'
+  subsystem: Cysteine Metabolism
+- id: R_SERTRS
+  name: Seryl-tRNA synthetase
+  equation: '|M_atp_c[C_c]| + |M_ser_DASH_L_c[C_c]| + |M_trnaser_c[C_c]| => |M_amp_c[C_c]|
+    + |M_ppi_c[C_c]| + |M_sertrna_c[C_c]|'
+  subsystem: Glycine and Serine Metabolism
+- id: R_SHCD
+  name: (S)-homocitrate dehydratase
+  equation: '|M_Shcit_c[C_c]| <=> |M_h2o_c[C_c]| + |M_hacon_DASH_C_c[C_c]|'
+  subsystem: Coenzyme B Biosynthesis
+- id: R_SHCHCC
+  name: sirohydrochlorin cobaltochelatase
+  equation: '|M_cobalt2_c[C_c]| + |M_dscl_c[C_c]| => |M_copre2_c[C_c]| + (3) |M_h_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_SHCHD2
+  name: sirohydrochlorin dehydrogenase (NAD)
+  equation: '|M_dscl_c[C_c]| + |M_nad_c[C_c]| => |M_h_c[C_c]| + |M_nadh_c[C_c]| +
+    |M_scl_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_SHCHF
+  name: sirohydrochlorin ferrochelatase
+  equation: '|M_fe2_c[C_c]| + |M_scl_c[C_c]| => (3) |M_h_c[C_c]| + |M_sheme_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_SHK3Dr
+  name: shikimate dehydrogenase
+  equation: '|M_3dhsk_c[C_c]| + |M_h_c[C_c]| + |M_nadph_c[C_c]| <=> |M_nadp_c[C_c]|
+    + |M_skm_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_SHKK
+  name: shikimate kinase
+  equation: '|M_atp_c[C_c]| + |M_skm_c[C_c]| => |M_adp_c[C_c]| + |M_h_c[C_c]| + |M_skm5p_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_SLDx
+  name: L-sulfolactate dehydrogenase (NAD+)
+  equation: '|M_nad_c[C_c]| + |M_sl_DASH_L_c[C_c]| <=> |M_3spyr_c[C_c]| + |M_h_c[C_c]|
+    + |M_nadh_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_SLDxi2
+  name: L-sulfolactate dehydrogenase (NAD+) (irreversible other direction)
+  equation: '|M_3spyr_c[C_c]| + |M_h_c[C_c]| + |M_nadh_c[C_c]| => |M_nad_c[C_c]|
+    + |M_sl_DASH_L_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_SLDy
+  name: L-sulfolactate dehydrogenase (NADP+)
+  equation: '|M_nadp_c[C_c]| + |M_sl_DASH_L_c[C_c]| <=> |M_3spyr_c[C_c]| + |M_h_c[C_c]|
+    + |M_nadph_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_SMTZS
+  name: sulfomethyl thiazolidine synthase
+  equation: '|M_2saa_c[C_c]| + |M_cys_DASH_L_c[C_c]| => |M_2tcc_c[C_c]| + |M_h2o_c[C_c]|'
+  subsystem: Coenzyme M Biosynthesis
+- id: R_SO3t
+  name: sulfite transport exchange via proton symport
+  equation: '|M_h_e[C_e]| + |M_so3_e[C_e]| <=> |M_h_c[C_c]| + |M_so3_c[C_c]|'
+  subsystem: Transport
+- id: R_SO4t2
+  name: sulfate transport in via proton symport
+  equation: '|M_h_e[C_e]| + |M_so4_e[C_e]| => |M_h_c[C_c]| + |M_so4_c[C_c]|'
+  subsystem: Transport
+- id: R_SPDC
+  name: sulfopyruvate decarboxylase
+  equation: '|M_3spyr_c[C_c]| + |M_h_c[C_c]| => |M_2saa_c[C_c]| + |M_co2_c[C_c]|'
+  subsystem: Coenzyme M Biosynthesis
+- id: R_SPODM
+  name: superoxide dismutase
+  equation: (2) |M_h_c[C_c]| + (2) |M_o2s_c[C_c]| => |M_h2o2_c[C_c]| + |M_o2_c[C_c]|
+  subsystem: Other
+- id: R_SSALx
+  name: succinate-semialdehyde dehydrogenase (NAD)
+  equation: '|M_h2o_c[C_c]| + |M_nad_c[C_c]| + |M_sucsal_c[C_c]| => (2) |M_h_c[C_c]|
+    + |M_nadh_c[C_c]| + |M_succ_c[C_c]|'
+  subsystem: Glutamate metabolism
+- id: R_SSALy
+  name: succinate-semialdehyde dehydrogenase (NADP)
+  equation: '|M_h2o_c[C_c]| + |M_nadp_c[C_c]| + |M_sucsal_c[C_c]| => (2) |M_h_c[C_c]|
+    + |M_nadph_c[C_c]| + |M_succ_c[C_c]|'
+  subsystem: Glutamate metabolism
+- id: R_SULabc
+  name: sulfate transport via ABC system
+  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_so4_e[C_e]| => |M_adp_c[C_c]| +
+    |M_h_c[C_c]| + |M_pi_c[C_c]| + |M_so4_c[C_c]|'
+  subsystem: Transport
+- id: R_St
+  name: sulfur diffusion
+  equation: '|M_s_e[C_e]| <=> |M_s_c[C_c]|'
+  subsystem: Transport
+- id: R_TALA
+  name: transaldolase
+  equation: '|M_g3p_c[C_c]| + |M_s7p_c[C_c]| <=> |M_e4p_c[C_c]| + |M_f6p_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_TAPTPP
+  name: triaminopyrimidine triphosphate phosphorilase
+  equation: '|M_h2o_c[C_c]| + |M_ptp_c[C_c]| => |M_25dhpp_c[C_c]| + |M_h_c[C_c]|
+    + |M_ppi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_TAPTPPM
+  name: triaminopyrimidine triphosphate phosphomutase
+  equation: '|M_ptp_c[C_c]| => |M_dhp23cp_c[C_c]| + |M_h2o_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: R_TDPDRE
+  name: dTDP-4-dehydrorhamnose 3,5-epimerase
+  equation: '|M_dtdp4d6dg_c[C_c]| => |M_dtdp4d6dm_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_TDPDRR
+  name: dTDP-4-dehydrorhamnose reductase
+  equation: '|M_dtdp4d6dm_c[C_c]| + |M_h_c[C_c]| + |M_nadph_c[C_c]| => |M_dtdprmn_c[C_c]|
+    + |M_nadp_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_TDPGDH
+  name: dTDPglucose 4,6-dehydratase
+  equation: '|M_dtdpglu_c[C_c]| => |M_dtdp4d6dg_c[C_c]| + |M_h2o_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_THACH
+  name: trans-homoaconitate hydrolase
+  equation: '|M_h2o_c[C_c]| + |M_hacon_DASH_T_c[C_c]| <=> |M_Shcit_c[C_c]|'
+  subsystem: Coenzyme B Biosynthesis
+- id: R_THMabc
+  name: thiamine transport via ABC system
+  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_thm_e[C_e]| => |M_adp_c[C_c]| +
+    |M_h_c[C_c]| + |M_pi_c[C_c]| + |M_thm_c[C_c]|'
+  subsystem: Transport
+- id: R_THRAr
+  name: Threonine Aldolase
+  equation: '|M_thr_DASH_L_c[C_c]| <=> |M_acald_c[C_c]| + |M_gly_c[C_c]|'
+  subsystem: Threonine and Lysine Metabolism
+- id: R_THRPD
+  name: threonine-phosphate decarboxylase
+  equation: '|M_h_c[C_c]| + |M_thrp_c[C_c]| => |M_applp_c[C_c]| + |M_co2_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_THRPS
+  name: threonine-phosphate synthase
+  equation: '|M_atp_c[C_c]| + |M_thr_DASH_L_c[C_c]| => |M_adp_c[C_c]| + |M_h_c[C_c]|
+    + |M_thrp_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_THRS
+  name: threonine synthase
+  equation: '|M_h2o_c[C_c]| + |M_phom_c[C_c]| => |M_pi_c[C_c]| + |M_thr_DASH_L_c[C_c]|'
+  subsystem: Threonine and Lysine Metabolism
+- id: R_THRTRS
+  name: Threonyl-tRNA synthetase
+  equation: '|M_atp_c[C_c]| + |M_thr_DASH_L_c[C_c]| + |M_trnathr_c[C_c]| => |M_amp_c[C_c]|
+    + |M_ppi_c[C_c]| + |M_thrtrna_c[C_c]|'
+  subsystem: Threonine and Lysine Metabolism
+- id: R_THZPSN
+  name: thiazole phosphate synthesis
+  equation: '|M_atp_c[C_c]| + |M_cys_DASH_L_c[C_c]| + |M_dxyl5p_c[C_c]| + |M_tyr_DASH_L_c[C_c]|
+    => |M_4hba_c[C_c]| + |M_4mpetz_c[C_c]| + |M_ala_DASH_L_c[C_c]| + |M_amp_c[C_c]|
+    + |M_co2_c[C_c]| + |M_h_c[C_c]| + |M_h2o_c[C_c]| + |M_ppi_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_TIH2CD
+  name: threo-iso(homo)2citrate dehydrogenase
+  equation: '|M_nad_c[C_c]| + |M_tih2cit_c[C_c]| => |M_co2_c[C_c]| + |M_nadh_c[C_c]|
+    + |M_ohepa_c[C_c]|'
+  subsystem: Coenzyme B Biosynthesis
+- id: R_TIH3CD
+  name: threo-iso(homo)3citrate dehydrogenase
+  equation: '|M_nad_c[C_c]| + |M_tih3cit_c[C_c]| => |M_2ood_c[C_c]| + |M_co2_c[C_c]|
+    + |M_nadh_c[C_c]|'
+  subsystem: Coenzyme B Biosynthesis
+- id: R_TIHCD
+  name: threo-isohomocitrate dehydrogenase
+  equation: '|M_ihcit_DASH_T_c[C_c]| + |M_nad_c[C_c]| => |M_co2_c[C_c]| + |M_nadh_c[C_c]|
+    + |M_ohexa_c[C_c]|'
+  subsystem: Coenzyme B Biosynthesis
+- id: R_TKT1
+  name: transketolase
+  equation: '|M_r5p_c[C_c]| + |M_xu5p_DASH_D_c[C_c]| <=> |M_g3p_c[C_c]| + |M_s7p_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_TKT2
+  name: transketolase
+  equation: '|M_e4p_c[C_c]| + |M_xu5p_DASH_D_c[C_c]| <=> |M_f6p_c[C_c]| + |M_g3p_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_TMAMT
+  name: Trimethylamine methyltransferase
+  equation: '|M_com_c[C_c]| + |M_tma_c[C_c]| => |M_dma_c[C_c]| + |M_mcom_c[C_c]|'
+  subsystem: Methanogenesis
+- id: R_TMAt2
+  name: Trimethylamine symport
+  equation: '|M_h_e[C_e]| + |M_tma_e[C_e]| <=> |M_h_c[C_c]| + |M_tma_c[C_c]|'
+  subsystem: Transport
+- id: R_TMDK1
+  name: thymidine kinase (ATP:thymidine)
+  equation: '|M_atp_c[C_c]| + |M_thymd_c[C_c]| => |M_adp_c[C_c]| + |M_dtmp_c[C_c]|
+    + |M_h_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_TMDPP
+  name: thymidine phosphorylase
+  equation: '|M_pi_c[C_c]| + |M_thymd_c[C_c]| <=> |M_2dr1p_c[C_c]| + |M_thym_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_TMDS
+  name: thymidylate synthase
+  equation: '|M_dump_c[C_c]| + |M_mlthf_c[C_c]| => |M_dhf_c[C_c]| + |M_dtmp_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_TMKr
+  name: thiamine kinase
+  equation: '|M_atp_c[C_c]| + |M_thm_c[C_c]| <=> |M_adp_c[C_c]| + |M_h_c[C_c]| +
+    |M_thmmp_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_TMPKr
+  name: thiamine-phosphate kinase
+  equation: '|M_atp_c[C_c]| + |M_thmmp_c[C_c]| <=> |M_adp_c[C_c]| + |M_thmpp_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_TMPPP
+  name: thiamine-phosphate diphosphorylase
+  equation: '|M_2mahmp_c[C_c]| + |M_4mpetz_c[C_c]| + |M_h_c[C_c]| => |M_ppi_c[C_c]|
+    + |M_thmmp_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_TPI
+  name: triose-phosphate isomerase
+  equation: '|M_dhap_c[C_c]| <=> |M_g3p_c[C_c]|'
+  subsystem: Glycolysis/Gluconeogenesis
+- id: R_TRDR
+  name: thioredoxin reductase (NADPH)
+  equation: '|M_h_c[C_c]| + |M_nadph_c[C_c]| + |M_trdox_c[C_c]| => |M_nadp_c[C_c]|
+    + |M_trdrd_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_TRPS1
+  name: tryptophan synthase (indoleglycerol phosphate)
+  equation: '|M_3ig3p_c[C_c]| + |M_ser_DASH_L_c[C_c]| => |M_g3p_c[C_c]| + |M_h2o_c[C_c]|
+    + |M_trp_DASH_L_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_TRPS2
+  name: tryptophan synthase (indole)
+  equation: '|M_indole_c[C_c]| + |M_ser_DASH_L_c[C_c]| => |M_h2o_c[C_c]| + |M_trp_DASH_L_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_TRPS3
+  name: tryptophan synthase (indoleglycerol phosphate)
+  equation: '|M_3ig3p_c[C_c]| => |M_g3p_c[C_c]| + |M_indole_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_TRPTA
+  name: tryptophan transaminase
+  equation: '|M_akg_c[C_c]| + |M_trp_DASH_L_c[C_c]| <=> |M_glu_DASH_L_c[C_c]| + |M_indpyr_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_TRPTRS
+  name: Tryptophanyl-tRNA synthetase
+  equation: '|M_atp_c[C_c]| + |M_trnatrp_c[C_c]| + |M_trp_DASH_L_c[C_c]| => |M_amp_c[C_c]|
+    + |M_ppi_c[C_c]| + |M_trptrna_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_TSR
+  name: thiosulfate reductase
+  equation: '|M_h2_c[C_c]| + |M_tsul_c[C_c]| => |M_h2s_c[C_c]| + |M_so3_c[C_c]|'
+  subsystem: Cysteine Metabolism
+- id: R_TSULabc
+  name: thiosulfate transport via ABC system
+  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_tsul_e[C_e]| => |M_adp_c[C_c]|
+    + |M_h_c[C_c]| + |M_pi_c[C_c]| + |M_tsul_c[C_c]|'
+  subsystem: Transport
+- id: R_TYRTA
+  name: tyrosine transaminase
+  equation: '|M_akg_c[C_c]| + |M_tyr_DASH_L_c[C_c]| <=> |M_34hpp_c[C_c]| + |M_glu_DASH_L_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_TYRTRS
+  name: tyrosyl-tRNA synthetase
+  equation: '|M_atp_c[C_c]| + |M_trnatyr_c[C_c]| + |M_tyr_DASH_L_c[C_c]| => |M_amp_c[C_c]|
+    + |M_ppi_c[C_c]| + |M_tyrtrna_c[C_c]|'
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+- id: R_UAG2E
+  name: UDP-N-acetylglucosamine 2-epimerase
+  equation: '|M_uacgam_c[C_c]| <=> |M_uacmam_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_UAG2EMA
+  name: UDP-N-acetyl-D-glucosamine 2-epimerase (Hydrolysis)
+  equation: '|M_h2o_c[C_c]| + |M_uacgam_c[C_c]| <=> |M_acmana_c[C_c]| + |M_h_c[C_c]|
+    + |M_udp_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_UAGCVT
+  name: UDP-N-acetylglucosamine 1-carboxyvinyltransferase
+  equation: '|M_pep_c[C_c]| + |M_uacgam_c[C_c]| => |M_pi_c[C_c]| + |M_uaccg_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_UAGDP
+  name: UDP-N-acetylglucosamine diphosphorylase
+  equation: '|M_acgam1p_c[C_c]| + |M_h_c[C_c]| + |M_utp_c[C_c]| => |M_ppi_c[C_c]|
+    + |M_uacgam_c[C_c]|'
+  subsystem: Lipid & Cell Wall Metabolism
+- id: R_UAPGR
+  name: UDP-N-acetylenolpyruvoylglucosamine reductase
+  equation: '|M_h_c[C_c]| + |M_nadph_c[C_c]| + |M_uaccg_c[C_c]| => |M_nadp_c[C_c]|
+    + |M_uamr_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_UDPG4E
+  name: UDPglucose 4-epimerase
+  equation: '|M_udpg_c[C_c]| <=> |M_udpgal_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_UDPGDr
+  name: UDPglucose 6-dehydrogenase
+  equation: '|M_h2o_c[C_c]| + (2) |M_nad_c[C_c]| + |M_udpg_c[C_c]| <=> (3) |M_h_c[C_c]|
+    + (2) |M_nadh_c[C_c]| + |M_udpglcur_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_UMPK
+  name: UMP kinase
+  equation: '|M_atp_c[C_c]| + |M_ump_c[C_c]| <=> |M_adp_c[C_c]| + |M_udp_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_UNK_CBL1DEGt
+  name: unknown cobalamin degradation product diffusion
+  equation: '|M_unknown_cbl1deg_e[C_e]| <=> |M_unknown_cbl1deg_c[C_c]|'
+  subsystem: Transport
+- id: R_UNK_RBFDEGt
+  name: unknown riboflavin degradation product diffusion
+  equation: '|M_unknown_rbfdeg_e[C_e]| <=> |M_unknown_rbfdeg_c[C_c]|'
+  subsystem: Transport
+- id: R_UPP3MT
+  name: uroporphyrinogen methyltransferase
+  equation: (2) |M_amet_c[C_c]| + |M_uppg3_c[C_c]| => (2) |M_ahcys_c[C_c]| + |M_dscl_c[C_c]|
+    + |M_h_c[C_c]|
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_UPP3S
+  name: uroporphyrinogen-III synthase
+  equation: '|M_hmbil_c[C_c]| => |M_h2o_c[C_c]| + |M_uppg3_c[C_c]|'
+  subsystem: Vitamins & Cofactor Biosynthesis
+- id: R_UREAt
+  name: Urea transport via facilitate diffusion
+  equation: '|M_urea_e[C_e]| <=> |M_urea_c[C_c]|'
+  subsystem: Transport
+- id: R_URIDK1
+  name: uridylate kinase (UMP)
+  equation: '|M_atp_c[C_c]| + |M_ump_c[C_c]| => |M_adp_c[C_c]| + |M_udp_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_URIDK2r
+  name: uridylate kinase (dUMP)
+  equation: '|M_atp_c[C_c]| + |M_dump_c[C_c]| <=> |M_adp_c[C_c]| + |M_dudp_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_VALTA
+  name: valine transaminase
+  equation: '|M_akg_c[C_c]| + |M_val_DASH_L_c[C_c]| <=> |M_3mob_c[C_c]| + |M_glu_DASH_L_c[C_c]|'
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+- id: R_VALTRS
+  name: Valyl-tRNA synthetase
+  equation: '|M_atp_c[C_c]| + |M_trnaval_c[C_c]| + |M_val_DASH_L_c[C_c]| => |M_amp_c[C_c]|
+    + |M_ppi_c[C_c]| + |M_valtrna_c[C_c]|'
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+- id: R_VALt2r
+  name: L-valine reversible transport via proton symport
+  equation: '|M_h_e[C_e]| + |M_val_DASH_L_e[C_e]| <=> |M_h_c[C_c]| + |M_val_DASH_L_c[C_c]|'
+  subsystem: Transport
+- id: R_VOR
+  name: _2-oxoisovalerate ferredoxin reductase
+  equation: '|M_3mob_c[C_c]| + |M_coa_c[C_c]| + (2) |M_fdox_c[C_c]| <=> |M_co2_c[C_c]|
+    + (2) |M_fdred_c[C_c]| + |M_h_c[C_c]| + |M_ibcoa_c[C_c]|'
+  subsystem: Central Metabolism
+- id: R_XPPT
+  name: xanthine phosphoribosyltransferase
+  equation: '|M_prpp_c[C_c]| + |M_xan_c[C_c]| => |M_ppi_c[C_c]| + |M_xmp_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_YUMPS
+  name: yUMP synthetase
+  equation: '|M_r5p_c[C_c]| + |M_ura_c[C_c]| <=> |M_h2o_c[C_c]| + |M_psd5p_c[C_c]|'
+  subsystem: Nucleotide Metabolism
+- id: R_ZNabc
+  name: zinc transport via ABC system
+  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_zn2_e[C_e]| => |M_adp_c[C_c]| +
+    |M_h_c[C_c]| + |M_pi_c[C_c]| + |M_zn2_c[C_c]|'
+  subsystem: Transport
