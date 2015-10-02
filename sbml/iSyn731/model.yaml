@@ -1,8 +1,11 @@
-name: Synechocystis sp. PCC 6803 iSyn731
-biomass: Biomass_Hetero
+name: SBML
+biomass: R_Ec_biomass_SynAuto
+default_flux_limit: 1000.0
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
 media:
 - include: medium.yaml
+limits:
+- include: limits.yaml
