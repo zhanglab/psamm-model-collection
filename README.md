@@ -26,5 +26,7 @@ Model corrections
 - [iSyn731](sbml/iSyn731): Updated to new model from http://www.maranasgroup.com/models.htm
   downloaded on September 9, 2015 (changes:
   [ca39f98](https://github.com/zhanglab/psamm-model-collection/commit/ca39f98172275718bdbc369c53015b71aec91e70)).
+- [RECON1](sbml/RECON1): Fix stoichiometric consistency:
+  [f72da25](https://github.com/zhanglab/psamm-model-collection/commit/f72da25d9a9e0e6ac319d3ebb566764bb1733cf5)
 - [RECON2](sbml/recon2): Fix stoichiometric consistency:
   [5671060](https://github.com/zhanglab/psamm-model-collection/commit/5671060606674cec61141f71dbe0d9d545e149dc).
