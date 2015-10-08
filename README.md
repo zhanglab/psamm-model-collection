@@ -11,3 +11,10 @@ The collection of models is split into two sections:
   loader in _psamm-import_.
 - [**excel**](excel): Models that have been loaded using a model-specific Excel
   file loader in _psamm-import_.
+
+Model corrections
+-----------------
+
+- [iJN746](sbml/iJN746): Corrected compound references to cardiolipins in biomass reaction
+  to refer to cardiolipins in the periplasm:
+  [7d68a62](https://github.com/zhanglab/psamm-model-collection/commit/7d68a6236faf5835229971cbc84cc2eab36ca1fa).
