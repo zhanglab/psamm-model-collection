@@ -11,3 +11,10 @@ The collection of models is split into two sections:
   loader in _psamm-import_.
 - [**excel**](excel): Models that have been loaded using a model-specific Excel
   file loader in _psamm-import_.
+
+Model corrections
+-----------------
+
+- [iSyn731](sbml/iSyn731): Updated to new model from http://www.maranasgroup.com/models.htm
+  downloaded on September 9, 2015 (changes:
+  [ca39f98](https://github.com/zhanglab/psamm-model-collection/commit/ca39f98172275718bdbc369c53015b71aec91e70)).
