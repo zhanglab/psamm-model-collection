@@ -76,7 +76,7 @@
     + |C0010[Cytosol]|'
 - id: IR00136
   name: 2-Oxoglutarate carboxy-lyase
-  equation: '|C0024[Cytosol]| => |C0191[Cytosol]| + |C0011[Cytosol]|'
+  equation: '|C0024[Cytosol]| + |C0065[Cytosol]| => |C0191[Cytosol]| + |C0011[Cytosol]|'
 - id: IR00138
   name: Glutathione:hydrogen-peroxide oxidoreductase
   equation: '|C0025[Cytosol]| + (2) |C0042[Cytosol]| => |C0109[Cytosol]| + (2) |C0001[Cytosol]|'
@@ -110,7 +110,7 @@
     + |C3492[Cytosol]|'
 - id: IR00159
   name: Acetyl phosphate phosphohydrolase
-  equation: '|C0188[Cytosol]| + |C0001[Cytosol]| => |C0029[Cytosol]| + |C0009[Cytosol]|'
+  equation: '|C0188[Cytosol]| + |C0001[Cytosol]| => |C0029[Cytosol]| + |C0009[Cytosol]| + |C0065[Cytosol]|'
 - id: IR00173
   name: Guanosine-3',5'-bis(diphosphate) 3'-pyrophosphohydrolase
   equation: '|C0889[Cytosol]| + |C0001[Cytosol]| => |C0012[Cytosol]| + |C0031[Cytosol]|'
@@ -216,7 +216,7 @@
   equation: '|C0337[Cytosol]| + |C0001[Cytosol]| => |C0029[Cytosol]| + |C0062[Cytosol]|'
 - id: IR00373
   name: L-Ornithine carboxy-lyase
-  equation: '|C0062[Cytosol]| => |C0116[Cytosol]| + |C0011[Cytosol]|'
+  equation: '|C0062[Cytosol]| + |C0065[Cytosol]| => |C0116[Cytosol]| + |C0011[Cytosol]|'
 - id: IR00374
   name: L-Ornithine ammonia-lyase(cyclizing)
   equation: '|C0062[Cytosol]| => |C0126[Cytosol]| + |C0065[Cytosol]| + |C0013[Cytosol]|'
@@ -368,7 +368,7 @@
 - id: IR00765
   name: L-Valine:NADP+ oxidoreductase (deaminating)
   equation: '|C0151[Cytosol]| + |C0006[Cytosol]| + |C0001[Cytosol]| => |C0121[Cytosol]|
-    + |C0005[Cytosol]| + |C0013[Cytosol]|'
+    + |C0005[Cytosol]| + |C0013[Cytosol]| + (2) |C0065[Cytosol]|'
 - id: IR00776
   name: 5,10-Methylenetetrahydrofolate:3-methyl-2-oxobutanoatehydroxymethyltransferase
   equation: '|C0121[Cytosol]| + |C0122[Cytosol]| + |C0001[Cytosol]| => |C0702[Cytosol]|
@@ -606,7 +606,7 @@
   equation: '|C2669[Cytosol]| + |C0001[Cytosol]| => |C0036[Cytosol]| + |C0498[Cytosol]|'
 - id: IR01585
   name: UDPglucose:D-glucose-6-phosphate 1-alpha-D-glucosyltransferase
-  equation: '|C0077[Cytosol]| + |C0026[Cytosol]| => |C0014[Cytosol]| + |C0513[Cytosol]|'
+  equation: '|C0077[Cytosol]| + |C0026[Cytosol]| => |C0014[Cytosol]| + |C0513[Cytosol]| + |C0065[Cytosol]|'
 - id: IR01608
   name: Trehalose-6-phosphate phosphohydrolase
   equation: '|C0513[Cytosol]| + |C0001[Cytosol]| => |C0009[Cytosol]| + |C0782[Cytosol]|'
@@ -1243,7 +1243,7 @@
   equation: (4) |C0680[Cytosol]| + |C0001[Cytosol]| => |C0743[Cytosol]| + (4) |C0957[Cytosol]|
 - id: IR04287
   name: uroporphyrinogen methyltransferase
-  equation: (2) |C0017[Cytosol]| + |C0763[Cytosol]| => |C0065[Cytosol]| + (2) |C0019[Cytosol]|
+  equation: (2) |C0017[Cytosol]| + |C0763[Cytosol]| + (6) |C0065[Cytosol]| => (2) |C0019[Cytosol]|
     + |C1601[Cytosol]|
 - id: IR04292
   name: NADS1
@@ -1324,7 +1324,7 @@
     => (2) |C0023[Cytosol]| + |C0006[Cytosol]|'
 - id: IR04586
   name: L-Alanine:NAD+ oxidoreductase (deaminating) (R)
-  equation: '|C0020[Cytosol]| + |C0065[Cytosol]| + |C0004[Cytosol]| + |C0013[Cytosol]|
+  equation: '|C0020[Cytosol]| + (2) |C0065[Cytosol]| + |C0004[Cytosol]| + |C0013[Cytosol]|
     => |C0003[Cytosol]| + |C0035[Cytosol]| + |C0001[Cytosol]|'
 - id: IR04615
   name: L-Malate glyoxylate-lyase (CoA-acetylating) (R)
@@ -1700,7 +1700,7 @@
     + (2) |C0677[Cytosol]|
 - id: IR09357
   name: hydroxymethylglutaryl-CoA lyase
-  equation: '|C0286[Cytosol]| => |C0138[Cytosol]| + |C0022[Cytosol]| + (5) |C0065[Cytosol]|'
+  equation: '|C0286[Cytosol]| => |C0138[Cytosol]| + |C0022[Cytosol]|'
 - id: IR09364
   name: adenosylcobinamide-phosphate synthase
   equation: '|C3812[Cytosol]| + |C0002[Cytosol]| + |C2517[Cytosol]| => |C3814[Cytosol]|
@@ -1917,7 +1917,7 @@
     + |C0065[Cytosol]| + |C0008[Cytosol]| + |C3638[Cytosol]|'
 - id: IR10056
   name: precorrin-2 C20-methyltransferase
-  equation: '|C0017[Cytosol]| + |C1601[Cytosol]| => |C3355[Cytosol]| + |C0065[Cytosol]|
+  equation: '|C0017[Cytosol]| + |C1601[Cytosol]| => |C3355[Cytosol]| + (8) |C0065[Cytosol]|
     + |C0019[Cytosol]|'
 - id: IR10061
   name: quinone oxidoreductase
@@ -1955,7 +1955,7 @@
   equation: '|C2528[Cytosol]| + |C0133[Cytosol]| => |C0012[Cytosol]| + |C3377[Cytosol]|'
 - id: IR10481
   name: 5-amino-1-(5-phospho-D-ribosyl)imidazole:carbon-dioxide ligase (ADP-forming)
-  equation: '|C0234[Cytosol]| + |C0002[Cytosol]| + |C2114[Cytosol]| => |C0009[Cytosol]|
+  equation: '|C0234[Cytosol]| + |C0002[Cytosol]| + |C2114[Cytosol]| + (2) |C0065[Cytosol]| => |C0009[Cytosol]|
     + |C0008[Cytosol]| + |C9683[Cytosol]|'
 - id: IR10490
   name: '! bcj_biomass'
@@ -2315,7 +2315,7 @@
 - id: RR00067
   name: L-Glutamate:NAD+ oxidoreductase (transaminating)
   equation: '|C0003[Cytosol]| + (2) |C0023[Cytosol]| <=> |C0024[Cytosol]| + |C0004[Cytosol]|
-    + |C0052[Cytosol]|'
+    + |C0052[Cytosol]| + |C0065[Cytosol]|'
 - id: RR00082
   name: NADPH:oxidized-glutathione oxidoreductase
   equation: (2) |C0042[Cytosol]| + |C0006[Cytosol]| <=> |C0109[Cytosol]| + |C0065[Cytosol]|
@@ -2466,7 +2466,7 @@
     + |C0085[Cytosol]|'
 - id: RR00610
   name: alpha-D-Glucose 1-phosphate 1,6-phosphomutase
-  equation: (2) |C0065[Cytosol]| + |C0087[Cytosol]| <=> |C0077[Cytosol]|
+  equation: '|C0087[Cytosol]| <=> |C0077[Cytosol]|'
 - id: RR00652
   name: D-Glyceraldehyde-3-phosphate ketol-isomerase
   equation: '|C0100[Cytosol]| <=> |C0093[Cytosol]|'
@@ -2493,7 +2493,7 @@
   equation: '|C0100[Cytosol]| + |C0070[Cytosol]| <=> |C0228[Cytosol]| + |C0190[Cytosol]|'
 - id: RR00692
   name: beta-D-Fructose 1,6-bisphosphate D-glyceraldehyde-3-phosphate-lyase
-  equation: '|C0284[Cytosol]| <=> |C0100[Cytosol]| + (4) |C0065[Cytosol]| + |C0093[Cytosol]|'
+  equation: '|C0284[Cytosol]| <=> |C0100[Cytosol]| + |C0093[Cytosol]|'
 - id: RR00693
   name: 1-(5-Phospho-D-ribosyl)-ATP:pyrophosphate phosphoribosyl-transferase
   equation: '|C0012[Cytosol]| + |C1750[Cytosol]| <=> |C0002[Cytosol]| + |C0101[Cytosol]|'
@@ -3070,7 +3070,7 @@
   equation: '|C0018[Cytosol]| + |C0002[Cytosol]| <=> (2) |C0008[Cytosol]|'
 - id: RR10479
   name: 5-carboxyamino-1-(5-phospho-D-ribosyl)imidazole carboxymutase
-  equation: '|C9683[Cytosol]| <=> |C2857[Cytosol]|'
+  equation: '|C9683[Cytosol]| <=> |C2857[Cytosol]| + (3) |C0065[Cytosol]|'
 - id: RR10503
   name: trans-2-decenoyl-ACP isomerase
   equation: '|C9389[Cytosol]| <=> |C9711[Cytosol]|'

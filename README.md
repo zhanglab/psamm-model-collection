@@ -11,3 +11,9 @@ The collection of models is split into two sections:
   loader in _psamm-import_.
 - [**excel**](excel): Models that have been loaded using a model-specific Excel
   file loader in _psamm-import_.
+
+Model corrections
+-----------
+
+- [iKF1028](sbml/iKF1028): Stoichiometric balance corrections in
+  [8791efa](https://github.com/zhanglab/psamm-model-collection/commit/8791efa58d0b01a06384b03ce11a6fcbc03fe8c3).
