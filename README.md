@@ -15,6 +15,9 @@ The collection of models is split into two sections:
 Model corrections
 -----------------
 
+- [iJN746](sbml/iJN746): Corrected compound references to cardiolipins in biomass reaction
+  to refer to cardiolipins in the periplasm:
+  [7d68a62](https://github.com/zhanglab/psamm-model-collection/commit/7d68a6236faf5835229971cbc84cc2eab36ca1fa).
 - [iKF1028](sbml/iKF1028): Stoichiometric balance corrections in
   [8791efa](https://github.com/zhanglab/psamm-model-collection/commit/8791efa58d0b01a06384b03ce11a6fcbc03fe8c3).
 - [iSyn731](sbml/iSyn731): Updated to new model from http://www.maranasgroup.com/models.htm
