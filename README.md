@@ -20,6 +20,9 @@ Model corrections
   [7d68a62](https://github.com/zhanglab/psamm-model-collection/commit/7d68a6236faf5835229971cbc84cc2eab36ca1fa).
 - [iKF1028](sbml/iKF1028): Stoichiometric balance corrections in
   [8791efa](https://github.com/zhanglab/psamm-model-collection/commit/8791efa58d0b01a06384b03ce11a6fcbc03fe8c3).
+- [iMA871](sbml/iMA871): Add missing exchange reaction for BIOMASS compound and remove
+  duplicate compounds in a number of reactions:
+  [b10e858](https://github.com/zhanglab/psamm-model-collection/commit/b10e85808287982564dcd0cb0b9290104ce39b4f).
 - [iRsp1095](sbml/iRsp1095): Changed medium for growth based on medium description in
   [Imam et al. 2011](https://doi.org/10.1186/1752-0509-5-116):
   [3340d7a](https://github.com/zhanglab/psamm-model-collection/commit/3340d7a476485a6e22f77a0561a803b4281d2615).
