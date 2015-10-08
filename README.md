@@ -13,7 +13,10 @@ The collection of models is split into two sections:
   file loader in _psamm-import_.
 
 Model corrections
------------
+-----------------
 
 - [iKF1028](sbml/iKF1028): Stoichiometric balance corrections in
   [8791efa](https://github.com/zhanglab/psamm-model-collection/commit/8791efa58d0b01a06384b03ce11a6fcbc03fe8c3).
+- [iSyn731](sbml/iSyn731): Updated to new model from http://www.maranasgroup.com/models.htm
+  downloaded on September 9, 2015 (changes:
+  [ca39f98](https://github.com/zhanglab/psamm-model-collection/commit/ca39f98172275718bdbc369c53015b71aec91e70)).
