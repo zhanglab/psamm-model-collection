@@ -16250,7 +16250,7 @@
   subsystem: Phosphatidylinositol phosphate metabolism
 - id: RE2972M
   name: RE2972
-  equation: '|atp[m]_| + |CE5101[m]_| => |h[m]_| + |adp[m]_| + |pail45p_hs[m]_|'
+  equation: '|atp[m]_| + |CE5101[m]_| => (2) |h[m]_| + |adp[m]_| + |pail45p_hs[m]_|'
   subsystem: Phosphatidylinositol phosphate metabolism
 - id: RE2972R
   name: RE2972
@@ -21809,7 +21809,7 @@
   subsystem: Unassigned
 - id: r0318
   name: Propanoate:CoA ligase (AMP-forming) Propanoate metabolism EC:6.2.1.1 EC:6.2.1.17
-  equation: '|atp[c]_| + |h[c]_| + |ppa[c]_| => |ppi[c]_| + |HC01668[c]_|'
+  equation: '|atp[c]_| + (2) |h[c]_| + |ppa[c]_| => |ppi[c]_| + |HC01668[c]_|'
   subsystem: Unassigned
 - id: r0319
   name: Propanoate:CoA ligase (AMP-forming) Propanoate metabolism EC:6.2.1.1 EC:6.2.1.17
@@ -22116,7 +22116,7 @@
 - id: r0466
   name: alpha-Aminobutyryl histidine hydrolase Urea cycle and metabolism of amino
     groups EC:3.4.13.3
-  equation: '|h2o[c]_| + |HC00576[c]_| => |4abut[c]_| + |his_L[c]_|'
+  equation: '|h2o[c]_| + |HC00576[c]_| + |h[c]_| => |4abut[c]_| + |his_L[c]_|'
   subsystem: Unassigned
 - id: r0470
   name: 2-Deoxyadenosine 5-diphosphate:oxidized-thioredoxin 2-oxidoreductase Purine
