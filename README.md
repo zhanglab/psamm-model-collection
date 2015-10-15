@@ -11,6 +11,9 @@ The collection of models is split into two sections:
   loader in _psamm-import_.
 - [**excel**](excel): Models that have been loaded using a model-specific Excel
   file loader in _psamm-import_.
+- [**matlab**](matlab): Models that have been loaded from MATLAB data files
+  using the
+  [PSAMM MATLAB importer](https://github.com/zhanglab/psamm-import-matlab).
 
 Model corrections
 -----------------
