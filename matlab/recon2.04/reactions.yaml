@@ -2544,7 +2544,7 @@
   subsystem: Glycine, serine, alanine and threonine metabolism
 - id: BIDGLCURr
   name: bilirubin di-glucuronide production
-  equation: '|bilglcur[r]_| + |udpglcur[r]_| => |bildglcur[r]_| + |udp[r]_|'
+  equation: '|bilglcur[r]_| + |udpglcur[r]_| => (2) |h[r]_| + |bildglcur[r]_| + |udp[r]_|'
   subsystem: Heme degradation
 - id: BILDGLCURt
   name: bilirubin beta-diglucuronide transport via bicarbonate countertransport
@@ -3782,7 +3782,7 @@
   subsystem: Transport, mitochondrial
 - id: CYOOm2
   name: cytochrome c oxidase, mitochondrial Complex IV
-  equation: '|o2[m]_| + (4) |focytC[m]_| => (4) |h[m]_| + (2) |h2o[m]_| + (4) |ficytC[m]_|'
+  equation: '|o2[m]_| + (4) |focytC[m]_| + (4) |h[m]_| => (2) |h2o[m]_| + (4) |ficytC[m]_|'
   subsystem: Oxidative phosphorylation
 - id: CYOOm3
   name: cytochrome c oxidase, mitochondrial Complex IV
@@ -5834,8 +5834,8 @@
   subsystem: Fatty acid oxidation
 - id: FAOXC11BRC9BRx
   name: fatty acid beta oxidation(C11br-->C9br)x
-  equation: '|nad[x]_| + |coa[x]_| + |o2[x]_| + |h2o[x]_| + |tmuncoa[x]_| => |h[x]_|
-    + |nadh[x]_| + |h2o2[x]_| + |dmnoncoa[x]_| + |ppcoa[x]_|'
+  equation: '|nad[x]_| + |coa[x]_| + |o2[x]_| + |h2o[x]_| + |tmuncoa[x]_| + |h[x]_| =>
+    |nadh[x]_| + |h2o2[x]_| + |dmnoncoa[x]_| + |ppcoa[x]_|'
   subsystem: Fatty acid oxidation
 - id: FAOXC11C9m
   name: fatty acid beta oxidation(C11-->C9)m
@@ -6634,8 +6634,8 @@
   subsystem: Fatty acid oxidation
 - id: FAOXC9BRC7BRm
   name: fatty acid beta oxidation(C9br-->C7br)m
-  equation: '|h2o[m]_| + |coa[m]_| + |nad[m]_| + |fad[m]_| + |dmnoncoa[m]_| => |h[m]_|
-    + |nadh[m]_| + |accoa[m]_| + |fadh2[m]_| + |dmhepcoa[m]_|'
+  equation: '|h2o[m]_| + |coa[m]_| + |nad[m]_| + |fad[m]_| + |dmnoncoa[m]_| =>
+    |nadh[m]_| + (3) |h[m]_| + |accoa[m]_| + |fadh2[m]_| + |dmhepcoa[m]_|'
   subsystem: Fatty acid oxidation
 - id: FAOXC9C7m
   name: fatty acid beta oxidation(C9-->C7)m
@@ -18088,7 +18088,7 @@
   subsystem: Eicosanoid metabolism
 - id: RE3450C
   name: RE3450
-  equation: (2) |ascb_L[c]_| + |CE5534[c]_| => |h2o[c]_| + (2) |dhdascb[c]_| + |CE5828[c]_|
+  equation: (2) |ascb_L[c]_| + |CE5534[c]_| + (2) |h[c]_| => |h2o[c]_| + (2) |dhdascb[c]_| + |CE5828[c]_|
   subsystem: Eicosanoid metabolism
 - id: RE3451C
   name: RE3451
@@ -18113,7 +18113,7 @@
   subsystem: Eicosanoid metabolism
 - id: RE3456C
   name: RE3456
-  equation: (2) |ascb_L[c]_| + |CE5930[c]_| => |h2o[c]_| + (2) |dhdascb[c]_| + |CE5931[c]_|
+  equation: (2) |ascb_L[c]_| + |CE5930[c]_| + (2) |h[c]_| => |h2o[c]_| + (2) |dhdascb[c]_| + |CE5931[c]_|
   subsystem: Eicosanoid metabolism
 - id: RE3457C
   name: RE3457
@@ -21456,7 +21456,7 @@
 - id: r0024
   name: N-(omega)-Hydroxyarginine,NADPH:oxygen oxidoreductase (nitric-oxide-forming)
     Arginine and proline metabolism EC:1.14.13.39
-  equation: '|o2[c]_| + (2) |nwharg[c]_| => (2) |citr_L[c]_| + (2) |no[c]_|'
+  equation: '|o2[c]_| + (2) |nwharg[c]_| => (2) |citr_L[c]_| + (2) |no[c]_| + (4) |h[c]_|'
   subsystem: Arginine and Proline Metabolism
 - id: r0027
   name: NADPH:CoA-glutathione oxidoreductase EC:1.8.1.9
@@ -21694,7 +21694,7 @@
   subsystem: Unassigned
 - id: r0221
   name: Propinol adenylate:CoA ligase (AMP-forming) Propanoate metabolism EC:6.2.1.17
-  equation: '|coa[m]_| + |HC01668[m]_| => (2) |h[m]_| + |ppcoa[m]_| + |amp[m]_|'
+  equation: '|coa[m]_| + |HC01668[m]_| => (1) |h[m]_| + |ppcoa[m]_| + |amp[m]_|'
   subsystem: Unassigned
 - id: r0224
   name: 5,6,7,8-Tetrahydrofolate:NAD+ oxidoreductase One carbon pool by folate EC:1.5.1.3
@@ -24877,17 +24877,17 @@
   subsystem: Transport, extracellular
 - id: r1531
   name: ATP-binding Cassette (ABC) TCDB:3.A.1.208.15
-  equation: '|h2o[c]_| + |atp[c]_| + |HC02199[c]_| => |adp[c]_| + (2) |h[c]_| + |pi[c]_|
+  equation: '|h2o[c]_| + |atp[c]_| + |HC02199[c]_| => |adp[c]_| + (1) |h[c]_| + |pi[c]_|
     + |HC02199[e]_|'
   subsystem: Transport, extracellular
 - id: r1532
   name: ATP-binding Cassette (ABC) TCDB:3.A.1.208.15
-  equation: '|h2o[c]_| + |atp[c]_| + |HC02200[c]_| => |adp[c]_| + (2) |h[c]_| + |pi[c]_|
+  equation: '|h2o[c]_| + |atp[c]_| + |HC02200[c]_| => |adp[c]_| + (1) |h[c]_| + |pi[c]_|
     + |HC02200[e]_|'
   subsystem: Transport, extracellular
 - id: r1533
   name: ATP-binding Cassette (ABC) TCDB:3.A.1.208.15
-  equation: '|h2o[c]_| + |atp[c]_| + |HC02201[c]_| => |adp[c]_| + (2) |h[c]_| + |pi[c]_|
+  equation: '|h2o[c]_| + |atp[c]_| + |HC02201[c]_| => |adp[c]_| + (1) |h[c]_| + |pi[c]_|
     + |HC02201[e]_|'
   subsystem: Transport, extracellular
 - id: r1536
