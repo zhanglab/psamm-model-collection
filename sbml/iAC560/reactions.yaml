@@ -12,6 +12,7 @@
   subsystem: S_*Transport, Peroxisomal
 - id: R_14BP1P2
   name: R_D-myo-Inositol 1,3,4-trisphosphate 1-phosphohydrolase
+  genes: LmjF31.2920
   equation: '|M_h2o_c[Cytosol]| + |M_mi134tp_D_c[Cytosol]| => |M_DMino34bp_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: S_*Inositol Phosphate metabolism
@@ -37,11 +38,13 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_2MBDTm
   name: R_S-(2-Methylbutanoyl)-dihydrolipoamide
+  genes: LmjF05.0180 or LmjF25.0020
   equation: '|M_2mbutdhla_m[Mitochondria]| + |M_coa_m[Mitochondria]| => |M_2mbcoa_m[Mitochondria]|
     + |M_dhlam_m[Mitochondria]|'
   subsystem: S_*Valine, leucine, and isoleucine degradation
 - id: R_2MPTm
   name: R_S-(2-Methylpropanoyl)-dihydrolipoamide
+  genes: LmjF25.0020 or LmjF05.0180
   equation: '|M_2mpdhl_m[Mitochondria]| + |M_coa_m[Mitochondria]| => |M_dhlam_m[Mitochondria]|
     + |M_ibcoa_m[Mitochondria]|'
   subsystem: S_*Valine, leucine, and isoleucine degradation
@@ -56,6 +59,7 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_3ANTHMT
   name: R_3-Hydroxyanthranilate O-methyltransferase
+  genes: LmjF23.1200 or LmjF12.1270
   equation: '|M_3hanthrn_c[Cytosol]| + |M_ch4_c[Cytosol]| => |M_3manthrn_c[Cytosol]|'
   subsystem: S_*Tryptophan Metabolism
 - id: R_3C4MOPtm
@@ -64,6 +68,7 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_3DSPHRr
   name: R_3-Dehydrosphinganine reductase
+  genes: LmjF35.0330
   equation: '|M_3dsphgn_r[Endoplasmic_Reticulum]| + |M_h_r[Endoplasmic_Reticulum]|
     + |M_nadph_r[Endoplasmic_Reticulum]| => |M_nadp_r[Endoplasmic_Reticulum]| + |M_sphgn_r[Endoplasmic_Reticulum]|'
   subsystem: S_*Sphingolipid Metabolism
@@ -77,6 +82,7 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_3MBTm
   name: R_S-(3-Methylbutanoyl)-dihydrolipoamide
+  genes: LmjF25.0020 or LmjF05.0180
   equation: '|M_3mbutdhla_m[Mitochondria]| + |M_coa_m[Mitochondria]| => |M_dhlam_m[Mitochondria]|
     + |M_ivcoa_m[Mitochondria]|'
   subsystem: S_*Valine, leucine, and isoleucine degradation
@@ -94,6 +100,7 @@
   subsystem: S_*Transport, Peroxisomal
 - id: R_4COUCOAL
   name: R_4-Coumarate:CoA ligase (AMP-forming)
+  genes: LmjF19.0985 or LmjF19.1005
   equation: '|M_4coum_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| => |M_4cmcoa_c[Cytosol]|
     + |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Stilbene, Coumarine, and Lignin Metabolism
@@ -103,6 +110,7 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_4HGLSDm
   name: R_L-4-hydroxyglutamate semialdehyde dehydrogenase, mitochondrial
+  genes: LmjF03.0200
   equation: '|M_4hglusa_m[Mitochondria]| + |M_h2o_m[Mitochondria]| + |M_nad_m[Mitochondria]|
     <=> |M_4hglu_m[Mitochondria]| + (2) |M_h_m[Mitochondria]| + |M_nadh_m[Mitochondria]|'
   subsystem: S_*Arginine and Proline Metabolism
@@ -112,6 +120,7 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_4HTHRS
   name: R_4-Hydroxy-L-threonine synthase
+  genes: LmjF14.0350
   equation: '|M_h2o_c[Cytosol]| + |M_phthr_c[Cytosol]| => |M_4hthr_c[Cytosol]| +
     |M_pi_c[Cytosol]|'
   subsystem: S_*Vitamin B6 Metabolism
@@ -133,6 +142,7 @@
   subsystem: S_*Transport, Extracellular
 - id: R_5OPROS
   name: R_5-Oxoproline amidohydrolase (ATP-hydrolysing)
+  genes: LmjF18.1040
   equation: '|M_5oxpro_c[Cytosol]| + |M_atp_c[Cytosol]| + (2) |M_h2o_c[Cytosol]|
     => |M_adp_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_*Glutathione Metabolism
@@ -146,48 +156,58 @@
   subsystem: S_*Transport, Peroxisomal
 - id: R_A1E
   name: R_aldose 1-epimerase, cytosolic
+  genes: LmjF23.0430 or LmjF35.0970
   equation: '|M_a_D_glucose_c[Cytosol]| <=> |M_b_D_glucose_c[Cytosol]|'
   subsystem: S_*Glycolysis/Gluconeogenesis
 - id: R_A1Eg
   name: R_aldose 1-epimerase, glycosomal
+  genes: LmjF35.0980 or LmjF34.3380
   equation: '|M_a_D_glucose_x[Glycosome]| <=> |M_b_D_glucose_x[Glycosome]|'
   subsystem: S_*Glycolysis/Gluconeogenesis
 - id: R_ACACT10m_i
   name: R_acetyl-CoA C-acyltransferase (2-Methyl-3-acetoacetyl-CoA)
+  genes: LmjF31.1640 or LmjF23.0690 or LmjF31.1630
   equation: '|M_2maacoa_m[Mitochondria]| + |M_coa_m[Mitochondria]| => |M_accoa_m[Mitochondria]|
     + |M_ppcoa_m[Mitochondria]|'
   subsystem: S_*Valine, leucine, and isoleucine degradation
 - id: R_ACACT1rm
   name: R_acetyl-CoA C-acetyltransferase
+  genes: LmjF23.0690 or LmjF31.1630 or LmjF31.1640
   equation: (2) |M_accoa_m[Mitochondria]| <=> |M_aacoa_m[Mitochondria]| + |M_coa_m[Mitochondria]|
   subsystem: S_*Fatty Acid Degradation
 - id: R_ACACT2rm
   name: R_acetyl-CoA C-acyltransferase (butanoyl-CoA)
+  genes: LmjF23.0690 or LmjF31.1630 or LmjF31.1640
   equation: '|M_accoa_m[Mitochondria]| + |M_btcoa_m[Mitochondria]| <=> |M_3ohxcoa_m[Mitochondria]|
     + |M_coa_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Degradation
 - id: R_ACACT3rm
   name: R_acetyl-CoA C-acyltransferase (hexanoyl-CoA)
+  genes: LmjF23.0690 or LmjF31.1630 or LmjF31.1640
   equation: '|M_accoa_m[Mitochondria]| + |M_hxcoa_m[Mitochondria]| <=> |M_3ooccoa_m[Mitochondria]|
     + |M_coa_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Degradation
 - id: R_ACACT4rm
   name: R_acetyl-CoA C-acyltransferase (octanoyl-CoA)
+  genes: LmjF23.0690 or LmjF31.1630 or LmjF31.1640
   equation: '|M_accoa_m[Mitochondria]| + |M_occoa_m[Mitochondria]| <=> |M_3odccoa_m[Mitochondria]|
     + |M_coa_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Degradation
 - id: R_ACACT5rm
   name: R_acetyl-CoA C-acyltransferase (decanoyl-CoA)
+  genes: LmjF23.0690 or LmjF31.1630 or LmjF31.1640
   equation: '|M_accoa_m[Mitochondria]| + |M_dccoa_m[Mitochondria]| <=> |M_3oddcoa_m[Mitochondria]|
     + |M_coa_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Degradation
 - id: R_ACACT6rm
   name: R_acetyl-CoA C-acyltransferase (dodecanoyl-CoA)
+  genes: LmjF23.0690 or LmjF31.1630 or LmjF31.1640
   equation: '|M_accoa_m[Mitochondria]| + |M_ddcoa_m[Mitochondria]| <=> |M_3otdcoa_m[Mitochondria]|
     + |M_coa_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Degradation
 - id: R_ACACT7rm
   name: R_acetyl-CoA C-acyltransferase (tetradecanoyl-CoA)
+  genes: LmjF23.0690 or LmjF31.1630 or LmjF31.1640
   equation: '|M_accoa_m[Mitochondria]| + |M_tdcoa_m[Mitochondria]| <=> |M_3ohdcoa_m[Mitochondria]|
     + |M_coa_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Degradation
@@ -201,6 +221,7 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_ACCOACrm
   name: R_acetyl-CoA carboxylase
+  genes: LmjF31.2970
   equation: '|M_accoa_m[Mitochondria]| + |M_atp_m[Mitochondria]| + |M_hco3_m[Mitochondria]|
     <=> |M_adp_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_malcoa_m[Mitochondria]|
     + |M_pi_m[Mitochondria]|'
@@ -211,36 +232,43 @@
   subsystem: S_*Transport, Endoplasmic Reticular
 - id: R_ACGAM6PSi
   name: R_N-acetylglucosamine-6-phosphate synthase
+  genes: LmjF28.3005
   equation: '|M_accoa_c[Cytosol]| + |M_gam6p_c[Cytosol]| => |M_acgam6p_c[Cytosol]|
     + |M_coa_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_*Aminosugars metabolism
 - id: R_ACGAMPM
   name: R_phosphoacetylglucosamine mutase
+  genes: LmjF07.0805
   equation: '|M_acgam6p_c[Cytosol]| <=> |M_acgam1p_c[Cytosol]|'
   subsystem: S_*Aminosugars metabolism
 - id: R_ACMAT1m
   name: R_Acyl-[acyl-carrier-protein]:malonyl-[acyl-carrier-protein] C-acyltransferase
     (decarboxylating)
+  genes: LmjF33.2720
   equation: '|M_acACP_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_malACP_m[Mitochondria]|
     => |M_ACP_m[Mitochondria]| + |M_actACP_m[Mitochondria]| + |M_co2_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Biosynthesis
 - id: R_ACOAD10m
   name: R_Acyl-CoA dehydrogenase (2-Methylbutanoyl - trans-2-methylbut)
+  genes: LmjF06.0880 or LmjF28.2510
   equation: '|M_2mbcoa_m[Mitochondria]| + |M_fad_m[Mitochondria]| <=> |M_2mb2coa_m[Mitochondria]|
     + |M_fadh2_m[Mitochondria]|'
   subsystem: S_*Propanoate Metabolism
 - id: R_ACOAD11m
   name: R_propionyl-CoA dehydrogenase
+  genes: LmjF28.2510 or LmjF06.0880
   equation: '|M_Acrcoa_m[Mitochondria]| + |M_fadh2_m[Mitochondria]| <=> |M_fad_m[Mitochondria]|
     + |M_ppcoa_m[Mitochondria]|'
   subsystem: S_*Propanoate Metabolism
 - id: R_ACOAD8m
   name: R_isovaleryl-coA dehydrogenase
+  genes: LmjF27.0930
   equation: '|M_fad_m[Mitochondria]| + |M_ivcoa_m[Mitochondria]| => |M_3mb2coa_m[Mitochondria]|
     + |M_fadh2_m[Mitochondria]|'
   subsystem: S_*Valine, leucine, and isoleucine degradation
 - id: R_ACOAD9m
   name: R_Acyl-CoA dehydrogenase (Methacryl-Isobutyr)
+  genes: LmjF28.2510 or LmjF06.0880
   equation: '|M_fad_m[Mitochondria]| + |M_ibcoa_m[Mitochondria]| <=> |M_2mp2coa_m[Mitochondria]|
     + |M_fadh2_m[Mitochondria]|'
   subsystem: S_*Propanoate Metabolism
@@ -255,10 +283,13 @@
   subsystem: S_*Transport, Endoplasmic Reticular
 - id: R_ACODA
   name: R_acetylornithine deacetylase
+  genes: LmjF20.1550 or LmjF20.1560 or LmjF20.1570 or LmjF30.1380 or LmjF31.1130
+    or LmjF07.0270 or LmjF31.1810
   equation: '|M_acorn_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_ac_c[Cytosol]| + |M_orn_L_c[Cytosol]|'
   subsystem: S_*Urea Cycle
 - id: R_ACONTm
   name: R_Aconitate hydratase
+  genes: LmjF18.0510
   equation: '|M_cit_m[Mitochondria]| <=> |M_icit_m[Mitochondria]|'
   subsystem: S_*Citrate Cycle (TCA)
 - id: R_ACPexch
@@ -271,11 +302,13 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_ACS2m
   name: R_acetyl-CoA synthase (propionate)
+  genes: LmjF23.0540 or LmjF23.0710
   equation: '|M_atp_m[Mitochondria]| + |M_coa_m[Mitochondria]| + |M_ppa_m[Mitochondria]|
     => |M_amp_m[Mitochondria]| + |M_ppcoa_m[Mitochondria]| + |M_ppi_m[Mitochondria]|'
   subsystem: S_*Pyruvate metabolism
 - id: R_ACSm
   name: R_acetyl-CoA synthetase
+  genes: LmjF23.0540 or LmjF23.0710
   equation: '|M_ac_m[Mitochondria]| + |M_atp_m[Mitochondria]| + |M_coa_m[Mitochondria]|
     => |M_accoa_m[Mitochondria]| + |M_amp_m[Mitochondria]| + |M_ppi_m[Mitochondria]|'
   subsystem: S_*Pyruvate metabolism
@@ -290,21 +323,25 @@
   subsystem: S_*Transport, Extracellular
 - id: R_ADA
   name: R_Adenosine deaminase
+  genes: LmjF35.2160 or LmjF33.0235
   equation: '|M_adn_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_ins_c[Cytosol]|
     + |M_nh4_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_ADAer
   name: R_Adenosine deaminase
+  genes: LmjF35.2160 or LmjF33.0235
   equation: '|M_adn_r[Endoplasmic_Reticulum]| + |M_h_r[Endoplasmic_Reticulum]| +
     |M_h2o_r[Endoplasmic_Reticulum]| => |M_ins_r[Endoplasmic_Reticulum]| + |M_nh4_r[Endoplasmic_Reticulum]|'
   subsystem: S_*Purine Metabolism
 - id: R_ADAg
   name: R_Adenosine deaminase
+  genes: LmjF35.2160 or LmjF33.0235
   equation: '|M_adn_x[Glycosome]| + |M_h_x[Glycosome]| + |M_h2o_x[Glycosome]| =>
     |M_ins_x[Glycosome]| + |M_nh4_x[Glycosome]|'
   subsystem: S_*Purine Metabolism
 - id: R_ADAm
   name: R_Adenosine deaminase
+  genes: LmjF33.0235 or LmjF35.2160
   equation: '|M_adn_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_h2o_m[Mitochondria]|
     => |M_ins_m[Mitochondria]| + |M_nh4_m[Mitochondria]|'
   subsystem: S_*Purine Metabolism
@@ -315,14 +352,17 @@
   subsystem: S_*Other
 - id: R_ADK1
   name: R_adenylate kinase
+  genes: (LmjF34.0110 and LmjF34.0120) or LmjF04.0960
   equation: '|M_amp_c[Cytosol]| + |M_atp_c[Cytosol]| <=> (2) |M_adp_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_ADK1f
   name: R_adenylate kinase
+  genes: LmjF21.1250 or LmjF16.0020
   equation: '|M_amp_h[Flagellum]| + |M_atp_h[Flagellum]| <=> (2) |M_adp_h[Flagellum]|'
   subsystem: S_*Purine Metabolism
 - id: R_ADK1g
   name: R_adenylate kinase
+  genes: LmjF36.1360 or LmjF25.2370
   equation: '|M_amp_x[Glycosome]| + |M_atp_x[Glycosome]| <=> (2) |M_adp_x[Glycosome]|'
   subsystem: S_*Purine Metabolism
 - id: R_ADK1m
@@ -331,29 +371,36 @@
   subsystem: S_*Purine Metabolism
 - id: R_ADMDCi
   name: R_Adenosylmethionine decarboxylase
+  genes: LmjF30.3110 or LmjF30.3120
   equation: '|M_amet_c[Cytosol]| + |M_h_c[Cytosol]| => |M_ametam_c[Cytosol]| + |M_co2_c[Cytosol]|'
   subsystem: S_*Methionine Metabolism
 - id: R_ADNCYC
   name: R_adenylate cyclase
+  genes: LmjF17.0190 and LmjF17.0237 and LmjF05.1220 and LmjF28.0090 and LmjF17.0230
+    and LmjF17.0235 and LmjF17.0200 and LmjF36.3180
   equation: '|M_atp_c[Cytosol]| => |M_camp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_ADNK1c
   name: R_adenosine kinase
+  genes: LmjF30.0880 or LmjF34.3600 or LmjF30.0890
   equation: '|M_adn_c[Cytosol]| + |M_atp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_amp_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_ADNK1er
   name: R_adenosine kinase
+  genes: LmjF30.0880 or LmjF34.3600 or LmjF30.0890
   equation: '|M_adn_r[Endoplasmic_Reticulum]| + |M_atp_r[Endoplasmic_Reticulum]|
     <=> |M_adp_r[Endoplasmic_Reticulum]| + |M_amp_r[Endoplasmic_Reticulum]| + |M_h_r[Endoplasmic_Reticulum]|'
   subsystem: S_*Purine Metabolism
 - id: R_ADNK1g
   name: R_adenosine kinase
+  genes: LmjF30.0880 or LmjF34.3600 or LmjF30.0890
   equation: '|M_adn_x[Glycosome]| + |M_atp_x[Glycosome]| <=> |M_adp_x[Glycosome]|
     + |M_amp_x[Glycosome]| + |M_h_x[Glycosome]|'
   subsystem: S_*Purine Metabolism
 - id: R_ADNK1m
   name: R_adenosine kinase
+  genes: LmjF30.0880 or LmjF30.0890 or LmjF34.3600
   equation: '|M_adn_m[Mitochondria]| + |M_atp_m[Mitochondria]| <=> |M_adp_m[Mitochondria]|
     + |M_amp_m[Mitochondria]| + |M_h_m[Mitochondria]|'
   subsystem: S_*Purine Metabolism
@@ -363,36 +410,44 @@
   subsystem: S_*Transport, Peroxisomal
 - id: R_ADPT2
   name: R_1-(5'-Phosphoribosyl)-5-amino-4-imidazolecarboxamide:pyrophosphate phosphoribosyltransferase
+  genes: LmjF26.0140
   equation: '|M_aicar_c[Cytosol]| + |M_ppi_c[Cytosol]| <=> |M_5a4icam_c[Cytosol]|
     + |M_prpp_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_ADPTr
   name: R_adenine phosphoribosyltransferase
+  genes: LmjF26.0140
   equation: '|M_ade_c[Cytosol]| + |M_prpp_c[Cytosol]| <=> |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_ADSL1r
   name: R_adenylsuccinate lyase
+  genes: LmjF04.0460
   equation: '|M_dcamp_c[Cytosol]| <=> |M_amp_c[Cytosol]| + |M_fum_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_ADSL2r
   name: R_adenylosuccinate lyase
+  genes: LmjF04.0460
   equation: '|M_25aics_c[Cytosol]| <=> |M_aicar_c[Cytosol]| + |M_fum_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_ADSS_i
   name: R_adenylosuccinate synthetase
+  genes: LmjF13.1190
   equation: '|M_asp_L_c[Cytosol]| + |M_gtp_c[Cytosol]| + |M_imp_c[Cytosol]| => |M_dcamp_c[Cytosol]|
     + |M_gdp_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_AGDC
   name: R_N-acetylglucosamine-6-phosphate deacetylase
+  genes: LmjF36.0040
   equation: '|M_acgam6p_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_ac_c[Cytosol]| + |M_gam6p_c[Cytosol]|'
   subsystem: S_*Aminosugars metabolism
 - id: R_AGMT
   name: R_agmatinase
+  genes: LmjF23.0070
   equation: '|M_agm_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_ptrc_c[Cytosol]| + |M_urea_c[Cytosol]|'
   subsystem: S_*Urea Cycle
 - id: R_AGPATi_LM
   name: R_1-acylglycerol-3-phosphate O-acyltransferase (L. major)
+  genes: LmjF32.1960
   equation: (0.010000) |M_1ag3p_LM_c[Cytosol]| + (0.080000) |M_alincoa_c[Cytosol]|
     + (0.080000) |M_glincoa_c[Cytosol]| + (0.290000) |M_lincoa_c[Cytosol]| + (0.330000)
     |M_olcoa_c[Cytosol]| + (0.090000) |M_pmtcoa_c[Cytosol]| + (0.100000) |M_strcoa_c[Cytosol]|
@@ -400,6 +455,7 @@
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_AGPATim_LM
   name: R_1-acylglycerol-3-phosphate O-acyltransferase (L. major)
+  genes: LmjF32.1960
   equation: (0.010000) |M_1ag3p_LM_m[Mitochondria]| + (0.080000) |M_alincoa_m[Mitochondria]|
     + (0.080000) |M_glincoa_m[Mitochondria]| + (0.290000) |M_lincoa_m[Mitochondria]|
     + (0.330000) |M_olcoa_m[Mitochondria]| + (0.090000) |M_pmtcoa_m[Mitochondria]|
@@ -408,6 +464,7 @@
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_AHC
   name: R_adenosylhomocysteinase
+  genes: LmjF36.3910
   equation: '|M_ahcys_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_adn_c[Cytosol]| + |M_hcys_L_c[Cytosol]|'
   subsystem: S_*Methionine Metabolism
 - id: R_AHCYSter
@@ -424,16 +481,19 @@
   subsystem: S_*Transport, Nuclear
 - id: R_AHSERL2
   name: R_O-acetylhomoserine (thiol)-lyase
+  genes: LmjF35.3230
   equation: '|M_achms_c[Cytosol]| + |M_h2s_c[Cytosol]| => |M_ac_c[Cytosol]| + |M_hcys_L_c[Cytosol]|'
   subsystem: S_*Methionine Metabolism
 - id: R_AHSERL5i
   name: R_cysteine synthase (Thiosulfate)
+  genes: LmjF36.3590
   equation: '|M_acser_c[Cytosol]| + |M_trpdrd_c[Cytosol]| + |M_tsul_c[Cytosol]| =>
     |M_ac_c[Cytosol]| + |M_cys_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_so3_c[Cytosol]|
     + |M_trpdox_c[Cytosol]|'
   subsystem: S_*Cysteine Metabolism
 - id: R_AKAGPP_LM
   name: R_alkyl glycerol phosphate hydrolase
+  genes: LmjF18.0440 or LmjF19.1350
   equation: (0.010000) |M_ak2gp_LM_c[Cytosol]| + |M_h2o_c[Cytosol]| => (0.010000)
     |M_ak2g_LM_c[Cytosol]| + |M_pi_c[Cytosol]|
   subsystem: S_*Ether Lipid Metabolism
@@ -444,50 +504,60 @@
   subsystem: S_*Ether Lipid Metabolism
 - id: R_AKGDE1B
   name: R_2-Oxoadipate:lipoamde 2-oxidoreductase(decarboxylating and acceptor-succinylating)
+  genes: LmjF36.3470 or LmjF27.0880
   equation: '|M_2oxoadp_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_lpam_m[Mitochondria]|
     <=> |M_Gdhla_m[Mitochondria]| + |M_co2_m[Mitochondria]|'
   subsystem: S_*Lysine degradation
 - id: R_AKGDE2B
   name: R_Dihydrolipoamide S-succinyltransferase (Glutaryl-CoA)
+  genes: LmjF28.2420
   equation: '|M_Gdhla_m[Mitochondria]| + |M_coa_m[Mitochondria]| => |M_dhlam_m[Mitochondria]|
     + |M_glutcoa_m[Mitochondria]|'
   subsystem: S_*Lysine degradation
 - id: R_AKGDe1
   name: R_2-oxoglutarate dehydrogenase (lipoamide)
+  genes: LmjF27.0880 or LmjF36.3470
   equation: '|M_akg_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_lpam_m[Mitochondria]|
     <=> |M_co2_m[Mitochondria]| + |M_sdhlam_m[Mitochondria]|'
   subsystem: S_*Citrate Cycle (TCA)
 - id: R_AKGDe2
   name: R_2-oxoglutarate dehydrogenase (dihydrolipoamide S-succinyltransferase)
+  genes: LmjF28.2420
   equation: '|M_coa_m[Mitochondria]| + |M_sdhlam_m[Mitochondria]| => |M_dhlam_m[Mitochondria]|
     + |M_succoa_m[Mitochondria]|'
   subsystem: S_*Citrate Cycle (TCA)
 - id: R_ALAR
   name: R_alanine racemase
+  genes: LmjF23.1480
   equation: '|M_ala_L_c[Cytosol]| <=> |M_ala_D_c[Cytosol]|'
   subsystem: S_*Alanine and Aspartate Metabolism
 - id: R_ALATA_L
   name: R_L-alanine transaminase
+  genes: LmjF12.0630
   equation: '|M_akg_c[Cytosol]| + |M_ala_L_c[Cytosol]| <=> |M_glu_L_c[Cytosol]| +
     |M_pyr_c[Cytosol]|'
   subsystem: S_*Glutamate Metabolism
 - id: R_ALATA_Lm
   name: R_L-alanine transaminase, mitochondrial
+  genes: LmjF12.0630
   equation: '|M_akg_m[Mitochondria]| + |M_ala_L_m[Mitochondria]| <=> |M_glu_L_m[Mitochondria]|
     + |M_pyr_m[Mitochondria]|'
   subsystem: S_*Glutamate Metabolism
 - id: R_ALATRSi
   name: R_Alanyl-tRNA synthetase
+  genes: LmjF22.1540
   equation: '|M_ala_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_trnaala_c[Cytosol]| =>
     |M_alatrna_c[Cytosol]| + |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Alanine and Aspartate Metabolism
 - id: R_ALA_Dt6
   name: R_D-alanine transport in/out via proton symport
+  genes: LmjF14.0320 or LmjF22.0230 or LmjF11.0520 or LmjF27.0670
   equation: '|M_ala_D_e[Extracellular_space]| + |M_h_e[Extracellular_space]| <=>
     |M_ala_D_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_*Transport, Extracellular
 - id: R_ALA_Lt6
   name: R_L-alanine transport in/out via proton symport
+  genes: LmjF14.0320 or LmjF22.0230 or LmjF11.0520 or LmjF27.0670
   equation: '|M_ala_L_e[Extracellular_space]| + |M_h_e[Extracellular_space]| <=>
     |M_ala_L_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_*Transport, Extracellular
@@ -497,56 +567,67 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_ALCD19
   name: R_alcohol dehydrogenase (glycerol)
+  genes: LmjF23.0360 or LmjF30.2090
   equation: '|M_glyald_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| <=> |M_glyc_c[Cytosol]|
     + |M_nad_c[Cytosol]|'
   subsystem: S_*Glycerolipid Metabolism
 - id: R_ALCD3
   name: R_6-Hydroxyhexanoate:NADP+ oxidoreductase
+  genes: LmjF23.0360
   equation: '|M_6hdhexa_c[Cytosol]| + |M_nadp_c[Cytosol]| => |M_adpsema_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]|'
   subsystem: S_*Caprolactam Degradation
 - id: R_ALDD19m
   name: R_Aldehyde:NAD+ oxidoreductase
+  genes: LmjF25.1120
   equation: '|M_h2o_m[Mitochondria]| + |M_nad_m[Mitochondria]| + |M_perllald_m[Mitochondria]|
     => |M_h_m[Mitochondria]| + |M_nadh_m[Mitochondria]| + |M_perlla_m[Mitochondria]|'
   subsystem: S_*Limonene and Pinene Degradation
 - id: R_ALDD20m
   name: R_aldehyde dehydrogenase (NAD)
+  genes: LmjF25.1120
   equation: '|M_h2o_m[Mitochondria]| + |M_imzacd_m[Mitochondria]| + |M_nad_m[Mitochondria]|
     => (2) |M_h_m[Mitochondria]| + |M_imzac_m[Mitochondria]| + |M_nadh_m[Mitochondria]|'
   subsystem: S_*Histidine Metabolism
 - id: R_ALDD2xm
   name: R_aldehyde dehydrogenase (NAD), mitochondrial
+  genes: LmjF25.1120
   equation: '|M_acald_m[Mitochondria]| + |M_h2o_m[Mitochondria]| + |M_nad_m[Mitochondria]|
     => |M_ac_m[Mitochondria]| + (2) |M_h_m[Mitochondria]| + |M_nadh_m[Mitochondria]|'
   subsystem: S_*Valine, leucine, and isoleucine degradation
 - id: R_ALDD32m
   name: R_aldehyde dehydrogenase (D-Glucuronolactone, NADH)
+  genes: LmjF25.1120
   equation: '|M_glcurn_m[Mitochondria]| + (2) |M_h2o_m[Mitochondria]| + |M_nad_m[Mitochondria]|
     => |M_glcr_m[Mitochondria]| + (3) |M_h_m[Mitochondria]| + |M_nadh_m[Mitochondria]|'
   subsystem: S_*Valine, leucine, and isoleucine degradation
 - id: R_ALDD4xm
   name: R_aldehyde dehydrogenase (methylmalonate semialdehyde, NAD)
+  genes: LmjF25.1120
   equation: '|M_h2o_m[Mitochondria]| + |M_mmalsa_m[Mitochondria]| + |M_nad_m[Mitochondria]|
     => (2) |M_h_m[Mitochondria]| + |M_mmal_m[Mitochondria]| + |M_nadh_m[Mitochondria]|'
   subsystem: S_*Valine, leucine, and isoleucine degradation
 - id: R_ALDD6xm
   name: R_aldehyde dehydrogenase (NAD), mitochondrial
+  genes: LmjF25.1120
   equation: '|M_h2o_m[Mitochondria]| + |M_id3acald_m[Mitochondria]| + |M_nad_m[Mitochondria]|
     => (2) |M_h_m[Mitochondria]| + |M_ind3ac_m[Mitochondria]| + |M_nadh_m[Mitochondria]|'
   subsystem: S_*Valine, leucine, and isoleucine degradation
 - id: R_ALDD8xr_m
   name: R_aldehyde dehydrogenase (D-glyceraldehyde, NAD)
+  genes: LmjF25.1120
   equation: '|M_glyald_m[Mitochondria]| + |M_h2o_m[Mitochondria]| + |M_nad_m[Mitochondria]|
     <=> |M_glyc_R_m[Mitochondria]| + (2) |M_h_m[Mitochondria]| + |M_nadh_m[Mitochondria]|'
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_ALDOXm
   name: R_5-Hydroxyindoleacetaldehyde:oxygen oxidoreductase
+  genes: LmjF25.1120
   equation: '|M_h2o_m[Mitochondria]| + |M_hindoald_m[Mitochondria]| + |M_nad_m[Mitochondria]|
     => (2) |M_h_m[Mitochondria]| + |M_hindoac_m[Mitochondria]| + |M_nadh_m[Mitochondria]|'
   subsystem: S_*Tryptophan Metabolism
 - id: R_ALDR
   name: R_Aldehyde reductase
+  genes: LmjF31.2880
   equation: '|M_gal_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| => |M_galt_c[Cytosol]|
     + |M_nadp_c[Cytosol]|'
   subsystem: S_*Galactose metabolism
@@ -572,6 +653,7 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_AMPDg
   name: R_Adenosine monophosphate deaminase
+  genes: LmjF04.0280 or LmjF13.0980 or LmjF32.2550 or LmjF35.4800
   equation: '|M_amp_x[Glycosome]| + |M_h2o_x[Glycosome]| <=> |M_imp_x[Glycosome]|
     + |M_nh3_x[Glycosome]|'
   subsystem: S_*Purine Metabolism
@@ -581,36 +663,43 @@
   subsystem: S_*Transport, Endoplasmic Reticular
 - id: R_APIND
   name: R_alpha-Pinene dehydrogenase
+  genes: LmjF27.0090
   equation: '|M_apin_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| + |M_o2_c[Cytosol]|
     => |M_h2o_c[Cytosol]| + |M_myrtl_c[Cytosol]| + |M_nad_c[Cytosol]|'
   subsystem: S_*Limonene and Pinene Degradation
 - id: R_APINM
   name: R_alpha-Pinene monooxygenase
+  genes: LmjF27.0090
   equation: '|M_apin_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_o2_c[Cytosol]| => |M_h2o_c[Cytosol]|
     + |M_pncv_c[Cytosol]|'
   subsystem: S_*Limonene and Pinene Degradation
 - id: R_APase
   name: R_Acylphosphatase
+  genes: LmjF25.1960
   equation: '|M_actp_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_ac_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: S_*Pyruvate metabolism
 - id: R_ARGNg
   name: R_arginase
+  genes: LmjF35.1480
   equation: '|M_arg_L_x[Glycosome]| + |M_h2o_x[Glycosome]| => |M_orn_L_x[Glycosome]|
     + |M_urea_x[Glycosome]|'
   subsystem: S_*Arginine and Proline Metabolism
 - id: R_ARGSSr
   name: R_argininosuccinate synthase, reversible
+  genes: LmjF23.0260
   equation: '|M_asp_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_citr_L_c[Cytosol]| <=>
     |M_amp_c[Cytosol]| + |M_argsuc_c[Cytosol]| + |M_h_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Arginine and Proline Metabolism
 - id: R_ARGTRS
   name: R_Arginyl-tRNA synthetase
+  genes: LmjF27.1310
   equation: '|M_arg_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_trnaarg_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_argtrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Arginine and Proline Metabolism
 - id: R_ARGt
   name: R_L-arginine transport in via proton symport
+  genes: LmjF14.0320 or LmjF22.0230 or LmjF11.0520 or LmjF27.0670
   equation: '|M_arg_L_e[Extracellular_space]| + |M_h_e[Extracellular_space]| <=>
     |M_arg_L_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_*Transport, Extracellular
@@ -620,16 +709,19 @@
   subsystem: S_*Transport, Peroxisomal
 - id: R_ARMT
   name: R_hnRNP arginine N-methyltransferase
+  genes: LmjF03.0600 and LmjF12.1270
   equation: '|M_amet_c[Cytosol]| + |M_his_L_c[Cytosol]| => |M_ahcys_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_mehis_c[Cytosol]|'
   subsystem: S_*Histidine Metabolism
 - id: R_ASAT
   name: R_Acyl-CoA:sphingosine N-acyltransferase
+  genes: LmjF31.1780
   equation: '|M_acoa_r[Endoplasmic_Reticulum]| + |M_sphings_r[Endoplasmic_Reticulum]|
     => |M_cer_r[Endoplasmic_Reticulum]| + |M_coa_r[Endoplasmic_Reticulum]| + |M_h_r[Endoplasmic_Reticulum]|'
   subsystem: S_*Sphingolipid Metabolism
 - id: R_ASCBPm
   name: R_ascorbate-dependent peroxidase
+  genes: LmjF34.0070
   equation: '|M_ascb_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_h2o2_m[Mitochondria]|
     <=> |M_dhdascb_m[Mitochondria]| + (2) |M_h2o_m[Mitochondria]|'
   subsystem: S_*Ascorbate and aldarate metabolism
@@ -649,26 +741,31 @@
   subsystem: S_*Transport, Extracellular
 - id: R_ASNN
   name: R_L-asparaginase
+  genes: LmjF15.0390
   equation: '|M_asn_L_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_asp_L_c[Cytosol]| +
     |M_nh4_c[Cytosol]|'
   subsystem: S_*Alanine and Aspartate Metabolism
 - id: R_ASNNg
   name: R_L-asparaginase (glycosome)
+  genes: LmjF36.4430
   equation: '|M_asn_L_x[Glycosome]| + |M_h2o_x[Glycosome]| => |M_asp_L_x[Glycosome]|
     + |M_nh4_x[Glycosome]|'
   subsystem: S_*Alanine and Aspartate Metabolism
 - id: R_ASNS3
   name: R_asparagine synthetase
+  genes: LmjF26.0830
   equation: '|M_asp_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_nh3_c[Cytosol]| => |M_adp_c[Cytosol]|
     + |M_asn_L_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_*Alanine and Aspartate Metabolism
 - id: R_ASNTRS
   name: R_Asparaginyl-tRNA synthetase
+  genes: LmjF34.2340
   equation: '|M_asn_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_trnaasn_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_asntrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Alanine and Aspartate Metabolism
 - id: R_ASNt6
   name: R_L-asparagine transport in/out via proton symport
+  genes: LmjF14.0320 or LmjF22.0230 or LmjF11.0520 or LmjF27.0670
   equation: '|M_asn_L_e[Extracellular_space]| + |M_h_e[Extracellular_space]| <=>
     |M_asn_L_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_*Transport, Extracellular
@@ -678,41 +775,49 @@
   subsystem: S_*Transport, Peroxisomal
 - id: R_ASPCT
   name: R_aspartate carbamoyltransferase
+  genes: LmjF16.0540
   equation: '|M_asp_L_c[Cytosol]| + |M_cbp_c[Cytosol]| => |M_cbasp_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_ASPTA1
   name: R_aspartate transaminase
+  genes: LmjF35.0820
   equation: '|M_akg_c[Cytosol]| + |M_asp_L_c[Cytosol]| <=> |M_glu_L_c[Cytosol]| +
     |M_oaa_c[Cytosol]|'
   subsystem: S_*Glutamate Metabolism
 - id: R_ASPTA1m
   name: R_aspartate transaminase, mitochondrial
+  genes: LmjF24.0370
   equation: '|M_akg_m[Mitochondria]| + |M_asp_L_m[Mitochondria]| <=> |M_glu_L_m[Mitochondria]|
     + |M_oaa_m[Mitochondria]|'
   subsystem: S_*Glutamate Metabolism
 - id: R_ASPTA3
   name: R_aspartate transaminase
+  genes: LmjF35.0820
   equation: '|M_3sala_c[Cytosol]| + |M_akg_c[Cytosol]| => |M_glu_L_c[Cytosol]| +
     |M_spyr_c[Cytosol]|'
   subsystem: S_*Glutamate Metabolism
 - id: R_ASPTA4
   name: R_aspartate transaminase
+  genes: LmjF35.0820
   equation: '|M_glu_L_c[Cytosol]| + |M_mercppyr_c[Cytosol]| => |M_akg_c[Cytosol]|
     + |M_cys_L_c[Cytosol]|'
   subsystem: S_*Glutamate Metabolism
 - id: R_ASPTA5m
   name: R_aspartate transaminase, mitochondrial
+  genes: LmjF24.0370
   equation: '|M_akg_m[Mitochondria]| + |M_tyr_L_m[Mitochondria]| <=> |M_34hpp_m[Mitochondria]|
     + |M_glu_L_m[Mitochondria]|'
   subsystem: S_*Tyrosine Metabolism
 - id: R_ASPTRS
   name: R_Aspartyl-tRNA synthetase
+  genes: LmjF21.0895 or LmjF30.0460
   equation: '|M_asp_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_trnaasp_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_asptrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Alanine and Aspartate Metabolism
 - id: R_ASPt6
   name: R_L-aspartate transport in via proton symport
+  genes: LmjF14.0320 or LmjF22.0230 or LmjF11.0520 or LmjF27.0670
   equation: '|M_asp_L_e[Extracellular_space]| + |M_h_e[Extracellular_space]| <=>
     |M_asp_L_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_*Transport, Extracellular
@@ -726,21 +831,41 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_ATPM
   name: R_ATP maintenance requirment
+  genes: LmjF36.4630
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_ATPS
   name: R_ATPase, cytosolic
+  genes: LmjF18.1510 or LmjF18.1520
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_pi_c[Cytosol]|
     + |M_h_e[Extracellular_space]|'
   subsystem: S_*Oxidative phosphorylation
 - id: R_ATPS3v
   name: R_ATP synthase, Acidocalcisome
+  genes: (LmjF21.1340 and LmjF21.1790 and LmjF23.0130 and LmjF28.1160 and LmjF30.3660
+    and LmjF34.3670 and LmjF05.1140 and LmjF28.2430 and LmjF18.0560 and LmjF35.0700
+    and LmjF36.3100 and LmjF12.0520 and LmjF23.0340 and LmjF23.1510) or (LmjF21.1340
+    and LmjF21.1800 and LmjF23.0130 and LmjF28.1160 and LmjF30.3660 and LmjF34.3670
+    and LmjF05.1140 and LmjF28.2430 and LmjF18.0560 and LmjF35.0700 and LmjF36.3100
+    and LmjF12.0520 and LmjF23.0340 and LmjF23.1510)
   equation: (3) |M_h_c[Cytosol]| + |M_adp_v[Acidocalcisome]| + |M_pi_v[Acidocalcisome]|
     => |M_atp_v[Acidocalcisome]| + (2) |M_h_v[Acidocalcisome]| + |M_h2o_v[Acidocalcisome]|
   subsystem: S_*Oxidative phosphorylation
 - id: R_ATPSm
   name: R_ATP synthase, mitochondrial
+  genes: (LmjF05.0500 and LmjF25.1170 and LmjF21.0740 and LmjF30.3600 and LmjF21.1770)
+    or (LmjF05.0500 and LmjF25.1170 and LmjF24.0630 and LmjF30.3600 and LmjF21.1770)
+    or (LmjF05.0500 and LmjF25.1170 and LmjF26.0460 and LmjF30.3600 and LmjF21.1770)
+    or (LmjF05.0500 and LmjF25.1180 and LmjF21.0740 and LmjF30.3600 and LmjF21.1770)
+    or (LmjF05.0500 and LmjF25.1180 and LmjF24.0630 and LmjF30.3600 and LmjF21.1770)
+    or (LmjF05.0500 and LmjF25.1180 and LmjF26.0460 and LmjF30.3600 and LmjF21.1770)
+    or (LmjF05.0510 and LmjF25.1170 and LmjF21.0740 and LmjF30.3600 and LmjF21.1770)
+    or (LmjF05.0510 and LmjF25.1170 and LmjF24.0630 and LmjF30.3600 and LmjF21.1770)
+    or (LmjF05.0510 and LmjF25.1170 and LmjF26.0460 and LmjF30.3600 and LmjF21.1770)
+    or (LmjF05.0510 and LmjF25.1180 and LmjF21.0740 and LmjF30.3600 and LmjF21.1770)
+    or (LmjF05.0510 and LmjF25.1180 and LmjF24.0630 and LmjF30.3600 and LmjF21.1770)
+    or (LmjF05.0510 and LmjF25.1180 and LmjF26.0460 and LmjF30.3600 and LmjF21.1770)
   equation: (3) |M_h_c[Cytosol]| + |M_adp_m[Mitochondria]| + |M_pi_m[Mitochondria]|
     => |M_atp_m[Mitochondria]| + (2) |M_h_m[Mitochondria]| + |M_h2o_m[Mitochondria]|
   subsystem: S_*Oxidative phosphorylation
@@ -767,11 +892,13 @@
     |M_pi_c[Cytosol]|
 - id: R_BNZPPH
   name: R_Benzoyl phosphate phosphohydrolase
+  genes: LmjF25.1960
   equation: '|M_bnzp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_bz_c[Cytosol]| + (3)
     |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_*Benzoate Degradation
 - id: R_BTCOADm
   name: R_butyryl-CoA dehydrogenase
+  genes: LmjF06.0880 or LmjF28.2510
   equation: '|M_btcoa_m[Mitochondria]| + |M_fad_m[Mitochondria]| => |M_butd2coa_m[Mitochondria]|
     + |M_fadh2_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Degradation
@@ -785,11 +912,13 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_BTMAT1m
   name: R_Butyryl-[acyl-carrier protein]:malonyl-CoA C-acyltransferase
+  genes: LmjF05.0520
   equation: '|M_2beACP_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_nadh_m[Mitochondria]|
     => |M_butACP_m[Mitochondria]| + |M_nad_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Biosynthesis
 - id: R_BTNL1
   name: R_Biotin:CoA ligase (AMP-forming)
+  genes: LmjF31.1070
   equation: '|M_atp_c[Cytosol]| + |M_btn_c[Cytosol]| + |M_h_c[Cytosol]| => |M_btamp_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: S_*Biotin Metabolism
@@ -800,6 +929,7 @@
   subsystem: S_*Transport, Extracellular
 - id: R_C14STRr
   name: R_C-14 sterol reductase
+  genes: LmjF32.2320
   equation: '|M_44mctr_r[Endoplasmic_Reticulum]| + |M_h_r[Endoplasmic_Reticulum]|
     + |M_nadph_r[Endoplasmic_Reticulum]| => |M_44mzym_r[Endoplasmic_Reticulum]| +
     |M_nadp_r[Endoplasmic_Reticulum]|'
@@ -812,6 +942,7 @@
   subsystem: S_*Steroid Biosynthesis
 - id: R_C24STRer
   name: R_C-s24 sterol reductase, endoplamic reticular
+  genes: LmjF33.0680
   equation: '|M_ergtetrol_r[Endoplasmic_Reticulum]| + |M_h_r[Endoplasmic_Reticulum]|
     + |M_nadph_r[Endoplasmic_Reticulum]| => |M_ergst_r[Endoplasmic_Reticulum]| +
     |M_nadp_r[Endoplasmic_Reticulum]|'
@@ -826,12 +957,14 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_C3STDH1r
   name: R_C-3 sterol dehydrogenase (4-methylzymosterol)
+  genes: LmjF06.0350
   equation: '|M_4mzym_int1_r[Endoplasmic_Reticulum]| + |M_nad_r[Endoplasmic_Reticulum]|
     => |M_4mzym_int2_r[Endoplasmic_Reticulum]| + |M_co2_r[Endoplasmic_Reticulum]|
     + |M_nadh_r[Endoplasmic_Reticulum]|'
   subsystem: S_*Steroid Biosynthesis
 - id: R_C3STDH2r
   name: R_C-3 sterol dehydrogenase (zymosterol)
+  genes: LmjF06.0350
   equation: '|M_nad_r[Endoplasmic_Reticulum]| + |M_zym_int1_r[Endoplasmic_Reticulum]|
     => |M_co2_r[Endoplasmic_Reticulum]| + |M_nadh_r[Endoplasmic_Reticulum]| + |M_zym_int2_r[Endoplasmic_Reticulum]|'
   subsystem: S_*Steroid Biosynthesis
@@ -849,6 +982,7 @@
   subsystem: S_*Steroid Biosynthesis
 - id: R_C4STMO1r
   name: R_C-4 sterol methyl oxidase (4,4-dimethylzymosterol)
+  genes: LmjF36.2540
   equation: '|M_44mzym_r[Endoplasmic_Reticulum]| + (2) |M_h_r[Endoplasmic_Reticulum]|
     + (3) |M_nadph_r[Endoplasmic_Reticulum]| + (3) |M_o2_r[Endoplasmic_Reticulum]|
     => |M_4mzym_int1_r[Endoplasmic_Reticulum]| + (4) |M_h2o_r[Endoplasmic_Reticulum]|
@@ -856,6 +990,7 @@
   subsystem: S_*Steroid Biosynthesis
 - id: R_C4STMO2r
   name: R_C-4 sterol methyl oxidase (4-methylzymosterol)
+  genes: LmjF36.2540
   equation: '|M_4mzym_r[Endoplasmic_Reticulum]| + (2) |M_h_r[Endoplasmic_Reticulum]|
     + (3) |M_nadph_r[Endoplasmic_Reticulum]| + (3) |M_o2_r[Endoplasmic_Reticulum]|
     => (4) |M_h2o_r[Endoplasmic_Reticulum]| + (3) |M_nadp_r[Endoplasmic_Reticulum]|
@@ -863,26 +998,31 @@
   subsystem: S_*Steroid Biosynthesis
 - id: R_C5STDSr
   name: R_C-5 sterol desaturase
+  genes: LmjF31.0590
   equation: '|M_epist_r[Endoplasmic_Reticulum]| + |M_h_r[Endoplasmic_Reticulum]|
     + |M_nadph_r[Endoplasmic_Reticulum]| + |M_o2_r[Endoplasmic_Reticulum]| => |M_ergtrol_r[Endoplasmic_Reticulum]|
     + (2) |M_h2o_r[Endoplasmic_Reticulum]| + |M_nadp_r[Endoplasmic_Reticulum]|'
   subsystem: S_*Steroid Biosynthesis
 - id: R_C8STIr
   name: R_C-8 sterol isomerase
+  genes: LmjF29.2140
   equation: '|M_fecost_r[Endoplasmic_Reticulum]| => |M_epist_r[Endoplasmic_Reticulum]|'
   subsystem: S_*Steroid Biosynthesis
 - id: R_CA2abc
   name: R_calcium transport via ABC system
+  genes: LmjF04.0010
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_ca2_e[Extracellular_space]|
     => |M_adp_c[Cytosol]| + |M_ca2_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_*Oxidative phosphorylation
 - id: R_CDAL
   name: R_Carbon-dioxide:ammonia ligase (ADP-forming,carbamate-phosphorylating)
+  genes: LmjF16.0590
   equation: (2) |M_atp_c[Cytosol]| + |M_co2_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_nh3_c[Cytosol]|
     => (2) |M_adp_c[Cytosol]| + |M_cbp_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|
   subsystem: S_*Glutamate Metabolism
 - id: R_CDGPTm_LM
   name: R_CDPdiacylglycerol:sn-glycerol-3-phosphate 3-phosphatidyltransferase
+  genes: LmjF07.0200
   equation: (0.010000) |M_CDPdag_LM_m[Mitochondria]| + |M_glyc3p_m[Mitochondria]|
     => |M_cmp_m[Mitochondria]| + |M_h_m[Mitochondria]| + (0.010000) |M_pglyp_LM_m[Mitochondria]|
   subsystem: S_*Glycerophospholipid metabolism
@@ -892,11 +1032,13 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_CDPDSP_LM
   name: R_CDPdiacylglycerol-serine O-phosphatidyltransferase
+  genes: LmjF14.1200
   equation: (0.010000) |M_CDPdag_LM_c[Cytosol]| + |M_ser_L_c[Cytosol]| => |M_cmp_c[Cytosol]|
     + |M_h_c[Cytosol]| + (0.010000) |M_ps_LM_c[Cytosol]|
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_CDPDSPm_LM
   name: R_CDPdiacylglycerol-serine O-phosphatidyltransferase
+  genes: LmjF14.1200
   equation: (0.010000) |M_CDPdag_LM_m[Mitochondria]| + |M_ser_L_m[Mitochondria]|
     => |M_cmp_m[Mitochondria]| + |M_h_m[Mitochondria]| + (0.010000) |M_ps_LM_m[Mitochondria]|
   subsystem: S_*Glycerophospholipid metabolism
@@ -920,11 +1062,13 @@
   subsystem: S_*Transport, Nuclear
 - id: R_CHLPCTD
   name: R_choline phosphate cytididyltransferase
+  genes: LmjF18.1330
   equation: '|M_cholp_c[Cytosol]| + |M_ctp_c[Cytosol]| + |M_h_c[Cytosol]| => |M_cdpchol_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_CHLSTIr
   name: R_cholestenol delta-isomerase, lumped reaction
+  genes: LmjF16.1340
   equation: '|M_amet_r[Endoplasmic_Reticulum]| + |M_o2_r[Endoplasmic_Reticulum]|
     + |M_zymst_r[Endoplasmic_Reticulum]| => |M_ahcys_r[Endoplasmic_Reticulum]| +
     |M_ergtetrol_r[Endoplasmic_Reticulum]| + |M_h_r[Endoplasmic_Reticulum]| + (2)
@@ -937,6 +1081,7 @@
   subsystem: S_*Transport, Extracellular
 - id: R_CHOLK
   name: R_Choline kinase
+  genes: LmjF35.1470
   equation: '|M_atp_c[Cytosol]| + |M_chol_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_cholp_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_*Glycerophospholipid metabolism
@@ -960,6 +1105,7 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_CLPNSm_LM
   name: R_cardiolipin synthase (L. major), mitochondrial
+  genes: LmjF34.2110
   equation: (0.010000) |M_CDPdag_LM_m[Mitochondria]| + (0.010000) |M_pg_LM_m[Mitochondria]|
     => (0.010000) |M_clpn_LM_m[Mitochondria]| + |M_cmp_m[Mitochondria]| + |M_h_m[Mitochondria]|
   subsystem: S_*Glycerophospholipid metabolism
@@ -1005,26 +1151,31 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_CPPPGO
   name: R_coproporphyrinogen oxidase
+  genes: LmjF06.1270
   equation: '|M_cpppg3_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_o2_c[Cytosol]| =>
     (2) |M_co2_c[Cytosol]| + (2) |M_h2o_c[Cytosol]| + |M_pppg9_c[Cytosol]|'
   subsystem: S_*Porphyrin and Chlorophyll Metabolism
 - id: R_CSm
   name: R_citrate synthase
+  genes: LmjF18.0670 or LmjF18.0680
   equation: '|M_accoa_m[Mitochondria]| + |M_h2o_m[Mitochondria]| + |M_oaa_m[Mitochondria]|
     => |M_cit_m[Mitochondria]| + |M_coa_m[Mitochondria]| + |M_h_m[Mitochondria]|'
   subsystem: S_*Citrate Cycle (TCA)
 - id: R_CTL2
   name: R_cystathionine g-lyase
+  genes: LmjF14.0460 or LmjF32.2640
   equation: '|M_cyst_L_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_nh4_c[Cytosol]| + |M_pyr_c[Cytosol]|
     + |M_tcys_c[Cytosol]|'
   subsystem: S_*Methionine Metabolism
 - id: R_CTPS1n
   name: R_CTP synthase (NH3)
+  genes: LmjF20.0560
   equation: '|M_atp_n[Nucleus]| + |M_nh4_n[Nucleus]| + |M_utp_n[Nucleus]| => |M_adp_n[Nucleus]|
     + |M_ctp_n[Nucleus]| + (2) |M_h_n[Nucleus]| + |M_pi_n[Nucleus]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_CTPS2n
   name: R_CTP synthase (glutamine)
+  genes: LmjF20.0560
   equation: '|M_atp_n[Nucleus]| + |M_gln_L_n[Nucleus]| + |M_h2o_n[Nucleus]| + |M_utp_n[Nucleus]|
     => |M_adp_n[Nucleus]| + |M_ctp_n[Nucleus]| + |M_glu_L_n[Nucleus]| + (2) |M_h_n[Nucleus]|
     + |M_pi_n[Nucleus]|'
@@ -1039,89 +1190,109 @@
   subsystem: S_*Transport, Nuclear
 - id: R_CYOO6m
   name: R_cytochrome c oxidase, mitochondrial ( 6 protons)
+  genes: LmjF36.6995 and LmjF23.0370 and LmjF03.0100 and LmjF28.2680 and LmjF03.0740
+    and LmjF12.0670 and LmjF26.1710 and LmjF21.1710 and LmjF25.1130 and LmjF31.1570
+    and LmjF04.1130 and LmjF20.0840
   equation: (4) |M_focytc_m[Mitochondria]| + (10) |M_h_m[Mitochondria]| + |M_o2_m[Mitochondria]|
     => (6) |M_h_c[Cytosol]| + (4) |M_ficytc_m[Mitochondria]| + (2) |M_h2o_m[Mitochondria]|
   subsystem: S_*Oxidative phosphorylation
 - id: R_CYOR_u6m
   name: R_ubiquinol-6 cytochrome c reductase
+  genes: LmjF07.0060 and LmjF31.2580 and LmjF35.1380 and LmjF35.1540
   equation: (2) |M_ficytc_m[Mitochondria]| + (1.500000) |M_h_m[Mitochondria]| + |M_q6h2_m[Mitochondria]|
     => (3.500000) |M_h_c[Cytosol]| + (2) |M_focytc_m[Mitochondria]| + |M_q6_m[Mitochondria]|
   subsystem: S_*Oxidative phosphorylation
 - id: R_CYSBS
   name: R_L-Serine hydro-lyase (adding homocysteine)
+  genes: LmjF17.0250
   equation: '|M_h_c[Cytosol]| + |M_h2s_c[Cytosol]| + |M_ser_L_c[Cytosol]| <=> |M_cys_L_c[Cytosol]|
     + |M_h2o_c[Cytosol]|'
   subsystem: S_*Methionine Metabolism
 - id: R_CYSS
   name: R_cysteine synthase
+  genes: LmjF36.3590
   equation: '|M_acser_c[Cytosol]| + |M_h2s_c[Cytosol]| => |M_ac_c[Cytosol]| + |M_cys_L_c[Cytosol]|'
   subsystem: S_*Cysteine Metabolism
 - id: R_CYSTL
   name: R_cystathionine b-lyase
+  genes: LmjF14.0460 or LmjF32.2640
   equation: '|M_cysth_L_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_hcys_L_c[Cytosol]|
     + |M_nh4_c[Cytosol]| + |M_pyr_c[Cytosol]|'
   subsystem: S_*Methionine Metabolism
 - id: R_CYSTRS
   name: R_Cysteinyl-tRNA synthetase
+  genes: LmjF12.0250
   equation: '|M_atp_c[Cytosol]| + |M_cys_L_c[Cytosol]| + |M_trnacys_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_cystrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Cysteine Metabolism
 - id: R_CYSTS
   name: R_cystathionine b-synthase
+  genes: LmjF17.0250
   equation: '|M_hcys_L_c[Cytosol]| + |M_ser_L_c[Cytosol]| => |M_cysth_L_c[Cytosol]|
     + |M_h2o_c[Cytosol]|'
   subsystem: S_*Methionine Metabolism
 - id: R_CYSt6
   name: R_L-cysteine transport in via proton symport
+  genes: LmjF14.0320 or LmjF22.0230 or LmjF11.0520 or LmjF27.0670
   equation: '|M_cys_L_e[Extracellular_space]| + |M_h_e[Extracellular_space]| <=>
     |M_cys_L_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_*Transport, Extracellular
 - id: R_CYTD1
   name: R_cytidine deaminase
+  genes: LmjF17.0360
   equation: '|M_cytd_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_nh3_c[Cytosol]| + |M_uri_c[Cytosol]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_CYTDK1
   name: R_cytidine kinase (ATP)
+  genes: LmjF31.2470
   equation: '|M_atp_c[Cytosol]| + |M_cytd_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_cmp_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_CYTDK2
   name: R_cytidine kinase (GTP)
+  genes: LmjF31.2470
   equation: '|M_cytd_c[Cytosol]| + |M_gtp_c[Cytosol]| => |M_cmp_c[Cytosol]| + |M_gdp_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_CYTDK3
   name: R_cytidine kinase (ITP)
+  genes: LmjF31.2470
   equation: '|M_cytd_c[Cytosol]| + |M_itp_c[Cytosol]| => |M_cmp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_idp_c[Cytosol]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_CYTDK4
   name: R_cytidine kinase (UTP)
+  genes: LmjF31.2470
   equation: '|M_cytd_c[Cytosol]| + |M_utp_c[Cytosol]| => |M_cmp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_udp_c[Cytosol]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_CYTDK5
   name: R_cytidine kinase (dATP)
+  genes: LmjF31.2470
   equation: '|M_cytd_c[Cytosol]| + |M_datp_c[Cytosol]| => |M_cmp_c[Cytosol]| + |M_dadp_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_CYTDK6
   name: R_cytidine kinase (dGTP)
+  genes: LmjF31.2470
   equation: '|M_cytd_c[Cytosol]| + |M_dgtp_c[Cytosol]| => |M_cmp_c[Cytosol]| + |M_dgdp_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_CYTDK7
   name: R_cytidine kinase (dTTP)
+  genes: LmjF31.2470
   equation: '|M_cytd_c[Cytosol]| + |M_dttp_c[Cytosol]| => |M_cmp_c[Cytosol]| + |M_dtdp_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_CYTDK8
   name: R_cytidine kinase (dCTP)
+  genes: LmjF31.2470
   equation: '|M_cytd_c[Cytosol]| + |M_dctp_c[Cytosol]| => |M_cmp_c[Cytosol]| + |M_dcdp_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_CYTDK9
   name: R_cytidine kinase (dUTP)
+  genes: LmjF31.2470
   equation: '|M_cytd_c[Cytosol]| + |M_dutp_c[Cytosol]| => |M_cmp_c[Cytosol]| + |M_dudp_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_*Pyrimidine Metabolism
@@ -1139,6 +1310,7 @@
   subsystem: S_*Pyrimidine Metabolism
 - id: R_CaATPAC
   name: R_vacuolar-type Ca2+-ATPase
+  genes: LmjF07.0650 and LmjF07.0630
   equation: '|M_atp_v[Acidocalcisome]| + |M_ca2_v[Acidocalcisome]| + |M_h2o_v[Acidocalcisome]|
     => |M_ca2_c[Cytosol]| + |M_adp_v[Acidocalcisome]| + |M_h_v[Acidocalcisome]| +
     |M_pi_v[Acidocalcisome]|'
@@ -1150,19 +1322,23 @@
   subsystem: S_*Transport, Extracellular
 - id: R_DADAr
   name: R_Deoxyadenosine deaminase
+  genes: LmjF35.2160 or LmjF33.0235
   equation: '|M_dad_2_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_din_c[Cytosol]| + |M_nh3_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_DADK
   name: R_deoxyadenylate kinase
+  genes: (LmjF34.0110 and LmjF34.0120) or LmjF04.0960
   equation: '|M_atp_c[Cytosol]| + |M_damp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dadp_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_DADKf
   name: R_deoxyadenylate kinase
+  genes: LmjF21.1250 or LmjF16.0020
   equation: '|M_atp_h[Flagellum]| + |M_damp_h[Flagellum]| <=> |M_adp_h[Flagellum]|
     + |M_dadp_h[Flagellum]|'
   subsystem: S_*Purine Metabolism
 - id: R_DADKg
   name: R_deoxyadenylate kinase
+  genes: LmjF25.2370 or LmjF36.1360
   equation: '|M_atp_x[Glycosome]| + |M_damp_x[Glycosome]| <=> |M_adp_x[Glycosome]|
     + |M_dadp_x[Glycosome]|'
   subsystem: S_*Purine Metabolism
@@ -1182,6 +1358,7 @@
   subsystem: S_*Transport, Nuclear
 - id: R_DAGAT_LM
   name: R_Phospholipid:1,2-diacyl-sn-glycerol O-acyltransferase
+  genes: LmjF09.1040
   equation: (0.010000) |M_12dgr_LM_c[Cytosol]| + (0.080000) |M_alincoa_c[Cytosol]|
     + (0.080000) |M_glincoa_c[Cytosol]| + (0.290000) |M_lincoa_c[Cytosol]| + (0.330000)
     |M_olcoa_c[Cytosol]| + (0.090000) |M_pmtcoa_c[Cytosol]| + (0.100000) |M_strcoa_c[Cytosol]|
@@ -1189,21 +1366,25 @@
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_DAGCPT_LM
   name: R_diacylglycerol cholinephosphotransferase (L. major)
+  genes: LmjF36.5900
   equation: (0.010000) |M_12dgr_LM_c[Cytosol]| + |M_cdpchol_c[Cytosol]| => |M_cmp_c[Cytosol]|
     + |M_h_c[Cytosol]| + (0.010000) |M_pc_LM_c[Cytosol]|
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_DAGCPTm_LM
   name: R_diacylglycerol cholinephosphotransferase (L. major)
+  genes: LmjF36.5900
   equation: (0.010000) |M_12dgr_LM_m[Mitochondria]| + |M_cdpchol_m[Mitochondria]|
     => |M_cmp_m[Mitochondria]| + |M_h_m[Mitochondria]| + (0.010000) |M_pc_LM_m[Mitochondria]|
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_DAGK_LM
   name: R_diacylglycerol kinase (L. major)
+  genes: LmjF35.5370 or LmjF16.1290
   equation: (0.010000) |M_12dgr_LM_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_adp_c[Cytosol]|
     + |M_h_c[Cytosol]| + (0.010000) |M_pa_LM_c[Cytosol]|
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_DAGKm_LM
   name: R_diacylglycerol kinase (L. major)
+  genes: LmjF35.5370 or LmjF16.1290
   equation: (0.010000) |M_12dgr_LM_m[Mitochondria]| + |M_atp_m[Mitochondria]| =>
     |M_adp_m[Mitochondria]| + |M_h_m[Mitochondria]| + (0.010000) |M_pa_LM_m[Mitochondria]|
   subsystem: S_*Glycerophospholipid metabolism
@@ -1213,6 +1394,7 @@
   subsystem: S_*Transport, Nuclear
 - id: R_DCCOADm
   name: R_decanoyl-CoA dehydrogenase
+  genes: LmjF28.2510 or LmjF06.0880
   equation: '|M_dccoa_m[Mitochondria]| + |M_fad_m[Mitochondria]| => |M_dcd2coa_m[Mitochondria]|
     + |M_fadh2_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Degradation
@@ -1231,65 +1413,78 @@
   subsystem: S_*Transport, Nuclear
 - id: R_DCYTD1
   name: R_deoxycytidine deaminase
+  genes: LmjF17.0360
   equation: '|M_dcyt_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_duri_c[Cytosol]| + |M_nh3_c[Cytosol]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_DDCOADm
   name: R_dodecanoyl-CoA dehydrogenase
+  genes: LmjF06.0880 or LmjF28.2510
   equation: '|M_ddcoa_m[Mitochondria]| + |M_fad_m[Mitochondria]| => |M_ddd2coa_m[Mitochondria]|
     + |M_fadh2_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Degradation
 - id: R_DDMAT5m
   name: 'R_Dodecanoyl-[acyl-carrier protein]: malonyl-CoA  C-acyltransferase'
+  genes: LmjF05.0520
   equation: '|M_2tddACP_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_nadh_m[Mitochondria]|
     => |M_ddcaACP_m[Mitochondria]| + |M_nad_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Biosynthesis
 - id: R_DEMAT4m
   name: R_Decanoyl-[acyl-carrier protein]:malonyl-CoA  C-acyltransferase
+  genes: LmjF05.0520
   equation: '|M_2tdeACP_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_nadh_m[Mitochondria]|
     => |M_decACP_m[Mitochondria]| + |M_nad_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Biosynthesis
 - id: R_DESAT180_9
   name: R_stearoyl-CoA desaturase (n-C18:0CoA -> n-C18:1CoA)
+  genes: LmjF24.2250 or LmjF14.0510
   equation: '|M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| + |M_o2_c[Cytosol]| + |M_strcoa_c[Cytosol]|
     => (2) |M_h2o_c[Cytosol]| + |M_nadp_c[Cytosol]| + |M_olcoa_c[Cytosol]|'
   subsystem: S_*Fatty Acid Synthesis
 - id: R_DESAT181_12
   name: R_Oleoyl-CoA desaturase (n-C18:1CoA -> n-C18:2CoA)
+  genes: LmjF33.3270
   equation: '|M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| + |M_o2_c[Cytosol]| + |M_olcoa_c[Cytosol]|
     => (2) |M_h2o_c[Cytosol]| + |M_lincoa_c[Cytosol]| + |M_nadp_c[Cytosol]|'
   subsystem: S_*Fatty Acid Synthesis
 - id: R_DESAT182_15
   name: R_linoleoyl-coa desaturase (n-C18:3[9,12,15]CoA forming)
+  genes: LmjF10.0010
   equation: '|M_h_c[Cytosol]| + |M_lincoa_c[Cytosol]| + |M_nadph_c[Cytosol]| + |M_o2_c[Cytosol]|
     => |M_alincoa_c[Cytosol]| + (2) |M_h2o_c[Cytosol]| + |M_nadp_c[Cytosol]|'
   subsystem: S_*Fatty Acid Synthesis
 - id: R_DESAT182_6
   name: R_linoleoyl-coa desaturase (n-C18:3[6,9,12]CoA forming)
+  genes: LmjF36.6950
   equation: '|M_h_c[Cytosol]| + |M_lincoa_c[Cytosol]| + |M_nadph_c[Cytosol]| + |M_o2_c[Cytosol]|
     => |M_glincoa_c[Cytosol]| + (2) |M_h2o_c[Cytosol]| + |M_nadp_c[Cytosol]|'
   subsystem: S_*Fatty Acid Synthesis
 - id: R_DESAT183_6
   name: R_gamma-linolenoyl-coa desaturase (n-C18:4[6,9,12,15]CoA forming)
+  genes: LmjF36.6950
   equation: '|M_glincoa_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| + |M_o2_c[Cytosol]|
     => (2) |M_h2o_c[Cytosol]| + |M_nadp_c[Cytosol]| + |M_stdcoa_c[Cytosol]|'
   subsystem: S_*Fatty Acid Synthesis
 - id: R_DESAT203_5
   name: R_eicosatrienoyl-CoA desaturase (n-C20:4[5,8,11,14]CoA forming)
+  genes: LmjF07.1090
   equation: '|M_eictrcoa_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| +
     |M_o2_c[Cytosol]| => |M_acdcoa_c[Cytosol]| + (2) |M_h2o_c[Cytosol]| + |M_nadp_c[Cytosol]|'
   subsystem: S_*Fatty Acid Synthesis
 - id: R_DESAT204_5
   name: R_eicosatetranoyl-CoA desaturase (n-C20:5[5,8,11,14,17]CoA forming)
+  genes: LmjF07.1090
   equation: '|M_eictcoa_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| + |M_o2_c[Cytosol]|
     => |M_eicpcoa_c[Cytosol]| + (2) |M_h2o_c[Cytosol]| + |M_nadp_c[Cytosol]|'
   subsystem: S_*Fatty Acid Synthesis
 - id: R_DESAT224_4
   name: R_docosotetranoyl-coa desaturase (n-C22:5[4,7,10,13,16]CoA forming)
+  genes: LmjF14.1340
   equation: '|M_dcotcoa_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| + |M_o2_c[Cytosol]|
     => |M_dc4pcoa_c[Cytosol]| + (2) |M_h2o_c[Cytosol]| + |M_nadp_c[Cytosol]|'
   subsystem: S_*Fatty Acid Synthesis
 - id: R_DESAT225_4
   name: R_docosopentaenoyl-coa desaturase (n-C22:6[4,7,10,13,16,19]CoA forming)
+  genes: LmjF14.1340
   equation: '|M_dc4pcoa_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| + |M_o2_c[Cytosol]|
     => |M_dchxcoa_c[Cytosol]| + (2) |M_h2o_c[Cytosol]| + |M_nadp_c[Cytosol]|'
   subsystem: S_*Fatty Acid Synthesis
@@ -1299,10 +1494,12 @@
   subsystem: S_*Transport, Endoplasmic Reticular
 - id: R_DGK1
   name: R_deoxyguanylate kinase (dGMP:ATP)
+  genes: LmjF33.1090 or LmjF36.2260
   equation: '|M_atp_c[Cytosol]| + |M_dgmp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dgdp_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_DGK1er
   name: R_deoxyguanylate kinase (dGMP:ATP)
+  genes: LmjF33.1090 or LmjF36.2260
   equation: '|M_atp_r[Endoplasmic_Reticulum]| + |M_dgmp_r[Endoplasmic_Reticulum]|
     <=> |M_adp_r[Endoplasmic_Reticulum]| + |M_dgdp_r[Endoplasmic_Reticulum]|'
   subsystem: S_*Purine Metabolism
@@ -1316,11 +1513,13 @@
   subsystem: S_*Transport, Nuclear
 - id: R_DHAK
   name: R_dihydroxyacetone kinase
+  genes: LmjF10.0420
   equation: '|M_atp_c[Cytosol]| + |M_dha_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_dhap_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_*Glycerolipid Metabolism
 - id: R_DHAPAx_LM
   name: R_Acyl-CoA:glycerone-phosphate O-acyltransferase
+  genes: LmjF34.1090
   equation: (0.080000) |M_alincoa_x[Glycosome]| + |M_dhap_x[Glycosome]| + (0.080000)
     |M_glincoa_x[Glycosome]| + (0.290000) |M_lincoa_x[Glycosome]| + (0.330000) |M_olcoa_x[Glycosome]|
     + (0.090000) |M_pmtcoa_x[Glycosome]| + (0.100000) |M_strcoa_x[Glycosome]| + (0.030000)
@@ -1355,11 +1554,13 @@
   subsystem: S_*Steroid Biosynthesis
 - id: R_DHCRD1
   name: R_dihydroceramide desaturase
+  genes: LmjF26.1670 or LmjF26.1680 or LmjF26.1690 or LmjF26.1700
   equation: '|M_dhcrm_r[Endoplasmic_Reticulum]| + |M_nadp_r[Endoplasmic_Reticulum]|
     => |M_cer_r[Endoplasmic_Reticulum]| + |M_h_r[Endoplasmic_Reticulum]| + |M_nadph_r[Endoplasmic_Reticulum]|'
   subsystem: S_*Sphingolipid Metabolism
 - id: R_DHCRD2
   name: R_dihydroceramide desaturase
+  genes: LmjF26.1670 or LmjF26.1680 or LmjF26.1690 or LmjF26.1700
   equation: '|M_dhcrm_r[Endoplasmic_Reticulum]| + |M_fad_r[Endoplasmic_Reticulum]|
     => |M_cer_r[Endoplasmic_Reticulum]| + |M_fadh2_r[Endoplasmic_Reticulum]|'
   subsystem: S_*Sphingolipid Metabolism
@@ -1369,24 +1570,29 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_DHFOR2
   name: R_dihydrofolate reductase
+  genes: LmjF06.0860
   equation: '|M_dhf_c[Cytosol]| + |M_nadp_c[Cytosol]| <=> |M_fol_c[Cytosol]| + |M_nadph_c[Cytosol]|'
   subsystem: S_*Folate biosynthesis
 - id: R_DHFOR2a
   name: R_dihydrofolate reductase
+  genes: LmjF06.0860
   equation: '|M_dhf_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_fol_c[Cytosol]| + |M_nadh_c[Cytosol]|'
   subsystem: S_*Folate biosynthesis
 - id: R_DHFR
   name: R_dihydrofolate reductase
+  genes: LmjF06.0860
   equation: '|M_dhf_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| <=> |M_nadp_c[Cytosol]|
     + |M_thf_c[Cytosol]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_DHFRa
   name: R_dihydrofolate reductase
+  genes: LmjF06.0860
   equation: '|M_dhf_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| <=> |M_nad_c[Cytosol]|
     + |M_thf_c[Cytosol]|'
   subsystem: S_*One carbon pool by folate
 - id: R_DHFS
   name: R_dihydrofolate synthase
+  genes: LmjF36.2610
   equation: '|M_atp_c[Cytosol]| + |M_dhpt_c[Cytosol]| + |M_glu_L_c[Cytosol]| => |M_adp_c[Cytosol]|
     + |M_dhf_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_*Folate biosynthesis
@@ -1400,16 +1606,19 @@
   subsystem: S_*Transport, Nuclear
 - id: R_DHORD1
   name: R_dihydoorotic acid dehydrogenase
+  genes: LmjF16.0530
   equation: '|M_dhor_S_c[Cytosol]| + |M_o2_c[Cytosol]| <=> |M_h2o2_c[Cytosol]| +
     |M_orot_c[Cytosol]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_DHORTS
   name: R_dihydroorotase
+  genes: LmjF16.0580
   equation: '|M_dhor_S_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_cbasp_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_DHPEG
   name: R_3,4-Dihydroxyphenylethyleneglycol:NAD+ oxidoreductase
+  genes: LmjF30.2090
   equation: '|M_Dhpeg_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_dhmdlald_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|'
   subsystem: S_*Tyrosine Metabolism
@@ -1423,55 +1632,66 @@
   subsystem: S_*Transport, Nuclear
 - id: R_DKMD2K
   name: R_1,2-dihydroxy-3-keto-5-methylthiopentene dioxygenase (2-keto-4-methylthiobutyrate)
+  genes: LmjF34.4600 or LmjF20.0970
   equation: '|M_12d3k5m_c[Cytosol]| + |M_o2_c[Cytosol]| => |M_2kmb_c[Cytosol]| +
     |M_for_c[Cytosol]|'
   subsystem: S_*Methionine Metabolism
 - id: R_DM5ATm
   name: R_2,6-Dimethyl-5-methylene-3-oxo-heptanoyl-CoA C-acetyltransferase
+  genes: LmjF05.0180 or LmjF25.0020
   equation: '|M_26d5mcoa_m[Mitochondria]| + |M_coa_m[Mitochondria]| => |M_3iso3coa_m[Mitochondria]|
     + |M_ppcoa_m[Mitochondria]|'
   subsystem: S_*Limonene and Pinene Degradation
 - id: R_DMATT
   name: R_dimethylallyltranstransferase
+  genes: LmjF22.1360
   equation: '|M_dmpp_c[Cytosol]| + |M_ipdp_c[Cytosol]| => |M_grdp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Steroid Biosynthesis
 - id: R_DMATTx
   name: R_dimethylallyltranstransferase
+  genes: LmjF22.1360
   equation: '|M_dmpp_x[Glycosome]| + |M_ipdp_x[Glycosome]| => |M_grdp_x[Glycosome]|
     + |M_ppi_x[Glycosome]|'
   subsystem: S_*Steroid Biosynthesis
 - id: R_DMQMT
   name: R_3-Dimethylubiquinonol 3-methyltransferase
+  genes: LmjF35.4250
   equation: '|M_2omhmbl_c[Cytosol]| + |M_amet_c[Cytosol]| => |M_ahcys_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ubq8h2_c[Cytosol]|'
   subsystem: S_*Ubiquinone Biosynthesis
 - id: R_DNMPPAn
   name: R_Dihydroneopterin monophosphate dephosphorylase
+  genes: LmjF10.0170 or LmjF24.2280 or LmjF34.2610 or LmjF32.1530 or LmjF13.0500
   equation: '|M_dhpmp_n[Nucleus]| + |M_h2o_n[Nucleus]| => |M_dhnpt_n[Nucleus]| +
     |M_pi_n[Nucleus]|'
   subsystem: S_*Folate biosynthesis
 - id: R_DNTPPAn
   name: R_Dihydroneopterin triphosphate pyrophosphatase
+  genes: LmjF10.0170 or LmjF32.1530 or LmjF24.2280 or LmjF34.2610 or LmjF13.0500
   equation: '|M_ahdt_n[Nucleus]| + |M_h2o_n[Nucleus]| => |M_dhpmp_n[Nucleus]| + |M_h_n[Nucleus]|
     + |M_ppi_n[Nucleus]|'
   subsystem: S_*Folate biosynthesis
 - id: R_DPCOAK
   name: R_dephospho-CoA kinase
+  genes: LmjF22.1530
   equation: '|M_atp_c[Cytosol]| + |M_dpcoa_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_coa_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_*Pantothenate and CoA biosynthesis
 - id: R_DPMVD
   name: R_diphosphomevalonate decarboxylase
+  genes: LmjF18.0020
   equation: '|M_5dpmev_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_co2_c[Cytosol]|
     + |M_ipdp_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_*Steroid Biosynthesis
 - id: R_DPMVDx
   name: R_diphosphomevalonate decarboxylase
+  genes: LmjF18.0020
   equation: '|M_5dpmev_x[Glycosome]| + |M_atp_x[Glycosome]| => |M_adp_x[Glycosome]|
     + |M_co2_x[Glycosome]| + |M_ipdp_x[Glycosome]| + |M_pi_x[Glycosome]|'
   subsystem: S_*Steroid Biosynthesis
 - id: R_DRBKr
   name: R_Deoxyribokinase
+  genes: LmjF27.0420
   equation: '|M_atp_c[Cytosol]| + |M_drib_c[Cytosol]| <=> |M_2dr5p_c[Cytosol]| +
     |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_*Pentose Phosphate Pathway
@@ -1482,10 +1702,12 @@
   subsystem: S_*Transport, Extracellular
 - id: R_DRPAr
   name: R_Deoxyribose-phosphate aldolase
+  genes: LmjF06.1070
   equation: '|M_2dr5p_c[Cytosol]| <=> |M_acald_c[Cytosol]| + |M_g3p_c[Cytosol]|'
   subsystem: S_*Pentose Phosphate Pathway
 - id: R_DSATer
   name: R_dihydrosphingosine N-acyltransferase
+  genes: LmjF31.1780
   equation: '|M_acoa_r[Endoplasmic_Reticulum]| + |M_sphgn_r[Endoplasmic_Reticulum]|
     => |M_coa_r[Endoplasmic_Reticulum]| + |M_dhcrm_r[Endoplasmic_Reticulum]| + |M_h_r[Endoplasmic_Reticulum]|'
   subsystem: S_*Sphingolipid Metabolism
@@ -1495,6 +1717,7 @@
   subsystem: S_*Transport, Endoplasmic Reticular
 - id: R_DTDPG4Ex
   name: R_dTDPglucose 4-epimerase
+  genes: LmjF33.2300
   equation: '|M_dtdpglc_x[Glycosome]| <=> |M_dtdpgal_x[Glycosome]|'
   subsystem: S_*Galactose metabolism
 - id: R_DTDPGALtg
@@ -1511,6 +1734,7 @@
   subsystem: S_*Transport, Nuclear
 - id: R_DTMPK
   name: R_dTMP kinase
+  genes: LmjF10.0060
   equation: '|M_atp_c[Cytosol]| + |M_dtmp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dtdp_c[Cytosol]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_DTMPtm
@@ -1531,6 +1755,7 @@
   subsystem: S_*Transport, Nuclear
 - id: R_DURIK1m
   name: R_deoxyuridine kinase (ATP:Deoxyuridine)
+  genes: LmjF21.1210
   equation: '|M_atp_m[Mitochondria]| + |M_duri_m[Mitochondria]| <=> |M_adp_m[Mitochondria]|
     + |M_dump_m[Mitochondria]| + |M_h_m[Mitochondria]|'
   subsystem: S_*Pyrimidine Metabolism
@@ -1540,11 +1765,13 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_DUTPDPm
   name: R_dUTP diphosphatase
+  genes: LmjF06.0560
   equation: '|M_dutp_m[Mitochondria]| + |M_h2o_m[Mitochondria]| => |M_dump_m[Mitochondria]|
     + |M_h_m[Mitochondria]| + |M_ppi_m[Mitochondria]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_DUTPDPn
   name: R_dUTP diphosphatase
+  genes: LmjF06.0560
   equation: '|M_dutp_n[Nucleus]| + |M_h2o_n[Nucleus]| => |M_dump_n[Nucleus]| + |M_h_n[Nucleus]|
     + |M_ppi_n[Nucleus]|'
   subsystem: S_*Pyrimidine Metabolism
@@ -1558,102 +1785,126 @@
   subsystem: S_*Transport, Peroxisomal
 - id: R_EAPT_LM
   name: R_alkyl acylglycerol phosphoethanolamine transferase
+  genes: LmjF36.5900
   equation: (0.010000) |M_ak2g_LM_c[Cytosol]| + |M_cdpea_c[Cytosol]| => (0.010000)
     |M_ak2gpe_LM_c[Cytosol]| + |M_cmp_c[Cytosol]| + |M_h_c[Cytosol]|
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_EBP1r
   name: R_3-beta-hydroxysteroid-delta(8),delta(7)-isomerase
+  genes: LmjF16.1340
   equation: '|M_zymst_r[Endoplasmic_Reticulum]| => |M_chlstol_r[Endoplasmic_Reticulum]|'
   subsystem: S_*Steroid Biosynthesis
 - id: R_EBP2r
   name: R_3-beta-hydroxysteroid-delta(8),delta(7)-isomerase
+  genes: LmjF16.1340
   equation: '|M_zymstn_r[Endoplasmic_Reticulum]| => |M_lthstrl_r[Endoplasmic_Reticulum]|'
   subsystem: S_*Steroid Biosynthesis
 - id: R_ECAPLH
   name: R_epsilon-Caprolactone lactonohydrolase
+  genes: LmjF26.2700
   equation: '|M_6hxnl_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_6hdhexa_c[Cytosol]|'
   subsystem: S_*Caprolactam Degradation
 - id: R_ECOAH13g
   name: R_cis-2-Methyl-5-isopropylhexa-2,5-dienoyl-CoA hydro-lyase
+  genes: LmjF33.2600 or LmjF32.3680 or LmjF18.0580
   equation: '|M_c2m26dcoa_x[Glycosome]| + |M_h2o_x[Glycosome]| <=> |M_3odccoa_x[Glycosome]|'
   subsystem: S_*Limonene and Pinene Degradation
 - id: R_ECOAH13m
   name: R_cis-2-Methyl-5-isopropylhexa-2,5-dienoyl-CoA hydro-lyase
+  genes: LmjF29.2310 or LmjF26.1550 or LmjF35.0360
   equation: '|M_c2m26dcoa_m[Mitochondria]| + |M_h2o_m[Mitochondria]| <=> |M_3odccoa_m[Mitochondria]|'
   subsystem: S_*Limonene and Pinene Degradation
 - id: R_ECOAH14g
   name: R_trans-2-Methyl-5-isopropylhexa-2,5-dienoyl-CoA hydro-lyase
+  genes: LmjF33.2600 or LmjF18.0580 or LmjF32.3680
   equation: '|M_h2o_x[Glycosome]| + |M_t2m26dcoa_x[Glycosome]| <=> |M_3odccoa_x[Glycosome]|'
   subsystem: S_*Limonene and Pinene Degradation
 - id: R_ECOAH14m
   name: R_trans-2-Methyl-5-isopropylhexa-2,5-dienoyl-CoA hydro-lyase
+  genes: LmjF29.2310 or LmjF35.0360 or LmjF26.1550
   equation: '|M_h2o_m[Mitochondria]| + |M_t2m26dcoa_m[Mitochondria]| <=> |M_3odccoa_m[Mitochondria]|'
   subsystem: S_*Limonene and Pinene Degradation
 - id: R_ECOAH15g
   name: R_(3S)-3-hydroxyacyl-CoA hydro-lyase
+  genes: LmjF18.0580 or LmjF33.2600 or LmjF32.3680
   equation: '|M_5c2pcoa_x[Glycosome]| + |M_h2o_x[Glycosome]| <=> |M_3shddcoa_x[Glycosome]|'
   subsystem: S_*Caprolactam Degradation
 - id: R_ECOAH15m
   name: R_(3S)-3-hydroxyacyl-CoA hydro-lyase
+  genes: LmjF35.0360 or LmjF29.2310 or LmjF26.1550
   equation: '|M_5c2pcoa_m[Mitochondria]| + |M_h2o_m[Mitochondria]| <=> |M_3shddcoa_m[Mitochondria]|'
   subsystem: S_*Caprolactam Degradation
 - id: R_ECOAH16m
   name: R_enoyl-CoA hydratase, bacterial
+  genes: LmjF29.2310 or LmjF26.1550 or LmjF35.0360
   equation: '|M_2mp2coa_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_h2o_m[Mitochondria]|
     <=> |M_hibcoa_m[Mitochondria]|'
   subsystem: S_*Benzoate Degradation
 - id: R_ECOAH17m
   name: R_2-Methylprop-2-enoyl-CoA (2-Methylbut-2-enoyl-CoA)
+  genes: LmjF29.2310 or LmjF26.1550 or LmjF35.0360
   equation: '|M_3mb2coa_m[Mitochondria]| + |M_h2o_m[Mitochondria]| <=> |M_Hydcoa_m[Mitochondria]|'
   subsystem: S_*Benzoate Degradation
 - id: R_ECOAH1m
   name: R_trans-but-2-enoyl-coA hydratase
+  genes: LmjF29.2310 or LmjF26.1550 or LmjF35.0360
   equation: '|M_3hbutcoa_m[Mitochondria]| <=> |M_butd2coa_m[Mitochondria]| + |M_h2o_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Degradation
 - id: R_ECOAH2m
   name: R_trans-hex-2-enoyl-coA hydratase
+  genes: LmjF29.2310 or LmjF26.1550 or LmjF35.0360
   equation: '|M_3hhxcoa_m[Mitochondria]| <=> |M_h2o_m[Mitochondria]| + |M_hxd2coa_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Degradation
 - id: R_ECOAH3m
   name: R_trans-oct-2-enoyl-coA hydratase
+  genes: LmjF26.1550 or LmjF29.2310 or LmjF35.0360
   equation: '|M_3hoccoa_m[Mitochondria]| <=> |M_h2o_m[Mitochondria]| + |M_ocd2coa_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Degradation
 - id: R_ECOAH4m
   name: R_trans-dec-2-enoyl-coA hydratase
+  genes: LmjF26.1550 or LmjF29.2310 or LmjF35.0360
   equation: '|M_3hdccoa_m[Mitochondria]| <=> |M_dcd2coa_m[Mitochondria]| + |M_h2o_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Degradation
 - id: R_ECOAH5m
   name: R_trans-dodec-2-enoyl-coA hydratase
+  genes: LmjF26.1550 or LmjF29.2310 or LmjF35.0360
   equation: '|M_3hddcoa_m[Mitochondria]| <=> |M_ddd2coa_m[Mitochondria]| + |M_h2o_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Degradation
 - id: R_ECOAH6m
   name: R_trans-tetradec-2-enoyl-coA hydratase
+  genes: LmjF26.1550 or LmjF29.2310 or LmjF35.0360
   equation: '|M_3htdcoa_m[Mitochondria]| <=> |M_h2o_m[Mitochondria]| + |M_tdd2coa_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Degradation
 - id: R_ECOAH7m
   name: R_trans-hexadec-2-enoyl-coA hydratase
+  genes: LmjF26.1550 or LmjF29.2310 or LmjF35.0360
   equation: '|M_3hhdcoa_m[Mitochondria]| <=> |M_h2o_m[Mitochondria]| + |M_hdd2coa_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Degradation
 - id: R_ECOAH9m
   name: R_2-Methylprop-2-enoyl-CoA (2-Methylbut-2-enoyl-CoA)
+  genes: LmjF26.1550 or LmjF29.2310 or LmjF35.0360
   equation: '|M_2mb2coa_m[Mitochondria]| + |M_h2o_m[Mitochondria]| <=> |M_3hmbcoa_m[Mitochondria]|'
   subsystem: S_*Benzoate Degradation
 - id: R_ENO
   name: R_enolase
+  genes: LmjF14.1160 or LmjF32.3760
   equation: '|M_2pg_c[Cytosol]| <=> |M_h2o_c[Cytosol]| + |M_pep_c[Cytosol]|'
   subsystem: S_*Glycolysis/Gluconeogenesis
 - id: R_ENPHE1
   name: R_enolase-phosphatase E-1
+  genes: LmjF36.5910
   equation: '|M_dkmpp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_12d3k5m_c[Cytosol]|
     + (2) |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_*Methionine Metabolism
 - id: R_EPPP2
   name: R_Guanosine 3'-diphosphate 5'-triphosphate 5'-phosphohydrolase
+  genes: LmjF01.0310
   equation: '|M_gdptp_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_gdpdp_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_EPPP2v
   name: R_Guanosine 3'-diphosphate 5'-triphosphate 5'-phosphohydrolase, acidocalcisomal
+  genes: LmjF01.0310
   equation: '|M_gdptp_v[Acidocalcisome]| + |M_h2o_v[Acidocalcisome]| <=> |M_gdpdp_v[Acidocalcisome]|
     + |M_h_v[Acidocalcisome]| + |M_pi_v[Acidocalcisome]|'
   subsystem: S_*Purine Metabolism
@@ -1667,26 +1918,31 @@
   subsystem: S_*Transport, Endoplasmic Reticular
 - id: R_ETAPCT
   name: R_ethanolamine-phosphate cytidylyltransferase
+  genes: LmjF32.0890
   equation: '|M_ctp_c[Cytosol]| + |M_ethap_c[Cytosol]| + |M_h_c[Cytosol]| => |M_cdpea_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_ETAPCTm
   name: R_ethanolamine-phosphate cytidylyltransferase
+  genes: LmjF32.0890
   equation: '|M_ctp_m[Mitochondria]| + |M_ethap_m[Mitochondria]| + |M_h_m[Mitochondria]|
     => |M_cdpea_m[Mitochondria]| + |M_ppi_m[Mitochondria]|'
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_ETHAMK
   name: R_ethanolamine kinase
+  genes: LmjF27.1420
   equation: '|M_atp_c[Cytosol]| + |M_etha_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_ethap_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_ETHAPT_LM
   name: R_Ethanolaminephosphotransferase (L. major)
+  genes: LmjF36.5900
   equation: (0.010000) |M_12dgr_LM_c[Cytosol]| + |M_cdpea_c[Cytosol]| => |M_cmp_c[Cytosol]|
     + |M_h_c[Cytosol]| + (0.010000) |M_pe_LM_c[Cytosol]|
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_ETHAPTm_LM
   name: R_Ethanolaminephosphotransferase (L. major)
+  genes: LmjF36.5900
   equation: (0.010000) |M_12dgr_LM_m[Mitochondria]| + |M_cdpea_m[Mitochondria]| =>
     |M_cmp_m[Mitochondria]| + |M_h_m[Mitochondria]| + (0.010000) |M_pe_LM_m[Mitochondria]|
   subsystem: S_*Glycerophospholipid metabolism
@@ -1749,41 +2005,56 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_FACOAL1
   name: R_fatty-acid--CoA ligase (gamla)
+  genes: LmjF01.0470 or LmjF01.0490 or LmjF01.0500 or LmjF01.0510 or LmjF01.0520
+    or LmjF01.0530 or LmjF03.0230 or LmjF13.0420
   equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_gamla_c[Cytosol]| <=> |M_amp_c[Cytosol]|
     + |M_glincoa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Fatty Acid Degradation
 - id: R_FACOAL140
   name: R_fatty-acid--CoA ligase (tetradecanoate)
+  genes: LmjF01.0470 or LmjF01.0490 or LmjF01.0500 or LmjF01.0510 or LmjF01.0520
+    or LmjF01.0530 or LmjF03.0230 or LmjF13.0420
   equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_ttdca_c[Cytosol]| <=> |M_amp_c[Cytosol]|
     + |M_ppi_c[Cytosol]| + |M_tdcoa_c[Cytosol]|'
   subsystem: S_*Fatty Acid Degradation
 - id: R_FACOAL160
   name: R_fatty-acid--CoA ligase (hexadecanoate)
+  genes: LmjF01.0500 or LmjF01.0470 or LmjF01.0490 or LmjF01.0520 or LmjF03.0230
+    or LmjF01.0510 or LmjF01.0530 or LmjF13.0420
   equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_hdca_c[Cytosol]| <=> |M_amp_c[Cytosol]|
     + |M_pmtcoa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Fatty Acid Degradation
 - id: R_FACOAL180
   name: R_fatty-acid--CoA ligase (octadecanoate)
+  genes: LmjF01.0470 or LmjF01.0490 or LmjF01.0500 or LmjF01.0510 or LmjF01.0520
+    or LmjF01.0530 or LmjF03.0230 or LmjF13.0420
   equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_ocdca_c[Cytosol]| <=> |M_amp_c[Cytosol]|
     + |M_ppi_c[Cytosol]| + |M_strcoa_c[Cytosol]|'
   subsystem: S_*Fatty Acid Degradation
 - id: R_FACOAL181
   name: R_fatty-acid--CoA ligase (octadecenoate)
+  genes: LmjF01.0470 or LmjF01.0490 or LmjF01.0500 or LmjF01.0510 or LmjF01.0520
+    or LmjF01.0530 or LmjF03.0230 or LmjF13.0420
   equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_ocdcea_c[Cytosol]| <=>
     |M_amp_c[Cytosol]| + |M_olcoa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Fatty Acid Degradation
 - id: R_FACOAL182
   name: R_fatty-acid--CoA ligase (octadecynoate)
+  genes: LmjF01.0470 or LmjF01.0490 or LmjF01.0500 or LmjF01.0510 or LmjF01.0520
+    or LmjF01.0530 or LmjF03.0230 or LmjF13.0420
   equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_ocdcya_c[Cytosol]| <=>
     |M_amp_c[Cytosol]| + |M_lincoa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Fatty Acid Degradation
 - id: R_FACOAL2
   name: R_fatty-acid--CoA ligase (alpla)
+  genes: LmjF01.0470 or LmjF01.0490 or LmjF01.0500 or LmjF01.0510 or LmjF01.0520
+    or LmjF01.0530 or LmjF03.0230 or LmjF13.0420
   equation: '|M_alpla_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| <=> |M_alincoa_c[Cytosol]|
     + |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Fatty Acid Degradation
 - id: R_FAS100COAr
   name: R_fatty acyl-CoA synthase (n-C10:0CoA)
+  genes: LmjF14.0650 or LmjF14.0640 or LmjF14.0660
   equation: (3) |M_h_r[Endoplasmic_Reticulum]| + |M_malcoa_r[Endoplasmic_Reticulum]|
     + (2) |M_nadph_r[Endoplasmic_Reticulum]| + |M_occoa_r[Endoplasmic_Reticulum]|
     => |M_co2_r[Endoplasmic_Reticulum]| + |M_coa_r[Endoplasmic_Reticulum]| + |M_dccoa_r[Endoplasmic_Reticulum]|
@@ -1791,6 +2062,7 @@
   subsystem: S_*Fatty Acid Synthesis
 - id: R_FAS120COAr
   name: R_fatty-acyl-CoA synthase (n-C12:0CoA)
+  genes: LmjF14.0670
   equation: '|M_dccoa_r[Endoplasmic_Reticulum]| + (3) |M_h_r[Endoplasmic_Reticulum]|
     + |M_malcoa_r[Endoplasmic_Reticulum]| + (2) |M_nadph_r[Endoplasmic_Reticulum]|
     => |M_co2_r[Endoplasmic_Reticulum]| + |M_coa_r[Endoplasmic_Reticulum]| + |M_ddcoa_r[Endoplasmic_Reticulum]|
@@ -1798,6 +2070,7 @@
   subsystem: S_*Fatty Acid Synthesis
 - id: R_FAS140COAr
   name: R_fatty-acyl-CoA synthase (n-C14:0CoA)
+  genes: LmjF14.0670
   equation: '|M_ddcoa_r[Endoplasmic_Reticulum]| + (3) |M_h_r[Endoplasmic_Reticulum]|
     + |M_malcoa_r[Endoplasmic_Reticulum]| + (2) |M_nadph_r[Endoplasmic_Reticulum]|
     => |M_co2_r[Endoplasmic_Reticulum]| + |M_coa_r[Endoplasmic_Reticulum]| + |M_h2o_r[Endoplasmic_Reticulum]|
@@ -1805,6 +2078,7 @@
   subsystem: S_*Fatty Acid Synthesis
 - id: R_FAS160COAr
   name: R_fatty-acyl-CoA synthase (n-C16:0CoA)
+  genes: LmjF14.0690 or LmjF14.0680 or LmjF14.0705 or LmjF14.0700
   equation: (3) |M_h_r[Endoplasmic_Reticulum]| + |M_malcoa_r[Endoplasmic_Reticulum]|
     + (2) |M_nadph_r[Endoplasmic_Reticulum]| + |M_tdcoa_r[Endoplasmic_Reticulum]|
     => |M_co2_r[Endoplasmic_Reticulum]| + |M_coa_r[Endoplasmic_Reticulum]| + |M_h2o_r[Endoplasmic_Reticulum]|
@@ -1812,6 +2086,7 @@
   subsystem: S_*Fatty Acid Synthesis
 - id: R_FAS180COAr
   name: R_fatty-acyl-CoA synthase (n-C18:0CoA)
+  genes: LmjF14.0690 or LmjF14.0700 or LmjF14.0680 or LmjF14.0705
   equation: (3) |M_h_r[Endoplasmic_Reticulum]| + |M_malcoa_r[Endoplasmic_Reticulum]|
     + (2) |M_nadph_r[Endoplasmic_Reticulum]| + |M_pmtcoa_r[Endoplasmic_Reticulum]|
     => |M_co2_r[Endoplasmic_Reticulum]| + |M_coa_r[Endoplasmic_Reticulum]| + |M_h2o_r[Endoplasmic_Reticulum]|
@@ -1819,24 +2094,28 @@
   subsystem: S_*Fatty Acid Synthesis
 - id: R_FAS203COA
   name: R_fatty acyl-CoA synthase (n-C18:3CoA -> n-C20:3CoA)
+  genes: LmjF32.1160
   equation: '|M_glincoa_c[Cytosol]| + (3) |M_h_c[Cytosol]| + |M_malcoa_c[Cytosol]|
     + (2) |M_nadph_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_eictrcoa_c[Cytosol]|
     + |M_h2o_c[Cytosol]| + (2) |M_nadp_c[Cytosol]|'
   subsystem: S_*Fatty Acid Synthesis
 - id: R_FAS204COA
   name: R_fatty acyl-CoA synthase (n-C18:4CoA -> n-C20:4CoA)
+  genes: LmjF32.1160
   equation: (3) |M_h_c[Cytosol]| + |M_malcoa_c[Cytosol]| + (2) |M_nadph_c[Cytosol]|
     + |M_stdcoa_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_eictcoa_c[Cytosol]|
     + |M_h2o_c[Cytosol]| + (2) |M_nadp_c[Cytosol]|
   subsystem: S_*Fatty Acid Synthesis
 - id: R_FAS224COA
   name: R_fatty acyl-CoA synthase (n-C20:4CoA -> n-C22:4CoA)
+  genes: LmjF05.1170
   equation: '|M_acdcoa_c[Cytosol]| + (3) |M_h_c[Cytosol]| + |M_malcoa_c[Cytosol]|
     + (2) |M_nadph_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_dcotcoa_c[Cytosol]|
     + |M_h2o_c[Cytosol]| + (2) |M_nadp_c[Cytosol]|'
   subsystem: S_*Fatty Acid Synthesis
 - id: R_FAS224COAr
   name: R_fatty acyl-CoA desaturase (n-C20:4CoA -> n-C22:4CoA)
+  genes: LmjF14.0710 or LmjF14.0740 or LmjF14.0720 or LmjF14.0730
   equation: '|M_acdcoa_r[Endoplasmic_Reticulum]| + (3) |M_h_r[Endoplasmic_Reticulum]|
     + |M_malcoa_r[Endoplasmic_Reticulum]| + (2) |M_nadph_r[Endoplasmic_Reticulum]|
     => |M_co2_r[Endoplasmic_Reticulum]| + |M_coa_r[Endoplasmic_Reticulum]| + |M_dcotcoa_r[Endoplasmic_Reticulum]|
@@ -1844,12 +2123,14 @@
   subsystem: S_*Fatty Acid Synthesis
 - id: R_FAS225COA
   name: R_fatty acyl-CoA synthase (n-C20:5CoA -> n-C22:5CoA)
+  genes: LmjF05.1170
   equation: '|M_eicpcoa_c[Cytosol]| + (3) |M_h_c[Cytosol]| + |M_malcoa_c[Cytosol]|
     + (2) |M_nadph_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_dcopcoa_c[Cytosol]|
     + |M_h2o_c[Cytosol]| + (2) |M_nadp_c[Cytosol]|'
   subsystem: S_*Fatty Acid Synthesis
 - id: R_FAS60COAr
   name: R_fatty acyl-CoA synthase (n-C6:0CoA), lumped reaction
+  genes: LmjF14.0640 or LmjF14.0660 or LmjF14.0650
   equation: '|M_btcoa_r[Endoplasmic_Reticulum]| + (3) |M_h_r[Endoplasmic_Reticulum]|
     + |M_malcoa_r[Endoplasmic_Reticulum]| + (2) |M_nadph_r[Endoplasmic_Reticulum]|
     => |M_co2_r[Endoplasmic_Reticulum]| + |M_coa_r[Endoplasmic_Reticulum]| + |M_h2o_r[Endoplasmic_Reticulum]|
@@ -1857,6 +2138,7 @@
   subsystem: S_*Fatty Acid Synthesis
 - id: R_FAS80COAr
   name: R_fatty acyl-CoA synthase (n-C8:0CoA), lumped reaction
+  genes: LmjF14.0640 or LmjF14.0660 or LmjF14.0650
   equation: (3) |M_h_r[Endoplasmic_Reticulum]| + |M_hxcoa_r[Endoplasmic_Reticulum]|
     + |M_malcoa_r[Endoplasmic_Reticulum]| + (2) |M_nadph_r[Endoplasmic_Reticulum]|
     => |M_co2_r[Endoplasmic_Reticulum]| + |M_coa_r[Endoplasmic_Reticulum]| + |M_h2o_r[Endoplasmic_Reticulum]|
@@ -1921,23 +2203,28 @@
   subsystem: S_*Fatty Acid Biosynthesis
 - id: R_FBAg
   name: R_fructose-bisphosphate aldolase, glycosomal
+  genes: LmjF36.1260
   equation: '|M_fdp_x[Glycosome]| <=> |M_dhap_x[Glycosome]| + |M_g3p_x[Glycosome]|'
   subsystem: S_*Glycolysis/Gluconeogenesis
 - id: R_FBP26
   name: R_Fructose-2,6-bisphosphate 2-phosphatase
+  genes: LmjF07.0760 or LmjF36.0150
   equation: '|M_f26bp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_f6p_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_*Fructose and mannose metabolism
 - id: R_FBPg
   name: R_fructose-bisphosphatase, glycosomal
+  genes: LmjF04.1160
   equation: '|M_fdp_x[Glycosome]| + |M_h2o_x[Glycosome]| => |M_f6p_x[Glycosome]|
     + |M_pi_x[Glycosome]|'
   subsystem: S_*Glycolysis/Gluconeogenesis
 - id: R_FCLT
   name: R_Heme B synthesis reaction
+  genes: LmjF17.1460
   equation: '|M_fe2_c[Cytosol]| + |M_ppp9_c[Cytosol]| => |M_h_c[Cytosol]| + |M_pheme_c[Cytosol]|'
   subsystem: S_*Porphyrin and Chlorophyll Metabolism
 - id: R_FERCOAL
   name: R_Ferulate:CoA ligase (AMP-forming)
+  genes: LmjF19.0985 or LmjF19.1005
   equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_frlt_c[Cytosol]| + (3)
     |M_h_c[Cytosol]| => |M_amp_c[Cytosol]| + |M_ferulcoa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Stilbene, Coumarine, and Lignin Metabolism
@@ -1960,11 +2247,13 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_FRDg
   name: R_fumarate reductase (NADH-dependent), glycosomal
+  genes: LmjF35.1180
   equation: '|M_fum_x[Glycosome]| + |M_h_x[Glycosome]| + |M_nadh_x[Glycosome]| =>
     |M_nad_x[Glycosome]| + |M_succ_x[Glycosome]|'
   subsystem: S_*Citrate Cycle (TCA)
 - id: R_FRDm
   name: R_fumarate reductase (NADH-dependent), mitochondrial
+  genes: LmjF35.1190 or LmjF35.0830
   equation: '|M_fum_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_nadh_m[Mitochondria]|
     => |M_nad_m[Mitochondria]| + |M_succ_m[Mitochondria]|'
   subsystem: S_*Citrate Cycle (TCA)
@@ -1974,24 +2263,29 @@
   subsystem: S_*Transport, Peroxisomal
 - id: R_FTHFLr
   name: R_formate-tetrahydrofolate ligase
+  genes: LmjF30.2600
   equation: '|M_atp_c[Cytosol]| + |M_for_c[Cytosol]| + |M_thf_c[Cytosol]| <=> |M_10fthf_c[Cytosol]|
     + |M_adp_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_*Glyoxylate and dicarboxylate metabolism
 - id: R_FUMg
   name: R_fumarase, glycosomal
+  genes: LmjF29.1960
   equation: '|M_fum_x[Glycosome]| + |M_h2o_x[Glycosome]| <=> |M_mal_L_x[Glycosome]|'
   subsystem: S_*Citrate Cycle (TCA)
 - id: R_FUMm
   name: R_fumarase, mitochondrial
+  genes: LmjF24.0320
   equation: '|M_fum_m[Mitochondria]| + |M_h2o_m[Mitochondria]| <=> |M_mal_L_m[Mitochondria]|'
   subsystem: S_*Citrate Cycle (TCA)
 - id: R_G3PDcm
   name: R_glycerol-3-phosphate dehydrogenase (FAD)
+  genes: LmjF28.0240 or LmjF20.0430
   equation: '|M_glyc3p_c[Cytosol]| + |M_fad_m[Mitochondria]| => |M_dhap_c[Cytosol]|
     + |M_fadh2_m[Mitochondria]|'
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_G3PDg
   name: R_Glycerol-3-phosphate dehydrogenase (NAD), glycosomal
+  genes: LmjF10.0510
   equation: '|M_dhap_x[Glycosome]| + |M_h_x[Glycosome]| + |M_nadh_x[Glycosome]| =>
     |M_glyc3p_x[Glycosome]| + |M_nad_x[Glycosome]|'
   subsystem: S_*Glycerophospholipid metabolism
@@ -2007,21 +2301,25 @@
   subsystem: S_*Arginine and Proline Metabolism
 - id: R_G5SDr
   name: R_glutamate-5-semialdehyde dehydrogenase
+  genes: LmjF32.3140
   equation: '|M_glu5p_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| <=> |M_glu5sa_c[Cytosol]|
     + |M_nadp_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_*Urea Cycle
 - id: R_G6PDAr
   name: R_glucosamine-6-phosphate deaminase; glycosomal
+  genes: LmjF32.3260
   equation: '|M_gam6p_x[Glycosome]| + |M_h2o_x[Glycosome]| <=> |M_f6p_x[Glycosome]|
     + |M_nh4_x[Glycosome]|'
   subsystem: S_*Aminosugars metabolism
 - id: R_G6PDH1
   name: R_glucose 6-phosphate dehydrogenase
+  genes: LmjF34.0080
   equation: '|M_g6p_B_c[Cytosol]| + |M_nadp_c[Cytosol]| => |M_6pgl_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]|'
   subsystem: S_*Pentose Phosphate Pathway
 - id: R_G6PDHg
   name: R_glucose 6-phosphate dehydrogenase, glycosomal
+  genes: LmjF34.0080
   equation: '|M_g6p_B_x[Glycosome]| + |M_nadp_x[Glycosome]| => |M_6pgl_x[Glycosome]|
     + |M_h_x[Glycosome]| + |M_nadph_x[Glycosome]|'
   subsystem: S_*Pentose Phosphate Pathway
@@ -2035,16 +2333,19 @@
   subsystem: S_*Transport, Peroxisomal
 - id: R_GALKx
   name: R_galactokinase
+  genes: LmjF35.2740
   equation: '|M_atp_x[Glycosome]| + |M_gal_x[Glycosome]| => |M_adp_x[Glycosome]|
     + |M_gal1p_x[Glycosome]| + |M_h_x[Glycosome]|'
   subsystem: S_*Galactose metabolism
 - id: R_GALS3a
   name: R_a-galactosidase (melibiose)
+  genes: LmjF18.0090
   equation: '|M_h2o_c[Cytosol]| + |M_melib_c[Cytosol]| => |M_a_D_glucose_c[Cytosol]|
     + |M_gal_c[Cytosol]|'
   subsystem: S_*Galactose metabolism
 - id: R_GALU
   name: R_UTP-glucose-1-phosphate uridylyltransferase
+  genes: LmjF18.0990
   equation: '|M_g1p_c[Cytosol]| + |M_h_c[Cytosol]| + |M_utp_c[Cytosol]| <=> |M_ppi_c[Cytosol]|
     + |M_udpg_c[Cytosol]|'
   subsystem: S_*Galactose metabolism
@@ -2058,11 +2359,13 @@
   subsystem: S_*Transport, Peroxisomal
 - id: R_GAPD
   name: R_glyceraldehyde-3-phosphate dehydrogenase (NAD)
+  genes: LmjF35.4750
   equation: '|M_g3p_c[Cytosol]| + |M_nad_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_13dpg_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|'
   subsystem: S_*Glycolysis/Gluconeogenesis
 - id: R_GAPDg
   name: R_glyceraldehyde-3-phosphate dehydrogenase (NAD), glycosomal
+  genes: LmjF30.2980 or LmjF30.2970 or LmjF36.2350
   equation: '|M_g3p_x[Glycosome]| + |M_nad_x[Glycosome]| + |M_pi_x[Glycosome]| <=>
     |M_13dpg_x[Glycosome]| + |M_h_x[Glycosome]| + |M_nadh_x[Glycosome]|'
   subsystem: S_*Glycolysis/Gluconeogenesis
@@ -2072,16 +2375,19 @@
   subsystem: S_*Transport, Peroxisomal
 - id: R_GCCa
   name: R_glycine-cleavage complex
+  genes: LmjF26.0030
   equation: '|M_gly_c[Cytosol]| + |M_h_c[Cytosol]| + |M_lpro_c[Cytosol]| => |M_alpro_c[Cytosol]|
     + |M_co2_c[Cytosol]|'
   subsystem: S_*Glycine, serine and threonine metabolism
 - id: R_GCCb
   name: R_glycine cleavage complex
+  genes: LmjF36.3800 or LmjF36.3810
   equation: '|M_alpro_c[Cytosol]| + |M_thf_c[Cytosol]| => |M_dhlpro_c[Cytosol]| +
     |M_mlthf_c[Cytosol]| + |M_nh4_c[Cytosol]|'
   subsystem: S_*One carbon pool by folate
 - id: R_GCCbm
   name: R_glycine cleavage complex
+  genes: LmjF36.3800 or LmjF36.3810
   equation: '|M_alpro_m[Mitochondria]| + |M_thf_m[Mitochondria]| => |M_dhlpro_m[Mitochondria]|
     + |M_mlthf_m[Mitochondria]| + |M_nh4_m[Mitochondria]|'
   subsystem: S_*One carbon pool by folate
@@ -2095,25 +2401,30 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_GF6PTAr
   name: R_glutamine-fructose-6-phosphate transaminase
+  genes: LmjF06.0950
   equation: '|M_f6p_c[Cytosol]| + |M_gln_L_c[Cytosol]| <=> |M_gam6p_c[Cytosol]| +
     |M_glu_L_c[Cytosol]|'
   subsystem: S_*Aminosugars metabolism
 - id: R_GHMT
   name: R_glycine hydroxymethyltransferase
+  genes: LmjF14.1320 or LmjF28.2370
   equation: '|M_ser_L_c[Cytosol]| + |M_thf_c[Cytosol]| <=> |M_gly_c[Cytosol]| + |M_h2o_c[Cytosol]|
     + |M_mlthf_c[Cytosol]|'
   subsystem: S_*One carbon pool by folate
 - id: R_GK1
   name: R_guanylate kinase (GMP:ATP)
+  genes: LmjF33.1090 or LmjF36.2260
   equation: '|M_atp_c[Cytosol]| + |M_gmp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_gdp_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_GK1er
   name: R_guanylate kinase (GMP:ATP)
+  genes: LmjF36.2260 or LmjF33.1090
   equation: '|M_atp_r[Endoplasmic_Reticulum]| + |M_gmp_r[Endoplasmic_Reticulum]|
     <=> |M_adp_r[Endoplasmic_Reticulum]| + |M_gdp_r[Endoplasmic_Reticulum]|'
   subsystem: S_*Purine Metabolism
 - id: R_GLCAt2
   name: R_alpha-glucose transport, extracellular
+  genes: LmjF36.6300 or LmjF33.0290 or LmjF36.6280 or LmjF36.6290
   equation: '|M_a_D_glucose_e[Extracellular_space]| + |M_h_e[Extracellular_space]|
     => |M_a_D_glucose_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_*Transport, Extracellular
@@ -2123,6 +2434,7 @@
   subsystem: S_*Transport, Peroxisomal
 - id: R_GLCBt2
   name: R_beta-glucose transport, extracellular
+  genes: LmjF36.6300 or LmjF33.0290 or LmjF36.6280 or LmjF36.6290
   equation: '|M_b_D_glucose_e[Extracellular_space]| + |M_h_e[Extracellular_space]|
     => |M_b_D_glucose_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_*Transport, Extracellular
@@ -2148,6 +2460,7 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_GLNS_i
   name: R_glutamine synthetase
+  genes: LmjF06.0370
   equation: '|M_atp_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_nh4_c[Cytosol]| => |M_adp_c[Cytosol]|
     + |M_gln_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_*Glutamate Metabolism
@@ -2157,16 +2470,19 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_GLNTRS
   name: R_Glutaminyl-tRNA synthetase
+  genes: LmjF15.1440
   equation: '|M_atp_c[Cytosol]| + |M_gln_L_c[Cytosol]| + |M_trnagln_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_glntrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Glutamate Metabolism
 - id: R_GLNTRSm_i
   name: R_Glutaminyl-tRNA synthetase
+  genes: LmjF15.1440
   equation: '|M_atp_m[Mitochondria]| + |M_gln_L_m[Mitochondria]| + |M_trnagln_m[Mitochondria]|
     => |M_amp_m[Mitochondria]| + |M_glntrna_m[Mitochondria]| + |M_ppi_m[Mitochondria]|'
   subsystem: S_*Glutamate Metabolism
 - id: R_GLNt
   name: R_L-glutamine transport in via proton symport
+  genes: LmjF14.0320 or LmjF22.0230 or LmjF11.0520 or LmjF27.0670
   equation: '|M_gln_L_e[Extracellular_space]| + |M_h_e[Extracellular_space]| <=>
     |M_gln_L_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_*Transport, Extracellular
@@ -2180,26 +2496,31 @@
   subsystem: S_*Transport, Nuclear
 - id: R_GLU5K
   name: R_glutamate 5-kinase
+  genes: LmjF26.2710
   equation: '|M_atp_c[Cytosol]| + |M_glu_L_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_glu5p_c[Cytosol]|'
   subsystem: S_*Urea Cycle
 - id: R_GLUCYSL
   name: R_glutamate-cysteine ligase
+  genes: LmjF18.1660
   equation: '|M_atp_c[Cytosol]| + |M_cys_L_c[Cytosol]| + |M_glu_L_c[Cytosol]| =>
     |M_adp_c[Cytosol]| + |M_glucys_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_*Glutamate Metabolism
 - id: R_GLUDx [m]
   name: R_glutamate dehydrogenase (NAD)
+  genes: LmjF15.1010
   equation: '|M_glu_L_m[Mitochondria]| + |M_h2o_m[Mitochondria]| + |M_nad_m[Mitochondria]|
     <=> |M_akg_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_nadh_m[Mitochondria]|
     + |M_nh4_m[Mitochondria]|'
   subsystem: S_*Glutamate Metabolism
 - id: R_GLUDy
   name: R_glutamate dehydrogenase (NADP)
+  genes: LmjF28.2910
   equation: '|M_glu_L_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_nadp_c[Cytosol]| <=>
     |M_akg_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| + |M_nh4_c[Cytosol]|'
   subsystem: S_*Glutamate Metabolism
 - id: R_GLUKg
   name: R_Glucokinase
+  genes: LmjF36.2320 or LmjF21.0240 or LmjF21.0250
   equation: '|M_atp_x[Glycosome]| + |M_b_D_glucose_x[Glycosome]| => |M_adp_x[Glycosome]|
     + |M_g6p_B_x[Glycosome]| + |M_h_x[Glycosome]|'
   subsystem: S_*Glycolysis/Gluconeogenesis
@@ -2217,11 +2538,13 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_GLUTRS
   name: R_Glutamyl-tRNA synthetase
+  genes: LmjF30.3240
   equation: '|M_atp_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_trnaglu_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_glutrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Glutamate Metabolism
 - id: R_GLUTRSm
   name: R_glutamyl-tRNA synthetase, mitochondrial
+  genes: LmjF30.3240
   equation: '|M_atp_m[Mitochondria]| + |M_glu_L_m[Mitochondria]| + |M_trnaglu_m[Mitochondria]|
     => |M_amp_m[Mitochondria]| + |M_glutrna_m[Mitochondria]| + |M_ppi_m[Mitochondria]|'
   subsystem: S_*Glutamate Metabolism
@@ -2231,6 +2554,7 @@
   subsystem: S_*Transport, Nuclear
 - id: R_GLUt6
   name: R_L-glutamate transport in/out via proton symporter
+  genes: LmjF14.0320 or LmjF22.0230 or LmjF11.0520 or LmjF27.0670
   equation: '|M_glu_L_e[Extracellular_space]| + |M_h_e[Extracellular_space]| <=>
     |M_glu_L_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_*Transport, Extracellular
@@ -2248,6 +2572,7 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_GLYCKr
   name: R_glycerate kinase
+  genes: LmjF02.0500
   equation: '|M_atp_c[Cytosol]| + |M_glyc_R_c[Cytosol]| <=> |M_3pg_c[Cytosol]| +
     |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_*Glycerophospholipid metabolism
@@ -2265,26 +2590,31 @@
   subsystem: S_*Transport, Peroxisomal
 - id: R_GLYKg
   name: R_glycerol kinase, glycosomal
+  genes: LmjF35.3080
   equation: '|M_atp_x[Glycosome]| + |M_glyc_x[Glycosome]| <=> |M_adp_x[Glycosome]|
     + |M_glyc3p_x[Glycosome]| + |M_h_x[Glycosome]|'
   subsystem: S_*Glycerolipid Metabolism
 - id: R_GLYOX1
   name: R_hydroxyacylglutathione hydrolase (trypanothione)
+  genes: LmjF12.0220
   equation: '|M_h2o_c[Cytosol]| + |M_ltrp_S_c[Cytosol]| => |M_h_c[Cytosol]| + |M_lac_D_c[Cytosol]|
     + |M_trprd_c[Cytosol]|'
   subsystem: S_*Pyruvate metabolism
 - id: R_GLYPATm
   name: R_4-Hydroxyphenylacetyl transferase
+  genes: LmjF25.0020 or LmjF05.0180
   equation: '|M_4hphaccoa_m[Mitochondria]| + |M_gly_m[Mitochondria]| => |M_coa_m[Mitochondria]|
     + |M_h_m[Mitochondria]| + |M_hphacgly_m[Mitochondria]|'
   subsystem: S_*Tyrosine Metabolism
 - id: R_GLYPHATm
   name: R_Phenylacetyl transferase
+  genes: LmjF25.0020 or LmjF05.0180
   equation: '|M_gly_m[Mitochondria]| + |M_phaccoa_m[Mitochondria]| => |M_coa_m[Mitochondria]|
     + |M_phacgly_m[Mitochondria]|'
   subsystem: S_*Phenylalanine Metabolism
 - id: R_GLYTRS
   name: R_Glycyl-tRNA synthetase
+  genes: LmjF36.3840
   equation: '|M_atp_c[Cytosol]| + |M_gly_c[Cytosol]| + |M_trnagly_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_glytrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Glycine, serine and threonine metabolism
@@ -2294,11 +2624,13 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_GLYt6
   name: R_glycine transport in/out via proton symport
+  genes: LmjF14.0320 or LmjF22.0230 or LmjF11.0520 or LmjF27.0670
   equation: '|M_gly_e[Extracellular_space]| + |M_h_e[Extracellular_space]| <=> |M_gly_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_*Transport, Extracellular
 - id: R_GMPS2
   name: R_GMP synthase (glutamine-hydrolysing)
+  genes: LmjF22.0110
   equation: '|M_atp_c[Cytosol]| + |M_gln_L_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_xmp_c[Cytosol]|
     => |M_amp_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_gmp_c[Cytosol]| + (2) |M_h_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
@@ -2309,6 +2641,7 @@
   subsystem: S_*Transport, Endoplasmic Reticular
 - id: R_GPAM_LM
   name: R_glycerol-3-phosphate acyltransferase (L. major)
+  genes: LmjF34.1090
   equation: (0.080000) |M_alincoa_c[Cytosol]| + (0.080000) |M_glincoa_c[Cytosol]|
     + |M_glyc3p_c[Cytosol]| + (0.290000) |M_lincoa_c[Cytosol]| + (0.330000) |M_olcoa_c[Cytosol]|
     + (0.090000) |M_pmtcoa_c[Cytosol]| + (0.100000) |M_strcoa_c[Cytosol]| + (0.030000)
@@ -2316,6 +2649,7 @@
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_GPAMm_LM
   name: R_glycerol-3-phosphate acyltransferase (L. major)
+  genes: LmjF34.1090
   equation: (0.080000) |M_alincoa_m[Mitochondria]| + (0.080000) |M_glincoa_m[Mitochondria]|
     + |M_glyc3p_m[Mitochondria]| + (0.290000) |M_lincoa_m[Mitochondria]| + (0.330000)
     |M_olcoa_m[Mitochondria]| + (0.090000) |M_pmtcoa_m[Mitochondria]| + (0.100000)
@@ -2324,25 +2658,30 @@
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_GPDDA1
   name: R_Glycerophosphodiester phosphodiesterase (sn-Glycero-3-phosphocholine)
+  genes: LmjF36.5960 or LmjF28.2100
   equation: '|M_g3pc_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_chol_c[Cytosol]| + |M_glyc3p_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_GPDDA2
   name: R_Glycerophosphodiester phosphodiesterase (Glycerophosphoethanolamine)
+  genes: LmjF28.2100 or LmjF36.5960
   equation: '|M_g3pe_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_etha_c[Cytosol]| + |M_glyc3p_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_GRTT
   name: R_geranyltranstransferase
+  genes: LmjF22.1360
   equation: '|M_grdp_c[Cytosol]| + |M_ipdp_c[Cytosol]| => |M_frdp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Steroid Biosynthesis
 - id: R_GRTTx
   name: R_geranyltranstransferase
+  genes: LmjF22.1360
   equation: '|M_grdp_x[Glycosome]| + |M_ipdp_x[Glycosome]| => |M_frdp_x[Glycosome]|
     + |M_ppi_x[Glycosome]|'
   subsystem: S_*Steroid Biosynthesis
 - id: R_GSADHm
   name: R_L-glutamate 5-semialdehyde dehydrogenase
+  genes: LmjF03.0200
   equation: '|M_glu5sa_m[Mitochondria]| + |M_h2o_m[Mitochondria]| + |M_nad_m[Mitochondria]|
     <=> |M_glu_L_m[Mitochondria]| + (2) |M_h_m[Mitochondria]| + |M_nadh_m[Mitochondria]|'
   subsystem: S_*Arginine and Proline Metabolism
@@ -2361,16 +2700,19 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_GTHP
   name: R_glutathione peridoxase
+  genes: LmjF26.0800 or LmjF26.0810 or LmjF26.0820 or LmjF36.3010
   equation: (2) |M_gthrd_c[Cytosol]| + |M_h2o2_c[Cytosol]| <=> |M_gthox_c[Cytosol]|
     + (2) |M_h2o_c[Cytosol]|
   subsystem: S_*Glutathione Metabolism
 - id: R_GTHPm
   name: R_glutathione peridoxase
+  genes: LmjF26.0800 or LmjF26.0810 or LmjF26.0820 or LmjF36.3010
   equation: (2) |M_gthrd_m[Mitochondria]| + |M_h2o2_m[Mitochondria]| <=> |M_gthox_m[Mitochondria]|
     + (2) |M_h2o_m[Mitochondria]|
   subsystem: S_*Glutathione Metabolism
 - id: R_GTHPx
   name: R_glutathione peridoxase
+  genes: LmjF26.0800 or LmjF26.0810 or LmjF26.0820 or LmjF36.3010
   equation: (2) |M_gthrd_x[Glycosome]| + |M_h2o2_x[Glycosome]| <=> |M_gthox_x[Glycosome]|
     + (2) |M_h2o_x[Glycosome]|
   subsystem: S_*Glutathione Metabolism
@@ -2380,6 +2722,7 @@
   subsystem: S_*Transport, Extracellular
 - id: R_GTHS
   name: R_glutathione synthase
+  genes: LmjF14.0910
   equation: '|M_atp_c[Cytosol]| + |M_glucys_c[Cytosol]| + |M_gly_c[Cytosol]| => |M_adp_c[Cytosol]|
     + |M_gthrd_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_*Glutamate Metabolism
@@ -2393,15 +2736,19 @@
   subsystem: S_*Transport, Nuclear
 - id: R_GUACYC
   name: R_GTP pyrophosphate-lyase (cyclizing)
+  genes: LmjF17.0190 and LmjF17.0237 and LmjF05.1220 and LmjF28.0090 and LmjF17.0230
+    and LmjF17.0235 and LmjF17.0200 and LmjF36.3180
   equation: '|M_gtp_c[Cytosol]| <=> |M_35cgmp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_GUAD
   name: R_guanine deaminase
+  genes: LmjF29.0867
   equation: '|M_gua_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_nh4_c[Cytosol]|
     + |M_xan_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_GUAPRTr
   name: R_guanine phosphoribosyltransferase
+  genes: LmjF26.0140
   equation: '|M_gua_c[Cytosol]| + |M_prpp_c[Cytosol]| <=> |M_gmp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_GUAt2
@@ -2435,77 +2782,92 @@
   subsystem: S_*Transport, Extracellular
 - id: R_H3MS
   name: R_2-Hexaprenyl-3-methyl synthesis
+  genes: LmjF36.5360
   equation: '|M_2H6M_c[Cytosol]| + |M_amet_c[Cytosol]| => |M_2H3M_c[Cytosol]| + |M_ahcys_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_*Ubiquinone Biosynthesis
 - id: R_H3MS2m
   name: R_2-Hexaprenyl-3-methyl-5-hydroxy synthesis, mitochondrial
+  genes: LmjF29.2350
   equation: '|M_2H3M_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_nadph_m[Mitochondria]|
     + |M_o2_m[Mitochondria]| => |M_2H5H_m[Mitochondria]| + |M_h2o_m[Mitochondria]|
     + |M_nadp_m[Mitochondria]|'
   subsystem: S_*Ubiquinone Biosynthesis
 - id: R_HACD1m
   name: R_3-hydroxyacyl-CoA dehydrogenase (acetoacetyl-CoA)
+  genes: LmjF26.1550 or LmjF36.1140
   equation: '|M_aacoa_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_nadh_m[Mitochondria]|
     <=> |M_3hbutcoa_m[Mitochondria]| + |M_nad_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Degradation
 - id: R_HACD2m
   name: R_3-hydroxyacyl-CoA dehydrogenase (3-oxohexanoyl-CoA)
+  genes: LmjF36.1140 or LmjF26.1550
   equation: '|M_3ohxcoa_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_nadh_m[Mitochondria]|
     <=> |M_3hhxcoa_m[Mitochondria]| + |M_nad_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Degradation
 - id: R_HACD3m
   name: R_3-hydroxyacyl-CoA dehydrogenase (3-oxooctanoyl-CoA)
+  genes: LmjF26.1550 or LmjF36.1140
   equation: '|M_3ooccoa_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_nadh_m[Mitochondria]|
     <=> |M_3hoccoa_m[Mitochondria]| + |M_nad_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Degradation
 - id: R_HACD4m
   name: R_3-hydroxyacyl-CoA dehydrogenase (3-oxodecanoyl-CoA)
+  genes: LmjF36.1140 or LmjF26.1550
   equation: '|M_3odccoa_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_nadh_m[Mitochondria]|
     <=> |M_3hdccoa_m[Mitochondria]| + |M_nad_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Degradation
 - id: R_HACD5m
   name: R_3-hydroxyacyl-CoA dehydrogenase (3-oxododecanoyl-CoA)
+  genes: LmjF26.1550 or LmjF36.1140
   equation: '|M_3oddcoa_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_nadh_m[Mitochondria]|
     <=> |M_3hddcoa_m[Mitochondria]| + |M_nad_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Degradation
 - id: R_HACD6m
   name: R_3-hydroxyacyl-CoA dehydrogenase (3-oxotetradecanoyl-CoA)
+  genes: LmjF26.1550 or LmjF36.1140
   equation: '|M_3otdcoa_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_nadh_m[Mitochondria]|
     <=> |M_3htdcoa_m[Mitochondria]| + |M_nad_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Degradation
 - id: R_HACD7m
   name: R_3-hydroxyacyl-CoA dehydrogenase (3-oxohexadecanoyl-CoA)
+  genes: LmjF26.1550 or LmjF36.1140
   equation: '|M_3ohdcoa_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_nadh_m[Mitochondria]|
     <=> |M_3hhdcoa_m[Mitochondria]| + |M_nad_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Degradation
 - id: R_HACD8m
   name: R_3-hydroxyacyl-CoA dehydrogenase (2-Methylacetoacetyl-CoA)
+  genes: LmjF36.1140 or LmjF26.1550
   equation: '|M_3hmbcoa_m[Mitochondria]| + |M_nad_m[Mitochondria]| <=> |M_2maacoa_m[Mitochondria]|
     + |M_h_m[Mitochondria]| + |M_nadh_m[Mitochondria]|'
   subsystem: S_*Caprolactam Degradation
 - id: R_HACD9g
   name: R_(S)-3-hydroxyacyl-CoA:NAD+ oxidoreductase
+  genes: LmjF33.2600 or LmjF24.2030
   equation: '|M_3shddcoa_x[Glycosome]| + |M_nad_x[Glycosome]| => (6) |M_h_x[Glycosome]|
     + |M_nadh_x[Glycosome]| + |M_oxadpcoa_x[Glycosome]|'
   subsystem: S_*Caprolactam Degradation
 - id: R_HACD9m
   name: R_(S)-3-hydroxyacyl-CoA:NAD+ oxidoreductase
+  genes: LmjF36.1140 or LmjF26.1550
   equation: '|M_3shddcoa_m[Mitochondria]| + |M_nad_m[Mitochondria]| => (6) |M_h_m[Mitochondria]|
     + |M_nadh_m[Mitochondria]| + |M_oxadpcoa_m[Mitochondria]|'
   subsystem: S_*Caprolactam Degradation
 - id: R_HACOADm
   name: R_3-hydroxyacyl-CoA dehydrogenase
+  genes: LmjF36.1140 or LmjF26.1550
   equation: '|M_3hmp_m[Mitochondria]| + |M_nad_m[Mitochondria]| <=> |M_h_m[Mitochondria]|
     + |M_mmalsa_m[Mitochondria]| + |M_nadh_m[Mitochondria]|'
   subsystem: S_*Caprolactam Degradation
 - id: R_HBCOADm
   name: R_(S)-3-Hydroxybutanoyl-CoA:NADP+ oxidoreductase
+  genes: LmjF36.1140
   equation: '|M_3hbutcoa_m[Mitochondria]| + |M_nadp_m[Mitochondria]| => |M_aacoa_m[Mitochondria]|
     + |M_h_m[Mitochondria]| + |M_nadph_m[Mitochondria]|'
   subsystem: S_*Benzoate Degradation
 - id: R_HBCOAE
   name: R_3-hydroxybutyryl-CoA epimerase
+  genes: LmjF26.1550
   equation: '|M_3hbacoa_m[Mitochondria]| <=> |M_3hbutcoa_m[Mitochondria]|'
   subsystem: S_*Butanoate metabolism
 - id: R_HBUHL1m
@@ -2514,6 +2876,7 @@
   subsystem: S_*Fatty Acid Biosynthesis
 - id: R_HBUR1m
   name: R_(3R)-3-Hydroxybutanoyl-[acyl-carrier protein]:NADP+ oxidoreductase
+  genes: LmjF27.2440 or LmjF24.2030
   equation: '|M_actACP_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_nadph_m[Mitochondria]|
     => |M_3hbACP_m[Mitochondria]| + |M_nadp_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Biosynthesis
@@ -2524,6 +2887,7 @@
   subsystem: S_*Other
 - id: R_HCYSMT
   name: R_homocysteine S-methyltransferase
+  genes: LmjF36.6310
   equation: '|M_amet_c[Cytosol]| + |M_hcys_L_c[Cytosol]| => |M_ahcys_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_met_L_c[Cytosol]|'
   subsystem: S_*Methionine Metabolism
@@ -2533,6 +2897,7 @@
   subsystem: S_*Transport, Endoplasmic Reticular
 - id: R_HDCOADm
   name: R_hexadecanoyl-CoA dehydrogenase
+  genes: LmjF06.0880 or LmjF28.2510
   equation: '|M_fad_m[Mitochondria]| + |M_pmtcoa_m[Mitochondria]| => |M_fadh2_m[Mitochondria]|
     + |M_hdd2coa_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Degradation
@@ -2542,6 +2907,7 @@
   subsystem: S_*Fatty Acid Biosynthesis
 - id: R_HDDR5m
   name: R_3R)-3-Hydroxydodecanoyl-[acyl-carrier-protein]:NADP+ oxidoreductase
+  genes: LmjF27.2440 or LmjF24.2030
   equation: '|M_3oxddACP_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_nadph_m[Mitochondria]|
     => |M_3hddACP_m[Mitochondria]| + |M_nadp_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Biosynthesis
@@ -2559,41 +2925,49 @@
   subsystem: S_*Fatty Acid Biosynthesis
 - id: R_HDER4m
   name: R_(3R)-3-Hydroxydecanoyl-[acyl-carrier-protein]:NADP+ oxidoreductase
+  genes: LmjF27.2440 or LmjF24.2030
   equation: '|M_3oxdeACP_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_nadph_m[Mitochondria]|
     => |M_3hdeACP_m[Mitochondria]| + |M_nadp_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Biosynthesis
 - id: R_HDMAT7m
   name: R_Hexadecanoyl-[acyl-carrier protein]:malonyl-CoA  C-acyltransferase
+  genes: LmjF05.0520
   equation: '|M_nad_m[Mitochondria]| + |M_palmACP_m[Mitochondria]| <=> |M_h_m[Mitochondria]|
     + |M_hdeACP_m[Mitochondria]| + |M_nadh_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Biosynthesis
 - id: R_HEMAT2m
   name: R_Hexanoyl-[acyl-carrier protein]:malonyl-CoA C-acyltransferase
+  genes: LmjF05.0520
   equation: '|M_2theACP_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_nadh_m[Mitochondria]|
     => |M_hexACP_m[Mitochondria]| + |M_nad_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Biosynthesis
 - id: R_HEMEASm
   name: R_Heme A synthase, mitochondrial
+  genes: LmjF28.2680
   equation: '|M_h2o_m[Mitochondria]| + |M_hemeO_m[Mitochondria]| => (4) |M_h_m[Mitochondria]|
     + |M_hemeA_m[Mitochondria]|'
   subsystem: S_*Porphyrin and Chlorophyll Metabolism
 - id: R_HEMEOSm
   name: R_Heme O synthase, mitochondrial
+  genes: LmjF23.1520
   equation: '|M_frdp_m[Mitochondria]| + |M_h2o_m[Mitochondria]| + |M_pheme_m[Mitochondria]|
     => |M_h_m[Mitochondria]| + |M_hemeO_m[Mitochondria]| + |M_ppi_m[Mitochondria]|'
   subsystem: S_*Porphyrin and Chlorophyll Metabolism
 - id: R_HEX4g
   name: R_hexokinase (D-mannose:ATP), glycosomal
+  genes: LmjF21.0250 or LmjF21.0240
   equation: '|M_atp_x[Glycosome]| + |M_man_x[Glycosome]| => |M_adp_x[Glycosome]|
     + |M_h_x[Glycosome]| + |M_man6p_x[Glycosome]|'
   subsystem: S_*Glycolysis/Gluconeogenesis
 - id: R_HEX7g
   name: R_hexokinase (D-fructose:ATP), glycosomal
+  genes: LmjF21.0250 or LmjF21.0240
   equation: '|M_atp_x[Glycosome]| + |M_fru_x[Glycosome]| => |M_adp_x[Glycosome]|
     + |M_f6p_x[Glycosome]| + |M_h_x[Glycosome]|'
   subsystem: S_*Glycolysis/Gluconeogenesis
 - id: R_HEXg
   name: R_hexokinase (D-glucose:ATP), glycosomal
+  genes: LmjF21.0250 or LmjF36.2320 or LmjF21.0240
   equation: '|M_a_D_glucose_x[Glycosome]| + |M_atp_x[Glycosome]| => |M_adp_x[Glycosome]|
     + |M_g6p_A_x[Glycosome]| + |M_h_x[Glycosome]|'
   subsystem: S_*Glycolysis/Gluconeogenesis
@@ -2603,6 +2977,7 @@
   subsystem: S_*Fatty Acid Biosynthesis
 - id: R_HHDR7m
   name: R_(3R)-3-Hydroxypalmitoyl-[acyl-carrier-protein]:NADP+ oxidoreductase
+  genes: LmjF27.2440 or LmjF24.2030
   equation: '|M_3oxhdACP_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_nadph_m[Mitochondria]|
     => |M_3hpaACP_m[Mitochondria]| + |M_nadp_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Biosynthesis
@@ -2612,15 +2987,18 @@
   subsystem: S_*Fatty Acid Biosynthesis
 - id: R_HHYR2m
   name: R_(3R)-3-Hydroxyhexanoyl-[acyl-carrier-protein]:NADP+ oxidoreductase
+  genes: LmjF27.2440 or LmjF24.2030
   equation: '|M_3oxhACP_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_nadph_m[Mitochondria]|
     => |M_3hhACP_m[Mitochondria]| + |M_nadp_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Biosynthesis
 - id: R_HIACL
   name: R_5-Hydroxyindoleacetyl ligase
+  genes: LmjF29.0600
   equation: '|M_hindoac_c[Cytosol]| => |M_hindagly_c[Cytosol]|'
   subsystem: S_*Tryptophan Metabolism
 - id: R_HIBHrm
   name: R_3-hydroxyisobutyryl-CoA hydrolase
+  genes: LmjF32.3670 or LmjF32.3660 or LmjF32.3650
   equation: '|M_h2o_m[Mitochondria]| + |M_hibcoa_m[Mitochondria]| => |M_3hmp_m[Mitochondria]|
     + |M_coa_m[Mitochondria]| + (2) |M_h_m[Mitochondria]|'
   subsystem: S_*Valine, leucine, and isoleucine degradation
@@ -2634,25 +3012,30 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_HISTRS
   name: R_Histidyl-tRNA synthetase
+  genes: LmjF30.0630
   equation: '|M_atp_c[Cytosol]| + |M_his_L_c[Cytosol]| + |M_trnahis_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_histrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Histidine Metabolism
 - id: R_HISt6
   name: R_L-histidine transport in via proton symport
+  genes: LmjF14.0320 or LmjF22.0230 or LmjF11.0520 or LmjF27.0670
   equation: '|M_h_e[Extracellular_space]| + |M_his_L_e[Extracellular_space]| <=>
     |M_h_c[Cytosol]| + |M_his_L_c[Cytosol]|'
   subsystem: S_*Transport, Extracellular
 - id: R_HKAm
   name: R_4-Hydroxy-2-ketopimelate aldolase
+  genes: LmjF25.2010
   equation: '|M_4h2kpm_m[Mitochondria]| => |M_pyr_m[Mitochondria]| + |M_sucsal_m[Mitochondria]|'
   subsystem: S_*Tyrosine Metabolism
 - id: R_HMGCOARi
   name: R_Hydroxymethylglutaryl CoA reductase
+  genes: LmjF30.3190
   equation: (2) |M_h_m[Mitochondria]| + |M_hmgcoa_m[Mitochondria]| + (2) |M_nadph_m[Mitochondria]|
     => |M_coa_m[Mitochondria]| + |M_mev_R_m[Mitochondria]| + (2) |M_nadp_m[Mitochondria]|
   subsystem: S_*Steroid Biosynthesis
 - id: R_HMGCOARi_x
   name: R_Hydroxymethylglutaryl CoA reductase
+  genes: LmjF30.3190
   equation: (2) |M_h_x[Glycosome]| + |M_hmgcoa_x[Glycosome]| + (2) |M_nadph_x[Glycosome]|
     => |M_coa_x[Glycosome]| + |M_mev_R_x[Glycosome]| + (2) |M_nadp_x[Glycosome]|
   subsystem: S_*Steroid Biosynthesis
@@ -2670,6 +3053,7 @@
   subsystem: S_*Fatty Acid Biosynthesis
 - id: R_HOCR3m
   name: R_(3R)-3-Hydroxyoctanoyl-[acyl-carrier-protein]:NADP+ oxidoreductase
+  genes: LmjF27.2440 or LmjF24.2030
   equation: '|M_3oxocACP_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_nadph_m[Mitochondria]|
     => |M_3hocACP_m[Mitochondria]| + |M_nadp_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Biosynthesis
@@ -2679,26 +3063,31 @@
   subsystem: S_*Fatty Acid Biosynthesis
 - id: R_HODR8m
   name: R_(3R)-3-Hydroxyoctadecanoyl-[acyl-carrier-protein]:NADP+ oxidoreductase
+  genes: LmjF27.2440 or LmjF24.2030
   equation: '|M_3oxocdacp_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_nadph_m[Mitochondria]|
     => |M_3hocdacp_m[Mitochondria]| + |M_nadp_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Biosynthesis
 - id: R_HOXPRx
   name: R_2-hydroxy-3-oxopropionate reductase (NAD)
+  genes: LmjF30.0180
   equation: '|M_glyc_R_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_2h3opp_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|'
   subsystem: S_*Glyoxylate and dicarboxylate metabolism
 - id: R_HP5CDm
   name: R_3-hydroxy-1-pyrroline-5-carboxylate dehydrogenase
+  genes: LmjF03.0200
   equation: '|M_1p3h5c_m[Mitochondria]| + (2) |M_h2o_m[Mitochondria]| + |M_nad_m[Mitochondria]|
     => |M_4hglu_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_nadh_m[Mitochondria]|'
   subsystem: S_*Arginine and Proline Metabolism
 - id: R_HPDOAi
   name: R_NADPH:6,7-dihydropteridine oxidoreductase
+  genes: LmjF34.4330
   equation: '|M_dhbpt_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| => |M_nadp_c[Cytosol]|
     + |M_thbpt_c[Cytosol]|'
   subsystem: S_*Folate biosynthesis
 - id: R_HPDOCi
   name: R_NADH:6,7-dihydropteridine oxidoreductase
+  genes: LmjF34.4330
   equation: '|M_dhbpt_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| => |M_nad_c[Cytosol]|
     + |M_thbpt_c[Cytosol]|'
   subsystem: S_*Folate biosynthesis
@@ -2708,21 +3097,25 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_HPROa
   name: R_L-hydroxyproline reductase (NAD)
+  genes: LmjF13.1680
   equation: '|M_1p3h5c_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| =>
     |M_4hpro_LT_c[Cytosol]| + |M_nad_c[Cytosol]|'
   subsystem: S_*Arginine and Proline Metabolism
 - id: R_HPROam
   name: R_L-hydroxyproline reductase (NAD)
+  genes: LmjF13.1680
   equation: '|M_1p3h5c_m[Mitochondria]| + (2) |M_h_m[Mitochondria]| + |M_nadh_m[Mitochondria]|
     => |M_4hpro_LT_m[Mitochondria]| + |M_nad_m[Mitochondria]|'
   subsystem: S_*Arginine and Proline Metabolism
 - id: R_HPROxm
   name: R_L-hydroxyproline dehydrogenase (NAD), mitochondrial
+  genes: LmjF03.0200
   equation: '|M_4hpro_LT_m[Mitochondria]| + |M_nad_m[Mitochondria]| => |M_1p3h5c_m[Mitochondria]|
     + (2) |M_h_m[Mitochondria]| + |M_nadh_m[Mitochondria]|'
   subsystem: S_*Arginine and Proline Metabolism
 - id: R_HPROym
   name: R_L-hydroxyproline dehydrogenase (NADP), mitochondrial
+  genes: LmjF03.0200
   equation: '|M_4hpro_LT_m[Mitochondria]| + |M_nadp_m[Mitochondria]| => |M_1p3h5c_m[Mitochondria]|
     + (2) |M_h_m[Mitochondria]| + |M_nadph_m[Mitochondria]|'
   subsystem: S_*Arginine and Proline Metabolism
@@ -2733,11 +3126,13 @@
   subsystem: S_*Other
 - id: R_HSD
   name: R_homoserine dehydrogenase (NADH)
+  genes: LmjF07.0260
   equation: '|M_aspsa_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| <=> |M_hom_L_c[Cytosol]|
     + |M_nad_c[Cytosol]|'
   subsystem: S_*Glycine, serine and threonine metabolism
 - id: R_HSK
   name: R_homoserine kinase
+  genes: LmjF30.3080
   equation: '|M_atp_c[Cytosol]| + |M_hom_L_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_phom_c[Cytosol]|'
   subsystem: S_*Glycine, serine and threonine metabolism
@@ -2747,6 +3142,7 @@
   subsystem: S_*Fatty Acid Biosynthesis
 - id: R_HTDR6m
   name: R_3R)-3-Hydroxytetradecanoyl-[acyl-carrier-protein]:NADP+ oxidoreductase
+  genes: LmjF27.2440 or LmjF24.2030
   equation: '|M_3oxtdACP_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_nadph_m[Mitochondria]|
     => |M_3htdACP_m[Mitochondria]| + |M_nadp_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Biosynthesis
@@ -2761,6 +3157,7 @@
   subsystem: S_*Transport, Peroxisomal
 - id: R_HXCOADm
   name: R_hexanoyl-CoA dehydrogenase
+  genes: LmjF28.2510 or LmjF06.0880
   equation: '|M_fad_m[Mitochondria]| + |M_hxcoa_m[Mitochondria]| => |M_fadh2_m[Mitochondria]|
     + |M_hxd2coa_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Degradation
@@ -2770,6 +3167,7 @@
   subsystem: S_*Transport, Endoplasmic Reticular
 - id: R_HXPRTg
   name: R_hypoxanthine phosphoribosyltransferase (Hypoxanthine)
+  genes: LmjF21.0845
   equation: '|M_hxan_x[Glycosome]| + |M_prpp_x[Glycosome]| => |M_imp_x[Glycosome]|
     + |M_ppi_x[Glycosome]|'
   subsystem: S_*Purine Metabolism
@@ -2783,11 +3181,13 @@
   subsystem: S_*Transport, Endoplasmic Reticular
 - id: R_I14BP1P
   name: R_D-myo-Inositol-1,4-bisphosphate 1-phosphohydrolase
+  genes: LmjF31.2920
   equation: '|M_DMino14bp_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]|
     => |M_mi4p_D_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_*Inositol Phosphate metabolism
 - id: R_ICDHym
   name: R_Isocitrate dehydrogenase (NADP+)
+  genes: LmjF33.2550 or LmjF10.0290
   equation: '|M_icit_m[Mitochondria]| + |M_nadp_m[Mitochondria]| => |M_akg_m[Mitochondria]|
     + |M_co2_m[Mitochondria]| + |M_nadph_m[Mitochondria]|'
   subsystem: S_*Citrate Cycle (TCA)
@@ -2801,16 +3201,19 @@
   subsystem: S_*Transport, Nuclear
 - id: R_ILETAm
   name: R_isoleucine transaminase, mitochondrial
+  genes: LmjF27.2030
   equation: '|M_akg_m[Mitochondria]| + |M_ile_L_m[Mitochondria]| <=> |M_3mop_m[Mitochondria]|
     + |M_glu_L_m[Mitochondria]|'
   subsystem: S_*Valine, leucine, and isoleucine degradation
 - id: R_ILETRS
   name: R_Isoleucyl-tRNA synthetase
+  genes: LmjF36.5620 or LmjF18.1220
   equation: '|M_atp_c[Cytosol]| + |M_ile_L_c[Cytosol]| + |M_trnaile_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_iletrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Valine, leucine, and isoleucine biosynthesis
 - id: R_ILEt6
   name: R_L-isoeucine transport in/out via proton symport
+  genes: LmjF35.4410
   equation: '|M_h_e[Extracellular_space]| + |M_ile_L_e[Extracellular_space]| <=>
     |M_h_c[Cytosol]| + |M_ile_L_c[Cytosol]|'
   subsystem: S_*Transport, Extracellular
@@ -2820,6 +3223,7 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_IMPDg
   name: R_IMP dehydrogenase, glycosome
+  genes: LmjF17.0725 or LmjF19.1560
   equation: '|M_h2o_x[Glycosome]| + |M_imp_x[Glycosome]| + |M_nad_x[Glycosome]| =>
     |M_h_x[Glycosome]| + |M_nadh_x[Glycosome]| + |M_xmp_x[Glycosome]|'
   subsystem: S_*Purine Metabolism
@@ -2837,6 +3241,7 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_INDPYRD
   name: R_Indole-3-pyruvate carboxylase
+  genes: LmjF34.3250
   equation: '|M_h_c[Cytosol]| + |M_indpyr_c[Cytosol]| <=> |M_co2_c[Cytosol]| + |M_id3acald_c[Cytosol]|'
   subsystem: S_*Tryptophan Metabolism
 - id: R_INSTt
@@ -2858,30 +3263,36 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_IPCS_LM
   name: R_IPC Synthase
+  genes: LmjF35.4990
   equation: '|M_cer_r[Endoplasmic_Reticulum]| + |M_h_r[Endoplasmic_Reticulum]| +
     (0.010000) |M_ptd1ino_LM_r[Endoplasmic_Reticulum]| => (0.010000) |M_12dgr_LM_r[Endoplasmic_Reticulum]|
     + |M_ipc_r[Endoplasmic_Reticulum]|'
   subsystem: S_*Sphingolipid Metabolism
 - id: R_IPDDI
   name: R_isopentenyl-diphosphate D-isomerase
+  genes: LmjF35.5330
   equation: '|M_ipdp_c[Cytosol]| <=> |M_dmpp_c[Cytosol]|'
   subsystem: S_*Steroid Biosynthesis
 - id: R_IPDDIg
   name: R_isopentenyl-diphosphate D-isomerase
+  genes: LmjF35.5330
   equation: '|M_ipdp_x[Glycosome]| <=> |M_dmpp_x[Glycosome]|'
   subsystem: S_*Steroid Biosynthesis
 - id: R_IPDPUPT
   name: R_di-trans,poly-cis-Decaprenyl-diphosphate:isopentenyl-diphosphate undecaprenylcistransferase
+  genes: LmjF13.0020
   equation: '|M_ggdp_c[Cytosol]| + (7) |M_ipdp_c[Cytosol]| => |M_dtpcudcpp_c[Cytosol]|
     + (7) |M_ppi_c[Cytosol]|'
   subsystem: S_*Terpenoid biosynthesis
 - id: R_IPP5P
   name: R_inositol-1,4,5-trisphosphate 5-phosphatase
+  genes: LmjF11.1010
   equation: '|M_h2o_c[Cytosol]| + |M_mi145tp_D_c[Cytosol]| => |M_DMino14bp_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: S_*Inositol Phosphate metabolism
 - id: R_IPP5P2
   name: R_inositol-1,3,4,5-trisphosphate 5-phosphatase
+  genes: LmjF11.1010
   equation: '|M_h2o_c[Cytosol]| + |M_mi1345p_c[Cytosol]| => |M_mi134tp_D_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: S_*Inositol Phosphate metabolism
@@ -2891,21 +3302,25 @@
   subsystem: S_*Transport, Nuclear
 - id: R_KEPTATm
   name: R_Ketopimeloyl Acetyltransferase
+  genes: LmjF25.0020 or LmjF05.0180
   equation: '|M_3opmcoa_m[Mitochondria]| + |M_coa_m[Mitochondria]| => |M_accoa_m[Mitochondria]|
     + |M_glutcoa_m[Mitochondria]| + (5) |M_h_m[Mitochondria]|'
   subsystem: S_*Benzoate Degradation
 - id: R_KYNASE1
   name: R_Formylkynurenine hydrolase
+  genes: LmjF26.2240
   equation: '|M_Lfmkynr_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_ala_L_c[Cytosol]|
     + |M_fanth_c[Cytosol]|'
   subsystem: S_*Tryptophan Metabolism
 - id: R_KYNASE2
   name: R_kynureninase
+  genes: LmjF26.2240
   equation: '|M_h2o_c[Cytosol]| + |M_kynr_L_c[Cytosol]| => |M_ala_L_c[Cytosol]| +
     |M_anth_c[Cytosol]|'
   subsystem: S_*Tryptophan Metabolism
 - id: R_KYNASE3
   name: R_kynureninase
+  genes: LmjF26.2240
   equation: '|M_h2o_c[Cytosol]| + |M_hkyn_c[Cytosol]| => |M_3hanthrn_c[Cytosol]|
     + |M_ala_L_c[Cytosol]|'
   subsystem: S_*Tryptophan Metabolism
@@ -2915,40 +3330,48 @@
   subsystem: S_*Transport, Peroxisomal
 - id: R_LCAD
   name: R_lactaldehyde dehydrogenase
+  genes: LmjF30.2900 or LmjF36.5180
   equation: '|M_h2o_c[Cytosol]| + |M_lald_L_c[Cytosol]| + |M_nad_c[Cytosol]| <=>
     (2) |M_h_c[Cytosol]| + |M_lac_L_c[Cytosol]| + |M_nadh_c[Cytosol]|'
   subsystem: S_*Other amino acid metabolism
 - id: R_LDH_D
   name: R_D-lactate dehydrogenase
+  genes: LmjF27.2020 or LmjF29.0280
   equation: '|M_lac_D_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|
     + |M_pyr_c[Cytosol]|'
   subsystem: S_*Pyruvate metabolism
 - id: R_LDH_Dg
   name: R_D-lactate dehydrogenase (glycosome)
+  genes: LmjF29.0280 or LmjF27.2020
   equation: '|M_lac_D_x[Glycosome]| + |M_nad_x[Glycosome]| <=> |M_h_x[Glycosome]|
     + |M_nadh_x[Glycosome]| + |M_pyr_x[Glycosome]|'
   subsystem: S_*Pyruvate metabolism
 - id: R_LEUTAm
   name: R_leucine transaminase, mitochondrial
+  genes: LmjF27.2030
   equation: '|M_akg_m[Mitochondria]| + |M_leu_L_m[Mitochondria]| <=> |M_4mop_m[Mitochondria]|
     + |M_glu_L_m[Mitochondria]|'
   subsystem: S_*Valine, leucine, and isoleucine degradation
 - id: R_LEUTRS
   name: R_Leucyl-tRNA synthetase
+  genes: LmjF13.1100
   equation: '|M_atp_c[Cytosol]| + |M_leu_L_c[Cytosol]| + |M_trnaleu_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_leutrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Valine, leucine, and isoleucine biosynthesis
 - id: R_LEUt6
   name: R_L-leucine transport in/out via proton symport
+  genes: LmjF35.4410
   equation: '|M_h_e[Extracellular_space]| + |M_leu_L_e[Extracellular_space]| <=>
     |M_h_c[Cytosol]| + |M_leu_L_c[Cytosol]|'
   subsystem: S_*Transport, Extracellular
 - id: R_LGTHL1
   name: R_lactoylglutathione lyase (trypanothione)
+  genes: LmjF35.3010
   equation: '|M_mthgxl_c[Cytosol]| + |M_trprd_c[Cytosol]| => |M_ltrp_S_c[Cytosol]|'
   subsystem: S_*Pyruvate metabolism
 - id: R_LGTHL1m
   name: R_lactoylglutathione lyase, mitochondrial (trypanothione)
+  genes: LmjF35.3010
   equation: '|M_mthgxl_m[Mitochondria]| + |M_trprd_m[Mitochondria]| => |M_ltrp_S_m[Mitochondria]|'
   subsystem: S_*Pyruvate metabolism
 - id: R_LINCOAtg
@@ -2961,10 +3384,12 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_LNSTLSr
   name: R_lanosterol synthase
+  genes: LmjF06.0650
   equation: '|M_Ssq23epx_r[Endoplasmic_Reticulum]| => |M_lanost_r[Endoplasmic_Reticulum]|'
   subsystem: S_*Steroid Biosynthesis
 - id: R_LPS2_LM
   name: R_Lipase
+  genes: LmjF31.0830 or LmjF31.0840 or LmjF31.2460
   equation: (0.010000) |M_12dgr_LM_c[Cytosol]| + |M_h2o_c[Cytosol]| => (0.080000)
     |M_alpla_c[Cytosol]| + (0.080000) |M_gamla_c[Cytosol]| + |M_h_c[Cytosol]| + (0.090000)
     |M_hdca_c[Cytosol]| + (0.010000) |M_mag_LM_c[Cytosol]| + (0.100000) |M_ocdca_c[Cytosol]|
@@ -2973,6 +3398,7 @@
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_LPS_LM
   name: R_Lipase
+  genes: LmjF31.0830 or LmjF31.0840 or LmjF31.2460
   equation: '|M_h2o_c[Cytosol]| + (0.010000) |M_triglyc_LM_c[Cytosol]| => (0.010000)
     |M_12dgr_LM_c[Cytosol]| + (0.080000) |M_alpla_c[Cytosol]| + (0.080000) |M_gamla_c[Cytosol]|
     + |M_h_c[Cytosol]| + (0.090000) |M_hdca_c[Cytosol]| + (0.100000) |M_ocdca_c[Cytosol]|
@@ -2981,12 +3407,14 @@
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_LSTO1r
   name: R_Lathosterol oxidase
+  genes: LmjF23.1300
   equation: '|M_chlstol_r[Endoplasmic_Reticulum]| + |M_h_r[Endoplasmic_Reticulum]|
     + |M_nadph_r[Endoplasmic_Reticulum]| + |M_o2_r[Endoplasmic_Reticulum]| => |M_ddsmsterol_r[Endoplasmic_Reticulum]|
     + (2) |M_h2o_r[Endoplasmic_Reticulum]| + |M_nadp_r[Endoplasmic_Reticulum]|'
   subsystem: S_*Steroid Biosynthesis
 - id: R_LSTO2r
   name: R_Lathosterol oxidase
+  genes: LmjF23.1300
   equation: '|M_h_r[Endoplasmic_Reticulum]| + |M_lthstrl_r[Endoplasmic_Reticulum]|
     + |M_nadph_r[Endoplasmic_Reticulum]| + |M_o2_r[Endoplasmic_Reticulum]| => |M_7dhchsterol_r[Endoplasmic_Reticulum]|
     + (2) |M_h2o_r[Endoplasmic_Reticulum]| + |M_nadp_r[Endoplasmic_Reticulum]|'
@@ -2997,21 +3425,25 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_LYSPLpc_LM
   name: R_lysophospholipase
+  genes: LmjF24.1840
   equation: '|M_h2o_c[Cytosol]| + (0.010000) |M_lpc_LM_c[Cytosol]| => (0.010000)
     |M_carbxy_LM_c[Cytosol]| + |M_g3pc_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_LYSPLpe_LM
   name: R_lysophospholipase
+  genes: LmjF24.1840
   equation: '|M_h2o_c[Cytosol]| + (0.010000) |M_lpe_LM_c[Cytosol]| => (0.010000)
     |M_carbxy_LM_c[Cytosol]| + |M_g3pe_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_LYSTRS
   name: R_Lysyl-tRNA synthetase
+  genes: LmjF30.0130 or LmjF15.0230
   equation: '|M_atp_c[Cytosol]| + |M_lys_L_c[Cytosol]| + |M_trnalys_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_lystrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Lysine Biosynthesis
 - id: R_LYSt6
   name: R_L-lysine transport in/out via proton symport
+  genes: LmjF14.0320 or LmjF22.0230 or LmjF11.0520 or LmjF27.0670
   equation: '|M_h_e[Extracellular_space]| + |M_lys_L_e[Extracellular_space]| <=>
     |M_h_c[Cytosol]| + |M_lys_L_c[Cytosol]|'
   subsystem: S_*Transport, Extracellular
@@ -3025,6 +3457,7 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_MALCODC
   name: R_Malonyl-CoA decarboxylase
+  genes: LmjF07.0730
   equation: '|M_h_m[Mitochondria]| + |M_malcoa_m[Mitochondria]| => |M_accoa_m[Mitochondria]|
     + |M_co2_m[Mitochondria]|'
   subsystem: S_*Propanoate Metabolism
@@ -3038,6 +3471,7 @@
   subsystem: S_*Transport, Nuclear
 - id: R_MALT1
   name: R_alpha-glucosidase
+  genes: LmjF18.0090
   equation: '|M_h2o_c[Cytosol]| + |M_malt_c[Cytosol]| => (2) |M_a_D_glucose_c[Cytosol]|'
   subsystem: S_*Galactose metabolism
 - id: R_MALt6
@@ -3051,6 +3485,7 @@
   subsystem: S_*Transport, Peroxisomal
 - id: R_MAN1PT1
   name: R_mannose-1-phosphate guanylyltransferase
+  genes: LmjF23.0110
   equation: '|M_gtp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_man1p_c[Cytosol]| => |M_gdpman_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: S_*Fructose and mannose metabolism
@@ -3060,6 +3495,7 @@
   subsystem: S_*Transport, Peroxisomal
 - id: R_MAN6PI
   name: R_mannose-6-phosphate isomerase
+  genes: LmjF32.1580
   equation: '|M_man6p_c[Cytosol]| <=> |M_f6p_c[Cytosol]|'
   subsystem: S_*Fructose and mannose metabolism
 - id: R_MANt2
@@ -3073,11 +3509,13 @@
   subsystem: S_*Transport, Peroxisomal
 - id: R_MAT6m
   name: R_Myristoyl-[acyl-carrier protein] synthase
+  genes: LmjF05.0520
   equation: '|M_h_m[Mitochondria]| + |M_nadh_m[Mitochondria]| + |M_tdeACP_m[Mitochondria]|
     => |M_myrsACP_m[Mitochondria]| + |M_nad_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Biosynthesis
 - id: R_MCC
   name: R_Methylcrotonoyl-CoA carboxylase
+  genes: LmjF11.0590 and LmjF31.3130
   equation: '|M_3mb2coa_m[Mitochondria]| + |M_atp_m[Mitochondria]| + |M_hco3_m[Mitochondria]|
     => |M_3mgcoa_m[Mitochondria]| + |M_adp_m[Mitochondria]| + |M_h_m[Mitochondria]|
     + |M_pi_m[Mitochondria]|'
@@ -3085,37 +3523,44 @@
 - id: R_MCMAT2m
   name: R_Butyryl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein]C-acyltransferase
     (decarboxylating)
+  genes: LmjF33.2720
   equation: '|M_butACP_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_malACP_m[Mitochondria]|
     => |M_3oxhACP_m[Mitochondria]| + |M_ACP_m[Mitochondria]| + |M_co2_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Biosynthesis
 - id: R_MCMAT3m
   name: R_Hexanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase
+  genes: LmjF33.2720
   equation: '|M_h_m[Mitochondria]| + |M_hexACP_m[Mitochondria]| + |M_malACP_m[Mitochondria]|
     => |M_3oxocACP_m[Mitochondria]| + |M_ACP_m[Mitochondria]| + |M_co2_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Biosynthesis
 - id: R_MCMAT4m
   name: R_Octanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein]   C-acyltransferase
     (decarboxylating)
+  genes: LmjF33.2720
   equation: '|M_h_m[Mitochondria]| + |M_malACP_m[Mitochondria]| + |M_octACP_m[Mitochondria]|
     => |M_3oxdeACP_m[Mitochondria]| + |M_ACP_m[Mitochondria]| + |M_co2_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Biosynthesis
 - id: R_MCMAT5m
   name: R_Decanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase
+  genes: LmjF33.2720
   equation: '|M_decACP_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_malACP_m[Mitochondria]|
     => |M_3oxddACP_m[Mitochondria]| + |M_ACP_m[Mitochondria]| + |M_co2_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Biosynthesis
 - id: R_MCMAT6m
   name: R_Dodecanoyl-[acyl-carrier-protein]:malonyl-[acyl-carrier-protein]  C-acyltransferase
+  genes: LmjF33.2720
   equation: '|M_ddcaACP_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_malACP_m[Mitochondria]|
     => |M_3oxtdACP_m[Mitochondria]| + |M_ACP_m[Mitochondria]| + |M_co2_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Biosynthesis
 - id: R_MCMAT7m
   name: R_Tetradecanoyl-[acyl-carrier-protein]:malonyl-[acyl-carrier-protein]  C-acyltransferase
+  genes: LmjF33.2720
   equation: '|M_h_m[Mitochondria]| + |M_malACP_m[Mitochondria]| + |M_myrsACP_m[Mitochondria]|
     => |M_3oxhdACP_m[Mitochondria]| + |M_ACP_m[Mitochondria]| + |M_co2_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Biosynthesis
 - id: R_MCMAT8m
   name: R_Hexadecanoyl-[acyl-carrier-protein]:malonyl-[acyl-carrier-protein]  C-acyltransferase
+  genes: LmjF33.2720
   equation: '|M_h_m[Mitochondria]| + |M_malACP_m[Mitochondria]| + |M_palmACP_m[Mitochondria]|
     => |M_3oxocdacp_m[Mitochondria]| + |M_ACP_m[Mitochondria]| + |M_co2_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Biosynthesis
@@ -3126,30 +3571,36 @@
   subsystem: S_*Fatty Acid Biosynthesis
 - id: R_MDH
   name: R_malate dehydrogenase
+  genes: LmjF28.2860
   equation: '|M_mal_L_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|
     + |M_oaa_c[Cytosol]|'
   subsystem: S_*Citrate Cycle (TCA)
 - id: R_MDHg
   name: R_malate dehydrogenase, glycosomal
+  genes: LmjF19.0710
   equation: '|M_mal_L_x[Glycosome]| + |M_nad_x[Glycosome]| <=> |M_h_x[Glycosome]|
     + |M_nadh_x[Glycosome]| + |M_oaa_x[Glycosome]|'
   subsystem: S_*Citrate Cycle (TCA)
 - id: R_MDHm
   name: R_malate dehydrogenase, mitochondrial
+  genes: LmjF34.0150 or LmjF34.0140 or LmjF34.0160 or LmjF34.0130
   equation: '|M_mal_L_m[Mitochondria]| + |M_nad_m[Mitochondria]| <=> |M_h_m[Mitochondria]|
     + |M_nadh_m[Mitochondria]| + |M_oaa_m[Mitochondria]|'
   subsystem: S_*Citrate Cycle (TCA)
 - id: R_MDRPD
   name: R_5-Methylthio-5-deoxy-D-ribulose 1-phosphate dehydratase
+  genes: LmjF28.1840
   equation: '|M_5mdru1p_c[Cytosol]| => |M_dkmpp_c[Cytosol]| + |M_h2o_c[Cytosol]|'
   subsystem: S_*Methionine Metabolism
 - id: R_ME1x
   name: R_malic enzyme (NAD)
+  genes: LmjF24.0770
   equation: '|M_mal_L_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_nadh_c[Cytosol]|
     + |M_pyr_c[Cytosol]|'
   subsystem: S_*Pyruvate metabolism
 - id: R_METAT
   name: R_methionine adenosyltransferase
+  genes: LmjF30.3520 or LmjF30.3500
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_met_L_c[Cytosol]| => |M_amet_c[Cytosol]|
     + |M_pi_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Methionine Metabolism
@@ -3159,6 +3610,7 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_METS
   name: R_methionine synthase
+  genes: LmjF07.0090
   equation: '|M_5mthf_c[Cytosol]| + |M_hcys_L_c[Cytosol]| => |M_h_c[Cytosol]| + |M_met_L_c[Cytosol]|
     + |M_thf_c[Cytosol]|'
   subsystem: S_*Methionine Metabolism
@@ -3168,11 +3620,13 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_METTRSm
   name: R_methionyl-tRNA synthetase, mitochondrial
+  genes: LmjF21.0810
   equation: '|M_atp_m[Mitochondria]| + |M_met_L_m[Mitochondria]| + |M_trnamet_m[Mitochondria]|
     => |M_amp_m[Mitochondria]| + |M_mettrna_m[Mitochondria]| + |M_ppi_m[Mitochondria]|'
   subsystem: S_*Methionine Metabolism
 - id: R_METt6
   name: R_L-methionine transport in/out via proton symport
+  genes: LmjF14.0320 or LmjF22.0230 or LmjF11.0520 or LmjF27.0670
   equation: '|M_h_e[Extracellular_space]| + |M_met_L_e[Extracellular_space]| <=>
     |M_h_c[Cytosol]| + |M_met_L_c[Cytosol]|'
   subsystem: S_*Transport, Extracellular
@@ -3182,11 +3636,13 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_MEVK
   name: R_mevalonate kinase
+  genes: LmjF31.0560
   equation: '|M_atp_c[Cytosol]| + |M_mev_R_c[Cytosol]| => |M_5pmev_c[Cytosol]| +
     |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_*Steroid Biosynthesis
 - id: R_MEVKx
   name: R_mevalonate kinase
+  genes: LmjF31.0560
   equation: '|M_atp_x[Glycosome]| + |M_mev_R_x[Glycosome]| => |M_5pmev_x[Glycosome]|
     + |M_adp_x[Glycosome]| + |M_h_x[Glycosome]|'
   subsystem: S_*Steroid Biosynthesis
@@ -3196,11 +3652,13 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_MFAPS_LM
   name: R_methylene-fatty-acyl-phospholipid synthase (L. major)
+  genes: LmjF31.3120
   equation: '|M_amet_c[Cytosol]| + (0.010000) |M_ptdmeeta_LM_c[Cytosol]| => |M_ahcys_c[Cytosol]|
     + |M_h_c[Cytosol]| + (0.010000) |M_ptd2meeta_LM_c[Cytosol]|'
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_MFAPSm_LM
   name: R_methylene-fatty-acyl-phospholipid synthase (L. major)
+  genes: LmjF31.3120
   equation: '|M_amet_m[Mitochondria]| + (0.010000) |M_ptdmeeta_LM_m[Mitochondria]|
     => |M_ahcys_m[Mitochondria]| + |M_h_m[Mitochondria]| + (0.010000) |M_ptd2meeta_LM_m[Mitochondria]|'
   subsystem: S_*Glycerophospholipid metabolism
@@ -3210,6 +3668,7 @@
   subsystem: S_*Valine, leucine, and isoleucine degradation
 - id: R_MGLYCL_LM
   name: R_Glycerol-ester acylhydrolase (monoacylglycerol lipase)
+  genes: LmjF31.1140
   equation: '|M_h2o_c[Cytosol]| + (0.010000) |M_mag_LM_c[Cytosol]| => (0.080000)
     |M_alpla_c[Cytosol]| + (0.080000) |M_gamla_c[Cytosol]| + |M_glyc_c[Cytosol]|
     + |M_h_c[Cytosol]| + (0.090000) |M_hdca_c[Cytosol]| + (0.100000) |M_ocdca_c[Cytosol]|
@@ -3218,20 +3677,24 @@
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_MI1PP
   name: R_myo-inositol 1-phosphatase
+  genes: LmjF17.1390
   equation: '|M_h2o_c[Cytosol]| + |M_mi1p_D_c[Cytosol]| => |M_inost_c[Cytosol]| +
     |M_pi_c[Cytosol]|'
   subsystem: S_*Inositol Phosphate metabolism
 - id: R_MI1PSB
   name: R_myo-Inositol-1-phosphate synthase
+  genes: LmjF14.1360
   equation: '|M_g6p_B_c[Cytosol]| => |M_mi1p_D_c[Cytosol]|'
   subsystem: S_*Streptomycin Biosynthesis
 - id: R_MI3PP
   name: R_myo-inositol 3-phosphatase
+  genes: LmjF17.1390
   equation: '|M_h2o_c[Cytosol]| + |M_mi3p_D_c[Cytosol]| => (2) |M_h_c[Cytosol]| +
     |M_inost_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_*Inositol Phosphate metabolism
 - id: R_MI4PP
   name: R_myo-inositol 4-phosphatase
+  genes: LmjF17.1390
   equation: '|M_h2o_c[Cytosol]| + |M_mi4p_D_c[Cytosol]| => (2) |M_h_c[Cytosol]| +
     |M_inost_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_*Inositol Phosphate metabolism
@@ -3261,38 +3724,46 @@
   subsystem: S_*Amino Acid Degradation
 - id: R_MMEm
   name: R_methylmalonyl-CoA epimerase
+  genes: LmjF26.0020
   equation: '|M_mmcoa_R_m[Mitochondria]| <=> |M_mmcoa_S_m[Mitochondria]|'
   subsystem: S_*Valine, leucine, and isoleucine degradation
 - id: R_MMMm
   name: R_methylmalonyl-CoA mutase
+  genes: LmjF27.0300
   equation: '|M_mmcoa_R_m[Mitochondria]| => |M_succoa_m[Mitochondria]|'
   subsystem: S_*Propanoate Metabolism
 - id: R_MSTa
   name: R_3-mercaptopyruvate sulfurtransferase
+  genes: LmjF05.0970
   equation: '|M_h_c[Cytosol]| + |M_pyr_c[Cytosol]| + |M_tcynt_c[Cytosol]| => |M_cyan_c[Cytosol]|
     + |M_mercppyr_c[Cytosol]|'
   subsystem: S_*Cysteine Metabolism
 - id: R_MTAP
   name: R_5'-methylthioadenosine phosphorylase
+  genes: LmjF05.0830
   equation: '|M_5mta_c[Cytosol]| + |M_pi_c[Cytosol]| => |M_5mdr1p_c[Cytosol]| + |M_ade_c[Cytosol]|'
   subsystem: S_*Methionine Metabolism
 - id: R_MTHFC
   name: R_methenyltetrahydrofolate cyclohydrolase
+  genes: LmjF26.0320 or LmjF30.2600
   equation: '|M_h2o_c[Cytosol]| + |M_methf_c[Cytosol]| <=> |M_10fthf_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_*Glyoxylate and dicarboxylate metabolism
 - id: R_MTHFD
   name: R_methylenetetrahydrofolate dehydrogenase (NADP)
+  genes: LmjF26.0320 or LmjF30.2600
   equation: '|M_mlthf_c[Cytosol]| + |M_nadp_c[Cytosol]| <=> |M_methf_c[Cytosol]|
     + |M_nadph_c[Cytosol]|'
   subsystem: S_*Glyoxylate and dicarboxylate metabolism
 - id: R_MTHFR
   name: R_5,10-methylenetetrahydrofolate reductase (FADH2)
+  genes: LmjF36.6390
   equation: '|M_fadh2_c[Cytosol]| + |M_h_c[Cytosol]| + |M_mlthf_c[Cytosol]| => |M_5mthf_c[Cytosol]|
     + |M_fad_c[Cytosol]|'
   subsystem: S_*One carbon pool by folate
 - id: R_MTHFR1
   name: R_5,10-methylenetetrahydrofolate reductase (NADP)
+  genes: LmjF36.6390
   equation: (2) |M_h_c[Cytosol]| + |M_mlthf_c[Cytosol]| + |M_nadph_c[Cytosol]| =>
     |M_5mthf_c[Cytosol]| + |M_nadp_c[Cytosol]|
   subsystem: S_*One carbon pool by folate
@@ -3302,11 +3773,13 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_MTHPTGHM
   name: R_5-methyltetrahydropteroyltriglutamate-homocysteine S-methyltransferase
+  genes: LmjF31.0010
   equation: '|M_5mthglu_c[Cytosol]| + |M_hcys_L_c[Cytosol]| => |M_met_L_c[Cytosol]|
     + |M_thglu_c[Cytosol]|'
   subsystem: S_*Methionine Metabolism
 - id: R_MTRI
   name: R_5-methylthioribose-1-phosphate isomerase
+  genes: LmjF36.4930
   equation: '|M_5mdr1p_c[Cytosol]| <=> |M_5mdru1p_c[Cytosol]|'
   subsystem: S_*Methionine Metabolism
 - id: R_MannanSys
@@ -3319,11 +3792,14 @@
   subsystem: S_*Transport, Extracellular
 - id: R_NADH2-u6cm
   name: R_NADH dehydrogenase, cytosolic/mitochondrial
+  genes: LmjF36.5380 and LmjF27.0290 and LmjF18.1480 and LmjF27.0740 and LmjF05.0980
+    and LmjF17.0270
   equation: '|M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| + |M_q6_m[Mitochondria]| => |M_nad_c[Cytosol]|
     + |M_q6h2_m[Mitochondria]|'
   subsystem: S_*Oxidative phosphorylation
 - id: R_NADHDH
   name: R_NADH:ubiquinone oxidoreductase
+  genes: LmjF27.0290 and LmjF18.1480 and LmjF27.0740 and LmjF05.0980 and LmjF17.0270
   equation: '|M_h_m[Mitochondria]| + |M_nadh_m[Mitochondria]| + |M_ubq_m[Mitochondria]|
     => |M_nad_m[Mitochondria]| + |M_qh2_m[Mitochondria]|'
   subsystem: S_*Oxidative phosphorylation
@@ -3333,11 +3809,13 @@
   subsystem: S_*Transport, Endoplasmic Reticular
 - id: R_NADK
   name: R_NAD kinase
+  genes: LmjF06.0460
   equation: '|M_atp_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_nadp_c[Cytosol]|'
   subsystem: S_*Nicotinate and Nicotinamide Metabolism
 - id: R_NADS2i
   name: R_NAD synthase
+  genes: LmjF32.1670
   equation: '|M_atp_c[Cytosol]| + |M_dnad_c[Cytosol]| + |M_gln_L_c[Cytosol]| + |M_h2o_c[Cytosol]|
     => |M_amp_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nad_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
@@ -3352,99 +3830,122 @@
   subsystem: S_*Transport, Extracellular
 - id: R_NCATD
   name: R_4-Nitrocatechol oxidoreductase
+  genes: LmjF27.0090
   equation: '|M_4ncat_c[Cytosol]| + (3) |M_h_c[Cytosol]| + |M_o2_c[Cytosol]| => |M_benz124t_c[Cytosol]|
     + |M_h2o_c[Cytosol]| + |M_no2_c[Cytosol]|'
   subsystem: S_*Gamma-Hexachlorocyclohexane Degradation
 - id: R_NCHEXH
   name: R_N-Cyclohexylformamide hydrolase
+  genes: LmjF26.0210 or LmjF34.2140
   equation: '|M_h2o_c[Cytosol]| + |M_nchexfm_c[Cytosol]| => |M_chex_c[Cytosol]| +
     |M_for_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_*Caprolactam Degradation
 - id: R_NCTPPRT
   name: R_nicotinate phosphoribosyltransferase
+  genes: LmjF33.0960
   equation: '|M_nicrnt_c[Cytosol]| + |M_ppi_c[Cytosol]| <=> |M_h_c[Cytosol]| + |M_nac_c[Cytosol]|
     + |M_prpp_c[Cytosol]|'
   subsystem: S_*Nicotinate and Nicotinamide Metabolism
 - id: R_NDPK1
   name: R_nucleoside-diphosphate kinase (ATP:GDP)
+  genes: LmjF35.3870 and LmjF32.2950
   equation: '|M_atp_c[Cytosol]| + |M_gdp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_gtp_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_NDPK10
   name: R_nucleoside-diphophate kinase (ATP:IDP)
+  genes: LmjF35.3870 and LmjF32.2950
   equation: '|M_atp_c[Cytosol]| + |M_didp_c[Cytosol]| + |M_h_c[Cytosol]| <=> |M_adp_c[Cytosol]|
     + |M_ditp_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_NDPK2
   name: R_nucleoside-diphosphate kinase (ATP:UDP)
+  genes: LmjF35.3870 and LmjF32.2950
   equation: '|M_atp_c[Cytosol]| + |M_udp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_utp_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_NDPK3
   name: R_nucleoside-diphosphate kinase (ATP:CDP)
+  genes: LmjF35.3870 and LmjF32.2950
   equation: '|M_atp_c[Cytosol]| + |M_cdp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_ctp_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_NDPK4
   name: R_nucleoside-diphosphate kinase (ATP:dTDP)
+  genes: LmjF35.3870 and LmjF32.2950
   equation: '|M_atp_c[Cytosol]| + |M_dtdp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dttp_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_NDPK5
   name: R_nucleoside-diphosphate kinase (ATP:dGDP)
+  genes: LmjF35.3870 and LmjF32.2950
   equation: '|M_atp_c[Cytosol]| + |M_dgdp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dgtp_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_NDPK6
   name: R_nucleoside-diphosphate kinase (ATP:dUDP)
+  genes: LmjF35.3870 and LmjF32.2950
   equation: '|M_atp_c[Cytosol]| + |M_dudp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dutp_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_NDPK7
   name: R_nucleoside-diphosphate kinase (ATP:dCDP)
+  genes: LmjF35.3870 and LmjF32.2950
   equation: '|M_atp_c[Cytosol]| + |M_dcdp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dctp_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_NDPK8
   name: R_nucleoside-diphosphate kinase (ATP:dADP)
+  genes: LmjF35.3870 and LmjF32.2950
   equation: '|M_atp_c[Cytosol]| + |M_dadp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_datp_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_NDPK9
   name: R_nucleoside-diphophate kinase (ATP:IDP)
+  genes: LmjF35.3870 and LmjF32.2950
   equation: '|M_atp_c[Cytosol]| + |M_idp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_itp_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_NDPKn1
   name: R_nucleoside-diphosphate kinase (ATP:GDP)
+  genes: LmjF35.3870 and LmjF32.2950
   equation: '|M_atp_n[Nucleus]| + |M_gdp_n[Nucleus]| <=> |M_adp_n[Nucleus]| + |M_gtp_n[Nucleus]|'
   subsystem: S_*Purine Metabolism
 - id: R_NDPKn10
   name: R_nucleoside-diphophate kinase (ATP:IDP)
+  genes: LmjF35.3870 and LmjF32.2950
   equation: '|M_atp_n[Nucleus]| + |M_didp_n[Nucleus]| + |M_h_n[Nucleus]| <=> |M_adp_n[Nucleus]|
     + |M_ditp_n[Nucleus]|'
   subsystem: S_*Purine Metabolism
 - id: R_NDPKn2
   name: R_nucleoside-diphosphate kinase (ATP:UDP)
+  genes: LmjF35.3870 and LmjF32.2950
   equation: '|M_atp_n[Nucleus]| + |M_udp_n[Nucleus]| <=> |M_adp_n[Nucleus]| + |M_utp_n[Nucleus]|'
   subsystem: S_*Purine Metabolism
 - id: R_NDPKn3
   name: R_nucleoside-diphosphate kinase (ATP:CDP)
+  genes: LmjF35.3870 and LmjF32.2950
   equation: '|M_atp_n[Nucleus]| + |M_cdp_n[Nucleus]| <=> |M_adp_n[Nucleus]| + |M_ctp_n[Nucleus]|'
   subsystem: S_*Purine Metabolism
 - id: R_NDPKn4
   name: R_nucleoside-diphosphate kinase (ATP:dTDP)
+  genes: LmjF35.3870 and LmjF32.2950
   equation: '|M_atp_n[Nucleus]| + |M_dtdp_n[Nucleus]| <=> |M_adp_n[Nucleus]| + |M_dttp_n[Nucleus]|'
   subsystem: S_*Purine Metabolism
 - id: R_NDPKn5
   name: R_nucleoside-diphosphate kinase (ATP:dGDP)
+  genes: LmjF35.3870 and LmjF32.2950
   equation: '|M_atp_n[Nucleus]| + |M_dgdp_n[Nucleus]| <=> |M_adp_n[Nucleus]| + |M_dgtp_n[Nucleus]|'
   subsystem: S_*Purine Metabolism
 - id: R_NDPKn6
   name: R_nucleoside-diphosphate kinase (ATP:dUDP)
+  genes: LmjF35.3870 and LmjF32.2950
   equation: '|M_atp_n[Nucleus]| + |M_dudp_n[Nucleus]| <=> |M_adp_n[Nucleus]| + |M_dutp_n[Nucleus]|'
   subsystem: S_*Purine Metabolism
 - id: R_NDPKn7
   name: R_nucleoside-diphosphate kinase (ATP:dCDP)
+  genes: LmjF35.3870 and LmjF32.2950
   equation: '|M_atp_n[Nucleus]| + |M_dcdp_n[Nucleus]| <=> |M_adp_n[Nucleus]| + |M_dctp_n[Nucleus]|'
   subsystem: S_*Purine Metabolism
 - id: R_NDPKn8
   name: R_nucleoside-diphosphate kinase (ATP:dADP)
+  genes: LmjF35.3870 and LmjF32.2950
   equation: '|M_atp_n[Nucleus]| + |M_dadp_n[Nucleus]| <=> |M_adp_n[Nucleus]| + |M_datp_n[Nucleus]|'
   subsystem: S_*Purine Metabolism
 - id: R_NDPKn9
   name: R_nucleoside-diphophate kinase (ATP:IDP)
+  genes: LmjF35.3870 and LmjF32.2950
   equation: '|M_atp_n[Nucleus]| + |M_idp_n[Nucleus]| <=> |M_adp_n[Nucleus]| + |M_itp_n[Nucleus]|'
   subsystem: S_*Purine Metabolism
 - id: R_NH3te
@@ -3474,26 +3975,32 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_NICRNTK
   name: R_Nicotinate D-ribonucleotide kinase
+  genes: LmjF30.0600 or LmjF29.2150 or LmjF13.0780 or LmjF30.0370 or LmjF32.1810
+    or LmjF36.4250 or LmjF07.0170 or LmjF27.0100 or LmjF11.0250
   equation: '|M_adp_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_nicrnt_c[Cytosol]| <=>
     |M_atp_c[Cytosol]| + |M_nicrns_c[Cytosol]|'
   subsystem: S_*Nicotinate and Nicotinamide Metabolism
 - id: R_NO3R
   name: R_Nitrate reductase
+  genes: LmjF30.0610
   equation: '|M_h2o_c[Cytosol]| + |M_nad_c[Cytosol]| + |M_no2_c[Cytosol]| => |M_h_c[Cytosol]|
     + |M_nadh_c[Cytosol]| + |M_no3_c[Cytosol]|'
   subsystem: S_*Nitrogen metabolism
 - id: R_NPHPPH
   name: R_4-Nitrophenyl phosphate phosphohydrolase
+  genes: LmjF31.2340
   equation: '|M_4nphp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_4nph_c[Cytosol]| + (2)
     |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_*Gamma-Hexachlorocyclohexane Degradation
 - id: R_NTRLASE
   name: R_nitrilase
+  genes: LmjF26.2280
   equation: (2) |M_h2o_c[Cytosol]| + |M_ind3acnl_c[Cytosol]| => |M_ind3ac_c[Cytosol]|
     + |M_nh4_c[Cytosol]|
   subsystem: S_*Tryptophan Metabolism
 - id: R_NTRLASE4
   name: R_nitrilase
+  genes: LmjF26.2280
   equation: '|M_benznt_c[Cytosol]| + (2) |M_h2o_c[Cytosol]| => |M_bz_c[Cytosol]|
     + |M_nh4_c[Cytosol]|'
   subsystem: S_*Benzoate Degradation
@@ -3523,6 +4030,7 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_OCCOADm
   name: R_octanoyl-CoA dehydrogenase
+  genes: LmjF06.0880 or LmjF28.2510
   equation: '|M_fad_m[Mitochondria]| + |M_occoa_m[Mitochondria]| => |M_fadh2_m[Mitochondria]|
     + |M_ocd2coa_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Degradation
@@ -3532,36 +4040,43 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_OCDMAT8m
   name: R_Octadecanoyl-[acyl-carrier protein]:malonyl-CoA  C-acyltransferase
+  genes: LmjF05.0520
   equation: '|M_2tocdACP_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_nadh_m[Mitochondria]|
     => |M_nad_m[Mitochondria]| + |M_ocdACP_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Biosynthesis
 - id: R_OCMAT3m
   name: R_Octanoyl-[acyl-carrier protein]:malonyl-CoA C-acyltransferase
+  genes: LmjF05.0520
   equation: '|M_2toceACP_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_nadh_m[Mitochondria]|
     => |M_nad_m[Mitochondria]| + |M_octACP_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Biosynthesis
 - id: R_OCOAT1r_m
   name: 'R_3-oxoacid CoA-transferase (Succinyl-CoA: acetoacetate)'
+  genes: LmjF30.1930 or LmjF30.1940 or LmjF33.2340
   equation: '|M_acac_m[Mitochondria]| + |M_succoa_m[Mitochondria]| <=> |M_aacoa_m[Mitochondria]|
     + |M_succ_m[Mitochondria]|'
   subsystem: S_*Butanoate metabolism
 - id: R_ODH1mi
   name: R_3-Methyl-2-oxobutanoate:lipoamide oxidoreductase(decarboxylating and acceptor-2-methylpropanoylating)
+  genes: LmjF21.1430
   equation: '|M_3mob_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_lpam_m[Mitochondria]|
     => |M_2mpdhl_m[Mitochondria]| + |M_co2_m[Mitochondria]|'
   subsystem: S_*Valine, leucine, and isoleucine degradation
 - id: R_ODH2mi
   name: R_3-Methyl-2-oxopentanoate:lipoamide oxidoreductase(decarboxylating and acceptor-2-methylpropanoylating)
+  genes: LmjF21.1430
   equation: '|M_3mop_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_lpam_m[Mitochondria]|
     => |M_2mbutdhla_m[Mitochondria]| + |M_co2_m[Mitochondria]|'
   subsystem: S_*Valine, leucine, and isoleucine degradation
 - id: R_ODHmi
   name: R_3-methyl-2-oxobutanoate dehydrogenase (2-methylpropanoyl-transferring).
+  genes: LmjF21.1430
   equation: '|M_4mop_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_lpam_m[Mitochondria]|
     => |M_3mbutdhla_m[Mitochondria]| + |M_co2_m[Mitochondria]|'
   subsystem: S_*Valine, leucine, and isoleucine degradation
 - id: R_OHPHM
   name: R_R04988
+  genes: LmjF35.4250
   equation: '|M_2ohph_c[Cytosol]| + |M_amet_c[Cytosol]| => |M_2omph_c[Cytosol]| +
     |M_ahcys_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_*Ubiquinone Biosynthesis
@@ -3580,11 +4095,13 @@
   subsystem: S_*Amino Acid Degradation
 - id: R_OMPDCg
   name: R_orotidine-5'-phosphate decarboxylase, glycosomal
+  genes: LmjF16.0550
   equation: '|M_h_x[Glycosome]| + |M_orot5p_x[Glycosome]| => |M_co2_x[Glycosome]|
     + |M_ump_x[Glycosome]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_ORNDC
   name: R_ornithine decarboxylase
+  genes: LmjF12.0280
   equation: '|M_h_c[Cytosol]| + |M_orn_L_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_ptrc_c[Cytosol]|'
   subsystem: S_*Urea Cycle
 - id: R_ORNtg
@@ -3597,6 +4114,7 @@
   subsystem: S_*Transport, Peroxisomal
 - id: R_ORPTg
   name: R_orotate phosphoribosyltransferase, glycosomal
+  genes: LmjF16.0550
   equation: '|M_orot5p_x[Glycosome]| + |M_ppi_x[Glycosome]| <=> |M_orot_x[Glycosome]|
     + |M_prpp_x[Glycosome]|'
   subsystem: S_*Pyrimidine Metabolism
@@ -3610,21 +4128,25 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_P5CDm_i
   name: R_1-pyrroline-5-carboxylate dehydrogenase, mitochondrial
+  genes: LmjF03.0200
   equation: '|M_1pyr5c_m[Mitochondria]| + (2) |M_h2o_m[Mitochondria]| + |M_nad_m[Mitochondria]|
     => |M_glu_L_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_nadh_m[Mitochondria]|'
   subsystem: S_*Arginine and Proline Metabolism
 - id: R_P5CDr
   name: R_1-pyrroline-5-carboxylate dehydrogenase
+  genes: LmjF03.0200
   equation: '|M_1pyr5c_c[Cytosol]| + (2) |M_h2o_c[Cytosol]| + |M_nad_c[Cytosol]|
     <=> |M_glu_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|'
   subsystem: S_*Glutamate Metabolism
 - id: R_P5CRr
   name: R_pyrroline-5-carboxylate reductase
+  genes: LmjF13.1680
   equation: '|M_1pyr5c_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]|
     <=> |M_nadp_c[Cytosol]| + |M_pro_L_c[Cytosol]|'
   subsystem: S_*Arginine and Proline Metabolism
 - id: R_P5CRrm
   name: R_pyrroline-5-carboxylate reductase
+  genes: LmjF13.1680
   equation: '|M_1pyr5c_m[Mitochondria]| + (2) |M_h_m[Mitochondria]| + |M_nadph_m[Mitochondria]|
     <=> |M_nadp_m[Mitochondria]| + |M_pro_L_m[Mitochondria]|'
   subsystem: S_*Arginine and Proline Metabolism
@@ -3634,11 +4156,13 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_PAPA_LM
   name: R_Phosphatidate phosphatase (L. major)
+  genes: LmjF18.0440 or LmjF19.1350
   equation: '|M_h2o_c[Cytosol]| + (0.010000) |M_pa_LM_c[Cytosol]| => (0.010000) |M_12dgr_LM_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_PAPAm_LM
   name: R_Phosphatidate phosphatase (L. major)
+  genes: LmjF18.0440 or LmjF19.1350
   equation: '|M_h2o_m[Mitochondria]| + (0.010000) |M_pa_LM_m[Mitochondria]| => (0.010000)
     |M_12dgr_LM_m[Mitochondria]| + |M_pi_m[Mitochondria]|'
   subsystem: S_*Glycerophospholipid metabolism
@@ -3652,16 +4176,19 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_PDHe1
   name: R_pyruvate dehydrogenase, mitochondrial
+  genes: LmjF18.1380 and LmjF25.1710 and LmjF35.0050
   equation: '|M_lpam_m[Mitochondria]| + |M_pyr_m[Mitochondria]| => |M_adhlam_m[Mitochondria]|
     + |M_co2_m[Mitochondria]|'
   subsystem: S_*Glycolysis/Gluconeogenesis
 - id: R_PDHe2
   name: R_pyruvate dehydrogenase (dihydrolipoamide acetyltransferase)
+  genes: LmjF21.0550 and LmjF36.2660
   equation: '|M_adhlam_m[Mitochondria]| + |M_coa_m[Mitochondria]| + |M_h_m[Mitochondria]|
     => |M_accoa_m[Mitochondria]| + |M_dhlam_m[Mitochondria]|'
   subsystem: S_*Glycolysis/Gluconeogenesis
 - id: R_PDHe3
   name: R_pyruvate dehydrogenase (dihydrolipoamide dehydrogenase)
+  genes: LmjF29.1830 and LmjF31.2640 and LmjF31.2650 and LmjF32.3310
   equation: '|M_dhlam_m[Mitochondria]| + |M_nad_m[Mitochondria]| => |M_h_m[Mitochondria]|
     + |M_lpam_m[Mitochondria]| + |M_nadh_m[Mitochondria]|'
   subsystem: S_*Glycolysis/Gluconeogenesis
@@ -3679,11 +4206,13 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_PETOHM_LM
   name: R_phosphatidylethanolamine N-methyltransferase (L. major)
+  genes: LmjF31.2290
   equation: '|M_amet_c[Cytosol]| + (0.010000) |M_pe_LM_c[Cytosol]| => |M_ahcys_c[Cytosol]|
     + |M_h_c[Cytosol]| + (0.010000) |M_ptdmeeta_LM_c[Cytosol]|'
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_PETOHMm_LM
   name: R_phosphatidylethanolamine N-methyltransferase (L. major)
+  genes: LmjF31.2290
   equation: '|M_amet_m[Mitochondria]| + (0.010000) |M_pe_LM_m[Mitochondria]| => |M_ahcys_m[Mitochondria]|
     + |M_h_m[Mitochondria]| + (0.010000) |M_ptdmeeta_LM_m[Mitochondria]|'
   subsystem: S_*Glycerophospholipid metabolism
@@ -3693,47 +4222,57 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_PFK26
   name: R_6-phosphofructo-2-kinase
+  genes: LmjF26.0310 or LmjF03.0800
   equation: '|M_atp_c[Cytosol]| + |M_f6p_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_f26bp_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_*Fructose and mannose metabolism
 - id: R_PFKg
   name: R_phosphofructokinase, glycosomal
+  genes: LmjF29.2510
   equation: '|M_atp_x[Glycosome]| + |M_f6p_x[Glycosome]| => |M_adp_x[Glycosome]|
     + |M_fdp_x[Glycosome]| + |M_h_x[Glycosome]|'
   subsystem: S_*Glycolysis/Gluconeogenesis
 - id: R_PGCDr
   name: R_phosphoglycerate dehydrogenase
+  genes: LmjF03.0030
   equation: '|M_3pg_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_3php_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_nadh_c[Cytosol]|'
   subsystem: S_*Glycine, serine and threonine metabolism
 - id: R_PGDH
   name: R_phosphogluconate dehydrogenase
+  genes: LmjF35.3340
   equation: '|M_6pgc_c[Cytosol]| + |M_nadp_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_nadph_c[Cytosol]|
     + |M_ru5p_D_c[Cytosol]|'
   subsystem: S_*Pentose Phosphate Pathway
 - id: R_PGI1
   name: R_glucose-6-phosphate isomerase, glycosomal
+  genes: LmjF12.0530
   equation: '|M_g6p_A_x[Glycosome]| <=> |M_f6p_x[Glycosome]|'
   subsystem: S_*Glycolysis/Gluconeogenesis
 - id: R_PGI2
   name: R_glucose-6-phosphate isomerase, glycosomal
+  genes: LmjF12.0530
   equation: '|M_g6p_B_x[Glycosome]| <=> |M_f6p_x[Glycosome]|'
   subsystem: S_*Glycolysis/Gluconeogenesis
 - id: R_PGI3
   name: R_glucose-6-phosphate isomerase, glycosomal
+  genes: LmjF12.0530
   equation: '|M_g6p_A_x[Glycosome]| <=> |M_g6p_B_x[Glycosome]|'
   subsystem: S_*Glycolysis/Gluconeogenesis
 - id: R_PGK
   name: R_phosphoglycerate kinase
+  genes: LmjF20.0110 and LmjF20.0100 and LmjF30.3380
   equation: '|M_13dpg_c[Cytosol]| + |M_adp_c[Cytosol]| <=> |M_3pg_c[Cytosol]| + |M_atp_c[Cytosol]|'
   subsystem: S_*Glycolysis/Gluconeogenesis
 - id: R_PGKg
   name: R_phosphoglycerate kinase, glycosomal
+  genes: LmjF20.0110 and LmjF20.0100 and LmjF30.3380
   equation: '|M_13dpg_x[Glycosome]| + |M_adp_x[Glycosome]| <=> |M_3pg_x[Glycosome]|
     + |M_atp_x[Glycosome]|'
   subsystem: S_*Glycolysis/Gluconeogenesis
 - id: R_PGL
   name: R_6-phosphogluconolactonase
+  genes: LmjF26.2700
   equation: '|M_6pgl_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_6pgc_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_*Pentose Phosphate Pathway
 - id: R_PGLYPtm
@@ -3742,15 +4281,18 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_PGLg
   name: R_6-phosphogluconolactonase; glycosomal
+  genes: LmjF26.2700
   equation: '|M_6pgl_x[Glycosome]| + |M_h2o_x[Glycosome]| => |M_6pgc_x[Glycosome]|
     + |M_h_x[Glycosome]|'
   subsystem: S_*Pentose Phosphate Pathway
 - id: R_PGM
   name: R_phosphoglycerate mutase
+  genes: LmjF33.2110 or LmjF36.4070 or LmjF08.0060 or LmjF36.6650 or LmjF28.2220
   equation: '|M_3pg_c[Cytosol]| <=> |M_2pg_c[Cytosol]|'
   subsystem: S_*Glycolysis/Gluconeogenesis
 - id: R_PGMT
   name: R_phosphoglucomutase
+  genes: LmjF21.0640
   equation: '|M_g1p_c[Cytosol]| <=> |M_g6p_c[Cytosol]|'
   subsystem: S_*Glycolysis/Gluconeogenesis
 - id: R_PGPPAm_LM
@@ -3783,21 +4325,25 @@
   subsystem: S_*Arginine and Proline Metabolism
 - id: R_PHCYT_LM
   name: R_phosphatidate cytidylyltransferase (L. major)
+  genes: LmjF26.1620
   equation: '|M_ctp_c[Cytosol]| + |M_h_c[Cytosol]| + (0.010000) |M_pa_LM_c[Cytosol]|
     => (0.010000) |M_CDPdag_LM_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_PHCYTm_LM
   name: R_phosphatidate cytidylyltransferase (L. major)
+  genes: LmjF26.1620
   equation: '|M_ctp_m[Mitochondria]| + |M_h_m[Mitochondria]| + (0.010000) |M_pa_LM_m[Mitochondria]|
     => (0.010000) |M_CDPdag_LM_m[Mitochondria]| + |M_ppi_m[Mitochondria]|'
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_PHE4MOi
   name: R_phenylalanine 4-monooxygenase
+  genes: LmjF28.1280
   equation: '|M_o2_c[Cytosol]| + |M_phe_L_c[Cytosol]| + |M_thbpt_c[Cytosol]| => |M_4hthb_c[Cytosol]|
     + |M_h2o_c[Cytosol]| + |M_tyr_L_c[Cytosol]|'
   subsystem: S_*Phenylalanine, Tyrosine, Tryptophan biosynthesis
 - id: R_PHE4MOi2
   name: R_phenylalanine 4-monooxygenase
+  genes: LmjF28.1280
   equation: '|M_o2_c[Cytosol]| + |M_phe_L_c[Cytosol]| + |M_thbpt_c[Cytosol]| => |M_dhbpt_c[Cytosol]|
     + |M_h2o_c[Cytosol]| + |M_tyr_L_c[Cytosol]|'
   subsystem: S_*Phenylalanine, Tyrosine, Tryptophan biosynthesis
@@ -3812,21 +4358,25 @@
   subsystem: S_*Benzoate Degradation
 - id: R_PHETA1
   name: R_phenylalanine transaminase
+  genes: LmjF35.0820 or LmjF36.2360
   equation: '|M_akg_c[Cytosol]| + |M_phe_L_c[Cytosol]| <=> |M_glu_L_c[Cytosol]| +
     |M_phpyr_c[Cytosol]|'
   subsystem: S_*Phenylalanine Metabolism
 - id: R_PHETA1m
   name: R_phenylalanine transaminase
+  genes: LmjF24.0370
   equation: '|M_akg_m[Mitochondria]| + |M_phe_L_m[Mitochondria]| <=> |M_glu_L_m[Mitochondria]|
     + |M_phpyr_m[Mitochondria]|'
   subsystem: S_*Phenylalanine Metabolism
 - id: R_PHETRS
   name: R_Phenylalanyl-tRNA synthetase
+  genes: LmjF19.1040 and LmjF32.0870
   equation: '|M_atp_c[Cytosol]| + |M_phe_L_c[Cytosol]| + |M_trnaphe_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_phetrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Phenylalanine, Tyrosine, Tryptophan biosynthesis
 - id: R_PHEt6
   name: R_L-phenylalanine transport in/out via proton symport
+  genes: LmjF14.0320 or LmjF22.0230 or LmjF11.0520 or LmjF27.0670
   equation: '|M_h_e[Extracellular_space]| + |M_phe_L_e[Extracellular_space]| <=>
     |M_h_c[Cytosol]| + |M_phe_L_c[Cytosol]|'
   subsystem: S_*Transport, Extracellular
@@ -3836,26 +4386,32 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_PI45BPP_LM
   name: R_1-phosphatidylinositol-4,5-bisphosphate phosphodiesterase
+  genes: LmjF30.2950 or LmjF35.0040
   equation: '|M_h2o_c[Cytosol]| + (0.010000) |M_ptd145bp_LM_c[Cytosol]| => (0.010000)
     |M_12dgr_LM_c[Cytosol]| + |M_h_c[Cytosol]| + |M_mi145tp_D_c[Cytosol]|'
   subsystem: S_*Inositol Phosphate metabolism
 - id: R_PI4P5K_LM
   name: R_phosphatidylinositol 4-phosphate 5-kinase
+  genes: LmjF34.3090
   equation: '|M_atp_c[Cytosol]| + (0.010000) |M_ptd4ino_LM_c[Cytosol]| => |M_adp_c[Cytosol]|
     + |M_h_c[Cytosol]| + (0.010000) |M_ptd145bp_LM_c[Cytosol]|'
   subsystem: S_*Inositol Phosphate metabolism
 - id: R_PIN3K_LM
   name: R_1-phosphatidylinositol 3-kinase
+  genes: LmjF20.1120 or LmjF24.2010 or LmjF34.4530 or LmjF30.1850 or LmjF02.0120
+    or LmjF34.3940
   equation: '|M_atp_c[Cytosol]| + (0.010000) |M_ptd1ino_LM_c[Cytosol]| => |M_adp_c[Cytosol]|
     + |M_h_c[Cytosol]| + (0.010000) |M_ptd3ino_LM_c[Cytosol]|'
   subsystem: S_*Inositol Phosphate metabolism
 - id: R_PIN4K_LM
   name: R_phosphatidylinositol 4-kinase
+  genes: LmjF34.3590
   equation: '|M_atp_c[Cytosol]| + (0.010000) |M_ptd1ino_LM_c[Cytosol]| => |M_adp_c[Cytosol]|
     + |M_h_c[Cytosol]| + (0.010000) |M_ptd4ino_LM_c[Cytosol]|'
   subsystem: S_*Inositol Phosphate metabolism
 - id: R_PINOS_LM
   name: R_phosphatidylinositol synthase (L. major)
+  genes: LmjF26.2480
   equation: (0.010000) |M_CDPdag_LM_c[Cytosol]| + |M_inost_c[Cytosol]| => |M_cmp_c[Cytosol]|
     + |M_h_c[Cytosol]| + (0.010000) |M_ptd1ino_LM_c[Cytosol]|
   subsystem: S_*Glycerophospholipid metabolism
@@ -3869,6 +4425,7 @@
   subsystem: S_*Transport, Peroxisomal
 - id: R_PIt6
   name: R_phosphate transport in/out via proton symporter
+  genes: LmjF10.0030 or LmjF10.1300 or LmjF03.0500
   equation: '|M_h_e[Extracellular_space]| + |M_pi_e[Extracellular_space]| <=> |M_h_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: S_*Transport, Extracellular
@@ -3878,44 +4435,53 @@
   subsystem: S_*Transport, Endoplasmic Reticular
 - id: R_PItm
   name: R_phosphate transporter, mitochondrial
+  genes: LmjF05.0290 or LmjF35.4420 or LmjF35.4430
   equation: '|M_h_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_h_m[Mitochondria]| + |M_pi_m[Mitochondria]|'
   subsystem: S_*Transport, Mitochondrial
 - id: R_PLAc_LM
   name: R_phospholipase A2
+  genes: LmjF35.3020
   equation: '|M_h2o_c[Cytosol]| + (0.010000) |M_pe_LM_c[Cytosol]| => (0.010000) |M_carbxy_LM_c[Cytosol]|
     + |M_h_c[Cytosol]| + (0.010000) |M_lpe_LM_c[Cytosol]|'
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_PLAe_LM
   name: R_phospholipase A2
+  genes: LmjF35.3020
   equation: '|M_h2o_e[Extracellular_space]| + (0.010000) |M_pe_LM_e[Extracellular_space]|
     => (0.010000) |M_carbxy_LM_e[Extracellular_space]| + |M_h_e[Extracellular_space]|
     + (0.010000) |M_lpe_LM_e[Extracellular_space]|'
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_PMANM
   name: R_phosphomannomutase
+  genes: LmjF36.1960
   equation: '|M_man1p_c[Cytosol]| <=> |M_man6p_c[Cytosol]|'
   subsystem: S_*Fructose and mannose metabolism
 - id: R_PMANMg
   name: R_phosphomannomutase
+  genes: LmjF34.3780
   equation: '|M_man1p_x[Glycosome]| <=> |M_man6p_x[Glycosome]|'
   subsystem: S_*Fructose and mannose metabolism
 - id: R_PMETM_LM
   name: R_Phosphatidyl-N-methylethanolamine N-methyltransferase (L. major)
+  genes: LmjF31.3120
   equation: '|M_amet_c[Cytosol]| + (0.010000) |M_ptd2meeta_LM_c[Cytosol]| => |M_ahcys_c[Cytosol]|
     + |M_h_c[Cytosol]| + (0.010000) |M_pc_LM_c[Cytosol]|'
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_PMETMm_LM
   name: R_Phosphatidyl-N-methylethanolamine N-methyltransferase (L. major)
+  genes: LmjF31.3120
   equation: '|M_amet_m[Mitochondria]| + (0.010000) |M_ptd2meeta_LM_m[Mitochondria]|
     => |M_ahcys_m[Mitochondria]| + |M_h_m[Mitochondria]| + (0.010000) |M_pc_LM_m[Mitochondria]|'
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_PMEVK
   name: R_phosphomevalonate kinase
+  genes: LmjF15.1460
   equation: '|M_5pmev_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_5dpmev_c[Cytosol]| +
     |M_adp_c[Cytosol]|'
   subsystem: S_*Steroid Biosynthesis
 - id: R_PMEVKx
   name: R_phosphomevalonate kinase
+  genes: LmjF15.1460
   equation: '|M_5pmev_x[Glycosome]| + |M_atp_x[Glycosome]| => |M_5dpmev_x[Glycosome]|
     + |M_adp_x[Glycosome]|'
   subsystem: S_*Steroid Biosynthesis
@@ -3933,27 +4499,33 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_PNS1
   name: R_purine nucleosidase (adenosine)
+  genes: LmjF29.2800
   equation: '|M_adn_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_ade_c[Cytosol]| + |M_rib_D_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_PNS2
   name: R_purine nucleosidase (guanosine)
+  genes: LmjF29.2800
   equation: '|M_gsn_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_gua_c[Cytosol]| + |M_rib_D_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_PNS3
   name: R_purine nucleosidase (inosine)
+  genes: LmjF29.2800
   equation: '|M_h2o_c[Cytosol]| + |M_ins_c[Cytosol]| => |M_hxan_c[Cytosol]| + |M_rib_D_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_PNS4
   name: R_purine nucleosidase (xanthosine)
+  genes: LmjF29.2800
   equation: '|M_h2o_c[Cytosol]| + |M_xtsn_c[Cytosol]| => |M_rib_D_c[Cytosol]| + |M_xan_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_PNTK
   name: R_pantothenate kinase
+  genes: LmjF28.0140
   equation: '|M_atp_c[Cytosol]| + |M_pnto_R_c[Cytosol]| => |M_4ppan_c[Cytosol]| +
     |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_*Pantothenate and CoA biosynthesis
 - id: R_PNTK2
   name: R_ATP:pantothenate 4'-phosphotransferase
+  genes: LmjF28.0140
   equation: '|M_atp_c[Cytosol]| + |M_ptcys_c[Cytosol]| => |M_4ppcys_c[Cytosol]| +
     |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_*Pantothenate and CoA biosynthesis
@@ -3964,6 +4536,7 @@
   subsystem: S_*Transport, Extracellular
 - id: R_PPA
   name: R_inorganic diphosphatase
+  genes: LmjF03.0910
   equation: '|M_h2o_c[Cytosol]| + |M_ppi_c[Cytosol]| => |M_h_c[Cytosol]| + (2) |M_pi_c[Cytosol]|'
   subsystem: S_*Oxidative phosphorylation
 - id: R_PPATM
@@ -3972,29 +4545,35 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_PPA_1
   name: R_inorganic diphosphatase (one proton translocation)
+  genes: LmjF31.1220
   equation: '|M_h2o_c[Cytosol]| + |M_ppi_c[Cytosol]| => (2) |M_pi_c[Cytosol]| + |M_h_e[Extracellular_space]|'
   subsystem: S_*Oxidative phosphorylation
 - id: R_PPA_1v
   name: R_vacuolar-type inorganic diphosphatase (one proton translocation)
+  genes: LmjF11.0210
   equation: '|M_h2o_c[Cytosol]| + |M_ppi_c[Cytosol]| => (2) |M_pi_c[Cytosol]| + |M_h_v[Acidocalcisome]|'
   subsystem: S_*Oxidative phosphorylation
 - id: R_PPCDC
   name: R_phosphopantothenoylcysteine decarboxylase
+  genes: LmjF30.1540
   equation: '|M_4ppcys_c[Cytosol]| + |M_h_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_pan4p_c[Cytosol]|'
   subsystem: S_*Pantothenate and CoA biosynthesis
 - id: R_PPCKg
   name: R_phosphoenolpyruvate carboxykinase, glycosomal
+  genes: LmjF27.1805 or LmjF27.1810
   equation: '|M_atp_x[Glycosome]| + |M_oaa_x[Glycosome]| <=> |M_adp_x[Glycosome]|
     + |M_co2_x[Glycosome]| + |M_pep_x[Glycosome]|'
   subsystem: S_*Citrate Cycle (TCA)
 - id: R_PPCOACm
   name: R_Propionyl-CoA carboxylase
+  genes: LmjF01.0050 and LmjF28.0490
   equation: '|M_atp_m[Mitochondria]| + |M_hco3_m[Mitochondria]| + |M_ppcoa_m[Mitochondria]|
     => |M_adp_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_mmcoa_S_m[Mitochondria]|
     + |M_pi_m[Mitochondria]|'
   subsystem: S_*Propanoate Metabolism
 - id: R_PPDKg
   name: R_pyruvate phosphate dikinase, glycosome
+  genes: LmjF11.1000
   equation: '|M_atp_x[Glycosome]| + |M_pi_x[Glycosome]| + |M_pyr_x[Glycosome]| =>
     |M_amp_x[Glycosome]| + |M_h_x[Glycosome]| + |M_pep_x[Glycosome]| + |M_ppi_x[Glycosome]|'
   subsystem: S_*Pyruvate metabolism
@@ -4016,6 +4595,7 @@
   subsystem: S_*Purine Metabolism
 - id: R_PPPGO
   name: R_protoporphyrinogen oxidase
+  genes: LmjF06.1280
   equation: (1.500000) |M_o2_c[Cytosol]| + |M_pppg9_c[Cytosol]| => (3) |M_h2o_c[Cytosol]|
     + |M_ppp9_c[Cytosol]|
   subsystem: S_*Porphyrin and Chlorophyll Metabolism
@@ -4025,11 +4605,13 @@
   subsystem: S_*Transport, Extracellular
 - id: R_PROTRS
   name: R_Prolyl-tRNA synthetase
+  genes: LmjF18.1210
   equation: '|M_atp_c[Cytosol]| + |M_pro_L_c[Cytosol]| + |M_trnapro_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_protrna_c[Cytosol]|'
   subsystem: S_*Arginine and Proline Metabolism
 - id: R_PROt6
   name: R_L-proline transport in/out via proton symport
+  genes: LmjF14.0320 or LmjF22.0230 or LmjF11.0520 or LmjF27.0670
   equation: '|M_h_e[Extracellular_space]| + |M_pro_L_e[Extracellular_space]| <=>
     |M_h_c[Cytosol]| + |M_pro_L_c[Cytosol]|'
   subsystem: S_*Transport, Extracellular
@@ -4039,11 +4621,13 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_PRPPSi
   name: R_phosphoribosylpyrophosphate synthetase
+  genes: LmjF08.1130 or LmjF08.0510
   equation: '|M_atp_c[Cytosol]| + |M_r5p_c[Cytosol]| => |M_amp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_prpp_c[Cytosol]|'
   subsystem: S_*Purine Metabolism
 - id: R_PRPPSig
   name: R_phosphoribosylpyrophosphate synthetase
+  genes: LmjF36.5390 or LmjF33.1930
   equation: '|M_atp_x[Glycosome]| + |M_r5p_x[Glycosome]| => |M_amp_x[Glycosome]|
     + |M_h_x[Glycosome]| + |M_prpp_x[Glycosome]|'
   subsystem: S_*Purine Metabolism
@@ -4053,11 +4637,13 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_PSD_LM
   name: R_Phosphatidylserine decarboxylase (L. major)
+  genes: LmjF35.4590
   equation: '|M_h_c[Cytosol]| + (0.010000) |M_ps_LM_c[Cytosol]| => |M_co2_c[Cytosol]|
     + (0.010000) |M_pe_LM_c[Cytosol]|'
   subsystem: S_*Glycerophospholipid metabolism
 - id: R_PSDm_LM
   name: R_Phosphatidylserine decarboxylase (L. major)
+  genes: LmjF35.4590
   equation: '|M_h_m[Mitochondria]| + (0.010000) |M_ps_LM_m[Mitochondria]| => |M_co2_m[Mitochondria]|
     + (0.010000) |M_pe_LM_m[Mitochondria]|'
   subsystem: S_*Glycerophospholipid metabolism
@@ -4067,6 +4653,7 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_PSUDS
   name: R_pseudouridylate synthase
+  genes: LmjF26.0420 or LmjF30.1550 or LmjF36.1660
   equation: '|M_r5p_c[Cytosol]| + |M_ura_c[Cytosol]| => |M_h2o_c[Cytosol]| + |M_psd5p_c[Cytosol]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_PS_LMtm
@@ -4079,11 +4666,13 @@
   subsystem: S_*Transport, Endoplasmic Reticular
 - id: R_PTHK
   name: R_pantetheine kinase
+  genes: LmjF28.0140
   equation: '|M_atp_c[Cytosol]| + |M_ptth_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_pan4p_c[Cytosol]|'
   subsystem: S_*Pantothenate and CoA biosynthesis
 - id: R_PTROPACE
   name: R_Pseudotropine acetyl transferase
+  genes: LmjF05.0180 or LmjF25.0020
   equation: '|M_accoa_m[Mitochondria]| + |M_pseutrop_m[Mitochondria]| => |M_coa_m[Mitochondria]|
     + |M_psactrop_m[Mitochondria]|'
   subsystem: S_*Alkaloid Biosynthesis II
@@ -4093,21 +4682,25 @@
   subsystem: S_*Purine Metabolism
 - id: R_PUNP8I
   name: R_N-Ribosylnicotinamide ribohydrolase
+  genes: LmjF29.2800
   equation: '|M_h2o_c[Cytosol]| + |M_rnam_c[Cytosol]| => |M_h_c[Cytosol]| + |M_ncam_c[Cytosol]|
     + |M_rib_D_c[Cytosol]|'
   subsystem: S_*Nicotinate and Nicotinamide Metabolism
 - id: R_PYDAMK
   name: R_pyridoxal kinase (Pyridoxamine)
+  genes: LmjF30.1250
   equation: '|M_atp_c[Cytosol]| + |M_pydam_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_pyam5p_c[Cytosol]|'
   subsystem: S_*Vitamin B6 Metabolism
 - id: R_PYDXK
   name: R_pyridoxal kinase (Pyridoxal)
+  genes: LmjF30.1250
   equation: '|M_atp_c[Cytosol]| + |M_pydx_c[Cytosol]| => |M_adp_c[Cytosol]| + (2)
     |M_h_c[Cytosol]| + |M_pydx5p_c[Cytosol]|'
   subsystem: S_*Vitamin B6 Metabolism
 - id: R_PYDXNK
   name: R_pyridoxal kinase (Pyridoxine)
+  genes: LmjF30.1250
   equation: '|M_atp_c[Cytosol]| + |M_pydxn_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_pdx5p_c[Cytosol]|'
   subsystem: S_*Vitamin B6 Metabolism
@@ -4121,6 +4714,7 @@
   subsystem: S_*Transport, Extracellular
 - id: R_PYK
   name: R_pyruvate kinase
+  genes: LmjF35.0030 or LmjF35.0020
   equation: '|M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pep_c[Cytosol]| => |M_atp_c[Cytosol]|
     + |M_pyr_c[Cytosol]|'
   subsystem: S_*Glycolysis/Gluconeogenesis
@@ -4130,6 +4724,7 @@
   subsystem: S_*Other
 - id: R_PYRZAMn
   name: R_Pyrazinamidase
+  genes: LmjF26.0210 or LmjF34.2140
   equation: '|M_h2o_n[Nucleus]| + |M_malm_n[Nucleus]| => |M_male_n[Nucleus]| + |M_nh4_n[Nucleus]|'
   subsystem: S_*Nicotinate and Nicotinamide Metabolism
 - id: R_PYRt2
@@ -4151,15 +4746,18 @@
   subsystem: S_*Transport, Peroxisomal
 - id: R_RAFFH
   name: R_Raffinose fructohydrolase
+  genes: LmjF04.0310 or LmjF23.0880 or LmjF27.2340 or LmjF23.0870
   equation: '|M_h2o_c[Cytosol]| + |M_raffin_c[Cytosol]| => |M_fru_c[Cytosol]| + |M_melib_c[Cytosol]|'
   subsystem: S_*Galactose metabolism
 - id: R_RBK_Dg
   name: R_D-ribulokinase
+  genes: LmjF36.0060
   equation: '|M_atp_x[Glycosome]| + |M_rbl_D_x[Glycosome]| => |M_adp_x[Glycosome]|
     + |M_h_x[Glycosome]| + |M_ru5p_D_x[Glycosome]|'
   subsystem: S_*Pentose and Glucuronate Interconversions
 - id: R_RBLKg
   name: R_L-ribulokinase (L-ribulose)
+  genes: LmjF36.0060
   equation: '|M_atp_x[Glycosome]| + |M_rbl_L_x[Glycosome]| => |M_adp_x[Glycosome]|
     + |M_h_x[Glycosome]| + |M_ru5p_L_x[Glycosome]|'
   subsystem: S_*Pentose and Glucuronate Interconversions
@@ -4182,34 +4780,41 @@
   subsystem: S_*Transport, Nuclear
 - id: R_RNDR1(n)
   name: R_ribonucleoside-diphosphate reductase, nuclear (tryparedoxin)
+  genes: (LmjF22.1290 and LmjF28.0890) or (LmjF27.2050 and LmjF28.0890)
   equation: '|M_adp_n[Nucleus]| + |M_trpdrd_n[Nucleus]| => |M_dadp_n[Nucleus]| +
     |M_h2o_n[Nucleus]| + |M_trpdox_n[Nucleus]|'
   subsystem: S_*Purine Metabolism
 - id: R_RNDR2(n)
   name: R_ribonucleoside-diphosphate reductase (GDP), nuclear (tryparedoxin)
+  genes: (LmjF22.1290 and LmjF28.0890) or (LmjF27.2050 and LmjF28.0890)
   equation: '|M_gdp_n[Nucleus]| + |M_trpdrd_n[Nucleus]| => |M_dgdp_n[Nucleus]| +
     |M_h2o_n[Nucleus]| + |M_trpdox_n[Nucleus]|'
   subsystem: S_*Purine Metabolism
 - id: R_RNDR3(n)
   name: R_ribonucleoside-diphosphate reductase (CDP), nuclear (tryparedoxin)
+  genes: (LmjF22.1290 and LmjF28.0890) or (LmjF27.2050 and LmjF28.0890)
   equation: '|M_cdp_n[Nucleus]| + |M_trpdrd_n[Nucleus]| => |M_dcdp_n[Nucleus]| +
     |M_h2o_n[Nucleus]| + |M_trpdox_n[Nucleus]|'
   subsystem: S_*Purine Metabolism
 - id: R_RNDR4(n)
   name: R_ribonucleoside-diphosphate reductase (UDP), nuclear (tryparedoxin)
+  genes: (LmjF22.1290 and LmjF28.0890) or (LmjF27.2050 and LmjF28.0890)
   equation: '|M_trpdrd_n[Nucleus]| + |M_udp_n[Nucleus]| => |M_dudp_n[Nucleus]| +
     |M_h2o_n[Nucleus]| + |M_trpdox_n[Nucleus]|'
   subsystem: S_*Purine Metabolism
 - id: R_RPE
   name: R_ribulose 5-phosphate 3-epimerase
+  genes: LmjF33.1570
   equation: '|M_ru5p_D_c[Cytosol]| <=> |M_xu5p_D_c[Cytosol]|'
   subsystem: S_*Pentose Phosphate Pathway
 - id: R_RPEg
   name: R_ribulose 5-phosphate 3-epimerase
+  genes: LmjF35.3680
   equation: '|M_ru5p_D_x[Glycosome]| <=> |M_xu5p_D_x[Glycosome]|'
   subsystem: S_*Pentose Phosphate Pathway
 - id: R_RPI
   name: R_ribose-5-phosphate isomerase
+  genes: LmjF28.1970
   equation: '|M_r5p_c[Cytosol]| <=> |M_ru5p_D_c[Cytosol]|'
   subsystem: S_*Pentose Phosphate Pathway
 - id: R_RU5PLtg
@@ -4222,6 +4827,7 @@
   subsystem: S_*Transport, Peroxisomal
 - id: R_S6PFH
   name: R_Sucrose 6-phosphate fructohydrolase
+  genes: LmjF23.0880 or LmjF27.2340 or LmjF04.0310 or LmjF23.0870
   equation: '|M_h2o_c[Cytosol]| + |M_suc6p_c[Cytosol]| => |M_fru_c[Cytosol]| + |M_g6p_A_c[Cytosol]|'
   subsystem: S_*Galactose metabolism
 - id: R_S7Ptg
@@ -4230,43 +4836,51 @@
   subsystem: S_*Transport, Peroxisomal
 - id: R_SAM24MTr
   name: R_S-adenosyl-methionine delta-24-sterol-c-methyltransferase
+  genes: LmjF36.2380
   equation: '|M_amet_r[Endoplasmic_Reticulum]| + |M_zymst_r[Endoplasmic_Reticulum]|
     => |M_ahcys_r[Endoplasmic_Reticulum]| + |M_fecost_r[Endoplasmic_Reticulum]| +
     |M_h_r[Endoplasmic_Reticulum]|'
   subsystem: S_*Steroid Biosynthesis
 - id: R_SBPP1r
   name: R_sphingoid base-phosphate phosphatase (sphinganine 1-phosphatase)
+  genes: LmjF32.2290
   equation: '|M_h2o_r[Endoplasmic_Reticulum]| + |M_sph1p_r[Endoplasmic_Reticulum]|
     => |M_pi_r[Endoplasmic_Reticulum]| + |M_sphgn_r[Endoplasmic_Reticulum]|'
   subsystem: S_*Sphingolipid Metabolism
 - id: R_SBPP3
   name: R_sphingoid base-phosphate phosphatase (sphingosine 1-phosphate)
+  genes: LmjF18.0440 or LmjF19.1350
   equation: '|M_h2o_c[Cytosol]| + |M_sphs1p_c[Cytosol]| => |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|
     + |M_sphings_c[Cytosol]|'
   subsystem: S_*Sphingolipid Metabolism
 - id: R_SBTD_D
   name: R_D-sorbitol dehydrogenase
+  genes: LmjF33.0520
   equation: '|M_nad_c[Cytosol]| + |M_sbt_D_c[Cytosol]| => |M_fru_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_nadh_c[Cytosol]|'
   subsystem: S_*Fructose and mannose metabolism
 - id: R_SERAT
   name: R_serine O-acetyltransferase
+  genes: LmjF34.2850
   equation: '|M_accoa_c[Cytosol]| + |M_ser_L_c[Cytosol]| <=> |M_acser_c[Cytosol]|
     + |M_coa_c[Cytosol]|'
   subsystem: S_*Cysteine Metabolism
 - id: R_SERPTr
   name: R_serine C-palmitoyltransferase
+  genes: LmjF34.3740 and LmjF35.0320
   equation: '|M_h_r[Endoplasmic_Reticulum]| + |M_pmtcoa_r[Endoplasmic_Reticulum]|
     + |M_ser_L_r[Endoplasmic_Reticulum]| => |M_3dsphgn_r[Endoplasmic_Reticulum]|
     + |M_co2_r[Endoplasmic_Reticulum]| + |M_coa_r[Endoplasmic_Reticulum]|'
   subsystem: S_*Sphingolipid Metabolism
 - id: R_SERTRS
   name: R_Seryl-tRNA synthetase
+  genes: LmjF11.0100
   equation: '|M_atp_c[Cytosol]| + |M_ser_L_c[Cytosol]| + |M_trnaser_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_sertrna_c[Cytosol]|'
   subsystem: S_*Glycine, serine and threonine metabolism
 - id: R_SERt6
   name: R_L-serine transport in/out via proton symport
+  genes: LmjF14.0320 or LmjF22.0230 or LmjF11.0520 or LmjF27.0670
   equation: '|M_h_e[Extracellular_space]| + |M_ser_L_e[Extracellular_space]| <=>
     |M_h_c[Cytosol]| + |M_ser_L_c[Cytosol]|'
   subsystem: S_*Transport, Extracellular
@@ -4280,40 +4894,48 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_SGPL12r
   name: R_sphingosine phosphate lyase
+  genes: LmjF30.2350
   equation: '|M_h2o_r[Endoplasmic_Reticulum]| + |M_sphs1p_r[Endoplasmic_Reticulum]|
     => |M_ethap_r[Endoplasmic_Reticulum]| + |M_h_r[Endoplasmic_Reticulum]| + |M_hdca_r[Endoplasmic_Reticulum]|'
   subsystem: S_*Sphingolipid Metabolism
 - id: R_SHSL1
   name: R_O-succinylhomoserine lyase (L-cysteine)
+  genes: LmjF35.3230
   equation: '|M_cys_L_c[Cytosol]| + |M_suchms_c[Cytosol]| => |M_cysth_L_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_succ_c[Cytosol]|'
   subsystem: S_*Methionine Metabolism
 - id: R_SHSL2r
   name: R_O-succinylhomoserine lyase (H2S)
+  genes: LmjF35.3230
   equation: '|M_h2s_c[Cytosol]| + |M_suchms_c[Cytosol]| <=> |M_hcys_L_c[Cytosol]|
     + |M_succ_c[Cytosol]|'
   subsystem: S_*Methionine Metabolism
 - id: R_SHSL4r
   name: R_O-succinylhomoserine lyase (elimination), reversible
+  genes: LmjF35.3230
   equation: '|M_h2o_c[Cytosol]| + |M_suchms_c[Cytosol]| <=> |M_2obut_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_nh4_c[Cytosol]| + |M_succ_c[Cytosol]|'
   subsystem: S_*Methionine Metabolism
 - id: R_SINCOAL
   name: R_Sinapate:CoA ligase (AMP-forming)
+  genes: LmjF19.0985 or LmjF19.1005
   equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + (3) |M_h_c[Cytosol]| + |M_sinp_c[Cytosol]|
     => |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_sincoa_c[Cytosol]|'
   subsystem: S_*Stilbene, Coumarine, and Lignin Metabolism
 - id: R_SLCBK1
   name: R_sphingolipid long chain base kinase (sphinganine)
+  genes: LmjF19.1350 or LmjF18.0440
   equation: '|M_atp_c[Cytosol]| + |M_sphgn_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_sph1p_c[Cytosol]|'
   subsystem: S_*Sphingolipid Metabolism
 - id: R_SLCYSS
   name: R_O-acetyl-L-serine sulfhydrylase
+  genes: LmjF36.3590
   equation: '|M_acser_c[Cytosol]| + |M_tsul_c[Cytosol]| => |M_ac_c[Cytosol]| + |M_slcys_c[Cytosol]|'
   subsystem: S_*Cysteine Metabolism
 - id: R_SO4t6
   name: R_sulfate transport in/out via proton symport
+  genes: LmjF28.1690
   equation: '|M_h_e[Extracellular_space]| + |M_so4_e[Extracellular_space]| <=> |M_h_c[Cytosol]|
     + |M_so4_c[Cytosol]|'
   subsystem: S_*Transport, Extracellular
@@ -4323,16 +4945,19 @@
   subsystem: S_*Transport, Endoplasmic Reticular
 - id: R_SPHK21r
   name: R_Sphingosine kinase 2
+  genes: LmjF32.2290
   equation: '|M_atp_r[Endoplasmic_Reticulum]| + |M_sphings_r[Endoplasmic_Reticulum]|
     => |M_adp_r[Endoplasmic_Reticulum]| + |M_sphs1p_r[Endoplasmic_Reticulum]|'
   subsystem: S_*Sphingolipid Metabolism
 - id: R_SPHPLr
   name: R_sphinganine phosphate lyase
+  genes: LmjF30.2350
   equation: '|M_sph1p_r[Endoplasmic_Reticulum]| => |M_ethap_r[Endoplasmic_Reticulum]|
     + |M_hxdcal_r[Endoplasmic_Reticulum]|'
   subsystem: S_*Sphingolipid Metabolism
 - id: R_SPMS
   name: R_spermidine synthase
+  genes: LmjF04.0580
   equation: '|M_ametam_c[Cytosol]| + |M_ptrc_c[Cytosol]| => |M_5mta_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_spmd_c[Cytosol]|'
   subsystem: S_*Methionine Metabolism
@@ -4342,17 +4967,20 @@
   subsystem: S_*Cysteine Metabolism
 - id: R_SQLMer
   name: R_Squalene epoxidase, endoplasmic reticular
+  genes: LmjF13.1620
   equation: '|M_h_r[Endoplasmic_Reticulum]| + |M_nadph_r[Endoplasmic_Reticulum]|
     + |M_o2_r[Endoplasmic_Reticulum]| + |M_sql_r[Endoplasmic_Reticulum]| => |M_Ssq23epx_r[Endoplasmic_Reticulum]|
     + |M_h2o_r[Endoplasmic_Reticulum]| + |M_nadp_r[Endoplasmic_Reticulum]|'
   subsystem: S_*Steroid Biosynthesis
 - id: R_SQLS
   name: R_Squalene synthase
+  genes: LmjF31.2940
   equation: (2) |M_frdp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| =>
     |M_nadp_c[Cytosol]| + (2) |M_ppi_c[Cytosol]| + |M_sql_c[Cytosol]|
   subsystem: S_*Steroid Biosynthesis
 - id: R_SQLSg
   name: R_Squalene synthase
+  genes: LmjF31.2940
   equation: (2) |M_frdp_x[Glycosome]| + |M_h_x[Glycosome]| + |M_nadph_x[Glycosome]|
     => |M_nadp_x[Glycosome]| + (2) |M_ppi_x[Glycosome]| + |M_sql_x[Glycosome]|
   subsystem: S_*Steroid Biosynthesis
@@ -4366,6 +4994,7 @@
   subsystem: S_*Transport, Peroxisomal
 - id: R_SRTMT
   name: R_serotonin O-methyltransferase
+  genes: LmjF23.1200 or LmjF12.1270
   equation: '|M_ch4_n[Nucleus]| + |M_srtn_n[Nucleus]| => |M_5mtrypta_n[Nucleus]|
     + |M_h_n[Nucleus]|'
   subsystem: S_*Tryptophan Metabolism
@@ -4375,11 +5004,13 @@
   subsystem: S_*Transport, Nuclear
 - id: R_SSALym
   name: R_succinate-semialdehyde dehydrogenase (NADP)
+  genes: LmjF36.1760
   equation: '|M_h2o_m[Mitochondria]| + |M_nadp_m[Mitochondria]| + |M_sucsal_m[Mitochondria]|
     <=> (2) |M_h_m[Mitochondria]| + |M_nadph_m[Mitochondria]| + |M_succ_m[Mitochondria]|'
   subsystem: S_*Butanoate metabolism
 - id: R_ST14DMr
   name: R_Sterol 14-demethylase
+  genes: LmjF11.1100
   equation: (2) |M_h_r[Endoplasmic_Reticulum]| + |M_lanost_r[Endoplasmic_Reticulum]|
     + (3) |M_nadph_r[Endoplasmic_Reticulum]| + (3) |M_o2_r[Endoplasmic_Reticulum]|
     => |M_44mctr_r[Endoplasmic_Reticulum]| + |M_for_r[Endoplasmic_Reticulum]| + (4)
@@ -4387,6 +5018,7 @@
   subsystem: S_*Steroid Biosynthesis
 - id: R_STFH
   name: R_Stachyose fructohydrolase
+  genes: LmjF04.0310 or LmjF23.0880 or LmjF27.2340 or LmjF23.0870
   equation: '|M_h2o_c[Cytosol]| + |M_stchs_c[Cytosol]| => |M_fru_c[Cytosol]| + |M_gal6dg_c[Cytosol]|'
   subsystem: S_*Galactose metabolism
 - id: R_STRCOAter
@@ -4416,21 +5048,25 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_SUCD1rm
   name: R_succinate dehydrogenase
+  genes: LmjF24.1630
   equation: '|M_fad_m[Mitochondria]| + |M_succ_m[Mitochondria]| <=> |M_fadh2_m[Mitochondria]|
     + |M_fum_m[Mitochondria]|'
   subsystem: S_*Citrate Cycle (TCA)
 - id: R_SUCD2_u6m
   name: R_succinate dehydrogenase (ubiquinone-6), mitochondrial
+  genes: LmjF15.0990
   equation: '|M_q6_m[Mitochondria]| + |M_succ_m[Mitochondria]| <=> |M_fum_m[Mitochondria]|
     + |M_q6h2_m[Mitochondria]|'
   subsystem: S_*Oxidative phosphorylation
 - id: R_SUCOGDPm
   name: R_Succinyl CoA synthetase (GDP-forming), mitochondrial
+  genes: (LmjF25.2130 and LmjF36.2950) or (LmjF25.2140 and LmjF36.2950)
   equation: '|M_coa_m[Mitochondria]| + |M_gtp_m[Mitochondria]| + |M_succ_m[Mitochondria]|
     <=> |M_gdp_m[Mitochondria]| + |M_pi_m[Mitochondria]| + |M_succoa_m[Mitochondria]|'
   subsystem: S_*Citrate Cycle (TCA)
 - id: R_SUCR1
   name: R_alpha-glucoside glucohydrolase
+  genes: LmjF04.0310 or LmjF23.0880 or LmjF27.2340 or LmjF23.0870
   equation: '|M_h2o_c[Cytosol]| + |M_sucr_c[Cytosol]| => |M_a_D_glucose_c[Cytosol]|
     + |M_fru_c[Cytosol]|'
   subsystem: S_*Galactose metabolism
@@ -4448,6 +5084,7 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_TA6PK
   name: R_Tagatose-6-phosphate kinase
+  genes: LmjF02.0030 or LmjF25.2440
   equation: '|M_atp_x[Glycosome]| + |M_tag6p_D_x[Glycosome]| => |M_adp_x[Glycosome]|
     + |M_h_x[Glycosome]| + |M_tagdp_D_x[Glycosome]|'
   subsystem: S_*Galactose metabolism
@@ -4461,20 +5098,24 @@
   subsystem: S_*Transport, Peroxisomal
 - id: R_TAL
   name: R_transaldolase
+  genes: LmjF16.0760
   equation: '|M_g3p_c[Cytosol]| + |M_s7p_c[Cytosol]| <=> |M_e4p_c[Cytosol]| + |M_f6p_c[Cytosol]|'
   subsystem: S_*Pentose Phosphate Pathway
 - id: R_TCAFCOAL
   name: R_3,4-Dihydroxy-trans-cinnamate:CoA ligase (AMP-forming)
+  genes: LmjF19.0985 or LmjF19.1005
   equation: '|M_34dtcinm_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| +
     (3) |M_h_c[Cytosol]| => |M_amp_c[Cytosol]| + |M_cafcoa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Stilbene, Coumarine, and Lignin Metabolism
 - id: R_TCINCOAL
   name: R_trans-Cinnamate:CoA ligase (AMP-forming)
+  genes: LmjF19.0985 or LmjF19.1005
   equation: '|M_atp_c[Cytosol]| + |M_cinnm_c[Cytosol]| + |M_coa_c[Cytosol]| + (4)
     |M_h_c[Cytosol]| => |M_amp_c[Cytosol]| + |M_cincoa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_*Stilbene, Coumarine, and Lignin Metabolism
 - id: R_TDCOADm
   name: R_tetradecanoyl-CoA dehydrogenase
+  genes: LmjF06.0880 or LmjF28.2510
   equation: '|M_fad_m[Mitochondria]| + |M_tdcoa_m[Mitochondria]| => |M_fadh2_m[Mitochondria]|
     + |M_tdd2coa_m[Mitochondria]|'
   subsystem: S_*Fatty Acid Degradation
@@ -4492,35 +5133,42 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_TDPGDH
   name: R_dTDPglucose 4,6-dehydratase
+  genes: LmjF26.2230
   equation: '|M_dtdpglc_c[Cytosol]| => |M_dtdpddg_c[Cytosol]| + |M_h2o_c[Cytosol]|'
   subsystem: S_*Streptomycin Biosynthesis
 - id: R_THDSTIL
   name: R_3,4',5-Trihydroxystilbene hydroxylase
+  genes: LmjF27.0090
   equation: '|M_3thdstil_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_33_stil_c[Cytosol]|
     + (2) |M_h_c[Cytosol]|'
   subsystem: S_*Stilbene, Coumarine, and Lignin Metabolism
 - id: R_THFAT
   name: R_tetrahydrofolate aminomethyltransferase
+  genes: LmjF36.3800 or LmjF36.3810
   equation: '|M_h2o_c[Cytosol]| + |M_methf_c[Cytosol]| => |M_5fothf_c[Cytosol]| +
     |M_h_c[Cytosol]|'
   subsystem: S_*One carbon pool by folate
 - id: R_THFATm
   name: R_tetrahydrofolate aminomethyltransferase, mitochondrial
+  genes: LmjF36.3810 or LmjF36.3800
   equation: '|M_h2o_m[Mitochondria]| + |M_methf_m[Mitochondria]| => |M_5fothf_m[Mitochondria]|
     + |M_h_m[Mitochondria]|'
   subsystem: S_*One carbon pool by folate
 - id: R_THFGLUS
   name: R_Tetrahydrofolate:L-glutamate gamma-ligase (ADP-forming)
+  genes: LmjF36.2610
   equation: '|M_atp_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_thf_c[Cytosol]| <=> |M_adp_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_thfglu_c[Cytosol]|'
   subsystem: S_*Folate biosynthesis
 - id: R_THFOAi
   name: R_5,6,7,8-Tetrahydrofolate:NADP+ oxidoreductase
+  genes: LmjF06.0860
   equation: '|M_fol_c[Cytosol]| + |M_h_c[Cytosol]| + (2) |M_nadph_c[Cytosol]| =>
     (2) |M_nadp_c[Cytosol]| + |M_thf_c[Cytosol]|'
   subsystem: S_*Folate biosynthesis
 - id: R_THFOCi
   name: R_5,6,7,8-Tetrahydrofolate:NAD+ oxidoreductase
+  genes: LmjF06.0860
   equation: '|M_fol_c[Cytosol]| + |M_h_c[Cytosol]| + (2) |M_nadh_c[Cytosol]| => (2)
     |M_nad_c[Cytosol]| + |M_thf_c[Cytosol]|'
   subsystem: S_*Folate biosynthesis
@@ -4530,23 +5178,28 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_THRA
   name: R_threonine aldolase
+  genes: LmjF01.0480
   equation: '|M_thr_L_c[Cytosol]| <=> |M_acald_c[Cytosol]| + |M_gly_c[Cytosol]|'
   subsystem: S_*Glycine, serine and threonine metabolism
 - id: R_THRLAD
   name: R_L-allo-threonine aldolase
+  genes: LmjF01.0480
   equation: '|M_thr_LA_c[Cytosol]| => |M_acald_c[Cytosol]| + |M_gly_c[Cytosol]|'
   subsystem: S_*Glycine, serine and threonine metabolism
 - id: R_THRS
   name: R_threonine synthase
+  genes: LmjF14.0350
   equation: '|M_h2o_c[Cytosol]| + |M_phom_c[Cytosol]| => |M_pi_c[Cytosol]| + |M_thr_L_c[Cytosol]|'
   subsystem: S_*Glycine, serine and threonine metabolism
 - id: R_THRTRS
   name: R_Threonyl-tRNA synthetase
+  genes: LmjF35.1410
   equation: '|M_atp_c[Cytosol]| + |M_thr_L_c[Cytosol]| + |M_trnathr_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_thrtrna_c[Cytosol]|'
   subsystem: S_*Glycine, serine and threonine metabolism
 - id: R_THRt6
   name: R_L-threonine transport in/out via proton symporter
+  genes: LmjF14.0320 or LmjF22.0230 or LmjF11.0520 or LmjF27.0670
   equation: '|M_h_e[Extracellular_space]| + |M_thr_L_e[Extracellular_space]| <=>
     |M_h_c[Cytosol]| + |M_thr_L_c[Cytosol]|'
   subsystem: S_*Transport, Extracellular
@@ -4561,26 +5214,31 @@
   subsystem: S_*Transport, Extracellular
 - id: R_TKT1
   name: R_transketolase
+  genes: LmjF24.2060
   equation: '|M_r5p_c[Cytosol]| + |M_xu5p_D_c[Cytosol]| <=> |M_g3p_c[Cytosol]| +
     |M_s7p_c[Cytosol]|'
   subsystem: S_*Pentose Phosphate Pathway
 - id: R_TKT1g
   name: R_transketolase; glycosomal
+  genes: LmjF24.2060
   equation: '|M_r5p_x[Glycosome]| + |M_xu5p_D_x[Glycosome]| <=> |M_g3p_x[Glycosome]|
     + |M_s7p_x[Glycosome]|'
   subsystem: S_*Pentose Phosphate Pathway
 - id: R_TKT2
   name: R_transketolase
+  genes: LmjF24.2060
   equation: '|M_e4p_c[Cytosol]| + |M_xu5p_D_c[Cytosol]| <=> |M_f6p_c[Cytosol]| +
     |M_g3p_c[Cytosol]|'
   subsystem: S_*Pentose Phosphate Pathway
 - id: R_TKT2g
   name: R_transketolase; glycosomal
+  genes: LmjF24.2060
   equation: '|M_e4p_x[Glycosome]| + |M_xu5p_D_x[Glycosome]| <=> |M_f6p_x[Glycosome]|
     + |M_g3p_x[Glycosome]|'
   subsystem: S_*Pentose Phosphate Pathway
 - id: R_TMDK1m
   name: R_thymidine kinase (ATP:thymidine)
+  genes: LmjF21.1210
   equation: '|M_atp_m[Mitochondria]| + |M_thymd_m[Mitochondria]| => |M_adp_m[Mitochondria]|
     + |M_dtmp_m[Mitochondria]| + |M_h_m[Mitochondria]|'
   subsystem: S_*Pyrimidine Metabolism
@@ -4591,15 +5249,18 @@
   subsystem: S_*Pyrimidine Metabolism
 - id: R_TMDS
   name: R_thymidylate synthase
+  genes: LmjF06.0860
   equation: '|M_dump_c[Cytosol]| + |M_mlthf_c[Cytosol]| => |M_dhf_c[Cytosol]| + |M_dtmp_c[Cytosol]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_TNMT
   name: R_tyramine N-methyltransferase
+  genes: LmjF12.1270 or LmjF23.1200
   equation: '|M_Nmeth_c[Cytosol]| + |M_amet_c[Cytosol]| => |M_Hor_c[Cytosol]| + |M_ahcys_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_*Tyrosine Metabolism
 - id: R_TPIg
   name: R_triose-phosphate isomerase, glycosomal
+  genes: LmjF24.0850
   equation: '|M_dhap_x[Glycosome]| <=> |M_g3p_x[Glycosome]|'
   subsystem: S_*Glycolysis/Gluconeogenesis
 - id: R_TRNAGLNtm
@@ -4616,6 +5277,7 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_TROPACE
   name: R_Tropine acetyl transferase
+  genes: LmjF05.0180 or LmjF25.0020
   equation: '|M_accoa_m[Mitochondria]| + |M_trop_m[Mitochondria]| => |M_acyltrop_m[Mitochondria]|
     + |M_coa_m[Mitochondria]|'
   subsystem: S_*Alkaloid Biosynthesis II
@@ -4638,56 +5300,70 @@
   subsystem: S_*Transport, Nuclear
 - id: R_TRPTRS
   name: R_Tryptophanyl-tRNA synthetase
+  genes: LmjF29.0060 or LmjF23.0300
   equation: '|M_atp_c[Cytosol]| + |M_trnatrp_c[Cytosol]| + |M_trp_L_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_trptrna_c[Cytosol]|'
   subsystem: S_*Tryptophan Metabolism
 - id: R_TRPabc
   name: R_L-tryptophan transport via ABC system
+  genes: LmjF36.0420 or LmjF27.1580 or LmjF31.1800 or LmjF35.5360 or LmjF31.1790
+    or LmjF31.1820 or LmjF27.0680 or LmjF36.6830 or LmjF33.1420 or LmjF35.5350
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_trp_L_e[Extracellular_space]|
     => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_trp_L_c[Cytosol]|'
   subsystem: S_*Transport, Extracellular
 - id: R_TRYP
   name: R_tryparedoxin peroxidase
+  genes: LmjF15.1060 or LmjF15.1080 or LmjF15.1100 or LmjF15.1120 or LmjF15.1140
+    or LmjF15.1160
   equation: '|M_h2o2_c[Cytosol]| + |M_trprd_c[Cytosol]| <=> (2) |M_h2o_c[Cytosol]|
     + |M_trpox_c[Cytosol]|'
   subsystem: S_*Other
 - id: R_TRYPg
   name: R_tryparedoxin peroxidase
+  genes: LmjF15.1040
   equation: '|M_h2o2_x[Glycosome]| + |M_trprd_x[Glycosome]| <=> (2) |M_h2o_x[Glycosome]|
     + |M_trpox_x[Glycosome]|'
   subsystem: S_*Other
 - id: R_TRYPm
   name: R_tryparedoxin peroxidase
+  genes: LmjF23.0040
   equation: '|M_h2o2_m[Mitochondria]| + |M_trprd_m[Mitochondria]| <=> (2) |M_h2o_m[Mitochondria]|
     + |M_trpox_m[Mitochondria]|'
   subsystem: S_*Other
 - id: R_TRYR
   name: R_trypanothione reductase
+  genes: LmjF05.0350
   equation: '|M_nadp_x[Glycosome]| + |M_trprd_x[Glycosome]| <=> |M_h_x[Glycosome]|
     + |M_nadph_x[Glycosome]| + |M_trpox_x[Glycosome]|'
   subsystem: S_*Other
 - id: R_TRYS
   name: R_trypanothione synthetase
+  genes: LmjF27.1870 or LmjF36.4300 or LmjF23.0460
   equation: '|M_atp_c[Cytosol]| + |M_gthrd_c[Cytosol]| + |M_gtspmd_c[Cytosol]| <=>
     |M_adp_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_trprd_c[Cytosol]|'
   subsystem: S_*Other
 - id: R_TYRTA
   name: R_tyrosine transaminase
+  genes: LmjF36.2360 or LmjF35.0820
   equation: '|M_akg_c[Cytosol]| + |M_tyr_L_c[Cytosol]| <=> |M_34hpp_c[Cytosol]| +
     |M_glu_L_c[Cytosol]|'
   subsystem: S_*Tyrosine Metabolism
 - id: R_TYRTA2
   name: R_tyrosine transaminase
+  genes: LmjF35.0820 or LmjF36.2360
   equation: '|M_akg_c[Cytosol]| + |M_met_L_c[Cytosol]| <=> |M_2kmb_c[Cytosol]| +
     |M_glu_L_c[Cytosol]|'
   subsystem: S_*Alkaloid Biosynthesis I
 - id: R_TYRTRS
   name: R_Tyrosyl-tRNA synthetase
+  genes: LmjF14.1370
   equation: '|M_atp_c[Cytosol]| + |M_trnatyr_c[Cytosol]| + |M_tyr_L_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_tyrtrna_c[Cytosol]|'
   subsystem: S_*Phenylalanine, Tyrosine, Tryptophan biosynthesis
 - id: R_TYRabc
   name: R_L-tyrosine transport via ABC system
+  genes: LmjF36.0420 or LmjF27.1580 or LmjF31.1800 or LmjF35.5360 or LmjF31.1790
+    or LmjF31.1820 or LmjF27.0680 or LmjF36.6830 or LmjF33.1420 or LmjF35.5350
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_tyr_L_e[Extracellular_space]|
     => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_tyr_L_c[Cytosol]|'
   subsystem: S_*Transport, Extracellular
@@ -4698,6 +5374,7 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_UAGDPr
   name: R_UDP-N-acetylglucosamine diphosphorylase
+  genes: LmjF33.2520
   equation: '|M_acgam1p_c[Cytosol]| + |M_h_c[Cytosol]| + |M_utp_c[Cytosol]| <=> |M_ppi_c[Cytosol]|
     + |M_uacgam_c[Cytosol]|'
   subsystem: S_*Aminosugars metabolism
@@ -4707,14 +5384,17 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_UDPDPS
   name: R_undecaprenyl-diphosphate synthase
+  genes: LmjF13.0020
   equation: '|M_decdp_c[Cytosol]| + |M_ipdp_c[Cytosol]| => |M_ppi_c[Cytosol]| + |M_udcpdp_c[Cytosol]|'
   subsystem: S_*Terpenoid biosynthesis
 - id: R_UDPG4Ex
   name: R_UDPglucose 4-epimerase
+  genes: LmjF33.2300
   equation: '|M_udpg_x[Glycosome]| <=> |M_udpgal_x[Glycosome]|'
   subsystem: S_*Galactose metabolism
 - id: R_UDPGALM
   name: R_UDPgalactopyranose mutase
+  genes: LmjF18.0200
   equation: '|M_udpgal_c[Cytosol]| => |M_udpgalfur_c[Cytosol]|'
   subsystem: S_*Galactose metabolism
 - id: R_UDPGALtg
@@ -4739,6 +5419,7 @@
   subsystem: S_*Transport, Peroxisomal
 - id: R_UPPRTr
   name: R_uracil phosphoribosyltransferase
+  genes: LmjF34.1040
   equation: '|M_prpp_c[Cytosol]| + |M_ura_c[Cytosol]| <=> |M_ppi_c[Cytosol]| + |M_ump_c[Cytosol]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_URAt2
@@ -4760,51 +5441,61 @@
   subsystem: S_*Transport, Peroxisomal
 - id: R_URIK1
   name: R_uridine kinase (ATP:Uridine)
+  genes: LmjF31.2470
   equation: '|M_atp_c[Cytosol]| + |M_uri_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_ump_c[Cytosol]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_URIK2
   name: R_uridine kinase (GTP:Uridine)
+  genes: LmjF31.2470
   equation: '|M_gtp_c[Cytosol]| + |M_uri_c[Cytosol]| => |M_gdp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_ump_c[Cytosol]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_URIK3
   name: R_uridine kinase (ITP:Uridine)
+  genes: LmjF31.2470
   equation: '|M_itp_c[Cytosol]| + |M_uri_c[Cytosol]| => |M_h_c[Cytosol]| + |M_idp_c[Cytosol]|
     + |M_ump_c[Cytosol]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_URIK4
   name: R_uridine kinase (UTP:Uridine)
+  genes: LmjF31.2470
   equation: '|M_uri_c[Cytosol]| + |M_utp_c[Cytosol]| => |M_h_c[Cytosol]| + |M_udp_c[Cytosol]|
     + |M_ump_c[Cytosol]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_URIK5
   name: R_uridine kinase (dATP:Uridine)
+  genes: LmjF31.2470
   equation: '|M_datp_c[Cytosol]| + |M_uri_c[Cytosol]| => |M_dadp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_ump_c[Cytosol]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_URIK6
   name: R_uridine kinase (dGTP:Uridine)
+  genes: LmjF31.2470
   equation: '|M_dgtp_c[Cytosol]| + |M_uri_c[Cytosol]| => |M_dgdp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_ump_c[Cytosol]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_URIK7
   name: R_uridine kinase (dTTP:Uridine)
+  genes: LmjF31.2470
   equation: '|M_dttp_c[Cytosol]| + |M_uri_c[Cytosol]| => |M_dtdp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_ump_c[Cytosol]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_URIK8
   name: R_uridine kinase (dCTP:Uridine)
+  genes: LmjF31.2470
   equation: '|M_dctp_c[Cytosol]| + |M_uri_c[Cytosol]| => |M_dcdp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_ump_c[Cytosol]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_URIK9
   name: R_uridine kinase (dUTP:Uridine)
+  genes: LmjF31.2470
   equation: '|M_dutp_c[Cytosol]| + |M_uri_c[Cytosol]| => |M_dudp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_ump_c[Cytosol]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_URIRHn
   name: R_Uridine ribohydrolase
+  genes: LmjF18.0480
   equation: '|M_h2o_n[Nucleus]| + |M_uri_n[Nucleus]| <=> |M_rib_D_n[Nucleus]| + |M_ura_n[Nucleus]|'
   subsystem: S_*Pyrimidine Metabolism
 - id: R_URItn
@@ -4813,16 +5504,19 @@
   subsystem: S_*Transport, Nuclear
 - id: R_VALTAm
   name: R_valine transaminase
+  genes: LmjF27.2030
   equation: '|M_akg_m[Mitochondria]| + |M_val_L_m[Mitochondria]| <=> |M_3mob_m[Mitochondria]|
     + |M_glu_L_m[Mitochondria]|'
   subsystem: S_*Valine, leucine, and isoleucine degradation
 - id: R_VALTRS
   name: R_Valyl-tRNA synthetase
+  genes: LmjF30.3130
   equation: '|M_atp_c[Cytosol]| + |M_trnaval_c[Cytosol]| + |M_val_L_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_valtrna_c[Cytosol]|'
   subsystem: S_*Valine, leucine, and isoleucine biosynthesis
 - id: R_VALt6
   name: R_L-valine transport in/out via proton symport
+  genes: LmjF35.4410
   equation: '|M_h_e[Extracellular_space]| + |M_val_L_e[Extracellular_space]| <=>
     |M_h_c[Cytosol]| + |M_val_L_c[Cytosol]|'
   subsystem: S_*Transport, Extracellular
@@ -4832,6 +5526,7 @@
   subsystem: S_*Transport, Mitochondrial
 - id: R_XANMT
   name: R_Xanthurenic Acid N-Methyltransferase
+  genes: LmjF12.1270 or LmjF23.1200
   equation: '|M_ch4_c[Cytosol]| + |M_xanth_c[Cytosol]| => |M_8mkynrt_c[Cytosol]|'
   subsystem: S_*Tryptophan Metabolism
 - id: R_XANt2
@@ -4849,11 +5544,13 @@
   subsystem: S_*Transport, Peroxisomal
 - id: R_XPRTgr
   name: R_xanthine phosphoribosyltransferase
+  genes: LmjF21.0850
   equation: '|M_prpp_x[Glycosome]| + |M_xan_x[Glycosome]| <=> |M_ppi_x[Glycosome]|
     + |M_xmp_x[Glycosome]|'
   subsystem: S_*Purine Metabolism
 - id: R_XYLKg
   name: R_xylulokinase
+  genes: LmjF36.0260
   equation: '|M_atp_x[Glycosome]| + |M_xylu_D_x[Glycosome]| => |M_adp_x[Glycosome]|
     + |M_h_x[Glycosome]| + |M_xu5p_D_x[Glycosome]|'
   subsystem: S_*Pentose and Glucuronate Interconversions
