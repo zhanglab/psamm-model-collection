@@ -1,236 +1,288 @@
 - id: R_34DHOXPEGOX
   name: 3,4-Dihydroxyphenylethyleneglycol_NAD+ oxidoreductase
+  genes: sll0990
   equation: '|M_h_c[c]| + |M_34dhmald_c[c]| + |M_nadh_c[c]| <=> |M_34dhoxpeg_c[c]|
     + |M_nad_c[c]|'
   subsystem: Phenylalanine tyrosine and tryptophan biosynthesis
 - id: R_34HPPOR
   name: 4-Hydroxyphenylpyruvate_oxygen oxidoreductase
+  genes: slr0090
   equation: '|M_34hpp_c[c]| + |M_o2_c[c]| => |M_co2_c[c]| + |M_hgentis_c[c]|'
   subsystem: Phenylalanine tyrosine and tryptophan biosynthesis
 - id: R_3HAD100
   name: 3-hydroxyacyl-[acyl-carrier-protein] dehydratase (n-C10_0)
+  genes: sll1605
   equation: '|M_3hdecACP_c[c]| => |M_h2o_c[c]| + |M_tdec2eACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3HAD120
   name: 3-hydroxyacyl-[acyl-carrier-protein] dehydratase (n-C12_0)
+  genes: sll1605
   equation: '|M_3hddecACP_c[c]| => |M_h2o_c[c]| + |M_tddec2eACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3HAD121
   name: 3-hydroxyacyl-[acyl-carrier-protein] dehydratase (n-C12_1)
+  genes: sll1605
   equation: '|M_3hcddec5eACP_c[c]| => |M_h2o_c[c]| + |M_t3c5ddeceACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3HAD140
   name: 3-hydroxyacyl-[acyl-carrier-protein] dehydratase (n-C14_0)
+  genes: sll1605
   equation: '|M_3hmrsACP_c[c]| => |M_h2o_c[c]| + |M_tmrs2eACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3HAD141
   name: 3-hydroxyacyl-[acyl-carrier-protein] dehydratase (n-C14_1)
+  genes: sll1605
   equation: '|M_3hcmrs7eACP_c[c]| => |M_h2o_c[c]| + |M_t3c7mrseACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3HAD160
   name: 3-hydroxyacyl-[acyl-carrier-protein] dehydratase (n-C16_0)
+  genes: sll1605
   equation: '|M_3hpalmACP_c[c]| => |M_h2o_c[c]| + |M_tpalm2eACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3HAD161
   name: 3-hydroxyacyl-[acyl-carrier-protein] dehydratase (n-C16_1)
+  genes: sll1605
   equation: '|M_3hcpalm9eACP_c[c]| => |M_h2o_c[c]| + |M_t3c9palmeACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3HAD180
   name: 3-hydroxyacyl-[acyl-carrier-protein] dehydratase (n-C18_0)
+  genes: sll1605
   equation: '|M_3hoctaACP_c[c]| => |M_h2o_c[c]| + |M_toctd2eACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3HAD181
   name: 3-hydroxyacyl-[acyl-carrier-protein] dehydratase (n-C18_1)
+  genes: sll1605
   equation: '|M_3hcvac11eACP_c[c]| => |M_h2o_c[c]| + |M_t3c11vaceACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3HAD40
   name: 3-hydroxyacyl-[acyl-carrier-protein] dehydratase (n-C4_0)
+  genes: sll1605
   equation: '|M_3haACP_c[c]| => |M_h2o_c[c]| + |M_but2eACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3HAD60
   name: 3-hydroxyacyl-[acyl-carrier-protein] dehydratase (n-C6_0)
+  genes: sll1605
   equation: '|M_3hhexACP_c[c]| => |M_h2o_c[c]| + |M_thex2eACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3HAD80
   name: 3-hydroxyacyl-[acyl-carrier-protein] dehydratase (n-C8_0)
+  genes: sll1605
   equation: '|M_3hoctACP_c[c]| => |M_h2o_c[c]| + |M_toct2eACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3OAR100
   name: 3-oxoacyl-[acyl-carrier-protein] reductase (n-C10_0)
+  genes: slr0886
   equation: '|M_h_c[c]| + |M_3odecACP_c[c]| + |M_nadph_c[c]| <=> |M_3hdecACP_c[c]|
     + |M_nadp_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3OAR120
   name: 3-oxoacyl-[acyl-carrier-protein] reductase (n-C12_0)
+  genes: slr0886
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_3oddecACP_c[c]| <=> |M_3hddecACP_c[c]|
     + |M_nadp_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3OAR121
   name: 3-oxoacyl-[acyl-carrier-protein] reductase (n-C12_1)
+  genes: slr0886
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_3ocddec5eACP_c[c]| => |M_3hcddec5eACP_c[c]|
     + |M_nadp_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3OAR140
   name: 3-oxoacyl-[acyl-carrier-protein] reductase (n-C14_0)
+  genes: slr0886
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_3omrsACP_c[c]| => |M_3hmrsACP_c[c]|
     + |M_nadp_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3OAR141
   name: 3-oxoacyl-[acyl-carrier-protein] reductase (n-C14_1)
+  genes: slr0886
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_3ocmrs7eACP_c[c]| => |M_3hcmrs7eACP_c[c]|
     + |M_nadp_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3OAR160
   name: 3-oxoacyl-[acyl-carrier-protein] reductase (n-C16_0)
+  genes: slr0886
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_3opalmACP_c[c]| <=> |M_3hpalmACP_c[c]|
     + |M_nadp_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3OAR161
   name: 3-oxoacyl-[acyl-carrier-protein] reductase (n-C16_1)
+  genes: slr0886
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_3ocpalm9eACP_c[c]| => |M_3hcpalm9eACP_c[c]|
     + |M_nadp_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3OAR180
   name: 3-oxoacyl-[acyl-carrier-protein] reductase (n-C18_0)
+  genes: slr0886
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_3ooctdACP_c[c]| => |M_3hoctaACP_c[c]|
     + |M_nadp_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3OAR181
   name: 3-oxoacyl-[acyl-carrier-protein] reductase (n-C18_1)
+  genes: slr0886
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_3ocvac11eACP_c[c]| => |M_3hcvac11eACP_c[c]|
     + |M_nadp_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3OAR40
   name: 3-oxoacyl-[acyl-carrier-protein] reductase (n-C4_0)
+  genes: slr0886
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_actACP_c[c]| <=> |M_3haACP_c[c]| +
     |M_nadp_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3OAR60
   name: 3-oxoacyl-[acyl-carrier-protein] reductase (n-C6_0)
+  genes: slr0886
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_3ohexACP_c[c]| <=> |M_3hhexACP_c[c]|
     + |M_nadp_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3OAR80
   name: 3-oxoacyl-[acyl-carrier-protein] reductase (n-C8_0)
+  genes: slr0886
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_3ooctACP_c[c]| <=> |M_3hoctACP_c[c]|
     + |M_nadp_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3OAS100
   name: 3-oxoacyl-[acyl-carrier-protein] synthase (n-C10_0)
+  genes: sll1069 or slr1332
   equation: '|M_h_c[c]| + |M_malACP_c[c]| + |M_ocACP_c[c]| => |M_co2_c[c]| + |M_3odecACP_c[c]|
     + |M_ACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3OAS120
   name: 3-oxoacyl-[acyl-carrier-protein] synthase (n-C12_0)
+  genes: sll1069 or slr1332
   equation: '|M_h_c[c]| + |M_malACP_c[c]| + |M_dcaACP_c[c]| => |M_co2_c[c]| + |M_3oddecACP_c[c]|
     + |M_ACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3OAS121
   name: 3-oxoacyl-[acyl-carrier-protein] synthase (n-C12_1)
+  genes: sll1069 or slr1332
   equation: '|M_h_c[c]| + |M_malACP_c[c]| + |M_cdec3eACP_c[c]| => |M_co2_c[c]| +
     |M_3ocddec5eACP_c[c]| + |M_ACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3OAS140
   name: 3-oxoacyl-[acyl-carrier-protein] synthase (n-C14_0)
+  genes: sll1069 or slr1332
   equation: '|M_h_c[c]| + |M_malACP_c[c]| + |M_ddcaACP_c[c]| => |M_co2_c[c]| + |M_3omrsACP_c[c]|
     + |M_ACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3OAS141
   name: 3-oxoacyl-[acyl-carrier-protein] synthase (n-C14_1)
+  genes: sll1069 or slr1332
   equation: '|M_h_c[c]| + |M_malACP_c[c]| + |M_cddec5eACP_c[c]| => |M_co2_c[c]| +
     |M_3ocmrs7eACP_c[c]| + |M_ACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3OAS160
   name: 3-oxoacyl-[acyl-carrier-protein] synthase (n-C16_0)
+  genes: sll1069 or slr1332
   equation: '|M_h_c[c]| + |M_malACP_c[c]| + |M_myrsACP_c[c]| => |M_co2_c[c]| + |M_3opalmACP_c[c]|
     + |M_ACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3OAS161
   name: 3-oxoacyl-[acyl-carrier-protein] synthase (n-C16_1)
+  genes: sll1069 or slr1332
   equation: '|M_h_c[c]| + |M_malACP_c[c]| + |M_tdeACP_c[c]| => |M_co2_c[c]| + |M_3ocpalm9eACP_c[c]|
     + |M_ACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3OAS180
   name: 3-oxoacyl-[acyl-carrier-protein] synthase (n-C18_0)
+  genes: sll1069 or slr1332
   equation: '|M_h_c[c]| + |M_malACP_c[c]| + |M_palmACP_c[c]| => |M_co2_c[c]| + |M_3ooctdACP_c[c]|
     + |M_ACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3OAS181
   name: 3-oxoacyl-[acyl-carrier-protein] synthase (n-C18_1)
+  genes: sll1069 or slr1332
   equation: '|M_h_c[c]| + |M_malACP_c[c]| + |M_hdeACP_c[c]| => |M_co2_c[c]| + |M_3ocvac11eACP_c[c]|
     + |M_ACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3OAS60
   name: 3-oxoacyl-[acyl-carrier-protein] synthase (n-C6_0)
+  genes: sll1069 or slr1332
   equation: '|M_h_c[c]| + |M_malACP_c[c]| + |M_butACP_c[c]| => |M_co2_c[c]| + |M_3ohexACP_c[c]|
     + |M_ACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_3OAS80
   name: 3-oxoacyl-[acyl-carrier-protein] synthase (n-C8_0)
+  genes: sll1069 or slr1332
   equation: '|M_h_c[c]| + |M_malACP_c[c]| + |M_hexACP_c[c]| => |M_co2_c[c]| + |M_3ooctACP_c[c]|
     + |M_ACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_AACOAR_syn
   name: acetoacetyl CoA reductase
+  genes: slr1994
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_aacoa_c[c]| => |M_nadp_c[c]| + |M_3hbcoa_DASH_R_c[c]|'
   subsystem: PHB byosynthesis
 - id: R_ABTA
   name: 4-aminobutyrate transaminase
+  genes: slr1022 or sll0017
   equation: '|M_4abut_c[c]| + |M_akg_c[c]| => |M_glu_DASH_L_c[c]| + |M_sucsal_c[c]|'
   subsystem: Urea cycle and metabolism of amino groups
 - id: R_ABUTD
   name: Aminobutyraldehyde dehydrogenase
+  genes: slr0091
   equation: '|M_nad_c[c]| + |M_h2o_c[c]| + |M_4abutn_c[c]| => (2) |M_h_c[c]| + |M_nadh_c[c]|
     + |M_4abut_c[c]|'
   subsystem: Arginine and proline metabolism
 - id: R_ACBIPGT
   name: Adenosyl cobinamide phosphate guanyltransferase
+  genes: slr0216
   equation: '|M_h_c[c]| + |M_adocbip_c[c]| + |M_gtp_c[c]| => |M_agdpcbi_c[c]| + |M_ppi_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_ACCOACr
   name: acetyl-CoA carboxylase, reversible reaction
+  genes: sll0728 and slr0435 and sll0053 and sll0336
   equation: '|M_atp_c[c]| + |M_accoa_c[c]| + |M_hco3_c[c]| <=> |M_adp_c[c]| + |M_h_c[c]|
     + |M_malcoa_c[c]| + |M_pi_c[c]|'
   subsystem: Pyruvate metabolism
 - id: R_ACGK
   name: acetylglutamate kinase
+  genes: slr1898
   equation: '|M_atp_c[c]| + |M_acglu_c[c]| => |M_adp_c[c]| + |M_acg5p_c[c]|'
   subsystem: Urea cycle and metabolism of amino groups
 - id: R_ACGS
   name: N-acetylglutamate synthase
+  genes: sll1883
   equation: '|M_accoa_c[c]| + |M_glu_DASH_L_c[c]| => |M_h_c[c]| + |M_acglu_c[c]|
     + |M_coa_c[c]|'
   subsystem: Urea cycle and metabolism of amino groups
 - id: R_ACHBS
   name: 2-aceto-2-hydroxybutanoate synthase
+  genes: sll1981 and slr2088 and sll0065
   equation: '|M_h_c[c]| + |M_pyr_c[c]| + |M_2obut_c[c]| => |M_co2_c[c]| + |M_2ahbut_c[c]|'
   subsystem: Valine leucine and isoleucine biosynthesis
 - id: R_ACKr
   name: acetate kinase
+  genes: sll1299
   equation: '|M_atp_c[c]| + |M_ac_c[c]| <=> |M_adp_c[c]| + |M_actp_c[c]|'
   subsystem: Pyruvate metabolism
 - id: R_ACLS
   name: acetolactate synthase
+  genes: sll1981 and slr2088 and sll0065
   equation: '|M_h_c[c]| + (2) |M_pyr_c[c]| => |M_co2_c[c]| + |M_alac_DASH_S_c[c]|'
   subsystem: C5-Branched dibasic acid metabolism
 - id: R_ACOATA_syn
   name: Acetyl-CoA ACP transacylase
+  genes: sll1069
   equation: '|M_ACP_c[c]| + |M_accoa_c[c]| <=> |M_coa_c[c]| + |M_acACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_ACONT
   name: aconitase
+  genes: slr0665
   equation: '|M_cit_c[c]| <=> |M_icit_c[c]|'
   subsystem: Citrate cycle (TCA cycle)
 - id: R_ACOTA
   name: acetylornithine transaminase
+  genes: slr1022
   equation: '|M_acorn_c[c]| + |M_akg_c[c]| <=> |M_glu_DASH_L_c[c]| + |M_acg5sa_c[c]|'
   subsystem: Urea cycle and metabolism of amino groups
 - id: R_ACP1_LPAREN_FMN_RPAREN_
   name: acid phosphatase (FMN)
+  genes: sll1108
   equation: '|M_h2o_c[c]| + |M_fmn_c[c]| => |M_pi_c[c]| + |M_ribflv_c[c]|'
   subsystem: Riboflavin metabolism
 - id: R_ACS
   name: acetyl-CoA synthetase
+  genes: sll0542
   equation: '|M_atp_c[c]| + |M_coa_c[c]| + |M_ac_c[c]| => |M_ppi_c[c]| + |M_accoa_c[c]|
     + |M_amp_c[c]|'
   subsystem: Glycolysis/Gluconeogenesis
@@ -244,15 +296,18 @@
   subsystem: Transport
 - id: R_ADCL
   name: 4-aminobenzoate synthase
+  genes: slr0887
   equation: '|M_4adcho_c[c]| => |M_h_c[c]| + |M_pyr_c[c]| + |M_4abz_c[c]|'
   subsystem: Folate biosynthesis
 - id: R_ADCPS1
   name: adenosylcobinamide-phosphate synthase
+  genes: slr1925
   equation: '|M_atp_c[c]| + |M_adcobhex_c[c]| + |M_appl_c[c]| => |M_adp_c[c]| + |M_h_c[c]|
     + |M_pi_c[c]| + |M_adocbi_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_ADCPS2
   name: adenosylcobinamide-phosphate synthase
+  genes: slr1925
   equation: '|M_atp_c[c]| + |M_adcobhex_c[c]| + |M_applp_c[c]| => |M_adp_c[c]| +
     |M_h_c[c]| + |M_adocbip_c[c]| + |M_pi_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
@@ -262,16 +317,19 @@
   subsystem: Folate biosynthesis
 - id: R_ADCYRS
   name: adenosylcobyric acid synthase (glutamine-hydrolysing)
+  genes: slr0618
   equation: (4) |M_atp_c[c]| + (4) |M_h2o_c[c]| + |M_adcobdam_c[c]| + (4) |M_gln_DASH_L_c[c]|
     => (4) |M_adp_c[c]| + (4) |M_h_c[c]| + (4) |M_pi_c[c]| + (4) |M_glu_DASH_L_c[c]|
     + |M_adcobhex_c[c]|
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_ADK1
   name: adenylate kinase
+  genes: sll1059
   equation: '|M_atp_c[c]| + |M_amp_c[c]| <=> (2) |M_adp_c[c]|'
   subsystem: Purine metabolism
 - id: R_ADK_syn
   name: deoxyadenylate kinase
+  genes: sll1815
   equation: '|M_atp_c[c]| + |M_damp_c[c]| <=> |M_adp_c[c]| + |M_dadp_c[c]|'
   subsystem: Purine metabolism
 - id: R_ADMDC
@@ -280,106 +338,130 @@
   subsystem: Arginine and proline metabolism
 - id: R_ADNCYC
   name: adenylate cyclase
+  genes: sll1161
   equation: '|M_atp_c[c]| => |M_ppi_c[c]| + |M_camp_c[c]|'
   subsystem: Purine metabolism
 - id: R_ADOCBLS
   name: Adenosylcobalamin 5'-phosphate synthase
+  genes: slr0636
   equation: '|M_agdpcbi_c[c]| + |M_rdmbzi_c[c]| => |M_h_c[c]| + |M_adocbl_c[c]| +
     |M_gmp_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_ADPRDP
   name: ADPribose diphosphatase
+  genes: sll1054 or slr1134
   equation: '|M_h2o_c[c]| + |M_adprib_c[c]| => (2) |M_h_c[c]| + |M_amp_c[c]| + |M_r5p_c[c]|'
   subsystem: Purine metabolism
 - id: R_ADPT
   name: adenine phosphoribosyltransferase
+  genes: sll1430
   equation: '|M_ade_c[c]| + |M_prpp_c[c]| => |M_ppi_c[c]| + |M_amp_c[c]|'
   subsystem: Purine metabolism
 - id: R_ADPT2
   name: adenine phosphoribosyltransferase
+  genes: sll1430
   equation: '|M_ppi_c[c]| + |M_aicar_c[c]| <=> |M_prpp_c[c]| + |M_C04051_c[c]|'
   subsystem: Purine metabolism
 - id: R_ADSK
   name: adenylyl-sulfate kinase
+  genes: slr0676
   equation: '|M_atp_c[c]| + |M_aps_c[c]| => |M_adp_c[c]| + |M_h_c[c]| + |M_paps_c[c]|'
   subsystem: Sulfur Cysteine and methionine metabolism
 - id: R_ADSL1r
   name: adenylsuccinate lyase
+  genes: sll0421
   equation: '|M_dcamp_c[c]| <=> |M_amp_c[c]| + |M_fum_c[c]|'
   subsystem: Purine metabolism
 - id: R_ADSL2r
   name: adenylosuccinate lyase
+  genes: sll0421
   equation: '|M_25aics_c[c]| <=> |M_aicar_c[c]| + |M_fum_c[c]|'
   subsystem: Purine metabolism
 - id: R_ADSS
   name: adenylosuccinate synthase
+  genes: sll1823
   equation: '|M_gtp_c[c]| + |M_asp_DASH_L_c[c]| + |M_imp_c[c]| => (2) |M_h_c[c]|
     + |M_pi_c[c]| + |M_dcamp_c[c]| + |M_gdp_c[c]|'
   subsystem: Purine metabolism
 - id: R_AGMT
   name: agmatinase
+  genes: sll1077 or sll0228
   equation: '|M_h2o_c[c]| + |M_agm_c[c]| => |M_ptrc_c[c]| + |M_urea_c[c]|'
   subsystem: Arginine and proline metabolism
 - id: R_AGPAT160
   name: 1-hexadecanoyl-sn-glycerol 3-phosphate O-acyltransferase (n-C16_0)
+  genes: sll1848
   equation: '|M_palmACP_c[c]| + |M_1hdecg3p_c[c]| => |M_ACP_c[c]| + |M_pa160_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_AGPAT161
   name: 1-hexadec-7-enoyl-sn-glycerol 3-phosphate O-acyltransferase (n-C16_1)
+  genes: sll1848
   equation: '|M_hdeACP_c[c]| + |M_1hdec9eg3p_c[c]| => |M_ACP_c[c]| + |M_pa161_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_AGPAT180
   name: 1-octadecanoyl-sn-glycerol 3-phosphate O-acyltransferase (n-C18_0)
+  genes: sll1848
   equation: '|M_1odecg3p_c[c]| + |M_ocdcaACP_c[c]| => |M_ACP_c[c]| + |M_pa180_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_AGPAT181
   name: 1-octadec-7-enoyl-sn-glycerol 3-phosphate O-acyltransferase (n-C18_1)
+  genes: sll1848
   equation: '|M_1odec11eg3p_c[c]| + |M_octeACP_c[c]| => |M_ACP_c[c]| + |M_pa181_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_AGPAT181_LPAREN_9_RPAREN_
   name: 1-octadec-enoyl-sn-glycerol 3-phosphate O-acyltransferase (n-C18_1)
+  genes: sll1848
   equation: '|M_1odec9eg3p_c[c]| + |M_octe_LPAREN_9_RPAREN_ACP_c[c]| => |M_ACP_c[c]|
     + |M_pa181_9_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_AGPAT182_LPAREN_9_12_RPAREN_
   name: 1-octadec-enoyl-sn-glycerol 3-phosphate O-acyltransferase (n-C18_2)
+  genes: sll1848
   equation: '|M_1odec912eg3p_c[c]| + |M_octe_LPAREN_9_12_RPAREN_ACP_c[c]| => |M_ACP_c[c]|
     + |M_pa182_9_12_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_AGPAT183_LPAREN_6_9_12_RPAREN_
   name: 1-octadec-enoyl-sn-glycerol 3-phosphate O-acyltransferase (n-C18_3)
+  genes: sll1848
   equation: '|M_1odec6912eg3p_c[c]| + |M_octe_LPAREN_6_9_12_RPAREN_ACP_c[c]| => |M_ACP_c[c]|
     + |M_pa183_6_9_12_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_AGPAT183_LPAREN_9_12_15_RPAREN_
   name: 1-octadec-enoyl-sn-glycerol 3-phosphate O-acyltransferase (n-C18_3)
+  genes: sll1848
   equation: '|M_octe_LPAREN_9_12_15_RPAREN_ACP_c[c]| + |M_1odec91215eg3p_c[c]| =>
     |M_ACP_c[c]| + |M_pa183_9_12_15_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_AGPAT184_LPAREN_6_9_12_15_RPAREN_
   name: 1-octadec-enoyl-sn-glycerol 3-phosphate O-acyltransferase (n-C18_4)
+  genes: sll1848
   equation: '|M_1odec691215eg3p_c[c]| + |M_octe_LPAREN_6_9_12_15_RPAREN_ACP_c[c]|
     => |M_ACP_c[c]| + |M_pa184_6_9_12_15_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_AGPR
   name: N-acetyl-g-glutamyl-phosphate reductase
+  genes: sll0080
   equation: '|M_nadp_c[c]| + |M_pi_c[c]| + |M_acg5sa_c[c]| <=> |M_h_c[c]| + |M_nadph_c[c]|
     + |M_acg5p_c[c]|'
   subsystem: Urea cycle and metabolism of amino groups
 - id: R_AHCi
   name: adenosylhomocysteinase
+  genes: sll1234
   equation: '|M_h2o_c[c]| + |M_ahcys_c[c]| => |M_adn_c[c]| + |M_hcys_DASH_L_c[c]|'
   subsystem: Sulfur Cysteine and methionine metabolism
 - id: R_AHMMPS
   name: 4-amino-5-hydroxymethyl-2-methylpyrimidine synthetase
+  genes: slr0118
   equation: (2) |M_h_c[c]| + |M_air_c[c]| => |M_pi_c[c]| + |M_4ahmmp_c[c]| + |M_gcald_c[c]|
   subsystem: Thiamine metabolism
 - id: R_AICART
   name: phosphoribosylaminoimidazolecarboxamide formyltransferase
+  genes: slr0597
   equation: '|M_aicar_c[c]| + |M_10fthf_c[c]| <=> |M_fprica_c[c]| + |M_thf_c[c]|'
   subsystem: Purine metabolism
 - id: R_AIRCr
   name: phosphoribosylaminoimidazole carboxylase
+  genes: sll0901 and sll0578
   equation: '|M_co2_c[c]| + |M_air_c[c]| <=> |M_h_c[c]| + |M_5aizc_c[c]|'
   subsystem: Purine metabolism
 - id: R_AKGtex
@@ -392,25 +474,30 @@
   subsystem: Transport
 - id: R_ALAALAr
   name: D-alanine-D-alanine ligase (reversible)
+  genes: slr1874
   equation: '|M_atp_c[c]| + (2) |M_ala_DASH_D_c[c]| <=> |M_adp_c[c]| + |M_h_c[c]|
     + |M_pi_c[c]| + |M_alaala_c[c]|'
   subsystem: Alanine, aspartate and glutamate metabolism
 - id: R_ALAD_syn
   name: L-alanine dehydrogenase
+  genes: sll1682
   equation: '|M_h_c[c]| + |M_nadh_c[c]| + |M_pyr_c[c]| + |M_nh4_c[c]| => |M_nad_c[c]|
     + |M_h2o_c[c]| + |M_ala_DASH_L_c[c]|'
   subsystem: Alanine, aspartate and glutamate metabolism
 - id: R_ALAR
   name: alanine racemase
+  genes: slr0827
   equation: '|M_ala_DASH_L_c[c]| <=> |M_ala_DASH_D_c[c]|'
   subsystem: Alanine, aspartate and glutamate metabolism
 - id: R_ALATRS
   name: Alanyl-tRNA synthetase
+  genes: sll0362
   equation: '|M_atp_c[c]| + |M_ala_DASH_L_c[c]| + |M_trnaala_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_alatrna_c[c]|'
   subsystem: Alanine, aspartate and glutamate metabolism
 - id: R_ALAabcpp
   name: L-alanine transport via ABC system (periplasm)
+  genes: slr0559 and sll0146 and slr0949 and slr0467 and slr1881
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_ala_DASH_L_p[p]| => |M_adp_c[c]| +
     |M_h_c[c]| + |M_pi_c[c]| + |M_ala_DASH_L_c[c]|'
   subsystem: Transport
@@ -420,32 +507,39 @@
   subsystem: Transport
 - id: R_ALCD19
   name: alcohol dehydrogenase (glycerol)
+  genes: sll0990
   equation: '|M_h_c[c]| + |M_nadh_c[c]| + |M_glyald_c[c]| <=> |M_nad_c[c]| + |M_glyc_c[c]|'
   subsystem: Glycerolipid metabolism
 - id: R_ALCD2y
   name: alcohol dehydrogenase (ethanol, NADP)
+  genes: slr0942
   equation: '|M_nadp_c[c]| + |M_etoh_c[c]| <=> |M_h_c[c]| + |M_nadph_c[c]| + |M_acald_c[c]|'
   subsystem: Glycolysis/Gluconeogenesis
 - id: R_ALDD20x
   name: aldehyde dehydrogenase (indole-3-acetaldehyde, NAD)
+  genes: slr0091
   equation: '|M_nad_c[c]| + |M_h2o_c[c]| + |M_id3acald_c[c]| => (2) |M_h_c[c]| +
     |M_nadh_c[c]| + |M_ind3ac_c[c]|'
   subsystem: Phenylalanine tyrosine and tryptophan biosynthesis
 - id: R_ALDD2xr
   name: aldehyde dehydrogenase (acetaldehyde, NAD)
+  genes: slr0091
   equation: '|M_nad_c[c]| + |M_h2o_c[c]| + |M_acald_c[c]| <=> (2) |M_h_c[c]| + |M_nadh_c[c]|
     + |M_ac_c[c]|'
   subsystem: Glycolysis/Gluconeogenesis
 - id: R_AMID
   name: amidase
+  genes: sll0828
   equation: '|M_h2o_c[c]| + |M_4gudbd_c[c]| => |M_nh4_c[c]| + |M_4gudbutn_c[c]|'
   subsystem: Arginine and proline metabolism
 - id: R_AMID2
   name: amidase
+  genes: sll0828
   equation: '|M_h2o_c[c]| + |M_pad_c[c]| => |M_nh4_c[c]| + |M_pac_c[c]|'
   subsystem: Phenylalanine tyrosine and tryptophan biosynthesis
 - id: R_AMID3
   name: amidase
+  genes: sll0828
   equation: '|M_h2o_c[c]| + |M_iad_c[c]| => |M_nh4_c[c]| + |M_ind3ac_c[c]|'
   subsystem: Phenylalanine tyrosine and tryptophan biosynthesis
 - id: R_AMPN
@@ -454,50 +548,61 @@
   subsystem: Purine metabolism
 - id: R_ANPRT
   name: anthranilate phosphoribosyltransferase
+  genes: slr1867
   equation: '|M_prpp_c[c]| + |M_anth_c[c]| => |M_ppi_c[c]| + |M_pran_c[c]|'
   subsystem: Phenylalanine tyrosine and tryptophan biosynthesis
 - id: R_ANS
   name: anthranilate synthase
+  genes: (slr0738 or slr1979) and slr0055
   equation: '|M_gln_DASH_L_c[c]| + |M_chor_c[c]| => |M_h_c[c]| + |M_glu_DASH_L_c[c]|
     + |M_pyr_c[c]| + |M_anth_c[c]|'
   subsystem: Phenylalanine tyrosine and tryptophan biosynthesis
 - id: R_AOXSr
   name: 8-amino-7-oxononanoate synthase
+  genes: slr0917
   equation: '|M_h_c[c]| + |M_ala_DASH_L_c[c]| + |M_pmcoa_c[c]| <=> |M_co2_c[c]| +
     |M_coa_c[c]| + |M_8aonn_c[c]|'
   subsystem: Biotin metabolism
 - id: R_APRAUR
   name: 5-amino-6-(5-phosphoribosylamino)uracil reductase
+  genes: slr0066
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_5apru_c[c]| => |M_nadp_c[c]| + |M_5aprbu_c[c]|'
   subsystem: Riboflavin metabolism
 - id: R_ARGD
   name: L-Arginine deiminase
+  genes: sll1336
   equation: '|M_h2o_c[c]| + |M_arg_DASH_L_c[c]| => |M_nh4_c[c]| + |M_citr_DASH_L_c[c]|'
   subsystem: Arginine and proline metabolism
 - id: R_ARGDC
   name: arginine decarboxylase
+  genes: slr0662 or slr1312
   equation: '|M_h_c[c]| + |M_arg_DASH_L_c[c]| => |M_co2_c[c]| + |M_agm_c[c]|'
   subsystem: Arginine and proline metabolism
 - id: R_ARGN
   name: arginase
+  genes: sml0007
   equation: '|M_h2o_c[c]| + |M_arg_DASH_L_c[c]| => |M_urea_c[c]| + |M_orn_c[c]|'
   subsystem: Arginine and proline metabolism
 - id: R_ARGSL
   name: argininosuccinate lyase
+  genes: slr1133
   equation: '|M_argsuc_c[c]| <=> |M_fum_c[c]| + |M_arg_DASH_L_c[c]|'
   subsystem: Alanine, aspartate and glutamate metabolism
 - id: R_ARGSS
   name: argininosuccinate synthase
+  genes: slr0585
   equation: '|M_atp_c[c]| + |M_asp_DASH_L_c[c]| + |M_citr_DASH_L_c[c]| => |M_h_c[c]|
     + |M_ppi_c[c]| + |M_amp_c[c]| + |M_argsuc_c[c]|'
   subsystem: Alanine, aspartate and glutamate metabolism
 - id: R_ARGTRS
   name: Arginyl-tRNA synthetase
+  genes: sll0502
   equation: '|M_atp_c[c]| + |M_arg_DASH_L_c[c]| + |M_trnaarg_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_argtrna_c[c]|'
   subsystem: Arginine and proline metabolism
 - id: R_ARGabcpp
   name: L-arginine transport via ABC system (periplasm)
+  genes: slr1735 and sll1270
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_arg_DASH_L_p[p]| => |M_adp_c[c]| +
     |M_h_c[c]| + |M_pi_c[c]| + |M_arg_DASH_L_c[c]|'
   subsystem: Transport
@@ -507,11 +612,13 @@
   subsystem: Transport
 - id: R_ASADi
   name: aspartate-semialdehyde dehydrogenase, irreversible
+  genes: slr0549
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_4pasp_c[c]| => |M_nadp_c[c]| + |M_pi_c[c]|
     + |M_aspsa_c[c]|'
   subsystem: Alanine, aspartate and glutamate metabolism
 - id: R_ASNN
   name: L-asparaginase
+  genes: sll0422
   equation: '|M_h2o_c[c]| + |M_asn_DASH_L_c[c]| => |M_asp_DASH_L_c[c]| + |M_nh4_c[c]|'
   subsystem: Nitrogen metabolism
 - id: R_ASNS1
@@ -521,96 +628,119 @@
   subsystem: Nitrogen metabolism
 - id: R_ASNTRS
   name: Asparaginyl-tRNA synthetase
+  genes: sll0495
   equation: '|M_atp_c[c]| + |M_asn_DASH_L_c[c]| + |M_trnaasn_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_asntrna_c[c]|'
   subsystem: Alanine, aspartate and glutamate metabolism
 - id: R_ASP1DC
   name: aspartate 1-decarboxylase
+  genes: sll0892
   equation: '|M_h_c[c]| + |M_asp_DASH_L_c[c]| => |M_co2_c[c]| + |M_ala_DASH_B_c[c]|'
   subsystem: Alanine, aspartate and glutamate metabolism
 - id: R_ASPCT
   name: aspartate carbamoyltransferase
+  genes: slr1476
   equation: '|M_asp_DASH_L_c[c]| + |M_cbp_c[c]| => |M_h_c[c]| + |M_pi_c[c]| + |M_cbasp_c[c]|'
   subsystem: Pyrimidine metabolism
 - id: R_ASPKi
   name: aspartate kinase, irreversible
+  genes: slr0657
   equation: '|M_atp_c[c]| + |M_asp_DASH_L_c[c]| => |M_adp_c[c]| + |M_4pasp_c[c]|'
   subsystem: Alanine, aspartate and glutamate metabolism
 - id: R_ASPO6
   name: L-aspartate oxidase
+  genes: sll0631
   equation: '|M_o2_c[c]| + |M_asp_DASH_L_c[c]| => |M_h_c[c]| + |M_h2o2_c[c]| + |M_iasp_c[c]|'
   subsystem: Nicotinate and nicotinamide metabolism
 - id: R_ASPTA
   name: aspartate transaminase
+  genes: sll0402 or sll0480 or slr0036
   equation: '|M_akg_c[c]| + |M_asp_DASH_L_c[c]| <=> |M_glu_DASH_L_c[c]| + |M_oaa_c[c]|'
   subsystem: Carbon fixation
 - id: R_ASPTRS
   name: Aspartyl-tRNA synthetase
+  genes: slr1720
   equation: '|M_atp_c[c]| + |M_asp_DASH_L_c[c]| + |M_trnaasp_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_asptrna_c[c]|'
   subsystem: Alanine, aspartate and glutamate metabolism
 - id: R_ATPPRT
   name: 'ATP phosphoribosyltransferase '
+  genes: sll0900
   equation: '|M_atp_c[c]| + |M_prpp_c[c]| => |M_ppi_c[c]| + |M_prbatp_c[c]|'
   subsystem: Histidine metabolism
 - id: R_ATPS4rpp
   name: ATP synthase (four protons for one ATP) (periplasm)
+  genes: sll1322 and sll1323 and sll1324 and sll1326 and sll1325 and sll1327 and
+    slr1329 and slr1330 and ssl2615 and sll1321
   equation: (3) |M_adp_c[c]| + (3) |M_pi_c[c]| + (14) |M_h_p[p]| => (3) |M_atp_c[c]|
     + (11) |M_h_c[c]| + (3) |M_h2o_c[c]|
   subsystem: Oxidative phosphorylation
 - id: R_ATPSu
   name: ATP synthetase(u)
+  genes: sll1322 and sll1323 and sll1324 and sll1326 and sll1325 and sll1327 and
+    slr1329 and slr1330 and ssl2615 and sll1321
   equation: (3) |M_adp_c[c]| + (3) |M_pi_c[c]| + (14) |M_h_u[u]| => (3) |M_atp_c[c]|
     + (11) |M_h_c[c]| + (3) |M_h2o_c[c]|
   subsystem: Oxidative phosphorylation
 - id: R_BAMPPALDOX
   name: beta-Aminopropion aldehyde_NAD+ oxidoreductase
+  genes: slr0091
   equation: '|M_nad_c[c]| + |M_h2o_c[c]| + |M_bamppald_c[c]| => (2) |M_h_c[c]| +
     |M_nadh_c[c]| + |M_ala_DASH_B_c[c]|'
   subsystem: Others
 - id: R_BCAROHX
   name: beta-carotene hydroxylase
+  genes: sll1468
   equation: '|M_h_c[c]| + |M_o2_c[c]| + |M_nadph_c[c]| + |M_bcarote_c[c]| => |M_h2o_c[c]|
     + |M_nadp_c[c]| + |M_bcryptox_c[c]|'
   subsystem: Carotenoid Biosynthesis
 - id: R_BCAROHX2
   name: beta-carotene hydroxylase
+  genes: sll1468
   equation: '|M_h_c[c]| + |M_o2_c[c]| + |M_nadph_c[c]| + |M_bcryptox_c[c]| => |M_h2o_c[c]|
     + |M_nadp_c[c]| + |M_zeax_c[c]|'
   subsystem: Carotenoid Biosynthesis
 - id: R_BCAROKE
   name: beta-carotene ketolase
+  genes: slr0088
   equation: '|M_o2_c[c]| + |M_bcarote_c[c]| => |M_h2o_c[c]| + |M_echin_c[c]|'
   subsystem: Carotenoid Biosynthesis
 - id: R_BCT1_syn
   name: Bicarbonate transport via ABC system (periplasm)
+  genes: slr0040 and slr0041 and slr0043 and slr0044
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_hco3_p[p]| => |M_adp_c[c]| + |M_h_c[c]|
     + |M_hco3_c[c]| + |M_pi_c[c]|'
   subsystem: Transport
 - id: R_BILIRED
   name: Nad(p)h biliverdin reductase
+  genes: slr1784
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_biliverd_c[c]| => |M_nadp_c[c]| + |M_bilirub_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_BKTIO_syn
   name: B-ketotiolase
+  genes: slr1993
   equation: (2) |M_accoa_c[c]| => |M_aacoa_c[c]| + |M_coa_c[c]|
   subsystem: PHB byosynthesis
 - id: R_BPNT
   name: 3',5'-bisphosphate nucleotidase
+  genes: sll0895
   equation: '|M_h2o_c[c]| + |M_pap_c[c]| => |M_pi_c[c]| + |M_amp_c[c]|'
   subsystem: Sulfur Cysteine and methionine metabolism
 - id: R_BTS4
   name: Biotin synthase
+  genes: slr1364
   equation: '|M_amet_c[c]| + |M_dtbt_c[c]| + |M_s_c[c]| => |M_h_c[c]| + |M_btn_c[c]|
     + |M_dad_DASH_5_c[c]| + |M_met_DASH_L_c[c]|'
   subsystem: Biotin metabolism
 - id: R_CA2abcpp
   name: calcium transport via ABC system (periplasm)
+  genes: sll1614
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_ca2_p[p]| => |M_adp_c[c]| + |M_h_c[c]|
     + |M_pi_c[c]| + |M_ca2_c[c]|'
   subsystem: Transport
 - id: R_CA2t3pp
   name: calcium (Ca+2) transport out via proton antiport (periplasm)
+  genes: slr1336
   equation: '|M_h_p[p]| + |M_ca2_c[c]| => |M_h_c[c]| + |M_ca2_p[p]|'
   subsystem: Transport
 - id: R_CA2tex
@@ -619,52 +749,75 @@
   subsystem: Transport
 - id: R_CAT
   name: catalase
+  genes: sll1987
   equation: (2) |M_h2o2_c[c]| => |M_o2_c[c]| + (2) |M_h2o_c[c]|
   subsystem: Phenylalanine tyrosine and tryptophan biosynthesis
 - id: R_CBFC2
   name: cytochrome b6/f complex
+  genes: sll1317 and slr0342 and sll1182 and sll1316 and slr1185 and slr0343 and
+    sll0199 and smr0010 and ssl3803 and smr0003 and sml0004 and sll1578 and sll1577
+    and sll1579 and sll1580 and ssl3093 and slr1878 and sll1051 and sll1471 and slr2051
+    and slr2067 and slr1986 and ssr3383 and sll0928 and slr0335 and slr1459
   equation: (2) |M_h_c[c]| + (2) |M_ficytc6_u[u]| + |M_pqh2_u[u]| => (4) |M_h_u[u]|
     + (2) |M_focytc6_u[u]| + |M_pq_u[u]|
   subsystem: Photosynthesis
 - id: R_CBFC2pp
   name: cytochrome b6/f complex periplasm
+  genes: sll1317 and slr0342 and sll1182 and sll1316 and slr1185 and slr0343 and
+    sll0199 and smr0010 and ssl3803 and smr0003 and sml0004 and sll1578 and sll1577
+    and sll1579 and sll1580 and ssl3093 and slr1878 and sll1051 and sll1471 and slr2051
+    and slr2067 and slr1986 and ssr3383 and sll0928 and slr0335 and slr1459
   equation: (2) |M_h_c[c]| + |M_pqh2_p[p]| + (2) |M_ficytc6_p[p]| => (4) |M_h_p[p]|
     + |M_pq_p[p]| + (2) |M_focytc6_p[p]|
   subsystem: Oxidative phosphorylation
 - id: R_CBFCpp
   name: cytochrome b6/f complex periplasm
+  genes: sll1317 and slr0342 and sll1182 and sll1316 and slr1185 and slr0343 and
+    sll0199 and smr0010 and ssl3803 and smr0003 and sml0004 and sll1578 and sll1577
+    and sll1579 and sll1580 and ssl3093 and slr1878 and sll1051 and sll1471 and slr2051
+    and slr2067 and slr1986 and ssr3383 and sll0928 and slr0335 and slr1459
   equation: (2) |M_h_c[c]| + (2) |M_pcox_p[p]| + |M_pqh2_p[p]| => (4) |M_h_p[p]|
     + (2) |M_pcrd_p[p]| + |M_pq_p[p]|
   subsystem: Oxidative phosphorylation
 - id: R_CBFCu
   name: cytochrome b6/f complex
+  genes: sll1317 and slr0342 and sll1182 and sll1316 and slr1185 and slr0343 and
+    sll0199 and smr0010 and ssl3803 and smr0003 and sml0004 and sll1578 and sll1577
+    and sll1579 and sll1580 and ssl3093 and slr1878 and sll1051 and sll1471 and slr2051
+    and slr2067 and slr1986 and ssr3383 and sll0928 and slr0335 and slr1459
   equation: (2) |M_h_c[c]| + |M_pqh2_u[u]| + (2) |M_pcox_u[u]| => (4) |M_h_u[u]|
     + |M_pq_u[u]| + (2) |M_pcrd_u[u]|
   subsystem: Photosynthesis
 - id: R_CBMK
   name: Carbamate kinase
+  genes: sll0573
   equation: '|M_atp_c[c]| + |M_co2_c[c]| + |M_nh4_c[c]| => |M_adp_c[c]| + (2) |M_h_c[c]|
     + |M_cbp_c[c]|'
   subsystem: Nitrogen metabolism
 - id: R_CBPS
   name: carbamoyl-phosphate synthase (glutamine-hydrolysing)
+  genes: sll0370 and sll1498
   equation: (2) |M_atp_c[c]| + |M_h2o_c[c]| + |M_hco3_c[c]| + |M_gln_DASH_L_c[c]|
     => (2) |M_adp_c[c]| + (2) |M_h_c[c]| + |M_pi_c[c]| + |M_glu_DASH_L_c[c]| + |M_cbp_c[c]|
   subsystem: Pyrimidine metabolism
 - id: R_CDPMEK
   name: 4-(cytidine 5'-diphospho)-2-C-methyl-D-erythritol kinase
+  genes: sll0711
   equation: '|M_atp_c[c]| + |M_4c2me_c[c]| => |M_adp_c[c]| + |M_h_c[c]| + |M_2p4c2me_c[c]|'
   subsystem: Terpenoid backbone biosynthesis
 - id: R_CHORM
   name: chorismate mutase
+  genes: sll0109
   equation: '|M_chor_c[c]| => |M_pphn_c[c]|'
   subsystem: Phenylalanine tyrosine and tryptophan biosynthesis
 - id: R_CHORS
   name: chorismate synthase
+  genes: sll1747
   equation: '|M_3psme_c[c]| => |M_pi_c[c]| + |M_chor_c[c]|'
   subsystem: Phenylalanine tyrosine and tryptophan biosynthesis
 - id: R_CHPHYS
   name: chlorophyll a synthase
+  genes: slr0056
   equation: '|M_h_c[c]| + |M_chlld_c[c]| + |M_phdp_c[c]| => |M_ppi_c[c]| + |M_cholphya_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_CITtex
@@ -685,11 +838,13 @@
   subsystem: Transport
 - id: R_COBALT2abcpp
   name: Cobalt (Co+2) ABC transporter (periplasm)
+  genes: slr0797
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_cobalt2_c[c]| => |M_adp_c[c]| + |M_h_c[c]|
     + |M_pi_c[c]| + |M_cobalt2_p[p]|'
   subsystem: Transport
 - id: R_COBALT2abcpp_syn
   name: Cobalt (Co+2) ABC transporter (periplasm)
+  genes: sll0383 and sll0384 and sll0385
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_cobalt2_p[p]| => |M_adp_c[c]| + |M_h_c[c]|
     + |M_pi_c[c]| + |M_cobalt2_c[c]|'
   subsystem: Transport
@@ -699,6 +854,7 @@
   subsystem: Transport
 - id: R_COCHL
   name: cobaltochelatase
+  genes: sll1890
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_cobalt2_c[c]| + |M_hgbam_c[c]| => |M_adp_c[c]|
     + (2) |M_h_c[c]| + |M_pi_c[c]| + |M_co2dam_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
@@ -708,40 +864,48 @@
   subsystem: Transport
 - id: R_CPPPGO
   name: coproporphyrinogen oxidase (O2 required)
+  genes: sll1185
   equation: (2) |M_h_c[c]| + |M_o2_c[c]| + |M_cpppg3_c[c]| => (2) |M_co2_c[c]| +
     (2) |M_h2o_c[c]| + |M_pppg9_c[c]|
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_CPPPGO2
   name: Oxygen Independent coproporphyrinogen-III oxidase
+  genes: sll1917 or sll1876
   equation: (2) |M_amet_c[c]| + |M_cpppg3_c[c]| => (2) |M_co2_c[c]| + (2) |M_dad_DASH_5_c[c]|
     + (2) |M_met_DASH_L_c[c]| + |M_pppg9_c[c]|
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_CS
   name: citrate synthase
+  genes: sll0401
   equation: '|M_h2o_c[c]| + |M_accoa_c[c]| + |M_oaa_c[c]| => |M_h_c[c]| + |M_coa_c[c]|
     + |M_cit_c[c]|'
   subsystem: Citrate cycle (TCA cycle)
 - id: R_CSND
   name: Cytosine deaminase
+  genes: slr1237
   equation: '|M_h_c[c]| + |M_h2o_c[c]| + |M_csn_c[c]| => |M_nh4_c[c]| + |M_ura_c[c]|'
   subsystem: Pyrimidine metabolism
 - id: R_CTPS1
   name: CTP synthase (NH3)
+  genes: sll1443
   equation: '|M_atp_c[c]| + |M_nh4_c[c]| + |M_utp_c[c]| => |M_adp_c[c]| + (2) |M_h_c[c]|
     + |M_pi_c[c]| + |M_ctp_c[c]|'
   subsystem: Pyrimidine metabolism
 - id: R_CTPS2
   name: CTP synthase (glutamine)
+  genes: sll1443
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_gln_DASH_L_c[c]| + |M_utp_c[c]| =>
     |M_adp_c[c]| + (2) |M_h_c[c]| + |M_pi_c[c]| + |M_glu_DASH_L_c[c]| + |M_ctp_c[c]|'
   subsystem: Pyrimidine metabolism
 - id: R_CU2abcpp_syn
   name: Copper (Cu+2) ABC transporter (periplasm)
+  genes: slr1950
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_cu2_p[p]| => |M_adp_c[c]| + |M_h_c[c]|
     + |M_pi_c[c]| + |M_cu2_c[c]|'
   subsystem: Transport
 - id: R_CU2abcu_syn
   name: Copper (Cu+2) ABC transporter (periplasm)
+  genes: sll1920
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_cu2_c[c]| => |M_adp_c[c]| + |M_h_c[c]|
     + |M_pi_c[c]| + |M_cu2_u[u]|'
   subsystem: Transport
@@ -751,6 +915,7 @@
   subsystem: Transport
 - id: R_CYNTAH
   name: Cyanate aminohydrolase
+  genes: slr0899
   equation: (3) |M_h_c[c]| + |M_hco3_c[c]| + |M_cynt_c[c]| => (2) |M_co2_c[c]| +
     |M_nh4_c[c]|
   subsystem: Nitrogen metabolism
@@ -764,36 +929,43 @@
   subsystem: Transport
 - id: R_CYO1b2_syn
   name: cytochrome c oxidase, synechocystis (2 protons)
+  genes: (slr1137 or slr2082) and (sll0813 or slr1136) and (slr1138 or slr2083)
   equation: (4) |M_h_c[c]| + (2) |M_pcrd_u[u]| + (0.5) |M_o2_u[u]| => (2) |M_h_u[u]|
     + (2) |M_pcox_u[u]| + |M_h2o_u[u]|
   subsystem: Photosynthesis
 - id: R_CYO1b2pp_syn
   name: cytochrome c oxidase, synechocystis (2 protons periplasm)
+  genes: (slr1137 or slr2082) and (sll0813 or slr1136) and (slr1138 or slr2083)
   equation: (4) |M_h_c[c]| + (2) |M_pcrd_p[p]| + (0.5) |M_o2_p[p]| => (2) |M_h_p[p]|
     + (2) |M_pcox_p[p]| + |M_h2o_p[p]|
   subsystem: Oxidative phosphorylation
 - id: R_CYO1b_syn
   name: cytochrome c oxidase, synechocystis (2 protons)
+  genes: (slr1137 or slr2082) and (sll0813 or slr1136) and (slr1138 or slr2083)
   equation: (4) |M_h_c[c]| + (2) |M_focytc6_u[u]| + (0.5) |M_o2_u[u]| => (2) |M_h_u[u]|
     + (2) |M_ficytc6_u[u]| + |M_h2o_u[u]|
   subsystem: Photosynthesis
 - id: R_CYO1bpp_syn
   name: cytochrome c oxidase, synechocystis (2 protons)
+  genes: (slr1137 or slr2082) and (sll0813 or slr1136) and (slr1138 or slr2083)
   equation: (4) |M_h_c[c]| + (2) |M_focytc6_p[p]| + (0.5) |M_o2_p[p]| => (2) |M_h_p[p]|
     + (2) |M_ficytc6_p[p]| + |M_h2o_p[p]|
   subsystem: Oxidative phosphorylation
 - id: R_CYPHYC
   name: Cyanophycinase
+  genes: slr2001
   equation: (2) |M_h2o_c[c]| + |M_cyanphy_c[c]| => |M_asp_DASH_L_c[c]| + |M_arg_DASH_L_c[c]|
     + |M_precyanphy_c[c]|
   subsystem: Cyanophycin metabolism
 - id: R_CYPHYS
   name: Cyanophycin sinthetase
+  genes: slr2002
   equation: (2) |M_atp_c[c]| + |M_asp_DASH_L_c[c]| + |M_arg_DASH_L_c[c]| + |M_precyanphy_c[c]|
     => (2) |M_adp_c[c]| + (2) |M_h_c[c]| + (2) |M_pi_c[c]| + |M_cyanphy_c[c]|
   subsystem: Cyanophycin metabolism
 - id: R_CYRDAAT
   name: cob(I)yrinic acid a,c-diamide adenosyltransferase
+  genes: slr0260
   equation: '|M_atp_c[c]| + |M_h_c[c]| + |M_co1dam_c[c]| => |M_adcobdam_c[c]| + |M_pppi_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_CYRDAR
@@ -803,10 +975,12 @@
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_CYSS
   name: cysteine synthase
+  genes: slr1842 or sll0712
   equation: '|M_acser_c[c]| + |M_h2s_c[c]| => |M_h_c[c]| + |M_ac_c[c]| + |M_cys_DASH_L_c[c]|'
   subsystem: Sulfur Cysteine and methionine metabolism
 - id: R_CYSTA
   name: cysteine transaminase
+  genes: sll0402
   equation: '|M_akg_c[c]| + |M_cys_DASH_L_c[c]| <=> |M_glu_DASH_L_c[c]| + |M_mercppyr_c[c]|'
   subsystem: Sulfur Cysteine and methionine metabolism
 - id: R_CYSTL
@@ -816,15 +990,18 @@
   subsystem: Others
 - id: R_CYSTRS
   name: Cysteinyl-tRNA synthetase
+  genes: slr0958
   equation: '|M_atp_c[c]| + |M_cys_DASH_L_c[c]| + |M_trnacys_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_cystrna_c[c]|'
   subsystem: Sulfur Cysteine and methionine metabolism
 - id: R_CYTBDpp
   name: cytochrome oxidase bd (plastocianine-8_ 2 protons) (periplasm)
+  genes: slr1379 and slr1380
   equation: '|M_pqh2_p[p]| + (0.5) |M_o2_p[p]| => |M_pq_p[p]| + |M_h2o_p[p]|'
   subsystem: Oxidative phosphorylation
 - id: R_CYTBDu
   name: cytochrome oxidase bd (plastocianine-8_ 2 protons) (lumen)
+  genes: slr1379 and slr1380
   equation: '|M_pqh2_u[u]| + (0.5) |M_o2_u[u]| => |M_pq_u[u]| + |M_h2o_u[u]|'
   subsystem: Photosynthesis
 - id: R_CYTDH
@@ -833,6 +1010,7 @@
   subsystem: Purine metabolism
 - id: R_CYTK1
   name: cytidylate kinase (CMP)
+  genes: sll1249
   equation: '|M_atp_c[c]| + |M_cmp_c[c]| <=> |M_adp_c[c]| + |M_cdp_c[c]|'
   subsystem: Pyrimidine metabolism
 - id: R_Cotpp
@@ -841,154 +1019,189 @@
   subsystem: Transport
 - id: R_DAPDC
   name: diaminopimelate decarboxylase
+  genes: sll0504
   equation: '|M_h_c[c]| + |M_26dap_DASH_M_c[c]| => |M_co2_c[c]| + |M_lys_DASH_L_c[c]|'
   subsystem: Lysine metabolism
 - id: R_DAPE
   name: diaminopimelate epimerase
+  genes: slr1665
   equation: '|M_26dap_DASH_LL_c[c]| <=> |M_26dap_DASH_M_c[c]|'
   subsystem: Lysine metabolism
 - id: R_DASYN160
   name: CDP-diacylglycerol synthetase (n-C16_0)
+  genes: slr1369
   equation: '|M_h_c[c]| + |M_pa160_c[c]| + |M_ctp_c[c]| => |M_ppi_c[c]| + |M_cdpdhdecg_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_DASYN161
   name: CDP-diacylglycerol synthetase (n-C16_1)
+  genes: slr1369
   equation: '|M_h_c[c]| + |M_pa161_c[c]| + |M_ctp_c[c]| => |M_ppi_c[c]| + |M_cdpdhdec9eg_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_DASYN180
   name: CDP-diacylglycerol synthetase (n-C18_0)
+  genes: slr1369
   equation: '|M_h_c[c]| + |M_pa180_c[c]| + |M_ctp_c[c]| => |M_ppi_c[c]| + |M_cdpdodecg_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_DASYN181
   name: CDP-diacylglycerol synthetase (n-C18_1)
+  genes: slr1369
   equation: '|M_h_c[c]| + |M_pa181_c[c]| + |M_ctp_c[c]| => |M_ppi_c[c]| + |M_cdpdodec11eg_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_DASYN181_LPAREN_9_RPAREN_
   name: CDP-diacylglycerol synthetase (n-C18_1)
+  genes: slr1369
   equation: '|M_h_c[c]| + |M_pa181_9_c[c]| + |M_ctp_c[c]| => |M_ppi_c[c]| + |M_cdpdodec9eg_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_DASYN182_LPAREN_9_12_RPAREN_
   name: CDP-diacylglycerol synthetase (n-C18_2)
+  genes: slr1369
   equation: '|M_h_c[c]| + |M_pa182_9_12_c[c]| + |M_ctp_c[c]| => |M_ppi_c[c]| + |M_cdpdodec912eg_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_DASYN183_LPAREN_6_9_12_RPAREN_
   name: CDP-diacylglycerol synthetase (n-C18_3)
+  genes: slr1369
   equation: '|M_h_c[c]| + |M_pa183_6_9_12_c[c]| + |M_ctp_c[c]| => |M_ppi_c[c]| +
     |M_cdpdodec6912eg_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_DASYN183_LPAREN_9_12_15_RPAREN_
   name: CDP-diacylglycerol synthetase (n-C18_3)
+  genes: slr1369
   equation: '|M_h_c[c]| + |M_pa183_9_12_15_c[c]| + |M_ctp_c[c]| => |M_ppi_c[c]| +
     |M_cdpdodec91215eg_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_DASYN184_LPAREN_6_9_12_15_RPAREN_
   name: CDP-diacylglycerol synthetase (n-C18_4)
+  genes: slr1369
   equation: '|M_h_c[c]| + |M_pa184_6_9_12_15_c[c]| + |M_ctp_c[c]| => |M_ppi_c[c]|
     + |M_cdpdodec691215eg_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_DB4PS
   name: 3,4-Dihydroxy-2-butanone-4-phosphate synthase
+  genes: sll1894
   equation: '|M_ru5p_DASH_D_c[c]| => |M_h_c[c]| + |M_db4p_c[c]| + |M_for_c[c]|'
   subsystem: Riboflavin metabolism
 - id: R_DBTSr
   name: dethiobiotin synthase
+  genes: slr0523
   equation: '|M_atp_c[c]| + |M_co2_c[c]| + |M_dann_c[c]| <=> |M_adp_c[c]| + (3) |M_h_c[c]|
     + |M_pi_c[c]| + |M_dtbt_c[c]|'
   subsystem: Biotin metabolism
 - id: R_DCTPD
   name: dCTP deaminase
+  genes: sll1258
   equation: '|M_h_c[c]| + |M_h2o_c[c]| + |M_dctp_c[c]| => |M_nh4_c[c]| + |M_dutp_c[c]|'
   subsystem: Pyrimidine metabolism
 - id: R_DCTPD2
   name: dCTP deaminase
+  genes: sll1258
   equation: '|M_h_c[c]| + |M_h2o_c[c]| + |M_ctp_c[c]| => |M_nh4_c[c]| + |M_utp_c[c]|'
   subsystem: Pyrimidine metabolism
 - id: R_DDPA
   name: 3-deoxy-D-arabino-heptulosonate 7-phosphate synthetase
+  genes: sll0934
   equation: '|M_h2o_c[c]| + |M_e4p_c[c]| + |M_pep_c[c]| => |M_pi_c[c]| + |M_2dda7p_c[c]|'
   subsystem: Phenylalanine tyrosine and tryptophan biosynthesis
 - id: R_DDPGA
   name: 2-dehydro-3-deoxy-phosphogluconate aldolase
+  genes: sll0107
   equation: '|M_4h2oglt_c[c]| <=> |M_pyr_c[c]| + |M_glx_c[c]|'
   subsystem: Glyoxylate and dicarboxylate metabolism
 - id: R_DES_12
   name: stearoyl-CoA desaturase (delta-12 desaturase)
+  genes: slr1350
   equation: (2) |M_h_c[c]| + |M_o2_c[c]| + |M_octe_LPAREN_9_RPAREN_ACP_c[c]| + (2)
     |M_fdxr_DASH_2_2_c[c]| => (2) |M_h2o_c[c]| + |M_octe_LPAREN_9_12_RPAREN_ACP_c[c]|
     + (2) |M_fdxo_DASH_2_2_c[c]|
   subsystem: Fatty acid biosynthesis
 - id: R_DES_15
   name: stearoyl-CoA desaturase (delta-15 desaturase)
+  genes: sll1441
   equation: (2) |M_h_c[c]| + |M_o2_c[c]| + |M_octe_LPAREN_9_12_RPAREN_ACP_c[c]| +
     (2) |M_fdxr_DASH_2_2_c[c]| => (2) |M_h2o_c[c]| + (2) |M_fdxo_DASH_2_2_c[c]| +
     |M_octe_LPAREN_9_12_15_RPAREN_ACP_c[c]|
   subsystem: Fatty acid biosynthesis
 - id: R_DES_6
   name: stearoyl-CoA desaturase (delta-6 desaturase)
+  genes: sll0262
   equation: (2) |M_h_c[c]| + |M_o2_c[c]| + (2) |M_fdxr_DASH_2_2_c[c]| + |M_octe_LPAREN_9_12_15_RPAREN_ACP_c[c]|
     => (2) |M_h2o_c[c]| + |M_octe_LPAREN_6_9_12_15_RPAREN_ACP_c[c]| + (2) |M_fdxo_DASH_2_2_c[c]|
   subsystem: Fatty acid biosynthesis
 - id: R_DES_6B
   name: stearoyl-CoA desaturase (delta-6 desaturase)
+  genes: sll0262
   equation: (2) |M_h_c[c]| + |M_o2_c[c]| + |M_octe_LPAREN_9_12_RPAREN_ACP_c[c]| +
     (2) |M_fdxr_DASH_2_2_c[c]| => (2) |M_h2o_c[c]| + |M_octe_LPAREN_6_9_12_RPAREN_ACP_c[c]|
     + (2) |M_fdxo_DASH_2_2_c[c]|
   subsystem: Fatty acid biosynthesis
 - id: R_DES_9
   name: stearoyl-CoA desaturase (delta-9 desaturase)
+  genes: sll0541
   equation: (2) |M_h_c[c]| + |M_o2_c[c]| + |M_ocdcaACP_c[c]| + (2) |M_fdxr_DASH_2_2_c[c]|
     => (2) |M_h2o_c[c]| + |M_octe_LPAREN_9_RPAREN_ACP_c[c]| + (2) |M_fdxo_DASH_2_2_c[c]|
   subsystem: Fatty acid biosynthesis
 - id: R_DGDG160
   name: digalactosyldiacylglycerol synthase (n-C16_0)
+  genes: slr1508
   equation: '|M_udpgal_c[c]| + |M_mgdg160_c[c]| => |M_dgdg160_c[c]| + |M_udp_c[c]|'
   subsystem: Galactolipids metabolism
 - id: R_DGDG161
   name: digalactosyldiacylglycerol synthase (n-C16_1)
+  genes: slr1508
   equation: '|M_udpgal_c[c]| + |M_mgdg161_c[c]| => |M_udp_c[c]| + |M_dgdg161_c[c]|'
   subsystem: Galactolipids metabolism
 - id: R_DGDG180
   name: digalactosyldiacylglycerol synthase (n-C18_0)
+  genes: slr1508
   equation: '|M_udpgal_c[c]| + |M_mgdg180_c[c]| => |M_udp_c[c]| + |M_dgdg180_c[c]|'
   subsystem: Galactolipids metabolism
 - id: R_DGDG181
   name: digalactosyldiacylglycerol synthase (n-C18_1)
+  genes: slr1508
   equation: '|M_udpgal_c[c]| + |M_mgdg181_c[c]| => |M_udp_c[c]| + |M_dgdg181_c[c]|'
   subsystem: Galactolipids metabolism
 - id: R_DGDG181_LPAREN_9_RPAREN_
   name: digalactosyldiacylglycerol synthase (n-C18_1)
+  genes: slr1508
   equation: '|M_udpgal_c[c]| + |M_mgdg181_9_c[c]| => |M_udp_c[c]| + |M_dgdg181_9_c[c]|'
   subsystem: Galactolipids metabolism
 - id: R_DGDG182_LPAREN_9_12_RPAREN_
   name: digalactosyldiacylglycerol synthase (n-C18_2)
+  genes: slr1508
   equation: '|M_udpgal_c[c]| + |M_mgdg182_9_12_c[c]| => |M_udp_c[c]| + |M_dgdg182_9_12_c[c]|'
   subsystem: Galactolipids metabolism
 - id: R_DGDG183_LPAREN_6_9_12_RPAREN_
   name: digalactosyldiacylglycerol synthase (n-C18_3)
+  genes: slr1508
   equation: '|M_udpgal_c[c]| + |M_mgdg183_6_9_12_c[c]| => |M_udp_c[c]| + |M_dgdg183_6_9_12_c[c]|'
   subsystem: Galactolipids metabolism
 - id: R_DGDG183_LPAREN_9_12_15_RPAREN_
   name: digalactosyldiacylglycerol synthase (n-C18_3)
+  genes: slr1508
   equation: '|M_udpgal_c[c]| + |M_mgdg183_9_12_15_c[c]| => |M_udp_c[c]| + |M_dgdg183_9_12_15_c[c]|'
   subsystem: Galactolipids metabolism
 - id: R_DGDG184_LPAREN_6_9_12_15_RPAREN_
   name: digalactosyldiacylglycerol synthase (n-C18_4)
+  genes: slr1508
   equation: '|M_udpgal_c[c]| + |M_mgdg184_6_9_12_15_c[c]| => |M_udp_c[c]| + |M_dgdg184_6_9_12_15_c[c]|'
   subsystem: Galactolipids metabolism
 - id: R_DHAD1
   name: dihydroxy-acid dehydratase (2,3-dihydroxy-3-methylbutanoate)
+  genes: slr0452
   equation: '|M_23dhmb_c[c]| => |M_h2o_c[c]| + |M_3mob_c[c]|'
   subsystem: Valine leucine and isoleucine biosynthesis
 - id: R_DHAD2
   name: Dihydroxy-acid dehydratase (2,3-dihydroxy-3-methylpentanoate)
+  genes: slr0452
   equation: '|M_23dhmp_c[c]| => |M_h2o_c[c]| + |M_3mop_c[c]|'
   subsystem: Valine leucine and isoleucine biosynthesis
 - id: R_DHDPRy
   name: dihydrodipicolinate reductase (NADPH)
+  genes: sll1058
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_23dhdp_c[c]| => |M_nadp_c[c]| + |M_thdp_c[c]|'
   subsystem: Lysine metabolism
 - id: R_DHDPS
   name: dihydrodipicolinate synthase
+  genes: slr0550
   equation: '|M_pyr_c[c]| + |M_aspsa_c[c]| => |M_h_c[c]| + (2) |M_h2o_c[c]| + |M_23dhdp_c[c]|'
   subsystem: Lysine metabolism
 - id: R_DHFR
@@ -997,54 +1210,66 @@
   subsystem: Folate biosynthesis
 - id: R_DHFS
   name: dihydrofolate synthase
+  genes: slr2026
   equation: '|M_atp_c[c]| + |M_glu_DASH_L_c[c]| + |M_dhpt_c[c]| => |M_adp_c[c]| +
     |M_h_c[c]| + |M_pi_c[c]| + |M_dhf_c[c]|'
   subsystem: Folate biosynthesis
 - id: R_DHNAPHT
   name: 1,4-dihydroxy-2-naphthoate phytyltransferase
+  genes: slr1518
   equation: (2) |M_fdxo_DASH_2_2_c[c]| + |M_phdp_c[c]| + |M_dhna_c[c]| => |M_h_c[c]|
     + |M_co2_c[c]| + |M_ppi_c[c]| + (2) |M_fdxr_DASH_2_2_c[c]| + |M_dmtphllqne_c[c]|
   subsystem: Ubiquinone and other pterpenoids biosynthesis
 - id: R_DHNPA
   name: dihydroneopterin aldolase
+  genes: slr1626
   equation: '|M_dhnpt_c[c]| => |M_gcald_c[c]| + |M_2ahhmp_c[c]|'
   subsystem: Folate biosynthesis
 - id: R_DHORD
   name: dihydoorotic acid dehydrogenase
+  genes: slr1418
   equation: '|M_o2_c[c]| + |M_dhor_DASH_S_c[c]| <=> |M_h2o2_c[c]| + |M_orot_c[c]|'
   subsystem: Pyrimidine metabolism
 - id: R_DHORTS
   name: dihydroorotase
+  genes: sll1018 or slr0406
   equation: '|M_h2o_c[c]| + |M_dhor_DASH_S_c[c]| <=> |M_h_c[c]| + |M_cbasp_c[c]|'
   subsystem: Pyrimidine metabolism
 - id: R_DHPPDA
   name: diaminohydroxyphosphoribosylaminopyrimidine deaminase
+  genes: slr0066
   equation: '|M_h_c[c]| + |M_h2o_c[c]| + |M_25dhpp_c[c]| => |M_nh4_c[c]| + |M_5apru_c[c]|'
   subsystem: Riboflavin metabolism
 - id: R_DHQS
   name: 3-dehydroquinate synthase
+  genes: slr2130
   equation: '|M_2dda7p_c[c]| => |M_pi_c[c]| + |M_3dhq_c[c]|'
   subsystem: Phenylalanine tyrosine and tryptophan biosynthesis
 - id: R_DHQTi
   name: 3-dehydroquinate dehydratase, irreversible
+  genes: sll1112 or slr0752
   equation: '|M_3dhq_c[c]| => |M_h2o_c[c]| + |M_3dhsk_c[c]|'
   subsystem: Phenylalanine tyrosine and tryptophan biosynthesis
 - id: R_DMATT
   name: dimethylallyltranstransferase
+  genes: slr0739
   equation: '|M_dmpp_c[c]| + |M_ipdp_c[c]| => |M_ppi_c[c]| + |M_grdp_c[c]|'
   subsystem: Terpenoid backbone biosynthesis
 - id: R_DMPPS_syn
   name: 1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase (dmpp)
+  genes: slr0348
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_h2mb4p_c[c]| => |M_h2o_c[c]| + |M_nadp_c[c]|
     + |M_dmpp_c[c]|'
   subsystem: Terpenoid backbone biosynthesis
 - id: R_DMTPHT
   name: demethylphylloquinone methyltransferase
+  genes: sll1653
   equation: '|M_amet_c[c]| + |M_dmtphllqne_c[c]| => |M_h_c[c]| + |M_ahcys_c[c]| +
     |M_phllqne_c[c]|'
   subsystem: Ubiquinone and other pterpenoids biosynthesis
 - id: R_DNAMT_syn
   name: DNA (cytosine-5-)-methyltransferase
+  genes: slr0214
   equation: '|M_amet_c[c]| + |M_dna_c[c]| => |M_h_c[c]| + |M_ahcys_c[c]| + |M_dna5mtc_c[c]|'
   subsystem: Sulfur Cysteine and methionine metabolism
 - id: R_DNMPPA
@@ -1057,14 +1282,17 @@
   subsystem: Folate biosynthesis
 - id: R_DPCOAK
   name: dephospho-CoA kinase
+  genes: slr0553
   equation: '|M_atp_c[c]| + |M_dpcoa_c[c]| => |M_adp_c[c]| + |M_h_c[c]| + |M_coa_c[c]|'
   subsystem: Pantothenate and CoA biosynthesis
 - id: R_DPGM
   name: Diphosphoglyceromutase
+  genes: slr1945
   equation: '|M_13dpg_c[c]| <=> |M_h_c[c]| + |M_23dpg_c[c]|'
   subsystem: Glycolysis/Gluconeogenesis
 - id: R_DPPS
   name: decaprenyl synthase
+  genes: sll0506
   equation: '|M_frdp_c[c]| + (7) |M_ipdp_c[c]| => (7) |M_ppi_c[c]| + |M_decdp_c[c]|'
   subsystem: Terpenoid backbone biosynthesis
 - id: R_DPR
@@ -1077,10 +1305,12 @@
   subsystem: Pentose phosphate pathway
 - id: R_DRPA
   name: deoxyribose-phosphate aldolase
+  genes: sll1776
   equation: '|M_2dr5p_c[c]| => |M_acald_c[c]| + |M_g3p_c[c]|'
   subsystem: Pentose phosphate pathway
 - id: R_DTMPK
   name: dTMP kinase
+  genes: slr0379
   equation: '|M_atp_c[c]| + |M_dtmp_c[c]| <=> |M_adp_c[c]| + |M_dtdp_c[c]|'
   subsystem: Pyrimidine metabolism
 - id: R_DVOCHR
@@ -1089,77 +1319,93 @@
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_DXPRIi
   name: 1-deoxy-D-xylulose reductoisomerase
+  genes: sll0019
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_dxyl5p_c[c]| => |M_nadp_c[c]| + |M_2me4p_c[c]|'
   subsystem: Sterol biosynthesis
 - id: R_DXPS
   name: 1-deoxy-D-xylulose 5-phosphate synthase
+  genes: sll1945
   equation: '|M_h_c[c]| + |M_pyr_c[c]| + |M_g3p_c[c]| => |M_co2_c[c]| + |M_dxyl5p_c[c]|'
   subsystem: Sterol biosynthesis
 - id: R_EAR100y
   name: enoyl-[acyl-carrier-protein] reductase (NADPH) (n-C10_0)
+  genes: slr1051
   equation: '|M_h_c[c]| + |M_tdec2eACP_c[c]| + |M_nadph_c[c]| => |M_nadp_c[c]| +
     |M_dcaACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_EAR120y
   name: enoyl-[acyl-carrier-protein] reductase (NADPH) (n-C12_0)
+  genes: slr1051
   equation: '|M_h_c[c]| + |M_tddec2eACP_c[c]| + |M_nadph_c[c]| => |M_nadp_c[c]| +
     |M_ddcaACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_EAR121y
   name: enoyl-[acyl-carrier-protein] reductase (NADPH) (n-C12_1)
+  genes: slr1051
   equation: '|M_h_c[c]| + |M_t3c5ddeceACP_c[c]| + |M_nadph_c[c]| => |M_nadp_c[c]|
     + |M_cddec5eACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_EAR140y
   name: enoyl-[acyl-carrier-protein] reductase (NADPH) (n-C14_0)
+  genes: slr1051
   equation: '|M_h_c[c]| + |M_tmrs2eACP_c[c]| + |M_nadph_c[c]| => |M_nadp_c[c]| +
     |M_myrsACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_EAR141y
   name: enoyl-[acyl-carrier-protein] reductase (NADPH) (n-C14_1)
+  genes: slr1051
   equation: '|M_h_c[c]| + |M_t3c7mrseACP_c[c]| + |M_nadph_c[c]| => |M_nadp_c[c]|
     + |M_tdeACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_EAR160y
   name: enoyl-[acyl-carrier-protein] reductase (NADPH) (n-C16_0)
+  genes: slr1051
   equation: '|M_h_c[c]| + |M_tpalm2eACP_c[c]| + |M_nadph_c[c]| => |M_nadp_c[c]| +
     |M_palmACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_EAR161y
   name: enoyl-[acyl-carrier-protein] reductase (NADPH) (n-C16_1)
+  genes: slr1051
   equation: '|M_h_c[c]| + |M_t3c9palmeACP_c[c]| + |M_nadph_c[c]| => |M_nadp_c[c]|
     + |M_hdeACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_EAR180y
   name: enoyl-[acyl-carrier-protein] reductase (NADPH) (n-C18_0)
+  genes: slr1051
   equation: '|M_h_c[c]| + |M_toctd2eACP_c[c]| + |M_nadph_c[c]| => |M_nadp_c[c]| +
     |M_ocdcaACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_EAR181y
   name: enoyl-[acyl-carrier-protein] reductase (NADPH) (n-C18_1)
+  genes: slr1051
   equation: '|M_h_c[c]| + |M_t3c11vaceACP_c[c]| + |M_nadph_c[c]| => |M_nadp_c[c]|
     + |M_octeACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_EAR40y
   name: enoyl-[acyl-carrier-protein] reductase (NADPH) (n-C4_0)
+  genes: slr1051
   equation: '|M_h_c[c]| + |M_but2eACP_c[c]| + |M_nadph_c[c]| => |M_nadp_c[c]| + |M_butACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_EAR60y
   name: enoyl-[acyl-carrier-protein] reductase (NADPH) (n-C6_0)
+  genes: slr1051
   equation: '|M_h_c[c]| + |M_thex2eACP_c[c]| + |M_nadph_c[c]| => |M_nadp_c[c]| +
     |M_hexACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_EAR80y
   name: enoyl-[acyl-carrier-protein] reductase (NADPH) (n-C8_0)
+  genes: slr1051
   equation: '|M_h_c[c]| + |M_toct2eACP_c[c]| + |M_nadph_c[c]| => |M_nadp_c[c]| +
     |M_ocACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_EHGLAT
   name: L-erythro-4-Hydroxyglutamate_2-oxoglutarate aminotransferase
+  genes: sll0402 or sll0480 or slr0036
   equation: '|M_akg_c[c]| + |M_e4hglu_c[c]| => |M_glu_DASH_L_c[c]| + |M_4h2oglt_c[c]|'
   subsystem: Arginine and proline metabolism
 - id: R_ENO
   name: enolase
+  genes: slr0752
   equation: '|M_2pg_c[c]| <=> |M_h2o_c[c]| + |M_pep_c[c]|'
   subsystem: Glycolysis/Gluconeogenesis
 - id: R_Ec_biomass_SynAuto
@@ -1305,31 +1551,38 @@
   subsystem: Biomass
 - id: R_FBA
   name: fructose-bisphosphate aldolase
+  genes: slr0943 or sll0018
   equation: '|M_fdp_c[c]| <=> |M_g3p_c[c]| + |M_dhap_c[c]|'
   subsystem: Glycolysis/Gluconeogenesis
 - id: R_FBA2
   name: D-Fructose 1-phosphate D-glyceraldehyde-3-phosphate-lyase
+  genes: sll0018
   equation: '|M_f1p_c[c]| <=> |M_glyald_c[c]| + |M_dhap_c[c]|'
   subsystem: Fructose and mannose metabolism
 - id: R_FBA3
   name: Sedoheptulose 1,7-bisphosphate D-glyceraldehyde-3-phosphate-lyase
+  genes: slr0943 or sll0018
   equation: '|M_s17bp_c[c]| <=> |M_e4p_c[c]| + |M_dhap_c[c]|'
   subsystem: Glycolysis/Gluconeogenesis
 - id: R_FBP
   name: fructose-bisphosphatase
+  genes: slr0952 or slr2094
   equation: '|M_h2o_c[c]| + |M_fdp_c[c]| => |M_pi_c[c]| + |M_f6p_c[c]|'
   subsystem: Glycolysis/Gluconeogenesis
 - id: R_FCLT
   name: Ferrochelatase
+  genes: slr0839
   equation: '|M_fe2_c[c]| + |M_ppp9_c[c]| => (2) |M_h_c[c]| + |M_pheme_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_FDH6pp
   name: Formate Dehydrogenase (ferrocytochrome c6) (periplasm)
+  genes: sll1359
   equation: (2) |M_ficytc6_p[p]| + |M_for_c[c]| => |M_h_c[c]| + |M_co2_c[c]| + (2)
     |M_focytc6_p[p]|
   subsystem: Glyoxylate and dicarboxylate metabolism
 - id: R_FE2abcpp
   name: iron (II) transport via ABC system (periplasm)
+  genes: Sll1392
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_fe2_p[p]| => |M_adp_c[c]| + |M_h_c[c]|
     + |M_pi_c[c]| + |M_fe2_c[c]|'
   subsystem: Transport
@@ -1339,6 +1592,7 @@
   subsystem: Transport
 - id: R_FE3abc
   name: iron (III) transport via ABC system
+  genes: (slr1295 and slr0327 and sll1878) or (slr0513 and slr0327 and sll1878)
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_fe3_p[p]| => |M_adp_c[c]| + |M_h_c[c]|
     + |M_pi_c[c]| + |M_fe3_c[c]|'
   subsystem: Transport
@@ -1348,36 +1602,44 @@
   subsystem: Transport
 - id: R_FMETTRS
   name: Methionyl-tRNA formyltransferase
+  genes: slr0070
   equation: '|M_10fthf_c[c]| + |M_mettrna_c[c]| => |M_h_c[c]| + |M_thf_c[c]| + |M_fmettrna_c[c]|'
   subsystem: Sulfur Cysteine and methionine metabolism
 - id: R_FMNAT
   name: FMN adenylyltransferase
+  genes: slr1882
   equation: '|M_atp_c[c]| + |M_h_c[c]| + |M_fmn_c[c]| => |M_ppi_c[c]| + |M_fad_c[c]|'
   subsystem: Riboflavin metabolism
 - id: R_FNOR
   name: ferredoxin---NADP+ reductase
+  genes: (sll1382 or slr0150 or slr1828 or ssl0020) and sll0248 and slr1643
   equation: '|M_h_c[c]| + |M_nadp_c[c]| + (2) |M_fdxr_DASH_2_2_c[c]| <=> |M_nadph_c[c]|
     + (2) |M_fdxo_DASH_2_2_c[c]|'
   subsystem: Photosynthesis
 - id: R_FOLD3
   name: dihydropteroate synthase
+  genes: slr1093
   equation: '|M_2ahhmd_c[c]| + |M_4abz_c[c]| => |M_ppi_c[c]| + |M_dhpt_c[c]|'
   subsystem: Folate biosynthesis
 - id: R_FOMETR
   name: aminomethyltransferase
+  genes: sll0171
   equation: '|M_h_c[c]| + |M_5fthf_c[c]| <=> |M_h2o_c[c]| + |M_methf_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_FQR
   name: Cyclic Electron Flow
+  genes: ssr2016
   equation: (2) |M_h_c[c]| + |M_pq_u[u]| + (2) |M_fdxr_DASH_2_2_c[c]| => |M_pqh2_u[u]|
     + (2) |M_fdxo_DASH_2_2_c[c]|
   subsystem: Photosynthesis
 - id: R_FRTT
   name: farnesyltranstransferase
+  genes: slr0739
   equation: '|M_frdp_c[c]| + |M_ipdp_c[c]| => |M_ppi_c[c]| + |M_ggdp_c[c]|'
   subsystem: Sterol biosynthesis
 - id: R_FRUt3
   name: D-fructose transport in via proton symport (periplasm)
+  genes: sll0771
   equation: '|M_h_p[p]| + |M_fru_p[p]| => |M_h_c[c]| + |M_fru_c[c]|'
   subsystem: Transport
 - id: R_FRUtex
@@ -1386,6 +1648,7 @@
   subsystem: Transport
 - id: R_FTHFD
   name: formyltetrahydrofolate deformylase
+  genes: sll0070
   equation: '|M_h2o_c[c]| + |M_10fthf_c[c]| => |M_h_c[c]| + |M_thf_c[c]| + |M_for_c[c]|'
   subsystem: Glyoxylate and dicarboxylate metabolism
 - id: R_FTHFLi
@@ -1395,11 +1658,13 @@
   subsystem: Folate biosynthesis
 - id: R_FTR
   name: ferredoxin_thioredoxin reductase
+  genes: sll0554
   equation: (2) |M_h_c[c]| + (2) |M_fdxr_DASH_2_2_c[c]| + |M_trdox_c[c]| => (2) |M_fdxo_DASH_2_2_c[c]|
     + |M_trdrd_c[c]|
   subsystem: Others
 - id: R_FUM
   name: fumarase
+  genes: slr0018
   equation: '|M_h2o_c[c]| + |M_fum_c[c]| <=> |M_mal_DASH_L_c[c]|'
   subsystem: Citrate cycle (TCA cycle)
 - id: R_FUMtex
@@ -1412,63 +1677,77 @@
   subsystem: Transport
 - id: R_G1PACT
   name: glucosamine-1-phosphate N-acetyltransferase
+  genes: sll0899
   equation: '|M_accoa_c[c]| + |M_gam1p_c[c]| => |M_h_c[c]| + |M_coa_c[c]| + |M_acgam1p_c[c]|'
   subsystem: Aminosugars metabolism
 - id: R_G1PTT
   name: glucose-1-phosphate thymidylyltransferase
+  genes: sll0207 or slr0983
   equation: '|M_h_c[c]| + |M_dttp_c[c]| + |M_g1p_c[c]| => |M_ppi_c[c]| + |M_dtdpglu_c[c]|'
   subsystem: Nucleotide sugars metabolism
 - id: R_G1SATi
   name: glutamate-1-semialdehyde aminotransferase
+  genes: sll0017
   equation: '|M_glu1sa_c[c]| => |M_5aop_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_G3PAT160
   name: glycerol-3-phosphate acyltransferase (C16_0)
+  genes: sll1510 or sll1973
   equation: '|M_palmACP_c[c]| + |M_glyc3p_c[c]| => |M_ACP_c[c]| + |M_1hdecg3p_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_G3PAT161
   name: glycerol-3-phosphate acyltransferase (C16_1)
+  genes: sll1510 or sll1973
   equation: '|M_hdeACP_c[c]| + |M_glyc3p_c[c]| => |M_ACP_c[c]| + |M_1hdec9eg3p_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_G3PAT180
   name: glycerol-3-phosphate acyltransferase (C18_0)
+  genes: sll1510 or sll1973
   equation: '|M_ocdcaACP_c[c]| + |M_glyc3p_c[c]| => |M_ACP_c[c]| + |M_1odecg3p_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_G3PAT181
   name: glycerol-3-phosphate acyltransferase (C18_1)
+  genes: sll1510 or sll1973
   equation: '|M_octeACP_c[c]| + |M_glyc3p_c[c]| => |M_ACP_c[c]| + |M_1odec11eg3p_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_G3PAT181_LPAREN_9_RPAREN_
   name: glycerol-3-phosphate acyltransferase (C18_1)
+  genes: sll1510 or sll1973
   equation: '|M_octe_LPAREN_9_RPAREN_ACP_c[c]| + |M_glyc3p_c[c]| => |M_ACP_c[c]|
     + |M_1odec9eg3p_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_G3PAT182_LPAREN_9_12_RPAREN_
   name: glycerol-3-phosphate acyltransferase (C18_2)
+  genes: sll1510 or sll1973
   equation: '|M_octe_LPAREN_9_12_RPAREN_ACP_c[c]| + |M_glyc3p_c[c]| => |M_ACP_c[c]|
     + |M_1odec912eg3p_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_G3PAT183_LPAREN_6_9_12_RPAREN_
   name: glycerol-3-phosphate acyltransferase (C18_3)
+  genes: sll1510 or sll1973
   equation: '|M_octe_LPAREN_6_9_12_15_RPAREN_ACP_c[c]| + |M_glyc3p_c[c]| => |M_ACP_c[c]|
     + |M_1odec691215eg3p_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_G3PAT183_LPAREN_9_12_15_RPAREN_
   name: glycerol-3-phosphate acyltransferase (C18_3)
+  genes: sll1510 or sll1973
   equation: '|M_octe_LPAREN_9_12_15_RPAREN_ACP_c[c]| + |M_glyc3p_c[c]| => |M_ACP_c[c]|
     + |M_1odec91215eg3p_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_G3PAT184_LPAREN_6_9_12_15_RPAREN_
   name: glycerol-3-phosphate acyltransferase (C18_4)
+  genes: sll1510 or sll1973
   equation: '|M_octe_LPAREN_6_9_12_RPAREN_ACP_c[c]| + |M_glyc3p_c[c]| => |M_ACP_c[c]|
     + |M_1odec6912eg3p_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_G3PD
   name: glycerol-3-phosphate dehydrogenase (FAD)
+  genes: sll1085
   equation: '|M_fad_c[c]| + |M_glyc3p_c[c]| => |M_dhap_c[c]| + |M_fadh2_c[c]|'
   subsystem: Glycerolipid metabolism
 - id: R_G3PD2
   name: glycerol-3-phosphate dehydrogenase (NAD)
+  genes: slr1755
   equation: '|M_nad_c[c]| + |M_glyc3p_c[c]| <=> |M_h_c[c]| + |M_nadh_c[c]| + |M_dhap_c[c]|'
   subsystem: Glycerolipid metabolism
 - id: R_G5SADs
@@ -1477,16 +1756,19 @@
   subsystem: Others
 - id: R_G5SD
   name: glutamate-5-semialdehyde dehydrogenase
+  genes: sll0373 or sll0461
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_glu5p_c[c]| => |M_nadp_c[c]| + |M_pi_c[c]|
     + |M_glu5sa_c[c]|'
   subsystem: Urea cycle and metabolism of amino groups
 - id: R_G6PBDH
   name: beta-D-Glucose-6-phosphate_NADP+ 1-oxoreductase
+  genes: slr1843
   equation: '|M_g6p_DASH_B_c[c]| + |M_nadp_c[c]| => |M_h_c[c]| + |M_nadph_c[c]| +
     |M_6pgl_c[c]|'
   subsystem: Glutathione metabolism
 - id: R_G6PDH2
   name: glucose 6-phosphate dehydrogenase
+  genes: slr1843
   equation: '|M_g6p_c[c]| + |M_nadp_c[c]| => |M_h_c[c]| + |M_nadph_c[c]| + |M_6pgl_c[c]|'
   subsystem: Pentose phosphate pathway
 - id: R_GALK
@@ -1499,20 +1781,24 @@
   subsystem: Starch and sucrose metabolism
 - id: R_GAPDi
   name: glyceraldehyde-3-phosphate dehydrogenase
+  genes: slr0884
   equation: '|M_nad_c[c]| + |M_pi_c[c]| + |M_g3p_c[c]| => |M_h_c[c]| + |M_nadh_c[c]|
     + |M_13dpg_c[c]|'
   subsystem: Glycolysis/Gluconeogenesis
 - id: R_GAPDi_LPAREN_nadp_RPAREN_
   name: glyceraldehyde-3-phosphate dehydrogenase (NAD(P)+) (phosphorylating)
+  genes: sll1342
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_13dpg_c[c]| => |M_nadp_c[c]| + |M_pi_c[c]|
     + |M_g3p_c[c]|'
   subsystem: Carbon fixation
 - id: R_GARFT
   name: phosphoribosylglycinamide formyltransferase
+  genes: slr0477 or slr0861
   equation: '|M_10fthf_c[c]| + |M_gar_c[c]| <=> |M_h_c[c]| + |M_thf_c[c]| + |M_fgam_c[c]|'
   subsystem: Purine metabolism
 - id: R_GCALDD
   name: Glycolaldehyde dehydrogenase
+  genes: slr0091
   equation: '|M_nad_c[c]| + |M_h2o_c[c]| + |M_gcald_c[c]| => (2) |M_h_c[c]| + |M_nadh_c[c]|
     + |M_glyclt_c[c]|'
   subsystem: Others
@@ -1522,40 +1808,49 @@
   subsystem: Carotenoid Biosynthesis
 - id: R_GF6PTA
   name: glutamine-fructose-6-phosphate transaminase
+  genes: sll0220
   equation: '|M_gln_DASH_L_c[c]| + |M_f6p_c[c]| => |M_glu_DASH_L_c[c]| + |M_gam6p_c[c]|'
   subsystem: Glutamate metabolism
 - id: R_GFUCS
   name: GDP-L-fucose synthase
+  genes: sll1213
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_gdpddman_c[c]| => |M_nadp_c[c]| + |M_gdpfuc_c[c]|'
   subsystem: Fructose and mannose metabolism
 - id: R_GGDPR
   name: geranylgeranyl diphosphate reductase
+  genes: sll1091
   equation: (3) |M_h_c[c]| + (3) |M_nadph_c[c]| + |M_ggdp_c[c]| => (3) |M_nadp_c[c]|
     + |M_phdp_c[c]|
   subsystem: Terpenoid backbone biosynthesis
 - id: R_GGPP
   name: glucosylglycerol 3-phosphatase
+  genes: slr0746
   equation: '|M_h2o_c[c]| + |M_glcglycp_c[c]| => |M_pi_c[c]| + |M_glcglyc_c[c]|'
   subsystem: Starch and sucrose metabolism
 - id: R_GGPS
   name: glucosylglycerol-phosphate synthase
+  genes: sll1566
   equation: '|M_glyc3p_c[c]| + |M_adpglc_c[c]| => |M_adp_c[c]| + |M_h_c[c]| + |M_glcglycp_c[c]|'
   subsystem: Starch and sucrose metabolism
 - id: R_GHMT2r
   name: glycine hydroxymethyltransferase, reversible
+  genes: sll1931
   equation: '|M_thf_c[c]| + |M_ser_DASH_L_c[c]| <=> |M_h2o_c[c]| + |M_gly_c[c]| +
     |M_mlthf_c[c]|'
   subsystem: Arginine and proline metabolism
 - id: R_GK1
   name: guanylate kinase (GMP_ATP)
+  genes: slr1123
   equation: '|M_atp_c[c]| + |M_gmp_c[c]| <=> |M_adp_c[c]| + |M_gdp_c[c]|'
   subsystem: Purine metabolism
 - id: R_GLBRAN2
   name: 1,4-alpha-glucan branching enzyme (glycogen -> bglycogen)
+  genes: sll0158
   equation: '|M_glycogen_c[c]| => |M_bglycogen_c[c]|'
   subsystem: Starch and sucrose metabolism
 - id: R_GLCGLYCabcpp_syn
   name: Glucosylglycerol ABC transporter (periplasm)
+  genes: slr0747 and slr0529 and slr0530 and slr0531
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_glcglyc_p[p]| => |M_adp_c[c]| + |M_h_c[c]|
     + |M_pi_c[c]| + |M_glcglyc_c[c]|'
   subsystem: Transport
@@ -1565,18 +1860,22 @@
   subsystem: Transport
 - id: R_GLCP
   name: glycogen phosphorylase
+  genes: sll0158 or sll1356 or slr1367
   equation: '|M_pi_c[c]| + |M_glycogen_c[c]| => |M_g1p_c[c]|'
   subsystem: Starch and sucrose metabolism
 - id: R_GLCP2
   name: glycogen phosphorylase
+  genes: sll1356 or slr1367
   equation: '|M_pi_c[c]| + |M_bglycogen_c[c]| => |M_g1p_c[c]|'
   subsystem: Starch and sucrose metabolism
 - id: R_GLCS1
   name: glycogen synthase (ADPGlc)
+  genes: sll0945 or sll1393
   equation: '|M_adpglc_c[c]| => |M_adp_c[c]| + |M_h_c[c]| + |M_glycogen_c[c]|'
   subsystem: Starch and sucrose metabolism
 - id: R_GLCt2pp
   name: D-glucose transport in via proton symport (periplasm)
+  genes: sll0771
   equation: '|M_h_p[p]| + |M_glc_DASH_D_p[p]| <=> |M_glc_DASH_D_c[c]| + |M_h_c[c]|'
   subsystem: Transport
 - id: R_GLCtex
@@ -1585,25 +1884,31 @@
   subsystem: Transport
 - id: R_GLGC
   name: glucose-1-phosphate adenylyltransferase
+  genes: slr1176
   equation: '|M_atp_c[c]| + |M_h_c[c]| + |M_g1p_c[c]| => |M_ppi_c[c]| + |M_adpglc_c[c]|'
   subsystem: Starch and sucrose metabolism
 - id: R_GLMS_syn
   name: L-glutamate_ferredoxin oxidoreductase
+  genes: sll1499
   equation: (2) |M_h_c[c]| + |M_akg_c[c]| + |M_gln_DASH_L_c[c]| + (2) |M_fdxr_DASH_2_2_c[c]|
     => (2) |M_glu_DASH_L_c[c]| + (2) |M_fdxo_DASH_2_2_c[c]|
   subsystem: Nitrogen metabolism
 - id: R_GLNS
   name: glutamine synthetase
+  genes: slr0288 or slr1756
   equation: '|M_atp_c[c]| + |M_glu_DASH_L_c[c]| + |M_nh4_c[c]| => |M_adp_c[c]| +
     |M_h_c[c]| + |M_pi_c[c]| + |M_gln_DASH_L_c[c]|'
   subsystem: Nitrogen metabolism
 - id: R_GLNTRAT
   name: glutamyl-tRNA(Gln) amidotransferase
+  genes: slr0877 and sll1435 and slr0033
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_gln_DASH_L_c[c]| + |M_glutrna_LPAREN_gln_RPAREN__c[c]|
     => |M_adp_c[c]| + |M_h_c[c]| + |M_pi_c[c]| + |M_glu_DASH_L_c[c]| + |M_glntrna_c[c]|'
   subsystem: Glutamate metabolism
 - id: R_GLNabcpp
   name: L-glutamine transport via ABC system (periplasm)
+  genes: (slr0559 and sll0146 and slr0949 and slr0467 and slr1881) or (slr1735 and
+    sll1270)
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_gln_DASH_L_p[p]| => |M_adp_c[c]| +
     |M_h_c[c]| + |M_pi_c[c]| + |M_gln_DASH_L_c[c]|'
   subsystem: Transport
@@ -1613,56 +1918,68 @@
   subsystem: Transport
 - id: R_GLU5K
   name: glutamate 5-kinase
+  genes: slr2035
   equation: '|M_atp_c[c]| + |M_glu_DASH_L_c[c]| => |M_adp_c[c]| + |M_glu5p_c[c]|'
   subsystem: Urea cycle and metabolism of amino groups
 - id: R_GLUCYS
   name: gamma-glutamylcysteine synthetase
+  genes: slr1269
   equation: '|M_atp_c[c]| + |M_glu_DASH_L_c[c]| + |M_cys_DASH_L_c[c]| => |M_adp_c[c]|
     + |M_h_c[c]| + |M_pi_c[c]| + |M_glucys_c[c]|'
   subsystem: Glutamate metabolism
 - id: R_GLUDC
   name: Glutamate Decarboxylase
+  genes: sll1641
   equation: '|M_h_c[c]| + |M_glu_DASH_L_c[c]| => |M_co2_c[c]| + |M_4abut_c[c]|'
   subsystem: C5-Branched dibasic acid metabolism
 - id: R_GLUDy
   name: glutamate dehydrogenase (NADP)
+  genes: slr0710
   equation: '|M_h2o_c[c]| + |M_nadp_c[c]| + |M_glu_DASH_L_c[c]| <=> |M_h_c[c]| +
     |M_nadph_c[c]| + |M_akg_c[c]| + |M_nh4_c[c]|'
   subsystem: Nitrogen metabolism
 - id: R_GLUK_syn
   name: Glucokinase
+  genes: sll0593
   equation: '|M_atp_c[c]| + |M_glc_DASH_B_c[c]| => |M_adp_c[c]| + |M_h_c[c]| + |M_g6p_DASH_B_c[c]|'
   subsystem: Glycolysis/Gluconeogenesis
 - id: R_GLUN
   name: glutaminase
+  genes: slr2079
   equation: '|M_h2o_c[c]| + |M_gln_DASH_L_c[c]| => |M_glu_DASH_L_c[c]| + |M_nh4_c[c]|'
   subsystem: Nitrogen metabolism
 - id: R_GLUPRT
   name: glutamine phosphoribosyldiphosphate amidotransferase
+  genes: sll0757
   equation: '|M_h2o_c[c]| + |M_gln_DASH_L_c[c]| + |M_prpp_c[c]| => |M_ppi_c[c]| +
     |M_glu_DASH_L_c[c]| + |M_pram_c[c]|'
   subsystem: Purine metabolism
 - id: R_GLUR
   name: glutamate racemase
+  genes: slr1746
   equation: '|M_glu_DASH_D_c[c]| <=> |M_glu_DASH_L_c[c]|'
   subsystem: Glutamate metabolism
 - id: R_GLUSx
   name: glutamate synthase (NADH2)
+  genes: sll1502 and sll1027
   equation: '|M_h_c[c]| + |M_nadh_c[c]| + |M_akg_c[c]| + |M_gln_DASH_L_c[c]| => |M_nad_c[c]|
     + (2) |M_glu_DASH_L_c[c]|'
   subsystem: Nitrogen metabolism
 - id: R_GLUTRR
   name: glutamyl-tRNA reductase
+  genes: slr1808
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_glutrna_c[c]| => |M_nadp_c[c]| + |M_glu1sa_c[c]|
     + |M_trnaglu_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_GLUTRS
   name: Glutamyl-tRNA synthetase
+  genes: sll0179
   equation: '|M_atp_c[c]| + |M_glu_DASH_L_c[c]| + |M_trnaglu_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_glutrna_c[c]|'
   subsystem: Glutamate metabolism
 - id: R_GLUt4pp
   name: Na+/glutamate symport (periplasm)
+  genes: slr1145
   equation: '|M_glu_DASH_L_p[p]| + |M_na1_p[p]| => |M_glu_DASH_L_c[c]| + |M_na1_c[c]|'
   subsystem: Transport
 - id: R_GLUtex
@@ -1675,60 +1992,73 @@
   subsystem: Transport
 - id: R_GLXCL
   name: glyoxalate carboligase
+  genes: sll1981 and slr2088 and sll0065
   equation: '|M_h_c[c]| + (2) |M_glx_c[c]| => |M_co2_c[c]| + |M_2h3oppan_c[c]|'
   subsystem: Glyoxylate and dicarboxylate metabolism
 - id: R_GLXO3r
   name: glyoxylate dehydrogenase
+  genes: sll1556
   equation: '|M_o2_c[c]| + |M_h2o_c[c]| + |M_glx_c[c]| <=> |M_h_c[c]| + |M_h2o2_c[c]|
     + |M_oxa_c[c]|'
   subsystem: Glyoxylate and dicarboxylate metabolism
 - id: R_GLYALDDr
   name: D-Glyceraldehyde dehydrogenase
+  genes: slr0091
   equation: '|M_nad_c[c]| + |M_h2o_c[c]| + |M_glyald_c[c]| <=> (2) |M_h_c[c]| + |M_nadh_c[c]|
     + |M_glyc_DASH_R_c[c]|'
   subsystem: Glycerolipid metabolism
 - id: R_GLYCDx
   name: Glycerol dehydrogenase
+  genes: slr1167
   equation: '|M_nad_c[c]| + |M_glyc_c[c]| => |M_h_c[c]| + |M_nadh_c[c]| + |M_dha_c[c]|'
   subsystem: Glycerolipid metabolism
 - id: R_GLYCK
   name: glycerate kinase
+  genes: slr1840
   equation: '|M_atp_c[c]| + |M_glyc_DASH_R_c[c]| => |M_adp_c[c]| + |M_h_c[c]| + |M_3pg_c[c]|'
   subsystem: Glyoxylate and dicarboxylate metabolism
 - id: R_GLYCL
   name: Glycine Cleavage System
+  genes: slr0293 and sll0171 and slr0879 and slr1096
   equation: '|M_nad_c[c]| + |M_thf_c[c]| + |M_gly_c[c]| => |M_nadh_c[c]| + |M_co2_c[c]|
     + |M_nh4_c[c]| + |M_mlthf_c[c]|'
   subsystem: Arginine and proline metabolism
 - id: R_GLYCL_2
   name: glycine cleavage system, cytosol
+  genes: sll0171
   equation: '|M_nadh_c[c]| + |M_co2_c[c]| + |M_nh4_c[c]| + |M_mlthf_c[c]| => |M_nad_c[c]|
     + |M_thf_c[c]| + |M_gly_c[c]|'
   subsystem: Nitrogen metabolism
 - id: R_GLYCTO1
   name: Glycolate oxidase
+  genes: (sll0404 or Slr0806) and sll1189 and sll1831
   equation: '|M_o2_c[c]| + |M_glyclt_c[c]| => |M_h2o2_c[c]| + |M_glx_c[c]|'
   subsystem: Glyoxylate and dicarboxylate metabolism
 - id: R_GLYCTO_syn
   name: Glycolate oxidase (nadh)
+  genes: (sll0404 or Slr0806) and sll1189 and sll1831
   equation: '|M_nad_c[c]| + |M_glyclt_c[c]| => |M_h_c[c]| + |M_nadh_c[c]| + |M_glx_c[c]|'
   subsystem: Glyoxylate and dicarboxylate metabolism
 - id: R_GLYK
   name: glycerol kinase
+  genes: slr1672
   equation: '|M_atp_c[c]| + |M_glyc_c[c]| => |M_adp_c[c]| + |M_h_c[c]| + |M_glyc3p_c[c]|'
   subsystem: Glycerolipid metabolism
 - id: R_GLYOX
   name: hydroxyacylglutathione hydrolase
+  genes: sll1019 or slr1259
   equation: '|M_h2o_c[c]| + |M_lgt_DASH_S_c[c]| => |M_h_c[c]| + |M_gthrd_c[c]| +
     |M_lac_DASH_D_c[c]|'
   subsystem: Pyruvate metabolism
 - id: R_GLYTRS
   name: Glycyl-tRNA synthetase
+  genes: slr0638 and slr0220
   equation: '|M_atp_c[c]| + |M_gly_c[c]| + |M_trnagly_c[c]| => |M_ppi_c[c]| + |M_amp_c[c]|
     + |M_glytrna_c[c]|'
   subsystem: Arginine and proline metabolism
 - id: R_GLYabcpp
   name: glycine transport via ABC system
+  genes: slr0559 and sll0146 and slr0949 and slr0467 and slr1881
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_gly_p[p]| => |M_adp_c[c]| + |M_h_c[c]|
     + |M_pi_c[c]| + |M_gly_c[c]|'
   subsystem: Transport
@@ -1738,58 +2068,71 @@
   subsystem: Transport
 - id: R_GMAND
   name: GDP-D-mannose dehydratase
+  genes: sll1212 or slr1072
   equation: '|M_gdpmann_c[c]| => |M_h2o_c[c]| + |M_gdpddman_c[c]|'
   subsystem: Fructose and mannose metabolism
 - id: R_GMPS
   name: GMP synthase
+  genes: slr0213
   equation: '|M_atp_c[c]| + |M_nh4_c[c]| + |M_xmp_c[c]| => (2) |M_h_c[c]| + |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_gmp_c[c]|'
   subsystem: Glutamate metabolism
 - id: R_GMPS2
   name: GMP synthase
+  genes: slr0213
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_gln_DASH_L_c[c]| + |M_xmp_c[c]| =>
     (2) |M_h_c[c]| + |M_ppi_c[c]| + |M_glu_DASH_L_c[c]| + |M_amp_c[c]| + |M_gmp_c[c]|'
   subsystem: Purine metabolism
 - id: R_GND
   name: phosphogluconate dehydrogenase
+  genes: sll0329
   equation: '|M_nadp_c[c]| + |M_6pgc_c[c]| => |M_co2_c[c]| + |M_nadph_c[c]| + |M_ru5p_DASH_D_c[c]|'
   subsystem: Pentose phosphate pathway
 - id: R_GRTT
   name: geranyltranstransferase
+  genes: slr1255
   equation: '|M_ipdp_c[c]| + |M_grdp_c[c]| => |M_ppi_c[c]| + |M_frdp_c[c]|'
   subsystem: Sterol biosynthesis
 - id: R_GTHP
   name: glutathione peridoxase
+  genes: slr1992 or slr1171
   equation: '|M_h2o2_c[c]| + (2) |M_gthrd_c[c]| <=> (2) |M_h2o_c[c]| + |M_gthox_c[c]|'
   subsystem: Glutathione metabolism
 - id: R_GTHRDH_syn
   name: glutathione hydralase (periplasmic)
+  genes: slr1269
   equation: '|M_h2o_c[c]| + |M_gthrd_c[c]| => |M_glu_DASH_L_c[c]| + |M_cgly_c[c]|'
   subsystem: Glutathione metabolism
 - id: R_GTHS
   name: glutathione synthetase
+  genes: slr1238
   equation: '|M_atp_c[c]| + |M_gly_c[c]| + |M_glucys_c[c]| => |M_adp_c[c]| + |M_h_c[c]|
     + |M_pi_c[c]| + |M_gthrd_c[c]|'
   subsystem: Glutamate metabolism
 - id: R_GTPCI
   name: GTP cyclohydrolase I
+  genes: slr0426
   equation: '|M_h2o_c[c]| + |M_gtp_c[c]| => |M_h_c[c]| + |M_for_c[c]| + |M_ahdt_c[c]|'
   subsystem: Folate biosynthesis
 - id: R_GTPCII
   name: GTP cyclohydrolase II
+  genes: sll1894
   equation: (3) |M_h2o_c[c]| + |M_gtp_c[c]| => (2) |M_h_c[c]| + |M_ppi_c[c]| + |M_for_c[c]|
     + |M_25dhpp_c[c]|
   subsystem: Riboflavin metabolism
 - id: R_GUACYC
   name: guanylate cyclase
+  genes: slr1991 or sll0646
   equation: '|M_gtp_c[c]| => |M_ppi_c[c]| + |M_35cgmp_c[c]|'
   subsystem: Purine metabolism
 - id: R_H2ASE_syn
   name: Bidirectional [NiFe] Hydrogenase
+  genes: sll1220 and sll1221 and sll1223 and sll1224 and sll1226
   equation: '|M_h_c[c]| + |M_nadph_c[c]| <=> |M_nadp_c[c]| + |M_h2_c[c]|'
   subsystem: Hydrogen production
 - id: R_H2CO3_NAt_syn
   name: Bicarbonate transport (Na/HCO3 cotransport periplasme)
+  genes: slr1512 or sll0834
   equation: '|M_na1_p[p]| + |M_hco3_p[p]| => |M_hco3_c[c]| + |M_na1_c[c]|'
   subsystem: Transport
 - id: R_H2Otex
@@ -1798,10 +2141,12 @@
   subsystem: Transport
 - id: R_H2Otpp
   name: H2O transport via diffusion (periplasm)
+  genes: slr2057
   equation: '|M_h2o_p[p]| <=> |M_h2o_c[c]|'
   subsystem: Transport
 - id: R_H2Otu_syn
   name: H2O transport via diffusion (tilacoid)
+  genes: slr2057
   equation: '|M_h2o_u[u]| <=> |M_h2o_c[c]|'
   subsystem: Transport
 - id: R_H2tex
@@ -1814,6 +2159,7 @@
   subsystem: Transport
 - id: R_HCO3E
   name: HCO3 equilibration reaction
+  genes: slr1347 or slr0051
   equation: '|M_co2_c[c]| + |M_h2o_c[c]| <=> |M_h_c[c]| + |M_hco3_c[c]|'
   subsystem: Photosynthesis
 - id: R_HCO3tex
@@ -1822,33 +2168,40 @@
   subsystem: Transport
 - id: R_HEMEAS
   name: Heme A synthase
+  genes: sll1898
   equation: '|M_h2o_c[c]| + |M_hemeO_c[c]| => (4) |M_h_c[c]| + |M_hemeA_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_HEMEOS
   name: Heme O synthase
+  genes: sll1899
   equation: '|M_h2o_c[c]| + |M_pheme_c[c]| + |M_frdp_c[c]| => |M_ppi_c[c]| + |M_hemeO_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_HEX1
   name: hexokinase (D-glucose_ATP)
+  genes: sll0593
   equation: '|M_atp_c[c]| + |M_glc_DASH_D_c[c]| => |M_adp_c[c]| + |M_g6p_c[c]| +
     |M_h_c[c]|'
   subsystem: Glycolysis/Gluconeogenesis
 - id: R_HEX7
   name: D-fructokinase // D-fructose(D-mannose)kinase // fructokinase // fructokinase
     (phosphorylating)
+  genes: slr1448
   equation: '|M_atp_c[c]| + |M_fru_c[c]| => |M_adp_c[c]| + |M_h_c[c]| + |M_f6p_c[c]|'
   subsystem: Fructose and mannose metabolism
 - id: R_HGPHT
   name: homogenitisate phytyltransferase
+  genes: slr1736
   equation: '|M_h_c[c]| + |M_hgentis_c[c]| + |M_phdp_c[c]| => |M_co2_c[c]| + |M_ppi_c[c]|
     + |M_2m6phol_c[c]|'
   subsystem: Ubiquinone and other pterpenoids biosynthesis
 - id: R_HIBD_syn
   name: 3-hydroxyisobutyrate dehydrogenase
+  genes: slr0229
   equation: '|M_nad_c[c]| + |M_3hmp_c[c]| => |M_h_c[c]| + |M_nadh_c[c]| + |M_mmtsa_c[c]|'
   subsystem: Valine leucine and isoleucine biosynthesis
 - id: R_HISTD
   name: histidinol dehydrogenase
+  genes: slr0682 or slr1848
   equation: (2) |M_nad_c[c]| + |M_h2o_c[c]| + |M_histd_c[c]| => (3) |M_h_c[c]| +
     (2) |M_nadh_c[c]| + |M_his_DASH_L_c[c]|
   subsystem: Histidine metabolism
@@ -1858,11 +2211,14 @@
   subsystem: Histidine metabolism
 - id: R_HISTRS
   name: Histidyl-tRNA synthetase
+  genes: slr0357
   equation: '|M_atp_c[c]| + |M_his_DASH_L_c[c]| + |M_trnahis_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_histrna_c[c]|'
   subsystem: Histidine metabolism
 - id: R_HISabcpp
   name: L-histidine transport via ABC system (periplasm)
+  genes: (slr0559 and sll0146 and slr0949 and slr0467 and slr1881) or (slr1735 and
+    sll1270)
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_his_DASH_L_p[p]| => |M_adp_c[c]| +
     |M_h_c[c]| + |M_pi_c[c]| + |M_his_DASH_L_c[c]|'
   subsystem: Transport
@@ -1872,33 +2228,40 @@
   subsystem: Transport
 - id: R_HMBS
   name: hydroxymethylbilane synthase
+  genes: slr1887
   equation: '|M_h2o_c[c]| + (4) |M_ppbng_c[c]| => (4) |M_nh4_c[c]| + |M_hmbil_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_HOXG
   name: Heme oxygenase 1
+  genes: sll1184 or sll1875
   equation: (5) |M_h_c[c]| + (3) |M_o2_c[c]| + (3) |M_nadph_c[c]| + |M_pheme_c[c]|
     => (3) |M_h2o_c[c]| + (3) |M_nadp_c[c]| + |M_biliverd_c[c]| + |M_fe2_c[c]| +
     |M_co_c[c]|
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_HPPK
   name: 2-amino-4-hydroxy-6-hydroxymethyldihydropteridine diphosphokinase
+  genes: slr1093
   equation: '|M_atp_c[c]| + |M_2ahhmp_c[c]| => |M_h_c[c]| + |M_amp_c[c]| + |M_2ahhmd_c[c]|'
   subsystem: Folate biosynthesis
 - id: R_HPROa
   name: L-hydroxyproline reductase (NAD)
+  genes: slr0661
   equation: (2) |M_h_c[c]| + |M_nadh_c[c]| + |M_1p3h5c_c[c]| => |M_nad_c[c]| + |M_4hpro_DASH_LT_c[c]|
   subsystem: Arginine and proline metabolism
 - id: R_HPROb
   name: L-hydroxyproline reductase (NADP)
+  genes: slr0661
   equation: (2) |M_h_c[c]| + |M_nadph_c[c]| + |M_1p3h5c_c[c]| => |M_nadp_c[c]| +
     |M_4hpro_DASH_LT_c[c]|
   subsystem: Arginine and proline metabolism
 - id: R_HPYRR2_syn
   name: hydroxypyruvate reductase (NADH)
+  genes: sll1908 or slr1556
   equation: '|M_h_c[c]| + |M_nadh_c[c]| + |M_hpyr_c[c]| => |M_nad_c[c]| + |M_glyc_DASH_R_c[c]|'
   subsystem: Glyoxylate and dicarboxylate metabolism
 - id: R_HSDx
   name: homoserine dehydrogenase (NADH)
+  genes: sll0455
   equation: '|M_nad_c[c]| + |M_hom_DASH_L_c[c]| <=> |M_h_c[c]| + |M_nadh_c[c]| +
     |M_aspsa_c[c]|'
   subsystem: Lysine metabolism
@@ -1908,10 +2271,12 @@
   subsystem: Sulfur Cysteine and methionine metabolism
 - id: R_HSK
   name: homoserine kinase
+  genes: sll1760
   equation: '|M_atp_c[c]| + |M_hom_DASH_L_c[c]| => |M_adp_c[c]| + |M_h_c[c]| + |M_phom_c[c]|'
   subsystem: Arginine and proline metabolism
 - id: R_HSTPT
   name: 'histidinol-phosphate transaminase '
+  genes: sll1713 or sll1958
   equation: '|M_glu_DASH_L_c[c]| + |M_imacp_c[c]| => |M_akg_c[c]| + |M_hisp_c[c]|'
   subsystem: Histidine metabolism
 - id: R_Htex
@@ -1920,90 +2285,110 @@
   subsystem: Transport
 - id: R_ICDHy
   name: isocitrate dehydrogenase (NADP)
+  genes: slr1289
   equation: '|M_nadp_c[c]| + |M_icit_c[c]| => |M_co2_c[c]| + |M_nadph_c[c]| + |M_akg_c[c]|'
   subsystem: Citrate cycle (TCA cycle)
 - id: R_ICHORS
   name: isochorismate synthase
+  genes: slr0817
   equation: '|M_chor_c[c]| <=> |M_ichor_c[c]|'
   subsystem: Ubiquinone and other pterpenoids biosynthesis
 - id: R_IG3PS
   name: Imidazole-glycerol-3-phosphate synthase
+  genes: sll1893 or slr0084
   equation: '|M_gln_DASH_L_c[c]| + |M_prlp_c[c]| => |M_h_c[c]| + |M_glu_DASH_L_c[c]|
     + |M_aicar_c[c]| + |M_eig3p_c[c]|'
   subsystem: Histidine metabolism
 - id: R_IGPDH
   name: imidazoleglycerol-phosphate dehydratase
+  genes: slr0500
   equation: '|M_eig3p_c[c]| => |M_h2o_c[c]| + |M_imacp_c[c]|'
   subsystem: Histidine metabolism
 - id: R_IGPS
   name: indole-3-glycerol-phosphate synthase
+  genes: slr0546
   equation: '|M_h_c[c]| + |M_2cpr5p_c[c]| => |M_co2_c[c]| + |M_h2o_c[c]| + |M_3ig3p_c[c]|'
   subsystem: Phenylalanine tyrosine and tryptophan biosynthesis
 - id: R_ILETA
   name: isoleucine transaminase
+  genes: slr0032
   equation: '|M_akg_c[c]| + |M_ile_DASH_L_c[c]| <=> |M_glu_DASH_L_c[c]| + |M_3mop_c[c]|'
   subsystem: Valine leucine and isoleucine biosynthesis
 - id: R_ILETRS
   name: Isoleucyl-tRNA synthetase
+  genes: sll1362
   equation: '|M_atp_c[c]| + |M_ile_DASH_L_c[c]| + |M_trnaile_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_iletrna_c[c]|'
   subsystem: Valine leucine and isoleucine biosynthesis
 - id: R_IMACTD
   name: Imidazole acetaldeyde dehydrogenase
+  genes: slr0091
   equation: '|M_nad_c[c]| + |M_h2o_c[c]| + |M_im4act_c[c]| => (2) |M_h_c[c]| + |M_nadh_c[c]|
     + |M_im4ac_c[c]|'
   subsystem: Histidine metabolism
 - id: R_IMPC
   name: IMP cyclohydrolase
+  genes: slr0597
   equation: '|M_h2o_c[c]| + |M_imp_c[c]| <=> |M_fprica_c[c]|'
   subsystem: Purine metabolism
 - id: R_IMPD
   name: IMP dehydrogenase
+  genes: slr1722
   equation: '|M_nad_c[c]| + |M_h2o_c[c]| + |M_imp_c[c]| => |M_h_c[c]| + |M_nadh_c[c]|
     + |M_xmp_c[c]|'
   subsystem: Purine metabolism
 - id: R_IPDDI
   name: isopentenyl-diphosphate D-isomerase
+  genes: sll1556
   equation: '|M_ipdp_c[c]| <=> |M_dmpp_c[c]|'
   subsystem: Sterol biosynthesis
 - id: R_IPDPS_syn
   name: 1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase (ipdp)
+  genes: slr0348
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_h2mb4p_c[c]| => |M_h2o_c[c]| + |M_nadp_c[c]|
     + |M_ipdp_c[c]|'
   subsystem: Terpenoid backbone biosynthesis
 - id: R_IPMD
   name: 3-isopropylmalate dehydrogenase reversible
+  genes: slr1517
   equation: '|M_nad_c[c]| + |M_3c2hmp_c[c]| => |M_h_c[c]| + |M_nadh_c[c]| + |M_3c4mop_c[c]|'
   subsystem: Valine leucine and isoleucine biosynthesis
 - id: R_IPPMIa
   name: 3-isopropylmalate dehydratase
+  genes: sll1470 and sll1444
   equation: '|M_3c2hmp_c[c]| <=> |M_h2o_c[c]| + |M_2ippm_c[c]|'
   subsystem: Valine leucine and isoleucine biosynthesis
 - id: R_IPPMIb
   name: 2-isopropylmalate hydratase
+  genes: sll1470 and sll1444
   equation: '|M_h2o_c[c]| + |M_2ippm_c[c]| <=> |M_3c3hmp_c[c]|'
   subsystem: Valine leucine and isoleucine biosynthesis
 - id: R_IPPS
   name: 2-isopropylmalate synthase
+  genes: sll1564 or slr0186
   equation: '|M_h2o_c[c]| + |M_accoa_c[c]| + |M_3mob_c[c]| => |M_h_c[c]| + |M_coa_c[c]|
     + |M_3c3hmp_c[c]|'
   subsystem: Pyruvate metabolism
 - id: R_KARA1i
   name: acetohydroxy acid isomeroreductase
+  genes: sll1363
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_alac_DASH_S_c[c]| => |M_nadp_c[c]|
     + |M_23dhmb_c[c]|'
   subsystem: Valine leucine and isoleucine biosynthesis
 - id: R_KARA2i
   name: ketol-acid reductoisomerase (2-Aceto-2-hydroxybutanoate)
+  genes: sll1363
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_2ahbut_c[c]| => |M_nadp_c[c]| + |M_23dhmp_c[c]|'
   subsystem: Valine leucine and isoleucine biosynthesis
 - id: R_KAS14
   name: beta-ketoacyl-ACP synthase
+  genes: slr1511
   equation: '|M_h_c[c]| + |M_malACP_c[c]| + |M_acACP_c[c]| => |M_co2_c[c]| + |M_actACP_c[c]|
     + |M_ACP_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_KAS15
   name: beta-ketoacyl-ACP synthase (2)
+  genes: sll1069 or slr1332
   equation: '|M_h_c[c]| + |M_malACP_c[c]| + |M_accoa_c[c]| => |M_co2_c[c]| + |M_actACP_c[c]|
     + |M_coa_c[c]|'
   subsystem: Fatty acid biosynthesis
@@ -2013,38 +2398,46 @@
   subsystem: Transport
 - id: R_Ktpp
   name: Potasium ireversible transport (periplasm)
+  genes: sll0493 and slr1509 and slr1508
   equation: '|M_h_p[p]| + |M_k_p[p]| => |M_h_c[c]| + |M_k_c[c]|'
   subsystem: Transport
 - id: R_LALDO
   name: D-Lactaldehyde_NAD+ oxidoreductase (glutathione-formylating)
+  genes: sll0990
   equation: '|M_nad_c[c]| + |M_gthrd_c[c]| + |M_lald_DASH_D_c[c]| <=> |M_h_c[c]|
     + |M_nadh_c[c]| + |M_lgt_DASH_S_c[c]|'
   subsystem: Pyruvate metabolism
 - id: R_LCARS
   name: lacaldehyde reductase (S-propane-1,2-diol forming)
+  genes: slr0091
   equation: '|M_h_c[c]| + |M_nadh_c[c]| + |M_lald_DASH_L_c[c]| <=> |M_nad_c[c]| +
     |M_12ppd_DASH_S_c[c]|'
   subsystem: Others
 - id: R_LDH_D
   name: D-lactate dehydrogenase
+  genes: slr1556
   equation: '|M_nad_c[c]| + |M_lac_DASH_D_c[c]| <=> |M_h_c[c]| + |M_nadh_c[c]| +
     |M_pyr_c[c]|'
   subsystem: Pyruvate metabolism
 - id: R_LEUTA
   name: leucine transaminase
+  genes: slr0032
   equation: '|M_akg_c[c]| + |M_leu_DASH_L_c[c]| <=> |M_glu_DASH_L_c[c]| + |M_4mop_c[c]|'
   subsystem: Valine leucine and isoleucine biosynthesis
 - id: R_LEUTAi
   name: leucine transaminase (irreversible)
+  genes: slr0032
   equation: '|M_glu_DASH_L_c[c]| + |M_4mop_c[c]| => |M_akg_c[c]| + |M_leu_DASH_L_c[c]|'
   subsystem: Valine leucine and isoleucine biosynthesis
 - id: R_LEUTRS
   name: Leucyl-tRNA synthetase
+  genes: sll1074
   equation: '|M_atp_c[c]| + |M_leu_DASH_L_c[c]| + |M_trnaleu_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_leutrna_c[c]|'
   subsystem: Valine leucine and isoleucine biosynthesis
 - id: R_LEUabcpp
   name: L-leucine transport via ABC system (periplasm)
+  genes: slr0559 and sll0146 and slr0949 and slr0467 and slr1881
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_leu_DASH_L_p[p]| => |M_adp_c[c]| +
     |M_h_c[c]| + |M_pi_c[c]| + |M_leu_DASH_L_c[c]|'
   subsystem: Transport
@@ -2054,10 +2447,12 @@
   subsystem: Transport
 - id: R_LGTHL
   name: lactoylglutathione lyase
+  genes: slr0381
   equation: '|M_gthrd_c[c]| + |M_mthgxl_c[c]| <=> |M_lgt_DASH_S_c[c]|'
   subsystem: Pyruvate metabolism
 - id: R_LPADSS
   name: Lipid A disaccaride synthase
+  genes: slr0015
   equation: '|M_lipidX_c[c]| + |M_u23ga_c[c]| => |M_h_c[c]| + |M_udp_c[c]| + |M_lipidAds_c[c]|'
   subsystem: Lipopolysaccharide biosynthesis
 - id: R_LYCOPC
@@ -2066,15 +2461,18 @@
   subsystem: Carotenoid Biosynthesis
 - id: R_LYSDC
   name: lysine decarboxylase
+  genes: sll1683
   equation: '|M_h_c[c]| + |M_lys_DASH_L_c[c]| => |M_co2_c[c]| + |M_15dap_c[c]|'
   subsystem: Lysine metabolism
 - id: R_LYSTRS
   name: Lysyl-tRNA synthetase
+  genes: slr1550
   equation: '|M_atp_c[c]| + |M_lys_DASH_L_c[c]| + |M_trnalys_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_lystrna_c[c]|'
   subsystem: Lysine metabolism
 - id: R_LYSabcpp
   name: L-lysine transport via ABC system (periplasm)
+  genes: slr1735 and sll1270
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_lys_DASH_L_p[p]| => |M_adp_c[c]| +
     |M_h_c[c]| + |M_pi_c[c]| + |M_lys_DASH_L_c[c]|'
   subsystem: Transport
@@ -2084,6 +2482,7 @@
   subsystem: Transport
 - id: R_MALT
   name: alpha-glucosidase
+  genes: sll1676
   equation: '|M_h2o_c[c]| + |M_malt_c[c]| => (2) |M_glc_DASH_D_c[c]|'
   subsystem: Starch and sucrose metabolism
 - id: R_MALtex
@@ -2096,44 +2495,54 @@
   subsystem: Transport
 - id: R_MAN1PT
   name: mannose-1-phosphate guanylyltransferase
+  genes: sll1496 or sll1558
   equation: '|M_h_c[c]| + |M_gtp_c[c]| + |M_man1p_c[c]| => |M_ppi_c[c]| + |M_gdpmann_c[c]|'
   subsystem: Fructose and mannose metabolism
 - id: R_MAN1PT2
   name: mannose-1-phosphate guanylyltransferase(GDP)
+  genes: sll1370 or slr0493 or slr2074
   equation: '|M_h_c[c]| + |M_gdp_c[c]| + |M_man1p_c[c]| => |M_pi_c[c]| + |M_gdpmann_c[c]|'
   subsystem: Fructose and mannose metabolism
 - id: R_MAN6PI
   name: mannose-6-phosphate isomerase
+  genes: Slr0493
   equation: '|M_man6p_c[c]| <=> |M_f6p_c[c]|'
   subsystem: Fructose and mannose metabolism
 - id: R_MCOATA
   name: Malonyl-CoA-ACP transacylase
+  genes: slr2023
   equation: '|M_ACP_c[c]| + |M_malcoa_c[c]| <=> |M_malACP_c[c]| + |M_coa_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_MDH
   name: malate dehydrogenase
+  genes: sll0891
   equation: '|M_nad_c[c]| + |M_mal_DASH_L_c[c]| <=> |M_h_c[c]| + |M_nadh_c[c]| +
     |M_oaa_c[c]|'
   subsystem: Citrate cycle (TCA cycle)
 - id: R_ME1
   name: malic enzyme (NAD)
+  genes: slr0721
   equation: '|M_nadp_c[c]| + |M_mal_DASH_L_c[c]| => |M_co2_c[c]| + |M_nadph_c[c]|
     + |M_pyr_c[c]|'
   subsystem: Pyruvate metabolism
 - id: R_MECDPDH_syn
   name: 2C-methyl-D-erythritol 2,4 cyclodiphosphate dehydratase
+  genes: slr2136
   equation: '|M_nadph_c[c]| + |M_2mecdp_c[c]| => |M_h2o_c[c]| + |M_nadp_c[c]| + |M_h2mb4p_c[c]|'
   subsystem: Terpenoid backbone biosynthesis
 - id: R_MECDPS
   name: 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase
+  genes: slr1542
   equation: '|M_2p4c2me_c[c]| => |M_cmp_c[c]| + |M_2mecdp_c[c]|'
   subsystem: Terpenoid backbone biosynthesis
 - id: R_MEHLER
   name: Mehler reaction
+  genes: sll1521 or sll0550
   equation: '|M_h_c[c]| + (0.5) |M_o2_c[c]| + |M_nadph_c[c]| => |M_h2o_c[c]| + |M_nadp_c[c]|'
   subsystem: Photosynthesis
 - id: R_MEPCT
   name: 2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase
+  genes: slr0951
   equation: '|M_h_c[c]| + |M_ctp_c[c]| + |M_2me4p_c[c]| => |M_ppi_c[c]| + |M_4c2me_c[c]|'
   subsystem: Sterol biosynthesis
 - id: R_METACH
@@ -2142,16 +2551,19 @@
   subsystem: Sulfur Cysteine and methionine metabolism
 - id: R_METAT
   name: methionine adenosyltransferase
+  genes: sll0927
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_met_DASH_L_c[c]| => |M_ppi_c[c]| +
     |M_pi_c[c]| + |M_amet_c[c]|'
   subsystem: Sulfur Cysteine and methionine metabolism
 - id: R_METS
   name: methionine synthase irreversible
+  genes: slr0212
   equation: '|M_hcys_DASH_L_c[c]| + |M_5mthf_c[c]| => |M_h_c[c]| + |M_thf_c[c]| +
     |M_met_DASH_L_c[c]|'
   subsystem: Sulfur Cysteine and methionine metabolism
 - id: R_METTRS
   name: Methionyl-tRNA synthetase
+  genes: slr0649
   equation: '|M_atp_c[c]| + |M_met_DASH_L_c[c]| + |M_trnamet_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_mettrna_c[c]|'
   subsystem: Sulfur Cysteine and methionine metabolism
@@ -2161,65 +2573,79 @@
   subsystem: Transport
 - id: R_MG2tpp
   name: magnesium (+2) transport in via P-type Atpase
+  genes: slr0014 or slr1216
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_mg2_p[p]| => |M_adp_c[c]| + |M_h_c[c]|
     + |M_pi_c[c]| + |M_mg2_c[c]|'
   subsystem: Transport
 - id: R_MGDG160
   name: UDPgalactose_1,2-diacylglycerol 3-beta-D-galactosyltransferase (n-C16_0)
+  genes: slr1508
   equation: '|M_udpgal_c[c]| + |M_12dgr160_c[c]| => |M_h_c[c]| + |M_mgdg160_c[c]|
     + |M_udp_c[c]|'
   subsystem: Galactolipids metabolism
 - id: R_MGDG161
   name: UDPgalactose_1,2-diacylglycerol 3-beta-D-galactosyltransferase (n-C16_1)
+  genes: slr1508
   equation: '|M_udpgal_c[c]| + |M_12dgr161_c[c]| => |M_h_c[c]| + |M_udp_c[c]| + |M_mgdg161_c[c]|'
   subsystem: Galactolipids metabolism
 - id: R_MGDG180
   name: UDPgalactose_1,2-diacylglycerol 3-beta-D-galactosyltransferase (n-C18_0)
+  genes: slr1508
   equation: '|M_udpgal_c[c]| + |M_12dgr180_c[c]| => |M_h_c[c]| + |M_udp_c[c]| + |M_mgdg180_c[c]|'
   subsystem: Galactolipids metabolism
 - id: R_MGDG181
   name: UDPgalactose_1,2-diacylglycerol 3-beta-D-galactosyltransferase (n-C18_1)
+  genes: slr1508
   equation: '|M_udpgal_c[c]| + |M_12dgr181_c[c]| => |M_h_c[c]| + |M_udp_c[c]| + |M_mgdg181_c[c]|'
   subsystem: Galactolipids metabolism
 - id: R_MGDG181_LPAREN_9_RPAREN_
   name: UDPgalactose_1,2-diacylglycerol 3-beta-D-galactosyltransferase (n-C18_1)
+  genes: slr1508
   equation: '|M_udpgal_c[c]| + |M_12dgr181_9_c[c]| => |M_h_c[c]| + |M_udp_c[c]| +
     |M_mgdg181_9_c[c]|'
   subsystem: Galactolipids metabolism
 - id: R_MGDG182_LPAREN_9_12_RPAREN_
   name: UDPgalactose_1,2-diacylglycerol 3-beta-D-galactosyltransferase (n-C18_2)
+  genes: slr1508
   equation: '|M_udpgal_c[c]| + |M_12dgr182_9_12_c[c]| => |M_h_c[c]| + |M_udp_c[c]|
     + |M_mgdg182_9_12_c[c]|'
   subsystem: Galactolipids metabolism
 - id: R_MGDG183_LPAREN_6_9_12_RPAREN_
   name: UDPgalactose_1,2-diacylglycerol 3-beta-D-galactosyltransferase (n-C18_3)
+  genes: slr1508
   equation: '|M_udpgal_c[c]| + |M_12dgr183_6_9_12_c[c]| => |M_h_c[c]| + |M_udp_c[c]|
     + |M_mgdg183_6_9_12_c[c]|'
   subsystem: Galactolipids metabolism
 - id: R_MGDG183_LPAREN_9_12_15_RPAREN_
   name: UDPgalactose_1,2-diacylglycerol 3-beta-D-galactosyltransferase (n-C18_3)
+  genes: slr1508
   equation: '|M_udpgal_c[c]| + |M_12dgr183_9_12_15_c[c]| => |M_h_c[c]| + |M_udp_c[c]|
     + |M_mgdg183_9_12_15_c[c]|'
   subsystem: Galactolipids metabolism
 - id: R_MGDG184_LPAREN_6_9_12_15_RPAREN_
   name: UDPgalactose_1,2-diacylglycerol 3-beta-D-galactosyltransferase (n-C18_4)
+  genes: slr1508
   equation: '|M_udpgal_c[c]| + |M_12dgr184_6_9_12_15_c[c]| => |M_h_c[c]| + |M_udp_c[c]|
     + |M_mgdg184_6_9_12_15_c[c]|'
   subsystem: Galactolipids metabolism
 - id: R_MGSA
   name: methylglyoxal synthase
+  genes: sll0036
   equation: '|M_dhap_c[c]| => |M_pi_c[c]| + |M_mthgxl_c[c]|'
   subsystem: Pyruvate metabolism
 - id: R_MI1PP
   name: myo-inositol 1-phosphatase
+  genes: sll1383
   equation: '|M_h2o_c[c]| + |M_mi1p_DASH_D_c[c]| => |M_pi_c[c]| + |M_inost_c[c]|'
   subsystem: Inositol phosphate metabolism
 - id: R_MI1PS
   name: myo-Inositol-1-phosphate synthase
+  genes: sll1722 or sll1981
   equation: '|M_g6p_c[c]| => |M_mi1p_DASH_D_c[c]|'
   subsystem: Inositol phosphate metabolism
 - id: R_MNt2pp
   name: manganese (Mn+2) transport in via proton symport (periplasm)
+  genes: sll1599 and sll1600 and sll1598
   equation: '|M_h_p[p]| + |M_mn2_p[p]| => |M_h_c[c]| + |M_mn2_c[c]|'
   subsystem: Transport
 - id: R_MNtex
@@ -2228,6 +2654,7 @@
   subsystem: Transport
 - id: R_MOBDabcpp
   name: molybdate transport via ABC system (periplasm)
+  genes: sll0738 and sll0739
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_mobd_p[p]| => |M_adp_c[c]| + |M_h_c[c]|
     + |M_pi_c[c]| + |M_mobd_c[c]|'
   subsystem: Transport
@@ -2237,67 +2664,81 @@
   subsystem: Transport
 - id: R_MOHMT
   name: 3-methyl-2-oxobutanoate hydroxymethyltransferase
+  genes: slr0526
   equation: '|M_h2o_c[c]| + |M_3mob_c[c]| + |M_mlthf_c[c]| => |M_thf_c[c]| + |M_2dhp_c[c]|'
   subsystem: Pantothenate and CoA biosynthesis
 - id: R_MPBQ
   name: 2-methyl-6-phytylbenzoquinone methyltransferase
+  genes: Sll0418
   equation: '|M_amet_c[c]| + |M_2m6phol_c[c]| <=> |M_h_c[c]| + |M_ahcys_c[c]| + |M_23dmphol_c[c]|'
   subsystem: Ubiquinone and other pterpenoids biosynthesis
 - id: R_MPML
   name: Mg-protoporphyrin IX magnesium-lyase
+  genes: slr1030 and slr1055 and slr1777
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_ppp9_c[c]| + |M_mg2_c[c]| <=> |M_adp_c[c]|
     + (3) |M_h_c[c]| + |M_pi_c[c]| + |M_mppp9_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_MPOMC1
   name: ' magnesium-protoporphyrin-IX 13-monomethyl ester,NADPH_oxygen oxidoreductase
     (hydroxylating)'
+  genes: sll1214 or sll1874
   equation: '|M_h_c[c]| + |M_o2_c[c]| + |M_nadph_c[c]| + |M_mppp9om_c[c]| => |M_h2o_c[c]|
     + |M_nadp_c[c]| + |M_hmppp9_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_MPOMC2
   name: ' magnesium-protoporphyrin-IX 13-monomethyl ester,NADPH_h2o oxidoreductase
     (hydroxylating)'
+  genes: slr0905
   equation: '|M_h2o_c[c]| + |M_nadp_c[c]| + |M_mppp9om_c[c]| => |M_h_c[c]| + |M_nadph_c[c]|
     + |M_hmppp9_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_MPOMMM
   name: magnesium-protoporphyrin-IX 13-monomethyl ester,NADPH_oxygen oxidoreductase
     (hydroxylating)
+  genes: sll1214 or sll1874
   equation: '|M_h_c[c]| + |M_o2_c[c]| + |M_nadph_c[c]| + |M_hmppp9_c[c]| => (2) |M_h2o_c[c]|
     + |M_nadp_c[c]| + |M_omppp9_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_MPOMMM2
   name: magnesium-protoporphyrin-IX 13-monomethyl ester,NADPH_
+  genes: slr0905
   equation: '|M_nadp_c[c]| + |M_hmppp9_c[c]| => |M_h_c[c]| + |M_nadph_c[c]| + |M_omppp9_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_MPOMOR
   name: magnesium-protoporphyrin-IX 13-monomethyl ester NADPH_oxygen oxidoreductase
     (hydroxylating)
+  genes: sll1214 or sll1874
   equation: '|M_h_c[c]| + |M_o2_c[c]| + |M_nadph_c[c]| + |M_omppp9_c[c]| => (2) |M_h2o_c[c]|
     + |M_nadp_c[c]| + |M_dvpchlld_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_MPOMOR2
   name: ' magnesium-protoporphyrin-IX 13-monomethyl ester,NADPH'
+  genes: slr0905
   equation: '|M_nadp_c[c]| + |M_omppp9_c[c]| => |M_h_c[c]| + |M_nadph_c[c]| + |M_dvpchlld_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_MPOMT
   name: S-adenosyl-L-methionine_magnesium-protoporphyrin-IX O-methyltransferase
+  genes: slr0525
   equation: '|M_amet_c[c]| + |M_mppp9_c[c]| => |M_ahcys_c[c]| + |M_mppp9om_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_MTAP
   name: 5'-methylthioadenosine phosphorylase
+  genes: sll0135
   equation: '|M_pi_c[c]| + |M_5mta_c[c]| => |M_ade_c[c]| + |M_5mdr1p_c[c]|'
   subsystem: Sulfur Cysteine and methionine metabolism
 - id: R_MTHFC
   name: methenyltetrahydrofolate cyclohydrolase
+  genes: sll0753
   equation: '|M_h2o_c[c]| + |M_methf_c[c]| <=> |M_h_c[c]| + |M_10fthf_c[c]|'
   subsystem: Glyoxylate and dicarboxylate metabolism
 - id: R_MTHFD
   name: methylenetetrahydrofolate dehydrogenase (NADP)
+  genes: sll0753
   equation: '|M_nadp_c[c]| + |M_mlthf_c[c]| => |M_nadph_c[c]| + |M_methf_c[c]|'
   subsystem: Glyoxylate and dicarboxylate metabolism
 - id: R_MTHFD2i
   name: methylenetetrahydrofolate dehydrogenase (NAD)
+  genes: sll0330
   equation: '|M_nad_c[c]| + |M_mlthf_c[c]| => |M_nadh_c[c]| + |M_methf_c[c]|'
   subsystem: Folate biosynthesis
 - id: R_MTHFR2
@@ -2306,19 +2747,23 @@
   subsystem: Folate biosynthesis
 - id: R_MTRI
   name: 5-methylthioribose-1-phosphate isomerase
+  genes: slr1938
   equation: '|M_5mdr1p_c[c]| => |M_5mdru1p_c[c]|'
   subsystem: Sulfur Cysteine and methionine metabolism
 - id: R_NABTNO
   name: N4-Acetylaminobutanal_NAD+ oxidoreductase
+  genes: slr0091
   equation: '|M_nad_c[c]| + |M_h2o_c[c]| + |M_n4abutn_c[c]| => (2) |M_h_c[c]| + |M_nadh_c[c]|
     + |M_4aabutn_c[c]|'
   subsystem: Arginine and proline metabolism
 - id: R_NADH5
   name: NADH dehydrogenase (ubiquinone-8 )
+  genes: slr0851 or slr1743 or sll1484 or sll0223
   equation: '|M_h_c[c]| + |M_nadh_c[c]| + |M_q8_c[c]| => |M_nad_c[c]| + |M_q8h2_c[c]|'
   subsystem: Oxidative phosphorylation
 - id: R_NADK
   name: NAD kinase
+  genes: sll1415 or slr0400
   equation: '|M_atp_c[c]| + |M_nad_c[c]| => |M_adp_c[c]| + |M_h_c[c]| + |M_nadp_c[c]|'
   subsystem: Pantothenate and CoA biosynthesis
 - id: R_NADN
@@ -2327,20 +2772,24 @@
   subsystem: Nicotinate and nicotinamide metabolism
 - id: R_NADS2
   name: NAD synthase (glutamine-hydrolysing)
+  genes: slr1691
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_gln_DASH_L_c[c]| + |M_dnad_c[c]| =>
     |M_h_c[c]| + |M_nad_c[c]| + |M_ppi_c[c]| + |M_glu_DASH_L_c[c]| + |M_amp_c[c]|'
   subsystem: Glutamate metabolism
 - id: R_NADTRHD
   name: ' NAD transhydrogenase'
+  genes: slr1239 and slr1434
   equation: '|M_nad_c[c]| + |M_nadph_c[c]| => |M_nadh_c[c]| + |M_nadp_c[c]|'
   subsystem: Nicotinate and nicotinamide metabolism
 - id: R_NAR_syn
   name: ferredoxin-nitrate reductase
+  genes: sll1454
   equation: (2) |M_h_c[c]| + (2) |M_fdxr_DASH_2_2_c[c]| + |M_no3_c[c]| => |M_h2o_c[c]|
     + (2) |M_fdxo_DASH_2_2_c[c]| + |M_no2_c[c]|
   subsystem: Nitrogen metabolism
 - id: R_NAt3pp
   name: sodium transport out via proton antiport (cytoplasm to periplasm)
+  genes: slr1727 or sll0273 or slr1595 or sll0689 or slr0415 or sll0556
   equation: '|M_h_p[p]| + |M_na1_c[c]| <=> |M_h_c[c]| + |M_na1_p[p]|'
   subsystem: Transport
 - id: R_NAtex
@@ -2349,76 +2798,105 @@
   subsystem: Transport
 - id: R_NDH1_1p
   name: NAD(P)H dehydrogenase (plastoquinone-8 & 3 protons) (periplasm)
+  genes: (slr0331 or slr1291) and slr0844 and sll0519 and sll0223 and slr1279 and
+    sll0522 and sll0521 and slr0261 and sll0520 and slr1281 and (slr1280 or sll8031)
+    and slr1623 and sll1262 and sll1220 and sll1221 and sll1223
   equation: (4) |M_h_c[c]| + |M_nadph_c[c]| + |M_pq_p[p]| => |M_nadp_c[c]| + (3)
     |M_h_p[p]| + |M_pqh2_p[p]|
   subsystem: Oxidative phosphorylation
 - id: R_NDH1_1u
   name: NAD(P)H dehydrogenase (plastoquinone-8 & 3 protons) (tilacoide)
+  genes: (slr0331 or slr1291) and slr0844 and sll0519 and sll0223 and slr1279 and
+    sll0522 and sll0521 and slr0261 and sll0520 and slr1281 and (slr1280 or sll8031)
+    and slr1623 and sll1262 and sll1220 and sll1221 and sll1223
   equation: (4) |M_h_c[c]| + |M_nadph_c[c]| + |M_pq_u[u]| => |M_nadp_c[c]| + (3)
     |M_h_u[u]| + |M_pqh2_u[u]|
   subsystem: Oxidative phosphorylation
 - id: R_NDH1_2p
   name: NAD(P)H dehydrogenase (plastoquinone-8 & 3 protons) (periplasm)
+  genes: (slr0331 or slr1291) and slr0844 and sll0519 and sll0223 and slr1279 and
+    sll0522 and sll0521 and slr0261 and sll0520 and slr1281 and (slr1280 or sll8031)
+    and slr1623 and sll1262 and sll1220 and sll1221 and sll1223
   equation: (4) |M_h_c[c]| + |M_nadh_c[c]| + |M_pq_p[p]| => |M_nad_c[c]| + (3) |M_h_p[p]|
     + |M_pqh2_p[p]|
   subsystem: Oxidative phosphorylation
 - id: R_NDH1_2u
   name: NAD(P)H dehydrogenase (plastoquinone-8 & 3 protons) (tilacoide)
+  genes: (slr0331 or slr1291) and slr0844 and sll0519 and sll0223 and slr1279 and
+    sll0522 and sll0521 and slr0261 and sll0520 and slr1281 and (slr1280 or sll8031)
+    and slr1623 and sll1262 and sll1220 and sll1221 and sll1223
   equation: (4) |M_h_c[c]| + |M_nadh_c[c]| + |M_pq_u[u]| => |M_nad_c[c]| + (3) |M_h_u[u]|
     + |M_pqh2_u[u]|
   subsystem: Oxidative phosphorylation
 - id: R_NDH1_3u
   name: Active co2 transporter facilitator (tilacoide)
+  genes: sll0519 and sll0223 and slr1279 and sll0522 and sll0521 and slr0261 and
+    sll0520 and slr1281 and (slr1280 or sll8031) and slr1623 and sll1262 and sll1220
+    and sll1221 and sll1223 and sll1733 and sll1732 and sll1734 and sll1735
   equation: (3) |M_h_c[c]| + |M_h2o_c[c]| + |M_nadph_c[c]| + |M_pq_u[u]| + |M_co2_p[p]|
     => |M_nadp_c[c]| + |M_hco3_c[c]| + (3) |M_h_u[u]| + |M_pqh2_u[u]|
   subsystem: Transport
 - id: R_NDH1_4pp
   name: 'Active co2 transporter facilitator (periplasm) '
+  genes: sll0519 and sll0223 and slr1279 and sll0522 and sll0521 and slr0261 and
+    sll0520 and slr1281 and (slr1280 or sll8031) and slr1623 and sll1262 and sll1220
+    and sll1221 and sll1223 and sll0027 and sll0026 and slr1302
   equation: (3) |M_h_c[c]| + |M_h2o_c[c]| + |M_nadph_c[c]| + |M_pq_p[p]| + |M_co2_p[p]|
     => |M_nadp_c[c]| + |M_hco3_c[c]| + (3) |M_h_p[p]| + |M_pqh2_p[p]|
   subsystem: Transport
 - id: R_NDH2_syn
   name: NADH dehydrogenase 2 (plastoquinone-8) (tilacoide)
+  genes: slr0851 or slr1743 or sll1484
   equation: '|M_h_c[c]| + |M_nadh_c[c]| + |M_pq_u[u]| => |M_nad_c[c]| + |M_pqh2_u[u]|'
   subsystem: Oxidative phosphorylation
 - id: R_NDPK1
   name: nucleoside-diphosphate kinase (ATP_GDP)
+  genes: sll1852
   equation: '|M_atp_c[c]| + |M_gdp_c[c]| <=> |M_adp_c[c]| + |M_gtp_c[c]|'
   subsystem: Purine metabolism
 - id: R_NDPK10
   name: nucleoside-diphosphate kinase (ATP_dIDP)
+  genes: sll1852
   equation: '|M_atp_c[c]| + |M_didp_c[c]| <=> |M_adp_c[c]| + |M_ditp_c[c]|'
   subsystem: Purine metabolism
 - id: R_NDPK2
   name: nucleoside-diphosphate kinase (ATP_UDP)
+  genes: sll1852
   equation: '|M_atp_c[c]| + |M_udp_c[c]| <=> |M_adp_c[c]| + |M_utp_c[c]|'
   subsystem: Pyrimidine metabolism
 - id: R_NDPK3
   name: nucleoside-diphosphate kinase (ATP_CDP)
+  genes: sll1852
   equation: '|M_atp_c[c]| + |M_cdp_c[c]| <=> |M_adp_c[c]| + |M_ctp_c[c]|'
   subsystem: Pyrimidine metabolism
 - id: R_NDPK4
   name: nucleoside-diphosphate kinase (ATP_dTDP)
+  genes: sll1852
   equation: '|M_atp_c[c]| + |M_dtdp_c[c]| <=> |M_adp_c[c]| + |M_dttp_c[c]|'
   subsystem: Pyrimidine metabolism
 - id: R_NDPK5
   name: nucleoside-diphosphate kinase (ATP_dGDP)
+  genes: sll1852
   equation: '|M_atp_c[c]| + |M_dgdp_c[c]| <=> |M_adp_c[c]| + |M_dgtp_c[c]|'
   subsystem: Purine metabolism
 - id: R_NDPK6
   name: nucleoside-diphosphate kinase (ATP_dUDP)
+  genes: sll1852
   equation: '|M_atp_c[c]| + |M_dudp_c[c]| <=> |M_adp_c[c]| + |M_dutp_c[c]|'
   subsystem: Pyrimidine metabolism
 - id: R_NDPK7
   name: nucleoside-diphosphate kinase (ATP_dCDP)
+  genes: sll1852
   equation: '|M_atp_c[c]| + |M_dcdp_c[c]| <=> |M_adp_c[c]| + |M_dctp_c[c]|'
   subsystem: Pyrimidine metabolism
 - id: R_NDPK8
   name: nucleoside-diphosphate kinase (ATP_dADP)
+  genes: sll1852
   equation: '|M_atp_c[c]| + |M_dadp_c[c]| <=> |M_adp_c[c]| + |M_datp_c[c]|'
   subsystem: Purine metabolism
 - id: R_NDPK9
   name: nucleoside-diphosphate kinase (ATP_IDP)
+  genes: sll1852
   equation: '|M_atp_c[c]| + |M_idp_c[c]| <=> |M_adp_c[c]| + |M_itp_c[c]|'
   subsystem: Purine metabolism
 - id: R_NH4tex
@@ -2427,32 +2905,39 @@
   subsystem: Transport
 - id: R_NH4tpp
   name: ammonia ireversible transport (periplasm)
+  genes: sll0108 or sll0537 or sll1017
   equation: '|M_h_p[p]| + |M_nh4_p[p]| => |M_h_c[c]| + |M_nh4_c[c]|'
   subsystem: Transport
 - id: R_NI2abcpp_syn
   name: Nickle (Ni+2) ABC transporter (periplasm)
+  genes: sll0383 and sll0384 and sll0385
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_ni2_p[p]| => |M_adp_c[c]| + |M_h_c[c]|
     + |M_pi_c[c]| + |M_ni2_c[c]|'
   subsystem: Transport
 - id: R_NMNAT
   name: nicotinamide-nucleotide adenylyltransferase
+  genes: slr0787
   equation: '|M_atp_c[c]| + |M_h_c[c]| + |M_nmn_c[c]| => |M_nad_c[c]| + |M_ppi_c[c]|'
   subsystem: Nicotinate and nicotinamide metabolism
 - id: R_NMNS
   name: NMN synthetase
+  genes: slr0788
   equation: '|M_h_c[c]| + |M_prpp_c[c]| + |M_ncam_c[c]| => |M_ppi_c[c]| + |M_nmn_c[c]|'
   subsystem: Nicotinate and nicotinamide metabolism
 - id: R_NNATr
   name: nicotinate-nucleotide adenylyltransferase reversible
+  genes: slr0787 or sll1916
   equation: '|M_atp_c[c]| + |M_h_c[c]| + |M_nicrnt_c[c]| <=> |M_ppi_c[c]| + |M_dnad_c[c]|'
   subsystem: Nicotinate and nicotinamide metabolism
 - id: R_NNDPR
   name: nicotinate-nucleotide diphosphorylase (carboxylating)
+  genes: slr0936
   equation: (2) |M_h_c[c]| + |M_prpp_c[c]| + |M_quln_c[c]| => |M_co2_c[c]| + |M_ppi_c[c]|
     + |M_nicrnt_c[c]|
   subsystem: Nicotinate and nicotinamide metabolism
 - id: R_NO3abcpp
   name: Nitrate transport via ABC system (periplasm)
+  genes: sll1450 and sll1452 and sll1453
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_no3_p[p]| => |M_adp_c[c]| + |M_h_c[c]|
     + |M_pi_c[c]| + |M_no3_c[c]|'
   subsystem: Transport
@@ -2462,35 +2947,43 @@
   subsystem: Transport
 - id: R_NOR_syn
   name: Ferredoxin-Nitrite Reductase
+  genes: slr0898
   equation: (8) |M_h_c[c]| + (6) |M_fdxr_DASH_2_2_c[c]| + |M_no2_c[c]| => (2) |M_h2o_c[c]|
     + |M_nh4_c[c]| + (6) |M_fdxo_DASH_2_2_c[c]|
   subsystem: Nitrogen metabolism
 - id: R_NPHS
   name: naphthoate synthase
+  genes: sll1127
   equation: '|M_sbzcoa_c[c]| => |M_coa_c[c]| + |M_dhna_c[c]|'
   subsystem: Ubiquinone and other pterpenoids biosynthesis
 - id: R_NTD4
   name: 5'-nucleotidase (CMP)
+  genes: sll1108 or sll1459
   equation: '|M_h2o_c[c]| + |M_cmp_c[c]| => |M_pi_c[c]| + |M_cytd_c[c]|'
   subsystem: Purine metabolism
 - id: R_NTD7
   name: 5'-nucleotidase (AMP)
+  genes: sll1108 or sll1459
   equation: '|M_h2o_c[c]| + |M_amp_c[c]| => |M_pi_c[c]| + |M_adn_c[c]|'
   subsystem: Purine metabolism
 - id: R_NTPP2
   name: Nucleoside triphosphate pyrophosphorylase (gtp)
+  genes: sll1005
   equation: '|M_h2o_c[c]| + |M_gtp_c[c]| => |M_h_c[c]| + |M_ppi_c[c]| + |M_gmp_c[c]|'
   subsystem: Purine metabolism
 - id: R_NTPP4
   name: Nucleoside triphosphate pyrophosphorylase (ctp)
+  genes: sll1005
   equation: '|M_h2o_c[c]| + |M_ctp_c[c]| => |M_h_c[c]| + |M_ppi_c[c]| + |M_cmp_c[c]|'
   subsystem: Purine metabolism
 - id: R_NTPP8
   name: Nucleoside triphosphate pyrophosphorylase (utp)
+  genes: sll1005
   equation: '|M_h2o_c[c]| + |M_utp_c[c]| => |M_h_c[c]| + |M_ppi_c[c]| + |M_ump_c[c]|'
   subsystem: Purine metabolism
 - id: R_NTPTP1
   name: Nucleoside triphosphate tripolyhydrolase
+  genes: sll0398
   equation: '|M_h2o_c[c]| + |M_dgtp_c[c]| => |M_pppi_c[c]| + |M_dgsn_c[c]|'
   subsystem: Purine metabolism
 - id: R_Ni2tex
@@ -2511,6 +3004,7 @@
   subsystem: Transport
 - id: R_OCBT
   name: ornithine carbamoyltransferase
+  genes: sll0902
   equation: '|M_cbp_c[c]| + |M_orn_c[c]| <=> |M_h_c[c]| + |M_pi_c[c]| + |M_citr_DASH_L_c[c]|'
   subsystem: Lysine metabolism
 - id: R_OMCDC
@@ -2519,10 +3013,12 @@
   subsystem: Others
 - id: R_OMPDC
   name: orotidine-5'-phosphate decarboxylase
+  genes: sll0838
   equation: '|M_h_c[c]| + |M_orot5p_c[c]| => |M_co2_c[c]| + |M_ump_c[c]|'
   subsystem: Pyrimidine metabolism
 - id: R_OPHBDC
   name: Octaprenyl-hydroxybenzoate decarboxylase
+  genes: sll0936 or slr1099
   equation: '|M_h_c[c]| + |M_3ophb_c[c]| => |M_co2_c[c]| + |M_2oph_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_ORNTA
@@ -2531,36 +3027,44 @@
   subsystem: Arginine and proline metabolism
 - id: R_ORNTACr
   name: ornithine transacetylase reversible
+  genes: sll1883 or slr1653
   equation: '|M_glu_DASH_L_c[c]| + |M_acorn_c[c]| <=> |M_acglu_c[c]| + |M_orn_c[c]|'
   subsystem: Urea cycle and metabolism of amino groups
 - id: R_ORPT
   name: orotate phosphoribosyltransferase
+  genes: slr0185
   equation: '|M_ppi_c[c]| + |M_orot5p_c[c]| <=> |M_prpp_c[c]| + |M_orot_c[c]|'
   subsystem: Pyrimidine metabolism
 - id: R_OXADC
   name: oxalate decarboxylase
+  genes: sll1358
   equation: '|M_h_c[c]| + |M_oxa_c[c]| => |M_co2_c[c]| + |M_for_c[c]|'
   subsystem: Glyoxylate and dicarboxylate metabolism
 - id: R_OXGDC2
   name: 2-oxoglutarate decarboxylase
+  genes: sll0603
   equation: '|M_h_c[c]| + |M_akg_c[c]| + |M_thmpp_c[c]| => |M_co2_c[c]| + |M_ssaltpp_c[c]|'
   subsystem: Ubiquinone and other pterpenoids biosynthesis
 - id: R_P5CD
   name: 1-pyrroline-5-carboxylate dehydrogenase
+  genes: sll1561
   equation: '|M_nad_c[c]| + (2) |M_h2o_c[c]| + |M_1pyr5c_c[c]| => |M_h_c[c]| + |M_nadh_c[c]|
     + |M_glu_DASH_L_c[c]|'
   subsystem: Arginine and proline metabolism
 - id: R_P5CR
   name: pyrroline-5-carboxylate reductase(nadph)
+  genes: slr0661
   equation: (2) |M_h_c[c]| + |M_nadph_c[c]| + |M_1pyr5c_c[c]| => |M_nadp_c[c]| +
     |M_pro_DASH_L_c[c]|
   subsystem: Arginine and proline metabolism
 - id: R_P5CRx
   name: pyrroline-5-carboxylate reductase(nadh)
+  genes: slr0661
   equation: (2) |M_h_c[c]| + |M_nadh_c[c]| + |M_1pyr5c_c[c]| => |M_nad_c[c]| + |M_pro_DASH_L_c[c]|
   subsystem: Arginine and proline metabolism
 - id: R_PANTS
   name: pantothenate synthase
+  genes: sll1249
   equation: '|M_atp_c[c]| + |M_ala_DASH_B_c[c]| + |M_pant_DASH_R_c[c]| => |M_h_c[c]|
     + |M_ppi_c[c]| + |M_amp_c[c]| + |M_pnto_DASH_R_c[c]|'
   subsystem: Pantothenate and CoA biosynthesis
@@ -2602,112 +3106,138 @@
   subsystem: Galactolipids metabolism
 - id: R_PAPPT3
   name: phospho-N-acetylmuramoyl-pentapeptide-transferase (meso-2,6-diaminopimelate)
+  genes: sll0657
   equation: '|M_udcpp_c[c]| + |M_ugmda_c[c]| => |M_ump_c[c]| + |M_uagmda_c[c]|'
   subsystem: 'Peptidoglycan biosynthesis '
 - id: R_PAPSR
   name: phosphoadenylyl-sulfate reductase (thioredoxin)
+  genes: slr1791
   equation: '|M_paps_c[c]| + |M_trdrd_c[c]| => (2) |M_h_c[c]| + |M_pap_c[c]| + |M_so3_c[c]|
     + |M_trdox_c[c]|'
   subsystem: Sulfur Cysteine and methionine metabolism
 - id: R_PC11M
   name: precorrin-4 C11-methyltransferase
+  genes: slr0239
   equation: '|M_amet_c[c]| + |M_pre4_c[c]| => |M_h_c[c]| + |M_ahcys_c[c]| + |M_pre5_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_PC17M
   name: precorrin-3B C17-methyltransferase
+  genes: slr0969
   equation: '|M_amet_c[c]| + |M_pre3b_c[c]| => (3) |M_h_c[c]| + |M_ahcys_c[c]| +
     |M_pre4_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_PC20M
   name: precorrin-2 C20-methyltransferase
+  genes: slr1879
   equation: '|M_amet_c[c]| + |M_dscl_c[c]| => |M_h_c[c]| + |M_ahcys_c[c]| + |M_pre3a_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_PC6AR
   name: precorrin-6A reductase
+  genes: slr0252
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_pre6a_c[c]| => |M_nadp_c[c]| + |M_pre6b_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_PC6YM
   name: precorrin-6Y C5,15-methyltransferase (decarboxylating)
+  genes: sll0099
   equation: (2) |M_amet_c[c]| + |M_pre6b_c[c]| => (2) |M_h_c[c]| + |M_co2_c[c]| +
     (2) |M_ahcys_c[c]| + |M_pre8_c[c]|
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_PC8XM
   name: precorrin-8X methylmutase
+  genes: sll0794 or sll0916 or slr1467
   equation: '|M_h_c[c]| + |M_pre8_c[c]| => |M_hgbyr_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_PDH
   name: pyruvate dehydrogenase
+  genes: sll1721 and sll1841 and slr1096
   equation: '|M_nad_c[c]| + |M_coa_c[c]| + |M_pyr_c[c]| => |M_nadh_c[c]| + |M_co2_c[c]|
     + |M_accoa_c[c]|'
   subsystem: Pyruvate metabolism
 - id: R_PDHa
   name: pyruvate dehydrogenase (lipoamide)
+  genes: sll1721
   equation: '|M_h_c[c]| + |M_pyr_c[c]| + |M_lpam_c[c]| => |M_co2_c[c]| + |M_adhlam_c[c]|'
   subsystem: Glycolysis/Gluconeogenesis
 - id: R_PDHbr
   name: pyruvate dehydrogenase (dihydrolipoamide) reversible
+  genes: sll1841
   equation: '|M_coa_c[c]| + |M_adhlam_c[c]| <=> |M_accoa_c[c]| + |M_dhlam_c[c]|'
   subsystem: Glycolysis/Gluconeogenesis
 - id: R_PDHcr
   name: Pyruvate dehydrogenase (dihydrolipoamide dehydrogenase) reversible
+  genes: slr1096
   equation: '|M_nad_c[c]| + |M_dhlam_c[c]| <=> |M_h_c[c]| + |M_nadh_c[c]| + |M_lpam_c[c]|'
   subsystem: Glycolysis/Gluconeogenesis
 - id: R_PDX5PO
   name: pyridoxine 5'-phosphate oxidase
+  genes: sll1440
   equation: '|M_o2_c[c]| + |M_pdx5p_c[c]| <=> |M_h2o2_c[c]| + |M_pydx5p_c[c]|'
   subsystem: Vitamin B6 metabolism
 - id: R_PDX5PS
   name: Pyridoxine 5'-phosphate synthase
+  genes: sll0660
   equation: '|M_nad_c[c]| + |M_dxyl5p_c[c]| + |M_phthr_c[c]| => |M_h_c[c]| + |M_nadh_c[c]|
     + |M_co2_c[c]| + (2) |M_h2o_c[c]| + |M_pi_c[c]| + |M_pdx5p_c[c]|'
   subsystem: Vitamin B6 metabolism
 - id: R_PFK
   name: Phosphofructokinase
+  genes: sll0745 or sll1196
   equation: '|M_atp_c[c]| + |M_f6p_c[c]| => |M_adp_c[c]| + |M_h_c[c]| + |M_fdp_c[c]|'
   subsystem: Glycolysis/Gluconeogenesis
 - id: R_PFK_2
   name: Phosphofructokinase (2)
+  genes: sll1196
   equation: '|M_atp_c[c]| + |M_tag6p_DASH_D_c[c]| => |M_adp_c[c]| + |M_h_c[c]| +
     |M_tagdp_DASH_D_c[c]|'
   subsystem: Glycolysis/Gluconeogenesis
 - id: R_PFK_3
   name: phosphofructokinase (s7p)
+  genes: sll1196
   equation: '|M_atp_c[c]| + |M_s7p_c[c]| => |M_adp_c[c]| + |M_h_c[c]| + |M_s17bp_c[c]|'
   subsystem: Glycolysis/Gluconeogenesis
 - id: R_PGAMT
   name: phosphoglucosamine mutase
+  genes: sll0726 or sll1758
   equation: '|M_gam1p_c[c]| <=> |M_gam6p_c[c]|'
   subsystem: Aminosugars metabolism
 - id: R_PGCD
   name: phosphoglycerate dehydrogenase reversible
+  genes: sll1908
   equation: '|M_nad_c[c]| + |M_3pg_c[c]| => |M_h_c[c]| + |M_nadh_c[c]| + |M_3php_c[c]|'
   subsystem: Arginine and proline metabolism
 - id: R_PGI
   name: 'Glucose-6-phosphate isomerase '
+  genes: slr1349
   equation: '|M_g6p_c[c]| <=> |M_f6p_c[c]|'
   subsystem: Glycolysis/Gluconeogenesis
 - id: R_PGI2
   name: Glucose-6-phosphate isomerase (2)
+  genes: slr1349
   equation: '|M_g6p_DASH_B_c[c]| <=> |M_f6p_c[c]|'
   subsystem: Glycolysis/Gluconeogenesis
 - id: R_PGK
   name: phosphoglycerate kinase
+  genes: slr0394
   equation: '|M_atp_c[c]| + |M_3pg_c[c]| <=> |M_adp_c[c]| + |M_13dpg_c[c]|'
   subsystem: Glycolysis/Gluconeogenesis
 - id: R_PGL
   name: 6-phosphogluconolactonase
+  genes: sll1479
   equation: '|M_h2o_c[c]| + |M_6pgl_c[c]| => |M_h_c[c]| + |M_6pgc_c[c]|'
   subsystem: Pentose phosphate pathway
 - id: R_PGLYCP
   name: Phosphoglycolate phosphatase
+  genes: sll1349 or slr0458
   equation: '|M_h2o_c[c]| + |M_2pglyc_c[c]| => |M_pi_c[c]| + |M_glyclt_c[c]|'
   subsystem: Glyoxylate and dicarboxylate metabolism
 - id: R_PGM
   name: phosphoglycerate mutase
+  genes: slr1124 or slr1945 or slr0395
   equation: '|M_2pg_c[c]| <=> |M_3pg_c[c]|'
   subsystem: Glycolysis/Gluconeogenesis
 - id: R_PGMT
   name: phosphoglucomutase
+  genes: sll0726 or sll1758
   equation: '|M_g1p_c[c]| <=> |M_g6p_c[c]|'
   subsystem: Glycolysis/Gluconeogenesis
 - id: R_PGPP160
@@ -2748,64 +3278,77 @@
   subsystem: Fatty acid biosynthesis
 - id: R_PGSA160
   name: Phosphatidylglycerol synthase (n-C16_0)
+  genes: sll1522
   equation: '|M_cdpdhdecg_c[c]| + |M_glyc3p_c[c]| => |M_h_c[c]| + |M_cmp_c[c]| +
     |M_pgp160_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_PGSA161
   name: Phosphatidylglycerol synthase (n-C16_1)
+  genes: sll1522
   equation: '|M_cdpdhdec9eg_c[c]| + |M_glyc3p_c[c]| => |M_h_c[c]| + |M_cmp_c[c]|
     + |M_pgp161_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_PGSA180
   name: Phosphatidylglycerol synthase (n-C18_0)
+  genes: sll1522
   equation: '|M_cdpdodecg_c[c]| + |M_glyc3p_c[c]| => |M_h_c[c]| + |M_cmp_c[c]| +
     |M_pgp180_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_PGSA181
   name: Phosphatidylglycerol synthase (n-C18_1)
+  genes: sll1522
   equation: '|M_cdpdodec11eg_c[c]| + |M_glyc3p_c[c]| => |M_h_c[c]| + |M_cmp_c[c]|
     + |M_pgp181_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_PGSA181_LPAREN_9_RPAREN_
   name: Phosphatidylglycerol synthase (n-C18_1)
+  genes: sll1522
   equation: '|M_cdpdodec9eg_c[c]| + |M_glyc3p_c[c]| => |M_h_c[c]| + |M_cmp_c[c]|
     + |M_pgp181_9_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_PGSA182_LPAREN_9_12_RPAREN_
   name: Phosphatidylglycerol synthase (n-C18_2)
+  genes: sll1522
   equation: '|M_cdpdodec912eg_c[c]| + |M_glyc3p_c[c]| => |M_h_c[c]| + |M_cmp_c[c]|
     + |M_pgp182_9_12_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_PGSA183_LPAREN_6_9_12_RPAREN_
   name: Phosphatidylglycerol synthase (n-C18_3)
+  genes: sll1522
   equation: '|M_cdpdodec6912eg_c[c]| + |M_glyc3p_c[c]| => |M_h_c[c]| + |M_cmp_c[c]|
     + |M_pgp183_6_9_12_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_PGSA183_LPAREN_9_12_15_RPAREN_
   name: Phosphatidylglycerol synthase (n-C18_3)
+  genes: sll1522
   equation: '|M_cdpdodec91215eg_c[c]| + |M_glyc3p_c[c]| => |M_h_c[c]| + |M_cmp_c[c]|
     + |M_pgp183_9_12_15_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_PGSA184_LPAREN_6_9_12_15_RPAREN_
   name: Phosphatidylglycerol synthase (n-C18_4)
+  genes: sll1522
   equation: '|M_cdpdodec691215eg_c[c]| + |M_glyc3p_c[c]| => |M_h_c[c]| + |M_cmp_c[c]|
     + |M_pgp184_6_9_12_15_c[c]|'
   subsystem: Fatty acid biosynthesis
 - id: R_PHBS_syn
   name: PHB synthetasa
+  genes: slr1829 and slr1830
   equation: '|M_3hbcoa_DASH_R_c[c]| + |M_phbg_c[c]| => |M_coa_c[c]| + |M_PHB_c[c]|'
   subsystem: PHB byosynthesis
 - id: R_PHCD
   name: L-1-pyrroline-3-hydroxy-5-carboxylate dehydrogenase
+  genes: sll1561
   equation: '|M_nad_c[c]| + (2) |M_h2o_c[c]| + |M_1p3h5c_c[c]| => |M_h_c[c]| + |M_nadh_c[c]|
     + |M_e4hglu_c[c]|'
   subsystem: Arginine and proline metabolism
 - id: R_PHETA1
   name: phenylalanine transaminase
+  genes: sll0402 or sll0480 or slr0036 or sll1713 or sll1958
   equation: '|M_akg_c[c]| + |M_phe_DASH_L_c[c]| <=> |M_glu_DASH_L_c[c]| + |M_phpyr_c[c]|'
   subsystem: Phenylalanine tyrosine and tryptophan biosynthesis
 - id: R_PHETRS
   name: Phenylalanyl-tRNA synthetase
+  genes: sll0454 and sll1553
   equation: '|M_atp_c[c]| + |M_phe_DASH_L_c[c]| + |M_trnaphe_c[c]| <=> |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_phetrna_c[c]|'
   subsystem: Phenylalanine tyrosine and tryptophan biosynthesis
@@ -2819,26 +3362,32 @@
   subsystem: Transport
 - id: R_PHYTEDH1
   name: Phytoene dehydrogenase
+  genes: slr1254
   equation: '|M_nad_c[c]| + |M_phytoe_c[c]| => |M_h_c[c]| + |M_nadh_c[c]| + |M_phytof_c[c]|'
   subsystem: Carotenoid Biosynthesis
 - id: R_PHYTEDH2
   name: Phytoene dehydrogenase(2)
+  genes: slr1254
   equation: '|M_nadp_c[c]| + |M_phytoe_c[c]| => |M_h_c[c]| + |M_nadph_c[c]| + |M_phytof_c[c]|'
   subsystem: Carotenoid Biosynthesis
 - id: R_PHYTES
   name: Geranylgeranyl-diphosphate_geranylgeranyl-diphosphate geranylgeranyltransferase
+  genes: slr1255
   equation: (2) |M_ggdp_c[c]| => |M_ppi_c[c]| + |M_prephytedp_c[c]|
   subsystem: Carotenoid Biosynthesis
 - id: R_PHYTES2
   name: prephytoene diphosphate_geranylgeranyl-diphosphategeranylgeranyltransferase
+  genes: slr1255
   equation: '|M_prephytedp_c[c]| => |M_ppi_c[c]| + |M_phytoe_c[c]|'
   subsystem: Carotenoid Biosynthesis
 - id: R_PHYTFDH1
   name: Phytofluene dehydrogenase
+  genes: slr1254
   equation: '|M_nad_c[c]| + |M_phytof_c[c]| => |M_h_c[c]| + |M_nadh_c[c]| + |M_zcarote_c[c]|'
   subsystem: Carotenoid Biosynthesis
 - id: R_PHYTFDH2
   name: Phytofluene dehydrogenase(2)
+  genes: slr1254
   equation: '|M_nadp_c[c]| + |M_phytof_c[c]| => |M_h_c[c]| + |M_nadph_c[c]| + |M_zcarote_c[c]|'
   subsystem: Carotenoid Biosynthesis
 - id: R_PItex
@@ -2847,11 +3396,14 @@
   subsystem: Transport
 - id: R_PIuabcpp
   name: phosphate transport via ABC system (uptake, periplasm)
+  genes: (sll0679 or sll0680 or slr1247) and (sll0681 or slr1248) and (sll0682 or
+    slr1249) and (sll0683 or sll0684 or slr1250)
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_pi_p[p]| => |M_adp_c[c]| + |M_h_c[c]|
     + (2) |M_pi_c[c]|'
   subsystem: Transport
 - id: R_PMANM
   name: phosphomannomutase
+  genes: sll1496 or slr1334
   equation: '|M_man1p_c[c]| <=> |M_man6p_c[c]|'
   subsystem: Fructose and mannose metabolism
 - id: R_PMDPHT
@@ -2860,125 +3412,153 @@
   subsystem: Riboflavin metabolism
 - id: R_PNTK
   name: pantothenate kinase
+  genes: slr0812
   equation: '|M_atp_c[c]| + |M_pnto_DASH_R_c[c]| => |M_adp_c[c]| + |M_h_c[c]| + |M_4ppan_c[c]|'
   subsystem: Pantothenate and CoA biosynthesis
 - id: R_POR
   name: 'protochlorophyllide oxidoreductase '
+  genes: (slr0749 and slr0750 and slr0772) or slr0506
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_pchlld_c[c]| => |M_nadp_c[c]| + |M_chlld_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_POR_syn
   name: Pyruvate-ferredoxin oxidoreductase
+  genes: sll0741
   equation: '|M_coa_c[c]| + |M_pyr_c[c]| + (2) |M_fdxo_DASH_2_2_c[c]| => |M_h_c[c]|
     + |M_co2_c[c]| + |M_accoa_c[c]| + (2) |M_fdxr_DASH_2_2_c[c]|'
   subsystem: Pyruvate metabolism
 - id: R_PPA
   name: inorganic diphosphatase
+  genes: slr1622
   equation: '|M_h2o_c[c]| + |M_ppi_c[c]| => |M_h_c[c]| + (2) |M_pi_c[c]|'
   subsystem: Oxidative phosphorylation
 - id: R_PPBNGS
   name: porphobilinogen synthase
+  genes: sll1994
   equation: (2) |M_5aop_c[c]| => |M_h_c[c]| + (2) |M_h2o_c[c]| + |M_ppbng_c[c]|
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_PPC
   name: phosphoenolpyruvate carboxylase
+  genes: sll0920
   equation: '|M_co2_c[c]| + |M_h2o_c[c]| + |M_pep_c[c]| => |M_h_c[c]| + |M_pi_c[c]|
     + |M_oaa_c[c]|'
   subsystem: Pyruvate metabolism
 - id: R_PPCDC
   name: phosphopantothenoylcysteine decarboxylase
+  genes: sll0250
   equation: '|M_h_c[c]| + |M_4ppcys_c[c]| => |M_co2_c[c]| + |M_pan4p_c[c]|'
   subsystem: Pantothenate and CoA biosynthesis
 - id: R_PPK2r
   name: polyphosphate kinase
+  genes: sll0290
   equation: '|M_atp_c[c]| + |M_ppi_c[c]| <=> |M_adp_c[c]| + |M_pppi_c[c]|'
   subsystem: Oxidative phosphorylation
 - id: R_PPM
   name: phosphopentomutase
+  genes: sll1758
   equation: '|M_r1p_c[c]| <=> |M_r5p_c[c]|'
   subsystem: Pentose phosphate pathway
 - id: R_PPNCL
   name: phosphopantothenate-cysteine ligase
+  genes: sll0250
   equation: '|M_ctp_c[c]| + |M_cys_DASH_L_c[c]| + |M_4ppan_c[c]| => |M_h_c[c]| +
     |M_pi_c[c]| + |M_cdp_c[c]| + |M_4ppcys_c[c]|'
   subsystem: Pantothenate and CoA biosynthesis
 - id: R_PPND
   name: prephenate dehydrogenase
+  genes: slr2081
   equation: '|M_nad_c[c]| + |M_pphn_c[c]| => |M_nadh_c[c]| + |M_34hpp_c[c]| + |M_co2_c[c]|'
   subsystem: Phenylalanine tyrosine and tryptophan biosynthesis
 - id: R_PPNDH
   name: prephenate dehydratase
+  genes: sll1662
   equation: '|M_h_c[c]| + |M_pphn_c[c]| => |M_co2_c[c]| + |M_h2o_c[c]| + |M_phpyr_c[c]|'
   subsystem: Phenylalanine tyrosine and tryptophan biosynthesis
 - id: R_PPOR
   name: Phenylpyruvate_oxygen oxidoreductase (hydroxylating,decarboxylating)
+  genes: slr0090
   equation: '|M_o2_c[c]| + |M_phpyr_c[c]| => |M_co2_c[c]| + |M_2hyoxplac_c[c]|'
   subsystem: Phenylalanine tyrosine and tryptophan biosynthesis
 - id: R_PPPGO
   name: protoporphyrinogen oxidase (aerobic)
+  genes: slr1790
   equation: (1.5) |M_o2_c[c]| + |M_pppg9_c[c]| => (3) |M_h2o_c[c]| + |M_ppp9_c[c]|
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_PPS
   name: phosphoenolpyruvate synthase
+  genes: slr0301
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_pyr_c[c]| => (2) |M_h_c[c]| + |M_pi_c[c]|
     + |M_amp_c[c]| + |M_pep_c[c]|'
   subsystem: Pyruvate metabolism
 - id: R_PPTGF_Syn
   name: Flypase
+  genes: slr0488
   equation: '|M_peptido_syn_c[c]| => |M_peptido_syn_p[p]|'
   subsystem: 'Peptidoglycan biosynthesis '
 - id: R_PPTGS_Syn
   name: Peptidoglycan subunit synthesis Synechocystis sp. PCC6803
+  genes: sll1833
   equation: '|M_uaagmda_c[c]| => |M_h_c[c]| + |M_peptido_syn_c[c]| + |M_udcpdp_c[c]|'
   subsystem: 'Peptidoglycan biosynthesis '
 - id: R_PRAGS
   name: phosphoribosylglycinamide synthetase
+  genes: slr1159
   equation: '|M_atp_c[c]| + |M_gly_c[c]| + |M_pram_c[c]| => |M_adp_c[c]| + |M_h_c[c]|
     + |M_pi_c[c]| + |M_gar_c[c]|'
   subsystem: Purine metabolism
 - id: R_PRAIS
   name: phosphoribosylaminoimidazole synthase
+  genes: slr0838
   equation: '|M_atp_c[c]| + |M_fpram_c[c]| => |M_adp_c[c]| + (2) |M_h_c[c]| + |M_pi_c[c]|
     + |M_air_c[c]|'
   subsystem: Purine metabolism
 - id: R_PRAIi
   name: phosphoribosylanthranilate isomerase (irreversible)
+  genes: sll0356
   equation: '|M_pran_c[c]| => |M_2cpr5p_c[c]|'
   subsystem: Phenylalanine tyrosine and tryptophan biosynthesis
 - id: R_PRAMPC
   name: phosphoribosyl-AMP cyclohydrolase
+  genes: slr0608
   equation: '|M_h2o_c[c]| + |M_prbamp_c[c]| => |M_prfp_c[c]|'
   subsystem: Histidine metabolism
 - id: R_PRASCS
   name: phosphoribosylaminoimidazolesuccinocarboxamide synthase
+  genes: slr1226
   equation: '|M_atp_c[c]| + |M_asp_DASH_L_c[c]| + |M_5aizc_c[c]| <=> |M_adp_c[c]|
     + |M_h_c[c]| + |M_pi_c[c]| + |M_25aics_c[c]|'
   subsystem: Purine metabolism
 - id: R_PRATPP
   name: phosphoribosyl-ATP pyrophosphatase
+  genes: slr0608
   equation: '|M_h2o_c[c]| + |M_prbatp_c[c]| => |M_h_c[c]| + |M_ppi_c[c]| + |M_prbamp_c[c]|'
   subsystem: Histidine metabolism
 - id: R_PRFGS
   name: phosphoribosylformylglycinamidine synthase
+  genes: sll1056 or slr0520
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_gln_DASH_L_c[c]| + |M_fgam_c[c]| =>
     |M_adp_c[c]| + |M_h_c[c]| + |M_pi_c[c]| + |M_glu_DASH_L_c[c]| + |M_fpram_c[c]|'
   subsystem: Purine metabolism
 - id: R_PRMICIi
   name: 1-(5-phosphoribosyl)-5-[(5-phosphoribosylamino)methylideneamino)imidazole-4-carboxamide
     isomerase (irreversible)
+  genes: slr0652
   equation: '|M_prfp_c[c]| => |M_prlp_c[c]|'
   subsystem: Histidine metabolism
 - id: R_PROD2
   name: Proline dehydrogenase
+  genes: sll1561
   equation: '|M_fad_c[c]| + |M_pro_DASH_L_c[c]| => |M_h_c[c]| + |M_fadh2_c[c]| +
     |M_1pyr5c_c[c]|'
   subsystem: Arginine and proline metabolism
 - id: R_PROTRS
   name: Prolyl-tRNA synthetase
+  genes: sll1425
   equation: '|M_atp_c[c]| + |M_pro_DASH_L_c[c]| + |M_trnapro_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_protrna_c[c]|'
   subsystem: Arginine and proline metabolism
 - id: R_PROabcpp
   name: L-proline transport via ABC system (periplasm)
+  genes: slr0559 and sll0146 and slr0949 and slr0467 and slr1881
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_pro_DASH_L_p[p]| => |M_adp_c[c]| +
     |M_h_c[c]| + |M_pi_c[c]| + |M_pro_DASH_L_c[c]|'
   subsystem: Transport
@@ -2988,41 +3568,55 @@
   subsystem: Transport
 - id: R_PRPPS
   name: phosphoribosylpyrophosphate synthetase
+  genes: sll0469
   equation: '|M_atp_c[c]| + |M_r5p_c[c]| <=> |M_h_c[c]| + |M_amp_c[c]| + |M_prpp_c[c]|'
   subsystem: Pentose phosphate pathway
 - id: R_PRUK
   name: phosphoribulokinase
+  genes: sll1525
   equation: '|M_atp_c[c]| + |M_ru5p_DASH_D_c[c]| => |M_adp_c[c]| + |M_h_c[c]| + |M_rb15bp_c[c]|'
   subsystem: Carbon fixation
 - id: R_PSCVTi
   name: 3-phosphoshikimate 1-carboxyvinyltransferase, irreversible
+  genes: slr0444
   equation: '|M_pep_c[c]| + |M_skm5p_c[c]| => |M_pi_c[c]| + |M_3psme_c[c]|'
   subsystem: Phenylalanine tyrosine and tryptophan biosynthesis
 - id: R_PSI
   name: photosystem I (plastocyanin)
+  genes: slr1834 and slr1835 and ssl0563 and slr0737 and ssr2831 and sll0819 and
+    smr0004 and sml0008 and (sll0629 or ssr0390) and slr1655 and smr0005
   equation: (2) |M_pcrd_u[u]| + (2) |M_fdxo_DASH_2_2_c[c]| + (2) |M_photon_c[c]|
     => (2) |M_pcox_u[u]| + (2) |M_fdxr_DASH_2_2_c[c]|
   subsystem: Photosynthesis
 - id: R_PSII
   name: photosystem II
+  genes: sll1867 and slr1181 and slr1311 and sll0849 and slr0927 and slr0906 and
+    sll0851 and ssr3451 and smr0006 and ssl2598 and sml0001 and smr0008 and sml0005
+    and smr0007 and sml0003 and smr0009 and sll0427 and sll1418 and sll1194 and sll0258
+    and sll1398 and slr1739 and sml0002 and sml0007 and slr1645
   equation: (2) |M_h_c[c]| + |M_pq_u[u]| + |M_h2o_u[u]| + (2) |M_photon_c[c]| =>
     (2) |M_h_u[u]| + |M_pqh2_u[u]| + (0.5) |M_o2_u[u]|
   subsystem: Photosynthesis
 - id: R_PSI_2
   name: photosystem I (ferrocytochrome)
+  genes: slr1834 and slr1835 and ssl0563 and slr0737 and ssr2831 and sll0819 and
+    smr0004 and sml0008 and (sll0629 or ssr0390) and slr1655 and smr0005
   equation: (2) |M_focytc6_u[u]| + (2) |M_fdxo_DASH_2_2_c[c]| + (2) |M_photon_c[c]|
     => (2) |M_ficytc6_u[u]| + (2) |M_fdxr_DASH_2_2_c[c]|
   subsystem: Photosynthesis
 - id: R_PTAr
   name: phosphotransacetylase
+  genes: slr2132
   equation: '|M_accoa_c[c]| + |M_pi_c[c]| <=> |M_coa_c[c]| + |M_actp_c[c]|'
   subsystem: Pyruvate metabolism
 - id: R_PTHPS
   name: 6-pyruvoyltetrahydropterin synthase
+  genes: sll1612
   equation: '|M_ahdt_c[c]| => |M_pppi_c[c]| + |M_6pthp_c[c]|'
   subsystem: Folate biosynthesis
 - id: R_PTPAT
   name: pantetheine-phosphate adenylyltransferase
+  genes: slr0847
   equation: '|M_atp_c[c]| + |M_h_c[c]| + |M_pan4p_c[c]| <=> |M_ppi_c[c]| + |M_dpcoa_c[c]|'
   subsystem: Pantothenate and CoA biosynthesis
 - id: R_PTRCabcpp
@@ -3044,41 +3638,50 @@
   subsystem: Pyrimidine metabolism
 - id: R_PUTA3
   name: puta3
+  genes: sll1561
   equation: '|M_nad_c[c]| + |M_h2o_c[c]| + |M_glu5sa_c[c]| => (2) |M_h_c[c]| + |M_nadh_c[c]|
     + |M_glu_DASH_L_c[c]|'
   subsystem: Arginine and proline metabolism
 - id: R_PYAM5PO
   name: pyridoxamine 5'-phosphate oxidase
+  genes: sll1440
   equation: '|M_o2_c[c]| + |M_h2o_c[c]| + |M_pyam5p_c[c]| => |M_nh4_c[c]| + |M_h2o2_c[c]|
     + |M_pydx5p_c[c]|'
   subsystem: Vitamin B6 metabolism
 - id: R_PYDXNO
   name: pyridoxine oxidase
+  genes: sll1440
   equation: '|M_o2_c[c]| + |M_pydxn_c[c]| <=> |M_h2o2_c[c]| + |M_pydx_c[c]|'
   subsystem: Vitamin B6 metabolism
 - id: R_PYDXO
   name: pyridoxal oxidase
+  genes: sll1440
   equation: (0.5) |M_o2_c[c]| + (2) |M_h2o_c[c]| + |M_nh4_c[c]| + |M_pydx_c[c]| <=>
     (2) |M_h2o2_c[c]| + |M_pydam_c[c]|
   subsystem: Vitamin B6 metabolism
 - id: R_PYK
   name: pyruvate kinase
+  genes: sll0587 or sll1275
   equation: '|M_adp_c[c]| + |M_h_c[c]| + |M_pep_c[c]| => |M_atp_c[c]| + |M_pyr_c[c]|'
   subsystem: Glycolysis/Gluconeogenesis
 - id: R_PYK2
   name: pyruvate kinase(2)
+  genes: sll0587 or sll1275
   equation: '|M_h_c[c]| + |M_pep_c[c]| + |M_udp_c[c]| => |M_pyr_c[c]| + |M_utp_c[c]|'
   subsystem: Glycolysis/Gluconeogenesis
 - id: R_PYK3
   name: pyruvate kinase(3)
+  genes: sll0587 or sll1275
   equation: '|M_h_c[c]| + |M_gdp_c[c]| + |M_pep_c[c]| => |M_gtp_c[c]| + |M_pyr_c[c]|'
   subsystem: Glycolysis/Gluconeogenesis
 - id: R_PYK4
   name: pyruvate kinase(4)
+  genes: sll0587 or sll1275
   equation: '|M_h_c[c]| + |M_cdp_c[c]| + |M_pep_c[c]| => |M_pyr_c[c]| + |M_ctp_c[c]|'
   subsystem: Glycolysis/Gluconeogenesis
 - id: R_PYK5
   name: pyruvate kinase(5)
+  genes: sll0587 or sll1275
   equation: '|M_h_c[c]| + |M_pep_c[c]| + |M_idp_c[c]| => |M_pyr_c[c]| + |M_itp_c[c]|'
   subsystem: Glycolysis/Gluconeogenesis
 - id: R_PYRtex
@@ -3091,6 +3694,7 @@
   subsystem: Transport
 - id: R_QULNS
   name: quinolinate synthase
+  genes: sll0622
   equation: '|M_iasp_c[c]| + |M_dhap_c[c]| => (2) |M_h2o_c[c]| + |M_pi_c[c]| + |M_quln_c[c]|'
   subsystem: Nicotinate and nicotinamide metabolism
 - id: R_R05217
@@ -3104,24 +3708,29 @@
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_R05224
   name: Hydrogenobyrinate  <=> Hydrogenobyrinate a,c diamide
+  genes: sll1501
   equation: (2) |M_atp_c[c]| + |M_h2o_c[c]| + (2) |M_gln_DASH_L_c[c]| + |M_fdxr_DASH_2_2_c[c]|
     + |M_hgbyr_c[c]| => (2) |M_adp_c[c]| + |M_h_c[c]| + |M_ppi_c[c]| + (2) |M_glu_DASH_L_c[c]|
     + |M_fdxo_DASH_2_2_c[c]| + |M_hgbam_c[c]|
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_RBCh
   name: Ribulose-bisphosphate carboxylase
+  genes: slr0009 and slr0012
   equation: '|M_o2_c[c]| + |M_rb15bp_c[c]| => (2) |M_h_c[c]| + |M_3pg_c[c]| + |M_2pglyc_c[c]|'
   subsystem: Carbon fixation
 - id: R_RBFK
   name: riboflavin kinase
+  genes: slr1882
   equation: '|M_atp_c[c]| + |M_ribflv_c[c]| => |M_adp_c[c]| + |M_h_c[c]| + |M_fmn_c[c]|'
   subsystem: Riboflavin metabolism
 - id: R_RBFSa
   name: riboflavin synthase
+  genes: sll1282
   equation: '|M_db4p_c[c]| + |M_4r5au_c[c]| => (2) |M_h2o_c[c]| + |M_pi_c[c]| + |M_dmlz_c[c]|'
   subsystem: Riboflavin metabolism
 - id: R_RBFSb
   name: riboflavin synthase(b)
+  genes: sll0300
   equation: (2) |M_dmlz_c[c]| => |M_ribflv_c[c]| + |M_4r5au_c[c]|
   subsystem: Riboflavin metabolism
 - id: R_RBK
@@ -3130,39 +3739,48 @@
   subsystem: Pentose phosphate pathway
 - id: R_RBPC
   name: ribulose-bisphosphate carboxylase
+  genes: slr0009 and slr0012
   equation: '|M_co2_c[c]| + |M_h2o_c[c]| + |M_rb15bp_c[c]| => (2) |M_h_c[c]| + (2)
     |M_3pg_c[c]|'
   subsystem: Carbon fixation
 - id: R_RNDR1
   name: ribonucleoside-diphosphate reductase (ADP)
+  genes: slr1164 and slr0591
   equation: '|M_adp_c[c]| + |M_trdrd_c[c]| => |M_h2o_c[c]| + |M_dadp_c[c]| + |M_trdox_c[c]|'
   subsystem: Purine metabolism
 - id: R_RNDR2
   name: ribonucleoside-diphosphate reductase (GDP)
+  genes: slr1164 and slr0591
   equation: '|M_gdp_c[c]| + |M_trdrd_c[c]| => |M_h2o_c[c]| + |M_dgdp_c[c]| + |M_trdox_c[c]|'
   subsystem: Purine metabolism
 - id: R_RNDR3
   name: ribonucleoside-diphosphate reductase (CDP)
+  genes: slr1164 and slr0591
   equation: '|M_cdp_c[c]| + |M_trdrd_c[c]| => |M_h2o_c[c]| + |M_dcdp_c[c]| + |M_trdox_c[c]|'
   subsystem: Pyrimidine metabolism
 - id: R_RNDR4
   name: ribonucleoside-diphosphate reductase (UDP)
+  genes: slr1164 and slr0591
   equation: '|M_udp_c[c]| + |M_trdrd_c[c]| => |M_h2o_c[c]| + |M_dudp_c[c]| + |M_trdox_c[c]|'
   subsystem: Pyrimidine metabolism
 - id: R_RPE
   name: ribulose 5-phosphate 3-epimerase
+  genes: sll0807
   equation: '|M_ru5p_DASH_D_c[c]| <=> |M_xu5p_DASH_D_c[c]|'
   subsystem: Pentose phosphate pathway
 - id: R_RPI
   name: ribose-5-phosphate isomerase
+  genes: slr0194 or ssl2153
   equation: '|M_r5p_c[c]| <=> |M_ru5p_DASH_D_c[c]|'
   subsystem: Pentose phosphate pathway
 - id: R_SADT
   name: sulfate adenylyltransferase
+  genes: slr1165
   equation: '|M_atp_c[c]| + |M_h_c[c]| + |M_so4_c[c]| => |M_ppi_c[c]| + |M_aps_c[c]|'
   subsystem: Sulfur Cysteine and methionine metabolism
 - id: R_SBP
   name: sedoheptulose-bisphosphatase
+  genes: slr0952 or slr2094
   equation: '|M_h2o_c[c]| + |M_s17bp_c[c]| => |M_pi_c[c]| + |M_s7p_c[c]|'
   subsystem: Carbon fixation
 - id: R_SDPDS
@@ -3171,23 +3789,28 @@
   subsystem: Lysine metabolism
 - id: R_SDPTA
   name: succinyldiaminopimelate transaminase
+  genes: sll0006 or sll0938
   equation: '|M_akg_c[c]| + |M_sl26da_c[c]| <=> |M_glu_DASH_L_c[c]| + |M_sl2a6o_c[c]|'
   subsystem: Lysine metabolism
 - id: R_SERATi
   name: serine O-acetyltransferase, irreversible
+  genes: slr1348
   equation: '|M_accoa_c[c]| + |M_ser_DASH_L_c[c]| => |M_coa_c[c]| + |M_acser_c[c]|'
   subsystem: Sulfur Cysteine and methionine metabolism
 - id: R_SERTRS
   name: Seryl-tRNA synthetase
+  genes: slr1703
   equation: '|M_atp_c[c]| + |M_ser_DASH_L_c[c]| + |M_trnaser_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_sertrna_c[c]|'
   subsystem: Arginine and proline metabolism
 - id: R_SER_AL
   name: L-serine ammonia-lyase
+  genes: slr2072
   equation: '|M_ser_DASH_L_c[c]| => |M_pyr_c[c]| + |M_nh4_c[c]|'
   subsystem: Arginine and proline metabolism
 - id: R_SERabcpp
   name: L-serine transport via ABC system (periplasm)
+  genes: slr0559 and sll0146 and slr0949 and slr0467 and slr1881
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_ser_DASH_L_p[p]| => |M_adp_c[c]| +
     |M_h_c[c]| + |M_pi_c[c]| + |M_ser_DASH_L_c[c]|'
   subsystem: Transport
@@ -3197,15 +3820,18 @@
   subsystem: Transport
 - id: R_SHCHCS2
   name: 2-succinyl-6-hydroxy-2,4-cyclohexadiene 1-carboxylate synthase
+  genes: sll0603
   equation: '|M_ichor_c[c]| + |M_ssaltpp_c[c]| => |M_pyr_c[c]| + |M_thmpp_c[c]| +
     |M_2shchc_c[c]|'
   subsystem: Ubiquinone and other pterpenoids biosynthesis
 - id: R_SHK3D
   name: shikimate dehydrogenase
+  genes: slr1559
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_3dhsk_c[c]| => |M_nadp_c[c]| + |M_skm_c[c]|'
   subsystem: Phenylalanine tyrosine and tryptophan biosynthesis
 - id: R_SHKK
   name: shikimate kinase
+  genes: sll1669
   equation: '|M_atp_c[c]| + |M_skm_c[c]| => |M_adp_c[c]| + |M_h_c[c]| + |M_skm5p_c[c]|'
   subsystem: Phenylalanine tyrosine and tryptophan biosynthesis
 - id: R_SO4tex
@@ -3231,94 +3857,114 @@
   subsystem: Arginine and proline metabolism
 - id: R_SPP
   name: sucrose-phosphate phosphatase
+  genes: slr0953
   equation: '|M_h2o_c[c]| + |M_suc6p_c[c]| => |M_pi_c[c]| + |M_sucr_c[c]|'
   subsystem: Starch and sucrose metabolism
 - id: R_SPS
   name: sucrose phosphate synthase
+  genes: sll0045
   equation: '|M_f6p_c[c]| + |M_udpg_c[c]| => |M_h_c[c]| + |M_udp_c[c]| + |M_suc6p_c[c]|'
   subsystem: Starch and sucrose metabolism
 - id: R_SPT_syn
   name: serine-glyoxilate aminotransferase
+  genes: sll1559
   equation: '|M_glx_c[c]| + |M_ser_DASH_L_c[c]| <=> |M_gly_c[c]| + |M_hpyr_c[c]|'
   subsystem: Glyoxylate and dicarboxylate metabolism
 - id: R_SPT_syn2
   name: serine-glyoxilate aminotransferase(2)
+  genes: sll1559
   equation: '|M_ala_DASH_L_c[c]| + |M_glx_c[c]| <=> |M_pyr_c[c]| + |M_gly_c[c]|'
   subsystem: Glyoxylate and dicarboxylate metabolism
 - id: R_SQD1
   name: UDP-6-sulfo-6-deoxyglucose sulfohydrolase
+  genes: slr1020
   equation: '|M_h_c[c]| + |M_udpg_c[c]| + |M_so3_c[c]| => |M_h2o_c[c]| + |M_udpsq_c[c]|'
   subsystem: Sulfolipid Biosynthesis
 - id: R_SQD2_160
   name: sulfoquinovosyltransferase  (n-C16_0)
+  genes: slr0384
   equation: '|M_h2o_c[c]| + |M_12dgr160_c[c]| + |M_udpsq_c[c]| => |M_h_c[c]| + |M_udp_c[c]|
     + |M_sqdg160_c[c]|'
   subsystem: Sulfolipid Biosynthesis
 - id: R_SQD2_161
   name: sulfoquinovosyltransferase  (n-C16_1)
+  genes: slr0384
   equation: '|M_h2o_c[c]| + |M_12dgr161_c[c]| + |M_udpsq_c[c]| => |M_h_c[c]| + |M_udp_c[c]|
     + |M_sqdg161_c[c]|'
   subsystem: Sulfolipid Biosynthesis
 - id: R_SQD2_180
   name: sulfoquinovosyltransferase  (n-C18_0)
+  genes: slr0384
   equation: '|M_h2o_c[c]| + |M_12dgr180_c[c]| + |M_udpsq_c[c]| => |M_h_c[c]| + |M_udp_c[c]|
     + |M_sqdg180_c[c]|'
   subsystem: Sulfolipid Biosynthesis
 - id: R_SQD2_181
   name: sulfoquinovosyltransferase  (n-C18_1)
+  genes: slr0384
   equation: '|M_h2o_c[c]| + |M_12dgr181_c[c]| + |M_udpsq_c[c]| => |M_h_c[c]| + |M_udp_c[c]|
     + |M_sqdg181_c[c]|'
   subsystem: Sulfolipid Biosynthesis
 - id: R_SQD2_181_9
   name: sulfoquinovosyltransferase  (n-C18_1)
+  genes: slr0384
   equation: '|M_h2o_c[c]| + |M_12dgr181_9_c[c]| + |M_udpsq_c[c]| => |M_h_c[c]| +
     |M_udp_c[c]| + |M_sqdg181_9_c[c]|'
   subsystem: Sulfolipid Biosynthesis
 - id: R_SQD2_182_9_12
   name: sulfoquinovosyltransferase  (n-C18_2)
+  genes: slr0384
   equation: '|M_h2o_c[c]| + |M_12dgr182_9_12_c[c]| + |M_udpsq_c[c]| => |M_h_c[c]|
     + |M_udp_c[c]| + |M_sqdg182_9_12_c[c]|'
   subsystem: Sulfolipid Biosynthesis
 - id: R_SQD2_183_6_9_12
   name: sulfoquinovosyltransferase  (n-C18_3)
+  genes: slr0384
   equation: '|M_h2o_c[c]| + |M_12dgr183_6_9_12_c[c]| + |M_udpsq_c[c]| => |M_h_c[c]|
     + |M_udp_c[c]| + |M_sqdg183_6_9_12_c[c]|'
   subsystem: Sulfolipid Biosynthesis
 - id: R_SQD2_183_9_12_15
   name: sulfoquinovosyltransferase  (n-C18_3)
+  genes: slr0384
   equation: '|M_h2o_c[c]| + |M_12dgr183_9_12_15_c[c]| + |M_udpsq_c[c]| => |M_h_c[c]|
     + |M_udp_c[c]| + |M_sqdg183_9_12_15_c[c]|'
   subsystem: Sulfolipid Biosynthesis
 - id: R_SQD2_184_6_9_12_15
   name: sulfoquinovosyltransferase  (n-C18_4)
+  genes: slr0384
   equation: '|M_h2o_c[c]| + |M_12dgr184_6_9_12_15_c[c]| + |M_udpsq_c[c]| => |M_h_c[c]|
     + |M_udp_c[c]| + |M_sqdg184_6_9_12_15_c[c]|'
   subsystem: Sulfolipid Biosynthesis
 - id: R_SQLC
   name: squalene mutase (cyclizing)
+  genes: slr2089
   equation: '|M_sql_c[c]| => |M_dptne_c[c]|'
   subsystem: Steroid biosynthesis
 - id: R_SQLC2
   name: squalene mutase (cyclizing)
+  genes: slr2089
   equation: '|M_h2o_c[c]| + |M_sql_c[c]| => |M_dpterol_c[c]|'
   subsystem: Steroid biosynthesis
 - id: R_SQLS
   name: Squalene synthase
+  genes: sll0513
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + (2) |M_frdp_c[c]| => |M_nadp_c[c]| + (2)
     |M_ppi_c[c]| + |M_sql_c[c]|'
   subsystem: Steroid biosynthesis
 - id: R_SSALyr
   name: succinate-semialdehyde dehydrogenase (NADP) reversible
+  genes: slr0370
   equation: '|M_h2o_c[c]| + |M_nadp_c[c]| + |M_sucsal_c[c]| <=> (2) |M_h_c[c]| +
     |M_nadph_c[c]| + |M_succ_c[c]|'
   subsystem: C5-Branched dibasic acid metabolism
 - id: R_SUCBZL
   name: o-succinylbenzoate-CoA ligase
+  genes: slr0492
   equation: '|M_atp_c[c]| + |M_coa_c[c]| + |M_sucbz_c[c]| => |M_ppi_c[c]| + |M_amp_c[c]|
     + |M_sbzcoa_c[c]|'
   subsystem: Ubiquinone and other pterpenoids biosynthesis
 - id: R_SUCBZS
   name: O-succinylbenzoate-CoA synthase
+  genes: sll0409
   equation: '|M_2shchc_c[c]| => |M_h2o_c[c]| + |M_sucbz_c[c]|'
   subsystem: Ubiquinone and other pterpenoids biosynthesis
 - id: R_SUCCtex
@@ -3331,23 +3977,28 @@
   subsystem: Transport
 - id: R_SUCDi
   name: succinate dehydrogenase (irreversible)
+  genes: slr1233 and sll0823 and sll1625
   equation: '|M_q8_c[c]| + |M_succ_c[c]| => |M_fum_c[c]| + |M_q8h2_c[c]|'
   subsystem: Oxidative phosphorylation
 - id: R_SUCDpp_syn
   name: succinate dehydrogenase (periplasm)
+  genes: slr1233 and sll0823 and sll1625
   equation: '|M_pq_p[p]| + |M_succ_c[c]| => |M_fum_c[c]| + |M_pqh2_p[p]|'
   subsystem: Photosynthesis
 - id: R_SUCDu_syn
   name: succinate dehydrogenase (tilacoild)
+  genes: slr1233 and sll0823 and sll1625
   equation: '|M_pq_u[u]| + |M_succ_c[c]| => |M_fum_c[c]| + |M_pqh2_u[u]|'
   subsystem: Oxidative phosphorylation
 - id: R_SUCOAS
   name: succinyl-CoA synthetase (ADP-forming)
+  genes: sll1023 and sll1557
   equation: '|M_atp_c[c]| + |M_coa_c[c]| + |M_succ_c[c]| <=> |M_adp_c[c]| + |M_pi_c[c]|
     + |M_succoa_c[c]|'
   subsystem: Citrate cycle (TCA cycle)
 - id: R_SUCRabcpp_syn
   name: sucrose ABC transporter (periplasm)
+  genes: slr0747 and slr0529 and slr0530 and slr0531
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_sucr_p[p]| => |M_adp_c[c]| + |M_h_c[c]|
     + |M_pi_c[c]| + |M_sucr_c[c]|'
   subsystem: Transport
@@ -3357,11 +4008,13 @@
   subsystem: Transport
 - id: R_SULR_syn
   name: ferredoxin-sulfite reductase
+  genes: slr0963
   equation: (8) |M_h_c[c]| + (6) |M_fdxr_DASH_2_2_c[c]| + |M_so3_c[c]| => (3) |M_h2o_c[c]|
     + (6) |M_fdxo_DASH_2_2_c[c]| + |M_h2s_c[c]|
   subsystem: Sulfur Cysteine and methionine metabolism
 - id: R_SULabcpp
   name: sulfate transport via ABC system (periplasm)
+  genes: slr1452 and slr1453 and slr1454 and slr1455
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_so4_p[p]| => |M_adp_c[c]| + |M_h_c[c]|
     + |M_pi_c[c]| + |M_so4_c[c]|'
   subsystem: Transport
@@ -3371,19 +4024,23 @@
   subsystem: Fatty acid biosynthesis
 - id: R_TALA
   name: transaldolase
+  genes: slr1793
   equation: '|M_g3p_c[c]| + |M_s7p_c[c]| <=> |M_e4p_c[c]| + |M_f6p_c[c]|'
   subsystem: Pentose phosphate pathway
 - id: R_TDPDRE
   name: dTDP-4-dehydrorhamnose 3,5-epimerase
+  genes: slr0985 or slr1933
   equation: '|M_dtdp4d6dg_c[c]| => |M_dtdp4d6dm_c[c]|'
   subsystem: Nucleotide sugars metabolism
 - id: R_TDPDRR
   name: dTDP-4-dehydrorhamnose reductase
+  genes: sll1395
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_dtdp4d6dm_c[c]| => |M_nadp_c[c]| +
     |M_dtdprmn_c[c]|'
   subsystem: Nucleotide sugars metabolism
 - id: R_TDPGDH
   name: dTDPglucose 4,6-dehydratase
+  genes: slr0809 or slr0836
   equation: '|M_dtdpglu_c[c]| => |M_h2o_c[c]| + |M_dtdp4d6dg_c[c]|'
   subsystem: Nucleotide sugars metabolism
 - id: R_THDPS
@@ -3392,15 +4049,18 @@
   subsystem: Lysine metabolism
 - id: R_THFGLUS
   name: Tetrahydrofolate_L-glutamate gamma-ligase (ADP-forming)
+  genes: sll1612
   equation: '|M_atp_c[c]| + |M_glu_DASH_L_c[c]| + |M_thf_c[c]| <=> |M_adp_c[c]| +
     |M_h_c[c]| + |M_pi_c[c]| + |M_thfglu_c[c]|'
   subsystem: Folate biosynthesis
 - id: R_THRD_L
   name: L-threonine deaminase
+  genes: slr2072
   equation: '|M_thr_DASH_L_c[c]| => |M_nh4_c[c]| + |M_2obut_c[c]|'
   subsystem: Arginine and proline metabolism
 - id: R_THRPD
   name: threonine-phosphate decarboxylase
+  genes: sll1713
   equation: '|M_h_c[c]| + |M_thrp_c[c]| => |M_co2_c[c]| + |M_applp_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_THRPS
@@ -3409,39 +4069,47 @@
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_THRS
   name: threonine synthase
+  genes: sll1172 or sll1688
   equation: '|M_h2o_c[c]| + |M_phom_c[c]| => |M_pi_c[c]| + |M_thr_DASH_L_c[c]|'
   subsystem: Arginine and proline metabolism
 - id: R_THRTRS
   name: Threonyl-tRNA synthetase
+  genes: sll0078
   equation: '|M_atp_c[c]| + |M_thr_DASH_L_c[c]| + |M_trnathr_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_thrtrna_c[c]|'
   subsystem: Arginine and proline metabolism
 - id: R_THZPSN
   name: thiazole phosphate synthesis
+  genes: slr0633 or ssr0102
   equation: '|M_atp_c[c]| + |M_cys_DASH_L_c[c]| + |M_dxyl5p_c[c]| + |M_tyr_DASH_L_c[c]|
     => |M_h_c[c]| + |M_co2_c[c]| + |M_h2o_c[c]| + |M_ppi_c[c]| + |M_amp_c[c]| + |M_ala_DASH_L_c[c]|
     + |M_4hba_c[c]| + |M_4mpetz_c[c]|'
   subsystem: Thiamine metabolism
 - id: R_THZSN
   name: thiazole synthesis from xylulose
+  genes: slr0633 or ssr0102
   equation: '|M_fdxo_DASH_2_2_c[c]| + |M_cys_DASH_L_c[c]| + |M_tyr_DASH_L_c[c]| +
     |M_dxyl_c[c]| => |M_h_c[c]| + |M_co2_c[c]| + |M_h2o_c[c]| + |M_pyr_c[c]| + |M_nh4_c[c]|
     + |M_fdxr_DASH_2_2_c[c]| + |M_4hba_c[c]| + |M_4mhetz_c[c]|'
   subsystem: Thiamine metabolism
 - id: R_TKT1
   name: transketolase
+  genes: sll1070
   equation: '|M_r5p_c[c]| + |M_xu5p_DASH_D_c[c]| <=> |M_g3p_c[c]| + |M_s7p_c[c]|'
   subsystem: Pentose phosphate pathway
 - id: R_TKT2
   name: transketolase(2)
+  genes: sll1070
   equation: '|M_e4p_c[c]| + |M_xu5p_DASH_D_c[c]| <=> |M_g3p_c[c]| + |M_f6p_c[c]|'
   subsystem: Pentose phosphate pathway
 - id: R_TMDK1
   name: thymidine kinase (ATP_thymidine)
+  genes: slr0379
   equation: '|M_atp_c[c]| + |M_thymd_c[c]| => |M_adp_c[c]| + |M_h_c[c]| + |M_dtmp_c[c]|'
   subsystem: Pyrimidine metabolism
 - id: R_TMDS
   name: thymidylate synthase
+  genes: sll1635
   equation: '|M_mlthf_c[c]| + |M_dump_c[c]| => |M_dhf_c[c]| + |M_dtmp_c[c]|'
   subsystem: Pyrimidine metabolism
 - id: R_TMK
@@ -3450,120 +4118,147 @@
   subsystem: Thiamine metabolism
 - id: R_TMPKr
   name: thiamine-phosphate kinase
+  genes: slr1787
   equation: '|M_atp_c[c]| + |M_thmmp_c[c]| <=> |M_adp_c[c]| + |M_thmpp_c[c]|'
   subsystem: Thiamine metabolism
 - id: R_TMPPP
   name: thiamine-phosphate diphosphorylase
+  genes: sll0635
   equation: '|M_h_c[c]| + |M_4mpetz_c[c]| + |M_2mahmp_c[c]| => |M_ppi_c[c]| + |M_thmmp_c[c]|'
   subsystem: Thiamine metabolism
 - id: R_TOCOPHOM1
   name: tocopherol O-methyltransferase
+  genes: slr0089
   equation: '|M_amet_c[c]| + |M_gtocophe_c[c]| <=> |M_h_c[c]| + |M_ahcys_c[c]| +
     |M_atocophe_c[c]|'
   subsystem: Ubiquinone and other pterpenoids biosynthesis
 - id: R_TOCOPHOM2
   name: tocopherol O-methyltransferase(2)
+  genes: slr0089
   equation: '|M_amet_c[c]| + |M_dtocophe_c[c]| <=> |M_h_c[c]| + |M_ahcys_c[c]| +
     |M_btocophe_c[c]|'
   subsystem: Ubiquinone and other pterpenoids biosynthesis
 - id: R_TOCOPHS1
   name: tocopherol cyclase (g)
+  genes: slr1737
   equation: '|M_23dmphol_c[c]| <=> |M_gtocophe_c[c]|'
   subsystem: Ubiquinone and other pterpenoids biosynthesis
 - id: R_TOCOPHS2
   name: tocopherol cyclase (d)
+  genes: slr1737
   equation: '|M_2m6phol_c[c]| => |M_dtocophe_c[c]|'
   subsystem: Ubiquinone and other pterpenoids biosynthesis
 - id: R_TPI
   name: triose-phosphate isomerase
+  genes: slr0783
   equation: '|M_dhap_c[c]| <=> |M_g3p_c[c]|'
   subsystem: Glycolysis/Gluconeogenesis
 - id: R_TRDR
   name: thioredoxin reductase (NADPH)
+  genes: slr0600
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_trdox_c[c]| => |M_nadp_c[c]| + |M_trdrd_c[c]|'
   subsystem: Pyrimidine metabolism
 - id: R_TRPS1
   name: tryptophan synthase (indoleglycerol phosphate)
+  genes: slr0966 and slr0543
   equation: '|M_ser_DASH_L_c[c]| + |M_3ig3p_c[c]| => |M_h2o_c[c]| + |M_g3p_c[c]|
     + |M_trp_DASH_L_c[c]|'
   subsystem: Phenylalanine tyrosine and tryptophan biosynthesis
 - id: R_TRPTRS
   name: Tryptophanyl-tRNA synthetase
+  genes: slr1884
   equation: '|M_atp_c[c]| + |M_trp_DASH_L_c[c]| + |M_trnatrp_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_trptrna_c[c]|'
   subsystem: Phenylalanine tyrosine and tryptophan biosynthesis
 - id: R_TRSARr
   name: tartronate semialdehyde reductase
+  genes: slr0229
   equation: '|M_h_c[c]| + |M_nadh_c[c]| + |M_2h3oppan_c[c]| <=> |M_nad_c[c]| + |M_glyc_DASH_R_c[c]|'
   subsystem: Glyoxylate and dicarboxylate metabolism
 - id: R_TYRTA
   name: tyrosine transaminase
+  genes: sll0402 or sll0480 or slr0036 or sll1713 or sll1958
   equation: '|M_akg_c[c]| + |M_tyr_DASH_L_c[c]| <=> |M_34hpp_c[c]| + |M_glu_DASH_L_c[c]|'
   subsystem: Phenylalanine tyrosine and tryptophan biosynthesis
 - id: R_TYRTRS
   name: tyrosyl-tRNA synthetase
+  genes: slr1031 or ssr1720
   equation: '|M_atp_c[c]| + |M_tyr_DASH_L_c[c]| + |M_trnatyr_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_tyrtrna_c[c]|'
   subsystem: Phenylalanine tyrosine and tryptophan biosynthesis
 - id: R_U23GAAT
   name: UDP-3-O-(3-hydroxymyristoyl)glucosamine acyltransferase
+  genes: slr0776
   equation: '|M_3hmrsACP_c[c]| + |M_u3hga_c[c]| => |M_h_c[c]| + |M_ACP_c[c]| + |M_u23ga_c[c]|'
   subsystem: Lipopolysaccharide biosynthesis
 - id: R_UAAGDS
   name: UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimelate synthetase
+  genes: slr0528
   equation: '|M_atp_c[c]| + |M_26dap_DASH_M_c[c]| + |M_uamag_c[c]| => |M_adp_c[c]|
     + |M_h_c[c]| + |M_pi_c[c]| + |M_ugmd_c[c]|'
   subsystem: 'Peptidoglycan biosynthesis '
 - id: R_UAG2EMA
   name: UDP-N-acetyl-D-glucosamine 2-epimerase (Hydrolysis)
+  genes: slr0624
   equation: '|M_h2o_c[c]| + |M_uacgam_c[c]| <=> |M_h_c[c]| + |M_udp_c[c]| + |M_acmana_c[c]|'
   subsystem: Aminosugars metabolism
 - id: R_UAGAAT
   name: UDP-N-acetylglucosamine acyltransferase
+  genes: sll0379
   equation: '|M_3hmrsACP_c[c]| + |M_uacgam_c[c]| <=> |M_ACP_c[c]| + |M_u3aga_c[c]|'
   subsystem: Lipopolysaccharide biosynthesis
 - id: R_UAGCVT
   name: UDP-N-acetylglucosamine 1-carboxyvinyltransferase
+  genes: slr0017
   equation: '|M_pep_c[c]| + |M_uacgam_c[c]| => |M_pi_c[c]| + |M_uaccg_c[c]|'
   subsystem: Aminosugars metabolism
 - id: R_UAGDP
   name: UDP-N-acetylglucosamine diphosphorylase
+  genes: sll0899
   equation: '|M_h_c[c]| + |M_utp_c[c]| + |M_acgam1p_c[c]| => |M_ppi_c[c]| + |M_uacgam_c[c]|'
   subsystem: Aminosugars metabolism
 - id: R_UAGPT3
   name: UDP-N-acetylglucosamine-N-acetylmuramyl-(pentapeptide)pyrophosphoryl-undecaprenol
     N-acetylglucosamine transferase
+  genes: slr1656
   equation: '|M_uagmda_c[c]| + |M_uacgam_c[c]| => |M_h_c[c]| + |M_udp_c[c]| + |M_uaagmda_c[c]|'
   subsystem: 'Peptidoglycan biosynthesis '
 - id: R_UAMAGS
   name: UDP-N-acetylmuramoyl-L-alanyl-D-glutamate synthetase
+  genes: sll2010
   equation: '|M_atp_c[c]| + |M_glu_DASH_D_c[c]| + |M_uama_c[c]| => |M_adp_c[c]| +
     |M_h_c[c]| + |M_pi_c[c]| + |M_uamag_c[c]|'
   subsystem: Peptidoglycan biosynthesis
 - id: R_UAMAS
   name: UDP-N-acetylmuramoyl-L-alanine synthetase
+  genes: slr1423
   equation: '|M_atp_c[c]| + |M_ala_DASH_L_c[c]| + |M_uamr_c[c]| => |M_adp_c[c]| +
     |M_h_c[c]| + |M_pi_c[c]| + |M_uama_c[c]|'
   subsystem: Alanine, aspartate and glutamate metabolism
 - id: R_UAPGR
   name: UDP-N-acetylenolpyruvoylglucosamine reductase
+  genes: slr1424
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_uaccg_c[c]| => |M_nadp_c[c]| + |M_uamr_c[c]|'
   subsystem: Aminosugars metabolism
 - id: R_UDCPDP
   name: undecaprenyl-diphosphatase
+  genes: sll0210
   equation: '|M_h2o_c[c]| + |M_udcpdp_c[c]| => |M_h_c[c]| + |M_pi_c[c]| + |M_udcpp_c[c]|'
   subsystem: 'Peptidoglycan biosynthesis '
 - id: R_UDPDPS
   name: undecaprenyl-diphosphate synthase
+  genes: sll0506
   equation: '|M_ipdp_c[c]| + |M_decdp_c[c]| => |M_ppi_c[c]| + |M_udcpdp_c[c]|'
   subsystem: Terpenoid backbone biosynthesis
 - id: R_UDPG4E
   name: UDPglucose 4-epimerase
+  genes: sll0244 or slr1067 or slr1078
   equation: '|M_udpg_c[c]| <=> |M_udpgal_c[c]|'
   subsystem: Pyruvate metabolism
 - id: R_UGLDDS2
   name: UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-L-lysyl-D-alanyl-D-alanine synthetase
     (gamma-glutamate)
+  genes: slr1351
   equation: '|M_atp_c[c]| + |M_alaala_c[c]| + |M_fdxr_DASH_2_2_c[c]| + |M_uGgl_c[c]|
     => |M_adp_c[c]| + |M_pi_c[c]| + |M_fdxo_DASH_2_2_c[c]| + |M_uGgla_c[c]|'
   subsystem: 'Peptidoglycan biosynthesis '
@@ -3574,44 +4269,55 @@
 - id: R_UGMDDS
   name: UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanyl-D-alanine
     synthetase
+  genes: slr1351
   equation: '|M_atp_c[c]| + |M_alaala_c[c]| + |M_ugmd_c[c]| => |M_adp_c[c]| + |M_h_c[c]|
     + |M_pi_c[c]| + |M_ugmda_c[c]|'
   subsystem: 'Peptidoglycan biosynthesis '
 - id: R_UHGADA
   name: UDP-3-O-acetylglucosamine deacetylase
+  genes: sll1508
   equation: '|M_h2o_c[c]| + |M_u3aga_c[c]| => |M_ac_c[c]| + |M_u3hga_c[c]|'
   subsystem: Lipopolysaccharide biosynthesis
 - id: R_UMPK
   name: UMP kinase
+  genes: sll1249
   equation: '|M_atp_c[c]| + |M_ump_c[c]| <=> |M_adp_c[c]| + |M_udp_c[c]|'
   subsystem: Pyrimidine metabolism
 - id: R_UPP3MT
   name: uroporphyrinogen methyltransferase
+  genes: sll0378
   equation: (2) |M_amet_c[c]| + |M_uppg3_c[c]| => |M_h_c[c]| + (2) |M_ahcys_c[c]|
     + |M_dscl_c[c]|
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_UPP3S
   name: uroporphyrinogen-III synthase
+  genes: sll0166
   equation: '|M_hmbil_c[c]| => |M_h2o_c[c]| + |M_uppg3_c[c]|'
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_UPPDC1
   name: uroporphyrinogen decarboxylase (uroporphyrinogen III)
+  genes: slr0536
   equation: (4) |M_h_c[c]| + |M_uppg3_c[c]| => (4) |M_co2_c[c]| + |M_cpppg3_c[c]|
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_UPPDC2
   name: uroporphyrinogen decarboxylase (uroporphyrinogen I)
+  genes: slr0536
   equation: (4) |M_h_c[c]| + |M_uppg1_c[c]| => (4) |M_co2_c[c]| + |M_cpppg1_c[c]|
   subsystem: Porphyrin and chlorophyll metabolism
 - id: R_UPPRT
   name: uracil phosphoribosyltransferase
+  genes: sll1035 or sll0368
   equation: '|M_prpp_c[c]| + |M_ura_c[c]| => |M_ppi_c[c]| + |M_ump_c[c]|'
   subsystem: Pyrimidine metabolism
 - id: R_UREA
   name: urease
+  genes: slr1256 and sll0420 and sll1750 and sll1639 and slr1219 and slr1899 and
+    sll0643
   equation: (2) |M_h_c[c]| + |M_h2o_c[c]| + |M_urea_c[c]| => |M_co2_c[c]| + (2) |M_nh4_c[c]|
   subsystem: Purine metabolism
 - id: R_UREAabcpp
   name: Urea transport via ABC system (periplasm)
+  genes: slr0447 and slr1200 and slr1201 and sll0764 and sll0374
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_urea_p[p]| => |M_adp_c[c]| + |M_h_c[c]|
     + |M_pi_c[c]| + |M_urea_c[c]|'
   subsystem: Transport
@@ -3621,6 +4327,7 @@
   subsystem: Transport
 - id: R_URIDK2r
   name: uridylate kinase (dUMP)
+  genes: slr0379
   equation: '|M_atp_c[c]| + |M_dump_c[c]| <=> |M_adp_c[c]| + |M_dudp_c[c]|'
   subsystem: Pyrimidine metabolism
 - id: R_USHD
@@ -3630,30 +4337,36 @@
   subsystem: Lipopolysaccharide biosynthesis
 - id: R_VALTA
   name: valine transaminase
+  genes: slr0032
   equation: '|M_akg_c[c]| + |M_val_DASH_L_c[c]| <=> |M_glu_DASH_L_c[c]| + |M_3mob_c[c]|'
   subsystem: Valine leucine and isoleucine biosynthesis
 - id: R_VALTRS
   name: Valyl-tRNA synthetase
+  genes: slr0557
   equation: '|M_atp_c[c]| + |M_val_DASH_L_c[c]| + |M_trnaval_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_valtrna_c[c]|'
   subsystem: Valine leucine and isoleucine biosynthesis
 - id: R_ZCAROTDH1
   name: zeta-carotene desaturase
+  genes: slr0940
   equation: '|M_h_c[c]| + |M_o2_c[c]| + |M_nadph_c[c]| + |M_zcarote_c[c]| => (2)
     |M_h2o_c[c]| + |M_nadp_c[c]| + |M_neuspn_c[c]|'
   subsystem: Carotenoid Biosynthesis
 - id: R_ZCAROTDH2
   name: zeta-carotene desaturase(2)
+  genes: slr0940
   equation: '|M_h_c[c]| + |M_o2_c[c]| + |M_nadph_c[c]| + |M_neuspn_c[c]| => (2) |M_h2o_c[c]|
     + |M_nadp_c[c]| + |M_lycop_c[c]|'
   subsystem: Carotenoid Biosynthesis
 - id: R_ZN2abcpp
   name: Zinc (Zn+2) ABC transporter (periplasm)
+  genes: slr0798
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_zn2_c[c]| => |M_adp_c[c]| + |M_h_c[c]|
     + |M_pi_c[c]| + |M_zn2_p[p]|'
   subsystem: Transport
 - id: R_ZNabcpp
   name: zinc (Zn+2) transport via ABC system (periplasm)
+  genes: slr2043 and slr2045 and slr2044
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_zn2_p[p]| => |M_adp_c[c]| + |M_h_c[c]|
     + |M_pi_c[c]| + |M_zn2_c[c]|'
   subsystem: Transport
