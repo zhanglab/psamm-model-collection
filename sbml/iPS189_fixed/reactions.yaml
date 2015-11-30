@@ -1,9 +1,11 @@
 - id: R_ACGApts
   name: N-Acetyl-D-glucosamine transport via PEP:Pyr PTS
+  genes: MG041 and MG429
   equation: '|M_acgam_e[e]| + |M_pep_c[c]| => |M_acgam6p_c[c]| + |M_pyr_c[c]|'
   subsystem: ' '
 - id: R_ACKr
   name: acetate kinase
+  genes: MG357
   equation: '|M_ac_c[c]| + |M_atp_c[c]| <=> |M_adp_c[c]| + |M_actp_c[c]|'
   subsystem: ' '
 - id: R_ACOAt
@@ -20,22 +22,27 @@
   subsystem: ' '
 - id: R_ADK1
   name: adenylate kinase
+  genes: MG171
   equation: '|M_atp_c[c]| + |M_amp_c[c]| <=> (2) |M_adp_c[c]|'
   subsystem: ' '
 - id: R_ADK2
   name: adenylate kinase (Inorganic triphosphate)
+  genes: MG171
   equation: '|M_amp_c[c]| + |M_pppi_c[c]| <=> |M_adp_c[c]| + |M_ppi_c[c]|'
   subsystem: ' '
 - id: R_ADPT
   name: adenine phosphoribosyltransferase
+  genes: MG276
   equation: '|M_ade_c[c]| + |M_prpp_c[c]| => |M_ppi_c[c]| + |M_amp_c[c]|'
   subsystem: ' '
 - id: R_AGPAT
   name: 1-acylglycerol-3-phosphate O-acyltransferase
+  genes: MG212
   equation: '|M_acoa_c[c]| + |M_1ag3p_c[c]| => |M_coa_c[c]| + |M_12dag3p_c[c]|'
   subsystem: ' '
 - id: R_AKGD
   name: 2-oxoglutarate dehydrogenase
+  genes: MG271
   equation: '|M_akg_c[c]| + |M_coa_c[c]| + |M_nad_c[c]| => |M_co2_c[c]| + |M_nadh_c[c]|
     + |M_succoa_c[c]|'
   subsystem: ' '
@@ -45,6 +52,7 @@
   subsystem: ' '
 - id: R_ALATRS
   name: Alanyl-tRNA synthetase
+  genes: MG292
   equation: '|M_atp_c[c]| + |M_ala_DASH_L_c[c]| + |M_trnaala_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_alatrna_c[c]|'
   subsystem: ' '
@@ -129,10 +137,12 @@
   subsystem: ' '
 - id: R_ARBTpts
   name: arbutin transport via PEP:Pyr PTS
+  genes: MG041 and MG429
   equation: '|M_pep_c[c]| + |M_arbt_e[e]| => |M_pyr_c[c]| + |M_arbt6p_c[c]|'
   subsystem: ' '
 - id: R_ARGTRS
   name: Arginyl-tRNA synthetase
+  genes: MG378
   equation: '|M_atp_c[c]| + |M_arg_DASH_L_c[c]| + |M_trnaarg_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_argtrna_c[c]|'
   subsystem: ' '
@@ -142,6 +152,7 @@
   subsystem: ' '
 - id: R_ASNTRS
   name: Asparaginyl-tRNA synthetase
+  genes: MG113
   equation: '|M_atp_c[c]| + |M_asn_DASH_L_c[c]| + |M_trnaasn_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_asntrna_c[c]|'
   subsystem: ' '
@@ -151,11 +162,13 @@
   subsystem: ' '
 - id: R_ASPTRS
   name: Aspartyl-tRNA synthetase
+  genes: MG036
   equation: '|M_atp_c[c]| + |M_asp_DASH_L_c[c]| + |M_trnaasp_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_asptrna_c[c]|'
   subsystem: ' '
 - id: R_ATPHs
   name: ATP amine hydrolysis (spontaneous)
+  genes: s0001
   equation: '|M_h_c[c]| + |M_atp_c[c]| + |M_h2o_c[c]| => |M_nh4_c[c]| + |M_itp_c[c]|'
   subsystem: ' '
 - id: R_ATPM
@@ -164,6 +177,7 @@
   subsystem: ' '
 - id: R_ATPS4r
   name: ATP synthase (four protons for one ATP)
+  genes: MG399 and MG400 and MG401 and MG402 and MG403 and MG404 and MG405
   equation: (4) |M_h_e[e]| + |M_adp_c[c]| + |M_pi_c[c]| <=> (3) |M_h_c[c]| + |M_atp_c[c]|
     + |M_h2o_c[c]|
   subsystem: ' '
@@ -200,23 +214,28 @@
   subsystem: ' '
 - id: R_CA2abc
   name: calcium efflux  via ABC system
+  genes: MG071
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_ca2_e[e]| => |M_h_c[c]| + |M_adp_c[c]|
     + |M_pi_c[c]| + |M_ca2_c[c]|'
   subsystem: ' '
 - id: R_CDGPT
   name: CDPdiacylglycerol:sn-glycerol-3-phosphate 3-phosphatidyltransferase
+  genes: MG114
   equation: '|M_glyc3p_c[c]| + |M_cdpdag_c[c]| => |M_h_c[c]| + |M_pglyp_c[c]| + |M_cmp_c[c]|'
   subsystem: ' '
 - id: R_CELBpts
   name: cellobiose transport via PEP:Pyr PTS
+  genes: MG041 and MG429
   equation: '|M_pep_c[c]| + |M_cellb_e[e]| => |M_pyr_c[c]| + |M_6pgg_c[c]|'
   subsystem: ' '
 - id: R_CHOLK
   name: Choline kinase
+  genes: MG356
   equation: '|M_atp_c[c]| + |M_chol_c[c]| => |M_h_c[c]| + |M_adp_c[c]| + |M_cholp_c[c]|'
   subsystem: ' '
 - id: R_CO2t
   name: CO2 transporter via diffusion
+  genes: s0001
   equation: '|M_co2_e[e]| <=> |M_co2_c[c]|'
   subsystem: ' '
 - id: R_COAt
@@ -229,31 +248,38 @@
   subsystem: ' '
 - id: R_CYSTRS
   name: Cysteinyl-tRNA synthetase
+  genes: MG253
   equation: '|M_atp_c[c]| + |M_cys_DASH_L_c[c]| + |M_trnacys_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_cystrna_c[c]|'
   subsystem: ' '
 - id: R_CYTD
   name: cytidine deaminase
+  genes: MG052
   equation: '|M_h_c[c]| + |M_h2o_c[c]| + |M_cytd_c[c]| => |M_nh4_c[c]| + |M_uri_c[c]|'
   subsystem: ' '
 - id: R_CYTDK1
   name: cytidine kinase (ATP)
+  genes: MG382
   equation: '|M_atp_c[c]| + |M_cytd_c[c]| => |M_h_c[c]| + |M_adp_c[c]| + |M_cmp_c[c]|'
   subsystem: ' '
 - id: R_CYTDK2
   name: cytidine kinase (GTP)
+  genes: MG382
   equation: '|M_gtp_c[c]| + |M_cytd_c[c]| => |M_h_c[c]| + |M_gdp_c[c]| + |M_cmp_c[c]|'
   subsystem: ' '
 - id: R_CYTDK3
   name: cytidine kinase (ITP)
+  genes: MG382
   equation: '|M_cytd_c[c]| + |M_itp_c[c]| => |M_h_c[c]| + |M_cmp_c[c]| + |M_idp_c[c]|'
   subsystem: ' '
 - id: R_CYTK1
   name: cytidylate kinase (CMP)
+  genes: MG330
   equation: '|M_atp_c[c]| + |M_cmp_c[c]| <=> |M_adp_c[c]| + |M_cdp_c[c]|'
   subsystem: ' '
 - id: R_CYTK2
   name: cytidylate kinase (dCMP)
+  genes: MG330
   equation: '|M_atp_c[c]| + |M_dcmp_c[c]| <=> |M_adp_c[c]| + |M_dcdp_c[c]|'
   subsystem: ' '
 - id: R_Clt
@@ -262,6 +288,7 @@
   subsystem: ' '
 - id: R_Coabc
   name: Cobalt transport via ABC system
+  genes: MG179 and MG180 and MG181
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_cobalt2_e[e]| => |M_h_c[c]| + |M_adp_c[c]|
     + |M_pi_c[c]| + |M_cobalt2_c[c]|'
   subsystem: ' '
@@ -272,10 +299,12 @@
   subsystem: ' '
 - id: R_DADK
   name: deoxyadenylate kinase
+  genes: MG171
   equation: '|M_atp_c[c]| + |M_damp_c[c]| <=> |M_adp_c[c]| + |M_dadp_c[c]|'
   subsystem: ' '
 - id: R_DATPHs
   name: dATP amine hydrolysis (spontaneous)
+  genes: s0001
   equation: '|M_h_c[c]| + |M_h2o_c[c]| + |M_datp_c[c]| => |M_nh4_c[c]| + |M_ditp_c[c]|'
   subsystem: ' '
 - id: R_DATPt
@@ -284,10 +313,12 @@
   subsystem: ' '
 - id: R_DCYTD
   name: deoxycytidine deaminase
+  genes: MG052
   equation: '|M_h_c[c]| + |M_h2o_c[c]| + |M_dcyt_c[c]| => |M_nh4_c[c]| + |M_duri_c[c]|'
   subsystem: ' '
 - id: R_DGK1
   name: deoxyguanylate kinase (dGMP:ATP)
+  genes: MG107
   equation: '|M_atp_c[c]| + |M_dgmp_c[c]| <=> |M_adp_c[c]| + |M_dgdp_c[c]|'
   subsystem: ' '
 - id: R_DGTPt
@@ -296,122 +327,148 @@
   subsystem: ' '
 - id: R_DHFOR2
   name: dihydrofolate reductase
+  genes: MG228
   equation: '|M_nadp_c[c]| + |M_dhf_c[c]| => |M_fol_c[c]| + |M_nadph_c[c]|'
   subsystem: ' '
 - id: R_DHFOR3
   name: dihydrofolate reductase
+  genes: MG228
   equation: '|M_h_c[c]| + |M_fol_c[c]| + (2) |M_nadph_c[c]| => |M_thf_c[c]| + (2)
     |M_nadp_c[c]|'
   subsystem: ' '
 - id: R_DHFR
   name: dihydrofolate reductase
+  genes: MG228
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_dhf_c[c]| => |M_thf_c[c]| + |M_nadp_c[c]|'
   subsystem: ' '
 - id: R_DIPEPabc1
   name: Dipeptide transport via ABC system (ala-asp)
+  genes: MG077 and MG078 and MG079 and MG080
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_ala_DASH_L_DASH_asp_DASH_L_e[e]| =>
     |M_h_c[c]| + |M_adp_c[c]| + |M_pi_c[c]| + |M_ala_DASH_L_DASH_asp_DASH_L_c[c]|'
   subsystem: ' '
 - id: R_DIPEPabc10
   name: Dipeptide transport via ABC system (gly-glu)
+  genes: MG077 and MG078 and MG079 and MG080
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_gly_DASH_glu_DASH_L_e[e]| => |M_h_c[c]|
     + |M_adp_c[c]| + |M_pi_c[c]| + |M_gly_DASH_glu_DASH_L_c[c]|'
   subsystem: ' '
 - id: R_DIPEPabc11
   name: Dipeptide transport via ABC system (gly-met)
+  genes: MG077 and MG078 and MG079 and MG080
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_gly_DASH_met_DASH_L_e[e]| => |M_h_c[c]|
     + |M_adp_c[c]| + |M_pi_c[c]| + |M_gly_DASH_met_DASH_L_c[c]|'
   subsystem: ' '
 - id: R_DIPEPabc12
   name: Dipeptide transport via ABC system (met-ala)
+  genes: MG077 and MG078 and MG079 and MG080
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_met_DASH_L_DASH_ala_DASH_L_e[e]| =>
     |M_h_c[c]| + |M_adp_c[c]| + |M_pi_c[c]| + |M_met_DASH_L_DASH_ala_DASH_L_c[c]|'
   subsystem: ' '
 - id: R_DIPEPabc13
   name: Dipeptide transport via ABC system (gly-asp)
+  genes: MG077 and MG078 and MG079 and MG080
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_gly_DASH_asp_DASH_L_e[e]| => |M_h_c[c]|
     + |M_adp_c[c]| + |M_pi_c[c]| + |M_gly_DASH_asp_DASH_L_c[c]|'
   subsystem: ' '
 - id: R_DIPEPabc14
   name: Dipeptide transport via ABC system (gly-pro-L)
+  genes: MG077 and MG078 and MG079 and MG080
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_gly_DASH_pro_DASH_L_e[e]| => |M_h_c[c]|
     + |M_adp_c[c]| + |M_pi_c[c]| + |M_gly_DASH_pro_DASH_L_c[c]|'
   subsystem: ' '
 - id: R_DIPEPabc15
   name: Dipeptide transport via ABC system (cgly)
+  genes: MG077 and MG078 and MG079 and MG080
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_cgly_e[e]| => |M_h_c[c]| + |M_adp_c[c]|
     + |M_pi_c[c]| + |M_cgly_c[c]|'
   subsystem: ' '
 - id: R_DIPEPabc2
   name: Dipeptide transport via ABC system (ala-gln)
+  genes: MG077 and MG078 and MG079 and MG080
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_ala_DASH_L_DASH_gln_DASH_L_e[e]| =>
     |M_h_c[c]| + |M_adp_c[c]| + |M_pi_c[c]| + |M_ala_DASH_L_DASH_gln_DASH_L_c[c]|'
   subsystem: ' '
 - id: R_DIPEPabc3
   name: Dipeptide transport via ABC system (ala-glu)
+  genes: MG077 and MG078 and MG079 and MG080
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_ala_DASH_L_DASH_glu_DASH_L_e[e]| =>
     |M_h_c[c]| + |M_adp_c[c]| + |M_pi_c[c]| + |M_ala_DASH_L_DASH_glu_DASH_L_c[c]|'
   subsystem: ' '
 - id: R_DIPEPabc4
   name: Dipeptide transport via ABC system (ala-gly)
+  genes: MG077 and MG078 and MG079 and MG080
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_L_DASH_alagly_e[e]| => |M_h_c[c]| +
     |M_adp_c[c]| + |M_pi_c[c]| + |M_L_DASH_alagly_c[c]|'
   subsystem: ' '
 - id: R_DIPEPabc5
   name: Dipeptide transport via ABC system (ala-his)
+  genes: MG077 and MG078 and MG079 and MG080
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_ala_DASH_L_DASH_his_DASH_L_e[e]| =>
     |M_h_c[c]| + |M_adp_c[c]| + |M_pi_c[c]| + |M_ala_DASH_L_DASH_his_DASH_L_c[c]|'
   subsystem: ' '
 - id: R_DIPEPabc6
   name: Dipeptide transport via ABC system (ala-leu)
+  genes: MG077 and MG078 and MG079 and MG080
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_ala_DASH_L_DASH_leu_DASH_L_e[e]| =>
     |M_h_c[c]| + |M_adp_c[c]| + |M_pi_c[c]| + |M_ala_DASH_L_DASH_leu_DASH_L_c[c]|'
   subsystem: ' '
 - id: R_DIPEPabc7
   name: Dipeptide transport via ABC system (ala-thr)
+  genes: MG077 and MG078 and MG079 and MG080
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_ala_DASH_L_DASH_thr_DASH_L_e[e]| =>
     |M_h_c[c]| + |M_adp_c[c]| + |M_pi_c[c]| + |M_ala_DASH_L_DASH_thr_DASH_L_c[c]|'
   subsystem: ' '
 - id: R_DIPEPabc8
   name: Dipeptide transport via ABC system (gly-asn)
+  genes: MG077 and MG078 and MG079 and MG080
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_gly_DASH_asn_DASH_L_e[e]| => |M_h_c[c]|
     + |M_adp_c[c]| + |M_pi_c[c]| + |M_gly_DASH_asn_DASH_L_c[c]|'
   subsystem: ' '
 - id: R_DIPEPabc9
   name: Dipeptide transport via ABC system (gly-gln)
+  genes: MG077 and MG078 and MG079 and MG080
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_gly_DASH_gln_DASH_L_e[e]| => |M_h_c[c]|
     + |M_adp_c[c]| + |M_pi_c[c]| + |M_gly_DASH_gln_DASH_L_c[c]|'
   subsystem: ' '
 - id: R_DRPAr
   name: Deoxyribose-phosphate aldolase
+  genes: MG050
   equation: '|M_2dr5p_c[c]| <=> |M_acald_c[c]| + |M_g3p_c[c]|'
   subsystem: ' '
 - id: R_DTMPK
   name: dTMP kinase
+  genes: MG006
   equation: '|M_atp_c[c]| + |M_dtmp_c[c]| <=> |M_adp_c[c]| + |M_dtdp_c[c]|'
   subsystem: ' '
 - id: R_DURIPP
   name: purine-nucleoside phosphatase (deoxyuridine)
+  genes: MG051
   equation: '|M_pi_c[c]| + |M_duri_c[c]| <=> |M_ura_c[c]| + |M_2dr1p_c[c]|'
   subsystem: ' '
 - id: R_DXPS
   name: 1-deoxy-D-xylulose 5-phosphate synthase
+  genes: MG066
   equation: '|M_h_c[c]| + |M_pyr_c[c]| + |M_g3p_c[c]| => |M_co2_c[c]| + |M_dxyl5p_c[c]|'
   subsystem: ' '
 - id: R_ENO
   name: enolase
+  genes: MG407
   equation: '|M_2pg_c[c]| <=> |M_pep_c[c]| + |M_h2o_c[c]|'
   subsystem: ' '
 - id: R_F1PK
   name: fructose-1-phosphate kinase
+  genes: MG063
   equation: '|M_atp_c[c]| + |M_f1p_c[c]| => |M_h_c[c]| + |M_adp_c[c]| + |M_fdp_c[c]|'
   subsystem: ' '
 - id: R_FBA
   name: fructose-bisphosphate aldolase
+  genes: MG023
   equation: '|M_fdp_c[c]| <=> |M_g3p_c[c]| + |M_dhap_c[c]|'
   subsystem: ' '
 - id: R_FBA2
   name: D-Fructose 1-phosphate D-glyceraldehyde-3-phosphate-lyase
+  genes: MG023
   equation: '|M_f1p_c[c]| <=> |M_dhap_c[c]| + |M_glyald_c[c]|'
   subsystem: ' '
 - id: R_FE2abc
@@ -426,10 +483,12 @@
   subsystem: ' '
 - id: R_FMETTRS
   name: Methionyl-tRNA formyltransferase
+  genes: MG365
   equation: '|M_10fthf_c[c]| + |M_mettrna_c[c]| => |M_fmettrna_c[c]| + |M_thf_c[c]|'
   subsystem: ' '
 - id: R_FMNATr
   name: FMN adenylyltransferase
+  genes: MG145
   equation: '|M_h_c[c]| + |M_atp_c[c]| + |M_fmn_c[c]| <=> |M_ppi_c[c]| + |M_fad_c[c]|'
   subsystem: ' '
 - id: R_FOLt
@@ -438,6 +497,7 @@
   subsystem: ' '
 - id: R_FRUpts
   name: D-fructose transport via PEP:Pyr PTS
+  genes: MG429 and MG062 and MG041
   equation: '|M_pep_c[c]| + |M_fru_e[e]| => |M_pyr_c[c]| + |M_f1p_c[c]|'
   subsystem: ' '
 - id: R_G1PACT
@@ -446,6 +506,7 @@
   subsystem: ' '
 - id: R_G3PD4
   name: glycerol-3-phosphate dehydrogenase (menaquinone 7)
+  genes: MG260
   equation: '|M_glyc3p_c[c]| + |M_mqn7_c[c]| => |M_mql7_c[c]| + |M_dhap_c[c]|'
   subsystem: ' '
 - id: R_G3POA
@@ -454,45 +515,55 @@
   subsystem: ' '
 - id: R_G6PI
   name: Glucose-6-phosphate isomerase
+  genes: MG111
   equation: '|M_g6p_c[c]| <=> |M_g6p_DASH_B_c[c]|'
   subsystem: ' '
 - id: R_GALU
   name: UTP-glucose-1-phosphate uridylyltransferase
+  genes: MG453
   equation: '|M_h_c[c]| + |M_utp_c[c]| + |M_g1p_c[c]| <=> |M_udpg_c[c]| + |M_ppi_c[c]|'
   subsystem: ' '
 - id: R_GALabc
   name: D-galactose transport via ABC system
+  genes: MG119
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_gal_e[e]| => |M_h_c[c]| + |M_adp_c[c]|
     + |M_pi_c[c]| + |M_gal_c[c]|'
   subsystem: ' '
 - id: R_GAMpts
   name: D-glucosamine transport via PEP:Pyr PTS
+  genes: MG041 and MG429
   equation: '|M_pep_c[c]| + |M_gam_e[e]| => |M_pyr_c[c]| + |M_gam6p_c[c]|'
   subsystem: ' '
 - id: R_GAPD
   name: glyceraldehyde-3-phosphate dehydrogenase (NAD)
+  genes: MG301
   equation: '|M_pi_c[c]| + |M_nad_c[c]| + |M_g3p_c[c]| <=> |M_h_c[c]| + |M_nadh_c[c]|
     + |M_13dpg_c[c]|'
   subsystem: ' '
 - id: R_GHMT
   name: glycine hydroxymethyltransferase
+  genes: MG394
   equation: '|M_ser_DASH_L_c[c]| + |M_thf_c[c]| <=> |M_h2o_c[c]| + |M_gly_c[c]| +
     |M_mlthf_c[c]|'
   subsystem: ' '
 - id: R_GK1
   name: guanylate kinase (GMP:ATP)
+  genes: MG107
   equation: '|M_atp_c[c]| + |M_gmp_c[c]| <=> |M_adp_c[c]| + |M_gdp_c[c]|'
   subsystem: ' '
 - id: R_GK2
   name: guanylate kinase (GMP:dATP)
+  genes: MG107
   equation: '|M_datp_c[c]| + |M_gmp_c[c]| <=> |M_dadp_c[c]| + |M_gdp_c[c]|'
   subsystem: ' '
 - id: R_GLCpts
   name: D-glucose transport via PEP:Pyr PTS
+  genes: MG429 and MG069 and MG041
   equation: '|M_pep_c[c]| + |M_glc_DASH_D_e[e]| => |M_pyr_c[c]| + |M_g6p_c[c]|'
   subsystem: ' '
 - id: R_GLNMT
   name: glutamine-N5 methyltransferase
+  genes: MG259
   equation: '|M_amet_c[c]| + |M_gln_DASH_L_c[c]| => |M_C03153_c[c]| + |M_ahcys_c[c]|'
   subsystem: ' '
 - id: R_GLUDy
@@ -502,6 +573,7 @@
   subsystem: ' '
 - id: R_GLUTRS
   name: Glutamyl-tRNA synthetase
+  genes: MG462
   equation: '|M_atp_c[c]| + |M_glu_DASH_L_c[c]| + |M_trnaglu_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_glutrna_c[c]|'
   subsystem: ' '
@@ -511,29 +583,35 @@
   subsystem: ' '
 - id: R_GLXAT
   name: glutamyl-tRNA(Gln) amidotransferase
+  genes: MG098 and MG099 and MG100
   equation: '|M_atp_c[c]| + |M_gln_DASH_L_c[c]| + |M_glutrna_c[c]| <=> |M_adp_c[c]|
     + |M_pi_c[c]| + |M_glu_DASH_L_c[c]| + |M_glntrna_c[c]|'
   subsystem: ' '
 - id: R_GLYC3Pabc
   name: sn-Glycerol 3-phosphate transport via ABC system
+  genes: MG187 and MG188 and MG189
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_glyc3p_e[e]| => |M_h_c[c]| + |M_adp_c[c]|
     + |M_pi_c[c]| + |M_glyc3p_c[c]|'
   subsystem: ' '
 - id: R_GLYCt
   name: glycerol transport
+  genes: MG033
   equation: '|M_glyc_c[c]| <=> |M_glyc_e[e]|'
   subsystem: ' '
 - id: R_GLYK
   name: glycerol kinase
+  genes: MG038
   equation: '|M_atp_c[c]| + |M_glyc_c[c]| => |M_h_c[c]| + |M_adp_c[c]| + |M_glyc3p_c[c]|'
   subsystem: ' '
 - id: R_GLYTRS
   name: Glycyl-tRNA synthetase
+  genes: MG251
   equation: '|M_atp_c[c]| + |M_gly_c[c]| + |M_trnagly_c[c]| => |M_ppi_c[c]| + |M_amp_c[c]|
     + |M_glytrna_c[c]|'
   subsystem: ' '
 - id: R_GTPHs
   name: GTP amine hydrolysis (spontaneous)
+  genes: s0001
   equation: '|M_h_c[c]| + |M_h2o_c[c]| + |M_gtp_c[c]| => |M_nh4_c[c]| + |M_xtp_c[c]|'
   subsystem: ' '
 - id: R_GTPt
@@ -546,14 +624,17 @@
   subsystem: ' '
 - id: R_GUAPRTr
   name: guanine phosphoribosyltransferase
+  genes: MG458
   equation: '|M_prpp_c[c]| + |M_gua_c[c]| <=> |M_gmp_c[c]| + |M_ppi_c[c]|'
   subsystem: ' '
 - id: R_H2Ot5
   name: H2O transport via diffusion
+  genes: s0001
   equation: '|M_h2o_e[e]| <=> |M_h2o_c[c]|'
   subsystem: ' '
 - id: R_HISTRS
   name: Histidyl-tRNA synthetase
+  genes: MG035
   equation: '|M_atp_c[c]| + |M_his_DASH_L_c[c]| + |M_trnahis_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_histrna_c[c]|'
   subsystem: ' '
@@ -563,10 +644,12 @@
   subsystem: ' '
 - id: R_HXPRTr
   name: hypoxanthine phosphoribosyltransferase (Hypoxanthine)
+  genes: MG458
   equation: '|M_prpp_c[c]| + |M_hxan_c[c]| <=> |M_ppi_c[c]| + |M_imp_c[c]|'
   subsystem: ' '
 - id: R_ILETRS
   name: Isoleucyl-tRNA synthetase
+  genes: MG345
   equation: '|M_atp_c[c]| + |M_ile_DASH_L_c[c]| + |M_trnaile_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_iletrna_c[c]|'
   subsystem: ' '
@@ -580,6 +663,7 @@
   subsystem: ' '
 - id: R_INSCR
   name: inositol catabolic reactions (lumped)
+  genes: MG023
   equation: '|M_atp_c[c]| + |M_2ins_c[c]| => (2) |M_h_c[c]| + |M_adp_c[c]| + |M_dhap_c[c]|
     + |M_msa_c[c]|'
   subsystem: ' '
@@ -589,14 +673,17 @@
   subsystem: ' '
 - id: R_Kt2i
   name: potassium irreversible transport via proton symporter
+  genes: MG323
   equation: '|M_h_e[e]| + |M_k_e[e]| => |M_h_c[c]| + |M_k_c[c]|'
   subsystem: ' '
 - id: R_LDH_L
   name: L-lactate dehydrogenase
+  genes: MG460
   equation: '|M_lac_DASH_L_c[c]| + |M_nad_c[c]| <=> |M_h_c[c]| + |M_pyr_c[c]| + |M_nadh_c[c]|'
   subsystem: ' '
 - id: R_LEUTRS
   name: Leucyl-tRNA synthetase
+  genes: MG266
   equation: '|M_atp_c[c]| + |M_leu_DASH_L_c[c]| + |M_trnaleu_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_leutrna_c[c]|'
   subsystem: ' '
@@ -606,6 +693,7 @@
   subsystem: ' '
 - id: R_LYSTRS
   name: Lysyl-tRNA synthetase
+  genes: MG136
   equation: '|M_atp_c[c]| + |M_lys_DASH_L_c[c]| + |M_trnalys_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_lystrna_c[c]|'
   subsystem: ' '
@@ -619,37 +707,45 @@
   subsystem: ' '
 - id: R_MALTpts
   name: maltose transport via PEP:Pyr PTS
+  genes: MG041 and MG429
   equation: '|M_pep_c[c]| + |M_malt_e[e]| => |M_pyr_c[c]| + |M_malt6p_c[c]|'
   subsystem: ' '
 - id: R_MANpts
   name: D-mannose transport via PEP:Pyr PTS
+  genes: MG041 and MG429
   equation: '|M_pep_c[c]| + |M_man_e[e]| => |M_pyr_c[c]| + |M_man6p_c[c]|'
   subsystem: ' '
 - id: R_METAT
   name: methionine adenosyltransferase
+  genes: MG047
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_met_DASH_L_c[c]| => |M_pi_c[c]| + |M_ppi_c[c]|
     + |M_amet_c[c]|'
   subsystem: ' '
 - id: R_METSR_DASH_R1
   name: L-methionine R-oxide reductase (trdrd)
+  genes: MG448
   equation: '|M_trdrd_c[c]| + |M_metox_DASH_R_c[c]| => |M_h2o_c[c]| + |M_met_DASH_L_c[c]|
     + |M_trdox_c[c]|'
   subsystem: ' '
 - id: R_METSR_DASH_R2
   name: L-methionine R-oxide (H2O2)
+  genes: MG448
   equation: '|M_met_DASH_L_c[c]| + |M_h2o2_c[c]| => |M_h2o_c[c]| + |M_metox_DASH_R_c[c]|'
   subsystem: ' '
 - id: R_METSR_DASH_S1
   name: L-methionine-S-oxide reductase (trdrd)
+  genes: MG408
   equation: '|M_trdrd_c[c]| + |M_metox_c[c]| => |M_h2o_c[c]| + |M_met_DASH_L_c[c]|
     + |M_trdox_c[c]|'
   subsystem: ' '
 - id: R_METSR_DASH_S2
   name: L-methionine S-oxide reductase (H2O2)
+  genes: MG408
   equation: '|M_met_DASH_L_c[c]| + |M_h2o2_c[c]| => |M_h2o_c[c]| + |M_metox_c[c]|'
   subsystem: ' '
 - id: R_METTRS
   name: Methionyl-tRNA synthetase
+  genes: MG021
   equation: '|M_atp_c[c]| + |M_met_DASH_L_c[c]| + |M_trnamet_c[c]| => |M_mettrna_c[c]|
     + |M_ppi_c[c]| + |M_amp_c[c]|'
   subsystem: ' '
@@ -673,6 +769,7 @@
   subsystem: ' '
 - id: R_MNLpts
   name: mannitol transport via PEP:Pyr PTS
+  genes: MG041 and MG429
   equation: '|M_pep_c[c]| + |M_mnl_e[e]| => |M_pyr_c[c]| + |M_mnl1p_c[c]|'
   subsystem: ' '
 - id: R_MNabc
@@ -687,10 +784,12 @@
   subsystem: ' '
 - id: R_MTHFC
   name: methenyltetrahydrofolate cyclohydrolase
+  genes: MG013
   equation: '|M_h2o_c[c]| + |M_methf_c[c]| <=> |M_h_c[c]| + |M_10fthf_c[c]|'
   subsystem: ' '
 - id: R_MTHFD
   name: methylenetetrahydrofolate dehydrogenase (NADP)
+  genes: MG013
   equation: '|M_nadp_c[c]| + |M_mlthf_c[c]| <=> |M_nadph_c[c]| + |M_methf_c[c]|'
   subsystem: ' '
 - id: R_NACUP
@@ -699,20 +798,24 @@
   subsystem: ' '
 - id: R_NADH5
   name: NADH dehydrogenase (Menaquinone 7 & 2 protons)
+  genes: MG275
   equation: (3) |M_h_c[c]| + |M_mqn7_c[c]| + |M_nadh_c[c]| => (2) |M_h_e[e]| + |M_mql7_c[c]|
     + |M_nad_c[c]|
   subsystem: ' '
 - id: R_NADK
   name: NAD kinase
+  genes: MG128
   equation: '|M_atp_c[c]| + |M_nad_c[c]| => |M_h_c[c]| + |M_adp_c[c]| + |M_nadp_c[c]|'
   subsystem: ' '
 - id: R_NADS1
   name: NAD synthase (nh4)
+  genes: MG383
   equation: '|M_atp_c[c]| + |M_nh4_c[c]| + |M_dnad_c[c]| => |M_h_c[c]| + |M_nad_c[c]|
     + |M_ppi_c[c]| + |M_amp_c[c]|'
   subsystem: ' '
 - id: R_NAMNPP
   name: nicotinic acid mononucleotide pyrophosphorylase
+  genes: MG037
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_nac_c[c]| + |M_prpp_c[c]| => |M_adp_c[c]|
     + |M_pi_c[c]| + |M_ppi_c[c]| + |M_nicrnt_c[c]|'
   subsystem: ' '
@@ -754,23 +857,28 @@
   subsystem: ' '
 - id: R_NH4t
   name: ammonia transport via diffusion
+  genes: s0001
   equation: '|M_nh4_e[e]| <=> |M_nh4_c[c]|'
   subsystem: ' '
 - id: R_NIabc
   name: nickel transport via ABC system
+  genes: MG077 and MG079
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_ni2_e[e]| => |M_h_c[c]| + |M_adp_c[c]|
     + |M_pi_c[c]| + |M_ni2_c[c]|'
   subsystem: ' '
 - id: R_NMNATr
   name: nicotinamide-nucleotide adenylyltransferase
+  genes: MG240
   equation: '|M_h_c[c]| + |M_atp_c[c]| + |M_nmn_c[c]| <=> |M_nad_c[c]| + |M_ppi_c[c]|'
   subsystem: ' '
 - id: R_NNATr
   name: nicotinate-nucleotide adenylyltransferase
+  genes: MG240
   equation: '|M_h_c[c]| + |M_atp_c[c]| + |M_nicrnt_c[c]| <=> |M_ppi_c[c]| + |M_dnad_c[c]|'
   subsystem: ' '
 - id: R_OHPHM
   name: 2-octaprenyl-6-hydroxyphenol methylase
+  genes: MG463
   equation: '|M_2ohph_c[c]| + |M_amet_c[c]| => |M_h_c[c]| + |M_2omph_c[c]| + |M_ahcys_c[c]|'
   subsystem: ' '
 - id: R_PAP
@@ -779,15 +887,18 @@
   subsystem: ' '
 - id: R_PBUTT
   name: phosphate butyryltransferase
+  genes: MG299
   equation: '|M_pi_c[c]| + |M_btcoa_c[c]| <=> |M_coa_c[c]| + |M_butpi_c[c]|'
   subsystem: ' '
 - id: R_PDH
   name: pyruvate dehydrogenase
+  genes: MG273 and MG274
   equation: '|M_pyr_c[c]| + |M_coa_c[c]| + |M_nad_c[c]| => |M_co2_c[c]| + |M_nadh_c[c]|
     + |M_accoa_c[c]|'
   subsystem: ' '
 - id: R_PFK
   name: phosphofructokinase
+  genes: MG215
   equation: '|M_atp_c[c]| + |M_f6p_c[c]| => |M_h_c[c]| + |M_adp_c[c]| + |M_fdp_c[c]|'
   subsystem: ' '
 - id: R_PGAMT
@@ -796,14 +907,17 @@
   subsystem: ' '
 - id: R_PGI
   name: glucose-6-phosphate isomerase
+  genes: MG111
   equation: '|M_g6p_c[c]| <=> |M_f6p_c[c]|'
   subsystem: ' '
 - id: R_PGK
   name: phosphoglycerate kinase
+  genes: MG300
   equation: '|M_adp_c[c]| + |M_13dpg_c[c]| <=> |M_atp_c[c]| + |M_3pg_c[c]|'
   subsystem: ' '
 - id: R_PGM
   name: phosphoglycerate mutase
+  genes: MG430
   equation: '|M_3pg_c[c]| <=> |M_2pg_c[c]|'
   subsystem: ' '
 - id: R_PGMT
@@ -816,6 +930,7 @@
   subsystem: ' '
 - id: R_PHETRS
   name: Phenylalanyl-tRNA synthetase
+  genes: MG194 and MG195
   equation: '|M_atp_c[c]| + |M_phe_DASH_L_c[c]| + |M_trnaphe_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_phetrna_c[c]|'
   subsystem: ' '
@@ -825,19 +940,23 @@
   subsystem: ' '
 - id: R_PIabc
   name: phosphate transport via ABC system
+  genes: MG410 and MG411
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_pi_e[e]| => |M_h_c[c]| + |M_adp_c[c]|
     + (2) |M_pi_c[c]|'
   subsystem: ' '
 - id: R_PMANM
   name: phosphomannomutase
+  genes: MG053
   equation: '|M_man1p_c[c]| <=> |M_man6p_c[c]|'
   subsystem: ' '
 - id: R_PPA
   name: inorganic diphosphatase
+  genes: MG351
   equation: '|M_h2o_c[c]| + |M_ppi_c[c]| => |M_h_c[c]| + (2) |M_pi_c[c]|'
   subsystem: ' '
 - id: R_PPAK
   name: Propionate kinase
+  genes: MG357
   equation: '|M_adp_c[c]| + |M_ppap_c[c]| <=> |M_atp_c[c]| + |M_ppa_c[c]|'
   subsystem: ' '
 - id: R_PPAt6
@@ -846,6 +965,7 @@
   subsystem: ' '
 - id: R_PROTRS
   name: Prolyl-tRNA synthetase
+  genes: MG283
   equation: '|M_atp_c[c]| + |M_pro_DASH_L_c[c]| + |M_trnapro_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_protrna_c[c]|'
   subsystem: ' '
@@ -855,59 +975,73 @@
   subsystem: ' '
 - id: R_PRPPS
   name: phosphoribosylpyrophosphate synthetase
+  genes: MG058
   equation: '|M_atp_c[c]| + |M_r5p_c[c]| <=> |M_h_c[c]| + |M_prpp_c[c]| + |M_amp_c[c]|'
   subsystem: ' '
 - id: R_PSUDS
   name: pseudouridylate synthase
+  genes: MG370 and MG209
   equation: '|M_ura_c[c]| + |M_r5p_c[c]| => |M_h2o_c[c]| + |M_psd5p_c[c]|'
   subsystem: ' '
 - id: R_PTA2r
   name: Phosphate acetyltransferase
+  genes: MG299
   equation: '|M_pi_c[c]| + |M_ppcoa_c[c]| <=> |M_coa_c[c]| + |M_ppap_c[c]|'
   subsystem: ' '
 - id: R_PTAr
   name: phosphotransacetylase
+  genes: MG299
   equation: '|M_pi_c[c]| + |M_accoa_c[c]| <=> |M_coa_c[c]| + |M_actp_c[c]|'
   subsystem: ' '
 - id: R_PTRCORNt7
   name: putrescine/ornithine antiporter
+  genes: MG226
   equation: '|M_ptrc_e[e]| + |M_orn_DASH_L_c[c]| <=> |M_ptrc_c[c]| + |M_orn_DASH_L_e[e]|'
   subsystem: ' '
 - id: R_PTRCabc
   name: putrescine transport via ABC system
+  genes: MG042 and MG043 and MG044
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_ptrc_e[e]| => |M_h_c[c]| + |M_adp_c[c]|
     + |M_pi_c[c]| + |M_ptrc_c[c]|'
   subsystem: ' '
 - id: R_PTRCt2
   name: putrescine transport in via proton symport, reversible
+  genes: MG226 and MG225
   equation: '|M_h_e[e]| + |M_ptrc_e[e]| <=> |M_h_c[c]| + |M_ptrc_c[c]|'
   subsystem: ' '
 - id: R_PUNP1
   name: purine-nucleoside phosphorylase (Adenosine)
+  genes: MG049
   equation: '|M_pi_c[c]| + |M_adn_c[c]| <=> |M_ade_c[c]| + |M_r1p_c[c]|'
   subsystem: ' '
 - id: R_PUNP2
   name: purine-nucleoside phosphorylase (Deoxyadenosine)
+  genes: MG049
   equation: '|M_pi_c[c]| + |M_dad_DASH_2_c[c]| <=> |M_ade_c[c]| + |M_2dr1p_c[c]|'
   subsystem: ' '
 - id: R_PUNP3
   name: purine-nucleoside phosphorylase (Guanosine)
+  genes: MG049
   equation: '|M_pi_c[c]| + |M_gsn_c[c]| <=> |M_r1p_c[c]| + |M_gua_c[c]|'
   subsystem: ' '
 - id: R_PUNP4
   name: purine-nucleoside phosphorylase (Deoxyguanosine)
+  genes: MG049
   equation: '|M_pi_c[c]| + |M_dgsn_c[c]| <=> |M_2dr1p_c[c]| + |M_gua_c[c]|'
   subsystem: ' '
 - id: R_PUNP5
   name: purine-nucleoside phosphorylase (Inosine)
+  genes: MG049
   equation: '|M_pi_c[c]| + |M_ins_c[c]| <=> |M_r1p_c[c]| + |M_hxan_c[c]|'
   subsystem: ' '
 - id: R_PUNP6
   name: purine-nucleoside phosphorylase (Deoxyinosine)
+  genes: MG049
   equation: '|M_pi_c[c]| + |M_din_c[c]| <=> |M_2dr1p_c[c]| + |M_hxan_c[c]|'
   subsystem: ' '
 - id: R_PUNP7
   name: purine-nucleoside phosphorylase (Xanthosine)
+  genes: MG049
   equation: '|M_pi_c[c]| + |M_xtsn_c[c]| <=> |M_r1p_c[c]| + |M_xan_c[c]|'
   subsystem: ' '
 - id: R_PYDXK
@@ -920,18 +1054,22 @@
   subsystem: ' '
 - id: R_PYK
   name: pyruvate kinase
+  genes: MG216
   equation: '|M_h_c[c]| + |M_pep_c[c]| + |M_adp_c[c]| => |M_pyr_c[c]| + |M_atp_c[c]|'
   subsystem: ' '
 - id: R_PYNP1r
   name: pyrimidine-nucleoside phosphorylase (cytosine)
+  genes: MG051
   equation: '|M_csn_c[c]| + |M_r1p_c[c]| <=> |M_pi_c[c]| + |M_cytd_c[c]|'
   subsystem: ' '
 - id: R_PYNP2
   name: pyrimidine-nucleoside phosphorylase (uracil)
+  genes: MG051
   equation: '|M_pi_c[c]| + |M_uri_c[c]| <=> |M_ura_c[c]| + |M_r1p_c[c]|'
   subsystem: ' '
 - id: R_RBFK
   name: riboflavin kinase
+  genes: MG145
   equation: '|M_atp_c[c]| + |M_ribflv_c[c]| => |M_h_c[c]| + |M_adp_c[c]| + |M_fmn_c[c]|'
   subsystem: ' '
 - id: R_RBK
@@ -944,39 +1082,48 @@
   subsystem: ' '
 - id: R_RIBabc
   name: D-ribose transport via ABC system
+  genes: MG119
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_rib_DASH_D_e[e]| => |M_h_c[c]| + |M_adp_c[c]|
     + |M_pi_c[c]| + |M_rib_DASH_D_c[c]|'
   subsystem: ' '
 - id: R_RNDR1
   name: ribonucleoside-diphosphate reductase (ADP)
+  genes: MG229 and MG230 and MG231
   equation: '|M_adp_c[c]| + |M_trdrd_c[c]| => |M_h2o_c[c]| + |M_dadp_c[c]| + |M_trdox_c[c]|'
   subsystem: ' '
 - id: R_RNDR2
   name: ribonucleoside-diphosphate reductase (GDP)
+  genes: MG229 and MG230 and MG231
   equation: '|M_gdp_c[c]| + |M_trdrd_c[c]| => |M_h2o_c[c]| + |M_trdox_c[c]| + |M_dgdp_c[c]|'
   subsystem: ' '
 - id: R_RNDR3
   name: ribonucleoside-diphosphate reductase (CDP)
+  genes: MG229 and MG230 and MG231
   equation: '|M_trdrd_c[c]| + |M_cdp_c[c]| => |M_h2o_c[c]| + |M_trdox_c[c]| + |M_dcdp_c[c]|'
   subsystem: ' '
 - id: R_RNDR4
   name: ribonucleoside-diphosphate reductase (UDP)
+  genes: MG229 and MG230 and MG231
   equation: '|M_udp_c[c]| + |M_trdrd_c[c]| => |M_h2o_c[c]| + |M_trdox_c[c]| + |M_dudp_c[c]|'
   subsystem: ' '
 - id: R_RPE
   name: ribulose 5-phosphate 3-epimerase
+  genes: MG112
   equation: '|M_ru5p_DASH_D_c[c]| <=> |M_xu5p_DASH_D_c[c]|'
   subsystem: ' '
 - id: R_RPI
   name: ribose-5-phosphate isomerase
+  genes: MG396
   equation: '|M_r5p_c[c]| <=> |M_ru5p_DASH_D_c[c]|'
   subsystem: ' '
 - id: R_SALCpts
   name: salicin transport via PEP:Pyr PTS
+  genes: MG041 and MG429
   equation: '|M_pep_c[c]| + |M_salcn_e[e]| => |M_pyr_c[c]| + |M_salc6p_c[c]|'
   subsystem: ' '
 - id: R_SERTRS
   name: Seryl-tRNA synthetase
+  genes: MG005
   equation: '|M_atp_c[c]| + |M_ser_DASH_L_c[c]| + |M_trnaser_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_sertrna_c[c]|'
   subsystem: ' '
@@ -990,25 +1137,30 @@
   subsystem: ' '
 - id: R_SPMDabc
   name: spermidine transport via ABC system
+  genes: MG042 and MG043 and MG044
   equation: '|M_atp_c[c]| + |M_h2o_c[c]| + |M_spmd_e[e]| => |M_h_c[c]| + |M_adp_c[c]|
     + |M_pi_c[c]| + |M_spmd_c[c]|'
   subsystem: ' '
 - id: R_SUCpts
   name: sucrose transport via PEP:Pyr PTS
+  genes: MG041 and MG429
   equation: '|M_pep_c[c]| + |M_sucr_e[e]| => |M_pyr_c[c]| + |M_suc6p_c[c]|'
   subsystem: ' '
 - id: R_TECA4S
   name: minor teichoic acid synthesis (n=30)
+  genes: MG025
   equation: (30) |M_h2o_c[c]| + (30) |M_uacgala_c[c]| + (30) |M_udpg_c[c]| => (60)
     |M_h_c[c]| + |M_tcam_c[c]| + (30) |M_udp_c[c]| + (30) |M_ump_c[c]|
   subsystem: ' '
 - id: R_TEICH45
   name: teichuronic acid (n=45), unlinked, GalNAc-GlcA repeated
+  genes: MG075
   equation: (45) |M_uacgala_c[c]| + (45) |M_udpglcur_c[c]| <=> (45) |M_h_c[c]| +
     (45) |M_udp_c[c]| + (45) |M_ump_c[c]| + |M_teich_DASH_45_c[c]|
   subsystem: ' '
 - id: R_THDPO
   name: thiol peroxidase
+  genes: MG124
   equation: '|M_trdrd_c[c]| + |M_h2o2_c[c]| => (2) |M_h2o_c[c]| + |M_trdox_c[c]|'
   subsystem: ' '
 - id: R_THM2t2
@@ -1021,25 +1173,30 @@
   subsystem: ' '
 - id: R_THRTRS
   name: Threonyl-tRNA synthetase
+  genes: MG375
   equation: '|M_atp_c[c]| + |M_thr_DASH_L_c[c]| + |M_trnathr_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_thrtrna_c[c]|'
   subsystem: ' '
 - id: R_THZPSN
   name: thiazole phosphate synthesis
+  genes: MG372
   equation: '|M_atp_c[c]| + |M_tyr_DASH_L_c[c]| + |M_cys_DASH_L_c[c]| + |M_dxyl5p_c[c]|
     => |M_h_c[c]| + |M_h2o_c[c]| + |M_co2_c[c]| + |M_ala_DASH_L_c[c]| + |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_4hba_c[c]| + |M_4mpetz_c[c]|'
   subsystem: ' '
 - id: R_TKT1
   name: transketolase
+  genes: MG066
   equation: '|M_r5p_c[c]| + |M_xu5p_DASH_D_c[c]| <=> |M_g3p_c[c]| + |M_s7p_c[c]|'
   subsystem: ' '
 - id: R_TKT2
   name: transketolase
+  genes: MG066
   equation: '|M_e4p_c[c]| + |M_xu5p_DASH_D_c[c]| <=> |M_g3p_c[c]| + |M_f6p_c[c]|'
   subsystem: ' '
 - id: R_TMDK1
   name: thymidine kinase (ATP:thymidine)
+  genes: MG034
   equation: '|M_atp_c[c]| + |M_thymd_c[c]| => |M_h_c[c]| + |M_adp_c[c]| + |M_dtmp_c[c]|'
   subsystem: ' '
 - id: R_TMDPK
@@ -1048,22 +1205,27 @@
   subsystem: ' '
 - id: R_TMDPP
   name: thymidine phosphorylase
+  genes: MG051
   equation: '|M_pi_c[c]| + |M_thymd_c[c]| <=> |M_2dr1p_c[c]| + |M_thym_c[c]|'
   subsystem: ' '
 - id: R_TMDS
   name: thymidylate synthase
+  genes: MG227
   equation: '|M_dump_c[c]| + |M_mlthf_c[c]| => |M_dtmp_c[c]| + |M_dhf_c[c]|'
   subsystem: ' '
 - id: R_TPI
   name: triose-phosphate isomerase
+  genes: MG431
   equation: '|M_dhap_c[c]| <=> |M_g3p_c[c]|'
   subsystem: ' '
 - id: R_TRDR
   name: thioredoxin reductase (NADPH)
+  genes: MG102
   equation: '|M_h_c[c]| + |M_nadph_c[c]| + |M_trdox_c[c]| => |M_nadp_c[c]| + |M_trdrd_c[c]|'
   subsystem: ' '
 - id: R_TREpts
   name: trehalose transport via PEP:Pyr PTS
+  genes: MG041 and MG429
   equation: '|M_pep_c[c]| + |M_tre_e[e]| => |M_pyr_c[c]| + |M_tre6p_c[c]|'
   subsystem: ' '
 - id: R_TRIA
@@ -1072,6 +1234,7 @@
   subsystem: ' '
 - id: R_TRPTRS
   name: Tryptophanyl-tRNA synthetase
+  genes: MG126
   equation: '|M_atp_c[c]| + |M_trp_DASH_L_c[c]| + |M_trnatrp_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_trptrna_c[c]|'
   subsystem: ' '
@@ -1081,6 +1244,7 @@
   subsystem: ' '
 - id: R_TYRTRS
   name: Tyrosyl-tRNA synthetase
+  genes: MG455
   equation: '|M_atp_c[c]| + |M_tyr_DASH_L_c[c]| + |M_trnatyr_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_tyrtrna_c[c]|'
   subsystem: ' '
@@ -1090,6 +1254,7 @@
   subsystem: ' '
 - id: R_UAG4E
   name: UDP-N-acetylglucosamine 4-epimerase
+  genes: MG118
   equation: '|M_uacgam_c[c]| => |M_uacgala_c[c]|'
   subsystem: ' '
 - id: R_UAGDP
@@ -1098,10 +1263,12 @@
   subsystem: ' '
 - id: R_UDPG4E
   name: UDPglucose 4-epimerase
+  genes: MG118
   equation: '|M_udpg_c[c]| <=> |M_udpgal_c[c]|'
   subsystem: ' '
 - id: R_UDPGALM
   name: UDPgalactopyranose mutase
+  genes: MG137
   equation: '|M_udpgal_c[c]| => |M_udpgalfur_c[c]|'
   subsystem: ' '
 - id: R_UDPGD
@@ -1123,6 +1290,7 @@
   subsystem: ' '
 - id: R_UPPRT
   name: uracil phosphoribosyltransferase
+  genes: MG030
   equation: '|M_ura_c[c]| + |M_prpp_c[c]| => |M_ump_c[c]| + |M_ppi_c[c]|'
   subsystem: ' '
 - id: R_URAt2
@@ -1131,26 +1299,32 @@
   subsystem: ' '
 - id: R_URIDK1
   name: uridylate kinase (UMP)
+  genes: MG330 and MG434
   equation: '|M_atp_c[c]| + |M_ump_c[c]| => |M_adp_c[c]| + |M_udp_c[c]|'
   subsystem: ' '
 - id: R_URIDK3
   name: uridylate kinase (dUMP)
+  genes: MG330 and MG434
   equation: '|M_atp_c[c]| + |M_dump_c[c]| <=> |M_adp_c[c]| + |M_dudp_c[c]|'
   subsystem: ' '
 - id: R_URIK1
   name: uridine kinase (ATP:Uridine)
+  genes: MG382
   equation: '|M_atp_c[c]| + |M_uri_c[c]| => |M_h_c[c]| + |M_adp_c[c]| + |M_ump_c[c]|'
   subsystem: ' '
 - id: R_URIK2
   name: uridine kinase (GTP:Uridine)
+  genes: MG382
   equation: '|M_gtp_c[c]| + |M_uri_c[c]| => |M_h_c[c]| + |M_gdp_c[c]| + |M_ump_c[c]|'
   subsystem: ' '
 - id: R_URIK3
   name: uridine kinase (ITP:Uridine)
+  genes: MG382
   equation: '|M_itp_c[c]| + |M_uri_c[c]| => |M_h_c[c]| + |M_ump_c[c]| + |M_idp_c[c]|'
   subsystem: ' '
 - id: R_VALTRS
   name: Valyl-tRNA synthetase
+  genes: MG334
   equation: '|M_atp_c[c]| + |M_val_DASH_L_c[c]| + |M_trnaval_c[c]| => |M_ppi_c[c]|
     + |M_amp_c[c]| + |M_valtrna_c[c]|'
   subsystem: ' '
