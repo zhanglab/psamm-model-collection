@@ -1,64 +1,77 @@
 - id: R_AACPAT
   name: R_Acetyl_CoAacyl_carrier_protein_S_acetyltransferase
+  genes: '274'
   equation: '|M_ACP_c[Cytosol]| + |M_accoa_c[Cytosol]| => |M_acACP_c[Cytosol]| +
     |M_coa_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_ABTA
   name: R_4_aminobutyrate_transaminase
+  genes: '333'
   equation: '|M_4abut_c[Cytosol]| + |M_akg_c[Cytosol]| => |M_glu_L_c[Cytosol]| +
     |M_sucsal_c[Cytosol]|'
   subsystem: S_Carbohydrate_Metabolism
 - id: R_ACBIPGT
   name: R_Adenosyl_cobainamide_GTP_transferase
+  genes: '169'
   equation: '|M_adcobap_c[Cytosol]| + |M_gtp_c[Cytosol]| + |M_h_c[Cytosol]| => |M_adgcoba_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_ACCOAC
   name: R_acetyl_CoA_carboxylase
+  genes: 24 and 25
   equation: '|M_accoa_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_hco3_c[Cytosol]| => |M_adp_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_malcoa_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_ACGK
   name: R_acetylglutamate_kinase
+  genes: '332'
   equation: '|M_acglu_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_acg5p_c[Cytosol]| +
     |M_adp_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_ACGS
   name: R_N_acetylglutamate_synthase
+  genes: 331 or 100 or 119
   equation: '|M_accoa_c[Cytosol]| + |M_glu_L_c[Cytosol]| => |M_acglu_c[Cytosol]|
     + |M_coa_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_ACHBS
   name: R_2_aceto_2_hydroxybutanoate_synthase
+  genes: 222 and 223
   equation: '|M_2obut_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pyr_c[Cytosol]| => |M_2ahbut_c[Cytosol]|
     + |M_co2_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_ACLS
   name: R_acetolactate_synthase__Also_catalyzes_ACHBS_
+  genes: 222 and 223
   equation: '|M_h_c[Cytosol]| + (2) |M_pyr_c[Cytosol]| => |M_alac_S_c[Cytosol]| +
     |M_co2_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_ACMAT1
   name: R_Acyl_acyl_carrier_proteinmalonyl_acyl_carrier_protein_C_acyltransferase__decarboxylating_
+  genes: '274'
   equation: '|M_acACP_c[Cytosol]| + |M_h_c[Cytosol]| + |M_malACP_c[Cytosol]| => |M_ACP_c[Cytosol]|
     + |M_actACP_c[Cytosol]| + |M_co2_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_ACONT
   name: R_aconitase
+  genes: 93 and 94 and 218 and 219
   equation: '|M_cit_c[Cytosol]| <=> |M_icit_c[Cytosol]|'
   subsystem: S_Citrate_Cycle__TCA_
 - id: R_ACOTA
   name: R_acetylornithine_transaminase
+  genes: '333'
   equation: '|M_acorn_c[Cytosol]| + |M_akg_c[Cytosol]| <=> |M_acg5sa_c[Cytosol]|
     + |M_glu_L_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_ACPS1
   name: R_acyl_carrier_protein_synthase
+  genes: '90'
   equation: '|M_apoACP_c[Cytosol]| + |M_coa_c[Cytosol]| => |M_ACP_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_pap_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_ACS
   name: R_acetyl_CoA_synthetase
+  genes: '323'
   equation: '|M_ac_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| => |M_accoa_c[Cytosol]|
     + |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Carbohydrate_Metabolism
@@ -69,88 +82,107 @@
   subsystem: S_Transport
 - id: R_ADCL
   name: R_4_aminobenzoate_synthase
+  genes: '373'
   equation: '|M_4adcho_c[Cytosol]| => |M_4abz_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pyr_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_ADCOBAK
   name: R_Adenosyl_cobinamide_kinase
+  genes: '169'
   equation: '|M_adcoba_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_adcobap_c[Cytosol]|
     + |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_ADCOBAS
   name: R_adenosylcobinamide_phosphate_synthase
+  genes: 164 or 430 or 300
   equation: '|M_1ap2ol_c[Cytosol]| + |M_adcobhex_c[Cytosol]| => |M_adcoba_c[Cytosol]|
     + |M_h2o_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_ADCOBHEXS
   name: R_adenosylcobyric_acid_synthase
+  genes: '260'
   equation: '|M_adcobdam_c[Cytosol]| + (4) |M_atp_c[Cytosol]| + (4) |M_gln_L_c[Cytosol]|
     + (4) |M_h2o_c[Cytosol]| => |M_adcobhex_c[Cytosol]| + (4) |M_adp_c[Cytosol]|
     + (4) |M_glu_L_c[Cytosol]| + (4) |M_h_c[Cytosol]| + (4) |M_pi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_ADCOBHS
   name: R_Adenosylcobinamide_hydrolase
+  genes: '413'
   equation: '|M_1ap2ol_c[Cytosol]| + |M_adcobhex_c[Cytosol]| <=> |M_adcoba_c[Cytosol]|
     + |M_h2o_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prosthetic_Group_Biosynthesis
 - id: R_ADCPS2
   name: R_adenosylcobinamide_phosphate_synthase
+  genes: 430 or 300 or 164
   equation: '|M_1ap2olp_c[Cytosol]| + |M_adcobhex_c[Cytosol]| + |M_atp_c[Cytosol]|
     => |M_adcobap_c[Cytosol]| + |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_ADCS
   name: R_4_amino_4_deoxychorismate_synthase
+  genes: '373'
   equation: '|M_chor_c[Cytosol]| + |M_gln_L_c[Cytosol]| => |M_4adcho_c[Cytosol]|
     + |M_glu_L_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_ADD
   name: R_adenine_deaminase
+  genes: '208'
   equation: '|M_ade_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_hxan_c[Cytosol]|
     + |M_nh4_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_ADK1
   name: R_adenylate_kinase
+  genes: '111'
   equation: '|M_amp_c[Cytosol]| + |M_atp_c[Cytosol]| <=> (2) |M_adp_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_ADK2
   name: R_adenylate_kinase__Inorganic_triphosphate_
+  genes: '111'
   equation: '|M_amp_c[Cytosol]| + |M_pppi_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_ADK3
   name: R_guanylate_kinase__aMPgTP_
+  genes: '111'
   equation: '|M_amp_c[Cytosol]| + |M_gtp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_gdp_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_ADK4
   name: R_adentylate_kinase__ITP_
+  genes: '111'
   equation: '|M_amp_c[Cytosol]| + |M_itp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_idp_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_ADNCYC
   name: R_adenylate_cyclase
+  genes: '152'
   equation: '|M_atp_c[Cytosol]| => |M_camp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_ADNK1
   name: R_adenosine_kinase
+  genes: '111'
   equation: '|M_adn_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_amp_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_ADPRDP
   name: R_ADPribose_diphosphatase
+  genes: '99'
   equation: '|M_adprib_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_amp_c[Cytosol]| + (2)
     |M_h_c[Cytosol]| + |M_r5p_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_ADPT
   name: R_adenine_phosphoribosyltransferase
+  genes: '311'
   equation: '|M_ade_c[Cytosol]| + |M_prpp_c[Cytosol]| => |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_ADSL1
   name: R_adenylosuccinate_lyase
+  genes: '228'
   equation: '|M_dcamp_c[Cytosol]| => |M_amp_c[Cytosol]| + |M_fum_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_ADSL2
   name: R_adenylosuccinate_lyase
+  genes: '228'
   equation: '|M_25aics_c[Cytosol]| => |M_aicar_c[Cytosol]| + |M_fum_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_ADSS
   name: R_adenylosuccinate_synthetase
+  genes: '278'
   equation: '|M_asp_L_c[Cytosol]| + |M_gtp_c[Cytosol]| + |M_imp_c[Cytosol]| => |M_dcamp_c[Cytosol]|
     + |M_gdp_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
@@ -160,29 +192,35 @@
   subsystem: S_Amino_Acid_Metabolism
 - id: R_AGPR
   name: R_N_acetyl_g_glutamyl_phosphate_reductase
+  genes: '405'
   equation: '|M_acg5sa_c[Cytosol]| + |M_nadp_c[Cytosol]| + |M_pi_c[Cytosol]| <=>
     |M_acg5p_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_AHC
   name: R_adenosylhomocysteinase
+  genes: '116'
   equation: '|M_ahcys_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_adn_c[Cytosol]| + |M_hcys_L_c[Cytosol]|'
   subsystem: S_Energy_Metabolism
 - id: R_AHMMPS
   name: R_4_amino_5_hydroxymethyl_2_methylpyrimidine_synthetase
+  genes: '201'
   equation: '|M_air_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_4ahmmp_c[Cytosol]| + |M_gcald_c[Cytosol]|
     + (0.500000) |M_o2_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_AICART
   name: R_phosphoribosylaminoimidazolecarboxamide_formyltransferase
+  genes: '369'
   equation: '|M_10fthf_c[Cytosol]| + |M_aicar_c[Cytosol]| <=> |M_fprica_c[Cytosol]|
     + |M_thf_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_AIRC
   name: R_phosphoribosylaminoimidazole_carboxylase
+  genes: '227'
   equation: '|M_air_c[Cytosol]| + |M_co2_c[Cytosol]| => |M_5aizc_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_ALAALA
   name: R_D_alanine_D_alanine_ligase__reversible_
+  genes: '154'
   equation: (2) |M_ala_D_c[Cytosol]| + |M_atp_c[Cytosol]| <=> |M_adp_c[Cytosol]|
     + |M_alaala_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|
   subsystem: S_Amino_Acid_Metabolism
@@ -192,69 +230,83 @@
   subsystem: S_Amino_Acid_Metabolism
 - id: R_ALATA_D2
   name: R_D_alanine_transaminase
+  genes: '87'
   equation: '|M_ala_D_c[Cytosol]| + |M_pydx5p_c[Cytosol]| => |M_pyam5p_c[Cytosol]|
     + |M_pyr_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_ALATA_L
   name: R_L_alanine_transaminase
+  genes: '351'
   equation: '|M_akg_c[Cytosol]| + |M_ala_L_c[Cytosol]| <=> |M_glu_L_c[Cytosol]| +
     |M_pyr_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_ALATA_L2
   name: R_alanine_transaminase
+  genes: '87'
   equation: '|M_ala_L_c[Cytosol]| + |M_pydx5p_c[Cytosol]| => |M_pyam5p_c[Cytosol]|
     + |M_pyr_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_ALATRS
   name: R_Alanyl_tRNA_synthetase
+  genes: '14'
   equation: '|M_ala_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_trnaala_c[Cytosol]| =>
     |M_alatrna_c[Cytosol]| + |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_ALCD19
   name: R_alcohol_dehydrogenase__glycerol_
+  genes: 27 or 15
   equation: '|M_glyald_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| <=> |M_glyc_c[Cytosol]|
     + |M_nad_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_ALCD2x
   name: R_alcohol_dehydrogenase__ethanol_NAD_
+  genes: 27 or 15
   equation: '|M_etoh_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_acald_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|'
   subsystem: S_Energy_Metabolism
 - id: R_ALCD3
   name: R_alcohol_dehydrogenase__propanol_NAD_
+  genes: 27 or 15
   equation: '|M_nad_c[Cytosol]| + |M_ppoh_c[Cytosol]| <=> |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|
     + |M_ppal_c[Cytosol]|'
   subsystem: S_Energy_Metabolism
 - id: R_ALDD8b
   name: R_aldehyde_dehydrogenase__glyceraldehyde__NAD_
+  genes: '342'
   equation: '|M_glyald_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_nad_c[Cytosol]| <=>
     |M_glyc_R_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_AMAOT
   name: R_adenosylmethionine_8_amino_7_oxononanoate_transaminase
+  genes: '333'
   equation: '|M_8aonn_c[Cytosol]| + |M_amet_c[Cytosol]| <=> |M_amob_c[Cytosol]| +
     |M_dann_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_AMPMS
   name: R_4_amino_2_methyl_5_phosphomethylpyrimidine_synthetase
+  genes: '201'
   equation: '|M_air_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_4ampm_c[Cytosol]| + (2)
     |M_for_c[Cytosol]| + (4) |M_h_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_ANPRT
   name: R_anthranilate_phosphoribosyltransferase
+  genes: 28 or 375
   equation: '|M_anth_c[Cytosol]| + |M_prpp_c[Cytosol]| => |M_ppi_c[Cytosol]| + |M_pran_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_ANS1
   name: R_anthranilate_synthase
+  genes: 373 and 374
   equation: '|M_chor_c[Cytosol]| + |M_gln_L_c[Cytosol]| => |M_anth_c[Cytosol]| +
     |M_glu_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pyr_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_ANTIMt1
   name: R_antimonite__transporter_via_uniport
+  genes: '437'
   equation: '|M_antim_c[Cytosol]| => |M_antim_e[Extra_organism]|'
   subsystem: S_Transport
 - id: R_APRAUR
   name: R_5_amino_6__5_phosphoribosylamino_uracil_reductase
+  genes: '310'
   equation: '|M_5apru_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| => |M_5aprbu_c[Cytosol]|
     + |M_nadp_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
@@ -265,95 +317,115 @@
   subsystem: S_Amino_Acid_Metabolism
 - id: R_APYRH
   name: R_3_Fumarylpyruvate_acylhydrolase
+  genes: '325'
   equation: '|M_3fpyr_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_fum_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_pyr_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_ARGDC
   name: R_arginine_decarboxylase
+  genes: '124'
   equation: '|M_arg_L_c[Cytosol]| + |M_h_c[Cytosol]| => |M_agm_c[Cytosol]| + |M_co2_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_ARGSL
   name: R_argininosuccinate_lyase
+  genes: '335'
   equation: '|M_argsuc_c[Cytosol]| <=> |M_arg_L_c[Cytosol]| + |M_fum_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_ARGSS
   name: R_argininosuccinate_synthase
+  genes: '334'
   equation: '|M_asp_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_citr_L_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_argsuc_c[Cytosol]| + |M_h_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_ARGTRS
   name: R_Arginyl_tRNA_synthetase
+  genes: '337'
   equation: '|M_arg_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_trnaarg_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_argtrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_ARSNAt1
   name: R_Arsenate_transporter
+  genes: '437'
   equation: '|M_arsna_c[Cytosol]| => |M_arsna_e[Extra_organism]|'
   subsystem: S_Transport
 - id: R_ARSt1
   name: R_arsenite_transporter_via_uniport
+  genes: 248 or 437
   equation: '|M_arsni2_c[Cytosol]| => |M_arsni2_e[Extra_organism]|'
   subsystem: S_Transport
 - id: R_ASAD
   name: R_aspartate_semialdehyde_dehydrogenase
+  genes: '276'
   equation: '|M_aspsa_c[Cytosol]| + |M_nadp_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_4pasp_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_ASNS2
   name: R_asparagine_synthetase
+  genes: '42'
   equation: '|M_asp_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_nh4_c[Cytosol]| => |M_amp_c[Cytosol]|
     + |M_asn_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_ASP1DC
   name: R_aspartate_1_decarboxylase
+  genes: '210'
   equation: '|M_asp_L_c[Cytosol]| + |M_h_c[Cytosol]| => |M_ala_B_c[Cytosol]| + |M_co2_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_ASPCT
   name: R_aspartate_carbamoyltransferase
+  genes: '314'
   equation: '|M_asp_L_c[Cytosol]| + |M_cbp_c[Cytosol]| => |M_cbasp_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_ASPK
   name: R_aspartate_kinase
+  genes: '407'
   equation: '|M_asp_L_c[Cytosol]| + |M_atp_c[Cytosol]| <=> |M_4pasp_c[Cytosol]| +
     |M_adp_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_ASPO1
   name: R_L_aspartate_oxidase
+  genes: '420'
   equation: '|M_asp_L_c[Cytosol]| + |M_nad_c[Cytosol]| => (2) |M_h_c[Cytosol]| +
     |M_iasp_c[Cytosol]| + |M_nadh_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_ASPO3
   name: R_L_aspartate_oxidase
+  genes: '420'
   equation: '|M_asp_L_c[Cytosol]| + |M_ubq8_c[Cytosol]| => |M_h_c[Cytosol]| + |M_iasp_c[Cytosol]|
     + |M_ubq8h2_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_ASPO4
   name: R_L_aspartate_oxidase
+  genes: '420'
   equation: '|M_asp_L_c[Cytosol]| + |M_mqn8_c[Cytosol]| => |M_h_c[Cytosol]| + |M_iasp_c[Cytosol]|
     + |M_mql8_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_ASPO5
   name: R_L_aspartate_oxidase
+  genes: '420'
   equation: '|M_asp_L_c[Cytosol]| + |M_fum_c[Cytosol]| => |M_h_c[Cytosol]| + |M_iasp_c[Cytosol]|
     + |M_succ_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_ASPO6
   name: R_L_aspartate_oxidase
+  genes: '420'
   equation: '|M_asp_L_c[Cytosol]| + |M_o2_c[Cytosol]| => |M_h_c[Cytosol]| + |M_h2o2_c[Cytosol]|
     + |M_iasp_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_ASPT
   name: R_L_aspartase
+  genes: '335'
   equation: '|M_asp_L_c[Cytosol]| => |M_fum_c[Cytosol]| + |M_nh4_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_ASPTA1
   name: R_aspartate_transaminase
+  genes: 190 or 139 or 351
   equation: '|M_akg_c[Cytosol]| + |M_asp_L_c[Cytosol]| <=> |M_glu_L_c[Cytosol]| +
     |M_oaa_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_ASPTRS
   name: R_Aspartyl_tRNA_synthetase
+  genes: '177'
   equation: '|M_asp_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_trnaasp_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_asptrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
@@ -364,15 +436,18 @@
   subsystem: S_Energy_Metabolism
 - id: R_ATPPRT
   name: R_ATP_phosphoribosyltransferase
+  genes: '233'
   equation: '|M_atp_c[Cytosol]| + |M_prpp_c[Cytosol]| => |M_ppi_c[Cytosol]| + |M_prbatp_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_ATPS3r
   name: R_ATPase
+  genes: 130 and 131 and 132 and 133 and 134 and 135 and 136 and 137
   equation: '|M_adp_c[Cytosol]| + |M_pi_c[Cytosol]| + (3) |M_h_e[Extra_organism]|
     <=> |M_atp_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]|'
   subsystem: S_Transport
 - id: R_BACCL
   name: R_biotin_acetyl_CoA_carboxylase_ligase
+  genes: '235'
   equation: '|M_atp_c[Cytosol]| + |M_btn_c[Cytosol]| + |M_h_c[Cytosol]| => |M_btamp_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
@@ -402,60 +477,72 @@
   subsystem: S_
 - id: R_BTMAT1
   name: R_Butyryl_acyl_carrier_proteinmalonyl_CoA_C_acyltransferase
+  genes: '338'
   equation: '|M_2beACP_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| => |M_butACP_c[Cytosol]|
     + |M_nad_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_BTS
   name: R_Biotin_synthase
+  genes: '306'
   equation: '|M_dtbt_c[Cytosol]| + (2) |M_s_c[Cytosol]| => |M_btn_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_h2s_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_CBIAT
   name: R_Cobinamide_adenyltransferase
+  genes: 429 or 326 or 301
   equation: '|M_atp_c[Cytosol]| + |M_cbi_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_adcoba_c[Cytosol]|
     + |M_pi_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_CBL1abc
   name: R_Cob_1_alamin_transport_via_ABC_system
+  genes: (162 or 525) and (163 or 526) and (431 or 161 or 480 or 524)
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_cbl1_e[Extra_organism]|
     => |M_adp_c[Cytosol]| + |M_cbl1_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Transport
 - id: R_CBLATr
   name: R_cob_I_alamin_adenosyltransferase
+  genes: 429 or 326 or 301
   equation: '|M_atp_c[Cytosol]| + |M_cbl1_c[Cytosol]| + |M_h_c[Cytosol]| <=> |M_adocbl_c[Cytosol]|
     + |M_pppi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_CBPSr
   name: R_carbamoyl_phosphate_synthase__glutamine_hydrolysing_
+  genes: 316 and 317
   equation: (2) |M_atp_c[Cytosol]| + |M_gln_L_c[Cytosol]| + |M_h2o_c[Cytosol]| +
     |M_hco3_c[Cytosol]| <=> (2) |M_adp_c[Cytosol]| + |M_cbp_c[Cytosol]| + |M_glu_L_c[Cytosol]|
     + (2) |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|
   subsystem: S_Nucleotide_Metabolism
 - id: R_CDGPT
   name: R_CDPdiacylglycerolsn_glycerol_3_phosphate_3_phosphatidyltransferase
+  genes: '279'
   equation: '|M_cdpdag_c[Cytosol]| + |M_glyc3p_c[Cytosol]| => |M_cmp_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_pglyp_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_CDPDSP
   name: R_CDPdiacylglycerol_serine_O_phosphatidyltransferase
+  genes: '279'
   equation: '|M_cdpdag_c[Cytosol]| + |M_ser_L_c[Cytosol]| => |M_cmp_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_ps_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_CDPMEK
   name: R_4__cytidine_5__diphospho__2_C_methyl_D_erythritol_kinase
+  genes: '74'
   equation: '|M_4c2me_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_2p4c2me_c[Cytosol]|
     + |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_CHORM
   name: R_chorismate_mutase
+  genes: 103 or 389
   equation: '|M_chor_c[Cytosol]| => |M_pphn_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_CHORS
   name: R_chorismate_synthase
+  genes: '104'
   equation: '|M_3psme_c[Cytosol]| => |M_chor_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_CITRMS
   name: R__R__citramalate_synthase
+  genes: '216'
   equation: '|M_accoa_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_pyr_c[Cytosol]|
     <=> |M_citrmal_c[Cytosol]| + |M_coa_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
@@ -466,11 +553,13 @@
   subsystem: S_Transport
 - id: R_CLPNS
   name: R_cardiolipin_synthetase
+  genes: '279'
   equation: '|M_cdpdag_c[Cytosol]| + |M_pgly_c[Cytosol]| => |M_cdlp_c[Cytosol]| +
     |M_cmp_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_CMLDC
   name: R_4_carboxymuconolactone_decarboxylase
+  genes: '39'
   equation: '|M_2c25dho_c[Cytosol]| + |M_h_c[Cytosol]| => |M_5odhf2a_c[Cytosol]|
     + |M_co2_c[Cytosol]|'
   subsystem: S_Energy_Metabolism
@@ -480,35 +569,42 @@
   subsystem: S_Transport
 - id: R_COBALTt5
   name: R_cobalt_transport_inout_via_permease__no_H_
+  genes: 82 or 142
   equation: '|M_cobalt2_c[Cytosol]| <=> |M_cobalt2_e[Extra_organism]|'
   subsystem: S_Transport
 - id: R_COBPS
   name: R_cobalamin_5__phosphate_synthase
+  genes: '167'
   equation: '|M_adgcoba_c[Cytosol]| + |M_rdmbzi_c[Cytosol]| => |M_cobamcoa_c[Cytosol]|
     + |M_gmp_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_COBPS2
   name: R_cobalamin_5__phosphate_synthase
+  genes: '167'
   equation: '|M_adgcoba_c[Cytosol]| + |M_rdmbzi_c[Cytosol]| <=> |M_adocbl_c[Cytosol]|
     + |M_gmp_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_CODHr
   name: R_carbon_monoxide_dehydrogenase
+  genes: 171 or 170 or 172 or 174
   equation: '|M_co_c[Cytosol]| + (2) |M_fdox_c[Cytosol]| + |M_h2o_c[Cytosol]| <=>
     |M_co2_c[Cytosol]| + (2) |M_fdred_c[Cytosol]| + (2) |M_h_c[Cytosol]|'
   subsystem: S_Energy_Metabolism
 - id: R_CPC3MT
   name: R_precorrin_3B_C17_methyltransferase
+  genes: '260'
   equation: '|M_amet_c[Cytosol]| + |M_copre3_c[Cytosol]| + |M_h_c[Cytosol]| => |M_ahcys_c[Cytosol]|
     + |M_copre4_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_CPC6MT
   name: R_precorrin_6Y_C5_15_methyltransferase__decarboxylating_
+  genes: '416'
   equation: (2) |M_amet_c[Cytosol]| + |M_codhpre6_c[Cytosol]| => (2) |M_ahcys_c[Cytosol]|
     + |M_co2_c[Cytosol]| + |M_copre8_c[Cytosol]| + |M_h_c[Cytosol]|
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_CPPPGOAN2
   name: R_Oxygen_Independent_coproporphyrinogen_III_oxidase
+  genes: '236'
   equation: (2) |M_amet_c[Cytosol]| + |M_cpppg3_c[Cytosol]| + (4) |M_fdox_c[Cytosol]|
     + (2) |M_nadph_c[Cytosol]| => (2) |M_co2_c[Cytosol]| + (2) |M_dad_5_c[Cytosol]|
     + (4) |M_fdred_c[Cytosol]| + (2) |M_h_c[Cytosol]| + (2) |M_met_L_c[Cytosol]|
@@ -516,403 +612,489 @@
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_CTPS1
   name: R_CTP_synthase__NH3_
+  genes: '366'
   equation: '|M_atp_c[Cytosol]| + |M_nh4_c[Cytosol]| + |M_utp_c[Cytosol]| => |M_adp_c[Cytosol]|
     + |M_ctp_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_CTPS2
   name: R_CTP_synthase__glutamine_
+  genes: '366'
   equation: '|M_atp_c[Cytosol]| + |M_gln_L_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_utp_c[Cytosol]|
     => |M_adp_c[Cytosol]| + |M_ctp_c[Cytosol]| + |M_glu_L_c[Cytosol]| + (2) |M_h_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_CYRDAAT
   name: R_cob_I_yrinic_acid_a_c_diamide_adenosyltransferase
+  genes: 429 or 326 or 301
   equation: '|M_atp_c[Cytosol]| + |M_co1dam_c[Cytosol]| + |M_h_c[Cytosol]| => |M_adcobdam_c[Cytosol]|
     + |M_pppi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_CYRDAS
   name: R_Cob_II_yrinate_a_c_diamide_synthase__glutamine_hydrolysing_
+  genes: '29'
   equation: (4) |M_atp_c[Cytosol]| + (2) |M_cobrnt_c[Cytosol]| + (4) |M_gln_L_c[Cytosol]|
     + (2) |M_h2o_c[Cytosol]| => (4) |M_adp_c[Cytosol]| + (2) |M_co2dam_c[Cytosol]|
     + (4) |M_glu_L_c[Cytosol]| + (2) |M_h_c[Cytosol]| + (2) |M_ppi_c[Cytosol]|
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_CYSS
   name: R_cysteine_synthase
+  genes: '299'
   equation: '|M_acser_c[Cytosol]| + |M_h2s_c[Cytosol]| => |M_ac_c[Cytosol]| + |M_cys_L_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_CYSTRS
   name: R_Cysteinyl_tRNA_synthetase
+  genes: '18'
   equation: '|M_atp_c[Cytosol]| + |M_cys_L_c[Cytosol]| + |M_trnacys_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_cystrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_CYTK1
   name: R_cytidylate_kinase__CMP_
+  genes: '105'
   equation: '|M_atp_c[Cytosol]| + |M_cmp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_cdp_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_CYTK2
   name: R_cytidylate_kinase__dCMP_
+  genes: '105'
   equation: '|M_atp_c[Cytosol]| + |M_dcmp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dcdp_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_Cuabc
   name: R_Copper_transport_via_ABC_system
+  genes: '271'
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_cu2_e[Extra_organism]|
     => |M_adp_c[Cytosol]| + |M_cu2_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Transport
 - id: R_DADK
   name: R_deoxyadenylate_kinase
+  genes: '111'
   equation: '|M_atp_c[Cytosol]| + |M_damp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dadp_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_DAGK
   name: R_diacylglycerol_kinase
+  genes: '77'
   equation: '|M_12dgr_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_12dag3p_c[Cytosol]|
     + |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_DAHPS
   name: R_3_deoxy_D_arabino_heptulosonate_7_phosphate_synthetase
+  genes: 110 or 378
   equation: '|M_e4p_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_pep_c[Cytosol]| => |M_2dda7p_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_DAPAT
   name: R_LL_Diaminopimelate_aminotransferase
+  genes: '190'
   equation: '|M_26dap_LL_c[Cytosol]| + |M_akg_c[Cytosol]| <=> |M_glu_L_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_thdp_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_DAPDC
   name: R_diaminopimelate_decarboxylase
+  genes: '124'
   equation: '|M_26dap_M_c[Cytosol]| + |M_h_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_lys_L_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_DAPE
   name: R_diaminopimelate_epimerase
+  genes: '191'
   equation: '|M_26dap_LL_c[Cytosol]| <=> |M_26dap_M_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_DB4PS
   name: R_3_4_Dihydroxy_2_butanone_4_phosphate
+  genes: '308'
   equation: '|M_ru5p_D_c[Cytosol]| => |M_db4p_c[Cytosol]| + |M_for_c[Cytosol]| +
     |M_h_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_DCMPDA2ir
   name: R_dCMP_deaminase
+  genes: '76'
   equation: '|M_dcmp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dump_c[Cytosol]|
     + |M_nh4_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_DCMPDA3ir
   name: R_dCMP_deaminase__CMP_
+  genes: '76'
   equation: '|M_cmp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_nh4_c[Cytosol]|
     + |M_ump_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_DDMAT5
   name: R_Dodecanoyl_acyl_carrier_protein_malonyl_CoA__C_acyltransferase
+  genes: '338'
   equation: '|M_2tddACP_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| => |M_ddcaACP_c[Cytosol]|
     + |M_nad_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_DEMAT4
   name: R_Decanoyl_acyl_carrier_proteinmalonyl_CoA__C_acyltransferase
+  genes: '338'
   equation: '|M_2tdeACP_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| => |M_decACP_c[Cytosol]|
     + |M_nad_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_DGK1
   name: R_deoxyguanylate_kinase__dGMPATP_
+  genes: '9'
   equation: '|M_atp_c[Cytosol]| + |M_dgmp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dgdp_c[Cytosol]|'
   subsystem: S_Energy_Metabolism
 - id: R_DGTPH
   name: R_dGTPase
+  genes: 128 or 500
   equation: '|M_dgtp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dgsn_c[Cytosol]| + |M_pppi_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_DHAD1
   name: R_dihydroxy_acid_dehydratase__2_3_dihydroxy_3_methylbutanoate_
+  genes: '224'
   equation: '|M_23dhmb_c[Cytosol]| => |M_3mob_c[Cytosol]| + |M_h2o_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_DHAD2
   name: R_Dihydroxy_acid_dehydratase__2_3_dihydroxy_3_methylpentanoate_
+  genes: '224'
   equation: '|M_23dhmp_c[Cytosol]| => |M_3mop_c[Cytosol]| + |M_h2o_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_DHAD3
   name: R_dihydroxy_acid_dehydratase__2_3_dihydroxy_3_methylpentanoate_
+  genes: '224'
   equation: '|M_23dhmp_c[Cytosol]| => |M_2o3mpt_c[Cytosol]| + |M_h2o_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_DHDPRy
   name: R_dihydrodipicolinate_reductase__NADPH_
+  genes: '275'
   equation: '|M_23dhdp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| => |M_nadp_c[Cytosol]|
     + |M_thdp_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_DHDPS
   name: R_dihydrodipicolinate_synthase
+  genes: '277'
   equation: '|M_aspsa_c[Cytosol]| + |M_pyr_c[Cytosol]| => |M_23dhdp_c[Cytosol]| +
     |M_h_c[Cytosol]| + (2) |M_h2o_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_DHFOR2
   name: R_dihydrofolate_reductase
+  genes: '214'
   equation: '|M_dhf_c[Cytosol]| + |M_nadp_c[Cytosol]| <=> |M_fol_c[Cytosol]| + |M_nadph_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_DHFOR3
   name: R_dihydrofolate_reductase
+  genes: '214'
   equation: '|M_fol_c[Cytosol]| + |M_h_c[Cytosol]| + (2) |M_nadph_c[Cytosol]| <=>
     (2) |M_nadp_c[Cytosol]| + |M_thf_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_DHFR
   name: R_dihydrofolate_reductase
+  genes: '214'
   equation: '|M_dhf_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| <=> |M_nadp_c[Cytosol]|
     + |M_thf_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_DHFS
   name: R_dihydrofolate_synthase
+  genes: '7'
   equation: '|M_atp_c[Cytosol]| + |M_dhpt_c[Cytosol]| + |M_glu_L_c[Cytosol]| => |M_adp_c[Cytosol]|
     + |M_dhf_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_DHNAOT
   name: R_1_4_dihydroxy_2_naphthoate_octaprenyltransferase
+  genes: '73'
   equation: '|M_dhna_c[Cytosol]| + |M_nad_c[Cytosol]| + |M_octdp_c[Cytosol]| => |M_2dmmq8_c[Cytosol]|
     + |M_co2_c[Cytosol]| + |M_nadh_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_DHNPA
   name: R_dihydroneopterin_aldolase
+  genes: 402 or 401
   equation: '|M_dhnpt_c[Cytosol]| => |M_2ahhmp_c[Cytosol]| + |M_gcald_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_DHORDf
   name: R_dihydroorotate_dehydrogenase
+  genes: 358 or 318 or 10
   equation: '|M_dhor_S_c[Cytosol]| + (2) |M_fdox_c[Cytosol]| <=> (2) |M_fdred_c[Cytosol]|
     + (2) |M_h_c[Cytosol]| + |M_orot_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_DHORTS
   name: R_dihydroorotase
+  genes: '315'
   equation: '|M_dhor_S_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_cbasp_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_DHPPDA2
   name: R_diaminohydroxyphosphoribosylaminopyrimidine_deaminase
+  genes: '310'
   equation: '|M_25dhpp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_5apru_c[Cytosol]|
     + |M_nh4_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_DHPS1
   name: R_dihydropteroate_synthase
+  genes: '401'
   equation: '|M_2ahhmp_c[Cytosol]| + |M_4abz_c[Cytosol]| => |M_dhpt_c[Cytosol]| +
     |M_h2o_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_DHPS3
   name: R_dihydropteroate_synthase
+  genes: '401'
   equation: '|M_2ahhmd_c[Cytosol]| + |M_4abz_c[Cytosol]| => |M_dhpt_c[Cytosol]| +
     |M_ppi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_DHQD
   name: R_3_dehydroquinate_dehydratase
+  genes: '108'
   equation: '|M_3dhq_c[Cytosol]| <=> |M_3dhsk_c[Cytosol]| + |M_h2o_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_DHQS
   name: R_3_dehydroquinate_synthase
+  genes: 109 or 72
   equation: '|M_2dda7p_c[Cytosol]| => |M_3dhq_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_DMATT
   name: R_dimethylallyltranstransferase
+  genes: '67'
   equation: '|M_dmpp_c[Cytosol]| + |M_ipdp_c[Cytosol]| => |M_grdp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_DMPPS
   name: R_1_hydroxy_2_methyl_2__E__butenyl_4_diphosphate_reductase__dmpp_
+  genes: '353'
   equation: '|M_h_c[Cytosol]| + |M_h2mb4p_c[Cytosol]| + |M_nadh_c[Cytosol]| => |M_dmpp_c[Cytosol]|
     + |M_h2o_c[Cytosol]| + |M_nad_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_DMQMT
   name: R_3_Dimethylubiquinonol_3_methyltransferase
+  genes: '371'
   equation: '|M_2omhmbl_c[Cytosol]| + |M_amet_c[Cytosol]| => |M_ahcys_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ubq8h2_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_DNMPPA
   name: R_Dihydroneopterin_monophosphate_dephosphorylase
+  genes: 125 or 336 or 312
   equation: '|M_dhpmp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dhnpt_c[Cytosol]| +
     |M_pi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_DNTPPA
   name: R_Dihydroneopterin_triphosphate_pyrophosphatase
+  genes: 125 or 336 or 312
   equation: '|M_ahdt_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dhpmp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_DPCOAK
   name: R_dephospho_CoA_kinase
+  genes: '345'
   equation: '|M_atp_c[Cytosol]| + |M_dpcoa_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_coa_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_DPR
   name: R_2_dehydropantoate_2_reductase
+  genes: 221 or 102
   equation: '|M_2dhp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| => |M_nadp_c[Cytosol]|
     + |M_pant_R_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_DTMPK
   name: R_dTMP_kinase
+  genes: '202'
   equation: '|M_atp_c[Cytosol]| + |M_dtmp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dtdp_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_DUTPDP
   name: R_dUTP_diphosphatase
+  genes: '78'
   equation: '|M_dutp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dump_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_DXPRI
   name: R_1_deoxy_D_xylulose_5_phosphate_reductoisomerase
+  genes: '58'
   equation: '|M_dxyl5p_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| <=>
     |M_2me4p_c[Cytosol]| + |M_nadp_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_DXPS
   name: R_1_deoxy_D_xylulose_5_phosphate_synthase
+  genes: '195'
   equation: '|M_g3p_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pyr_c[Cytosol]| => |M_co2_c[Cytosol]|
     + |M_dxyl5p_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_E4PD
   name: R_Erythrose_4_phosphate_dehydrogenase
+  genes: '143'
   equation: '|M_e4p_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_4per_c[Cytosol]|
     + (2) |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|'
   subsystem: S_Pentose_Phosphate_Pathway
 - id: R_ENO
   name: R_enolase
+  genes: '144'
   equation: '|M_2pg_c[Cytosol]| <=> |M_h2o_c[Cytosol]| + |M_pep_c[Cytosol]|'
   subsystem: S_GlycolysisGluconeogenesis
 - id: R_F1PK
   name: R_fructose_1_phosphate_kinase
+  genes: '355'
   equation: '|M_atp_c[Cytosol]| + |M_f1p_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_fdp_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_Energy_Metabolism
 - id: R_FA120ACPH
   name: R_fatty_acyl_ACP_hydrolase
+  genes: '339'
   equation: '|M_ddcaACP_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_ACP_c[Cytosol]| +
     |M_ddca_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_FA140ACPH
   name: R_fatty_acyl_ACP_hydrolase
+  genes: '339'
   equation: '|M_h2o_c[Cytosol]| + |M_myrsACP_c[Cytosol]| <=> |M_ACP_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_ttdca_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_FA160ACPH
   name: R_fatty_acyl_ACP_hydrolase
+  genes: '339'
   equation: '|M_h2o_c[Cytosol]| + |M_palmACP_c[Cytosol]| <=> |M_ACP_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_hdca_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_FA180ACPH
   name: R_fatty_acyl_ACP_hydrolase
+  genes: '339'
   equation: '|M_h2o_c[Cytosol]| + |M_ocdACP_c[Cytosol]| <=> |M_ACP_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_ocdca_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_FA200ACPH
   name: R_fatty_acyl_ACP_hydrolase
+  genes: '339'
   equation: '|M_h2o_c[Cytosol]| + |M_icsACP_c[Cytosol]| <=> |M_ACP_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_icsa_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_FACOAL120
   name: R_fatty_acid__CoA_ligase__dodecanoate_
+  genes: 419 or 268 or 286
   equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_ddca_c[Cytosol]| <=> |M_amp_c[Cytosol]|
     + |M_ddcoa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_FACOAL140
   name: R_fatty_acid__CoA_ligase__tetradecanoate_
+  genes: 419 or 268 or 286
   equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_ttdca_c[Cytosol]| <=> |M_amp_c[Cytosol]|
     + |M_ppi_c[Cytosol]| + |M_tdcoa_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_FACOAL160
   name: R_fatty_acid__CoA_ligase__hexadecanoate_
+  genes: 419 or 268 or 286
   equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_hdca_c[Cytosol]| <=> |M_amp_c[Cytosol]|
     + |M_pmtcoa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_FACOAL170_ISO_
   name: R_fatty_acid__CoA_ligase__Iso_C170_
+  genes: 419 or 268 or 286
   equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_fa11_c[Cytosol]| <=> |M_amp_c[Cytosol]|
     + |M_fa11coa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_FACOAL180
   name: R_fatty_acid__CoA_ligase__octadecanoate_
+  genes: 419 or 268 or 286
   equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_ocdca_c[Cytosol]| <=> |M_amp_c[Cytosol]|
     + |M_ppi_c[Cytosol]| + |M_strcoa_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_FACOAL181
   name: R_fatty_acid__CoA_ligase__octadecenoate_
+  genes: 419 or 268 or 286
   equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_ocdcea_c[Cytosol]| <=>
     |M_amp_c[Cytosol]| + |M_odecoa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_FACOAL200
   name: R_fatty_acid__CoA_ligase__icosanoate_
+  genes: 419 or 268 or 286
   equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_icsa_c[Cytosol]| <=> |M_amp_c[Cytosol]|
     + |M_icscoa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_FBA
   name: R_fructose_bisphosphate_aldolase
+  genes: '354'
   equation: '|M_fdp_c[Cytosol]| <=> |M_dhap_c[Cytosol]| + |M_g3p_c[Cytosol]|'
   subsystem: S_GlycolysisGluconeogenesis
 - id: R_FBP
   name: R_fructose_bisphosphatase
+  genes: '327'
   equation: '|M_fdp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_f6p_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_GlycolysisGluconeogenesis
 - id: R_FCLPA
   name: R_L_fuculose_1_phosphate_aldolase
+  genes: '410'
   equation: '|M_fc1p_c[Cytosol]| <=> |M_dhap_c[Cytosol]| + |M_lald_L_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_FDTS
   name: R_Thymidylate_synthase__FAD_
+  genes: '381'
   equation: '|M_dump_c[Cytosol]| + |M_fadh2_c[Cytosol]| + |M_mlthf_c[Cytosol]| =>
     |M_dtmp_c[Cytosol]| + |M_fad_c[Cytosol]| + |M_thf_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_FE2abc
   name: R_iron__II__transport_via_ABC_system
+  genes: '387'
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_fe2_e[Extra_organism]|
     => |M_adp_c[Cytosol]| + |M_fe2_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Transport
 - id: R_FMETDF
   name: R_formylmethionine_deformylase
+  genes: '199'
   equation: '|M_fmet_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_for_c[Cytosol]| + |M_met_L_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_FMETTRS
   name: R_Methionyl_tRNA_formyltransferase
+  genes: '411'
   equation: '|M_10fthf_c[Cytosol]| + |M_mettrna_c[Cytosol]| => |M_fmettrna_c[Cytosol]|
     + |M_thf_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_FMNAT
   name: R_FMN_adenylyltransferase
+  genes: '148'
   equation: '|M_atp_c[Cytosol]| + |M_fmn_c[Cytosol]| + |M_h_c[Cytosol]| => |M_fad_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_FNOR2
   name: R_ferredoxin_NADP_reductase
+  genes: '11'
   equation: (2) |M_fdred_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadp_c[Cytosol]| <=>
     (2) |M_fdox_c[Cytosol]| + |M_nadph_c[Cytosol]|
   subsystem: S_Energy_Metabolism
 - id: R_FRD5
   name: R_succinate_dehydrogenase__menaquinone_7_
+  genes: '420'
   equation: '|M_mqn7_c[Cytosol]| + |M_succ_c[Cytosol]| <=> |M_fum_c[Cytosol]| + |M_mql7_c[Cytosol]|'
   subsystem: S_Citrate_Cycle__TCA_
 - id: R_FRHD
   name: R_Ferredoxin_hydrogenase
+  genes: (44 and 47) or 37 or 187 or 243 or 488 or (238 and 239 and 240 and 245 and
+    246) or (20 and 21 and 22 and 23) or 150 or 483
   equation: (2) |M_fdox_c[Cytosol]| + |M_h2_e[Extra_organism]| <=> (2) |M_fdred_c[Cytosol]|
     + (2) |M_h_e[Extra_organism]|
   subsystem: S_Energy_Metabolism
 - id: R_FRTT
   name: R_farnesyltranstransferase
+  genes: '67'
   equation: '|M_frdp_c[Cytosol]| + |M_ipdp_c[Cytosol]| => |M_ggdp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_FTHFD
   name: R_formyltetrahydrofolate_deformylase
+  genes: '329'
   equation: '|M_10fthf_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_for_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_thf_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_FTHFLr
   name: R_formate_tetrahydrofolate_ligase
+  genes: '175'
   equation: '|M_atp_c[Cytosol]| + |M_for_c[Cytosol]| + |M_thf_c[Cytosol]| <=> |M_10fthf_c[Cytosol]|
     + |M_adp_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_FUM
   name: R_fumarase
+  genes: 98 and 97
   equation: '|M_fum_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_mal_L_c[Cytosol]|'
   subsystem: S_Citrate_Cycle__TCA_
 - id: R_G1PACT
   name: R_glucosamine_1_phosphate_N_acetyltransferase
+  genes: 121 or 122
   equation: '|M_accoa_c[Cytosol]| + |M_gam1p_c[Cytosol]| => |M_acgam1p_c[Cytosol]|
     + |M_coa_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_Cell_Envelope_Biosynthesis
 - id: R_G1PTMT
   name: R_glucose_1_phosphate_thymidylyltransferase
+  genes: 121 or 122
   equation: '|M_dttp_c[Cytosol]| + |M_g1p_c[Cytosol]| + |M_h_c[Cytosol]| => |M_dtdpglc_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_G3PD1
   name: R_glycerol_3_phosphate_dehydrogenase__NAD_
+  genes: '363'
   equation: '|M_glyc3p_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_dhap_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|'
   subsystem: S_Energy_Metabolism
 - id: R_G3PD2
   name: R_glycerol_3_phosphate_dehydrogenase__NADP_
+  genes: '363'
   equation: '|M_glyc3p_c[Cytosol]| + |M_nadp_c[Cytosol]| <=> |M_dhap_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]|'
   subsystem: S_Energy_Metabolism
@@ -923,150 +1105,180 @@
   subsystem: S_Amino_Acid_Metabolism
 - id: R_G5SD
   name: R_glutamate_5_semialdehyde_dehydrogenase
+  genes: '342'
   equation: '|M_glu5p_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| => |M_glu5sa_c[Cytosol]|
     + |M_nadp_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Amino_acid_Metabolism
 - id: R_GALU
   name: R_UTP_glucose_1_phosphate_uridylyltransferase
+  genes: 121 or 122
   equation: '|M_g1p_c[Cytosol]| + |M_h_c[Cytosol]| + |M_utp_c[Cytosol]| <=> |M_ppi_c[Cytosol]|
     + |M_udpg_c[Cytosol]|'
   subsystem: S_Carbohydrate_Metabolism
 - id: R_GAPD
   name: R_glyceraldehyde_3_phosphate_dehydrogenase__NAD_
+  genes: '143'
   equation: '|M_g3p_c[Cytosol]| + |M_nad_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_13dpg_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|'
   subsystem: S_GlycolysisGluconeogenesis
 - id: R_GARFT
   name: R_phosphoribosylglycinamide_formyltransferase
+  genes: 329 or 179
   equation: '|M_10fthf_c[Cytosol]| + |M_gar_c[Cytosol]| <=> |M_fgam_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_thf_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_GCCc
   name: R_glycine_cleavage_complex
+  genes: '188'
   equation: '|M_dhlpro_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_h_c[Cytosol]| + |M_lpro_c[Cytosol]|
     + |M_nadh_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_GF6PTA
   name: R_glutamine_fructose_6_phosphate_transaminase
+  genes: '123'
   equation: '|M_f6p_c[Cytosol]| + |M_gln_L_c[Cytosol]| => |M_gam6p_c[Cytosol]| +
     |M_glu_L_c[Cytosol]|'
   subsystem: S_Cell_Envelope_Biosynthesis
 - id: R_GGTT
   name: R_geranylgeranyltranstransferase
+  genes: '67'
   equation: '|M_ggdp_c[Cytosol]| + |M_ipdp_c[Cytosol]| => |M_pendp_c[Cytosol]| +
     |M_ppi_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_GHMT
   name: R_glycine_hydroxymethyltransferase
+  genes: '87'
   equation: '|M_ser_L_c[Cytosol]| + |M_thf_c[Cytosol]| <=> |M_gly_c[Cytosol]| + |M_h2o_c[Cytosol]|
     + |M_mlthf_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_GK1
   name: R_guanylate_kinase__GMPATP_
+  genes: '9'
   equation: '|M_atp_c[Cytosol]| + |M_gmp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_gdp_c[Cytosol]|'
   subsystem: S_Energy_Metabolism
 - id: R_GLCS1
   name: R_glycogen_synthase__ADPGlc_
+  genes: 280 or 284
   equation: '|M_adpglc_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_glycogen_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_Cell_Envelope_Biosynthesis
 - id: R_GLGC
   name: R_glucose_1_phosphate_adenylyltransferase
+  genes: 215 or 89 or 322 or 481
   equation: '|M_atp_c[Cytosol]| + |M_g1p_c[Cytosol]| + |M_h_c[Cytosol]| => |M_adpglc_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: S_Cell_Envelope_Biosynthesis
 - id: R_GLNS
   name: R_glutamine_synthetase
+  genes: 290 or 454
   equation: '|M_atp_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_nh4_c[Cytosol]| => |M_adp_c[Cytosol]|
     + |M_gln_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_GLNTRS
   name: R_Glutaminyl_tRNA_synthetase
+  genes: '357'
   equation: '|M_atp_c[Cytosol]| + |M_gln_L_c[Cytosol]| + |M_trnagln_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_glntrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_GLNabc
   name: R_L_glutamine_transport_via_ABC_system
+  genes: 81 and 80 and 79
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_gln_L_e[Extra_organism]|
     => |M_adp_c[Cytosol]| + |M_gln_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Transport
 - id: R_GLU5K
   name: R_glutamate_5_kinase
+  genes: '341'
   equation: '|M_atp_c[Cytosol]| + |M_glu_L_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_glu5p_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_GLUADT
   name: R_glutaminyl_tRNA_synthase__glutamine_hydrolysing_
+  genes: 349 and 350 and 390
   equation: '|M_atp_c[Cytosol]| + |M_gln_L_c[Cytosol]| + |M_glutrna_c[Cytosol]| +
     |M_h2o_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_glntrna_c[Cytosol]| + |M_glu_L_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_GLUPRT
   name: R_glutamine_phosphoribosyldiphosphate_amidotransferase
+  genes: '367'
   equation: '|M_gln_L_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_prpp_c[Cytosol]| => |M_glu_L_c[Cytosol]|
     + |M_ppi_c[Cytosol]| + |M_pram_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_GLUSx
   name: R_glutamate_synthase__NADH2_
+  genes: 296 or 298
   equation: '|M_akg_c[Cytosol]| + |M_gln_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|
     => (2) |M_glu_L_c[Cytosol]| + |M_nad_c[Cytosol]|'
   subsystem: S_Energy_Metabolism
 - id: R_GLUSy
   name: R_glutamate_synthase__NADPH_
+  genes: 26 or 295 or 244 or (292 and 293) or 11
   equation: '|M_akg_c[Cytosol]| + |M_gln_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]|
     => (2) |M_glu_L_c[Cytosol]| + |M_nadp_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_GLUTRS
   name: R_Glutamyl_tRNA_synthetase
+  genes: '357'
   equation: '|M_atp_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_trnaglu_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_glutrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_GLYBt6
   name: R_betaine__glycine_betaine__transport_inout_via_proton_symport
+  genes: '344'
   equation: '|M_glyb_e[Extra_organism]| + |M_h_e[Extra_organism]| <=> |M_glyb_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_Transport
 - id: R_GLYOX
   name: R_hydroxyacylglutathione_hydrolase
+  genes: 88 or 205
   equation: '|M_h2o_c[Cytosol]| + |M_lgt_S_c[Cytosol]| => |M_gthrd_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_lac_D_c[Cytosol]|'
   subsystem: S_Energy_Metabolism
 - id: R_GLYTRS
   name: R_Glycyl_tRNA_synthetase
+  genes: '206'
   equation: '|M_atp_c[Cytosol]| + |M_gly_c[Cytosol]| + |M_trnagly_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_glytrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_GMPR
   name: R_GMP_reductase
+  genes: '65'
   equation: '|M_gmp_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| =>
     |M_imp_c[Cytosol]| + |M_nadp_c[Cytosol]| + |M_nh4_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_GMPS2
   name: R_GMP_synthase__glutamine_hydrolysing_
+  genes: '225'
   equation: '|M_atp_c[Cytosol]| + |M_gln_L_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_xmp_c[Cytosol]|
     => |M_amp_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_gmp_c[Cytosol]| + (2) |M_h_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_GRTT
   name: R_geranyltranstransferase
+  genes: '67'
   equation: '|M_grdp_c[Cytosol]| + |M_ipdp_c[Cytosol]| => |M_frdp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_GTPCI
   name: R_GTP_cyclohydrolase_I
+  genes: '319'
   equation: '|M_gtp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_ahdt_c[Cytosol]| + |M_for_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_GTPCII
   name: R_GTP_cyclohydrolase_II
+  genes: '308'
   equation: '|M_gtp_c[Cytosol]| + (3) |M_h2o_c[Cytosol]| => |M_25dhpp_c[Cytosol]|
     + |M_for_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_GTPDK
   name: R_GTP_diphosphokinase
+  genes: '2'
   equation: '|M_atp_c[Cytosol]| + |M_gtp_c[Cytosol]| => |M_amp_c[Cytosol]| + |M_gdptp_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_Pentose_Phosphate_Pathway
 - id: R_GUAPRT
   name: R_guanine_phosphoribosyltransferase
+  genes: 196 or 209
   equation: '|M_gua_c[Cytosol]| + |M_prpp_c[Cytosol]| => |M_gmp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_H2Ot5
@@ -1079,15 +1291,18 @@
   subsystem: S_Transport
 - id: R_HBUHL1
   name: R__3R__3_Hydroxybutanoyl_acyl_carrier_protein_hydro_lyase
+  genes: '339'
   equation: '|M_3hbACP_c[Cytosol]| => |M_2beACP_c[Cytosol]| + |M_h2o_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_HBUR1
   name: R__3R__3_Hydroxybutanoyl_acyl_carrier_proteinNADP_oxidoreductase
+  genes: 340 or 189
   equation: '|M_actACP_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| => |M_3hbACP_c[Cytosol]|
     + |M_nadp_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_HCITS
   name: R_homocitrate_synthase
+  genes: '404'
   equation: '|M_accoa_c[Cytosol]| + |M_akg_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_coa_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_hcit_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
@@ -1097,148 +1312,179 @@
   subsystem: S_Amino_Acid_Metabolism
 - id: R_HDDHL5
   name: R__3R__3_Hydroxybutanoyl_acyl_carrier_protein_hydro_lyase
+  genes: '339'
   equation: '|M_3hddACP_c[Cytosol]| => |M_2tddACP_c[Cytosol]| + |M_h2o_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_HDDR5
   name: R_3R__3_Hydroxydodecanoyl_acyl_carrier_proteinNADP_oxidoreductase
+  genes: 340 or 189
   equation: '|M_3oxddACP_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| =>
     |M_3hddACP_c[Cytosol]| + |M_nadp_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_HDEHL4
   name: R__3R__3_Hydroxybutanoyl_acyl_carrier_protein_hydro_lyase
+  genes: '339'
   equation: '|M_3hdeACP_c[Cytosol]| => |M_2tdeACP_c[Cytosol]| + |M_h2o_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_HDER4
   name: R__3R__3_Hydroxydecanoyl_acyl_carrier_proteinNADP_oxidoreductase
+  genes: 340 or 189
   equation: '|M_3oxdeACP_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| =>
     |M_3hdeACP_c[Cytosol]| + |M_nadp_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_HDMAT7
   name: R_Hexadecanoyl_acyl_carrier_proteinmalonyl_CoA__C_acyltransferase
+  genes: '338'
   equation: '|M_nad_c[Cytosol]| + |M_palmACP_c[Cytosol]| <=> |M_h_c[Cytosol]| + |M_hdeACP_c[Cytosol]|
     + |M_nadh_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_HEMAT2
   name: R_Hexanoyl_acyl_carrier_proteinmalonyl_CoA_C_acyltransferase
+  genes: '338'
   equation: '|M_2theACP_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| => |M_hexACP_c[Cytosol]|
     + |M_nad_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_HEPTT
   name: R_trans_heptaprenyltranstransferase
+  genes: '67'
   equation: '|M_hepdp_c[Cytosol]| + |M_ipdp_c[Cytosol]| => |M_octdp_c[Cytosol]| +
     |M_ppi_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_HEX1
   name: R_hexokinase__D_glucoseATP_
+  genes: '13'
   equation: '|M_atp_c[Cytosol]| + |M_glc_D_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_g6p_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_GlycolysisGluconeogenesis
 - id: R_HEXTT
   name: R_trans_hexaprenyltranstransferase
+  genes: '67'
   equation: '|M_hexdp_c[Cytosol]| + |M_ipdp_c[Cytosol]| => |M_hepdp_c[Cytosol]| +
     |M_ppi_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_HGR
   name: R_mercury_II__reductase
+  genes: '188'
   equation: '|M_hg2_c[Cytosol]| + |M_nadph_c[Cytosol]| <=> |M_h_c[Cytosol]| + |M_hg0_c[Cytosol]|
     + |M_nadp_c[Cytosol]|'
   subsystem: S_Energy_Metabolism
 - id: R_HHDHL7
   name: R__3R__3_Hydroxypalmitoyl_acyl_carrier_protein_hydro_lyase
+  genes: '339'
   equation: '|M_3hpaACP_c[Cytosol]| => |M_h2o_c[Cytosol]| + |M_hdeACP_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_HHDR7
   name: R__3R__3_Hydroxypalmitoyl_acyl_carrier_proteinNADP_oxidoreductase
+  genes: 340 or 189
   equation: '|M_3oxhdACP_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| =>
     |M_3hpaACP_c[Cytosol]| + |M_nadp_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_HHYHL2
   name: R__3R__3_Hydroxybutanoyl_acyl_carrier_protein_hydro_lyase
+  genes: '339'
   equation: '|M_3hhACP_c[Cytosol]| => |M_2theACP_c[Cytosol]| + |M_h2o_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_HHYR2
   name: R__3R__3_Hydroxyhexanoyl_acyl_carrier_proteinNADP_oxidoreductase
+  genes: 340 or 189
   equation: '|M_3oxhACP_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| =>
     |M_3hhACP_c[Cytosol]| + |M_nadp_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_HICHL9
   name: R__3R__3_Hydroxyicosanoyl_acyl_carrier_protein_hydro_lyase
+  genes: '339'
   equation: '|M_3hicsacp_c[Cytosol]| => |M_2ticsacp_c[Cytosol]| + |M_h2o_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_HICR9
   name: R__3R__3_Hydroxyicosanoyl_acyl_carrier_proteinNADP_oxidoreductase
+  genes: 340 or 189
   equation: '|M_3oxicsacp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| =>
     |M_3hicsacp_c[Cytosol]| + |M_nadp_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_HISTD
   name: R_histidinol_dehydrogenase
+  genes: '232'
   equation: '|M_h2o_c[Cytosol]| + |M_histd_c[Cytosol]| + (2) |M_nad_c[Cytosol]| =>
     (3) |M_h_c[Cytosol]| + |M_his_L_c[Cytosol]| + (2) |M_nadh_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_HISTP
   name: R_histidinol_phosphatase
+  genes: '424'
   equation: '|M_h2o_c[Cytosol]| + |M_hisp_c[Cytosol]| => |M_histd_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_HISTRS
   name: R_Histidyl_tRNA_synthetase
+  genes: 3 or 234
   equation: '|M_atp_c[Cytosol]| + |M_his_L_c[Cytosol]| + |M_trnahis_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_histrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_HMPK1
   name: R_hydroxymethylpyrimidine_kinase__ATP_
+  genes: '203'
   equation: '|M_4ahmmp_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_4ampm_c[Cytosol]| +
     |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_HMPK2
   name: R_hydroxymethylpyrimidine_kinase__CTP_
+  genes: '203'
   equation: '|M_4ahmmp_c[Cytosol]| + |M_ctp_c[Cytosol]| => |M_4ampm_c[Cytosol]| +
     |M_cdp_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_HMPK3
   name: R_hydroxymethylpyrimidine_kinase__UTP_
+  genes: '203'
   equation: '|M_4ahmmp_c[Cytosol]| + |M_utp_c[Cytosol]| => |M_4ampm_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_udp_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_HMPK4
   name: R_hydroxymethylpyrimidine_kinase__GTP_
+  genes: '203'
   equation: '|M_4ahmmp_c[Cytosol]| + |M_gtp_c[Cytosol]| => |M_4ampm_c[Cytosol]| +
     |M_gdp_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_HOCHL3
   name: R___3R__3_Hydroxybutanoyl_acyl_carrier_protein_hydro_lyase
+  genes: '339'
   equation: '|M_3hocACP_c[Cytosol]| => |M_2toceACP_c[Cytosol]| + |M_h2o_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_HOCR3
   name: R__3R__3_Hydroxyoctanoyl_acyl_carrier_proteinNADP_oxidoreductase
+  genes: 340 or 189
   equation: '|M_3oxocACP_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| =>
     |M_3hocACP_c[Cytosol]| + |M_nadp_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_HODHL8n
   name: R__3R__3_Hydroxyoctadecanoyl_acyl_carrier_protein_hydro_lyase
+  genes: '339'
   equation: '|M_3hocdacp_c[Cytosol]| => |M_2tocdACP_c[Cytosol]| + |M_h2o_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_HODR8_1
   name: R__3R__3_Hydroxyoctadecanoyl_acyl_carrier_proteinNADP_oxidoreductase
+  genes: 340 or 189
   equation: '|M_3oxocdacp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| =>
     |M_3hocdacp_c[Cytosol]| + |M_nadp_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_HPPK
   name: R_2_amino_4_hydroxy_6_hydroxymethyldihydropteridine_diphosphokinase
+  genes: '402'
   equation: '|M_2ahhmp_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_2ahhmd_c[Cytosol]|
     + |M_amp_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_HSAT
   name: R_Acetyl_CoAL_homoserine_O_acetyltransferase
+  genes: '7'
   equation: '|M_accoa_c[Cytosol]| + |M_hom_L_c[Cytosol]| <=> |M_achms_c[Cytosol]|
     + |M_coa_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_HSDy
   name: R_homoserine_dehydrogenase__NADPH_
+  genes: '321'
   equation: '|M_hom_L_c[Cytosol]| + |M_nadp_c[Cytosol]| <=> |M_aspsa_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_HSK
   name: R_homoserine_kinase
+  genes: 74 or 303
   equation: '|M_atp_c[Cytosol]| + |M_hom_L_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_phom_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
@@ -1248,261 +1494,315 @@
   subsystem: S_Amino_Acid_Metabolism
 - id: R_HSTPT
   name: R_histidinol_phosphate_transaminase
+  genes: '231'
   equation: '|M_glu_L_c[Cytosol]| + |M_imacp_c[Cytosol]| => |M_akg_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_hisp_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_HTDHL6
   name: R__3R__3_Hydroxypalmitoyl_acyl_carrier_protein_hydro_lyase
+  genes: '339'
   equation: '|M_3htdACP_c[Cytosol]| => |M_h2o_c[Cytosol]| + |M_tdeACP_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_HTDR6
   name: R_3R__3_Hydroxytetradecanoyl_acyl_carrier_proteinNADP_oxidoreductase
+  genes: 340 or 189
   equation: '|M_3oxtdACP_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| =>
     |M_3htdACP_c[Cytosol]| + |M_nadp_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_HXPRT
   name: R_hypoxanthine_phosphoribosyltransferase__Hypoxanthine_
+  genes: 196 or 209
   equation: '|M_hxan_c[Cytosol]| + |M_prpp_c[Cytosol]| => |M_imp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_ICDHy
   name: R_isocitrate_dehydrogenase__NADP_
+  genes: '95'
   equation: '|M_icit_c[Cytosol]| + |M_nadp_c[Cytosol]| <=> |M_akg_c[Cytosol]| + |M_co2_c[Cytosol]|
     + |M_nadph_c[Cytosol]|'
   subsystem: S_Citrate_Cycle__TCA_
 - id: R_ICSMAT9
   name: R_Icosanoyl_acyl_carrier_proteinmalonyl_CoA__C_acyltransferase
+  genes: '338'
   equation: '|M_2ticsacp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| =>
     |M_icsACP_c[Cytosol]| + |M_nad_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_IG3PS
   name: R_Imidazole_glycerol_3_phosphate_synthase
+  genes: 294 or 273 or 297
   equation: '|M_gln_L_c[Cytosol]| + |M_prlp_c[Cytosol]| => |M_aicar_c[Cytosol]| +
     |M_eig3p_c[Cytosol]| + |M_glu_L_c[Cytosol]| + (2) |M_h_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_IGPDH
   name: R_imidazoleglycerol_phosphate_dehydratase
+  genes: '230'
   equation: '|M_eig3p_c[Cytosol]| + |M_h_c[Cytosol]| => |M_h2o_c[Cytosol]| + |M_imacp_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_IGPS
   name: R_indole_3_glycerol_phosphate_synthase
+  genes: '376'
   equation: '|M_2cpr5p_c[Cytosol]| + |M_h_c[Cytosol]| => |M_3ig3p_c[Cytosol]| + |M_co2_c[Cytosol]|
     + |M_h2o_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_ILETA
   name: R_isoleucine_transaminase
+  genes: '5'
   equation: '|M_akg_c[Cytosol]| + |M_ile_L_c[Cytosol]| <=> |M_3mop_c[Cytosol]| +
     |M_glu_L_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_ILETRS
   name: R_Isoleucyl_tRNA_synthetase
+  genes: '288'
   equation: '|M_atp_c[Cytosol]| + |M_ile_L_c[Cytosol]| + |M_trnaile_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_iletrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_ILEabc
   name: R_L_isoleucine_transport_via_ABC_system
+  genes: 261 or (263 and 264 and 265 and 266 and 267)
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_ile_L_e[Extra_organism]|
     => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_ile_L_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Transport
 - id: R_IMPCir
   name: R_IMP_cyclohydrolase
+  genes: '369'
   equation: '|M_fprica_c[Cytosol]| => |M_h2o_c[Cytosol]| + |M_imp_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_IMPD
   name: R_IMP_dehydrogenase
+  genes: '65'
   equation: '|M_h2o_c[Cytosol]| + |M_imp_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_h_c[Cytosol]|
     + |M_nadh_c[Cytosol]| + |M_xmp_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_IOR
   name: R_indolepyruvate_ferredoxin_oxidoreductase
+  genes: 269 and 270
   equation: '|M_coa_c[Cytosol]| + (2) |M_fdox_c[Cytosol]| + |M_indpyr_c[Cytosol]|
     <=> |M_co2_c[Cytosol]| + (2) |M_fdred_c[Cytosol]| + |M_h_c[Cytosol]| + |M_indaccoa_c[Cytosol]|'
   subsystem: S_Energy_Metabolism
 - id: R_IOR2
   name: R_indolepyruvate_ferredoxin_oxidoreductase__phenylpyvurate_
+  genes: 269 and 270
   equation: '|M_coa_c[Cytosol]| + (2) |M_fdox_c[Cytosol]| + |M_phpyr_c[Cytosol]|
     <=> |M_co2_c[Cytosol]| + (2) |M_fdred_c[Cytosol]| + |M_h_c[Cytosol]| + |M_phaccoa_c[Cytosol]|'
   subsystem: S_Energy_Metabolism
 - id: R_IOR3
   name: R_indolepyruvate_ferredoxin_oxidoreductase__hydroxyphenylpyvurate_
+  genes: 269 and 270
   equation: '|M_34hpp_c[Cytosol]| + |M_coa_c[Cytosol]| + (2) |M_fdox_c[Cytosol]|
     <=> |M_4hphaccoa_c[Cytosol]| + |M_co2_c[Cytosol]| + (2) |M_fdred_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_Energy_Metabolism
 - id: R_IPDPS
   name: R_1_hydroxy_2_methyl_2__E__butenyl_4_diphosphate_reductase__ipdp_
+  genes: '353'
   equation: '|M_h_c[Cytosol]| + |M_h2mb4p_c[Cytosol]| + |M_nadh_c[Cytosol]| => |M_h2o_c[Cytosol]|
     + |M_ipdp_c[Cytosol]| + |M_nad_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_IPMD
   name: R_3_isopropylmalate_dehydrogenase
+  genes: '217'
   equation: '|M_3c2hmp_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_3c4mop_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_IPMDH
   name: R_Isopropylmalate_dehydrogenase
+  genes: '217'
   equation: '|M_de3mlt_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_2obut_c[Cytosol]|
     + |M_co2_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_IPMI1
   name: R_Isopropylmalate_isomerase
+  genes: 93 and 94 and 218 and 219
   equation: '|M_citrmal_c[Cytosol]| <=> |M_ccnt_c[Cytosol]| + |M_h2o_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_IPMI2
   name: R_Isopropylmalate_isomerase
+  genes: 93 and 94 and 218 and 219
   equation: '|M_ccnt_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_de3mlt_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_IPPMIa
   name: R_3_isopropylmalate_dehydratase
+  genes: 93 and 94 and 218 and 219
   equation: '|M_3c2hmp_c[Cytosol]| <=> |M_2ippm_c[Cytosol]| + |M_h2o_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_IPPMIb
   name: R_2_isopropylmalate_hydratase
+  genes: 93 and 94 and 218 and 219
   equation: '|M_2ippm_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_3c3hmp_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_IPPS
   name: R_2_isopropylmalate_synthase
+  genes: 220 or 216
   equation: '|M_3mob_c[Cytosol]| + |M_accoa_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_3c3hmp_c[Cytosol]|
     + |M_coa_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_ITPASE
   name: R_dITP_pyrophosphatase
+  genes: '328'
   equation: '|M_ditp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dimp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_KARA1
   name: R_ketol_acid_reductoisomerase__2_3_dihydroxy_3_methylbutanoate_
+  genes: '221'
   equation: '|M_23dhmb_c[Cytosol]| + |M_nadp_c[Cytosol]| <=> |M_alac_S_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_KARA2
   name: R_ketol_acid_reductoisomerase__2_Acetolactate_
+  genes: '221'
   equation: '|M_2ahbut_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| <=>
     |M_23dhmp_c[Cytosol]| + |M_nadp_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_KAS11
   name: R_b_ketoacyl_synthetase__Iso_C170_
+  genes: '338'
   equation: (17) |M_h_c[Cytosol]| + |M_ivcoa_c[Cytosol]| + (6) |M_malcoa_c[Cytosol]|
     + (12) |M_nadph_c[Cytosol]| => (6) |M_co2_c[Cytosol]| + (7) |M_coa_c[Cytosol]|
     + |M_fa11_c[Cytosol]| + (5) |M_h2o_c[Cytosol]| + (12) |M_nadp_c[Cytosol]|
   subsystem: S_Lipid_Metabolism
 - id: R_KAS17
   name: R_b_ketoacyl_synthetase__n_C181_
+  genes: '338'
   equation: '|M_accoa_c[Cytosol]| + (22) |M_h_c[Cytosol]| + (8) |M_malcoa_c[Cytosol]|
     + (15) |M_nadph_c[Cytosol]| => (8) |M_co2_c[Cytosol]| + (9) |M_coa_c[Cytosol]|
     + (7) |M_h2o_c[Cytosol]| + (15) |M_nadp_c[Cytosol]| + |M_ocdcea_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_Kt6
   name: R_potassium_transport_inout_via_proton_symport
+  genes: 180 or 406
   equation: '|M_h_e[Extra_organism]| + |M_k_e[Extra_organism]| <=> |M_h_c[Cytosol]|
     + |M_k_c[Cytosol]|'
   subsystem: S_Transport
 - id: R_LDH_L
   name: R_L_lactate_dehydrogenase
+  genes: '96'
   equation: '|M_lac_L_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|
     + |M_pyr_c[Cytosol]|'
   subsystem: S_GlycolysisGluconeogenesis
 - id: R_LEUTA
   name: R_leucine_transaminase
+  genes: '5'
   equation: '|M_akg_c[Cytosol]| + |M_leu_L_c[Cytosol]| <=> |M_4mop_c[Cytosol]| +
     |M_glu_L_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_LEUTRS
   name: R_Leucyl_tRNA_synthetase
+  genes: '46'
   equation: '|M_atp_c[Cytosol]| + |M_leu_L_c[Cytosol]| + |M_trnaleu_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_leutrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_LEUabc
   name: R_L_leucine_transport_via_ABC_system
+  genes: 261 or (263 and 264 and 265 and 266 and 267)
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_leu_L_e[Extra_organism]|
     => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_leu_L_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Transport
 - id: R_LPADSS
   name: R_Lipid_A_disaccaride_synthase
+  genes: '176'
   equation: '|M_lipidX_c[Cytosol]| + |M_u23ga_c[Cytosol]| => |M_h_c[Cytosol]| + |M_lipidAds_c[Cytosol]|
     + |M_udp_c[Cytosol]|'
   subsystem: S_Cell_Envelope_Biosynthesis
 - id: R_LYSAM
   name: R_lysine_2_3_aminomutase
+  genes: 153 or 48
   equation: '|M_lys_L_c[Cytosol]| <=> |M_36dahx_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_LYSTRS
   name: R_Lysyl_tRNA_synthetase
+  genes: 141 or 247
   equation: '|M_atp_c[Cytosol]| + |M_lys_L_c[Cytosol]| + |M_trnalys_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_lystrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_MACPMT
   name: R_Malonyl_CoAacyl_carrier_protein_S_malonyltransferase
+  genes: '339'
   equation: '|M_ACP_c[Cytosol]| + |M_malcoa_c[Cytosol]| => |M_coa_c[Cytosol]| + |M_malACP_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_MAN1PT1
   name: R_mannose_1_phosphate_guanylyltransferase
+  genes: 322 or 481
   equation: '|M_gtp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_man1p_c[Cytosol]| => |M_gdpman_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_MAN1PT2
   name: R_mannose_1_phosphate_guanylyltransferase__GDP_
+  genes: '75'
   equation: '|M_gdp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_man1p_c[Cytosol]| => |M_gdpman_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prosthetic_Group_Biosynthesis
 - id: R_MAN6PI
   name: R_mannose_6_phosphate_isomerase
+  genes: '113'
   equation: '|M_man6p_c[Cytosol]| <=> |M_f6p_c[Cytosol]|'
   subsystem: S_Energy_Metabolism
 - id: R_MCMAT2
   name: R_Butyryl_acyl_carrier_proteinmalonyl_acyl_carrier_proteinC_acyltransferase__decarboxylating_
+  genes: '274'
   equation: '|M_butACP_c[Cytosol]| + |M_h_c[Cytosol]| + |M_malACP_c[Cytosol]| =>
     |M_3oxhACP_c[Cytosol]| + |M_ACP_c[Cytosol]| + |M_co2_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_MCMAT3
   name: R_Hexanoyl_acyl_carrier_proteinmalonyl_acyl_carrier_protein_C_acyltransferase
+  genes: '274'
   equation: '|M_h_c[Cytosol]| + |M_hexACP_c[Cytosol]| + |M_malACP_c[Cytosol]| =>
     |M_3oxocACP_c[Cytosol]| + |M_ACP_c[Cytosol]| + |M_co2_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_MCMAT4
   name: R_Octanoyl_acyl_carrier_proteinmalonyl_acyl_carrier_protein___C_acyltransferase__decarboxylating_
+  genes: '274'
   equation: '|M_h_c[Cytosol]| + |M_malACP_c[Cytosol]| + |M_octACP_c[Cytosol]| =>
     |M_3oxdeACP_c[Cytosol]| + |M_ACP_c[Cytosol]| + |M_co2_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_MCMAT5
   name: R_Decanoyl_acyl_carrier_proteinmalonyl_acyl_carrier_protein_C_acyltransferase
+  genes: '274'
   equation: '|M_decACP_c[Cytosol]| + |M_h_c[Cytosol]| + |M_malACP_c[Cytosol]| =>
     |M_3oxddACP_c[Cytosol]| + |M_ACP_c[Cytosol]| + |M_co2_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_MCMAT6
   name: R_Dodecanoyl_acyl_carrier_proteinmalonyl_acyl_carrier_protein__C_acyltransferase
+  genes: '274'
   equation: '|M_ddcaACP_c[Cytosol]| + |M_h_c[Cytosol]| + |M_malACP_c[Cytosol]| =>
     |M_3oxtdACP_c[Cytosol]| + |M_ACP_c[Cytosol]| + |M_co2_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_MCMAT7
   name: R_Tetradecanoyl_acyl_carrier_proteinmalonyl_acyl_carrier_protein__C_acyltransferase
+  genes: '274'
   equation: '|M_h_c[Cytosol]| + |M_malACP_c[Cytosol]| + |M_myrsACP_c[Cytosol]| =>
     |M_3oxhdACP_c[Cytosol]| + |M_ACP_c[Cytosol]| + |M_co2_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_MCMAT8
   name: R_Hexadecanoyl_acyl_carrier_proteinmalonyl_acyl_carrier_protein__C_acyltransferase
+  genes: '274'
   equation: '|M_h_c[Cytosol]| + |M_malACP_c[Cytosol]| + |M_palmACP_c[Cytosol]| =>
     |M_3oxocdacp_c[Cytosol]| + |M_ACP_c[Cytosol]| + |M_co2_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_MCMAT9
   name: R_Octadecanoyl_acyl_carrier_proteinmalonyl_acyl_carrier_protein__C_acyltransferase
+  genes: '274'
   equation: '|M_h_c[Cytosol]| + |M_malACP_c[Cytosol]| + |M_ocdACP_c[Cytosol]| =>
     |M_3oxicsacp_c[Cytosol]| + |M_ACP_c[Cytosol]| + |M_co2_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_MDH
   name: R_malate_dehydrogenase
+  genes: '96'
   equation: '|M_mal_L_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|
     + |M_oaa_c[Cytosol]|'
   subsystem: S_Citrate_Cycle__TCA_
 - id: R_MECDPDH
   name: R_2C_methyl_D_erythritol_2_4_cyclodiphosphate_dehydratase
+  genes: '57'
   equation: '|M_2mecdp_c[Cytosol]| + |M_nadh_c[Cytosol]| => |M_h2mb4p_c[Cytosol]|
     + |M_h2o_c[Cytosol]| + |M_nad_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_MECDPS
   name: R_2_C_methyl_D_erythritol_2_4_cyclodiphosphate_synthase
+  genes: '17'
   equation: '|M_2p4c2me_c[Cytosol]| => |M_2mecdp_c[Cytosol]| + |M_cmp_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_MEPCT
   name: R_2_C_methyl_D_erythritol_4_phosphate_cytidylyltransferase
+  genes: '16'
   equation: '|M_2me4p_c[Cytosol]| + |M_ctp_c[Cytosol]| + |M_h_c[Cytosol]| => |M_4c2me_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
@@ -1512,6 +1812,7 @@
   subsystem: S_Amino_Acid_Metabolism
 - id: R_METAT
   name: R_methionine_adenosyltransferase
+  genes: '115'
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_met_L_c[Cytosol]| => |M_amet_c[Cytosol]|
     + |M_pi_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
@@ -1522,61 +1823,74 @@
   subsystem: S_Amino_Acid_Metabolism
 - id: R_METSR_S1
   name: R_L_methionine_S_oxide_reductase__trdrd_
+  genes: 438 or 330
   equation: '|M_metox_c[Cytosol]| + |M_trdrd_c[Cytosol]| => |M_h2o_c[Cytosol]| +
     |M_met_L_c[Cytosol]| + |M_trdox_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_METSR_S2
   name: R_L_methionine_S_oxide_reductase__H2O2_
+  genes: 438 or 330
   equation: '|M_h2o2_c[Cytosol]| + |M_met_L_c[Cytosol]| => |M_h2o_c[Cytosol]| + |M_metox_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_METTRS
   name: R_Methionyl_tRNA_synthetase
+  genes: '66'
   equation: '|M_atp_c[Cytosol]| + |M_met_L_c[Cytosol]| + |M_trnamet_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_mettrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_MGSA
   name: R_methylglyoxal_synthase
+  genes: 30 or 397
   equation: '|M_dhap_c[Cytosol]| => |M_mthgxl_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Energy_Metabolism
 - id: R_MGt5
   name: R_magnesium_transport_inout_via_permease__no_H_
+  genes: 82 or 142
   equation: '|M_mg2_c[Cytosol]| <=> |M_mg2_e[Extra_organism]|'
   subsystem: S_Transport
 - id: R_MICITH
   name: R_2_methylisocitrate_hydratase
+  genes: 93 and 94 and 218 and 219
   equation: '|M_2mcacn_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_micit_c[Cytosol]|'
   subsystem: S_Citrate_Cycle__TCA_
 - id: R_MNabc
   name: R_manganese_transport_via_ABC_system
+  genes: 155 and 157 and 156
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_mn2_e[Extra_organism]|
     => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_mn2_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Transport
 - id: R_MOBDabc
   name: R_molybdate_transport_via_ABC_system
+  genes: 496 and 497 and 498
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_mobd_e[Extra_organism]|
     => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_mobd_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Transport
 - id: R_MOHMT
   name: R_3_methyl_2_oxobutanoate_hydroxymethyltransferase
+  genes: '211'
   equation: '|M_3mob_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_mlthf_c[Cytosol]| => |M_2dhp_c[Cytosol]|
     + |M_thf_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_MPGSP
   name: R_Mannosyl_3_phosphoglycerate_synthase
+  genes: '356'
   equation: '|M_3pg_c[Cytosol]| + |M_gdpman_c[Cytosol]| + (2) |M_h_c[Cytosol]| <=>
     |M_2m3pg_c[Cytosol]| + |M_gdp_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_MTAP
   name: R_5__methylthioadenosine_phosphorylase
+  genes: '117'
   equation: '|M_5mta_c[Cytosol]| + |M_pi_c[Cytosol]| => |M_5mdr1p_c[Cytosol]| + |M_ade_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_MTHFC
   name: R_methenyltetrahydrofolate_cyclohydrolase
+  genes: 173 or 175
   equation: '|M_h2o_c[Cytosol]| + |M_methf_c[Cytosol]| <=> |M_10fthf_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_MTHFD
   name: R_methylenetetrahydrofolate_dehydrogenase__NADP_
+  genes: 173 or 175
   equation: '|M_mlthf_c[Cytosol]| + |M_nadp_c[Cytosol]| <=> |M_methf_c[Cytosol]|
     + |M_nadph_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
@@ -1587,6 +1901,7 @@
   subsystem: S_Amino_Acid_Metabolism
 - id: R_MTRI
   name: R_5_methylthioribose_1_phosphate_isomerase
+  genes: '118'
   equation: '|M_5mdr1p_c[Cytosol]| <=> |M_5mdru1p_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_N2t
@@ -1595,211 +1910,264 @@
   subsystem: S_Transport
 - id: R_NADH4
   name: R_NADH_dehydrogenase__Menaquinone_7__no_proton_
+  genes: (35 and 36 and 37 and 38) or (249 and 250 and 251 and 252 and 253 and 254
+    and 255 and 256 and 257 and 258 and 259) or 149 or (241 and 242 and 243) or 91
+    or (185 and 186 and 187) or (391 and 392 and 393 and 394 and 395 and 396)
   equation: '|M_h_c[Cytosol]| + |M_mqn7_c[Cytosol]| + |M_nadh_c[Cytosol]| => |M_mql7_c[Cytosol]|
     + |M_nad_c[Cytosol]|'
   subsystem: S_Energy_Metabolism
 - id: R_NADH6
   name: R_NADH_dehydrogenase__ubiquinone_8__35_protons_
+  genes: (35 and 36 and 37 and 38) or (249 and 250 and 251 and 252 and 253 and 254
+    and 255 and 256 and 257 and 258 and 259) or 149 or (241 and 242 and 243) or 91
+    or (185 and 186 and 187) or (391 and 392 and 393 and 394 and 395 and 396)
   equation: (4.500000) |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| + |M_ubq8_c[Cytosol]|
     => |M_nad_c[Cytosol]| + |M_ubq8h2_c[Cytosol]| + (3.500000) |M_h_e[Extra_organism]|
   subsystem: S_Energy_Metabolism
 - id: R_NADH7
   name: R_NADH_dehydrogenase__menaquinone_8__2_protons_
+  genes: (35 and 36 and 37 and 38) or (249 and 250 and 251 and 252 and 253 and 254
+    and 255 and 256 and 257 and 258 and 259) or 149 or (241 and 242 and 243) or 91
+    or (185 and 186 and 187) or (391 and 392 and 393 and 394 and 395 and 396)
   equation: (3) |M_h_c[Cytosol]| + |M_mqn8_c[Cytosol]| + |M_nadh_c[Cytosol]| => |M_mql8_c[Cytosol]|
     + |M_nad_c[Cytosol]| + (2) |M_h_e[Extra_organism]|
   subsystem: S_Energy_Metabolism
 - id: R_NADH8
   name: R_NADH_dehydrogenase__demethylmenaquinone_8__28_protons_
+  genes: (35 and 36 and 37 and 38) or (249 and 250 and 251 and 252 and 253 and 254
+    and 255 and 256 and 257 and 258 and 259) or 149 or (241 and 242 and 243) or 91
+    or (185 and 186 and 187) or (391 and 392 and 393 and 394 and 395 and 396)
   equation: '|M_2dmmq8_c[Cytosol]| + (3.800000) |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|
     => |M_2dmmql8_c[Cytosol]| + |M_nad_c[Cytosol]| + (2.800000) |M_h_e[Extra_organism]|'
   subsystem: S_Energy_Metabolism
 - id: R_NADK
   name: R_NAD_kinase
+  genes: '101'
   equation: '|M_atp_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_nadp_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_NADPH12
   name: R_Quinone_oxidoreductase
+  genes: 37 and 187 and 243
   equation: '|M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| + |M_ubq8_c[Cytosol]| => |M_nadp_c[Cytosol]|
     + |M_ubq8h2_c[Cytosol]|'
   subsystem: S_Energy_Metabolism
 - id: R_NADS1
   name: R_NAD_synthase__nh4_
+  genes: '302'
   equation: '|M_atp_c[Cytosol]| + |M_dnad_c[Cytosol]| + |M_nh4_c[Cytosol]| => |M_amp_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_nad_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_NADS2
   name: R_NAD___synthase__glutamine_hydrolyzing_
+  genes: '289'
   equation: '|M_atp_c[Cytosol]| + |M_dnad_c[Cytosol]| + |M_gln_L_c[Cytosol]| + |M_h2o_c[Cytosol]|
     => |M_amp_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nad_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_NAMNPP
   name: R_nicotinic_acid_mononucleotide_pyrophosphorylase
+  genes: '370'
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_nac_c[Cytosol]| + |M_prpp_c[Cytosol]|
     => |M_adp_c[Cytosol]| + |M_nicrnt_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_NCTPPRT
   name: R_nicotinate_phosphoribosyltransferase
+  genes: '370'
   equation: '|M_nicrnt_c[Cytosol]| + |M_ppi_c[Cytosol]| <=> |M_h_c[Cytosol]| + |M_nac_c[Cytosol]|
     + |M_prpp_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_NDPK1
   name: R_nucleoside_diphosphate_kinase__ATPGDP_
+  genes: '68'
   equation: '|M_atp_c[Cytosol]| + |M_gdp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_gtp_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_NDPK2
   name: R_nucleoside_diphosphate_kinase__ATPUDP_
+  genes: '68'
   equation: '|M_atp_c[Cytosol]| + |M_udp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_utp_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_NDPK3
   name: R_nucleoside_diphosphate_kinase__ATPCDP_
+  genes: '68'
   equation: '|M_atp_c[Cytosol]| + |M_cdp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_ctp_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_NDPK4
   name: R_nucleoside_diphosphate_kinase__ATPdTDP_
+  genes: '68'
   equation: '|M_atp_c[Cytosol]| + |M_dtdp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dttp_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_NDPK5
   name: R_nucleoside_diphosphate_kinase__ATPdGDP_
+  genes: '68'
   equation: '|M_atp_c[Cytosol]| + |M_dgdp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dgtp_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_NDPK6
   name: R_nucleoside_diphosphate_kinase__ATPdUDP_
+  genes: '68'
   equation: '|M_atp_c[Cytosol]| + |M_dudp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dutp_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_NDPK7
   name: R_nucleoside_diphosphate_kinase__ATPdCDP_
+  genes: '68'
   equation: '|M_atp_c[Cytosol]| + |M_dcdp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dctp_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_NDPK8
   name: R_nucleoside_diphosphate_kinase__ATPdADP_
+  genes: '68'
   equation: '|M_atp_c[Cytosol]| + |M_dadp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_datp_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_NH4t
   name: R_ammonium_transport_via_diffusion
+  genes: '291'
   equation: '|M_nh4_e[Extra_organism]| <=> |M_nh4_c[Cytosol]|'
   subsystem: S_Transport
 - id: R_NH4t3
   name: R_ammonium_transport_out_via_K_antiport
+  genes: '291'
   equation: '|M_k_c[Cytosol]| + |M_nh4_e[Extra_organism]| => |M_nh4_c[Cytosol]| +
     |M_k_e[Extra_organism]|'
   subsystem: S_Transport
 - id: R_NITr
   name: R_nitrogenase
+  genes: 495 or 489 or 490 or 491 or 492 or 493 or 494
   equation: (16) |M_atp_c[Cytosol]| + (8) |M_fdred_c[Cytosol]| + (16) |M_h2o_c[Cytosol]|
     + |M_n2_c[Cytosol]| <=> (16) |M_adp_c[Cytosol]| + (8) |M_fdox_c[Cytosol]| + (6)
     |M_h_c[Cytosol]| + |M_h2_c[Cytosol]| + (2) |M_nh4_c[Cytosol]| + (16) |M_pi_c[Cytosol]|
   subsystem: S_Energy_Metabolism
 - id: R_NIabc
   name: R_nickel_transport_via_ABC_system
+  genes: (382 or 138 or 436) and (383 or 435) and (384 or 434) and (385 or 433) and
+    (432 or 386)
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_ni2_e[Extra_organism]|
     => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_ni2_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Transport
 - id: R_NMNATr
   name: R_nicotinamide_nucleotide_adenylyltransferase
+  genes: '1'
   equation: '|M_atp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nmn_c[Cytosol]| <=> |M_nad_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_NNATr
   name: R_nicotinate_nucleotide_adenylyltransferase
+  genes: '1'
   equation: '|M_atp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nicrnt_c[Cytosol]| <=> |M_dnad_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_NNDMBRT
   name: R_nicotinate_nucleotide_dimethylbenzimidazole_phosphoribosyltransferase
+  genes: '166'
   equation: '|M_dmbzid_c[Cytosol]| + |M_nicrnt_c[Cytosol]| => |M_5prdmbz_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_nac_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_NNDMBRT3
   name: R_nicotinate_nucleotide_dimethylbenzimidazole_phosphoribosyltransferase
+  genes: '166'
   equation: '|M_ribflv_c[Cytosol]| => |M_dmbzid_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_NNDPR
   name: R_nicotinate_nucleotide_diphosphorylase__carboxylating_
+  genes: '360'
   equation: (2) |M_h_c[Cytosol]| + |M_prpp_c[Cytosol]| + |M_quln_c[Cytosol]| => |M_co2_c[Cytosol]|
     + |M_nicrnt_c[Cytosol]| + |M_ppi_c[Cytosol]|
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_NTPP1
   name: R_Nucleoside_triphosphate_pyrophosphorylase__dgtp_
+  genes: '409'
   equation: '|M_dgtp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dgmp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_NTPP2
   name: R_Nucleoside_triphosphate_pyrophosphorylase__gtp_
+  genes: '409'
   equation: '|M_gtp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_gmp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_NTPP3
   name: R_dCTP_diphosphatase
+  genes: '409'
   equation: '|M_dctp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dcmp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_NTPP4
   name: R_Nucleoside_triphosphate_pyrophosphorylase__ctp_
+  genes: '409'
   equation: '|M_ctp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_cmp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_NTPP5
   name: R_Nucleoside_triphosphate_pyrophosphorylase__datp_
+  genes: '409'
   equation: '|M_datp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_damp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_NTPP6
   name: R_Nucleoside_triphosphate_pyrophosphorylase__atp_
+  genes: '409'
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_amp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_NTPP7
   name: R_Nucleoside_triphosphate_pyrophosphorylase__dttp_
+  genes: '409'
   equation: '|M_dttp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dtmp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_NTPP8
   name: R_Nucleoside_triphosphate_pyrophosphorylase__utp_
+  genes: '409'
   equation: '|M_h2o_c[Cytosol]| + |M_utp_c[Cytosol]| => |M_h_c[Cytosol]| + |M_ppi_c[Cytosol]|
     + |M_ump_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_NTPTP2
   name: R_Nucleoside_triphosphate_tripolyhydrolase
+  genes: 128 or 500
   equation: '|M_gtp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_gsn_c[Cytosol]| + |M_pppi_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_NTRIRx
   name: R_nitrite_reductase__NADH_
+  genes: '296'
   equation: (4) |M_h_c[Cytosol]| + (3) |M_nadh_c[Cytosol]| + |M_no2_c[Cytosol]| =>
     |M_h2o_c[Cytosol]| + (3) |M_nad_c[Cytosol]| + |M_nh4oh_c[Cytosol]|
   subsystem: S_Energy_Metabolism
 - id: R_NTRIRy
   name: R_nitrite_reductase__NADPH_
+  genes: '296'
   equation: (4) |M_h_c[Cytosol]| + (3) |M_nadph_c[Cytosol]| + |M_no2_c[Cytosol]|
     => |M_h2o_c[Cytosol]| + (3) |M_nadp_c[Cytosol]| + |M_nh4oh_c[Cytosol]|
   subsystem: S_Energy_Metabolism
 - id: R_OBTFL
   name: R_2_Oxobutanoate_formate_lyase
+  genes: '422'
   equation: '|M_2obut_c[Cytosol]| + |M_coa_c[Cytosol]| => |M_for_c[Cytosol]| + |M_ppcoa_c[Cytosol]|'
   subsystem: S_Energy_Metabolism
 - id: R_OCBT
   name: R_ornithine_carbamoyltransferase
+  genes: '362'
   equation: '|M_cbp_c[Cytosol]| + |M_orn_L_c[Cytosol]| <=> |M_citr_L_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_OCDMAT8
   name: R_Octadecanoyl_acyl_carrier_proteinmalonyl_CoA__C_acyltransferase
+  genes: '338'
   equation: '|M_2tocdACP_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| =>
     |M_nad_c[Cytosol]| + |M_ocdACP_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_OCMAT3
   name: R_Octanoyl_acyl_carrier_proteinmalonyl_CoA_C_acyltransferase
+  genes: '338'
   equation: '|M_2toceACP_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| =>
     |M_nad_c[Cytosol]| + |M_octACP_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_OCTT
   name: R_trans_octaprenyltranstransferase
+  genes: '67'
   equation: '|M_ipdp_c[Cytosol]| + |M_octdp_c[Cytosol]| => |M_nondp_c[Cytosol]| +
     |M_ppi_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_OHPHM
   name: R_R04988
+  genes: '371'
   equation: '|M_2ohph_c[Cytosol]| + |M_amet_c[Cytosol]| => |M_2omph_c[Cytosol]| +
     |M_ahcys_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
@@ -1820,6 +2188,7 @@
   subsystem: S_Amino_Acid_Metabolism
 - id: R_OMBZLM
   name: R_2_Octaprenyl_6_methoxy_benzoquinol_methylase
+  genes: 70 or 71 or 12 or 400
   equation: '|M_2ombzl_c[Cytosol]| + |M_amet_c[Cytosol]| => |M_2ommbl_c[Cytosol]|
     + |M_ahcys_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
@@ -1829,455 +2198,569 @@
   subsystem: S_Amino_Acid_Metabolism
 - id: R_OMPDC
   name: R_orotidine_5__phosphate_decarboxylase
+  genes: '6'
   equation: '|M_h_c[Cytosol]| + |M_orot5p_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_ump_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_OOR2r
   name: R_2_oxoglutarate_synthase
+  genes: 181 and 182 and 183 and 184
   equation: '|M_akg_c[Cytosol]| + |M_coa_c[Cytosol]| + (2) |M_fdox_c[Cytosol]| <=>
     |M_co2_c[Cytosol]| + (2) |M_fdred_c[Cytosol]| + |M_h_c[Cytosol]| + |M_succoa_c[Cytosol]|'
   subsystem: S_Citrate_Cycle__TCA_
 - id: R_ORNCD
   name: R_ornithine_cyclodeaminase
+  genes: '414'
   equation: '|M_orn_L_c[Cytosol]| => |M_nh4_c[Cytosol]| + |M_pro_L_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_ORNDC
   name: R_ornithine_decarboxylase
+  genes: '124'
   equation: '|M_h_c[Cytosol]| + |M_orn_L_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_ptrc_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_ORNTA
   name: R_ornithine_transaminase
+  genes: '333'
   equation: '|M_akg_c[Cytosol]| + |M_orn_L_c[Cytosol]| => |M_glu_L_c[Cytosol]| +
     |M_glu5sa_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_ORNTAC
   name: R_ornithine_transacetylase
+  genes: '331'
   equation: '|M_acorn_c[Cytosol]| + |M_glu_L_c[Cytosol]| <=> |M_acglu_c[Cytosol]|
     + |M_orn_L_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_ORPT
   name: R_orotate_phosphoribosyltransferase
+  genes: '311'
   equation: '|M_orot5p_c[Cytosol]| + |M_ppi_c[Cytosol]| <=> |M_orot_c[Cytosol]| +
     |M_prpp_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_OXAD2
   name: R_Oxaloacetate_decarboxylase
+  genes: '24'
   equation: '|M_h_c[Cytosol]| + |M_oaa_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_pyr_c[Cytosol]|'
   subsystem: S_Energy_Metabolism
 - id: R_P5CR
   name: R_pyrroline_5_carboxylate_reductase
+  genes: '45'
   equation: '|M_1pyr5c_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]|
     => |M_nadp_c[Cytosol]| + |M_pro_L_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_PACCOAL
   name: R_phenylacetate_CoA_ligase
+  genes: 262 or 285
   equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_pheac_c[Cytosol]| => |M_amp_c[Cytosol]|
     + |M_phaccoa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_PANTS
   name: R_pantothenate_synthase
+  genes: '212'
   equation: '|M_ala_B_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_pant_R_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pnto_R_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_PC
   name: R_pyruvate_carboxylase
+  genes: 24 and 25
   equation: '|M_atp_c[Cytosol]| + |M_hco3_c[Cytosol]| + |M_pyr_c[Cytosol]| => |M_adp_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_oaa_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Energy_Metabolism
 - id: R_PDH
   name: R_pyruvate_dehydrogenase
+  genes: '183'
   equation: '|M_coa_c[Cytosol]| + |M_nad_c[Cytosol]| + |M_pyr_c[Cytosol]| => |M_accoa_c[Cytosol]|
     + |M_co2_c[Cytosol]| + |M_nadh_c[Cytosol]|'
   subsystem: S_GlycolysisGluconeogenesis
 - id: R_PDX5PO
   name: R_pyridoxine_5__phosphate_oxidase
+  genes: '418'
   equation: '|M_o2_c[Cytosol]| + |M_pdx5p_c[Cytosol]| <=> |M_h_c[Cytosol]| + |M_h2o2_c[Cytosol]|
     + |M_pydx5p_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_PDX5PS
   name: R_Pyridoxine_5__phosphate_synthase
+  genes: '64'
   equation: '|M_dxyl5p_c[Cytosol]| + |M_nad_c[Cytosol]| + |M_phthr_c[Cytosol]| =>
     |M_co2_c[Cytosol]| + |M_h_c[Cytosol]| + (2) |M_h2o_c[Cytosol]| + |M_nadh_c[Cytosol]|
     + |M_pdx5p_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_PFK
   name: R_phosphofructokinase
+  genes: '355'
   equation: '|M_atp_c[Cytosol]| + |M_f6p_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_fdp_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_Energy_Metabolism
 - id: R_PFK_2
   name: R_Phosphofructokinase
+  genes: '355'
   equation: '|M_atp_c[Cytosol]| + |M_tag6p_D_c[Cytosol]| => |M_adp_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_tagdp_D_c[Cytosol]|'
   subsystem: S_Energy_Metabolism
 - id: R_PFLi
   name: R_pyruvate_formate_lyase
+  genes: '422'
   equation: '|M_coa_c[Cytosol]| + |M_pyr_c[Cytosol]| => |M_accoa_c[Cytosol]| + |M_for_c[Cytosol]|'
   subsystem: S_Carbohydrate_Metabolism
 - id: R_PGAMT
   name: R_phosphoglucosamine_mutase
+  genes: 120 or 114
   equation: '|M_gam1p_c[Cytosol]| <=> |M_gam6p_c[Cytosol]|'
   subsystem: S_Cell_Envelope_Biosynthesis
 - id: R_PGCD
   name: R_phosphoglycerate_dehydrogenase
+  genes: '145'
   equation: '|M_3pg_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_3php_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_nadh_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_PGCDr
   name: R_phosphoglycerate_dehydrogenase
+  genes: '145'
   equation: '|M_3pg_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_3php_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_nadh_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_PGI
   name: R_glucose_6_phosphate_isomerase
+  genes: '113'
   equation: '|M_g6p_c[Cytosol]| <=> |M_f6p_c[Cytosol]|'
   subsystem: S_GlycolysisGluconeogenesis
 - id: R_PGK
   name: R_phosphoglycerate_kinase
+  genes: '194'
   equation: '|M_13dpg_c[Cytosol]| + |M_adp_c[Cytosol]| <=> |M_3pg_c[Cytosol]| + |M_atp_c[Cytosol]|'
   subsystem: S_GlycolysisGluconeogenesis
 - id: R_PGM
   name: R_phosphoglycerate_mutase
+  genes: 372 or 408 or 193
   equation: '|M_3pg_c[Cytosol]| <=> |M_2pg_c[Cytosol]|'
   subsystem: S_GlycolysisGluconeogenesis
 - id: R_PGMT
   name: R_phosphoglucomutase
+  genes: 114 or 120
   equation: '|M_g1p_c[Cytosol]| <=> |M_g6p_c[Cytosol]|'
   subsystem: S_Energy_Metabolism
 - id: R_PGPPH
   name: R_Phosphatidylglycerophosphate_phosphohydrolase
+  genes: '361'
   equation: '|M_h2o_c[Cytosol]| + |M_pglyp_c[Cytosol]| => |M_pgly_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_PHCYT
   name: R_phosphatidate_cytidylyltransferase
+  genes: '59'
   equation: '|M_12dag3p_c[Cytosol]| + |M_ctp_c[Cytosol]| + |M_h_c[Cytosol]| => |M_cdpdag_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_PHETA1
   name: R_phenylalanine_transaminase
+  genes: '231'
   equation: '|M_akg_c[Cytosol]| + |M_phe_L_c[Cytosol]| <=> |M_glu_L_c[Cytosol]| +
     |M_phpyr_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_PHETRS
   name: R_Phenylalanyl_tRNA_synthetase
+  genes: 53 and 54
   equation: '|M_atp_c[Cytosol]| + |M_phe_L_c[Cytosol]| + |M_trnaphe_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_phetrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_PIabc
   name: R_phosphate_transport_via_ABC_system
+  genes: 31 and 32 and 33 and 34
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_pi_e[Extra_organism]| =>
     |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + (2) |M_pi_c[Cytosol]|'
   subsystem: S_Transport
 - id: R_PIt6
   name: R_phosphate_transport_inout_via_proton_symporter
+  genes: '8'
   equation: '|M_h_e[Extra_organism]| + |M_pi_e[Extra_organism]| <=> |M_h_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: S_Transport
 - id: R_PMANM
   name: R_phosphomannomutase
+  genes: 114 or 120
   equation: '|M_man1p_c[Cytosol]| <=> |M_man6p_c[Cytosol]|'
   subsystem: S_Energy_Metabolism
 - id: R_PMDPHT
   name: R_pyrimidine_phosphatase
+  genes: '361'
   equation: '|M_5aprbu_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_4r5au_c[Cytosol]| +
     |M_pi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_PMPK
   name: R_phosphomethylpyrimidine_kinase
+  genes: '421'
   equation: '|M_4ampm_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_2mahmp_c[Cytosol]| +
     |M_adp_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_PNTEH
   name: R_Hydrolase_Class___RXN_R02973_
+  genes: '127'
   equation: '|M_h2o_c[Cytosol]| + |M_ptth_c[Cytosol]| => |M_cysam_c[Cytosol]| + |M_pnto_R_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_PNTK
   name: R_pantothenate_kinase
+  genes: '83'
   equation: '|M_atp_c[Cytosol]| + |M_pnto_R_c[Cytosol]| => |M_4ppan_c[Cytosol]| +
     |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_POR2
   name: R_pyruvate_synthase
+  genes: 181 and 182 and 183 and 184
   equation: '|M_coa_c[Cytosol]| + (2) |M_fdox_c[Cytosol]| + |M_pyr_c[Cytosol]| <=>
     |M_accoa_c[Cytosol]| + |M_co2_c[Cytosol]| + (2) |M_fdred_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: S_Citrate_Cycle__TCA_
 - id: R_PPA
   name: R_inorganic_diphosphatase
+  genes: '55'
   equation: '|M_h2o_c[Cytosol]| + |M_ppi_c[Cytosol]| => |M_h_c[Cytosol]| + (2) |M_pi_c[Cytosol]|'
   subsystem: S_Energy_Metabolism
 - id: R_PPA_1
   name: R_inorganic_diphosphatase__one_proton_translocation_
+  genes: 204 or 200
   equation: '|M_h2o_c[Cytosol]| + |M_ppi_c[Cytosol]| => (2) |M_pi_c[Cytosol]| + |M_h_e[Extra_organism]|'
   subsystem: S_Transport
 - id: R_PPCDC
   name: R_phosphopantothenoylcysteine_decarboxylase
+  genes: '84'
   equation: '|M_4ppcys_c[Cytosol]| + |M_h_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_pan4p_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_PPCOAC
   name: R_Propionyl_CoA_carboxylase
+  genes: '92'
   equation: '|M_atp_c[Cytosol]| + |M_hco3_c[Cytosol]| + |M_ppcoa_c[Cytosol]| => |M_adp_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_mmcoa_S_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Carbohydrate_Metabolism
 - id: R_PPDK
   name: R_pyruvate_phosphate_dikinase
+  genes: '129'
   equation: '|M_atp_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_pyr_c[Cytosol]| => |M_amp_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_pep_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_GlycolysisGluconeogenesis
 - id: R_PPNCL
   name: R_phosphopantothenate_cysteine_ligase
+  genes: '84'
   equation: '|M_4ppan_c[Cytosol]| + |M_ctp_c[Cytosol]| + |M_cys_L_c[Cytosol]| =>
     |M_4ppcys_c[Cytosol]| + |M_cdp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_PPND
   name: R_prephenate_dehydrogenase
+  genes: '102'
   equation: '|M_nad_c[Cytosol]| + |M_pphn_c[Cytosol]| => |M_34hpp_c[Cytosol]| + |M_co2_c[Cytosol]|
     + |M_nadh_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_PPNDH
   name: R_prephenate_dehydratase
+  genes: 103 or 389
   equation: '|M_h_c[Cytosol]| + |M_pphn_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_h2o_c[Cytosol]|
     + |M_phpyr_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_PPS
   name: R_phosphoenolpyruvate_synthase
+  genes: '129'
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_pyr_c[Cytosol]| => |M_amp_c[Cytosol]|
     + (2) |M_h_c[Cytosol]| + |M_pep_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_GlycolysisGluconeogenesis
 - id: R_PPTT
   name: R_trans_pentaprenyltranstransferase
+  genes: '67'
   equation: '|M_ipdp_c[Cytosol]| + |M_pendp_c[Cytosol]| => |M_hexdp_c[Cytosol]| +
     |M_ppi_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_PRAGS
   name: R_phosphoribosylglycinamide_synthetase
+  genes: '226'
   equation: '|M_atp_c[Cytosol]| + |M_gly_c[Cytosol]| + |M_pram_c[Cytosol]| => |M_adp_c[Cytosol]|
     + |M_gar_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_PRAI
   name: R_phosphoribosylanthranilate_isomerase
+  genes: '377'
   equation: '|M_pran_c[Cytosol]| <=> |M_2cpr5p_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_PRAIS
   name: R_phosphoribosylaminoimidazole_synthetase
+  genes: '368'
   equation: '|M_atp_c[Cytosol]| + |M_fpram_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_air_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_PRAMPC
   name: R_phosphoribosyl_AMP_cyclohydrolase
+  genes: '347'
   equation: '|M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_prbamp_c[Cytosol]| => |M_prfp_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_PRASCS
   name: R_phosphoribosylaminoimidazolesuccinocarboxamide_synthase
+  genes: '229'
   equation: '|M_5aizc_c[Cytosol]| + |M_asp_L_c[Cytosol]| + |M_atp_c[Cytosol]| <=>
     |M_25aics_c[Cytosol]| + |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_PRATPP
   name: R_phosphoribosyl_ATP_pyrophosphatase
+  genes: '347'
   equation: '|M_h2o_c[Cytosol]| + |M_prbatp_c[Cytosol]| => |M_h_c[Cytosol]| + |M_ppi_c[Cytosol]|
     + |M_prbamp_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_PRFGS
   name: R_phosphoribosylformylglycinamidine_synthase
+  genes: 63 and 62
   equation: '|M_atp_c[Cytosol]| + |M_fgam_c[Cytosol]| + |M_gln_L_c[Cytosol]| + |M_h2o_c[Cytosol]|
     => |M_adp_c[Cytosol]| + |M_fpram_c[Cytosol]| + |M_glu_L_c[Cytosol]| + (2) |M_h_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_PRMICI
   name: R_1__5_phosphoribosyl__5__5_phosphoribosylamino_methylideneamino_imidazole_4_carboxamide_isomerase
+  genes: '348'
   equation: '|M_prfp_c[Cytosol]| <=> |M_prlp_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_PROTRS
   name: R_Prolyl_tRNA_synthetase
+  genes: '56'
   equation: '|M_atp_c[Cytosol]| + |M_pro_L_c[Cytosol]| + |M_trnapro_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_protrna_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_PROt6
   name: R_L_proline_transport_inout_via_proton_symport
+  genes: '344'
   equation: '|M_h_e[Extra_organism]| + |M_pro_L_e[Extra_organism]| <=> |M_h_c[Cytosol]|
     + |M_pro_L_c[Cytosol]|'
   subsystem: S_Transport
 - id: R_PRPPS
   name: R_phosphoribosylpyrophosphate_synthetase
+  genes: '86'
   equation: '|M_atp_c[Cytosol]| + |M_r5p_c[Cytosol]| <=> |M_amp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_prpp_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_PSCVT
   name: R_3_phosphoshikimate_1_carboxyvinyltransferase
+  genes: '105'
   equation: '|M_pep_c[Cytosol]| + |M_skm5p_c[Cytosol]| <=> |M_3psme_c[Cytosol]| +
     |M_pi_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_PSERTr
   name: R_3_phosphoserine_aminotransferase
+  genes: '146'
   equation: '|M_3php_c[Cytosol]| + |M_glu_L_c[Cytosol]| <=> |M_akg_c[Cytosol]| +
     |M_pser_L_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_PSP_L
   name: R_phosphoserine_phosphatase__L_serine_
+  genes: '324'
   equation: '|M_h2o_c[Cytosol]| + |M_pser_L_c[Cytosol]| => |M_pi_c[Cytosol]| + |M_ser_L_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_PSUDS
   name: R_pseudouridylate_synthase
+  genes: 207 or 281 or 112 or 359
   equation: '|M_r5p_c[Cytosol]| + |M_ura_c[Cytosol]| => |M_h2o_c[Cytosol]| + |M_psd5p_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_PTHPS
   name: R_6_pyruvoyltetrahydropterin_synthase
+  genes: '403'
   equation: '|M_ahdt_c[Cytosol]| => |M_6pthp_c[Cytosol]| + |M_pppi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_PTPAT
   name: R_pantetheine_phosphate_adenylyltransferase
+  genes: '43'
   equation: '|M_atp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pan4p_c[Cytosol]| <=> |M_dpcoa_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_PYAM5PO
   name: R_pyridoxamine_phosphate_oxidase
+  genes: '418'
   equation: '|M_h2o_c[Cytosol]| + |M_o2_c[Cytosol]| + |M_pyam5p_c[Cytosol]| => |M_h2o2_c[Cytosol]|
     + |M_nh4_c[Cytosol]| + |M_pydx5p_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_PYK
   name: R_pyruvate_kinase
+  genes: '129'
   equation: '|M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pep_c[Cytosol]| => |M_atp_c[Cytosol]|
     + |M_pyr_c[Cytosol]|'
   subsystem: S_GlycolysisGluconeogenesis
 - id: R_QULNS
   name: R_quinolinate_synthase
+  genes: '399'
   equation: '|M_dhap_c[Cytosol]| + |M_iasp_c[Cytosol]| => (2) |M_h2o_c[Cytosol]|
     + |M_pi_c[Cytosol]| + |M_quln_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_RBFK
   name: R_riboflavin_kinase
+  genes: '148'
   equation: '|M_atp_c[Cytosol]| + |M_ribflv_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_fmn_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_RBFSa
   name: R_riboflavin_synthase
+  genes: 307 and 309
   equation: '|M_4r5au_c[Cytosol]| + |M_db4p_c[Cytosol]| => |M_dmlz_c[Cytosol]| +
     (2) |M_h2o_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_RBFSb
   name: R_riboflavin_synthase
+  genes: 307 and 309
   equation: (2) |M_dmlz_c[Cytosol]| => |M_4r5au_c[Cytosol]| + |M_ribflv_c[Cytosol]|
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_RBK
   name: R_ribokinase
+  genes: '178'
   equation: '|M_atp_c[Cytosol]| + |M_rib_D_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_r5p_c[Cytosol]|'
   subsystem: S_Energy_Metabolism
 - id: R_RBZP
   name: R_alpha_ribazole_5_phosphatase
+  genes: '168'
   equation: '|M_5prdmbz_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_pi_c[Cytosol]| + |M_rdmbzi_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prosthetic_Group_Biosynthesis
 - id: R_RDR1
   name: R_Chlorobenzene_reductive_dechlorination
+  genes: (459 or 461 or 463 or 465 or 469 or 471 or 473 or 474 or 426 or 425 or 19
+    or 439 or 427 or 441 or 503 or 504 or 505 or 453 or 511 or 456 or 40 or 443 or
+    49 or 445 or 51 or 304 or 507 or 451 or 509 or 458 or 467 or 448 or 478 or 484
+    or 485 or 486 or 487 or 513 or 514 or 516 or 517 or 528 or 529 or 530 or 531
+    or 532 or 533 or 534 or 535 or 536 or 537) and (457 or 512 or 462 or 466 or 468
+    or 472 or 501 or 41 or 499 or 50 or 305 or 440 or 442 or 444 or 502 or 447 or
+    449 or 450 or 452 or 508 or 510 or 446 or 455 or 460 or 464 or 470 or 388 or
+    506 or 479 or 482 or 515 or 518 or 519 or 520 or 521 or 522 or 523 or 527 or
+    538 or 539 or 540 or 541 or 542 or 543 or 544 or 545 or 546 or 547 or 548 or
+    549)
   equation: (8) |M_fdred_c[Cytosol]| + (4) |M_h_c[Cytosol]| + |M_hcb_e[Extra_organism]|
     => (8) |M_fdox_c[Cytosol]| + (4) |M_cl_e[Extra_organism]| + |M_dcb_e[Extra_organism]|
   subsystem: S_Energy_Metabolism
 - id: R_RDR2
   name: R_Chloroethene_reductive_dechlorination
+  genes: (459 or 461 or 463 or 465 or 469 or 471 or 473 or 474 or 426 or 425 or 19
+    or 439 or 427 or 441 or 503 or 504 or 505 or 453 or 511 or 456 or 40 or 443 or
+    49 or 445 or 51 or 304 or 507 or 451 or 509 or 458 or 467 or 448 or 478 or 484
+    or 485 or 486 or 487 or 513 or 514 or 516 or 517 or 528 or 529 or 530 or 531
+    or 532 or 533 or 534 or 535 or 536 or 537) and (457 or 512 or 462 or 466 or 468
+    or 472 or 501 or 41 or 499 or 50 or 305 or 440 or 442 or 444 or 502 or 447 or
+    449 or 450 or 452 or 508 or 510 or 446 or 455 or 460 or 464 or 470 or 388 or
+    506 or 479 or 482 or 515 or 518 or 519 or 520 or 521 or 522 or 523 or 527 or
+    538 or 539 or 540 or 541 or 542 or 543 or 544 or 545 or 546 or 547 or 548 or
+    549)
   equation: (8) |M_fdred_c[Cytosol]| + (4) |M_h_c[Cytosol]| + |M_pce_e[Extra_organism]|
     => (8) |M_fdox_c[Cytosol]| + (4) |M_cl_e[Extra_organism]| + |M_etl_e[Extra_organism]|
   subsystem: S_Energy_Metabolism
 - id: R_RNDR1
   name: R_ribonucleoside_diphosphate_reductase__ADP_
+  genes: 52 or 428 or 151
   equation: '|M_adp_c[Cytosol]| + |M_trdrd_c[Cytosol]| => |M_dadp_c[Cytosol]| + |M_h2o_c[Cytosol]|
     + |M_trdox_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_RNDR2
   name: R_ribonucleoside_diphosphate_reductase__GDP_
+  genes: 52 or 428 or 151
   equation: '|M_gdp_c[Cytosol]| + |M_trdrd_c[Cytosol]| => |M_dgdp_c[Cytosol]| + |M_h2o_c[Cytosol]|
     + |M_trdox_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_RNDR3
   name: R_ribonucleoside_diphosphate_reductase__CDP_
+  genes: 52 or 428 or 151
   equation: '|M_cdp_c[Cytosol]| + |M_trdrd_c[Cytosol]| => |M_dcdp_c[Cytosol]| + |M_h2o_c[Cytosol]|
     + |M_trdox_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_RNDR4
   name: R_ribonucleoside_diphosphate_reductase__UDP_
+  genes: 52 or 428 or 151
   equation: '|M_trdrd_c[Cytosol]| + |M_udp_c[Cytosol]| => |M_dudp_c[Cytosol]| + |M_h2o_c[Cytosol]|
     + |M_trdox_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_RNTR1
   name: R_ribonucleoside_triphosphate_reductase__ATP_
+  genes: 52 or 364
   equation: '|M_atp_c[Cytosol]| + |M_trdrd_c[Cytosol]| => |M_datp_c[Cytosol]| + |M_h2o_c[Cytosol]|
     + |M_trdox_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_RNTR2
   name: R_ribonucleoside_triphosphate_reductase__GTP_
+  genes: 52 or 364
   equation: '|M_gtp_c[Cytosol]| + |M_trdrd_c[Cytosol]| => |M_dgtp_c[Cytosol]| + |M_h2o_c[Cytosol]|
     + |M_trdox_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_RNTR3
   name: R_ribonucleoside_triphosphate_reductase__CTP_
+  genes: 52 or 364
   equation: '|M_ctp_c[Cytosol]| + |M_trdrd_c[Cytosol]| => |M_dctp_c[Cytosol]| + |M_h2o_c[Cytosol]|
     + |M_trdox_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_RNTR4
   name: R_ribonucleoside_triphosphate_reductase__UTP_
+  genes: 52 or 364
   equation: '|M_trdrd_c[Cytosol]| + |M_utp_c[Cytosol]| => |M_dutp_c[Cytosol]| + |M_h2o_c[Cytosol]|
     + |M_trdox_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_RPE
   name: R_ribulose_5_phosphate_3_epimerase
+  genes: '158'
   equation: '|M_ru5p_D_c[Cytosol]| <=> |M_xu5p_D_c[Cytosol]|'
   subsystem: S_Pentose_Phosphate_Pathway
 - id: R_RPI
   name: R_ribose_5_phosphate_isomerase
+  genes: '159'
   equation: '|M_r5p_c[Cytosol]| <=> |M_ru5p_D_c[Cytosol]|'
   subsystem: S_Pentose_Phosphate_Pathway
 - id: R_S7PI
   name: R_sedoheptulose_7_phosphate_isomerase
+  genes: '423'
   equation: '|M_s7p_c[Cytosol]| <=> |M_gmh7p_c[Cytosol]|'
   subsystem: S_Pentose_Phosphate_Pathway
 - id: R_SACCD2
   name: R_saccharopine_dehydrogenase__NAD__L_lysine_forming_
+  genes: '4'
   equation: '|M_Lsacchrp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_nad_c[Cytosol]| <=>
     |M_akg_c[Cytosol]| + |M_h_c[Cytosol]| + |M_lys_L_c[Cytosol]| + |M_nadh_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_SADT2
   name: R_sulfate_adenylyltransferase
+  genes: 282 or 343 or 237 or 283
   equation: '|M_atp_c[Cytosol]| + |M_gtp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_so4_c[Cytosol]|
     => |M_aps_c[Cytosol]| + |M_gdp_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_SDPDS
   name: R_succinyl_diaminopimelate_desuccinylase
+  genes: 198 or 127
   equation: '|M_h2o_c[Cytosol]| + |M_sl26da_c[Cytosol]| => |M_26dap_LL_c[Cytosol]|
     + |M_succ_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_SDPTA
   name: R_succinyldiaminopimelate_transaminase
+  genes: '333'
   equation: '|M_akg_c[Cytosol]| + |M_sl26da_c[Cytosol]| <=> |M_glu_L_c[Cytosol]|
     + |M_sl2a6o_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_SERAT
   name: R_serine_O_acetyltransferase
+  genes: '398'
   equation: '|M_accoa_c[Cytosol]| + |M_ser_L_c[Cytosol]| <=> |M_acser_c[Cytosol]|
     + |M_coa_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_SERD_Lr
   name: R_L_serine_deaminase
+  genes: '320'
   equation: '|M_ser_L_c[Cytosol]| <=> |M_nh4_c[Cytosol]| + |M_pyr_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_SERTRS
   name: R_Seryl_tRNA_synthetase
+  genes: '140'
   equation: '|M_atp_c[Cytosol]| + |M_ser_L_c[Cytosol]| + |M_trnaser_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_sertrna_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_SHK3D
   name: R_shikimate_dehdrogenase
+  genes: '107'
   equation: '|M_3dhsk_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| <=> |M_nadp_c[Cytosol]|
     + |M_skm_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_SHKK
   name: R_shikimate_kinase
+  genes: '106'
   equation: '|M_atp_c[Cytosol]| + |M_skm_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_skm5p_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_SOD
   name: R_superoxide_dismutase
+  genes: '272'
   equation: (2) |M_h_c[Cytosol]| + (2) |M_o2__c[Cytosol]| => |M_h2o2_c[Cytosol]|
     + |M_o2_c[Cytosol]|
   subsystem: S_Amino_Acid_Metabolism
 - id: R_SUCOAS
   name: R_succinyl_CoA_synthetase__ADP_forming_
+  genes: '419'
   equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_succ_c[Cytosol]| <=> |M_adp_c[Cytosol]|
     + |M_pi_c[Cytosol]| + |M_succoa_c[Cytosol]|'
   subsystem: S_Citrate_Cycle__TCA_
@@ -2288,54 +2771,66 @@
   subsystem: S_Amino_Acid_Metabolism
 - id: R_SULabc
   name: R_sulfate_transport_via_ABC_system
+  genes: '213'
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_so4_e[Extra_organism]|
     => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_so4_c[Cytosol]|'
   subsystem: S_Transport
 - id: R_TAL
   name: R_transaldolase
+  genes: '365'
   equation: '|M_g3p_c[Cytosol]| + |M_s7p_c[Cytosol]| <=> |M_e4p_c[Cytosol]| + |M_f6p_c[Cytosol]|'
   subsystem: S_Pentose_Phosphate_Pathway
 - id: R_TDMAT6
   name: R_Tetradecanoyl_acyl_carrier_proteinmalonyl_CoA__C_acyltransferase
+  genes: '338'
   equation: '|M_myrsACP_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|
     + |M_tdeACP_c[Cytosol]|'
   subsystem: S_Lipid_Metabolism
 - id: R_TGBPA
   name: R_Tagatose_bisphosphate_aldolase
+  genes: '354'
   equation: '|M_tagdp_D_c[Cytosol]| <=> |M_dhap_c[Cytosol]| + |M_g3p_c[Cytosol]|'
   subsystem: S_Carbohydrate_Metabolism
 - id: R_THDPS
   name: R_tetrahydropicolinate_succinylase
+  genes: '121'
   equation: '|M_h2o_c[Cytosol]| + |M_succoa_c[Cytosol]| + |M_thdp_c[Cytosol]| =>
     |M_coa_c[Cytosol]| + |M_sl2a6o_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_THRA
   name: R_threonine_aldolase
+  genes: '415'
   equation: '|M_thr_L_c[Cytosol]| <=> |M_acald_c[Cytosol]| + |M_gly_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_THRD_L
   name: R_L_threonine_deaminase
+  genes: '320'
   equation: '|M_thr_L_c[Cytosol]| => |M_2obut_c[Cytosol]| + |M_nh4_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_THRLAD
   name: R_L_allo_threonine_aldolase
+  genes: '415'
   equation: '|M_thr_LA_c[Cytosol]| => |M_acald_c[Cytosol]| + |M_gly_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_THRPD
   name: R_threonine_phosphate_decarboxylase
+  genes: '165'
   equation: '|M_h_c[Cytosol]| + |M_thrp_c[Cytosol]| => |M_1ap2olp_c[Cytosol]| + |M_co2_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_THRS
   name: R_threonine_synthase
+  genes: '320'
   equation: '|M_h2o_c[Cytosol]| + |M_phom_c[Cytosol]| => |M_pi_c[Cytosol]| + |M_thr_L_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_THRTRS
   name: R_Threonyl_tRNA_synthetase
+  genes: '197'
   equation: '|M_atp_c[Cytosol]| + |M_thr_L_c[Cytosol]| + |M_trnathr_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_thrtrna_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_THZPSN
   name: R_thiazole_phosphate_synthesis
+  genes: '417'
   equation: '|M_atp_c[Cytosol]| + |M_cys_L_c[Cytosol]| + |M_dxyl5p_c[Cytosol]| +
     |M_tyr_L_c[Cytosol]| => |M_4hba_c[Cytosol]| + |M_4mpetz_c[Cytosol]| + |M_ala_L_c[Cytosol]|
     + |M_amp_c[Cytosol]| + |M_co2_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]|
@@ -2343,125 +2838,152 @@
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_TKT1
   name: R_transketolase
+  genes: '160'
   equation: '|M_r5p_c[Cytosol]| + |M_xu5p_D_c[Cytosol]| <=> |M_g3p_c[Cytosol]| +
     |M_s7p_c[Cytosol]|'
   subsystem: S_Pentose_Phosphate_Pathway
 - id: R_TKT2
   name: R_transketolase
+  genes: '160'
   equation: '|M_e4p_c[Cytosol]| + |M_xu5p_D_c[Cytosol]| <=> |M_f6p_c[Cytosol]| +
     |M_g3p_c[Cytosol]|'
   subsystem: S_Pentose_Phosphate_Pathway
 - id: R_TMDK1
   name: R_thymidine_kinase__ATPthymidine_
+  genes: '202'
   equation: '|M_atp_c[Cytosol]| + |M_thymd_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_dtmp_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_TMDS
   name: R_thymidylate_synthase
+  genes: '214'
   equation: '|M_dump_c[Cytosol]| + |M_mlthf_c[Cytosol]| => |M_dhf_c[Cytosol]| + |M_dtmp_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_TMPKr
   name: R_thiamine_phosphate_kinase
+  genes: '69'
   equation: '|M_atp_c[Cytosol]| + |M_thmmp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_thmpp_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_TMPPP
   name: R_thiamine_phosphate_diphosphorylase
+  genes: '203'
   equation: '|M_2mahmp_c[Cytosol]| + |M_4mpetz_c[Cytosol]| + |M_h_c[Cytosol]| =>
     |M_ppi_c[Cytosol]| + |M_thmmp_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_TPI
   name: R_triose_phosphate_isomerase
+  genes: '192'
   equation: '|M_dhap_c[Cytosol]| <=> |M_g3p_c[Cytosol]|'
   subsystem: S_GlycolysisGluconeogenesis
 - id: R_TRDR
   name: R_thioredoxin_reductase__NADPH_
+  genes: '126'
   equation: '|M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| + |M_trdox_c[Cytosol]| => |M_nadp_c[Cytosol]|
     + |M_trdrd_c[Cytosol]|'
   subsystem: S_Energy_Metabolism
 - id: R_TRPS1
   name: R_tryptophan_synthase__indoleglycerol_phosphate_
+  genes: 380 and (379 or 287)
   equation: '|M_3ig3p_c[Cytosol]| + |M_ser_L_c[Cytosol]| => |M_g3p_c[Cytosol]| +
     |M_h2o_c[Cytosol]| + |M_trp_L_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_TRPTRS
   name: R_Tryptophanyl_tRNA_synthetase
+  genes: '352'
   equation: '|M_atp_c[Cytosol]| + |M_trnatrp_c[Cytosol]| + |M_trp_L_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_trptrna_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_TSULabc
   name: R_thiosulfate_transport_via_ABC_system
+  genes: '213'
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_tsul_e[Extra_organism]|
     => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_tsul_c[Cytosol]|'
   subsystem: S_Transport
 - id: R_TYRTA
   name: R_tyrosine_transaminase
+  genes: '231'
   equation: '|M_akg_c[Cytosol]| + |M_tyr_L_c[Cytosol]| <=> |M_34hpp_c[Cytosol]| +
     |M_glu_L_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_TYRTRS
   name: R_Tyrosyl_tRNA_synthetase
+  genes: '147'
   equation: '|M_atp_c[Cytosol]| + |M_trnatyr_c[Cytosol]| + |M_tyr_L_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_tyrtrna_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_UAGCVT
   name: R_UDP_N_acetylglucosamine_1_carboxyvinyltransferase
+  genes: '312'
   equation: '|M_pep_c[Cytosol]| + |M_uacgam_c[Cytosol]| => |M_pi_c[Cytosol]| + |M_uaccg_c[Cytosol]|'
   subsystem: S_Cell_Envelope_Biosynthesis
 - id: R_UAGDP
   name: R_UDP_N_acetylglucosamine_diphosphorylase
+  genes: 121 or 122
   equation: '|M_acgam1p_c[Cytosol]| + |M_h_c[Cytosol]| + |M_utp_c[Cytosol]| => |M_ppi_c[Cytosol]|
     + |M_uacgam_c[Cytosol]|'
   subsystem: S_Cell_Envelope_Biosynthesis
 - id: R_UAPGR
   name: R_UDP_N_acetylenolpyruvoylglucosamine_reductase
+  genes: '154'
   equation: '|M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| + |M_uaccg_c[Cytosol]| => |M_nadp_c[Cytosol]|
     + |M_uamr_c[Cytosol]|'
   subsystem: S_Cell_Envelope_Biosynthesis
 - id: R_UDPDPS
   name: R_undecaprenyl_diphosphate_synthase
+  genes: '60'
   equation: '|M_decdp_c[Cytosol]| + |M_ipdp_c[Cytosol]| => |M_ppi_c[Cytosol]| + |M_udcpdp_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_UDPG4E
   name: R_UDPglucose_4_epimerase
+  genes: 476 or 346 or 475 or 477
   equation: '|M_udpg_c[Cytosol]| <=> |M_udpgal_c[Cytosol]|'
   subsystem: S_Carbohydrate_Metabolism
 - id: R_UMPK
   name: R_UMP_kinase
+  genes: '105'
   equation: '|M_atp_c[Cytosol]| + |M_ump_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_udp_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_UPP3MT
   name: R_uroporphyrinogen_methyltransferase
+  genes: '412'
   equation: (2) |M_amet_c[Cytosol]| + |M_uppg3_c[Cytosol]| => (2) |M_ahcys_c[Cytosol]|
     + (2) |M_h_c[Cytosol]| + |M_shcl_c[Cytosol]|
   subsystem: S_Cofactor_and_Prosthetic_Group_Biosynthesis
 - id: R_UPP3S
   name: R_uroporphyrinogen_III_synthase
+  genes: '412'
   equation: '|M_hmbil_c[Cytosol]| => |M_h2o_c[Cytosol]| + |M_uppg3_c[Cytosol]|'
   subsystem: S_Cofactor_and_Prosthetic_Group_Biosynthesis
 - id: R_UPPRT
   name: R_uracil_phosphoribosyltransferase
+  genes: '313'
   equation: '|M_prpp_c[Cytosol]| + |M_ura_c[Cytosol]| => |M_ppi_c[Cytosol]| + |M_ump_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_URIDK1
   name: R_uridylate_kinase__UMP_
+  genes: '61'
   equation: '|M_atp_c[Cytosol]| + |M_ump_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_udp_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_URIDK2
   name: R_uridylate_kinase__dUMP_
+  genes: '61'
   equation: '|M_atp_c[Cytosol]| + |M_dump_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_dudp_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_VALTA
   name: R_valine_transaminase
+  genes: '5'
   equation: '|M_akg_c[Cytosol]| + |M_val_L_c[Cytosol]| <=> |M_3mob_c[Cytosol]| +
     |M_glu_L_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_VALTRS
   name: R_Valyl_tRNA_synthetase
+  genes: '85'
   equation: '|M_atp_c[Cytosol]| + |M_trnaval_c[Cytosol]| + |M_val_L_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_valtrna_c[Cytosol]|'
   subsystem: S_Amino_Acid_Metabolism
 - id: R_VALabc
   name: R_L_valine_transport_via_ABC_system
+  genes: 261 or (263 and 264 and 265 and 266 and 267)
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_val_L_e[Extra_organism]|
     => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_val_L_c[Cytosol]|'
   subsystem: S_Transport
@@ -2472,15 +2994,18 @@
   subsystem: S_Cofactor_and_Prostehtic_Group_Biosynthesis
 - id: R_XTPASE
   name: R_XTP_pyrophosphatase
+  genes: '328'
   equation: '|M_h2o_c[Cytosol]| + |M_xtp_c[Cytosol]| => |M_h_c[Cytosol]| + |M_ppi_c[Cytosol]|
     + |M_xmp_c[Cytosol]|'
   subsystem: S_Nucleotide_Metabolism
 - id: R_XYLI2i
   name: R_xylose_isomerase
+  genes: '299'
   equation: '|M_fru_c[Cytosol]| => |M_glc_D_c[Cytosol]|'
   subsystem: S_Carbohydrate_Metabolism
 - id: R_ZN2abc2
   name: R_zinc_transport_in_via_ABC_system
+  genes: 155 and 157 and 156
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_zn2_e[Extra_organism]|
     => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_zn2_c[Cytosol]|'
   subsystem: S_Transport

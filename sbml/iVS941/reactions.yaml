@@ -22,62 +22,78 @@
     => |M_7mhp_c[Cytosol]| + |M_nad_c[Cytosol]| + |M_ser_L_c[Cytosol]|'
 - id: R_7MHTS
   name: R_7_mercaptoheptanoylthreonine_synthase
+  genes: MA0339 or MA4006
   equation: '|M_7mhp_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_thr_L_c[Cytosol]| => |M_7mht_c[Cytosol]|
     + |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_ABTA
   name: R_4_aminobutyrate_transaminase
+  genes: MA0119 or MA2859
   equation: '|M_4abut_c[Cytosol]| + |M_akg_c[Cytosol]| => |M_glu_L_c[Cytosol]| +
     |M_sucsal_c[Cytosol]|'
 - id: R_ACACT1
   name: R_acetyl_CoA_C_acetyltransferase
+  genes: MA4042
   equation: (2) |M_accoa_c[Cytosol]| => |M_aacoa_c[Cytosol]| + |M_coa_c[Cytosol]|
 - id: R_ACBIPGT
   name: R_Adenosyl_cobinamide_phosphate_guanyltransferase
+  genes: MA0938
   equation: '|M_adocbip_c[Cytosol]| + |M_gtp_c[Cytosol]| + |M_h_c[Cytosol]| => |M_agdpcbi_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
 - id: R_ACCOAL2r
   name: R_acetate_CoA_ligase__ADP_forming_
+  genes: MA3168
   equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_ppa_c[Cytosol]| <=> |M_adp_c[Cytosol]|
     + |M_pi_c[Cytosol]| + |M_ppcoa_c[Cytosol]|'
 - id: R_ACGK
   name: R_acetylglutamate_kinase
+  genes: MA4515
   equation: '|M_acglu_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_acg5p_c[Cytosol]| +
     |M_adp_c[Cytosol]|'
 - id: R_ACGS
   name: R_N_acetylglutamate_synthase
+  genes: MA4339 or MA0239 or MA3564
   equation: '|M_accoa_c[Cytosol]| + |M_glu_L_c[Cytosol]| => |M_acglu_c[Cytosol]|
     + |M_coa_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_ACHBS
   name: R_2_aceto_2_hydroxybutanoate_synthase
+  genes: MA3791 or (MA3854 and MA1354) or MA1958 or MA3792
   equation: '|M_2obut_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pyr_c[Cytosol]| => |M_2ahbut_c[Cytosol]|
     + |M_co2_c[Cytosol]|'
 - id: R_ACKr
   name: R_acetate_kinase
+  genes: MA3606
   equation: '|M_ac_c[Cytosol]| + |M_atp_c[Cytosol]| <=> |M_actp_c[Cytosol]| + |M_adp_c[Cytosol]|'
 - id: R_ACLDC
   name: R_acetolactate_decarboxylase
+  genes: MA3744
   equation: '|M_alac_S_c[Cytosol]| + |M_h_c[Cytosol]| => |M_actn_R_c[Cytosol]| +
     |M_co2_c[Cytosol]|'
 - id: R_ACLS
   name: R_acetolactate_synthase
+  genes: MA3791 or (MA3854 and MA1958) or MA3792 or MA1354 or MA1958
   equation: '|M_h_c[Cytosol]| + (2) |M_pyr_c[Cytosol]| => |M_alac_S_c[Cytosol]| +
     |M_co2_c[Cytosol]|'
 - id: R_ACONMT
   name: R_Trans_aconitate_methyltransferase
+  genes: MA1801
   equation: '|M_acon_T_c[Cytosol]| + |M_amet_c[Cytosol]| => |M_aconm_c[Cytosol]|
     + |M_ahcys_c[Cytosol]|'
 - id: R_ACONT
   name: R_aconitase
+  genes: MA0250
   equation: '|M_cit_c[Cytosol]| <=> |M_icit_c[Cytosol]|'
 - id: R_ACOTA
   name: R_acetylornithine_transaminase
+  genes: MA0119 or MA0581 or MA2859
   equation: '|M_acorn_c[Cytosol]| + |M_akg_c[Cytosol]| <=> |M_acg5sa_c[Cytosol]|
     + |M_glu_L_c[Cytosol]|'
 - id: R_ACP1_FMN_
   name: R_acid_phosphatase__FMN_
+  genes: MA0104
   equation: '|M_fmn_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_pi_c[Cytosol]| + |M_ribflv_c[Cytosol]|'
 - id: R_ACS2
   name: R_acetyl_CoA_synthase__propionate_
+  genes: MA2912
   equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_ppa_c[Cytosol]| => |M_amp_c[Cytosol]|
     + |M_ppcoa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_ACTNt2r
@@ -86,10 +102,12 @@
     + |M_h_c[Cytosol]|'
 - id: R_ACYP
   name: R_acylphosphatase
+  genes: MA3367
   equation: '|M_13dpg_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_3pg_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
 - id: R_ACYP_2
   name: R_acylphosphatase__2_
+  genes: MA3367
   equation: '|M_actp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_ac_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
 - id: R_ACt2r
@@ -98,114 +116,145 @@
     + |M_h_c[Cytosol]|'
 - id: R_ADCPS2
   name: R_adenosylcobinamide_phosphate_synthase
+  genes: MA0941
   equation: '|M_adcobhex_c[Cytosol]| + |M_applp_c[Cytosol]| + |M_atp_c[Cytosol]|
     => |M_adocbip_c[Cytosol]| + |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_ADCYRS
   name: R_adenosylcobyric_acid_synthase__glutamine_hydrolysing_
+  genes: MA3250
   equation: '|M_adcobdam_c[Cytosol]| + (4) |M_atp_c[Cytosol]| + (4) |M_gln_L_c[Cytosol]|
     + (4) |M_h2o_c[Cytosol]| => |M_adcobhex_c[Cytosol]| + (4) |M_adp_c[Cytosol]|
     + (4) |M_glu_L_c[Cytosol]| + (4) |M_h_c[Cytosol]| + (4) |M_pi_c[Cytosol]|'
 - id: R_ADD
   name: R_adenine_deaminase
+  genes: MA2310
   equation: '|M_ade_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_hxan_c[Cytosol]|
     + |M_nh4_c[Cytosol]|'
 - id: R_ADK1
   name: R_adenylate_kinase
+  genes: MA1096
   equation: '|M_amp_c[Cytosol]| + |M_atp_c[Cytosol]| <=> (2) |M_adp_c[Cytosol]|'
 - id: R_ADK2
   name: R_adenylate_kinase__Inorganic_triphosphate_
+  genes: MA1096
   equation: '|M_amp_c[Cytosol]| + |M_pppi_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_ADK3
   name: R_adentylate_kinase__GTP_
+  genes: MA1096
   equation: '|M_amp_c[Cytosol]| + |M_gtp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_gdp_c[Cytosol]|'
 - id: R_ADK4
   name: R_adentylate_kinase__ITP_
+  genes: MA1096
   equation: '|M_amp_c[Cytosol]| + |M_itp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_idp_c[Cytosol]|'
 - id: R_ADKd
   name: R_adenylate_kinase__d_form_
+  genes: MA1096
   equation: '|M_damp_c[Cytosol]| + |M_datp_c[Cytosol]| <=> (2) |M_dadp_c[Cytosol]|'
 - id: R_ADNCYC
   name: R_adenylate_cyclase
+  genes: MA4044
   equation: '|M_atp_c[Cytosol]| => |M_camp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_ADNK1
   name: R_adenosine_kinase
+  genes: MA1096
   equation: '|M_adn_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_amp_c[Cytosol]|
     + |M_h_c[Cytosol]|'
 - id: R_ADOCBIAH
   name: R_Adenosyl_cobinamide_amidohydrolase
+  genes: MA1623
   equation: '|M_adocbi_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_adcobhex_c[Cytosol]|
     + |M_appl_c[Cytosol]|'
 - id: R_ADOCBLS2
   name: R_Adenosylcobalamin_5__phosphate_synthase
+  genes: MA0939
   equation: '|M_agdpcbi_c[Cytosol]| + |M_r5hbzi_c[Cytosol]| => |M_adocblhbi_c[Cytosol]|
     + |M_gmp_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_ADPT
   name: R_adenine_phosphoribosyltransferase
+  genes: MA0717
   equation: '|M_ade_c[Cytosol]| + |M_prpp_c[Cytosol]| => |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_ADSL1
   name: R_adenylosuccinate_lyase
+  genes: MA3971
   equation: '|M_dcamp_c[Cytosol]| => |M_amp_c[Cytosol]| + |M_fum_c[Cytosol]|'
 - id: R_ADSL2
   name: R_adenylosuccinate_lyase
+  genes: MA3971
   equation: '|M_25aics_c[Cytosol]| => |M_aicar_c[Cytosol]| + |M_fum_c[Cytosol]|'
 - id: R_ADSS
   name: R_adenylosuccinate_synthase
+  genes: MA1919 or MA4118
   equation: '|M_asp_L_c[Cytosol]| + |M_gtp_c[Cytosol]| + |M_imp_c[Cytosol]| => |M_dcamp_c[Cytosol]|
     + |M_gdp_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_AGAIAGT
   name: R_archaeatidylinositol_N_acetylglucosaminyltransferase
+  genes: MA0798
   equation: '|M_dpgpi_c[Cytosol]| + |M_uacgam_c[Cytosol]| => |M_agdpgpi_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_udp_c[Cytosol]|'
 - id: R_AGAID
   name: R_N_acetylglucosaminylarchaeatidylinositol_deacetylase
+  genes: MA0990
   equation: '|M_agdpgpi_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_ac_c[Cytosol]| + |M_gdpgpi_c[Cytosol]|'
 - id: R_AGMT
   name: R_agmatinase
+  genes: MA3986
   equation: '|M_agm_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_ptrc_c[Cytosol]| + |M_urea_c[Cytosol]|'
 - id: R_AGPR
   name: R_N_acetyl_g_glutamyl_phosphate_reductase
+  genes: MA3566
   equation: '|M_acg5sa_c[Cytosol]| + |M_nadp_c[Cytosol]| + |M_pi_c[Cytosol]| <=>
     |M_acg5p_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]|'
 - id: R_AHC
   name: R_adenosylhomocysteinase
+  genes: MA1275
   equation: '|M_ahcys_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_adn_c[Cytosol]| + |M_hcys_L_c[Cytosol]|'
 - id: R_AHGDx
   name: R__S__alpha_hydroxyglutarate_dehydrogenase
+  genes: MA3665
   equation: '|M_S2hglut_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_akg_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|'
 - id: R_AHMMPS
   name: R_4_amino_5_hydroxymethyl_2_methylpyrimidine_synthetase
+  genes: MA0261 or MA1790 or MA4329
   equation: '|M_air_c[Cytosol]| + (2) |M_h_c[Cytosol]| => |M_4ahmmp_c[Cytosol]| +
     |M_gcald_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_AHSERL2
   name: R_O_acetylhomoserine__thiol__lyase
+  genes: MA2532 or MA2715
   equation: '|M_achms_c[Cytosol]| + |M_h2s_c[Cytosol]| => |M_ac_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_hcys_L_c[Cytosol]|'
 - id: R_AICART
   name: R_phosphoribosylaminoimidazolecarboxamide_formyltransferase
+  genes: MA4012
   equation: '|M_10fthf_c[Cytosol]| + |M_aicar_c[Cytosol]| <=> |M_fprica_c[Cytosol]|
     + |M_thf_c[Cytosol]|'
 - id: R_AIRC2
   name: R_phosphoribosylaminoimidazole_carboxylase
+  genes: MA0428 or MA1376
   equation: '|M_air_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_hco3_c[Cytosol]| => |M_5caiz_c[Cytosol]|
     + |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_AIRC3
   name: R_phosphoribosylaminoimidazole_carboxylase__mutase_rxn_
+  genes: MA0428 or MA1376
   equation: '|M_5aizc_c[Cytosol]| <=> |M_5caiz_c[Cytosol]|'
 - id: R_AKACAL
   name: R_alpha_ketoadipate_CoA_ligase
+  genes: MA1225 or MA3342 or MA3793 or MA4264 or MA4615
   equation: '|M_accoa_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_ohexa_c[Cytosol]| =>
     |M_Rh2cit_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_AKGCAL
   name: R_alpha_ketoglutarate_CoA_ligase
+  genes: MA1225 or MA3342 or MA3793 or MA4264 or MA4615
   equation: '|M_accoa_c[Cytosol]| + |M_akg_c[Cytosol]| => |M_coa_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_hacon_T_c[Cytosol]|'
 - id: R_AKP1
   name: R_alkaline_phosphatase__Dihydroneopterin_
+  genes: MA4354
   equation: '|M_ahdt_c[Cytosol]| + (3) |M_h2o_c[Cytosol]| => |M_dhnpt_c[Cytosol]|
     + (2) |M_h_c[Cytosol]| + (3) |M_pi_c[Cytosol]|'
 - id: R_AKPCAL
   name: R_alpha_ketopimelate_CoA_ligase
+  genes: MA1225 or MA3342 or MA3793 or MA4264 or MA4615
   equation: '|M_accoa_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_ohepa_c[Cytosol]| =>
     |M_Rh3cit_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_AKSCAL
@@ -221,34 +270,42 @@
     + |M_h_c[Cytosol]|'
 - id: R_ALATA_L
   name: R_L_alanine_transaminase
+  genes: MA0636 or MA0925 or MA1385 or MA1712 or MA1819
   equation: '|M_akg_c[Cytosol]| + |M_ala_L_c[Cytosol]| <=> |M_glu_L_c[Cytosol]| +
     |M_pyr_c[Cytosol]|'
 - id: R_ALATRS
   name: R_Alanyl_tRNA_synthetase
+  genes: MA0194 or MA2014
   equation: '|M_ala_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_trnaala_c[Cytosol]| =>
     |M_alatrna_c[Cytosol]| + |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_ALAt4r
   name: R_Alanine_Sodium_symporter
+  genes: MA2837
   equation: '|M_ala_L_e[Extra_organism]| + |M_na1_e[Extra_organism]| <=> |M_ala_L_c[Cytosol]|
     + |M_na1_c[Cytosol]|'
 - id: R_ALCD20y
   name: R_alcohol_dehydrogenase__2_propanol___NADP_
+  genes: MA1901 or MA0403 or MA2630
   equation: '|M_2ppoh_c[Cytosol]| + |M_nadp_c[Cytosol]| <=> |M_acetone_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]|'
 - id: R_ALCD2y
   name: R_alcohol_dehydrogenase__ethanol__NADP_
+  genes: MA1901 or MA0403 or MA2630
   equation: '|M_etoh_c[Cytosol]| + |M_nadp_c[Cytosol]| <=> |M_acald_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]|'
 - id: R_ALDD1
   name: R_aldehyde_dehydrogenase__formaldehyde__NAD_
+  genes: MA0417
   equation: '|M_fald_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_for_c[Cytosol]|
     + (2) |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|'
 - id: R_ALDD2x
   name: R_aldehyde_dehydrogenase__acetaldehyde__NAD_
+  genes: MA0705 or MA1355 or MA2860 or MA4079
   equation: '|M_acald_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_ac_c[Cytosol]|
     + (2) |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|'
 - id: R_ALKP
   name: R_alkaline_phosphatase
+  genes: MA4354
   equation: '|M_dhap_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dha_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_AMAOTr
   name: R_adenosylmethionine_8_amino_7_oxononanoate_transaminase
@@ -256,9 +313,11 @@
     |M_dann_c[Cytosol]|'
 - id: R_ANPRT
   name: R_anthranilate_phosphoribosyltransferase
+  genes: MA2989
   equation: '|M_anth_c[Cytosol]| + |M_prpp_c[Cytosol]| => |M_ppi_c[Cytosol]| + |M_pran_c[Cytosol]|'
 - id: R_ANS
   name: R_anthranilate_synthase
+  genes: MA2987 and MA2986
   equation: '|M_chor_c[Cytosol]| + |M_gln_L_c[Cytosol]| => |M_anth_c[Cytosol]| +
     |M_glu_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pyr_c[Cytosol]|'
 - id: R_AOXSr
@@ -267,67 +326,84 @@
     + |M_co2_c[Cytosol]| + |M_coa_c[Cytosol]|'
 - id: R_APPLP
   name: R_aminopropanol_phosphorylase
+  genes: MA0940
   equation: '|M_appl_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_applp_c[Cytosol]|
     + |M_h_c[Cytosol]|'
 - id: R_ARGDC
   name: R_arginine_decarboxylase
+  genes: MA3012 or MA3496
   equation: '|M_arg_L_c[Cytosol]| + |M_h_c[Cytosol]| => |M_agm_c[Cytosol]| + |M_co2_c[Cytosol]|'
 - id: R_ARGDr
   name: R_arginine_deiminase
+  genes: MA0792
   equation: '|M_arg_L_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_citr_L_c[Cytosol]|
     + |M_nh4_c[Cytosol]|'
 - id: R_ARGSL
   name: R_argininosuccinate_lyase
+  genes: MA1318
   equation: '|M_argsuc_c[Cytosol]| <=> |M_arg_L_c[Cytosol]| + |M_fum_c[Cytosol]|'
 - id: R_ARGSS
   name: R_argininosuccinate_synthase
+  genes: MA2142
   equation: '|M_asp_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_citr_L_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_argsuc_c[Cytosol]| + |M_h_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_ARGTRS
   name: R_Arginyl_tRNA_synthetase
+  genes: MA0043
   equation: '|M_arg_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_trnaarg_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_argtrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_ASADi
   name: R_aspartate_semialdehyde_dehydrogenase__irreversible
+  genes: MA0430
   equation: '|M_4pasp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| => |M_aspsa_c[Cytosol]|
     + |M_nadp_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_ASD
   name: R_archaetidylserine_decarboxylase
+  genes: MA0115
   equation: '|M_dpgps_c[Cytosol]| + |M_h_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_dpgpe_c[Cytosol]|'
 - id: R_ASNN
   name: R_L_asparaginase
+  genes: MA1317
   equation: '|M_asn_L_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_asp_L_c[Cytosol]| +
     |M_nh4_c[Cytosol]|'
 - id: R_ASNS1
   name: R_asparagine_synthase__glutamine_hydrolysing_
+  genes: MA1966
   equation: '|M_asp_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_gln_L_c[Cytosol]| + |M_h2o_c[Cytosol]|
     => |M_amp_c[Cytosol]| + |M_asn_L_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
 - id: R_ASP1DC
   name: R_aspartate_1_decarboxylase
+  genes: MA0006 or MA1949
   equation: '|M_asp_L_c[Cytosol]| + |M_h_c[Cytosol]| => |M_ala_B_c[Cytosol]| + |M_co2_c[Cytosol]|'
 - id: R_ASPCT
   name: R_aspartate_carbamoyltransferase
+  genes: MA4502
   equation: '|M_asp_L_c[Cytosol]| + |M_cbp_c[Cytosol]| => |M_cbasp_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_ASPKi
   name: R_aspartate_kinase__irreversible
+  genes: MA0131
   equation: '|M_asp_L_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_4pasp_c[Cytosol]| +
     |M_adp_c[Cytosol]|'
 - id: R_ASPTA
   name: R_aspartate_transaminase
+  genes: MA1816
   equation: '|M_akg_c[Cytosol]| + |M_asp_L_c[Cytosol]| <=> |M_glu_L_c[Cytosol]| +
     |M_oaa_c[Cytosol]|'
 - id: R_ASPTRS
   name: R_Aspartyl_tRNA_synthetase
+  genes: MA1684
   equation: '|M_asp_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_trnaasp_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_asptrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_ATGH
   name: R_archaetidylglycerol_hydrogenase
+  genes: MA0691 or MA0692 or MA1484 or MA3894
   equation: '|M_dggpg_c[Cytosol]| + (8) |M_h_c[Cytosol]| + (8) |M_nadph_c[Cytosol]|
     => |M_dpgpg_c[Cytosol]| + (8) |M_nadp_c[Cytosol]|'
 - id: R_ATIH
   name: R_archaetidylinositol_hydrogenase
+  genes: MA0691 or MA0692 or MA1484 or MA3894
   equation: '|M_dggpi_c[Cytosol]| + (8) |M_h_c[Cytosol]| + (8) |M_nadph_c[Cytosol]|
     => |M_dpgpi_c[Cytosol]| + (8) |M_nadp_c[Cytosol]|'
 - id: R_ATPM
@@ -336,33 +412,42 @@
     + |M_pi_c[Cytosol]|'
 - id: R_ATPPRT
   name: R_ATP_phosphoribosyltransferase
+  genes: MA0217
   equation: '|M_atp_c[Cytosol]| + |M_prpp_c[Cytosol]| => |M_ppi_c[Cytosol]| + |M_prbatp_c[Cytosol]|'
 - id: R_ATPS1
   name: R_H__exporting_ATPase
+  genes: MA1678 or MA2833 or MA4082 or MA4378
   equation: '|M_atp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_adp_c[Cytosol]|
     + (2) |M_h_e[Extra_organism]| + |M_pi_c[Cytosol]|'
 - id: R_ATPS4r
   name: R_ATP_synthase__four_protons_for_one_ATP_
+  genes: MA4158 or (MA2437 and MA4159 and MA4156 and MA4160 and MA4155 and MA4157
+    and MA4152 and MA4153) or MA4153
   equation: '|M_adp_c[Cytosol]| + (4) |M_h_e[Extra_organism]| + |M_pi_c[Cytosol]|
     <=> |M_atp_c[Cytosol]| + (3) |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]|'
 - id: R_ATRZCH
   name: R_atrazine_chlorohydrolase
+  genes: MA1276
   equation: '|M_atrz_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_cl_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_hatrz_c[Cytosol]|'
 - id: R_ATSH
   name: R_archaetidylserine_hydrogenase
+  genes: MA0691 or MA0692 or MA1484 or MA3894
   equation: '|M_dgggps_c[Cytosol]| + (8) |M_h_c[Cytosol]| + (8) |M_nadph_c[Cytosol]|
     => |M_dpgps_c[Cytosol]| + (8) |M_nadp_c[Cytosol]|'
 - id: R_BACCL
   name: R_biotin_[acetyl_CoA_carboxylase]_ligase
+  genes: MA0676
   equation: '|M_atp_c[Cytosol]| + |M_btn_c[Cytosol]| + |M_h_c[Cytosol]| => |M_btamp_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
 - id: R_BLAT
   name: R_beta_lysine_acetyltransferase
+  genes: MA3978
   equation: '|M_36dahx_c[Cytosol]| + |M_accoa_c[Cytosol]| => |M_coa_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_nabl_c[Cytosol]|'
 - id: R_BRFAPS
   name: R_beta_ribofuranosylaminobenzene_5__phosphate_synthase
+  genes: MA0339 or MA4006
   equation: '|M_4abz_c[Cytosol]| + |M_h_c[Cytosol]| + |M_prpp_c[Cytosol]| => |M_Brfap_c[Cytosol]|
     + |M_co2_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_BTNt2i
@@ -371,10 +456,12 @@
     + |M_h_c[Cytosol]|'
 - id: R_BTS3r
   name: R_biotin_synthase
+  genes: MA0154
   equation: '|M_dtbt_c[Cytosol]| + (2) |M_s_c[Cytosol]| <=> |M_btn_c[Cytosol]| +
     |M_h2s_c[Cytosol]|'
 - id: R_CA2abc
   name: R_calcium_transport_via_ABC_system
+  genes: MA1678 or MA2501 or MA2833 or MA4082 or MA4378
   equation: '|M_atp_c[Cytosol]| + |M_ca2_e[Extra_organism]| + |M_h2o_c[Cytosol]|
     => |M_adp_c[Cytosol]| + |M_ca2_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_CAM
@@ -382,10 +469,12 @@
   equation: '|M_CO2_e[Extra_organism]| => |M_H2CO3_e[Extra_organism]|'
 - id: R_CAt6
   name: R_calcium_/_sodium_antiporter
+  genes: MA2008 or MA2817
   equation: '|M_ca2_c[Cytosol]| + |M_na1_e[Extra_organism]| <=> |M_ca2_e[Extra_organism]|
     + |M_na1_c[Cytosol]|'
 - id: R_CBIAT
   name: R_Cobinamide_adenyltransferase
+  genes: MA2084
   equation: '|M_atp_c[Cytosol]| + |M_cbi_c[Cytosol]| + |M_h_c[Cytosol]| <=> |M_adocbi_c[Cytosol]|
     + |M_pppi_c[Cytosol]|'
 - id: R_CBIabc
@@ -402,6 +491,7 @@
     => |M_adp_c[Cytosol]| + |M_cbl1_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_CBLAT2
   name: R_cob_I_alamin_HBI_adenosyltransferase
+  genes: MA2084
   equation: '|M_atp_c[Cytosol]| + |M_cbl1hbi_c[Cytosol]| + |M_h_c[Cytosol]| => |M_adocblhbi_c[Cytosol]|
     + |M_pppi_c[Cytosol]|'
 - id: R_CBLD
@@ -409,23 +499,28 @@
   equation: '|M_cbl1_c[Cytosol]| => |M_cbi_c[Cytosol]| + |M_unknown_cbl1deg_c[Cytosol]|'
 - id: R_CBPS
   name: R_carbamoyl_phosphate_synthase__glutamine_hydrolysing_
+  genes: MA2144 and MA2143
   equation: (2) |M_atp_c[Cytosol]| + |M_gln_L_c[Cytosol]| + |M_h2o_c[Cytosol]| +
     |M_hco3_c[Cytosol]| => (2) |M_adp_c[Cytosol]| + |M_cbp_c[Cytosol]| + |M_glu_L_c[Cytosol]|
     + (2) |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|
 - id: R_CD2abc1
   name: R_cadmium_transport_out_via_ABC_system
+  genes: MA0166 or MA1342 or MA3632
   equation: '|M_atp_c[Cytosol]| + |M_cd2_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_adp_c[Cytosol]|
     + |M_cd2_e[Extra_organism]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_CD2abc2
   name: R_cadmium_transport_in_via_ABC_system
+  genes: MA0166 or MA1342 or MA3632
   equation: '|M_atp_c[Cytosol]| + |M_cd2_e[Extra_organism]| + |M_h2o_c[Cytosol]|
     => |M_adp_c[Cytosol]| + |M_cd2_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_CDGGGPP3
   name: R_CDP_alcohol_phosphatidyltransferase__glycerol_1_phosphate_
+  genes: MA0264
   equation: '|M_cdgggp_c[Cytosol]| + |M_glyc1p_c[Cytosol]| => |M_cmp_c[Cytosol]|
     + |M_dggpgp_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_CDGGGPP4
   name: R_CDP_alcohol_phosphatidyltransferase__glycerol_1_phosphate___hydroxy_
+  genes: MA0264
   equation: '|M_3hcdgggp_c[Cytosol]| + |M_glyc1p_c[Cytosol]| => |M_3hdggpgp_c[Cytosol]|
     + |M_cmp_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_CDGGGS
@@ -438,18 +533,22 @@
     + |M_ppi_c[Cytosol]|'
 - id: R_CDGGGSAT
   name: R_CDP_2_3_di_O_geranylgeranyl_sn_glyceroserine_O_archaetidyltransferase
+  genes: MA0116
   equation: '|M_cdgggp_c[Cytosol]| + |M_ser_L_c[Cytosol]| => |M_cmp_c[Cytosol]| +
     |M_dgggps_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_CDGGGSAT2
   name: R_CDP_2_O__3__hydroxy_geranyl_3_O_geranyl_sn_glyceroserine_O_archaetidyltransferase
+  genes: MA0116
   equation: '|M_3hcdgggp_c[Cytosol]| + |M_ser_L_c[Cytosol]| => |M_3hdgggps_c[Cytosol]|
     + |M_cmp_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_CDGGIPT
   name: R_CDP_digeranyl_sn_glycero_myo_inositol_3_phosphatidyltransferase
+  genes: MA0525
   equation: '|M_cdgggp_c[Cytosol]| + |M_inost_c[Cytosol]| => |M_cmp_c[Cytosol]| +
     |M_dggpi_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_CDGGIPT2
   name: R_CDP_digeranyl_sn_glycero_myo_inositol_3_phosphatidyltransferase__3__hydroxy_
+  genes: MA0525
   equation: '|M_3hcdgggp_c[Cytosol]| + |M_inost_c[Cytosol]| => |M_3hdggpi_c[Cytosol]|
     + |M_cmp_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_CDPGH
@@ -470,17 +569,21 @@
     |M_gmp_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_CF3Sa
   name: R_coenzyme_F390_synthetase__ATP_
+  genes: MA1725 or MA2244 or MA3853 or MA4074
   equation: '|M_atp_c[Cytosol]| + |M_f420_2_c[Cytosol]| => |M_f390a_c[Cytosol]| +
     |M_ppi_c[Cytosol]|'
 - id: R_CF3Sg
   name: R_coenzyme_F390_synthetase__GTP_
+  genes: MA1725 or MA2244 or MA3853 or MA4074
   equation: '|M_f420_2_c[Cytosol]| + |M_gtp_c[Cytosol]| => |M_f390g_c[Cytosol]| +
     |M_ppi_c[Cytosol]|'
 - id: R_CH2ACH
   name: R_cis__homo_2aconitate_hydrolase
+  genes: MA1393 or (MA3085 and MA0202) or MA1223 or MA3751
   equation: '|M_h2acon_C_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_tih2cit_c[Cytosol]|'
 - id: R_CH3ACH
   name: R_cis__homo_3aconitate_hydrolase
+  genes: MA1393 or (MA3085 and MA0202) or MA1223 or MA3751
   equation: '|M_h2o_c[Cytosol]| + |M_h3acon_C_c[Cytosol]| <=> |M_tih3cit_c[Cytosol]|'
 - id: R_CH4St
   name: R_Methanethiol_Transport
@@ -490,15 +593,19 @@
   equation: '|M_ch4_e[Extra_organism]| <=> |M_ch4_c[Cytosol]|'
 - id: R_CHACH
   name: R_cis_homoaconitate_hydrolase
+  genes: MA1393 or (MA3085 and MA0202) or MA1223 or MA3751
   equation: '|M_h2o_c[Cytosol]| + |M_hacon_C_c[Cytosol]| <=> |M_ihcit_T_c[Cytosol]|'
 - id: R_CHORM
   name: R_chorismate_mutase
+  genes: MA3150 or MA1377
   equation: '|M_chor_c[Cytosol]| => |M_pphn_c[Cytosol]|'
 - id: R_CHORS
   name: R_chorismate_synthase
+  genes: MA0550
   equation: '|M_3psme_c[Cytosol]| => |M_chor_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_CMLDC
   name: R_4_carboxymuconolactone_decarboxylase
+  genes: MA3991
   equation: '|M_2c25dho_c[Cytosol]| => |M_5odhf2a_c[Cytosol]| + |M_co2_c[Cytosol]|
     + |M_h_c[Cytosol]|'
 - id: R_CO2t
@@ -506,6 +613,7 @@
   equation: '|M_co2_e[Extra_organism]| <=> |M_co2_c[Cytosol]|'
 - id: R_COBALTt5
   name: R_cobalt_transport_in/out_via_permease__no_H__
+  genes: MA1721 or MA1436 or MA1437
   equation: '|M_cobalt2_c[Cytosol]| <=> |M_cobalt2_e[Extra_organism]|'
 - id: R_COBS
   name: R_coenzyme_b_synthatse
@@ -513,10 +621,13 @@
     + |M_h_c[Cytosol]|'
 - id: R_COCHL
   name: R_cobaltochelatase
+  genes: MA0346 or MA0348 or MA0383 or MA0384 or MA0385 or MA0386 or MA0872 or MA0882
+    or MA4295 or MA4424 or MA4643
   equation: '|M_atp_c[Cytosol]| + |M_cobalt2_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_hgbam_c[Cytosol]|
     => |M_adp_c[Cytosol]| + |M_co2dam_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_CODH2
   name: R_carbon_monoxide_dehydrogenase_/_acetyl_CoA_synthase_2
+  genes: (MA3283 and MA1309) or MA3282
   equation: '|M_co_c[Cytosol]| + (2) |M_fdox_c[Cytosol]| + |M_h2o_c[Cytosol]| =>
     |M_co2_c[Cytosol]| + (2) |M_fdred_c[Cytosol]| + (2) |M_h_c[Cytosol]|'
 - id: R_CODHe
@@ -525,6 +636,9 @@
     |M_co2_c[Cytosol]| + (2) |M_fdred_c[Cytosol]| + (2) |M_h_c[Cytosol]|'
 - id: R_CODHr
   name: R_carbon_monoxide_dehydrogenase_/_acetyl_CoA_synthase
+  genes: MA1016 or MA3860 or (MA4399 and MA1015) or (MA3861 and MA1014) or (MA3862
+    and MA1012) or (MA3864 and MA1012) or MA3864 or MA1011 or (MA3865 and MA1309)
+    or MA3282
   equation: '|M_accoa_c[Cytosol]| + (2) |M_fdox_c[Cytosol]| + |M_h2o_c[Cytosol]|
     + |M_h4spt_c[Cytosol]| <=> |M_co2_c[Cytosol]| + |M_coa_c[Cytosol]| + (2) |M_fdred_c[Cytosol]|
     + (2) |M_h_c[Cytosol]| + |M_mh4spt_c[Cytosol]|'
@@ -537,22 +651,27 @@
   equation: '|M_co_c[Cytosol]| <=> |M_co_e[Extra_organism]|'
 - id: R_CPC2MT
   name: R_precorrin_2_C20_methyltransferase
+  genes: MA4262
   equation: '|M_amet_c[Cytosol]| + |M_copre2_c[Cytosol]| => |M_ahcys_c[Cytosol]|
     + |M_copre3_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_CPC3MT
   name: R_precorrin_3B_C17_methyltransferase
+  genes: MA4259
   equation: '|M_amet_c[Cytosol]| + |M_copre3_c[Cytosol]| => |M_ahcys_c[Cytosol]|
     + |M_copre4_c[Cytosol]|'
 - id: R_CPC4MT
   name: R_precorrin_4_C11_methyltransferase
+  genes: MA4261
   equation: '|M_amet_c[Cytosol]| + |M_copre4_c[Cytosol]| => |M_ahcys_c[Cytosol]|
     + |M_copre5_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_CPC5MT
   name: R_precorrin_5_C1_methyltransferase
+  genes: MA0521
   equation: '|M_amet_c[Cytosol]| + |M_copre5_c[Cytosol]| + |M_h2o_c[Cytosol]| =>
     |M_acald_c[Cytosol]| + |M_ahcys_c[Cytosol]| + |M_copre6_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_CPC6MT
   name: R_precorrin_6Y_C5_15_methyltransferase__decarboxylating_
+  genes: MA0520 and MA4263
   equation: (2) |M_amet_c[Cytosol]| + |M_codhpre6_c[Cytosol]| => (2) |M_ahcys_c[Cytosol]|
     + |M_co2_c[Cytosol]| + |M_copre8_c[Cytosol]| + |M_h_c[Cytosol]|
 - id: R_CPC6R
@@ -561,26 +680,32 @@
     + |M_nadp_c[Cytosol]|'
 - id: R_CPC8MM
   name: R_precorrin_8X_methylmutase
+  genes: MA4258
   equation: '|M_copre8_c[Cytosol]| <=> |M_cobya_c[Cytosol]|'
 - id: R_CS
   name: R_citrate_synthase
+  genes: MA0249
   equation: '|M_accoa_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_oaa_c[Cytosol]| => |M_cit_c[Cytosol]|
     + |M_coa_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_CSND
   name: R_Cytosine_deaminase
+  genes: MA2559 or MA2341
   equation: '|M_csn_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_nh4_c[Cytosol]|
     + |M_ura_c[Cytosol]|'
 - id: R_CTPS1
   name: R_CTP_synthase__NH3_
+  genes: MA3279
   equation: '|M_atp_c[Cytosol]| + |M_nh4_c[Cytosol]| + |M_utp_c[Cytosol]| => |M_adp_c[Cytosol]|
     + |M_ctp_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_CTPS2
   name: R_CTP_synthase__glutamine_
+  genes: MA3279
   equation: '|M_atp_c[Cytosol]| + |M_gln_L_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_utp_c[Cytosol]|
     => |M_adp_c[Cytosol]| + |M_ctp_c[Cytosol]| + |M_glu_L_c[Cytosol]| + (2) |M_h_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
 - id: R_CYRDAAT
   name: R_cob_I_yrinic_acid_a_c_diamide_adenosyltransferase
+  genes: MA2084
   equation: '|M_atp_c[Cytosol]| + |M_co1dam_c[Cytosol]| + |M_h_c[Cytosol]| => |M_adcobdam_c[Cytosol]|
     + |M_pppi_c[Cytosol]|'
 - id: R_CYRDAR
@@ -589,19 +714,23 @@
     + |M_h_c[Cytosol]| + |M_nad_c[Cytosol]|
 - id: R_CYRDAS
   name: R_Cob_II_yrinate_a_c_diamide_synthase__glutamine_hydrolysing_
+  genes: MA0106 or MA3626
   equation: (2) |M_atp_c[Cytosol]| + |M_cobya_c[Cytosol]| + (2) |M_gln_L_c[Cytosol]|
     + |M_h2o_c[Cytosol]| => (2) |M_adp_c[Cytosol]| + |M_co2dam_c[Cytosol]| + (2)
     |M_glu_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_ppi_c[Cytosol]|
 - id: R_CYSDS
   name: R_Cysteine_Desulfhydrase
+  genes: MA2532 or MA2715
   equation: '|M_cys_L_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_h2s_c[Cytosol]| + |M_nh4_c[Cytosol]|
     + |M_pyr_c[Cytosol]|'
 - id: R_CYSSr
   name: R_cysteine_synthase__reversible_
+  genes: MA2720
   equation: '|M_acser_c[Cytosol]| + |M_h2s_c[Cytosol]| <=> |M_ac_c[Cytosol]| + |M_cys_L_c[Cytosol]|
     + |M_h_c[Cytosol]|'
 - id: R_CYSTRS
   name: R_Cysteinyl_tRNA_synthetase
+  genes: MA0749
   equation: '|M_atp_c[Cytosol]| + |M_cys_L_c[Cytosol]| + |M_trnacys_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_cystrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_CYSt2r
@@ -610,30 +739,39 @@
     + |M_h_c[Cytosol]|'
 - id: R_CYTK1
   name: R_cytidylate_kinase__CMP_
+  genes: MA1104
   equation: '|M_atp_c[Cytosol]| + |M_cmp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_cdp_c[Cytosol]|'
 - id: R_CYTK2
   name: R_cytidylate_kinase__dCMP_
+  genes: MA1104
   equation: '|M_atp_c[Cytosol]| + |M_dcmp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dcdp_c[Cytosol]|'
 - id: R_Clt
   name: R_chlorideion_transport_out_via_diffusion
+  genes: MA3609
   equation: '|M_cl_e[Extra_organism]| <=> |M_cl_c[Cytosol]|'
 - id: R_Coabc
   name: R_Cobalt_transport_via_ABC_system
+  genes: MA0394 or MA0870 or MA1747 or MA3551 or MA4020 or MA4021 or MA4341 or (MA4342
+    and MA0393) or MA3552 or (MA3553 and MA0394) or MA1418
   equation: '|M_atp_c[Cytosol]| + |M_cobalt2_e[Extra_organism]| + |M_h2o_c[Cytosol]|
     => |M_adp_c[Cytosol]| + |M_cobalt2_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_Cuabc
   name: R_Copper_transport_via_ABC_system
+  genes: MA3999
   equation: '|M_atp_c[Cytosol]| + |M_cu2_e[Extra_organism]| + |M_h2o_c[Cytosol]|
     => |M_adp_c[Cytosol]| + |M_cu2_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_Cut1
   name: R_Copper_export_via_ATPase
+  genes: MA0166 or MA1342 or MA2833 or MA3632
   equation: '|M_atp_c[Cytosol]| + |M_cu2_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_adp_c[Cytosol]|
     + |M_cu2_e[Extra_organism]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_DADK
   name: R_deoxyadenylate_kinase
+  genes: MA1096
   equation: '|M_atp_c[Cytosol]| + |M_damp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dadp_c[Cytosol]|'
 - id: R_DAPDC
   name: R_diaminopimelate_decarboxylase
+  genes: MA0726
   equation: '|M_26dap_M_c[Cytosol]| + |M_h_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_lys_L_c[Cytosol]|'
 - id: R_DAPDH
   name: R_diaminopimelate_dehydrogenase
@@ -641,6 +779,7 @@
     => |M_26dap_M_c[Cytosol]| + |M_nadp_c[Cytosol]|
 - id: R_DB4PS
   name: R_3_4_Dihydroxy_2_butanone_4_phosphate_synthase
+  genes: MA0548
   equation: '|M_ru5p_D_c[Cytosol]| => |M_db4p_c[Cytosol]| + |M_for_c[Cytosol]| +
     |M_h_c[Cytosol]|'
 - id: R_DBTSr
@@ -649,10 +788,12 @@
     + |M_dtbt_c[Cytosol]| + (3) |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_DCMPDA
   name: R_dCMP_deaminase
+  genes: MA0136 or MA0137
   equation: '|M_dcmp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_dump_c[Cytosol]|
     + |M_nh4_c[Cytosol]|'
 - id: R_DCTPD
   name: R_dCTP_deaminase
+  genes: MA4092 and MA0440
   equation: '|M_dctp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dutp_c[Cytosol]|
     + |M_nh4_c[Cytosol]|'
 - id: R_DGGGPS
@@ -665,24 +806,30 @@
     + |M_ppi_c[Cytosol]|'
 - id: R_DGGPGP
   name: R_digeranyl_sn_glycerol_1_phospho_3__sn_glycerol_phosphatase
+  genes: MA1569
   equation: '|M_dggpgp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dggpg_c[Cytosol]| +
     |M_pi_c[Cytosol]|'
 - id: R_DGGPGP2
   name: R_digeranyl_sn_glycerol_1_phospho_3__sn_glycerol_phosphatase__hydroxy_
+  genes: MA1569
   equation: '|M_3hdggpgp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_3hdggpg_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
 - id: R_DHAD1
   name: R_dihydroxy_acid_dehydratase__2_3_dihydroxy_3_methylbutanoate_
+  genes: MA1802 or MA3373
   equation: '|M_23dhmb_c[Cytosol]| => |M_3mob_c[Cytosol]| + |M_h2o_c[Cytosol]|'
 - id: R_DHAD2
   name: R_Dihydroxy_acid_dehydratase__2_3_dihydroxy_3_methylpentanoate_
+  genes: MA1802 or MA3373
   equation: '|M_23dhmp_c[Cytosol]| => |M_3mop_c[Cytosol]| + |M_h2o_c[Cytosol]|'
 - id: R_DHDPRy
   name: R_dihydrodipicolinate_reductase__NADPH_
+  genes: MA4474
   equation: '|M_23dhdp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| => |M_nadp_c[Cytosol]|
     + |M_thdp_c[Cytosol]|'
 - id: R_DHDPS
   name: R_dihydrodipicolinate_synthase
+  genes: MA4473
   equation: '|M_aspsa_c[Cytosol]| + |M_pyr_c[Cytosol]| => |M_23dhdp_c[Cytosol]| +
     |M_h_c[Cytosol]| + (2) |M_h2o_c[Cytosol]|'
 - id: R_DHFR
@@ -691,6 +838,7 @@
     + |M_thf_c[Cytosol]|'
 - id: R_DHFS
   name: R_dihydrofolate_synthase
+  genes: MA1824 or MA4543
   equation: '|M_atp_c[Cytosol]| + |M_dhpt_c[Cytosol]| + |M_glu_L_c[Cytosol]| => |M_adp_c[Cytosol]|
     + |M_dhf_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_DHNPA2
@@ -698,10 +846,12 @@
   equation: '|M_dhnpt_c[Cytosol]| => |M_6hmhpt_c[Cytosol]| + |M_gcald_c[Cytosol]|'
 - id: R_DHORD7
   name: R_dihydroorotic_acid_dehydrogenase__f420_
+  genes: MA0583
   equation: '|M_dhor_S_c[Cytosol]| + |M_f420_2_c[Cytosol]| <=> |M_f420_2h2_c[Cytosol]|
     + |M_orot_c[Cytosol]|'
 - id: R_DHORTS
   name: R_dihydroorotase
+  genes: MA0892
   equation: '|M_dhor_S_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_cbasp_c[Cytosol]|
     + |M_h_c[Cytosol]|'
 - id: R_DHPCPH
@@ -710,28 +860,37 @@
     + |M_h_c[Cytosol]|'
 - id: R_DHPM1
   name: R_dihydropyrimidinase__5_6_dihydrouracil_
+  genes: MA0858 or MA2889 or MA3497 or MA3498 or MA4203 or MA4395 or MA4396 or MA4562
+    or MA4563
   equation: '|M_56dura_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_cala_c[Cytosol]| +
     |M_h_c[Cytosol]|'
 - id: R_DHPM2
   name: R_dihydropyrimidinase__dihydrothymine_
+  genes: MA0858 or MA2889 or MA3497 or MA3498 or MA4203 or MA4395 or MA4396 or MA4562
+    or MA4563
   equation: '|M_56dthm_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_3uib_c[Cytosol]| +
     |M_h_c[Cytosol]|'
 - id: R_DHPS2
   name: R_dihydropteroate_synthase
+  genes: MA1946 or MA3516
   equation: '|M_4abz_c[Cytosol]| + |M_6hmhptpp_c[Cytosol]| => |M_dhpt_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
 - id: R_DHPS3
   name: R_7_8_dihydropteroate_synthase__methanopterin_
+  genes: MA1962 or MA3419
   equation: '|M_6hmhptpp_c[Cytosol]| + |M_Brfap_c[Cytosol]| => |M_dhrfap_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
 - id: R_DHQD
   name: R_3_dehydroquinate_dehydratase
+  genes: MA4593
   equation: '|M_3dhq_c[Cytosol]| <=> |M_3dhsk_c[Cytosol]| + |M_h2o_c[Cytosol]|'
 - id: R_DHQS2
   name: R_3_dehydroquinate_synthase
+  genes: MA4592
   equation: '|M_dohdu_c[Cytosol]| => |M_3dhq_c[Cytosol]|'
 - id: R_DIPS
   name: R_diphthine_synthase
+  genes: MA1370
   equation: '|M_amet_c[Cytosol]| + |M_caphis_c[Cytosol]| => |M_ahcys_c[Cytosol]|
     + |M_cmaphis_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_DKFPR
@@ -744,24 +903,32 @@
     + |M_nad_c[Cytosol]|'
 - id: R_DKMPASPL
   name: R_6_deoxy_5_ketomannitol_1_phosphate_L_aspartate_semialdehyde_ligase
+  genes: MA0439 or MA4591
   equation: '|M_aspsa_c[Cytosol]| + |M_dkmp_c[Cytosol]| => |M_dohau_c[Cytosol]| +
     |M_g3p_c[Cytosol]|'
 - id: R_DMAMT
   name: R_Dimethylamine_methyltransferase
+  genes: MA0532 or MA0933 or (MA2425 and MA0527) or MA0934 or (MA2424 and MA0779)
+    or MA0847 or MA1615 or MA2163 or MA3613 or MA4165 or MA4355 or MA4559 or MA0859
+    or MA4384 or MA4558
   equation: '|M_com_c[Cytosol]| + |M_dma_c[Cytosol]| => |M_mcom_c[Cytosol]| + |M_mma_c[Cytosol]|'
 - id: R_DMATT
   name: R_dimethylallyltranstransferase
+  genes: MA0606
   equation: '|M_dmpp_c[Cytosol]| + |M_ipdp_c[Cytosol]| => |M_grdp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_DMATT2
   name: R_dimethylallyltranstransferase__3_hydroxy_
+  genes: MA0606
   equation: '|M_ipdp_c[Cytosol]| + |M_m3hdp_c[Cytosol]| => |M_3hgrdp_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
 - id: R_DMAt
   name: R_Dimethylamine_symport
+  genes: MA0143
   equation: '|M_dma_e[Extra_organism]| + |M_h_e[Extra_organism]| <=> |M_dma_c[Cytosol]|
     + |M_h_c[Cytosol]|'
 - id: R_DMHDRFS
   name: R_7_8_didemethyl_8_hydroxy_5_deazariboflavin_synthetase
+  genes: (MA1491 and MA1489) or MA1490 or MA1489
   equation: '|M_34hpp_c[Cytosol]| + |M_4r5au_c[Cytosol]| + |M_h2o_c[Cytosol]| + (2)
     |M_nadp_c[Cytosol]| => |M_ddhrb_c[Cytosol]| + (2) |M_h_c[Cytosol]| + (2) |M_nadph_c[Cytosol]|
     + |M_nh4_c[Cytosol]| + |M_oxa_c[Cytosol]|'
@@ -774,10 +941,12 @@
     |M_pi_c[Cytosol]|'
 - id: R_DOHDUS
   name: R_3_7_dideoxy_D_threo_hepto_2_6_diulosonate_synthase
+  genes: MA4592
   equation: '|M_dohau_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_dohdu_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| + |M_nh4_c[Cytosol]|'
 - id: R_DPCOAK
   name: R_dephospho_CoA_kinase
+  genes: MA4660
   equation: '|M_atp_c[Cytosol]| + |M_dpcoa_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_coa_c[Cytosol]|
     + |M_h_c[Cytosol]|'
 - id: R_DPGase
@@ -796,27 +965,34 @@
     + |M_pant_R_c[Cytosol]|'
 - id: R_DROPPRx
   name: R_2_5_diamino_6_ribosylamino_4_3H__pyrimidinone_5__phosphate_reductase
+  genes: MA4092 and MA0440
   equation: '|M_25dhpp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| => |M_25dthpp_c[Cytosol]|
     + |M_nad_c[Cytosol]|'
 - id: R_DROPPRy
   name: R_2_5_diamino_6_ribosylamino_4_3H__pyrimidinone_5__phosphate_reductase__nadph_
+  genes: MA4092 and MA0440
   equation: '|M_25dhpp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| => |M_25dthpp_c[Cytosol]|
     + |M_nadp_c[Cytosol]|'
 - id: R_DRTPPD
   name: R_2_5_diamino_6_ribitylamino_4_3H__pyrimidinone_5__phosphate_deaminase
+  genes: MA4092 and MA0440
   equation: '|M_25dthpp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_5aprbu_c[Cytosol]|
     + |M_nh4_c[Cytosol]|'
 - id: R_DTMPK
   name: R_dTMP_kinase
+  genes: MA4433
   equation: '|M_atp_c[Cytosol]| + |M_dtmp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dtdp_c[Cytosol]|'
 - id: R_DURIPP
   name: R_deoxyuridine_phosphorylase
+  genes: MA3242
   equation: '|M_duri_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_2dr1p_c[Cytosol]| + |M_ura_c[Cytosol]|'
 - id: R_ENO
   name: R_enolase
+  genes: MA1672
   equation: '|M_2pg_c[Cytosol]| <=> |M_h2o_c[Cytosol]| + |M_pep_c[Cytosol]|'
 - id: R_ETHAt6
   name: R_ethanolamine_transport_in/out_via_proton_symport
+  genes: MA0143
   equation: '|M_etha_e[Extra_organism]| + |M_h_e[Extra_organism]| <=> |M_etha_c[Cytosol]|
     + |M_h_c[Cytosol]|'
 - id: R_F430S1
@@ -840,39 +1016,51 @@
   equation: '|M_h_c[Cytosol]| + |M_sf430a_c[Cytosol]| => |M_f430_c[Cytosol]| + |M_h2o_c[Cytosol]|'
 - id: R_F4D
   name: R_F420_Deydrogenase
+  genes: (MA1495 and MA1496 and MA1497 and MA1498) or (MA4372 and MA0978) or (MA3732
+    and MA1499 and MA1500 and MA1501 and MA1502 and MA1503 and MA1504) or (MA4572
+    and MA1505) or (MA4368 and MA1506) or (MA4569 and MA1507) or MA1509
   equation: '|M_f420_2h2_c[Cytosol]| + (1.800000) |M_h_c[Cytosol]| + |M_mphen_c[Cytosol]|
     => |M_f420_2_c[Cytosol]| + (1.800000) |M_h_e[Extra_organism]| + |M_mphenh2_c[Cytosol]|'
 - id: R_F4H2O
   name: R_F420H2_oxidase
+  genes: MA3381 or MA3743
   equation: (2) |M_f420_2h2_c[Cytosol]| + |M_o2_c[Cytosol]| <=> (2) |M_f420_2_c[Cytosol]|
     + (2) |M_h2o_c[Cytosol]|
 - id: R_F4MTSPD
   name: R_coenzyme_F420_dependent_N_5__N_10__methenyltetrahydrosarcinapterin_dehydrogenase
+  genes: MA4430
   equation: '|M_f420_2h2_c[Cytosol]| + |M_menylh4spt_c[Cytosol]| <=> |M_f420_2_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_mleneh4spt_c[Cytosol]|'
 - id: R_F4MTSPR
   name: R_coenzyme_F420_dependent_N_5__N_10__methenyltetrahydrosarcinapterin_reductase
+  genes: MA3733
   equation: '|M_f420_2h2_c[Cytosol]| + |M_mleneh4spt_c[Cytosol]| <=> |M_f420_2_c[Cytosol]|
     + |M_mh4spt_c[Cytosol]|'
 - id: R_F4NH
   name: R_F420_noneducing_Hydrogenase
+  genes: MA1142 or (MA1147 and MA1143) or (MA1148 and MA1141) or MA1146
   equation: (1.800000) |M_h_c[Cytosol]| + |M_h2_e[Extra_organism]| + |M_mphen_c[Cytosol]|
     => (1.800000) |M_h_e[Extra_organism]| + |M_mphenh2_c[Cytosol]|
 - id: R_F4NPR
   name: R_F420_dependent_NADP_reductase
+  genes: MA4235
   equation: '|M_f420_2_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| <=>
     |M_f420_2h2_c[Cytosol]| + |M_nadp_c[Cytosol]|'
 - id: R_F4RHi
   name: R_F420_Reducing_Hydrogenase
+  genes: (MA0975 and MA0978) or MA3732 or (MA4520 and MA0976 and MA0977)
   equation: '|M_f420_2_c[Cytosol]| + |M_h2_c[Cytosol]| => |M_f420_2h2_c[Cytosol]|'
 - id: R_FBA
   name: R_fructose_bisphosphate_aldolase
+  genes: MA2666 or MA3889 or MA0439 or MA4591
   equation: '|M_fdp_c[Cytosol]| <=> |M_dhap_c[Cytosol]| + |M_g3p_c[Cytosol]|'
 - id: R_FBA2
   name: R_D_Fructose_1_phosphate_D_glyceraldehyde_3_phosphate_lyase
+  genes: MA2666 or MA3889 or MA0439 or MA4591
   equation: '|M_f1p_c[Cytosol]| <=> |M_dhap_c[Cytosol]| + |M_glyald_c[Cytosol]|'
 - id: R_FBP
   name: R_fructose_bisphosphatase
+  genes: MA1152
   equation: '|M_fdp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_f6p_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_FBPO
   name: R_fructose_bisphosphate_oxidase
@@ -880,30 +1068,48 @@
     + |M_nadh_c[Cytosol]|'
 - id: R_FCLPA
   name: R_L_fuculose_1_phosphate_aldolase
+  genes: MA0263
   equation: '|M_fc1p_c[Cytosol]| <=> |M_dhap_c[Cytosol]| + |M_lald_L_c[Cytosol]|'
 - id: R_FE2abc
   name: R_iron__II__transport_via_ABC_system
+  genes: MA3477 or MA4337
   equation: '|M_atp_c[Cytosol]| + |M_fe2_e[Extra_organism]| + |M_h2o_c[Cytosol]|
     => |M_adp_c[Cytosol]| + |M_fe2_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_FE3abc
   name: R_iron__III__transport_via_ABC_system
+  genes: MA0950 or MA1132 or MA1198 or MA1233 or MA2150 or MA2776 or MA3358 or MA3453
+    or MA3642 or MA3919 or MA4532 or MA4606 or MA1227 or MA1273 or MA2778 or MA3933
+    or (MA4606 and MA0951) or MA1131 or MA1199 or MA1234 or MA1847 or MA2149 or MA3359
+    or MA3452 or MA3641 or MA3921 or MA4533 or MA4605 or MA0951 or MA2774 or (MA4605
+    and MA1128) or MA1130 or MA2777 or MA1230 or MA1231 or MA1232 or MA1850 or MA2772
+    or MA1128
   equation: '|M_atp_c[Cytosol]| + |M_fe3_e[Extra_organism]| + |M_h2o_c[Cytosol]|
     => |M_adp_c[Cytosol]| + |M_fe3_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_FEDCabc
   name: R_iron__III__dicitrate_transport_via_ABC_system
+  genes: MA0952 or MA2156 or MA3357 or (MA3640 and MA2148) or MA2153 or (MA3640 and
+    MA0951) or MA1131 or MA1199 or MA1234 or MA1847 or MA2149 or MA3359 or MA3452
+    or MA3641 or MA3921 or MA4605 or MA0951 or (MA4605 and MA0950) or MA1198 or MA1233
+    or MA2150 or MA2776 or MA3358 or MA3453 or MA3642 or MA3919 or MA4532 or MA4606
+    or MA0950 or MA1132
   equation: '|M_atp_c[Cytosol]| + (2) |M_cit_e[Extra_organism]| + |M_fe3_e[Extra_organism]|
     + |M_h2o_c[Cytosol]| => |M_adp_c[Cytosol]| + (2) |M_cit_c[Cytosol]| + |M_fe3_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_FMETTRS
   name: R_Methionyl_tRNA_formyltransferase
+  genes: MA4583 or MA4584
   equation: '|M_10fthf_c[Cytosol]| + |M_mettrna_c[Cytosol]| => |M_fmettrna_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_thf_c[Cytosol]|'
 - id: R_FMFD_b_
   name: R_formylmethanofuran_dehydrogenase__b_
+  genes: MA0306 or MA0833 or (MA4175 and MA0307) or MA0832 or (MA4176 and MA0308)
+    or (MA4177 and MA0304 and MA0305) or (MA4174 and MA0309) or MA0834 or MA1241
+    or MA2878 or (MA4178 and MA2879 and MA0381) or (MA4602 and MA2877)
   equation: '|M_co2_c[Cytosol]| + (2) |M_fdred_c[Cytosol]| + |M_h_c[Cytosol]| + |M_mfr_b__c[Cytosol]|
     <=> (2) |M_fdox_c[Cytosol]| + |M_formmfr_b__c[Cytosol]| + |M_h2o_c[Cytosol]|'
 - id: R_FMFTSPFT_b_
   name: R_formylmethanofuran_H4SPT_N_formyltransferase__b_
+  genes: MA0010
   equation: '|M_formmfr_b__c[Cytosol]| + |M_h_c[Cytosol]| + |M_h4spt_c[Cytosol]|
     <=> |M_formh4spt_c[Cytosol]| + |M_mfr_b__c[Cytosol]|'
 - id: R_FOLR2
@@ -915,28 +1121,35 @@
     + |M_h_c[Cytosol]|'
 - id: R_FRTT
   name: R_farnesyltranstransferase
+  genes: MA0606 or MA4150 or MA1831 or MA3723 or MA4402
   equation: '|M_frdp_c[Cytosol]| + |M_ipdp_c[Cytosol]| => |M_ggdp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_FRTT2
   name: R_farnesyltranstransferase__3_hyroxy_
+  genes: MA0606 or MA4150 or MA1831 or MA3723 or MA4402
   equation: '|M_3hfrdp_c[Cytosol]| + |M_ipdp_c[Cytosol]| => |M_3hggdp_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
 - id: R_FUM
   name: R_fumarase
+  genes: MA1001 or (MA2497 and MA2498)
   equation: '|M_fum_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_mal_L_c[Cytosol]|'
 - id: R_G1PACT
   name: R_glucosamine_1_phosphate_N_acetyltransferase
+  genes: MA3022 or MA3025 or MA3140
   equation: '|M_accoa_c[Cytosol]| + |M_gam1p_c[Cytosol]| => |M_acgam1p_c[Cytosol]|
     + |M_coa_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_G1PDH
   name: R_glycerol_1_phosphate_dehydrogenase__NAD_
+  genes: MA3686
   equation: '|M_dhap_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| <=> |M_glyc1p_c[Cytosol]|
     + |M_nad_c[Cytosol]|'
 - id: R_G1PTT
   name: R_glucose_1_phosphate_thymidylyltransferase
+  genes: MA2183 or MA3777
   equation: '|M_dttp_c[Cytosol]| + |M_g1p_c[Cytosol]| + |M_h_c[Cytosol]| => |M_dtdpglu_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
 - id: R_G1SATi
   name: R_glutamate_1_semialdehyde_aminotransferase
+  genes: MA0119 or MA0581
   equation: '|M_glu1sa_c[Cytosol]| => |M_5aop_c[Cytosol]|'
 - id: R_G5SADr
   name: R_L_glutamate_5_semialdehyde_dehydratase__reversible
@@ -944,30 +1157,37 @@
     |M_h2o_c[Cytosol]|'
 - id: R_G5SD2
   name: R_glutamate_5_semialdehyde_dehydrogenase
+  genes: MA4100
   equation: '|M_glu5p_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| => |M_glu5sa_c[Cytosol]|
     + |M_nad_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_G6PDH3
   name: R_glucose_6_phosphate_dehydrogenase__F420_Dependent_
+  genes: MA3733
   equation: '|M_f420_2_c[Cytosol]| + |M_g6p_c[Cytosol]| => |M_6pgl_c[Cytosol]| +
     |M_f420_2h2_c[Cytosol]|'
 - id: R_GALT
   name: R_galactose_1_phosphate_uridylyltransferase
+  genes: MA3680
   equation: '|M_gal1p_c[Cytosol]| + |M_h_c[Cytosol]| + |M_utp_c[Cytosol]| <=> |M_ppi_c[Cytosol]|
     + |M_udpgal_c[Cytosol]|'
 - id: R_GALUi
   name: R_UTP_glucose_1_phosphate_uridylyltransferase__irreversible_
+  genes: MA4459
   equation: '|M_g1p_c[Cytosol]| + |M_h_c[Cytosol]| + |M_utp_c[Cytosol]| => |M_ppi_c[Cytosol]|
     + |M_udpg_c[Cytosol]|'
 - id: R_GAPD
   name: R_glyceraldehyde_3_phosphate_dehydrogenase
+  genes: MA1018 or MA3345
   equation: '|M_g3p_c[Cytosol]| + |M_nad_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_13dpg_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|'
 - id: R_GAPD_nadp_
   name: R_glyceraldehyde_3_phosphate_dehydrogenase__NAD_P_____phosphorylating_
+  genes: MA1018 or MA3345
   equation: '|M_g3p_c[Cytosol]| + |M_nadp_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_13dpg_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]|'
 - id: R_GARFT
   name: R_phosphoribosylglycinamide_formyltransferase
+  genes: MA0316 or MA3522
   equation: '|M_10fthf_c[Cytosol]| + |M_gar_c[Cytosol]| <=> |M_fgam_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_thf_c[Cytosol]|'
 - id: R_GCALDt
@@ -975,42 +1195,52 @@
   equation: '|M_gcald_e[Extra_organism]| <=> |M_gcald_c[Cytosol]|'
 - id: R_GF4GL_0
   name: R_gamma_F420_0_gamma_L_glutamate_ligase
+  genes: MA0135 or MA3512
   equation: '|M_f420_0_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_gtp_c[Cytosol]| =>
     |M_f420_1_c[Cytosol]| + |M_gdp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_GF4GL_1
   name: R_gamma_F420_1_gamma_L_glutamate_ligase
+  genes: MA0135 or MA3512
   equation: '|M_f420_1_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_gtp_c[Cytosol]| =>
     |M_f420_2_c[Cytosol]| + |M_gdp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_GF4GL_2
   name: R_gamma_F420_2_gamma_L_glutamate_ligase
+  genes: MA0135 or MA3512
   equation: '|M_f420_2_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_gtp_c[Cytosol]| =>
     |M_f420_3_c[Cytosol]| + |M_gdp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_GF4GL_3
   name: R_gamma_F420_3_gamma_L_glutamate_ligase
+  genes: MA0135 or MA3512
   equation: '|M_f420_3_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_gtp_c[Cytosol]| =>
     |M_f420_4_c[Cytosol]| + |M_gdp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_GF4GL_4
   name: R_gamma_F420_4_gamma_L_glutamate_ligase
+  genes: MA0135 or MA3512
   equation: '|M_f420_4_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_gtp_c[Cytosol]| =>
     |M_f420_5_c[Cytosol]| + |M_gdp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_GF4GL_5
   name: R_gamma_F420_5_gamma_L_glutamate_ligase
+  genes: MA0135 or MA3512
   equation: '|M_f420_5_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_gtp_c[Cytosol]| =>
     |M_f420_6_c[Cytosol]| + |M_gdp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_GF4GL_6
   name: R_gamma_F420_6_gamma_L_glutamate_ligase
+  genes: MA0135 or MA3512
   equation: '|M_f420_6_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_gtp_c[Cytosol]| =>
     |M_f420_7_c[Cytosol]| + |M_gdp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_GF6PTA
   name: R_glutamine_fructose_6_phosphate_transaminase
+  genes: MA3023
   equation: '|M_f6p_c[Cytosol]| + |M_gln_L_c[Cytosol]| => |M_gam6p_c[Cytosol]| +
     |M_glu_L_c[Cytosol]|'
 - id: R_GGGPS
   name: R_geranylgeranylglyceryl_phosphate_synthase
+  genes: MA3969
   equation: '|M_ggdp_c[Cytosol]| + |M_glyc1p_c[Cytosol]| => |M_gggp_c[Cytosol]| +
     |M_ppi_c[Cytosol]|'
 - id: R_GHMT2
   name: R_glycine_hydroxymethyltransferase
+  genes: MA3520
   equation: '|M_ser_L_c[Cytosol]| + |M_thf_c[Cytosol]| => |M_gly_c[Cytosol]| + |M_h2o_c[Cytosol]|
     + |M_mlthf_c[Cytosol]|'
 - id: R_GK1
@@ -1018,63 +1248,79 @@
   equation: '|M_atp_c[Cytosol]| + |M_gmp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_gdp_c[Cytosol]|'
 - id: R_GK_adp_
   name: R_ADP_specific_glucokinase
+  genes: MA3562 or MA3563
   equation: '|M_adp_c[Cytosol]| + |M_glc_D_c[Cytosol]| => |M_amp_c[Cytosol]| + |M_g6p_c[Cytosol]|
     + |M_h_c[Cytosol]|'
 - id: R_GLCGSD
   name: R_glucan_1_4_alpha_glucosidase
+  genes: MA1190 or MA4050 or MA2000
   equation: '|M_glycogen_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_glc_D_c[Cytosol]|'
 - id: R_GLCNt2r
   name: R_D_gluconate_transport_via_proton_symport__reversible
+  genes: MA0021
   equation: '|M_glcn_e[Extra_organism]| + |M_h_e[Extra_organism]| <=> |M_glcn_c[Cytosol]|
     + |M_h_c[Cytosol]|'
 - id: R_GLCP
   name: R_glycogen_phosphorylase
+  genes: MA0905 or MA2628 or MA1874
   equation: '|M_glycogen_c[Cytosol]| + |M_pi_c[Cytosol]| => |M_g1p_c[Cytosol]|'
 - id: R_GLCS2
   name: R_glycogen_synthase__UDPGlc_
+  genes: MA3679
   equation: '|M_udpg_c[Cytosol]| => |M_glycogen_c[Cytosol]| + |M_h_c[Cytosol]| +
     |M_udp_c[Cytosol]|'
 - id: R_GLNS
   name: R_glutamine_synthetase
+  genes: MA3382 or MA4216
   equation: '|M_atp_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_nh4_c[Cytosol]| => |M_adp_c[Cytosol]|
     + |M_gln_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_GLNTRAT
   name: R_glutamyl_tRNA_Gln__amidotransferase
+  genes: (MA4523 and MA4524) or (MA2862 and MA4522)
   equation: '|M_atp_c[Cytosol]| + |M_gln_L_c[Cytosol]| + |M_glutrna_gln__c[Cytosol]|
     + |M_h2o_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_glntrna_c[Cytosol]| + |M_glu_L_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_GLU5K
   name: R_glutamate_5_kinase
+  genes: MA4101
   equation: '|M_atp_c[Cytosol]| + |M_glu_L_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_glu5p_c[Cytosol]|'
 - id: R_GLUDC
   name: R_Glutamate_Decarboxylase
+  genes: MA0006 or MA1949 or MA3012 or MA3496
   equation: '|M_glu_L_c[Cytosol]| + |M_h_c[Cytosol]| => |M_4abut_c[Cytosol]| + |M_co2_c[Cytosol]|'
 - id: R_GLUDxi
   name: R_glutamate_dehydrogenase__NAD_
+  genes: MA3169
   equation: '|M_glu_L_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_akg_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| + |M_nh4_c[Cytosol]|'
 - id: R_GLUDyi
   name: R_glutamate_dehydrogenase__NADP_
+  genes: MA3169
   equation: '|M_akg_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| + |M_nh4_c[Cytosol]|
     => |M_glu_L_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_nadp_c[Cytosol]|'
 - id: R_GLUPRT
   name: R_glutamine_phosphoribosyldiphosphate_amidotransferase
+  genes: MA3193
   equation: '|M_gln_L_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_prpp_c[Cytosol]| => |M_glu_L_c[Cytosol]|
     + |M_ppi_c[Cytosol]| + |M_pram_c[Cytosol]|'
 - id: R_GLUS_F420_
   name: R_glutamate_synthase__F420_
+  genes: (MA3787 and MA4217) or MA4218 or MA4219
   equation: '|M_akg_c[Cytosol]| + |M_f420_2h2_c[Cytosol]| + |M_gln_L_c[Cytosol]|
     => |M_f420_2_c[Cytosol]| + (2) |M_glu_L_c[Cytosol]|'
 - id: R_GLUTRR
   name: R_glutamyl_tRNA_reductase
+  genes: MA0577
   equation: '|M_glutrna_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| =>
     |M_glu1sa_c[Cytosol]| + |M_nadp_c[Cytosol]| + |M_trnaglu_c[Cytosol]|'
 - id: R_GLUTRS
   name: R_Glutamyl_tRNA_synthetase
+  genes: MA0587
   equation: '|M_atp_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_trnaglu_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_glutrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_GLUTRS_Gln_
   name: R_Glutamyl_tRNA_synthetase__Gln_
+  genes: MA0587
   equation: '|M_atp_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_trnagln_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_glutrna_gln__c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_GLUt2r
@@ -1083,49 +1329,63 @@
     + |M_h_c[Cytosol]|'
 - id: R_GLYBabc
   name: R_Glycine_betaine_transport_via_ABC_system
+  genes: MA0063 or MA0282 or MA0323 or MA1120 or MA1235 or MA1747 or MA2110 or MA2145
+    or MA2275 or MA2282 or MA2478 or MA3171 or MA3582 or MA3903 or MA3957 or MA3960
+    or MA4253 or (MA4321 and MA2146 and MA2147)
   equation: '|M_atp_c[Cytosol]| + |M_glyb_e[Extra_organism]| + |M_h2o_c[Cytosol]|
     => |M_adp_c[Cytosol]| + |M_glyb_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_GLYTRS
   name: R_Glycyl_tRNA_synthetase
+  genes: MA0097
   equation: '|M_atp_c[Cytosol]| + |M_gly_c[Cytosol]| + |M_trnagly_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_glytrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_GLYt4r
   name: R_glycine_reversible_transport_via_sodium_symport
+  genes: MA2837
   equation: '|M_gly_e[Extra_organism]| + |M_na1_e[Extra_organism]| <=> |M_gly_c[Cytosol]|
     + |M_na1_c[Cytosol]|'
 - id: R_GMAND
   name: R_GDP_D_mannose_dehydratase
+  genes: MA1173 or MA1174
   equation: '|M_gdpmann_c[Cytosol]| => |M_gdpddman_c[Cytosol]| + |M_h2o_c[Cytosol]|'
 - id: R_GMPS
   name: R_GMP_synthase
+  genes: MA4511 or MA4590 or MA1151 or MA2696 or MA2966
   equation: '|M_atp_c[Cytosol]| + |M_nh4_c[Cytosol]| + |M_xmp_c[Cytosol]| => |M_amp_c[Cytosol]|
     + |M_gmp_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_GMPS2
   name: R_GMP_synthase
+  genes: MA4511 or MA4590 or MA1151 or MA2696 or MA2966
   equation: '|M_atp_c[Cytosol]| + |M_gln_L_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_xmp_c[Cytosol]|
     => |M_amp_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_gmp_c[Cytosol]| + (2) |M_h_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
 - id: R_GRTT
   name: R_geranyltranstransferase
+  genes: MA1831 or MA0606 or MA4402 or MA3723
   equation: '|M_grdp_c[Cytosol]| + |M_ipdp_c[Cytosol]| => |M_frdp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_GRTT2
   name: R_geranyltranstransferase__3_hydroxy_
+  genes: MA0606 or MA1831 or MA3723 or MA4402
   equation: '|M_3hgrdp_c[Cytosol]| + |M_ipdp_c[Cytosol]| => |M_3hfrdp_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
 - id: R_GTHOr
   name: R_glutathione_oxidoreductase
+  genes: MA1019 or MA1652 or MA4013
   equation: '|M_gthox_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| <=> (2)
     |M_gthrd_c[Cytosol]| + |M_nadp_c[Cytosol]|'
 - id: R_GTPCIII
   name: R_GTP_cyclohydrolase_III
+  genes: MA1362 or MA1364 or MA1613 or MA1943 or MA2826 or MA3704 or MA4306
   equation: '|M_gtp_c[Cytosol]| + (2) |M_h2o_c[Cytosol]| => |M_for_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_ptp_c[Cytosol]|'
 - id: R_GUAD
   name: R_guanine_deaminase
+  genes: MA3407
   equation: '|M_gua_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_nh4_c[Cytosol]|
     + |M_xan_c[Cytosol]|'
 - id: R_GUAPRT
   name: R_guanine_phosphoribosyltransferase
+  genes: MA1687 or MA4581 or MA0717
   equation: '|M_gua_c[Cytosol]| + |M_prpp_c[Cytosol]| => |M_gmp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_H2MPTR
   name: R_dihydromethanoterin_reductase
@@ -1142,10 +1402,12 @@
   equation: '|M_h2_c[Cytosol]| <=> |M_h2_e[Extra_organism]|'
 - id: R_H4MPTGL_atp_
   name: R_tetrahydromethanopterin_glutamate_lyase__ATP_
+  genes: MA3268
   equation: '|M_atp_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_h4mpt_c[Cytosol]| =>
     |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h4spt_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_H4MPTGL_gtp_
   name: R_tetrahydromethanopterin_glutamate_lyase__GTP_
+  genes: MA3268
   equation: '|M_glu_L_c[Cytosol]| + |M_gtp_c[Cytosol]| + |M_h4mpt_c[Cytosol]| =>
     |M_gdp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h4spt_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_H4MPTS10
@@ -1182,69 +1444,87 @@
     + |M_f420_2_c[Cytosol]|'
 - id: R_HASD
   name: R_hydroxyarchaetidylserine_decarboxylase
+  genes: MA0115
   equation: '|M_3hdpgps_c[Cytosol]| + |M_h_c[Cytosol]| => |M_3hdpgpe_c[Cytosol]|
     + |M_co2_c[Cytosol]|'
 - id: R_HATGH
   name: R_hydroxyarchaetidylglycerol_hydrogenase
+  genes: MA0691 or MA0692 or MA1484 or MA3894
   equation: '|M_3hdggpg_c[Cytosol]| + (7) |M_h_c[Cytosol]| + (7) |M_nadph_c[Cytosol]|
     => |M_3hdpgpg_c[Cytosol]| + (7) |M_nadp_c[Cytosol]|'
 - id: R_HATIH
   name: R_hydroxyarchaetidylinositol_hydrogenase
+  genes: MA0691 or MA0692 or MA1484 or MA3894
   equation: '|M_3hdggpi_c[Cytosol]| + (7) |M_h_c[Cytosol]| + (7) |M_nadph_c[Cytosol]|
     => |M_3hdpgpi_c[Cytosol]| + (7) |M_nadp_c[Cytosol]|'
 - id: R_HATSH
   name: R_hydroxyarchaetidylserine_hydrogenase
+  genes: MA0691 or MA0692 or MA1484 or MA3894
   equation: '|M_3hdgggps_c[Cytosol]| + (7) |M_h_c[Cytosol]| + (7) |M_nadph_c[Cytosol]|
     => |M_3hdpgps_c[Cytosol]| + (7) |M_nadp_c[Cytosol]|'
 - id: R_HCITS
   name: R_homocitrate_synthase
+  genes: MA1226 or MA1225 or MA3342 or MA3793 or MA4615
   equation: '|M_accoa_c[Cytosol]| + |M_akg_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_coa_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_hcit_c[Cytosol]|'
 - id: R_HCO3E
   name: R_HCO3_equilibration_reaction
+  genes: MA2536
   equation: '|M_co2_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_h_c[Cytosol]| + |M_hco3_c[Cytosol]|'
 - id: R_HDR
   name: R_Heterodisulphide_reductase
+  genes: MA2868 or (MA3128 and MA3126) or (MA4237 and MA4236 and MA0526) or MA0688
+    or MA4410 or (MA4630 and MA0687)
   equation: (1.800000) |M_h_c[Cytosol]| + |M_hsfd_c[Cytosol]| + |M_mphenh2_c[Cytosol]|
     => |M_cob_c[Cytosol]| + |M_com_c[Cytosol]| + (1.800000) |M_h_e[Extra_organism]|
     + |M_mphen_c[Cytosol]|
 - id: R_HETZK
   name: R_hydroxyethylthiazole_kinase
+  genes: MA2723
   equation: '|M_4mhetz_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_4mpetz_c[Cytosol]|
     + |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_HEX7
   name: R_hexokinase__D_fructose_ATP_
+  genes: MA1840
   equation: '|M_atp_c[Cytosol]| + |M_fru_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_f6p_c[Cytosol]|
     + |M_h_c[Cytosol]|'
 - id: R_HISTD
   name: R_histidinol_dehydrogenase
+  genes: MA3201
   equation: '|M_h2o_c[Cytosol]| + |M_histd_c[Cytosol]| + (2) |M_nad_c[Cytosol]| =>
     (3) |M_h_c[Cytosol]| + |M_his_L_c[Cytosol]| + (2) |M_nadh_c[Cytosol]|'
 - id: R_HISTP
   name: R_histidinol_phosphatase
+  genes: MA0219
   equation: '|M_h2o_c[Cytosol]| + |M_hisp_c[Cytosol]| => |M_histd_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_HISTRS
   name: R_Histidyl_tRNA_synthetase
+  genes: MA0943
   equation: '|M_atp_c[Cytosol]| + |M_his_L_c[Cytosol]| + |M_trnahis_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_histrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_HKt
   name: R_H_/K__gastric/non_gastric_P_ATPase_and_ABC_ATPase
+  genes: MA3999
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_k_e[Extra_organism]| =>
     |M_adp_c[Cytosol]| + |M_h_e[Extra_organism]| + |M_k_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_HMBS
   name: R_hydroxymethylbilane_synthase
+  genes: MA0582
   equation: '|M_h2o_c[Cytosol]| + (4) |M_ppbng_c[Cytosol]| => |M_hmbil_c[Cytosol]|
     + (4) |M_nh4_c[Cytosol]|'
 - id: R_HMGCOARi
   name: R_Hydroxymethylglutaryl_CoA_reductase__ir_
+  genes: MA3073
   equation: (2) |M_h_c[Cytosol]| + |M_hmgcoa_c[Cytosol]| + (2) |M_nadph_c[Cytosol]|
     => |M_coa_c[Cytosol]| + |M_mev_R_c[Cytosol]| + (2) |M_nadp_c[Cytosol]|
 - id: R_HMGCOASi
   name: R_Hydroxymethylglutaryl_CoA_synthase__ir_
+  genes: MA4041
   equation: '|M_aacoa_c[Cytosol]| + |M_accoa_c[Cytosol]| + |M_h2o_c[Cytosol]| =>
     |M_coa_c[Cytosol]| + |M_h_c[Cytosol]| + |M_hmgcoa_c[Cytosol]|'
 - id: R_HMPK1
   name: R_hydroxymethylpyrimidine_kinase__ATP_
+  genes: MA3197
   equation: '|M_4ahmmp_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_4ampm_c[Cytosol]| +
     |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_HPACt2r
@@ -1257,10 +1537,12 @@
     + |M_amp_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_HSDy
   name: R_homoserine_dehydrogenase__NADPH_
+  genes: MA2572
   equation: '|M_hom_L_c[Cytosol]| + |M_nadp_c[Cytosol]| <=> |M_aspsa_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]|'
 - id: R_HSERTA
   name: R_homoserine_O_trans_acetylase
+  genes: MA2714
   equation: '|M_accoa_c[Cytosol]| + |M_hom_L_c[Cytosol]| <=> |M_achms_c[Cytosol]|
     + |M_coa_c[Cytosol]|'
 - id: R_HSK
@@ -1269,46 +1551,58 @@
     + |M_phom_c[Cytosol]|'
 - id: R_HSPMS
   name: R_homospermidine_synthase
+  genes: MA1636
   equation: (2) |M_ptrc_c[Cytosol]| => |M_hspmd_c[Cytosol]| + |M_nh4_c[Cytosol]|
 - id: R_HSTPT
   name: R_histidinol_phosphate_transaminase
+  genes: MA0118 or MA0942
   equation: '|M_glu_L_c[Cytosol]| + |M_imacp_c[Cytosol]| => |M_akg_c[Cytosol]| +
     |M_hisp_c[Cytosol]|'
 - id: R_HXPRT
   name: R_hypoxanthine_phosphoribosyltransferase__Hypoxanthine_
+  genes: MA1687 or MA4581
   equation: '|M_hxan_c[Cytosol]| + |M_prpp_c[Cytosol]| => |M_imp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_ICDHyr
   name: R_isocitrate_dehydrogenase__NADP_
+  genes: MA0201 or MA3748 or MA4265
   equation: '|M_icit_c[Cytosol]| + |M_nadp_c[Cytosol]| <=> |M_akg_c[Cytosol]| + |M_co2_c[Cytosol]|
     + |M_nadph_c[Cytosol]|'
 - id: R_IG3PS
   name: R_Imidazole_glycerol_3_phosphate_synthase
+  genes: MA0541 and MA0913
   equation: '|M_gln_L_c[Cytosol]| + |M_prlp_c[Cytosol]| => |M_aicar_c[Cytosol]| +
     |M_eig3p_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_IGPDH
   name: R_imidazoleglycerol_phosphate_dehydratase
+  genes: MA0219
   equation: '|M_eig3p_c[Cytosol]| => |M_h2o_c[Cytosol]| + |M_imacp_c[Cytosol]|'
 - id: R_IGPS
   name: R_indole_3_glycerol_phosphate_synthase
+  genes: MA2992
   equation: '|M_2cpr5p_c[Cytosol]| + |M_h_c[Cytosol]| => |M_3ig3p_c[Cytosol]| + |M_co2_c[Cytosol]|
     + |M_h2o_c[Cytosol]|'
 - id: R_ILETA
   name: R_isoleucine_transaminase
+  genes: MA4349
   equation: '|M_akg_c[Cytosol]| + |M_ile_L_c[Cytosol]| <=> |M_3mop_c[Cytosol]| +
     |M_glu_L_c[Cytosol]|'
 - id: R_ILETRS
   name: R_Isoleucyl_tRNA_synthetase
+  genes: MA2431 or MA3052 or MA3621
   equation: '|M_atp_c[Cytosol]| + |M_ile_L_c[Cytosol]| + |M_trnaile_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_iletrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_ILEt2r
   name: R_L_isoleucine_reversible_transport_via_proton_symport
+  genes: MA3437 and MA3438
   equation: '|M_h_e[Extra_organism]| + |M_ile_L_e[Extra_organism]| <=> |M_h_c[Cytosol]|
     + |M_ile_L_c[Cytosol]|'
 - id: R_IMPC
   name: R_IMP_cyclohydrolase
+  genes: MA4012
   equation: '|M_h2o_c[Cytosol]| + |M_imp_c[Cytosol]| <=> |M_fprica_c[Cytosol]|'
 - id: R_IMPD
   name: R_IMP_dehydrogenase
+  genes: MA4647 or MA1815
   equation: '|M_h2o_c[Cytosol]| + |M_imp_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_h_c[Cytosol]|
     + |M_nadh_c[Cytosol]| + |M_xmp_c[Cytosol]|'
 - id: R_IND3ACt2r
@@ -1317,30 +1611,38 @@
     + |M_ind3ac_e[Extra_organism]|'
 - id: R_INS2D
   name: R_inositol_2_dehydrogenase
+  genes: MA4448
   equation: '|M_inost_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_2ins_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_nadh_c[Cytosol]|'
 - id: R_IOR
   name: R_indolepyruvate_ferredoxin_oxidoreductase
+  genes: MA1022 or MA1727 or (MA1982 and MA1023) or MA1726
   equation: '|M_coa_c[Cytosol]| + (2) |M_fdox_c[Cytosol]| + |M_indpyr_c[Cytosol]|
     <=> |M_co2_c[Cytosol]| + (2) |M_fdred_c[Cytosol]| + |M_h_c[Cytosol]| + |M_indaccoa_c[Cytosol]|'
 - id: R_IOR2
   name: R_indolepyruvate_ferredoxin_oxidoreductase__phenylpyvurate_
+  genes: (MA2909 and MA2910 and MA2911) or MA1022 or (MA1727 and MA1726) or (MA1982
+    and MA1023) or MA1726
   equation: '|M_coa_c[Cytosol]| + (2) |M_fdox_c[Cytosol]| + |M_phpyr_c[Cytosol]|
     <=> |M_co2_c[Cytosol]| + (2) |M_fdred_c[Cytosol]| + |M_h_c[Cytosol]| + |M_phaccoa_c[Cytosol]|'
 - id: R_IOR3
   name: R_indolepyruvate_ferredoxin_oxidoreductase__hydroxyphenylpyvurate_
+  genes: MA1022 or MA1727 or (MA1982 and MA1023) or MA1726
   equation: '|M_34hpp_c[Cytosol]| + |M_coa_c[Cytosol]| + (2) |M_fdox_c[Cytosol]|
     <=> |M_co2_c[Cytosol]| + (2) |M_fdred_c[Cytosol]| + |M_h_c[Cytosol]| + |M_hphaccoa_c[Cytosol]|'
 - id: R_IPDDI3x
   name: R_isopentenyl_diphosphate_isomerase__type3_
+  genes: MA0604
   equation: '|M_f420_2_c[Cytosol]| + |M_h_c[Cytosol]| + |M_ipdp_c[Cytosol]| + |M_nadh_c[Cytosol]|
     => |M_dmpp_c[Cytosol]| + |M_f420_2h2_c[Cytosol]| + |M_nad_c[Cytosol]|'
 - id: R_IPDDI3y
   name: R_isopentenyl_diphosphate_isomerase__type3_
+  genes: MA0604
   equation: '|M_f420_2_c[Cytosol]| + |M_h_c[Cytosol]| + |M_ipdp_c[Cytosol]| + |M_nadph_c[Cytosol]|
     => |M_dmpp_c[Cytosol]| + |M_f420_2h2_c[Cytosol]| + |M_nadp_c[Cytosol]|'
 - id: R_IPMD
   name: R_3_isopropylmalate_dehydrogenase
+  genes: MA0201 or MA3748 or MA4265
   equation: '|M_3c2hmp_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_3c4mop_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|'
 - id: R_IPPMIa
@@ -1348,25 +1650,31 @@
   equation: '|M_3c2hmp_c[Cytosol]| <=> |M_2ippm_c[Cytosol]| + |M_h2o_c[Cytosol]|'
 - id: R_IPPMIb
   name: R_2_isopropylmalate_hydratase
+  genes: MA1393 or (MA3085 and MA0202) or MA1223 or MA3751
   equation: '|M_2ippm_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_3c3hmp_c[Cytosol]|'
 - id: R_IPPS
   name: R_2_isopropylmalate_synthase
+  genes: MA1225 or MA3342 or MA3793 or MA4264 or MA4615
   equation: '|M_3mob_c[Cytosol]| + |M_accoa_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_3c3hmp_c[Cytosol]|
     + |M_coa_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_KARA1
   name: R_ketol_acid_reductoisomerase__2_3_dihydroxy_3_methylbutanoate_
+  genes: MA3790
   equation: '|M_23dhmb_c[Cytosol]| + |M_nadp_c[Cytosol]| <=> |M_alac_S_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]|'
 - id: R_KARA2
   name: R_ketol_acid_reductoisomerase__2_Acetolactate_
+  genes: MA3790
   equation: '|M_2ahbut_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| <=>
     |M_23dhmp_c[Cytosol]| + |M_nadp_c[Cytosol]|'
 - id: R_Kt2
   name: R_potassium_transport_in_via_proton_symport
+  genes: MA3179
   equation: '|M_h_e[Extra_organism]| + |M_k_e[Extra_organism]| => |M_h_c[Cytosol]|
     + |M_k_c[Cytosol]|'
 - id: R_Kt2r
   name: R_potassium_reversible_transport__via_proton_symport
+  genes: MA3108 or MA3981 or MA1481 or MA1483 or MA2209
   equation: '|M_h_e[Extra_organism]| + |M_k_e[Extra_organism]| <=> |M_h_c[Cytosol]|
     + |M_k_c[Cytosol]|'
 - id: R_LDH_L
@@ -1375,62 +1683,77 @@
     + |M_pyr_c[Cytosol]|'
 - id: R_LEUTA
   name: R_leucine_transaminase
+  genes: MA4349
   equation: '|M_akg_c[Cytosol]| + |M_leu_L_c[Cytosol]| <=> |M_4mop_c[Cytosol]| +
     |M_glu_L_c[Cytosol]|'
 - id: R_LEUTRS
   name: R_Leucyl_tRNA_synthetase
+  genes: MA1611
   equation: '|M_atp_c[Cytosol]| + |M_leu_L_c[Cytosol]| + |M_trnaleu_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_leutrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_LEUt2r
   name: R_L_leucine_reversible_transport_via_proton_symport
+  genes: MA3437 and MA3438
   equation: '|M_h_e[Extra_organism]| + |M_leu_L_e[Extra_organism]| <=> |M_h_c[Cytosol]|
     + |M_leu_L_c[Cytosol]|'
 - id: R_LPFPLT
   name: R_LPPG_Fo_2_phospho_L_lactate_transferase
+  genes: MA0714
   equation: '|M_ddhrb_c[Cytosol]| + |M_lppg_c[Cytosol]| => |M_f420_0_c[Cytosol]|
     + |M_gmp_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_LPPGS
   name: R_LPPG_synthetase
+  genes: MA0938
   equation: '|M_2plac_L_c[Cytosol]| + |M_gtp_c[Cytosol]| + |M_h_c[Cytosol]| => |M_lppg_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
 - id: R_LYSAM
   name: R_lysine_2_3_aminomutase
+  genes: MA3979
   equation: '|M_lys_L_c[Cytosol]| <=> |M_36dahx_c[Cytosol]|'
 - id: R_LYSTRS
   name: R_Lysyl_tRNA_synthetase
+  genes: MA0760 or MA1684 or MA0534
   equation: '|M_atp_c[Cytosol]| + |M_lys_L_c[Cytosol]| + |M_trnalys_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_lystrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_LYSt3r
   name: R_L_lysine_transport_out_via_proton_antiport_reversible
+  genes: MA2108 or MA1855
   equation: '|M_h_e[Extra_organism]| + |M_lys_L_c[Cytosol]| <=> |M_h_c[Cytosol]|
     + |M_lys_L_e[Extra_organism]|'
 - id: R_MAN1PT2r
   name: R_mannose_1_phosphate_guanylyltransferase__GDP__reversible
+  genes: MA3022 or MA3025 or MA3140 or MA3781
   equation: '|M_gdp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_man1p_c[Cytosol]| <=> |M_gdpmann_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
 - id: R_MAN6PI
   name: R_mannose_6_phosphate_isomerase
+  genes: MA2381
   equation: '|M_man6p_c[Cytosol]| <=> |M_f6p_c[Cytosol]|'
 - id: R_MCMMT
   name: R_Methanol__coenzyme_M_methyltransferase
   equation: '|M_com_c[Cytosol]| + |M_meoh_c[Cytosol]| => |M_h2o_c[Cytosol]| + |M_mcom_c[Cytosol]|'
 - id: R_MCR
   name: R_Methyl_coenzyme_M_reductase
+  genes: MA4546 and MA4550 and MA4547
   equation: '|M_cob_c[Cytosol]| + |M_mcom_c[Cytosol]| => |M_ch4_c[Cytosol]| + |M_hsfd_c[Cytosol]|'
 - id: R_MDH
   name: R_malate_dehydrogenase
+  genes: MA3665
   equation: '|M_mal_L_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|
     + |M_oaa_c[Cytosol]|'
 - id: R_MDHi2
   name: R_malate_dehydrogenase__other_direction_
+  genes: MA0819
   equation: '|M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| + |M_oaa_c[Cytosol]| => |M_mal_L_c[Cytosol]|
     + |M_nad_c[Cytosol]|'
 - id: R_MDHy
   name: R_malate_dehydrogenase__NADP__
+  genes: MA0819
   equation: '|M_mal_L_c[Cytosol]| + |M_nadp_c[Cytosol]| <=> |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]|
     + |M_oaa_c[Cytosol]|'
 - id: R_ME1_rev
   name: R_malic_enzyme
+  genes: MA1735
   equation: '|M_mal_L_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_co2_c[Cytosol]| + |M_nadh_c[Cytosol]|
     + |M_pyr_c[Cytosol]|'
 - id: R_MEOHt2
@@ -1438,47 +1761,59 @@
   equation: '|M_meoh_e[Extra_organism]| <=> |M_meoh_c[Cytosol]|'
 - id: R_METAT
   name: R_methionine_adenosyltransferase
+  genes: MA0216 or MA0962
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_met_L_c[Cytosol]| => |M_amet_c[Cytosol]|
     + |M_pi_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_METGL
   name: R_methionine_g_lyase
+  genes: MA2532 or MA2715
   equation: '|M_h2o_c[Cytosol]| + |M_met_L_c[Cytosol]| => |M_2obut_c[Cytosol]| +
     |M_ch4s_c[Cytosol]| + |M_nh4_c[Cytosol]|'
 - id: R_METS
   name: R_methionine_synthase
+  genes: MA0053 or MA0054 or MA3549
   equation: '|M_5mthf_c[Cytosol]| + |M_hcys_L_c[Cytosol]| => |M_h_c[Cytosol]| + |M_met_L_c[Cytosol]|
     + |M_thf_c[Cytosol]|'
 - id: R_METTRS
   name: R_Methionyl_tRNA_synthetase
+  genes: MA4046
   equation: '|M_atp_c[Cytosol]| + |M_met_L_c[Cytosol]| + |M_trnamet_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_mettrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_MEVK1
   name: R_mevalonate_kinase__atp_
+  genes: MA0602
   equation: '|M_atp_c[Cytosol]| + |M_mev_R_c[Cytosol]| => |M_5pmev_c[Cytosol]| +
     |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_MG2abc
   name: R_magnesium_transport_via_ABC_system
+  genes: MA1678 or MA2501 or MA2833 or MA4082 or MA4378
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_mg2_e[Extra_organism]|
     => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_mg2_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_MGt5
   name: R_magnesium_transport_in/out_via_permease__no_H__
+  genes: MA1721 or MA1436 or MA1437
   equation: '|M_mg2_c[Cytosol]| <=> |M_mg2_e[Extra_organism]|'
 - id: R_MI1PP
   name: R_myo_inositol_1_phosphatase
+  genes: MA3344
   equation: '|M_h2o_c[Cytosol]| + |M_mi1p_D_c[Cytosol]| => |M_inost_c[Cytosol]| +
     |M_pi_c[Cytosol]|'
 - id: R_MI1PS
   name: R_myo_Inositol_1_phosphate_synthase
+  genes: MA0075 or MA2253
   equation: '|M_g6p_c[Cytosol]| => |M_mi1p_D_c[Cytosol]|'
 - id: R_MMAMT
   name: R_Monomethylamine_methyltransferase
+  genes: MA0144 or (MA2972 and MA0145) or (MA2971 and MA0146)
   equation: '|M_com_c[Cytosol]| + |M_mma_c[Cytosol]| => |M_mcom_c[Cytosol]| + |M_nh4_c[Cytosol]|'
 - id: R_MMAt
   name: R_Monomethylamine_symport
+  genes: MA0143
   equation: '|M_h_e[Extra_organism]| + |M_mma_e[Extra_organism]| <=> |M_h_c[Cytosol]|
     + |M_mma_c[Cytosol]|'
 - id: R_MNabc
   name: R_manganese_transport_via_ABC_system
+  genes: MA0023 and MA0025 and MA0024
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_mn2_e[Extra_organism]|
     => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_mn2_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_MOHMT
@@ -1487,6 +1822,8 @@
     + |M_thf_c[Cytosol]|'
 - id: R_MPML
   name: R_Mg_protoporphyrin_IX_magnesium_lyase
+  genes: MA0877 or MA0346 or MA0348 or MA0383 or MA0384 or MA0385 or MA0386 or MA0872
+    or MA0882 or MA4295 or MA4424 or MA4643
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_mg2_c[Cytosol]| + |M_ppp9_c[Cytosol]|
     <=> |M_adp_c[Cytosol]| + (3) |M_h_c[Cytosol]| + |M_mppp9_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_MRP
@@ -1495,28 +1832,37 @@
     + |M_na1_e[Extra_organism]|'
 - id: R_MTAP
   name: R_5__methylthioadenosine_phosphorylase
+  genes: MA1409
   equation: '|M_5mta_c[Cytosol]| + |M_pi_c[Cytosol]| => |M_5mdr1p_c[Cytosol]| + |M_ade_c[Cytosol]|'
 - id: R_MTCMMT
   name: R_Methylthiol__coenzyme_M_methyltransferase
+  genes: MA0146 or MA0779 or MA1615 or MA2163 or MA3613 or MA4379 or (MA4559 and
+    MA0456) or MA1617 or (MA4391 and MA0859) or MA4384 or MA4558
   equation: '|M_com_c[Cytosol]| + |M_dms_c[Cytosol]| => |M_ch4s_c[Cytosol]| + |M_mcom_c[Cytosol]|'
 - id: R_MTHFC
   name: R_methenyltetrahydrofolate_cyclohydrolase
+  genes: MA3519
   equation: '|M_h2o_c[Cytosol]| + |M_methf_c[Cytosol]| <=> |M_10fthf_c[Cytosol]|
     + |M_h_c[Cytosol]|'
 - id: R_MTHFD2i
   name: R_methylenetetrahydrofolate_dehydrogenase__NAD_
+  genes: MA3519
   equation: '|M_mlthf_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_methf_c[Cytosol]| +
     |M_nadh_c[Cytosol]|'
 - id: R_MTHFR3
   name: R_5_10_methylenetetrahydrofolatereductase__NADPH_
+  genes: MA3514
   equation: (2) |M_h_c[Cytosol]| + |M_mlthf_c[Cytosol]| + |M_nadph_c[Cytosol]| =>
     |M_5mthf_c[Cytosol]| + |M_nadp_c[Cytosol]|
 - id: R_MTSPC
   name: R_Methenyl_H4SPt_cyclohydrolase
+  genes: MA1710
   equation: '|M_formh4spt_c[Cytosol]| + |M_h_c[Cytosol]| <=> |M_h2o_c[Cytosol]| +
     |M_menylh4spt_c[Cytosol]|'
 - id: R_MTSPCMMT
   name: R_Methyl_H4SPT__coenzyme_M_methyltransferase
+  genes: MA0272 or (MA1805 and MA0273 and MA0274 and MA0275 and MA0276 and MA0269)
+    or MA1804
   equation: '|M_com_c[Cytosol]| + |M_mh4spt_c[Cytosol]| + (1.700000) |M_na1_c[Cytosol]|
     <=> |M_h4spt_c[Cytosol]| + |M_mcom_c[Cytosol]| + (1.700000) |M_na1_e[Extra_organism]|'
 - id: R_N2tr
@@ -1527,58 +1873,74 @@
   equation: '|M_nac_e[Extra_organism]| => |M_nac_c[Cytosol]|'
 - id: R_NADK
   name: R_NAD_kinase
+  genes: MA3343
   equation: '|M_atp_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_nadp_c[Cytosol]|'
 - id: R_NADS1
   name: R_NAD_synthase__nh3_
+  genes: MA1030 or MA3715 or MA3526
   equation: '|M_atp_c[Cytosol]| + |M_dnad_c[Cytosol]| + |M_nh4_c[Cytosol]| => |M_amp_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_nad_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_NADS2
   name: R_NAD_synthase__glutamine_hydrolysing_
+  genes: MA1030 or MA3715 or MA3526
   equation: '|M_atp_c[Cytosol]| + |M_dnad_c[Cytosol]| + |M_gln_L_c[Cytosol]| + |M_h2o_c[Cytosol]|
     => |M_amp_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nad_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
 - id: R_NAPRTr
   name: R_NAPRTase__rev_
+  genes: MA2533
   equation: '|M_h_c[Cytosol]| + |M_nac_c[Cytosol]| + |M_prpp_c[Cytosol]| <=> |M_nicrnt_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
 - id: R_NAt3_1
   name: R_sodium_proton_antiporter__H_NA_is_1_1_
+  genes: MA3020 or MA2633 or MA4083
   equation: '|M_h_e[Extra_organism]| + |M_na1_c[Cytosol]| <=> |M_h_c[Cytosol]| +
     |M_na1_e[Extra_organism]|'
 - id: R_NBAHH
   name: R_Nalpha__beta_alanyl__L_histidine_hydrolase
+  genes: MA2653
   equation: '|M_carn_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_ala_B_c[Cytosol]| +
     |M_his_L_c[Cytosol]|'
 - id: R_NDPK1
   name: R_nucleoside_diphosphate_kinase__ATP_GDP_
+  genes: MA1524
   equation: '|M_atp_c[Cytosol]| + |M_gdp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_gtp_c[Cytosol]|'
 - id: R_NDPK2
   name: R_nucleoside_diphosphate_kinase__ATP_UDP_
+  genes: MA1524
   equation: '|M_atp_c[Cytosol]| + |M_udp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_utp_c[Cytosol]|'
 - id: R_NDPK3
   name: R_nucleoside_diphosphate_kinase__ATP_CDP_
+  genes: MA1524
   equation: '|M_atp_c[Cytosol]| + |M_cdp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_ctp_c[Cytosol]|'
 - id: R_NDPK4
   name: R_nucleoside_diphosphate_kinase__ATP_dTDP_
+  genes: MA1524
   equation: '|M_atp_c[Cytosol]| + |M_dtdp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dttp_c[Cytosol]|'
 - id: R_NDPK5
   name: R_nucleoside_diphosphate_kinase__ATP_dGDP_
+  genes: MA1524
   equation: '|M_atp_c[Cytosol]| + |M_dgdp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dgtp_c[Cytosol]|'
 - id: R_NDPK6
   name: R_nucleoside_diphosphate_kinase__ATP_dUDP_
+  genes: MA1524
   equation: '|M_atp_c[Cytosol]| + |M_dudp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dutp_c[Cytosol]|'
 - id: R_NDPK7
   name: R_nucleoside_diphosphate_kinase__ATP_dCDP_
+  genes: MA1524
   equation: '|M_atp_c[Cytosol]| + |M_dcdp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dctp_c[Cytosol]|'
 - id: R_NDPK8
   name: R_nucleoside_diphosphate_kinase__ATP_dADP_
+  genes: MA1524
   equation: '|M_atp_c[Cytosol]| + |M_dadp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_datp_c[Cytosol]|'
 - id: R_NDPK9
   name: R_nucleoside_diphosphate_kinase__ATP_IDP_
+  genes: MA1524
   equation: '|M_atp_c[Cytosol]| + |M_idp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_itp_c[Cytosol]|'
 - id: R_NH4t
   name: R_ammonia_reversible_transport
+  genes: MA3917 or MA3918 or MA4207
   equation: '|M_nh4_e[Extra_organism]| <=> |M_nh4_c[Cytosol]|'
 - id: R_NIT_n1p4
   name: R_nitrogenase
@@ -1587,78 +1949,103 @@
     |M_h_c[Cytosol]| + |M_h2_c[Cytosol]| + (2) |M_nh4_c[Cytosol]| + (32) |M_pi_c[Cytosol]|
 - id: R_NIabc
   name: R_nickel_transport_via_ABC_system
+  genes: MA0302 or MA0883 or MA1249 or MA1250 or MA3048 or MA3455 or MA3461 or MA3905
+    or (MA4247 and MA0301) or MA0881 or MA1247 or MA3049 or MA3462 or MA3906 or (MA4250
+    and MA0300) or MA0880 or MA1246 or MA3050 or MA3458 or MA3463 or MA3907 or (MA4251
+    and MA0299) or MA0698 or MA0844 or MA0878 or MA0879 or MA1245 or MA2478 or MA2479
+    or MA3046 or MA3047 or MA3457 or MA3464 or MA3908 or MA3909 or MA4252 or MA4253
+    or MA4597 or (MA4598 and MA0298) or MA0299 or MA0697 or MA1244 or MA2474 or MA3456
+    or MA4598
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_ni2_e[Extra_organism]|
     => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_ni2_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_NIt5
   name: R_nickel_transport_in/out_via_permease__no_H__
+  genes: MA1721
   equation: '|M_ni2_c[Cytosol]| <=> |M_ni2_e[Extra_organism]|'
 - id: R_NMNAT
   name: R_nicotinamide_nucleotide_adenylyltransferase
+  genes: MA3731
   equation: '|M_atp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nmn_c[Cytosol]| => |M_nad_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
 - id: R_NN5HBPRT
   name: R_Nicotinate_nucleotide_5_hydroxybenzimidazole_phosphoribosyltransferase
+  genes: MA3887
   equation: '|M_5hbzid_c[Cytosol]| + |M_nicrnt_c[Cytosol]| => |M_5pr5hbz_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_nac_c[Cytosol]|'
 - id: R_NNAT
   name: R_nicotinate_nucleotide_adenylyltransferase
+  genes: MA3731
   equation: '|M_atp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nicrnt_c[Cytosol]| => |M_dnad_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
 - id: R_NNDPR
   name: R_nicotinate_nucleotide_diphosphorylase__carboxylating_
+  genes: MA0322
   equation: (2) |M_h_c[Cytosol]| + |M_prpp_c[Cytosol]| + |M_quln_c[Cytosol]| => |M_co2_c[Cytosol]|
     + |M_nicrnt_c[Cytosol]| + |M_ppi_c[Cytosol]|
 - id: R_NTP1
   name: R_nucleoside_triphosphatase__ATP_
+  genes: MA3706
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
 - id: R_NTP2
   name: R_nucleoside_triphosphatase__dATP_
+  genes: MA3706
   equation: '|M_datp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dadp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
 - id: R_NTP3
   name: R_nucleoside_triphosphatase__GTP_
+  genes: MA3706
   equation: '|M_gtp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_gdp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
 - id: R_NTP4
   name: R_nucleoside_triphosphatase__dGTP_
+  genes: MA3706
   equation: '|M_dgtp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dgdp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
 - id: R_NTP5
   name: R_nucleoside_triphosphatase__CTP_
+  genes: MA3706
   equation: '|M_ctp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_cdp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
 - id: R_NTP6
   name: R_nucleoside_triphosphatase__dCTP_
+  genes: MA3706
   equation: '|M_dctp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dcdp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
 - id: R_NTP7
   name: R_nucleoside_triphosphatase__UTP_
+  genes: MA3706
   equation: '|M_h2o_c[Cytosol]| + |M_utp_c[Cytosol]| => |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|
     + |M_udp_c[Cytosol]|'
 - id: R_NTP8
   name: R_nucleoside_triphosphatase__dUTP_
+  genes: MA3706
   equation: '|M_dutp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dudp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
 - id: R_NTP9
   name: R_nucleoside_triphosphatase__dTTP_
+  genes: MA3706
   equation: '|M_dttp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dtdp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
 - id: R_NTRIR2x
   name: R_nitrite_Reductase__NADH_
+  genes: MA0685 or MA3165 or MA3167
   equation: (5) |M_h_c[Cytosol]| + (3) |M_nadh_c[Cytosol]| + |M_no2_c[Cytosol]| =>
     (2) |M_h2o_c[Cytosol]| + (3) |M_nad_c[Cytosol]| + |M_nh4_c[Cytosol]|
 - id: R_NTRIR2y
   name: R_nitrite_Reductase__NADPH_
+  genes: MA0685 or MA3165 or MA3167
   equation: (5) |M_h_c[Cytosol]| + (3) |M_nadph_c[Cytosol]| + |M_no2_c[Cytosol]|
     => (2) |M_h2o_c[Cytosol]| + (3) |M_nadp_c[Cytosol]| + |M_nh4_c[Cytosol]|
 - id: R_NaKt
   name: R_Na_/K__exchanging_ATPase
+  genes: MA1678 or MA2501 or MA2833 or MA4082 or MA4378
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_k_e[Extra_organism]| +
     |M_na1_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_k_c[Cytosol]|
     + |M_na1_e[Extra_organism]| + |M_pi_c[Cytosol]|'
 - id: R_OCBT
   name: R_ornithine_carbamoyltransferase
+  genes: MA3310
   equation: '|M_cbp_c[Cytosol]| + |M_orn_c[Cytosol]| <=> |M_citr_L_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_OMCDC
@@ -1666,27 +2053,34 @@
   equation: '|M_3c4mop_c[Cytosol]| + |M_h_c[Cytosol]| => |M_4mop_c[Cytosol]| + |M_co2_c[Cytosol]|'
 - id: R_OMPDC
   name: R_orotidine_5__phosphate_decarboxylase
+  genes: MA0969
   equation: '|M_h_c[Cytosol]| + |M_orot5p_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_ump_c[Cytosol]|'
 - id: R_OORr
   name: R_2_oxoglutarate_synthase__reversible_
+  genes: MA3075 and MA3076
   equation: '|M_akg_c[Cytosol]| + |M_coa_c[Cytosol]| + (2) |M_fdox_c[Cytosol]| <=>
     |M_co2_c[Cytosol]| + (2) |M_fdred_c[Cytosol]| + |M_h_c[Cytosol]| + |M_succoa_c[Cytosol]|'
 - id: R_OPAH
   name: R_5_Oxoproline_amidohydrolase__ATP_hydrolysing_
+  genes: MA2300
   equation: '|M_5oxpro_c[Cytosol]| + |M_atp_c[Cytosol]| + (2) |M_h2o_c[Cytosol]|
     <=> |M_adp_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_ORNCD
   name: R_ornithine_cyclodeaminase
+  genes: MA3252
   equation: '|M_orn_c[Cytosol]| => |M_nh4_c[Cytosol]| + |M_pro_L_c[Cytosol]|'
 - id: R_ORNDC
   name: R_Ornithine_Decarboxylase
+  genes: MA2728
   equation: '|M_h_c[Cytosol]| + |M_orn_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_ptrc_c[Cytosol]|'
 - id: R_ORNTAC
   name: R_ornithine_transacetylase
+  genes: MA3564
   equation: '|M_acorn_c[Cytosol]| + |M_glu_L_c[Cytosol]| <=> |M_acglu_c[Cytosol]|
     + |M_orn_c[Cytosol]|'
 - id: R_ORPT
   name: R_orotate_phosphoribosyltransferase
+  genes: MA0919 or MA2520 or MA3307
   equation: '|M_orot5p_c[Cytosol]| + |M_ppi_c[Cytosol]| <=> |M_orot_c[Cytosol]| +
     |M_prpp_c[Cytosol]|'
 - id: R_OXADC
@@ -1694,18 +2088,22 @@
   equation: '|M_h_c[Cytosol]| + |M_oxa_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_for_c[Cytosol]|'
 - id: R_P5CRx
   name: R_pyrroline_5_carboxylate_reductase
+  genes: MA4102
   equation: '|M_1pyr5c_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| =>
     |M_nad_c[Cytosol]| + |M_pro_L_c[Cytosol]|'
 - id: R_PACCOAL
   name: R_phenylacetate_CoA_ligase
+  genes: MA1725 or MA2244 or MA3853
   equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_pac_c[Cytosol]| => |M_amp_c[Cytosol]|
     + |M_phaccoa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_PACCOAL2
   name: R_phenylacetate_CoA_ligase__hydroxyphenylacetate_
+  genes: MA1725 or MA2244 or MA3853
   equation: '|M_4hphac_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| => |M_amp_c[Cytosol]|
     + |M_hphaccoa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_PACCOAL3
   name: R_phenylacetate_CoA_ligase__indoleacetate_
+  genes: MA1725 or MA2244 or MA3853
   equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_ind3ac_c[Cytosol]| => |M_amp_c[Cytosol]|
     + |M_indaccoa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_PACt2r
@@ -1714,57 +2112,72 @@
     + |M_pac_c[Cytosol]|'
 - id: R_PANTS
   name: R_pantothenate_synthase
+  genes: MA1278
   equation: '|M_ala_B_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_pant_R_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pnto_R_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_PAPSR
   name: R_phosphoadenylyl_sulfate_reductase__thioredoxin_
+  genes: MA2894
   equation: '|M_paps_c[Cytosol]| + |M_trdrd_c[Cytosol]| => (2) |M_h_c[Cytosol]| +
     |M_pap_c[Cytosol]| + |M_so3_c[Cytosol]| + |M_trdox_c[Cytosol]|'
 - id: R_PC
   name: R_pyruvate_carboxylase
+  genes: MA0675 and MA0674
   equation: '|M_atp_c[Cytosol]| + |M_hco3_c[Cytosol]| + |M_pyr_c[Cytosol]| => |M_adp_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_oaa_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_PFK_adp_
   name: R_ADP_specific_phosphofructokinase
+  genes: MA3562 or MA3563
   equation: '|M_adp_c[Cytosol]| + |M_f6p_c[Cytosol]| => |M_amp_c[Cytosol]| + |M_fdp_c[Cytosol]|
     + |M_h_c[Cytosol]|'
 - id: R_PGAMT
   name: R_phosphoglucosamine_mutase
+  genes: MA0241 or MA2665 or MA3024
   equation: '|M_gam1p_c[Cytosol]| <=> |M_gam6p_c[Cytosol]|'
 - id: R_PGCD
   name: R_phosphoglycerate_dehydrogenase
+  genes: MA0592 or MA1334
   equation: '|M_3pg_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_3php_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_nadh_c[Cytosol]|'
 - id: R_PGI
   name: R_glucose_6_phosphate_isomerase
+  genes: MA0821
   equation: '|M_g6p_c[Cytosol]| <=> |M_f6p_c[Cytosol]|'
 - id: R_PGK
   name: R_phosphoglycerate_kinase
+  genes: MA2669 or MA3592
   equation: '|M_3pg_c[Cytosol]| + |M_atp_c[Cytosol]| <=> |M_13dpg_c[Cytosol]| + |M_adp_c[Cytosol]|'
 - id: R_PGLYCP
   name: R_Phosphoglycolate_phosphatase
+  genes: MA1363 or MA2967
   equation: '|M_2pglyc_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_glyclt_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
 - id: R_PGM
   name: R_phosphoglycerate_mutase
+  genes: MA2671 or MA4007 or MA3365
   equation: '|M_2pg_c[Cytosol]| <=> |M_3pg_c[Cytosol]|'
 - id: R_PGMT
   name: R_phosphoglucomutase
+  genes: MA0451 or MA3875
   equation: '|M_g1p_c[Cytosol]| <=> |M_g6p_c[Cytosol]|'
 - id: R_PHETA1
   name: R_phenylalanine_transaminase
+  genes: MA0636 or MA0925 or MA1385 or MA1712 or MA1819
   equation: '|M_akg_c[Cytosol]| + |M_phe_L_c[Cytosol]| <=> |M_glu_L_c[Cytosol]| +
     |M_phpyr_c[Cytosol]|'
 - id: R_PHETRS
   name: R_Phenylalanyl_tRNA_synthetase
+  genes: (MA0171 and MA1956) or (MA0090 and MA1956)
   equation: '|M_atp_c[Cytosol]| + |M_phe_L_c[Cytosol]| + |M_trnaphe_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_phetrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_PIabc
   name: R_phosphate_transport_via_ABC_system
+  genes: (MA0889 and MA0890 and MA0888) or (MA3094 and MA0887)
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_pi_e[Extra_organism]| =>
     |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + (2) |M_pi_c[Cytosol]|'
 - id: R_PMANM
   name: R_phosphomannomutase
+  genes: MA0241 or MA2665 or MA3024
   equation: '|M_man1p_c[Cytosol]| <=> |M_man6p_c[Cytosol]|'
 - id: R_PMDPHT
   name: R_pyrimidine_phosphatase
@@ -1776,10 +2189,12 @@
     |M_adp_c[Cytosol]|'
 - id: R_PMPK
   name: R_phosphomethylpyrimidine_kinase
+  genes: MA3197
   equation: '|M_4ampm_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_2mahmp_c[Cytosol]| +
     |M_adp_c[Cytosol]|'
 - id: R_PNTK
   name: R_pantothenate_kinase
+  genes: MA1279
   equation: '|M_atp_c[Cytosol]| + |M_pnto_R_c[Cytosol]| => |M_4ppan_c[Cytosol]| +
     |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_PNTOt2
@@ -1788,92 +2203,119 @@
     + |M_pnto_R_c[Cytosol]|'
 - id: R_POR2
   name: R_pyruvate_synthase
+  genes: (MA0032 and MA0031) or (MA2407 and MA0033 and MA0034)
   equation: '|M_coa_c[Cytosol]| + (2) |M_fdox_c[Cytosol]| + |M_pyr_c[Cytosol]| <=>
     |M_accoa_c[Cytosol]| + |M_co2_c[Cytosol]| + (2) |M_fdred_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_POR3
   name: R_pyruvate_synthase
+  genes: (MA0032 and MA0031) or (MA2407 and MA0033 and MA0034) or (MA2909 and MA2910
+    and MA2911)
   equation: '|M_2obut_c[Cytosol]| + |M_coa_c[Cytosol]| + (2) |M_fdox_c[Cytosol]|
     <=> |M_co2_c[Cytosol]| + (2) |M_fdred_c[Cytosol]| + |M_h_c[Cytosol]| + |M_ppcoa_c[Cytosol]|'
 - id: R_PPA
   name: R_inorganic_diphosphatase
+  genes: MA2676
   equation: '|M_h2o_c[Cytosol]| + |M_ppi_c[Cytosol]| => |M_h_c[Cytosol]| + (2) |M_pi_c[Cytosol]|'
 - id: R_PPAKr
   name: R_Propionate_kinase
+  genes: MA3606
   equation: '|M_adp_c[Cytosol]| + |M_ppap_c[Cytosol]| <=> |M_atp_c[Cytosol]| + |M_ppa_c[Cytosol]|'
 - id: R_PPA_1
   name: R_inorganic_diphosphatase__one_proton_translocation_
+  genes: MA3879 or MA3880
   equation: '|M_h2o_c[Cytosol]| + |M_ppi_c[Cytosol]| => |M_h_e[Extra_organism]| +
     (2) |M_pi_c[Cytosol]|'
 - id: R_PPBNGS
   name: R_porphobilinogen_synthase
+  genes: MA0578
   equation: (2) |M_5aop_c[Cytosol]| => |M_h_c[Cytosol]| + (2) |M_h2o_c[Cytosol]|
     + |M_ppbng_c[Cytosol]|
 - id: R_PPCDC
   name: R_phosphopantothenoylcysteine_decarboxylase
+  genes: MA1280
   equation: '|M_4ppcys_c[Cytosol]| + |M_h_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_pan4p_c[Cytosol]|'
 - id: R_PPDK
   name: R_Pyruvate_phosphate_dikinase.
+  genes: MA0608
   equation: '|M_atp_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_pyr_c[Cytosol]| => |M_amp_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_pep_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_PPK2
   name: R_polyphosphate_kinase
+  genes: MA0081
   equation: '|M_atp_c[Cytosol]| + |M_ppi_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_pppi_c[Cytosol]|'
 - id: R_PPNCL2
   name: R_phosphopantothenate_cysteine_ligase
+  genes: MA1280
   equation: '|M_4ppan_c[Cytosol]| + |M_ctp_c[Cytosol]| + |M_cys_L_c[Cytosol]| =>
     |M_4ppcys_c[Cytosol]| + |M_cmp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_ppi_c[Cytosol]|'
 - id: R_PPND
   name: R_prephenate_dehydrogenase
+  genes: MA4595
   equation: '|M_nad_c[Cytosol]| + |M_pphn_c[Cytosol]| => |M_34hpp_c[Cytosol]| + |M_co2_c[Cytosol]|
     + |M_nadh_c[Cytosol]|'
 - id: R_PPNDH
   name: R_prephenate_dehydratase
+  genes: MA3150
   equation: '|M_h_c[Cytosol]| + |M_pphn_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_h2o_c[Cytosol]|
     + |M_phpyr_c[Cytosol]|'
 - id: R_PPS
   name: R_phosphoenolpyruvate_synthase
+  genes: MA2458 or MA2667 or MA3408
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_pyr_c[Cytosol]| => |M_amp_c[Cytosol]|
     + (2) |M_h_c[Cytosol]| + |M_pep_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_PRAGSr
   name: R_phosphoribosylglycinamide_synthase
+  genes: MA3309
   equation: '|M_atp_c[Cytosol]| + |M_gly_c[Cytosol]| + |M_pram_c[Cytosol]| <=> |M_adp_c[Cytosol]|
     + |M_gar_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_PRAIS
   name: R_phosphoribosylaminoimidazole_synthase
+  genes: MA0130
   equation: '|M_atp_c[Cytosol]| + |M_fpram_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_air_c[Cytosol]|
     + (2) |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_PRAIi
   name: R_phosphoribosylanthranilate_isomerase__irreversible_
+  genes: MA2988
   equation: '|M_pran_c[Cytosol]| => |M_2cpr5p_c[Cytosol]|'
 - id: R_PRAMPC
   name: R_phosphoribosyl_AMP_cyclohydrolase
+  genes: MA0908
   equation: '|M_h2o_c[Cytosol]| + |M_prbamp_c[Cytosol]| => |M_prfp_c[Cytosol]|'
 - id: R_PRASCS
   name: R_phosphoribosylaminoimidazolesuccinocarboxamide_synthase
+  genes: MA4063
   equation: '|M_5aizc_c[Cytosol]| + |M_asp_L_c[Cytosol]| + |M_atp_c[Cytosol]| <=>
     |M_25aics_c[Cytosol]| + |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_PRATPP
   name: R_phosphoribosyl_ATP_pyrophosphatase
+  genes: MA1392
   equation: '|M_h2o_c[Cytosol]| + |M_prbatp_c[Cytosol]| => |M_h_c[Cytosol]| + |M_ppi_c[Cytosol]|
     + |M_prbamp_c[Cytosol]|'
 - id: R_PRFGS
   name: R_phosphoribosylformylglycinamidine_synthase
+  genes: MA1963 or MA4055
   equation: '|M_atp_c[Cytosol]| + |M_fgam_c[Cytosol]| + |M_gln_L_c[Cytosol]| + |M_h2o_c[Cytosol]|
     => |M_adp_c[Cytosol]| + |M_fpram_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
 - id: R_PRMICIi
   name: R_1__5_phosphoribosyl__5_[_5_phosphoribosylamino_methylideneamino_imidazole_4_carboxamide_isomerase__irreversible_
+  genes: MA0218 or MA4435
   equation: '|M_prfp_c[Cytosol]| => |M_prlp_c[Cytosol]|'
 - id: R_PROTRS
   name: R_Prolyl_tRNA_synthetase
+  genes: MA3886
   equation: '|M_atp_c[Cytosol]| + |M_pro_L_c[Cytosol]| + |M_trnapro_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_protrna_c[Cytosol]|'
 - id: R_PROabc
   name: R_L_proline_transport_via_ABC_system
+  genes: MA0063 or MA0282 or MA0323 or MA1120 or MA1235 or MA1747 or MA2110 or MA2145
+    or MA2275 or MA2282 or MA2478 or MA3171 or MA3582 or MA3903 or MA3957 or MA3960
+    or MA4253 or (MA4321 and MA2146 and MA2147)
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_pro_L_e[Extra_organism]|
     => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_pro_L_c[Cytosol]|'
 - id: R_PROt2
   name: R_L_proline_transport_in_via_proton_symport
+  genes: MA1316 or MA0279
   equation: '|M_h_e[Extra_organism]| + |M_pro_L_e[Extra_organism]| => |M_h_c[Cytosol]|
     + |M_pro_L_c[Cytosol]|'
 - id: R_PRPPP
@@ -1882,40 +2324,50 @@
     + |M_r15bp_c[Cytosol]|'
 - id: R_PRPPS
   name: R_phosphoribosylpyrophosphate_synthetase
+  genes: MA1167
   equation: '|M_atp_c[Cytosol]| + |M_r5p_c[Cytosol]| <=> |M_amp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_prpp_c[Cytosol]|'
 - id: R_PSCVT
   name: R_3_phosphoshikimate_1_carboxyvinyltransferase
+  genes: MA4544
   equation: '|M_pep_c[Cytosol]| + |M_skm5p_c[Cytosol]| <=> |M_3psme_c[Cytosol]| +
     |M_pi_c[Cytosol]|'
 - id: R_PSERT
   name: R_phosphoserine_transaminase
+  genes: MA2304
   equation: '|M_3php_c[Cytosol]| + |M_glu_L_c[Cytosol]| => |M_akg_c[Cytosol]| + |M_pser_L_c[Cytosol]|'
 - id: R_PSLP
   name: R_2_phosphosulfolactate_phosphatase
+  genes: MA1204 or MA3448 or MA3482 or MA4534
   equation: '|M_h2o_c[Cytosol]| + |M_slp_L_c[Cytosol]| => |M_pi_c[Cytosol]| + |M_sl_L_c[Cytosol]|'
 - id: R_PSLS
   name: R_phosphosulfolactate_synthase
   equation: '|M_h_c[Cytosol]| + |M_pep_c[Cytosol]| + |M_so3_c[Cytosol]| => |M_slp_L_c[Cytosol]|'
 - id: R_PSP_L
   name: R_phosphoserine_phosphatase__L_serine_
+  genes: MA4429 or MA4428 or MA0678 or MA3235
   equation: '|M_h2o_c[Cytosol]| + |M_pser_L_c[Cytosol]| => |M_pi_c[Cytosol]| + |M_ser_L_c[Cytosol]|'
 - id: R_PTAr
   name: R_phosphotransacetylase
+  genes: MA3607
   equation: '|M_accoa_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_actp_c[Cytosol]| + |M_coa_c[Cytosol]|'
 - id: R_PTHPS
   name: R_6_pyruvoyltetrahydropterin_synthase
+  genes: MA0956 or MA4196
   equation: '|M_ahdt_c[Cytosol]| => |M_6pthp_c[Cytosol]| + |M_pppi_c[Cytosol]|'
 - id: R_PTPATi
   name: R_pantetheine_phosphate_adenylyltransferase
+  genes: MA3546
   equation: '|M_atp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pan4p_c[Cytosol]| => |M_dpcoa_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
 - id: R_PYK
   name: R_pyruvate_kinase
+  genes: MA3890
   equation: '|M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pep_c[Cytosol]| => |M_atp_c[Cytosol]|
     + |M_pyr_c[Cytosol]|'
 - id: R_PYRDC
   name: R_pyruvate_decarboxylase
+  genes: MA0594
   equation: '|M_h_c[Cytosol]| + |M_pyr_c[Cytosol]| => |M_acald_c[Cytosol]| + |M_co2_c[Cytosol]|'
 - id: R_PYRt2
   name: R_pyruvate_reversible_transport_via_proton_symport
@@ -1923,393 +2375,499 @@
     + |M_pyr_c[Cytosol]|'
 - id: R_QULNS
   name: R_quinolinate_synthase
+  genes: MA0959 or MA2716
   equation: '|M_dhap_c[Cytosol]| + |M_iasp_c[Cytosol]| => (2) |M_h2o_c[Cytosol]|
     + |M_pi_c[Cytosol]| + |M_quln_c[Cytosol]|'
 - id: R_R00002
   name: R_Reduced_ferredoxin_dinitrogen_oxidoreductase__ATP_hydrolysing_
+  genes: MA1209
   equation: (16) |M_atp_c[Cytosol]| + (16) |M_h2o_c[Cytosol]| <=> (8) |M_C05359_c[Cytosol]|
     + (8) |M_h_c[Cytosol]| + (16) |M_pi_c[Cytosol]| + (16) |M_adp_c[Cytosol]|
 - id: R_R00009
   name: R_hydrogen_peroxide_hydrogen_peroxide_oxidoreductase
+  genes: MA0972
   equation: (2) |M_h2o2_c[Cytosol]| <=> |M_o2_c[Cytosol]| + (2) |M_h2o_c[Cytosol]|
 - id: R_R00011
   name: R_n_II__hydrogen_peroxide_oxidoreductase
+  genes: MA1426
   equation: (2) |M_mn2_c[Cytosol]| + (2) |M_h2o_c[Cytosol]| <=> |M_h2o2_c[Cytosol]|
     + (2) |M_mn2_c[Cytosol]| + (2) |M_h_c[Cytosol]|
 - id: R_R00017
   name: R_Ferrocytochrome_c_hydrogen_peroxide_oxidoreductase
+  genes: MA2908
   equation: '|M_h2o2_c[Cytosol]| + (2) |M_C00126_c[Cytosol]| <=> (2) |M_C00125_c[Cytosol]|
     + (2) |M_h2o_c[Cytosol]|'
 - id: R_R00034
   name: R_Cyclobutadipyrimidine__in_DNA__pyrimidine_lyase
+  genes: MA4066
   equation: '|M_C03103_c[Cytosol]| <=> (2) |M_C08249_c[Cytosol]|'
 - id: R_R00052
   name: R_Chloride_hydrogen_peroxide_oxidoreductase
+  genes: MA0993
   equation: '|M_h2o2_c[Cytosol]| + (2) |M_C01371_c[Cytosol]| + (2) |M_C00698_c[Cytosol]|
     <=> (2) |M_C01334_c[Cytosol]| + (2) |M_h2o_c[Cytosol]|'
 - id: R_R00086
   name: R_TP_phosphohydrolase__protein_secreting_
+  genes: MA0788 or MA4154
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_R00103
   name: R_D__phosphohydrolase
+  genes: MA1439
   equation: '|M_nad_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_amp_c[Cytosol]| + |M_nmn_c[Cytosol]|'
 - id: R_R00132
   name: R_Carbonic_acid_hydro_lyase
+  genes: MA1098
   equation: '|M_C01353_c[Cytosol]| <=> |M_co2_c[Cytosol]| + |M_h2o_c[Cytosol]|'
 - id: R_R00164
   name: R_Phosphoprotein_phosphohydrolase
+  genes: MA3259
   equation: '|M_C00562_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_C00017_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
 - id: R_R00178
   name: R_S_Adenosyl_L_methionine_carboxy_lyase
+  genes: MA3746
   equation: '|M_amet_c[Cytosol]| <=> |M_C01137_c[Cytosol]| + |M_co2_c[Cytosol]|'
 - id: R_R00191
   name: R_denosine_3__5__phosphate_5__nucleotidohydrolase
+  genes: MA1686 or MA4564
   equation: '|M_camp_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_amp_c[Cytosol]|'
 - id: R_R00197
   name: R__R__Lactate_ferricytochrome_c_2_oxidoreductase
+  genes: MA4631
   equation: '|M_C00256_c[Cytosol]| + (2) |M_C00125_c[Cytosol]| <=> |M_pyr_c[Cytosol]|
     + (2) |M_C00126_c[Cytosol]|'
 - id: R_R00203
   name: R_Pyruvaldehyde_NAD__oxidoreductase;
+  genes: MA0220 or MA4369
   equation: '|M_C00546_c[Cytosol]| + |M_nad_c[Cytosol]| + |M_h2o_c[Cytosol]| <=>
     |M_pyr_c[Cytosol]| + |M_nadh_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_R00214
   name: R__S__Malate_NADP__oxidoreductase_oxaloacetate_decarboxylating_
+  genes: MA1002
   equation: '|M_mal_L_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_pyr_c[Cytosol]| + |M_co2_c[Cytosol]|
     + |M_nadh_c[Cytosol]|'
 - id: R_R00219
   name: R_L_serine_ammonia_lyase
+  genes: MA0246
   equation: '|M_pyr_c[Cytosol]| + |M_co2_c[Cytosol]| <=> |M_C03981_c[Cytosol]|'
 - id: R_R00229
   name: R_cetate_CoA_ligase__ADP_forming_
+  genes: MA3602
   equation: '|M_atp_c[Cytosol]| + |M_ac_c[Cytosol]| + |M_coa_c[Cytosol]| <=> |M_adp_c[Cytosol]|
     + |M_accoa_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_R00297
   name: R__R__2_Hydroxy_acid__acceptor__2_oxidoreductase
+  genes: MA0121 or MA1566 or MA1567 or MA4419 or MA4632
   equation: '|M_C00256_c[Cytosol]| + |M_C00028_c[Cytosol]| <=> |M_pyr_c[Cytosol]|
     + |M_C00030_c[Cytosol]|'
 - id: R_R00327
   name: R_6_Acetyl_D_glucose_acetylhydrolase
+  genes: MA2629
   equation: '|M_C02655_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_glc_D_c[Cytosol]|
     + |M_ac_c[Cytosol]|'
 - id: R_R00381
   name: R__Deoxyribonucleotide_n__Deoxyribonucleotide_m_ligase__AMP_forming_
+  genes: MA0728 or MA2571
   equation: '|M_atp_c[Cytosol]| + |M_C00039_n__c[Cytosol]| + |M_C00039_m__c[Cytosol]|
     <=> |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_C00039_n_c[Cytosol]| + |M_m__c[Cytosol]|'
 - id: R_R00390
   name: R_Long_chain_carboxylate_CoA_ligase__AMP_forming_
+  genes: MA1028 or MA1422 or MA3717
   equation: '|M_atp_c[Cytosol]| + |M_C00347_c[Cytosol]| + |M_coa_c[Cytosol]| <=>
     |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_C00040_c[Cytosol]|'
 - id: R_R00411
   name: R_N_succinyl_L_glutamate_amidohydrolase
+  genes: MA3709 or MA3747
   equation: '|M_C05931_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_glu_L_c[Cytosol]|
     + |M_succ_c[Cytosol]|'
 - id: R_R00416
   name: R_UTP_N_acetyl_alpha_D_glucosamine_1_phosphate_uridylyltransferase
+  genes: MA1335
   equation: '|M_utp_c[Cytosol]| + |M_C04501_c[Cytosol]| <=> |M_ppi_c[Cytosol]| +
     |M_uacgam_c[Cytosol]|'
 - id: R_R00424
   name: R_GTP_7_8_8_9_dihydrolase
+  genes: MA4517
   equation: '|M_gtp_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_ahdt_c[Cytosol]| + |M_for_c[Cytosol]|'
 - id: R_R00435
   name: R_TP_polynucleotide_adenylyltransferase
+  genes: MA0112 or MA1262 or MA1263 or MA1264 or MA1265 or MA1266 or MA1444 or MA3692
+    or MA4672
   equation: '|M_atp_c[Cytosol]| + |M_C00046_c[Cytosol]| <=> |M_ppi_c[Cytosol]| +
     |M_C00046__1_c[Cytosol]|'
 - id: R_R00501
   name: R_UTP_alpha_D_hexose_1_phosphate_uridylyltransferase
+  genes: MA0415
   equation: '|M_udpgal_c[Cytosol]| + (2) |M_nad_c[Cytosol]| + |M_h2o_c[Cytosol]|
     <=> |M_C00617_c[Cytosol]| + (2) |M_nadh_c[Cytosol]| + (2) |M_h_c[Cytosol]|'
 - id: R_R00586
   name: R_L_Serine_glyoxylate_aminotransferase
+  genes: MA1032 or MA2737 or MA3442
   equation: '|M_ser_L_c[Cytosol]| + |M_accoa_c[Cytosol]| <=> |M_acser_c[Cytosol]|
     + |M_coa_c[Cytosol]|'
 - id: R_R00596
   name: R_S_Adenosyl_L_methionine_tRNA__adenine_N1___methyltransferase
+  genes: MA3783
   equation: '|M_amet_c[Cytosol]| + |M_C00066_c[Cytosol]| <=> |M_ahcys_c[Cytosol]|
     + |M_C04156_c[Cytosol]|'
 - id: R_R00598
   name: R_S_Adenosyl_L_methionine_tRNA__guanine_N2___methyltransferase
+  genes: MA1455
   equation: '|M_amet_c[Cytosol]| + |M_C00066_c[Cytosol]| <=> |M_ahcys_c[Cytosol]|
     + |M_C04158_c[Cytosol]|'
 - id: R_R01009
   name: R_GDPmannose_dolichyl_phosphate_O_beta_D_mannosyltransferase
+  genes: MA1068 or MA1187 or MA2169 or MA4330
   equation: '|M_gdpmann_c[Cytosol]| + |M_C00110_c[Cytosol]| <=> |M_gdp_c[Cytosol]|
     + |M_C03862_c[Cytosol]|'
 - id: R_R01011
   name: R_TP_glycerone_phosphotransferase
+  genes: MA0132
   equation: '|M_atp_c[Cytosol]| + |M_dha_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dhap_c[Cytosol]|'
 - id: R_R01054
   name: R_DP_ribose_ribophosphohydrolase
+  genes: MA0113
   equation: '|M_C00301_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_amp_c[Cytosol]| +
     |M_r5p_c[Cytosol]|'
 - id: R_R01117
   name: R_CTP_N_acetylneuraminate_cytidylyltransferase
+  genes: MA3766
   equation: '|M_ctp_c[Cytosol]| + |M_C00270_c[Cytosol]| <=> |M_ppi_c[Cytosol]| +
     |M_C00128_c[Cytosol]|'
 - id: R_R01130
   name: R_IMP_NAD__oxidoreductase
+  genes: MA1391
   equation: '|M_imp_c[Cytosol]| + |M_nad_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_xmp_c[Cytosol]|
     + |M_nadh_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_R01159
   name: R_S_adenosyl_L_methionine_L_histidine_N_methyltransferase
+  genes: MA0297 or MA0303 or MA0719 or MA1288 or MA1319 or MA2152 or MA2333 or MA2408
+    or MA3655 or MA4347
   equation: '|M_his_L_c[Cytosol]| + |M_amet_c[Cytosol]| <=> |M_C01152_c[Cytosol]|
     + |M_ahcys_c[Cytosol]|'
 - id: R_R01288
   name: R_O4_succinyl_L_homoserine_hydrogen_sulfide
+  genes: MA0722 or MA0790 or MA0961
   equation: '|M_C01118_c[Cytosol]| + |M_C00297_c[Cytosol]| <=> |M_hcys_L_c[Cytosol]|
     + |M_succ_c[Cytosol]|'
 - id: R_R01516
   name: R_2_3_bisphospho_D_glycerate_2_phosphohydrolase
+  genes: MA2400
   equation: '|M_C01159_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_3pg_c[Cytosol]| +
     |M_pi_c[Cytosol]|'
 - id: R_R01556
   name: R_cetyl_CoA_maltose_O_acetyltransferase
+  genes: MA0513
   equation: '|M_accoa_c[Cytosol]| + |M_C00208_c[Cytosol]| <=> |M_coa_c[Cytosol]|
     + |M_C02130_c[Cytosol]|'
 - id: R_R01624
   name: R_acetyl_CoA_[acyl_carrier_protein]_S_acetyltransferase
+  genes: MA2174
   equation: '|M_accoa_c[Cytosol]| + |M_C00229_c[Cytosol]| <=> |M_coa_c[Cytosol]|
     + |M_C03939_c[Cytosol]|'
 - id: R_R01627
   name: R_3_Dehydroshikimate_hydro_lyase
+  genes: MA3271 or MA3994
   equation: '|M_3dhsk_c[Cytosol]| <=> |M_C00230_c[Cytosol]| + |M_h2o_c[Cytosol]|'
 - id: R_R01645
   name: R_4_hydroxy_2_oxo_heptandioate_succinate_semialdehyde_lyase
+  genes: MA4608
   equation: '|M_ohepa_c[Cytosol]| <=> |M_sucsal_c[Cytosol]| + |M_pyr_c[Cytosol]|'
 - id: R_R01738
   name: R_D_Gluconate_NAD__5_oxidoreductase
+  genes: MA0107
   equation: '|M_glcn_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_C01062_c[Cytosol]| +
     |M_nadh_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_R01804
   name: R_phosphoenolpyruvate_N_acetyl_D_mannosamine
+  genes: MA3767
   equation: '|M_C00270_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_acmana_c[Cytosol]|
     + |M_pep_c[Cytosol]| + |M_h2o_c[Cytosol]|'
 - id: R_R01906
   name: R_L_lyxose_aldose_ketose_isomerase
+  genes: MA0076
   equation: '|M_C00312_c[Cytosol]| <=> |M_C01508_c[Cytosol]|'
 - id: R_R01942
   name: R_S_Adenosyl_L_methionine_caffeoyl_CoA_3_O_methyltransferase
+  genes: MA0707
   equation: '|M_amet_c[Cytosol]| + |M_C00323_c[Cytosol]| <=> |M_ahcys_c[Cytosol]|
     + |M_C00406_c[Cytosol]|'
 - id: R_R02047
   name: R_3_Hydroxy_2_methylpropanoate_NAD__oxidoreductase
+  genes: MA0614
   equation: '|M_C01188_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_C00349_c[Cytosol]|
     + |M_nadh_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_R02056
   name: R_S_Adenosyl_L_methionine_phosphatidylethanolamine_N_methyltransferase
+  genes: MA0769 or MA4248
   equation: '|M_amet_c[Cytosol]| + |M_C00350_c[Cytosol]| <=> |M_ahcys_c[Cytosol]|
     + |M_C01241_c[Cytosol]|'
 - id: R_R02229
   name: R_cyclohexanol_NAD__oxidoreductase
+  genes: MA0479
   equation: '|M_C00414_c[Cytosol]| + |M_nadh_c[Cytosol]| + |M_h_c[Cytosol]| <=> |M_C00854_c[Cytosol]|
     + |M_nad_c[Cytosol]|'
 - id: R_R02364
   name: R_DPH2_quinone_oxidoreductase
+  genes: MA0147 or MA0771 or MA0773
   equation: '|M_C15602_c[Cytosol]| + |M_nadph_c[Cytosol]| + |M_h_c[Cytosol]| <=>
     |M_C05309_c[Cytosol]| + |M_nadp_c[Cytosol]|'
 - id: R_R02480
   name: R_Cytochrome_c_apocytochrome_c_lyase
+  genes: MA1389
   equation: '|M_C00524_c[Cytosol]| <=> |M_C02248_c[Cytosol]| + |M_C00032_c[Cytosol]|'
 - id: R_R02545
   name: R_meso_Tartaric_acid_NAD__oxidoreductase
+  genes: MA4367
   equation: '|M_C00552_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_C03459_c[Cytosol]|
     + |M_nadh_c[Cytosol]|'
 - id: R_R02623
   name: R_S_Adenosyl_L_methionine_protein_L_glutamate_O_methyltransferase
+  genes: MA0013 or MA1989 or MA3063
   equation: '|M_amet_c[Cytosol]| + |M_C00614_c[Cytosol]| <=> |M_ahcys_c[Cytosol]|
     + |M_C04142_c[Cytosol]|'
 - id: R_R02624
   name: R_Protein_L_glutamate_O4_methyl_ester_acylhydrolase
+  genes: MA0015 or MA3067
   equation: '|M_C04310_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_C00614_c[Cytosol]|
     + |M_meoh_c[Cytosol]|'
 - id: R_R02689
   name: R_UDPglucose_1_2_diacylglycerol_3_D_glucosyltransferase
+  genes: MA1183
   equation: '|M_udpg_c[Cytosol]| + |M_C00641_c[Cytosol]| <=> |M_udp_c[Cytosol]| +
     |M_C04046_c[Cytosol]|'
 - id: R_R02767
   name: R__3R__3_Hydroxyacyl_[acyl_carrier_protein]_NADP__oxidoreductase
+  genes: MA2686
   equation: '|M_C01271_c[Cytosol]| + |M_nadp_c[Cytosol]| <=> |M_C00685_c[Cytosol]|
     + |M_nadph_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_R02783
   name: R_UDP_N_acetylmuramoyl_L_alanine_D_glutamate_ligase_ADP_forming_
+  genes: MA3630
   equation: '|M_atp_c[Cytosol]| + |M_C01212_c[Cytosol]| + |M_C00217_c[Cytosol]| <=>
     |M_adp_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_C00692_c[Cytosol]|'
 - id: R_R02797
   name: R_Taurocholate_amidohydrolase
+  genes: MA0755
   equation: '|M_C05122_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_C00695_c[Cytosol]|
     + |M_C00245_c[Cytosol]|'
 - id: R_R02822
   name: R_epoxide_hydrolase
+  genes: MA4411
   equation: '|M_C00722_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_C15588_c[Cytosol]|'
 - id: R_R02825
   name: R_5_Aminopentanoate_lipoate_oxidoreductase__cyclizing_
+  genes: MA0152
   equation: '|M_C00431_c[Cytosol]| + |M_C00725_c[Cytosol]| <=> |M_C00763_c[Cytosol]|
     + |M_C02147_c[Cytosol]|'
 - id: R_R02961
   name: R_Lactoyl_CoA_hydro_lyase
+  genes: MA2116 or MA2414
   equation: '|M_amet_c[Cytosol]| + |M_C00821_c[Cytosol]| <=> |M_ahcys_c[Cytosol]|
     + |M_C03391_c[Cytosol]|'
 - id: R_R03015
   name: R_Formylmethanofuran__acceptor__oxidoreductase
+  genes: MA0835
   equation: '|M_formmfr_b__c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_C00028_c[Cytosol]|
     <=> |M_co2_c[Cytosol]| + |M_mfr_b__c[Cytosol]| + |M_C00030_c[Cytosol]|'
 - id: R_R03042
   name: R_Polyphosphate_phosphohydrolase
+  genes: MA0083 or MA2351
   equation: '|M_C00890_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_C00890__1_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
 - id: R_R03065
   name: R_cetyl_CoA_chloramphenicol_O3_acetyltransferase
+  genes: MA1703
   equation: '|M_accoa_c[Cytosol]| + |M_C00918_c[Cytosol]| <=> |M_coa_c[Cytosol]|
     + |M_C03601_c[Cytosol]|'
 - id: R_R03222
   name: R_Protoporphyrinogen_IX_oxygen_oxidoreductase
+  genes: MA2968
   equation: (2) |M_C01079_c[Cytosol]| + (3) |M_o2_c[Cytosol]| <=> (2) |M_ppp9_c[Cytosol]|
     + (6) |M_h2o_c[Cytosol]|
 - id: R_R03446
   name: R_DP_D_ribosyl_[dinitrogen_reductase]_ADPribosylhydrolase
+  genes: MA4144
   equation: '|M_C01253_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_C03315_c[Cytosol]|
     + |M_C01882_c[Cytosol]|'
 - id: R_R03470
   name: R_4_Carboxymuconolactone_carboxy_lyase
+  genes: MA0409 or MA2059 or MA3946 or MA3953 or MA4072
   equation: '|M_C01278_c[Cytosol]| <=> |M_C03586_c[Cytosol]| + |M_co2_c[Cytosol]|'
 - id: R_R03522
   name: R_RX_glutathione_R_transferase
+  genes: MA3610
   equation: '|M_C01322_c[Cytosol]| + |M_gthrd_c[Cytosol]| <=> |M_C01318_c[Cytosol]|
     + |M_C02320_c[Cytosol]|'
 - id: R_R03743
   name: R_beta_Lactamhydrolase
+  genes: MA1345
   equation: '|M_C01866_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_C03806_c[Cytosol]|'
 - id: R_R03893
   name: R_4_Carboxymethylenebut_2_en_4_olide_lactonohydrolase
+  genes: MA3920
   equation: '|M_C04431_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_C02222_c[Cytosol]|'
 - id: R_R03896
   name: R__R__2_Methylmalate_hydro_lyase
+  genes: MA0642
   equation: '|M_C02612_c[Cytosol]| <=> |M_C02226_c[Cytosol]| + |M_h2o_c[Cytosol]|'
 - id: R_R04133
   name: R_5_Oxopent_3_ene_1_2_5_tricarboxylate_carboxy_lyase
+  genes: MA0585
   equation: '|M_C04052_c[Cytosol]| <=> |M_C03063_c[Cytosol]| + |M_co2_c[Cytosol]|'
 - id: R_R04146
   name: R_N_Acetyl_D_galactosaminoglycan_acetylhydrolase
+  genes: MA0797 or MA1067 or MA4181 or MA4440
   equation: '|M_C04018_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_C03106_c[Cytosol]|
     + |M_ac_c[Cytosol]|'
 - id: R_R04190
   name: R_S_Adenosyl_L_methionine_protein_L_isoaspartate_O_methyltransferase
+  genes: MA0543 or MA0544
   equation: '|M_amet_c[Cytosol]| + |M_C03306_c[Cytosol]| <=> |M_ahcys_c[Cytosol]|
     + |M_C04311_c[Cytosol]|'
 - id: R_R04216
   name: R_Dolichyl_diphosphooligosaccharide_protein_L_asparagine
+  genes: MA1172
   equation: '|M_C04213_c[Cytosol]| + |M_C03021_c[Cytosol]| <=> |M_C00621_c[Cytosol]|
     + |M_C11572_c[Cytosol]|'
 - id: R_R04238
   name: R_minoacyl_tRNA_aminoacylhydrolase
+  genes: MA3269
   equation: '|M_C03880_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_C03523_c[Cytosol]|
     + |M_C00066_c[Cytosol]|'
 - id: R_R04273
   name: R_Peptidylproline_cis_trans_isomerase
+  genes: MA1661 or MA2813 or MA3136 or MA3137 or MA3138
   equation: '|M_C03798_c[Cytosol]| <=> |M_C03633_c[Cytosol]|'
 - id: R_R04314
   name: R_DNA_6_O_methylguanine_protein_L_cysteine_S_methyltransferase
+  genes: MA4322
   equation: '|M_C04250_c[Cytosol]| + |M_C02743_c[Cytosol]| <=> |M_C03800_c[Cytosol]|
     + |M_C11475_c[Cytosol]|'
 - id: R_R04347
   name: R_5_Methyl_5_6_7_8_tetrahydromethanopterin_2_mercaptoethanesulfonate
+  genes: MA0270 or MA0271 or MA1806
   equation: '|M_C04488_c[Cytosol]| + |M_com_c[Cytosol]| <=> |M_h4mpt_c[Cytosol]|
     + |M_mcom_c[Cytosol]|'
 - id: R_R04463
   name: R_5__Phosphoribosylformylglycinamide_L_glutamine_amido_ligase
+  genes: MA1964
   equation: '|M_atp_c[Cytosol]| + |M_fgam_c[Cytosol]| + |M_gln_L_c[Cytosol]| + |M_h2o_c[Cytosol]|
     <=> |M_adp_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_fpram_c[Cytosol]| + |M_glu_L_c[Cytosol]|'
 - id: R_R04495
   name: R_UDPgalactose_N_acetyl_beta_D_glucosaminylglycopeptide
+  genes: MA2172
   equation: '|M_udpgal_c[Cytosol]| + |M_C04502_c[Cytosol]| <=> |M_udp_c[Cytosol]|
     + |M_C04818_c[Cytosol]|'
 - id: R_R04549
   name: R_UDP_2_3_bis_3_hydroxytetradecanoyl_glucosamine_diphosphatase
+  genes: MA1602 or MA3990
   equation: '|M_C04652_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_ump_c[Cytosol]| +
     |M_C04824_c[Cytosol]|'
 - id: R_R04710
   name: R_Formate_acetyltransferase_glycine
+  genes: MA2410
   equation: '|M_amet_c[Cytosol]| + |M_C05196_c[Cytosol]| + |M_C05197_c[Cytosol]|
     <=> |M_C05198_c[Cytosol]| + |M_met_L_c[Cytosol]| + |M_C05199_c[Cytosol]| + |M_C05312_c[Cytosol]|'
 - id: R_R04979
   name: R_Bilirubin_beta_diglucuronide_glucuronosohydrolase
+  genes: MA0035 or MA4370 or MA4371
   equation: '|M_C05787_c[Cytosol]| + (2) |M_h2o_c[Cytosol]| + (6) |M_h_c[Cytosol]|
     <=> |M_C05791_c[Cytosol]| + (2) |M_C00191_c[Cytosol]|'
 - id: R_R04988
   name: R_UDP_L_rhamnose_flavonol_3_O_D_glucoside_L_rhamnosyltransferase
+  genes: MA2151
   equation: '|M_C05811_c[Cytosol]| + |M_amet_c[Cytosol]| <=> |M_C05812_c[Cytosol]|
     + |M_ahcys_c[Cytosol]|'
 - id: R_R05329
   name: R_Spermidine_eIF5A_lysine_4_aminobutyltransferase
+  genes: MA0968 or MA3013
   equation: '|M_C07281_c[Cytosol]| + |M_C00315_c[Cytosol]| <=> |M_C07282_c[Cytosol]|
     + |M_C00986_c[Cytosol]|'
 - id: R_R05707
   name: R_reduced_riboflavin_NADP__oxidoreductase
+  genes: MA3740
   equation: '|M_C01007_c[Cytosol]| + |M_nadp_c[Cytosol]| <=> |M_ribflv_c[Cytosol]|
     + |M_nadph_c[Cytosol]| + |M_h_c[Cytosol]|'
 - id: R_R05743
   name: R_rubredoxin_superoxide_oxidoreductase
+  genes: MA3737
   equation: '|M_C00340_c[Cytosol]| + |M_o2__c[Cytosol]| + (2) |M_h_c[Cytosol]| <=>
     |M_C00435_c[Cytosol]| + |M_h2o2_c[Cytosol]|'
 - id: R_R05747
   name: R_glutharedoxin_arsenate_oxidoreductase
+  genes: MA3103
   equation: '|M_C11215_c[Cytosol]| + |M_C07292_c[Cytosol]| <=> |M_C06697_c[Cytosol]|
     + |M_C07293_c[Cytosol]|'
 - id: R_R06975
   name: R_5_formaminoimidazole_4_carboxamide_1_beta_D_ribofuranosyl
+  genes: MA0206 or MA3689
   equation: '|M_for_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_aicar_c[Cytosol]| <=> |M_adp_c[Cytosol]|
     + |M_pi_c[Cytosol]| + |M_fprica_c[Cytosol]|'
 - id: R_R07158
   name: R_aldehyde_ferredoxin_oxidoreductase
+  genes: MA1714 or MA2962 or MA3989
   equation: '|M_C00071_c[Cytosol]| + |M_h2o_c[Cytosol]| + (2) |M_fdox_c[Cytosol]|
     <=> |M_C00174_c[Cytosol]| + (2) |M_fdred_c[Cytosol]| + (2) |M_h_c[Cytosol]|'
 - id: R_R07180
   name: R_thiol_containing_reductant_hydroperoxide_oxidoreductase
+  genes: MA4068 or MA4103
   equation: (2) |M_C01336_c[Cytosol]| + |M_C15498_c[Cytosol]| <=> |M_C15496_c[Cytosol]|
     + |M_h2o_c[Cytosol]| + |M_C01335_c[Cytosol]|
 - id: R_R07284
   name: R_TP_tRNA_adenylyltransferase
+  genes: MA3559
   equation: '|M_atp_c[Cytosol]| + |M_C00066_c[Cytosol]| <=> |M_ppi_c[Cytosol]| +
     |M_C00066__1_c[Cytosol]|'
 - id: R_R07285
   name: R_tRNA_phosphate_nucleotidyltransferase
+  genes: MA1776
   equation: '|M_C00066_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_C00066__1_c[Cytosol]|
     + |M_C00454_c[Cytosol]|'
 - id: R_R07460
   name: R_L_cysteine_[ThiI]_sulfurtransferase
+  genes: MA0236 or MA2718 or MA3264
   equation: '|M_C15811_c[Cytosol]| + |M_cys_L_c[Cytosol]| <=> |M_C15812_c[Cytosol]|
     + |M_ala_L_c[Cytosol]|'
 - id: R_R07646
   name: R_L_lysine_tRNAPyl_ligase__AMP_forming_
+  genes: MA0155
   equation: '|M_atp_c[Cytosol]| + |M_lys_L_c[Cytosol]| + |M_C16139_c[Cytosol]| <=>
     |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_C16140_c[Cytosol]|'
 - id: R_R07730
   name: R_malonyl_CoA_isoflavone_7_O_beta_D_glucoside_6_O_malonyltransferase
+  genes: MA1447
   equation: '|M_C16235_c[Cytosol]| <=> |M_C00632_c[Cytosol]|'
 - id: R_RBFSa
   name: R_riboflavin_synthase
+  genes: MA1817 and MA1818
   equation: '|M_4r5au_c[Cytosol]| + |M_db4p_c[Cytosol]| => |M_dmlz_c[Cytosol]| +
     (2) |M_h2o_c[Cytosol]| + |M_pi_c[Cytosol]|'
 - id: R_RBFSb
   name: R_riboflavin_synthase
+  genes: MA1817 and MA1818
   equation: (2) |M_dmlz_c[Cytosol]| => |M_4r5au_c[Cytosol]| + |M_ribflv_c[Cytosol]|
 - id: R_RBK
   name: R_ribokinase
+  genes: MA1373
   equation: '|M_atp_c[Cytosol]| + |M_rib_D_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_r5p_c[Cytosol]|'
 - id: R_RBPC
   name: R_ribulose_bisphosphate_carboxylase
+  genes: MA4555
   equation: '|M_co2_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_rb15bp_c[Cytosol]| => (2)
     |M_3pg_c[Cytosol]| + (2) |M_h_c[Cytosol]|'
 - id: R_RBPI
   name: R_ribose_1_5_bisphosphate_isomerase
+  genes: MA2851
   equation: '|M_r15bp_c[Cytosol]| => |M_rb15bp_c[Cytosol]|'
 - id: R_RH2CD
   name: R__R___homo_2citrate_dehydratase
+  genes: MA1393 or (MA3085 and MA0202) or MA1223 or MA3751
   equation: '|M_Rh2cit_c[Cytosol]| <=> |M_h2acon_C_c[Cytosol]| + |M_h2o_c[Cytosol]|'
 - id: R_RH3CD
   name: R__R___homo_3citrate_dehydratase
+  genes: MA1393 or (MA3085 and MA0202) or MA1223 or MA3751
   equation: '|M_Rh3cit_c[Cytosol]| <=> |M_h2o_c[Cytosol]| + |M_h3acon_C_c[Cytosol]|'
 - id: R_RIBFLVt2
   name: R_riboflavin_transport_in_via_proton_symport
@@ -2317,18 +2875,22 @@
     + |M_ribflv_c[Cytosol]|'
 - id: R_RNDR1
   name: R_ribonucleoside_diphosphate_reductase__ADP_
+  genes: MA1665
   equation: '|M_adp_c[Cytosol]| + |M_trdrd_c[Cytosol]| => |M_dadp_c[Cytosol]| + |M_h2o_c[Cytosol]|
     + |M_trdox_c[Cytosol]|'
 - id: R_RNDR2
   name: R_ribonucleoside_diphosphate_reductase__GDP_
+  genes: MA1665
   equation: '|M_gdp_c[Cytosol]| + |M_trdrd_c[Cytosol]| => |M_dgdp_c[Cytosol]| + |M_h2o_c[Cytosol]|
     + |M_trdox_c[Cytosol]|'
 - id: R_RNDR3
   name: R_ribonucleoside_diphosphate_reductase__CDP_
+  genes: MA1665
   equation: '|M_cdp_c[Cytosol]| + |M_trdrd_c[Cytosol]| => |M_dcdp_c[Cytosol]| + |M_h2o_c[Cytosol]|
     + |M_trdox_c[Cytosol]|'
 - id: R_RNDR4
   name: R_ribonucleoside_diphosphate_reductase__UDP_
+  genes: MA1665
   equation: '|M_trdrd_c[Cytosol]| + |M_udp_c[Cytosol]| => |M_dudp_c[Cytosol]| + |M_h2o_c[Cytosol]|
     + |M_trdox_c[Cytosol]|'
 - id: R_RNF
@@ -2337,18 +2899,22 @@
     => (2) |M_fdox_c[Cytosol]| + |M_mphenh2_c[Cytosol]| + |M_na1_e[Extra_organism]|
 - id: R_RNTR1
   name: R_ribonucleoside_triphosphate_reductase__ATP_
+  genes: MA0072
   equation: '|M_atp_c[Cytosol]| + |M_trdrd_c[Cytosol]| => |M_datp_c[Cytosol]| + |M_h2o_c[Cytosol]|
     + |M_trdox_c[Cytosol]|'
 - id: R_RNTR2
   name: R_ribonucleoside_triphosphate_reductase__GTP_
+  genes: MA0072
   equation: '|M_gtp_c[Cytosol]| + |M_trdrd_c[Cytosol]| => |M_dgtp_c[Cytosol]| + |M_h2o_c[Cytosol]|
     + |M_trdox_c[Cytosol]|'
 - id: R_RNTR3
   name: R_ribonucleoside_triphosphate_reductase__CTP_
+  genes: MA0072
   equation: '|M_ctp_c[Cytosol]| + |M_trdrd_c[Cytosol]| => |M_dctp_c[Cytosol]| + |M_h2o_c[Cytosol]|
     + |M_trdox_c[Cytosol]|'
 - id: R_RNTR4
   name: R_ribonucleoside_triphosphate_reductase__UTP_
+  genes: MA0072
   equation: '|M_trdrd_c[Cytosol]| + |M_utp_c[Cytosol]| => |M_dutp_c[Cytosol]| + |M_h2o_c[Cytosol]|
     + |M_trdox_c[Cytosol]|'
 - id: R_RPE
@@ -2356,9 +2922,11 @@
   equation: '|M_ru5p_D_c[Cytosol]| <=> |M_xu5p_D_c[Cytosol]|'
 - id: R_RPI
   name: R_ribose_5_phosphate_isomerase
+  genes: MA1683
   equation: '|M_r5p_c[Cytosol]| <=> |M_ru5p_D_c[Cytosol]|'
 - id: R_RZ5PP2
   name: R_alpha_ribazole_5_phosphate_phosphatase
+  genes: MA0940
   equation: '|M_5pr5hbz_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_pi_c[Cytosol]| + |M_r5hbzi_c[Cytosol]|'
 - id: R_SECS
   name: R_sulfoethylcysteine_synthase
@@ -2366,10 +2934,12 @@
     + |M_sec_c[Cytosol]|'
 - id: R_SERAT
   name: R_serine_O_acetyltransferase
+  genes: MA2721
   equation: '|M_accoa_c[Cytosol]| + |M_ser_L_c[Cytosol]| <=> |M_acser_c[Cytosol]|
     + |M_coa_c[Cytosol]|'
 - id: R_SERTRS
   name: R_Seryl_tRNA_synthetase
+  genes: MA4048
   equation: '|M_atp_c[Cytosol]| + |M_ser_L_c[Cytosol]| + |M_trnaser_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_sertrna_c[Cytosol]|'
 - id: R_SHCD
@@ -2377,33 +2947,41 @@
   equation: '|M_Shcit_c[Cytosol]| <=> |M_h2o_c[Cytosol]| + |M_hacon_C_c[Cytosol]|'
 - id: R_SHCHCC
   name: R_sirohydrochlorin_cobaltochelatase
+  genes: MA3631
   equation: '|M_cobalt2_c[Cytosol]| + |M_dscl_c[Cytosol]| => |M_copre2_c[Cytosol]|
     + (3) |M_h_c[Cytosol]|'
 - id: R_SHCHD2
   name: R_sirohydrochlorin_dehydrogenase__NAD_
+  genes: MA3033 and MA0576
   equation: '|M_dscl_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|
     + |M_scl_c[Cytosol]|'
 - id: R_SHCHF
   name: R_sirohydrochlorin_ferrochetalase
+  genes: MA3033 and MA0576
   equation: '|M_fe2_c[Cytosol]| + |M_scl_c[Cytosol]| => (3) |M_h_c[Cytosol]| + |M_sheme_c[Cytosol]|'
 - id: R_SHK3Dr
   name: R_shikimate_dehydrogenase
+  genes: MA4594
   equation: '|M_3dhsk_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| <=> |M_nadp_c[Cytosol]|
     + |M_skm_c[Cytosol]|'
 - id: R_SHKK
   name: R_shikimate_kinase
+  genes: MA1378 or MA3237
   equation: '|M_atp_c[Cytosol]| + |M_skm_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_skm5p_c[Cytosol]|'
 - id: R_SLDx
   name: R_L_sulfolactate_dehydrogenase__NAD__
+  genes: MA3665
   equation: '|M_nad_c[Cytosol]| + |M_sl_L_c[Cytosol]| <=> |M_3spyr_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|'
 - id: R_SLDxi2
   name: R_L_sulfolactate_dehydrogenase__NAD____irreversible_other_direction_
+  genes: MA0819
   equation: '|M_3spyr_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| => |M_nad_c[Cytosol]|
     + |M_sl_L_c[Cytosol]|'
 - id: R_SLDy
   name: R_L_sulfolactate_dehydrogenase__NADP__
+  genes: MA0819
   equation: '|M_nadp_c[Cytosol]| + |M_sl_L_c[Cytosol]| <=> |M_3spyr_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]|'
 - id: R_SMTZS
@@ -2416,25 +2994,32 @@
     + |M_so3_c[Cytosol]|'
 - id: R_SO4t2
   name: R_sulfate_transport_in_via_proton_symport
+  genes: MA1999
   equation: '|M_h_e[Extra_organism]| + |M_so4_e[Extra_organism]| => |M_h_c[Cytosol]|
     + |M_so4_c[Cytosol]|'
 - id: R_SPDC
   name: R_sulfopyruvate_decarboxylase
+  genes: MA3298
   equation: '|M_3spyr_c[Cytosol]| + |M_h_c[Cytosol]| => |M_2saa_c[Cytosol]| + |M_co2_c[Cytosol]|'
 - id: R_SPODM
   name: R_superoxide_dismutase
+  genes: MA1574 and MA2422
   equation: (2) |M_h_c[Cytosol]| + (2) |M_o2__c[Cytosol]| => |M_h2o2_c[Cytosol]|
     + |M_o2_c[Cytosol]|
 - id: R_SSALx
   name: R_succinate_semialdehyde_dehydrogenase__NAD_
+  genes: MA0705 or MA1355 or MA2860 or MA4079
   equation: '|M_h2o_c[Cytosol]| + |M_nad_c[Cytosol]| + |M_sucsal_c[Cytosol]| => (2)
     |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| + |M_succ_c[Cytosol]|'
 - id: R_SSALy
   name: R_succinate_semialdehyde_dehydrogenase__NADP_
+  genes: MA0705 or MA1355 or MA2860 or MA4079
   equation: '|M_h2o_c[Cytosol]| + |M_nadp_c[Cytosol]| + |M_sucsal_c[Cytosol]| =>
     (2) |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| + |M_succ_c[Cytosol]|'
 - id: R_SULabc
   name: R_sulfate_transport_via_ABC_system
+  genes: MA1237 or MA2280 or MA0325 or (MA2280 and MA1236) or MA2281 or MA3902 or
+    (MA0324 and MA0063) or MA0282 or MA0323 or MA1235 or MA2145 or MA2282 or MA3903
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_so4_e[Extra_organism]|
     => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_so4_c[Cytosol]|'
 - id: R_St
@@ -2453,13 +3038,16 @@
     |M_ppi_c[Cytosol]|'
 - id: R_TDPDRE
   name: R_dTDP_4_dehydrorhamnose_3_5_epimerase
+  genes: MA1909 or MA3780
   equation: '|M_dtdp4d6dg_c[Cytosol]| => |M_dtdp4d6dm_c[Cytosol]|'
 - id: R_TDPDRR
   name: R_dTDP_4_dehydrorhamnose_reductase
+  genes: MA3778
   equation: '|M_dtdp4d6dm_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| =>
     |M_dtdprmn_c[Cytosol]| + |M_nadp_c[Cytosol]|'
 - id: R_TDPGDH
   name: R_dTDPglucose_4_6_dehydratase
+  genes: MA1185 or MA2186 or MA3779 or MA4464
   equation: '|M_dtdpglu_c[Cytosol]| => |M_dtdp4d6dg_c[Cytosol]| + |M_h2o_c[Cytosol]|'
 - id: R_THACH
   name: R_trans_homoaconitate_hydrolase
@@ -2470,9 +3058,11 @@
     => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_thm_c[Cytosol]|'
 - id: R_THRAr
   name: R_Threonine_Aldolase
+  genes: MA3520
   equation: '|M_thr_L_c[Cytosol]| <=> |M_acald_c[Cytosol]| + |M_gly_c[Cytosol]|'
 - id: R_THRPD
   name: R_threonine_phosphate_decarboxylase
+  genes: MA0118 or MA0942
   equation: '|M_h_c[Cytosol]| + |M_thrp_c[Cytosol]| => |M_applp_c[Cytosol]| + |M_co2_c[Cytosol]|'
 - id: R_THRPS
   name: R_threonine_phosphate_synthase
@@ -2480,27 +3070,33 @@
     + |M_thrp_c[Cytosol]|'
 - id: R_THRS
   name: R_threonine_synthase
+  genes: MA3297 or MA1610
   equation: '|M_h2o_c[Cytosol]| + |M_phom_c[Cytosol]| => |M_pi_c[Cytosol]| + |M_thr_L_c[Cytosol]|'
 - id: R_THRTRS
   name: R_Threonyl_tRNA_synthetase
+  genes: MA2896
   equation: '|M_atp_c[Cytosol]| + |M_thr_L_c[Cytosol]| + |M_trnathr_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_thrtrna_c[Cytosol]|'
 - id: R_THZPSN
   name: R_thiazole_phosphate_synthesis
+  genes: MA0255 and MA1466
   equation: '|M_atp_c[Cytosol]| + |M_cys_L_c[Cytosol]| + |M_dxyl5p_c[Cytosol]| +
     |M_tyr_L_c[Cytosol]| => |M_4hba_c[Cytosol]| + |M_4mpetz_c[Cytosol]| + |M_ala_L_c[Cytosol]|
     + |M_amp_c[Cytosol]| + |M_co2_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
 - id: R_TIH2CD
   name: R_threo_iso_homo_2citrate_dehydrogenase
+  genes: MA0201 or MA3748 or MA4265
   equation: '|M_nad_c[Cytosol]| + |M_tih2cit_c[Cytosol]| => |M_co2_c[Cytosol]| +
     |M_nadh_c[Cytosol]| + |M_ohepa_c[Cytosol]|'
 - id: R_TIH3CD
   name: R_threo_iso_homo_3citrate_dehydrogenase
+  genes: MA0201 or MA3748 or MA4265
   equation: '|M_nad_c[Cytosol]| + |M_tih3cit_c[Cytosol]| => |M_2ood_c[Cytosol]| +
     |M_co2_c[Cytosol]| + |M_nadh_c[Cytosol]|'
 - id: R_TIHCD
   name: R_threo_isohomocitrate_dehydrogenase
+  genes: MA0201 or MA3748 or MA4265
   equation: '|M_ihcit_T_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_co2_c[Cytosol]| +
     |M_nadh_c[Cytosol]| + |M_ohexa_c[Cytosol]|'
 - id: R_TKT1
@@ -2513,21 +3109,27 @@
     |M_g3p_c[Cytosol]|'
 - id: R_TMAMT
   name: R_Trimethylamine_methyltransferase
+  genes: MA0528 or (MA0932 and MA0529) or (MA0931 and MA0779) or MA0847 or MA1615
+    or MA2163 or MA3613 or MA4165 or MA4355 or MA4559 or MA0859 or MA4384 or MA4558
   equation: '|M_com_c[Cytosol]| + |M_tma_c[Cytosol]| => |M_dma_c[Cytosol]| + |M_mcom_c[Cytosol]|'
 - id: R_TMAt2
   name: R_Trimethylamine_symport
+  genes: MA0530 or MA0929
   equation: '|M_h_e[Extra_organism]| + |M_tma_e[Extra_organism]| <=> |M_h_c[Cytosol]|
     + |M_tma_c[Cytosol]|'
 - id: R_TMDK1
   name: R_thymidine_kinase__ATP_thymidine_
+  genes: MA4433
   equation: '|M_atp_c[Cytosol]| + |M_thymd_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_dtmp_c[Cytosol]|
     + |M_h_c[Cytosol]|'
 - id: R_TMDPP
   name: R_thymidine_phosphorylase
+  genes: MA3242
   equation: '|M_pi_c[Cytosol]| + |M_thymd_c[Cytosol]| <=> |M_2dr1p_c[Cytosol]| +
     |M_thym_c[Cytosol]|'
 - id: R_TMDS
   name: R_thymidylate_synthase
+  genes: MA1824 or MA4543
   equation: '|M_dump_c[Cytosol]| + |M_mlthf_c[Cytosol]| => |M_dhf_c[Cytosol]| + |M_dtmp_c[Cytosol]|'
 - id: R_TMKr
   name: R_thiamine_kinase
@@ -2535,35 +3137,44 @@
     + |M_thmmp_c[Cytosol]|'
 - id: R_TMPKr
   name: R_thiamine_phosphate_kinase
+  genes: MA0069 or MA4193
   equation: '|M_atp_c[Cytosol]| + |M_thmmp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_thmpp_c[Cytosol]|'
 - id: R_TMPPP
   name: R_thiamine_phosphate_diphosphorylase
+  genes: MA2722
   equation: '|M_2mahmp_c[Cytosol]| + |M_4mpetz_c[Cytosol]| + |M_h_c[Cytosol]| =>
     |M_ppi_c[Cytosol]| + |M_thmmp_c[Cytosol]|'
 - id: R_TPI
   name: R_triose_phosphate_isomerase
+  genes: MA4607
   equation: '|M_dhap_c[Cytosol]| <=> |M_g3p_c[Cytosol]|'
 - id: R_TRDR
   name: R_thioredoxin_reductase__NADPH_
+  genes: MA1368 or MA3212
   equation: '|M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| + |M_trdox_c[Cytosol]| => |M_nadp_c[Cytosol]|
     + |M_trdrd_c[Cytosol]|'
 - id: R_TRPS1
   name: R_tryptophan_synthase__indoleglycerol_phosphate_
+  genes: (MA2990 and MA2991) or MA3198
   equation: '|M_3ig3p_c[Cytosol]| + |M_ser_L_c[Cytosol]| => |M_g3p_c[Cytosol]| +
     |M_h2o_c[Cytosol]| + |M_trp_L_c[Cytosol]|'
 - id: R_TRPS2
   name: R_tryptophan_synthase__indole_
+  genes: MA2991 or MA3198
   equation: '|M_indole_c[Cytosol]| + |M_ser_L_c[Cytosol]| => |M_h2o_c[Cytosol]| +
     |M_trp_L_c[Cytosol]|'
 - id: R_TRPS3
   name: R_tryptophan_synthase__indoleglycerol_phosphate_
+  genes: MA2990
   equation: '|M_3ig3p_c[Cytosol]| => |M_g3p_c[Cytosol]| + |M_indole_c[Cytosol]|'
 - id: R_TRPTA
   name: R_tryptophan_transaminase
+  genes: MA0636 or MA0925 or MA1385 or MA1712 or MA1819
   equation: '|M_akg_c[Cytosol]| + |M_trp_L_c[Cytosol]| <=> |M_glu_L_c[Cytosol]| +
     |M_indpyr_c[Cytosol]|'
 - id: R_TRPTRS
   name: R_Tryptophanyl_tRNA_synthetase
+  genes: MA0172
   equation: '|M_atp_c[Cytosol]| + |M_trnatrp_c[Cytosol]| + |M_trp_L_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_trptrna_c[Cytosol]|'
 - id: R_TSR
@@ -2571,29 +3182,37 @@
   equation: '|M_h2_c[Cytosol]| + |M_tsul_c[Cytosol]| => |M_h2s_c[Cytosol]| + |M_so3_c[Cytosol]|'
 - id: R_TSULabc
   name: R_thiosulfate_transport_via_ABC_system
+  genes: MA1237 or MA2280 or MA0325 or (MA2280 and MA1236) or MA2281 or MA3902 or
+    (MA0324 and MA0063) or MA0282 or MA0323 or MA1235 or MA2145 or MA2282 or MA3903
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_tsul_e[Extra_organism]|
     => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_tsul_c[Cytosol]|'
 - id: R_TYRTA
   name: R_tyrosine_transaminase
+  genes: MA0636 or MA0925 or MA1385 or MA1712 or MA1819
   equation: '|M_akg_c[Cytosol]| + |M_tyr_L_c[Cytosol]| <=> |M_34hpp_c[Cytosol]| +
     |M_glu_L_c[Cytosol]|'
 - id: R_TYRTRS
   name: R_tyrosyl_tRNA_synthetase
+  genes: MA0815
   equation: '|M_atp_c[Cytosol]| + |M_trnatyr_c[Cytosol]| + |M_tyr_L_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_tyrtrna_c[Cytosol]|'
 - id: R_UAGDP
   name: R_UDP_N_acetylglucosamine_diphosphorylase
+  genes: MA3022 or MA3025 or MA3140
   equation: '|M_acgam1p_c[Cytosol]| + |M_h_c[Cytosol]| + |M_utp_c[Cytosol]| => |M_ppi_c[Cytosol]|
     + |M_uacgam_c[Cytosol]|'
 - id: R_UDPG4E
   name: R_UDPglucose_4_epimerase
+  genes: MA1185 or MA4460 or MA4464
   equation: '|M_udpg_c[Cytosol]| <=> |M_udpgal_c[Cytosol]|'
 - id: R_UDPGDr
   name: R_UDPglucose_6_dehydrogenase
+  genes: MA4457
   equation: '|M_h2o_c[Cytosol]| + (2) |M_nad_c[Cytosol]| + |M_udpg_c[Cytosol]| <=>
     (3) |M_h_c[Cytosol]| + (2) |M_nadh_c[Cytosol]| + |M_udpglcur_c[Cytosol]|'
 - id: R_UMPK
   name: R_UMP_kinase
+  genes: MA1104
   equation: '|M_atp_c[Cytosol]| + |M_ump_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_udp_c[Cytosol]|'
 - id: R_UNK_CBL1DEGt
   name: R_unknown_cobalamin_degradation_product_diffusion
@@ -2603,40 +3222,51 @@
   equation: '|M_unknown_rbfdeg_e[Extra_organism]| <=> |M_unknown_rbfdeg_c[Cytosol]|'
 - id: R_UPP3MT
   name: R_uroporphyrinogen_methyltransferase
+  genes: MA3033 and MA0576
   equation: (2) |M_amet_c[Cytosol]| + |M_uppg3_c[Cytosol]| => (2) |M_ahcys_c[Cytosol]|
     + |M_dscl_c[Cytosol]| + |M_h_c[Cytosol]|
 - id: R_UPP3S
   name: R_uroporphyrinogen_III_synthase
+  genes: MA3034
   equation: '|M_hmbil_c[Cytosol]| => |M_h2o_c[Cytosol]| + |M_uppg3_c[Cytosol]|'
 - id: R_URIDK1
   name: R_uridylate_kinase__UMP_
+  genes: MA0372
   equation: '|M_atp_c[Cytosol]| + |M_ump_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_udp_c[Cytosol]|'
 - id: R_URIDK2r
   name: R_uridylate_kinase__dUMP_
+  genes: MA0372
   equation: '|M_atp_c[Cytosol]| + |M_dump_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dudp_c[Cytosol]|'
 - id: R_VALTA
   name: R_valine_transaminase
+  genes: MA4349
   equation: '|M_akg_c[Cytosol]| + |M_val_L_c[Cytosol]| <=> |M_3mob_c[Cytosol]| +
     |M_glu_L_c[Cytosol]|'
 - id: R_VALTRS
   name: R_Valyl_tRNA_synthetase
+  genes: MA2431 or MA3052
   equation: '|M_atp_c[Cytosol]| + |M_trnaval_c[Cytosol]| + |M_val_L_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_valtrna_c[Cytosol]|'
 - id: R_VALt2r
   name: R_L_valine_reversible_transport_via_proton_symport
+  genes: MA3437 and MA3438
   equation: '|M_h_e[Extra_organism]| + |M_val_L_e[Extra_organism]| <=> |M_h_c[Cytosol]|
     + |M_val_L_c[Cytosol]|'
 - id: R_VOR
   name: R_2_oxoisovalerate_ferredoxin_reductase
+  genes: MA2909 and MA2910 and MA2911
   equation: '|M_3mob_c[Cytosol]| + |M_coa_c[Cytosol]| + (2) |M_fdox_c[Cytosol]| <=>
     |M_co2_c[Cytosol]| + (2) |M_fdred_c[Cytosol]| + |M_h_c[Cytosol]| + |M_ibcoa_c[Cytosol]|'
 - id: R_XPPT
   name: R_xanthine_phosphoribosyltransferase
+  genes: MA1687 or MA4581
   equation: '|M_prpp_c[Cytosol]| + |M_xan_c[Cytosol]| => |M_ppi_c[Cytosol]| + |M_xmp_c[Cytosol]|'
 - id: R_YUMPS
   name: R_yUMP_synthetase
+  genes: MA1105 or MA0208
   equation: '|M_r5p_c[Cytosol]| + |M_ura_c[Cytosol]| <=> |M_h2o_c[Cytosol]| + |M_psd5p_c[Cytosol]|'
 - id: R_ZNabc
   name: R_zinc_transport_via_ABC_system
+  genes: MA0023 and MA0025 and MA0024
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_zn2_e[Extra_organism]|
     => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_zn2_c[Cytosol]|'
