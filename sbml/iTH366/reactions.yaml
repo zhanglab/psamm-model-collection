@@ -1,10 +1,12 @@
 - id: R_1_7_1_1_mt
   name: nitrate_reductase_(NADH)
+  genes: PF13_0353
   equation: '|M_h_m[Mitochondria]| + |M_no3_m[Mitochondria]| + |M_nadh_m[Mitochondria]|
     => |M_h2o_m[Mitochondria]| + |M_no2_m[Mitochondria]| + |M_nad_m[Mitochondria]|'
   subsystem: AminoAcids_NitrogenMetabolism
 - id: R_1_7_1_3_mt
   name: nitrate_reductase_(NADPH)
+  genes: PF13_0353
   equation: '|M_h_m[Mitochondria]| + |M_no3_m[Mitochondria]| + |M_nadph_m[Mitochondria]|
     => |M_h2o_m[Mitochondria]| + |M_no2_m[Mitochondria]| + |M_nadp_m[Mitochondria]|'
   subsystem: AminoAcids_NitrogenMetabolism
@@ -15,60 +17,74 @@
   subsystem: AminoAcids_MetPolyamineMetabolism ; Lipids_PhosphatidylcholineMetabolism
 - id: R_2_7_8_3
   name: ceramide_cholinephosphotransferase
+  genes: PFF1210w
   equation: '|M_cdpchol_c[Cytosol]| + |M_crm_c[Cytosol]| + |M_h_c[Cytosol]| => |M_cmp_c[Cytosol]|
     + |M_sphmyln_c[Cytosol]|'
   subsystem: Lipids_SphingomyelinCeramideMetabolism
 - id: R_3DSPHR
   name: 3-dehydrosphinganine_reductase
+  genes: PFD0465c
   equation: '|M_3dsphgn_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| =>
     |M_nadp_c[Cytosol]| + |M_sphgn_c[Cytosol]|'
   subsystem: Lipids_SphingomyelinCeramideMetabolism
 - id: R_3HAD100_ap
   name: 3-Hydroxydecanoyl-[acyl-carrier-protein]_dehydratase
+  genes: PF13_0128
   equation: '|M_3hdecACP_ap[Apicoplast]| => |M_h2o_ap[Apicoplast]| + |M_tdec2eACP_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3HAD120_ap
   name: 3-Hydroxypalmitoyl-[acyl-carrier-protein]_dehydratase
+  genes: PF13_0128
   equation: '|M_3hddecACP_ap[Apicoplast]| => |M_h2o_ap[Apicoplast]| + |M_tddec2eACP_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3HAD121_ap
   name: 3-Hydroxypalmitoyl-[acyl-carrier-protein]_dehydratase
+  genes: PF13_0128
   equation: '|M_3hcddec5eACP_ap[Apicoplast]| => |M_h2o_ap[Apicoplast]| + |M_t3c5ddeceACP_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3HAD140_ap
   name: 3-Hydroxypalmitoyl-[acyl-carrier-protein]_dehydratase
+  genes: PF13_0128
   equation: '|M_3hmrsACP_ap[Apicoplast]| => |M_h2o_ap[Apicoplast]| + |M_tmrs2eACP_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3HAD141_ap
   name: 3-Hydroxypalmitoyl-[acyl-carrier-protein]_dehydratase
+  genes: PF13_0128
   equation: '|M_3hcmrs7eACP_ap[Apicoplast]| => |M_h2o_ap[Apicoplast]| + |M_t3c7mrseACP_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3HAD160_ap
   name: 3-Hydroxypalmitoyl-[acyl-carrier-protein]_dehydratase
+  genes: PF13_0128
   equation: '|M_3hpalmACP_ap[Apicoplast]| => |M_h2o_ap[Apicoplast]| + |M_tpalm2eACP_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3HAD161_ap
   name: 3-Hydroxypalmitoyl-[acyl-carrier-protein]_dehydratase
+  genes: PF13_0128
   equation: '|M_3hcpalm9eACP_ap[Apicoplast]| => |M_h2o_ap[Apicoplast]| + |M_t3c9palmeACP_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3HAD180_ap
   name: 3-Hydroxypalmitoyl-[acyl-carrier-protein]_dehydratase
+  genes: PF13_0128
   equation: '|M_3hoctaACP_ap[Apicoplast]| => |M_h2o_ap[Apicoplast]| + |M_toctd2eACP_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3HAD181_ap
   name: 3-Hydroxypalmitoyl-[acyl-carrier-protein]_dehydratase
+  genes: PF13_0128
   equation: '|M_3hcvac11eACP_ap[Apicoplast]| => |M_h2o_ap[Apicoplast]| + |M_t3c11vaceACP_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3HAD40_ap
   name: Crotonoyl-[acyl-carrier-protein]_hydratase
+  genes: PF13_0128
   equation: '|M_3haACP_ap[Apicoplast]| => |M_but2eACP_ap[Apicoplast]| + |M_h2o_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3HAD60_ap
   name: Crotonoyl-[acyl-carrier-protein]_hydratase
+  genes: PF13_0128
   equation: '|M_3hhexACP_ap[Apicoplast]| => |M_h2o_ap[Apicoplast]| + |M_thex2eACP_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3HAD80_ap
   name: Crotonoyl-[acyl-carrier-protein]_hydratase
+  genes: PF13_0128
   equation: '|M_3hoctACP_ap[Apicoplast]| => |M_h2o_ap[Apicoplast]| + |M_toct2eACP_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3MOBtmt
@@ -80,116 +96,139 @@
   subsystem: Transport_MT
 - id: R_3OAR100_ap
   name: 3-oxoacyl-[acyl-carrier-protein]_reductase
+  genes: PFI1125c
   equation: '|M_3odecACP_ap[Apicoplast]| + |M_h_ap[Apicoplast]| + |M_nadph_ap[Apicoplast]|
     <=> |M_3hdecACP_ap[Apicoplast]| + |M_nadp_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3OAR120_ap
   name: 3-oxoacyl-[acyl-carrier-protein]_reductase
+  genes: PFI1125c
   equation: '|M_3oddecACP_ap[Apicoplast]| + |M_h_ap[Apicoplast]| + |M_nadph_ap[Apicoplast]|
     <=> |M_3hddecACP_ap[Apicoplast]| + |M_nadp_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3OAR121_ap
   name: 3-oxoacyl-[acyl-carrier-protein]_reductase
+  genes: PFI1125c
   equation: '|M_3ocddec5eACP_ap[Apicoplast]| + |M_h_ap[Apicoplast]| + |M_nadph_ap[Apicoplast]|
     => |M_3hcddec5eACP_ap[Apicoplast]| + |M_nadp_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3OAR140_ap
   name: 3-oxoacyl-[acyl-carrier-protein]_reductase
+  genes: PFI1125c
   equation: '|M_3omrsACP_ap[Apicoplast]| + |M_h_ap[Apicoplast]| + |M_nadph_ap[Apicoplast]|
     <=> |M_3hmrsACP_ap[Apicoplast]| + |M_nadp_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3OAR141_ap
   name: 3-oxoacyl-[acyl-carrier-protein]_reductase
+  genes: PFI1125c
   equation: '|M_3ocmrs7eACP_ap[Apicoplast]| + |M_h_ap[Apicoplast]| + |M_nadph_ap[Apicoplast]|
     => |M_3hcmrs7eACP_ap[Apicoplast]| + |M_nadp_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3OAR160_ap
   name: 3-oxoacyl-[acyl-carrier-protein]_reductase
+  genes: PFI1125c
   equation: '|M_3opalmACP_ap[Apicoplast]| + |M_h_ap[Apicoplast]| + |M_nadph_ap[Apicoplast]|
     <=> |M_3hpalmACP_ap[Apicoplast]| + |M_nadp_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3OAR161_ap
   name: 3-oxoacyl-[acyl-carrier-protein]_reductase
+  genes: PFI1125c
   equation: '|M_3ocpalm9eACP_ap[Apicoplast]| + |M_h_ap[Apicoplast]| + |M_nadph_ap[Apicoplast]|
     => |M_3hcpalm9eACP_ap[Apicoplast]| + |M_nadp_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3OAR180_ap
   name: 3-oxoacyl-[acyl-carrier-protein]_reductase
+  genes: PFI1125c
   equation: '|M_3ooctdACP_ap[Apicoplast]| + |M_h_ap[Apicoplast]| + |M_nadph_ap[Apicoplast]|
     <=> |M_3hoctaACP_ap[Apicoplast]| + |M_nadp_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3OAR181_ap
   name: 3-oxoacyl-[acyl-carrier-protein]_reductase
+  genes: PFI1125c
   equation: '|M_3ocvac11eACP_ap[Apicoplast]| + |M_h_ap[Apicoplast]| + |M_nadph_ap[Apicoplast]|
     => |M_3hcvac11eACP_ap[Apicoplast]| + |M_nadp_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3OAR40_ap
   name: 3-oxoacyl-[acyl-carrier-protein]_reductase
+  genes: PFI1125c
   equation: '|M_actACP_ap[Apicoplast]| + |M_h_ap[Apicoplast]| + |M_nadph_ap[Apicoplast]|
     <=> |M_3haACP_ap[Apicoplast]| + |M_nadp_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3OAR60_ap
   name: 3-oxoacyl-[acyl-carrier-protein]_reductase
+  genes: PFI1125c
   equation: '|M_3ohexACP_ap[Apicoplast]| + |M_h_ap[Apicoplast]| + |M_nadph_ap[Apicoplast]|
     <=> |M_3hhexACP_ap[Apicoplast]| + |M_nadp_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3OAR80_ap
   name: 3-oxoacyl-[acyl-carrier-protein]_reductase
+  genes: PFI1125c
   equation: '|M_3ooctACP_ap[Apicoplast]| + |M_h_ap[Apicoplast]| + |M_nadph_ap[Apicoplast]|
     <=> |M_3hoctACP_ap[Apicoplast]| + |M_nadp_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3OAS100_ap
   name: beta-ketoacyl-acyl-carrier-protein_synthase_I
+  genes: PFB0505c or PFF1275c
   equation: '|M_h_ap[Apicoplast]| + |M_malACP_ap[Apicoplast]| + |M_ocACP_ap[Apicoplast]|
     => |M_3odecACP_ap[Apicoplast]| + |M_ACP_ap[Apicoplast]| + |M_co2_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3OAS120_ap
   name: beta-ketoacyl-acyl-carrier-protein_synthase_I
+  genes: PFB0505c or PFF1275c
   equation: '|M_dcaACP_ap[Apicoplast]| + |M_h_ap[Apicoplast]| + |M_malACP_ap[Apicoplast]|
     => |M_3oddecACP_ap[Apicoplast]| + |M_ACP_ap[Apicoplast]| + |M_co2_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3OAS121_ap
   name: beta-ketoacyl-acyl-carrier-protein_synthase_I
+  genes: PFB0505c or PFF1275c
   equation: '|M_cdec3eACP_ap[Apicoplast]| + |M_h_ap[Apicoplast]| + |M_malACP_ap[Apicoplast]|
     => |M_3ocddec5eACP_ap[Apicoplast]| + |M_ACP_ap[Apicoplast]| + |M_co2_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3OAS140_ap
   name: beta-ketoacyl-acyl-carrier-protein_synthase_I
+  genes: PFB0505c or PFF1275c
   equation: '|M_ddcaACP_ap[Apicoplast]| + |M_h_ap[Apicoplast]| + |M_malACP_ap[Apicoplast]|
     => |M_3omrsACP_ap[Apicoplast]| + |M_ACP_ap[Apicoplast]| + |M_co2_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3OAS141_ap
   name: beta-ketoacyl-acyl-carrier-protein_synthase_I
+  genes: PFB0505c or PFF1275c
   equation: '|M_cddec5eACP_ap[Apicoplast]| + |M_h_ap[Apicoplast]| + |M_malACP_ap[Apicoplast]|
     => |M_3ocmrs7eACP_ap[Apicoplast]| + |M_ACP_ap[Apicoplast]| + |M_co2_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3OAS160_ap
   name: beta-ketoacyl-acyl-carrier-protein_synthase_I
+  genes: PFB0505c or PFF1275c
   equation: '|M_h_ap[Apicoplast]| + |M_malACP_ap[Apicoplast]| + |M_myrsACP_ap[Apicoplast]|
     => |M_3opalmACP_ap[Apicoplast]| + |M_ACP_ap[Apicoplast]| + |M_co2_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3OAS161_ap
   name: beta-ketoacyl-acyl-carrier-protein_synthase_I
+  genes: PFB0505c or PFF1275c
   equation: '|M_h_ap[Apicoplast]| + |M_malACP_ap[Apicoplast]| + |M_tdeACP_ap[Apicoplast]|
     => |M_3ocpalm9eACP_ap[Apicoplast]| + |M_ACP_ap[Apicoplast]| + |M_co2_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3OAS180_ap
   name: beta-ketoacyl-acyl-carrier-protein_synthase_I
+  genes: PFB0505c or PFF1275c
   equation: '|M_h_ap[Apicoplast]| + |M_malACP_ap[Apicoplast]| + |M_palmACP_ap[Apicoplast]|
     => |M_3ooctdACP_ap[Apicoplast]| + |M_ACP_ap[Apicoplast]| + |M_co2_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3OAS181_ap
   name: beta-ketoacyl-acyl-carrier-protein_synthase_I
+  genes: PFB0505c or PFF1275c
   equation: '|M_h_ap[Apicoplast]| + |M_hdeACP_ap[Apicoplast]| + |M_malACP_ap[Apicoplast]|
     => |M_3ocvac11eACP_ap[Apicoplast]| + |M_ACP_ap[Apicoplast]| + |M_co2_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3OAS60_ap
   name: beta-ketoacyl-acyl-carrier-protein_synthase_I
+  genes: PFB0505c or PFF1275c
   equation: '|M_butACP_ap[Apicoplast]| + |M_h_ap[Apicoplast]| + |M_malACP_ap[Apicoplast]|
     => |M_3ohexACP_ap[Apicoplast]| + |M_ACP_ap[Apicoplast]| + |M_co2_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_3OAS80_ap
   name: beta-ketoacyl-acyl-carrier-protein_synthase_I
+  genes: PFB0505c or PFF1275c
   equation: '|M_h_ap[Apicoplast]| + |M_hexACP_ap[Apicoplast]| + |M_malACP_ap[Apicoplast]|
     => |M_3ooctACP_ap[Apicoplast]| + |M_ACP_ap[Apicoplast]| + |M_co2_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
@@ -238,6 +277,7 @@
   subsystem: Transport
 - id: R_ACACT1r
   name: acetyl-CoA_C-acetyltransferase
+  genes: PF14_0484
   equation: (2) |M_accoa_c[Cytosol]| <=> |M_aacoa_c[Cytosol]| + |M_coa_c[Cytosol]|
   subsystem: Carbohydrates_PyruvateMetabolism
 - id: R_ACALDt
@@ -246,22 +286,26 @@
   subsystem: Transport
 - id: R_ACCOAC_ap
   name: Acetyl-CoA_carboxylase
+  genes: PF14_0664
   equation: '|M_accoa_ap[Apicoplast]| + |M_atp_ap[Apicoplast]| + |M_hco3_ap[Apicoplast]|
     => |M_adp_ap[Apicoplast]| + |M_h_ap[Apicoplast]| + |M_malcoa_ap[Apicoplast]|
     + |M_pi_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_ACCOAL
   name: Acetate-CoA_ligase_(ADP-forming)
+  genes: PF14_0357
   equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_ac_c[Cytosol]| => |M_adp_c[Cytosol]|
     + |M_pi_c[Cytosol]| + |M_accoa_c[Cytosol]|'
   subsystem: Carbohydrates_PyruvateMetabolism
 - id: R_ACCOAL2
   name: Acetate-CoA_ligase_(ADP-forming)
+  genes: PF14_0357
   equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_ppa_c[Cytosol]| => |M_adp_c[Cytosol]|
     + |M_pi_c[Cytosol]| + |M_ppcoa_c[Cytosol]|'
   subsystem: Carbohydrates_PyruvateMetabolism
 - id: R_ACCOALm
   name: Propionate-CoA_ligase
+  genes: PFF1350c
   equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_ppa_c[Cytosol]| => |M_amp_c[Cytosol]|
     + |M_ppcoa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: Others_PropionateMetabolism
@@ -280,44 +324,54 @@
   subsystem: Carbohydrates_AminosugarsMetabolism
 - id: R_ACGAMPM
   name: Phosphoacetylglucosamine_mutase
+  genes: PF11_0311
   equation: '|M_acgam6p_c[Cytosol]| <=> |M_acgam1p_c[Cytosol]|'
   subsystem: Carbohydrates_AminosugarsMetabolism
 - id: R_ACGPID
   name: N-Acetylglucosaminylphosphatidylinositol_deacetylase
+  genes: PFF1190c
   equation: '|M_acgpail_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_ac_c[Cytosol]| + |M_gpail_c[Cytosol]|'
   subsystem: Lipids_GPIAnchorBiosynthesis
 - id: R_ACGS
   name: amino-acid_N-acetyltransferase
+  genes: PFA0465c
   equation: '|M_accoa_c[Cytosol]| + |M_glu_L_c[Cytosol]| => |M_acglu_c[Cytosol]|
     + |M_coa_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: AminoAcids_ArgProMetabolism
 - id: R_ACONTac
   name: aconitate_hydratase
+  genes: PF13_0229
   equation: '|M_cit_c[Cytosol]| <=> |M_acon_C_c[Cytosol]| + |M_h2o_c[Cytosol]|'
   subsystem: Others_MitochondrialTCACycle
 - id: R_ACONTam_mt
   name: aconitate_hydratase
+  genes: PF13_0229
   equation: '|M_cit_m[Mitochondria]| <=> |M_acon_C_m[Mitochondria]| + |M_h2o_m[Mitochondria]|'
   subsystem: Others_MitochondrialTCACycle
 - id: R_ACONTbc
   name: aconitate_hydratase
+  genes: PF13_0229
   equation: '|M_acon_C_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_icit_c[Cytosol]|'
   subsystem: Others_MitochondrialTCACycle
 - id: R_ACONTbm_mt
   name: aconitate_hydratase
+  genes: PF13_0229
   equation: '|M_acon_C_m[Mitochondria]| + |M_h2o_m[Mitochondria]| <=> |M_icit_m[Mitochondria]|'
   subsystem: Others_MitochondrialTCACycle
 - id: R_ACP1
   name: acid_phosphatase
+  genes: PFI0880c
   equation: '|M_fmn_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_pi_c[Cytosol]| + |M_ribflv_c[Cytosol]|'
   subsystem: Cofactors_RiboflavinMetabolism
 - id: R_ACPS1
   name: holo-[acyl-carrier-protein]_synthase
+  genes: PFD0980w
   equation: '|M_apoACP_c[Cytosol]| + |M_coa_c[Cytosol]| => |M_ACP_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_pap_c[Cytosol]|'
   subsystem: Cofactors_CoABiosynthesis
 - id: R_ACS
   name: Acetate-CoA_ligase
+  genes: PFF1350c
   equation: '|M_ac_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| => |M_accoa_c[Cytosol]|
     + |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: Carbohydrates_PyruvateMetabolism
@@ -328,36 +382,44 @@
   subsystem: Transport
 - id: R_ADA
   name: adenosine_deaminase
+  genes: PF10_0289
   equation: '|M_adn_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_ins_c[Cytosol]|
     + |M_nh4_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism ; AminoAcids_MetPolyamineMetabolism
 - id: R_ADCL
   name: aminodeoxychorismate_lyase
+  genes: PFI1100w
   equation: '|M_4adcho_c[Cytosol]| => |M_4abz_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pyr_c[Cytosol]|'
   subsystem: Cofactors_ShikimateBiosynthesis
 - id: R_ADCS
   name: aminodeoxychorismate_synthase
+  genes: PFI1100w
   equation: '|M_chor_c[Cytosol]| + |M_gln_L_c[Cytosol]| => |M_4adcho_c[Cytosol]|
     + |M_glu_L_c[Cytosol]|'
   subsystem: Cofactors_FolateBiosynthesis
 - id: R_ADEt
   name: R_ADEt
+  genes: PFA0160c or MAL8P1_32 or PF13_0252 or PF14_0662 or PF13_0352
   equation: '|M_ade_e[Extraorganism]| <=> |M_ade_c[Cytosol]|'
   subsystem: Transport_base
 - id: R_ADK1
   name: adenylate_kinase
+  genes: PF10_0086 or PFD0755c
   equation: '|M_amp_c[Cytosol]| + |M_atp_c[Cytosol]| <=> (2) |M_adp_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_ADMDC
   name: Adenosylmethionine_decarboxylase
+  genes: PF10_0322
   equation: '|M_amet_c[Cytosol]| + |M_h_c[Cytosol]| => |M_ametam_c[Cytosol]| + |M_co2_c[Cytosol]|'
   subsystem: AminoAcids_MetPolyamineMetabolism
 - id: R_ADNCYC
   name: adenylate_cyclase
+  genes: PF14_0788
   equation: '|M_atp_c[Cytosol]| => |M_camp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_ADNt
   name: R_ADNt
+  genes: PFA0160c or MAL8P1_32 or PF13_0252 or PF14_0662
   equation: '|M_adn_e[Extraorganism]| <=> |M_adn_c[Cytosol]|'
   subsystem: Transport_base
 - id: R_ADPtap
@@ -366,55 +428,65 @@
   subsystem: Transport_AP
 - id: R_ADSL1r
   name: adenylosuccinate_lyase
+  genes: PFB0295w
   equation: '|M_dcamp_c[Cytosol]| <=> |M_amp_c[Cytosol]| + |M_fum_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_ADSL2r
   name: adenylosuccinate_lyase
+  genes: PFB0295w
   equation: '|M_25aics_c[Cytosol]| <=> |M_aicar_c[Cytosol]| + |M_fum_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_ADSS
   name: Adenylosuccinate_synthase
+  genes: PF13_0287
   equation: '|M_asp_L_c[Cytosol]| + |M_gtp_c[Cytosol]| + |M_imp_c[Cytosol]| => |M_dcamp_c[Cytosol]|
     + |M_gdp_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism ; AminoAcids_AsnAspMetabolism
 - id: R_AGPAT120_ap
   name: 1-acylglycerol-3-phosphate_O-acyltransferase
+  genes: PF14_0421
   equation: '|M_1ddecg3p_ap[Apicoplast]| + |M_ddcaACP_ap[Apicoplast]| => |M_ACP_ap[Apicoplast]|
     + |M_pa120_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_AGPAT140_ap
   name: 1-acylglycerol-3-phosphate_O-acyltransferase
+  genes: PF14_0421
   equation: '|M_1tdecg3p_ap[Apicoplast]| + |M_myrsACP_ap[Apicoplast]| => |M_ACP_ap[Apicoplast]|
     + |M_pa140_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_AGPAT141_ap
   name: 1-acylglycerol-3-phosphate_O-acyltransferase
+  genes: PF14_0421
   equation: '|M_1tdec7eg3p_ap[Apicoplast]| + |M_tdeACP_ap[Apicoplast]| => |M_ACP_ap[Apicoplast]|
     + |M_pa141_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_AGPAT160_ap
   name: 1-acylglycerol-3-phosphate_O-acyltransferase
+  genes: PF14_0421
   equation: '|M_1hdecg3p_ap[Apicoplast]| + |M_palmACP_ap[Apicoplast]| => |M_ACP_ap[Apicoplast]|
     + |M_pa160_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_AGPAT161_ap
   name: 1-acylglycerol-3-phosphate_O-acyltransferase
+  genes: PF14_0421
   equation: '|M_1hdec9eg3p_ap[Apicoplast]| + |M_hdeACP_ap[Apicoplast]| => |M_ACP_ap[Apicoplast]|
     + |M_pa161_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_AGPAT180_ap
   name: 1-acylglycerol-3-phosphate_O-acyltransferase
+  genes: PF14_0421
   equation: '|M_1odecg3p_ap[Apicoplast]| + |M_ocdcaACP_ap[Apicoplast]| => |M_ACP_ap[Apicoplast]|
     + |M_pa180_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_AGPAT181_ap
   name: 1-acylglycerol-3-phosphate_O-acyltransferase
+  genes: PF14_0421
   equation: '|M_1odec11eg3p_ap[Apicoplast]| + |M_octeACP_ap[Apicoplast]| => |M_ACP_ap[Apicoplast]|
     + |M_pa181_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
@@ -425,10 +497,12 @@
   subsystem: Transport_MT
 - id: R_AHCi
   name: adenosylhomocysteinase
+  genes: PFE1050w
   equation: '|M_ahcys_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_adn_c[Cytosol]| + |M_hcys_L_c[Cytosol]|'
   subsystem: AminoAcids_MetPolyamineMetabolism
 - id: R_AKGDH_mt
   name: R_AKGDH_mt
+  genes: (PF08_0045 or PF13_0070) and PF13_0121 and (PF08_0066 or PFL1550w)
   equation: '|M_akg_m[Mitochondria]| + |M_coa_m[Mitochondria]| + |M_nad_m[Mitochondria]|
     => |M_co2_m[Mitochondria]| + |M_nadh_m[Mitochondria]| + |M_succoa_m[Mitochondria]|'
   subsystem: Others_MitochondrialTCACycle
@@ -444,21 +518,25 @@
   subsystem: Transport
 - id: R_AKGtmt
   name: R_AKGtmt
+  genes: PF08_0031
   equation: '|M_akg_m[Mitochondria]| + |M_mal_L_c[Cytosol]| => |M_akg_c[Cytosol]|
     + |M_mal_L_m[Mitochondria]|'
   subsystem: Transport_MT
 - id: R_AKP1
   name: alkaline_phosphatase
+  genes: PFL1260w
   equation: '|M_ahdt_c[Cytosol]| + (3) |M_h2o_c[Cytosol]| => |M_dhnpt_c[Cytosol]|
     + (2) |M_h_c[Cytosol]| + (3) |M_pi_c[Cytosol]|'
   subsystem: Cofactors_FolateBiosynthesis
 - id: R_ALAGLNexR
   name: R_ALAGLNexR
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_ala_L_e[Extraorganism]| + |M_gln_L_c[Cytosol]| <=> |M_ala_L_c[Cytosol]|
     + |M_gln_L_e[Extraorganism]|'
   subsystem: Transport_aa
 - id: R_ALAGLYexR
   name: R_ALAGLYexR
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_ala_L_e[Extraorganism]| + |M_gly_c[Cytosol]| <=> |M_ala_L_c[Cytosol]|
     + |M_gly_e[Extraorganism]|'
   subsystem: Transport_aa
@@ -468,45 +546,54 @@
   subsystem: Transport_MT
 - id: R_ALAS_mt
   name: 5-aminolevulinate_synthase
+  genes: PFL2210w
   equation: '|M_gly_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_succoa_m[Mitochondria]|
     => |M_5aop_m[Mitochondria]| + |M_co2_m[Mitochondria]| + |M_coa_m[Mitochondria]|'
   subsystem: AminoAcids_GlySerMetabolism ; Cofactors_PorphyrinMetabolism
 - id: R_ALATRS
   name: Alanine-tRNA_ligase
+  genes: PF13_0354
   equation: '|M_ala_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_trnaala_c[Cytosol]| =>
     |M_alatrna_c[Cytosol]| + |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: AminoAcids_tRNA
 - id: R_ALAt2r
   name: R_ALAt2r
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_ala_L_e[Extraorganism]| + |M_h_e[Extraorganism]| <=> |M_ala_L_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: Transport_aa
 - id: R_ALCD19_D
   name: aldehyde_reductase
+  genes: MAL13P1_324
   equation: '|M_glyald_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| <=>
     |M_glyc_c[Cytosol]| + |M_nadp_c[Cytosol]|'
   subsystem: Carbohydrates_PyruvateMetabolism ; Carbohydrates_Glycolysis
 - id: R_AMETt2
   name: R_AMETt2
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_amet_e[Extraorganism]| + |M_h_e[Extraorganism]| => |M_amet_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: Transport_aa
 - id: R_AMETtmt
   name: R_AMETtmt
+  genes: PFL2000w
   equation: '|M_amet_m[Mitochondria]| <=> |M_amet_c[Cytosol]|'
   subsystem: Transport_MT
 - id: R_AMMQLT8
   name: R_AMMQLT8
+  genes: PFE1115c
   equation: '|M_2dmmql8_c[Cytosol]| + |M_amet_c[Cytosol]| => |M_ahcys_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_mql8_c[Cytosol]|'
   subsystem: AminoAcids_MetPolyamineMetabolism
 - id: R_AMPDA
   name: AMP_deaminase
+  genes: MAL13P1_146
   equation: '|M_amp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_imp_c[Cytosol]|
     + |M_nh4_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_AMPTASEPG
   name: membrane_alanyl_aminopeptidase
+  genes: MAL13P1_56
   equation: '|M_h2o_c[Cytosol]| + |M_progly_c[Cytosol]| => |M_gly_c[Cytosol]| + |M_pro_L_c[Cytosol]|'
   subsystem: AminoAcids_ArgProMetabolism
 - id: R_AMPtap
@@ -515,73 +602,87 @@
   subsystem: Transport_AP
 - id: R_ANS
   name: anthranilate_synthase
+  genes: MAL13P1_319
   equation: '|M_chor_c[Cytosol]| + |M_gln_L_c[Cytosol]| => |M_anth_c[Cytosol]| +
     |M_glu_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pyr_c[Cytosol]|'
   subsystem: Cofactors_ShikimateBiosynthesis
 - id: R_AP4AH1
   name: bis(5'-nucleosyl)-tetraphosphatase_(asymmetrical)
+  genes: PFE1035c
   equation: '|M_ap4a_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_amp_c[Cytosol]| + |M_atp_c[Cytosol]|
     + (2) |M_h_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism ; Nucleotides_PurineMetabolism
 - id: R_ARGLYSex
   name: R_ARGLYSex
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_arg_L_e[Extraorganism]| + |M_lys_L_c[Cytosol]| => |M_arg_L_c[Cytosol]|
     + |M_lys_L_e[Extraorganism]|'
   subsystem: Transport_aa
 - id: R_ARGN
   name: arginase
+  genes: PFI0320w
   equation: '|M_arg_L_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_orn_c[Cytosol]| + |M_urea_c[Cytosol]|'
   subsystem: AminoAcids_ArgProMetabolism
 - id: R_ARGTRS
   name: Arginine-tRNA_ligase
+  genes: PFL0900c
   equation: '|M_arg_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_trnaarg_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_argtrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: AminoAcids_ArgProMetabolism
 - id: R_ARGt2r
   name: R_ARGt2r
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_arg_L_e[Extraorganism]| + |M_h_e[Extraorganism]| <=> |M_arg_L_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: Transport_aa
 - id: R_ASNS1
   name: Asparagine_synthase_(glutamine-hydrolysing)
+  genes: PFC0395w
   equation: '|M_asp_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_gln_L_c[Cytosol]| + |M_h2o_c[Cytosol]|
     => |M_amp_c[Cytosol]| + |M_asn_L_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: AminoAcids_AsnAspMetabolism
 - id: R_ASNTRS
   name: Asparagine-tRNA_ligase
+  genes: PFB0525w or PFE0475w or PFE0715w
   equation: '|M_asn_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_trnaasn_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_asntrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: AminoAcids_AsnAspMetabolism
 - id: R_ASNt2r
   name: R_ASNt2r
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_asn_L_e[Extraorganism]| + |M_h_e[Extraorganism]| <=> |M_asn_L_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: Transport_aa
 - id: R_ASPCT
   name: aspartate_carbamoyltransferase
+  genes: MAL13P1_221
   equation: '|M_asp_L_c[Cytosol]| + |M_cbp_c[Cytosol]| => |M_cbasp_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism ; AminoAcids_AsnAspMetabolism
 - id: R_ASPTA
   name: aspartate_transaminase
+  genes: PFB0200c
   equation: '|M_akg_c[Cytosol]| + |M_asp_L_c[Cytosol]| <=> |M_glu_L_c[Cytosol]| +
     |M_oaa_c[Cytosol]|'
   subsystem: AminoAcids_AsnAspMetabolism ; Carbohydrates_PyruvateMetabolism ; AminoAcids_GluMetabolism
     ; AminoAcids_PheTyrMetabolism
 - id: R_ASPTA_mt
   name: aspartate_transaminase
+  genes: PFB0200c
   equation: '|M_akg_m[Mitochondria]| + |M_asp_L_m[Mitochondria]| <=> |M_glu_L_m[Mitochondria]|
     + |M_oaa_m[Mitochondria]|'
   subsystem: AminoAcids_AsnAspMetabolism ; Carbohydrates_PyruvateMetabolism ; AminoAcids_GluMetabolism
     ; AminoAcids_PheTyrMetabolism
 - id: R_ASPTRS
   name: Aspartate-tRNA_ligase
+  genes: PFA0145c or PFE0715w
   equation: '|M_asp_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_trnaasp_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_asptrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: AminoAcids_AsnAspMetabolism
 - id: R_ASPt2r
   name: R_ASPt2r
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_asp_L_e[Extraorganism]| + |M_h_e[Extraorganism]| <=> |M_asp_L_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: Transport_aa
@@ -591,16 +692,19 @@
   subsystem: Transport_MT
 - id: R_ATPADPex_mt
   name: R_ATPADPex_mt
+  genes: PF10_0366 or PF10_0051
   equation: '|M_atp_m[Mitochondria]| + |M_adp_c[Cytosol]| => |M_atp_c[Cytosol]| +
     |M_adp_m[Mitochondria]|'
   subsystem: Transport_MT
 - id: R_ATPH1e
   name: apyrase
+  genes: PF14_0297
   equation: '|M_atp_c[Cytosol]| + (2) |M_h2o_c[Cytosol]| => |M_amp_c[Cytosol]| +
     (2) |M_h_c[Cytosol]| + (2) |M_pi_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_ATPH2e
   name: apyrase
+  genes: PF14_0297
   equation: '|M_adp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_amp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
@@ -620,51 +724,62 @@
   subsystem: Transport_AP
 - id: R_ATPtmt
   name: R_ATPtmt
+  genes: PF11_0485 or PFB0795w or PFL1725w or MAL13P1_47 or PF13_0061 or MAL7P1_75
+    or MAL7P1_340
   equation: '|M_atp_m[Mitochondria]| + |M_h2o_m[Mitochondria]| => |M_h_c[Cytosol]|
     + |M_adp_m[Mitochondria]| + |M_pi_m[Mitochondria]|'
   subsystem: Transport_MT
 - id: R_CAMPt
   name: R_CAMPt
+  genes: PFA0160c or MAL8P1_32 or PF13_0252 or PF14_0662
   equation: '|M_atp_c[Cytosol]| + |M_camp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_adp_c[Cytosol]|
     + |M_camp_e[Extraorganism]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: Transport_base
 - id: R_CBPS
   name: Carbamoyl-phosphate_synthase_(glutamine-hydrolysing)
+  genes: PF13_0044
   equation: (2) |M_atp_c[Cytosol]| + |M_gln_L_c[Cytosol]| + |M_h2o_c[Cytosol]| +
     |M_hco3_c[Cytosol]| => (2) |M_adp_c[Cytosol]| + |M_cbp_c[Cytosol]| + |M_glu_L_c[Cytosol]|
     + (2) |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|
   subsystem: Nucleotides_PyrimidineMetabolism ; AminoAcids_GluMetabolism
 - id: R_CBPSam
   name: Carbamoyl-phosphate_synthase_(ammonia)
+  genes: PF13_0044
   equation: (2) |M_atp_c[Cytosol]| + |M_hco3_c[Cytosol]| + |M_nh4_c[Cytosol]| =>
     (2) |M_adp_c[Cytosol]| + |M_cbp_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|
   subsystem: AminoAcids_GluMetabolism ; AminoAcids_NitrogenMetabolism
 - id: R_CDPMEK_ap
   name: 4-(cytidine_5'-diphospho)-2-C-methyl-D-erythritol_kinase
+  genes: PFE0150c
   equation: '|M_4c2me_ap[Apicoplast]| + |M_atp_ap[Apicoplast]| => |M_2p4c2me_ap[Apicoplast]|
     + |M_adp_ap[Apicoplast]| + |M_h_ap[Apicoplast]|'
   subsystem: Lipids_IsoprenoidsMetabolism
 - id: R_CGMPt
   name: R_CGMPt
+  genes: PFA0160c or MAL8P1_32 or PF13_0252 or PF14_0662
   equation: '|M_35cgmp_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_35cgmp_e[Extraorganism]|
     + |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: Transport_base
 - id: R_CHLPCTD
   name: choline-phosphate_cytidylyltransferase
+  genes: MAL13P1_86
   equation: '|M_cholp_c[Cytosol]| + |M_ctp_c[Cytosol]| + |M_h_c[Cytosol]| => |M_cdpchol_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism
 - id: R_CHOLK
   name: choline_kinase
+  genes: PF14_0020
   equation: '|M_atp_c[Cytosol]| + |M_chol_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_cholp_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism
 - id: R_CHOLtu
   name: R_CHOLtu
+  genes: PFL0620c
   equation: '|M_chol_e[Extraorganism]| <=> |M_chol_c[Cytosol]|'
   subsystem: Transport
 - id: R_CHORS
   name: chorismate_synthase
+  genes: PFF1105c
   equation: '|M_3psme_c[Cytosol]| => |M_chor_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: Cofactors_ShikimateBiosynthesis
 - id: R_CHRPL
@@ -678,6 +793,7 @@
   subsystem: Transport_lipid
 - id: R_CHTNASE
   name: chitinase
+  genes: PF07_0009 or PFL2510w
   equation: '|M_chtn_c[Cytosol]| + (2) |M_h2o_c[Cytosol]| => (3) |M_acgam_c[Cytosol]|'
   subsystem: Carbohydrates_AminosugarsMetabolism
 - id: R_CITt2r
@@ -794,26 +910,31 @@
   subsystem: Transport_MT
 - id: R_CPPPGO
   name: coproporphyrinogen_oxidase
+  genes: PF11_0436
   equation: '|M_cpppg3_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_o2_c[Cytosol]| =>
     (2) |M_co2_c[Cytosol]| + (2) |M_h2o_c[Cytosol]| + |M_pppg9_c[Cytosol]|'
   subsystem: Cofactors_PorphyrinMetabolism
 - id: R_CPPPGO_ap
   name: coproporphyrinogen_oxidase
+  genes: PF11_0436
   equation: '|M_cpppg3_ap[Apicoplast]| + (2) |M_h_ap[Apicoplast]| + |M_o2_ap[Apicoplast]|
     => (2) |M_co2_ap[Apicoplast]| + (2) |M_h2o_ap[Apicoplast]| + |M_pppg9_ap[Apicoplast]|'
   subsystem: Cofactors_PorphyrinMetabolism
 - id: R_CPPPGO_mt
   name: coproporphyrinogen_oxidase
+  genes: PF11_0436
   equation: '|M_cpppg3_m[Mitochondria]| + (2) |M_h_m[Mitochondria]| + |M_o2_m[Mitochondria]|
     => (2) |M_co2_m[Mitochondria]| + (2) |M_h2o_m[Mitochondria]| + |M_pppg9_m[Mitochondria]|'
   subsystem: Cofactors_PorphyrinMetabolism
 - id: R_CS_mt
   name: citrate_(Si)-synthase
+  genes: PF10_0218
   equation: '|M_accoa_m[Mitochondria]| + |M_h2o_m[Mitochondria]| + |M_oaa_m[Mitochondria]|
     => |M_cit_m[Mitochondria]| + |M_coa_m[Mitochondria]| + |M_h_m[Mitochondria]|'
   subsystem: Others_MitochondrialTCACycle
 - id: R_CTPS2
   name: CTP_synthase
+  genes: PF14_0100
   equation: '|M_atp_c[Cytosol]| + |M_gln_L_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_utp_c[Cytosol]|
     => |M_adp_c[Cytosol]| + |M_ctp_c[Cytosol]| + |M_glu_L_c[Cytosol]| + (2) |M_h_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
@@ -824,21 +945,25 @@
   subsystem: Transport_AP
 - id: R_CYOOm_mt
   name: cytochrome-c_oxidase
+  genes: COI or COXIII or PF14_0288 or PF14_0331 or PF14_0721 or PFI1365w or PFI1375w
   equation: (4) |M_focytc_m[Mitochondria]| + (6) |M_h_m[Mitochondria]| + |M_o2_m[Mitochondria]|
     => (6) |M_h_c[Cytosol]| + (4) |M_ficytc_m[Mitochondria]| + (2) |M_h2o_m[Mitochondria]|
   subsystem: Others_MitochondrialElectronFlow
 - id: R_CYOR_u6m_mt
   name: ubiquinol-cytochrome-c_reductase
+  genes: PF14_0248 or PF14_0373
   equation: (2) |M_ficytc_m[Mitochondria]| + |M_q8h2_m[Mitochondria]| => (2) |M_focytc_m[Mitochondria]|
     + |M_q8_m[Mitochondria]|
   subsystem: Others_MitochondrialElectronFlow
 - id: R_CYSGLUexR
   name: R_CYSGLUexR
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_cys_L_e[Extraorganism]| + |M_gln_L_c[Cytosol]| <=> |M_cys_L_c[Cytosol]|
     + |M_gln_L_e[Extraorganism]|'
   subsystem: Transport_aa
 - id: R_CYSGLYexR
   name: R_CYSGLYexR
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_cys_L_c[Cytosol]| + |M_gly_e[Extraorganism]| <=> |M_cys_L_e[Extraorganism]|
     + |M_gly_c[Cytosol]|'
   subsystem: Transport_aa
@@ -848,117 +973,141 @@
   subsystem: Transport_MT
 - id: R_CYSTGLUex
   name: R_CYSTGLUex
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_Lcystin_e[Extraorganism]| + |M_glu_L_c[Cytosol]| => |M_Lcystin_c[Cytosol]|
     + |M_glu_L_e[Extraorganism]|'
   subsystem: Transport_aa
 - id: R_CYSTRS
   name: Cysteine-tRNA_ligase
+  genes: PF10_0149
   equation: '|M_atp_c[Cytosol]| + |M_cys_L_c[Cytosol]| + |M_trnacys_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_cystrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: AminoAcids_tRNA
 - id: R_CYSTSERex
   name: R_CYSTSERex
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_Lcystin_e[Extraorganism]| + |M_ser_L_c[Cytosol]| => |M_Lcystin_c[Cytosol]|
     + |M_ser_L_e[Extraorganism]|'
   subsystem: Transport_aa
 - id: R_CYSt2r
   name: R_CYSt2r
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_cys_L_e[Extraorganism]| + |M_h_e[Extraorganism]| <=> |M_cys_L_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: Transport_aa
 - id: R_CYTDt
   name: R_CYTDt
+  genes: PFA0160c or MAL8P1_32 or PF13_0252 or PF14_0662
   equation: '|M_cytd_e[Extraorganism]| <=> |M_cytd_c[Cytosol]|'
   subsystem: Transport_base
 - id: R_CYTK1
   name: cytidylate_kinase
+  genes: PFA0555c
   equation: '|M_atp_c[Cytosol]| + |M_cmp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_cdp_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism
 - id: R_CYTK2
   name: cytidylate_kinase
+  genes: PFA0555c
   equation: '|M_atp_c[Cytosol]| + |M_dcmp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dcdp_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism
 - id: R_DADA
   name: adenosine_deaminase
+  genes: PF10_0289
   equation: '|M_dad_2_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_din_c[Cytosol]|
     + |M_nh4_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism ; AminoAcids_MetPolyamineMetabolism
 - id: R_DADNt4
   name: R_DADNt4
+  genes: PFA0160c or MAL8P1_32 or PF13_0252 or PF14_0662
   equation: '|M_dad_2_e[Extraorganism]| <=> |M_dad_2_c[Cytosol]|'
   subsystem: Transport_base
 - id: R_DAGCPT
   name: diacylglycerol_cholinephosphotransferase
+  genes: PFF1375c
   equation: (0.01) |M_dag_c[Cytosol]| + |M_cdpchol_c[Cytosol]| => |M_cmp_c[Cytosol]|
     + |M_h_c[Cytosol]| + (0.01) |M_pc_c[Cytosol]|
   subsystem: Lipids_PhosphatidylcholineMetabolism
 - id: R_DAGK120
   name: diacylglycerol_kinase
+  genes: PF14_0681 or PFI1485c
   equation: '|M_12dgr120_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_adp_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_pa120_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism ; Lipids_UtilizationPhospholipids
 - id: R_DAGK140
   name: diacylglycerol_kinase
+  genes: PF14_0681 or PFI1485c
   equation: '|M_12dgr140_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_adp_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_pa140_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism ; Lipids_UtilizationPhospholipids
 - id: R_DAGK141
   name: diacylglycerol_kinase
+  genes: PF14_0681 or PFI1485c
   equation: '|M_12dgr141_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_adp_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_pa141_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism ; Lipids_UtilizationPhospholipids
 - id: R_DAGK160
   name: diacylglycerol_kinase
+  genes: PF14_0681 or PFI1485c
   equation: '|M_12dgr160_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_adp_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_pa160_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism ; Lipids_UtilizationPhospholipids
 - id: R_DAGK161
   name: diacylglycerol_kinase
+  genes: PF14_0681 or PFI1485c
   equation: '|M_12dgr161_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_adp_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_pa161_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism ; Lipids_UtilizationPhospholipids
 - id: R_DAGK180
   name: diacylglycerol_kinase
+  genes: PF14_0681 or PFI1485c
   equation: '|M_12dgr180_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_adp_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_pa180_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism ; Lipids_UtilizationPhospholipids
 - id: R_DAGK181
   name: diacylglycerol_kinase
+  genes: PF14_0681 or PFI1485c
   equation: '|M_12dgr181_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_adp_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_pa181_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism ; Lipids_UtilizationPhospholipids
 - id: R_DASYN120
   name: phosphatidate_cytidylyltransferase
+  genes: PF14_0097
   equation: '|M_ctp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pa120_c[Cytosol]| => |M_cdpdddecg_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_DASYN140
   name: phosphatidate_cytidylyltransferase
+  genes: PF14_0097
   equation: '|M_ctp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pa140_c[Cytosol]| => |M_cdpdtdecg_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_DASYN141
   name: phosphatidate_cytidylyltransferase
+  genes: PF14_0097
   equation: '|M_ctp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pa141_c[Cytosol]| => |M_cdpdtdec7eg_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_DASYN160
   name: phosphatidate_cytidylyltransferase
+  genes: PF14_0097
   equation: '|M_ctp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pa160_c[Cytosol]| => |M_cdpdhdecg_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_DASYN161
   name: phosphatidate_cytidylyltransferase
+  genes: PF14_0097
   equation: '|M_ctp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pa161_c[Cytosol]| => |M_cdpdhdec9eg_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_DASYN180
   name: phosphatidate_cytidylyltransferase
+  genes: PF14_0097
   equation: '|M_ctp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pa180_c[Cytosol]| => |M_cdpdodecg_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_DASYN181
   name: phosphatidate_cytidylyltransferase
+  genes: PF14_0097
   equation: '|M_ctp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pa181_c[Cytosol]| => |M_cdpdodec11eg_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
@@ -969,11 +1118,13 @@
   subsystem: Nucleotides_PurineMetabolism
 - id: R_DCTPD
   name: dCTP_deaminase
+  genes: PF13_0259
   equation: '|M_dctp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dutp_c[Cytosol]|
     + |M_nh4_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism
 - id: R_DCYTt
   name: R_DCYTt
+  genes: PFA0160c or MAL8P1_32 or PF13_0252 or PF14_0662
   equation: '|M_dcyt_e[Extraorganism]| <=> |M_dcyt_c[Cytosol]|'
   subsystem: Transport_base
 - id: R_DDPA
@@ -983,21 +1134,25 @@
   subsystem: Cofactors_ShikimateBiosynthesis
 - id: R_DESAT14
   name: stearoyl-CoA_9-desaturase
+  genes: PFE0555w
   equation: '|M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| + |M_o2_c[Cytosol]| + |M_tdcoa_c[Cytosol]|
     => (2) |M_h2o_c[Cytosol]| + |M_nadp_c[Cytosol]| + |M_tdecoa_c[Cytosol]|'
   subsystem: Lipids_UtilizationPhospholipids
 - id: R_DESAT16
   name: stearoyl-CoA_9-desaturase
+  genes: PFE0555w
   equation: '|M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| + |M_o2_c[Cytosol]| + |M_pmtcoa_c[Cytosol]|
     => (2) |M_h2o_c[Cytosol]| + |M_hdcoa_c[Cytosol]| + |M_nadp_c[Cytosol]|'
   subsystem: Lipids_UtilizationPhospholipids
 - id: R_DESAT18
   name: stearoyl-CoA_9-desaturase
+  genes: PFE0555w
   equation: '|M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| + |M_o2_c[Cytosol]| + |M_stcoa_c[Cytosol]|
     => (2) |M_h2o_c[Cytosol]| + |M_nadp_c[Cytosol]| + |M_odecoa_c[Cytosol]|'
   subsystem: Lipids_UtilizationPhospholipids
 - id: R_DESAT18_2
   name: stearoyl-CoA_9-desaturase
+  genes: PFE0555w
   equation: '|M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| + |M_o2_c[Cytosol]| + |M_odecoa_c[Cytosol]|
     => (2) |M_h2o_c[Cytosol]| + |M_nadp_c[Cytosol]| + |M_ocdycacoa_c[Cytosol]|'
   subsystem: Lipids_UtilizationPhospholipids
@@ -1008,14 +1163,17 @@
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_DGK1
   name: guanylate_kinase
+  genes: PFI1420w
   equation: '|M_atp_c[Cytosol]| + |M_dgmp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dgdp_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_DGSNt
   name: R_DGSNt
+  genes: PFA0160c or MAL8P1_32 or PF13_0252 or PF14_0662
   equation: '|M_dgsn_e[Extraorganism]| <=> |M_dgsn_c[Cytosol]|'
   subsystem: Transport_base
 - id: R_DHAPtap
   name: R_DHAPtap
+  genes: PFE0410w
   equation: '|M_pi_ap[Apicoplast]| + |M_dhap_c[Cytosol]| => |M_pi_c[Cytosol]| + |M_dhap_ap[Apicoplast]|'
   subsystem: Transport_AP
 - id: R_DHAPtmt
@@ -1033,21 +1191,25 @@
   subsystem: Lipids_SphingomyelinCeramideMetabolism
 - id: R_DHFR
   name: dihydrofolate_reductase
+  genes: PFD0830w
   equation: '|M_dhf_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| <=> |M_nadp_c[Cytosol]|
     + |M_thf_c[Cytosol]|'
   subsystem: Cofactors_FolateBiosynthesis
 - id: R_DHFS
   name: dihydrofolate_synthase
+  genes: PF13_0140
   equation: '|M_atp_c[Cytosol]| + |M_dhpt_c[Cytosol]| + |M_glu_L_c[Cytosol]| => |M_adp_c[Cytosol]|
     + |M_dhf_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: Cofactors_FolateBiosynthesis
 - id: R_DHORD2_mt
   name: dihydroorotate_oxidase
+  genes: PFF0160c
   equation: '|M_dhor_S_m[Mitochondria]| + |M_q8_m[Mitochondria]| => |M_orot_m[Mitochondria]|
     + |M_q8h2_m[Mitochondria]|'
   subsystem: Nucleotides_PyrimidineMetabolism ; Others_MitochondrialElectronFlow
 - id: R_DHORTS
   name: dihydroorotase
+  genes: PF14_0697
   equation: '|M_dhor_S_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_cbasp_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism
@@ -1057,6 +1219,7 @@
   subsystem: Transport_MT
 - id: R_DHPS2
   name: dihydropteroate_synthase
+  genes: PF08_0095
   equation: '|M_4abz_c[Cytosol]| + |M_6hmhptpp_c[Cytosol]| => |M_dhpt_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: Cofactors_FolateBiosynthesis
@@ -1070,14 +1233,17 @@
   subsystem: Cofactors_ShikimateBiosynthesis
 - id: R_DINt
   name: R_DINt
+  genes: PFA0160c or MAL8P1_32 or PF13_0252 or PF14_0662
   equation: '|M_din_e[Extraorganism]| <=> |M_din_c[Cytosol]|'
   subsystem: Transport_base
 - id: R_DMATT
   name: dimethylallyltranstransferase
+  genes: PF11_0295
   equation: '|M_dmpp_c[Cytosol]| + |M_ipdp_c[Cytosol]| => |M_grdp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: Lipids_TerpenoidMetabolism
 - id: R_DMPPS_ap
   name: 4-hydroxy-3-methylbut-2-enyl_diphosphate_reductase
+  genes: PFA0225w
   equation: '|M_h_ap[Apicoplast]| + |M_h2mb4p_ap[Apicoplast]| + |M_nadph_ap[Apicoplast]|
     => |M_dmpp_ap[Apicoplast]| + |M_h2o_ap[Apicoplast]| + |M_nadp_ap[Apicoplast]|'
   subsystem: Lipids_IsoprenoidsMetabolism
@@ -1087,51 +1253,61 @@
   subsystem: Transport_AP
 - id: R_DMQMT_mt
   name: R_DMQMT_mt
+  genes: MAL7P1_130
   equation: '|M_2omhmbl_m[Mitochondria]| + |M_amet_m[Mitochondria]| => |M_ahcys_m[Mitochondria]|
     + |M_h_m[Mitochondria]| + |M_q8h2_m[Mitochondria]|'
   subsystem: Cofactors_UbiquinoneMetabolism
 - id: R_DOLASNT
   name: dolichyl-diphosphooligosaccharide-protein_glycotransferase
+  genes: PF11_0173 or PFI0960w
   equation: '|M_Asn_X_Ser_FSLASH_Thr_c[Cytosol]| + (0.1) |M_g3m8mpdol_L_c[Cytosol]|
     => (0.1) |M_doldp_L_c[Cytosol]| + |M_g3m8masn_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: Carbohydrates_AminosugarsMetabolism
 - id: R_DOLDPP
   name: dolichyldiphosphatase
+  genes: MAL8P1_202
   equation: (0.1) |M_doldp_L_c[Cytosol]| + |M_h2o_c[Cytosol]| => (0.1) |M_dolp_L_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|
   subsystem: Lipids_DolicholMetabolism
 - id: R_DOLK
   name: dolichol_kinase
+  genes: PFA0485w
   equation: '|M_ctp_c[Cytosol]| + |M_dolichol_c[Cytosol]| => |M_cdp_c[Cytosol]| +
     |M_dolp_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: Lipids_DolicholMetabolism
 - id: R_DOLPMT
   name: dolichyl-phosphate_beta-D-mannosyltransferase
+  genes: PF11_0427
   equation: '|M_dolp_c[Cytosol]| + |M_gdpmann_c[Cytosol]| => |M_gdp_c[Cytosol]| +
     |M_dolmanp_c[Cytosol]|'
   subsystem: Lipids_DolicholMetabolism
 - id: R_DOLPMT1
   name: dolichyl-phosphate-mannose-glycolipid_alpha-mannosyltransferase
+  genes: MAL13P1_210
   equation: (0.1) |M_dolmanp_L_c[Cytosol]| + (0.1) |M_m4mpdol_L_c[Cytosol]| => (0.1)
     |M_dolp_L_c[Cytosol]| + |M_h_c[Cytosol]| + (0.1) |M_m5mpdol_L_c[Cytosol]|
   subsystem: Lipids_GPIAnchorBiosynthesis ; Lipids_DolicholMetabolism
 - id: R_DOLPMT2
   name: dolichyl-phosphate-mannose-glycolipid_alpha-mannosyltransferase
+  genes: MAL13P1_210
   equation: (0.1) |M_dolmanp_L_c[Cytosol]| + (0.1) |M_m5mpdol_L_c[Cytosol]| => (0.1)
     |M_dolp_L_c[Cytosol]| + |M_h_c[Cytosol]| + (0.1) |M_m6mpdol_L_c[Cytosol]|
   subsystem: Lipids_GPIAnchorBiosynthesis ; Lipids_DolicholMetabolism
 - id: R_DOLPMT3
   name: dolichyl-phosphate-mannose-glycolipid_alpha-mannosyltransferase
+  genes: MAL13P1_210
   equation: (0.1) |M_dolmanp_L_c[Cytosol]| + (0.1) |M_m6mpdol_L_c[Cytosol]| => (0.1)
     |M_dolp_L_c[Cytosol]| + |M_h_c[Cytosol]| + (0.1) |M_m7mpdol_L_c[Cytosol]|
   subsystem: Lipids_GPIAnchorBiosynthesis ; Lipids_DolicholMetabolism
 - id: R_DOLPMT4
   name: dolichyl-phosphate-mannose-glycolipid_alpha-mannosyltransferase
+  genes: MAL13P1_210
   equation: (0.1) |M_dolmanp_L_c[Cytosol]| + (0.1) |M_m7mpdol_L_c[Cytosol]| => (0.1)
     |M_dolp_L_c[Cytosol]| + |M_h_c[Cytosol]| + (0.1) |M_m8mpdol_L_c[Cytosol]|
   subsystem: Lipids_GPIAnchorBiosynthesis ; Lipids_DolicholMetabolism
 - id: R_DPCOAK_ap
   name: dephospho-CoA_kinase
+  genes: PF14_0415
   equation: '|M_atp_ap[Apicoplast]| + |M_dpcoa_ap[Apicoplast]| => |M_adp_ap[Apicoplast]|
     + |M_coa_ap[Apicoplast]| + |M_h_ap[Apicoplast]|'
   subsystem: Cofactors_CoABiosynthesis
@@ -1141,60 +1317,73 @@
   subsystem: Transport_AP
 - id: R_DRPA
   name: Deoxyribose-phosphate_aldolase
+  genes: PF10_0210
   equation: '|M_2dr5p_c[Cytosol]| => |M_acald_c[Cytosol]| + |M_g3p_c[Cytosol]|'
   subsystem: Carbohydrates_PentosePhosphateCycle
 - id: R_DSAT
   name: sphingosine_N-acyltransferase
+  genes: PFE0405c
   equation: '|M_Rtotalcoa_c[Cytosol]| + |M_sphgn_c[Cytosol]| => |M_coa_c[Cytosol]|
     + |M_dhcrm_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: Lipids_SphingomyelinCeramideMetabolism
 - id: R_DSBAO1
   name: Protein_disulfide-isomerase
+  genes: MAL8P1_17 or PF11_0352 or PF13_0272 or PF14_0694 or PFI0950w
   equation: '|M_q8_c[Cytosol]| + |M_dsbard_e[Extraorganism]| => |M_q8h2_c[Cytosol]|
     + |M_dsbaox_e[Extraorganism]|'
   subsystem: Redox_RedoxMetabolism
 - id: R_DSBCGT
   name: Protein_disulfide-isomerase
+  genes: MAL8P1_17 or PF11_0352 or PF13_0272 or PF14_0694 or PFI0950w
   equation: '|M_dsbcox_c[Cytosol]| + (2) |M_gthrd_c[Cytosol]| => |M_dsbcrd_c[Cytosol]|
     + |M_gthox_c[Cytosol]|'
   subsystem: Redox_RedoxMetabolism
 - id: R_DSBGGT
   name: Protein_disulfide-isomerase
+  genes: MAL8P1_17 or PF11_0352 or PF13_0272 or PF14_0694 or PFI0950w
   equation: '|M_dsbgox_c[Cytosol]| + (2) |M_gthrd_c[Cytosol]| => |M_dsbgrd_c[Cytosol]|
     + |M_gthox_c[Cytosol]|'
   subsystem: Redox_RedoxMetabolism
 - id: R_DTMPK
   name: dTMP_kinase
+  genes: PFL2465c
   equation: '|M_atp_c[Cytosol]| + |M_dtmp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dtdp_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism
 - id: R_DTTPt
   name: R_DTTPt
+  genes: PFA0160c or MAL8P1_32 or PF13_0252 or PF14_0662
   equation: '|M_dttp_e[Extraorganism]| <=> |M_dttp_c[Cytosol]|'
   subsystem: Transport_base
 - id: R_DUMPK
   name: dTMP_kinase
+  genes: PFL2465c
   equation: '|M_atp_c[Cytosol]| + |M_dump_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dudp_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism
 - id: R_DURIPP
   name: R_DURIPP
+  genes: PFE0660c
   equation: '|M_duri_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_2dr1p_c[Cytosol]| + |M_ura_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism
 - id: R_DURIt
   name: R_DURIt
+  genes: PFA0160c or MAL8P1_32 or PF13_0252 or PF14_0662
   equation: '|M_duri_e[Extraorganism]| <=> |M_duri_c[Cytosol]|'
   subsystem: Transport_base
 - id: R_DUTPDP
   name: dUTP_diphosphatase
+  genes: PF11_0282
   equation: '|M_dutp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dump_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism
 - id: R_DXPRIi_ap
   name: 1-deoxy-D-xylulose-5-phosphate_reductoisomerase
+  genes: PF14_0641
   equation: '|M_dxyl5p_ap[Apicoplast]| + |M_h_ap[Apicoplast]| + |M_nadph_ap[Apicoplast]|
     => |M_2me4p_ap[Apicoplast]| + |M_nadp_ap[Apicoplast]|'
   subsystem: Lipids_IsoprenoidsMetabolism
 - id: R_DXPS_ap
   name: 1-deoxy-D-xylulose-5-phosphate_synthase
+  genes: MAL13P1_186
   equation: '|M_g3p_ap[Apicoplast]| + |M_h_ap[Apicoplast]| + |M_pyr_ap[Apicoplast]|
     => |M_co2_ap[Apicoplast]| + |M_dxyl5p_ap[Apicoplast]|'
   subsystem: Lipids_IsoprenoidsMetabolism
@@ -1213,75 +1402,90 @@
   subsystem: Transport
 - id: R_EAR100x_ap
   name: enoyl-[acyl-carrier-protein]_reductase_(NADH)
+  genes: PFF0730c
   equation: '|M_h_ap[Apicoplast]| + |M_nadh_ap[Apicoplast]| + |M_tdec2eACP_ap[Apicoplast]|
     => |M_dcaACP_ap[Apicoplast]| + |M_nad_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_EAR120x_ap
   name: enoyl-[acyl-carrier-protein]_reductase_(NADH)
+  genes: PFF0730c
   equation: '|M_h_ap[Apicoplast]| + |M_nadh_ap[Apicoplast]| + |M_tddec2eACP_ap[Apicoplast]|
     => |M_ddcaACP_ap[Apicoplast]| + |M_nad_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_EAR121x_ap
   name: enoyl-[acyl-carrier-protein]_reductase_(NADH)
+  genes: PFF0730c
   equation: '|M_h_ap[Apicoplast]| + |M_nadh_ap[Apicoplast]| + |M_t3c5ddeceACP_ap[Apicoplast]|
     => |M_cddec5eACP_ap[Apicoplast]| + |M_nad_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_EAR140x_ap
   name: enoyl-[acyl-carrier-protein]_reductase_(NADH)
+  genes: PFF0730c
   equation: '|M_h_ap[Apicoplast]| + |M_nadh_ap[Apicoplast]| + |M_tmrs2eACP_ap[Apicoplast]|
     => |M_myrsACP_ap[Apicoplast]| + |M_nad_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_EAR141x_ap
   name: enoyl-[acyl-carrier-protein]_reductase_(NADH)
+  genes: PFF0730c
   equation: '|M_h_ap[Apicoplast]| + |M_nadh_ap[Apicoplast]| + |M_t3c7mrseACP_ap[Apicoplast]|
     => |M_nad_ap[Apicoplast]| + |M_tdeACP_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_EAR160x_ap
   name: enoyl-[acyl-carrier-protein]_reductase_(NADH)
+  genes: PFF0730c
   equation: '|M_h_ap[Apicoplast]| + |M_nadh_ap[Apicoplast]| + |M_tpalm2eACP_ap[Apicoplast]|
     => |M_nad_ap[Apicoplast]| + |M_palmACP_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_EAR161x_ap
   name: enoyl-[acyl-carrier-protein]_reductase_(NADH)
+  genes: PFF0730c
   equation: '|M_h_ap[Apicoplast]| + |M_nadh_ap[Apicoplast]| + |M_t3c9palmeACP_ap[Apicoplast]|
     => |M_hdeACP_ap[Apicoplast]| + |M_nad_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_EAR180x_ap
   name: enoyl-[acyl-carrier-protein]_reductase_(NADH)
+  genes: PFF0730c
   equation: '|M_h_ap[Apicoplast]| + |M_nadh_ap[Apicoplast]| + |M_toctd2eACP_ap[Apicoplast]|
     => |M_nad_ap[Apicoplast]| + |M_ocdcaACP_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_EAR181x_ap
   name: enoyl-[acyl-carrier-protein]_reductase_(NADH)
+  genes: PFF0730c
   equation: '|M_h_ap[Apicoplast]| + |M_nadh_ap[Apicoplast]| + |M_t3c11vaceACP_ap[Apicoplast]|
     => |M_nad_ap[Apicoplast]| + |M_octeACP_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_EAR40x_ap
   name: enoyl-[acyl-carrier-protein]_reductase_(NADH)
+  genes: PFF0730c
   equation: '|M_but2eACP_ap[Apicoplast]| + |M_h_ap[Apicoplast]| + |M_nadh_ap[Apicoplast]|
     => |M_butACP_ap[Apicoplast]| + |M_nad_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_EAR60x_ap
   name: enoyl-[acyl-carrier-protein]_reductase_(NADH)
+  genes: PFF0730c
   equation: '|M_h_ap[Apicoplast]| + |M_nadh_ap[Apicoplast]| + |M_thex2eACP_ap[Apicoplast]|
     => |M_hexACP_ap[Apicoplast]| + |M_nad_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_EAR80x_ap
   name: enoyl-[acyl-carrier-protein]_reductase_(NADH)
+  genes: PFF0730c
   equation: '|M_h_ap[Apicoplast]| + |M_nadh_ap[Apicoplast]| + |M_toct2eACP_ap[Apicoplast]|
     => |M_nad_ap[Apicoplast]| + |M_ocACP_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_ENO
   name: phosphopyruvate_hydratase
+  genes: PF10_0155
   equation: '|M_2pg_c[Cytosol]| <=> |M_h2o_c[Cytosol]| + |M_pep_c[Cytosol]|'
   subsystem: Carbohydrates_Glycolysis
 - id: R_ETHAK
   name: ethanolamine_kinase
+  genes: PF11_0257
   equation: '|M_atp_c[Cytosol]| + |M_etha_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_ethamp_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_ETHAPT
   name: ethanolaminephosphotransferase
+  genes: PFF1375c
   equation: (0.01) |M_dag_c[Cytosol]| + |M_cdpea_c[Cytosol]| <=> |M_cmp_c[Cytosol]|
     + |M_h_c[Cytosol]| + (0.01) |M_pe_c[Cytosol]|
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
@@ -1305,127 +1509,159 @@
   subsystem: Transport
 - id: R_FACOAL100t2pp_ap
   name: Long-chain-fatty-acid-CoA_ligase
+  genes: MAL13P1_485 or PF07_0129 or PF14_0751 or PF14_0761 or PFB0685c or PFB0695c
+    or PFC0050c or PFD0085c or PFE1250w or PFF0945c or PFL1880w or PFL2570w
   equation: '|M_atp_ap[Apicoplast]| + |M_coa_ap[Apicoplast]| + |M_dca_ap[Apicoplast]|
     => |M_amp_ap[Apicoplast]| + |M_dcacoa_ap[Apicoplast]| + |M_ppi_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis ; Lipids_SphingomyelinCeramideMetabolism ;
     Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism ; Lipids_UtilizationPhospholipids
 - id: R_FACOAL120t2pp_ap
   name: Long-chain-fatty-acid-CoA_ligase
+  genes: MAL13P1_485 or PF07_0129 or PF14_0751 or PF14_0761 or PFB0685c or PFB0695c
+    or PFC0050c or PFD0085c or PFE1250w or PFF0945c or PFL1880w or PFL2570w
   equation: '|M_atp_ap[Apicoplast]| + |M_coa_ap[Apicoplast]| + |M_ddca_ap[Apicoplast]|
     => |M_amp_ap[Apicoplast]| + |M_ddcacoa_ap[Apicoplast]| + |M_ppi_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis ; Lipids_SphingomyelinCeramideMetabolism ;
     Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism ; Lipids_UtilizationPhospholipids
 - id: R_FACOAL140t2pp_ap
   name: Long-chain-fatty-acid-CoA_ligase
+  genes: MAL13P1_485 or PF07_0129 or PF14_0751 or PF14_0761 or PFB0685c or PFB0695c
+    or PFC0050c or PFD0085c or PFE1250w or PFF0945c or PFL1880w or PFL2570w
   equation: '|M_atp_ap[Apicoplast]| + |M_coa_ap[Apicoplast]| + |M_ttdca_ap[Apicoplast]|
     => |M_amp_ap[Apicoplast]| + |M_ppi_ap[Apicoplast]| + |M_tdcoa_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis ; Lipids_SphingomyelinCeramideMetabolism ;
     Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism ; Lipids_UtilizationPhospholipids
 - id: R_FACOAL141t2pp_ap
   name: Long-chain-fatty-acid-CoA_ligase
+  genes: MAL13P1_485 or PF07_0129 or PF14_0751 or PF14_0761 or PFB0685c or PFB0695c
+    or PFC0050c or PFD0085c or PFE1250w or PFF0945c or PFL1880w or PFL2570w
   equation: '|M_atp_ap[Apicoplast]| + |M_coa_ap[Apicoplast]| + |M_ttdcea_ap[Apicoplast]|
     => |M_amp_ap[Apicoplast]| + |M_ppi_ap[Apicoplast]| + |M_tdecoa_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis ; Lipids_SphingomyelinCeramideMetabolism ;
     Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism ; Lipids_UtilizationPhospholipids
 - id: R_FACOAL160t2pp_ap
   name: Long-chain-fatty-acid-CoA_ligase
+  genes: MAL13P1_485 or PF07_0129 or PF14_0751 or PF14_0761 or PFB0685c or PFB0695c
+    or PFC0050c or PFD0085c or PFE1250w or PFF0945c or PFL1880w or PFL2570w
   equation: '|M_atp_ap[Apicoplast]| + |M_coa_ap[Apicoplast]| + |M_hdca_ap[Apicoplast]|
     => |M_amp_ap[Apicoplast]| + |M_pmtcoa_ap[Apicoplast]| + |M_ppi_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis ; Lipids_SphingomyelinCeramideMetabolism ;
     Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism ; Lipids_UtilizationPhospholipids
 - id: R_FACOAL161t2pp_ap
   name: Long-chain-fatty-acid-CoA_ligase
+  genes: MAL13P1_485 or PF07_0129 or PF14_0751 or PF14_0761 or PFB0685c or PFB0695c
+    or PFC0050c or PFD0085c or PFE1250w or PFF0945c or PFL1880w or PFL2570w
   equation: '|M_atp_ap[Apicoplast]| + |M_coa_ap[Apicoplast]| + |M_hdcea_ap[Apicoplast]|
     => |M_amp_ap[Apicoplast]| + |M_hdcoa_ap[Apicoplast]| + |M_ppi_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis ; Lipids_SphingomyelinCeramideMetabolism ;
     Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism ; Lipids_UtilizationPhospholipids
 - id: R_FACOAL180t2pp_ap
   name: Long-chain-fatty-acid-CoA_ligase
+  genes: MAL13P1_485 or PF07_0129 or PF14_0751 or PF14_0761 or PFB0685c or PFB0695c
+    or PFC0050c or PFD0085c or PFE1250w or PFF0945c or PFL1880w or PFL2570w
   equation: '|M_atp_ap[Apicoplast]| + |M_coa_ap[Apicoplast]| + |M_ocdca_ap[Apicoplast]|
     => |M_amp_ap[Apicoplast]| + |M_ppi_ap[Apicoplast]| + |M_stcoa_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis ; Lipids_SphingomyelinCeramideMetabolism ;
     Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism ; Lipids_UtilizationPhospholipids
 - id: R_FACOAL181t2pp_ap
   name: Long-chain-fatty-acid-CoA_ligase
+  genes: MAL13P1_485 or PF07_0129 or PF14_0751 or PF14_0761 or PFB0685c or PFB0695c
+    or PFC0050c or PFD0085c or PFE1250w or PFF0945c or PFL1880w or PFL2570w
   equation: '|M_atp_ap[Apicoplast]| + |M_coa_ap[Apicoplast]| + |M_ocdcea_ap[Apicoplast]|
     => |M_amp_ap[Apicoplast]| + |M_odecoa_ap[Apicoplast]| + |M_ppi_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis ; Lipids_SphingomyelinCeramideMetabolism ;
     Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism ; Lipids_UtilizationPhospholipids
 - id: R_FACOAL60t2pp_ap
   name: Long-chain-fatty-acid-CoA_ligase
+  genes: MAL13P1_485 or PF07_0129 or PF14_0751 or PF14_0761 or PFB0685c or PFB0695c
+    or PFC0050c or PFD0085c or PFE1250w or PFF0945c or PFL1880w or PFL2570w
   equation: '|M_atp_ap[Apicoplast]| + |M_coa_ap[Apicoplast]| + |M_hxa_ap[Apicoplast]|
     => |M_amp_ap[Apicoplast]| + |M_hxcoa_ap[Apicoplast]| + |M_ppi_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis ; Lipids_SphingomyelinCeramideMetabolism ;
     Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism ; Lipids_UtilizationPhospholipids
 - id: R_FACOAL80t2pp_ap
   name: Long-chain-fatty-acid-CoA_ligase
+  genes: MAL13P1_485 or PF07_0129 or PF14_0751 or PF14_0761 or PFB0685c or PFB0695c
+    or PFC0050c or PFD0085c or PFE1250w or PFF0945c or PFL1880w or PFL2570w
   equation: '|M_atp_ap[Apicoplast]| + |M_coa_ap[Apicoplast]| + |M_octa_ap[Apicoplast]|
     => |M_amp_ap[Apicoplast]| + |M_occoa_ap[Apicoplast]| + |M_ppi_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis ; Lipids_SphingomyelinCeramideMetabolism ;
     Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism ; Lipids_UtilizationPhospholipids
 - id: R_FAS100_ap
   name: fatty-acid_synthase
+  genes: PFB0505c or PFI1125c
   equation: (3) |M_h_ap[Apicoplast]| + |M_malcoa_ap[Apicoplast]| + (2) |M_nadph_ap[Apicoplast]|
     + |M_octa_ap[Apicoplast]| => |M_co2_ap[Apicoplast]| + |M_coa_ap[Apicoplast]|
     + |M_dca_ap[Apicoplast]| + |M_h2o_ap[Apicoplast]| + (2) |M_nadp_ap[Apicoplast]|
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_FAS120_ap
   name: fatty-acid_synthase
+  genes: PFB0505c or PFI1125c
   equation: '|M_dca_ap[Apicoplast]| + (3) |M_h_ap[Apicoplast]| + |M_malcoa_ap[Apicoplast]|
     + (2) |M_nadph_ap[Apicoplast]| => |M_co2_ap[Apicoplast]| + |M_coa_ap[Apicoplast]|
     + |M_ddca_ap[Apicoplast]| + |M_h2o_ap[Apicoplast]| + (2) |M_nadp_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_FAS140_ap
   name: fatty-acid_synthase
+  genes: PFB0505c or PFI1125c
   equation: '|M_ddca_ap[Apicoplast]| + (3) |M_h_ap[Apicoplast]| + |M_malcoa_ap[Apicoplast]|
     + (2) |M_nadph_ap[Apicoplast]| => |M_co2_ap[Apicoplast]| + |M_coa_ap[Apicoplast]|
     + |M_h2o_ap[Apicoplast]| + (2) |M_nadp_ap[Apicoplast]| + |M_ttdca_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_FAS160_ap
   name: fatty-acid_synthase
+  genes: PFB0505c or PFI1125c
   equation: (3) |M_h_ap[Apicoplast]| + |M_malcoa_ap[Apicoplast]| + (2) |M_nadph_ap[Apicoplast]|
     + |M_ttdca_ap[Apicoplast]| => |M_co2_ap[Apicoplast]| + |M_coa_ap[Apicoplast]|
     + |M_h2o_ap[Apicoplast]| + |M_hdca_ap[Apicoplast]| + (2) |M_nadp_ap[Apicoplast]|
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_FAS180_ap
   name: fatty-acid_synthase
+  genes: PFB0505c or PFI1125c
   equation: (3) |M_h_ap[Apicoplast]| + |M_hdca_ap[Apicoplast]| + |M_malcoa_ap[Apicoplast]|
     + (2) |M_nadph_ap[Apicoplast]| => |M_co2_ap[Apicoplast]| + |M_coa_ap[Apicoplast]|
     + |M_h2o_ap[Apicoplast]| + (2) |M_nadp_ap[Apicoplast]| + |M_ocdca_ap[Apicoplast]|
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_FAS240_L_ap
   name: fatty-acid_synthase
+  genes: PFB0505c or PFI1125c
   equation: (9) |M_h_ap[Apicoplast]| + (3) |M_malcoa_ap[Apicoplast]| + (6) |M_nadph_ap[Apicoplast]|
     + |M_ocdca_ap[Apicoplast]| => (3) |M_co2_ap[Apicoplast]| + (3) |M_coa_ap[Apicoplast]|
     + (3) |M_h2o_ap[Apicoplast]| + (6) |M_nadp_ap[Apicoplast]| + |M_ttc_ap[Apicoplast]|
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_FAS260_ap
   name: fatty-acid_synthase
+  genes: PFB0505c or PFI1125c
   equation: (3) |M_h_ap[Apicoplast]| + |M_malcoa_ap[Apicoplast]| + (2) |M_nadph_ap[Apicoplast]|
     + |M_ttc_ap[Apicoplast]| => |M_co2_ap[Apicoplast]| + |M_coa_ap[Apicoplast]| +
     |M_h2o_ap[Apicoplast]| + |M_hexc_ap[Apicoplast]| + (2) |M_nadp_ap[Apicoplast]|
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_FAS80_L_ap
   name: fatty-acid_synthase
+  genes: PFB0505c or PFI1125c
   equation: '|M_accoa_ap[Apicoplast]| + (8) |M_h_ap[Apicoplast]| + (3) |M_malcoa_ap[Apicoplast]|
     + (6) |M_nadph_ap[Apicoplast]| => (3) |M_co2_ap[Apicoplast]| + (4) |M_coa_ap[Apicoplast]|
     + (2) |M_h2o_ap[Apicoplast]| + (6) |M_nadp_ap[Apicoplast]| + |M_octa_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_FBA
   name: Fructose-bisphosphate_aldolase
+  genes: PF14_0425
   equation: '|M_fdp_c[Cytosol]| <=> |M_dhap_c[Cytosol]| + |M_g3p_c[Cytosol]|'
   subsystem: Carbohydrates_Glycolysis
 - id: R_FCLT
   name: ferrochelatase
+  genes: MAL13P1_326
   equation: '|M_fe2_c[Cytosol]| + |M_ppp9_c[Cytosol]| => (2) |M_h_c[Cytosol]| + |M_pheme_c[Cytosol]|'
   subsystem: Cofactors_PorphyrinMetabolism
 - id: R_FCLT_ap
   name: ferrochelatase
+  genes: MAL13P1_326
   equation: '|M_fe2_ap[Apicoplast]| + |M_ppp9_ap[Apicoplast]| => (2) |M_h_ap[Apicoplast]|
     + |M_pheme_ap[Apicoplast]|'
   subsystem: Cofactors_PorphyrinMetabolism
 - id: R_FE2t
   name: R_FE2t
+  genes: PFF0450c
   equation: '|M_fe2_e[Extraorganism]| => |M_fe2_c[Cytosol]|'
   subsystem: Transport
 - id: R_FE2tap
@@ -1439,25 +1675,30 @@
   subsystem: Ion
 - id: R_FLDR_ap
   name: ferredoxin-NADP+_reductase
+  genes: PF07_0085 or PF11_0407 or PFF1115w
   equation: '|M_fldox_ap[Apicoplast]| + |M_h_ap[Apicoplast]| + |M_nadph_ap[Apicoplast]|
     => |M_fldrd_ap[Apicoplast]| + |M_nadp_ap[Apicoplast]|'
   subsystem: Others_BiosynthesisCytochrome
 - id: R_FMETDF
   name: formylmethionine_deformylase
+  genes: PFI0380c
   equation: '|M_fmet_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_for_c[Cytosol]| + |M_met_L_c[Cytosol]|'
   subsystem: AminoAcids_MetPolyamineMetabolism
 - id: R_FMETTRS
   name: methionyl-tRNA_formyltransferase
+  genes: MAL13P1_67
   equation: '|M_10fthf_c[Cytosol]| + |M_mettrna_c[Cytosol]| => |M_fmettrna_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_thf_c[Cytosol]|'
   subsystem: Cofactors_FolateBiosynthesis ; AminoAcids_MetPolyamineMetabolism
 - id: R_FMNAT
   name: FAD_synthetase
+  genes: MAL13P1_292 or PF10_0147
   equation: '|M_atp_c[Cytosol]| + |M_fmn_c[Cytosol]| + |M_h_c[Cytosol]| => |M_fad_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: Cofactors_RiboflavinMetabolism
 - id: R_FOLATEt
   name: R_FOLATEt
+  genes: MAL8P1_13 or PF11_0172 or PF10_0215
   equation: '|M_fol_e[Extraorganism]| <=> |M_fol_c[Cytosol]|'
   subsystem: Transport_cofactor
 - id: R_FORt
@@ -1466,11 +1707,13 @@
   subsystem: Transport
 - id: R_FRD_mt
   name: succinate_dehydrogenase
+  genes: PF10_0334 or PFL0630w
   equation: '|M_fum_m[Mitochondria]| + |M_fadh2_m[Mitochondria]| => |M_succ_m[Mitochondria]|
     + |M_fad_m[Mitochondria]|'
   subsystem: Others_MitochondrialTCACycle ; Carbohydrates_PyruvateMetabolism ; Others_MitochondrialElectronFlow
 - id: R_FRTT
   name: farnesyltranstransferase
+  genes: PF11_0483
   equation: '|M_frdp_c[Cytosol]| + |M_ipdp_c[Cytosol]| => |M_ggdp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: Lipids_TerpenoidMetabolism ; Lipids_DolicholMetabolism
 - id: R_FRUt1r
@@ -1479,6 +1722,7 @@
   subsystem: Transport
 - id: R_FUM_mt
   name: fumarate_hydratase
+  genes: PFI1340w
   equation: '|M_fum_m[Mitochondria]| + |M_h2o_m[Mitochondria]| <=> |M_mal_L_m[Mitochondria]|'
   subsystem: Others_MitochondrialTCACycle ; Carbohydrates_PyruvateMetabolism
 - id: R_FUMt2r
@@ -1492,60 +1736,70 @@
   subsystem: Transport_MT
 - id: R_G3PAT120_ap
   name: glycerol-3-phosphate_O-acyltransferase
+  genes: PF13_0100 or PFL0620c
   equation: '|M_ddcaACP_ap[Apicoplast]| + |M_glyc3p_ap[Apicoplast]| => |M_1ddecg3p_ap[Apicoplast]|
     + |M_ACP_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_G3PAT140_ap
   name: glycerol-3-phosphate_O-acyltransferase
+  genes: PF13_0100 or PFL0620c
   equation: '|M_glyc3p_ap[Apicoplast]| + |M_myrsACP_ap[Apicoplast]| => |M_1tdecg3p_ap[Apicoplast]|
     + |M_ACP_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_G3PAT141_ap
   name: glycerol-3-phosphate_O-acyltransferase
+  genes: PF13_0100 or PFL0620c
   equation: '|M_glyc3p_ap[Apicoplast]| + |M_tdeACP_ap[Apicoplast]| => |M_1tdec7eg3p_ap[Apicoplast]|
     + |M_ACP_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_G3PAT160_ap
   name: glycerol-3-phosphate_O-acyltransferase
+  genes: PF13_0100 or PFL0620c
   equation: '|M_glyc3p_ap[Apicoplast]| + |M_palmACP_ap[Apicoplast]| => |M_1hdecg3p_ap[Apicoplast]|
     + |M_ACP_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_G3PAT161_ap
   name: glycerol-3-phosphate_O-acyltransferase
+  genes: PF13_0100 or PFL0620c
   equation: '|M_glyc3p_ap[Apicoplast]| + |M_hdeACP_ap[Apicoplast]| => |M_1hdec9eg3p_ap[Apicoplast]|
     + |M_ACP_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_G3PAT180_ap
   name: glycerol-3-phosphate_O-acyltransferase
+  genes: PF13_0100 or PFL0620c
   equation: '|M_glyc3p_ap[Apicoplast]| + |M_ocdcaACP_ap[Apicoplast]| => |M_1odecg3p_ap[Apicoplast]|
     + |M_ACP_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_G3PAT181_ap
   name: glycerol-3-phosphate_O-acyltransferase
+  genes: PF13_0100 or PFL0620c
   equation: '|M_glyc3p_ap[Apicoplast]| + |M_octeACP_ap[Apicoplast]| => |M_1odec11eg3p_ap[Apicoplast]|
     + |M_ACP_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_G3PD1ir
   name: glycerol-3-phosphate_dehydrogenase_(NAD+)
+  genes: PFL0780w
   equation: '|M_dhap_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| => |M_glyc3p_c[Cytosol]|
     + |M_nad_c[Cytosol]|'
   subsystem: Lipids_FattyAcidSynthesis ; Others_MitochondrialElectronFlow ; Carbohydrates_Glycolysis
     ; Lipids_UtilizationPhospholipids
 - id: R_G3PD1ir_ap
   name: glycerol-3-phosphate_dehydrogenase_(NAD+)
+  genes: PF11_0157
   equation: '|M_dhap_ap[Apicoplast]| + |M_h_ap[Apicoplast]| + |M_nadh_ap[Apicoplast]|
     => |M_glyc3p_ap[Apicoplast]| + |M_nad_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis ; Others_MitochondrialElectronFlow ; Carbohydrates_Glycolysis
     ; Lipids_UtilizationPhospholipids
 - id: R_G3PD_mt
   name: R_G3PD_mt
+  genes: PFC0275w
   equation: '|M_fad_m[Mitochondria]| + |M_glyc3p_m[Mitochondria]| => |M_dhap_m[Mitochondria]|
     + |M_fadh2_m[Mitochondria]|'
   subsystem: Carbohydrates_Glycolysis
@@ -1556,6 +1810,7 @@
   subsystem: AminoAcids_ArgProMetabolism
 - id: R_G6PDH2r
   name: glucose-6-phosphate_dehydrogenase
+  genes: PF14_0511
   equation: '|M_g6p_c[Cytosol]| + |M_nadp_c[Cytosol]| <=> |M_6pgl_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_nadph_c[Cytosol]|'
   subsystem: Carbohydrates_PentosePhosphateCycle
@@ -1566,6 +1821,7 @@
   subsystem: Transport
 - id: R_GALUi
   name: UTP-glucose-1-phosphate_uridylyltransferase
+  genes: MAL13P1_218
   equation: '|M_g1p_c[Cytosol]| + |M_h_c[Cytosol]| + |M_utp_c[Cytosol]| => |M_ppi_c[Cytosol]|
     + |M_udpg_c[Cytosol]|'
   subsystem: Lipids_SphingomyelinCeramideMetabolism
@@ -1579,6 +1835,7 @@
   subsystem: Transport
 - id: R_GAPD
   name: glyceraldehyde-3-phosphate_dehydrogenase_(phosphorylating)
+  genes: PF14_0598
   equation: '|M_g3p_c[Cytosol]| + |M_nad_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_13dpg_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|'
   subsystem: Carbohydrates_Glycolysis
@@ -1593,11 +1850,13 @@
   subsystem: Transport_MT
 - id: R_GF6PTA
   name: glutamine-fructose-6-phosphate_transaminase_(isomerizing)
+  genes: PF10_0245
   equation: '|M_f6p_c[Cytosol]| + |M_gln_L_c[Cytosol]| => |M_gam6p_c[Cytosol]| +
     |M_glu_L_c[Cytosol]|'
   subsystem: Carbohydrates_AminosugarsMetabolism ; AminoAcids_GluMetabolism
 - id: R_GFUCS
   name: GDP-L-fucose_synthase
+  genes: PF10_0137
   equation: '|M_gdpddman_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| =>
     |M_gdpfuc_c[Cytosol]| + |M_nadp_c[Cytosol]|'
   subsystem: Carbohydrates_MannoseFructoseMetabolism
@@ -1608,34 +1867,41 @@
   subsystem: Lipids_DolicholMetabolism
 - id: R_GHMT2r
   name: glycine_hydroxymethyltransferase
+  genes: PF14_0534 or PFL1720w
   equation: '|M_ser_L_c[Cytosol]| + |M_thf_c[Cytosol]| <=> |M_gly_c[Cytosol]| + |M_h2o_c[Cytosol]|
     + |M_mlthf_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism ; AminoAcids_GlySerMetabolism ; Cofactors_FolateBiosynthesis
 - id: R_GK1
   name: guanylate_kinase
+  genes: PFI1420w
   equation: '|M_atp_c[Cytosol]| + |M_gmp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_gdp_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_GLCNACPT
   name: UDP-N-acetylglucosamine-dolichyl-phosphate_N-acetylglucosaminephosphotransferase
+  genes: PFC0935c
   equation: (0.1) |M_dolp_L_c[Cytosol]| + |M_uacgam_c[Cytosol]| => (0.1) |M_naglc2p_L_c[Cytosol]|
     + |M_ump_c[Cytosol]|
   subsystem: Carbohydrates_AminosugarsMetabolism
 - id: R_GLCt1r
   name: R_GLCt1r
+  genes: PFB0210c
   equation: '|M_glc_D_e[Extraorganism]| <=> |M_glc_D_c[Cytosol]|'
   subsystem: Transport
 - id: R_GLNS
   name: Glutamate-ammonia_ligase
+  genes: PFI1110w
   equation: '|M_atp_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_nh4_c[Cytosol]| => |M_adp_c[Cytosol]|
     + |M_gln_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: AminoAcids_GluMetabolism ; AminoAcids_NitrogenMetabolism
 - id: R_GLNTRS
   name: Glutamine-tRNA_ligase
+  genes: PF13_0170
   equation: '|M_atp_c[Cytosol]| + |M_gln_L_c[Cytosol]| + |M_trnagln_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_glntrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: AminoAcids_GluMetabolism
 - id: R_GLNt2r
   name: R_GLNt2r
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_gln_L_e[Extraorganism]| + |M_h_e[Extraorganism]| <=> |M_gln_L_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: Transport_aa
@@ -1646,37 +1912,44 @@
   subsystem: Transport_MT
 - id: R_GLUCYS
   name: Glutamate-cysteine_ligase
+  genes: PFI0925w
   equation: '|M_atp_c[Cytosol]| + |M_cys_L_c[Cytosol]| + |M_glu_L_c[Cytosol]| =>
     |M_adp_c[Cytosol]| + |M_glucys_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: Redox_RedoxMetabolism ; AminoAcids_GluMetabolism
 - id: R_GLUDxi
   name: glutamate_dehydrogenase
+  genes: PF08_0132
   equation: '|M_glu_L_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_akg_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| + |M_nh4_c[Cytosol]|'
   subsystem: AminoAcids_GluMetabolism ; AminoAcids_NitrogenMetabolism
 - id: R_GLUDy
   name: glutamate_dehydrogenase_(NADP+)
+  genes: PF14_0164
   equation: '|M_glu_L_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_nadp_c[Cytosol]| <=>
     |M_akg_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| + |M_nh4_c[Cytosol]|'
   subsystem: AminoAcids_GluMetabolism ; AminoAcids_NitrogenMetabolism
 - id: R_GLUDy_ap
   name: glutamate_dehydrogenase_(NADP+)
+  genes: PF14_0286
   equation: '|M_glu_L_ap[Apicoplast]| + |M_h2o_ap[Apicoplast]| + |M_nadp_ap[Apicoplast]|
     <=> |M_akg_ap[Apicoplast]| + |M_h_ap[Apicoplast]| + |M_nadph_ap[Apicoplast]|
     + |M_nh4_ap[Apicoplast]|'
   subsystem: AminoAcids_GluMetabolism ; AminoAcids_NitrogenMetabolism
 - id: R_GLUSx
   name: glutamate_synthase_(NADH)
+  genes: PF14_0334
   equation: '|M_akg_c[Cytosol]| + |M_gln_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|
     => (2) |M_glu_L_c[Cytosol]| + |M_nad_c[Cytosol]|'
   subsystem: AminoAcids_GluMetabolism
 - id: R_GLUTRS
   name: Glutamate-tRNA_ligase
+  genes: MAL13P1_281 or PF13_0170 or PF13_0257
   equation: '|M_atp_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_trnaglu_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_glutrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: AminoAcids_GluMetabolism
 - id: R_GLUt2r
   name: R_GLUt2r
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_glu_L_e[Extraorganism]| + |M_h_e[Extraorganism]| <=> |M_glu_L_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: Transport_aa
@@ -1686,31 +1959,37 @@
   subsystem: Transport_MT
 - id: R_GLYCL_mt
   name: R_GLYCL_mt
+  genes: PF13_0345 and (PF08_0066 or PFL1550w)
   equation: '|M_gly_m[Mitochondria]| + |M_nad_m[Mitochondria]| + |M_thf_m[Mitochondria]|
     => |M_co2_m[Mitochondria]| + |M_mlthf_m[Mitochondria]| + |M_nadh_m[Mitochondria]|
     + |M_nh4_m[Mitochondria]|'
   subsystem: AminoAcids_GlySerMetabolism
 - id: R_GLYCt
   name: R_GLYCt
+  genes: PF11_0338
   equation: '|M_glyc_c[Cytosol]| <=> |M_glyc_e[Extraorganism]|'
   subsystem: Transport
 - id: R_GLYK
   name: glycerol_kinase
+  genes: PF13_0269
   equation: '|M_atp_c[Cytosol]| + |M_glyc_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_glyc3p_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: Carbohydrates_Glycolysis
 - id: R_GLYOX
   name: hydroxyacylglutathione_hydrolase
+  genes: PFD0311w or PFL0285w
   equation: '|M_h2o_c[Cytosol]| + |M_lgt_S_c[Cytosol]| => |M_gthrd_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_lac_D_c[Cytosol]|'
   subsystem: Carbohydrates_PyruvateMetabolism
 - id: R_GLYTRS
   name: glycine-tRNA_ligase
+  genes: PF14_0198
   equation: '|M_atp_c[Cytosol]| + |M_gly_c[Cytosol]| + |M_trnagly_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_glytrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: AminoAcids_GlySerMetabolism
 - id: R_GLYt2r
   name: R_GLYt2r
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_gly_e[Extraorganism]| + |M_h_e[Extraorganism]| <=> |M_gly_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: Transport_aa
@@ -1720,81 +1999,97 @@
   subsystem: Transport_MT
 - id: R_GMAND
   name: GDP-mannose_4,6-dehydratase
+  genes: PF08_0077
   equation: '|M_gdpmann_c[Cytosol]| => |M_gdpddman_c[Cytosol]| + |M_h2o_c[Cytosol]|'
   subsystem: Carbohydrates_MannoseFructoseMetabolism
 - id: R_GMPS2
   name: GMP_synthase_(glutamine-hydrolysing)
+  genes: PF10_0123
   equation: '|M_atp_c[Cytosol]| + |M_gln_L_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_xmp_c[Cytosol]|
     => |M_amp_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_gmp_c[Cytosol]| + (2) |M_h_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: AminoAcids_GluMetabolism
 - id: R_GND
   name: phosphogluconate_dehydrogenase_(decarboxylating)
+  genes: PF14_0520
   equation: '|M_6pgc_c[Cytosol]| + |M_nadp_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_nadph_c[Cytosol]|
     + |M_ru5p_D_c[Cytosol]|'
   subsystem: Carbohydrates_PentosePhosphateCycle
 - id: R_GNK
   name: gluconokinase
+  genes: PF13_0269
   equation: '|M_atp_c[Cytosol]| + |M_glcn_c[Cytosol]| => |M_6pgc_c[Cytosol]| + |M_adp_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: Carbohydrates_PentosePhosphateCycle
 - id: R_GP4GH1
   name: bis(5'-nucleosyl)-tetraphosphatase_(asymmetrical)
+  genes: PFE1035c
   equation: '|M_gp4g_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_gmp_c[Cytosol]| + |M_gtp_c[Cytosol]|
     + (2) |M_h_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism ; Nucleotides_PurineMetabolism
 - id: R_GPDDA1
   name: glycerophosphodiester_phosphodiesterase
+  genes: PF14_0060
   equation: '|M_g3pc_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_chol_c[Cytosol]| + |M_glyc3p_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_GPDDA1pp
   name: glycerophosphodiester_phosphodiesterase
+  genes: PF14_0060
   equation: '|M_g3pc_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_chol_c[Cytosol]| + |M_glyc3p_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_GPDDA2
   name: glycerophosphodiester_phosphodiesterase
+  genes: PF14_0060
   equation: '|M_g3pe_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_etha_c[Cytosol]| + |M_glyc3p_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_GPDDA2pp
   name: glycerophosphodiester_phosphodiesterase
+  genes: PF14_0060
   equation: '|M_g3pe_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_etha_c[Cytosol]| + |M_glyc3p_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_GPDDA3
   name: glycerophosphodiester_phosphodiesterase
+  genes: PF14_0060
   equation: '|M_g3ps_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_glyc3p_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_ser_L_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_GPDDA3pp
   name: glycerophosphodiester_phosphodiesterase
+  genes: PF14_0060
   equation: '|M_g3ps_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_glyc3p_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_ser_L_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_GPDDA4
   name: glycerophosphodiester_phosphodiesterase
+  genes: PF14_0060
   equation: '|M_g3pg_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_glyc_c[Cytosol]| + |M_glyc3p_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_GPDDA4pp
   name: glycerophosphodiester_phosphodiesterase
+  genes: PF14_0060
   equation: '|M_g3pg_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_glyc_c[Cytosol]| + |M_glyc3p_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_GPDDA5
   name: glycerophosphodiester_phosphodiesterase
+  genes: PF14_0060
   equation: '|M_g3pi_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_glyc3p_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_inost_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_GPDDA5pp
   name: glycerophosphodiester_phosphodiesterase
+  genes: PF14_0060
   equation: '|M_g3pi_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_glyc3p_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_inost_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_GPIAT
   name: R_GPIAT
+  genes: PFF0740c
   equation: '|M_gpail_c[Cytosol]| + |M_pmtcoa_c[Cytosol]| => |M_coa_c[Cytosol]| +
     |M_gacpail_c[Cytosol]|'
   subsystem: Lipids_GPIAnchorBiosynthesis
@@ -1805,28 +2100,34 @@
   subsystem: Lipids_GPIAnchorBiosynthesis
 - id: R_GRTT
   name: geranyltranstransferase
+  genes: PF11_0295
   equation: '|M_grdp_c[Cytosol]| + |M_ipdp_c[Cytosol]| => |M_frdp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: Lipids_TerpenoidMetabolism
 - id: R_GSNt
   name: R_GSNt
+  genes: PFA0160c or MAL8P1_32 or PF13_0252 or PF14_0662
   equation: '|M_gsn_e[Extraorganism]| <=> |M_gsn_c[Cytosol]|'
   subsystem: Transport_base
 - id: R_GTHOXti
   name: R_GTHOXti
+  genes: PFA0590w
   equation: '|M_gthox_e[Extraorganism]| <=> |M_gthox_c[Cytosol]|'
   subsystem: Transport
 - id: R_GTHOr_mt
   name: glutathione-disulfide_reductase
+  genes: PF14_0192
   equation: '|M_gthox_m[Mitochondria]| + |M_h_m[Mitochondria]| + |M_nadph_m[Mitochondria]|
     <=> (2) |M_gthrd_m[Mitochondria]| + |M_nadp_m[Mitochondria]|'
   subsystem: Redox_RedoxMetabolism ; Redox_MitochondrialAntioxidantSystem
 - id: R_GTHP_mt
   name: glutathione_peroxidase
+  genes: PFL0595c
   equation: (2) |M_gthrd_m[Mitochondria]| + |M_h2o2_m[Mitochondria]| <=> |M_gthox_m[Mitochondria]|
     + (2) |M_h2o_m[Mitochondria]|
   subsystem: Redox_RedoxMetabolism ; Redox_MitochondrialAntioxidantSystem
 - id: R_GTHRDti
   name: R_GTHRDti
+  genes: PFA0590w
   equation: '|M_gthrd_e[Extraorganism]| <=> |M_gthrd_c[Cytosol]|'
   subsystem: Transport
 - id: R_GTHRDtmt
@@ -1835,11 +2136,13 @@
   subsystem: Transport_MT
 - id: R_GTHS
   name: Glutathione_synthase
+  genes: PFE0605c
   equation: '|M_atp_c[Cytosol]| + |M_glucys_c[Cytosol]| + |M_gly_c[Cytosol]| => |M_adp_c[Cytosol]|
     + |M_gthrd_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: Redox_RedoxMetabolism
 - id: R_GTPCI
   name: GTP_cyclohydrolase_I
+  genes: PFL1155w
   equation: '|M_gtp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_ahdt_c[Cytosol]| + |M_for_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: Cofactors_FolateBiosynthesis
@@ -1854,14 +2157,17 @@
   subsystem: Transport_MT
 - id: R_GUACYC
   name: guanylate_cyclase
+  genes: MAL13P1_301 or PF11_0395
   equation: '|M_gtp_c[Cytosol]| => |M_35cgmp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism ; Cofactors_PorphyrinMetabolism
 - id: R_GUAPRT
   name: hypoxanthine_phosphoribosyltransferase
+  genes: PF10_0121
   equation: '|M_gua_c[Cytosol]| + |M_prpp_c[Cytosol]| => |M_gmp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_GUAt
   name: R_GUAt
+  genes: PFA0160c or MAL8P1_32 or PF13_0252 or PF14_0662
   equation: '|M_gua_e[Extraorganism]| <=> |M_gua_c[Cytosol]|'
   subsystem: Transport_base
 - id: R_H2O2t
@@ -1874,6 +2180,7 @@
   subsystem: Transport_MT
 - id: R_H2Ot
   name: R_H2Ot
+  genes: PF11_0338
   equation: '|M_h2o_e[Extraorganism]| <=> |M_h2o_c[Cytosol]|'
   subsystem: Transport
 - id: R_H2Otap
@@ -1882,6 +2189,7 @@
   subsystem: Transport_AP
 - id: R_HBZOPT_mt
   name: R_HBZOPT_mt
+  genes: PFF0370w
   equation: '|M_4hbz_m[Mitochondria]| + |M_octdp_m[Mitochondria]| => |M_3ophb_m[Mitochondria]|
     + |M_ppi_m[Mitochondria]|'
   subsystem: Cofactors_UbiquinoneMetabolism
@@ -1891,6 +2199,7 @@
   subsystem: Transport
 - id: R_HCO3E
   name: carbonate_dehydratase
+  genes: PF11_0410
   equation: '|M_co2_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_h_c[Cytosol]| + |M_hco3_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism ; Lipids_FattyAcidSynthesis ; Carbohydrates_PyruvateMetabolism
 - id: R_HCO3tap
@@ -1907,21 +2216,25 @@
   subsystem: Transport_lipid
 - id: R_HETZK
   name: hydroxyethylthiazole_kinase
+  genes: PFF1335c or PFL1920c
   equation: '|M_4mhetz_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_4mpetz_c[Cytosol]|
     + |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: Cofactors_ThiamineMetabolism
 - id: R_HEX1
   name: hexokinase
+  genes: PFF1155w
   equation: '|M_atp_c[Cytosol]| + |M_glc_D_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_g6p_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: Carbohydrates_Glycolysis ; Carbohydrates_MannoseFructoseMetabolism
 - id: R_HEX7
   name: hexokinase
+  genes: PFF1155w
   equation: '|M_atp_c[Cytosol]| + |M_fru_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_f6p_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: Carbohydrates_MannoseFructoseMetabolism ; Carbohydrates_Glycolysis
 - id: R_HEX8
   name: hexokinase
+  genes: PFF1155w
   equation: '|M_atp_c[Cytosol]| + |M_man_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_man6p_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: Carbohydrates_MannoseFructoseMetabolism ; Carbohydrates_Glycolysis
@@ -1931,21 +2244,25 @@
   subsystem: Transport_lipid
 - id: R_HEXTT_mt
   name: trans-hexaprenyltranstransferase
+  genes: PFB0130w
   equation: '|M_hexdp_m[Mitochondria]| + |M_ipdp_m[Mitochondria]| => |M_hepdp_m[Mitochondria]|
     + |M_ppi_m[Mitochondria]|'
   subsystem: Lipids_TerpenoidMetabolism
 - id: R_HIBHr
   name: 3-hydroxyisobutyryl-CoA_hydrolase
+  genes: PFL1940w
   equation: '|M_h2o_c[Cytosol]| + |M_hibcoa_c[Cytosol]| => |M_3hmp_c[Cytosol]| +
     |M_coa_c[Cytosol]| + (2) |M_h_c[Cytosol]|'
   subsystem: AminoAcids_LeuIleValMetabolism
 - id: R_HISTRS
   name: Histidine-tRNA_ligase
+  genes: PF14_0428
   equation: '|M_atp_c[Cytosol]| + |M_his_L_c[Cytosol]| + |M_trnahis_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_histrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: AminoAcids_tRNA
 - id: R_HISt2r
   name: R_HISt2r
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_h_e[Extraorganism]| + |M_his_L_e[Extraorganism]| <=> |M_h_c[Cytosol]|
     + |M_his_L_c[Cytosol]|'
   subsystem: Transport_aa
@@ -1955,6 +2272,7 @@
   subsystem: Transport_AP
 - id: R_HMBS_ap
   name: hydroxymethylbilane_synthase
+  genes: PFL0480w
   equation: '|M_h2o_ap[Apicoplast]| + (4) |M_ppbng_ap[Apicoplast]| => |M_hmbil_ap[Apicoplast]|
     + (4) |M_nh4_ap[Apicoplast]|'
   subsystem: Cofactors_PorphyrinMetabolism
@@ -1970,11 +2288,13 @@
   subsystem: Hemoglobin_digestion
 - id: R_HMPK1
   name: hydroxymethylpyrimidine_kinase
+  genes: PFE1030c
   equation: '|M_4ahmmp_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_4ampm_c[Cytosol]| +
     |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: Cofactors_ThiamineMetabolism
 - id: R_HPPK2
   name: 2-amino-4-hydroxy-6-hydroxymethyldihydropteridine_diphosphokinase
+  genes: PF08_0095
   equation: '|M_6hmhpt_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_6hmhptpp_c[Cytosol]|
     + |M_amp_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: Cofactors_FolateBiosynthesis
@@ -1988,6 +2308,7 @@
   subsystem: Transport_AP
 - id: R_HXPRT
   name: hypoxanthine_phosphoribosyltransferase
+  genes: PF10_0121
   equation: '|M_hxan_c[Cytosol]| + |M_prpp_c[Cytosol]| => |M_imp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_HYPOE
@@ -1996,6 +2317,7 @@
   subsystem: Cofactors_VitB6Metabolism
 - id: R_HYXNt
   name: R_HYXNt
+  genes: PFA0160c or MAL8P1_32 or PF13_0252 or PF14_0662
   equation: '|M_hxan_e[Extraorganism]| <=> |M_hxan_c[Cytosol]|'
   subsystem: Transport_base
 - id: R_Ht
@@ -2012,26 +2334,31 @@
   subsystem: Transport_MT
 - id: R_ICDHyr_mt
   name: isocitrate_dehydrogenase_(NADP+)
+  genes: PF13_0242
   equation: '|M_icit_m[Mitochondria]| + |M_nadp_m[Mitochondria]| <=> |M_akg_m[Mitochondria]|
     + |M_co2_m[Mitochondria]| + |M_nadph_m[Mitochondria]|'
   subsystem: Others_MitochondrialTCACycle
 - id: R_ILETA
   name: branched-chain-amino-acid_transaminase
+  genes: PF14_0557
   equation: '|M_akg_c[Cytosol]| + |M_ile_L_c[Cytosol]| <=> |M_3mop_c[Cytosol]| +
     |M_glu_L_c[Cytosol]|'
   subsystem: AminoAcids_LeuIleValMetabolism
 - id: R_ILETRS
   name: Isoleucine-tRNA_ligase
+  genes: PF13_0179
   equation: '|M_atp_c[Cytosol]| + |M_ile_L_c[Cytosol]| + |M_trnaile_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_iletrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: AminoAcids_LeuIleValMetabolism
 - id: R_ILEt2r
   name: R_ILEt2r
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_h_e[Extraorganism]| + |M_ile_L_e[Extraorganism]| <=> |M_h_c[Cytosol]|
     + |M_ile_L_c[Cytosol]|'
   subsystem: Transport_aa
 - id: R_IMPD
   name: IMP_dehydrogenase
+  genes: PFI1020c
   equation: '|M_h2o_c[Cytosol]| + |M_imp_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_h_c[Cytosol]|
     + |M_nadh_c[Cytosol]| + |M_xmp_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
@@ -2042,10 +2369,12 @@
   subsystem: Transport_lipid
 - id: R_INSt
   name: R_INSt
+  genes: PFA0160c or MAL8P1_32 or PF13_0252 or PF14_0662
   equation: '|M_ins_e[Extraorganism]| <=> |M_ins_c[Cytosol]|'
   subsystem: Transport_base
 - id: R_IPDPS_ap
   name: 4-hydroxy-3-methylbut-2-enyl_diphosphate_reductase
+  genes: PFA0225w
   equation: '|M_h_ap[Apicoplast]| + |M_h2mb4p_ap[Apicoplast]| + |M_nadph_ap[Apicoplast]|
     => |M_h2o_ap[Apicoplast]| + |M_ipdp_ap[Apicoplast]| + |M_nadp_ap[Apicoplast]|'
   subsystem: Lipids_IsoprenoidsMetabolism
@@ -2059,418 +2388,491 @@
   subsystem: Transport_MT
 - id: R_KAS14_ap
   name: beta-ketoacyl-acyl-carrier-protein_synthase_I
+  genes: PFB0505c or PFF1275c
   equation: '|M_acACP_ap[Apicoplast]| + |M_h_ap[Apicoplast]| + |M_malACP_ap[Apicoplast]|
     => |M_ACP_ap[Apicoplast]| + |M_actACP_ap[Apicoplast]| + |M_co2_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_KAS15_ap
   name: beta-ketoacyl-acyl-carrier-protein_synthase_III
+  genes: PFB0505c
   equation: '|M_accoa_ap[Apicoplast]| + |M_h_ap[Apicoplast]| + |M_malACP_ap[Apicoplast]|
     => |M_actACP_ap[Apicoplast]| + |M_co2_ap[Apicoplast]| + |M_coa_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_KAT1
   name: acetyl-CoA_C-acyltransferase
+  genes: PF14_0484
   equation: '|M_aacoa_c[Cytosol]| + |M_coa_c[Cytosol]| => (2) |M_accoa_c[Cytosol]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_KAT2
   name: acetyl-CoA_C-acyltransferase
+  genes: PF14_0484
   equation: '|M_3ohcoa_c[Cytosol]| + |M_coa_c[Cytosol]| => |M_accoa_c[Cytosol]| +
     |M_btcoa_c[Cytosol]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_KAT3
   name: acetyl-CoA_C-acyltransferase
+  genes: PF14_0484
   equation: '|M_3oocoa_c[Cytosol]| + |M_coa_c[Cytosol]| => |M_accoa_c[Cytosol]| +
     |M_hxcoa_c[Cytosol]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_KAT4
   name: acetyl-CoA_C-acyltransferase
+  genes: PF14_0484
   equation: '|M_3odcoa_c[Cytosol]| + |M_coa_c[Cytosol]| => |M_accoa_c[Cytosol]| +
     |M_occoa_c[Cytosol]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_KAT5
   name: acetyl-CoA_C-acyltransferase
+  genes: PF14_0484
   equation: '|M_3oddcoa_c[Cytosol]| + |M_coa_c[Cytosol]| => |M_accoa_c[Cytosol]|
     + |M_dcacoa_c[Cytosol]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_KAT6
   name: acetyl-CoA_C-acyltransferase
+  genes: PF14_0484
   equation: '|M_3otdcoa_c[Cytosol]| + |M_coa_c[Cytosol]| => |M_accoa_c[Cytosol]|
     + |M_ddcacoa_c[Cytosol]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_KAT7
   name: acetyl-CoA_C-acyltransferase
+  genes: PF14_0484
   equation: '|M_3ohdcoa_c[Cytosol]| + |M_coa_c[Cytosol]| => |M_accoa_c[Cytosol]|
     + |M_tdcoa_c[Cytosol]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_KAT8
   name: acetyl-CoA_C-acyltransferase
+  genes: PF14_0484
   equation: '|M_3oodcoa_c[Cytosol]| + |M_coa_c[Cytosol]| => |M_accoa_c[Cytosol]|
     + |M_pmtcoa_c[Cytosol]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_LALDO2x
   name: aldehyde_reductase
+  genes: MAL13P1_324
   equation: '|M_h_c[Cytosol]| + |M_mthgxl_c[Cytosol]| + |M_nadh_c[Cytosol]| => |M_lald_D_c[Cytosol]|
     + |M_nad_c[Cytosol]|'
   subsystem: Carbohydrates_PyruvateMetabolism ; Carbohydrates_Glycolysis
 - id: R_LCAT1e
   name: phosphatidylcholine-sterol_O-acyltransferase
+  genes: PFF1420w
   equation: '|M_chsterol_c[Cytosol]| + |M_pc_c[Cytosol]| => |M_lpchol_c[Cytosol]|
     + |M_xolest2_c[Cytosol]|'
   subsystem: Lipids_UtilizationPhospholipids
 - id: R_LDH_L
   name: L-lactate_dehydrogenase
+  genes: PF13_0141 or PF13_0144
   equation: '|M_lac_L_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|
     + |M_pyr_c[Cytosol]|'
   subsystem: Carbohydrates_Glycolysis
 - id: R_LEUTA
   name: branched-chain-amino-acid_transaminase
+  genes: PF14_0557
   equation: '|M_akg_c[Cytosol]| + |M_leu_L_c[Cytosol]| <=> |M_4mop_c[Cytosol]| +
     |M_glu_L_c[Cytosol]|'
   subsystem: AminoAcids_LeuIleValMetabolism
 - id: R_LEUTRS
   name: Leucine-tRNA_ligase
+  genes: PF08_0011 or PFF1095w
   equation: '|M_atp_c[Cytosol]| + |M_leu_L_c[Cytosol]| + |M_trnaleu_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_leutrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: AminoAcids_LeuIleValMetabolism
 - id: R_LEUt2r
   name: R_LEUt2r
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_h_e[Extraorganism]| + |M_leu_L_e[Extraorganism]| <=> |M_h_c[Cytosol]|
     + |M_leu_L_c[Cytosol]|'
   subsystem: Transport_aa
 - id: R_LGTHL
   name: lactoylglutathione_lyase
+  genes: PF11_0145 or PFF0230c
   equation: '|M_gthrd_c[Cytosol]| + |M_mthgxl_c[Cytosol]| => |M_lgt_S_c[Cytosol]|'
   subsystem: Carbohydrates_PyruvateMetabolism
 - id: R_LPLIPAL1A120pp
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_1ddecg3p_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_ddca_c[Cytosol]|
     + |M_glyc3p_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL1A140pp
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_1tdecg3p_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_glyc3p_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ttdca_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL1A141pp
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_1tdec7eg3p_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_glyc3p_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ttdcea_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL1A160pp
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_1hdecg3p_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_glyc3p_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_hdca_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL1A161pp
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_1hdec9eg3p_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_glyc3p_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_hdcea_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL1A180pp
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_1odecg3p_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_glyc3p_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ocdca_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL1A181pp
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_1odec11eg3p_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_glyc3p_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ocdcea_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL1E120pp
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_1agpe120_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_ddca_c[Cytosol]|
     + |M_g3pe_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL1E140pp
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_1agpe140_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_g3pe_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ttdca_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL1E141pp
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_1agpe141_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_g3pe_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ttdcea_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL1E160pp
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_1agpe160_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_g3pe_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_hdca_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL1E161pp
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_1agpe161_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_g3pe_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_hdcea_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL1E180pp
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_1agpe180_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_g3pe_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ocdca_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL1E181pp
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_1agpe181_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_g3pe_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ocdcea_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL1G120pp
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_1agpg120_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_ddca_c[Cytosol]|
     + |M_g3pg_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL1G140pp
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_1agpg140_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_g3pg_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ttdca_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL1G141pp
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_1agpg141_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_g3pg_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ttdcea_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL1G160pp
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_1agpg160_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_g3pg_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_hdca_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL1G161pp
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_1agpg161_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_g3pg_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_hdcea_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL1G180pp
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_1agpg180_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_g3pg_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ocdca_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL1G181pp
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_1agpg181_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_g3pg_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ocdcea_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2A120
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2ddecg3p_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_ddca_c[Cytosol]|
     + |M_glyc3p_c[Cytosol]| + (2) |M_h_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2A140
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2tdecg3p_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_glyc3p_c[Cytosol]|
     + (2) |M_h_c[Cytosol]| + |M_ttdca_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2A141
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2tdec7eg3p_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_glyc3p_c[Cytosol]|
     + (2) |M_h_c[Cytosol]| + |M_ttdcea_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2A160
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2hdecg3p_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_glyc3p_c[Cytosol]|
     + (2) |M_h_c[Cytosol]| + |M_hdca_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2A161
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2hdec9eg3p_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_glyc3p_c[Cytosol]|
     + (2) |M_h_c[Cytosol]| + |M_hdcea_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2A180
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2odecg3p_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_glyc3p_c[Cytosol]|
     + (2) |M_h_c[Cytosol]| + |M_ocdca_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2A181
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2odec11eg3p_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_glyc3p_c[Cytosol]|
     + (2) |M_h_c[Cytosol]| + |M_ocdcea_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2ATE120
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2agpe120_c[Cytosol]| + |M_pg120_c[Cytosol]| => |M_apg120_c[Cytosol]|
     + |M_g3pe_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2ATE140
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2agpe140_c[Cytosol]| + |M_pg140_c[Cytosol]| => |M_apg140_c[Cytosol]|
     + |M_g3pe_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2ATE141
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2agpe141_c[Cytosol]| + |M_pg141_c[Cytosol]| => |M_apg141_c[Cytosol]|
     + |M_g3pe_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2ATE160
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2agpe160_c[Cytosol]| + |M_pg160_c[Cytosol]| => |M_apg160_c[Cytosol]|
     + |M_g3pe_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2ATE161
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2agpe161_c[Cytosol]| + |M_pg161_c[Cytosol]| => |M_apg161_c[Cytosol]|
     + |M_g3pe_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2ATE180
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2agpe180_c[Cytosol]| + |M_pg180_c[Cytosol]| => |M_apg180_c[Cytosol]|
     + |M_g3pe_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2ATE181
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2agpe181_c[Cytosol]| + |M_pg181_c[Cytosol]| => |M_apg181_c[Cytosol]|
     + |M_g3pe_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2ATG120
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2agpg120_c[Cytosol]| + |M_pg120_c[Cytosol]| => |M_apg120_c[Cytosol]|
     + |M_g3pg_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2ATG140
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2agpg140_c[Cytosol]| + |M_pg140_c[Cytosol]| => |M_apg140_c[Cytosol]|
     + |M_g3pg_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2ATG141
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2agpg141_c[Cytosol]| + |M_pg141_c[Cytosol]| => |M_apg141_c[Cytosol]|
     + |M_g3pg_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2ATG160
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2agpg160_c[Cytosol]| + |M_pg160_c[Cytosol]| => |M_apg160_c[Cytosol]|
     + |M_g3pg_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2ATG161
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2agpg161_c[Cytosol]| + |M_pg161_c[Cytosol]| => |M_apg161_c[Cytosol]|
     + |M_g3pg_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2ATG180
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2agpg180_c[Cytosol]| + |M_pg180_c[Cytosol]| => |M_apg180_c[Cytosol]|
     + |M_g3pg_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2ATG181
   name: R_LPLIPAL2ATG181
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2agpg181_c[Cytosol]| + |M_pg181_c[Cytosol]| => |M_apg181_c[Cytosol]|
     + |M_g3pg_c[Cytosol]|'
   subsystem: Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2E120
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2agpe120_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_ddca_c[Cytosol]|
     + |M_g3pe_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2E140
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2agpe140_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_g3pe_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ttdca_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2E141
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2agpe141_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_g3pe_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ttdcea_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2E160
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2agpe160_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_g3pe_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_hdca_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2E161
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2agpe161_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_g3pe_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_hdcea_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2E180
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2agpe180_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_g3pe_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ocdca_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2E181
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2agpe181_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_g3pe_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ocdcea_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2G120
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2agpg120_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_ddca_c[Cytosol]|
     + |M_g3pg_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2G140
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2agpg140_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_g3pg_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ttdca_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2G141
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2agpg141_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_g3pg_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ttdcea_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2G160
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2agpg160_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_g3pg_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_hdca_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2G161
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2agpg161_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_g3pg_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_hdcea_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2G180
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2agpg180_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_g3pg_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ocdca_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_LPLIPAL2G181
   name: lysophospholipase
+  genes: PF07_0005 or PF07_0040 or PF10_0379 or PF14_0017 or PF14_0737 or PF14_0738
   equation: '|M_2agpg181_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_g3pg_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ocdcea_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
@@ -2482,15 +2884,18 @@
   subsystem: Lipids_PhosphatidylethanolaminePhosphatidylserineMetabolism
 - id: R_LYSDC
   name: Lysine_decarboxylase
+  genes: PFD0285c
   equation: '|M_h_c[Cytosol]| + |M_lys_L_c[Cytosol]| => |M_15dap_c[Cytosol]| + |M_co2_c[Cytosol]|'
   subsystem: AminoAcids_LysMetabolism
 - id: R_LYSTRS
   name: Lysine-tRNA_ligase
+  genes: PF13_0262 or PF14_0166
   equation: '|M_atp_c[Cytosol]| + |M_lys_L_c[Cytosol]| + |M_trnalys_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_lystrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: AminoAcids_LysMetabolism
 - id: R_LYSt2r
   name: R_LYSt2r
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_h_e[Extraorganism]| + |M_lys_L_e[Extraorganism]| <=> |M_h_c[Cytosol]|
     + |M_lys_L_c[Cytosol]|'
   subsystem: Transport_aa
@@ -2510,11 +2915,13 @@
   subsystem: Transport
 - id: R_MAN1PT
   name: mannose-1-phosphate_guanylyltransferase
+  genes: PF14_0774
   equation: '|M_gtp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_man1p_c[Cytosol]| => |M_gdpmann_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: Carbohydrates_MannoseFructoseMetabolism
 - id: R_MAN6PI
   name: Mannose-6-phosphate_isomerase
+  genes: MAL8P1_156
   equation: '|M_man6p_c[Cytosol]| <=> |M_f6p_c[Cytosol]|'
   subsystem: Carbohydrates_MannoseFructoseMetabolism
 - id: R_MANt1r
@@ -2523,40 +2930,48 @@
   subsystem: Transport
 - id: R_MCOATA_ap
   name: '[acyl-carrier-protein]_S-malonyltransferase'
+  genes: PF13_0066
   equation: '|M_ACP_ap[Apicoplast]| + |M_malcoa_ap[Apicoplast]| <=> |M_coa_ap[Apicoplast]|
     + |M_malACP_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_MDH2_mt
   name: malate_dehydrogenase_(acceptor)
+  genes: PFF0815w
   equation: '|M_mal_L_m[Mitochondria]| + |M_q8_m[Mitochondria]| => |M_oaa_m[Mitochondria]|
     + |M_q8h2_m[Mitochondria]|'
   subsystem: Carbohydrates_PyruvateMetabolism
 - id: R_MDHc
   name: malate_dehydrogenase
+  genes: PFF0895w
   equation: '|M_mal_L_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|
     + |M_oaa_c[Cytosol]|'
   subsystem: Others_MitochondrialTCACycle ; Carbohydrates_PyruvateMetabolism
 - id: R_MECDPDH2_ap
   name: R_MECDPDH2_ap
+  genes: PF10_0221
   equation: '|M_2mecdp_ap[Apicoplast]| + |M_nadph_ap[Apicoplast]| => |M_h2mb4p_ap[Apicoplast]|
     + |M_h2o_ap[Apicoplast]| + |M_nadp_ap[Apicoplast]|'
   subsystem: Lipids_IsoprenoidsMetabolism
 - id: R_MECDPS_ap
   name: 2-C-methyl-D-erythritol_2,4-cyclodiphosphate_synthase
+  genes: PFB0420w
   equation: '|M_2p4c2me_ap[Apicoplast]| => |M_2mecdp_ap[Apicoplast]| + |M_cmp_ap[Apicoplast]|'
   subsystem: Lipids_IsoprenoidsMetabolism
 - id: R_MEPCT_ap
   name: 2-C-methyl-D-erythritol_4-phosphate_cytidylyltransferase
+  genes: PFA0340w
   equation: '|M_2me4p_ap[Apicoplast]| + |M_ctp_ap[Apicoplast]| + |M_h_ap[Apicoplast]|
     => |M_4c2me_ap[Apicoplast]| + |M_ppi_ap[Apicoplast]|'
   subsystem: Lipids_IsoprenoidsMetabolism
 - id: R_METAT
   name: methionine_adenosyltransferase
+  genes: PFI1090w
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_met_L_c[Cytosol]| => |M_amet_c[Cytosol]|
     + |M_pi_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: AminoAcids_MetPolyamineMetabolism
 - id: R_METLEUex
   name: R_METLEUex
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_leu_L_c[Cytosol]| + |M_met_L_e[Extraorganism]| => |M_leu_L_e[Extraorganism]|
     + |M_met_L_c[Cytosol]|'
   subsystem: Transport_aa
@@ -2567,6 +2982,7 @@
   subsystem: AminoAcids_MetPolyamineMetabolism
 - id: R_METTRS
   name: Methionine-tRNA_ligase
+  genes: PF10_0053 or PF10_0340 or PF14_0401
   equation: '|M_atp_c[Cytosol]| + |M_met_L_c[Cytosol]| + |M_trnamet_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_mettrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: AminoAcids_MetPolyamineMetabolism
@@ -2576,11 +2992,13 @@
   subsystem: AminoAcids_MetPolyamineMetabolism
 - id: R_METt2r
   name: R_METt2r
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_h_e[Extraorganism]| + |M_met_L_e[Extraorganism]| <=> |M_h_c[Cytosol]|
     + |M_met_L_c[Cytosol]|'
   subsystem: Transport_aa
 - id: R_MI1345PP
   name: inositol-polyphosphate_5-phosphatase
+  genes: PF07_0024 or PF13_0285
   equation: '|M_h2o_c[Cytosol]| + |M_mi1345p_c[Cytosol]| => |M_mi134p_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: Lipids_InositolPhosphateMetabolism
@@ -2591,16 +3009,19 @@
   subsystem: Lipids_InositolPhosphateMetabolism
 - id: R_MI1456PK
   name: inositol-polyphosphate_multikinase
+  genes: PF13_0089
   equation: '|M_atp_c[Cytosol]| + |M_mi1456p_c[Cytosol]| => |M_adp_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_mi13456p_c[Cytosol]|'
   subsystem: Lipids_InositolPhosphateMetabolism
 - id: R_MI145P6K
   name: inositol-polyphosphate_multikinase
+  genes: PF13_0089
   equation: '|M_atp_c[Cytosol]| + |M_mi145p_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_mi1456p_c[Cytosol]|'
   subsystem: Lipids_InositolPhosphateMetabolism
 - id: R_MI145PP
   name: inositol-polyphosphate_5-phosphatase
+  genes: PF07_0024 or PF13_0285
   equation: '|M_h2o_c[Cytosol]| + |M_mi145p_c[Cytosol]| => |M_mi14p_c[Cytosol]| +
     |M_pi_c[Cytosol]|'
   subsystem: Lipids_InositolPhosphateMetabolism
@@ -2616,6 +3037,7 @@
   subsystem: Lipids_InositolPhosphateMetabolism
 - id: R_MI1PS
   name: inositol-3-phosphate_synthase
+  genes: PFE0585c
   equation: '|M_g6p_c[Cytosol]| => |M_mi1p_D_c[Cytosol]|'
   subsystem: Lipids_InositolPhosphateMetabolism
 - id: R_MLTHFtmt
@@ -2624,16 +3046,19 @@
   subsystem: Transport_MT
 - id: R_MTAADA
   name: adenosine_deaminase
+  genes: PF10_0289
   equation: '|M_5mta_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_5mti_c[Cytosol]|
     + |M_nh4_c[Cytosol]|'
   subsystem: AminoAcids_MetPolyamineMetabolism
 - id: R_MTHFC
   name: methenyltetrahydrofolate_cyclohydrolase
+  genes: PFF1490w
   equation: '|M_h2o_c[Cytosol]| + |M_methf_c[Cytosol]| <=> |M_10fthf_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: Cofactors_FolateBiosynthesis
 - id: R_MTHFD
   name: methylenetetrahydrofolate_dehydrogenase_(NADP+)
+  genes: PFF1490w
   equation: '|M_mlthf_c[Cytosol]| + |M_nadp_c[Cytosol]| <=> |M_methf_c[Cytosol]|
     + |M_nadph_c[Cytosol]|'
   subsystem: Cofactors_FolateBiosynthesis
@@ -2647,11 +3072,13 @@
   subsystem: Transport_cofactor
 - id: R_NADH2_u6cm_mt
   name: NADH_dehydrogenase
+  genes: PFI0735c
   equation: '|M_h_m[Mitochondria]| + |M_nadh_m[Mitochondria]| + |M_q8_m[Mitochondria]|
     => |M_nad_m[Mitochondria]| + |M_q8h2_m[Mitochondria]|'
   subsystem: Others_MitochondrialElectronFlow
 - id: R_NADH5
   name: NADH_dehydrogenase_(ubiquinone)
+  genes: PFI0735c
   equation: '|M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| + |M_q8_c[Cytosol]| => |M_nad_c[Cytosol]|
     + |M_q8h2_c[Cytosol]|'
   subsystem: Others_MitochondrialElectronFlow
@@ -2674,12 +3101,14 @@
   subsystem: Transport_AP
 - id: R_NADS2
   name: NAD+_synthase_(glutamine-hydrolysing)
+  genes: PFI1310w
   equation: '|M_atp_c[Cytosol]| + |M_dnad_c[Cytosol]| + |M_gln_L_c[Cytosol]| + |M_h2o_c[Cytosol]|
     => |M_amp_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nad_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: Cofactors_NicotinateNicotinamideMetabolism
 - id: R_NADTRHD
   name: NAD(P)+_transhydrogenase_(AB-specific)
+  genes: PF14_0508
   equation: '|M_nad_c[Cytosol]| + |M_nadph_c[Cytosol]| => |M_nadh_c[Cytosol]| + |M_nadp_c[Cytosol]|'
   subsystem: Cofactors_NicotinateNicotinamideMetabolism
 - id: R_NADtap
@@ -2688,6 +3117,7 @@
   subsystem: Transport_AP
 - id: R_NAMNPP
   name: nicotinate_phosphoribosyltransferase
+  genes: PFF1410c
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_nac_c[Cytosol]| + |M_prpp_c[Cytosol]|
     => |M_adp_c[Cytosol]| + |M_nicrnt_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: Cofactors_NicotinateNicotinamideMetabolism
@@ -2697,48 +3127,59 @@
   subsystem: Transport_cofactor
 - id: R_NDP3
   name: nucleoside-diphosphatase
+  genes: MAL13P1_248 or PF14_0297
   equation: '|M_gdp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_gmp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_NDP4
   name: nucleoside-diphosphatase
+  genes: MAL13P1_248 or PF14_0297
   equation: '|M_dgdp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dgmp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_NDPK1
   name: nucleoside-diphosphate_kinase
+  genes: PF13_0349 or PFF0275c
   equation: '|M_atp_c[Cytosol]| + |M_gdp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_gtp_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism ; Nucleotides_PurineMetabolism ; Lipids_DolicholMetabolism
 - id: R_NDPK2
   name: nucleoside-diphosphate_kinase
+  genes: PF13_0349 or PFF0275c
   equation: '|M_atp_c[Cytosol]| + |M_udp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_utp_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism ; Nucleotides_PurineMetabolism ; Lipids_DolicholMetabolism
 - id: R_NDPK3
   name: nucleoside-diphosphate_kinase
+  genes: PF13_0349 or PFF0275c
   equation: '|M_atp_c[Cytosol]| + |M_cdp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_ctp_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism ; Nucleotides_PurineMetabolism ; Lipids_DolicholMetabolism
 - id: R_NDPK4
   name: nucleoside-diphosphate_kinase
+  genes: PF13_0349 or PFF0275c
   equation: '|M_atp_c[Cytosol]| + |M_dtdp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dttp_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism ; Nucleotides_PurineMetabolism ; Lipids_DolicholMetabolism
 - id: R_NDPK5
   name: nucleoside-diphosphate_kinase
+  genes: PF13_0349 or PFF0275c
   equation: '|M_atp_c[Cytosol]| + |M_dgdp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dgtp_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism ; Nucleotides_PurineMetabolism ; Lipids_DolicholMetabolism
 - id: R_NDPK6
   name: nucleoside-diphosphate_kinase
+  genes: PF13_0349 or PFF0275c
   equation: '|M_atp_c[Cytosol]| + |M_dudp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dutp_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism ; Nucleotides_PurineMetabolism ; Lipids_DolicholMetabolism
 - id: R_NDPK7
   name: nucleoside-diphosphate_kinase
+  genes: PF13_0349 or PFF0275c
   equation: '|M_atp_c[Cytosol]| + |M_dcdp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dctp_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism ; Nucleotides_PurineMetabolism ; Lipids_DolicholMetabolism
 - id: R_NDPK8
   name: nucleoside-diphosphate_kinase
+  genes: PF13_0349 or PFF0275c
   equation: '|M_atp_c[Cytosol]| + |M_dadp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_datp_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism ; Nucleotides_PurineMetabolism ; Lipids_DolicholMetabolism
 - id: R_NH4t
   name: R_NH4t
+  genes: PF11_0338
   equation: '|M_nh4_e[Extraorganism]| <=> |M_nh4_c[Cytosol]|'
   subsystem: Transport
 - id: R_NH4tap
@@ -2751,15 +3192,18 @@
   subsystem: Transport_MT
 - id: R_NNAM
   name: nicotinamidase
+  genes: PFC0910w
   equation: '|M_h2o_c[Cytosol]| + |M_ncam_c[Cytosol]| => |M_nac_c[Cytosol]| + |M_nh4_c[Cytosol]|'
   subsystem: Cofactors_NicotinateNicotinamideMetabolism
 - id: R_NNATr
   name: nicotinate-nucleotide_adenylyltransferase
+  genes: PF13_0159
   equation: '|M_atp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nicrnt_c[Cytosol]| <=> |M_dnad_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: Cofactors_NicotinateNicotinamideMetabolism
 - id: R_NO2t2rpp
   name: R_NO2t2rpp
+  genes: PFC0725c
   equation: '|M_h_e[Extraorganism]| + |M_no2_e[Extraorganism]| <=> |M_h_c[Cytosol]|
     + |M_no2_c[Cytosol]|'
   subsystem: Transport
@@ -2769,6 +3213,7 @@
   subsystem: Transport_MT
 - id: R_NO3t2rpp
   name: R_NO3t2rpp
+  genes: PFC0725c
   equation: '|M_h_e[Extraorganism]| + |M_no3_e[Extraorganism]| <=> |M_h_c[Cytosol]|
     + |M_no3_c[Cytosol]|'
   subsystem: Transport
@@ -2782,102 +3227,127 @@
   subsystem: Transport
 - id: R_NTD1
   name: 5'-nucleotidase
+  genes: PFL0305c
   equation: '|M_dump_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_duri_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_NTD10
   name: 5'-nucleotidase
+  genes: PFL0305c
   equation: '|M_h2o_c[Cytosol]| + |M_xmp_c[Cytosol]| => |M_pi_c[Cytosol]| + |M_xtsn_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_NTD10pp
   name: 5'-nucleotidase
+  genes: PFL0305c
   equation: '|M_h2o_c[Cytosol]| + |M_xmp_c[Cytosol]| => |M_pi_c[Cytosol]| + |M_xtsn_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_NTD11
   name: 5'-nucleotidase
+  genes: PFL0305c
   equation: '|M_h2o_c[Cytosol]| + |M_imp_c[Cytosol]| => |M_ins_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_NTD11pp
   name: 5'-nucleotidase
+  genes: PFL0305c
   equation: '|M_h2o_c[Cytosol]| + |M_imp_c[Cytosol]| => |M_ins_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_NTD12
   name: 5'-nucleotidase
+  genes: PFL0305c
   equation: '|M_dimp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_din_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_NTD12pp
   name: 5'-nucleotidase
+  genes: PFL0305c
   equation: '|M_dimp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_din_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_NTD1pp
   name: 5'-nucleotidase
+  genes: PFL0305c
   equation: '|M_dump_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_duri_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_NTD2
   name: 5'-nucleotidase
+  genes: PFL0305c
   equation: '|M_h2o_c[Cytosol]| + |M_ump_c[Cytosol]| => |M_pi_c[Cytosol]| + |M_uri_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_NTD2pp
   name: 5'-nucleotidase
+  genes: PFL0305c
   equation: '|M_h2o_c[Cytosol]| + |M_ump_c[Cytosol]| => |M_pi_c[Cytosol]| + |M_uri_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_NTD3
   name: 5'-nucleotidase
+  genes: PFL0305c
   equation: '|M_dcmp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dcyt_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_NTD3pp
   name: 5'-nucleotidase
+  genes: PFL0305c
   equation: '|M_dcmp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dcyt_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_NTD4
   name: 5'-nucleotidase
+  genes: PFL0305c
   equation: '|M_cmp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_cytd_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_NTD4pp
   name: 5'-nucleotidase
+  genes: PFL0305c
   equation: '|M_cmp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_cytd_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_NTD5
   name: 5'-nucleotidase
+  genes: PFL0305c
   equation: '|M_dtmp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_pi_c[Cytosol]| + |M_thymd_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_NTD5pp
   name: 5'-nucleotidase
+  genes: PFL0305c
   equation: '|M_dtmp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_pi_c[Cytosol]| + |M_thymd_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_NTD6
   name: 5'-nucleotidase
+  genes: PFL0305c
   equation: '|M_damp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dad_2_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_NTD6pp
   name: 5'-nucleotidase
+  genes: PFL0305c
   equation: '|M_damp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dad_2_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_NTD7
   name: 5'-nucleotidase
+  genes: PFL0305c
   equation: '|M_amp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_adn_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_NTD7pp
   name: 5'-nucleotidase
+  genes: PFL0305c
   equation: '|M_amp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_adn_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_NTD8
   name: 5'-nucleotidase
+  genes: PFL0305c
   equation: '|M_dgmp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dgsn_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_NTD8pp
   name: 5'-nucleotidase
+  genes: PFL0305c
   equation: '|M_dgmp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dgsn_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_NTD9
   name: 5'-nucleotidase
+  genes: PFL0305c
   equation: '|M_gmp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_gsn_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_NTD9pp
   name: 5'-nucleotidase
+  genes: PFL0305c
   equation: '|M_gmp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_gsn_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_NTRIR2x_mt
   name: nitrite_reductase_[NAD(P)H]
+  genes: PF07_0085
   equation: (5) |M_h_m[Mitochondria]| + (3) |M_nadh_m[Mitochondria]| + |M_no2_m[Mitochondria]|
     => (2) |M_h2o_m[Mitochondria]| + (3) |M_nad_m[Mitochondria]| + |M_nh4_m[Mitochondria]|
   subsystem: AminoAcids_NitrogenMetabolism
@@ -2924,26 +3394,31 @@
   subsystem: Transport_MT
 - id: R_OHPHM_mt
   name: 3-demethylubiquinone-9_3-O-methyltransferase
+  genes: MAL7P1_130
   equation: '|M_2ohph_m[Mitochondria]| + |M_amet_m[Mitochondria]| => |M_2omph_m[Mitochondria]|
     + |M_ahcys_m[Mitochondria]| + |M_h_m[Mitochondria]|'
   subsystem: Cofactors_UbiquinoneMetabolism
 - id: R_OIVD1_mt
   name: R_OIVD1_mt
+  genes: PFE0225w and PFC0170c and (PF08_0066 or PFL1550w)
   equation: '|M_4mop_m[Mitochondria]| + |M_coa_m[Mitochondria]| + |M_nad_m[Mitochondria]|
     <=> |M_co2_m[Mitochondria]| + |M_ivcoa_m[Mitochondria]| + |M_nadh_m[Mitochondria]|'
   subsystem: AminoAcids_LeuIleValMetabolism
 - id: R_OIVD2_mt
   name: R_OIVD2_mt
+  genes: PFE0225w and PFC0170c and (PF08_0066 or PFL1550w)
   equation: '|M_3mob_m[Mitochondria]| + |M_coa_m[Mitochondria]| + |M_nad_m[Mitochondria]|
     => |M_co2_m[Mitochondria]| + |M_ibcoa_m[Mitochondria]| + |M_nadh_m[Mitochondria]|'
   subsystem: AminoAcids_LeuIleValMetabolism
 - id: R_OIVD3_mt
   name: R_OIVD3_mt
+  genes: PFE0225w and PFC0170c and (PF08_0066 or PFL1550w)
   equation: '|M_3mop_m[Mitochondria]| + |M_coa_m[Mitochondria]| + |M_nad_m[Mitochondria]|
     => |M_2mbcoa_m[Mitochondria]| + |M_co2_m[Mitochondria]| + |M_nadh_m[Mitochondria]|'
   subsystem: AminoAcids_LeuIleValMetabolism
 - id: R_OMBZLM_mt
   name: R_OMBZLM_mt
+  genes: PFB0220w
   equation: '|M_2ombzl_m[Mitochondria]| + |M_amet_m[Mitochondria]| => |M_2ommbl_m[Mitochondria]|
     + |M_ahcys_m[Mitochondria]| + |M_h_m[Mitochondria]|'
   subsystem: Cofactors_UbiquinoneMetabolism
@@ -2959,10 +3434,12 @@
   subsystem: Cofactors_UbiquinoneMetabolism
 - id: R_OMPDC
   name: Orotidine-5'-phosphate_decarboxylase
+  genes: PF10_0225
   equation: '|M_h_c[Cytosol]| + |M_orot5p_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_ump_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism
 - id: R_OMPHHX_mt
   name: R_OMPHHX_mt
+  genes: PF08_0068
   equation: '|M_2omph_m[Mitochondria]| + (0.5) |M_o2_m[Mitochondria]| => |M_2ombzl_m[Mitochondria]|'
   subsystem: Cofactors_UbiquinoneMetabolism
 - id: R_OPHBDC_mt
@@ -2976,10 +3453,12 @@
   subsystem: Cofactors_UbiquinoneMetabolism
 - id: R_ORNDC
   name: Ornithine_decarboxylase
+  genes: PF10_0322
   equation: '|M_h_c[Cytosol]| + |M_orn_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_ptrc_c[Cytosol]|'
   subsystem: AminoAcids_MetPolyamineMetabolism
 - id: R_ORNTA
   name: ornithine_aminotransferase
+  genes: PFF0435w
   equation: '|M_akg_c[Cytosol]| + |M_orn_c[Cytosol]| => |M_glu_L_c[Cytosol]| + |M_glu5sa_c[Cytosol]|'
   subsystem: AminoAcids_ArgProMetabolism
 - id: R_ORNtiDF
@@ -2992,6 +3471,7 @@
   subsystem: Transport_MT
 - id: R_ORPT
   name: orotate_phosphoribosyltransferase
+  genes: PFE0630c
   equation: '|M_orot5p_c[Cytosol]| + |M_ppi_c[Cytosol]| <=> |M_orot_c[Cytosol]| +
     |M_prpp_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism
@@ -3002,6 +3482,7 @@
   subsystem: Transport
 - id: R_P5CR
   name: pyrroline-5-carboxylate_reductase
+  genes: MAL13P1_284
   equation: '|M_1pyr5c_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]|
     => |M_nadp_c[Cytosol]| + |M_pro_L_c[Cytosol]|'
   subsystem: AminoAcids_ArgProMetabolism
@@ -3035,76 +3516,91 @@
   subsystem: Transport_AP
 - id: R_PAPA120
   name: phosphatidate_phosphatase
+  genes: PFC0995c
   equation: '|M_h2o_c[Cytosol]| + |M_pa120_c[Cytosol]| => |M_12dgr120_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: Lipids_UtilizationPhospholipids
 - id: R_PAPA120pp
   name: phosphatidate_phosphatase
+  genes: PFC0995c
   equation: '|M_h2o_c[Cytosol]| + |M_pa120_c[Cytosol]| => |M_12dgr120_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: Lipids_UtilizationPhospholipids
 - id: R_PAPA140
   name: phosphatidate_phosphatase
+  genes: PFC0995c
   equation: '|M_h2o_c[Cytosol]| + |M_pa140_c[Cytosol]| => |M_12dgr140_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: Lipids_UtilizationPhospholipids
 - id: R_PAPA140pp
   name: phosphatidate_phosphatase
+  genes: PFC0995c
   equation: '|M_h2o_c[Cytosol]| + |M_pa140_c[Cytosol]| => |M_12dgr140_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: Lipids_UtilizationPhospholipids
 - id: R_PAPA141
   name: phosphatidate_phosphatase
+  genes: PFC0995c
   equation: '|M_h2o_c[Cytosol]| + |M_pa141_c[Cytosol]| => |M_12dgr141_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: Lipids_UtilizationPhospholipids
 - id: R_PAPA141pp
   name: phosphatidate_phosphatase
+  genes: PFC0995c
   equation: '|M_h2o_c[Cytosol]| + |M_pa141_c[Cytosol]| => |M_12dgr141_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: Lipids_UtilizationPhospholipids
 - id: R_PAPA160
   name: phosphatidate_phosphatase
+  genes: PFC0995c
   equation: '|M_h2o_c[Cytosol]| + |M_pa160_c[Cytosol]| => |M_12dgr160_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: Lipids_UtilizationPhospholipids
 - id: R_PAPA160pp
   name: phosphatidate_phosphatase
+  genes: PFC0995c
   equation: '|M_h2o_c[Cytosol]| + |M_pa160_c[Cytosol]| => |M_12dgr160_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: Lipids_UtilizationPhospholipids
 - id: R_PAPA161
   name: phosphatidate_phosphatase
+  genes: PFC0995c
   equation: '|M_h2o_c[Cytosol]| + |M_pa161_c[Cytosol]| => |M_12dgr161_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: Lipids_UtilizationPhospholipids
 - id: R_PAPA161pp
   name: phosphatidate_phosphatase
+  genes: PFC0995c
   equation: '|M_h2o_c[Cytosol]| + |M_pa161_c[Cytosol]| => |M_12dgr161_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: Lipids_UtilizationPhospholipids
 - id: R_PAPA180
   name: phosphatidate_phosphatase
+  genes: PFC0995c
   equation: '|M_h2o_c[Cytosol]| + |M_pa180_c[Cytosol]| => |M_12dgr180_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: Lipids_UtilizationPhospholipids
 - id: R_PAPA180pp
   name: phosphatidate_phosphatase
+  genes: PFC0995c
   equation: '|M_h2o_c[Cytosol]| + |M_pa180_c[Cytosol]| => |M_12dgr180_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: Lipids_UtilizationPhospholipids
 - id: R_PAPA181
   name: phosphatidate_phosphatase
+  genes: PFC0995c
   equation: '|M_h2o_c[Cytosol]| + |M_pa181_c[Cytosol]| => |M_12dgr181_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: Lipids_UtilizationPhospholipids
 - id: R_PAPA181pp
   name: phosphatidate_phosphatase
+  genes: PFC0995c
   equation: '|M_h2o_c[Cytosol]| + |M_pa181_c[Cytosol]| => |M_12dgr181_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: Lipids_UtilizationPhospholipids
 - id: R_PAPt
   name: R_PAPt
+  genes: PFA0160c or MAL8P1_32 or PF13_0252 or PF14_0662
   equation: '|M_pap_e[Extraorganism]| <=> |M_pap_c[Cytosol]|'
   subsystem: Transport_base
 - id: R_PCt
@@ -3114,32 +3610,39 @@
   subsystem: Transport_lipid
 - id: R_PDE1
   name: 3',5'-cyclic-nucleotide_phosphodiesterase
+  genes: MAL13P1_118 or MAL13P1_119 or PF14_0672 or PFL0475w
   equation: '|M_camp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_amp_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_PDE2
   name: 3',5'-cyclic-nucleotide_phosphodiesterase
+  genes: MAL13P1_118 or MAL13P1_119 or PF14_0672 or PFL0475w
   equation: '|M_35cdamp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_damp_c[Cytosol]| +
     |M_h_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_PDE3
   name: 3',5'-cyclic-nucleotide_phosphodiesterase
+  genes: MAL13P1_118 or MAL13P1_119 or PF14_0672 or PFL0475w
   equation: '|M_35cimp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_h_c[Cytosol]| + |M_imp_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_PDE4
   name: 3',5'-cyclic-nucleotide_phosphodiesterase
+  genes: MAL13P1_118 or MAL13P1_119 or PF14_0672 or PFL0475w
   equation: '|M_35cgmp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_gmp_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_PDE5
   name: 3',5'-cyclic-nucleotide_phosphodiesterase
+  genes: MAL13P1_118 or MAL13P1_119 or PF14_0672 or PFL0475w
   equation: '|M_35ccmp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_cmp_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_PDH_ap
   name: R_PDH_ap
+  genes: (PF11_0256 or PF14_0441) and PF10_0407 and PFC0170c and (PF08_0066 or PFL1550w)
   equation: '|M_coa_ap[Apicoplast]| + |M_nad_ap[Apicoplast]| + |M_pyr_ap[Apicoplast]|
     => |M_accoa_ap[Apicoplast]| + |M_co2_ap[Apicoplast]| + |M_nadh_ap[Apicoplast]|'
   subsystem: Carbohydrates_PyruvateMetabolism ; Others_MitochondrialTCACycle ; Lipids_FattyAcidSynthesis
 - id: R_PDX5POi
   name: pyridoxal_5'-phosphate_synthase
+  genes: PF14_0570
   equation: '|M_o2_c[Cytosol]| + |M_pdx5p_c[Cytosol]| => |M_h2o2_c[Cytosol]| + |M_pydx5p_c[Cytosol]|'
   subsystem: Cofactors_VitB6Metabolism
 - id: R_PDXPP
@@ -3157,45 +3660,55 @@
   subsystem: Transport_MT
 - id: R_PEPPItap
   name: R_PEPPItap
+  genes: PFE1510c
   equation: '|M_pi_ap[Apicoplast]| + |M_pep_c[Cytosol]| => |M_pi_c[Cytosol]| + |M_pep_ap[Apicoplast]|'
   subsystem: Transport_AP
 - id: R_PETHCT
   name: ethanolamine-phosphate_cytidylyltransferase
+  genes: PF13_0253
   equation: '|M_ctp_c[Cytosol]| + |M_ethamp_c[Cytosol]| + |M_h_c[Cytosol]| => |M_cdpea_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_PFK
   name: 6-phosphofructokinase
+  genes: PF11_0294 or PFI0755c
   equation: '|M_atp_c[Cytosol]| + |M_f6p_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_fdp_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: Carbohydrates_Glycolysis
 - id: R_PFK_2
   name: 6-phosphofructokinase
+  genes: PF11_0294 or PFI0755c
   equation: '|M_atp_c[Cytosol]| + |M_tag6p_D_c[Cytosol]| => |M_adp_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_tagdp_D_c[Cytosol]|'
   subsystem: Carbohydrates_Glycolysis
 - id: R_PGI
   name: Glucose-6-phosphate_isomerase
+  genes: PF14_0341
   equation: '|M_g6p_c[Cytosol]| <=> |M_f6p_c[Cytosol]|'
   subsystem: Carbohydrates_Glycolysis
 - id: R_PGK
   name: phosphoglycerate_kinase
+  genes: PFI1105w
   equation: '|M_3pg_c[Cytosol]| + |M_atp_c[Cytosol]| <=> |M_13dpg_c[Cytosol]| + |M_adp_c[Cytosol]|'
   subsystem: Carbohydrates_Glycolysis
 - id: R_PGL
   name: 6-phosphogluconolactonase
+  genes: PF14_0511
   equation: '|M_6pgl_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_6pgc_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: Carbohydrates_PentosePhosphateCycle
 - id: R_PGM
   name: Phosphoglycerate_mutase
+  genes: PF11_0208 or PFD0660w
   equation: '|M_2pg_c[Cytosol]| <=> |M_3pg_c[Cytosol]|'
   subsystem: Carbohydrates_Glycolysis
 - id: R_PGMT
   name: Phosphoglucomutase
+  genes: PF10_0122
   equation: '|M_g1p_c[Cytosol]| <=> |M_g6p_c[Cytosol]|'
   subsystem: Carbohydrates_Glycolysis ; Carbohydrates_PentosePhosphateCycle
 - id: R_PGMT_2
   name: Phosphoglucomutase
+  genes: PF10_0122
   equation: '|M_r1p_c[Cytosol]| <=> |M_r5p_c[Cytosol]|'
   subsystem: Carbohydrates_PentosePhosphateCycle ; Carbohydrates_Glycolysis
 - id: R_PGPP120
@@ -3270,36 +3783,43 @@
   subsystem: Lipids_PhosphatidylethanolaminePhosphatidylserineMetabolism
 - id: R_PGSA120
   name: CDP-diacylglycerol-glycerol-3-phosphate_3-phosphatidyltransferase
+  genes: MAL8P1_58
   equation: '|M_cdpdddecg_c[Cytosol]| + |M_glyc3p_c[Cytosol]| => |M_cmp_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_pgp120_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_PGSA140
   name: CDP-diacylglycerol-glycerol-3-phosphate_3-phosphatidyltransferase
+  genes: MAL8P1_58
   equation: '|M_cdpdtdecg_c[Cytosol]| + |M_glyc3p_c[Cytosol]| => |M_cmp_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_pgp140_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_PGSA141
   name: CDP-diacylglycerol-glycerol-3-phosphate_3-phosphatidyltransferase
+  genes: MAL8P1_58
   equation: '|M_cdpdtdec7eg_c[Cytosol]| + |M_glyc3p_c[Cytosol]| => |M_cmp_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_pgp141_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_PGSA160
   name: CDP-diacylglycerol-glycerol-3-phosphate_3-phosphatidyltransferase
+  genes: MAL8P1_58
   equation: '|M_cdpdhdecg_c[Cytosol]| + |M_glyc3p_c[Cytosol]| => |M_cmp_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_pgp160_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_PGSA161
   name: CDP-diacylglycerol-glycerol-3-phosphate_3-phosphatidyltransferase
+  genes: MAL8P1_58
   equation: '|M_cdpdhdec9eg_c[Cytosol]| + |M_glyc3p_c[Cytosol]| => |M_cmp_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_pgp161_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_PGSA180
   name: CDP-diacylglycerol-glycerol-3-phosphate_3-phosphatidyltransferase
+  genes: MAL8P1_58
   equation: '|M_cdpdodecg_c[Cytosol]| + |M_glyc3p_c[Cytosol]| => |M_cmp_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_pgp180_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_PGSA181
   name: CDP-diacylglycerol-glycerol-3-phosphate_3-phosphatidyltransferase
+  genes: MAL8P1_58
   equation: '|M_cdpdodec11eg_c[Cytosol]| + |M_glyc3p_c[Cytosol]| => |M_cmp_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_pgp181_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
@@ -3313,21 +3833,25 @@
   subsystem: Transport_MT
 - id: R_PHETA1
   name: phenylalanine(histidine)_transaminase
+  genes: PFB0200c
   equation: '|M_akg_c[Cytosol]| + |M_phe_L_c[Cytosol]| <=> |M_glu_L_c[Cytosol]| +
     |M_phpyr_c[Cytosol]|'
   subsystem: AminoAcids_PheTyrMetabolism
 - id: R_PHETRS
   name: Phenylalanine-tRNA_ligase
+  genes: PF11_0051 or PFA0480w or PFF0180w or PFL1540c
   equation: '|M_atp_c[Cytosol]| + |M_phe_L_c[Cytosol]| + |M_trnaphe_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_phetrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: AminoAcids_PheTyrMetabolism
 - id: R_PHEt2r
   name: R_PHEt2r
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_h_e[Extraorganism]| + |M_phe_L_e[Extraorganism]| <=> |M_h_c[Cytosol]|
     + |M_phe_L_c[Cytosol]|'
   subsystem: Transport_aa
 - id: R_PI45BPP
   name: phosphoinositide_phospholipase_C
+  genes: PF10_0132
   equation: '|M_h2o_c[Cytosol]| + (0.01) |M_ptd145bp_c[Cytosol]| => (0.01) |M_dag_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_mi145p_c[Cytosol]|'
   subsystem: Lipids_InositolPhosphateMetabolism
@@ -3343,32 +3867,38 @@
   subsystem: Transport_lipid
 - id: R_PIN3K
   name: phosphatidylinositol_3-kinase
+  genes: PFE0765w
   equation: '|M_atp_c[Cytosol]| + (0.01) |M_ptd1ino_c[Cytosol]| => |M_adp_c[Cytosol]|
     + |M_h_c[Cytosol]| + (0.01) |M_ptd3ino_c[Cytosol]|'
   subsystem: Lipids_InositolPhosphateMetabolism
 - id: R_PIN4K
   name: 1-phosphatidylinositol_4-kinase
+  genes: PFE0485w
   equation: '|M_atp_c[Cytosol]| + (0.01) |M_ptd1ino_c[Cytosol]| => |M_adp_c[Cytosol]|
     + |M_h_c[Cytosol]| + (0.01) |M_ptd4ino_c[Cytosol]|'
   subsystem: Lipids_InositolPhosphateMetabolism
 - id: R_PINOS
   name: CDP-diacylglycerol-inositol_3-phosphatidyltransferase
+  genes: MAL13P1_82
   equation: (0.01) |M_cdpdag_c[Cytosol]| + |M_inost_c[Cytosol]| => |M_cmp_c[Cytosol]|
     + |M_h_c[Cytosol]| + (0.01) |M_ptd1ino_c[Cytosol]|
   subsystem: Lipids_InositolPhosphateMetabolism
 - id: R_PIOHex_mt
   name: R_PIOHex_mt
+  genes: PFL0110c
   equation: '|M_oh1_m[Mitochondria]| + |M_pi_c[Cytosol]| => |M_oh1_c[Cytosol]| +
     |M_pi_m[Mitochondria]|'
   subsystem: Transport_MT
 - id: R_PIPLC
   name: phospholipase_C
+  genes: PF10_0132
   equation: '|M_h2o_c[Cytosol]| + |M_pail_c[Cytosol]| => |M_dag_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_mi1p_D_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_PIt2r
   name: R_PIt2r
+  genes: MAL13P1_206
   equation: '|M_h_e[Extraorganism]| + |M_pi_e[Extraorganism]| <=> |M_h_c[Cytosol]|
     + |M_pi_c[Cytosol]|'
   subsystem: Transport
@@ -3378,136 +3908,159 @@
   subsystem: Transport_AP
 - id: R_PLIPA2A120pp
   name: phospholipase_A2
+  genes: PFB0410c
   equation: '|M_h2o_c[Cytosol]| + |M_pa120_c[Cytosol]| => |M_1ddecg3p_c[Cytosol]|
     + |M_ddca_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_PLIPA2A140pp
   name: phospholipase_A2
+  genes: PFB0410c
   equation: '|M_h2o_c[Cytosol]| + |M_pa140_c[Cytosol]| => |M_1tdecg3p_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ttdca_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_PLIPA2A141pp
   name: phospholipase_A2
+  genes: PFB0410c
   equation: '|M_h2o_c[Cytosol]| + |M_pa141_c[Cytosol]| => |M_1tdec7eg3p_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ttdcea_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_PLIPA2A160pp
   name: phospholipase_A2
+  genes: PFB0410c
   equation: '|M_h2o_c[Cytosol]| + |M_pa160_c[Cytosol]| => |M_1hdecg3p_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_hdca_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_PLIPA2A161pp
   name: phospholipase_A2
+  genes: PFB0410c
   equation: '|M_h2o_c[Cytosol]| + |M_pa161_c[Cytosol]| => |M_1hdec9eg3p_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_hdcea_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_PLIPA2A180pp
   name: phospholipase_A2
+  genes: PFB0410c
   equation: '|M_h2o_c[Cytosol]| + |M_pa180_c[Cytosol]| => |M_1odecg3p_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ocdca_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_PLIPA2A181pp
   name: phospholipase_A2
+  genes: PFB0410c
   equation: '|M_h2o_c[Cytosol]| + |M_pa181_c[Cytosol]| => |M_1odec11eg3p_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ocdcea_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_PLIPA2E120pp
   name: phospholipase_A2
+  genes: PFB0410c
   equation: '|M_h2o_c[Cytosol]| + |M_pe120_c[Cytosol]| => |M_1agpe120_c[Cytosol]|
     + |M_ddca_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_PLIPA2E140pp
   name: phospholipase_A2
+  genes: PFB0410c
   equation: '|M_h2o_c[Cytosol]| + |M_pe140_c[Cytosol]| => |M_1agpe140_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ttdca_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_PLIPA2E141pp
   name: phospholipase_A2
+  genes: PFB0410c
   equation: '|M_h2o_c[Cytosol]| + |M_pe141_c[Cytosol]| => |M_1agpe141_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ttdcea_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_PLIPA2E160pp
   name: phospholipase_A2
+  genes: PFB0410c
   equation: '|M_h2o_c[Cytosol]| + |M_pe160_c[Cytosol]| => |M_1agpe160_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_hdca_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_PLIPA2E161pp
   name: phospholipase_A2
+  genes: PFB0410c
   equation: '|M_h2o_c[Cytosol]| + |M_pe161_c[Cytosol]| => |M_1agpe161_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_hdcea_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_PLIPA2E180pp
   name: phospholipase_A2
+  genes: PFB0410c
   equation: '|M_h2o_c[Cytosol]| + |M_pe180_c[Cytosol]| => |M_1agpe180_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ocdca_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_PLIPA2E181pp
   name: phospholipase_A2
+  genes: PFB0410c
   equation: '|M_h2o_c[Cytosol]| + |M_pe181_c[Cytosol]| => |M_1agpe181_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ocdcea_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_PLIPA2G120pp
   name: phospholipase_A2
+  genes: PFB0410c
   equation: '|M_h2o_c[Cytosol]| + |M_pg120_c[Cytosol]| => |M_1agpg120_c[Cytosol]|
     + |M_ddca_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_PLIPA2G140pp
   name: phospholipase_A2
+  genes: PFB0410c
   equation: '|M_h2o_c[Cytosol]| + |M_pg140_c[Cytosol]| => |M_1agpg140_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ttdca_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_PLIPA2G141pp
   name: phospholipase_A2
+  genes: PFB0410c
   equation: '|M_h2o_c[Cytosol]| + |M_pg141_c[Cytosol]| => |M_1agpg141_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ttdcea_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_PLIPA2G160pp
   name: phospholipase_A2
+  genes: PFB0410c
   equation: '|M_h2o_c[Cytosol]| + |M_pg160_c[Cytosol]| => |M_1agpg160_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_hdca_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_PLIPA2G161pp
   name: phospholipase_A2
+  genes: PFB0410c
   equation: '|M_h2o_c[Cytosol]| + |M_pg161_c[Cytosol]| => |M_1agpg161_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_hdcea_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_PLIPA2G180pp
   name: phospholipase_A2
+  genes: PFB0410c
   equation: '|M_h2o_c[Cytosol]| + |M_pg180_c[Cytosol]| => |M_1agpg180_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ocdca_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_PLIPA2G181pp
   name: phospholipase_A2
+  genes: PFB0410c
   equation: '|M_h2o_c[Cytosol]| + |M_pg181_c[Cytosol]| => |M_1agpg181_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ocdcea_c[Cytosol]|'
   subsystem: Lipids_PhosphatidylcholineMetabolism ; Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
     ; Lipids_UtilizationPhospholipids
 - id: R_PMANM
   name: Phosphomannomutase
+  genes: PF10_0169
   equation: '|M_man1p_c[Cytosol]| <=> |M_man6p_c[Cytosol]|'
   subsystem: Carbohydrates_MannoseFructoseMetabolism
 - id: R_PMPK
   name: phosphomethylpyrimidine_kinase
+  genes: PFE1030c
   equation: '|M_4ampm_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_2mahmp_c[Cytosol]| +
     |M_adp_c[Cytosol]|'
   subsystem: Cofactors_ThiamineMetabolism
@@ -3517,20 +4070,24 @@
   subsystem: Transport_AP
 - id: R_PNTK
   name: pantothenate_kinase
+  genes: PF14_0200 or PF14_0354
   equation: '|M_atp_c[Cytosol]| + |M_pnto_R_c[Cytosol]| => |M_4ppan_c[Cytosol]| +
     |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: Cofactors_CoABiosynthesis
 - id: R_PNTOt2
   name: R_PNTOt2
+  genes: PF11_0059
   equation: '|M_h_e[Extraorganism]| + |M_pnto_R_e[Extraorganism]| <=> |M_h_c[Cytosol]|
     + |M_pnto_R_c[Cytosol]|'
   subsystem: Transport_cofactor
 - id: R_PPA
   name: inorganic_diphosphatase
+  genes: PF14_0541 or PFC0710w
   equation: '|M_h2o_c[Cytosol]| + |M_ppi_c[Cytosol]| => |M_h_c[Cytosol]| + (2) |M_pi_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism ; Lipids_TerpenoidMetabolism
 - id: R_PPA2
   name: inorganic_diphosphatase
+  genes: PF14_0541 or PFC0710w
   equation: '|M_h2o_c[Cytosol]| + |M_pppi_c[Cytosol]| => |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism ; Lipids_TerpenoidMetabolism
@@ -3540,20 +4097,24 @@
   subsystem: Transport
 - id: R_PPBNGS_ap
   name: porphobilinogen_synthase
+  genes: PF14_0381
   equation: (2) |M_5aop_ap[Apicoplast]| => |M_h_ap[Apicoplast]| + (2) |M_h2o_ap[Apicoplast]|
     + |M_ppbng_ap[Apicoplast]|
   subsystem: Cofactors_PorphyrinMetabolism
 - id: R_PPC
   name: Phosphoenolpyruvate_carboxylase
+  genes: PF14_0246
   equation: '|M_co2_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_pep_c[Cytosol]| => |M_h_c[Cytosol]|
     + |M_oaa_c[Cytosol]| + |M_pi_c[Cytosol]|'
   subsystem: Carbohydrates_PyruvateMetabolism
 - id: R_PPCDC
   name: Phosphopantothenoylcysteine_decarboxylase
+  genes: MAL8P1_81
   equation: '|M_4ppcys_c[Cytosol]| + |M_h_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_pan4p_c[Cytosol]|'
   subsystem: Cofactors_CoABiosynthesis
 - id: R_PPCK
   name: Phosphoenolpyruvate_carboxykinase_(ATP)
+  genes: PF13_0234
   equation: '|M_atp_c[Cytosol]| + |M_oaa_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_co2_c[Cytosol]|
     + |M_pep_c[Cytosol]|'
   subsystem: Carbohydrates_PyruvateMetabolism
@@ -3567,6 +4128,7 @@
   subsystem: Transport_MT
 - id: R_PPNCL2
   name: phosphopantothenate-cysteine_ligase
+  genes: PF11_0036 or PFD0610w
   equation: '|M_4ppan_c[Cytosol]| + |M_ctp_c[Cytosol]| + |M_cys_L_c[Cytosol]| =>
     |M_4ppcys_c[Cytosol]| + |M_cmp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: Cofactors_CoABiosynthesis
@@ -3588,113 +4150,137 @@
   subsystem: Transport_MT
 - id: R_PPPGO
   name: protoporphyrinogen_oxidase
+  genes: PF10_0275
   equation: (1.5) |M_o2_c[Cytosol]| + |M_pppg9_c[Cytosol]| => (3) |M_h2o_c[Cytosol]|
     + |M_ppp9_c[Cytosol]|
   subsystem: Cofactors_PorphyrinMetabolism
 - id: R_PPPGO3
   name: protoporphyrinogen_oxidase
+  genes: PF10_0275
   equation: (3) |M_fum_c[Cytosol]| + |M_pppg9_c[Cytosol]| => |M_ppp9_c[Cytosol]|
     + (3) |M_succ_c[Cytosol]|
   subsystem: Cofactors_PorphyrinMetabolism
 - id: R_PPPGO3_mt
   name: protoporphyrinogen_oxidase
+  genes: PF10_0275
   equation: (3) |M_fum_m[Mitochondria]| + |M_pppg9_m[Mitochondria]| => |M_ppp9_m[Mitochondria]|
     + (3) |M_succ_m[Mitochondria]|
   subsystem: Cofactors_PorphyrinMetabolism
 - id: R_PPPGO_mt
   name: protoporphyrinogen_oxidase
+  genes: PF10_0275
   equation: (1.5) |M_o2_m[Mitochondria]| + |M_pppg9_m[Mitochondria]| => (3) |M_h2o_m[Mitochondria]|
     + |M_ppp9_m[Mitochondria]|
   subsystem: Cofactors_PorphyrinMetabolism
 - id: R_PPTT_mt
   name: trans-pentaprenyltranstransferase
+  genes: PFB0130w
   equation: '|M_ipdp_m[Mitochondria]| + |M_pendp_m[Mitochondria]| => |M_hexdp_m[Mitochondria]|
     + |M_ppi_m[Mitochondria]|'
   subsystem: Lipids_TerpenoidMetabolism
 - id: R_PROTRS
   name: Proline-tRNA_ligase
+  genes: PFI1240c or PFL0670c
   equation: '|M_atp_c[Cytosol]| + |M_pro_L_c[Cytosol]| + |M_trnapro_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_protrna_c[Cytosol]|'
   subsystem: AminoAcids_ArgProMetabolism
 - id: R_PROt2r
   name: R_PROt2r
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_h_e[Extraorganism]| + |M_pro_L_e[Extraorganism]| <=> |M_h_c[Cytosol]|
     + |M_pro_L_c[Cytosol]|'
   subsystem: Transport_aa
 - id: R_PRPPS
   name: ribose-phosphate_diphosphokinase
+  genes: PF13_0143 or PF13_0157
   equation: '|M_atp_c[Cytosol]| + |M_r5p_c[Cytosol]| <=> |M_amp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_prpp_c[Cytosol]|'
   subsystem: Carbohydrates_PentosePhosphateCycle
 - id: R_PSCVT
   name: 3-phosphoshikimate_1-carboxyvinyltransferase
+  genes: PFB0280w
   equation: '|M_pep_c[Cytosol]| + |M_skm5p_c[Cytosol]| <=> |M_3psme_c[Cytosol]| +
     |M_pi_c[Cytosol]|'
   subsystem: Cofactors_ShikimateBiosynthesis
 - id: R_PSD120
   name: Phosphatidylserine_decarboxylase
+  genes: PFI1370c
   equation: '|M_h_c[Cytosol]| + |M_ps120_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_pe120_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_PSD140
   name: Phosphatidylserine_decarboxylase
+  genes: PFI1370c
   equation: '|M_h_c[Cytosol]| + |M_ps140_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_pe140_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_PSD141
   name: Phosphatidylserine_decarboxylase
+  genes: PFI1370c
   equation: '|M_h_c[Cytosol]| + |M_ps141_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_pe141_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_PSD160
   name: Phosphatidylserine_decarboxylase
+  genes: PFI1370c
   equation: '|M_h_c[Cytosol]| + |M_ps160_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_pe160_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_PSD161
   name: Phosphatidylserine_decarboxylase
+  genes: PFI1370c
   equation: '|M_h_c[Cytosol]| + |M_ps161_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_pe161_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_PSD180
   name: Phosphatidylserine_decarboxylase
+  genes: PFI1370c
   equation: '|M_h_c[Cytosol]| + |M_ps180_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_pe180_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_PSD181
   name: Phosphatidylserine_decarboxylase
+  genes: PFI1370c
   equation: '|M_h_c[Cytosol]| + |M_ps181_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_pe181_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_PSP_Lp
   name: R_PSP_Lp
+  genes: PFI0880c
   equation: '|M_h2o_c[Cytosol]| + |M_pser_L_c[Cytosol]| => |M_pi_c[Cytosol]| + |M_ser_L_c[Cytosol]|'
   subsystem: AminoAcids_GlySerMetabolism
 - id: R_PSSA120
   name: CDP-diacylglycerol-serine_O-phosphatidyltransferase
+  genes: MAL13P1_335
   equation: '|M_cdpdddecg_c[Cytosol]| + |M_ser_L_c[Cytosol]| => |M_cmp_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ps120_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_PSSA140
   name: CDP-diacylglycerol-serine_O-phosphatidyltransferase
+  genes: MAL13P1_335
   equation: '|M_cdpdtdecg_c[Cytosol]| + |M_ser_L_c[Cytosol]| => |M_cmp_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ps140_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_PSSA141
   name: CDP-diacylglycerol-serine_O-phosphatidyltransferase
+  genes: MAL13P1_335
   equation: '|M_cdpdtdec7eg_c[Cytosol]| + |M_ser_L_c[Cytosol]| => |M_cmp_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ps141_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_PSSA160
   name: CDP-diacylglycerol-serine_O-phosphatidyltransferase
+  genes: MAL13P1_335
   equation: '|M_cdpdhdecg_c[Cytosol]| + |M_ser_L_c[Cytosol]| => |M_cmp_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ps160_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_PSSA161
   name: CDP-diacylglycerol-serine_O-phosphatidyltransferase
+  genes: MAL13P1_335
   equation: '|M_cdpdhdec9eg_c[Cytosol]| + |M_ser_L_c[Cytosol]| => |M_cmp_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ps161_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_PSSA180
   name: CDP-diacylglycerol-serine_O-phosphatidyltransferase
+  genes: MAL13P1_335
   equation: '|M_cdpdodecg_c[Cytosol]| + |M_ser_L_c[Cytosol]| => |M_cmp_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ps180_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
 - id: R_PSSA181
   name: CDP-diacylglycerol-serine_O-phosphatidyltransferase
+  genes: MAL13P1_335
   equation: '|M_cdpdodec11eg_c[Cytosol]| + |M_ser_L_c[Cytosol]| => |M_cmp_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_ps181_c[Cytosol]|'
   subsystem: Lipids_PhosphatidyletanolaminePhosphatidylserineMetabolism
@@ -3704,14 +4290,17 @@
   subsystem: Transport_lipid
 - id: R_PTHPS
   name: 6-pyruvoyltetrahydropterin_synthase
+  genes: PFF1360w
   equation: '|M_ahdt_c[Cytosol]| => |M_6pthp_c[Cytosol]| + |M_pppi_c[Cytosol]|'
   subsystem: Cofactors_FolateBiosynthesis
 - id: R_PTHPS2
   name: 6-pyruvoyltetrahydropterin_synthase
+  genes: PFF1360w
   equation: '|M_ahdt_c[Cytosol]| => |M_6hmhpt_c[Cytosol]| + |M_pppi_c[Cytosol]|'
   subsystem: Cofactors_FolateBiosynthesis
 - id: R_PTPATi
   name: pantetheine-phosphate_adenylyltransferase
+  genes: PF07_0018
   equation: '|M_atp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pan4p_c[Cytosol]| => |M_dpcoa_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
   subsystem: Cofactors_CoABiosynthesis
@@ -3722,44 +4311,54 @@
   subsystem: Transport
 - id: R_PUNP1
   name: purine-nucleoside_phosphorylase
+  genes: PFE0660c
   equation: '|M_adn_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_ade_c[Cytosol]| + |M_r1p_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism ; AminoAcids_MetPolyamineMetabolism
 - id: R_PUNP2
   name: purine-nucleoside_phosphorylase
+  genes: PFE0660c
   equation: '|M_dad_2_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_2dr1p_c[Cytosol]| +
     |M_ade_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism ; AminoAcids_MetPolyamineMetabolism
 - id: R_PUNP3
   name: purine-nucleoside_phosphorylase
+  genes: PFE0660c
   equation: '|M_gsn_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_gua_c[Cytosol]| + |M_r1p_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism ; AminoAcids_MetPolyamineMetabolism
 - id: R_PUNP4
   name: purine-nucleoside_phosphorylase
+  genes: PFE0660c
   equation: '|M_dgsn_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_2dr1p_c[Cytosol]| + |M_gua_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism ; AminoAcids_MetPolyamineMetabolism
 - id: R_PUNP5
   name: purine-nucleoside_phosphorylase
+  genes: PFE0660c
   equation: '|M_ins_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_hxan_c[Cytosol]| + |M_r1p_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism ; AminoAcids_MetPolyamineMetabolism
 - id: R_PUNP6
   name: purine-nucleoside_phosphorylase
+  genes: PFE0660c
   equation: '|M_din_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_2dr1p_c[Cytosol]| + |M_hxan_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism ; AminoAcids_MetPolyamineMetabolism
 - id: R_PUNP7
   name: purine-nucleoside_phosphorylase
+  genes: PFE0660c
   equation: '|M_pi_c[Cytosol]| + |M_xtsn_c[Cytosol]| <=> |M_r1p_c[Cytosol]| + |M_xan_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism ; AminoAcids_MetPolyamineMetabolism
 - id: R_PUNP8
   name: purine-nucleoside_phosphorylase
+  genes: PFE0660c
   equation: '|M_5mti_c[Cytosol]| + |M_pi_c[Cytosol]| => |M_hxan_c[Cytosol]| + |M_5mtr1p_c[Cytosol]|'
   subsystem: AminoAcids_MetPolyamineMetabolism
 - id: R_PYAM5PO
   name: pyridoxal_5'-phosphate_synthase
+  genes: PF14_0570
   equation: '|M_h2o_c[Cytosol]| + |M_o2_c[Cytosol]| + |M_pyam5p_c[Cytosol]| => |M_h2o2_c[Cytosol]|
     + |M_nh4_c[Cytosol]| + |M_pydx5p_c[Cytosol]|'
   subsystem: Cofactors_VitB6Metabolism
 - id: R_PYDAMK
   name: pyridoxal_kinase
+  genes: PFF0775w
   equation: '|M_atp_c[Cytosol]| + |M_pydam_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_pyam5p_c[Cytosol]|'
   subsystem: Cofactors_VitB6Metabolism
@@ -3769,11 +4368,13 @@
   subsystem: Transport_cofactor
 - id: R_PYDXK
   name: pyridoxal_kinase
+  genes: PFF0775w
   equation: '|M_atp_c[Cytosol]| + |M_pydx_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_pydx5p_c[Cytosol]|'
   subsystem: Cofactors_VitB6Metabolism
 - id: R_PYDXNK
   name: pyridoxal_kinase
+  genes: PFF0775w
   equation: '|M_atp_c[Cytosol]| + |M_pydxn_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_pdx5p_c[Cytosol]|'
   subsystem: Cofactors_VitB6Metabolism
@@ -3797,6 +4398,7 @@
     ; Lipids_FattyAcidSynthesis
 - id: R_PYK_ap
   name: pyruvate_kinase
+  genes: PF10_0363
   equation: '|M_adp_ap[Apicoplast]| + |M_h_ap[Apicoplast]| + |M_pep_ap[Apicoplast]|
     => |M_atp_ap[Apicoplast]| + |M_pyr_ap[Apicoplast]|'
   subsystem: Carbohydrates_Glycolysis ; Carbohydrates_PyruvateMetabolism ; Lipids_IsoprenoidsMetabolism
@@ -3812,6 +4414,7 @@
   subsystem: Transport_MT
 - id: R_R07456
   name: R_R07456
+  genes: PF11_0169
   equation: '|M_g3p_c[Cytosol]| + |M_ru5p_D_c[Cytosol]| + |M_gln_L_c[Cytosol]| <=>
     |M_pydx5p_c[Cytosol]| + |M_glu_L_c[Cytosol]|'
   subsystem: Cofactors_VitB6Metabolism
@@ -3822,6 +4425,7 @@
   subsystem: Carbohydrates_PentosePhosphateCycle
 - id: R_RBFK
   name: riboflavin_kinase
+  genes: MAL13P1_292
   equation: '|M_atp_c[Cytosol]| + |M_ribflv_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_fmn_c[Cytosol]|
     + |M_h_c[Cytosol]|'
   subsystem: Cofactors_RiboflavinMetabolism
@@ -3832,39 +4436,47 @@
   subsystem: Transport_cofactor
 - id: R_RNDR1
   name: ribonucleoside-diphosphate_reductase
+  genes: PF10_0154 or PF14_0053 or PF14_0352
   equation: '|M_adp_c[Cytosol]| + |M_trdrd_c[Cytosol]| => |M_dadp_c[Cytosol]| + |M_h2o_c[Cytosol]|
     + |M_trdox_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism ; Nucleotides_PurineMetabolism ; Redox_RedoxMetabolism
 - id: R_RNDR2
   name: ribonucleoside-diphosphate_reductase
+  genes: PF10_0154 or PF14_0053 or PF14_0352
   equation: '|M_gdp_c[Cytosol]| + |M_trdrd_c[Cytosol]| => |M_dgdp_c[Cytosol]| + |M_h2o_c[Cytosol]|
     + |M_trdox_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism ; Nucleotides_PurineMetabolism ; Redox_RedoxMetabolism
 - id: R_RNDR3
   name: ribonucleoside-diphosphate_reductase
+  genes: PF10_0154 or PF14_0053 or PF14_0352
   equation: '|M_cdp_c[Cytosol]| + |M_trdrd_c[Cytosol]| => |M_dcdp_c[Cytosol]| + |M_h2o_c[Cytosol]|
     + |M_trdox_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism ; Nucleotides_PurineMetabolism ; Redox_RedoxMetabolism
 - id: R_RNDR4
   name: ribonucleoside-diphosphate_reductase
+  genes: PF10_0154 or PF14_0053 or PF14_0352
   equation: '|M_trdrd_c[Cytosol]| + |M_udp_c[Cytosol]| => |M_dudp_c[Cytosol]| + |M_h2o_c[Cytosol]|
     + |M_trdox_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism ; Nucleotides_PurineMetabolism ; Redox_RedoxMetabolism
 - id: R_RPE
   name: Ribulose-phosphate_3-epimerase
+  genes: PFL0960w
   equation: '|M_ru5p_D_c[Cytosol]| <=> |M_xu5p_D_c[Cytosol]|'
   subsystem: Carbohydrates_PentosePhosphateCycle
 - id: R_RPI
   name: Ribose-5-phosphate_isomerase
+  genes: PFE0730c
   equation: '|M_r5p_c[Cytosol]| <=> |M_ru5p_D_c[Cytosol]|'
   subsystem: Carbohydrates_PentosePhosphateCycle
 - id: R_SACCD2
   name: saccharopine_dehydrogenase_(NAD+,_L-lysine-forming)
+  genes: PFB0880w
   equation: '|M_h2o_c[Cytosol]| + |M_nad_c[Cytosol]| + |M_saccrp_L_c[Cytosol]| <=>
     |M_akg_c[Cytosol]| + |M_h_c[Cytosol]| + |M_lys_L_c[Cytosol]| + |M_nadh_c[Cytosol]|'
   subsystem: AminoAcids_LysMetabolism
 - id: R_SBTR
   name: aldehyde_reductase
+  genes: MAL13P1_324
   equation: '|M_glc_D_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| => |M_nadp_c[Cytosol]|
     + |M_sbt_D_c[Cytosol]|'
   subsystem: Carbohydrates_PyruvateMetabolism ; Carbohydrates_Glycolysis
@@ -3874,41 +4486,49 @@
   subsystem: Transport
 - id: R_SELCYSS
   name: L-Seryl-tRNASec_selenium_transferase
+  genes: PFL0255c
   equation: '|M_selnp_c[Cytosol]| + |M_sertrna_sec__c[Cytosol]| => |M_h_c[Cytosol]|
     + |M_pi_c[Cytosol]| + |M_sectrna_c[Cytosol]|'
   subsystem: AminoAcids_SelenocysteineMetabolism
 - id: R_SELNPS
   name: selenide,_water_dikinase
+  genes: PFI0505c
   equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_seln_c[Cytosol]| => |M_amp_c[Cytosol]|
     + |M_pi_c[Cytosol]| + |M_selnp_c[Cytosol]|'
   subsystem: AminoAcids_SelenocysteineMetabolism
 - id: R_SERGLNexR
   name: R_SERGLNexR
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_gln_L_c[Cytosol]| + |M_ser_L_e[Extraorganism]| <=> |M_gln_L_e[Extraorganism]|
     + |M_ser_L_c[Cytosol]|'
   subsystem: Transport_aa
 - id: R_SERGLYexR
   name: R_SERGLYexR
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_gly_c[Cytosol]| + |M_ser_L_e[Extraorganism]| <=> |M_gly_e[Extraorganism]|
     + |M_ser_L_c[Cytosol]|'
   subsystem: Transport_aa
 - id: R_SERPT
   name: serine_C-palmitoyltransferase
+  genes: PF14_0155
   equation: '|M_h_c[Cytosol]| + |M_pmtcoa_c[Cytosol]| + |M_ser_L_c[Cytosol]| => |M_3dsphgn_c[Cytosol]|
     + |M_co2_c[Cytosol]| + |M_coa_c[Cytosol]|'
   subsystem: Lipids_SphingomyelinCeramideMetabolism
 - id: R_SERTRS
   name: Serine-tRNA_ligase
+  genes: PF07_0073 or PFL0770w
   equation: '|M_atp_c[Cytosol]| + |M_ser_L_c[Cytosol]| + |M_trnaser_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_sertrna_c[Cytosol]|'
   subsystem: AminoAcids_SelenocysteineMetabolism ; AminoAcids_GlySerMetabolism
 - id: R_SERTRS2
   name: Serine-tRNA_ligase
+  genes: PF07_0073 or PFL0770w
   equation: '|M_atp_c[Cytosol]| + |M_ser_L_c[Cytosol]| + |M_trnasecys_c[Cytosol]|
     => |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_sertrna_sec__c[Cytosol]|'
   subsystem: AminoAcids_SelenocysteineMetabolism ; AminoAcids_GlySerMetabolism
 - id: R_SERt2r
   name: R_SERt2r
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_h_e[Extraorganism]| + |M_ser_L_e[Extraorganism]| <=> |M_h_c[Cytosol]|
     + |M_ser_L_c[Cytosol]|'
   subsystem: Transport_aa
@@ -3919,16 +4539,19 @@
   subsystem: Cofactors_ShikimateBiosynthesis
 - id: R_SHKK
   name: shikimate_kinase
+  genes: PFB0280w
   equation: '|M_atp_c[Cytosol]| + |M_skm_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_skm5p_c[Cytosol]|'
   subsystem: Cofactors_ShikimateBiosynthesis
 - id: R_SMPD3l
   name: sphingomyelin_phosphodiesterase
+  genes: PFL1870c
   equation: '|M_h2o_c[Cytosol]| + |M_sphmyln_c[Cytosol]| => |M_cholp_c[Cytosol]|
     + |M_crm_c[Cytosol]| + |M_h_c[Cytosol]|'
   subsystem: Lipids_SphingomyelinCeramideMetabolism
 - id: R_SMS
   name: sphingomyelin_synthase
+  genes: PFF1215w
   equation: '|M_crm_c[Cytosol]| + |M_pc_c[Cytosol]| => |M_dag_c[Cytosol]| + |M_sphmyln_c[Cytosol]|'
   subsystem: Lipids_SphingomyelinCeramideMetabolism
 - id: R_SO4HCOtex
@@ -3952,16 +4575,19 @@
   subsystem: Transport
 - id: R_SPMS
   name: spermidine_synthase
+  genes: PF11_0301
   equation: '|M_ametam_c[Cytosol]| + |M_ptrc_c[Cytosol]| => |M_5mta_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_spmd_c[Cytosol]|'
   subsystem: AminoAcids_MetPolyamineMetabolism
 - id: R_SPODM_mt
   name: superoxide_dismutase
+  genes: PF08_0071 or PFF1130c
   equation: (2) |M_h_m[Mitochondria]| + (2) |M_o2s_m[Mitochondria]| => |M_h2o2_m[Mitochondria]|
     + |M_o2_m[Mitochondria]|
   subsystem: Redox_RedoxMetabolism ; Redox_MitochondrialAntioxidantSystem
 - id: R_SPODMc
   name: superoxide_dismutase
+  genes: PF08_0071 or PFF1130c
   equation: (2) |M_h_c[Cytosol]| + (2) |M_o2s_c[Cytosol]| => |M_h2o2_c[Cytosol]|
     + |M_o2_c[Cytosol]|
   subsystem: Redox_RedoxMetabolism ; Redox_MitochondrialAntioxidantSystem
@@ -3976,26 +4602,31 @@
   subsystem: Transport_MT
 - id: R_SUCD2_u6m_mt
   name: succinate_dehydrogenase_(ubiquinone)
+  genes: PF10_0334
   equation: '|M_q8_m[Mitochondria]| + |M_succ_m[Mitochondria]| <=> |M_fum_m[Mitochondria]|
     + |M_q8h2_m[Mitochondria]|'
   subsystem: Others_MitochondrialElectronFlow
 - id: R_SUCD3_u6m_mt
   name: succinate_dehydrogenase_(ubiquinone)
+  genes: PF10_0334
   equation: '|M_fadh2_m[Mitochondria]| + |M_q8_m[Mitochondria]| <=> |M_fad_m[Mitochondria]|
     + |M_q8h2_m[Mitochondria]|'
   subsystem: Others_MitochondrialElectronFlow
 - id: R_SUCOAS1m_mt
   name: succinate-CoA_ligase_(GDP-forming)
+  genes: PF11_0097
   equation: '|M_coa_m[Mitochondria]| + |M_gtp_m[Mitochondria]| + |M_succ_m[Mitochondria]|
     <=> |M_gdp_m[Mitochondria]| + |M_pi_m[Mitochondria]| + |M_succoa_m[Mitochondria]|'
   subsystem: Others_MitochondrialTCACycle
 - id: R_SUCOAS_mt
   name: Succinate-CoA_ligase_(ADP-forming)
+  genes: PF14_0295
   equation: '|M_atp_m[Mitochondria]| + |M_coa_m[Mitochondria]| + |M_succ_m[Mitochondria]|
     <=> |M_adp_m[Mitochondria]| + |M_pi_m[Mitochondria]| + |M_succoa_m[Mitochondria]|'
   subsystem: Others_MitochondrialTCACycle ; Carbohydrates_PyruvateMetabolism
 - id: R_T2DECAI_ap
   name: 3-Hydroxydecanoyl-[acyl-carrier-protein]_dehydratase
+  genes: PF13_0128
   equation: '|M_tdec2eACP_ap[Apicoplast]| <=> |M_cdec3eACP_ap[Apicoplast]|'
   subsystem: Lipids_FattyAcidSynthesis
 - id: R_TALA
@@ -4004,11 +4635,13 @@
   subsystem: Carbohydrates_PentosePhosphateCycle
 - id: R_THD2pp
   name: NAD(P)+_transhydrogenase_(B-specific)
+  genes: PF14_0508
   equation: '|M_nadh_c[Cytosol]| + |M_nadp_c[Cytosol]| + (2) |M_h_e[Extraorganism]|
     => (2) |M_h_c[Cytosol]| + |M_nad_c[Cytosol]| + |M_nadph_c[Cytosol]|'
   subsystem: Cofactors_NicotinateNicotinamideMetabolism
 - id: R_THFGLUS
   name: tetrahydrofolate_synthase
+  genes: PF13_0140
   equation: '|M_atp_c[Cytosol]| + |M_glu_L_c[Cytosol]| + |M_thf_c[Cytosol]| <=> |M_adp_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_thfglu_c[Cytosol]|'
   subsystem: Cofactors_FolateBiosynthesis
@@ -4018,16 +4651,19 @@
   subsystem: Transport_MT
 - id: R_THIORDXi_mt
   name: peroxiredoxin
+  genes: PF14_0368 or PFL0725w
   equation: '|M_h2o2_m[Mitochondria]| + |M_trdrd_m[Mitochondria]| => (2) |M_h2o_m[Mitochondria]|
     + |M_trdox_m[Mitochondria]|'
   subsystem: Redox_RedoxMetabolism ; Redox_MitochondrialAntioxidantSystem
 - id: R_THMDP
   name: acid_phosphatase
+  genes: PFI0880c
   equation: (2) |M_h2o_c[Cytosol]| + |M_thmpp_c[Cytosol]| => |M_h_c[Cytosol]| + (2)
     |M_pi_c[Cytosol]| + |M_thm_c[Cytosol]|
   subsystem: Cofactors_RiboflavinMetabolism
 - id: R_THMP
   name: acid_phosphatase
+  genes: PFI0880c
   equation: '|M_h2o_c[Cytosol]| + |M_thmmp_c[Cytosol]| => |M_pi_c[Cytosol]| + |M_thm_c[Cytosol]|'
   subsystem: Cofactors_RiboflavinMetabolism
 - id: R_THMt3
@@ -4037,51 +4673,61 @@
   subsystem: Transport_cofactor
 - id: R_THRGLNexR
   name: R_THRGLNexR
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_gln_L_c[Cytosol]| + |M_thr_L_e[Extraorganism]| <=> |M_gln_L_e[Extraorganism]|
     + |M_thr_L_c[Cytosol]|'
   subsystem: Transport_aa
 - id: R_THRGLYexR
   name: R_THRGLYexR
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_gly_c[Cytosol]| + |M_thr_L_e[Extraorganism]| <=> |M_gly_e[Extraorganism]|
     + |M_thr_L_c[Cytosol]|'
   subsystem: Transport_aa
 - id: R_THRTRS
   name: Threonine-tRNA_ligase
+  genes: PF11_0270
   equation: '|M_atp_c[Cytosol]| + |M_thr_L_c[Cytosol]| + |M_trnathr_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_thrtrna_c[Cytosol]|'
   subsystem: AminoAcids_tRNA
 - id: R_THRt2r
   name: R_THRt2r
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_h_e[Extraorganism]| + |M_thr_L_e[Extraorganism]| <=> |M_h_c[Cytosol]|
     + |M_thr_L_c[Cytosol]|'
   subsystem: Transport_aa
 - id: R_THYMDt1
   name: R_THYMDt1
+  genes: PFA0160c or MAL8P1_32 or PF13_0252 or PF14_0662
   equation: '|M_thymd_e[Extraorganism]| => |M_thymd_c[Cytosol]|'
   subsystem: Transport_base
 - id: R_THZPSN_mt
   name: cysteine_desulfurase
+  genes: MAL7P1_150 or PF07_0068
   equation: '|M_cys_L_m[Mitochondria]| + |M_dxyl5p_m[Mitochondria]| + |M_tyr_L_m[Mitochondria]|
     => |M_4hba_m[Mitochondria]| + |M_4mhetz_m[Mitochondria]| + |M_ala_L_m[Mitochondria]|
     + |M_co2_m[Mitochondria]|'
   subsystem: Cofactors_ThiamineMetabolism
 - id: R_TKT1
   name: transketolase
+  genes: PFF0530w
   equation: '|M_r5p_c[Cytosol]| + |M_xu5p_D_c[Cytosol]| <=> |M_g3p_c[Cytosol]| +
     |M_s7p_c[Cytosol]|'
   subsystem: Carbohydrates_PentosePhosphateCycle
 - id: R_TKT2
   name: transketolase
+  genes: PFF0530w
   equation: '|M_e4p_c[Cytosol]| + |M_xu5p_D_c[Cytosol]| <=> |M_f6p_c[Cytosol]| +
     |M_g3p_c[Cytosol]|'
   subsystem: Carbohydrates_PentosePhosphateCycle
 - id: R_TMDPK
   name: thiamine_diphosphokinase
+  genes: PFI1195c
   equation: '|M_atp_c[Cytosol]| + |M_thm_c[Cytosol]| => |M_amp_c[Cytosol]| + |M_h_c[Cytosol]|
     + |M_thmpp_c[Cytosol]|'
   subsystem: Cofactors_ThiamineMetabolism
 - id: R_TMDS
   name: thymidylate_synthase
+  genes: PFD0830w
   equation: '|M_dump_c[Cytosol]| + |M_mlthf_c[Cytosol]| => |M_dhf_c[Cytosol]| + |M_dtmp_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism ; Cofactors_FolateBiosynthesis
 - id: R_TMPK
@@ -4090,30 +4736,36 @@
   subsystem: Cofactors_ThiamineMetabolism
 - id: R_TMPPP
   name: thiamine-phosphate_diphosphorylase
+  genes: PFF0680c
   equation: '|M_2mahmp_c[Cytosol]| + |M_4mpetz_c[Cytosol]| + |M_h_c[Cytosol]| =>
     |M_ppi_c[Cytosol]| + |M_thmmp_c[Cytosol]|'
   subsystem: Cofactors_ThiamineMetabolism
 - id: R_TPI
   name: Triose-phosphate_isomerase
+  genes: PF14_0378
   equation: '|M_dhap_c[Cytosol]| <=> |M_g3p_c[Cytosol]|'
   subsystem: Carbohydrates_Glycolysis ; Lipids_IsoprenoidsMetabolism
 - id: R_TPI_ap
   name: Triose-phosphate_isomerase
+  genes: PFC0831w
   equation: '|M_dhap_ap[Apicoplast]| <=> |M_g3p_ap[Apicoplast]|'
   subsystem: Carbohydrates_Glycolysis ; Lipids_IsoprenoidsMetabolism
 - id: R_TRDR
   name: thioredoxin-disulfide_reductase
+  genes: PFI1170c
   equation: '|M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| + |M_trdox_c[Cytosol]| => |M_nadp_c[Cytosol]|
     + |M_trdrd_c[Cytosol]|'
   subsystem: Redox_RedoxMetabolism ; Redox_MitochondrialAntioxidantSystem ; Nucleotides_PyrimidineMetabolism
     ; Nucleotides_PurineMetabolism
 - id: R_TRPTRS
   name: Tryptophan-tRNA_ligase
+  genes: PF13_0205 or PFL2485c
   equation: '|M_atp_c[Cytosol]| + |M_trnatrp_c[Cytosol]| + |M_trp_L_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_trptrna_c[Cytosol]|'
   subsystem: AminoAcids_PheTyrMetabolism
 - id: R_TRPt2r
   name: R_TRPt2r
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_h_e[Extraorganism]| + |M_trp_L_e[Extraorganism]| <=> |M_h_c[Cytosol]|
     + |M_trp_L_c[Cytosol]|'
   subsystem: Transport_aa
@@ -4127,21 +4779,25 @@
   subsystem: Transport_MT
 - id: R_TYRTA
   name: tyrosine_transaminase
+  genes: PFB0200c
   equation: '|M_akg_c[Cytosol]| + |M_tyr_L_c[Cytosol]| <=> |M_34hpp_c[Cytosol]| +
     |M_glu_L_c[Cytosol]|'
   subsystem: AminoAcids_PheTyrMetabolism
 - id: R_TYRTRS
   name: Tyrosine-tRNA_ligase
+  genes: MAL8P1_125 or PF11_0181
   equation: '|M_atp_c[Cytosol]| + |M_trnatyr_c[Cytosol]| + |M_tyr_L_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_tyrtrna_c[Cytosol]|'
   subsystem: AminoAcids_PheTyrMetabolism
 - id: R_TYRt2r
   name: R_TYRt2r
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_h_e[Extraorganism]| + |M_tyr_L_e[Extraorganism]| <=> |M_h_c[Cytosol]|
     + |M_tyr_L_c[Cytosol]|'
   subsystem: Transport_aa
 - id: R_UAGDP
   name: UDP-N-acetylglucosamine_diphosphorylase
+  genes: MAL13P1_218
   equation: '|M_acgam1p_c[Cytosol]| + |M_h_c[Cytosol]| + |M_utp_c[Cytosol]| => |M_ppi_c[Cytosol]|
     + |M_uacgam_c[Cytosol]|'
   subsystem: Carbohydrates_AminosugarsMetabolism
@@ -4152,15 +4808,18 @@
   subsystem: Lipids_TerpenoidMetabolism
 - id: R_UGCG
   name: ceramide_glucosyltransferase
+  genes: PF11_0427
   equation: '|M_crm_c[Cytosol]| + |M_udpg_c[Cytosol]| => |M_gluside_c[Cytosol]| +
     |M_h_c[Cytosol]| + |M_udp_c[Cytosol]|'
   subsystem: Lipids_SphingomyelinCeramideMetabolism
 - id: R_UMPK
   name: cytidylate_kinase
+  genes: PFA0555c
   equation: '|M_atp_c[Cytosol]| + |M_ump_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_udp_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism
 - id: R_UP4UH1
   name: bis(5'-nucleosyl)-tetraphosphatase_(asymmetrical)
+  genes: PFE1035c
   equation: '|M_up4u_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_ump_c[Cytosol]| + |M_utp_c[Cytosol]|
     + (2) |M_h_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism ; Nucleotides_PurineMetabolism
@@ -4170,11 +4829,13 @@
   subsystem: Cofactors_PorphyrinMetabolism
 - id: R_UPPDC1_ap
   name: Uroporphyrinogen_decarboxylase
+  genes: PFF0360w
   equation: (4) |M_h_ap[Apicoplast]| + |M_uppg3_ap[Apicoplast]| => (4) |M_co2_ap[Apicoplast]|
     + |M_cpppg3_ap[Apicoplast]|
   subsystem: Cofactors_PorphyrinMetabolism
 - id: R_URAt
   name: R_URAt
+  genes: PFA0160c or MAL8P1_32 or PF13_0252 or PF14_0662
   equation: '|M_ura_e[Extraorganism]| <=> |M_ura_c[Cytosol]|'
   subsystem: Transport_base
 - id: R_UREAt
@@ -4183,25 +4844,30 @@
   subsystem: Transport
 - id: R_URIt
   name: R_URIt
+  genes: PFA0160c or MAL8P1_32 or PF13_0252 or PF14_0662
   equation: '|M_uri_e[Extraorganism]| <=> |M_uri_c[Cytosol]|'
   subsystem: Transport_base
 - id: R_VALTA
   name: branched-chain-amino-acid_transaminase
+  genes: PF14_0557
   equation: '|M_akg_c[Cytosol]| + |M_val_L_c[Cytosol]| <=> |M_3mob_c[Cytosol]| +
     |M_glu_L_c[Cytosol]|'
   subsystem: AminoAcids_LeuIleValMetabolism
 - id: R_VALTRS
   name: Valine-tRNA_ligase
+  genes: PF14_0589 or PFC0470w
   equation: '|M_atp_c[Cytosol]| + |M_trnaval_c[Cytosol]| + |M_val_L_c[Cytosol]| =>
     |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_valtrna_c[Cytosol]|'
   subsystem: AminoAcids_LeuIleValMetabolism
 - id: R_VALt2r
   name: R_VALt2r
+  genes: PFF1430c or PFL0420w or PFL1515c or PFB0435c or PFE0775c or PF11_0334
   equation: '|M_h_e[Extraorganism]| + |M_val_L_e[Extraorganism]| <=> |M_h_c[Cytosol]|
     + |M_val_L_c[Cytosol]|'
   subsystem: Transport_aa
 - id: R_XANt
   name: R_XANt
+  genes: PFA0160c or MAL8P1_32 or PF13_0252 or PF14_0662
   equation: '|M_xan_e[Extraorganism]| <=> |M_xan_c[Cytosol]|'
   subsystem: Transport_base
 - id: R_XOLEST2te
@@ -4210,10 +4876,12 @@
   subsystem: Transport_lipid
 - id: R_XPRT
   name: hypoxanthine_phosphoribosyltransferase
+  genes: PF10_0121
   equation: '|M_xan_c[Cytosol]| + |M_prpp_c[Cytosol]| => |M_xmp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
   subsystem: Nucleotides_PurineMetabolism
 - id: R_YUMPS
   name: pseudouridylate_synthase
+  genes: PF10_0175 or PFB0890c or PFE1080w or PFI0420c or PFI0685w or PFL1350w
   equation: '|M_r5p_c[Cytosol]| + |M_ura_c[Cytosol]| <=> |M_h2o_c[Cytosol]| + |M_psd5p_c[Cytosol]|'
   subsystem: Nucleotides_PyrimidineMetabolism
 - id: R_biomass
