@@ -1,233 +1,298 @@
 - id: IR00001
   name: Pyrophosphate phosphohydrolase
+  genes: PP0538
   equation: '|C0012[Cytosol]| + |C0001[Cytosol]| => (2) |C0009[Cytosol]| + |C0065[Cytosol]|'
 - id: IR00006
   name: Hydorogen-peroxide:hydrogen-peroxide oxidoreductase
+  genes: PP2887 or PP0115 or PP0481 or PP3668
   equation: (2) |C0025[Cytosol]| => |C0007[Cytosol]| + (2) |C0001[Cytosol]|
 - id: IR00009
   name: Glyoxylate carboxy-lyase (dimerizing)
+  genes: PP4297
   equation: (2) |C0040[Cytosol]| + |C0065[Cytosol]| => |C0830[Cytosol]| + |C0011[Cytosol]|
 - id: IR00015
   name: Chitobiose + H2O &gt;=&lt; 2 N-Acetyl-D-glucosamine
+  genes: PP2145
   equation: '|C1145[Cytosol]| + |C0001[Cytosol]| => (2) |C0120[Cytosol]|'
 - id: IR00019
   name: beta-D-Glucoside glucohydrolase
+  genes: PP1403
   equation: '|C0153[Cytosol]| + |C0001[Cytosol]| => (2) |C0183[Cytosol]|'
 - id: IR00028
   name: 5-Aminolevulinate hydro-lyase(adding 5-aminolevulinate andcyclizing)
+  genes: PP2913 or PP3322
   equation: (2) |C0333[Cytosol]| => |C0065[Cytosol]| + |C0680[Cytosol]| + (2) |C0001[Cytosol]|
 - id: IR00048
   name: 6,7-Dimethyl-8-(1-D-ribityl)lumazine:6,7-dimethyl-8-(1-D-ribityl)lumazine
     2,3-butanediyltransferase
+  genes: (PP2916 and PP0517) or (PP0515 and PP0517)
   equation: (2) |C2625[Cytosol]| => |C0212[Cytosol]| + |C2847[Cytosol]|
 - id: IR00059
   name: Porphobilinogen ammonia-lyase (polymerizing)
+  genes: PP0186
   equation: (4) |C0680[Cytosol]| + |C0001[Cytosol]| => |C0743[Cytosol]| + (4) |C0957[Cytosol]|
 - id: IR00064
   name: ATP pyrophosphate-lyase (cyclizing)
+  genes: PP5222
   equation: '|C0002[Cytosol]| => |C0012[Cytosol]| + |C0443[Cytosol]|'
 - id: IR00074
   name: ATP:NAD+ 2'-phosphotransferase
+  genes: PP2012
   equation: '|C0003[Cytosol]| + |C0002[Cytosol]| => |C0065[Cytosol]| + |C0008[Cytosol]|
     + |C0006[Cytosol]|'
 - id: IR00090
   name: P1,P4-Bis(5'-nucleosyl)-tetraphosphate nucleotidebisphosphohydrolase
+  genes: PP0399
   equation: '|C0909[Cytosol]| + |C0001[Cytosol]| => (2) |C0065[Cytosol]| + (2) |C0008[Cytosol]|'
 - id: IR00094
   name: ATP:dephospho-CoA 3'-phosphotransferase
+  genes: PP0631
   equation: '|C0647[Cytosol]| + |C0002[Cytosol]| => |C0065[Cytosol]| + |C0008[Cytosol]|
     + |C0010[Cytosol]|'
 - id: IR00095
   name: Urea amidohydrolase
+  genes: PP2844 and PP2843 and PP2845
   equation: '|C0071[Cytosol]| + (2) |C0065[Cytosol]| + |C0001[Cytosol]| => (2) |C0957[Cytosol]|
     + |C0011[Cytosol]|'
 - id: IR00114
   name: ATP:FMN adenylyltransferase
+  genes: PP0602
   equation: '|C0002[Cytosol]| + |C0065[Cytosol]| + |C0049[Cytosol]| => |C0012[Cytosol]|
     + |C0015[Cytosol]|'
 - id: IR00116
   name: L-Glutamate 5-semialdehyde:NAD+ oxidoreductase
+  genes: PP4947
   equation: '|C0003[Cytosol]| + |C0844[Cytosol]| + |C0001[Cytosol]| => (2) |C0065[Cytosol]|
     + |C0023[Cytosol]| + |C0004[Cytosol]|'
 - id: IR00120
   name: L-Glutamate:ammonia ligase (ADP-forming)
+  genes: PP5184 or PP5046 or PP5183 or PP5299 or PP4547 or PP3148
   equation: '|C0002[Cytosol]| + |C0957[Cytosol]| + |C0023[Cytosol]| => |C0009[Cytosol]|
     + |C0065[Cytosol]| + |C0008[Cytosol]| + |C0052[Cytosol]|'
 - id: IR00122
   name: L-Glutamine amidohydrolase
+  genes: PP2453
   equation: '|C0052[Cytosol]| + |C0001[Cytosol]| => |C0957[Cytosol]| + |C0023[Cytosol]|'
 - id: IR00123
   name: Deamido-NAD+:L-glutamine amido-ligase (AMP-forming)
+  genes: PP4869
   equation: '|C0002[Cytosol]| + |C0630[Cytosol]| + |C0052[Cytosol]| + |C0001[Cytosol]|
     => |C0003[Cytosol]| + |C0012[Cytosol]| + |C0018[Cytosol]| + |C0065[Cytosol]|
     + |C0023[Cytosol]|'
 - id: IR00125
   name: Acetyl-CoA:L-glutamate N-acetyltransferase
+  genes: PP5185 or PP1346
   equation: '|C0022[Cytosol]| + |C0023[Cytosol]| => |C0472[Cytosol]| + |C0065[Cytosol]|
     + |C0010[Cytosol]|'
 - id: IR00127
   name: L-Glutamate 1-carboxy-lyase
+  genes: PP0567
   equation: '|C0065[Cytosol]| + |C0023[Cytosol]| => |C0275[Cytosol]| + |C0011[Cytosol]|'
 - id: IR00138
   name: Glutathione:hydrogen-peroxide oxidoreductase
+  genes: PP1874 or PP0777 or PP1686
   equation: '|C0025[Cytosol]| + (2) |C0042[Cytosol]| => |C0109[Cytosol]| + (2) |C0001[Cytosol]|'
 - id: IR00141
   name: Pyridoxamine-5'-phosphate:oxygen oxidoreductase (deaminating)
+  genes: PP1129
   equation: '|C0007[Cytosol]| + |C0487[Cytosol]| + |C0001[Cytosol]| => |C0025[Cytosol]|
     + |C0957[Cytosol]| + |C0016[Cytosol]|'
 - id: IR00144
   name: UDPglucose:NAD+ oxidoreductase
+  genes: PP2926
   equation: (2) |C0003[Cytosol]| + |C0026[Cytosol]| + |C0001[Cytosol]| => (3) |C0065[Cytosol]|
     + |C0140[Cytosol]| + (2) |C0004[Cytosol]|
 - id: IR00149
   name: ATP:D-glucose 6-phosphotransferase
+  genes: PP1011
   equation: '|C0002[Cytosol]| + |C0027[Cytosol]| => |C0077[Cytosol]| + |C0065[Cytosol]|
     + |C0008[Cytosol]|'
 - id: IR00156
   name: Protoporphyrin ferro-lyase
+  genes: PP0744
   equation: '|C1455[Cytosol]| + |C0021[Cytosol]| => |C0028[Cytosol]| + (2) |C0065[Cytosol]|'
 - id: IR00158
   name: Acetate:CoA ligase (AMP-forming)
+  genes: PP4702 or PP4487 or PP2213
   equation: '|C0029[Cytosol]| + |C0002[Cytosol]| + (2) |C0065[Cytosol]| => |C0012[Cytosol]|
     + |C3492[Cytosol]|'
 - id: IR00193
   name: L-Aspartic acid:oxygen oxidoreductase (deaminating)
+  genes: PP1426
   equation: '|C0007[Cytosol]| + |C0041[Cytosol]| + |C0001[Cytosol]| => |C0025[Cytosol]|
     + |C0032[Cytosol]| + |C0957[Cytosol]|'
 - id: IR00200
   name: Aminoacetic acid:oxygen oxidoreductase (deaminating)
+  genes: PP0612
   equation: '|C0007[Cytosol]| + |C0001[Cytosol]| + |C0033[Cytosol]| => |C0025[Cytosol]|
     + |C0040[Cytosol]| + |C0957[Cytosol]|'
 - id: IR00222
   name: N2-Succinyl-L-glutamate + H2O &gt;=&lt; L-Glutamate + Succinate
+  genes: PP4475
   equation: '|C3455[Cytosol]| + |C0001[Cytosol]| => |C0036[Cytosol]| + |C0023[Cytosol]|'
 - id: IR00224
   name: UTP:N-acetyl-alpha-D-glucosamine-1-phosphate uridylyltransferase
+  genes: PP5411
   equation: '|C0060[Cytosol]| + |C0065[Cytosol]| + |C2582[Cytosol]| => |C0012[Cytosol]|
     + |C0037[Cytosol]|'
 - id: IR00235
   name: Ureidoglycolate amidohydrolase (decarboxylating)
+  genes: PP4288
   equation: (2) |C0065[Cytosol]| + |C0461[Cytosol]| + |C0001[Cytosol]| => |C0040[Cytosol]|
     + (2) |C0957[Cytosol]| + |C0011[Cytosol]|
 - id: IR00241
   name: (S)-2-Hydroxy-acid:oxygen 2-oxidoreductase
+  genes: PP3745
   equation: '|C0007[Cytosol]| + |C0136[Cytosol]| => |C0025[Cytosol]| + |C0040[Cytosol]|'
 - id: IR00244
   name: Isocitrate glyoxylate-lyase
+  genes: PP4116 or PP1024
   equation: '|C0254[Cytosol]| => |C0036[Cytosol]| + |C0040[Cytosol]|'
 - id: IR00245
   name: ATP:L-aspartate 4-phosphotransferase
+  genes: PP4473
   equation: '|C0002[Cytosol]| + |C0041[Cytosol]| => |C1950[Cytosol]| + |C0008[Cytosol]|'
 - id: IR00246
   name: L-Aspartate + Oxygen &gt;=&lt; Iminoaspartate + H2O2
+  genes: PP1426
   equation: '|C0007[Cytosol]| + |C0041[Cytosol]| => |C0025[Cytosol]| + |C3404[Cytosol]|'
 - id: IR00250
   name: L-Asparagine amidohydrolase
+  genes: PP2453 or PP0495 or PP1160
   equation: '|C0129[Cytosol]| + |C0001[Cytosol]| => |C0957[Cytosol]| + |C0041[Cytosol]|'
 - id: IR00254
   name: L-Aspartate 1-carboxy-lyase
   equation: '|C0065[Cytosol]| + |C0041[Cytosol]| => |C0011[Cytosol]| + |C0083[Cytosol]|'
 - id: IR00255
   name: L-Aspartate ammonia-lyase
+  genes: PP5338
   equation: '|C0041[Cytosol]| => |C0104[Cytosol]| + |C0957[Cytosol]|'
 - id: IR00265
   name: ATP:adenylylsulfate 3'-phosphotransferase
+  genes: PP1304
   equation: '|C0186[Cytosol]| + |C0002[Cytosol]| => |C0065[Cytosol]| + |C0044[Cytosol]|
     + |C0008[Cytosol]|'
 - id: IR00267
   name: Cytidine-5'-monophosphate phosphohydrolase
+  genes: PP1414 or PP1620 or PP2531
   equation: '|C0046[Cytosol]| + |C0001[Cytosol]| => |C0009[Cytosol]| + |C0363[Cytosol]|'
 - id: IR00275
   name: Formate:NAD+ oxidoreductase
+  genes: (PP0490 and PP0491) or (PP2186 and PP2185 and PP2184 and PP2183)
   equation: '|C0047[Cytosol]| + |C0003[Cytosol]| => |C0004[Cytosol]| + |C0011[Cytosol]|'
 - id: IR00279
   name: N-Formyl-L-glutamate amidohydrolase
+  genes: PP5029
   equation: '|C0758[Cytosol]| + |C0001[Cytosol]| => |C0047[Cytosol]| + |C0023[Cytosol]|'
 - id: IR00283
   name: ATP:sulfate adenylyltransferase
+  genes: PP1304 and PP1303
   equation: '|C0002[Cytosol]| + |C0065[Cytosol]| + |C0048[Cytosol]| => |C0012[Cytosol]|
     + |C0186[Cytosol]|'
 - id: IR00293
   name: ATP:riboflavin 5'-phosphotransferase
+  genes: PP0602
   equation: '|C0212[Cytosol]| + |C0002[Cytosol]| => |C0065[Cytosol]| + |C0049[Cytosol]|
     + |C0008[Cytosol]|'
 - id: IR00296
   name: L-Arginine iminohydrolase
+  genes: PP1001
   equation: '|C0050[Cytosol]| + |C0001[Cytosol]| => |C0957[Cytosol]| + |C0268[Cytosol]|'
 - id: IR00307
   name: L-Arginine carboxy-lyase
+  genes: PP0567
   equation: '|C0050[Cytosol]| + |C0065[Cytosol]| => |C0147[Cytosol]| + |C0011[Cytosol]|'
 - id: IR00309
   name: CTP aminohydrolase
+  genes: PP1100
   equation: '|C0051[Cytosol]| + |C0065[Cytosol]| + |C0001[Cytosol]| => |C0060[Cytosol]|
     + |C0957[Cytosol]|'
 - id: IR00314
   name: UTP:ammonia ligase(ADP-forming)
+  genes: PP1610
   equation: '|C0060[Cytosol]| + |C0002[Cytosol]| + |C0052[Cytosol]| + |C0001[Cytosol]|
     => |C0051[Cytosol]| + |C0009[Cytosol]| + (2) |C0065[Cytosol]| + |C0008[Cytosol]|
     + |C0023[Cytosol]|'
 - id: IR00316
   name: Carbon-dioxide:L-glutamine amido-ligase (ADP-forming,carbamate-phosphorylating)
+  genes: PP4724 and PP4723
   equation: '|C0234[Cytosol]| + (2) |C0002[Cytosol]| + |C0052[Cytosol]| + |C0001[Cytosol]|
     => |C0009[Cytosol]| + |C0142[Cytosol]| + (2) |C0065[Cytosol]| + (2) |C0008[Cytosol]|
     + |C0023[Cytosol]|'
 - id: IR00318
   name: L-Aspartate:L-glutamine amido-ligase (AMP-forming)
+  genes: PP1750
   equation: '|C0002[Cytosol]| + |C0052[Cytosol]| + |C0041[Cytosol]| + |C0001[Cytosol]|
     => |C0012[Cytosol]| + |C0018[Cytosol]| + |C0065[Cytosol]| + |C0023[Cytosol]|
     + |C0129[Cytosol]|'
 - id: IR00322
   name: L-O-Phosphoserine phosphohydrolase
+  genes: PP4909
   equation: '|C0001[Cytosol]| + |C0728[Cytosol]| => |C0053[Cytosol]| + |C0009[Cytosol]|'
 - id: IR00325
   name: L-Serine + Acetyl-CoA &gt;=&lt; O-Acetyl-L-serine + CoA
+  genes: PP0228 or PP0840
   equation: '|C0053[Cytosol]| + |C0022[Cytosol]| => |C0711[Cytosol]| + |C0010[Cytosol]|'
 - id: IR00328
   name: L-Serine hydro-lyase (deaminating)
+  genes: PP0987 or PP3144 or PP0297
   equation: '|C0053[Cytosol]| => |C1474[Cytosol]| + |C0001[Cytosol]|'
 - id: IR00329
   name: Hydorogen-peroxide:hydrogen-peroxide oxidoreductase
+  genes: PP2887 or PP0115 or PP0481 or PP3668 or PP0235
   equation: '|C0025[Cytosol]| + |C0114[Cytosol]| => |C0054[Cytosol]| + (2) |C0001[Cytosol]|'
 - id: IR00335
   name: Sarcosine:oxygen oxidoreductase (demethylating)
+  genes: PP3775 or (PP0326 and PP0325 and PP0324 and PP0323)
   equation: '|C0176[Cytosol]| + |C0007[Cytosol]| + |C0001[Cytosol]| => |C0025[Cytosol]|
     + |C0054[Cytosol]| + |C0033[Cytosol]|'
 - id: IR00341
   name: ATP:thiamin-phosphate phosphotransferase
+  genes: PP0519
   equation: '|C0002[Cytosol]| + |C0781[Cytosol]| => |C0008[Cytosol]| + |C0055[Cytosol]|'
 - id: IR00344
   name: 2-Oxoglutarate:Thiamin diphosphate 2-oxidoreductase(decarboxylatingand acceptor-succinylating)
+  genes: PP4189
   equation: '|C0065[Cytosol]| + |C0055[Cytosol]| + |C0024[Cytosol]| => |C3118[Cytosol]|
     + |C0011[Cytosol]|'
 - id: IR00374
   name: L-Ornithine ammonia-lyase(cyclizing)
+  genes: PP4431 or PP3190 or PP3533
   equation: '|C0062[Cytosol]| => |C0126[Cytosol]| + |C0957[Cytosol]|'
 - id: IR00388
   name: L-Tryptophan decarboxy-lyase
+  genes: PP2552
   equation: '|C0063[Cytosol]| => |C0313[Cytosol]| + |C0011[Cytosol]|'
 - id: IR00394
   name: L-Arogenate hydro-lyase (decarboxylating)
+  genes: PP1769
   equation: '|C0606[Cytosol]| => |C0064[Cytosol]| + |C0011[Cytosol]| + |C0001[Cytosol]|'
 - id: IR00401
   name: L-Phenylalanine carboxy-lyase
+  genes: PP2552
   equation: '|C0064[Cytosol]| + |C0065[Cytosol]| => |C3090[Cytosol]| + |C0011[Cytosol]|'
 - id: IR00406
   name: 3-Oxopropanoate:NAD+ oxidoreductase (decarboxylating,CoA-acetylating)
+  genes: PP0597 or PP4667
   equation: '|C0003[Cytosol]| + |C0184[Cytosol]| + |C0010[Cytosol]| => |C0022[Cytosol]|
     + |C0011[Cytosol]| + |C0004[Cytosol]|'
 - id: IR00411
   name: Acetaldehyde:NAD+ oxidoreductase
+  genes: PP5278 or PP2589 or PP2680 or PP5258 or PP3463 or PP0545 or PP2694
   equation: '|C0003[Cytosol]| + |C0069[Cytosol]| + |C0001[Cytosol]| => |C0029[Cytosol]|
     + (2) |C0065[Cytosol]| + |C0004[Cytosol]|'
 - id: IR00414
   name: Succinate-semialdehyde:NADP+ oxidoreductase
+  genes: PP4422 or PP2488 or PP0213
   equation: '|C0191[Cytosol]| + |C0006[Cytosol]| + |C0001[Cytosol]| => |C0036[Cytosol]|
     + (2) |C0065[Cytosol]| + |C0005[Cytosol]|'
 - id: IR00434
   name: L-Tyrosine carboxy-lyase
+  genes: PP2552
   equation: '|C0067[Cytosol]| => |C0370[Cytosol]| + |C0011[Cytosol]|'
 - id: IR00444
   name: Ethanolamine ammonia-lyase
+  genes: PP0542 and PP0543
   equation: '|C0157[Cytosol]| => |C0069[Cytosol]| + |C0957[Cytosol]|'
 - id: IR00450
   name: ATP:D-fructose-6-phosphate 1-phosphotransferase
@@ -235,68 +300,86 @@
     + |C0008[Cytosol]|'
 - id: IR00455
   name: D-Fructose-1,6-bisphosphate 1-phosphohydrolase
+  genes: PP5040
   equation: '|C0284[Cytosol]| + |C0001[Cytosol]| => |C0009[Cytosol]| + |C0070[Cytosol]|'
 - id: IR00461
   name: L-Glutamine:D-fructose-6-phosphate aminotransferase (hexoseisomerizing)
+  genes: PP5409
   equation: '|C0070[Cytosol]| + |C0052[Cytosol]| => |C0282[Cytosol]| + |C0023[Cytosol]|'
 - id: IR00491
   name: cis-1,2-Dihydroxycyclohexa-3,5-diene-1-carboxylate:NAD+oxidoreductase
+  genes: PP3164
   equation: '|C0003[Cytosol]| + |C3668[Cytosol]| => |C0065[Cytosol]| + |C0075[Cytosol]|
     + |C0004[Cytosol]| + |C0011[Cytosol]|'
 - id: IR00495
   name: Catechol:oxygen 1,2-oxidoreductase(decyclizing)
+  genes: PP3713
   equation: '|C0007[Cytosol]| + |C0075[Cytosol]| => |C1610[Cytosol]|'
 - id: IR00496
   name: Salicylate,NADH:oxygen oxidoreductase (1-hydroxylating,decarboxylating)
+  genes: PP3944
   equation: '|C0589[Cytosol]| + |C0007[Cytosol]| + |C0065[Cytosol]| + |C0004[Cytosol]|
     => |C0003[Cytosol]| + |C0075[Cytosol]| + |C0011[Cytosol]| + |C0001[Cytosol]|'
 - id: IR00522
   name: ATP:glycerol 3-phosphotransferase
+  genes: PP1075
   equation: '|C0002[Cytosol]| + |C0098[Cytosol]| => |C0065[Cytosol]| + |C0008[Cytosol]|
     + |C0078[Cytosol]|'
 - id: IR00523
   name: sn-Glycerol-3-phosphate:(acceptor) 2-oxidoreductase
+  genes: PP1073
   equation: '|C0015[Cytosol]| + |C0078[Cytosol]| => |C0964[Cytosol]| + |C0093[Cytosol]|'
 - id: IR00544
   name: GDP-D-mannose:NAD+ 6-oxidoreductase
+  genes: PP1288
   equation: (2) |C0003[Cytosol]| + |C0081[Cytosol]| + |C0001[Cytosol]| => (3) |C0065[Cytosol]|
     + |C0708[Cytosol]| + (2) |C0004[Cytosol]|
 - id: IR00547
   name: GTP:alpha-D-mannose-1-phosphate guanylyltransferase
+  genes: PP1277
   equation: '|C0480[Cytosol]| + |C0065[Cytosol]| + |C0038[Cytosol]| => |C0012[Cytosol]|
     + |C0081[Cytosol]|'
 - id: IR00548
   name: GDPmannose 4,6-hydro-lyase
+  genes: PP1799
   equation: '|C0081[Cytosol]| => |C0884[Cytosol]| + |C0001[Cytosol]|'
 - id: IR00552
   name: L-Glutamate:L-cysteine gamma-ligase (ADP-forming)
+  genes: PP0243
   equation: '|C0082[Cytosol]| + |C0002[Cytosol]| + |C0023[Cytosol]| => |C0009[Cytosol]|
     + |C0500[Cytosol]| + |C0065[Cytosol]| + |C0008[Cytosol]|'
 - id: IR00555
   name: O3-Acetyl-L-serine acetate-lyase (adding hydrogen sulfide)
+  genes: PP4571 or PP1654
   equation: '|C0711[Cytosol]| + |C0231[Cytosol]| => |C0082[Cytosol]| + |C0029[Cytosol]|
     + |C0065[Cytosol]|'
 - id: IR00556
   name: membrane alanyl aminopeptidase
+  genes: PP2017
   equation: '|C0999[Cytosol]| + |C0001[Cytosol]| => |C0082[Cytosol]| + |C0033[Cytosol]|'
 - id: IR00559
   name: beta-Aminopropion aldehyde:NAD+ oxidoreductase
+  genes: PP5278 or PP2589 or PP2680 or PP5258 or PP3463 or PP0545 or PP2694
   equation: '|C0003[Cytosol]| + |C3309[Cytosol]| + |C0001[Cytosol]| => |C0065[Cytosol]|
     + |C0004[Cytosol]| + |C0083[Cytosol]|'
 - id: IR00560
   name: N-Carbamoyl-beta-alanine amidohydrolase
+  genes: PP0614 or PP4034
   equation: (2) |C0065[Cytosol]| + |C1700[Cytosol]| + |C0001[Cytosol]| => |C0957[Cytosol]|
     + |C0011[Cytosol]| + |C0083[Cytosol]|
 - id: IR00589
   name: (S)-Methylmalonate semialdehyde:NAD+ oxidoreductase(CoA-propanoylating)
+  genes: PP0597 or PP4667
   equation: '|C0003[Cytosol]| + |C3500[Cytosol]| + |C0010[Cytosol]| => |C0084[Cytosol]|
     + |C0065[Cytosol]| + |C0011[Cytosol]| + |C0004[Cytosol]|'
 - id: IR00597
   name: 10-Formyltetrahydrofolate amidohydrolase
+  genes: PP1943 or PP0327 or PP1367
   equation: '|C0193[Cytosol]| + |C0001[Cytosol]| => |C0047[Cytosol]| + |C0065[Cytosol]|
     + |C0085[Cytosol]|'
 - id: IR00599
   name: 5-Methyltetrahydrofolate:L-homocysteine S-methyltransferase
+  genes: PP2375
   equation: '|C0132[Cytosol]| + |C0340[Cytosol]| => |C0058[Cytosol]| + |C0085[Cytosol]|'
 - id: IR00601
   name: ATP:alpha-D-glucose-1-phosphate adenyltransferase
@@ -304,82 +387,104 @@
     + |C0383[Cytosol]|'
 - id: IR00614
   name: Uridine 5'-monophosphate phosphohydrolase
+  genes: PP1414 or PP1620 or PP2531
   equation: '|C0089[Cytosol]| + |C0001[Cytosol]| => |C0009[Cytosol]| + |C0242[Cytosol]|'
 - id: IR00616
   name: Orotidine-5'-phosphate carboxy-lyase
+  genes: PP1815
   equation: '|C0065[Cytosol]| + |C0798[Cytosol]| => |C0011[Cytosol]| + |C0089[Cytosol]|'
 - id: IR00623
   name: Cytosine aminohydrolase
+  genes: PP1100 or PP3189
   equation: '|C0065[Cytosol]| + |C0302[Cytosol]| + |C0001[Cytosol]| => |C0090[Cytosol]|
     + |C0957[Cytosol]|'
 - id: IR00633
   name: Chorismate pyruvate-lyase (amino-accepting)
+  genes: PP0420 and PP0417
   equation: '|C0208[Cytosol]| + |C0052[Cytosol]| => |C0091[Cytosol]| + |C0020[Cytosol]|
     + |C0065[Cytosol]| + |C0023[Cytosol]|'
 - id: IR00642
   name: L-threonine ammonia-lyase
+  genes: PP3191 or PP4430 or PP5149 or PP3446
   equation: '|C0156[Cytosol]| => |C0092[Cytosol]| + |C0957[Cytosol]|'
 - id: IR00662
   name: sn-Glycero-3-phosphocholine glycerophosphohydrolase
+  genes: PP2152
   equation: '|C0501[Cytosol]| + |C0001[Cytosol]| => |C0096[Cytosol]| + |C0065[Cytosol]|
     + |C0078[Cytosol]|'
 - id: IR00676
   name: ATP:D-ribose 5-phosphotransferase
+  genes: PP2458
   equation: '|C0103[Cytosol]| + |C0002[Cytosol]| => |C0065[Cytosol]| + |C0099[Cytosol]|
     + |C0008[Cytosol]|'
 - id: IR00679
   name: ADPribose ribophosphohydrolase
+  genes: PP4919
   equation: '|C0244[Cytosol]| + |C0001[Cytosol]| => |C0018[Cytosol]| + (2) |C0065[Cytosol]|
     + |C0099[Cytosol]|'
 - id: IR00696
   name: Biotin:CoA ligase (AMP-forming)
+  genes: PP0437
   equation: '|C0002[Cytosol]| + |C0065[Cytosol]| + |C0102[Cytosol]| => |C0012[Cytosol]|
     + |C3447[Cytosol]|'
 - id: IR00700
   name: Dethiobiotin:sulfur sulfurtransferase
+  genes: PP0362
   equation: '|C0072[Cytosol]| + |C1294[Cytosol]| => (2) |C0065[Cytosol]| + |C0102[Cytosol]|'
 - id: IR00737
   name: Butanoyl-CoA:oxygen 2-oxidoreductase
+  genes: PP2437 or PP2793 or PP4948
   equation: '|C0118[Cytosol]| + |C0015[Cytosol]| => |C0964[Cytosol]| + |C0642[Cytosol]|'
 - id: IR00746
   name: myo-Inositol 1-phosphate phosphahydrolase
+  genes: PP0838
   equation: '|C0853[Cytosol]| + |C0001[Cytosol]| => |C0009[Cytosol]| + |C0119[Cytosol]|'
 - id: IR00747
   name: myo-Inositol 4-phosphate phosphahydrolase
+  genes: PP0838
   equation: '|C2203[Cytosol]| + |C0001[Cytosol]| => |C0009[Cytosol]| + (2) |C0065[Cytosol]|
     + |C0119[Cytosol]|'
 - id: IR00748
   name: 1D-myo-Inositol 3-phosphate phosphahydrolase
+  genes: PP0838
   equation: '|C2449[Cytosol]| + |C0001[Cytosol]| => |C0009[Cytosol]| + (2) |C0065[Cytosol]|
     + |C0119[Cytosol]|'
 - id: IR00764
   name: 3-Methyl-2-oxobutanoate:NAD+ oxidoreductase(CoA-mehtylpropanoylating)
+  genes: PP4404 and PP4401 and PP4402 and PP4403
   equation: '|C0003[Cytosol]| + |C0121[Cytosol]| + |C0010[Cytosol]| => |C0004[Cytosol]|
     + |C0011[Cytosol]| + |C0476[Cytosol]|'
 - id: IR00776
   name: 5,10-Methylenetetrahydrofolate:3-methyl-2-oxobutanoatehydroxymethyltransferase
+  genes: PP4699
   equation: '|C0121[Cytosol]| + |C0122[Cytosol]| + |C0001[Cytosol]| => |C0702[Cytosol]|
     + |C0085[Cytosol]|'
 - id: IR00777
   name: Guanosine 5'-monophosphate phosphohydrolase
+  genes: PP1414 or PP1620 or PP2531
   equation: '|C0123[Cytosol]| + |C0001[Cytosol]| => |C0009[Cytosol]| + |C0306[Cytosol]|'
 - id: IR00781
   name: Xanthosine-5'-phosphate:L-glutamine amido-ligase (AMP-forming)
+  genes: PP1032
   equation: '|C0002[Cytosol]| + |C0052[Cytosol]| + |C0491[Cytosol]| + |C0001[Cytosol]|
     => |C0012[Cytosol]| + |C0018[Cytosol]| + |C0123[Cytosol]| + (2) |C0065[Cytosol]|
     + |C0023[Cytosol]|'
 - id: IR00791
   name: Adenosine ribohydrolase
+  genes: PP2460
   equation: '|C0175[Cytosol]| + |C0001[Cytosol]| => |C0103[Cytosol]| + |C0125[Cytosol]|'
 - id: IR00799
   name: (S)-Malate:(acceptor) oxidoreductase
+  genes: PP1251 or PP0751 or PP2925
   equation: '|C0015[Cytosol]| + |C0127[Cytosol]| => |C0964[Cytosol]| + |C0032[Cytosol]|'
 - id: IR00806
   name: N-Ribosylnicotinamide ribohydrolase
+  genes: PP2460
   equation: '|C1987[Cytosol]| + |C0001[Cytosol]| => |C0103[Cytosol]| + |C0130[Cytosol]|
     + |C0065[Cytosol]|'
 - id: IR00811
   name: Palmitoyl-CoA:oxygen 2-oxidoreductase
+  genes: PP2437 or PP2793 or PP1893
   equation: '|C0131[Cytosol]| + |C0015[Cytosol]| => |C0964[Cytosol]| + |C3057[Cytosol]|'
 - id: IR00819
   name: ATP:D-glucose 6-phosphotransferase
@@ -387,104 +492,132 @@
     + |C0227[Cytosol]|'
 - id: IR00824
   name: 2-Phosphoglycolate phosphohydrolase
+  genes: PP0094 or PP0416 or PP1764 or PP1907
   equation: '|C0716[Cytosol]| + |C0001[Cytosol]| => |C0009[Cytosol]| + |C0136[Cytosol]|'
 - id: IR00832
   name: (S)-3-Hydroxy-3-methylglutaryl-CoA acetoacetate-lyase
+  genes: PP3540
   equation: '|C0286[Cytosol]| => |C0138[Cytosol]| + |C0022[Cytosol]|'
 - id: IR00840
   name: Phenylpyruvate:oxygen oxidoreductase (hydroxylating,decarboxylating)
+  genes: PP2554 or PP3433
   equation: '|C0007[Cytosol]| + |C0139[Cytosol]| + |C0065[Cytosol]| => |C3414[Cytosol]|
     + |C0011[Cytosol]|'
 - id: IR00841
   name: Prephenate hydro-lyase (decarboxylating)
+  genes: PP1769
   equation: '|C0211[Cytosol]| + |C0065[Cytosol]| => |C0139[Cytosol]| + |C0011[Cytosol]|
     + |C0001[Cytosol]|'
 - id: IR00890
   name: O-Phospho-L-homoserine phospho-lyase (adding water)
+  genes: PP0662 or PP1471
   equation: '|C0797[Cytosol]| + |C0001[Cytosol]| => |C0009[Cytosol]| + |C0156[Cytosol]|'
 - id: IR00894
   name: sn-Glycero-3-phosphoethanolamine glycerophosphohydrolase
+  genes: PP2152
   equation: '|C0001[Cytosol]| + |C0892[Cytosol]| => |C0065[Cytosol]| + |C0157[Cytosol]|
     + |C0078[Cytosol]|'
 - id: IR00902
   name: 5,10-Methenyltetrahydrofolate 5-hydrolase(decyclizing)
+  genes: PP2265 or PP1945
   equation: '|C0343[Cytosol]| + |C0001[Cytosol]| => |C0193[Cytosol]|'
 - id: IR00904
   name: Dimethylallyl-diphosphate:isopentenyl-diphosphatedimethylallyltranstransferase
+  genes: PP0528
   equation: '|C0111[Cytosol]| + |C0194[Cytosol]| => |C0277[Cytosol]| + |C0012[Cytosol]|'
 - id: IR00909
   name: 2'-Deoxycytidine 5'-monophosphate phosphohydrolase
+  genes: PP1414 or PP1620 or PP2531
   equation: '|C0198[Cytosol]| + |C0001[Cytosol]| => |C0009[Cytosol]| + |C0646[Cytosol]|'
 - id: IR00916
   name: Guanine aminohydrolase
+  genes: PP4281
   equation: '|C0065[Cytosol]| + |C0199[Cytosol]| + |C0001[Cytosol]| => |C0304[Cytosol]|
     + |C0957[Cytosol]|'
 - id: IR00917
   name: Guanosine ribohydrolase
+  genes: PP2460
   equation: '|C0306[Cytosol]| + |C0001[Cytosol]| => |C0103[Cytosol]| + |C0199[Cytosol]|'
 - id: IR00935
   name: 4-Methyl-2-oxopentanoate:lipoamide oxidoreductase(decarboxylatingand acceptor-2-methylpropanoylating)
+  genes: PP4404 and PP4401 and PP4402 and PP4403
   equation: '|C0192[Cytosol]| + |C0065[Cytosol]| + |C0205[Cytosol]| => |C2980[Cytosol]|
     + |C0011[Cytosol]|'
 - id: IR00945
   name: 5-O-(1-Carboxyvinyl)-3-phosphoshikimate phosphate-lyase
+  genes: PP1830
   equation: '|C0917[Cytosol]| => |C0009[Cytosol]| + |C0208[Cytosol]|'
 - id: IR00946
   name: Chorismate pyruvatemutase
+  genes: PP1770 and PP1769
   equation: '|C0208[Cytosol]| => |C0211[Cytosol]|'
 - id: IR00947
   name: Chorismate:L-glutamine amido-ligase
+  genes: PP2329
   equation: '|C0208[Cytosol]| + |C0052[Cytosol]| => |C0023[Cytosol]| + |C8533[Cytosol]|'
 - id: IR00955
   name: Prephenate:NAD+ oxidoreductase(decarboxylating)
+  genes: PP1770 and PP1769
   equation: '|C0003[Cytosol]| + |C0211[Cytosol]| => |C0854[Cytosol]| + |C0004[Cytosol]|
     + |C0011[Cytosol]|'
 - id: IR00961
   name: S-(2-Hydroxyacyl)glutathione hydrolase
+  genes: PP4144
   equation: '|C2153[Cytosol]| + |C0001[Cytosol]| => |C0065[Cytosol]| + |C0213[Cytosol]|
     + |C0042[Cytosol]|'
 - id: IR00962
   name: ATP:D-Gluconate 6-phosphotransferase
+  genes: PP3416
   equation: '|C0002[Cytosol]| + |C0214[Cytosol]| => |C0065[Cytosol]| + |C0008[Cytosol]|
     + |C0278[Cytosol]|'
 - id: IR00966
   name: D-Gluconate:(acceptor) 2-oxidoreductase
+  genes: PP3382 and PP3384 and PP3383
   equation: '|C0015[Cytosol]| + |C0214[Cytosol]| => |C0475[Cytosol]| + |C0964[Cytosol]|'
 - id: IR00973
   name: D-Glyceraldehyde:NAD+ oxidoreductase
+  genes: PP5278 or PP2589 or PP2680 or PP5258 or PP3463 or PP0545 or PP2694
   equation: '|C0003[Cytosol]| + |C0445[Cytosol]| + |C0001[Cytosol]| => |C0215[Cytosol]|
     + (2) |C0065[Cytosol]| + |C0004[Cytosol]|'
 - id: IR00984
   name: Xanthine:NAD+ oxidoreductase
+  genes: PP4279 and PP4278
   equation: '|C0218[Cytosol]| + |C0003[Cytosol]| + |C0001[Cytosol]| => |C0304[Cytosol]|
     + |C0065[Cytosol]| + |C0004[Cytosol]|'
 - id: IR00986
   name: ATP:L-homoserine O-phosphotransferase
+  genes: PP0121
   equation: '|C0002[Cytosol]| + |C0219[Cytosol]| => |C0065[Cytosol]| + |C0008[Cytosol]|
     + |C0797[Cytosol]|'
 - id: IR00999
   name: NADH:6,7-dihydropteridine oxidoreductase
+  genes: PP2432
   equation: '|C0223[Cytosol]| + |C0065[Cytosol]| + |C0004[Cytosol]| => |C0003[Cytosol]|
     + |C0225[Cytosol]|'
 - id: IR01001
   name: L-Phenylalanine,tetrahydrobiopterin:oxygen oxidoreductase(4-hydroxylating)
+  genes: PP4490
   equation: '|C0064[Cytosol]| + |C0225[Cytosol]| + |C0007[Cytosol]| => |C0223[Cytosol]|
     + |C0067[Cytosol]| + |C0001[Cytosol]|'
 - id: IR01017
   name: Phosphoenolpyruvate:D-erythrose-4-phosphateC-(1-carboxyvinyl)transferase
     (phosphate hydrolysing,2-carboxy-2-oxoethyl-forming)
+  genes: PP1866 or PP2324 or PP3080
   equation: '|C0228[Cytosol]| + |C0059[Cytosol]| + |C0001[Cytosol]| => |C0009[Cytosol]|
     + |C2823[Cytosol]|'
 - id: IR01037
   name: dGTP triphosphohydrolase
+  genes: PP2012 or PP2102
   equation: (4) |C0065[Cytosol]| + |C0233[Cytosol]| + |C0001[Cytosol]| => |C0271[Cytosol]|
     + |C0417[Cytosol]|
 - id: IR01040
   name: Propanoyl-CoA:carbon-dioxide ligase (ADP-forming)
+  genes: PP4065 and PP4067
   equation: '|C0234[Cytosol]| + |C0084[Cytosol]| + |C0002[Cytosol]| => |C0509[Cytosol]|
     + |C0009[Cytosol]| + |C0065[Cytosol]| + |C0008[Cytosol]|'
 - id: IR01046
   name: (S)-Dihydroorotate:oxygen oxidoreductase
+  genes: PP2095
   equation: '|C0276[Cytosol]| + |C0007[Cytosol]| => |C0025[Cytosol]| + |C0240[Cytosol]|'
 - id: IR01049
   name: Quinate:NAD+ 5-oxidoreductase
@@ -492,6 +625,7 @@
     + |C0004[Cytosol]|'
 - id: IR01079
   name: ATP:pyridoxal 5'-phosphotransferase
+  genes: PP5357
   equation: '|C0002[Cytosol]| + |C0257[Cytosol]| => |C0065[Cytosol]| + |C0473[Cytosol]|
     + |C0008[Cytosol]|'
 - id: IR01087
@@ -500,65 +634,84 @@
     + |C0023[Cytosol]|'
 - id: IR01088
   name: 2-Oxoadipate:lipoamde 2-oxidoreductase(decarboxylating andacceptor-succinylating)
+  genes: PP4189
   equation: '|C0263[Cytosol]| + |C0205[Cytosol]| => |C3582[Cytosol]| + |C0011[Cytosol]|'
 - id: IR01097
   name: 4-Aminobutyraldehyde:NAD+ oxidoreductase
+  genes: PP5278 or PP2589 or PP2680 or PP5258 or PP3463 or PP0545 or PP2694
   equation: '|C0429[Cytosol]| + |C0006[Cytosol]| + |C0001[Cytosol]| => |C0275[Cytosol]|
     + (2) |C0065[Cytosol]| + |C0005[Cytosol]|'
 - id: IR01104
   name: Geranyl-diphosphate:isopentenyl-diphosphate geranyltrans-transferase
+  genes: PP0528
   equation: '|C0277[Cytosol]| + |C0111[Cytosol]| => |C0346[Cytosol]| + |C0012[Cytosol]|'
 - id: IR01114
   name: 6-Phospho-D-glucono-1,5-lactone lactonohydrolase
+  genes: PP1023
   equation: '|C0895[Cytosol]| + |C0001[Cytosol]| => |C0065[Cytosol]| + |C0278[Cytosol]|'
 - id: IR01115
   name: 6-Phospho-D-gluconate hydro-lyase
+  genes: PP1010
   equation: '|C0278[Cytosol]| => |C2682[Cytosol]| + |C0001[Cytosol]|'
 - id: IR01137
   name: 3-Hydroxy-L-tyrosine carboxy-lyase
+  genes: PP2552
   equation: '|C0285[Cytosol]| => |C0011[Cytosol]| + |C2321[Cytosol]|'
 - id: IR01157
   name: dUTP nucleotidohydrolase
+  genes: PP5286
   equation: '|C0001[Cytosol]| + |C0353[Cytosol]| => |C0012[Cytosol]| + |C0293[Cytosol]|
     + |C0065[Cytosol]|'
 - id: IR01158
   name: 5,10-Methylenetetrahydrofolate:dUMP C-methyltransferase
+  genes: PP5141
   equation: '|C0293[Cytosol]| + |C0122[Cytosol]| => |C0325[Cytosol]| + |C0292[Cytosol]|'
 - id: IR01159
   name: dUMP + H2O &gt;=&lt; Deoxyuridine + Orthophosphate
+  genes: PP1414 or PP1620 or PP2531
   equation: '|C0293[Cytosol]| + |C0001[Cytosol]| => |C0009[Cytosol]| + |C0408[Cytosol]|'
 - id: IR01181
   name: Xanthosine ribohydrolase
+  genes: PP2460
   equation: '|C1205[Cytosol]| + |C0001[Cytosol]| => |C0304[Cytosol]| + |C0103[Cytosol]|'
 - id: IR01215
   name: L-Pipecolate:oxygen 1,6-oxidoreductase
+  genes: PP5257
   equation: '|C0007[Cytosol]| + |C0318[Cytosol]| => |C0025[Cytosol]| + |C0348[Cytosol]|'
 - id: IR01238
   name: Tetrahydrofolate:L-glutamate gamma-ligase (ADP-forming)
+  genes: PP1997
   equation: '|C0002[Cytosol]| + |C0023[Cytosol]| + |C0674[Cytosol]| => |C0325[Cytosol]|
     + |C0009[Cytosol]| + |C0008[Cytosol]|'
 - id: IR01265
   name: 5-Aminopentanamide amidohydrolase
+  genes: PP0382
   equation: '|C0065[Cytosol]| + |C0001[Cytosol]| + |C0718[Cytosol]| => |C0957[Cytosol]|
     + |C0334[Cytosol]|'
 - id: IR01266
   name: 5-Aminopentanoate:2-oxoglutarate aminotransferase
+  genes: PP0214
   equation: '|C0024[Cytosol]| + |C0334[Cytosol]| => |C2059[Cytosol]| + |C0023[Cytosol]|'
 - id: IR01275
   name: N-Formimino-L-glutamate iminohydrolase
+  genes: PP5036
   equation: '|C0339[Cytosol]| + |C0001[Cytosol]| => |C0957[Cytosol]| + |C0758[Cytosol]|'
 - id: IR01277
   name: 4-Imidazolone-5-propanoate amidohydrolase
+  genes: PP5030
   equation: '|C2276[Cytosol]| + |C0001[Cytosol]| => |C0339[Cytosol]|'
 - id: IR01287
   name: Nicotinamide ribonucleotide phosphohydrolase
+  genes: PP1414 or PP1620 or PP2531
   equation: '|C0350[Cytosol]| + |C0001[Cytosol]| => |C0009[Cytosol]| + |C1987[Cytosol]|'
 - id: IR01289
   name: dCTP aminohydrolase
+  genes: PP1100
   equation: '|C0351[Cytosol]| + |C0065[Cytosol]| + |C0001[Cytosol]| => |C0957[Cytosol]|
     + |C0353[Cytosol]|'
 - id: IR01347
   name: Glutarate-semialdehyde:NAD+ oxidoreductase
+  genes: PP0213
   equation: '|C0003[Cytosol]| + |C2059[Cytosol]| + |C0001[Cytosol]| => (2) |C0065[Cytosol]|
     + |C0375[Cytosol]| + |C0004[Cytosol]|'
 - id: IR01348
@@ -567,264 +720,337 @@
     + |C0409[Cytosol]| + |C0008[Cytosol]|'
 - id: IR01353
   name: L-Cystine Lysteine-lyase (deaminating)
+  genes: PP4594
   equation: '|C0377[Cytosol]| + |C0001[Cytosol]| => |C1328[Cytosol]| + |C0020[Cytosol]|
     + |C0957[Cytosol]|'
 - id: IR01357
   name: ATP:shikimate 3-phosphotransferase
+  genes: PP5079
   equation: '|C0002[Cytosol]| + |C0379[Cytosol]| => |C2000[Cytosol]| + |C0065[Cytosol]|
     + |C0008[Cytosol]|'
 - id: IR01409
   name: (R)-Pantoate:beta-alanine ligase (AMP-forming)
+  genes: PP4700
   equation: '|C0002[Cytosol]| + |C0404[Cytosol]| + |C0083[Cytosol]| => |C0012[Cytosol]|
     + |C0018[Cytosol]| + |C0636[Cytosol]| + |C0065[Cytosol]|'
 - id: IR01420
   name: Glutaryl-CoA:(acceptor) 2,3-oxidoreductase (decarboxylating)
+  genes: PP0158
   equation: '|C0015[Cytosol]| + |C0065[Cytosol]| + |C0409[Cytosol]| => |C0964[Cytosol]|
     + |C0642[Cytosol]| + |C0011[Cytosol]|'
 - id: IR01425
   name: ATP:pyridoxal 5'-phosphotransferase
+  genes: PP5357
   equation: '|C0415[Cytosol]| + |C0002[Cytosol]| => |C0065[Cytosol]| + |C0487[Cytosol]|
     + |C0008[Cytosol]|'
 - id: IR01443
   name: Homogentisate:oxygen 1,2-oxidoreductase (decyclizing)
+  genes: PP4621
   equation: '|C0422[Cytosol]| + |C0007[Cytosol]| => |C0065[Cytosol]| + |C0751[Cytosol]|'
 - id: IR01445
   name: 4-Hydroxyphenylpyruvate:oxygen oxidoreductase(hydroxylating,decarboxylating)
+  genes: PP2554 or PP3433
   equation: '|C0854[Cytosol]| + |C0007[Cytosol]| => |C0422[Cytosol]| + |C0011[Cytosol]|'
 - id: IR01460
   name: Phenylacetate:CoA ligase
+  genes: PP3279
   equation: '|C4345[Cytosol]| + |C0002[Cytosol]| + |C0010[Cytosol]| => |C0012[Cytosol]|
     + |C0018[Cytosol]| + |C0449[Cytosol]|'
 - id: IR01474
   name: Deoxyadenosine aminohydrolase
+  genes: PP0591
   equation: '|C0065[Cytosol]| + |C0433[Cytosol]| + |C0001[Cytosol]| => |C0957[Cytosol]|
     + |C3211[Cytosol]|'
 - id: IR01485
   name: Choline:(acceptor) 1-oxidoreductase
+  genes: PP5064
   equation: '|C0444[Cytosol]| + |C0015[Cytosol]| + |C0001[Cytosol]| => |C0964[Cytosol]|
     + |C0530[Cytosol]| + |C0065[Cytosol]|'
 - id: IR01516
   name: 3-Sulfino-L-alanine:2-oxoglutarate aminotransferase
+  genes: PP3721 or PP0858 or PP4692 or PP1872
   equation: '|C0463[Cytosol]| + (2) |C0065[Cytosol]| + |C0024[Cytosol]| => |C0245[Cytosol]|
     + |C3218[Cytosol]|'
 - id: IR01527
   name: ATP:N-acetyl-L-glutamate 5-phosphotransferase
+  genes: PP5289
   equation: '|C0472[Cytosol]| + |C0002[Cytosol]| => |C2523[Cytosol]| + |C0008[Cytosol]|'
 - id: IR01534
   name: 2-Methylpropanoyl-CoA:(acceptor) 2,3-oxidoreductase
+  genes: PP2437 or PP2793
   equation: '|C0015[Cytosol]| + |C0476[Cytosol]| => |C0964[Cytosol]| + |C2158[Cytosol]|'
 - id: IR01542
   name: Hydorogen-peroxide:hydrogen-peroxide oxidoreductase
+  genes: PP2887 or PP0115 or PP0481 or PP3668
   equation: (2) |C0478[Cytosol]| + (2) |C0007[Cytosol]| => (2) |C0025[Cytosol]| +
     (2) |C0065[Cytosol]| + |C3285[Cytosol]|
 - id: IR01547
   name: Indole-3-acetaldehyde:NAD+ oxidoreductase
+  genes: PP5278 or PP2589 or PP2680 or PP5258 or PP3463 or PP0545 or PP2694
   equation: '|C0003[Cytosol]| + |C0481[Cytosol]| + |C0001[Cytosol]| => |C0065[Cytosol]|
     + |C0004[Cytosol]| + |C0694[Cytosol]|'
 - id: IR01556
   name: 4-Hydroxyphenylacetate:CoA ligase (AMP-forming)
+  genes: PP3279
   equation: '|C0002[Cytosol]| + |C0483[Cytosol]| + (3) |C0065[Cytosol]| + |C0010[Cytosol]|
     => |C0012[Cytosol]| + |C3094[Cytosol]| + |C0018[Cytosol]|'
 - id: IR01558
   name: 5-Hydroxy-L-tryptophan decarboxy-lyase
+  genes: PP2552
   equation: '|C0484[Cytosol]| => |C0569[Cytosol]| + |C0011[Cytosol]|'
 - id: IR01570
   name: Xanthosine 5'-phosphate phosphohydrolase
+  genes: PP1414 or PP1620 or PP2531
   equation: '|C0491[Cytosol]| + |C0001[Cytosol]| => |C1205[Cytosol]| + |C0009[Cytosol]|'
 - id: IR01582
   name: N-Succinyl-LL-2,6-diaminoheptanedioate amidohydrolase
+  genes: PP1525
   equation: '|C2669[Cytosol]| + |C0001[Cytosol]| => |C0036[Cytosol]| + |C0498[Cytosol]|'
 - id: IR01611
   name: UDP-N-acetylmuramoyl-L-alanine:D-glutamate ligase(ADP-forming)
+  genes: PP1335
   equation: '|C0874[Cytosol]| + |C0179[Cytosol]| + |C0002[Cytosol]| => |C0515[Cytosol]|
     + |C0009[Cytosol]| + |C0065[Cytosol]| + |C0008[Cytosol]|'
 - id: IR01614
   name: UDP-N-acetylmuramoyl-L-alanyl-D-glutamate:meso-2,6-diaminoheptanedioate ligase
     (ADP-forming)
+  genes: PP1332
   equation: '|C0507[Cytosol]| + |C0515[Cytosol]| + |C0002[Cytosol]| => |C0009[Cytosol]|
     + |C0065[Cytosol]| + |C0008[Cytosol]| + |C2923[Cytosol]|'
 - id: IR01689
   name: 2-Propyn-1-al:NAD+ oxidoreductase
+  genes: PP5278 or PP2589 or PP2680 or PP5258 or PP3463 or PP0545 or PP2694
   equation: '|C3488[Cytosol]| + |C0003[Cytosol]| + |C0001[Cytosol]| => |C0065[Cytosol]|
     + |C0588[Cytosol]| + |C0004[Cytosol]|'
 - id: IR01705
   name: D-Glucuronolactone:NAD+ oxidoreductase
+  genes: PP5278 or PP2589 or PP2680 or PP5258 or PP3463 or PP0545 or PP2694
   equation: '|C0003[Cytosol]| + |C1715[Cytosol]| + (2) |C0001[Cytosol]| => |C0599[Cytosol]|
     + (3) |C0065[Cytosol]| + |C0004[Cytosol]|'
 - id: IR01725
   name: Succinyl-CoA:3-oxoadipate CoA-transferase
+  genes: PP3951 and PP3952
   equation: '|C0076[Cytosol]| + |C0621[Cytosol]| => |C0036[Cytosol]| + |C1486[Cytosol]|'
 - id: IR01726
   name: 4-Carboxymethylbut-3-en-4-olide enol-lactonohydrolase
+  genes: PP1380
   equation: '|C2225[Cytosol]| + |C0001[Cytosol]| => |C0065[Cytosol]| + |C0621[Cytosol]|'
 - id: IR01734
   name: 2-Amino-4-hydroxy-6-hydroxymethyl-7,8-dihydropteridine:4-aminobenzoate2-amino-4-hydroxydihydropteridine-6-methenyltransferase
+  genes: PP4717
   equation: '|C0439[Cytosol]| + |C0937[Cytosol]| => |C0674[Cytosol]| + |C0001[Cytosol]|'
 - id: IR01735
   name: 2-Amino-4-hydroxy-6-hydroxymethyl-7,8-dihydropteridine-diphosphate:4-aminobenzoate2-amino-4-hydroxydihydropteridine-6-methenyltransferase
+  genes: PP4717
   equation: '|C0439[Cytosol]| + |C2881[Cytosol]| => |C0012[Cytosol]| + |C0674[Cytosol]|'
 - id: IR01746
   name: 2-Dehydro-3-deoxy-D-arabino-heptonate 7-phosphate phosphate-lyase(cyclyzing)
+  genes: PP5078
   equation: '|C2823[Cytosol]| => |C0009[Cytosol]| + |C0690[Cytosol]|'
 - id: IR01758
   name: L-2-Aminoadipate-6-semialdehyde:NAD+ 6-oxidoreductase
+  genes: PP5258
   equation: '|C0003[Cytosol]| + |C2491[Cytosol]| + |C0001[Cytosol]| => |C0065[Cytosol]|
     + |C0696[Cytosol]| + |C0004[Cytosol]|'
 - id: IR01775
   name: O3-Acetyl-L-serine acetate-lyase (adding hydrogen sulfide)
+  genes: PP4571 or PP0659 or PP1654
   equation: '|C0711[Cytosol]| + |C0262[Cytosol]| + |C0065[Cytosol]| => |C0029[Cytosol]|
     + |C3390[Cytosol]|'
 - id: IR01792
   name: Hydroxymethylbilane hydro-lyase(cyclizing)
+  genes: PP0187
   equation: '|C0743[Cytosol]| => |C0763[Cytosol]| + |C0001[Cytosol]|'
 - id: IR01797
   name: 3-Methyl-2-oxopentanoate:NAD+ oxidoreductase(CoA-mehtylpropanoylating)
+  genes: PP4404 and PP4401 and PP4402 and PP4403
   equation: '|C0003[Cytosol]| + |C0502[Cytosol]| + |C0010[Cytosol]| => |C0004[Cytosol]|
     + |C0011[Cytosol]| + |C0748[Cytosol]|'
 - id: IR01798
   name: 2-Methylbutanoyl-CoA:(acceptor) 2,3-oxidoreductase
+  genes: PP2437 or PP2793
   equation: '|C0015[Cytosol]| + |C0748[Cytosol]| => |C0964[Cytosol]| + |C2098[Cytosol]|'
 - id: IR01804
   name: 4-Maleylacetoacetate cis-trans-isomerase
+  genes: PP4619
   equation: '|C0751[Cytosol]| => |C0770[Cytosol]|'
 - id: IR01805
   name: 7,8-Diaminononanoate:carbon-dioxide cyclo-ligase
+  genes: PP0366
   equation: '|C0002[Cytosol]| + |C0752[Cytosol]| + |C0011[Cytosol]| => |C0009[Cytosol]|
     + (3) |C0065[Cytosol]| + |C1294[Cytosol]| + |C0008[Cytosol]|'
 - id: IR01809
   name: N-Methylimidazolidine-2,4-dione amidohydrolase (ATP-hydrolysing)
+  genes: PP3514 and PP3515
   equation: '|C0002[Cytosol]| + |C1658[Cytosol]| + (2) |C0001[Cytosol]| => |C0756[Cytosol]|
     + |C0009[Cytosol]| + |C0065[Cytosol]| + |C0008[Cytosol]|'
 - id: IR01814
   name: UDP-N-acetylmuramate:L-alanine ligase (ADP-forming)
+  genes: PP1338
   equation: '|C0762[Cytosol]| + |C0002[Cytosol]| + |C0035[Cytosol]| => |C0874[Cytosol]|
     + |C0009[Cytosol]| + |C0065[Cytosol]| + |C0008[Cytosol]|'
 - id: IR01815
   name: S-Adenosyl-L-methionine:uroporphyrin-III C-methyltransferase
+  genes: PP0188 or PP3999 or PP2090
   equation: (2) |C0017[Cytosol]| + (6) |C0065[Cytosol]| + |C0763[Cytosol]| => (2)
     |C0019[Cytosol]| + |C1601[Cytosol]|
 - id: IR01816
   name: Uroporphyrinogen-III carboxy-lyase
+  genes: PP5074
   equation: (4) |C0065[Cytosol]| + |C0763[Cytosol]| => (4) |C0011[Cytosol]| + |C2053[Cytosol]|
 - id: IR01826
   name: 6-Carboxyhexanoyl-CoA:L-alanine C-carboxyhexanoyltransferase(decarboxylating)
+  genes: PP0363
   equation: '|C0772[Cytosol]| + |C0065[Cytosol]| + |C0035[Cytosol]| => |C0788[Cytosol]|
     + |C0010[Cytosol]| + |C0011[Cytosol]|'
 - id: IR01831
   name: O-Acetyl-L-homoserine succinate-lyase (adding cysteine)
+  genes: PP0659
   equation: '|C0082[Cytosol]| + |C0779[Cytosol]| => |C1522[Cytosol]| + |C0029[Cytosol]|
     + |C0065[Cytosol]|'
 - id: IR01832
   name: Coproporphyrinogen:oxygen oxidoreductase(decarboxylating)
+  genes: PP0073
   equation: '|C0007[Cytosol]| + (2) |C0065[Cytosol]| + |C2053[Cytosol]| => |C0780[Cytosol]|
     + (2) |C0011[Cytosol]| + (2) |C0001[Cytosol]|'
 - id: IR01834
   name: 2-Methyl-4-amino-5-hydroxymethylpyrimidine-diphosphate:4-methyl-5-(2-phosphoethyl)-thiazole2-methyl-4-aminopyridine-5-methenyltransferase
+  genes: PP4783 or PP1348
   equation: '|C0065[Cytosol]| + |C2623[Cytosol]| + |C2858[Cytosol]| => |C0012[Cytosol]|
     + |C0781[Cytosol]|'
 - id: IR01841
   name: S-Adenosyl-L-methionine:8-amino-7-oxononanoate aminotransferase
+  genes: PP4984
   equation: '|C0788[Cytosol]| + |C0017[Cytosol]| => |C0752[Cytosol]| + |C2672[Cytosol]|'
 - id: IR01862
   name: O-Succinyl-L-homoserine succinate-lyase (adding cysteine)
+  genes: PP0659
   equation: '|C0809[Cytosol]| + |C0082[Cytosol]| => |C0036[Cytosol]| + |C1522[Cytosol]|
     + |C0065[Cytosol]|'
 - id: IR01869
   name: N-[(R)-4'-Phosphopantothenoyl]-L-cysteine carboxy-lyase
+  genes: PP5285
   equation: '|C2635[Cytosol]| + |C0065[Cytosol]| => |C0011[Cytosol]| + |C0822[Cytosol]|'
 - id: IR01870
   name: 2-(alpha-Hydroxyethyl)thiamine diphosphate:lipoamide2-oxidoreductase(decarboxylating
     and acceptor-acetylating)
+  genes: PP0554 and PP0339 and PP0555
   equation: '|C0205[Cytosol]| + |C2983[Cytosol]| => |C0055[Cytosol]| + |C0824[Cytosol]|'
 - id: IR01879
   name: 4-Trimethylammoniobutanal:NAD+ oxidoreductase
+  genes: PP5278 or PP2589 or PP2680 or PP5258 or PP3463 or PP0545 or PP2694
   equation: '|C0003[Cytosol]| + |C0832[Cytosol]| + |C0001[Cytosol]| => |C0065[Cytosol]|
     + |C0856[Cytosol]| + |C0004[Cytosol]|'
 - id: IR01889
   name: trans-4-Hydroxy-L-proline:NAD+ oxidoreductase
+  genes: PP4947
   equation: '|C0837[Cytosol]| + |C0015[Cytosol]| => |C0964[Cytosol]| + |C2597[Cytosol]|'
 - id: IR01905
   name: 3-Carboxy-1-hydroxypropyl-ThPP:lipoamde2-oxidoreductase(decarboxylating and
     acceptor-succinylating)
+  genes: PP4189
   equation: '|C3118[Cytosol]| + |C0205[Cytosol]| => |C0846[Cytosol]| + |C0055[Cytosol]|'
 - id: IR01932
   name: 3-Deoxy-D-manno-octulosonate-8-phosphate 8-phosphohydrolase
+  genes: PP0956
   equation: '|C2701[Cytosol]| + |C0001[Cytosol]| => |C0009[Cytosol]| + |C0861[Cytosol]|'
 - id: IR01933
   name: CTP:3-deoxy-D-manno-octulosonate cytidylyltransferase
+  genes: PP1902
   equation: '|C0051[Cytosol]| + |C0861[Cytosol]| => |C0012[Cytosol]| + |C2516[Cytosol]|'
 - id: IR01996
   name: D-erythro-1-(Imidazol-4-yl)glycerol 3-phosphate hydro-lyase
+  genes: PP0289
   equation: '|C2809[Cytosol]| => |C0001[Cytosol]| + |C0915[Cytosol]|'
 - id: IR02007
   name: ATP:4-amino-5-hydroxymethyl-2-methylpyrimidine 5-phosphotransferase
+  genes: PP4782
   equation: '|C0002[Cytosol]| + |C0924[Cytosol]| => |C0065[Cytosol]| + |C0008[Cytosol]|
     + |C2744[Cytosol]|'
 - id: IR02019
   name: ATP:2-amino-4-hydroxy-6-hydroxymethyl-7,8-dihydropteridine6'-pyrophosphotransferase
+  genes: PP4698
   equation: '|C0002[Cytosol]| + |C0937[Cytosol]| => |C0018[Cytosol]| + |C0065[Cytosol]|
     + |C2881[Cytosol]|'
 - id: IR02020
   name: 2-Amino-4-hydroxy-6-(D-erythro-1,2,3-trihydroxypropyl)-7,8-dihydropteridine
     glycolaldehyde-lyase
+  genes: PP0392
   equation: '|C2920[Cytosol]| => |C0221[Cytosol]| + |C0065[Cytosol]| + |C0937[Cytosol]|'
 - id: IR02023
   name: 1-(2-Carboxyphenylamino)-1-deoxy-D-ribulose-5-phosphatecarboxy-lyase(cyclizing)
+  genes: PP0422
   equation: '|C0939[Cytosol]| + |C0065[Cytosol]| => |C2184[Cytosol]| + |C0011[Cytosol]|
     + |C0001[Cytosol]|'
 - id: IR02024
   name: N-(5-Phospho-beta-D-ribosyl)anthranilate ketol-isomerase
+  genes: PP1995
   equation: '|C2612[Cytosol]| => |C0939[Cytosol]|'
 - id: IR02047
   name: Gallate:oxygen 3,4-oxidoreductase (decyclizing)
+  genes: PP4656 and PP4655
   equation: '|C1002[Cytosol]| + |C0007[Cytosol]| => |C2269[Cytosol]| + |C0001[Cytosol]|'
 - id: IR02048
   name: Gallate:oxygen 4,5-oxidoreductase (decyclizing)
+  genes: PP2518
   equation: '|C1002[Cytosol]| + |C0007[Cytosol]| => |C2688[Cytosol]|'
 - id: IR02087
   name: O3-Acetyl-L-serine acetate-lyase (adding hydrogen sulfide)
+  genes: PP4571 or PP1654
   equation: '|C0711[Cytosol]| + |C1062[Cytosol]| => |C0029[Cytosol]| + |C3323[Cytosol]|'
 - id: IR02156
   name: Octanoyl-CoA:oxygen 2-oxidoreductase
+  genes: PP2437 or PP2793 or PP1893
   equation: '|C1316[Cytosol]| + |C0015[Cytosol]| => |C0964[Cytosol]| + |C3061[Cytosol]|'
 - id: IR02208
   name: S-Adenosyl-L-methionine:precorrin-4 C20-methyltransferase
+  genes: PP4827
   equation: '|C0017[Cytosol]| + |C1601[Cytosol]| => |C3355[Cytosol]| + (8) |C0065[Cytosol]|
     + |C0019[Cytosol]|'
 - id: IR02216
   name: (3R)-beta-Leucine:NAD+ oxidoreductase(deaminating)
+  genes: PP4617
   equation: '|C0003[Cytosol]| + |C1614[Cytosol]| + |C0001[Cytosol]| => |C2163[Cytosol]|
     + |C0957[Cytosol]| + |C0004[Cytosol]|'
 - id: IR02224
   name: (5-Glutamyl)-peptide:amino-acid 5-glutamyltransferase
+  genes: PP4659 or PP3535
   equation: '|C1631[Cytosol]| + |C0065[Cytosol]| + |C0023[Cytosol]| => |C3341[Cytosol]|
     + |C0001[Cytosol]|'
 - id: IR02225
   name: (5-Glutamyl)-peptide:amino-acid 5-glutamyltransferase
+  genes: PP4659 or PP3535
   equation: '|C1631[Cytosol]| + |C0245[Cytosol]| => |C3566[Cytosol]| + |C0011[Cytosol]|
     + |C0001[Cytosol]|'
 - id: IR02232
   name: Estrone 3-sulfate sulfohydrolase
+  genes: PP3352
   equation: '|C1647[Cytosol]| + |C0001[Cytosol]| => (2) |C0065[Cytosol]| + |C0358[Cytosol]|
     + |C0048[Cytosol]|'
 - id: IR02236
   name: Tetradecanoyl-CoA:(acceptor) 2,3-oxidoreductase
+  genes: PP2437 or PP2793 or PP1893
   equation: '|C0015[Cytosol]| + |C1673[Cytosol]| => |C0964[Cytosol]| + |C3058[Cytosol]|'
 - id: IR02264
   name: Phosphoribosyl-ATP pyrophosphohydrolase
+  genes: PP5015
   equation: (3) |C0065[Cytosol]| + |C1750[Cytosol]| + |C0001[Cytosol]| => |C0012[Cytosol]|
     + |C1751[Cytosol]|
 - id: IR02265
   name: Phosphoribosyl-AMP 1,6-hydrolase
+  genes: PP5014
   equation: '|C1751[Cytosol]| + |C0001[Cytosol]| => (4) |C0065[Cytosol]| + |C2933[Cytosol]|'
 - id: IR02277
   name: 3-Methylbutanoyl-CoA:(acceptor) 2,3-oxidoreductase
+  genes: PP2437 or PP2793 or PP4064
   equation: '|C1856[Cytosol]| + |C0015[Cytosol]| => |C0964[Cytosol]| + |C1939[Cytosol]|'
 - id: IR02286
   name: N-Acetylmuramoyl-Ala amidohydrolase
+  genes: PP4897 or PP0130
   equation: '|C1895[Cytosol]| + |C0001[Cytosol]| => |C3419[Cytosol]| + |C0035[Cytosol]|'
 - id: IR02300
   name: 3-Methylcrotonoyl-CoA:carbon-dioxide ligase (ADP-forming)
+  genes: PP4065 and PP4067
   equation: '|C0234[Cytosol]| + |C0002[Cytosol]| + |C1939[Cytosol]| => |C2037[Cytosol]|
     + |C0009[Cytosol]| + |C0065[Cytosol]| + |C0008[Cytosol]|'
 - id: IR02305
@@ -833,172 +1059,213 @@
     + |C0008[Cytosol]|'
 - id: IR02308
   name: Nicotinate-nucleotide:dimethylbenzimidazolephospho-D-ribosyltransferase
+  genes: PP1679
   equation: '|C1968[Cytosol]| + |C0859[Cytosol]| => |C0065[Cytosol]| + |C2867[Cytosol]|
     + |C0210[Cytosol]|'
 - id: IR02335
   name: N2-Succinyl-L-arginine +h+ &gt;=&lt; N2-Succinyl-L-ornithine + CO2 + 2 NH4
+  genes: PP4477
   equation: '|C2073[Cytosol]| + (2) |C0065[Cytosol]| + (2) |C0001[Cytosol]| => |C2133[Cytosol]|
     + (2) |C0957[Cytosol]| + |C0011[Cytosol]|'
 - id: IR02345
   name: 2-(Formamido)-N1-(5-phosphoribosyl)acetamidine cyclo-ligase(ADP-forming)
+  genes: PP1665
   equation: '|C0002[Cytosol]| + |C2793[Cytosol]| => |C0009[Cytosol]| + (2) |C0065[Cytosol]|
     + |C2114[Cytosol]| + |C0008[Cytosol]|'
 - id: IR02352
   name: N2-Succinyl-L-ornithine:2-oxo-acid aminotransferase
+  genes: PP4223
   equation: '|C2133[Cytosol]| + |C0024[Cytosol]| => |C0023[Cytosol]| + |C3456[Cytosol]|'
 - id: IR02357
   name: (S)-3-Hydroxyisobutyryl-CoA hydro-lyase
+  genes: PP2136 or PP3283 or PP3491 or PP2217 or PP4066 or PP1412 or PP1845 or PP4030
   equation: '|C2158[Cytosol]| + |C0001[Cytosol]| => |C3498[Cytosol]|'
 - id: IR02358
   name: 3-Methyl-2-oxopentanoate:lipoamide oxidoreductase(decarboxylatingand acceptor-2-methylpropanoylating)
+  genes: PP4404 and PP4401 and PP4402 and PP4403
   equation: '|C2161[Cytosol]| + |C0205[Cytosol]| => |C2979[Cytosol]| + |C0011[Cytosol]|'
 - id: IR02361
   name: (R)-4'-Phosphopantothenate:L-cysteine ligase
+  genes: PP5285
   equation: '|C2174[Cytosol]| + |C0082[Cytosol]| + |C0002[Cytosol]| => |C0009[Cytosol]|
     + |C2635[Cytosol]| + |C0065[Cytosol]| + |C0008[Cytosol]|'
 - id: IR02386
   name: 3-O-Methylgallate:oxygen 4,5-oxidoreductase (decyclizing)
+  genes: PP2518
   equation: '|C3269[Cytosol]| + |C0007[Cytosol]| => |C0114[Cytosol]| + |C2269[Cytosol]|'
 - id: IR02389
   name: 2-Amino-4-hydroxy-6-(erythro-1,2,3-trihydroxypropyl)dihydropteridine triphosphate
     lyase
+  genes: PP2341
   equation: '|C2932[Cytosol]| => |C2062[Cytosol]| + |C0065[Cytosol]| + |C2280[Cytosol]|'
 - id: IR02407
   name: 5'-Phosphoribosylglycinamide + 5,10-Methenyltetrahydrofolate +H2O &gt;=&lt;
     5'-Phosphoribosyl-N-formylglycinamide + Tetrahydrofolate
+  genes: PP1664
   equation: '|C0343[Cytosol]| + |C2358[Cytosol]| + |C0001[Cytosol]| => |C0065[Cytosol]|
     + |C0085[Cytosol]| + |C2646[Cytosol]|'
 - id: IR02415
   name: N1-(5-Phospho-D-ribosyl)-AMP 1,6-hydrolase
+  genes: PP5014
   equation: '|C2382[Cytosol]| + |C0001[Cytosol]| => |C2933[Cytosol]|'
 - id: IR02434
   name: Succinyl-CoA:2,3,4,5-tetrahydropyridine-2-carboxylateN-succinyltransferase
+  genes: PP1530
   equation: '|C0076[Cytosol]| + |C2429[Cytosol]| + |C0001[Cytosol]| => |C2695[Cytosol]|
     + |C0010[Cytosol]|'
 - id: IR02457
   name: 5-Methyltetrahydropteroyltri-L-glutamate:L-homocysteineS-methyltransferase
+  genes: PP2698
   equation: '|C0132[Cytosol]| + |C2709[Cytosol]| => |C0058[Cytosol]| + |C2526[Cytosol]|'
 - id: IR02466
   name: 2-Hydroxybutane-1,2,3-tricarboxylate hydro-lyase
+  genes: PP2338
   equation: '|C1480[Cytosol]| => |C2571[Cytosol]| + |C0001[Cytosol]|'
 - id: IR02475
   name: (R)-2,3-Dihydroxy-3-methylbutanoate hydro-lyase
+  genes: PP5128
   equation: '|C2591[Cytosol]| => |C0121[Cytosol]| + |C0001[Cytosol]|'
 - id: IR02477
   name: L-1-Pyrroline-3-hydroxy-5-carboxylate:NAD+ oxidoreductase
+  genes: PP4947
   equation: '|C0003[Cytosol]| + |C2597[Cytosol]| + (2) |C0001[Cytosol]| => |C3467[Cytosol]|
     + |C0065[Cytosol]| + |C0004[Cytosol]|'
 - id: IR02494
   name: UDP-2,3-bis(3-hydroxytetradecanoyl)glucosamine diphosphatase
+  genes: PP2902
   equation: '|C2801[Cytosol]| + |C0001[Cytosol]| => (2) |C0065[Cytosol]| + |C2891[Cytosol]|
     + |C0089[Cytosol]|'
 - id: IR02503
   name: UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-L-lysine:alanyl-D-alanineligase
     (ADP-forming)
+  genes: PP1333
   equation: '|C0002[Cytosol]| + |C0721[Cytosol]| + |C2827[Cytosol]| => |C0009[Cytosol]|
     + |C0065[Cytosol]| + |C0008[Cytosol]| + |C2903[Cytosol]|'
 - id: IR02504
   name: UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-L-lysine:alanyl-D-alanineligase
     (ADP-forming)
+  genes: PP1333
   equation: '|C0002[Cytosol]| + |C0721[Cytosol]| + |C3424[Cytosol]| => |C0009[Cytosol]|
     + |C2828[Cytosol]| + |C0065[Cytosol]| + |C0008[Cytosol]|'
 - id: IR02509
   name: UDP-3-O-(3-hydroxytetradecanoyl)-N-acetylglucosamine + H2O &gt;=&lt;UDP-3-O-(3-hydroxytetradecanoyl)-D-glucosamine
     + Acetate
+  genes: PP1343
   equation: '|C2850[Cytosol]| + |C0001[Cytosol]| => |C3509[Cytosol]| + |C0029[Cytosol]|'
 - id: IR02511
   name: 3alpha,7alpha,12alpha-Trihydroxy-5beta-cholestanoyl-CoA + FAD &gt;=&lt;3alpha,7alpha,12alpha-Trihydroxy-5beta-cholest-24-enoyl-CoA
     + FADH2
+  genes: PP3492 or PP2216 or PP0370 or PP0368 or PP3725
   equation: '|C2861[Cytosol]| + |C0015[Cytosol]| => |C0964[Cytosol]| + |C3173[Cytosol]|'
 - id: IR02521
   name: UDP-2,3-bis(3-hydroxytetradecanoyl)-beta-D-glucosamine:2,3-bis-(3-hydroxytetradecanoyl)-beta-D-glucosaminyl-1-phosphate
+  genes: PP1604
   equation: '|C2801[Cytosol]| + |C2891[Cytosol]| => |C0014[Cytosol]| + |C2945[Cytosol]|
     + |C0065[Cytosol]|'
 - id: IR02524
   name: ATP:2,3,2',3'-tetrakis(3-hydroxytetradecanoyl)-D-glucosaminyl-beta-D-1,6-glucosaminyl-beta-phosphate
     4-O'-phosphotransferase
+  genes: PP1900
   equation: '|C2945[Cytosol]| + |C0002[Cytosol]| => |C2942[Cytosol]| + |C0065[Cytosol]|
     + |C0008[Cytosol]|'
 - id: IR02525
   name: 2,3,2'3'-Tetrakis(3-hydroxytetradecanoyl)-D-glucosaminyl-1,6-beta-D-glucosamine
     1,4'-bisphosphate +CMP-3-deoxy-D-manno-octulosonate &gt;=&lt;3-Deoxy-D-manno-octulosonyl-lipid
     IV(A) + CMP
+  genes: PP4928
   equation: '|C2942[Cytosol]| + |C2516[Cytosol]| => |C0065[Cytosol]| + |C3510[Cytosol]|
     + |C0046[Cytosol]|'
 - id: IR02526
   name: 3-Ureidoisobutyrate amidohydrolase
+  genes: PP0614 or PP4034
   equation: '|C2968[Cytosol]| + |C0065[Cytosol]| + |C0001[Cytosol]| => |C2999[Cytosol]|
     + |C0957[Cytosol]| + |C0011[Cytosol]|'
 - id: IR02552
   name: 3alpha,7alpha,26-Trihydroxy-5beta-cholestane + NAD+ &gt;=&lt;3alpha,7alpha-Dihydroxy-5beta-cholestan-26-al
     + NADH
+  genes: PP1616 or PP3839
   equation: '|C0003[Cytosol]| + |C3159[Cytosol]| => |C0065[Cytosol]| + |C3160[Cytosol]|
     + |C0004[Cytosol]|'
 - id: IR02596
   name: Uroporphyrinogen I carboxy-lyase
+  genes: PP5074
   equation: '|C3349[Cytosol]| => |C3351[Cytosol]| + (4) |C0011[Cytosol]|'
 - id: IR02601
   name: 2-Hexaprenyl-6-methoxyphenol + Oxygen &gt;=&lt;2-Hexaprenyl-6-methoxy-1,4-benzoquinone
     + H2O
+  genes: PP5199
   equation: '|C0007[Cytosol]| + |C3373[Cytosol]| => |C3374[Cytosol]| + |C0001[Cytosol]|'
 - id: IR02602
   name: 2-Hexaprenyl-6-methoxy-1,4-benzoquinone +S-Adenosyl-L-methionine &gt;=&lt;2-Hexaprenyl-3-methyl-6-methoxy-1,4-benzoquinone
     +S-Adenosyl-L-homocysteine
+  genes: PP5011
   equation: '|C0017[Cytosol]| + |C3374[Cytosol]| => |C3375[Cytosol]| + |C0065[Cytosol]|
     + |C0019[Cytosol]|'
 - id: IR02603
   name: 2-Hexaprenyl-3-methyl-6-methoxy-1,4-benzoquinone + Oxygen +NADPH &gt;=&lt;2-Hexaprenyl-3-methyl-5-hydroxy-6-methoxy-1,4-benzoquinone
     +NADP+ + H2O
+  genes: PP0427
   equation: '|C3375[Cytosol]| + |C0007[Cytosol]| + |C0065[Cytosol]| + |C0005[Cytosol]|
     => |C3376[Cytosol]| + |C0006[Cytosol]| + |C0001[Cytosol]|'
 - id: IR02605
   name: 2-Octaprenyl-6-hydroxyphenol + S-Adenosyl-L-methionine &gt;=&lt;2-Octaprenyl-6-methoxyphenol
     + S-Adenosyl-L-homocysteine
+  genes: PP1765
   equation: '|C0017[Cytosol]| + |C3379[Cytosol]| => |C3380[Cytosol]| + |C0065[Cytosol]|
     + |C0019[Cytosol]|'
 - id: IR02606
   name: 2-octaprenyl-6-methoxyphenol hydroxylase
+  genes: PP5199
   equation: '|C3380[Cytosol]| + |C0007[Cytosol]| + |C0065[Cytosol]| + |C0005[Cytosol]|
     => |C3381[Cytosol]| + |C0006[Cytosol]| + |C0001[Cytosol]|'
 - id: IR02607
   name: UDP-L-rhamnose:flavonol-3-O-D-glucoside L-rhamnosyltransferase
+  genes: PP5011
   equation: '|C0017[Cytosol]| + |C3381[Cytosol]| => |C0065[Cytosol]| + |C0019[Cytosol]|
     + |C3382[Cytosol]|'
 - id: IR02613
   name: Undecaprenyl-diphospho-N-acetylmuramoyl-L-alanyl-D-glutamyl-L-lysyl-D-alanyl-D-alanine
     + UDP-N-acetyl-D-glucosamine &gt;=&lt; Undecaprenyl-diphospho-N-acetylmuramoyl-(N-acetylglucosamine)-L-alanyl-D-glutamyl-L-lysyl-D-alanyl-D-alanine
     + UDP
+  genes: PP1337
   equation: '|C3420[Cytosol]| + |C0037[Cytosol]| => |C0014[Cytosol]| + |C0065[Cytosol]|
     + |C3421[Cytosol]|'
 - id: IR02614
   name: Undecaprenyl-diphospho-N-acetylmuramoyl-(N-acetylglucosamine)-L-alanyl-D-glutamyl-L-lysyl-D-alanyl-D-alanine:ammonia
     ligase(ADP-forming)
+  genes: PP5184 or PP5046 or PP5183 or PP5299 or PP4547 or PP3148
   equation: '|C0002[Cytosol]| + |C0957[Cytosol]| + |C3421[Cytosol]| => |C0009[Cytosol]|
     + (2) |C0065[Cytosol]| + |C0008[Cytosol]| + |C3422[Cytosol]|'
 - id: IR02615
   name: Undecaprenyl-diphospho-N-acetylmuramoyl-(N-acetylglucosamine)-L-alanyl-gamma-D-glutamyl-L-lysyl-D-alanyl-D-alanine
+  genes: PP5184 or PP5046 or PP5183 or PP5299 or PP4547 or PP3148
   equation: '|C0002[Cytosol]| + |C0957[Cytosol]| + |C3425[Cytosol]| => |C3426[Cytosol]|
     + |C0009[Cytosol]| + (2) |C0065[Cytosol]| + |C0008[Cytosol]|'
 - id: IR02616
   name: Undecaprenyl-diphospho-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanyl-D-alanine
     +UDP-N-acetyl-D-glucosamine &gt;=&lt; Undecaprenyl-diphospho-N-acetylmuramoyl-(N-acetylglucosamine)-L-alanyl-D-glutamyl-meso-2,6-diaminopimeloyl-D-alany
+  genes: PP1337
   equation: '|C0037[Cytosol]| + |C3428[Cytosol]| => |C0014[Cytosol]| + |C3429[Cytosol]|
     + |C0065[Cytosol]|'
 - id: IR02617
   name: Undecaprenyl-diphospho-N-acetylmuramoyl-(N-acetylglucosamine)-L-alanyl-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanyl-D-alanine:ammonia
     ligase (ADP-forming)
+  genes: PP5184 or PP5046 or PP5183 or PP5299 or PP4547 or PP3148
   equation: '|C3429[Cytosol]| + |C0002[Cytosol]| + (2) |C0065[Cytosol]| + |C0957[Cytosol]|
     => |C3430[Cytosol]| + |C0009[Cytosol]| + |C0008[Cytosol]|'
 - id: IR02623
   name: 3-Deoxy-D-manno-octulosonyl-lipid IV(A) +CMP-3-deoxy-D-manno-octulosonate
     &gt;=&lt;Di[3-deoxy-D-manno-octulosonyl]-lipid IV(A) + CMP
+  genes: PP4928
   equation: '|C2516[Cytosol]| + |C3510[Cytosol]| => |C3511[Cytosol]| + |C0065[Cytosol]|
     + |C0046[Cytosol]|'
 - id: IR02630
   name: O-Phospho-4-hydroxy-L-threonine phospho-lyase (adding water)
+  genes: PP0662 or PP1471
   equation: '|C3531[Cytosol]| + |C0001[Cytosol]| => |C0009[Cytosol]| + |C3532[Cytosol]|'
 - id: IR02640
   name: 3-Butyn-1-al:NAD+ oxidoreductase
+  genes: PP5278 or PP2589 or PP2680 or PP5258 or PP3463 or PP0545 or PP2694
   equation: '|C0003[Cytosol]| + |C3574[Cytosol]| + |C0001[Cytosol]| => |C3573[Cytosol]|
     + |C0065[Cytosol]| + |C0004[Cytosol]|'
 - id: IR02664
@@ -1006,107 +1273,133 @@
   equation: '|C3728[Cytosol]| => |C3729[Cytosol]|'
 - id: IR02665
   name: Precorrin 8X 11,12-methylmutase
+  genes: PP4828
   equation: '|C3733[Cytosol]| => |C3730[Cytosol]| + (6) |C0065[Cytosol]|'
 - id: IR02666
   name: S-Adenosyl-L-methionine:precorrin-3B C17-methyltransferase
+  genes: PP4826
   equation: '|C0017[Cytosol]| + |C3731[Cytosol]| => |C3732[Cytosol]| + (3) |C0065[Cytosol]|
     + |C0019[Cytosol]|'
 - id: IR02667
   name: S-adenosyl-L-methionine:precorrin-4 C11 methyltransferase
+  genes: PP3410
   equation: '|C0017[Cytosol]| + |C3732[Cytosol]| => |C0065[Cytosol]| + |C0019[Cytosol]|
     + |C3737[Cytosol]|'
 - id: IR02668
   name: Ethanol + PQQ &gt;=&lt; PQQH2 + Acetaldehyde
+  genes: PP2674
   equation: '|C0359[Cytosol]| + |C0095[Cytosol]| => |C0069[Cytosol]| + |C0968[Cytosol]|'
 - id: IR02681
   name: Precorrin 3A + Oxygen &gt;=&lt; Precorrin 3B
+  genes: PP4829
   equation: '|C3355[Cytosol]| + |C0007[Cytosol]| + (2) |C0065[Cytosol]| + |C0004[Cytosol]|
     => |C0003[Cytosol]| + |C3731[Cytosol]| + |C0001[Cytosol]|'
 - id: IR02684
   name: Cob(I)yrinate a,c diamide + ATP &gt;=&lt;Adenosyl cobyrinate a,c diamide
     + Pyrophosphate + Orthophosphate
+  genes: PP1672
   equation: '|C3810[Cytosol]| + |C0002[Cytosol]| + |C0001[Cytosol]| => |C0012[Cytosol]|
     + |C0009[Cytosol]| + |C3811[Cytosol]|'
 - id: IR02688
   name: Hydrogenobyrinate + 2 L-Glutamine + 2 ATP + 2 H2O &gt;=&lt;Hydrogenobyrinate
     a,c diamide + 2 Orthophosphate + 2 L-Glutamate +2 ADP
+  genes: PP1673
   equation: (2) |C0002[Cytosol]| + |C3730[Cytosol]| + (2) |C0052[Cytosol]| + (2)
     |C0001[Cytosol]| => (2) |C0009[Cytosol]| + (2) |C0065[Cytosol]| + |C3808[Cytosol]|
     + (2) |C0008[Cytosol]| + (2) |C0023[Cytosol]|
 - id: IR02690
   name: Adenosyl cobyrinate hexaamide + 1-Aminopropan-2-ol &gt;=&lt;Adenosyl cobinamide
+  genes: PP1675
   equation: '|C3812[Cytosol]| + |C2009[Cytosol]| => |C0065[Cytosol]| + |C3813[Cytosol]|
     + |C0001[Cytosol]|'
 - id: IR02691
   name: Hydrogenobyrinate a,c diamide + Cobalt + ATP &gt;=&lt;Cob(II)yrinate a,c
     diamide + Orthophosphate + ADP
+  genes: PP3507
   equation: '|C0144[Cytosol]| + |C0002[Cytosol]| + |C3808[Cytosol]| + |C0001[Cytosol]|
     => |C3809[Cytosol]| + |C0009[Cytosol]| + |C0008[Cytosol]|'
 - id: IR02695
   name: 6-Hydroxyhexanoate:NADP+ oxidoreductase
+  genes: PP2426
   equation: '|C3561[Cytosol]| + |C0006[Cytosol]| => |C0065[Cytosol]| + |C3560[Cytosol]|
     + |C0005[Cytosol]|'
 - id: IR02733
   name: Vanillate:oxygen oxidoreductase (demethylating)
+  genes: PP3736 and PP3737
   equation: '|C0007[Cytosol]| + |C3968[Cytosol]| + |C0004[Cytosol]| => |C0003[Cytosol]|
     + |C0189[Cytosol]| + |C0054[Cytosol]| + |C0001[Cytosol]|'
 - id: IR02744
   name: 2-Chloroethanol + PQQ &gt;=&lt; Chloroacetaldehyde + PQQH2
+  genes: PP2674
   equation: '|C4027[Cytosol]| + |C0095[Cytosol]| => |C0968[Cytosol]| + |C4028[Cytosol]|'
 - id: IR02745
   name: Chloroacetaldehyde:NAD+ oxidoreductase
+  genes: PP5278 or PP2589 or PP2680 or PP5258 or PP3463 or PP0545 or PP2694
   equation: '|C0003[Cytosol]| + |C4028[Cytosol]| + |C0001[Cytosol]| => |C0065[Cytosol]|
     + |C4029[Cytosol]| + |C0004[Cytosol]|'
 - id: IR02774
   name: Taurine, 2-oxoglutarate:O2 oxidoreductase (sulfite-forming)
+  genes: PP0169 or PP0230
   equation: '|C0007[Cytosol]| + |C0024[Cytosol]| + |C0202[Cytosol]| => |C0079[Cytosol]|
     + |C0036[Cytosol]| + |C0065[Cytosol]| + |C4016[Cytosol]| + |C0011[Cytosol]|'
 - id: IR02782
   name: Acetyl-CoA:D-glucosamine-1-phosphate N-acetyltransferase
+  genes: PP5411
   equation: '|C3581[Cytosol]| + |C0022[Cytosol]| => |C0065[Cytosol]| + |C2582[Cytosol]|
     + |C0010[Cytosol]|'
 - id: IR02961
   name: 4-amino-4-deoxychorismate pyruvate-lyase
+  genes: PP1917
   equation: '|C8533[Cytosol]| => |C0439[Cytosol]| + |C0020[Cytosol]| + |C0065[Cytosol]|'
 - id: IR02979
   name: (3S)-3-Hydroxyacyl-CoA:NAD+ oxidoreductase
+  genes: PP2136 or PP2047 or PP0302 or PP2214
   equation: '|C7020[Cytosol]| + |C0003[Cytosol]| => |C0065[Cytosol]| + |C7021[Cytosol]|
     + |C0004[Cytosol]|'
 - id: IR03012
   name: Benzoate + NADH + H+ + Oxygen &gt;=&lt;1,6-Dihydroxy-cis-2,4-cyclohexadiene-1-carboxylic
     acid + NAD+
+  genes: PP3161 and PP3162
   equation: '|C0007[Cytosol]| + (2) |C0065[Cytosol]| + |C0148[Cytosol]| + |C0004[Cytosol]|
     => |C0003[Cytosol]| + |C3668[Cytosol]|'
 - id: IR03020
   name: 1-Hydroxy-2-naphthoate + NADH + H+ + Oxygen &gt;=&lt;Naphthalene-1,2-diol
     + CO2 + NAD+ + H2O
+  genes: PP3944
   equation: '|C0007[Cytosol]| + |C0065[Cytosol]| + |C2015[Cytosol]| + |C0004[Cytosol]|
     => |C0003[Cytosol]| + |C1904[Cytosol]| + |C0011[Cytosol]| + |C0001[Cytosol]|'
 - id: IR03021
   name: 'CTP: 2-C-Methyl-D-erythritol 4-phosphate cytidylyltransferase'
+  genes: PP1614
   equation: '|C0051[Cytosol]| + |C0065[Cytosol]| + |C8607[Cytosol]| => |C0012[Cytosol]|
     + |C8608[Cytosol]|'
 - id: IR03022
   name: 'ATP: 4-(Cytidine 5''-diphospho)-2-C-methyl-D-erythritol2-phosphotransferase'
+  genes: PP0723
   equation: '|C8608[Cytosol]| + |C0002[Cytosol]| => |C0065[Cytosol]| + |C8609[Cytosol]|
     + |C0008[Cytosol]|'
 - id: IR03023
   name: 1-Deoxy-D-xylulose-5-phosphate pyruvate-lyase (carboxylating)
+  genes: PP0527
   equation: '|C0100[Cytosol]| + |C0020[Cytosol]| + |C0065[Cytosol]| => |C8610[Cytosol]|
     + |C0011[Cytosol]|'
 - id: IR03024
   name: 2-Phospho-4-(cytidine 5'-diphospho)-2-C-methyl-D-erythritolCMP-lyase (cyclizing)
+  genes: PP1618
   equation: '|C8609[Cytosol]| => |C8622[Cytosol]| + |C0046[Cytosol]|'
 - id: IR03030
   name: ATP + D-Glycero-D-manno-heptose 1-phosphate &gt;=&lt; Pyrophosphate +ADP-D-glycero-D-manno-heptose
+  genes: PP4934
   equation: '|C5073[Cytosol]| + |C0002[Cytosol]| + |C0065[Cytosol]| => |C0012[Cytosol]|
     + |C3728[Cytosol]|'
 - id: IR03031
   name: Sedoheptulose 7-phosphate &gt;=&lt; D-Glycero-D-manno-heptose 7-phosphate
+  genes: PP1323
   equation: '|C0230[Cytosol]| => |C5071[Cytosol]|'
 - id: IR03032
   name: ATP + D-Glycero-D-manno-heptose 7-phosphate &gt;=&lt; ADP +D-Glycero-D-manno-heptose
     1,7-bisphosphate
+  genes: PP4934
   equation: '|C0002[Cytosol]| + |C5071[Cytosol]| => |C0065[Cytosol]| + |C0008[Cytosol]|
     + |C8637[Cytosol]|'
 - id: IR03033
@@ -1116,34 +1409,43 @@
 - id: IR03226
   name: 2-C-Methyl-D-erythritol 2,4-cyclodiphosphate + 2 H+ &gt;=&lt;1-Hydroxy-2-methyl-2-butenyl
     4-diphosphate + H2O
+  genes: PP0853
   equation: '|C8622[Cytosol]| + |C0065[Cytosol]| => |C8935[Cytosol]| + |C0001[Cytosol]|'
 - id: IR03227
   name: 1-Hydroxy-2-methyl-2-butenyl 4-diphosphate + 2 H+ &gt;=&lt;Isopentenyl diphosphate
     + H2O
+  genes: PP0606
   equation: '|C0065[Cytosol]| + |C8935[Cytosol]| + |C0004[Cytosol]| => |C0003[Cytosol]|
     + |C0111[Cytosol]| + |C0001[Cytosol]|'
 - id: IR03345
   name: Aldehyde:NAD+ oxidoreductase
+  genes: PP5278 or PP2589 or PP2680 or PP5258 or PP3463 or PP0545 or PP2694
   equation: '|C1665[Cytosol]| + |C0003[Cytosol]| + |C0001[Cytosol]| => |C9040[Cytosol]|
     + |C0065[Cytosol]| + |C0004[Cytosol]|'
 - id: IR03386
   name: cis-2-Methyl-5-isopropylhexa-2,5-dienoyl-CoA hydro-lyase
+  genes: PP2136 or PP3283 or PP3491 or PP2217 or PP4066 or PP1412 or PP1845 or PP4030
   equation: '|C9062[Cytosol]| + |C0001[Cytosol]| => |C9063[Cytosol]|'
 - id: IR03387
   name: trans-2-Methyl-5-isopropylhexa-2,5-dienoyl-CoA hydro-lyase
+  genes: PP2136 or PP3283 or PP3491 or PP2217 or PP4066 or PP1412 or PP1845 or PP4030
   equation: '|C9061[Cytosol]| + |C0001[Cytosol]| => |C9063[Cytosol]|'
 - id: IR03420
   name: di-trans,poly-cis-Decaprenyl-diphosphate:isopentenyl-diphosphateundecaprenylcistransferase
+  genes: PP1595
   equation: '|C8534[Cytosol]| + (7) |C0111[Cytosol]| => (7) |C0012[Cytosol]| + |C2753[Cytosol]|'
 - id: IR03486
   name: dTDPglucose &gt;=&lt; 4,6-Dideoxy-4-oxo-dTDP-D-glucose + H2O
+  genes: PP1785
   equation: '|C0617[Cytosol]| => |C9024[Cytosol]| + |C0001[Cytosol]|'
 - id: IR03493
   name: Adenosylcobyric acid:(R)-1-aminopropan-2-yl phosphate ligase
+  genes: PP1675
   equation: '|C3812[Cytosol]| + |C0002[Cytosol]| + |C2517[Cytosol]| => |C3814[Cytosol]|
     + |C0009[Cytosol]| + (5) |C0065[Cytosol]| + |C0008[Cytosol]|'
 - id: IR03497
   name: ATP:pyridoxal 5'-phosphotransferase
+  genes: PP5357
   equation: '|C0002[Cytosol]| + |C0207[Cytosol]| => |C0065[Cytosol]| + |C0008[Cytosol]|
     + |C0016[Cytosol]|'
 - id: IR03500
@@ -1151,151 +1453,194 @@
   equation: '|C0017[Cytosol]| + |C0065[Cytosol]| => |C0825[Cytosol]| + |C0011[Cytosol]|'
 - id: IR03504
   name: AMP phosphoribohydrolase
+  genes: PP4779
   equation: '|C0018[Cytosol]| + |C0001[Cytosol]| => |C0125[Cytosol]| + |C0099[Cytosol]|'
 - id: IR03505
   name: Adenosine 5'-monophosphate phosphohydrolase
+  genes: PP1414 or PP1620 or PP2531
   equation: '|C0018[Cytosol]| + |C0001[Cytosol]| => |C0009[Cytosol]| + |C0175[Cytosol]|'
 - id: IR03510
   name: Adenosine 3',5'-bisphosphate 3'(2')-phosphohydrolase
   equation: '|C0045[Cytosol]| + |C0001[Cytosol]| => |C0018[Cytosol]| + |C0009[Cytosol]|'
 - id: IR03518
   name: (S)-Lactate:ferricytochrome-c 2-oxidoreductase
+  genes: PP4736
   equation: (2) |C0107[Cytosol]| + |C0154[Cytosol]| => |C0020[Cytosol]| + (2) |C0065[Cytosol]|
     + (2) |C0108[Cytosol]|
 - id: IR03520
   name: ATP:pyruvate,water phosphotransferase
+  genes: PP2082
   equation: '|C0020[Cytosol]| + |C0002[Cytosol]| + |C0001[Cytosol]| => |C0018[Cytosol]|
     + |C0009[Cytosol]| + (2) |C0065[Cytosol]| + |C0059[Cytosol]|'
 - id: IR03527
   name: Pyruvate:NAD+ 2-oxidoreductase (CoA-acetylating)
+  genes: PP4403 or PP4187 or PP5366 or (PP0554 and PP0339 and PP0555) or PP0338 or
+    PP4404 or PP0553
   equation: '|C0003[Cytosol]| + |C0020[Cytosol]| + |C0010[Cytosol]| => |C0022[Cytosol]|
     + |C0004[Cytosol]| + |C0011[Cytosol]|'
 - id: IR03534
   name: (S)-Malate:NADP+ oxidoreductase(oxaloacetate-decarboxylating)
+  genes: PP5346 or PP5085 or PP1505
   equation: '|C0006[Cytosol]| + |C0127[Cytosol]| => |C0020[Cytosol]| + |C0005[Cytosol]|
     + |C0011[Cytosol]|'
 - id: IR03535
   name: Oxaloacetate carboxy-lyase
+  genes: PP5346 or PP1505
   equation: '|C0032[Cytosol]| + |C0065[Cytosol]| => |C0020[Cytosol]| + |C0011[Cytosol]|'
 - id: IR03538
   name: L-serine ammonia-lyase
+  genes: PP0987 or PP3144 or PP3191 or PP4430 or PP5149 or PP0297 or PP3446
   equation: '|C0053[Cytosol]| => |C0020[Cytosol]| + |C0957[Cytosol]|'
 - id: IR03552
   name: ATP:L-glutamate 5-phosphotransferase
+  genes: PP0691
   equation: '|C0002[Cytosol]| + |C0023[Cytosol]| => |C0008[Cytosol]| + |C2066[Cytosol]|'
 - id: IR03559
   name: GTP 7,8-8,9-dihydrolase
+  genes: PP1823 or PP2512
   equation: (4) |C0065[Cytosol]| + |C0001[Cytosol]| + |C0038[Cytosol]| => |C3448[Cytosol]|
 - id: IR03560
   name: ATP:GTP 3'-pyrophosphotransferase
+  genes: PP1656
   equation: '|C0002[Cytosol]| + |C0038[Cytosol]| => |C0018[Cytosol]| + |C0065[Cytosol]|
     + |C2711[Cytosol]|'
 - id: IR03564
   name: GTP pyrophosphate-lyase (cyclizing)
+  genes: PP5222
   equation: '|C0065[Cytosol]| + |C0038[Cytosol]| => |C0012[Cytosol]| + |C0688[Cytosol]|'
 - id: IR03569
   name: L-Lysine:oxygen 2-oxidoreductase (decarboxylating)
+  genes: PP0383
   equation: '|C0007[Cytosol]| + |C0039[Cytosol]| => |C0065[Cytosol]| + |C0011[Cytosol]|
     + |C0001[Cytosol]| + |C0718[Cytosol]|'
 - id: IR03570
   name: meso-2,6-Diaminoheptanedioate carboxy-lyase
+  genes: PP2077 or PP5227
   equation: '|C0507[Cytosol]| + |C0065[Cytosol]| => |C0039[Cytosol]| + |C0011[Cytosol]|'
 - id: IR03576
   name: Glutathione + H2O &gt;=&lt; Cys-Gly + L-Glutamate
+  genes: PP4659 or PP3535
   equation: '|C0042[Cytosol]| + |C0001[Cytosol]| => |C0999[Cytosol]| + |C0023[Cytosol]|'
 - id: IR03577
   name: gamma-L-Glutamyl-L-cysteine:glycine ligase (ADP-forming)
+  genes: PP4993
   equation: '|C0002[Cytosol]| + |C0500[Cytosol]| + |C0033[Cytosol]| => |C0009[Cytosol]|
     + |C0065[Cytosol]| + |C0008[Cytosol]| + |C0042[Cytosol]|'
 - id: IR03583
   name: Inosine 5'-monophosphate phosphohydrolase
+  genes: PP1414 or PP1620 or PP2531
   equation: '|C0112[Cytosol]| + |C0001[Cytosol]| => |C0009[Cytosol]| + |C0239[Cytosol]|'
 - id: IR03586
   name: IMP:NAD+ oxidoreductase
+  genes: PP1031
   equation: '|C0003[Cytosol]| + |C0112[Cytosol]| + |C0001[Cytosol]| => |C0065[Cytosol]|
     + |C0004[Cytosol]| + |C0491[Cytosol]|'
 - id: IR03590
   name: IMP:L-aspartate ligase (GDP-forming)
+  genes: PP4889
   equation: '|C0112[Cytosol]| + |C0041[Cytosol]| + |C0038[Cytosol]| => |C0009[Cytosol]|
     + (2) |C0065[Cytosol]| + |C0031[Cytosol]| + |C2339[Cytosol]|'
 - id: IR03599
   name: Methanol + PQQ &gt;=&lt; PQQH2 + Formaldehyde
+  genes: PP2674
   equation: '|C0114[Cytosol]| + |C0095[Cytosol]| => |C0054[Cytosol]| + |C0968[Cytosol]|'
 - id: IR03607
   name: Putrescine:2-oxoglutarate aminotransferase
+  genes: PP4223
   equation: '|C0116[Cytosol]| + |C0024[Cytosol]| => |C0429[Cytosol]| + |C0023[Cytosol]|'
 - id: IR03609
   name: Agmatine amidinohydrolase
+  genes: PP2196 or PP4523
   equation: '|C0147[Cytosol]| + |C0001[Cytosol]| => |C0071[Cytosol]| + |C0116[Cytosol]|'
 - id: IR03610
   name: L-Histidinol:NAD+ oxidoreductase
+  genes: PP0966
   equation: (2) |C0003[Cytosol]| + |C0633[Cytosol]| + |C0001[Cytosol]| => (3) |C0065[Cytosol]|
     + (2) |C0004[Cytosol]| + |C0117[Cytosol]|
 - id: IR03617
   name: L-Histidine carboxy-lyase
+  genes: PP2552
   equation: '|C0117[Cytosol]| => |C0307[Cytosol]| + |C0011[Cytosol]|'
 - id: IR03618
   name: L-Histidine ammonia-lyase
+  genes: PP5032
   equation: '|C0117[Cytosol]| => |C0571[Cytosol]| + |C0957[Cytosol]|'
 - id: IR03622
   name: O-Acetyl-L-homoserine acetate-lyase (adding methanethiol)
+  genes: PP0659 or PP2528
   equation: '|C0231[Cytosol]| + |C0779[Cytosol]| => |C0029[Cytosol]| + |C0132[Cytosol]|
     + |C0065[Cytosol]|'
 - id: IR03632
   name: 4-Hydroxybenzoate,NADH:oxygen oxidoreductase (3-hydroxylating)
+  genes: PP3537
   equation: '|C0007[Cytosol]| + |C0065[Cytosol]| + |C0005[Cytosol]| + |C0133[Cytosol]|
     => |C0189[Cytosol]| + |C0006[Cytosol]| + |C0001[Cytosol]|'
 - id: IR03645
   name: Hydroxypyruvate ketol-isomerase
+  genes: PP4298
   equation: '|C0141[Cytosol]| => |C0830[Cytosol]|'
 - id: IR03646
   name: ATP:carbamate phosphotransferase
+  genes: PP0999
   equation: '|C0002[Cytosol]| + |C1087[Cytosol]| => |C0142[Cytosol]| + |C0065[Cytosol]|
     + |C0008[Cytosol]|'
 - id: IR03648
   name: Carbamoyl-phosphate:L-aspartate carbamoyltransferase
+  genes: PP4998
   equation: '|C0142[Cytosol]| + |C0041[Cytosol]| => |C0009[Cytosol]| + |C0065[Cytosol]|
     + |C0338[Cytosol]|'
 - id: IR03651
   name: Methylthioadenosine methylthioribohydrolase
+  genes: PP3254
   equation: '|C0143[Cytosol]| + |C0001[Cytosol]| => |C0125[Cytosol]| + |C1953[Cytosol]|'
 - id: IR03667
   name: ATP:cob(I)alamin Co-beta-adenosyltransferase
+  genes: PP1672
   equation: '|C0002[Cytosol]| + |C0627[Cytosol]| + |C0001[Cytosol]| => |C0012[Cytosol]|
     + |C0009[Cytosol]| + |C0161[Cytosol]|'
 - id: IR03677
   name: ATP:(R)-glycerate 3-phosphotransferase
+  genes: PP3178
   equation: '|C0215[Cytosol]| + |C0002[Cytosol]| => |C0065[Cytosol]| + |C0008[Cytosol]|
     + |C0163[Cytosol]|'
 - id: IR03690
   name: 6-Phospho-D-gluconate:NADP+ 2-oxidoreductase (decarboxylating)
+  genes: PP4043
   equation: '|C0278[Cytosol]| + |C0006[Cytosol]| => |C0165[Cytosol]| + |C0005[Cytosol]|
     + |C0011[Cytosol]|'
 - id: IR03694
   name: D-Altronate hydro-lyase
+  genes: PP2834
   equation: '|C0598[Cytosol]| => |C0169[Cytosol]| + |C0001[Cytosol]|'
 - id: IR03695
   name: ATP:2-dehydro-3-deoxy-D-gluconate 6-phosphotransferase
+  genes: PP3378
   equation: '|C0002[Cytosol]| + |C0169[Cytosol]| => |C0065[Cytosol]| + |C2682[Cytosol]|
     + |C0008[Cytosol]|'
 - id: IR03708
   name: Adenosine aminohydrolase
+  genes: PP0591
   equation: '|C0065[Cytosol]| + |C0175[Cytosol]| + |C0001[Cytosol]| => |C0239[Cytosol]|
     + |C0957[Cytosol]|'
 - id: IR03716
   name: Thymidylate 5'-phosphohydrolase
+  genes: PP1414 or PP1620 or PP2531
   equation: '|C0292[Cytosol]| + |C0001[Cytosol]| => |C0009[Cytosol]| + |C0177[Cytosol]|'
 - id: IR03724
   name: D-Glutamine amidohydrolase
+  genes: PP2453
   equation: '|C0600[Cytosol]| + |C0001[Cytosol]| => |C0179[Cytosol]| + |C0957[Cytosol]|'
 - id: IR03761
   name: Protocatechuate:oxygen 3,4-oxidoreductase (decyclizing)
+  genes: PP4656 and PP4655
   equation: '|C0189[Cytosol]| + |C0007[Cytosol]| => (2) |C0065[Cytosol]| + |C0842[Cytosol]|'
 - id: IR03762
   name: Protocatechuate:oxygen 4,5-oxidoreductase (decyclizing)
+  genes: PP2518
   equation: '|C0189[Cytosol]| + |C0007[Cytosol]| + |C0065[Cytosol]| => |C2705[Cytosol]|'
 - id: IR03777
   name: 4-Methyl-2-oxopentanoate:NAD+ oxidoreductase(CoA-mehtylpropanoylating)
+  genes: PP4404 and PP4401 and PP4402 and PP4403
   equation: '|C0192[Cytosol]| + |C0003[Cytosol]| + |C0010[Cytosol]| => |C1856[Cytosol]|
     + |C0004[Cytosol]| + |C0011[Cytosol]|'
 - id: IR03784
@@ -1304,20 +1649,24 @@
     + |C0143[Cytosol]|'
 - id: IR03796
   name: 2-Oxoadipate:lipoamde 2-oxidoreductase(decarboxylating andacceptor-succinylating)
+  genes: PP4189
   equation: '|C0003[Cytosol]| + |C0263[Cytosol]| + |C0010[Cytosol]| => (2) |C0065[Cytosol]|
     + |C0409[Cytosol]| + |C0011[Cytosol]| + |C0004[Cytosol]|'
 - id: IR03797
   name: L-Citrulline:L-aspartate ligase (AMP-forming)
+  genes: PP1088
   equation: '|C0002[Cytosol]| + |C0268[Cytosol]| + |C0041[Cytosol]| => |C0012[Cytosol]|
     + |C0018[Cytosol]| + |C0065[Cytosol]| + |C2126[Cytosol]|'
 - id: IR03809
   name: 2'-Deoxyguanosine 5'-monophosphate phosphohydrolase
+  genes: PP1414 or PP1620 or PP2531
   equation: '|C0290[Cytosol]| + |C0001[Cytosol]| => |C0009[Cytosol]| + |C0271[Cytosol]|'
 - id: IR03821
   name: D-Galacturonate ketol-isomerase
   equation: '|C0274[Cytosol]| => |C0432[Cytosol]|'
 - id: IR03823
   name: L-Aspartate-4-semialdehyde hydro-lyase (adding pyruvate andcyclizing)
+  genes: PP1257 or PP2036 or PP1237
   equation: '|C0341[Cytosol]| + |C0020[Cytosol]| => |C2093[Cytosol]| + |C0065[Cytosol]|
     + (2) |C0001[Cytosol]|'
 - id: IR03879
@@ -1329,41 +1678,51 @@
     + |C0008[Cytosol]|'
 - id: IR03952
   name: Lauroyl-CoA:(acceptor) 2,3-oxidoreductase
+  genes: PP2437 or PP2793 or PP1893
   equation: '|C1245[Cytosol]| + |C0015[Cytosol]| => |C0964[Cytosol]| + |C2029[Cytosol]|'
 - id: IR03959
   name: (5-Glutamyl)-peptide:amino-acid 5-glutamyltransferase
+  genes: PP4659 or PP3535
   equation: '|C1444[Cytosol]| + |C0001[Cytosol]| => |C3470[Cytosol]| + |C0245[Cytosol]|'
 - id: IR03961
   name: (S)-Methylmalonate semialdehyde:NAD+ oxidoreductase
+  genes: PP5278 or PP2589 or PP2680 or PP5258 or PP3463 or PP0545 or PP2694
   equation: '|C0003[Cytosol]| + |C3500[Cytosol]| + |C0001[Cytosol]| => |C1447[Cytosol]|
     + |C0065[Cytosol]| + |C0004[Cytosol]|'
 - id: IR03964
   name: Mg-protoporphyrin IX magnesium-lyase
+  genes: PP3505 and PP3506
   equation: '|C0002[Cytosol]| + |C1455[Cytosol]| + |C0248[Cytosol]| + |C0001[Cytosol]|
     => |C0009[Cytosol]| + |C0065[Cytosol]| + |C2190[Cytosol]| + |C0008[Cytosol]|'
 - id: IR03994
   name: Imidazole acetaldehyde:NAD+ oxidoreductase
+  genes: PP5278 or PP2589 or PP2680 or PP5258 or PP3463 or PP0545 or PP2694
   equation: '|C0003[Cytosol]| + |C2987[Cytosol]| + |C0001[Cytosol]| => |C0065[Cytosol]|
     + |C1806[Cytosol]| + |C0004[Cytosol]|'
 - id: IR04010
   name: 5'-Phosphoribosylformylglycinamide:L-glutamine amido-ligase(ADP-forming)
+  genes: PP1037
   equation: '|C0002[Cytosol]| + |C2646[Cytosol]| + |C0052[Cytosol]| + |C0001[Cytosol]|
     => |C2793[Cytosol]| + |C0009[Cytosol]| + |C0065[Cytosol]| + |C0008[Cytosol]|
     + |C0023[Cytosol]|'
 - id: IR04028
   name: 3alpha,7alpha-Dihydroxy-5beta-cholestan-26-al:NAD+ oxidoreductase
+  genes: PP5278 or PP2589 or PP2680 or PP5258 or PP3463 or PP0545 or PP2694
   equation: '|C0003[Cytosol]| + |C3160[Cytosol]| + |C0001[Cytosol]| => |C2742[Cytosol]|
     + |C0065[Cytosol]| + |C0004[Cytosol]|'
 - id: IR04030
   name: ATP:4-amino-2-methyl-5-phosphomethylpyrimidine phosphotransferase
+  genes: PP4782
   equation: '|C0002[Cytosol]| + |C2744[Cytosol]| => |C2858[Cytosol]| + |C0008[Cytosol]|'
 - id: IR04043
   name: 3alpha,7alpha-Dihydroxy-5beta-cholestanoyl-CoA + FAD &gt;=&lt;3alpha,7alpha-Dihydroxy-5beta-cholest-24-enoyl-CoA
     + FADH2
+  genes: PP3492 or PP2216 or PP0370 or PP0368 or PP3725
   equation: '|C0015[Cytosol]| + |C2797[Cytosol]| => |C0964[Cytosol]| + |C3162[Cytosol]|'
 - id: IR04044
   name: UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminoheptanedioate:D-alanyl-D-alanine
     ligase(ADP-forming)
+  genes: PP1333
   equation: '|C0002[Cytosol]| + |C0721[Cytosol]| + |C2923[Cytosol]| => |C0009[Cytosol]|
     + |C0065[Cytosol]| + |C2927[Cytosol]| + |C0008[Cytosol]|'
 - id: IR04050
@@ -1374,52 +1733,66 @@
 - id: IR04052
   name: N-(5'-Phospho-D-ribosylformimino)-5-amino-1-(5''-phospho-D-ribosyl)-4-imidazolecarboxamide
     ketol-isomerase
+  genes: PP0292
   equation: '|C2933[Cytosol]| => |C2941[Cytosol]|'
 - id: IR04056
   name: (S)-2-Aceto-2-hydroxybutanoate pyruvate-lyase (carboxylating)
+  genes: (PP4679 and PP4680) or PP1157 or PP3365 or PP1394
   equation: '|C0092[Cytosol]| + |C2983[Cytosol]| => |C0055[Cytosol]| + |C3501[Cytosol]|'
 - id: IR04100
   name: Decanoyl-CoA:(acceptor) 2,3-oxidoreductase
+  genes: PP2437 or PP2793 or PP1893
   equation: '|C0015[Cytosol]| + |C3059[Cytosol]| => |C0964[Cytosol]| + |C3060[Cytosol]|'
 - id: IR04106
   name: Selenomethionine methanethiol-lyase (deaminating)
+  genes: PP1308
   equation: '|C0001[Cytosol]| + |C3092[Cytosol]| => |C3335[Cytosol]| + |C0092[Cytosol]|
     + |C0957[Cytosol]|'
 - id: IR04107
   name: ATP:L-methione S-adenosyltransferase
+  genes: PP4967
   equation: '|C0002[Cytosol]| + |C0065[Cytosol]| + |C0001[Cytosol]| + |C3092[Cytosol]|
     => |C0012[Cytosol]| + |C0009[Cytosol]| + |C3326[Cytosol]|'
 - id: IR04157
   name: 5-Hydroxyindoleacetaldehyde:NAD+ oxidoreductase
+  genes: PP5278 or PP2589 or PP2680 or PP5258 or PP3463 or PP0545 or PP2694
   equation: '|C0003[Cytosol]| + |C3279[Cytosol]| + |C0001[Cytosol]| => |C3280[Cytosol]|
     + |C0065[Cytosol]| + |C0004[Cytosol]|'
 - id: IR04162
   name: Selenocystathionine Lysteine-lyase (deaminating)
+  genes: PP4594
   equation: '|C3332[Cytosol]| + |C0001[Cytosol]| => |C0092[Cytosol]| + |C0957[Cytosol]|
     + |C3323[Cytosol]|'
 - id: IR04164
   name: 3-Octaprenyl-4-hydroxybenzoate &gt;=&lt; 2-Octaprenylphenol + CO2
+  genes: PP5213 or PP0548
   equation: '|C3377[Cytosol]| + |C0065[Cytosol]| => |C0011[Cytosol]| + |C3378[Cytosol]|'
 - id: IR04165
   name: beta-D-Glucosyl-2-coumarinate glucohydrolase
+  genes: PP1403
   equation: '|C3403[Cytosol]| + |C0001[Cytosol]| => |C3402[Cytosol]| + |C0027[Cytosol]|'
 - id: IR04167
   name: Formamidopyrimidine nucleoside triphosphate 7,8-8,9-dihydrolase
+  genes: PP1823 or PP2512
   equation: '|C3448[Cytosol]| + |C0001[Cytosol]| => |C0047[Cytosol]| + |C0065[Cytosol]|
     + |C3449[Cytosol]|'
 - id: IR04169
   name: GTP 7,8-8,9-dihydrolase
+  genes: PP1823 or PP2512
   equation: '|C3449[Cytosol]| => |C3576[Cytosol]|'
 - id: IR04171
   name: N4-Acetylaminobutanal:NAD+ oxidoreductase
+  genes: PP5278 or PP2589 or PP2680 or PP5258 or PP3463 or PP0545 or PP2694
   equation: '|C0003[Cytosol]| + |C3459[Cytosol]| + |C0001[Cytosol]| => |C1863[Cytosol]|
     + |C0065[Cytosol]| + |C0004[Cytosol]|'
 - id: IR04172
   name: L-erythro-4-Hydroxyglutamate:NAD+ oxidoreductase
+  genes: PP4947
   equation: '|C3467[Cytosol]| + |C0065[Cytosol]| + |C0004[Cytosol]| => |C0003[Cytosol]|
     + |C3460[Cytosol]| + |C0001[Cytosol]|'
 - id: IR04173
   name: L-erythro-4-Hydroxyglutamate:2-oxoglutarate aminotransferase
+  genes: PP3721 or PP0858 or PP4692 or PP1872
   equation: '|C3467[Cytosol]| + |C0065[Cytosol]| + |C0024[Cytosol]| => |C3466[Cytosol]|
     + |C0023[Cytosol]|'
 - id: IR04182
@@ -1427,6 +1800,7 @@
   equation: '|C3498[Cytosol]| + |C0001[Cytosol]| => |C3499[Cytosol]| + |C0010[Cytosol]|'
 - id: IR04184
   name: (R)-2,3-Dihydroxy-3-methylpentanoate hydro-lyase
+  genes: PP5128
   equation: '|C3502[Cytosol]| => |C3503[Cytosol]| + |C0001[Cytosol]|'
 - id: IR04238
   name: MDRPD
@@ -1443,13 +1817,16 @@
   equation: '|C3429[Cytosol]| => |C2202[Cytosol]| + |C0065[Cytosol]| + |C9310[Cytosol]|'
 - id: IR04256
   name: UDP-N-acetylglucosamine acyltransferase
+  genes: PP1603
   equation: '|C0037[Cytosol]| + |C9257[Cytosol]| => |C2850[Cytosol]| + |C9262[Cytosol]|'
 - id: IR04257
   name: U23GAAT
+  genes: PP1601
   equation: '|C3509[Cytosol]| + |C9257[Cytosol]| => |C9262[Cytosol]| + |C2801[Cytosol]|
     + |C0065[Cytosol]|'
 - id: IR04258
   name: Endotoxin Synthesis (lauroyl transferase)
+  genes: PP1735 or PP0063
   equation: '|C9275[Cytosol]| + |C3511[Cytosol]| => |C3648[Cytosol]| + |C9262[Cytosol]|'
 - id: IR04261
   name: EDTXS2
@@ -1461,188 +1838,238 @@
     + (10) |C0065[Cytosol]| + (3) |C0046[Cytosol]| + (2) |C0094[Cytosol]| + (3) |C0008[Cytosol]|
 - id: IR04284
   name: Glutamyl-tRNA synthetase
+  genes: PP4694 or PP1977
   equation: '|C9320[Cytosol]| + |C0002[Cytosol]| + |C0023[Cytosol]| => |C0012[Cytosol]|
     + |C0018[Cytosol]| + |C9282[Cytosol]|'
 - id: IR04285
   name: glutamyl-tRNA reductase
+  genes: PP0732
   equation: '|C9282[Cytosol]| + |C0065[Cytosol]| + |C0005[Cytosol]| => |C9320[Cytosol]|
     + |C0006[Cytosol]| + |C2309[Cytosol]|'
 - id: IR04287
   name: uroporphyrinogen methyltransferase
+  genes: PP0188 or PP3999 or PP2090
   equation: (2) |C0017[Cytosol]| + |C0763[Cytosol]| => |C9316[Cytosol]| + |C0065[Cytosol]|
     + (2) |C0019[Cytosol]|
 - id: IR04289
   name: S-adenosylmethione:2-demethylmenaquinone methyltransferase
+  genes: PP5011
   equation: '|C0017[Cytosol]| + |C9251[Cytosol]| => |C0065[Cytosol]| + |C9301[Cytosol]|
     + |C0019[Cytosol]|'
 - id: IR04295
   name: GTP cyclohydrolase II (25drapp)
+  genes: PP3813 or PP0522 or PP0516
   equation: (3) |C0001[Cytosol]| + |C0038[Cytosol]| => |C0047[Cytosol]| + |C0012[Cytosol]|
     + |C0941[Cytosol]| + (2) |C0065[Cytosol]|
 - id: IR04297
   name: DHPPDA2
+  genes: PP0514
   equation: '|C0941[Cytosol]| + |C0065[Cytosol]| + |C0001[Cytosol]| => |C0916[Cytosol]|
     + |C0957[Cytosol]|'
 - id: IR04298
   name: riboflavin synthase
+  genes: PP0517
   equation: '|C9274[Cytosol]| + |C2847[Cytosol]| => |C0009[Cytosol]| + |C2625[Cytosol]|
     + (2) |C0001[Cytosol]|'
 - id: IR04300
   name: 3-Dimethylubiquinonol 3-methyltransferase
+  genes: PP1765
   equation: '|C9254[Cytosol]| + |C0017[Cytosol]| => |C0065[Cytosol]| + |C0019[Cytosol]|
     + |C9315[Cytosol]|'
 - id: IR04302
   name: phosphoadenylyl-sulfate reductase (thioredoxin)
+  genes: PP2328
   equation: '|C9319[Cytosol]| + |C0044[Cytosol]| => |C0079[Cytosol]| + |C0045[Cytosol]|
     + |C9318[Cytosol]| + (2) |C0065[Cytosol]|'
 - id: IR04310
   name: glycogen synthase (ADPGlc)
+  genes: PP4050
   equation: '|C0383[Cytosol]| => |C0150[Cytosol]| + |C0065[Cytosol]| + |C0008[Cytosol]|'
 - id: IR04311
   name: glycogen phosphorylase
+  genes: PP5041
   equation: '|C0150[Cytosol]| + |C0009[Cytosol]| => |C0087[Cytosol]|'
 - id: IR04315
   name: Acyl-[acyl-carrier-protein]:malonyl-[acyl-carrier-protein] C-acyltransferase
     (decarboxylating)
+  genes: PP1916 or PP4545 or PP2795 or PP3553 or PP3303 or PP4379 or PP4175
   equation: '|C0065[Cytosol]| + |C9297[Cytosol]| + |C9261[Cytosol]| => |C9262[Cytosol]|
     + |C0011[Cytosol]| + |C9263[Cytosol]|'
 - id: IR04318
   name: dodecanoyl-[acyl-carrier-protein]:malonyl-[acyl-carrier-protein] C-acyltransferase
     (decarboxylating)
+  genes: PP1916 or PP4545 or PP2795 or PP3553 or PP3303 or PP4379 or PP4175
   equation: '|C9275[Cytosol]| + (2) |C0065[Cytosol]| + |C0005[Cytosol]| + |C9297[Cytosol]|
     => |C9262[Cytosol]| + |C9257[Cytosol]| + |C0011[Cytosol]| + |C0006[Cytosol]|'
 - id: IR04322
   name: ACOATA
+  genes: PP1916 or PP4545 or PP2795 or PP3553 or PP3303 or PP4379 or PP4175
   equation: '|C0022[Cytosol]| + |C9262[Cytosol]| => |C0010[Cytosol]| + |C9261[Cytosol]|'
 - id: IR04340
   name: RNDR1
+  genes: PP1179 and PP1177
   equation: '|C9319[Cytosol]| + |C0008[Cytosol]| => |C9318[Cytosol]| + |C0170[Cytosol]|
     + |C0001[Cytosol]|'
 - id: IR04341
   name: RNDR2
+  genes: PP1179 and PP1177
   equation: '|C9319[Cytosol]| + |C0031[Cytosol]| => |C9318[Cytosol]| + |C0289[Cytosol]|
     + |C0001[Cytosol]|'
 - id: IR04342
   name: RNDR4
+  genes: PP1179 and PP1177
   equation: '|C0014[Cytosol]| + |C9319[Cytosol]| => |C9318[Cytosol]| + |C0960[Cytosol]|
     + |C0001[Cytosol]|'
 - id: IR04343
   name: RNDR3
+  genes: PP1179 and PP1177
   equation: '|C9319[Cytosol]| + |C0094[Cytosol]| => |C0523[Cytosol]| + |C9318[Cytosol]|
     + |C0001[Cytosol]|'
 - id: IR04362
   name: G3PD5
+  genes: PP1073
   equation: '|C9314[Cytosol]| + |C0078[Cytosol]| => |C0093[Cytosol]| + |C9315[Cytosol]|'
 - id: IR04363
   name: NADH5
+  genes: PP4124 and PP4121 and PP4127 and PP4123 and PP4129 and PP4119 and PP4128
+    and PP4126 and PP4130 and PP4120 and PP4125 and PP4131 and PP4122
   equation: '|C9314[Cytosol]| + |C0065[Cytosol]| + |C0004[Cytosol]| => |C0003[Cytosol]|
     + |C9315[Cytosol]|'
 - id: IR04366
   name: NTRIR2x
+  genes: PP1706 and PP1705
   equation: (5) |C0065[Cytosol]| + |C0073[Cytosol]| + (3) |C0004[Cytosol]| => (3)
     |C0003[Cytosol]| + |C0957[Cytosol]| + (2) |C0001[Cytosol]|
 - id: IR04369
   name: TRDR
+  genes: PP0786
   equation: '|C9318[Cytosol]| + |C0065[Cytosol]| + |C0005[Cytosol]| => |C9319[Cytosol]|
     + |C0006[Cytosol]|'
 - id: IR04375
   name: CBMK
+  genes: PP0999
   equation: '|C0002[Cytosol]| + |C0957[Cytosol]| + |C0011[Cytosol]| => |C0142[Cytosol]|
     + (2) |C0065[Cytosol]| + |C0008[Cytosol]|'
 - id: IR04387
   name: 2-(alpha-Hydroxyethyl)thiamine diphosphate pyruvate-lyase(carboxylating)
     (R)
+  genes: (PP4679 and PP4680) or PP1157 or PP3365 or (PP0554 and PP0339 and PP0555)
+    or PP1394
   equation: '|C0020[Cytosol]| + |C0065[Cytosol]| + |C0055[Cytosol]| => |C2983[Cytosol]|
     + |C0011[Cytosol]|'
 - id: IR04458
   name: L-Glutamate:NADP+ oxidoreductase (transaminating) (R)
+  genes: (PP5076 and PP5075) or PP4037
   equation: '|C0065[Cytosol]| + |C0005[Cytosol]| + |C0024[Cytosol]| + |C0052[Cytosol]|
     => (2) |C0023[Cytosol]| + |C0006[Cytosol]|'
 - id: IR04473
   name: Carbonic acid hydro-lyase (R)
+  genes: PP0100
   equation: '|C0011[Cytosol]| + |C0001[Cytosol]| => |C0965[Cytosol]|'
 - id: IR04559
   name: Orthophosphate:oxaloacetate carboxyl-lyase (phosphorylating) (R)
+  genes: PP1505
   equation: '|C0059[Cytosol]| + |C0011[Cytosol]| + |C0001[Cytosol]| => |C0009[Cytosol]|
     + |C0032[Cytosol]| + |C0065[Cytosol]|'
 - id: IR04564
   name: Citrate oxaloacetate-lyase ((pro-3S)-CH2COO- -&lt; acetyl-CoA) (R)
+  genes: PP4194
   equation: '|C0022[Cytosol]| + |C0032[Cytosol]| + |C0001[Cytosol]| => |C0134[Cytosol]|
     + |C0065[Cytosol]| + |C0010[Cytosol]|'
 - id: IR04615
   name: L-Malate glyoxylate-lyase (CoA-acetylating) (R)
+  genes: PP0356
   equation: '|C0022[Cytosol]| + |C0040[Cytosol]| + |C0001[Cytosol]| => |C0065[Cytosol]|
     + |C0010[Cytosol]| + |C0127[Cytosol]|'
 - id: IR04850
   name: L-Cysteine L-homocysteine-lyase (deaminating) (R)
+  genes: PP4594
   equation: '|C0020[Cytosol]| + |C0231[Cytosol]| + |C0957[Cytosol]| => |C0082[Cytosol]|
     + |C0001[Cytosol]|'
 - id: IR04855
   name: NADH:nitrate oxidoreductase (R)
+  genes: PP1703
   equation: '|C0201[Cytosol]| + |C0065[Cytosol]| + |C0004[Cytosol]| => |C0003[Cytosol]|
     + |C0073[Cytosol]| + |C0001[Cytosol]|'
 - id: IR04882
   name: Succinyl-CoA:acetyl-CoA C-acyltransferase (R)
+  genes: PP3280 or PP2137 or PP1377 or PP0582
   equation: '|C1486[Cytosol]| + |C0010[Cytosol]| => |C0022[Cytosol]| + |C0076[Cytosol]|'
 - id: IR04931
   name: L-Cysteine:2-oxoglutarate aminotransferase (R)
+  genes: PP3721 or PP0858 or PP4692 or PP1872
   equation: '|C0697[Cytosol]| + |C0245[Cytosol]| => |C0082[Cytosol]| + (2) |C0065[Cytosol]|
     + |C0024[Cytosol]|'
 - id: IR04953
   name: Propanoyl-CoA + Orthophosphate &gt;=&lt; Propanoyl phosphate + CoA (R)
+  genes: PP0774
   equation: '|C1819[Cytosol]| + |C0010[Cytosol]| => |C0084[Cytosol]| + |C0009[Cytosol]|'
 - id: IR04959
   name: Propanoyl-CoA:acetyl-CoA C-acyltransferase (R)
+  genes: PP3280 or PP2137 or PP0582
   equation: '|C2097[Cytosol]| + |C0010[Cytosol]| => |C0084[Cytosol]| + |C0022[Cytosol]|'
 - id: IR04962
   name: 2-Methylcitrate oxaloacetate-lyase (R)
+  genes: PP2335
   equation: '|C0084[Cytosol]| + |C0032[Cytosol]| + |C0001[Cytosol]| => |C1480[Cytosol]|
     + |C0065[Cytosol]| + |C0010[Cytosol]|'
 - id: IR05024
   name: L-Cystathionine Lysteine-lyase (deaminating) (R)
+  genes: PP4594
   equation: '|C0082[Cytosol]| + |C0092[Cytosol]| + |C0957[Cytosol]| => |C1522[Cytosol]|
     + |C0001[Cytosol]|'
 - id: IR05071
   name: 5-Phosphoribosylamine:pyrophosphate phosphoribosyltransferase(glutamate-amidating)
     (R)
+  genes: PP2000
   equation: '|C0052[Cytosol]| + |C0101[Cytosol]| + |C0001[Cytosol]| => |C0012[Cytosol]|
     + |C1954[Cytosol]| + |C0023[Cytosol]|'
 - id: IR05143
   name: 3-Carboxy-3-hydroxy-4-methylpentanoate3-methyl-2-oxobutanoate-lyase (CoA-acetylating)
     (R)
+  genes: PP1025
   equation: '|C0022[Cytosol]| + |C0121[Cytosol]| + |C0001[Cytosol]| => |C0065[Cytosol]|
     + |C1626[Cytosol]| + |C0010[Cytosol]|'
 - id: IR05151
   name: 5-Methyltetrahydrofolate:NADP+ oxidoreductase
+  genes: PP4977
   equation: '|C0065[Cytosol]| + |C0122[Cytosol]| + |C0004[Cytosol]| => |C0003[Cytosol]|
     + |C0340[Cytosol]|'
 - id: IR05211
   name: 4-Fumarylacetoacetate fumarylhydrola (R)
+  genes: PP4620
   equation: '|C0770[Cytosol]| + |C0001[Cytosol]| => |C0138[Cytosol]| + |C0065[Cytosol]|
     + |C0104[Cytosol]|'
 - id: IR05334
   name: L-Aspartate:2-oxoglutarate aminotransferase (R)
+  genes: PP1972 or PP3590
   equation: '|C0211[Cytosol]| + |C0065[Cytosol]| + |C0041[Cytosol]| => |C0032[Cytosol]|
     + |C0606[Cytosol]|'
 - id: IR05396
   name: Sedoheptulose 1,7-bisphosphate D-glyceraldehyde-3-phosphate-lyase (R)
+  genes: PP4960
   equation: '|C0228[Cytosol]| + (4) |C0065[Cytosol]| + |C0093[Cytosol]| => |C0345[Cytosol]|'
 - id: IR05416
   name: dATP:pyruvate O2-phosphotransferase (R)
+  genes: PP1362 or PP4301
   equation: '|C0065[Cytosol]| + |C0059[Cytosol]| + |C0289[Cytosol]| => |C0020[Cytosol]|
     + |C0233[Cytosol]|'
 - id: IR05500
   name: D-Glucosamine 1-phosphate 1,6-phosphomutase (R)
+  genes: PP4716
   equation: '|C0282[Cytosol]| => |C3581[Cytosol]|'
 - id: IR05519
   name: (S)-3-Hydroxy-3-methylglutaryl-CoA hydro-lyase (R)
+  genes: PP4066
   equation: '|C2037[Cytosol]| + |C0001[Cytosol]| => |C0286[Cytosol]|'
 - id: IR05590
   name: L-Pipecolate:NAD+ 2-oxidoreductase (R)
+  genes: PP3591
   equation: '|C0065[Cytosol]| + |C0004[Cytosol]| + |C2499[Cytosol]| => |C0003[Cytosol]|
     + |C0318[Cytosol]|'
 - id: IR05641
   name: (S)-4-Amino-5-oxopentanoate 4,5-aminomutase (R)
+  genes: PP4784
   equation: '|C2309[Cytosol]| => |C0333[Cytosol]|'
 - id: IR05850
   name: D-Altronate:NAD+ 3-oxidoreductase (R)
@@ -1650,91 +2077,113 @@
     + |C0598[Cytosol]|'
 - id: IR06045
   name: 4,5-Dihydro-4-oxo-5-imidazolepropanoate hydro-lyase (R)
+  genes: PP5033
   equation: '|C0571[Cytosol]| + |C0001[Cytosol]| => |C2276[Cytosol]|'
 - id: IR06190
   name: UDP-N-acetylmuramate:NADP+ oxidoreductase (R)
+  genes: PP1904
   equation: '|C2789[Cytosol]| + |C0065[Cytosol]| + |C0005[Cytosol]| => |C0762[Cytosol]|
     + |C0006[Cytosol]|'
 - id: IR06237
   name: 2-Dehydro-3-deoxy-D-octonate-8-phosphateD-arabinose-5-phosphate-lyase (pyruvate-phosphorylating)
     (R)
+  genes: PP1611 or PP1807
   equation: '|C0059[Cytosol]| + |C0805[Cytosol]| + |C0001[Cytosol]| => |C2701[Cytosol]|
     + |C0009[Cytosol]|'
 - id: IR06257
   name: 5,10-Methylenetetrahydrofolate:glycine hydroxymethyltransferase (R)
+  genes: PP0671 or PP0322
   equation: '|C0908[Cytosol]| => |C0832[Cytosol]| + |C0033[Cytosol]|'
 - id: IR06307
   name: Nicotinate-nucleotide:pyrophosphate phosphoribosyltransferase(carboxylating)
     (R)
+  genes: PP0787
   equation: '|C2296[Cytosol]| + (2) |C0065[Cytosol]| + |C0101[Cytosol]| => |C0012[Cytosol]|
     + |C0859[Cytosol]| + |C0011[Cytosol]|'
 - id: IR06374
   name: 5-Amino-6-(5-phosphoribitylamino)uracil:NADP+ 1'-oxidoreductase (R)
+  genes: PP0514
   equation: '|C0065[Cytosol]| + |C0005[Cytosol]| + |C0916[Cytosol]| => |C2691[Cytosol]|
     + |C0006[Cytosol]|'
 - id: IR06463
   name: Hydrogen selenide:NADP+ oxidoreductase (R)
+  genes: PP0860 and PP2371
   equation: '|C3321[Cytosol]| + (10) |C0065[Cytosol]| + (3) |C0006[Cytosol]| => |C1062[Cytosol]|
     + (3) |C0005[Cytosol]| + (3) |C0001[Cytosol]|'
 - id: IR06714
   name: 2,3,4,5-Tetrahydrodipicolinate:NADP+ oxidoreductase (R)
+  genes: PP4725
   equation: '|C2093[Cytosol]| + |C0065[Cytosol]| + |C0005[Cytosol]| => |C2429[Cytosol]|
     + |C0006[Cytosol]|'
 - id: IR06719
   name: (2S,3S)-3-Hydroxy-2-methylbutanoyl-CoA hydro-liase (R)
+  genes: PP2136 or PP3283 or PP3491 or PP2217 or PP4066 or PP1412 or PP1845 or PP4030
   equation: '|C2098[Cytosol]| + |C0001[Cytosol]| => |C2660[Cytosol]|'
 - id: IR06768
   name: Pyridine-2,3-dicarboxylate + 2 H2O + Orthophosphate &gt;=&lt;Iminoaspartate
     + Glycerone phosphate (R)
+  genes: PP1231
   equation: '|C3404[Cytosol]| + |C0093[Cytosol]| => |C0009[Cytosol]| + |C2296[Cytosol]|
     + |C0065[Cytosol]| + (2) |C0001[Cytosol]|'
 - id: IR06875
   name: 1-(5'-Phosphoribosyl)-5-amino-4-imidazolecarboxamide +L-Glutamate + D-erythro-1-(Imidazol-4-yl)glycerol
     3-phosphate &gt;=&lt; N-(5'-Phospho-D-1'-ribulosylformimino)-5-amino-1-(5''-phospho-D-ribosyl)-4-imidazolecarboxamide
     + L-Glutamine (R)
+  genes: PP0290 and PP0293
   equation: '|C2941[Cytosol]| + |C0052[Cytosol]| => |C0065[Cytosol]| + |C0023[Cytosol]|
     + |C2817[Cytosol]| + |C2809[Cytosol]|'
 - id: IR06958
   name: 5-Hydroxykynurenamine decarboxy-lyase (R)
+  genes: PP2552
   equation: '|C3296[Cytosol]| => |C3283[Cytosol]| + |C0011[Cytosol]|'
 - id: IR07019
   name: 3-Butyn-1-al + PQQH2 &gt;=&lt; 3-Butyn-1-ol + PQQ (R)
+  genes: PP2674
   equation: '|C3575[Cytosol]| + |C0095[Cytosol]| => |C3574[Cytosol]| + |C0968[Cytosol]|'
 - id: IR07023
   name: Precorrin-6Y:NADP+ oxidoreductase (R)
+  genes: PP4832
   equation: '|C3667[Cytosol]| + |C0065[Cytosol]| + |C0005[Cytosol]| => |C3666[Cytosol]|
     + |C0006[Cytosol]|'
 - id: IR07060
   name: Precorrin 6X + Acetate + S-Adenosyl-L-homocysteine &gt;=&lt;Precorrin 5 +
     S-Adenosyl-L-methionine + H2O (R)
+  genes: PP3763
   equation: '|C0017[Cytosol]| + (6) |C0065[Cytosol]| + |C3737[Cytosol]| + |C0001[Cytosol]|
     => |C3667[Cytosol]| + |C0029[Cytosol]| + |C0019[Cytosol]|'
 - id: IR07064
   name: Cobamide coenzyme + GMP &gt;=&lt; Adenosine-GDP-cobinamide +alpha-Ribazole
     (R)
+  genes: PP1681
   equation: '|C3358[Cytosol]| + |C3815[Cytosol]| => |C0123[Cytosol]| + |C0161[Cytosol]|
     + |C0065[Cytosol]|'
 - id: IR07449
   name: 1-Deoxy-D-xylulose-5-phosphate isomeroreductase (R)
+  genes: PP1597
   equation: '|C0065[Cytosol]| + |C8610[Cytosol]| + |C0005[Cytosol]| => |C8607[Cytosol]|
     + |C0006[Cytosol]|'
 - id: IR07876
   name: ATP:L-methione S-adenosyltransferase (R)
+  genes: PP4967
   equation: '|C0002[Cytosol]| + |C0058[Cytosol]| + |C0001[Cytosol]| => |C0017[Cytosol]|
     + |C0012[Cytosol]| + |C0009[Cytosol]|'
 - id: IR07898
   name: ATP:pyruvate O2-phosphotransferase (R)
+  genes: PP1362 or PP4301
   equation: '|C0065[Cytosol]| + |C0059[Cytosol]| + |C0008[Cytosol]| => |C0020[Cytosol]|
     + |C0002[Cytosol]|'
 - id: IR07938
   name: GTP:pyruvate O2-phosphotransferase (R)
+  genes: PP1362 or PP4301
   equation: '|C0065[Cytosol]| + |C0059[Cytosol]| + |C0031[Cytosol]| => |C0020[Cytosol]|
     + |C0038[Cytosol]|'
 - id: IR07961
   name: IMP 1,2-hydrolase (decyclizing) (R)
+  genes: PP4822
   equation: '|C2849[Cytosol]| => |C0112[Cytosol]| + |C0001[Cytosol]|'
 - id: IR07969
   name: dATP:pyruvate O2-phosphotransferase (R)
+  genes: PP1362 or PP4301
   equation: '|C0065[Cytosol]| + |C0170[Cytosol]| + |C0059[Cytosol]| => |C0113[Cytosol]|
     + |C0020[Cytosol]|'
 - id: IR08155
@@ -1744,6 +2193,7 @@
 - id: IR08208
   name: S-Aminomethyldihydrolipoylprotein:(6S)-tetrahydrofolateaminomethyltransferase
     (ammonia-forming) (R)
+  genes: PP5194 or PP0986
   equation: '|C0343[Cytosol]| + |C0065[Cytosol]| + |C0001[Cytosol]| => |C2169[Cytosol]|'
 - id: IR08425
   name: Dihydroneopterin phosphate +H2O -&lt; 2-Amino-4-hydroxy-6-(D-erythro-1,2,3-trihydroxypropyl)-7,8-dihydropteridine
@@ -1752,31 +2202,45 @@
 - id: IR08428
   name: 2-Amino-4-hydroxy-6-(erythro-1,2,3-trihydroxypropyl)dihydropteridine triphosphate
     7,8-8,9-dihydrolase (R)
+  genes: PP1823 or PP2512
   equation: '|C3576[Cytosol]| => (3) |C0065[Cytosol]| + |C2932[Cytosol]| + |C0001[Cytosol]|'
 - id: IR08432
   name: (S)-2-Acetolactate pyruvate-lyase (carboxylating) (R)
+  genes: (PP4679 and PP4680) or PP1157 or PP3365 or PP1394
   equation: '|C0020[Cytosol]| + |C2983[Cytosol]| => |C3504[Cytosol]| + |C0055[Cytosol]|'
 - id: IR08488
   name: dTDP-6-deoxy-L-mannose:NADP+ 4-oxidoreductase (R)
+  genes: PP1784
   equation: '|C3100[Cytosol]| + |C0065[Cytosol]| + |C0005[Cytosol]| => |C3122[Cytosol]|
     + |C0006[Cytosol]|'
 - id: IR08557
   name: 2-Propyn-1-al + PQQH2 &gt;=&lt; 2-Propyn-1-ol + PQQ (R)
+  genes: PP2674
   equation: '|C3489[Cytosol]| + |C0095[Cytosol]| => |C3488[Cytosol]| + |C0968[Cytosol]|'
 - id: IR08596
   name: CYTBO3
+  genes: (PP1319 and PP1317 and PP1318) or (PP0104 and PP0103 and PP0110 and PP0105
+    and PP0109 and PP0106) or (PP0814 and PP0813 and PP0812 and PP0815 and PP0816)
+    or (PP4252 and PP4255 and PP4256 and PP4257 and PP4251 and PP4250 and PP4253
+    and PP4258) or (PP4650 and PP4651)
   equation: '|C0007[Cytosol]| + (5) |C0065[Cytosol]| + (2) |C9315[Cytosol]| => (2)
     |C9314[Cytosol]| + (5) |EC0065[Extra_organism]| + (2) |C0001[Cytosol]|'
 - id: IR08605
   name: NADH6
+  genes: PP4124 and PP4121 and PP4127 and PP4123 and PP4129 and PP4119 and PP4128
+    and PP4126 and PP4130 and PP4120 and PP4125 and PP4131 and PP4122
   equation: (2) |C9314[Cytosol]| + (9) |C0065[Cytosol]| + (2) |C0004[Cytosol]| =>
     (2) |C0003[Cytosol]| + (7) |EC0065[Extra_organism]| + (2) |C9315[Cytosol]|
 - id: IR08640
   name: choline transport via ABC system
+  genes: (PP0296 and PP0295 and PP0294) or (PP2775 and PP2774) or PP3559 or (PP0869
+    and PP0870 and PP0871 and PP0868)
   equation: '|C0002[Cytosol]| + |EC0096[Extra_organism]| + |C0001[Cytosol]| => |C0096[Cytosol]|
     + |C0009[Cytosol]| + |C0065[Cytosol]| + |C0008[Cytosol]|'
 - id: IR08641
   name: GLYBabc
+  genes: (PP0296 and PP0295 and PP0294) or (PP2775 and PP2774) or PP3559 or (PP0869
+    and PP0870 and PP0871 and PP0868)
   equation: '|EC0530[Extra_organism]| + |C0002[Cytosol]| + |C0001[Cytosol]| => |C0530[Cytosol]|
     + |C0009[Cytosol]| + |C0065[Cytosol]| + |C0008[Cytosol]|'
 - id: IR08659
@@ -1785,30 +2249,37 @@
     + |C0065[Cytosol]| + |C0008[Cytosol]| + |C0129[Cytosol]|'
 - id: IR08663
   name: CYSabc
+  genes: PP0226 and PP0227 and PP0225
   equation: '|EC0082[Extra_organism]| + |C0002[Cytosol]| + |C0001[Cytosol]| => |C0082[Cytosol]|
     + |C0009[Cytosol]| + |C0065[Cytosol]| + |C0008[Cytosol]|'
 - id: IR08699
   name: cytosine transport in via proton symport
+  genes: PP3187
   equation: '|EC0302[Extra_organism]| + |EC0065[Extra_organism]| => |C0065[Cytosol]|
     + |C0302[Cytosol]|'
 - id: IR08708
   name: SULabc
+  genes: PP0239 and PP0240 and PP0237
   equation: '|C0002[Cytosol]| + |EC0048[Extra_organism]| + |C0001[Cytosol]| => |C0009[Cytosol]|
     + |C0065[Cytosol]| + |C0008[Cytosol]| + |C0048[Cytosol]|'
 - id: IR08709
   name: Aspartate transport via proton symport (2 H)
+  genes: PP0137
   equation: '|EC0041[Extra_organism]| + (2) |EC0065[Extra_organism]| => (2) |C0065[Cytosol]|
     + |C0041[Cytosol]|'
 - id: IR08710
   name: Fumarate transport via proton symport (2 H)
+  genes: PP2255 or PP2056 or PP1188
   equation: '|EC0104[Extra_organism]| + (2) |EC0065[Extra_organism]| => (2) |C0065[Cytosol]|
     + |C0104[Cytosol]|'
 - id: IR08711
   name: Malate transport via proton symport (2 H)
+  genes: PP2255 or PP2056 or PP1188
   equation: (2) |EC0065[Extra_organism]| + |EC0127[Extra_organism]| => (2) |C0065[Cytosol]|
     + |C0127[Cytosol]|
 - id: IR08712
   name: SUCCt2_2
+  genes: PP2255 or PP2056 or PP1188
   equation: '|EC0036[Extra_organism]| + (2) |EC0065[Extra_organism]| => |C0036[Cytosol]|
     + (2) |C0065[Cytosol]|'
 - id: IR08738
@@ -1817,46 +2288,66 @@
     + |C0065[Cytosol]| + |C0008[Cytosol]| + |C0052[Cytosol]|'
 - id: IR08746
   name: ASPabc
+  genes: PP1070 and PP1069 and PP1071 and PP1068
   equation: '|EC0041[Extra_organism]| + |C0002[Cytosol]| + |C0001[Cytosol]| => |C0009[Cytosol]|
     + |C0065[Cytosol]| + |C0008[Cytosol]| + |C0041[Cytosol]|'
 - id: IR08747
   name: GLUabc
+  genes: PP1070 and PP1069 and PP1071 and PP1068
   equation: '|C0002[Cytosol]| + |EC0023[Extra_organism]| + |C0001[Cytosol]| => |C0009[Cytosol]|
     + |C0065[Cytosol]| + |C0008[Cytosol]| + |C0023[Cytosol]|'
 - id: IR08752
   name: ornithine transport via ABC system
+  genes: PP4486 and PP4485 and PP4484 and PP4483
   equation: '|C0002[Cytosol]| + |EC0062[Extra_organism]| + |C0001[Cytosol]| => |C0009[Cytosol]|
     + |C0062[Cytosol]| + |C0065[Cytosol]| + |C0008[Cytosol]|'
 - id: IR08753
   name: ARGabc
+  genes: PP4486 and PP4485 and PP4484 and PP4483
   equation: '|C0002[Cytosol]| + |EC0050[Extra_organism]| + |C0001[Cytosol]| => |C0050[Cytosol]|
     + |C0009[Cytosol]| + |C0065[Cytosol]| + |C0008[Cytosol]|'
 - id: IR08754
   name: L-histidine transport via ABC system
+  genes: PP4486 and PP4485 and PP4484 and PP4483
   equation: '|EC0117[Extra_organism]| + |C0002[Cytosol]| + |C0001[Cytosol]| => |C0009[Cytosol]|
     + |C0065[Cytosol]| + |C0008[Cytosol]| + |C0117[Cytosol]|'
 - id: IR08755
   name: L-lysine transport via ABC system
+  genes: PP4486 and PP4485 and PP4484 and PP4483
   equation: '|EC0039[Extra_organism]| + |C0002[Cytosol]| + |C0001[Cytosol]| => |C0009[Cytosol]|
     + |C0039[Cytosol]| + |C0065[Cytosol]| + |C0008[Cytosol]|'
 - id: IR08758
   name: D-gluconate transport via proton symport, reversible
+  genes: PP3417 or PP0652
   equation: '|EC0214[Extra_organism]| + |EC0065[Extra_organism]| => |C0065[Cytosol]|
     + |C0214[Cytosol]|'
 - id: IR08762
   name: Potassium ABC transporter
+  genes: PP4161 and PP4159
   equation: '|EC0197[Extra_organism]| + |C0002[Cytosol]| + |C0001[Cytosol]| => |C0197[Cytosol]|
     + |C0009[Cytosol]| + |C0065[Cytosol]| + |C0008[Cytosol]|'
 - id: IR08767
   name: ILEabc
+  genes: (PP1141 and PP1140 and PP1139 and PP1138 and PP1137) or (PP2749 and PP2753
+    and PP2750 and PP2748) or (PP4866 and PP4863 and PP4867 and PP4865 and PP4864)
+    or (PP0619 and PP0617 and PP0616 and PP0618 and PP0615) or (PP2769 and PP2767
+    and PP2768)
   equation: '|EC0317[Extra_organism]| + |C0002[Cytosol]| + |C0001[Cytosol]| => |C0317[Cytosol]|
     + |C0009[Cytosol]| + |C0065[Cytosol]| + |C0008[Cytosol]|'
 - id: IR08770
   name: VALabc
+  genes: (PP1141 and PP1140 and PP1139 and PP1138 and PP1137) or (PP2749 and PP2753
+    and PP2750 and PP2748) or (PP4866 and PP4863 and PP4867 and PP4865 and PP4864)
+    or (PP0619 and PP0617 and PP0616 and PP0618 and PP0615) or (PP2769 and PP2767
+    and PP2768)
   equation: '|C0002[Cytosol]| + |EC0151[Extra_organism]| + |C0001[Cytosol]| => |C0009[Cytosol]|
     + |C0065[Cytosol]| + |C0151[Cytosol]| + |C0008[Cytosol]|'
 - id: IR08771
   name: LEUabc
+  genes: (PP1141 and PP1140 and PP1139 and PP1138 and PP1137) or (PP2749 and PP2753
+    and PP2750 and PP2748) or (PP4866 and PP4863 and PP4867 and PP4865 and PP4864)
+    or (PP0619 and PP0617 and PP0616 and PP0618 and PP0615) or (PP2769 and PP2767
+    and PP2768)
   equation: '|C0002[Cytosol]| + |EC0105[Extra_organism]| + |C0001[Cytosol]| => |C0009[Cytosol]|
     + |C0065[Cytosol]| + |C0008[Cytosol]| + |C0105[Cytosol]|'
 - id: IR08789
@@ -1865,59 +2356,78 @@
     + |C0065[Cytosol]| + |C0058[Cytosol]| + |C0008[Cytosol]|'
 - id: IR08798
   name: NAt3_2
+  genes: PP1132 or PP3958
   equation: '|C0954[Cytosol]| + (2) |EC0065[Extra_organism]| => |EC0954[Extra_organism]|
     + (2) |C0065[Cytosol]|'
 - id: IR08799
   name: sodium proton antiporter (H:NA is 1.5)
+  genes: PP4031
   equation: (2) |C0954[Cytosol]| + (3) |EC0065[Extra_organism]| => (2) |EC0954[Extra_organism]|
     + (3) |C0065[Cytosol]|
 - id: IR08815
   name: putrescine transport via ABC system
+  genes: PP3845 or (PP0414 and PP0412 and PP0411 and PP0413) or PP5341 or (PP5181
+    and PP5177 and PP5178 and PP5180 and PP5179)
   equation: '|EC0116[Extra_organism]| + |C0002[Cytosol]| + |C0001[Cytosol]| => |C0009[Cytosol]|
     + |C0065[Cytosol]| + |C0116[Cytosol]| + |C0008[Cytosol]|'
 - id: IR08816
   name: SPMDabc
+  genes: PP3845 or (PP0414 and PP0412 and PP0411 and PP0413) or PP5341 or (PP5181
+    and PP5177 and PP5178 and PP5180 and PP5179)
   equation: '|EC0258[Extra_organism]| + |C0002[Cytosol]| + |C0001[Cytosol]| => |C0258[Cytosol]|
     + |C0009[Cytosol]| + |C0065[Cytosol]| + |C0008[Cytosol]|'
 - id: IR08823
   name: L-proline transport via ABC system
+  genes: (PP0296 and PP0295 and PP0294) or (PP2775 and PP2774) or PP3559 or (PP0869
+    and PP0870 and PP0871 and PP0868)
   equation: '|EC0126[Extra_organism]| + |C0002[Cytosol]| + |C0001[Cytosol]| => |C0126[Cytosol]|
     + |C0009[Cytosol]| + |C0065[Cytosol]| + |C0008[Cytosol]|'
 - id: IR08824
   name: phosphate transport via ABC system
+  genes: PP3845 or (PP0414 and PP0412 and PP0411 and PP0413) or PP5341 or (PP5181
+    and PP5177 and PP5178 and PP5180 and PP5179)
   equation: '|EC0009[Extra_organism]| + |C0002[Cytosol]| + |C0001[Cytosol]| => (2)
     |C0009[Cytosol]| + |C0065[Cytosol]| + |C0008[Cytosol]|'
 - id: IR08829
   name: D-fructose transport via PEP:Pyr PTS
+  genes: PP0795
   equation: '|C0059[Cytosol]| + |EC0080[Extra_organism]| => |C0790[Cytosol]| + |C0020[Cytosol]|'
 - id: IR08831
   name: PROt4
+  genes: PP4946
   equation: '|EC0126[Extra_organism]| + |EC0954[Extra_organism]| => |C0954[Cytosol]|
     + |C0126[Cytosol]|'
 - id: IR08833
   name: thiosulfate transport via ABC system
+  genes: PP5170 and PP5168 and PP5169 and PP5171
   equation: '|C0002[Cytosol]| + |EC0262[Extra_organism]| + |C0001[Cytosol]| => |C0262[Cytosol]|
     + |C0009[Cytosol]| + |C0065[Cytosol]| + |C0008[Cytosol]|'
 - id: IR08840
   name: taurine transport via ABC system
+  genes: PP0233 and PP0232 and PP0231
   equation: '|C0002[Cytosol]| + |EC0202[Extra_organism]| + |C0001[Cytosol]| => |C0009[Cytosol]|
     + |C0065[Cytosol]| + |C0008[Cytosol]| + |C0202[Cytosol]|'
 - id: IR08872
   name: RIBabc
+  genes: PP2456 and PP2459 and PP2455 and PP2454
   equation: '|C0002[Cytosol]| + |EC0103[Extra_organism]| + |C0001[Cytosol]| => |C0103[Cytosol]|
     + |C0009[Cytosol]| + |C0065[Cytosol]| + |C0008[Cytosol]|'
 - id: IR08876
   name: acetylornithine deacetylation
+  genes: PP5186 or PP3571
   equation: '|C0337[Cytosol]| + |C0001[Cytosol]| => |C0029[Cytosol]| + |C0062[Cytosol]|'
 - id: IR08894
   name: Dihydroxy-acid dehydratase (2,3-dihydroxy-3-methylpentanoate)
+  genes: PP5128
   equation: '|C3502[Cytosol]| => |C0502[Cytosol]| + |C0001[Cytosol]|'
 - id: IR08910
   name: fructose-1-phosphate kinase
+  genes: PP0794
   equation: '|C0790[Cytosol]| + |C0002[Cytosol]| => |C0284[Cytosol]| + |C0065[Cytosol]|
     + |C0008[Cytosol]|'
 - id: IR08911
   name: GAR transformylase-T
+  genes: PP1457
   equation: '|C0047[Cytosol]| + |C0002[Cytosol]| + |C2358[Cytosol]| => |C0009[Cytosol]|
     + |C0065[Cytosol]| + |C0008[Cytosol]| + |C2646[Cytosol]|'
 - id: IR08913
@@ -1925,16 +2435,20 @@
   equation: '|C0001[Cytosol]| + |C0038[Cytosol]| => |C0047[Cytosol]| + |C2932[Cytosol]|'
 - id: IR08915
   name: Hydroxybenzoate octaprenyltransferase
+  genes: PP5318
   equation: '|C2528[Cytosol]| + |C0133[Cytosol]| => |C0012[Cytosol]| + |C3377[Cytosol]|'
 - id: IR08920
   name: ketol-acid reductoisomerase (2-Aceto-2-hydroxybutanoate)
+  genes: PP4678
   equation: '|C0065[Cytosol]| + |C0005[Cytosol]| + |C3501[Cytosol]| => |C3502[Cytosol]|
     + |C0006[Cytosol]|'
 - id: IR08933
   name: 2-Octaprenyl-3-methyl-6-methoxy-1,4-benzoquinol hydroxylase
+  genes: PP5197
   equation: '|C0007[Cytosol]| + (2) |C3382[Cytosol]| => (2) |C9254[Cytosol]|'
 - id: IR08934
   name: Ornithine Decarboxylase
+  genes: PP0864
   equation: '|C0062[Cytosol]| + |C0065[Cytosol]| => |C0116[Cytosol]| + |C0011[Cytosol]|'
 - id: IR08937
   name: ethanolamine phosphotransferase
@@ -1942,19 +2456,23 @@
     |C9291[Cytosol]| + (50) |C0440[Cytosol]|'
 - id: IR08941
   name: Phosphatidylglycerol phosphate phosphatase (Ecoli)
+  genes: PP0520
   equation: '|C9312[Cytosol]| + (50) |C0001[Cytosol]| => (50) |C0009[Cytosol]| +
     |C9311[Cytosol]|'
 - id: IR08944
   name: PMDPHT
+  genes: PP4565
   equation: '|C2691[Cytosol]| + |C0001[Cytosol]| => |C0009[Cytosol]| + |C2847[Cytosol]|'
 - id: IR08951
   name: Phosphatidylserine decarboxylase (Ecoli)
+  genes: PP4908
   equation: (50) |C0065[Cytosol]| + |C9313[Cytosol]| => |C9309[Cytosol]| + (50) |C0011[Cytosol]|
 - id: IR08973
   name: Cardiolipin Synthase (E.coli)
   equation: (2) |C9311[Cytosol]| => |C9270[Cytosol]| + (50) |C0098[Cytosol]|
 - id: IR08975
   name: DAGK_EC
+  genes: PP2973 or PP1636
   equation: '|C9291[Cytosol]| + (50) |C0002[Cytosol]| => (50) |C0065[Cytosol]| +
     |C9306[Cytosol]| + (50) |C0008[Cytosol]|'
 - id: IR08984
@@ -1963,6 +2481,7 @@
     + |C0008[Cytosol]|'
 - id: IR09304
   name: Glucose dehydrogenase (membrane)
+  genes: PP1444
   equation: '|EC0027[Extra_organism]| + |C0006[Cytosol]| => |EC1683[Extra_organism]|
     + |C0065[Cytosol]| + |C0005[Cytosol]|'
 - id: IR09305
@@ -1971,225 +2490,282 @@
     + |EC0065[Extra_organism]|'
 - id: IR09306
   name: Gluconate dehydrogenase (membrane)
+  genes: PP3382 and PP3384 and PP3383
   equation: '|EC0214[Extra_organism]| + |C0006[Cytosol]| => |EC0475[Extra_organism]|
     + |C0065[Cytosol]| + |C0005[Cytosol]|'
 - id: IR09308
   name: 2-keto-gluconokinase
+  genes: PP3378
   equation: '|C0475[Cytosol]| + |C0002[Cytosol]| => |C0065[Cytosol]| + |C0008[Cytosol]|
     + |C0880[Cytosol]|'
 - id: IR09309
   name: 2-Keto-gluconate-6-phosphate hydrogenase
+  genes: PP3376 or PP1261
   equation: '|C0065[Cytosol]| + |C0005[Cytosol]| + |C0880[Cytosol]| => |C0278[Cytosol]|
     + |C0006[Cytosol]|'
 - id: IR09315
   name: phosphoribosylaminoimidazole carboxylase (ATP-dependent)
+  genes: PP5335 and PP5336
   equation: '|C0002[Cytosol]| + |C2114[Cytosol]| + |C0011[Cytosol]| + |C0001[Cytosol]|
     => |C0009[Cytosol]| + (2) |C0065[Cytosol]| + |C0008[Cytosol]| + |C2857[Cytosol]|'
 - id: IR09363
   name: cobyric acid synthase
+  genes: PP1677
   equation: (4) |C0002[Cytosol]| + |C3811[Cytosol]| + (4) |C0052[Cytosol]| + (4)
     |C0001[Cytosol]| => |C3812[Cytosol]| + (4) |C0009[Cytosol]| + (8) |C0065[Cytosol]|
     + (4) |C0008[Cytosol]| + (4) |C0023[Cytosol]|
 - id: IR09375
   name: 3,4 Dihydroxy-2-butanone-4-phosphate synthase
+  genes: PP0530
   equation: '|C0099[Cytosol]| => |C0047[Cytosol]| + |C9274[Cytosol]| + |C0065[Cytosol]|'
 - id: IR09380
   name: 4-amino-5-hydroxymethyl-2-methylpyrimidine synthetase
+  genes: PP4922
   equation: (2) |C2114[Cytosol]| + (2) |C0001[Cytosol]| => |C0007[Cytosol]| + (2)
     |C0221[Cytosol]| + (2) |C0009[Cytosol]| + (2) |C0924[Cytosol]|
 - id: IR09592
   name: Glucose ABC transport
+  genes: PP1018 and PP1016 and PP1017
   equation: '|C0002[Cytosol]| + |EC0027[Extra_organism]| + |C0001[Cytosol]| => |C0009[Cytosol]|
     + |C0065[Cytosol]| + |C0027[Cytosol]| + |C0008[Cytosol]|'
 - id: IR09593
   name: 2-Dehydro-D-gluconate transport via proton symport
+  genes: PP3377
   equation: '|EC0475[Extra_organism]| + |EC0065[Extra_organism]| => |C0475[Cytosol]|
     + |C0065[Cytosol]|'
 - id: IR09620
   name: Hexanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase
+  genes: PP1916 or PP4545 or PP2795 or PP3553 or PP3303 or PP4379 or PP4175
   equation: '|C0065[Cytosol]| + |C9394[Cytosol]| + |C9297[Cytosol]| => |C9262[Cytosol]|
     + |C9395[Cytosol]| + |C0011[Cytosol]|'
 - id: IR09621
   name: Hexanoyl-[acyl-carrier protein]:oxoacyl- and enoyl-reducing and thioester-hydrolysing)
+  genes: PP2795 or PP3553
   equation: '|C0065[Cytosol]| + |C9388[Cytosol]| + |C0004[Cytosol]| => |C0003[Cytosol]|
     + |C9394[Cytosol]|'
 - id: IR09622
   name: 'Dodecanoyl-[acyl-carrier protein]: malonyl-CoA C-acyltransferase(decarboxylating,
     oxoacyl- and enoyl-reducing andthioester-hydrolysing)'
+  genes: PP2795 or PP3553
   equation: '|C9390[Cytosol]| + |C0065[Cytosol]| + |C0004[Cytosol]| => |C0003[Cytosol]|
     + |C9275[Cytosol]|'
 - id: IR09624
   name: Dodecanoyl-[acyl-carrier-protein]:malonyl-[acyl-carrier-protein]  C-acyltransferase
+  genes: PP1916 or PP4545 or PP2795 or PP3553 or PP3303 or PP4379 or PP4175
   equation: '|C9275[Cytosol]| + |C0065[Cytosol]| + |C9297[Cytosol]| => |C9262[Cytosol]|
     + |C9396[Cytosol]| + |C0011[Cytosol]|'
 - id: IR09629
   name: (3R)-3-Hydroxydodecanoyl-[acyl-carrier-protein]:NADP+ oxidoreductase
+  genes: PP1914 or PP2795 or PP0581 or PP2540 or PP3553 or PP2783
   equation: '|C9377[Cytosol]| + |C0065[Cytosol]| + |C0005[Cytosol]| => |C9378[Cytosol]|
     + |C0006[Cytosol]|'
 - id: IR09630
   name: Decanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase
+  genes: PP1916 or PP4545 or PP2795 or PP3553 or PP3303 or PP4379 or PP4175
   equation: '|C0065[Cytosol]| + |C9379[Cytosol]| + |C9297[Cytosol]| => |C9262[Cytosol]|
     + |C9377[Cytosol]| + |C0011[Cytosol]|'
 - id: IR09631
   name: Butyryl-[acyl-carrier protein]:malonyl-CoA C-acyltransferase(decarboxylating,
     oxoacyl- and enoyl-reducing and thioester-hydrolysing)
+  genes: PP2795 or PP3553
   equation: '|C9380[Cytosol]| + |C0065[Cytosol]| + |C0004[Cytosol]| => |C0003[Cytosol]|
     + |C9381[Cytosol]|'
 - id: IR09633
   name: (3R)-3-Hydroxyoctanoyl-[acyl-carrier-protein]:NADP+ oxidoreductase
+  genes: PP1914 or PP2795 or PP0581 or PP2540 or PP3553 or PP2783
   equation: '|C9395[Cytosol]| + |C0065[Cytosol]| + |C0005[Cytosol]| => |C0006[Cytosol]|
     + |C9382[Cytosol]|'
 - id: IR09638
   name: Decanoyl-[acyl-carrier protein]:malonyl-CoA C-acyltransferase(decarboxylating,
     oxoacyl- and enoyl-reducing and thioester-hydrolysing)
+  genes: PP2795 or PP3553
   equation: '|C9389[Cytosol]| + |C0065[Cytosol]| + |C0004[Cytosol]| => |C0003[Cytosol]|
     + |C9379[Cytosol]|'
 - id: IR09641
   name: (3R)-3-Hydroxybutanoyl-[acyl-carrier protein]:NADP+ oxidoreductase
+  genes: PP1914 or PP2795 or PP0581 or PP2540 or PP3553 or PP2783
   equation: '|C0065[Cytosol]| + |C0005[Cytosol]| + |C9263[Cytosol]| => |C9383[Cytosol]|
     + |C0006[Cytosol]|'
 - id: IR09642
   name: Butyryl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein]C-acyltransferase
     (decarboxylating)
+  genes: PP1916 or PP4545 or PP2795 or PP3553 or PP3303 or PP4379 or PP4175
   equation: '|C0065[Cytosol]| + |C9381[Cytosol]| + |C9297[Cytosol]| => |C9384[Cytosol]|
     + |C9262[Cytosol]| + |C0011[Cytosol]|'
 - id: IR09644
   name: Myristoyl-[acyl-carrier protein] synthase
+  genes: PP2795 or PP3553
   equation: '|C0065[Cytosol]| + |C9317[Cytosol]| + |C0004[Cytosol]| => |C0003[Cytosol]|
     + |C9302[Cytosol]|'
 - id: IR09645
   name: (3R)-3-Hydroxydecanoyl-[acyl-carrier-protein]:NADP+ oxidoreductase
+  genes: PP1914 or PP2795 or PP0581 or PP2540 or PP3553 or PP2783
   equation: '|C0065[Cytosol]| + |C9375[Cytosol]| + |C0005[Cytosol]| => |C9391[Cytosol]|
     + |C0006[Cytosol]|'
 - id: IR09648
   name: (3R)-3-Hydroxydodecanoyl-[acyl-carrier-protein] hydro-lyase
+  genes: PP2795 or PP3553
   equation: '|C9378[Cytosol]| => |C9390[Cytosol]| + |C0001[Cytosol]|'
 - id: IR09650
   name: Octanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein]   C-acyltransferase
     (decarboxylating)
+  genes: PP1916 or PP4545 or PP2795 or PP3553 or PP3303 or PP4379 or PP4175
   equation: '|C0065[Cytosol]| + |C9297[Cytosol]| + |C9385[Cytosol]| => |C9262[Cytosol]|
     + |C9375[Cytosol]| + |C0011[Cytosol]|'
 - id: IR09651
   name: (3R)-3-Hydroxymyristoyl-[acyl-carrier-protein] hydro-lyase
+  genes: PP2795 or PP3553
   equation: '|C9257[Cytosol]| => |C9317[Cytosol]| + |C0001[Cytosol]|'
 - id: IR09652
   name: (3R)-3-Hydroxyhexanoyl-[acyl-carrier-protein]:NADP+ oxidoreductase
+  genes: PP1914 or PP2795 or PP0581 or PP2540 or PP3553 or PP2783
   equation: '|C9384[Cytosol]| + |C0065[Cytosol]| + |C0005[Cytosol]| => |C9386[Cytosol]|
     + |C0006[Cytosol]|'
 - id: IR09653
   name: (3R)-3-Hydroxytetradecanoyl-[acyl-carrier-protein]:NADP+ oxidoreductase
+  genes: PP1914 or PP2795 or PP0581 or PP2540 or PP3553 or PP2783
   equation: '|C0065[Cytosol]| + |C0005[Cytosol]| + |C9396[Cytosol]| => |C9257[Cytosol]|
     + |C0006[Cytosol]|'
 - id: IR09655
   name: (3R)-3-Hydroxyhexanoyl-[acyl-carrier-protein] hydro-lyase
+  genes: PP2795 or PP3553
   equation: '|C9386[Cytosol]| => |C9388[Cytosol]| + |C0001[Cytosol]|'
 - id: IR09658
   name: Octanoyl-[acyl-carrier protein]:malonyl-CoA C-acyltransferase(decarboxylating,
     oxoacyl- and enoyl-reducing and thioester-hydrolysing)
+  genes: PP2795 or PP3553
   equation: '|C0065[Cytosol]| + |C9387[Cytosol]| + |C0004[Cytosol]| => |C0003[Cytosol]|
     + |C9385[Cytosol]|'
 - id: IR09659
   name: (3R)-3-Hydroxyoctanoyl-[acyl-carrier-protein] hydro-lyase
+  genes: PP2795 or PP3553
   equation: '|C9382[Cytosol]| => |C9387[Cytosol]| + |C0001[Cytosol]|'
 - id: IR09662
   name: (3R)-3-Hydroxybutanoyl-[acyl-carrier-protein] hydro-lyase
+  genes: PP2795 or PP3553
   equation: '|C9383[Cytosol]| => |C9380[Cytosol]| + |C0001[Cytosol]|'
 - id: IR09666
   name: (3R)-3-Hydroxydecanoyl-[acyl-carrier-protein] hydro-lyase
+  genes: PP2795 or PP3553
   equation: '|C9391[Cytosol]| => |C9389[Cytosol]| + |C0001[Cytosol]|'
 - id: IR09680
   name: Tetradecanoyl-[acyl-carrier-protein]:malonyl-[acyl-carrier-protein]  C-acyltransferase
+  genes: PP1916 or PP4545 or PP2795 or PP3553 or PP3303 or PP4379 or PP4175
   equation: '|C0065[Cytosol]| + |C9302[Cytosol]| + |C9297[Cytosol]| => |C9262[Cytosol]|
     + |C9430[Cytosol]| + |C0011[Cytosol]|'
 - id: IR09681
   name: (3R)-3-Hydroxyhexadecanoyl-[acyl-carrier-protein]:NADP+ oxidoreductase
+  genes: PP1914 or PP2795 or PP0581 or PP2540 or PP3553 or PP2783
   equation: '|C9430[Cytosol]| + |C0065[Cytosol]| + |C0005[Cytosol]| => |C9431[Cytosol]|
     + |C0006[Cytosol]|'
 - id: IR09682
   name: (3R)-3-Hydroxyhexadecanoyl-[acyl-carrier-protein] hydro-lyase
+  genes: PP2795 or PP3553
   equation: '|C9431[Cytosol]| => |C9285[Cytosol]| + |C0001[Cytosol]|'
 - id: IR09683
   name: Palmitoyl-[acyl-carrier protein] synthase
+  genes: PP2795 or PP3553
   equation: '|C9285[Cytosol]| + |C0065[Cytosol]| + |C0004[Cytosol]| => |C0003[Cytosol]|
     + |C9307[Cytosol]|'
 - id: IR09684
   name: Hexadecanoyl-[acyl-carrier-protein]:malonyl-[acyl-carrier-protein]  C-acyltransferase
+  genes: PP1916 or PP4545 or PP2795 or PP3553 or PP3303 or PP4379 or PP4175
   equation: '|C9307[Cytosol]| + |C0065[Cytosol]| + |C9297[Cytosol]| => |C9262[Cytosol]|
     + |C0011[Cytosol]| + |C9433[Cytosol]|'
 - id: IR09685
   name: (3R)-3-Hydroxyhexadecanoyl-[acyl-carrier-protein]:NADP+ oxidoreductase
+  genes: PP1914 or PP2795 or PP0581 or PP2540 or PP3553 or PP2783
   equation: '|C0065[Cytosol]| + |C0005[Cytosol]| + |C9433[Cytosol]| => |C9434[Cytosol]|
     + |C0006[Cytosol]|'
 - id: IR09686
   name: (3R)-3-Hydroxyoctadecanoyl-[acyl-carrier-protein] hydro-lyase
+  genes: PP2795 or PP3553
   equation: '|C9434[Cytosol]| => |C9305[Cytosol]| + |C0001[Cytosol]|'
 - id: IR09687
   name: Octadecanoyl-[acyl-carrier protein] synthase
+  genes: PP2795 or PP3553
   equation: '|C0065[Cytosol]| + |C9305[Cytosol]| + |C0004[Cytosol]| => |C9435[Cytosol]|
     + |C0003[Cytosol]|'
 - id: IR09688
   name: (3R)-3-Hydroxydecanoyl-[acyl-carrier-protein]-3,4-hydro-lyase
+  genes: PP2795 or PP3553
   equation: '|C9391[Cytosol]| => |C9436[Cytosol]| + |C0001[Cytosol]|'
 - id: IR09689
   name: cis-3-Decenoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase
+  genes: PP1916 or PP4545 or PP2795 or PP3553 or PP3303 or PP4379 or PP4175
   equation: '|C0065[Cytosol]| + |C9436[Cytosol]| + |C9297[Cytosol]| => |C9262[Cytosol]|
     + |C9438[Cytosol]| + |C0011[Cytosol]|'
 - id: IR09690
   name: (3R)-3-Hydroxy-cis-dodec-5-enoyl-[acyl-carrier-protein]:NADP+ oxidoreductase
+  genes: PP1914 or PP2795 or PP0581 or PP2540 or PP3553 or PP2783
   equation: '|C0065[Cytosol]| + |C9438[Cytosol]| + |C0005[Cytosol]| => |C9439[Cytosol]|
     + |C0006[Cytosol]|'
 - id: IR09691
   name: (3R)-3-Hydroxy-cis-dodec-5-enoyl-[acyl-carrier-protein] hydro-lyase
+  genes: PP2795 or PP3553
   equation: '|C9439[Cytosol]| => |C9440[Cytosol]| + |C0001[Cytosol]|'
 - id: IR09692
   name: trans,cis-Dodec-2,5-dienoyl-acp 2-reductase
+  genes: PP2795 or PP3553
   equation: '|C9440[Cytosol]| + |C0065[Cytosol]| + |C0004[Cytosol]| => |C0003[Cytosol]|
     + |C9441[Cytosol]|'
 - id: IR09693
   name: cis-5-dodecenoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase
+  genes: PP1916 or PP4545 or PP2795 or PP3553 or PP3303 or PP4379 or PP4175
   equation: '|C9441[Cytosol]| + |C0065[Cytosol]| + |C9297[Cytosol]| => |C9262[Cytosol]|
     + |C9442[Cytosol]| + |C0011[Cytosol]|'
 - id: IR09694
   name: (3R)-3-Hydroxy-cis-tetradec-7-enoyl-[acyl-carrier-protein]:NADP+ oxidoreductase
+  genes: PP1914 or PP2795 or PP0581 or PP2540 or PP3553 or PP2783
   equation: '|C0065[Cytosol]| + |C0005[Cytosol]| + |C9442[Cytosol]| => |C9443[Cytosol]|
     + |C0006[Cytosol]|'
 - id: IR09695
   name: (3R)-3-Hydroxy-cis-tetradec-7-enoyl-[acyl-carrier-protein] hydro-lyase
+  genes: PP2795 or PP3553
   equation: '|C9443[Cytosol]| => |C9444[Cytosol]| + |C0001[Cytosol]|'
 - id: IR09696
   name: trans,cis-tetradec-2,7-dienoyl-acp 2-reductase
+  genes: PP2795 or PP3553
   equation: '|C9444[Cytosol]| + |C0065[Cytosol]| + |C0004[Cytosol]| => |C0003[Cytosol]|
     + |C9445[Cytosol]|'
 - id: IR09697
   name: cis-7-tetradecenoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein]
     C-acyltransferase
+  genes: PP1916 or PP4545 or PP2795 or PP3553 or PP3303 or PP4379 or PP4175
   equation: '|C9445[Cytosol]| + |C9297[Cytosol]| => |C9262[Cytosol]| + |C0065[Cytosol]|
     + |C9449[Cytosol]| + |C0011[Cytosol]|'
 - id: IR09698
   name: (3R)-3-Hydroxy-cis-hexadec-9-enoyl-[acyl-carrier-protein]:NADP+ oxidoreductase
+  genes: PP1914 or PP2795 or PP0581 or PP2540 or PP3553 or PP2783
   equation: '|C0065[Cytosol]| + |C9449[Cytosol]| + |C0005[Cytosol]| => |C9446[Cytosol]|
     + |C0006[Cytosol]|'
 - id: IR09699
   name: (3R)-3-Hydroxy-cis-hexadec-9-enoyl-[acyl-carrier-protein] hydro-lyase
+  genes: PP2795 or PP3553
   equation: '|C9446[Cytosol]| => |C9448[Cytosol]| + |C0001[Cytosol]|'
 - id: IR09700
   name: trans,cis-hexadec-2,9-dienoyl-acp 2-reductase
+  genes: PP2795 or PP3553
   equation: '|C9448[Cytosol]| + |C0065[Cytosol]| + |C0004[Cytosol]| => |C0003[Cytosol]|
     + |C9447[Cytosol]|'
 - id: IR09701
   name: cis-9-hexadecenoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein]
     C-acyltransferase
+  genes: PP1916 or PP4545 or PP2795 or PP3553 or PP3303 or PP4379 or PP4175
   equation: '|C0065[Cytosol]| + |C9447[Cytosol]| + |C9297[Cytosol]| => |C9262[Cytosol]|
     + |C9450[Cytosol]| + |C0011[Cytosol]|'
 - id: IR09702
   name: (3R)-3-Hydroxy-cis-octadec-11-enoyl-[acyl-carrier-protein]:NADP+ oxidoreductase
+  genes: PP1914 or PP2795 or PP0581 or PP2540 or PP3553 or PP2783
   equation: '|C0065[Cytosol]| + |C0005[Cytosol]| + |C9450[Cytosol]| => |C9452[Cytosol]|
     + |C0006[Cytosol]|'
 - id: IR09703
   name: (3R)-3-Hydroxy-cis-octadec-11-enoyl-[acyl-carrier-protein] hydro-lyase
+  genes: PP2795 or PP3553
   equation: '|C9452[Cytosol]| => |C9453[Cytosol]| + |C0001[Cytosol]|'
 - id: IR09704
   name: trans,cis-octadec-2,11-dienoyl-acp 2-reductase
+  genes: PP2795 or PP3553
   equation: '|C9453[Cytosol]| + |C0065[Cytosol]| + |C0004[Cytosol]| => |C0003[Cytosol]|
     + |C9454[Cytosol]|'
 - id: IR09729
@@ -2197,22 +2773,27 @@
   equation: '|C2207[Cytosol]| => (4) |C0065[Cytosol]| + |C0010[Cytosol]| + |C9462[Cytosol]|'
 - id: IR09733
   name: Nitrate ABC transport
+  genes: PP0207
   equation: '|C0002[Cytosol]| + |EC0201[Extra_organism]| + |C0001[Cytosol]| => |C0201[Cytosol]|
     + |C0009[Cytosol]| + |C0065[Cytosol]| + |C0008[Cytosol]|'
 - id: IR09737
   name: L-glutamate transport via proton symport (2H)
+  genes: PP0137
   equation: '|EC0023[Extra_organism]| + (2) |EC0065[Extra_organism]| => (2) |C0065[Cytosol]|
     + |C0023[Cytosol]|'
 - id: IR09739
   name: Acetate transport via sodium symport
+  genes: PP1743 or PP2797
   equation: '|EC0954[Extra_organism]| + |EC0029[Extra_organism]| => |C0954[Cytosol]|
     + |C0029[Cytosol]|'
 - id: IR09740
   name: Glycolate transport via sodium symport
+  genes: PP1743 or PP2797
   equation: '|EC0136[Extra_organism]| + |EC0954[Extra_organism]| => |C0954[Cytosol]|
     + |C0136[Cytosol]|'
 - id: IR09745
   name: Farnesyl diphosphate:Isopentenyl diphosphate farnesyl transferase
+  genes: PP1595
   equation: '|C0346[Cytosol]| + |C0111[Cytosol]| + (3) |C0065[Cytosol]| => |C8534[Cytosol]|
     + |C0012[Cytosol]|'
 - id: IR09746
@@ -2254,29 +2835,37 @@
     (7) |EC0065[Extra_organism]| + (2) |C9315[Cytosol]| + (2) |C0095[Cytosol]|
 - id: RR00079
   name: NADPH:NAD+ oxidoreductase (B-specific)
+  genes: PP0155 or PP2151
   equation: '|C0003[Cytosol]| + |C0005[Cytosol]| <=> |C0004[Cytosol]| + |C0006[Cytosol]|'
 - id: RR00082
   name: NADPH:oxidized-glutathione oxidoreductase
+  genes: PP3819
   equation: (2) |C0042[Cytosol]| + |C0006[Cytosol]| <=> |C0109[Cytosol]| + |C0065[Cytosol]|
     + |C0005[Cytosol]|
 - id: RR00098
   name: ATP:polyphosphate phosphotransferase
+  genes: PP5217
   equation: '|C0012[Cytosol]| + |C0002[Cytosol]| <=> |C2062[Cytosol]| + |C0008[Cytosol]|'
 - id: RR00099
   name: ATP:nicotinamide-nucleotide adenylyltransferase
+  genes: PP4810
   equation: '|C0350[Cytosol]| + |C0002[Cytosol]| + |C0065[Cytosol]| <=> |C0003[Cytosol]|
     + |C0012[Cytosol]|'
 - id: RR00109
   name: ATP:nucleoside-diphosphate phosphatransferase
+  genes: PP0849
   equation: '|C0014[Cytosol]| + |C0002[Cytosol]| <=> |C0060[Cytosol]| + |C0008[Cytosol]|'
 - id: RR00111
   name: ATP:nucleoside-phosphate phosphotransferase
+  genes: PP1771
   equation: '|C0002[Cytosol]| + |C0089[Cytosol]| <=> |C0014[Cytosol]| + |C0008[Cytosol]|'
 - id: RR00124
   name: L-Alanine:2-oxoglutarate aminotransferase
+  genes: PP0214
   equation: '|C0035[Cytosol]| + |C0024[Cytosol]| <=> |C0020[Cytosol]| + |C0023[Cytosol]|'
 - id: RR00126
   name: L-Glutamate racemase
+  genes: PP0736
   equation: '|C0023[Cytosol]| <=> |C0179[Cytosol]|'
 - id: RR00129
   name: 2,5-Dioxopentanoate:NADP+ 5-oxidoreductase
@@ -2284,56 +2873,72 @@
     + |C0005[Cytosol]| + |C0024[Cytosol]|'
 - id: RR00131
   name: Isocitrate:NADP+ oxidoreductase (decarboxylating)
+  genes: PP4012 and PP4011
   equation: '|C0254[Cytosol]| + |C0006[Cytosol]| <=> |C0005[Cytosol]| + |C0024[Cytosol]|
     + |C0011[Cytosol]|'
 - id: RR00142
   name: Pyridoxine 5-phosphate:oxygen oxidoreductase (deaminating)
+  genes: PP1129
   equation: '|C0007[Cytosol]| + |C0473[Cytosol]| <=> |C0025[Cytosol]| + |C0016[Cytosol]|'
 - id: RR00146
   name: UTP:alpha-D-glucose-1-phosphate uridylyltransferase
+  genes: PP3821
   equation: '|C0060[Cytosol]| + |C0065[Cytosol]| + |C0087[Cytosol]| <=> |C0012[Cytosol]|
     + |C0026[Cytosol]|'
 - id: RR00147
   name: UDPglucose 4-epimerase
+  genes: PP3129 or PP0501
   equation: '|C0026[Cytosol]| <=> |C0043[Cytosol]|'
 - id: RR00170
   name: ATP:nucleoside-diphosphate phosphatransferase
+  genes: PP0849
   equation: '|C0002[Cytosol]| + |C0031[Cytosol]| <=> |C0008[Cytosol]| + |C0038[Cytosol]|'
 - id: RR00171
   name: ATP:(d)GMP phosphotransferase
+  genes: PP5296
   equation: '|C0123[Cytosol]| + |C0002[Cytosol]| <=> |C0008[Cytosol]| + |C0031[Cytosol]|'
 - id: RR00173
   name: Guanosine-3',5'-bis(diphosphate) 3'-pyrophosphohydrolase
+  genes: PP5302
   equation: '|C0889[Cytosol]| + |C0001[Cytosol]| <=> |C0012[Cytosol]| + |C0031[Cytosol]|'
 - id: RR00179
   name: (S)-Malate:NAD+ oxidoreductase
+  genes: PP3591 or PP0654
   equation: '|C0003[Cytosol]| + |C0127[Cytosol]| <=> |C0032[Cytosol]| + |C0065[Cytosol]|
     + |C0004[Cytosol]|'
 - id: RR00181
   name: Pyruvate:carbon-dioxide ligase (ADP-forming)
+  genes: PP5347
   equation: '|C0234[Cytosol]| + |C0020[Cytosol]| + |C0002[Cytosol]| <=> |C0009[Cytosol]|
     + |C0032[Cytosol]| + |C0065[Cytosol]| + |C0008[Cytosol]|'
 - id: RR00191
   name: L-Aspartate:2-oxoglutarate aminotransferase
+  genes: PP3721 or PP0858 or PP4692 or PP1872
   equation: '|C0024[Cytosol]| + |C0041[Cytosol]| <=> |C0032[Cytosol]| + |C0023[Cytosol]|'
 - id: RR00214
   name: L-Alanine racemase
+  genes: PP3722 or PP5269
   equation: '|C0035[Cytosol]| <=> |C0115[Cytosol]|'
 - id: RR00216
   name: Succinate:CoA ligase (ADP-forming)
+  genes: PP4185 and PP4186
   equation: '|C0036[Cytosol]| + |C0002[Cytosol]| + |C0010[Cytosol]| <=> |C0076[Cytosol]|
     + |C0009[Cytosol]| + |C0008[Cytosol]|'
 - id: RR00219
   name: Succinate:(acceptor) oxidoreductase
+  genes: PP4190 and PP4191 and PP4192 and PP4193
   equation: '|C0036[Cytosol]| + |C0015[Cytosol]| <=> |C0964[Cytosol]| + |C0104[Cytosol]|'
 - id: RR00220
   name: (2S,3R)-3-Hydroxybutane-1,2,3-tricarboxylate pyruvate-lyase
+  genes: PP2334
   equation: '|C2769[Cytosol]| <=> |C0036[Cytosol]| + |C0020[Cytosol]|'
 - id: RR00221
   name: Succinyl-CoA:3-oxo-acid CoA-transferase
+  genes: PP3123 and PP3122
   equation: '|C0138[Cytosol]| + |C0076[Cytosol]| <=> |C0036[Cytosol]| + |C0273[Cytosol]|'
 - id: RR00223
   name: UDP-N-acetyl-D-glucosamine 2-epimerase
+  genes: PP1811
   equation: '|C0037[Cytosol]| + |C0001[Cytosol]| <=> |C0014[Cytosol]| + |C0486[Cytosol]|
     + |C0065[Cytosol]|'
 - id: RR00228
@@ -2341,12 +2946,15 @@
   equation: '|C0039[Cytosol]| <=> |C0538[Cytosol]|'
 - id: RR00237
   name: D-4-Hydroxy-2-oxoglutarate glyoxylate-lyase
+  genes: PP5346 or PP1505 or PP1024
   equation: '|C3466[Cytosol]| <=> |C0040[Cytosol]| + |C0020[Cytosol]| + (2) |C0065[Cytosol]|'
 - id: RR00268
   name: ATP:CMP phosphotransferase
+  genes: PP1771
   equation: '|C0002[Cytosol]| + |C0046[Cytosol]| <=> |C0094[Cytosol]| + |C0008[Cytosol]|'
 - id: RR00311
   name: ATP:nucleoside-diphosphate phosphatransferase
+  genes: PP0849
   equation: '|C0002[Cytosol]| + |C0094[Cytosol]| <=> |C0051[Cytosol]| + |C0008[Cytosol]|'
 - id: RR00338
   name: Formaldehyde:formaldehyde oxidoreductase
@@ -2354,164 +2962,210 @@
     + |C0114[Cytosol]|
 - id: RR00362
   name: 2-Phospho-D-glucerate hydro-lyase
+  genes: PP1612
   equation: '|C0477[Cytosol]| <=> |C0059[Cytosol]| + |C0001[Cytosol]|'
 - id: RR00364
   name: Phosphoenolpyruvate:UDP-N-acetyl-D-glucosamine1-carboxyvinyl-transferase
+  genes: PP0964
   equation: '|C0037[Cytosol]| + |C0059[Cytosol]| <=> |C2789[Cytosol]| + |C0009[Cytosol]|'
 - id: RR00397
   name: L-Phenylalanine:2-oxoglutarate aminotransferase
+  genes: PP3721 or PP1972 or PP0858 or PP0967 or PP4692 or PP1872 or PP3590
   equation: '|C0064[Cytosol]| + |C0024[Cytosol]| <=> |C0139[Cytosol]| + |C0023[Cytosol]|'
 - id: RR00405
   name: (R)-Lactate:NAD+ oxidoreductase
+  genes: PP1649
   equation: '|C0003[Cytosol]| + |C0213[Cytosol]| <=> |C0020[Cytosol]| + |C0065[Cytosol]|
     + |C0004[Cytosol]|'
 - id: RR00417
   name: Glycolate:NAD+ oxidoreductase
+  genes: PP0762
   equation: '|C0003[Cytosol]| + |C0136[Cytosol]| <=> |C0040[Cytosol]| + |C0065[Cytosol]|
     + |C0004[Cytosol]|'
 - id: RR00420
   name: ATP:nucleoside-diphosphate phosphatransferase
+  genes: PP0849
   equation: '|C0088[Cytosol]| + |C0002[Cytosol]| <=> |C0066[Cytosol]| + |C0008[Cytosol]|'
 - id: RR00432
   name: L-Tyrosine:2-oxoglutarate aminotransferase
+  genes: PP1972 or PP3590
   equation: '|C0067[Cytosol]| + |C0024[Cytosol]| <=> |C0854[Cytosol]| + |C0023[Cytosol]|'
 - id: RR00438
   name: Acetyl-CoA:carbon-dioxide ligase (ADP-forming)
+  genes: PP1996 and PP1607 and PP0558
   equation: '|C0234[Cytosol]| + |C0022[Cytosol]| + |C0002[Cytosol]| <=> |C0009[Cytosol]|
     + |C0065[Cytosol]| + |C0068[Cytosol]| + |C0008[Cytosol]|'
 - id: RR00446
   name: L-Threonine acetaldehyde-lyase
+  genes: PP0321
   equation: '|C0156[Cytosol]| <=> |C0069[Cytosol]| + |C0033[Cytosol]|'
 - id: RR00448
   name: Ethanol:NAD+ oxidoreductase
+  genes: PP1616 or PP3839
   equation: '|C0003[Cytosol]| + |C0359[Cytosol]| <=> |C0069[Cytosol]| + |C0065[Cytosol]|
     + |C0004[Cytosol]|'
 - id: RR00464
   name: D-Glucose-6-phosphate ketol-isomerase
+  genes: PP4701 or PP1808
   equation: '|C0077[Cytosol]| <=> |C0070[Cytosol]|'
 - id: RR00465
   name: D-Mannose-6-phosphate ketol-isomerase
+  genes: PP4860 or PP1277
   equation: '|C0227[Cytosol]| <=> |C0070[Cytosol]|'
 - id: RR00508
   name: Succinyl-CoA:L-arginine N2-succinyltransferase
+  genes: PP4479 or PP4480
   equation: '|C0050[Cytosol]| + |C0076[Cytosol]| <=> |C2073[Cytosol]| + |C0065[Cytosol]|
     + |C0010[Cytosol]|'
 - id: RR00511
   name: D-Glucose-6-phosphate:NADP+ 1-oxoreductase
+  genes: PP4042 or PP1022 or PP5351
   equation: '|C0077[Cytosol]| + |C0006[Cytosol]| <=> |C0065[Cytosol]| + |C0005[Cytosol]|
     + |C0895[Cytosol]|'
 - id: RR00519
   name: sn-Glycerol-3-phosphate:NADP+ 2-oxidoreductase
+  genes: PP4160 or PP4169
   equation: '|C0006[Cytosol]| + |C0078[Cytosol]| <=> |C0065[Cytosol]| + |C0093[Cytosol]|
     + |C0005[Cytosol]|'
 - id: RR00529
   name: Hydrogen-sulfide:NADP+ oxidoreductase
+  genes: PP0860 and PP2371
   equation: '|C0231[Cytosol]| + (3) |C0006[Cytosol]| + (3) |C0001[Cytosol]| <=> |C0079[Cytosol]|
     + (5) |C0065[Cytosol]| + (3) |C0005[Cytosol]|'
 - id: RR00540
   name: D-Glucitol:NAD+ 2-oxidoreductase
+  genes: PP0552
   equation: '|C0579[Cytosol]| + |C0003[Cytosol]| <=> |C0065[Cytosol]| + |C0004[Cytosol]|
     + |C0080[Cytosol]|'
 - id: RR00546
   name: GDP:D-mannose-1-phosphate guanylyltransferase
+  genes: PP1776 or PP1277
   equation: '|C0480[Cytosol]| + |C0065[Cytosol]| + |C0031[Cytosol]| <=> |C0081[Cytosol]|
     + |C0009[Cytosol]|'
 - id: RR00563
   name: 3-Aminopropanoate:2-oxoglutarate aminotransferase
+  genes: PP0214
   equation: '|C0024[Cytosol]| + |C0083[Cytosol]| <=> |C0184[Cytosol]| + |C0023[Cytosol]|'
 - id: RR00579
   name: Propanoyl-CoA:(acceptor) 2,3-oxidoreductase
+  genes: PP2437 or PP2793
   equation: '|C0084[Cytosol]| + |C0015[Cytosol]| + (4) |C0065[Cytosol]| <=> |C0964[Cytosol]|
     + |C0655[Cytosol]|'
 - id: RR00581
   name: Propinol adenylate:CoA ligase (AMP-forming)
+  genes: PP4702 or PP4487 or PP2351 or PP2213
   equation: '|C3486[Cytosol]| + |C0010[Cytosol]| <=> |C0018[Cytosol]| + |C0084[Cytosol]|
     + (2) |C0065[Cytosol]|'
 - id: RR00592
   name: 5,6,7,8-Tetrahydrofolate:NADP+ oxidoreductase
+  genes: PP5132
   equation: '|C0085[Cytosol]| + |C0006[Cytosol]| <=> |C0325[Cytosol]| + |C0065[Cytosol]|
     + |C0005[Cytosol]|'
 - id: RR00598
   name: 5,10-Methylenetetrahydrofolate:glycine hydroxymethyltransferase
+  genes: PP0671 or PP0322
   equation: '|C0122[Cytosol]| + |C0033[Cytosol]| + |C0001[Cytosol]| <=> |C0053[Cytosol]|
     + |C0085[Cytosol]|'
 - id: RR00617
   name: UMP:pyrophosphate phosphoribosyltransferase
+  genes: PP0746 or PP4997
   equation: '|C0012[Cytosol]| + |C0089[Cytosol]| <=> |C0090[Cytosol]| + |C0101[Cytosol]|'
 - id: RR00643
   name: 1-Aminocyclopropane-1-carboxylate endolyase (deaminating)
+  genes: PP2009
   equation: '|C0893[Cytosol]| + |C0001[Cytosol]| <=> |C0092[Cytosol]| + |C0957[Cytosol]|'
 - id: RR00645
   name: O-Succinyl-L-homoserine succinate-lyase (adding cysteine)
+  genes: PP0659
   equation: '|C0809[Cytosol]| + |C0001[Cytosol]| <=> |C0036[Cytosol]| + |C0092[Cytosol]|
     + |C0065[Cytosol]| + |C0957[Cytosol]|'
 - id: RR00652
   name: D-Glyceraldehyde-3-phosphate ketol-isomerase
+  genes: PP4715
   equation: '|C0100[Cytosol]| <=> |C0093[Cytosol]|'
 - id: RR00674
   name: ATP:D-ribose-5-phosphate pyrophosphotransferase
+  genes: PP0722
   equation: '|C0002[Cytosol]| + |C0099[Cytosol]| <=> |C0018[Cytosol]| + |C0065[Cytosol]|
     + |C0101[Cytosol]|'
 - id: RR00681
   name: D-Ribose-5-phosphate ketol-isomerase
+  genes: PP5150
   equation: '|C0099[Cytosol]| <=> |C0165[Cytosol]|'
 - id: RR00685
   name: D-Glyceraldehyde-3-phosphate:NAD+ oxidoreductase(phosphorylating)
+  genes: PP1009
   equation: '|C0003[Cytosol]| + |C0100[Cytosol]| + |C0009[Cytosol]| <=> |C0195[Cytosol]|
     + |C0065[Cytosol]| + |C0004[Cytosol]|'
 - id: RR00689
   name: Sedoheptulose-7-phosphate:D-glyceraldehyde-3-phosphateglycolaldehyde transferase
+  genes: PP4965
   equation: '|C0100[Cytosol]| + |C0070[Cytosol]| <=> |C0228[Cytosol]| + |C0190[Cytosol]|'
 - id: RR00690
   name: D-Fructose-1,6-bisphosphate D-glyceraldehyde-3-phosphate-lyase
+  genes: PP4960
   equation: '|C0284[Cytosol]| <=> |C0100[Cytosol]| + |C0093[Cytosol]|'
 - id: RR00693
   name: 1-(5-Phospho-D-ribosyl)-ATP:pyrophosphate phosphoribosyl-transferase
+  genes: PP0965
   equation: '|C0012[Cytosol]| + |C1750[Cytosol]| <=> |C0002[Cytosol]| + |C0101[Cytosol]|'
 - id: RR00695
   name: N-(5-Phospho-D-ribosyl)anthranilate:pyrophosphatephosphoribosyl-transferase
+  genes: PP0421
   equation: '|C0012[Cytosol]| + |C2612[Cytosol]| <=> |C0091[Cytosol]| + |C0101[Cytosol]|'
 - id: RR00703
   name: (S)-Malate hydro-lyase
+  genes: PP1755 or PP0897 or PP0944
   equation: '|C0127[Cytosol]| <=> |C0104[Cytosol]| + |C0001[Cytosol]|'
 - id: RR00704
   name: N6-(1,2-Dicarboxyethyl)AMP AMP-lyase
+  genes: PP4016
   equation: '|C2339[Cytosol]| <=> |C0018[Cytosol]| + |C0104[Cytosol]|'
 - id: RR00706
   name: N-(L-Argininosuccinate) arginie-lyase
+  genes: PP0184
   equation: '|C2126[Cytosol]| <=> |C0050[Cytosol]| + |C0104[Cytosol]|'
 - id: RR00708
   name: L-Leucine:NAD+ oxidoreductase(deaminating)
+  genes: PP4617
   equation: '|C0003[Cytosol]| + |C0105[Cytosol]| + |C0001[Cytosol]| <=> |C0192[Cytosol]|
     + |C0065[Cytosol]| + |C0957[Cytosol]| + |C0004[Cytosol]|'
 - id: RR00733
   name: Butanoyl-CoA:NAD+ trans-2-oxidoreductase
+  genes: PP4948
   equation: '|C0003[Cytosol]| + |C0118[Cytosol]| <=> |C0065[Cytosol]| + |C0642[Cytosol]|
     + |C0004[Cytosol]|'
 - id: RR00739
   name: Acetyl-CoA:acetyl-CoA C-acetyltransferase
+  genes: PP3280 or PP4636 or PP2051 or PP3754 or PP2137 or PP2215 or PP0582
   equation: '|C0022[Cytosol]| + |C0118[Cytosol]| <=> |C3054[Cytosol]| + |C0010[Cytosol]|'
 - id: RR00771
   name: 5,10-Methylenetetrahydrofolate:NADP+ oxidoreductase
+  genes: PP2265 or PP1945
   equation: '|C0122[Cytosol]| + |C0006[Cytosol]| <=> |C0343[Cytosol]| + |C0065[Cytosol]|
     + |C0005[Cytosol]|'
 - id: RR00772
   name: glycine synthase
+  genes: PP5194 or PP0986
   equation: '|C0003[Cytosol]| + |C0085[Cytosol]| + |C0033[Cytosol]| <=> |C0122[Cytosol]|
     + |C0957[Cytosol]| + |C0004[Cytosol]| + |C0011[Cytosol]|'
 - id: RR00779
   name: GMP:pyrophosphate phosphoribosyltransferase
+  genes: PP0747
   equation: '|C0012[Cytosol]| + |C0123[Cytosol]| <=> |C0199[Cytosol]| + |C0101[Cytosol]|'
 - id: RR00795
   name: L-Proline:NADP+ 5-oxidoreductase
+  genes: PP5095
   equation: '|C0126[Cytosol]| + |C0006[Cytosol]| <=> |C2394[Cytosol]| + (2) |C0065[Cytosol]|
     + |C0005[Cytosol]|'
 - id: RR00812
   name: Palmitate:CoA ligase (AMP-forming)
+  genes: PP4549 or PP3458 or PP4550
   equation: '|C0002[Cytosol]| + |C0206[Cytosol]| + |C0010[Cytosol]| <=> |C0131[Cytosol]|
     + |C0012[Cytosol]| + |C0018[Cytosol]|'
 - id: RR00818
   name: Citrate hydro-lyase
+  genes: PP2336 or PP2339 or PP2112
   equation: '|C0134[Cytosol]| + (3) |C0065[Cytosol]| <=> |C0326[Cytosol]| + |C0001[Cytosol]|'
 - id: RR00823
   name: Glycolaldehyde:NAD+ oxidoreductase
@@ -2519,101 +3173,129 @@
     + |C0004[Cytosol]| + |C0136[Cytosol]|'
 - id: RR00827
   name: Propanoate:CoA ligase (AMP-forming)
+  genes: PP4702 or PP4487 or PP2351 or PP2213
   equation: '|C0002[Cytosol]| + (2) |C0065[Cytosol]| + |C0137[Cytosol]| <=> |C3486[Cytosol]|
     + |C0012[Cytosol]|'
 - id: RR00833
   name: (R)-3-Hydroxybutanoate:NAD+ oxidoreductase
+  genes: PP3073
   equation: '|C0003[Cytosol]| + |C0785[Cytosol]| <=> |C0138[Cytosol]| + |C0065[Cytosol]|
     + |C0004[Cytosol]|'
 - id: RR00853
   name: 5-Methylcytosine aminohydrolase
+  genes: PP1100 or PP3189
   equation: '|C0065[Cytosol]| + |C1568[Cytosol]| + |C0001[Cytosol]| <=> |C0957[Cytosol]|
     + |C0146[Cytosol]|'
 - id: RR00910
   name: ATP:CMP phosphotransferase
+  genes: PP1771
   equation: '|C0002[Cytosol]| + |C0198[Cytosol]| <=> |C0523[Cytosol]| + |C0008[Cytosol]|'
 - id: RR00931
   name: Dihydrolipoamide:NAD+ oxidoreductase
+  genes: PP4187 or PP5366 or PP4404
   equation: '|C0003[Cytosol]| + |C0446[Cytosol]| <=> |C0065[Cytosol]| + |C0205[Cytosol]|
     + |C0004[Cytosol]|'
 - id: RR00941
   name: Pyridoxamine:oxygen oxidoreductase (deaminating)
+  genes: PP1129
   equation: '|C0415[Cytosol]| + |C0007[Cytosol]| + |C0001[Cytosol]| <=> |C0025[Cytosol]|
     + |C0957[Cytosol]| + |C0207[Cytosol]|'
 - id: RR00942
   name: Pyridoxine:oxygen oxidoreductase (deaminating)
+  genes: PP1129
   equation: '|C0007[Cytosol]| + |C0257[Cytosol]| <=> |C0025[Cytosol]| + |C0207[Cytosol]|'
 - id: RR00952
   name: Nicotinate D-ribonucleotide:pyrophosphate phosphoribosyltransferase
+  genes: PP4868
   equation: '|C0012[Cytosol]| + |C0859[Cytosol]| <=> |C0065[Cytosol]| + |C0210[Cytosol]|
     + |C0101[Cytosol]|'
 - id: RR00987
   name: L-Homoserine:NAD+ oxidoreductase
+  genes: PP1470 or PP0664
   equation: '|C0003[Cytosol]| + |C0219[Cytosol]| <=> |C0341[Cytosol]| + |C0065[Cytosol]|
     + |C0004[Cytosol]|'
 - id: RR00989
   name: Homoserine O-acetyltransferase
+  genes: PP5097
   equation: '|C0022[Cytosol]| + |C0219[Cytosol]| <=> |C0010[Cytosol]| + |C0779[Cytosol]|'
 - id: RR01014
   name: D-Mannose 6-phosphate 1,6-phosphomutase
+  genes: PP1777 or PP5288
   equation: '|C0227[Cytosol]| <=> |C0480[Cytosol]|'
 - id: RR01016
   name: D-Erythrose 4-phosphate + NAD+ + H2O &gt;=&lt; 4-Phospho-D-erythronate +NADH
     + H+
+  genes: PP4964
   equation: '|C0003[Cytosol]| + |C0228[Cytosol]| + |C0001[Cytosol]| <=> (2) |C0065[Cytosol]|
     + |C2122[Cytosol]| + |C0004[Cytosol]|'
 - id: RR01018
   name: Sedoheptulose-7-phosphate:D-glyceraldehyde-3-phosphateglyceronetransferase
+  genes: PP2168
   equation: '|C0100[Cytosol]| + |C0230[Cytosol]| <=> |C0228[Cytosol]| + |C0070[Cytosol]|'
 - id: RR01038
   name: ATP:nucleoside-diphosphate phosphatransferase
+  genes: PP0849
   equation: '|C0002[Cytosol]| + |C0289[Cytosol]| <=> |C0008[Cytosol]| + |C0233[Cytosol]|'
 - id: RR01048
   name: Orotidine-5'-phosphate:pyrophosphate phosphoribosyltransferase
+  genes: PP5291
   equation: '|C0012[Cytosol]| + |C0798[Cytosol]| <=> |C0240[Cytosol]| + |C0101[Cytosol]|'
 - id: RR01070
   name: Isocitrate:NADP+ oxidoreductase (decarboxylating)
+  genes: PP4012 and PP4011
   equation: (2) |C0065[Cytosol]| + |C0254[Cytosol]| + |C0006[Cytosol]| <=> |C3116[Cytosol]|
     + |C0005[Cytosol]|
 - id: RR01071
   name: Isocitrate hydro-lyase
+  genes: PP2336 or PP2339 or PP2112
   equation: (3) |C0065[Cytosol]| + |C0254[Cytosol]| <=> |C0326[Cytosol]| + |C0001[Cytosol]|
 - id: RR01103
   name: (S)-Dihydroorotate amidohydrolase
+  genes: PP1086 or PP4999
   equation: '|C0276[Cytosol]| + |C0001[Cytosol]| <=> |C0065[Cytosol]| + |C0338[Cytosol]|'
 - id: RR01145
   name: 2'-Deoxyadenosine 5'-monophosphate phosphohydrolase
+  genes: PP1414 or PP1620 or PP2531
   equation: '|C0288[Cytosol]| + |C0001[Cytosol]| <=> |C0009[Cytosol]| + |C0433[Cytosol]|'
 - id: RR01147
   name: ATP:(d)GMP phosphotransferase
+  genes: PP5296
   equation: '|C0002[Cytosol]| + |C0290[Cytosol]| <=> |C0008[Cytosol]| + |C0289[Cytosol]|'
 - id: RR01150
   name: ATP:nucleoside-diphosphate phosphatransferase
+  genes: PP0849
   equation: '|C0002[Cytosol]| + |C0291[Cytosol]| <=> |C0352[Cytosol]| + |C0008[Cytosol]|'
 - id: RR01151
   name: ATP:dTMP phosphotransferase
   equation: '|C0292[Cytosol]| + |C0002[Cytosol]| <=> |C0008[Cytosol]| + |C0291[Cytosol]|'
 - id: RR01155
   name: ATP:dTMP phosphotransferase
+  genes: PP1593
   equation: '|C0002[Cytosol]| + |C0293[Cytosol]| <=> |C0960[Cytosol]| + |C0008[Cytosol]|'
 - id: RR01180
   name: XMP:pyrophosphate phosphoribosyltransferase
+  genes: PP0747
   equation: '|C0012[Cytosol]| + |C0491[Cytosol]| <=> |C0304[Cytosol]| + |C0101[Cytosol]|'
 - id: RR01210
   name: L-Isoleucine:2-oxoglutarate aminotransferase
+  genes: PP3511
   equation: '|C0317[Cytosol]| + |C0024[Cytosol]| <=> |C0502[Cytosol]| + |C0023[Cytosol]|'
 - id: RR01237
   name: Dihydrofolate:NADP+ oxidoreductase
+  genes: PP5132
   equation: '|C0325[Cytosol]| + |C0006[Cytosol]| <=> |C0389[Cytosol]| + |C0005[Cytosol]|'
 - id: RR01269
   name: 5-Dehydro-4-deoxy-D-glucarate hydro-lyase (decarboxylating)
+  genes: PP3599
   equation: '|C0506[Cytosol]| + (2) |C0065[Cytosol]| <=> |C0335[Cytosol]| + |C0011[Cytosol]|
     + |C0001[Cytosol]|'
 - id: RR01271
   name: N2-Acetyl-L-ornithine:L-glutamate N-acetyltransferase
+  genes: PP1346
   equation: '|C0337[Cytosol]| + |C0023[Cytosol]| <=> |C0472[Cytosol]| + |C0062[Cytosol]|'
 - id: RR01272
   name: N2-Acetyl-L-ornithine:2-oxoglutarate aminotransferase
+  genes: PP4481 or PP0372
   equation: '|C0337[Cytosol]| + |C0024[Cytosol]| <=> |C0902[Cytosol]| + |C0023[Cytosol]|'
 - id: RR01284
   name: 2,3,4,5-Tetrahydropyridine-2-carboxylate + H2O &gt;=&lt;L-2-Aminoadipate
@@ -2621,83 +3303,107 @@
   equation: '|C0348[Cytosol]| + |C0001[Cytosol]| <=> |C2491[Cytosol]|'
 - id: RR01290
   name: ATP:nucleoside-diphosphate phosphatransferase
+  genes: PP0849
   equation: '|C0523[Cytosol]| + |C0002[Cytosol]| <=> |C0351[Cytosol]| + |C0008[Cytosol]|'
 - id: RR01292
   name: dTTP:alpha-D-glucose-1-phosphate thymidylyltransferase
+  genes: PP1783
   equation: '|C0352[Cytosol]| + |C0065[Cytosol]| + |C0087[Cytosol]| <=> |C0617[Cytosol]|
     + |C0012[Cytosol]|'
 - id: RR01295
   name: ATP:nucleoside-diphosphate phosphatransferase
+  genes: PP0849
   equation: '|C0960[Cytosol]| + |C0002[Cytosol]| <=> |C0008[Cytosol]| + |C0353[Cytosol]|'
 - id: RR01300
   name: Indole hydro-lyase (adding indoleglycerol-phosphate)
+  genes: PP0082 and PP0083
   equation: '|C0355[Cytosol]| + |C0100[Cytosol]| <=> |C2184[Cytosol]|'
 - id: RR01349
   name: Itaconate:CoA ligase (ADP-forming)
+  genes: PP4185 and PP4186
   equation: '|C0376[Cytosol]| + |C0002[Cytosol]| + (3) |C0065[Cytosol]| + |C0010[Cytosol]|
     <=> |C0009[Cytosol]| + |C0008[Cytosol]| + |C0412[Cytosol]|'
 - id: RR01358
   name: Shikimate:NADP+ 5-oxidoreductase
+  genes: PP0074 or PP2608 or PP2406 or PP3002 or PP3768
   equation: '|C0379[Cytosol]| + |C0006[Cytosol]| <=> |C1696[Cytosol]| + |C0065[Cytosol]|
     + |C0005[Cytosol]|'
 - id: RR01374
   name: L-Cysteate:2-oxoglutarate aminotransferase
+  genes: PP3721 or PP0858 or PP4692 or PP1872
   equation: '|C0391[Cytosol]| + (2) |C0065[Cytosol]| + |C0024[Cytosol]| <=> |C3219[Cytosol]|
     + |C0245[Cytosol]|'
 - id: RR01408
   name: (R)-Pantoate:NADP+ 2-oxidoreductase
+  genes: PP1351 or PP4678 or PP2998 or PP2325
   equation: '|C0404[Cytosol]| + |C0006[Cytosol]| <=> |C0702[Cytosol]| + |C0065[Cytosol]|
     + |C0005[Cytosol]|'
 - id: RR01452
   name: (R)-S-Lactoylglutathione methylglyoxal-lyase (isomerizing)
+  genes: PP3766
   equation: '|C2153[Cytosol]| <=> |C0424[Cytosol]| + |C0042[Cytosol]|'
 - id: RR01486
   name: D-Fructose 1-phosphate D-glyceraldehyde-3-phosphate-lyase
+  genes: PP4960
   equation: '|C0790[Cytosol]| <=> |C0093[Cytosol]| + |C0445[Cytosol]|'
 - id: RR01487
   name: Acetyl-CoA:dihydrolipoamide S-acetyltransferase
+  genes: PP4403 or PP0338 or PP0553
   equation: '|C0446[Cytosol]| + |C0022[Cytosol]| <=> |C0010[Cytosol]| + |C0824[Cytosol]|'
 - id: RR01488
   name: Succinyl-CoA:dihydrolipoamide S-succinyltransferase
+  genes: PP4188
   equation: '|C0446[Cytosol]| + |C0076[Cytosol]| <=> |C0846[Cytosol]| + |C0010[Cytosol]|'
 - id: RR01489
   name: Glutaryl-CoA:dihydrolipoamide S-succinyltransferase
+  genes: PP4188
   equation: '|C0446[Cytosol]| + |C0065[Cytosol]| + |C0409[Cytosol]| <=> |C0010[Cytosol]|
     + |C3582[Cytosol]|'
 - id: RR01573
   name: L-Serine hydro-lyase (adding indoleglycerol-phosphate)
+  genes: PP0082 and PP0083
   equation: '|C0053[Cytosol]| + |C2184[Cytosol]| <=> |C0063[Cytosol]| + |C0100[Cytosol]|
     + |C0001[Cytosol]|'
 - id: RR01583
   name: LL-2,6-Diaminoheptanedioate 2-epimerase
+  genes: PP5228 or PP3790
   equation: '|C0498[Cytosol]| <=> |C0507[Cytosol]|'
 - id: RR01593
   name: 2-Deoxy-D-ribose 5-phosphate + ADP &gt;=&lt; Deoxyribose + ATP
+  genes: PP2458
   equation: '|C0065[Cytosol]| + |C0504[Cytosol]| + |C0008[Cytosol]| <=> |C1228[Cytosol]|
     + |C0002[Cytosol]|'
 - id: RR01594
   name: D-Glucarate hydro-lyase
+  genes: PP4757
   equation: '|C0599[Cytosol]| <=> |C0506[Cytosol]| + |C0001[Cytosol]|'
 - id: RR01605
   name: dTDP-4-dehydro-6-deoxy-D-glucose 3,5-epimerase
+  genes: PP0265 or PP1782
   equation: '|C9024[Cytosol]| + |C0065[Cytosol]| <=> |C3100[Cytosol]|'
 - id: RR01720
   name: dTDPglucose 4-epimerase
+  genes: PP3129 or PP0501
   equation: '|C0617[Cytosol]| + (2) |C0065[Cytosol]| <=> |C1404[Cytosol]|'
 - id: RR01747
   name: 3-Dehydroquinate hydro-lyase
+  genes: PP2407 or PP3003 or PP0560
   equation: '|C0690[Cytosol]| <=> |C1696[Cytosol]| + |C0001[Cytosol]|'
 - id: RR01849
   name: 5-Amino-2-oxopentanoate:2-oxoglutarate aminotransferase
+  genes: PP0967
   equation: '|C0795[Cytosol]| + |C0024[Cytosol]| <=> |C0023[Cytosol]| + |C0915[Cytosol]|'
 - id: RR01873
   name: (S)-3-Hydroxybutanoyl-CoA 3-epimerase
+  genes: PP2136
   equation: '|C0829[Cytosol]| <=> |C2207[Cytosol]|'
 - id: RR01898
   name: 2-Carboxy-2,5-dihydro-5-oxofuran-2-acetate lyase (decyclizing)
+  genes: PP1379
   equation: '|C0923[Cytosol]| <=> |C0065[Cytosol]| + |C0842[Cytosol]|'
 - id: RR01902
   name: L-Glutamate-5-semialdehyde:NADP+ 5-oxidoreductase (phosphorylationg)
+  genes: PP4811
   equation: '|C0844[Cytosol]| + |C0009[Cytosol]| + |C0006[Cytosol]| <=> |C0065[Cytosol]|
     + |C0005[Cytosol]| + |C2066[Cytosol]|'
 - id: RR01903
@@ -2705,188 +3411,239 @@
   equation: '|C0844[Cytosol]| <=> |C2394[Cytosol]| + |C0065[Cytosol]| + |C0001[Cytosol]|'
 - id: RR01928
   name: Nicotinate D-ribonucleotide phosphohydrolase
+  genes: PP1414 or PP1620 or PP2531
   equation: '|C0859[Cytosol]| + |C0001[Cytosol]| <=> |C3405[Cytosol]| + |C0009[Cytosol]|'
 - id: RR01974
   name: Guanosine 3'-diphosphate 5'-triphosphate 5'-phosphohydrolase
+  genes: PP5216
   equation: '|C2711[Cytosol]| + |C0001[Cytosol]| <=> |C0889[Cytosol]| + |C0009[Cytosol]|
     + |C0065[Cytosol]|'
 - id: RR01988
   name: N-Acetyl-L-glutamate-5-semialdehyde:NADP+ 5-oxidoreductase(phosphrylating)
+  genes: PP3633 or PP0432
   equation: '|C0902[Cytosol]| + |C0009[Cytosol]| + |C0006[Cytosol]| <=> |C2523[Cytosol]|
     + |C0065[Cytosol]| + |C0005[Cytosol]|'
 - id: RR01999
   name: Phosphoenolpyruvate:3-phosphoshikimate5-O-(1-carboxyvinyl)-transferase
+  genes: PP1770
   equation: '|C2000[Cytosol]| + |C0059[Cytosol]| <=> |C0917[Cytosol]| + |C0009[Cytosol]|'
 - id: RR02006
   name: 4-Carboxymuconolactone carboxy-lyase
+  genes: PP1381 or PP3648
   equation: '|C0923[Cytosol]| + |C0065[Cytosol]| <=> |C2225[Cytosol]| + |C0011[Cytosol]|'
 - id: RR02032
   name: ATP:nucleoside-diphosphate phosphatransferase
+  genes: PP0849
   equation: '|C0958[Cytosol]| + |C0002[Cytosol]| + |C0065[Cytosol]| <=> |C0959[Cytosol]|
     + |C0008[Cytosol]|'
 - id: RR02085
   name: ATP:selenide, water phosphotransferase
+  genes: PP0823
   equation: '|C0002[Cytosol]| + |C1062[Cytosol]| + |C0001[Cytosol]| <=> |C0018[Cytosol]|
     + |C0009[Cytosol]| + |C3012[Cytosol]|'
 - id: RR02157
   name: Octanoyl-CoA:acetyl-CoA C-acyltransferase
+  genes: PP3280 or PP2137 or PP0582
   equation: '|C1316[Cytosol]| + |C0022[Cytosol]| <=> |C0010[Cytosol]| + |C3050[Cytosol]|'
 - id: RR02215
   name: 2,5-Dihydro-5-oxofuran-2-acetate lyase (decyclizing)
+  genes: PP3715
   equation: '|C0065[Cytosol]| + |C2506[Cytosol]| <=> |C1610[Cytosol]|'
 - id: RR02222
   name: 2-Isopropylmalate hydro-lyase
+  genes: PP1986 and PP1985
   equation: '|C1626[Cytosol]| <=> |C1690[Cytosol]| + |C0001[Cytosol]|'
 - id: RR02237
   name: Myristoyl-CoA:acetylCoA C-myristoyltransferase
+  genes: PP3280 or PP2137 or PP0582
   equation: '|C0022[Cytosol]| + |C1673[Cytosol]| <=> |C3045[Cytosol]| + |C0010[Cytosol]|'
 - id: RR02244
   name: 3-Isopropylmalate hydro-lyase
+  genes: PP1986 and PP1985
   equation: '|C2663[Cytosol]| <=> |C1690[Cytosol]| + |C0001[Cytosol]|'
 - id: RR02299
   name: 3-Hydroxyisopentyl-CoA hydro-lyase
+  genes: PP2136 or PP3283 or PP3491 or PP2217 or PP4066 or PP1412 or PP1845 or PP4030
   equation: '|C3496[Cytosol]| <=> |C1939[Cytosol]| + |C0001[Cytosol]|'
 - id: RR02306
   name: 5-Phospho-D-ribosylamine:glycine ligase (ADP-forming)
+  genes: PP4823
   equation: '|C1954[Cytosol]| + |C0002[Cytosol]| + |C0033[Cytosol]| <=> |C0009[Cytosol]|
     + |C0065[Cytosol]| + |C0008[Cytosol]| + |C2358[Cytosol]|'
 - id: RR02311
   name: (2-Aminoethyl)phosphonate:pyruvate aminotransferase
+  genes: PP2209
   equation: '|C2206[Cytosol]| + |C0020[Cytosol]| <=> |C0035[Cytosol]| + |C1994[Cytosol]|'
 - id: RR02322
   name: (S)-3-Hydroxydodecanoyl-CoA hydro-lyase
+  genes: PP2136 or PP3283 or PP3491 or PP2217 or PP4066 or PP1412 or PP1845 or PP4030
   equation: '|C3047[Cytosol]| <=> |C2029[Cytosol]| + |C0001[Cytosol]|'
 - id: RR02325
   name: 3-Phosphoserine:2-oxoglutarate aminotransferase
+  genes: PP1768
   equation: '|C0024[Cytosol]| + |C0728[Cytosol]| <=> |C0023[Cytosol]| + |C2038[Cytosol]|'
 - id: RR02327
   name: 6-Amino-2-oxohexanoate &gt;=&lt; delta1-Piperideine-2-carboxylate + H2O
   equation: '|C2043[Cytosol]| <=> |C2499[Cytosol]| + |C0001[Cytosol]|'
 - id: RR02333
   name: L-Alanine:3-oxopropanoate aminotransferase
+  genes: PP0596
   equation: '|C3500[Cytosol]| + |C0035[Cytosol]| <=> |C0020[Cytosol]| + |C2065[Cytosol]|
     + |C0065[Cytosol]|'
 - id: RR02341
   name: (2S,3S)-3-Hydroxy-2-methylbutanoyl-CoA:NAD+ oxidoreductase
+  genes: PP2136 or PP2047 or PP0302 or PP2214
   equation: '|C0003[Cytosol]| + |C2660[Cytosol]| <=> |C2097[Cytosol]| + |C0065[Cytosol]|
     + |C0004[Cytosol]|'
 - id: RR02346
   name: 1-(5-Phospho-D-ribosyl)-5-amino-4-imidazolecarboxylate carboxy-lyase
+  genes: PP5335 and PP5336
   equation: '|C0065[Cytosol]| + |C2857[Cytosol]| <=> |C2114[Cytosol]| + |C0011[Cytosol]|'
 - id: RR02347
   name: 4-Phospho-D-erythronate + NAD+ &gt;=&lt;2-Oxo-3-hydroxy-4-phosphobutanoate
     + NADH
+  genes: PP2117
   equation: '|C0003[Cytosol]| + |C2122[Cytosol]| <=> |C3530[Cytosol]| + |C0065[Cytosol]|
     + |C0004[Cytosol]|'
 - id: RR02374
   name: 2-Oxo-2,5-dihydrofuran-5-acetate delta3-delat2-isomerase
+  genes: PP3714
   equation: '|C2506[Cytosol]| <=> |C2225[Cytosol]|'
 - id: RR02393
   name: (S)-4-Amino-5-oxopentanoate:NADP+ 5-oxidoreductase(phosphorylationg)
+  genes: PP4811
   equation: '|C0009[Cytosol]| + |C0065[Cytosol]| + |C0006[Cytosol]| + |C2309[Cytosol]|
     <=> |C3348[Cytosol]| + |C0005[Cytosol]|'
 - id: RR02406
   name: 10-Formyltetrahydrofolate:5'-phosphoribosylglycinamideformyltransferase
+  genes: PP1664
   equation: '|C0193[Cytosol]| + |C2358[Cytosol]| <=> |C0065[Cytosol]| + |C0085[Cytosol]|
     + |C2646[Cytosol]|'
 - id: RR02442
   name: 1-(5'-Phosphoribosyl)-5-amino-4-imidazolecarboxamide:pyrophosphatephosphoribosyltransferase
+  genes: PP4266
   equation: '|C0012[Cytosol]| + |C2817[Cytosol]| <=> |C2475[Cytosol]| + |C0101[Cytosol]|'
 - id: RR02464
   name: 5-Methylthio-5-deoxy-D-ribose-1-phosphate ketol-isomerase
+  genes: PP1766
   equation: '|C2547[Cytosol]| <=> |C2761[Cytosol]|'
 - id: RR02467
   name: (2S,3R)-3-Hydroxybutane-1,2,3-tricarboxylate hydro-lyase
+  genes: PP2336
   equation: '|C2769[Cytosol]| <=> |C2571[Cytosol]| + |C0001[Cytosol]|'
 - id: RR02468
   name: 3-Isopropylmalate:NAD+ oxidoreductase
+  genes: PP1988
   equation: '|C0003[Cytosol]| + |C2663[Cytosol]| <=> |C2576[Cytosol]| + |C0065[Cytosol]|
     + |C0004[Cytosol]|'
 - id: RR02474
   name: (R)-2,3-Dihydroxy-3-methylbutanoate:NADP+ oxidoreductase(isomerizing)
+  genes: PP4678
   equation: '|C2591[Cytosol]| + |C0006[Cytosol]| <=> |C3641[Cytosol]| + |C0005[Cytosol]|'
 - id: RR02499
   name: 1-(5'-Phosphoribosyl)-5-amino-4-(N-succinocarboxamide)-imidazoleAMP-lyase
+  genes: PP4016
   equation: '|C2890[Cytosol]| <=> |C0104[Cytosol]| + |C2817[Cytosol]|'
 - id: RR02500
   name: 10-Formyltetrahydrofolate:5'-phosphoribosyl-5-amino-4-imidazolecarboxamide
     formyltransferase
+  genes: PP4822
   equation: '|C0193[Cytosol]| + |C2817[Cytosol]| <=> |C0085[Cytosol]| + |C2849[Cytosol]|'
 - id: RR02510
   name: 1-(5-Phosphoribosyl)-5-amino-4-carboxyimidazole:L-aspartate ligase(ADP-forming)
+  genes: PP1240
   equation: '|C0002[Cytosol]| + |C2857[Cytosol]| + |C0041[Cytosol]| <=> |C2890[Cytosol]|
     + |C0009[Cytosol]| + |C0065[Cytosol]| + |C0008[Cytosol]|'
 - id: RR02629
   name: O-Phospho-4-hydroxy-L-threonine:2-oxoglutarate aminotransferase
+  genes: PP1768
   equation: '|C3531[Cytosol]| + |C0024[Cytosol]| <=> |C3530[Cytosol]| + |C0023[Cytosol]|'
 - id: RR03001
   name: 2-dehydro-3-deoxy-D-gluconate-6-phosphateD-glyceraldehyde-3-phosphate-lyase
+  genes: PP1024
   equation: '|C2682[Cytosol]| <=> |C0100[Cytosol]| + |C0020[Cytosol]|'
 - id: RR03004
   name: D-galactarate hydro-lyase
+  genes: PP3601
   equation: '|C0644[Cytosol]| <=> |C0506[Cytosol]| + |C0001[Cytosol]|'
 - id: RR03016
   name: Undecaprenyl-diphosphate phosphohydrolase
+  genes: PP2862
   equation: '|C2202[Cytosol]| + |C0001[Cytosol]| <=> |C0009[Cytosol]| + |C0065[Cytosol]|
     + |C0280[Cytosol]|'
 - id: RR03017
   name: UDPMurAc(oyl-L-Ala-D-gamma-Glu-L-Lys-D-Ala-D-Ala):undecaprenyl-phosphate
     phospho-N-acetylmuramoyl-pentapeptide-transferase
+  genes: PP1334
   equation: '|C0280[Cytosol]| + |C2903[Cytosol]| <=> |C3420[Cytosol]| + |C0089[Cytosol]|'
 - id: RR03018
   name: UDPMurAc(oyl-L-Ala-D-gamma-Glu-L-Lys-D-Ala-D-Ala):undecaprenyl-phosphate
     phospho-N-acetylmuramoyl-pentapeptide-transferase
+  genes: PP1334
   equation: '|C2828[Cytosol]| + |C0280[Cytosol]| <=> |C2907[Cytosol]| + |C0089[Cytosol]|'
 - id: RR03019
   name: UDPMurAc(oyl-L-Ala-D-gamma-Glu-L-Lys-D-Ala-D-Ala):undecaprenyl-phosphate
     phospho-N-acetylmuramoyl-pentapeptide-transferase
+  genes: PP1334
   equation: '|C0280[Cytosol]| + |C2927[Cytosol]| <=> |C3428[Cytosol]| + |C0089[Cytosol]|'
 - id: RR03047
   name: MurAc(oyl-L-Ala-D-gamma-Glu-L-Lys-D-Ala-D-Ala)-diphospho-undecaprenol + UDP-N-acetyl-D-glucosamine
     &gt;=&lt; Undecaprenyl-diphospho-N-acetylmuramoyl-(N-acetylglucosamine)-L-alanyl-gamma-D-glutamyl-L-lysyl-D-alanyl-D-alanine
     + UDP
+  genes: PP1337
   equation: '|C0037[Cytosol]| + |C2907[Cytosol]| <=> |C0014[Cytosol]| + |C0065[Cytosol]|
     + |C3425[Cytosol]|'
 - id: RR03159
   name: Cobalt-precorrin 3 + S-Adenosyl-L-methionine &gt;=&lt;Cobalt-precorrin 4
     + S-Adenosyl-L-homocysteine
+  genes: PP4826
   equation: '|C0017[Cytosol]| + |C8687[Cytosol]| <=> |C0019[Cytosol]| + |C8688[Cytosol]|'
 - id: RR03160
   name: cobalt-precorrin-4 methyltransferase
+  genes: PP3410
   equation: '|C0017[Cytosol]| + |C8688[Cytosol]| <=> |C0065[Cytosol]| + |C0019[Cytosol]|
     + |C8689[Cytosol]|'
 - id: RR03162
   name: Cobalt-precorrin 6 + NADPH + H+ &gt;=&lt; Cobalt-dihydro-precorrin 6 +NADP+
+  genes: PP4832
   equation: '|C0065[Cytosol]| + |C0005[Cytosol]| + |C8690[Cytosol]| <=> |C8691[Cytosol]|
     + |C0006[Cytosol]|'
 - id: RR03164
   name: Cobalt-precorrin 8 &gt;=&lt; Cobyrinate
+  genes: PP4828
   equation: '|C8693[Cytosol]| <=> |C3356[Cytosol]|'
 - id: RR03182
   name: 4-(phosphonooxy)threonine:NAD oxidoreductase
+  genes: PP0402
   equation: '|C0003[Cytosol]| + |C3531[Cytosol]| + |C0065[Cytosol]| <=> |C8767[Cytosol]|
     + |C0011[Cytosol]| + |C0004[Cytosol]|'
 - id: RR03255
   name: L-Allothreonine acetaldehyde-lyase
+  genes: PP0321
   equation: '|C3214[Cytosol]| <=> |C0069[Cytosol]| + |C0033[Cytosol]|'
 - id: RR03487
   name: 4,6-Dideoxy-4-oxo-dTDP-D-glucose &gt;=&lt;dTDP-4-dehydro-6-deoxy-L-mannose
+  genes: PP0265 or PP1782
   equation: '|C9024[Cytosol]| <=> |C0512[Cytosol]|'
 - id: RR03512
   name: AMP:pyrophosphate phosphoribosyltransferase
+  genes: PP4266
   equation: '|C0012[Cytosol]| + |C0018[Cytosol]| <=> |C0125[Cytosol]| + |C0101[Cytosol]|'
 - id: RR03514
   name: S-Adenosyl-L-homocysteine hydrolase
   equation: '|C0019[Cytosol]| + |C0001[Cytosol]| <=> |C0132[Cytosol]| + |C0175[Cytosol]|'
 - id: RR03546
   name: Acetyl-CoA:orthophosphate acetyltransferase
+  genes: PP0774
   equation: '|C0022[Cytosol]| + |C0009[Cytosol]| <=> |C0188[Cytosol]| + |C0010[Cytosol]|'
 - id: RR03549
   name: Acetyl adenylate:CoA ligase (AMP-forming)
+  genes: PP4702 or PP4487 or PP2213
   equation: '|C3492[Cytosol]| + |C0010[Cytosol]| <=> |C0018[Cytosol]| + |C0022[Cytosol]|
     + (2) |C0065[Cytosol]|'
 - id: RR03551
   name: Acetyl-CoA:acetyl-CoA C-acetyltransferase
+  genes: PP4636 or PP2051 or PP3754 or PP2215
   equation: (2) |C0022[Cytosol]| <=> |C0273[Cytosol]| + |C0010[Cytosol]|
 - id: RR03554
   name: ATP:L-glutamate 1-phosphotransferase
@@ -2894,29 +3651,36 @@
     + |C0008[Cytosol]|'
 - id: RR03555
   name: UDP-N-acetyl-D-glucosamine 2-epimerase
+  genes: PP1811
   equation: '|C0037[Cytosol]| <=> |C0847[Cytosol]|'
 - id: RR03582
   name: Isopentenyl-diphosphate delta3-delta2-isomerase
   equation: '|C0111[Cytosol]| <=> |C0194[Cytosol]|'
 - id: RR03588
   name: IMP:pyrophosphate phosphoribosyltransferase
+  genes: PP0747
   equation: '|C0012[Cytosol]| + |C0112[Cytosol]| <=> |C0218[Cytosol]| + |C0101[Cytosol]|'
 - id: RR03591
   name: ATP:nucleoside-diphosphate phosphatransferase
+  genes: PP0849
   equation: '|C0002[Cytosol]| + |C0170[Cytosol]| <=> |C0113[Cytosol]| + |C0008[Cytosol]|'
 - id: RR03636
   name: 4-Hydroxybenzoate + Pyruvate &gt;=&lt; Chorismate
+  genes: PP5317
   equation: '|C0020[Cytosol]| + |C0133[Cytosol]| <=> |C0208[Cytosol]|'
 - id: RR03641
   name: D-Glycerate:NADP+ 2-oxidoreductase
+  genes: PP4300 or PP0762
   equation: '|C0003[Cytosol]| + |C0215[Cytosol]| <=> |C0141[Cytosol]| + |C0065[Cytosol]|
     + |C0004[Cytosol]|'
 - id: RR03649
   name: Carbamoyl-phosphate:L-ornithine carbamoyltransferase
+  genes: PP1079 or PP1000
   equation: '|C0142[Cytosol]| + |C0062[Cytosol]| <=> |C0009[Cytosol]| + |C0065[Cytosol]|
     + |C0268[Cytosol]|'
 - id: RR03658
   name: L-Valine:NAD+ oxidoreductase(deaminating)
+  genes: PP4617
   equation: '|C0003[Cytosol]| + |C0151[Cytosol]| + |C0001[Cytosol]| <=> |C0121[Cytosol]|
     + |C0065[Cytosol]| + |C0957[Cytosol]| + |C0004[Cytosol]|'
 - id: RR03664
@@ -2924,172 +3688,222 @@
   equation: '|C1715[Cytosol]| + |C0001[Cytosol]| <=> |C0065[Cytosol]| + |C0159[Cytosol]|'
 - id: RR03675
   name: ATP:3-phospho-D-glycerate 1-phosphotransferase
+  genes: PP4963
   equation: '|C0002[Cytosol]| + |C0163[Cytosol]| <=> |C0195[Cytosol]| + |C0008[Cytosol]|'
 - id: RR03676
   name: 3-Phospho-D-glycerate:NAD+ 2-oxidoreductase
+  genes: PP5155 or PP2533
   equation: '|C0003[Cytosol]| + |C0163[Cytosol]| <=> |C0065[Cytosol]| + |C2038[Cytosol]|
     + |C0004[Cytosol]|'
 - id: RR03681
   name: 2-Phospho-D-glycerate 2,3-phosphomutase
+  genes: PP1777 or PP3578 or PP5056 or PP5288
   equation: '|C0477[Cytosol]| <=> |C0163[Cytosol]|'
 - id: RR03691
   name: D-Ribulose-5-phosphate 3-epimerase
+  genes: PP0415
   equation: '|C0165[Cytosol]| <=> |C0190[Cytosol]|'
 - id: RR03692
   name: D-Arabinose-5-phosphate ketol-isomerase
+  genes: PP0957
   equation: '|C0805[Cytosol]| <=> |C0165[Cytosol]|'
 - id: RR03698
   name: ATP:AMP phosphotransferase
+  genes: PP1506
   equation: '|C0288[Cytosol]| + |C0002[Cytosol]| <=> |C0170[Cytosol]| + |C0008[Cytosol]|'
 - id: RR03757
   name: 3-Dehydroshikimate hydro-lyase
+  genes: PP2407 or PP3003 or PP0560
   equation: '|C1696[Cytosol]| <=> |C0189[Cytosol]| + |C0001[Cytosol]|'
 - id: RR03769
   name: Sedoheptulose-7-phosphate:D-glyceraldehyde-3-phosphateglycolaldehyde transferase
+  genes: PP4965
   equation: '|C0100[Cytosol]| + |C0230[Cytosol]| <=> |C0190[Cytosol]| + |C0099[Cytosol]|'
 - id: RR03774
   name: 4-Aminobutanoate:2-oxoglutarate aminotransferase
+  genes: PP0214
   equation: '|C0275[Cytosol]| + |C0024[Cytosol]| <=> |C0191[Cytosol]| + |C0023[Cytosol]|'
 - id: RR03815
   name: (S)-3-Hydroxybutanoyl-CoA:NAD+ oxidoreductase
+  genes: PP2136 or PP2047 or PP0302 or PP2214
   equation: '|C0003[Cytosol]| + |C0829[Cytosol]| <=> |C0273[Cytosol]| + |C0065[Cytosol]|
     + |C0004[Cytosol]|'
 - id: RR03816
   name: (S)-3-Hydroxybutanoyl-CoA:NADP+ oxidoreductase
+  genes: PP3755 or PP3282
   equation: '|C0829[Cytosol]| + |C0006[Cytosol]| <=> |C0273[Cytosol]| + (5) |C0065[Cytosol]|
     + |C0005[Cytosol]|'
 - id: RR03822
   name: L-Aspartate-4-semialdehyde:NADP+ oxidoreductase (phosphorylating)
+  genes: PP1992 or PP1989
   equation: '|C0341[Cytosol]| + |C0009[Cytosol]| + |C0006[Cytosol]| <=> |C0065[Cytosol]|
     + |C0005[Cytosol]| + |C1950[Cytosol]|'
 - id: RR03830
   name: alpha-D-Ribose 1-phosphate 1,6-phosphomutase
+  genes: PP1777 or PP3578 or PP5288
   equation: '|C0342[Cytosol]| <=> |C0099[Cytosol]|'
 - id: RR03873
   name: ATP:nicotinamide-nucleotide adenylyltransferase
+  genes: PP4810
   equation: '|C0002[Cytosol]| + |C0065[Cytosol]| + |C0859[Cytosol]| <=> |C0012[Cytosol]|
     + |C0630[Cytosol]|'
 - id: RR03886
   name: (S)-3-Hydroxybutanoyl-CoA hydro-lyase
+  genes: PP2136 or PP3283 or PP3491 or PP2217 or PP4066 or PP1412 or PP1845 or PP4030
   equation: '|C0829[Cytosol]| <=> |C0642[Cytosol]| + |C0001[Cytosol]|'
 - id: RR03894
   name: ATP:pantetheine-4'-phosphate adenylyltransferase
+  genes: PP5123
   equation: '|C0002[Cytosol]| + |C0065[Cytosol]| + |C0822[Cytosol]| <=> |C0647[Cytosol]|
     + |C0012[Cytosol]|'
 - id: RR03900
   name: 3-Hydroxypropionyl-CoA hydro-lyase
+  genes: PP2136 or PP3283 or PP3491 or PP2217 or PP4066 or PP1412 or PP1845 or PP4030
   equation: '|C3310[Cytosol]| <=> |C0655[Cytosol]| + |C0001[Cytosol]|'
 - id: RR03941
   name: Propanoyl-CoA:acetyl-CoA C-acyltransferase
+  genes: PP3280 or PP2137 or PP0582
   equation: '|C1224[Cytosol]| + |C0084[Cytosol]| <=> |C3180[Cytosol]| + |C0010[Cytosol]|'
 - id: RR04012
   name: N-Succinyl-L-2,6-diaminoheptanedioate:2-ocoglytarateamino-transferase
+  genes: PP1588
   equation: '|C0024[Cytosol]| + |C2669[Cytosol]| <=> |C2695[Cytosol]| + |C0023[Cytosol]|'
 - id: RR04042
   name: Propanoyl-CoA:acetyl-CoA C-acyltransferase
+  genes: PP3280 or PP2137 or PP0582
   equation: '|C0084[Cytosol]| + |C3093[Cytosol]| <=> |C2797[Cytosol]| + |C0010[Cytosol]|'
 - id: RR04084
   name: (S)-3-Hydroxyhexadecanoyl-CoA:NAD+ oxidoreductase
+  genes: PP2136 or PP2047 or PP0302 or PP2214
   equation: '|C0003[Cytosol]| + |C3044[Cytosol]| <=> |C0065[Cytosol]| + |C3045[Cytosol]|
     + |C0004[Cytosol]|'
 - id: RR04085
   name: (S)-3-Hydroxyhexadecanoyl-CoA hydro-lyase
+  genes: PP2136 or PP3283 or PP3491 or PP2217 or PP4066 or PP1412 or PP1845 or PP4030
   equation: '|C3044[Cytosol]| <=> |C3057[Cytosol]| + |C0001[Cytosol]|'
 - id: RR04086
   name: (S)-3-Hydroxytetradecanoyl-CoA hydro-lyase
+  genes: PP2136 or PP3283 or PP3491 or PP2217 or PP4066 or PP1412 or PP1845 or PP4030
   equation: '|C3046[Cytosol]| <=> |C3058[Cytosol]| + |C0001[Cytosol]|'
 - id: RR04087
   name: (S)-3-Hydroxydodecanoyl-CoA:NAD+ oxidoreductase
+  genes: PP2136 or PP2047 or PP0302 or PP2214
   equation: '|C0003[Cytosol]| + |C3047[Cytosol]| <=> |C3048[Cytosol]| + |C0065[Cytosol]|
     + |C0004[Cytosol]|'
 - id: RR04088
   name: Decanoyl-CoA:acetyl-CoA C-acyltransferase
+  genes: PP3280 or PP2137 or PP0582
   equation: '|C0022[Cytosol]| + |C3059[Cytosol]| <=> |C3048[Cytosol]| + |C0010[Cytosol]|'
 - id: RR04089
   name: (S)-Hydroxydecanoyl-CoA:NAD+ oxidoreductase
+  genes: PP2136 or PP2047 or PP0302 or PP2214
   equation: '|C0003[Cytosol]| + |C3049[Cytosol]| <=> |C0065[Cytosol]| + |C0004[Cytosol]|
     + |C3050[Cytosol]|'
 - id: RR04090
   name: (S)-Hydroxydecanoyl-CoA hydro-lyase
+  genes: PP2136 or PP3283 or PP3491 or PP2217 or PP4066 or PP1412 or PP1845 or PP4030
   equation: '|C3049[Cytosol]| <=> |C3060[Cytosol]| + |C0001[Cytosol]|'
 - id: RR04091
   name: (S)-Hydroxyoctanoyl-CoA:NAD+ oxidoreductase
+  genes: PP2136 or PP2047 or PP0302 or PP2214
   equation: '|C0003[Cytosol]| + |C3051[Cytosol]| <=> |C3052[Cytosol]| + |C0065[Cytosol]|
     + |C0004[Cytosol]|'
 - id: RR04092
   name: (S)-Hydroxyoctanoyl-CoA hydro-lyase
+  genes: PP2136 or PP3283 or PP3491 or PP2217 or PP4066 or PP1412 or PP1845 or PP4030
   equation: '|C3051[Cytosol]| <=> |C3061[Cytosol]| + |C0001[Cytosol]|'
 - id: RR04093
   name: Hexanoyl-CoA:acetyl-CoA C-acyltransferase
+  genes: PP3280 or PP2137 or PP0582
   equation: '|C0022[Cytosol]| + |C3055[Cytosol]| <=> |C3052[Cytosol]| + |C0010[Cytosol]|'
 - id: RR04094
   name: (S)-Hydroxyhexanoyl-CoA:NAD+ oxidoreductase
+  genes: PP2136 or PP2047 or PP0302 or PP2214
   equation: '|C0003[Cytosol]| + |C3053[Cytosol]| <=> |C3054[Cytosol]| + |C0065[Cytosol]|
     + |C0004[Cytosol]|'
 - id: RR04095
   name: (S)-Hydroxyhexanoyl-CoA hydro-lyase
+  genes: PP2136 or PP3283 or PP3491 or PP2217 or PP4066 or PP1412 or PP1845 or PP4030
   equation: '|C3053[Cytosol]| <=> |C3056[Cytosol]| + |C0001[Cytosol]|'
 - id: RR04096
   name: Hexanoyl-CoA:NAD+ trans-2-oxidoreductase
+  genes: PP4948
   equation: '|C0003[Cytosol]| + |C3055[Cytosol]| <=> |C0065[Cytosol]| + |C0004[Cytosol]|
     + |C3056[Cytosol]|'
 - id: RR04118
   name: Propanoyl-CoA:acetyl-CoA C-acyltransferase
+  genes: PP3280 or PP2137 or PP0582
   equation: '|C0084[Cytosol]| + |C3174[Cytosol]| <=> |C3164[Cytosol]| + |C0010[Cytosol]|'
 - id: RR04152
   name: 3,4-Dihydroxyphenylethyleneglycol:NAD+ oxidoreductase
+  genes: PP1616 or PP3839
   equation: '|C0003[Cytosol]| + |C3240[Cytosol]| <=> |C3241[Cytosol]| + |C0065[Cytosol]|
     + |C0004[Cytosol]|'
 - id: RR04161
   name: ATP:sulfate adenylyltransferase
+  genes: PP1304 and PP1303
   equation: '|C0002[Cytosol]| + |C0065[Cytosol]| + |C3330[Cytosol]| <=> |C0012[Cytosol]|
     + |C3322[Cytosol]|'
 - id: RR04170
   name: N2-Succinyl-L-glutamate 5-semialdehyde:NAD+ oxidoreductase
+  genes: PP4478
   equation: '|C0003[Cytosol]| + |C3456[Cytosol]| + |C0001[Cytosol]| <=> |C3455[Cytosol]|
     + (2) |C0065[Cytosol]| + |C0004[Cytosol]|'
 - id: RR04183
   name: 3-Hydroxy-2-methylpropanoate:NAD+ oxidoreductase
+  genes: PP2136 or PP4666 or PP2047 or PP0302 or PP2214 or PP1143
   equation: '|C0003[Cytosol]| + |C3499[Cytosol]| <=> |C3500[Cytosol]| + |C0065[Cytosol]|
     + |C0004[Cytosol]|'
 - id: RR04185
   name: (S)-2-Acetolactate methylmutase
+  genes: PP4678
   equation: '|C3504[Cytosol]| + |C0065[Cytosol]| <=> |C3641[Cytosol]|'
 - id: RR04305
   name: glutamate dehydrogenase (NADP)
+  genes: PP0675
   equation: '|C0023[Cytosol]| + |C0006[Cytosol]| + |C0001[Cytosol]| <=> |C0065[Cytosol]|
     + |C0005[Cytosol]| + |C0957[Cytosol]| + |C0024[Cytosol]|'
 - id: RR04316
   name: MCOATA
+  genes: PP1913
   equation: '|C9262[Cytosol]| + |C0068[Cytosol]| <=> |C0010[Cytosol]| + |C9297[Cytosol]|'
 - id: RR04368
   name: succinate dehyrdogenase
+  genes: PP4190 and PP4191 and PP4192 and PP4193
   equation: '|C9314[Cytosol]| + |C0964[Cytosol]| <=> |C0015[Cytosol]| + |C9315[Cytosol]|'
 - id: RR04371
   name: AIRC3
+  genes: PP5336
   equation: '|C2857[Cytosol]| <=> |C9260[Cytosol]|'
 - id: RR08593
   name: ATP synthase (four protons for one ATP)
+  genes: PP5419 and PP5413 and PP5412 and PP5416 and PP5415 and PP5414 and PP5417
   equation: '|C0009[Cytosol]| + (4) |EC0065[Extra_organism]| + |C0008[Cytosol]| <=>
     |C0002[Cytosol]| + (3) |C0065[Cytosol]| + |C0001[Cytosol]|'
 - id: RR08622
   name: D-galactarte transport via proton symport, reversible
+  genes: PP3600
   equation: '|EC0644[Extra_organism]| + |EC0065[Extra_organism]| <=> |C0644[Cytosol]|
     + |C0065[Cytosol]|'
 - id: RR08624
   name: D-glucarate transport via proton symport, reversible
+  genes: PP3600
   equation: '|EC0599[Extra_organism]| + |EC0065[Extra_organism]| <=> |C0599[Cytosol]|
     + |C0065[Cytosol]|'
 - id: RR08634
   name: ALAt2r
+  genes: PP4840
   equation: '|EC0035[Extra_organism]| + |EC0065[Extra_organism]| <=> |C0065[Cytosol]|
     + |C0035[Cytosol]|'
 - id: RR08636
   name: URAt2r
+  genes: (PP0827 and PP0824 and PP0826 and PP0825) or PP0745 or (PP5326 and PP5328
+    and PP5327 and PP5329)
   equation: '|EC0090[Extra_organism]| + |EC0065[Extra_organism]| <=> |C0090[Cytosol]|
     + |C0065[Cytosol]|'
 - id: RR08638
   name: Glycine betaine transport via proton symport, reversible
+  genes: PP2411 or PP4433
   equation: '|EC0530[Extra_organism]| + |EC0065[Extra_organism]| <=> |C0530[Cytosol]|
     + |C0065[Cytosol]|'
 - id: RR08670
@@ -3103,83 +3917,104 @@
   equation: '|EC0001[Extra_organism]| <=> |C0001[Cytosol]|'
 - id: RR08678
   name: NH3t
+  genes: PP5233
   equation: '|EC0957[Extra_organism]| <=> |C0957[Cytosol]|'
 - id: RR08685
   name: PHEt2r
+  genes: PP0927 or PP4495
   equation: '|EC0064[Extra_organism]| + |EC0065[Extra_organism]| <=> |C0064[Cytosol]|
     + |C0065[Cytosol]|'
 - id: RR08702
   name: D-alanine transport via proton symport
+  genes: PP4840
   equation: '|EC0065[Extra_organism]| + |EC0115[Extra_organism]| <=> |C0115[Cytosol]|
     + |C0065[Cytosol]|'
 - id: RR08704
   name: DSERt2r
+  genes: PP4840
   equation: '|EC0539[Extra_organism]| + |EC0065[Extra_organism]| <=> |C0539[Cytosol]|
     + |C0065[Cytosol]|'
 - id: RR08706
   name: glycine reversible transport via proton symport
+  genes: PP4840
   equation: '|EC0033[Extra_organism]| + |EC0065[Extra_organism]| <=> |C0065[Cytosol]|
     + |C0033[Cytosol]|'
 - id: RR08720
   name: GALCTNt2r
+  genes: PP3600
   equation: '|EC0065[Extra_organism]| + |EC0645[Extra_organism]| <=> |C0065[Cytosol]|
     + |C0645[Cytosol]|'
 - id: RR08734
   name: ABUTt2
+  genes: PP4106 or PP2911 or PP2543 or PP0284
   equation: '|EC0275[Extra_organism]| + |EC0065[Extra_organism]| <=> |C0275[Cytosol]|
     + |C0065[Cytosol]|'
 - id: RR08739
   name: glycerol transport via channel
+  genes: PP1076
   equation: '|C0098[Cytosol]| <=> |EC0098[Extra_organism]|'
 - id: RR08763
   name: AKGt2r
+  genes: PP1400 or PP1378 or PP4461
   equation: '|EC0024[Extra_organism]| + |EC0065[Extra_organism]| <=> |C0065[Cytosol]|
     + |C0024[Cytosol]|'
 - id: RR08772
   name: D-lactate transport via proton symport
+  genes: PP4735
   equation: '|EC0065[Extra_organism]| + |EC0213[Extra_organism]| <=> |C0065[Cytosol]|
     + |C0213[Cytosol]|'
 - id: RR08776
   name: L-LACt2r
+  genes: PP4735
   equation: '|EC0154[Extra_organism]| + |EC0065[Extra_organism]| <=> |C0065[Cytosol]|
     + |C0154[Cytosol]|'
 - id: RR08812
   name: phosphate reversible transport via symport
+  genes: PP1373 or PP4103
   equation: '|EC0009[Extra_organism]| + |EC0065[Extra_organism]| <=> |C0009[Cytosol]|
     + |C0065[Cytosol]|'
 - id: RR08819
   name: PTRCt2r
+  genes: PP2586 or PP1229 or PP2802
   equation: '|EC0116[Extra_organism]| + |EC0065[Extra_organism]| <=> |C0065[Cytosol]|
     + |C0116[Cytosol]|'
 - id: RR08821
   name: PROt2r
+  genes: PP2411 or PP4433
   equation: '|EC0126[Extra_organism]| + |EC0065[Extra_organism]| <=> |C0126[Cytosol]|
     + |C0065[Cytosol]|'
 - id: RR08834
   name: SERt2r
+  genes: PP3589
   equation: '|EC0065[Extra_organism]| + |EC0053[Extra_organism]| <=> |C0053[Cytosol]|
     + |C0065[Cytosol]|'
 - id: RR08841
   name: THRt2r
+  genes: PP3589
   equation: '|EC0156[Extra_organism]| + |EC0065[Extra_organism]| <=> |C0065[Cytosol]|
     + |C0156[Cytosol]|'
 - id: RR08843
   name: L-tryptophan reversible transport via proton symport
+  genes: PP0927 or PP4495
   equation: '|EC0063[Extra_organism]| + |EC0065[Extra_organism]| <=> |C0063[Cytosol]|
     + |C0065[Cytosol]|'
 - id: RR08847
   name: L-tyrosine reversible transport via proton symport
+  genes: PP0927 or PP4495
   equation: '|EC0067[Extra_organism]| + |EC0065[Extra_organism]| <=> |C0065[Cytosol]|
     + |C0067[Cytosol]|'
 - id: RR08868
   name: CHLt2r
+  genes: PP0229 or PP2692 or PP3957 or PP3628 or PP5061 or PP5374
   equation: '|EC0065[Extra_organism]| + |EC0096[Extra_organism]| <=> |C0096[Cytosol]|
     + |C0065[Cytosol]|'
 - id: RR08879
   name: adenylate kinase
+  genes: PP1506
   equation: '|C0018[Cytosol]| + |C0002[Cytosol]| <=> (2) |C0008[Cytosol]|'
 - id: RR08885
   name: D-alanine-D-alanine ligase
+  genes: PP1339 or PP4346
   equation: '|C0002[Cytosol]| + (2) |C0115[Cytosol]| <=> |C0009[Cytosol]| + |C0065[Cytosol]|
     + |C0008[Cytosol]| + |C0721[Cytosol]|'
 - id: RR08916
@@ -3187,17 +4022,21 @@
   equation: '|C0011[Cytosol]| + |C0001[Cytosol]| <=> |C0234[Cytosol]| + |C0065[Cytosol]|'
 - id: RR08939
   name: phosphoglucomutase
+  genes: PP1777 or PP3578 or PP5288
   equation: '|C0087[Cytosol]| <=> |C0077[Cytosol]|'
 - id: RR08942
   name: Phosphatidylglycerol synthase (Ecoli)
+  genes: PP4097
   equation: '|C9267[Cytosol]| + (50) |C0078[Cytosol]| <=> |C9312[Cytosol]| + (50)
     |C0065[Cytosol]| + (50) |C0046[Cytosol]|'
 - id: RR08952
   name: Phosphatidylserine synthase (Ecoli)
+  genes: PP4677 or PP3664
   equation: (50) |C0053[Cytosol]| + |C9267[Cytosol]| <=> (50) |C0065[Cytosol]| +
     (50) |C0046[Cytosol]| + |C9313[Cytosol]|
 - id: RR08976
   name: CDP-Diacylglycerol synthetase (Ecoli)
+  genes: PP1596
   equation: (50) |C0051[Cytosol]| + (50) |C0065[Cytosol]| + |C9306[Cytosol]| <=>
     (50) |C0012[Cytosol]| + |C9267[Cytosol]|
 - id: RR09005
@@ -3205,24 +4044,29 @@
   equation: '|C0957[Cytosol]| <=> |C0065[Cytosol]| + |C0013[Cytosol]|'
 - id: RR09712
   name: (S)-3-Hydroxytetradecanoyl-CoA:NAD+ oxidoreductase
+  genes: PP2136 or PP2047 or PP0302 or PP2214
   equation: '|C0003[Cytosol]| + |C3046[Cytosol]| <=> |C9461[Cytosol]| + |C0065[Cytosol]|
     + |C0004[Cytosol]|'
 - id: RR09715
   name: Lauroyl-CoA:acetyl-CoA C-acyltransferase
+  genes: PP3280 or PP2137 or PP0582
   equation: '|C0022[Cytosol]| + |C1245[Cytosol]| <=> |C9461[Cytosol]| + |C0010[Cytosol]|'
 - id: RR09730
   name: 3-hydroxybutyrate-CoA-acyl carrier protein transferase
   equation: '|C0010[Cytosol]| + |C9383[Cytosol]| <=> |C9262[Cytosol]| + |C2207[Cytosol]|'
 - id: RR09735
   name: Benzoate transport in via proton symport
+  genes: PP3165
   equation: '|EC0065[Extra_organism]| + |EC0148[Extra_organism]| <=> |C0065[Cytosol]|
     + |C0148[Cytosol]|'
 - id: RR09741
   name: Potassium - proton antiport
+  genes: PP5246
   equation: '|C0197[Cytosol]| + |EC0065[Extra_organism]| <=> |EC0197[Extra_organism]|
     + |C0065[Cytosol]|'
 - id: RR09743
   name: Beta-alanine reversible transport via proton symport
+  genes: PP4840
   equation: '|EC0065[Extra_organism]| + |EC0083[Extra_organism]| <=> |C0065[Cytosol]|
     + |C0083[Cytosol]|'
 - id: RR10070
