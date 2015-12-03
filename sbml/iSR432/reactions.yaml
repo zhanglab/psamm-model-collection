@@ -51,7 +51,7 @@
   name: N-Acetylneuraminate9-phosphatepyruvate-lyase(pyruvate-phosphorylating)
   equation: '|M_acmanap_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_pep_c[Cytosol]| =>
     |M_acnamp_c[Cytosol]| + |M_pi_c[Cytosol]|'
-  subsystem: 'Aminosugar Metabolism '
+  subsystem: Aminosugar Metabolism
 - id: R_ACODA
   name: acetylornithinedeacetylase
   equation: '|M_acorn_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_ac_c[Cytosol]| + |M_orn_c[Cytosol]|'
@@ -140,7 +140,7 @@
 - id: R_AGDC
   name: N-acetylglucosamine-6-phosphatedeacetylase
   equation: '|M_acgam6p_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_ac_c[Cytosol]| + |M_gam6p_c[Cytosol]|'
-  subsystem: 'Aminosugar Metabolism '
+  subsystem: Aminosugar Metabolism
 - id: R_AGDC_r
   name: N-acetylglucosamine-6-phosphatedeacetylase(reversible)
   equation: '|M_acgam6p_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_ac_c[Cytosol]| +
@@ -429,7 +429,7 @@
 - id: R_CHTNASE
   name: chitinase
   equation: '|M_chtn_c[Cytosol]| + (2) |M_h2o_c[Cytosol]| => (3) |M_acgam_c[Cytosol]|'
-  subsystem: 'Aminosugar Metabolism '
+  subsystem: Aminosugar Metabolism
 - id: R_CHTNASE1
   name: chitinase,ptl
   equation: (2) |M_chtn_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_ctobiose_c[Cytosol]|
@@ -447,7 +447,7 @@
   name: CMPsialicacidsynthase
   equation: '|M_acnam_c[Cytosol]| + |M_ctp_c[Cytosol]| => |M_cmpacna_c[Cytosol]|
     + |M_ppi_c[Cytosol]|'
-  subsystem: 'Aminosugar Metabolism '
+  subsystem: Aminosugar Metabolism
 - id: R_CO2t
   name: CO2transporterviadiffusion
   equation: '|M_co2_e[Extraorganism]| <=> |M_co2_c[Cytosol]|'
@@ -2270,7 +2270,7 @@
   name: O-succinylhomoserinelyasereversible
   equation: '|M_cys_DASH_L_c[Cytosol]| + |M_suchms_c[Cytosol]| <=> |M_cyst_DASH_L_c[Cytosol]|
     + |M_h_c[Cytosol]| + |M_succ_c[Cytosol]|'
-  subsystem: 'Cys Biosynthesis '
+  subsystem: Cys Biosynthesis
 - id: R_SHSL2r
   name: O-succinylhomoserinelyase(H2S)
   equation: '|M_h2s_c[Cytosol]| + |M_suchms_c[Cytosol]| <=> |M_h_c[Cytosol]| + |M_hcys_DASH_L_c[Cytosol]|
