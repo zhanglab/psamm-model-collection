@@ -1731,6 +1731,8 @@
   equation: '|M_man6p_c[Cytosol]| <=> |M_f6p_c[Cytosol]|'
 - id: R_MCMMT
   name: R_Methanol__coenzyme_M_methyltransferase
+  genes: ( MA0455  or  MA4392  or  ( MA1616  and  MA0456 )  or  ( MA4391 )  or  MA1617  ana  MA4379
+    )
   equation: '|M_com_c[Cytosol]| + |M_meoh_c[Cytosol]| => |M_h2o_c[Cytosol]| + |M_mcom_c[Cytosol]|'
 - id: R_MCR
   name: R_Methyl_coenzyme_M_reductase
