@@ -714,7 +714,7 @@
   genes: PP_4346 or PP_1339
   equation: (2) |M_ala_DASH_D_c[C_c]| + |M_atp_c[C_c]| <=> |M_adp_c[C_c]| + |M_alaala_c[C_c]|
     + |M_h_c[C_c]| + |M_pi_c[C_c]|
-  subsystem: 'Peptidoglycan Biosynthesis '
+  subsystem: Peptidoglycan Biosynthesis
 - id: R_ALAR
   name: alanine racemase
   genes: PP_5269
@@ -877,7 +877,7 @@
   equation: '|M_asp_DASH_L_c[C_c]| + |M_atp_c[C_c]| + |M_gln_DASH_L_c[C_c]| + |M_h2o_c[C_c]|
     => |M_amp_c[C_c]| + |M_asn_DASH_L_c[C_c]| + |M_glu_DASH_L_c[C_c]| + |M_h_c[C_c]|
     + |M_ppi_c[C_c]|'
-  subsystem: 'Alanine and Aspartate Metabolism '
+  subsystem: Alanine and Aspartate Metabolism
 - id: R_ASPCT
   name: aspartate carbamoyltransferase
   genes: PP_4998
@@ -1192,7 +1192,7 @@
 - id: R_CO2tpp
   name: CO2 transporter via diffusion (periplasm)
   equation: '|M_co2_p[C_p]| <=> |M_co2_c[C_c]|'
-  subsystem: 'Transport '
+  subsystem: Transport
 - id: R_COALCDH
   name: coniferyl-alcohol dehydrogenase
   equation: '|M_confrl_c[C_c]| + |M_nad_c[C_c]| => |M_conialdh_c[C_c]| + |M_h_c[C_c]|
@@ -2018,7 +2018,7 @@
   genes: PP_5411
   equation: '|M_accoa_c[C_c]| + |M_gam1p_c[C_c]| => |M_acgam1p_c[C_c]| + |M_coa_c[C_c]|
     + |M_h_c[C_c]|'
-  subsystem: 'Aminosugar Metabolism '
+  subsystem: Aminosugar Metabolism
 - id: R_G1SATi
   name: glutamate-1-semialdehyde aminotransferase
   genes: PP_4784
@@ -2226,7 +2226,7 @@
   name: Glutamate Decarboxylase
   genes: PP_0567
   equation: '|M_glu_DASH_L_c[C_c]| + |M_h_c[C_c]| => |M_4abut_c[C_c]| + |M_co2_c[C_c]|'
-  subsystem: 'Glutamate Metabolism '
+  subsystem: Glutamate Metabolism
 - id: R_GLUDy
   name: glutamate dehydrogenase (NADP)
   genes: PP_0675
@@ -2431,7 +2431,7 @@
   name: glutathione peroxidase
   genes: PP_1874 or PP_1686 or PP_0777
   equation: (2) |M_gthrd_c[C_c]| + |M_h2o2_c[C_c]| <=> |M_gthox_c[C_c]| + (2) |M_h2o_c[C_c]|
-  subsystem: 'Glutathione Metabolism '
+  subsystem: Glutathione Metabolism
 - id: R_GTHS
   name: glutathione synthetase
   genes: PP_4993
@@ -3106,13 +3106,13 @@
   genes: PP_2528
   equation: '|M_achms_c[C_c]| + |M_h2s_c[C_c]| <=> |M_ac_c[C_c]| + |M_h_c[C_c]| +
     |M_hcys_DASH_L_c[C_c]|'
-  subsystem: 'Methionine Metabolism '
+  subsystem: Methionine Metabolism
 - id: R_METAT
   name: methionine adenosyltransferase
   genes: PP_4967
   equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_met_DASH_L_c[C_c]| => |M_amet_c[C_c]|
     + |M_pi_c[C_c]| + |M_ppi_c[C_c]|'
-  subsystem: 'Methionine Metabolism '
+  subsystem: Methionine Metabolism
 - id: R_METGL
   name: methionine g-lyase
   genes: PP_1308
@@ -3269,7 +3269,7 @@
   genes: PP_3606 or PP_0072
   equation: '|M_h_c[C_c]| + |M_nadph_c[C_c]| + |M_q8_c[C_c]| => |M_nadp_c[C_c]| +
     |M_q8h2_c[C_c]|'
-  subsystem: ' others'
+  subsystem: others
 - id: R_NADS2
   name: NAD synthase (glutamine-hydrolysing)
   genes: PP_4869
@@ -3501,7 +3501,7 @@
 - id: R_O2tex
   name: oxygen transport via diffusion (extracellular to periplasm)
   equation: '|M_o2_e[C_e]| <=> |M_o2_p[C_p]|'
-  subsystem: 'Transport '
+  subsystem: Transport
 - id: R_O2tpp
   name: o2 transport via diffusion (periplasm)
   equation: '|M_o2_p[C_p]| <=> |M_o2_c[C_c]|'
@@ -3685,7 +3685,7 @@
   name: phospho-N-acetylmuramoyl-pentapeptide-transferase (meso-2,6-diaminopimelate)
   genes: PP_1334
   equation: '|M_udcpp_c[C_c]| + |M_ugmda_c[C_c]| => |M_uagmda_c[C_c]| + |M_ump_c[C_c]|'
-  subsystem: 'Peptidoglycan Biosynthesis '
+  subsystem: Peptidoglycan Biosynthesis
 - id: R_PC
   name: pyruvate carboxylase
   genes: PP_5347
@@ -3816,7 +3816,7 @@
   name: phosphoglucosamine mutase
   genes: PP_4716
   equation: '|M_gam1p_c[C_c]| <=> |M_gam6p_c[C_c]|'
-  subsystem: 'Aminosugar Metabolism '
+  subsystem: Aminosugar Metabolism
 - id: R_PGCDr
   name: phosphoglycerate dehydrogenase reversible
   genes: PP_5155
@@ -4144,7 +4144,7 @@
 - id: R_PPTGS_KT
   name: Peptidoglycan subunit synthesis P.putida KT2440
   equation: '|M_uaagmda_c[C_c]| => |M_h_c[C_c]| + |M_peptido_kt_c[C_c]| + |M_udcpdp_c[C_c]|'
-  subsystem: 'Peptidoglycan Biosynthesis '
+  subsystem: Peptidoglycan Biosynthesis
 - id: R_PRAGS
   name: phosphoribosylglycinamide synthetase
   genes: PP_4823
@@ -4886,25 +4886,25 @@
   genes: PP_1332
   equation: '|M_26dap_DASH_M_c[C_c]| + |M_atp_c[C_c]| + |M_uamag_c[C_c]| => |M_adp_c[C_c]|
     + |M_h_c[C_c]| + |M_pi_c[C_c]| + |M_ugmd_c[C_c]|'
-  subsystem: 'Peptidoglycan Biosynthesis '
+  subsystem: Peptidoglycan Biosynthesis
 - id: R_UAGCVT
   name: UDP-N-acetylglucosamine 1-carboxyvinyltransferase
   genes: PP_0964
   equation: '|M_pep_c[C_c]| + |M_uacgam_c[C_c]| => |M_pi_c[C_c]| + |M_uaccg_c[C_c]|'
-  subsystem: 'Aminosugar Metabolism '
+  subsystem: Aminosugar Metabolism
 - id: R_UAGDP
   name: UDP-N-acetylglucosamine diphosphorylase
   genes: PP_5411
   equation: '|M_acgam1p_c[C_c]| + |M_h_c[C_c]| + |M_utp_c[C_c]| => |M_ppi_c[C_c]|
     + |M_uacgam_c[C_c]|'
-  subsystem: 'Aminosugar Metabolism '
+  subsystem: Aminosugar Metabolism
 - id: R_UAGPT3
   name: UDP-N-acetylglucosamine-N-acetylmuramyl-(pentapeptide)pyrophosphoryl-undecaprenol
     N-acetylglucosamine transferase
   genes: PP_1337
   equation: '|M_uacgam_c[C_c]| + |M_uagmda_c[C_c]| => |M_h_c[C_c]| + |M_uaagmda_c[C_c]|
     + |M_udp_c[C_c]|'
-  subsystem: 'Peptidoglycan Biosynthesis '
+  subsystem: Peptidoglycan Biosynthesis
 - id: R_UAMAGS
   name: UDP-N-acetylmuramoyl-L-alanyl-D-glutamate synthetase
   genes: PP_1335
@@ -4922,20 +4922,20 @@
   genes: PP_1904
   equation: '|M_h_c[C_c]| + |M_nadph_c[C_c]| + |M_uaccg_c[C_c]| => |M_nadp_c[C_c]|
     + |M_uamr_c[C_c]|'
-  subsystem: 'Aminosugar Metabolism '
+  subsystem: Aminosugar Metabolism
 - id: R_UDCPDP
   name: undecaprenyl-diphosphatase
   genes: PP_2862
   equation: '|M_h2o_c[C_c]| + |M_udcpdp_c[C_c]| => |M_h_c[C_c]| + |M_pi_c[C_c]| +
     |M_udcpp_c[C_c]|'
-  subsystem: 'Peptidoglycan Biosynthesis '
+  subsystem: Peptidoglycan Biosynthesis
 - id: R_UGMDDS
   name: UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanyl-D-alanine
     synthetase
   genes: PP_1333
   equation: '|M_alaala_c[C_c]| + |M_atp_c[C_c]| + |M_ugmd_c[C_c]| => |M_adp_c[C_c]|
     + |M_h_c[C_c]| + |M_pi_c[C_c]| + |M_ugmda_c[C_c]|'
-  subsystem: 'Peptidoglycan Biosynthesis '
+  subsystem: Peptidoglycan Biosynthesis
 - id: R_UHBZ1t_LPAREN_pp_RPAREN_
   name: _4-hydroxy benzoate reversible transport via proton symport (periplasm)
   genes: PP_1376
@@ -4950,7 +4950,7 @@
   name: _2-keto-4-methylthiobutyrate transamination
   genes: PP_3590 or PP_1972
   equation: '|M_2kmb_c[C_c]| + |M_glu_DASH_L_c[C_c]| => |M_akg_c[C_c]| + |M_met_DASH_L_c[C_c]|'
-  subsystem: 'Methionine Metabolism '
+  subsystem: Methionine Metabolism
 - id: R_UPP3MT
   name: uroporphyrinogen methyltransferase
   genes: PP_3999 or PP_2090

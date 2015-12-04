@@ -126,7 +126,7 @@
   name: N-acetylglucosamine-6-phosphate deacetylase (reversible)
   genes: TM_0814
   equation: '|M_acgam6p_c[C_c]| + |M_h2o_c[C_c]| <=> |M_ac_c[C_c]| + |M_gam6p_c[C_c]|'
-  subsystem: 'Aminosugar Metabolism '
+  subsystem: Aminosugar Metabolism
 - id: R_AGPAT160
   name: 1-hexadecanoyl-sn-glycerol 3-phosphate O-acyltransferase (n-C16:0)
   genes: TM_1693
@@ -152,7 +152,7 @@
   name: beta-N-acetylhexosaminidase, cytosol
   genes: TM_0809
   equation: '|M_chtbs_c[C_c]| + |M_h2o_c[C_c]| => (2) |M_acgam_c[C_c]|'
-  subsystem: 'Aminosugar Metabolism '
+  subsystem: Aminosugar Metabolism
 - id: R_AHMMPS
   name: 4-amino-5-hydroxymethyl-2-methylpyrimidine synthetase
   genes: TM_0788
@@ -186,7 +186,7 @@
   genes: TM_0259
   equation: (2) |M_ala_D_c[C_c]| + |M_atp_c[C_c]| <=> |M_adp_c[C_c]| + |M_alaala_c[C_c]|
     + |M_h_c[C_c]| + |M_pi_c[C_c]|
-  subsystem: 'Peptidoglycan Biosynthesis '
+  subsystem: Peptidoglycan Biosynthesis
 - id: R_ALAR
   name: alanine racemase
   equation: '|M_ala_L_c[C_c]| <=> |M_ala_D_c[C_c]|'
@@ -947,7 +947,7 @@
   genes: TM_1629
   equation: '|M_accoa_c[C_c]| + |M_gam1p_c[C_c]| => |M_acgam1p_c[C_c]| + |M_coa_c[C_c]|
     + |M_h_c[C_c]|'
-  subsystem: 'Aminosugar Metabolism '
+  subsystem: Aminosugar Metabolism
 - id: R_G3PAT160
   name: glycerol-3-phosphate acyltransferase (C16:0)
   equation: '|M_glyc3p_c[C_c]| + |M_palmACP_c[C_c]| => |M_1hdecg3p_c[C_c]| + |M_ACP_c[C_c]|'
@@ -973,7 +973,7 @@
   name: glucosamine-6-phosphate deaminase reversible
   genes: TM_0813
   equation: '|M_gam6p_c[C_c]| + |M_h2o_c[C_c]| <=> |M_f6p_c[C_c]| + |M_nh4_c[C_c]|'
-  subsystem: 'Aminosugar Metabolism '
+  subsystem: Aminosugar Metabolism
 - id: R_G6PDH2
   name: glucose 6-phosphate dehydrogenase
   genes: TM_1155
@@ -1074,7 +1074,7 @@
   name: glutamine-fructose-6-phosphate transaminase
   genes: TM_0148
   equation: '|M_f6p_c[C_c]| + |M_gln_L_c[C_c]| => |M_gam6p_c[C_c]| + |M_glu_L_c[C_c]|'
-  subsystem: 'Aminosugar Metabolism '
+  subsystem: Aminosugar Metabolism
 - id: R_GHMT2r
   name: glycine hydroxymethyltransferase, reversible
   genes: TM_0720
@@ -1168,7 +1168,7 @@
   genes: TM_0943
   equation: '|M_atp_c[C_c]| + |M_nh4_c[C_c]| + |M_uaaGgla_c[C_c]| => |M_adp_c[C_c]|
     + |M_h_c[C_c]| + |M_pi_c[C_c]| + |M_uaaGgtla_c[C_c]|'
-  subsystem: 'Peptidoglycan Biosynthesis '
+  subsystem: Peptidoglycan Biosynthesis
 - id: R_GLNTRAT
   name: glutamyl-tRNA(Gln) amidotransferase
   genes: TM_1272 and TM_1273 and TM_0252
@@ -2193,7 +2193,7 @@
   name: phospho-N-acetylmuramoyl-pentapeptide-transferase (gamma-glutamate)
   genes: TM_0235
   equation: '|M_uGgla_c[C_c]| + |M_udcpp_c[C_c]| => |M_uaGgla_c[C_c]| + |M_ump_c[C_c]|'
-  subsystem: 'Peptidoglycan Biosynthesis '
+  subsystem: Peptidoglycan Biosynthesis
 - id: R_PBUTT
   name: phosphate butyryltransferase
   genes: TM_1755
@@ -2219,7 +2219,7 @@
   name: phosphoglucosamine mutase
   genes: TM_0184
   equation: '|M_gam6p_c[C_c]| => |M_gam1p_c[C_c]|'
-  subsystem: 'Aminosugar Metabolism '
+  subsystem: Aminosugar Metabolism
 - id: R_PGCD
   name: phosphoglycerate dehydrogenase
   genes: TM_0327
@@ -2369,7 +2369,7 @@
 - id: R_PPTGS_TM
   name: Peptidoglycan subunit synthesis
   equation: '|M_uaaGgla_c[C_c]| => |M_h_c[C_c]| + |M_peptido_TM_c[C_c]| + |M_udcpdp_c[C_c]|'
-  subsystem: 'Peptidoglycan Biosynthesis '
+  subsystem: Peptidoglycan Biosynthesis
 - id: R_PRAGS
   name: phosphoribosylglycinamide synthetase
   genes: TM_1250
@@ -2893,48 +2893,48 @@
   genes: TM_0237
   equation: '|M_atp_c[C_c]| + |M_lys_L_c[C_c]| + |M_uamag_c[C_c]| => |M_adp_c[C_c]|
     + |M_h_c[C_c]| + |M_pi_c[C_c]| + |M_uGgl_c[C_c]|'
-  subsystem: 'Peptidoglycan Biosynthesis '
+  subsystem: Peptidoglycan Biosynthesis
 - id: R_UAGCVT_r
   name: UDP-N-acetylglucosamine 1-carboxyvinyltransferase reversible
   genes: TM_0108
   equation: '|M_pep_c[C_c]| + |M_uacgam_c[C_c]| <=> |M_pi_c[C_c]| + |M_uaccg_c[C_c]|'
-  subsystem: 'Peptidoglycan Biosynthesis '
+  subsystem: Peptidoglycan Biosynthesis
 - id: R_UAGDP
   name: UDP-N-acetylglucosamine diphosphorylase
   genes: TM_1629
   equation: '|M_acgam1p_c[C_c]| + |M_h_c[C_c]| + |M_utp_c[C_c]| => |M_ppi_c[C_c]|
     + |M_uacgam_c[C_c]|'
-  subsystem: 'Aminosugar Metabolism '
+  subsystem: Aminosugar Metabolism
 - id: R_UAGPT2
   name: UDP-N-acetylglucosamine-N-acetylmuramyl-(pentapeptide)pyrophosphoryl-undecaprenol
     N-acetylglucosamine transferase
   genes: TM_0232
   equation: '|M_uaGgla_c[C_c]| + |M_uacgam_c[C_c]| => |M_h_c[C_c]| + |M_uaaGgla_c[C_c]|
     + |M_udp_c[C_c]|'
-  subsystem: 'Peptidoglycan Biosynthesis '
+  subsystem: Peptidoglycan Biosynthesis
 - id: R_UAMAGS
   name: UDP-N-acetylmuramoyl-L-alanyl-D-glutamate synthetase
   genes: TM_0234
   equation: '|M_atp_c[C_c]| + |M_glu_D_c[C_c]| + |M_uama_c[C_c]| => |M_adp_c[C_c]|
     + |M_h_c[C_c]| + |M_pi_c[C_c]| + |M_uamag_c[C_c]|'
-  subsystem: 'Peptidoglycan Biosynthesis '
+  subsystem: Peptidoglycan Biosynthesis
 - id: R_UAMAS
   name: UDP-N-acetylmuramoyl-L-alanine synthetase
   genes: TM_0231
   equation: '|M_ala_L_c[C_c]| + |M_atp_c[C_c]| + |M_uamr_c[C_c]| => |M_adp_c[C_c]|
     + |M_h_c[C_c]| + |M_pi_c[C_c]| + |M_uama_c[C_c]|'
-  subsystem: 'Peptidoglycan Biosynthesis '
+  subsystem: Peptidoglycan Biosynthesis
 - id: R_UAPGR
   name: UDP-N-acetylenolpyruvoylglucosamine reductase
   genes: TM_1714
   equation: '|M_h_c[C_c]| + |M_nadph_c[C_c]| + |M_uaccg_c[C_c]| => |M_nadp_c[C_c]|
     + |M_uamr_c[C_c]|'
-  subsystem: 'Peptidoglycan Biosynthesis '
+  subsystem: Peptidoglycan Biosynthesis
 - id: R_UDCPDP
   name: undecaprenyl-diphosphatase
   equation: '|M_h2o_c[C_c]| + |M_udcpdp_c[C_c]| => |M_h_c[C_c]| + |M_pi_c[C_c]| +
     |M_udcpp_c[C_c]|'
-  subsystem: 'Peptidoglycan Biosynthesis '
+  subsystem: Peptidoglycan Biosynthesis
 - id: R_UDCPDPS
   name: Undecaprenyl diphosphate synthase
   genes: TM_1398
@@ -2957,7 +2957,7 @@
   genes: TM_0236
   equation: '|M_alaala_c[C_c]| + |M_atp_c[C_c]| + |M_uGgl_c[C_c]| => |M_adp_c[C_c]|
     + |M_pi_c[C_c]| + |M_uGgla_c[C_c]|'
-  subsystem: 'Peptidoglycan Biosynthesis '
+  subsystem: Peptidoglycan Biosynthesis
 - id: R_UPPRT
   name: uracil phosphoribosyltransferase
   genes: TM_0721
