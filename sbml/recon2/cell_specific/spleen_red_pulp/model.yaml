@@ -1,0 +1,11 @@
+name: SBML
+default_flux_limit: 1000.0
+biomass: R_biomass_reaction
+compounds:
+- include: compounds.yaml
+reactions:
+- include: reactions.yaml
+media:
+- include: medium.yaml
+limits:
+- include: limits.yaml
