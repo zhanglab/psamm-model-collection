@@ -1,11 +1,30 @@
 PSAMM model collection
 ======================
 
-This is a collection of published GEMs that have been converted to the file
+This is a collection of published GEMs that have been converted to the YAML
 format used by [PSAMM](https://github.com/zhanglab/psamm), using the
-[psamm-import tool](https://github.com/zhanglab/psamm-import).
+[psamm-import tool](https://github.com/zhanglab/psamm-import). These models
+were used for the analysis performed in the following publication and the
+files are kept here as additional documentation and to allow reproduction
+of the analysis:
 
-The collection of models is split into two sections:
+```
+Steffensen JL, Dufault-Thompson K, Zhang Y. PSAMM: A Portable System for the
+Analysis of Metabolic Models. PLOS Comput Biol. Public Library of Science;
+2016;12: e1004732. 10.1371/journal.pcbi.1004732.
+```
+
+The original files for the models were obtained from the publications
+referenced in the tables below (unless otherwise noted). During the
+analysis of the models, some models had issues corrected which are
+summarized in the first table below. The table also references the Git commits
+that document the _exact_ changes that were made to the model files.
+
+**No files in this repository are original model publications. To
+obtain the original model files please consult the original publications
+listed below.**
+
+The collection of models is split into three sections:
 
 - [**sbml**](sbml): Models that have been loaded as SBML files using the _sbml_
   loader in _psamm-import_.
@@ -113,4 +132,4 @@ Model References
 
 |Model|Reference|
 |-----|---------|
-|[recon2.04](matlab/recon2.04)          | _Virtual Metabolic Human_. <https://vmh.uni.lu/>. Accessed October 9, 2015. |
+|[recon2.04](matlab/recon2.04)          | _Virtual Metabolic Human_. <https://vmh.uni.lu/>. Accessed October 9, 2015 from the page <https://vmh.uni.lu/#downloadview> using the link to <https://vmh.uni.lu/files/Recon2.v04.mat_.zip>. |
