@@ -1,8 +1,11 @@
 name: Schizosaccharomyces_pombe
-biomass: RXNBiomass
+extracellular: cell
+compartments:
+- id: cell
+  name: cell
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml
