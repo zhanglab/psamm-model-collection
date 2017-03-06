@@ -1,8 +1,10 @@
 name: Pichia_pastoris
-biomass: R01288
+extracellular: cell
+compartments:
+- id: cell
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml
