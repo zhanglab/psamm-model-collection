@@ -1,8 +1,10 @@
 name: Pseudomonas_putida_KT2440
-biomass: R_Biomass
+extracellular: cell
+compartments:
+- id: cell
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml

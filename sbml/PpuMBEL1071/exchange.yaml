@@ -1,9 +1,4 @@
-name: Default medium
-compartment: cell
 compounds:
-- id: a_4HBZ
-  reaction: TRANS_4HBZ
-  upper: 0.0
 - id: BZ
   reaction: TRANS_BZ
   upper: 0.0
@@ -44,6 +39,9 @@ compounds:
   lower: 0.0
 - id: GL
   reaction: TRANS_GL
+- id: KDG
+  reaction: TRANS_kguT
+  upper: 0.0
 - id: NAC
   reaction: TRANS_NAC
   upper: 0.0
@@ -60,11 +58,11 @@ compounds:
   reaction: TRANS_O2
 - id: PHA
   reaction: TRANS_PHA
-- id: PHEACT
-  reaction: TRANS_PHEACT
-  upper: 0.0
 - id: PHE
   reaction: TRANS_PHEd
+  upper: 0.0
+- id: PHEACT
+  reaction: TRANS_PHEACT
   upper: 0.0
 - id: PIPC
   reaction: TRANS_PIPC
@@ -89,6 +87,6 @@ compounds:
 - id: VNL
   reaction: TRANS_VNL
   upper: 0.0
-- id: KDG
-  reaction: TRANS_kguT
+- id: a_4HBZ
+  reaction: TRANS_4HBZ
   upper: 0.0
