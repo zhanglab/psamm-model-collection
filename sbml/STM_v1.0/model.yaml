@@ -1,11 +1,26 @@
 name: Salmonella_consensus_build_1
-biomass: R_biomass_iRR1083_metals
 default_flux_limit: 1000.0
+compartments:
+- id: c
+  adjacent_to:
+  - p
+  - e
+  name: cytosol
+- id: e
+  adjacent_to:
+  - p
+  - c
+  name: extracellular
+- id: p
+  adjacent_to:
+  - c
+  - e
+  name: periplasm
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml
 limits:
 - include: limits.yaml
