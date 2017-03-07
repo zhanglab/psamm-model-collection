@@ -1,11 +1,26 @@
 name: Klebsiella pneumoniae MGH78578_iYL1228
-biomass: R_Biomass
 default_flux_limit: 1000.0
+compartments:
+- id: c
+  adjacent_to:
+  - p
+  - e
+  name: Cytoplasm
+- id: e
+  adjacent_to:
+  - p
+  - c
+  name: Extracellular
+- id: p
+  adjacent_to:
+  - c
+  - e
+  name: Periplasm
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml
 limits:
 - include: limits.yaml
