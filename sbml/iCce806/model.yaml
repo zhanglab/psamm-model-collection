@@ -1,11 +1,16 @@
 name: iCce806
-biomass: r_CYANOBM
 default_flux_limit: 1000.0
+extracellular: Extracellular
+compartments:
+- id: Cytosol
+  adjacent_to: Extracellular
+- id: Extracellular
+  adjacent_to: Cytosol
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml
 limits:
 - include: limits.yaml
