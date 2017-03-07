@@ -1,10 +1,8 @@
-name: Default medium
-compartment: e
 compounds:
-- id: acgam
-  reaction: EX_ACGAM_E
 - id: ac
   reaction: EX_AC_E
+- id: acgam
+  reaction: EX_ACGAM_E
 - id: adn
   reaction: EX_ADN_E
 - id: akg
@@ -55,10 +53,10 @@ compounds:
   reaction: EX_DCYT_E
 - id: dgsn
   reaction: EX_DGSN_E
-- id: dmso
-  reaction: EX_DMSO_E
 - id: dms
   reaction: EX_DMS_E
+- id: dmso
+  reaction: EX_DMSO_E
 - id: dna
   reaction: EX_DNA_E
 - id: dodca
@@ -85,32 +83,34 @@ compounds:
   reaction: EX_GLU-ASP-L_E
 - id: glu-l
   reaction: EX_GLU-L_E
+- id: gly
+  reaction: EX_GLY_E
 - id: gly-asp-l
   reaction: EX_GLY-ASP-L_E
 - id: gly-glu-l
   reaction: EX_GLY-GLU-L_E
+- id: glyc
+  reaction: EX_GLYC_E
 - id: glyc-r
   reaction: EX_GLYC-R_E
 - id: glyclt
   reaction: EX_GLYCLT_E
-- id: glyc
-  reaction: EX_GLYC_E
-- id: gly
-  reaction: EX_GLY_E
 - id: gsn
   reaction: EX_GSN_E
 - id: gthrd
   reaction: EX_GTHRD_E
 - id: gua
   reaction: EX_GUA_E
-- id: h2o2
-  reaction: EX_H2O2_E
-- id: h2o
-  reaction: EX_H2O_E
-- id: h2s
-  reaction: EX_H2S_E
+- id: h
+  reaction: EX_H_E
 - id: h2
   reaction: EX_H2_E
+- id: h2o
+  reaction: EX_H2O_E
+- id: h2o2
+  reaction: EX_H2O2_E
+- id: h2s
+  reaction: EX_H2S_E
 - id: hdca
   reaction: EX_HDCA_E
 - id: hg2
@@ -119,8 +119,6 @@ compounds:
   reaction: EX_HIS-L_E
 - id: hxan
   reaction: EX_HXAN_E
-- id: h
-  reaction: EX_H_E
 - id: ile-l
   reaction: EX_ILE-L_E
 - id: indole
@@ -195,14 +193,14 @@ compounds:
   reaction: EX_THM_E
 - id: thr-l
   reaction: EX_THR-L_E
-- id: thymd
-  reaction: EX_THYMD_E
 - id: thym
   reaction: EX_THYM_E
-- id: tmao
-  reaction: EX_TMAO_E
+- id: thymd
+  reaction: EX_THYMD_E
 - id: tma
   reaction: EX_TMA_E
+- id: tmao
+  reaction: EX_TMAO_E
 - id: trp-l
   reaction: EX_TRP-L_E
 - id: tsul
