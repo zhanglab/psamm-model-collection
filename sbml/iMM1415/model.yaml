@@ -1,8 +1,31 @@
 name: mouse1415
-biomass: R_biomass_mm_1_no_glygln
+default_flux_limit: 100000.0
+compartments:
+- id: c
+  adjacent_to:
+  - e
+  - g
+  - m
+  - l
+  - n
+  - r
+  - x
+  name: cytosol
+- id: e
+  adjacent_to:
+  - c
+  - r
+  - l
+  - g
+  - n
+  name: extracellular
+- id: p
+  name: periplasm
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml
+limits:
+- include: limits.yaml
