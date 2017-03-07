@@ -1,8 +1,14 @@
 name: iMA945
-biomass: R_ST_biomass_core
+extracellular: Extra_organism
+compartments:
+- id: Cytosol
+  adjacent_to: Extra_organism
+- id: Extra_organism
+  adjacent_to: Cytosol
+- id: Periplasm
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml
