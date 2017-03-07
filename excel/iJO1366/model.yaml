@@ -1,8 +1,21 @@
 name: Escerichia coli iJO1366 (Excel format), Orth et al., 2011
 biomass: Ec_biomass_iJO1366_core_53p95M
+compartments:
+- id: c
+  adjacent_to:
+  - p
+  - e
+- id: e
+  adjacent_to:
+  - p
+  - c
+- id: p
+  adjacent_to:
+  - c
+  - e
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml
