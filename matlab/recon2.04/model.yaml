@@ -1,11 +1,70 @@
 name: modelR204
 biomass: biomass_reaction
 default_flux_limit: 1000
+compartments:
+- id: c
+  adjacent_to:
+  - e
+  - g
+  - m
+  - l
+  - n
+  - r
+  - x
+- id: e
+  adjacent_to:
+  - c
+  - g
+  - m
+  - l
+  - n
+  - r
+  - x
+- id: g
+  adjacent_to:
+  - c
+  - r
+  - e
+  - l
+- id: l
+  adjacent_to:
+  - m
+  - c
+  - r
+  - e
+  - g
+- id: m
+  adjacent_to:
+  - x
+  - c
+  - r
+  - e
+  - l
+- id: n
+  adjacent_to:
+  - c
+  - r
+  - e
+- id: r
+  adjacent_to:
+  - c
+  - e
+  - g
+  - m
+  - l
+  - n
+  - x
+- id: x
+  adjacent_to:
+  - e
+  - c
+  - r
+  - m
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml
 limits:
 - include: limits.yaml
