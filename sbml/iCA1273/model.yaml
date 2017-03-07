@@ -1,11 +1,21 @@
 name: Ec_core
-biomass: R_Ec_biomass_iCA1273_core_59p81M
 default_flux_limit: 1000.0
+extracellular: Extra_organism
+compartments:
+- id: Cytosol
+  adjacent_to:
+  - periplasm
+  - Extra_organism
+- id: Extra_organism
+  adjacent_to:
+  - Cytosol
+  - periplasm
+- id: Periplasm
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml
 limits:
 - include: limits.yaml
