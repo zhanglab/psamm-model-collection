@@ -1,7 +1,11 @@
 name: Mycobacterium tuberculosis iNJ661 (Excel format), Jamshidi et al., 2007
+extracellular: null
+compartments:
+- id: c
+  adjacent_to: e
+- id: e
+  adjacent_to: c
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
