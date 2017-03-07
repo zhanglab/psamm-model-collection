@@ -1,3352 +1,3199 @@
-- id: R_2H3MOAOX
+- id: 2H3MOAOX
   name: 2H3MOAOX
   genes: MA3790
-  equation: '|M_23dhmb_c[C_c]| + |M_nadp_c[C_c]| <=> |M_2h3moa_c[C_c]| + |M_h_c[C_c]|
-    + |M_nadph_c[C_c]|'
-- id: R_2MBCOAS
+  equation: 23dhmb[c] + nadp[c] <=> 2h3moa[c] + h_c[c] + nadph[c]
+- id: 2MBCOAS
   name: 2MBCOAS
   genes: MA2912
-  equation: '|M_2mbr_c[C_c]| + |M_atp_c[C_c]| + |M_coa_c[C_c]| => |M_2mbcoa_c[C_c]|
-    + |M_amp_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_2MOPRED
+  equation: 2mbr[c] + atp[c] + coa[c] => 2mbcoa[c] + amp[c] + ppi[c]
+- id: 2MOPRED
   name: 2MOPRED
   genes: MA2860
-  equation: '|M_2mop_c[C_c]| + |M_h2o_c[C_c]| + |M_nad_c[C_c]| => (2) |M_h_c[C_c]|
-    + |M_mmal_c[C_c]| + |M_nadh_c[C_c]|'
-- id: R_2OBUTHE2THPPTRX
+  equation: 2mop[c] + h2o_c[c] + nad[c] => (2) h_c[c] + mmal[c] + nadh[c]
+- id: 2OBUTHE2THPPTRX
   name: 2OBUTHE2THPPTRX
   genes: MA1354 and MA1958
-  equation: '|M_2obut_c[C_c]| + |M_he2thpp_c[C_c]| <=> |M_2ahbut_c[C_c]| + |M_thmpp_c[C_c]|'
-- id: R_2PLS
+  equation: 2obut[c] + he2thpp[c] <=> 2ahbut[c] + thmpp[c]
+- id: 2PLS
   name: 2PLS
-  equation: '|M_gtp_c[C_c]| + |M_lac_L_c[C_c]| => |M_2plac_L_c[C_c]| + |M_gdp_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_4ABZt2r
+  equation: gtp[c] + lac_L[c] => 2plac_L[c] + gdp[c] + h_c[c]
+- id: 4ABZt2r
   name: 4ABZt2r
-  equation: '|M_4abz_e[C_e]| + |M_h_e[C_e]| <=> |M_4abz_c[C_c]| + |M_h_c[C_c]|'
-- id: R_4ASD
+  equation: 4abz_e[e] + h_e[e] <=> 4abz_c[c] + h_c[c]
+- id: 4ASD
   name: 4ASD
-  equation: '|M_4as_c[C_c]| => |M_4das_c[C_c]| + |M_h2o_c[C_c]|'
-- id: R_4DHSD
+  equation: 4as[c] => 4das[c] + h2o_c[c]
+- id: 4DHSD
   name: 4DHSD
-  equation: '|M_4adhs_c[C_c]| + (2) |M_h_c[C_c]| + |M_nadh_c[C_c]| => |M_4as_c[C_c]|
-    + |M_nad_c[C_c]|'
-- id: R_4DHSS
+  equation: 4adhs[c] + (2) h_c[c] + nadh[c] => 4as[c] + nad[c]
+- id: 4DHSS
   name: 4DHSS
-  equation: '|M_4adhq_c[C_c]| => |M_4adhs_c[C_c]| + |M_h2o_c[C_c]| + |M_h_c[C_c]|'
-- id: R_5HBCOX
+  equation: 4adhq[c] => 4adhs[c] + h2o_c[c] + h_c[c]
+- id: 5HBCOX
   name: 5HBCOX
-  equation: (2) |M_5hbc_red_c[C_c]| + (2) |M_h_c[C_c]| => (2) |M_5hbc_c[C_c]| + |M_h2_c[C_c]|
-- id: R_5HBCR
+  equation: (2) 5hbc_red[c] + (2) h_c[c] => (2) 5hbc[c] + h2_c[c]
+- id: 5HBCR
   name: 5HBCR
   genes: MA0150 or MA0849 or MA4360
-  equation: '|M_5hbc_c[C_c]| + |M_atp_c[C_c]| + |M_fdred_c[C_c]| + |M_h2o_c[C_c]|
-    => |M_5hbc_red_c[C_c]| + |M_adp_c[C_c]| + |M_fdox_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_5HBZIDS
+  equation: 5hbc[c] + atp[c] + fdred[c] + h2o_c[c] => 5hbc_red[c] + adp[c] + fdox[c]
+    + h_c[c] + pi_c[c]
+- id: 5HBZIDS
   name: 5HBZIDS
-  equation: '|M_ribflv_c[C_c]| => |M_5hbzid_c[C_c]| + |M_unknown_rbfdeg_c[C_c]|'
-- id: R_7MHS
+  equation: ribflv_c[c] => 5hbzid[c] + unknown_rbfdeg_c[c]
+- id: 7MHS
   name: 7MHS
-  equation: '|M_7ohp_c[C_c]| + |M_cys_L_c[C_c]| + |M_h_c[C_c]| + |M_nadh_c[C_c]|
-    => |M_7mhp_c[C_c]| + |M_nad_c[C_c]| + |M_ser_L_c[C_c]|'
-- id: R_7MHTS
+  equation: 7ohp[c] + cys_L_c[c] + h_c[c] + nadh[c] => 7mhp[c] + nad[c] + ser_L[c]
+- id: 7MHTS
   name: 7MHTS
-  equation: '|M_7mhp_c[C_c]| + |M_atp_c[C_c]| + |M_thr_L_c[C_c]| => |M_7mht_c[C_c]|
-    + |M_adp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_ABTA
+  equation: 7mhp[c] + atp[c] + thr_L[c] => 7mht[c] + adp[c] + h_c[c] + pi_c[c]
+- id: ABTA
   name: ABTA
   genes: MA2859
-  equation: '|M_4abut_c[C_c]| + |M_akg_c[C_c]| <=> |M_glu_L_c[C_c]| + |M_sucsal_c[C_c]|'
-- id: R_ACACT1
+  equation: 4abut[c] + akg[c] <=> glu_L_c[c] + sucsal[c]
+- id: ACACT1
   name: ACACT1
   genes: MA4042
-  equation: (2) |M_accoa_c[C_c]| <=> |M_aacoa_c[C_c]| + |M_coa_c[C_c]|
-- id: R_ACBIPGT
+  equation: (2) accoa[c] <=> aacoa[c] + coa[c]
+- id: ACBIPGT
   name: ACBIPGT
   genes: MA0938
-  equation: '|M_adocbip_c[C_c]| + |M_gtp_c[C_c]| + |M_h_c[C_c]| => |M_agdpcbi_c[C_c]|
-    + |M_ppi_c[C_c]|'
-- id: R_ACCOAL2r
+  equation: adocbip[c] + gtp[c] + h_c[c] => agdpcbi[c] + ppi[c]
+- id: ACCOAL2r
   name: ACCOAL2r
   genes: MA3168 and MA3602
-  equation: '|M_atp_c[C_c]| + |M_coa_c[C_c]| + |M_ppa_c[C_c]| <=> |M_adp_c[C_c]|
-    + |M_pi_c[C_c]| + |M_ppcoa_c[C_c]|'
-- id: R_ACGK
+  equation: atp[c] + coa[c] + ppa[c] <=> adp[c] + pi_c[c] + ppcoa[c]
+- id: ACGK
   name: ACGK
   genes: MA4515
-  equation: '|M_acglu_c[C_c]| + |M_atp_c[C_c]| <=> |M_acg5p_c[C_c]| + |M_adp_c[C_c]|'
-- id: R_ACGS
+  equation: acglu[c] + atp[c] <=> acg5p[c] + adp[c]
+- id: ACGS
   name: ACGS
   genes: MA3564 or MA4339
-  equation: '|M_accoa_c[C_c]| + |M_glu_L_c[C_c]| => |M_acglu_c[C_c]| + |M_coa_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_ACKr
+  equation: accoa[c] + glu_L_c[c] => acglu[c] + coa[c] + h_c[c]
+- id: ACKr
   name: ACKr
   genes: MA3606
-  equation: '|M_ac_c[C_c]| + |M_atp_c[C_c]| <=> |M_actp_c[C_c]| + |M_adp_c[C_c]|'
-- id: R_ACLDC
+  equation: ac_c[c] + atp[c] <=> actp[c] + adp[c]
+- id: ACLDC
   name: ACLDC
   genes: MA3744
-  equation: '|M_alac_S_c[C_c]| + |M_h_c[C_c]| => |M_actn_R_c[C_c]| + |M_co2_c[C_c]|'
-- id: R_ACLS
+  equation: alac_S_c[c] + h_c[c] => actn_R_c[c] + co2_c[c]
+- id: ACLS
   name: ACLS
   genes: (MA1354 or MA1958 or MA3792) and (MA3791 or MA3854)
-  equation: '|M_h_c[C_c]| + (2) |M_pyr_c[C_c]| => |M_alac_S_c[C_c]| + |M_co2_c[C_c]|'
-- id: R_ACNPLYS
+  equation: h_c[c] + (2) pyr_c[c] => alac_S_c[c] + co2_c[c]
+- id: ACNPLYS
   name: ACNPLYS
   genes: MA3767
-  equation: '|M_acnam_c[C_c]| + |M_pi_c[C_c]| <=> |M_acmana_c[C_c]| + |M_h2o_c[C_c]|
-    + |M_pep_c[C_c]|'
-- id: R_ACONMT
+  equation: acnam[c] + pi_c[c] <=> acmana[c] + h2o_c[c] + pep[c]
+- id: ACONMT
   name: ACONMT
   genes: MA1801
-  equation: '|M_acon_T_c[C_c]| + |M_amet_c[C_c]| => |M_aconm_c[C_c]| + |M_ahcys_c[C_c]|'
-- id: R_ACONTa
+  equation: acon_T[c] + amet[c] => aconm[c] + ahcys[c]
+- id: ACONTa
   name: ACONTa
   genes: MA0250
-  equation: '|M_cit_c[C_c]| <=> |M_acon_C_c[C_c]| + |M_h2o_c[C_c]|'
-- id: R_ACONTb
+  equation: cit_c[c] <=> acon_C[c] + h2o_c[c]
+- id: ACONTb
   name: ACONTb
   genes: MA0250
-  equation: '|M_icit_c[C_c]| <=> |M_acon_C_c[C_c]| + |M_h2o_c[C_c]|'
-- id: R_ACOTA
+  equation: icit[c] <=> acon_C[c] + h2o_c[c]
+- id: ACOTA
   name: ACOTA
   genes: MA0119
-  equation: '|M_acg5sa_c[C_c]| + |M_glu_L_c[C_c]| <=> |M_acorn_c[C_c]| + |M_akg_c[C_c]|'
-- id: R_ACP1_FMN
+  equation: acg5sa[c] + glu_L_c[c] <=> acorn[c] + akg[c]
+- id: ACP1_FMN
   name: ACP1(FMN)
   genes: MA2649
-  equation: '|M_fmn_c[C_c]| + |M_h2o_c[C_c]| => |M_pi_c[C_c]| + |M_ribflv_c[C_c]|'
-- id: R_ACSERHS
+  equation: fmn[c] + h2o_c[c] => pi_c[c] + ribflv_c[c]
+- id: ACSERHS
   name: ACSERHS
   genes: MA2715 or MA2720
-  equation: '|M_acser_c[C_c]| + |M_trdrd_c[C_c]| + |M_tsul_c[C_c]| => |M_ac_c[C_c]|
-    + |M_cys_L_c[C_c]| + |M_h_c[C_c]| + |M_so3_c[C_c]| + |M_trdox_c[C_c]|'
-- id: R_ACTNt2r
+  equation: acser[c] + trdrd[c] + tsul[c] => ac_c[c] + cys_L_c[c] + h_c[c] + so3[c]
+    + trdox[c]
+- id: ACTNt2r
   name: ACTNt2r
-  equation: '|M_actn_R_e[C_e]| + |M_h_e[C_e]| <=> |M_actn_R_c[C_c]| + |M_h_c[C_c]|'
-- id: R_ACYP
+  equation: actn_R_e[e] + h_e[e] <=> actn_R_c[c] + h_c[c]
+- id: ACYP
   name: ACYP
   genes: MA3367
-  equation: '|M_13dpg_c[C_c]| + |M_h2o_c[C_c]| => |M_3pg_c[C_c]| + |M_h_c[C_c]| +
-    |M_pi_c[C_c]|'
-- id: R_ACYP_2
+  equation: 13dpg[c] + h2o_c[c] => 3pg[c] + h_c[c] + pi_c[c]
+- id: ACYP_2
   name: ACYP_2
   genes: MA3367
-  equation: '|M_actp_c[C_c]| + |M_h2o_c[C_c]| => |M_ac_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_ACt3r
+  equation: actp[c] + h2o_c[c] => ac_c[c] + h_c[c] + pi_c[c]
+- id: ACt3r
   name: ACt3r
   genes: MA4008
-  equation: '|M_ac_e[C_e]| + |M_hco3_c[C_c]| <=> |M_ac_c[C_c]| + |M_hco3_e[C_e]|'
-- id: R_ADCBHBIR
+  equation: ac_e[e] + hco3_c[c] <=> ac_c[c] + hco3_e[e]
+- id: ADCBHBIR
   name: ADCBHBIR
-  equation: '|M_adocblhbi_c[C_c]| + |M_h2o_c[C_c]| => |M_5hbc_red_c[C_c]| + |M_adn_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_ADCL2
+  equation: adocblhbi[c] + h2o_c[c] => 5hbc_red[c] + adn[c] + h_c[c]
+- id: ADCL2
   name: ADCL2
-  equation: '|M_4das_c[C_c]| => |M_4abz_c[C_c]| + |M_h2o_c[C_c]| + |M_h_c[C_c]|'
-- id: R_ADCPS1
+  equation: 4das[c] => 4abz_c[c] + h2o_c[c] + h_c[c]
+- id: ADCPS1
   name: ADCPS1
   genes: MA0941
-  equation: '|M_adcobhex_c[C_c]| + |M_appl_c[C_c]| + |M_atp_c[C_c]| => |M_adocbi_c[C_c]|
-    + |M_adp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_ADCPS2
+  equation: adcobhex[c] + appl[c] + atp[c] => adocbi[c] + adp[c] + h_c[c] + pi_c[c]
+- id: ADCPS2
   name: ADCPS2
   genes: MA0941
-  equation: '|M_adcobhex_c[C_c]| + |M_applp_c[C_c]| + |M_atp_c[C_c]| => |M_adocbip_c[C_c]|
-    + |M_adp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_ADCYRS
+  equation: adcobhex[c] + applp[c] + atp[c] => adocbip[c] + adp[c] + h_c[c] + pi_c[c]
+- id: ADCYRS
   name: ADCYRS
   genes: MA3250
-  equation: '|M_adcobdam_c[C_c]| + (4) |M_atp_c[C_c]| + (4) |M_gln_L_c[C_c]| + (4)
-    |M_h2o_c[C_c]| => |M_adcobhex_c[C_c]| + (4) |M_adp_c[C_c]| + (4) |M_glu_L_c[C_c]|
-    + (4) |M_h_c[C_c]| + (4) |M_pi_c[C_c]|'
-- id: R_ADD
+  equation: adcobdam[c] + (4) atp[c] + (4) gln_L[c] + (4) h2o_c[c] => adcobhex[c]
+    + (4) adp[c] + (4) glu_L_c[c] + (4) h_c[c] + (4) pi_c[c]
+- id: ADD
   name: ADD
   genes: MA2310
-  equation: '|M_ade_c[C_c]| + |M_h2o_c[C_c]| + |M_h_c[C_c]| => |M_hxan_c[C_c]| +
-    |M_nh4_c[C_c]|'
-- id: R_ADK1
+  equation: ade[c] + h2o_c[c] + h_c[c] => hxan[c] + nh4_c[c]
+- id: ADK1
   name: ADK1
   genes: MA1096
-  equation: '|M_amp_c[C_c]| + |M_atp_c[C_c]| <=> (2) |M_adp_c[C_c]|'
-- id: R_ADK2
+  equation: amp[c] + atp[c] <=> (2) adp[c]
+- id: ADK2
   name: ADK2
   genes: MA1096
-  equation: '|M_amp_c[C_c]| + |M_pppi_c[C_c]| <=> |M_adp_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_ADK3
+  equation: amp[c] + pppi[c] <=> adp[c] + ppi[c]
+- id: ADK3
   name: ADK3
   genes: MA1096
-  equation: '|M_amp_c[C_c]| + |M_gtp_c[C_c]| <=> |M_adp_c[C_c]| + |M_gdp_c[C_c]|'
-- id: R_ADK4
+  equation: amp[c] + gtp[c] <=> adp[c] + gdp[c]
+- id: ADK4
   name: ADK4
   genes: MA1096
-  equation: '|M_amp_c[C_c]| + |M_itp_c[C_c]| <=> |M_adp_c[C_c]| + |M_idp_c[C_c]|'
-- id: R_ADKd
+  equation: amp[c] + itp[c] <=> adp[c] + idp[c]
+- id: ADKd
   name: ADKd
   genes: MA1096
-  equation: '|M_damp_c[C_c]| + |M_datp_c[C_c]| <=> (2) |M_dadp_c[C_c]|'
-- id: R_ADNCYC
+  equation: damp[c] + datp[c] <=> (2) dadp[c]
+- id: ADNCYC
   name: ADNCYC
   genes: MA4044
-  equation: '|M_atp_c[C_c]| => |M_camp_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_ADNK1
+  equation: atp[c] => camp[c] + ppi[c]
+- id: ADNK1
   name: ADNK1
   genes: MA1373
-  equation: '|M_adn_c[C_c]| + |M_atp_c[C_c]| => |M_adp_c[C_c]| + |M_amp_c[C_c]| +
-    |M_h_c[C_c]|'
-- id: R_ADOCBIAH
+  equation: adn[c] + atp[c] => adp[c] + amp[c] + h_c[c]
+- id: ADOCBIAH
   name: ADOCBIAH
   genes: MA1623
-  equation: '|M_adocbi_c[C_c]| + |M_h2o_c[C_c]| => |M_adcobhex_c[C_c]| + |M_appl_c[C_c]|'
-- id: R_ADOCBLS2
+  equation: adocbi[c] + h2o_c[c] => adcobhex[c] + appl[c]
+- id: ADOCBLS2
   name: ADOCBLS2
   genes: MA0939
-  equation: '|M_agdpcbi_c[C_c]| + |M_r5hbzi_c[C_c]| => |M_adocblhbi_c[C_c]| + |M_gmp_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_ADPRDP
+  equation: agdpcbi[c] + r5hbzi[c] => adocblhbi[c] + gmp[c] + h_c[c]
+- id: ADPRDP
   name: ADPRDP
   genes: MA0113
-  equation: '|M_adprib_c[C_c]| + |M_h2o_c[C_c]| => |M_amp_c[C_c]| + (2) |M_h_c[C_c]|
-    + |M_r5p_c[C_c]|'
-- id: R_ADPT
+  equation: adprib[c] + h2o_c[c] => amp[c] + (2) h_c[c] + r5p[c]
+- id: ADPT
   name: ADPT
   genes: MA0717
-  equation: '|M_amp_c[C_c]| + |M_ppi_c[C_c]| <=> |M_ade_c[C_c]| + |M_prpp_c[C_c]|'
-- id: R_ADSK
+  equation: amp[c] + ppi[c] <=> ade[c] + prpp[c]
+- id: ADSK
   name: ADSK
   genes: MA4246
-  equation: '|M_aps_c[C_c]| + |M_atp_c[C_c]| => |M_adp_c[C_c]| + |M_h_c[C_c]| + |M_paps_c[C_c]|'
-- id: R_ADSL1
+  equation: aps[c] + atp[c] => adp[c] + h_c[c] + paps[c]
+- id: ADSL1
   name: ADSL1
   genes: MA3971
-  equation: '|M_dcamp_c[C_c]| <=> |M_amp_c[C_c]| + |M_fum_c[C_c]|'
-- id: R_ADSL2
+  equation: dcamp[c] <=> amp[c] + fum[c]
+- id: ADSL2
   name: ADSL2
   genes: MA3971
-  equation: '|M_25aics_c[C_c]| <=> |M_aicar_c[C_c]| + |M_fum_c[C_c]|'
-- id: R_ADSS
+  equation: 25aics[c] <=> aicar[c] + fum[c]
+- id: ADSS
   name: ADSS
   genes: MA1919 or MA4118
-  equation: '|M_asp_L_c[C_c]| + |M_gtp_c[C_c]| + |M_imp_c[C_c]| => |M_dcamp_c[C_c]|
-    + |M_gdp_c[C_c]| + (2) |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_AGAIAGT
+  equation: asp_L[c] + gtp[c] + imp[c] => dcamp[c] + gdp[c] + (2) h_c[c] + pi_c[c]
+- id: AGAIAGT
   name: AGAIAGT
   genes: MA0798
-  equation: '|M_dpgpi_c[C_c]| + |M_uacgam_c[C_c]| => |M_agdpgpi_c[C_c]| + |M_h_c[C_c]|
-    + |M_udp_c[C_c]|'
-- id: R_AGAID
+  equation: dpgpi[c] + uacgam[c] => agdpgpi[c] + h_c[c] + udp[c]
+- id: AGAID
   name: AGAID
   genes: MA0990
-  equation: '|M_agdpgpi_c[C_c]| + |M_h2o_c[C_c]| => |M_ac_c[C_c]| + |M_gdpgpi_c[C_c]|'
-- id: R_AGMT
+  equation: agdpgpi[c] + h2o_c[c] => ac_c[c] + gdpgpi[c]
+- id: AGMT
   name: AGMT
   genes: MA3986
-  equation: '|M_agm_c[C_c]| + |M_h2o_c[C_c]| <=> |M_ptrc_c[C_c]| + |M_urea_c[C_c]|'
-- id: R_AGPR
+  equation: agm[c] + h2o_c[c] <=> ptrc[c] + urea[c]
+- id: AGPR
   name: AGPR
   genes: MA3566
-  equation: '|M_acg5p_c[C_c]| + |M_h_c[C_c]| + |M_nadph_c[C_c]| <=> |M_acg5sa_c[C_c]|
-    + |M_nadp_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_AH6PI
+  equation: acg5p[c] + h_c[c] + nadph[c] <=> acg5sa[c] + nadp[c] + pi_c[c]
+- id: AH6PI
   name: AH6PI
   genes: MA1384
-  equation: '|M_ah6p_D_c[C_c]| <=> |M_f6p_c[C_c]|'
-- id: R_AHC
+  equation: ah6p_D[c] <=> f6p[c]
+- id: AHC
   name: AHC
   genes: MA1275
-  equation: '|M_ahcys_c[C_c]| + |M_h2o_c[C_c]| <=> |M_adn_c[C_c]| + |M_hcys_L_c[C_c]|'
-- id: R_AHGDx
+  equation: ahcys[c] + h2o_c[c] <=> adn[c] + hcys_L[c]
+- id: AHGDx
   name: AHGDx
-  equation: '|M_S2hglut_c[C_c]| + |M_nad_c[C_c]| <=> |M_akg_c[C_c]| + |M_h_c[C_c]|
-    + |M_nadh_c[C_c]|'
-- id: R_AHMMPS
+  equation: S2hglut[c] + nad[c] <=> akg[c] + h_c[c] + nadh[c]
+- id: AHMMPS
   name: AHMMPS
   genes: MA0261 or MA1790 or MA4329
-  equation: '|M_air_c[C_c]| + (2) |M_h_c[C_c]| + |M_nadh_c[C_c]| => |M_4ahmmp_c[C_c]|
-    + |M_gcald_c[C_c]| + |M_nad_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_AHSERL2
+  equation: air[c] + (2) h_c[c] + nadh[c] => 4ahmmp[c] + gcald_c[c] + nad[c] + pi_c[c]
+- id: AHSERL2
   name: AHSERL2
   genes: MA2715
-  equation: '|M_achms_c[C_c]| + |M_h2s_c[C_c]| => |M_ac_c[C_c]| + |M_h_c[C_c]| +
-    |M_hcys_L_c[C_c]|'
-- id: R_AICART
+  equation: achms[c] + h2s_c[c] => ac_c[c] + h_c[c] + hcys_L[c]
+- id: AICART
   name: AICART
   genes: MA4012
-  equation: '|M_10fthf_c[C_c]| + |M_aicar_c[C_c]| <=> |M_fprica_c[C_c]| + |M_thf_c[C_c]|'
-- id: R_AIRC2
+  equation: 10fthf[c] + aicar[c] <=> fprica[c] + thf[c]
+- id: AIRC2
   name: AIRC2
   genes: MA0428 or MA1376 or MA4063
-  equation: '|M_air_c[C_c]| + |M_atp_c[C_c]| + |M_hco3_c[C_c]| => |M_5caiz_c[C_c]|
-    + |M_adp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_AIRC3
+  equation: air[c] + atp[c] + hco3_c[c] => 5caiz[c] + adp[c] + h_c[c] + pi_c[c]
+- id: AIRC3
   name: AIRC3
   genes: MA0428 or MA1376 or MA4063
-  equation: '|M_5aizc_c[C_c]| <=> |M_5caiz_c[C_c]|'
-- id: R_AIRCr
+  equation: 5aizc[c] <=> 5caiz[c]
+- id: AIRCr
   name: AIRCr
   genes: MA1376
-  equation: '|M_air_c[C_c]| + |M_co2_c[C_c]| <=> |M_5aizc_c[C_c]| + |M_h_c[C_c]|'
-- id: R_AKACAL
+  equation: air[c] + co2_c[c] <=> 5aizc[c] + h_c[c]
+- id: AKACAL
   name: AKACAL
   genes: MA3342
-  equation: '|M_accoa_c[C_c]| + |M_h2o_c[C_c]| + |M_ohexa_c[C_c]| => |M_Rh2cit_c[C_c]|
-    + |M_coa_c[C_c]| + |M_h_c[C_c]|'
-- id: R_AKGCAL
+  equation: accoa[c] + h2o_c[c] + ohexa[c] => Rh2cit[c] + coa[c] + h_c[c]
+- id: AKGCAL
   name: AKGCAL
   genes: MA3342
-  equation: '|M_accoa_c[C_c]| + |M_akg_c[C_c]| => |M_coa_c[C_c]| + |M_h_c[C_c]| +
-    |M_hacon_T_c[C_c]|'
-- id: R_AKP1
+  equation: accoa[c] + akg[c] => coa[c] + h_c[c] + hacon_T[c]
+- id: AKP1
   name: AKP1
   genes: MA4354
-  equation: '|M_ahdt_c[C_c]| + (3) |M_h2o_c[C_c]| => |M_dhnpt_c[C_c]| + (2) |M_h_c[C_c]|
-    + (3) |M_pi_c[C_c]|'
-- id: R_AKPCAL
+  equation: ahdt[c] + (3) h2o_c[c] => dhnpt[c] + (2) h_c[c] + (3) pi_c[c]
+- id: AKPCAL
   name: AKPCAL
   genes: MA3342
-  equation: '|M_accoa_c[C_c]| + |M_h2o_c[C_c]| + |M_ohepa_c[C_c]| => |M_Rh3cit_c[C_c]|
-    + |M_coa_c[C_c]| + |M_h_c[C_c]|'
-- id: R_AKSCAL
+  equation: accoa[c] + h2o_c[c] + ohepa[c] => Rh3cit[c] + coa[c] + h_c[c]
+- id: AKSCAL
   name: AKSCAL
-  equation: '|M_2ood_c[C_c]| + |M_accoa_c[C_c]| + |M_h2o_c[C_c]| => |M_glyc_R_c[C_c]|
-    + |M_pmcoa_c[C_c]|'
-- id: R_AKSDC
+  equation: 2ood[c] + accoa[c] + h2o_c[c] => glyc_R[c] + pmcoa[c]
+- id: AKSDC
   name: AKSDC
-  equation: '|M_2ood_c[C_c]| + |M_h_c[C_c]| => |M_7ohp_c[C_c]| + |M_co2_c[C_c]|'
-- id: R_ALACCBX
+  equation: 2ood[c] + h_c[c] => 7ohp[c] + co2_c[c]
+- id: ALACCBX
   name: ALACCBX
   genes: MA1354 and MA1958
-  equation: '|M_he2thpp_c[C_c]| + |M_pyr_c[C_c]| => |M_alac_S_c[C_c]| + |M_thmpp_c[C_c]|'
-- id: R_ALACt2r
+  equation: he2thpp[c] + pyr_c[c] => alac_S_c[c] + thmpp[c]
+- id: ALACt2r
   name: ALACt2r
-  equation: '|M_alac_S_e[C_e]| + |M_h_e[C_e]| <=> |M_alac_S_c[C_c]| + |M_h_c[C_c]|'
-- id: R_ALATA_L
+  equation: alac_S_e[e] + h_e[e] <=> alac_S_c[c] + h_c[c]
+- id: ALATA_L
   name: ALATA_L
   genes: MA0636
-  equation: '|M_akg_c[C_c]| + |M_ala_L_c[C_c]| <=> |M_glu_L_c[C_c]| + |M_pyr_c[C_c]|'
-- id: R_ALATRS
+  equation: akg[c] + ala_L_c[c] <=> glu_L_c[c] + pyr_c[c]
+- id: ALATRS
   name: ALATRS
   genes: MA0194
-  equation: '|M_ala_L_c[C_c]| + |M_atp_c[C_c]| + |M_trnaala_c[C_c]| => |M_alatrna_c[C_c]|
-    + |M_amp_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_ALAt4r
+  equation: ala_L_c[c] + atp[c] + trnaala[c] => alatrna[c] + amp[c] + ppi[c]
+- id: ALAt4r
   name: ALAt4r
   genes: MA2837
-  equation: '|M_ala_L_e[C_e]| + |M_na1_e[C_e]| <=> |M_ala_L_c[C_c]| + |M_na1_c[C_c]|'
-- id: R_ALCD19x
+  equation: ala_L_e[e] + na1_e[e] <=> ala_L_c[c] + na1_c[c]
+- id: ALCD19x
   name: ALCD19x
   genes: MA2630
-  equation: '|M_glyald_c[C_c]| + |M_h_c[C_c]| + |M_nadph_c[C_c]| => |M_glyc_c[C_c]|
-    + |M_nadp_c[C_c]|'
-- id: R_ALCD19y
+  equation: glyald[c] + h_c[c] + nadph[c] => glyc[c] + nadp[c]
+- id: ALCD19y
   name: ALCD19y
   genes: MA0403 or MA1901
-  equation: '|M_glyald_c[C_c]| + |M_h_c[C_c]| + |M_nadph_c[C_c]| => |M_glyc_c[C_c]|
-    + |M_nadp_c[C_c]|'
-- id: R_ALCD20x
+  equation: glyald[c] + h_c[c] + nadph[c] => glyc[c] + nadp[c]
+- id: ALCD20x
   name: ALCD20x
   genes: MA2630
-  equation: '|M_2ppoh_c[C_c]| + |M_nad_c[C_c]| <=> |M_acetone_c[C_c]| + |M_h_c[C_c]|
-    + |M_nadh_c[C_c]|'
-- id: R_ALCD20y
+  equation: 2ppoh[c] + nad[c] <=> acetone[c] + h_c[c] + nadh[c]
+- id: ALCD20y
   name: ALCD20y
   genes: MA0403 or MA1901
-  equation: '|M_2ppoh_c[C_c]| + |M_nadp_c[C_c]| <=> |M_acetone_c[C_c]| + |M_h_c[C_c]|
-    + |M_nadph_c[C_c]|'
-- id: R_ALCD22_L_f420
+  equation: 2ppoh[c] + nadp[c] <=> acetone[c] + h_c[c] + nadph[c]
+- id: ALCD22_L_f420
   name: ALCD22_L_f420_
-  equation: '|M_f420_2_c[C_c]| + |M_h_c[C_c]| + |M_lald_L_c[C_c]| <=> |M_f420_2h2_c[C_c]|
-    + |M_mthgxl_c[C_c]|'
-- id: R_ALCD2x
+  equation: f420_2[c] + h_c[c] + lald_L[c] <=> f420_2h2[c] + mthgxl[c]
+- id: ALCD2x
   name: ALCD2x
   genes: MA2630
-  equation: '|M_etoh_c[C_c]| + |M_nad_c[C_c]| <=> |M_acald_c[C_c]| + |M_h_c[C_c]|
-    + |M_nadh_c[C_c]|'
-- id: R_ALCD2y
+  equation: etoh[c] + nad[c] <=> acald[c] + h_c[c] + nadh[c]
+- id: ALCD2y
   name: ALCD2y
   genes: MA0403 or MA1901
-  equation: '|M_etoh_c[C_c]| + |M_nadp_c[C_c]| <=> |M_acald_c[C_c]| + |M_h_c[C_c]|
-    + |M_nadph_c[C_c]|'
-- id: R_ALDD1
+  equation: etoh[c] + nadp[c] <=> acald[c] + h_c[c] + nadph[c]
+- id: ALDD1
   name: ALDD1
   genes: MA0417
-  equation: '|M_fald_c[C_c]| + |M_h2o_c[C_c]| + |M_nad_c[C_c]| => |M_for_c[C_c]|
-    + (2) |M_h_c[C_c]| + |M_nadh_c[C_c]|'
-- id: R_ALDD20x
+  equation: fald[c] + h2o_c[c] + nad[c] => for_c[c] + (2) h_c[c] + nadh[c]
+- id: ALDD20x
   name: ALDD20x
   genes: MA2860
-  equation: '|M_h2o_c[C_c]| + |M_id3acald_c[C_c]| + |M_nad_c[C_c]| => (2) |M_h_c[C_c]|
-    + |M_ind3ac_c[C_c]| + |M_nadh_c[C_c]|'
-- id: R_ALDD2x
+  equation: h2o_c[c] + id3acald[c] + nad[c] => (2) h_c[c] + ind3ac_c[c] + nadh[c]
+- id: ALDD2x
   name: ALDD2x
   genes: MA2860
-  equation: '|M_acald_c[C_c]| + |M_h2o_c[C_c]| + |M_nad_c[C_c]| => |M_ac_c[C_c]|
-    + (2) |M_h_c[C_c]| + |M_nadh_c[C_c]|'
-- id: R_ALDD31
+  equation: acald[c] + h2o_c[c] + nad[c] => ac_c[c] + (2) h_c[c] + nadh[c]
+- id: ALDD31
   name: ALDD31
   genes: MA2860
-  equation: '|M_aacald_c[C_c]| + |M_h2o_c[C_c]| + |M_nad_c[C_c]| => |M_gly_c[C_c]|
-    + (2) |M_h_c[C_c]| + |M_nadh_c[C_c]|'
-- id: R_ALKP
+  equation: aacald[c] + h2o_c[c] + nad[c] => gly_c[c] + (2) h_c[c] + nadh[c]
+- id: ALKP
   name: ALKP
   genes: MA4354
-  equation: '|M_dhap_c[C_c]| + |M_h2o_c[C_c]| => |M_dha_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_ALR2_f420
+  equation: dhap[c] + h2o_c[c] => dha[c] + pi_c[c]
+- id: ALR2_f420
   name: ALR2_f420_
   genes: MA0422 or MA2291 or MA2292 or MA2756
-  equation: '|M_f420_2h2_c[C_c]| + |M_mthgxl_c[C_c]| <=> |M_acetol_c[C_c]| + |M_f420_2_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_AMAOTr
+  equation: f420_2h2[c] + mthgxl[c] <=> acetol[c] + f420_2[c] + h_c[c]
+- id: AMAOTr
   name: AMAOTr
-  equation: '|M_8aonn_c[C_c]| + |M_amet_c[C_c]| <=> |M_amob_c[C_c]| + |M_dann_c[C_c]|'
-- id: R_AMPMS2
+  equation: 8aonn[c] + amet[c] <=> amob[c] + dann[c]
+- id: AMPMS2
   name: AMPMS2
   genes: MA1790
-  equation: '|M_air_c[C_c]| + |M_h2o_c[C_c]| + |M_nad_c[C_c]| => |M_4ampm_c[C_c]|
-    + (2) |M_for_c[C_c]| + (3) |M_h_c[C_c]| + |M_nadh_c[C_c]|'
-- id: R_AMPTASECG
+  equation: air[c] + h2o_c[c] + nad[c] => 4ampm[c] + (2) for_c[c] + (3) h_c[c] +
+    nadh[c]
+- id: AMPTASECG
   name: AMPTASECG
   genes: MA1605 or MA2653
-  equation: '|M_cgly_c[C_c]| + |M_h2o_c[C_c]| => |M_cys_L_c[C_c]| + |M_gly_c[C_c]|'
-- id: R_ANPRT
+  equation: cgly[c] + h2o_c[c] => cys_L_c[c] + gly_c[c]
+- id: ANPRT
   name: ANPRT
   genes: MA2989
-  equation: '|M_ppi_c[C_c]| + |M_pran_c[C_c]| <=> |M_anth_c[C_c]| + |M_prpp_c[C_c]|'
-- id: R_ANS
+  equation: ppi[c] + pran[c] <=> anth[c] + prpp[c]
+- id: ANS
   name: ANS
   genes: MA2986 and MA2987
-  equation: '|M_chor_c[C_c]| + |M_gln_L_c[C_c]| => |M_anth_c[C_c]| + |M_glu_L_c[C_c]|
-    + |M_h_c[C_c]| + |M_pyr_c[C_c]|'
-- id: R_ANS2
+  equation: chor[c] + gln_L[c] => anth[c] + glu_L_c[c] + h_c[c] + pyr_c[c]
+- id: ANS2
   name: ANS2
   genes: MA2986 and MA2987
-  equation: '|M_chor_c[C_c]| + |M_nh4_c[C_c]| => |M_anth_c[C_c]| + |M_h2o_c[C_c]|
-    + |M_h_c[C_c]| + |M_pyr_c[C_c]|'
-- id: R_AOXSr
+  equation: chor[c] + nh4_c[c] => anth[c] + h2o_c[c] + h_c[c] + pyr_c[c]
+- id: AOXSr
   name: AOXSr
-  equation: '|M_ala_L_c[C_c]| + |M_h_c[C_c]| + |M_pmcoa_c[C_c]| <=> |M_8aonn_c[C_c]|
-    + |M_co2_c[C_c]| + |M_coa_c[C_c]|'
-- id: R_APAT2
+  equation: ala_L_c[c] + h_c[c] + pmcoa[c] <=> 8aonn[c] + co2_c[c] + coa[c]
+- id: APAT2
   name: APAT2
   genes: MA2859
-  equation: '|M_akg_c[C_c]| + |M_ala_B_c[C_c]| <=> |M_glu_L_c[C_c]| + |M_msa_c[C_c]|'
-- id: R_APPLP
+  equation: akg[c] + ala_B[c] <=> glu_L_c[c] + msa[c]
+- id: APPLP
   name: APPLP
   genes: MA0940
-  equation: '|M_appl_c[C_c]| + |M_atp_c[C_c]| => |M_adp_c[C_c]| + |M_applp_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_ARGDC
+  equation: appl[c] + atp[c] => adp[c] + applp[c] + h_c[c]
+- id: ARGDC
   name: ARGDC
   genes: MA3012 or MA3496
-  equation: '|M_arg_L_c[C_c]| + |M_h_c[C_c]| => |M_agm_c[C_c]| + |M_co2_c[C_c]|'
-- id: R_ARGDr
+  equation: arg_L[c] + h_c[c] => agm[c] + co2_c[c]
+- id: ARGDr
   name: ARGDr
   genes: MA0792
-  equation: '|M_arg_L_c[C_c]| + |M_h2o_c[C_c]| <=> |M_citr_L_c[C_c]| + |M_nh4_c[C_c]|'
-- id: R_ARGSL
+  equation: arg_L[c] + h2o_c[c] <=> citr_L[c] + nh4_c[c]
+- id: ARGSL
   name: ARGSL
   genes: MA1318
-  equation: '|M_argsuc_c[C_c]| <=> |M_arg_L_c[C_c]| + |M_fum_c[C_c]|'
-- id: R_ARGSS
+  equation: argsuc[c] <=> arg_L[c] + fum[c]
+- id: ARGSS
   name: ARGSS
   genes: MA2142
-  equation: '|M_asp_L_c[C_c]| + |M_atp_c[C_c]| + |M_citr_L_c[C_c]| => |M_amp_c[C_c]|
-    + |M_argsuc_c[C_c]| + |M_h_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_ARGTRS
+  equation: asp_L[c] + atp[c] + citr_L[c] => amp[c] + argsuc[c] + h_c[c] + ppi[c]
+- id: ARGTRS
   name: ARGTRS
   genes: MA0043
-  equation: '|M_arg_L_c[C_c]| + |M_atp_c[C_c]| + |M_trnaarg_c[C_c]| => |M_amp_c[C_c]|
-    + |M_argtrna_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_ASADi
+  equation: arg_L[c] + atp[c] + trnaarg[c] => amp[c] + argtrna[c] + ppi[c]
+- id: ASADi
   name: ASADi
   genes: MA0430
-  equation: '|M_4pasp_c[C_c]| + |M_h_c[C_c]| + |M_nadph_c[C_c]| => |M_aspsa_c[C_c]|
-    + |M_nadp_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_ASD
+  equation: 4pasp[c] + h_c[c] + nadph[c] => aspsa[c] + nadp[c] + pi_c[c]
+- id: ASD
   name: ASD
   genes: MA0115
-  equation: '|M_dpgps_c[C_c]| + |M_h_c[C_c]| => |M_co2_c[C_c]| + |M_dpgpe_c[C_c]|'
-- id: R_ASNN
+  equation: dpgps[c] + h_c[c] => co2_c[c] + dpgpe[c]
+- id: ASNN
   name: ASNN
   genes: MA1317
-  equation: '|M_asn_L_c[C_c]| + |M_h2o_c[C_c]| => |M_asp_L_c[C_c]| + |M_nh4_c[C_c]|'
-- id: R_ASNS1
+  equation: asn_L[c] + h2o_c[c] => asp_L[c] + nh4_c[c]
+- id: ASNS1
   name: ASNS1
   genes: MA0051 or MA1966
-  equation: '|M_asp_L_c[C_c]| + |M_atp_c[C_c]| + |M_gln_L_c[C_c]| + |M_h2o_c[C_c]|
-    => |M_amp_c[C_c]| + |M_asn_L_c[C_c]| + |M_glu_L_c[C_c]| + |M_h_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_ASNTRS2_1
+  equation: asp_L[c] + atp[c] + gln_L[c] + h2o_c[c] => amp[c] + asn_L[c] + glu_L_c[c]
+    + h_c[c] + ppi[c]
+- id: ASNTRS2_1
   name: ASNTRS2-1
   genes: MA1684
-  equation: '|M_asp_L_c[C_c]| + |M_atp_c[C_c]| + |M_trnaasn_c[C_c]| => |M_amp_c[C_c]|
-    + |M_asntrna_asp__c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_ASNTRS2_2
+  equation: asp_L[c] + atp[c] + trnaasn[c] => amp[c] + asntrna_asp_[c] + ppi[c]
+- id: ASNTRS2_2
   name: ASNTRS2-2
   genes: MA4522 and MA4523 and MA4524
-  equation: '|M_asntrna_asp__c[C_c]| + |M_atp_c[C_c]| + |M_gln_L_c[C_c]| + |M_h2o_c[C_c]|
-    => |M_adp_c[C_c]| + |M_asntrna_c[C_c]| + |M_glu_L_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_ASP1DC
+  equation: asntrna_asp_[c] + atp[c] + gln_L[c] + h2o_c[c] => adp[c] + asntrna[c]
+    + glu_L_c[c] + h_c[c] + pi_c[c]
+- id: ASP1DC
   name: ASP1DC
   genes: MA1949
-  equation: '|M_asp_L_c[C_c]| + |M_h_c[C_c]| => |M_ala_B_c[C_c]| + |M_co2_c[C_c]|'
-- id: R_ASPCT
+  equation: asp_L[c] + h_c[c] => ala_B[c] + co2_c[c]
+- id: ASPCT
   name: ASPCT
   genes: MA4501 and MA4502
-  equation: '|M_asp_L_c[C_c]| + |M_cbp_c[C_c]| => |M_cbasp_c[C_c]| + |M_h_c[C_c]|
-    + |M_pi_c[C_c]|'
-- id: R_ASPKi
+  equation: asp_L[c] + cbp[c] => cbasp[c] + h_c[c] + pi_c[c]
+- id: ASPKi
   name: ASPKi
   genes: MA0131
-  equation: '|M_asp_L_c[C_c]| + |M_atp_c[C_c]| <=> |M_4pasp_c[C_c]| + |M_adp_c[C_c]|'
-- id: R_ASPO2x
+  equation: asp_L[c] + atp[c] <=> 4pasp[c] + adp[c]
+- id: ASPO2x
   name: ASPO2x
   genes: MA0958
-  equation: '|M_asp_L_c[C_c]| + |M_nad_c[C_c]| => |M_h_c[C_c]| + |M_iasp_c[C_c]|
-    + |M_nadh_c[C_c]|'
-- id: R_ASPO2y
+  equation: asp_L[c] + nad[c] => h_c[c] + iasp[c] + nadh[c]
+- id: ASPO2y
   name: ASPO2y
   genes: MA0958
-  equation: '|M_asp_L_c[C_c]| + |M_nadp_c[C_c]| => |M_h_c[C_c]| + |M_iasp_c[C_c]|
-    + |M_nadph_c[C_c]|'
-- id: R_ASPTA
+  equation: asp_L[c] + nadp[c] => h_c[c] + iasp[c] + nadph[c]
+- id: ASPTA
   name: ASPTA
   genes: MA0636 or MA1385 or MA1819
-  equation: '|M_akg_c[C_c]| + |M_asp_L_c[C_c]| <=> |M_glu_L_c[C_c]| + |M_oaa_c[C_c]|'
-- id: R_ASPTRS
+  equation: akg[c] + asp_L[c] <=> glu_L_c[c] + oaa[c]
+- id: ASPTRS
   name: ASPTRS
   genes: MA1684
-  equation: '|M_asp_L_c[C_c]| + |M_atp_c[C_c]| + |M_trnaasp_c[C_c]| => |M_amp_c[C_c]|
-    + |M_asptrna_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_ATGH
+  equation: asp_L[c] + atp[c] + trnaasp[c] => amp[c] + asptrna[c] + ppi[c]
+- id: ATGH
   name: ATGH
   genes: MA0691 or MA0692 or MA1484
-  equation: '|M_dggpg_c[C_c]| + (8) |M_h_c[C_c]| + (8) |M_nadph_c[C_c]| => |M_dpgpg_c[C_c]|
-    + (8) |M_nadp_c[C_c]|'
-- id: R_ATIH
+  equation: dggpg[c] + (8) h_c[c] + (8) nadph[c] => dpgpg[c] + (8) nadp[c]
+- id: ATIH
   name: ATIH
   genes: MA0691 or MA0692 or MA1484
-  equation: '|M_dggpi_c[C_c]| + (8) |M_h_c[C_c]| + (8) |M_nadph_c[C_c]| => |M_dpgpi_c[C_c]|
-    + (8) |M_nadp_c[C_c]|'
-- id: R_ATPFORTRX
+  equation: dggpi[c] + (8) h_c[c] + (8) nadph[c] => dpgpi[c] + (8) nadp[c]
+- id: ATPFORTRX
   name: ATPFORTRX
   genes: MA0206 or MA3689
-  equation: '|M_aicar_c[C_c]| + |M_atp_c[C_c]| + |M_for_c[C_c]| => |M_adp_c[C_c]|
-    + |M_fprica_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_ATPHs
+  equation: aicar[c] + atp[c] + for_c[c] => adp[c] + fprica[c] + pi_c[c]
+- id: ATPHs
   name: ATPHs
-  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_h_c[C_c]| => |M_itp_c[C_c]| + |M_nh4_c[C_c]|'
-- id: R_ATPM
+  equation: atp[c] + h2o_c[c] + h_c[c] => itp[c] + nh4_c[c]
+- id: ATPM
   name: ATPM
   genes: MA3706
-  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| => |M_adp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_ATPPRT
+  equation: atp[c] + h2o_c[c] => adp[c] + h_c[c] + pi_c[c]
+- id: ATPPRT
   name: ATPPRT
   genes: MA0217
-  equation: '|M_ppi_c[C_c]| + |M_prbatp_c[C_c]| <=> |M_atp_c[C_c]| + |M_prpp_c[C_c]|'
-- id: R_ATPS1
+  equation: ppi[c] + prbatp[c] <=> atp[c] + prpp[c]
+- id: ATPS1
   name: ATPS1
   genes: MA1678 or MA2833
-  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_h_c[C_c]| => |M_adp_c[C_c]| + (2)
-    |M_h_e[C_e]| + |M_pi_c[C_c]|'
-- id: R_ATPS4r
+  equation: atp[c] + h2o_c[c] + h_c[c] => adp[c] + (2) h_e[e] + pi_c[c]
+- id: ATPS4r
   name: ATPS4r
   genes: MA4152 and MA4153 and MA4154 and MA4155 and MA4156 and MA4157 and MA4158
     and MA4159 and MA4160
-  equation: '|M_adp_c[C_c]| + (4) |M_h_e[C_e]| + |M_pi_c[C_c]| <=> |M_atp_c[C_c]|
-    + |M_h2o_c[C_c]| + (3) |M_h_c[C_c]|'
-- id: R_ATSH
+  equation: adp[c] + (4) h_e[e] + pi_c[c] <=> atp[c] + h2o_c[c] + (3) h_c[c]
+- id: ATSH
   name: ATSH
   genes: MA0691 or MA0692 or MA1484
-  equation: '|M_dgggps_c[C_c]| + (8) |M_h_c[C_c]| + (8) |M_nadph_c[C_c]| => |M_dpgps_c[C_c]|
-    + (8) |M_nadp_c[C_c]|'
-- id: R_BACCL
+  equation: dgggps[c] + (8) h_c[c] + (8) nadph[c] => dpgps[c] + (8) nadp[c]
+- id: BACCL
   name: BACCL
   genes: MA0676
-  equation: '|M_atp_c[C_c]| + |M_btn_c[C_c]| + |M_h_c[C_c]| => |M_btamp_c[C_c]| +
-    |M_ppi_c[C_c]|'
-- id: R_BAMPPALDOX
+  equation: atp[c] + btn_c[c] + h_c[c] => btamp[c] + ppi[c]
+- id: BAMPPALDOX
   name: BAMPPALDOX
   genes: MA2860
-  equation: '|M_bamppald_c[C_c]| + |M_h2o_c[C_c]| + |M_nad_c[C_c]| => |M_ala_B_c[C_c]|
-    + (2) |M_h_c[C_c]| + |M_nadh_c[C_c]|'
-- id: R_BLAT
+  equation: bamppald[c] + h2o_c[c] + nad[c] => ala_B[c] + (2) h_c[c] + nadh[c]
+- id: BLAT
   name: BLAT
   genes: MA3978
-  equation: '|M_36dahx_c[C_c]| + |M_accoa_c[C_c]| => |M_coa_c[C_c]| + |M_h_c[C_c]|
-    + |M_nabl_c[C_c]|'
-- id: R_BMt
+  equation: 36dahx[c] + accoa[c] => coa[c] + h_c[c] + nabl[c]
+- id: BMt
   name: BMt
-  equation: '|M_biomass_met_c[C_c]| => |M_biomass_met_e[C_e]|'
-- id: R_BRFAPS
+  equation: biomass_met_c[c] => biomass_met_e[e]
+- id: BRFAPS
   name: BRFAPS
   genes: MA0339 or MA4006
-  equation: '|M_4abz_c[C_c]| + |M_h_c[C_c]| + |M_prpp_c[C_c]| => |M_Brfap_c[C_c]|
-    + |M_co2_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_BSPRR
+  equation: 4abz_c[c] + h_c[c] + prpp[c] => Brfap[c] + co2_c[c] + ppi[c]
+- id: BSPRR
   name: BSPRR
-  equation: '|M_btnp_c[C_c]| + (2) |M_fdox_c[C_c]| + (2) |M_fe2_c[C_c]| + (2) |M_h2s_c[C_c]|
-    => |M_btnp_s2_c[C_c]| + (2) |M_fdred_c[C_c]| + (4) |M_h_c[C_c]|'
-- id: R_BTNabc
+  equation: btnp[c] + (2) fdox[c] + (2) fe2_c[c] + (2) h2s_c[c] => btnp_s2[c] + (2)
+    fdred[c] + (4) h_c[c]
+- id: BTNabc
   name: BTNabc
   genes: MA4340 and (MA4341 or MA4342) and MA4343
-  equation: '|M_atp_c[C_c]| + |M_btn_e[C_e]| + |M_h2o_c[C_c]| => |M_adp_c[C_c]| +
-    |M_btn_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_BTNt2i
+  equation: atp[c] + btn_e[e] + h2o_c[c] => adp[c] + btn_c[c] + h_c[c] + pi_c[c]
+- id: BTNt2i
   name: BTNt2i
   genes: MA4340
-  equation: '|M_btn_e[C_e]| + |M_h_e[C_e]| <=> |M_btn_c[C_c]| + |M_h_c[C_c]|'
-- id: R_BTS5
+  equation: btn_e[e] + h_e[e] <=> btn_c[c] + h_c[c]
+- id: BTS5
   name: BTS5
-  equation: '|M_btnp_s2_c[C_c]| + |M_dtbt_c[C_c]| + (2) |M_fdox_c[C_c]| => |M_btn_c[C_c]|
-    + |M_btnp_c[C_c]| + (2) |M_fdred_c[C_c]| + (2) |M_fe2_c[C_c]| + |M_h2s_c[C_c]|'
-- id: R_CA2abc
+  equation: btnp_s2[c] + dtbt[c] + (2) fdox[c] => btn_c[c] + btnp[c] + (2) fdred[c]
+    + (2) fe2_c[c] + h2s_c[c]
+- id: CA2abc
   name: CA2abc
   genes: MA4082
-  equation: '|M_atp_c[C_c]| + |M_ca2_e[C_e]| + |M_h2o_c[C_c]| => |M_adp_c[C_c]| +
-    |M_ca2_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_CAT
+  equation: atp[c] + ca2_e[e] + h2o_c[c] => adp[c] + ca2_c[c] + h_c[c] + pi_c[c]
+- id: CAT
   name: CAT
   genes: MA0972
-  equation: (2) |M_h2o2_c[C_c]| => (2) |M_h2o_c[C_c]| + |M_o2_c[C_c]|
-- id: R_CAt6
+  equation: (2) h2o2[c] => (2) h2o_c[c] + o2[c]
+- id: CAt6
   name: CAt6
   genes: MA2008 or MA2817 or MA3021
-  equation: '|M_ca2_c[C_c]| + |M_na1_e[C_e]| <=> |M_ca2_e[C_e]| + |M_na1_c[C_c]|'
-- id: R_CBIAT
+  equation: ca2_c[c] + na1_e[e] <=> ca2_e[e] + na1_c[c]
+- id: CBIAT
   name: CBIAT
   genes: MA2084
-  equation: '|M_atp_c[C_c]| + |M_cbi_c[C_c]| + |M_h_c[C_c]| <=> |M_adocbi_c[C_c]|
-    + |M_pppi_c[C_c]|'
-- id: R_CBIabc
+  equation: atp[c] + cbi_c[c] + h_c[c] <=> adocbi[c] + pppi[c]
+- id: CBIabc
   name: CBIabc
   genes: MA4604 and MA4605 and MA4606
-  equation: '|M_atp_c[C_c]| + |M_cbi_e[C_e]| + |M_h2o_c[C_c]| => |M_adp_c[C_c]| +
-    |M_cbi_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_CBL1HBIabc
+  equation: atp[c] + cbi_e[e] + h2o_c[c] => adp[c] + cbi_c[c] + h_c[c] + pi_c[c]
+- id: CBL1HBIabc
   name: CBL1HBIabc
   genes: MA4604 and MA4605 and MA4606
-  equation: '|M_atp_c[C_c]| + |M_cbl1hbi_e[C_e]| + |M_h2o_c[C_c]| => |M_adp_c[C_c]|
-    + |M_cbl1hbi_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_CBL1abc
+  equation: atp[c] + cbl1hbi_e[e] + h2o_c[c] => adp[c] + cbl1hbi_c[c] + h_c[c] +
+    pi_c[c]
+- id: CBL1abc
   name: CBL1abc
   genes: MA4604 and MA4605 and MA4606
-  equation: '|M_atp_c[C_c]| + |M_cbl1_e[C_e]| + |M_h2o_c[C_c]| => |M_adp_c[C_c]|
-    + |M_cbl1_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_CBLAT2
+  equation: atp[c] + cbl1_e[e] + h2o_c[c] => adp[c] + cbl1_c[c] + h_c[c] + pi_c[c]
+- id: CBLAT2
   name: CBLAT2
   genes: MA2084
-  equation: '|M_atp_c[C_c]| + |M_cbl1hbi_c[C_c]| + |M_h_c[C_c]| => |M_adocblhbi_c[C_c]|
-    + |M_pppi_c[C_c]|'
-- id: R_CBLD
+  equation: atp[c] + cbl1hbi_c[c] + h_c[c] => adocblhbi[c] + pppi[c]
+- id: CBLD
   name: CBLD
-  equation: '|M_cbl1_c[C_c]| => |M_cbi_c[C_c]| + |M_unknown_cbl1deg_c[C_c]|'
-- id: R_CBPS
+  equation: cbl1_c[c] => cbi_c[c] + unknown_cbl1deg_c[c]
+- id: CBPS
   name: CBPS
   genes: MA2143 and MA2144
-  equation: (2) |M_atp_c[C_c]| + |M_gln_L_c[C_c]| + |M_h2o_c[C_c]| + |M_hco3_c[C_c]|
-    => (2) |M_adp_c[C_c]| + |M_cbp_c[C_c]| + |M_glu_L_c[C_c]| + (2) |M_h_c[C_c]|
-    + |M_pi_c[C_c]|
-- id: R_CD2abc1
+  equation: (2) atp[c] + gln_L[c] + h2o_c[c] + hco3_c[c] => (2) adp[c] + cbp[c] +
+    glu_L_c[c] + (2) h_c[c] + pi_c[c]
+- id: CD2abc1
   name: CD2abc1
   genes: MA0549 or MA3366 or MA3632
-  equation: '|M_atp_c[C_c]| + |M_cd2_c[C_c]| + |M_h2o_c[C_c]| => |M_adp_c[C_c]| +
-    |M_cd2_e[C_e]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_CD2t4
+  equation: atp[c] + cd2_c[c] + h2o_c[c] => adp[c] + cd2_e[e] + h_c[c] + pi_c[c]
+- id: CD2t4
   name: CD2t4
   genes: MA1117
-  equation: '|M_cd2_c[C_c]| + |M_h_e[C_e]| + |M_k_e[C_e]| <=> |M_cd2_e[C_e]| + |M_h_c[C_c]|
-    + |M_k_c[C_c]|'
-- id: R_CDGGGPP3
+  equation: cd2_c[c] + h_e[e] + k_e[e] <=> cd2_e[e] + h_c[c] + k_c[c]
+- id: CDGGGPP3
   name: CDGGGPP3
   genes: MA0264 or MA0525
-  equation: '|M_cdgggp_c[C_c]| + |M_glyc1p_c[C_c]| => |M_cmp_c[C_c]| + |M_dggpgp_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_CDGGGPP4
+  equation: cdgggp[c] + glyc1p[c] => cmp[c] + dggpgp[c] + h_c[c]
+- id: CDGGGPP4
   name: CDGGGPP4
   genes: MA0264 or MA0525
-  equation: '|M_3hcdgggp_c[C_c]| + |M_glyc1p_c[C_c]| => |M_3hdggpgp_c[C_c]| + |M_cmp_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_CDGGGS
+  equation: 3hcdgggp[c] + glyc1p[c] => 3hdggpgp[c] + cmp[c] + h_c[c]
+- id: CDGGGS
   name: CDGGGS
   genes: MA2010
-  equation: '|M_ctp_c[C_c]| + |M_dgggp_c[C_c]| + |M_h_c[C_c]| => |M_cdgggp_c[C_c]|
-    + |M_ppi_c[C_c]|'
-- id: R_CDGGGS2
+  equation: ctp[c] + dgggp[c] + h_c[c] => cdgggp[c] + ppi[c]
+- id: CDGGGS2
   name: CDGGGS2
   genes: MA2010
-  equation: '|M_3hdgggp_c[C_c]| + |M_ctp_c[C_c]| + |M_h_c[C_c]| => |M_3hcdgggp_c[C_c]|
-    + |M_ppi_c[C_c]|'
-- id: R_CDGGGSAT
+  equation: 3hdgggp[c] + ctp[c] + h_c[c] => 3hcdgggp[c] + ppi[c]
+- id: CDGGGSAT
   name: CDGGGSAT
   genes: MA0116
-  equation: '|M_cdgggp_c[C_c]| + |M_ser_L_c[C_c]| => |M_cmp_c[C_c]| + |M_dgggps_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_CDGGGSAT2
+  equation: cdgggp[c] + ser_L[c] => cmp[c] + dgggps[c] + h_c[c]
+- id: CDGGGSAT2
   name: CDGGGSAT2
   genes: MA0116
-  equation: '|M_3hcdgggp_c[C_c]| + |M_ser_L_c[C_c]| => |M_3hdgggps_c[C_c]| + |M_cmp_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_CDGGIPT
+  equation: 3hcdgggp[c] + ser_L[c] => 3hdgggps[c] + cmp[c] + h_c[c]
+- id: CDGGIPT
   name: CDGGIPT
   genes: MA0525
-  equation: '|M_cdgggp_c[C_c]| + |M_inost_c[C_c]| => |M_cmp_c[C_c]| + |M_dggpi_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_CDGGIPT2
+  equation: cdgggp[c] + inost[c] => cmp[c] + dggpi[c] + h_c[c]
+- id: CDGGIPT2
   name: CDGGIPT2
   genes: MA0525
-  equation: '|M_3hcdgggp_c[C_c]| + |M_inost_c[C_c]| => |M_3hdggpi_c[C_c]| + |M_cmp_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_CF3Ha
+  equation: 3hcdgggp[c] + inost[c] => 3hdggpi[c] + cmp[c] + h_c[c]
+- id: CF3Ha
   name: CF3Ha
-  equation: '|M_f390a_c[C_c]| + |M_h2o_c[C_c]| => |M_amp_c[C_c]| + |M_f420_2_c[C_c]|
-    + (2) |M_h_c[C_c]|'
-- id: R_CF3Hg
+  equation: f390a[c] + h2o_c[c] => amp[c] + f420_2[c] + (2) h_c[c]
+- id: CF3Hg
   name: CF3Hg
-  equation: '|M_f390g_c[C_c]| + |M_h2o_c[C_c]| => |M_f420_2_c[C_c]| + |M_gmp_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_CF3Sa
+  equation: f390g[c] + h2o_c[c] => f420_2[c] + gmp[c] + h_c[c]
+- id: CF3Sa
   name: CF3Sa
   genes: MA4074
-  equation: '|M_atp_c[C_c]| + |M_f420_2_c[C_c]| + |M_h_c[C_c]| => |M_f390a_c[C_c]|
-    + |M_ppi_c[C_c]|'
-- id: R_CF3Sg
+  equation: atp[c] + f420_2[c] + h_c[c] => f390a[c] + ppi[c]
+- id: CF3Sg
   name: CF3Sg
   genes: MA4074
-  equation: '|M_f420_2_c[C_c]| + |M_gtp_c[C_c]| => |M_f390g_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_CH2ACH
+  equation: f420_2[c] + gtp[c] => f390g[c] + ppi[c]
+- id: CH2ACH
   name: CH2ACH
   genes: MA3085 and MA3751
-  equation: '|M_h2acon_C_c[C_c]| + |M_h2o_c[C_c]| <=> |M_tih2cit_c[C_c]|'
-- id: R_CH3ACH
+  equation: h2acon_C[c] + h2o_c[c] <=> tih2cit[c]
+- id: CH3ACH
   name: CH3ACH
   genes: MA3085 and MA3751
-  equation: '|M_h2o_c[C_c]| + |M_h3acon_C_c[C_c]| <=> |M_tih3cit_c[C_c]|'
-- id: R_CH4St
+  equation: h2o_c[c] + h3acon_C[c] <=> tih3cit[c]
+- id: CH4St
   name: CH4St
-  equation: '|M_ch4s_e[C_e]| <=> |M_ch4s_c[C_c]|'
-- id: R_CH4t
+  equation: ch4s_e[e] <=> ch4s_c[c]
+- id: CH4t
   name: CH4t
-  equation: '|M_ch4_c[C_c]| <=> |M_ch4_e[C_e]|'
-- id: R_CHACH
+  equation: ch4_c[c] <=> ch4_e[e]
+- id: CHACH
   name: CHACH
   genes: MA3085 and MA3751
-  equation: '|M_h2o_c[C_c]| + |M_hacon_C_c[C_c]| <=> |M_ihcit_T_c[C_c]|'
-- id: R_CHORM
+  equation: h2o_c[c] + hacon_C[c] <=> ihcit_T[c]
+- id: CHORM
   name: CHORM
   genes: MA1377
-  equation: '|M_chor_c[C_c]| => |M_pphn_c[C_c]|'
-- id: R_CHORS
+  equation: chor[c] => pphn[c]
+- id: CHORS
   name: CHORS
   genes: MA0550
-  equation: '|M_3psme_c[C_c]| => |M_chor_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_CHRPL
+  equation: 3psme[c] => chor[c] + pi_c[c]
+- id: CHRPL
   name: CHRPL
   genes: MA2986 and MA2987
-  equation: '|M_chor_c[C_c]| => |M_4hbz_c[C_c]| + |M_pyr_c[C_c]|'
-- id: R_CM5HBCMT
+  equation: chor[c] => 4hbz[c] + pyr_c[c]
+- id: CM5HBCMT
   name: CM5HBCMT
-  equation: '|M_com_c[C_c]| + |M_m5hbc_c[C_c]| => |M_5hbc_red_c[C_c]| + |M_h_c[C_c]|
-    + |M_mcom_c[C_c]|'
-- id: R_CMLDC
+  equation: com[c] + m5hbc[c] => 5hbc_red[c] + h_c[c] + mcom[c]
+- id: CMLDC
   name: CMLDC
   genes: MA0409 or MA2469
-  equation: '|M_2c25dho_c[C_c]| + |M_h_c[C_c]| => |M_5odhf2a_c[C_c]| + |M_co2_c[C_c]|'
-- id: R_CMPSAS
+  equation: 2c25dho[c] + h_c[c] => 5odhf2a[c] + co2_c[c]
+- id: CMPSAS
   name: CMPSAS
   genes: MA3766
-  equation: '|M_acnam_c[C_c]| + |M_ctp_c[C_c]| <=> |M_cmpacna_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_CO2t
+  equation: acnam[c] + ctp[c] <=> cmpacna[c] + ppi[c]
+- id: CO2t
   name: CO2t
-  equation: '|M_co2_c[C_c]| <=> |M_co2_e[C_e]|'
-- id: R_COBALTt5
+  equation: co2_c[c] <=> co2_e[e]
+- id: COBALTt5
   name: COBALTt5
   genes: MA1721
-  equation: '|M_cobalt2_c[C_c]| <=> |M_cobalt2_e[C_e]|'
-- id: R_COBS
+  equation: cobalt2_c[c] <=> cobalt2_e[e]
+- id: COBS
   name: COBS
   genes: MA0339
-  equation: '|M_7mht_c[C_c]| + |M_atp_c[C_c]| => |M_adp_c[C_c]| + |M_cob_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_COCHL
+  equation: 7mht[c] + atp[c] => adp[c] + cob[c] + h_c[c]
+- id: COCHL
   name: COCHL
   genes: MA0346 or MA0384 or MA0385 or MA0872
-  equation: '|M_atp_c[C_c]| + |M_cobalt2_c[C_c]| + |M_h2o_c[C_c]| + |M_hgbam_c[C_c]|
-    => |M_adp_c[C_c]| + |M_co2dam_c[C_c]| + (4) |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_CODH2
+  equation: atp[c] + cobalt2_c[c] + h2o_c[c] + hgbam[c] => adp[c] + co2dam[c] + (4)
+    h_c[c] + pi_c[c]
+- id: CODH2
   name: CODH2
   genes: ((MA1016 or MA3860 or MA4399) and (MA1011 or MA3865)) or (MA3283 and (MA1309
     or MA3282))
-  equation: '|M_co_c[C_c]| + (2) |M_fdox_c[C_c]| + |M_h2o_c[C_c]| => |M_co2_c[C_c]|
-    + (2) |M_fdred_c[C_c]| + (2) |M_h_c[C_c]|'
-- id: R_CODH2_SIDERXN
+  equation: co_c[c] + (2) fdox[c] + h2o_c[c] => co2_c[c] + (2) fdred[c] + (2) h_c[c]
+- id: CODH2_SIDERXN
   name: CODH2_SIDERXN
   genes: (MA1011 or MA3865) and (MA1016 or MA3860 or MA4399)
-  equation: '|M_co_c[C_c]| + |M_h2o_c[C_c]| => |M_for_c[C_c]| + |M_h_c[C_c]|'
-- id: R_CODH3
+  equation: co_c[c] + h2o_c[c] => for_c[c] + h_c[c]
+- id: CODH3
   name: CODH3
   genes: (MA1012 or MA3864) and (MA1014 or MA3862) and (MA1015 or MA3861)
-  equation: '|M_co_c[C_c]| + |M_coa_c[C_c]| + |M_mh4spt_c[C_c]| => |M_accoa_c[C_c]|
-    + |M_h4spt_c[C_c]|'
-- id: R_CODHr
+  equation: co_c[c] + coa[c] + mh4spt[c] => accoa[c] + h4spt[c]
+- id: CODHr
   name: CODHr
   genes: (MA1016 or MA3860 or MA4399) and (MA1015 or MA3861) and (MA1014 or MA3862)
     and (MA1013 or MA3863) and (MA1012 or MA3864) and (MA1011 or MA3865)
-  equation: '|M_accoa_c[C_c]| + (2) |M_fdox_c[C_c]| + |M_h2o_c[C_c]| + |M_h4spt_c[C_c]|
-    <=> |M_co2_c[C_c]| + |M_coa_c[C_c]| + (2) |M_fdred_c[C_c]| + (2) |M_h_c[C_c]|
-    + |M_mh4spt_c[C_c]|'
-- id: R_COMS
+  equation: accoa[c] + (2) fdox[c] + h2o_c[c] + h4spt[c] <=> co2_c[c] + coa[c] +
+    (2) fdred[c] + (2) h_c[c] + mh4spt[c]
+- id: COMS
   name: COMS
-  equation: '|M_h2o_c[C_c]| + |M_sec_c[C_c]| => |M_com_c[C_c]| + |M_nh4_c[C_c]| +
-    |M_pyr_c[C_c]|'
-- id: R_COt
+  equation: h2o_c[c] + sec[c] => com[c] + nh4_c[c] + pyr_c[c]
+- id: COt
   name: COt
-  equation: '|M_co_c[C_c]| <=> |M_co_e[C_e]|'
-- id: R_CPC2MT
+  equation: co_c[c] <=> co_e[e]
+- id: CPC2MT
   name: CPC2MT
   genes: MA4262
-  equation: '|M_amet_c[C_c]| + |M_copre2_c[C_c]| => |M_ahcys_c[C_c]| + |M_copre3_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_CPC3MT
+  equation: amet[c] + copre2[c] => ahcys[c] + copre3[c] + h_c[c]
+- id: CPC3MT
   name: CPC3MT
   genes: MA4259
-  equation: '|M_amet_c[C_c]| + |M_copre3_c[C_c]| => |M_ahcys_c[C_c]| + |M_copre4_c[C_c]|'
-- id: R_CPC4MT
+  equation: amet[c] + copre3[c] => ahcys[c] + copre4[c]
+- id: CPC4MT
   name: CPC4MT
   genes: MA4261
-  equation: '|M_amet_c[C_c]| + |M_copre4_c[C_c]| => |M_ahcys_c[C_c]| + |M_copre5_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_CPC5MT
+  equation: amet[c] + copre4[c] => ahcys[c] + copre5[c] + h_c[c]
+- id: CPC5MT
   name: CPC5MT
   genes: MA0521
-  equation: '|M_amet_c[C_c]| + |M_copre5_c[C_c]| + |M_h2o_c[C_c]| => |M_acald_c[C_c]|
-    + |M_ahcys_c[C_c]| + |M_copre6_c[C_c]| + (2) |M_h_c[C_c]|'
-- id: R_CPC6MT
+  equation: amet[c] + copre5[c] + h2o_c[c] => acald[c] + ahcys[c] + copre6[c] + (2)
+    h_c[c]
+- id: CPC6MT
   name: CPC6MT
   genes: MA0520
-  equation: (2) |M_amet_c[C_c]| + |M_codhpre6_c[C_c]| => (2) |M_ahcys_c[C_c]| + |M_co2_c[C_c]|
-    + |M_copre8_c[C_c]| + (2) |M_h_c[C_c]|
-- id: R_CPC6R
+  equation: (2) amet[c] + codhpre6[c] => (2) ahcys[c] + co2_c[c] + copre8[c] + (2)
+    h_c[c]
+- id: CPC6R
   name: CPC6R
-  equation: '|M_copre6_c[C_c]| + (2) |M_h_c[C_c]| + |M_nadph_c[C_c]| => |M_codhpre6_c[C_c]|
-    + |M_nadp_c[C_c]|'
-- id: R_CPC8MM
+  equation: copre6[c] + (2) h_c[c] + nadph[c] => codhpre6[c] + nadp[c]
+- id: CPC8MM
   name: CPC8MM
   genes: MA4258
-  equation: '|M_copre8_c[C_c]| + |M_h_c[C_c]| <=> |M_cobya_c[C_c]|'
-- id: R_CS
+  equation: copre8[c] + h_c[c] <=> cobya[c]
+- id: CS
   name: CS
   genes: MA0249
-  equation: '|M_cit_c[C_c]| + |M_coa_c[C_c]| + |M_h_c[C_c]| <=> |M_accoa_c[C_c]|
-    + |M_h2o_c[C_c]| + |M_oaa_c[C_c]|'
-- id: R_CSND
+  equation: cit_c[c] + coa[c] + h_c[c] <=> accoa[c] + h2o_c[c] + oaa[c]
+- id: CSND
   name: CSND
   genes: MA2341
-  equation: '|M_csn_c[C_c]| + |M_h2o_c[C_c]| + |M_h_c[C_c]| => |M_nh4_c[C_c]| + |M_ura_c[C_c]|'
-- id: R_CTPRIBFLVTX
+  equation: csn[c] + h2o_c[c] + h_c[c] => nh4_c[c] + ura[c]
+- id: CTPRIBFLVTX
   name: CTPRIBFLVTX
   genes: MA0547
-  equation: '|M_ctp_c[C_c]| + |M_ribflv_c[C_c]| => |M_cdp_c[C_c]| + |M_fmn_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_CTPS1
+  equation: ctp[c] + ribflv_c[c] => cdp[c] + fmn[c] + h_c[c]
+- id: CTPS1
   name: CTPS1
   genes: MA3279
-  equation: '|M_atp_c[C_c]| + |M_nh4_c[C_c]| + |M_utp_c[C_c]| => |M_adp_c[C_c]| +
-    |M_ctp_c[C_c]| + (2) |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_CTPS2
+  equation: atp[c] + nh4_c[c] + utp[c] => adp[c] + ctp[c] + (2) h_c[c] + pi_c[c]
+- id: CTPS2
   name: CTPS2
   genes: MA3279
-  equation: '|M_atp_c[C_c]| + |M_gln_L_c[C_c]| + |M_h2o_c[C_c]| + |M_utp_c[C_c]|
-    => |M_adp_c[C_c]| + |M_ctp_c[C_c]| + |M_glu_L_c[C_c]| + (2) |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_CYRDAAT
+  equation: atp[c] + gln_L[c] + h2o_c[c] + utp[c] => adp[c] + ctp[c] + glu_L_c[c]
+    + (2) h_c[c] + pi_c[c]
+- id: CYRDAAT
   name: CYRDAAT
   genes: MA2084
-  equation: '|M_atp_c[C_c]| + |M_co1dam_c[C_c]| + |M_h_c[C_c]| => |M_adcobdam_c[C_c]|
-    + |M_pppi_c[C_c]|'
-- id: R_CYRDAR
+  equation: atp[c] + co1dam[c] + h_c[c] => adcobdam[c] + pppi[c]
+- id: CYRDAR
   name: CYRDAR
-  equation: (2) |M_co2dam_c[C_c]| + |M_nadh_c[C_c]| => (2) |M_co1dam_c[C_c]| + |M_h_c[C_c]|
-    + |M_nad_c[C_c]|
-- id: R_CYRDAS
+  equation: (2) co2dam[c] + nadh[c] => (2) co1dam[c] + h_c[c] + nad[c]
+- id: CYRDAS
   name: CYRDAS
   genes: MA0106 or MA3626
-  equation: (2) |M_atp_c[C_c]| + |M_cobya_c[C_c]| + (2) |M_gln_L_c[C_c]| + |M_h2o_c[C_c]|
-    => (2) |M_adp_c[C_c]| + |M_co2dam_c[C_c]| + (2) |M_glu_L_c[C_c]| + |M_h_c[C_c]|
-    + |M_ppi_c[C_c]|
-- id: R_CYSDS
+  equation: (2) atp[c] + cobya[c] + (2) gln_L[c] + h2o_c[c] => (2) adp[c] + co2dam[c]
+    + (2) glu_L_c[c] + h_c[c] + ppi[c]
+- id: CYSDS
   name: CYSDS
   genes: MA2532
-  equation: '|M_cys_L_c[C_c]| + |M_h2o_c[C_c]| => |M_h2s_c[C_c]| + |M_nh4_c[C_c]|
-    + |M_pyr_c[C_c]|'
-- id: R_CYSSr
+  equation: cys_L_c[c] + h2o_c[c] => h2s_c[c] + nh4_c[c] + pyr_c[c]
+- id: CYSSr
   name: CYSSr
   genes: MA2720
-  equation: '|M_acser_c[C_c]| + |M_h2s_c[C_c]| <=> |M_ac_c[C_c]| + |M_cys_L_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_CYSTA
+  equation: acser[c] + h2s_c[c] <=> ac_c[c] + cys_L_c[c] + h_c[c]
+- id: CYSTA
   name: CYSTA
   genes: MA0636 or MA1385 or MA1819
-  equation: '|M_akg_c[C_c]| + |M_cys_L_c[C_c]| <=> |M_glu_L_c[C_c]| + |M_mercppyr_c[C_c]|'
-- id: R_CYSTRS
+  equation: akg[c] + cys_L_c[c] <=> glu_L_c[c] + mercppyr[c]
+- id: CYSTRS
   name: CYSTRS
   genes: MA0749
-  equation: '|M_atp_c[C_c]| + |M_cys_L_c[C_c]| + |M_trnacys_c[C_c]| => |M_amp_c[C_c]|
-    + |M_cystrna_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_CYSt2r
+  equation: atp[c] + cys_L_c[c] + trnacys[c] => amp[c] + cystrna[c] + ppi[c]
+- id: CYSt2r
   name: CYSt2r
-  equation: '|M_cys_L_e[C_e]| + |M_h_e[C_e]| <=> |M_cys_L_c[C_c]| + |M_h_c[C_c]|'
-- id: R_CYTDK1
+  equation: cys_L_e[e] + h_e[e] <=> cys_L_c[c] + h_c[c]
+- id: CYTDK1
   name: CYTDK1
   genes: MA1373
-  equation: '|M_atp_c[C_c]| + |M_cytd_c[C_c]| => |M_adp_c[C_c]| + |M_cmp_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_CYTDK3
+  equation: atp[c] + cytd[c] => adp[c] + cmp[c] + h_c[c]
+- id: CYTDK3
   name: CYTDK3
   genes: MA1104
-  equation: '|M_cytd_c[C_c]| + |M_itp_c[C_c]| => |M_cmp_c[C_c]| + |M_h_c[C_c]| +
-    |M_idp_c[C_c]|'
-- id: R_CYTK1
+  equation: cytd[c] + itp[c] => cmp[c] + h_c[c] + idp[c]
+- id: CYTK1
   name: CYTK1
   genes: MA1104
-  equation: '|M_atp_c[C_c]| + |M_cmp_c[C_c]| <=> |M_adp_c[C_c]| + |M_cdp_c[C_c]|'
-- id: R_CYTK2
+  equation: atp[c] + cmp[c] <=> adp[c] + cdp[c]
+- id: CYTK2
   name: CYTK2
   genes: MA1104
-  equation: '|M_atp_c[C_c]| + |M_dcmp_c[C_c]| <=> |M_adp_c[C_c]| + |M_dcdp_c[C_c]|'
-- id: R_CYTK5
+  equation: atp[c] + dcmp[c] <=> adp[c] + dcdp[c]
+- id: CYTK5
   name: CYTK5
   genes: MA1104
-  equation: '|M_ctp_c[C_c]| + |M_dcmp_c[C_c]| <=> |M_cdp_c[C_c]| + |M_dcdp_c[C_c]|'
-- id: R_Clt
+  equation: ctp[c] + dcmp[c] <=> cdp[c] + dcdp[c]
+- id: Clt
   name: Clt
   genes: MA3609
-  equation: '|M_cl_e[C_e]| <=> |M_cl_c[C_c]|'
-- id: R_Coabc
+  equation: cl_e[e] <=> cl_c[c]
+- id: Coabc
   name: Coabc
   genes: (MA0393 or MA0869 or MA1748 or MA3552) and (MA0394 or MA0870 or MA1747 or
     MA3551) and MA3553
-  equation: '|M_atp_c[C_c]| + |M_cobalt2_e[C_e]| + |M_h2o_c[C_c]| => |M_adp_c[C_c]|
-    + |M_cobalt2_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_Cuabc
+  equation: atp[c] + cobalt2_e[e] + h2o_c[c] => adp[c] + cobalt2_c[c] + h_c[c] +
+    pi_c[c]
+- id: Cuabc
   name: Cuabc
   genes: MA1342
-  equation: '|M_atp_c[C_c]| + |M_cu2_e[C_e]| + |M_h2o_c[C_c]| => |M_adp_c[C_c]| +
-    |M_cu2_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_Cut1
+  equation: atp[c] + cu2_e[e] + h2o_c[c] => adp[c] + cu2_c[c] + h_c[c] + pi_c[c]
+- id: Cut1
   name: Cut1
   genes: MA0166 or MA1342
-  equation: '|M_atp_c[C_c]| + |M_cu2_c[C_c]| + |M_h2o_c[C_c]| => |M_adp_c[C_c]| +
-    |M_cu2_e[C_e]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_DADK
+  equation: atp[c] + cu2_c[c] + h2o_c[c] => adp[c] + cu2_e[e] + h_c[c] + pi_c[c]
+- id: DADK
   name: DADK
   genes: MA1096
-  equation: '|M_atp_c[C_c]| + |M_damp_c[C_c]| <=> |M_adp_c[C_c]| + |M_dadp_c[C_c]|'
-- id: R_DAPDC
+  equation: atp[c] + damp[c] <=> adp[c] + dadp[c]
+- id: DAPDC
   name: DAPDC
   genes: MA0726
-  equation: '|M_26dap_M_c[C_c]| + |M_h_c[C_c]| => |M_co2_c[C_c]| + |M_lys_L_c[C_c]|'
-- id: R_DAPE
+  equation: 26dap_M[c] + h_c[c] => co2_c[c] + lys_L_c[c]
+- id: DAPE
   name: DAPE
-  equation: '|M_26dap_LL_c[C_c]| <=> |M_26dap_M_c[C_c]|'
-- id: R_DAPNH4T
+  equation: 26dap_LL[c] <=> 26dap_M[c]
+- id: DAPNH4T
   name: DAPNH4T
   genes: MA1712
-  equation: '|M_glu_L_c[C_c]| + |M_h2o_c[C_c]| + |M_thdp_c[C_c]| => |M_26dap_LL_c[C_c]|
-    + |M_akg_c[C_c]|'
-- id: R_DATPHs
+  equation: glu_L_c[c] + h2o_c[c] + thdp[c] => 26dap_LL[c] + akg[c]
+- id: DATPHs
   name: DATPHs
-  equation: '|M_datp_c[C_c]| + |M_h2o_c[C_c]| + |M_h_c[C_c]| => |M_ditp_c[C_c]| +
-    |M_nh4_c[C_c]|'
-- id: R_DB4PS
+  equation: datp[c] + h2o_c[c] + h_c[c] => ditp[c] + nh4_c[c]
+- id: DB4PS
   name: DB4PS
   genes: MA0548
-  equation: '|M_ru5p_D_c[C_c]| => |M_db4p_c[C_c]| + |M_for_c[C_c]| + |M_h_c[C_c]|'
-- id: R_DBTSr
+  equation: ru5p_D[c] => db4p[c] + for_c[c] + h_c[c]
+- id: DBTSr
   name: DBTSr
-  equation: '|M_atp_c[C_c]| + |M_co2_c[C_c]| + |M_dann_c[C_c]| => |M_adp_c[C_c]|
-    + |M_dtbt_c[C_c]| + (3) |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_DCMPDA
+  equation: atp[c] + co2_c[c] + dann[c] => adp[c] + dtbt[c] + (3) h_c[c] + pi_c[c]
+- id: DCMPDA
   name: DCMPDA
   genes: MA0136 or MA0137
-  equation: '|M_dcmp_c[C_c]| + |M_h2o_c[C_c]| + |M_h_c[C_c]| <=> |M_dump_c[C_c]|
-    + |M_nh4_c[C_c]|'
-- id: R_DCTPD
+  equation: dcmp[c] + h2o_c[c] + h_c[c] <=> dump[c] + nh4_c[c]
+- id: DCTPD
   name: DCTPD
   genes: MA0440
-  equation: '|M_dctp_c[C_c]| + |M_h2o_c[C_c]| + |M_h_c[C_c]| => |M_dutp_c[C_c]| +
-    |M_nh4_c[C_c]|'
-- id: R_DGGGPS
+  equation: dctp[c] + h2o_c[c] + h_c[c] => dutp[c] + nh4_c[c]
+- id: DGGGPS
   name: DGGGPS
   genes: MA0961
-  equation: '|M_ggdp_c[C_c]| + |M_gggp_c[C_c]| => |M_dgggp_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_DGGGPS2
+  equation: ggdp[c] + gggp[c] => dgggp[c] + ppi[c]
+- id: DGGGPS2
   name: DGGGPS2
   genes: MA0961
-  equation: '|M_3hggdp_c[C_c]| + |M_gggp_c[C_c]| => |M_3hdgggp_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_DGGPGP
+  equation: 3hggdp[c] + gggp[c] => 3hdgggp[c] + ppi[c]
+- id: DGGPGP
   name: DGGPGP
   genes: MA1569
-  equation: '|M_dggpgp_c[C_c]| + |M_h2o_c[C_c]| => |M_dggpg_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_DGGPGP2
+  equation: dggpgp[c] + h2o_c[c] => dggpg[c] + pi_c[c]
+- id: DGGPGP2
   name: DGGPGP2
   genes: MA1569
-  equation: '|M_3hdggpgp_c[C_c]| + |M_h2o_c[C_c]| => |M_3hdggpg_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_DGLY3POX
+  equation: 3hdggpgp[c] + h2o_c[c] => 3hdggpg[c] + pi_c[c]
+- id: DGLY3POX
   name: DGLY3POX
   genes: MA1714
-  equation: (2) |M_fdox_c[C_c]| + |M_g3p_c[C_c]| + |M_h2o_c[C_c]| => |M_3pg_c[C_c]|
-    + (2) |M_fdred_c[C_c]| + (3) |M_h_c[C_c]|
-- id: R_DGLYOX
+  equation: (2) fdox[c] + g3p[c] + h2o_c[c] => 3pg[c] + (2) fdred[c] + (3) h_c[c]
+- id: DGLYOX
   name: DGLYOX
   genes: MA2860
-  equation: '|M_glyald_c[C_c]| + |M_h2o_c[C_c]| + |M_nad_c[C_c]| => |M_glyc_R_c[C_c]|
-    + (2) |M_h_c[C_c]| + |M_nadh_c[C_c]|'
-- id: R_DHAD1
+  equation: glyald[c] + h2o_c[c] + nad[c] => glyc_R[c] + (2) h_c[c] + nadh[c]
+- id: DHAD1
   name: DHAD1
   genes: MA1802 or MA3373
-  equation: '|M_23dhmb_c[C_c]| => |M_3mob_c[C_c]| + |M_h2o_c[C_c]|'
-- id: R_DHAD2
+  equation: 23dhmb[c] => 3mob[c] + h2o_c[c]
+- id: DHAD2
   name: DHAD2
   genes: MA1802 or MA3373
-  equation: '|M_23dhmp_c[C_c]| => |M_3mop_c[C_c]| + |M_h2o_c[C_c]|'
-- id: R_DHDPRx
+  equation: 23dhmp[c] => 3mop[c] + h2o_c[c]
+- id: DHDPRx
   name: DHDPRx
   genes: MA4474
-  equation: '|M_nad_c[C_c]| + |M_thdp_c[C_c]| <=> |M_23dhdp_c[C_c]| + |M_h_c[C_c]|
-    + |M_nadh_c[C_c]|'
-- id: R_DHDPRy
+  equation: nad[c] + thdp[c] <=> 23dhdp[c] + h_c[c] + nadh[c]
+- id: DHDPRy
   name: DHDPRy
   genes: MA4474
-  equation: '|M_nadp_c[C_c]| + |M_thdp_c[C_c]| <=> |M_23dhdp_c[C_c]| + |M_h_c[C_c]|
-    + |M_nadph_c[C_c]|'
-- id: R_DHDPS
+  equation: nadp[c] + thdp[c] <=> 23dhdp[c] + h_c[c] + nadph[c]
+- id: DHDPS
   name: DHDPS
   genes: MA4473
-  equation: '|M_aspsa_c[C_c]| + |M_pyr_c[C_c]| => |M_23dhdp_c[C_c]| + (2) |M_h2o_c[C_c]|'
-- id: R_DHFR
+  equation: aspsa[c] + pyr_c[c] => 23dhdp[c] + (2) h2o_c[c]
+- id: DHFR
   name: DHFR
-  equation: '|M_dhf_c[C_c]| + |M_h_c[C_c]| + |M_nadph_c[C_c]| <=> |M_nadp_c[C_c]|
-    + |M_thf_c[C_c]|'
-- id: R_DHFS
+  equation: dhf[c] + h_c[c] + nadph[c] <=> nadp[c] + thf[c]
+- id: DHFS
   name: DHFS
-  equation: '|M_atp_c[C_c]| + |M_dhpt_c[C_c]| + |M_glu_L_c[C_c]| => |M_adp_c[C_c]|
-    + |M_dhf_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_DHNPA2
+  equation: atp[c] + dhpt[c] + glu_L_c[c] => adp[c] + dhf[c] + h_c[c] + pi_c[c]
+- id: DHNPA2
   name: DHNPA2
-  equation: '|M_dhnpt_c[C_c]| => |M_6hmhpt_c[C_c]| + |M_gcald_c[C_c]| + |M_h_c[C_c]|'
-- id: R_DHORD7
+  equation: dhnpt[c] => 6hmhpt[c] + gcald_c[c] + h_c[c]
+- id: DHORD7
   name: DHORD7
   genes: MA0583 and MA0584
-  equation: '|M_dhor_S_c[C_c]| + |M_f420_2_c[C_c]| + |M_h_c[C_c]| <=> |M_f420_2h2_c[C_c]|
-    + |M_orot_c[C_c]|'
-- id: R_DHORTS
+  equation: dhor_S[c] + f420_2[c] + h_c[c] <=> f420_2h2[c] + orot[c]
+- id: DHORTS
   name: DHORTS
   genes: MA0892
-  equation: '|M_dhor_S_c[C_c]| + |M_h2o_c[C_c]| <=> |M_cbasp_c[C_c]| + |M_h_c[C_c]|'
-- id: R_DHPCPH
+  equation: dhor_S[c] + h2o_c[c] <=> cbasp[c] + h_c[c]
+- id: DHPCPH
   name: DHPCPH
-  equation: '|M_dhp23cp_c[C_c]| + |M_h2o_c[C_c]| => |M_dhpmp_c[C_c]| + |M_h_c[C_c]|'
-- id: R_DHPS2
+  equation: dhp23cp[c] + h2o_c[c] => dhpmp[c] + h_c[c]
+- id: DHPS2
   name: DHPS2
   genes: MA3516
-  equation: '|M_4abz_c[C_c]| + |M_6hmhptpp_c[C_c]| + |M_h_c[C_c]| => |M_dhpt_c[C_c]|
-    + |M_ppi_c[C_c]|'
-- id: R_DHPS3
+  equation: 4abz_c[c] + 6hmhptpp[c] + h_c[c] => dhpt[c] + ppi[c]
+- id: DHPS3
   name: DHPS3
   genes: MA1946 or MA3419
-  equation: '|M_6hmhptpp_c[C_c]| + |M_Brfap_c[C_c]| + |M_h_c[C_c]| => |M_dhrfap_c[C_c]|
-    + |M_ppi_c[C_c]|'
-- id: R_DHQAT
+  equation: 6hmhptpp[c] + Brfap[c] + h_c[c] => dhrfap[c] + ppi[c]
+- id: DHQAT
   name: DHQAT
-  equation: '|M_3dhq_c[C_c]| + |M_nh4_c[C_c]| => |M_4adhq_c[C_c]| + |M_h2o_c[C_c]|'
-- id: R_DHQD
+  equation: 3dhq[c] + nh4_c[c] => 4adhq[c] + h2o_c[c]
+- id: DHQD
   name: DHQD
   genes: MA4593
-  equation: '|M_3dhq_c[C_c]| => |M_3dhsk_c[C_c]| + |M_h2o_c[C_c]|'
-- id: R_DHQS2
+  equation: 3dhq[c] => 3dhsk[c] + h2o_c[c]
+- id: DHQS2
   name: DHQS2
   genes: MA4592
-  equation: '|M_dohdu_c[C_c]| => |M_3dhq_c[C_c]|'
-- id: R_DIPS
+  equation: dohdu[c] => 3dhq[c]
+- id: DIPS
   name: DIPS
   genes: MA1370
-  equation: '|M_amet_c[C_c]| + |M_caphis_c[C_c]| => |M_ahcys_c[C_c]| + |M_cmaphis_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_DKFPASPL
+  equation: amet[c] + caphis[c] => ahcys[c] + cmaphis[c] + h_c[c]
+- id: DKFPASPL
   name: DKFPASPL
   genes: MA4591
-  equation: '|M_aspsa_c[C_c]| + |M_dkfp_c[C_c]| + |M_h_c[C_c]| + |M_nadh_c[C_c]|
-    => |M_dohau_c[C_c]| + |M_g3p_c[C_c]| + |M_nad_c[C_c]|'
-- id: R_DKFPR
+  equation: aspsa[c] + dkfp[c] + h_c[c] + nadh[c] => dohau[c] + g3p[c] + nad[c]
+- id: DKFPR
   name: DKFPR
-  equation: '|M_dkfp_c[C_c]| + |M_h_c[C_c]| + |M_nadh_c[C_c]| <=> |M_dkmp_c[C_c]|
-    + |M_nad_c[C_c]|'
-- id: R_DKFPS2
+  equation: dkfp[c] + h_c[c] + nadh[c] <=> dkmp[c] + nad[c]
+- id: DKFPS2
   name: DKFPS2
   genes: MA2666 or MA3889
-  equation: '|M_fdp_c[C_c]| + |M_mthgxl_c[C_c]| <=> |M_dkfp_c[C_c]| + |M_g3p_c[C_c]|'
-- id: R_DKFPS3
+  equation: fdp[c] + mthgxl[c] <=> dkfp[c] + g3p[c]
+- id: DKFPS3
   name: DKFPS3
   genes: MA2666 or MA3889
-  equation: '|M_f1p_c[C_c]| + |M_mthgxl_c[C_c]| <=> |M_dkfp_c[C_c]| + |M_gald_c[C_c]|'
-- id: R_DMAMT
+  equation: f1p[c] + mthgxl[c] <=> dkfp[c] + gald[c]
+- id: DMAMT
   name: DMAMT
   genes: MA0146 and (MA0532 or MA0933 or MA2425) and (MA0527 or MA0934 or MA2424)
     and (MA0150 or MA0849 or MA4360)
-  equation: '|M_5hbc_red_c[C_c]| + |M_dma_c[C_c]| + |M_h_c[C_c]| => |M_m5hbc_c[C_c]|
-    + |M_mma_c[C_c]|'
-- id: R_DMATT
+  equation: 5hbc_red[c] + dma_c[c] + h_c[c] => m5hbc[c] + mma_c[c]
+- id: DMATT
   name: DMATT
   genes: MA0606
-  equation: '|M_dmpp_c[C_c]| + |M_ipdp_c[C_c]| => |M_grdp_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_DMATT2
+  equation: dmpp[c] + ipdp[c] => grdp[c] + ppi[c]
+- id: DMATT2
   name: DMATT2
   genes: MA0606
-  equation: '|M_ipdp_c[C_c]| + |M_m3hdp_c[C_c]| => |M_3hgrdp_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_DMAt
+  equation: ipdp[c] + m3hdp[c] => 3hgrdp[c] + ppi[c]
+- id: DMAt
   name: DMAt
   genes: MA0143
-  equation: '|M_dma_e[C_e]| + |M_h_e[C_e]| <=> |M_dma_c[C_c]| + |M_h_c[C_c]|'
-- id: R_DMHDRFS
+  equation: dma_e[e] + h_e[e] <=> dma_c[c] + h_c[c]
+- id: DMHDRFS
   name: DMHDRFS
   genes: (MA1490 or MA1489) and MA1491
-  equation: '|M_34hpp_c[C_c]| + |M_4r5au_c[C_c]| + |M_h2o_c[C_c]| + (2) |M_nadp_c[C_c]|
-    => |M_ddhrb_c[C_c]| + (3) |M_h_c[C_c]| + (2) |M_nadph_c[C_c]| + |M_nh4_c[C_c]|
-    + |M_oxa_c[C_c]|'
-- id: R_DMSt
+  equation: 34hpp[c] + 4r5au[c] + h2o_c[c] + (2) nadp[c] => ddhrb[c] + (3) h_c[c]
+    + (2) nadph[c] + nh4_c[c] + oxa[c]
+- id: DMSt
   name: DMSt
-  equation: '|M_dms_e[C_e]| <=> |M_dms_c[C_c]|'
-- id: R_DNADDP
+  equation: dms_e[e] <=> dms_c[c]
+- id: DNADDP
   name: DNADDP
   genes: MA1439
-  equation: '|M_dnad_c[C_c]| + |M_h2o_c[C_c]| => |M_amp_c[C_c]| + (2) |M_h_c[C_c]|
-    + |M_nicrnt_c[C_c]|'
-- id: R_DNMPPA
+  equation: dnad[c] + h2o_c[c] => amp[c] + (2) h_c[c] + nicrnt[c]
+- id: DNMPPA
   name: DNMPPA
-  equation: '|M_dhpmp_c[C_c]| + |M_h2o_c[C_c]| => |M_dhnpt_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_DOHDUS
+  equation: dhpmp[c] + h2o_c[c] => dhnpt[c] + pi_c[c]
+- id: DOHDUS
   name: DOHDUS
   genes: MA4592
-  equation: '|M_dohau_c[C_c]| + |M_h2o_c[C_c]| + |M_nad_c[C_c]| => |M_dohdu_c[C_c]|
-    + |M_h_c[C_c]| + |M_nadh_c[C_c]| + |M_nh4_c[C_c]|'
-- id: R_DPCOAK
+  equation: dohau[c] + h2o_c[c] + nad[c] => dohdu[c] + h_c[c] + nadh[c] + nh4_c[c]
+- id: DPCOAK
   name: DPCOAK
-  equation: '|M_atp_c[C_c]| + |M_dpcoa_c[C_c]| => |M_adp_c[C_c]| + |M_coa_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_DPR
+  equation: atp[c] + dpcoa[c] => adp[c] + coa[c] + h_c[c]
+- id: DPR
   name: DPR
-  equation: '|M_2dhp_c[C_c]| + |M_h_c[C_c]| + |M_nadph_c[C_c]| => |M_nadp_c[C_c]|
-    + |M_pant_R_c[C_c]|'
-- id: R_DRBK
+  equation: 2dhp[c] + h_c[c] + nadph[c] => nadp[c] + pant_R[c]
+- id: DRBK
   name: DRBK
   genes: MA1373
-  equation: '|M_atp_c[C_c]| + |M_drib_c[C_c]| => |M_2dr5p_c[C_c]| + |M_adp_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_DROPPRx
+  equation: atp[c] + drib[c] => 2dr5p[c] + adp[c] + h_c[c]
+- id: DROPPRx
   name: DROPPRx
   genes: MA4092
-  equation: '|M_25dhpp_c[C_c]| + |M_h_c[C_c]| + |M_nadh_c[C_c]| => |M_25dthpp_c[C_c]|
-    + |M_nad_c[C_c]|'
-- id: R_DROPPRy
+  equation: 25dhpp[c] + h_c[c] + nadh[c] => 25dthpp[c] + nad[c]
+- id: DROPPRy
   name: DROPPRy
   genes: MA4092
-  equation: '|M_25dhpp_c[C_c]| + |M_h_c[C_c]| + |M_nadph_c[C_c]| => |M_25dthpp_c[C_c]|
-    + |M_nadp_c[C_c]|'
-- id: R_DRTPPD
+  equation: 25dhpp[c] + h_c[c] + nadph[c] => 25dthpp[c] + nadp[c]
+- id: DRTPPD
   name: DRTPPD
-  equation: '|M_25dthpp_c[C_c]| + |M_h2o_c[C_c]| + |M_h_c[C_c]| => |M_5aprbu_c[C_c]|
-    + |M_nh4_c[C_c]|'
-- id: R_DTMPK
+  equation: 25dthpp[c] + h2o_c[c] + h_c[c] => 5aprbu[c] + nh4_c[c]
+- id: DTMPK
   name: DTMPK
   genes: MA4433
-  equation: '|M_atp_c[C_c]| + |M_dtmp_c[C_c]| <=> |M_adp_c[C_c]| + |M_dtdp_c[C_c]|'
-- id: R_DURIPP
+  equation: atp[c] + dtmp[c] <=> adp[c] + dtdp[c]
+- id: DURIPP
   name: DURIPP
   genes: MA3242
-  equation: '|M_duri_c[C_c]| + |M_pi_c[C_c]| <=> |M_2dr1p_c[C_c]| + |M_ura_c[C_c]|'
-- id: R_DUTPDP
+  equation: duri[c] + pi_c[c] <=> 2dr1p[c] + ura[c]
+- id: DUTPDP
   name: DUTPDP
   genes: MA0440
-  equation: '|M_dutp_c[C_c]| + |M_h2o_c[C_c]| => |M_dump_c[C_c]| + |M_h_c[C_c]| +
-    |M_ppi_c[C_c]|'
-- id: R_ENO
+  equation: dutp[c] + h2o_c[c] => dump[c] + h_c[c] + ppi[c]
+- id: ENO
   name: ENO
   genes: MA1672
-  equation: '|M_2pg_c[C_c]| <=> |M_h2o_c[C_c]| + |M_pep_c[C_c]|'
-- id: R_ETHAt6
+  equation: 2pg[c] <=> h2o_c[c] + pep[c]
+- id: ETHAt6
   name: ETHAt6
   genes: MA0143
-  equation: '|M_etha_e[C_e]| + |M_h_e[C_e]| <=> |M_etha_c[C_c]| + |M_h_c[C_c]|'
-- id: R_F430S1
+  equation: etha_e[e] + h_e[e] <=> etha_c[c] + h_c[c]
+- id: F430S1
   name: F430S1
   genes: MA0877 or MA0882
-  equation: (2) |M_atp_c[C_c]| + |M_dscl_c[C_c]| + (2) |M_gln_L_c[C_c]| + (2) |M_h2o_c[C_c]|
-    + |M_ni2_c[C_c]| => (2) |M_adp_c[C_c]| + |M_f430p1_c[C_c]| + (2) |M_glu_L_c[C_c]|
-    + (4) |M_h_c[C_c]| + (2) |M_pi_c[C_c]|
-- id: R_F430S2
+  equation: (2) atp[c] + dscl[c] + (2) gln_L[c] + (2) h2o_c[c] + ni2_c[c] => (2)
+    adp[c] + f430p1[c] + (2) glu_L_c[c] + (4) h_c[c] + (2) pi_c[c]
+- id: F430S2
   name: F430S2
-  equation: '|M_f430p1_c[C_c]| + |M_h_c[C_c]| + |M_nadh_c[C_c]| => |M_f430p2_c[C_c]|
-    + |M_nad_c[C_c]|'
-- id: R_F430S3
+  equation: f430p1[c] + h_c[c] + nadh[c] => f430p2[c] + nad[c]
+- id: F430S3
   name: F430S3
-  equation: '|M_f430p2_c[C_c]| + |M_h_c[C_c]| + |M_nadh_c[C_c]| => |M_f430p3_c[C_c]|
-    + |M_nad_c[C_c]|'
-- id: R_F430S4
+  equation: f430p2[c] + h_c[c] + nadh[c] => f430p3[c] + nad[c]
+- id: F430S4
   name: F430S4
-  equation: '|M_f430p3_c[C_c]| => |M_sf430a_c[C_c]|'
-- id: R_F430S5
+  equation: f430p3[c] => sf430a[c]
+- id: F430S5
   name: F430S5
-  equation: '|M_h_c[C_c]| + |M_sf430a_c[C_c]| => |M_f430_c[C_c]| + |M_h2o_c[C_c]|'
-- id: R_F4D
+  equation: h_c[c] + sf430a[c] => f430[c] + h2o_c[c]
+- id: F4D
   name: F4D
   genes: MA1494 and MA1495 and MA1496 and MA1497 and MA1498 and MA1499 and MA1500
     and MA1501 and MA1502 and MA1503 and MA1504 and MA1505 and MA1506 and (MA1507
     or MA1509) and MA3732
-  equation: '|M_f420_2h2_c[C_c]| + |M_h_c[C_c]| + |M_mphen_c[C_c]| <=> |M_f420_2_c[C_c]|
-    + (2) |M_h_e[C_e]| + |M_mphenh2_c[C_c]|'
-- id: R_F4H2O
+  equation: f420_2h2[c] + h_c[c] + mphen[c] <=> f420_2[c] + (2) h_e[e] + mphenh2[c]
+- id: F4H2O
   name: F4H2O
   genes: MA3381
-  equation: (2) |M_f420_2h2_c[C_c]| + |M_o2_c[C_c]| => (2) |M_f420_2_c[C_c]| + (2)
-    |M_h2o_c[C_c]| + (2) |M_h_c[C_c]|
-- id: R_F4MTSPD
+  equation: (2) f420_2h2[c] + o2[c] => (2) f420_2[c] + (2) h2o_c[c] + (2) h_c[c]
+- id: F4MTSPD
   name: F4MTSPD
   genes: MA4430
-  equation: '|M_f420_2h2_c[C_c]| + |M_menylh4spt_c[C_c]| <=> |M_f420_2_c[C_c]| +
-    (2) |M_h_c[C_c]| + |M_mleneh4spt_c[C_c]|'
-- id: R_F4MTSPR
+  equation: f420_2h2[c] + menylh4spt[c] <=> f420_2[c] + (2) h_c[c] + mleneh4spt[c]
+- id: F4MTSPR
   name: F4MTSPR
   genes: MA3733
-  equation: '|M_f420_2h2_c[C_c]| + |M_mleneh4spt_c[C_c]| <=> |M_f420_2_c[C_c]| +
-    |M_h_c[C_c]| + |M_mh4spt_c[C_c]|'
-- id: R_FAE
+  equation: f420_2h2[c] + mleneh4spt[c] <=> f420_2[c] + h_c[c] + mh4spt[c]
+- id: FAE
   name: FAE
   genes: MA3006
-  equation: '|M_fald_c[C_c]| + |M_h4spt_c[C_c]| => |M_h2o_c[C_c]| + |M_mleneh4spt_c[C_c]|'
-- id: R_FAPH
+  equation: fald[c] + h4spt[c] => h2o_c[c] + mleneh4spt[c]
+- id: FAPH
   name: FAPH
-  equation: '|M_fapy_c[C_c]| + |M_h2o_c[C_c]| => |M_25dhpp_c[C_c]| + |M_for_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_FBA
+  equation: fapy[c] + h2o_c[c] => 25dhpp[c] + for_c[c] + h_c[c]
+- id: FBA
   name: FBA
   genes: MA0439 or MA4591
-  equation: '|M_fdp_c[C_c]| <=> |M_dhap_c[C_c]| + |M_g3p_c[C_c]|'
-- id: R_FBA2
+  equation: fdp[c] <=> dhap[c] + g3p[c]
+- id: FBA2
   name: FBA2
   genes: MA0439 or MA4591
-  equation: '|M_f1p_c[C_c]| <=> |M_dhap_c[C_c]| + |M_glyald_c[C_c]|'
-- id: R_FBP
+  equation: f1p[c] <=> dhap[c] + glyald[c]
+- id: FBP
   name: FBP
   genes: MA1152
-  equation: '|M_fdp_c[C_c]| + |M_h2o_c[C_c]| => |M_f6p_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_FBP2
+  equation: fdp[c] + h2o_c[c] => f6p[c] + pi_c[c]
+- id: FBP2
   name: FBP2
-  equation: '|M_fdp_c[C_c]| + |M_h2o_c[C_c]| => |M_f1p_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_FCLPA
+  equation: fdp[c] + h2o_c[c] => f1p[c] + pi_c[c]
+- id: FCLPA
   name: FCLPA
   genes: MA0263
-  equation: '|M_fc1p_c[C_c]| <=> |M_dhap_c[C_c]| + |M_lald_L_c[C_c]|'
-- id: R_FE2abc
+  equation: fc1p[c] <=> dhap[c] + lald_L[c]
+- id: FE2abc
   name: FE2abc
   genes: MA3477 and (MA3478 or MA3479)
-  equation: '|M_atp_c[C_c]| + |M_fe2_e[C_e]| + |M_h2o_c[C_c]| => |M_adp_c[C_c]| +
-    |M_fe2_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_FE3abc
+  equation: atp[c] + fe2_e[e] + h2o_c[c] => adp[c] + fe2_c[c] + h_c[c] + pi_c[c]
+- id: FE3abc
   name: FE3abc
   genes: (MA1230 or MA1231 or MA1232 or MA3357) and (MA1233 or MA3358) and (MA1234
     or MA3359)
-  equation: '|M_atp_c[C_c]| + |M_fe3_e[C_e]| + |M_h2o_c[C_c]| => |M_adp_c[C_c]| +
-    |M_fe3_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_FEDCabc
+  equation: atp[c] + fe3_e[e] + h2o_c[c] => adp[c] + fe3_c[c] + h_c[c] + pi_c[c]
+- id: FEDCabc
   name: FEDCabc
   genes: (MA0950 and MA0951 and MA0952) or (MA2148 and MA2149 and MA2150)
-  equation: '|M_atp_c[C_c]| + (2) |M_cit_e[C_e]| + |M_fe3_e[C_e]| + |M_h2o_c[C_c]|
-    => |M_adp_c[C_c]| + (2) |M_cit_c[C_c]| + |M_fe3_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_FMFD_b
+  equation: atp[c] + (2) cit_e[e] + fe3_e[e] + h2o_c[c] => adp[c] + (2) cit_c[c]
+    + fe3_c[c] + h_c[c] + pi_c[c]
+- id: FMFD_b
   name: FMFD_b_
   genes: (MA0304 and MA0305 and MA0306 and MA0307 and MA0308 and MA0309) or (MA4174
     and MA4175 and MA4176 and MA4177 and (MA4178 or MA1241)) or (MA0835 and MA0834
     and MA0833 and MA0832) or (MA2877 and MA2878 and MA2879 and MA2880 and MA2881
     and MA2882) or (MA0671 and MA0381 and MA0382)
-  equation: '|M_co2_c[C_c]| + (2) |M_fdred_c[C_c]| + |M_h_c[C_c]| + |M_mfr_b__c[C_c]|
-    <=> (2) |M_fdox_c[C_c]| + |M_formmfr_b__c[C_c]| + |M_h2o_c[C_c]|'
-- id: R_FMFTSPFT_b
+  equation: co2_c[c] + (2) fdred[c] + h_c[c] + mfr_b_[c] <=> (2) fdox[c] + formmfr_b_[c]
+    + h2o_c[c]
+- id: FMFTSPFT_b
   name: FMFTSPFT_b_
   genes: MA0010
-  equation: '|M_formmfr_b__c[C_c]| + |M_h4spt_c[C_c]| + |M_h_c[C_c]| <=> |M_formh4spt_c[C_c]|
-    + |M_mfr_b__c[C_c]|'
-- id: R_FMNAT
+  equation: formmfr_b_[c] + h4spt[c] + h_c[c] <=> formh4spt[c] + mfr_b_[c]
+- id: FMNAT
   name: FMNAT
   genes: MA1820
-  equation: '|M_atp_c[C_c]| + |M_fmn_c[C_c]| + |M_h_c[C_c]| => |M_fad_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_FMNAT_CTP
+  equation: atp[c] + fmn[c] + h_c[c] => fad[c] + ppi[c]
+- id: FMNAT_CTP
   name: FMNAT_CTP_
   genes: MA1820
-  equation: '|M_ctp_c[C_c]| + |M_fmn_c[C_c]| + |M_h_c[C_c]| => |M_fcd_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_FMNAT_GTP
+  equation: ctp[c] + fmn[c] + h_c[c] => fcd[c] + ppi[c]
+- id: FMNAT_GTP
   name: FMNAT_GTP_
   genes: MA1820
-  equation: '|M_fmn_c[C_c]| + |M_gtp_c[C_c]| + |M_h_c[C_c]| => |M_fgd_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_FOLR2
+  equation: fmn[c] + gtp[c] + h_c[c] => fgd[c] + ppi[c]
+- id: FOLR2
   name: FOLR2
-  equation: '|M_fol_c[C_c]| + (2) |M_h_c[C_c]| + |M_nadph_c[C_c]| => |M_dhf_c[C_c]|
-    + |M_nadp_c[C_c]|'
-- id: R_FOLt
+  equation: fol_c[c] + (2) h_c[c] + nadph[c] => dhf[c] + nadp[c]
+- id: FOLt
   name: FOLt
-  equation: '|M_fol_e[C_e]| + |M_h_e[C_e]| <=> |M_fol_c[C_c]| + |M_h_c[C_c]|'
-- id: R_FORt
+  equation: fol_e[e] + h_e[e] <=> fol_c[c] + h_c[c]
+- id: FORt
   name: FORt
-  equation: '|M_for_c[C_c]| + |M_h_c[C_c]| <=> |M_for_e[C_e]| + |M_h_e[C_e]|'
-- id: R_FRTT
+  equation: for_c[c] + h_c[c] <=> for_e[e] + h_e[e]
+- id: FRTT
   name: FRTT
   genes: MA1831 or MA3723 or MA4150 or MA4402
-  equation: '|M_frdp_c[C_c]| + |M_ipdp_c[C_c]| => |M_ggdp_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_FRTT2
+  equation: frdp[c] + ipdp[c] => ggdp[c] + ppi[c]
+- id: FRTT2
   name: FRTT2
   genes: MA1831 or MA3723 or MA4150 or MA4402
-  equation: '|M_3hfrdp_c[C_c]| + |M_ipdp_c[C_c]| => |M_3hggdp_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_FUM
+  equation: 3hfrdp[c] + ipdp[c] => 3hggdp[c] + ppi[c]
+- id: FUM
   name: FUM
   genes: MA1001 or (MA2497 and MA2498)
-  equation: '|M_mal_L_c[C_c]| <=> |M_fum_c[C_c]| + |M_h2o_c[C_c]|'
-- id: R_G1PACT
+  equation: mal_L[c] <=> fum[c] + h2o_c[c]
+- id: G1PACT
   name: G1PACT
   genes: MA3025
-  equation: '|M_accoa_c[C_c]| + |M_gam1p_c[C_c]| => |M_acgam1p_c[C_c]| + |M_coa_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_G1PDH
+  equation: accoa[c] + gam1p[c] => acgam1p[c] + coa[c] + h_c[c]
+- id: G1PDH
   name: G1PDH
   genes: MA3686
-  equation: '|M_glyc1p_c[C_c]| + |M_nad_c[C_c]| <=> |M_dhap_c[C_c]| + |M_h_c[C_c]|
-    + |M_nadh_c[C_c]|'
-- id: R_G1PTT
+  equation: glyc1p[c] + nad[c] <=> dhap[c] + h_c[c] + nadh[c]
+- id: G1PTT
   name: G1PTT
   genes: MA2183 or MA3022 or MA3777
-  equation: '|M_dttp_c[C_c]| + |M_g1p_c[C_c]| + |M_h_c[C_c]| <=> |M_dtdpglu_c[C_c]|
-    + |M_ppi_c[C_c]|'
-- id: R_G1SATi
+  equation: dttp[c] + g1p[c] + h_c[c] <=> dtdpglu[c] + ppi[c]
+- id: G1SATi
   name: G1SATi
   genes: MA0581
-  equation: '|M_glu1sa_c[C_c]| <=> |M_5aop_c[C_c]| + |M_h_c[C_c]|'
-- id: R_G5SADr
+  equation: glu1sa[c] <=> 5aop[c] + h_c[c]
+- id: G5SADr
   name: G5SADr
-  equation: '|M_glu5sa_c[C_c]| => |M_1pyr5c_c[C_c]| + |M_h2o_c[C_c]| + |M_h_c[C_c]|'
-- id: R_G5SD2
+  equation: glu5sa[c] => 1pyr5c[c] + h2o_c[c] + h_c[c]
+- id: G5SD2
   name: G5SD2
   genes: MA4100
-  equation: '|M_glu5p_c[C_c]| + |M_h_c[C_c]| + |M_nadh_c[C_c]| => |M_glu5sa_c[C_c]|
-    + |M_nad_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_GALT
+  equation: glu5p[c] + h_c[c] + nadh[c] => glu5sa[c] + nad[c] + pi_c[c]
+- id: GALT
   name: GALT
   genes: MA3680
-  equation: '|M_gal1p_c[C_c]| + |M_h_c[C_c]| + |M_utp_c[C_c]| <=> |M_ppi_c[C_c]|
-    + |M_udpgal_c[C_c]|'
-- id: R_GALTNS
+  equation: gal1p[c] + h_c[c] + utp[c] <=> ppi[c] + udpgal[c]
+- id: GALTNS
   name: GALTNS
-  equation: '|M_udpgal_c[C_c]| => |M_galactan_c[C_c]| + |M_h_c[C_c]| + |M_udp_c[C_c]|'
-- id: R_GALUi
+  equation: udpgal[c] => galactan[c] + h_c[c] + udp[c]
+- id: GALUi
   name: GALUi
   genes: MA4459
-  equation: '|M_g1p_c[C_c]| + |M_h_c[C_c]| + |M_utp_c[C_c]| <=> |M_ppi_c[C_c]| +
-    |M_udpg_c[C_c]|'
-- id: R_GAPD
+  equation: g1p[c] + h_c[c] + utp[c] <=> ppi[c] + udpg[c]
+- id: GAPD
   name: GAPD
   genes: MA1018 or MA3345
-  equation: '|M_g3p_c[C_c]| + |M_nad_c[C_c]| + |M_pi_c[C_c]| <=> |M_13dpg_c[C_c]|
-    + |M_h_c[C_c]| + |M_nadh_c[C_c]|'
-- id: R_GARFT
+  equation: g3p[c] + nad[c] + pi_c[c] <=> 13dpg[c] + h_c[c] + nadh[c]
+- id: GARFT
   name: GARFT
   genes: MA0316 or MA3522
-  equation: '|M_10fthf_c[C_c]| + |M_gar_c[C_c]| => |M_fgam_c[C_c]| + |M_h_c[C_c]|
-    + |M_thf_c[C_c]|'
-- id: R_GCALDDr
+  equation: 10fthf[c] + gar[c] => fgam[c] + h_c[c] + thf[c]
+- id: GCALDDr
   name: GCALDDr
   genes: MA2860
-  equation: '|M_gcald_c[C_c]| + |M_h2o_c[C_c]| + |M_nad_c[C_c]| => |M_glyclt_c[C_c]|
-    + (2) |M_h_c[C_c]| + |M_nadh_c[C_c]|'
-- id: R_GCALDt
+  equation: gcald_c[c] + h2o_c[c] + nad[c] => glyclt[c] + (2) h_c[c] + nadh[c]
+- id: GCALDt
   name: GCALDt
-  equation: '|M_gcald_e[C_e]| <=> |M_gcald_c[C_c]|'
-- id: R_GCC
+  equation: gcald_e[e] <=> gcald_c[c]
+- id: GCC
   name: GCC
   genes: MA1652
-  equation: '|M_dhlpro_c[C_c]| + |M_nad_c[C_c]| => |M_h_c[C_c]| + |M_lpro_c[C_c]|
-    + |M_nadh_c[C_c]|'
-- id: R_GF4GL_0
+  equation: dhlpro[c] + nad[c] => h_c[c] + lpro[c] + nadh[c]
+- id: GF4GL_0
   name: GF4GL_0
   genes: MA0135 or MA3512
-  equation: '|M_f420_0_c[C_c]| + |M_glu_L_c[C_c]| + |M_gtp_c[C_c]| => |M_f420_1_c[C_c]|
-    + |M_gdp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_GF4GL_1
+  equation: f420_0[c] + glu_L_c[c] + gtp[c] => f420_1[c] + gdp[c] + h_c[c] + pi_c[c]
+- id: GF4GL_1
   name: GF4GL_1
   genes: MA0135 or MA3512
-  equation: '|M_f420_1_c[C_c]| + |M_glu_L_c[C_c]| + |M_gtp_c[C_c]| => |M_f420_2_c[C_c]|
-    + |M_gdp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_GF4GL_2
+  equation: f420_1[c] + glu_L_c[c] + gtp[c] => f420_2[c] + gdp[c] + h_c[c] + pi_c[c]
+- id: GF4GL_2
   name: GF4GL_2
   genes: MA0135 or MA3512
-  equation: '|M_f420_2_c[C_c]| + |M_glu_L_c[C_c]| + |M_gtp_c[C_c]| => |M_f420_3_c[C_c]|
-    + |M_gdp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_GF4GL_3
+  equation: f420_2[c] + glu_L_c[c] + gtp[c] => f420_3[c] + gdp[c] + h_c[c] + pi_c[c]
+- id: GF4GL_3
   name: GF4GL_3
   genes: MA0135 or MA3512
-  equation: '|M_f420_3_c[C_c]| + |M_glu_L_c[C_c]| + |M_gtp_c[C_c]| => |M_f420_4_c[C_c]|
-    + |M_gdp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_GF4GL_4
+  equation: f420_3[c] + glu_L_c[c] + gtp[c] => f420_4[c] + gdp[c] + h_c[c] + pi_c[c]
+- id: GF4GL_4
   name: GF4GL_4
   genes: MA0135 or MA3512
-  equation: '|M_f420_4_c[C_c]| + |M_glu_L_c[C_c]| + |M_gtp_c[C_c]| => |M_f420_5_c[C_c]|
-    + |M_gdp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_GF4GL_5
+  equation: f420_4[c] + glu_L_c[c] + gtp[c] => f420_5[c] + gdp[c] + h_c[c] + pi_c[c]
+- id: GF4GL_5
   name: GF4GL_5
   genes: MA0135 or MA3512
-  equation: '|M_f420_5_c[C_c]| + |M_glu_L_c[C_c]| + |M_gtp_c[C_c]| => |M_f420_6_c[C_c]|
-    + |M_gdp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_GF4GL_6
+  equation: f420_5[c] + glu_L_c[c] + gtp[c] => f420_6[c] + gdp[c] + h_c[c] + pi_c[c]
+- id: GF4GL_6
   name: GF4GL_6
   genes: MA0135 or MA3512
-  equation: '|M_f420_6_c[C_c]| + |M_glu_L_c[C_c]| + |M_gtp_c[C_c]| => |M_f420_7_c[C_c]|
-    + |M_gdp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_GF6PTA
+  equation: f420_6[c] + glu_L_c[c] + gtp[c] => f420_7[c] + gdp[c] + h_c[c] + pi_c[c]
+- id: GF6PTA
   name: GF6PTA
   genes: MA3023
-  equation: '|M_f6p_c[C_c]| + |M_gln_L_c[C_c]| <=> |M_gam6p_c[C_c]| + |M_glu_L_c[C_c]|'
-- id: R_GGDPRED
+  equation: f6p[c] + gln_L[c] <=> gam6p[c] + glu_L_c[c]
+- id: GGDPRED
   name: GGDPRED
   genes: MA1484
-  equation: '|M_ggdp_c[C_c]| + (3) |M_h_c[C_c]| + (3) |M_nadph_c[C_c]| => (3) |M_nadp_c[C_c]|
-    + |M_phydp_c[C_c]|'
-- id: R_GGGPS
+  equation: ggdp[c] + (3) h_c[c] + (3) nadph[c] => (3) nadp[c] + phydp[c]
+- id: GGGPS
   name: GGGPS
   genes: MA3969
-  equation: '|M_ggdp_c[C_c]| + |M_glyc1p_c[C_c]| => |M_gggp_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_GHMT2
+  equation: ggdp[c] + glyc1p[c] => gggp[c] + ppi[c]
+- id: GHMT2
   name: GHMT2
   genes: MA3520
-  equation: '|M_gly_c[C_c]| + |M_h2o_c[C_c]| + |M_mlthf_c[C_c]| <=> |M_ser_L_c[C_c]|
-    + |M_thf_c[C_c]|'
-- id: R_GK1
+  equation: gly_c[c] + h2o_c[c] + mlthf[c] <=> ser_L[c] + thf[c]
+- id: GK1
   name: GK1
-  equation: '|M_atp_c[C_c]| + |M_gmp_c[C_c]| <=> |M_adp_c[C_c]| + |M_gdp_c[C_c]|'
-- id: R_GK__adp
+  equation: atp[c] + gmp[c] <=> adp[c] + gdp[c]
+- id: GK__adp
   name: GK__adp_
   genes: MA3562 or MA3563
-  equation: '|M_adp_c[C_c]| + |M_glc_D_c[C_c]| => |M_amp_c[C_c]| + |M_g6p_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_GLCGSD
+  equation: adp[c] + glc_D[c] => amp[c] + g6p[c] + h_c[c]
+- id: GLCGSD
   name: GLCGSD
   genes: MA1190 or MA4050
-  equation: '|M_glycogen_c[C_c]| + |M_h2o_c[C_c]| => |M_glc_D_c[C_c]|'
-- id: R_GLCNt2r
+  equation: glycogen[c] + h2o_c[c] => glc_D[c]
+- id: GLCNt2r
   name: GLCNt2r
   genes: MA0021
-  equation: '|M_glcn_e[C_e]| + |M_h_e[C_e]| <=> |M_glcn_c[C_c]| + |M_h_c[C_c]|'
-- id: R_GLCP
+  equation: glcn_e[e] + h_e[e] <=> glcn_c[c] + h_c[c]
+- id: GLCP
   name: GLCP
   genes: MA0905 or MA1874 or MA2628
-  equation: '|M_glycogen_c[C_c]| + |M_pi_c[C_c]| => |M_g1p_c[C_c]|'
-- id: R_GLCS2
+  equation: glycogen[c] + pi_c[c] => g1p[c]
+- id: GLCS2
   name: GLCS2
   genes: MA3679
-  equation: '|M_udpg_c[C_c]| => |M_glycogen_c[C_c]| + |M_h_c[C_c]| + |M_udp_c[C_c]|'
-- id: R_GLNS
+  equation: udpg[c] => glycogen[c] + h_c[c] + udp[c]
+- id: GLNS
   name: GLNS
   genes: MA4216
-  equation: '|M_atp_c[C_c]| + |M_glu_L_c[C_c]| + |M_nh4_c[C_c]| => |M_adp_c[C_c]|
-    + |M_gln_L_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_GLNTRAT
+  equation: atp[c] + glu_L_c[c] + nh4_c[c] => adp[c] + gln_L[c] + h_c[c] + pi_c[c]
+- id: GLNTRAT
   name: GLNTRAT
   genes: MA1317 and MA2862 and MA4522 and MA4523 and MA4524
-  equation: '|M_atp_c[C_c]| + |M_gln_L_c[C_c]| + |M_glutrna_gln__c[C_c]| + |M_h2o_c[C_c]|
-    => |M_adp_c[C_c]| + |M_glntrna_c[C_c]| + |M_glu_L_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_GLU5K
+  equation: atp[c] + gln_L[c] + glutrna_gln_[c] + h2o_c[c] => adp[c] + glntrna[c]
+    + glu_L_c[c] + h_c[c] + pi_c[c]
+- id: GLU5K
   name: GLU5K
   genes: MA4101
-  equation: '|M_atp_c[C_c]| + |M_glu_L_c[C_c]| <=> |M_adp_c[C_c]| + |M_glu5p_c[C_c]|'
-- id: R_GLUDC
+  equation: atp[c] + glu_L_c[c] <=> adp[c] + glu5p[c]
+- id: GLUDC
   name: GLUDC
   genes: MA1949
-  equation: '|M_glu_L_c[C_c]| + |M_h_c[C_c]| => |M_4abut_c[C_c]| + |M_co2_c[C_c]|'
-- id: R_GLUDxi
+  equation: glu_L_c[c] + h_c[c] => 4abut[c] + co2_c[c]
+- id: GLUDxi
   name: GLUDxi
   genes: MA3169
-  equation: '|M_akg_c[C_c]| + |M_h_c[C_c]| + |M_nadh_c[C_c]| + |M_nh4_c[C_c]| =>
-    |M_glu_L_c[C_c]| + |M_h2o_c[C_c]| + |M_nad_c[C_c]|'
-- id: R_GLUDyi
+  equation: akg[c] + h_c[c] + nadh[c] + nh4_c[c] => glu_L_c[c] + h2o_c[c] + nad[c]
+- id: GLUDyi
   name: GLUDyi
   genes: MA3169
-  equation: '|M_akg_c[C_c]| + |M_h_c[C_c]| + |M_nadph_c[C_c]| + |M_nh4_c[C_c]| =>
-    |M_glu_L_c[C_c]| + |M_h2o_c[C_c]| + |M_nadp_c[C_c]|'
-- id: R_GLUPRT
+  equation: akg[c] + h_c[c] + nadph[c] + nh4_c[c] => glu_L_c[c] + h2o_c[c] + nadp[c]
+- id: GLUPRT
   name: GLUPRT
   genes: MA3193
-  equation: '|M_gln_L_c[C_c]| + |M_h2o_c[C_c]| + |M_prpp_c[C_c]| => |M_glu_L_c[C_c]|
-    + |M_ppi_c[C_c]| + |M_pram_c[C_c]|'
-- id: R_GLUS_F420
+  equation: gln_L[c] + h2o_c[c] + prpp[c] => glu_L_c[c] + ppi[c] + pram[c]
+- id: GLUS_F420
   name: GLUS_F420_
   genes: MA3787 or MA4216 or MA4217 or MA4218
-  equation: '|M_akg_c[C_c]| + |M_f420_2h2_c[C_c]| + |M_gln_L_c[C_c]| => |M_f420_2_c[C_c]|
-    + (2) |M_glu_L_c[C_c]| + |M_h_c[C_c]|'
-- id: R_GLUTRR
+  equation: akg[c] + f420_2h2[c] + gln_L[c] => f420_2[c] + (2) glu_L_c[c] + h_c[c]
+- id: GLUTRR
   name: GLUTRR
   genes: MA0577
-  equation: '|M_glutrna_c[C_c]| + (2) |M_h_c[C_c]| + |M_nadph_c[C_c]| => |M_glu1sa_c[C_c]|
-    + |M_nadp_c[C_c]| + |M_trnaglu_c[C_c]|'
-- id: R_GLUTRS
+  equation: glutrna[c] + (2) h_c[c] + nadph[c] => glu1sa[c] + nadp[c] + trnaglu[c]
+- id: GLUTRS
   name: GLUTRS
   genes: MA0587
-  equation: '|M_atp_c[C_c]| + |M_glu_L_c[C_c]| + |M_trnaglu_c[C_c]| => |M_amp_c[C_c]|
-    + |M_glutrna_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_GLUTRS_Gln
+  equation: atp[c] + glu_L_c[c] + trnaglu[c] => amp[c] + glutrna[c] + ppi[c]
+- id: GLUTRS_Gln
   name: GLUTRS_Gln_
   genes: MA0587
-  equation: '|M_atp_c[C_c]| + |M_glu_L_c[C_c]| + |M_trnagln_c[C_c]| => |M_amp_c[C_c]|
-    + |M_glutrna_gln__c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_GLUt2r
+  equation: atp[c] + glu_L_c[c] + trnagln[c] => amp[c] + glutrna_gln_[c] + ppi[c]
+- id: GLUt2r
   name: GLUt2r
   genes: MA2961
-  equation: '|M_glu_L_e[C_e]| + |M_h_e[C_e]| => |M_glu_L_c[C_c]| + |M_h_c[C_c]|'
-- id: R_GLUt4
+  equation: glu_L_e[e] + h_e[e] => glu_L_c[c] + h_c[c]
+- id: GLUt4
   name: GLUt4
   genes: MA2961
-  equation: '|M_glu_L_e[C_e]| + |M_na1_e[C_e]| => |M_glu_L_c[C_c]| + |M_na1_c[C_c]|'
-- id: R_GLXO1
+  equation: glu_L_e[e] + na1_e[e] => glu_L_c[c] + na1_c[c]
+- id: GLXO1
   name: GLXO1
   genes: MA2860
-  equation: '|M_glx_c[C_c]| + |M_h2o_c[C_c]| + |M_nad_c[C_c]| => (2) |M_h_c[C_c]|
-    + |M_nadh_c[C_c]| + |M_oxa_c[C_c]|'
-- id: R_GLYALDOX
+  equation: glx[c] + h2o_c[c] + nad[c] => (2) h_c[c] + nadh[c] + oxa[c]
+- id: GLYALDOX
   name: GLYALDOX
   genes: MA2962 or MA3989
-  equation: (2) |M_fdox_c[C_c]| + |M_glyald_c[C_c]| + |M_h2o_c[C_c]| => (2) |M_fdred_c[C_c]|
-    + |M_glyc_R_c[C_c]| + (3) |M_h_c[C_c]|
-- id: R_GLYBabc
+  equation: (2) fdox[c] + glyald[c] + h2o_c[c] => (2) fdred[c] + glyc_R[c] + (3)
+    h_c[c]
+- id: GLYBabc
   name: GLYBabc
   genes: MA2145 and MA2146 and MA2147
-  equation: '|M_atp_c[C_c]| + |M_glyb_e[C_e]| + |M_h2o_c[C_c]| => |M_adp_c[C_c]|
-    + |M_glyb_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_GLYCDx
+  equation: atp[c] + glyb_e[e] + h2o_c[c] => adp[c] + glyb_c[c] + h_c[c] + pi_c[c]
+- id: GLYCDx
   name: GLYCDx
   genes: MA0591
-  equation: '|M_glyc_c[C_c]| + |M_nad_c[C_c]| => |M_dha_c[C_c]| + |M_h_c[C_c]| +
-    |M_nadh_c[C_c]|'
-- id: R_GLYOX
+  equation: glyc[c] + nad[c] => dha[c] + h_c[c] + nadh[c]
+- id: GLYOX
   name: GLYOX
   genes: MA2320
-  equation: '|M_h2o_c[C_c]| + |M_lgt_S_c[C_c]| => |M_gthrd_c[C_c]| + |M_h_c[C_c]|
-    + |M_lac_D_c[C_c]|'
-- id: R_GLYTRS
+  equation: h2o_c[c] + lgt_S[c] => gthrd[c] + h_c[c] + lac_D[c]
+- id: GLYTRS
   name: GLYTRS
   genes: MA0097
-  equation: '|M_atp_c[C_c]| + |M_gly_c[C_c]| + |M_trnagly_c[C_c]| => |M_amp_c[C_c]|
-    + |M_glytrna_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_GLYt4r
+  equation: atp[c] + gly_c[c] + trnagly[c] => amp[c] + glytrna[c] + ppi[c]
+- id: GLYt4r
   name: GLYt4r
   genes: MA2837
-  equation: '|M_gly_e[C_e]| + |M_na1_e[C_e]| <=> |M_gly_c[C_c]| + |M_na1_c[C_c]|'
-- id: R_GMAND
+  equation: gly_e[e] + na1_e[e] <=> gly_c[c] + na1_c[c]
+- id: GMAND
   name: GMAND
   genes: MA1173 or MA1174
-  equation: '|M_gdpmann_c[C_c]| => |M_gdpddman_c[C_c]| + |M_h2o_c[C_c]|'
-- id: R_GMPS
+  equation: gdpmann[c] => gdpddman[c] + h2o_c[c]
+- id: GMPS
   name: GMPS
   genes: MA4511 and MA4590
-  equation: '|M_atp_c[C_c]| + |M_nh4_c[C_c]| + |M_xmp_c[C_c]| <=> |M_amp_c[C_c]|
-    + |M_gmp_c[C_c]| + (2) |M_h_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_GMPS2
+  equation: atp[c] + nh4_c[c] + xmp[c] <=> amp[c] + gmp[c] + (2) h_c[c] + ppi[c]
+- id: GMPS2
   name: GMPS2
   genes: MA4511 and MA4590
-  equation: '|M_atp_c[C_c]| + |M_gln_L_c[C_c]| + |M_h2o_c[C_c]| + |M_xmp_c[C_c]|
-    => |M_amp_c[C_c]| + |M_glu_L_c[C_c]| + |M_gmp_c[C_c]| + (2) |M_h_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_GRTT
+  equation: atp[c] + gln_L[c] + h2o_c[c] + xmp[c] => amp[c] + glu_L_c[c] + gmp[c]
+    + (2) h_c[c] + ppi[c]
+- id: GRTT
   name: GRTT
   genes: MA0606 or MA1831 or MA3723 or MA4150 or MA4402
-  equation: '|M_grdp_c[C_c]| + |M_ipdp_c[C_c]| => |M_frdp_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_GRTT2
+  equation: grdp[c] + ipdp[c] => frdp[c] + ppi[c]
+- id: GRTT2
   name: GRTT2
   genes: MA0606 or MA1831 or MA3723 or MA4150 or MA4402
-  equation: '|M_3hgrdp_c[C_c]| + |M_ipdp_c[C_c]| => |M_3hfrdp_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_GSNK
+  equation: 3hgrdp[c] + ipdp[c] => 3hfrdp[c] + ppi[c]
+- id: GSNK
   name: GSNK
   genes: MA1373
-  equation: '|M_atp_c[C_c]| + |M_gsn_c[C_c]| => |M_adp_c[C_c]| + |M_gmp_c[C_c]| +
-    |M_h_c[C_c]|'
-- id: R_GTHOr
+  equation: atp[c] + gsn[c] => adp[c] + gmp[c] + h_c[c]
+- id: GTHOr
   name: GTHOr
   genes: MA1019 or MA4013
-  equation: '|M_gthox_c[C_c]| + |M_h_c[C_c]| + |M_nadph_c[C_c]| <=> (2) |M_gthrd_c[C_c]|
-    + |M_nadp_c[C_c]|'
-- id: R_GTPCHIII
+  equation: gthox[c] + h_c[c] + nadph[c] <=> (2) gthrd[c] + nadp[c]
+- id: GTPCHIII
   name: GTPCHIII
-  equation: '|M_gtp_c[C_c]| + (3) |M_h2o_c[C_c]| => |M_fapy_c[C_c]| + (2) |M_h_c[C_c]|
-    + (2) |M_pi_c[C_c]|'
-- id: R_GTPCHIV
+  equation: gtp[c] + (3) h2o_c[c] => fapy[c] + (2) h_c[c] + (2) pi_c[c]
+- id: GTPCHIV
   name: GTPCHIV
   genes: MA4517
-  equation: '|M_gtp_c[C_c]| + |M_h2o_c[C_c]| => |M_dhp23cp_c[C_c]| + |M_for_c[C_c]|
-    + |M_ppi_c[C_c]|'
-- id: R_GTPHs
+  equation: gtp[c] + h2o_c[c] => dhp23cp[c] + for_c[c] + ppi[c]
+- id: GTPHs
   name: GTPHs
-  equation: '|M_gtp_c[C_c]| + |M_h2o_c[C_c]| + |M_h_c[C_c]| => |M_nh4_c[C_c]| + |M_xtp_c[C_c]|'
-- id: R_GUACYC
+  equation: gtp[c] + h2o_c[c] + h_c[c] => nh4_c[c] + xtp[c]
+- id: GUACYC
   name: GUACYC
   genes: MA4044
-  equation: '|M_gtp_c[C_c]| => |M_35cgmp_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_GUAD
+  equation: gtp[c] => 35cgmp[c] + ppi[c]
+- id: GUAD
   name: GUAD
   genes: MA3407
-  equation: '|M_gua_c[C_c]| + |M_h2o_c[C_c]| + |M_h_c[C_c]| => |M_nh4_c[C_c]| + |M_xan_c[C_c]|'
-- id: R_GUAPRT
+  equation: gua[c] + h2o_c[c] + h_c[c] => nh4_c[c] + xan[c]
+- id: GUAPRT
   name: GUAPRT
   genes: MA0717
-  equation: '|M_gmp_c[C_c]| + |M_ppi_c[C_c]| <=> |M_gua_c[C_c]| + |M_prpp_c[C_c]|'
-- id: R_H2MPTR
+  equation: gmp[c] + ppi[c] <=> gua[c] + prpp[c]
+- id: H2MPTR
   name: H2MPTR
-  equation: '|M_f420_2h2_c[C_c]| + |M_h2mpt_c[C_c]| => |M_f420_2_c[C_c]| + |M_h4mpt_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_H2Ot
+  equation: f420_2h2[c] + h2mpt[c] => f420_2[c] + h4mpt[c] + h_c[c]
+- id: H2Ot
   name: H2Ot
-  equation: '|M_h2o_e[C_e]| <=> |M_h2o_c[C_c]|'
-- id: R_H2St
+  equation: h2o_e[e] <=> h2o_c[c]
+- id: H2St
   name: H2St
-  equation: '|M_h2s_e[C_e]| <=> |M_h2s_c[C_c]|'
-- id: R_H2td
+  equation: h2s_e[e] <=> h2s_c[c]
+- id: H2td
   name: H2td
-  equation: '|M_h2_c[C_c]| <=> |M_h2_e[C_e]|'
-- id: R_H4MPTGL_atp
+  equation: h2_c[c] <=> h2_e[e]
+- id: H4MPTGL_atp
   name: H4MPTGL_atp_
   genes: MA3268
-  equation: '|M_atp_c[C_c]| + |M_glu_L_c[C_c]| + |M_h4mpt_c[C_c]| => |M_adp_c[C_c]|
-    + |M_h4spt_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_H4MPTGL_gtp
+  equation: atp[c] + glu_L_c[c] + h4mpt[c] => adp[c] + h4spt[c] + h_c[c] + pi_c[c]
+- id: H4MPTGL_gtp
   name: H4MPTGL_gtp_
   genes: MA3268
-  equation: '|M_glu_L_c[C_c]| + |M_gtp_c[C_c]| + |M_h4mpt_c[C_c]| => |M_gdp_c[C_c]|
-    + |M_h4spt_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_H4MPTS10
+  equation: glu_L_c[c] + gtp[c] + h4mpt[c] => gdp[c] + h4spt[c] + h_c[c] + pi_c[c]
+- id: H4MPTS10
   name: H4MPTS10
-  equation: '|M_dhadrp_c[C_c]| + |M_h2o_c[C_c]| => |M_dhadr_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_H4MPTS11
+  equation: dhadrp[c] + h2o_c[c] => dhadr[c] + pi_c[c]
+- id: H4MPTS11
   name: H4MPTS11
-  equation: '|M_dhadr_c[C_c]| + |M_prpp_c[C_c]| => |M_dhadrpr_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_H4MPTS12
+  equation: dhadr[c] + prpp[c] => dhadrpr[c] + ppi[c]
+- id: H4MPTS12
   name: H4MPTS12
-  equation: '|M_atp_c[C_c]| + |M_dhadrpr_c[C_c]| => |M_adp_c[C_c]| + |M_dhadrdpr_c[C_c]|'
-- id: R_H4MPTS13
+  equation: atp[c] + dhadrpr[c] => adp[c] + dhadrdpr[c]
+- id: H4MPTS13
   name: H4MPTS13
-  equation: '|M_atp_c[C_c]| + |M_dhadrdpr_c[C_c]| => |M_adp_c[C_c]| + |M_dhadrtpr_c[C_c]|'
-- id: R_H4MPTS14
+  equation: atp[c] + dhadrdpr[c] => adp[c] + dhadrtpr[c]
+- id: H4MPTS14
   name: H4MPTS14
-  equation: '|M_S2hglut_c[C_c]| + |M_dhadrtpr_c[C_c]| => |M_dmh2mpt_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_H4MPTS15
+  equation: S2hglut[c] + dhadrtpr[c] => dmh2mpt[c] + ppi[c]
+- id: H4MPTS15
   name: H4MPTS15
-  equation: '|M_amet_c[C_c]| + |M_dmh2mpt_c[C_c]| => |M_ahcys_c[C_c]| + |M_h_c[C_c]|
-    + |M_mmh2mpt_c[C_c]|'
-- id: R_H4MPTS16
+  equation: amet[c] + dmh2mpt[c] => ahcys[c] + h_c[c] + mmh2mpt[c]
+- id: H4MPTS16
   name: H4MPTS16
-  equation: '|M_amet_c[C_c]| + |M_mmh2mpt_c[C_c]| => |M_ahcys_c[C_c]| + |M_h2mpt_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_H4MPTS9
+  equation: amet[c] + mmh2mpt[c] => ahcys[c] + h2mpt[c] + h_c[c]
+- id: H4MPTS9
   name: H4MPTS9
-  equation: '|M_dhrfap_c[C_c]| + |M_f420_2h2_c[C_c]| => |M_dhadrp_c[C_c]| + |M_f420_2_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_HASD
+  equation: dhrfap[c] + f420_2h2[c] => dhadrp[c] + f420_2[c] + h_c[c]
+- id: HASD
   name: HASD
   genes: MA0115
-  equation: '|M_3hdpgps_c[C_c]| + |M_h_c[C_c]| => |M_3hdpgpe_c[C_c]| + |M_co2_c[C_c]|'
-- id: R_HATGH
+  equation: 3hdpgps[c] + h_c[c] => 3hdpgpe[c] + co2_c[c]
+- id: HATGH
   name: HATGH
   genes: MA0691 or MA0692 or MA1484
-  equation: '|M_3hdggpg_c[C_c]| + (7) |M_h_c[C_c]| + (7) |M_nadph_c[C_c]| => |M_3hdpgpg_c[C_c]|
-    + (7) |M_nadp_c[C_c]|'
-- id: R_HATIH
+  equation: 3hdggpg[c] + (7) h_c[c] + (7) nadph[c] => 3hdpgpg[c] + (7) nadp[c]
+- id: HATIH
   name: HATIH
   genes: MA0691 or MA0692 or MA1484
-  equation: '|M_3hdggpi_c[C_c]| + (7) |M_h_c[C_c]| + (7) |M_nadph_c[C_c]| => |M_3hdpgpi_c[C_c]|
-    + (7) |M_nadp_c[C_c]|'
-- id: R_HATSH
+  equation: 3hdggpi[c] + (7) h_c[c] + (7) nadph[c] => 3hdpgpi[c] + (7) nadp[c]
+- id: HATSH
   name: HATSH
   genes: MA0691 or MA0692 or MA1484
-  equation: '|M_3hdgggps_c[C_c]| + (7) |M_h_c[C_c]| + (7) |M_nadph_c[C_c]| => |M_3hdpgps_c[C_c]|
-    + (7) |M_nadp_c[C_c]|'
-- id: R_HBZOPT
+  equation: 3hdgggps[c] + (7) h_c[c] + (7) nadph[c] => 3hdpgps[c] + (7) nadp[c]
+- id: HBZOPT
   name: HBZOPT
   genes: MA0961
-  equation: '|M_4hbz_c[C_c]| + |M_octdp_c[C_c]| => |M_3ophb_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_HCARNHYD
+  equation: 4hbz[c] + octdp[c] => 3ophb[c] + ppi[c]
+- id: HCARNHYD
   name: HCARNHYD
   genes: MA2653
-  equation: '|M_4abut_c[C_c]| + |M_h_c[C_c]| + |M_his_L_c[C_c]| => |M_h2o_c[C_c]|
-    + |M_hcarn_c[C_c]|'
-- id: R_HCITS
+  equation: 4abut[c] + h_c[c] + his_L[c] => h2o_c[c] + hcarn[c]
+- id: HCITS
   name: HCITS
   genes: MA3342
-  equation: '|M_accoa_c[C_c]| + |M_akg_c[C_c]| + |M_h2o_c[C_c]| => |M_coa_c[C_c]|
-    + |M_h_c[C_c]| + |M_hcit_c[C_c]|'
-- id: R_HCO3E
+  equation: accoa[c] + akg[c] + h2o_c[c] => coa[c] + h_c[c] + hcit[c]
+- id: HCO3E
   name: HCO3E
   genes: MA2536
-  equation: '|M_co2_c[C_c]| + |M_h2o_c[C_c]| <=> |M_h_c[C_c]| + |M_hco3_c[C_c]|'
-- id: R_HCO3E_e
+  equation: co2_c[c] + h2o_c[c] <=> h_c[c] + hco3_c[c]
+- id: HCO3E_e
   name: HCO3E_e
   genes: MA2536
-  equation: '|M_co2_e[C_e]| + |M_h2o_e[C_e]| <=> |M_h_e[C_e]| + |M_hco3_e[C_e]|'
-- id: R_HDR
+  equation: co2_e[e] + h2o_e[e] <=> h_e[e] + hco3_e[e]
+- id: HDR
   name: HDR
   genes: (MA0526 or MA0688) and MA0687
-  equation: (2) |M_h_c[C_c]| + |M_hsfd_c[C_c]| + |M_mphenh2_c[C_c]| => |M_cob_c[C_c]|
-    + |M_com_c[C_c]| + (2) |M_h_e[C_e]| + |M_mphen_c[C_c]|
-- id: R_HDR_2
+  equation: (2) h_c[c] + hsfd[c] + mphenh2[c] => cob[c] + com[c] + (2) h_e[e] + mphen[c]
+- id: HDR_2
   name: HDR-2
   genes: (MA2868 or MA3128) and (MA3126 or MA4237) and (MA3127 or MA4236) and MA2867
-  equation: '|M_f420_2_c[C_c]| + (4) |M_fdred_c[C_c]| + (5) |M_h_c[C_c]| + |M_hsfd_c[C_c]|
-    => |M_cob_c[C_c]| + |M_com_c[C_c]| + |M_f420_2h2_c[C_c]| + (4) |M_fdox_c[C_c]|'
-- id: R_HETZK
+  equation: f420_2[c] + (4) fdred[c] + (5) h_c[c] + hsfd[c] => cob[c] + com[c] +
+    f420_2h2[c] + (4) fdox[c]
+- id: HETZK
   name: HETZK
   genes: MA2723
-  equation: '|M_4mhetz_c[C_c]| + |M_atp_c[C_c]| => |M_4mpetz_c[C_c]| + |M_adp_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_HEX7
+  equation: 4mhetz[c] + atp[c] => 4mpetz[c] + adp[c] + h_c[c]
+- id: HEX7
   name: HEX7
   genes: MA1840
-  equation: '|M_atp_c[C_c]| + |M_fru_c[C_c]| => |M_adp_c[C_c]| + |M_f6p_c[C_c]| +
-    |M_h_c[C_c]|'
-- id: R_HIBD
+  equation: atp[c] + fru[c] => adp[c] + f6p[c] + h_c[c]
+- id: HIBD
   name: HIBD
   genes: MA0614
-  equation: '|M_3hmp_c[C_c]| + |M_nad_c[C_c]| <=> |M_2mop_c[C_c]| + |M_h_c[C_c]|
-    + |M_nadh_c[C_c]|'
-- id: R_HISTD
+  equation: 3hmp[c] + nad[c] <=> 2mop[c] + h_c[c] + nadh[c]
+- id: HISTD
   name: HISTD
   genes: MA3201
-  equation: '|M_h2o_c[C_c]| + |M_histd_c[C_c]| + (2) |M_nad_c[C_c]| => (3) |M_h_c[C_c]|
-    + |M_his_L_c[C_c]| + (2) |M_nadh_c[C_c]|'
-- id: R_HISTP
+  equation: h2o_c[c] + histd[c] + (2) nad[c] => (3) h_c[c] + his_L[c] + (2) nadh[c]
+- id: HISTP
   name: HISTP
   genes: MA0219
-  equation: '|M_h2o_c[C_c]| + |M_hisp_c[C_c]| => |M_histd_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_HISTRS
+  equation: h2o_c[c] + hisp[c] => histd[c] + pi_c[c]
+- id: HISTRS
   name: HISTRS
   genes: MA0943
-  equation: '|M_atp_c[C_c]| + |M_his_L_c[C_c]| + |M_trnahis_c[C_c]| => |M_amp_c[C_c]|
-    + |M_histrna_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_HKt
+  equation: atp[c] + his_L[c] + trnahis[c] => amp[c] + histrna[c] + ppi[c]
+- id: HKt
   name: HKt
   genes: MA3999
-  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_k_e[C_e]| => |M_adp_c[C_c]| + |M_h_e[C_e]|
-    + |M_k_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_HMBS
+  equation: atp[c] + h2o_c[c] + k_e[e] => adp[c] + h_e[e] + k_c[c] + pi_c[c]
+- id: HMBS
   name: HMBS
   genes: MA0582
-  equation: '|M_h2o_c[C_c]| + (4) |M_ppbng_c[C_c]| => |M_hmbil_c[C_c]| + (4) |M_nh4_c[C_c]|'
-- id: R_HMGCOARi
+  equation: h2o_c[c] + (4) ppbng[c] => hmbil[c] + (4) nh4_c[c]
+- id: HMGCOARi
   name: HMGCOARi
   genes: MA3073
-  equation: (2) |M_h_c[C_c]| + |M_hmgcoa_c[C_c]| + (2) |M_nadph_c[C_c]| <=> |M_coa_c[C_c]|
-    + |M_mev_R_c[C_c]| + (2) |M_nadp_c[C_c]|
-- id: R_HMGCOASi
+  equation: (2) h_c[c] + hmgcoa[c] + (2) nadph[c] <=> coa[c] + mev_R[c] + (2) nadp[c]
+- id: HMGCOASi
   name: HMGCOASi
   genes: MA4041
-  equation: '|M_aacoa_c[C_c]| + |M_accoa_c[C_c]| + |M_h2o_c[C_c]| => |M_coa_c[C_c]|
-    + |M_h_c[C_c]| + |M_hmgcoa_c[C_c]|'
-- id: R_HMPK1
+  equation: aacoa[c] + accoa[c] + h2o_c[c] => coa[c] + h_c[c] + hmgcoa[c]
+- id: HMPK1
   name: HMPK1
   genes: MA3197
-  equation: '|M_4ahmmp_c[C_c]| + |M_atp_c[C_c]| => |M_4ampm_c[C_c]| + |M_adp_c[C_c]|
-    + (2) |M_h_c[C_c]|'
-- id: R_HPACt2r
+  equation: 4ahmmp[c] + atp[c] => 4ampm[c] + adp[c] + (2) h_c[c]
+- id: HPACt2r
   name: HPACt2r
-  equation: '|M_4hphac_e[C_e]| + |M_h_e[C_e]| <=> |M_4hphac_c[C_c]| + |M_h_c[C_c]|'
-- id: R_HPPK2
+  equation: 4hphac_e[e] + h_e[e] <=> 4hphac_c[c] + h_c[c]
+- id: HPPK2
   name: HPPK2
-  equation: '|M_6hmhpt_c[C_c]| + |M_atp_c[C_c]| => |M_6hmhptpp_c[C_c]| + |M_amp_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_HPYRRx
+  equation: 6hmhpt[c] + atp[c] => 6hmhptpp[c] + amp[c] + h_c[c]
+- id: HPYRRx
   name: HPYRRx
   genes: MA1334
-  equation: '|M_h_c[C_c]| + |M_hpyr_c[C_c]| + |M_nadh_c[C_c]| => |M_glyc_R_c[C_c]|
-    + |M_nad_c[C_c]|'
-- id: R_HPYRRy
+  equation: h_c[c] + hpyr[c] + nadh[c] => glyc_R[c] + nad[c]
+- id: HPYRRy
   name: HPYRRy
   genes: MA1334
-  equation: '|M_h_c[C_c]| + |M_hpyr_c[C_c]| + |M_nadph_c[C_c]| => |M_glyc_R_c[C_c]|
-    + |M_nadp_c[C_c]|'
-- id: R_HSDx
+  equation: h_c[c] + hpyr[c] + nadph[c] => glyc_R[c] + nadp[c]
+- id: HSDx
   name: HSDx
   genes: MA2572
-  equation: '|M_hom_L_c[C_c]| + |M_nad_c[C_c]| <=> |M_aspsa_c[C_c]| + |M_h_c[C_c]|
-    + |M_nadh_c[C_c]|'
-- id: R_HSDy
+  equation: hom_L[c] + nad[c] <=> aspsa[c] + h_c[c] + nadh[c]
+- id: HSDy
   name: HSDy
   genes: MA2572
-  equation: '|M_hom_L_c[C_c]| + |M_nadp_c[C_c]| <=> |M_aspsa_c[C_c]| + |M_h_c[C_c]|
-    + |M_nadph_c[C_c]|'
-- id: R_HSERTA
+  equation: hom_L[c] + nadp[c] <=> aspsa[c] + h_c[c] + nadph[c]
+- id: HSERTA
   name: HSERTA
   genes: MA2714
-  equation: '|M_accoa_c[C_c]| + |M_hom_L_c[C_c]| <=> |M_achms_c[C_c]| + |M_coa_c[C_c]|'
-- id: R_HSK
+  equation: accoa[c] + hom_L[c] <=> achms[c] + coa[c]
+- id: HSK
   name: HSK
-  equation: '|M_atp_c[C_c]| + |M_hom_L_c[C_c]| => |M_adp_c[C_c]| + |M_h_c[C_c]| +
-    |M_phom_c[C_c]|'
-- id: R_HSPMS
+  equation: atp[c] + hom_L[c] => adp[c] + h_c[c] + phom[c]
+- id: HSPMS
   name: HSPMS
   genes: MA1636
-  equation: (2) |M_ptrc_c[C_c]| => |M_hspmd_c[C_c]| + |M_nh4_c[C_c]|
-- id: R_HSTPT
+  equation: (2) ptrc[c] => hspmd[c] + nh4_c[c]
+- id: HSTPT
   name: HSTPT
   genes: MA0118 or MA0942
-  equation: '|M_akg_c[C_c]| + |M_hisp_c[C_c]| <=> |M_glu_L_c[C_c]| + |M_imacp_c[C_c]|'
-- id: R_HXPRT
+  equation: akg[c] + hisp[c] <=> glu_L_c[c] + imacp[c]
+- id: HXPRT
   name: HXPRT
   genes: MA1687
-  equation: '|M_hxan_c[C_c]| + |M_prpp_c[C_c]| => |M_imp_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_ICITRED
+  equation: hxan[c] + prpp[c] => imp[c] + ppi[c]
+- id: ICITRED
   name: ICITRED
   genes: MA4265
-  equation: '|M_icit_c[C_c]| + |M_nadp_c[C_c]| <=> |M_h_c[C_c]| + |M_nadph_c[C_c]|
-    + |M_osuc_c[C_c]|'
-- id: R_IG3PS
+  equation: icit[c] + nadp[c] <=> h_c[c] + nadph[c] + osuc[c]
+- id: IG3PS
   name: IG3PS
   genes: MA0541 and MA0913
-  equation: '|M_gln_L_c[C_c]| + |M_prlp_c[C_c]| => |M_aicar_c[C_c]| + |M_eig3p_c[C_c]|
-    + |M_glu_L_c[C_c]| + |M_h_c[C_c]|'
-- id: R_IGPDH
+  equation: gln_L[c] + prlp[c] => aicar[c] + eig3p[c] + glu_L_c[c] + h_c[c]
+- id: IGPDH
   name: IGPDH
   genes: MA0219
-  equation: '|M_eig3p_c[C_c]| => |M_h2o_c[C_c]| + |M_imacp_c[C_c]|'
-- id: R_IGPS
+  equation: eig3p[c] => h2o_c[c] + imacp[c]
+- id: IGPS
   name: IGPS
   genes: MA2992
-  equation: '|M_2cpr5p_c[C_c]| + |M_h_c[C_c]| <=> |M_3ig3p_c[C_c]| + |M_co2_c[C_c]|
-    + |M_h2o_c[C_c]|'
-- id: R_ILETA
+  equation: 2cpr5p[c] + h_c[c] <=> 3ig3p[c] + co2_c[c] + h2o_c[c]
+- id: ILETA
   name: ILETA
   genes: MA4349
-  equation: '|M_akg_c[C_c]| + |M_ile_L_c[C_c]| <=> |M_3mop_c[C_c]| + |M_glu_L_c[C_c]|'
-- id: R_ILETRS
+  equation: akg[c] + ile_L_c[c] <=> 3mop[c] + glu_L_c[c]
+- id: ILETRS
   name: ILETRS
   genes: MA2431
-  equation: '|M_atp_c[C_c]| + |M_ile_L_c[C_c]| + |M_trnaile_c[C_c]| => |M_amp_c[C_c]|
-    + |M_iletrna_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_ILEt2r
+  equation: atp[c] + ile_L_c[c] + trnaile[c] => amp[c] + iletrna[c] + ppi[c]
+- id: ILEt2r
   name: ILEt2r
   genes: MA3437 and MA3438
-  equation: '|M_h_e[C_e]| + |M_ile_L_e[C_e]| <=> |M_h_c[C_c]| + |M_ile_L_c[C_c]|'
-- id: R_IMPC
+  equation: h_e[e] + ile_L_e[e] <=> h_c[c] + ile_L_c[c]
+- id: IMPC
   name: IMPC
   genes: MA4012
-  equation: '|M_h2o_c[C_c]| + |M_imp_c[C_c]| <=> |M_fprica_c[C_c]|'
-- id: R_IMPD
+  equation: h2o_c[c] + imp[c] <=> fprica[c]
+- id: IMPD
   name: IMPD
-  equation: '|M_h2o_c[C_c]| + |M_imp_c[C_c]| + |M_nad_c[C_c]| => |M_h_c[C_c]| + |M_nadh_c[C_c]|
-    + |M_xmp_c[C_c]|'
-- id: R_IND3ACt2r
+  equation: h2o_c[c] + imp[c] + nad[c] => h_c[c] + nadh[c] + xmp[c]
+- id: IND3ACt2r
   name: IND3ACt2r
-  equation: '|M_h_c[C_c]| + |M_ind3ac_c[C_c]| <=> |M_h_e[C_e]| + |M_ind3ac_e[C_e]|'
-- id: R_INDPYRD
+  equation: h_c[c] + ind3ac_c[c] <=> h_e[e] + ind3ac_e[e]
+- id: INDPYRD
   name: INDPYRD
   genes: MA0594
-  equation: '|M_h_c[C_c]| + |M_indpyr_c[C_c]| <=> |M_co2_c[C_c]| + |M_id3acald_c[C_c]|'
-- id: R_INS2D
+  equation: h_c[c] + indpyr[c] <=> co2_c[c] + id3acald[c]
+- id: INS2D
   name: INS2D
   genes: MA4448
-  equation: '|M_inost_c[C_c]| + |M_nad_c[C_c]| => |M_2ins_c[C_c]| + |M_h_c[C_c]|
-    + |M_nadh_c[C_c]|'
-- id: R_INSK
+  equation: inost[c] + nad[c] => 2ins[c] + h_c[c] + nadh[c]
+- id: INSK
   name: INSK
   genes: MA1373
-  equation: '|M_atp_c[C_c]| + |M_ins_c[C_c]| => |M_adp_c[C_c]| + |M_h_c[C_c]| + |M_imp_c[C_c]|'
-- id: R_IOR
+  equation: atp[c] + ins[c] => adp[c] + h_c[c] + imp[c]
+- id: IOR
   name: IOR
   genes: (MA1022 or MA1727 or MA1982) and (MA1023 or MA1726)
-  equation: '|M_coa_c[C_c]| + (2) |M_fdox_c[C_c]| + |M_indpyr_c[C_c]| <=> |M_co2_c[C_c]|
-    + (2) |M_fdred_c[C_c]| + |M_h_c[C_c]| + |M_indaccoa_c[C_c]|'
-- id: R_IOR2
+  equation: coa[c] + (2) fdox[c] + indpyr[c] <=> co2_c[c] + (2) fdred[c] + h_c[c]
+    + indaccoa[c]
+- id: IOR2
   name: IOR2
   genes: ((MA1022 or MA1727 or MA1982) and (MA1023 or MA1726)) or (MA2909 and MA2910
     and MA2911)
-  equation: '|M_coa_c[C_c]| + (2) |M_fdox_c[C_c]| + |M_phpyr_c[C_c]| <=> |M_co2_c[C_c]|
-    + (2) |M_fdred_c[C_c]| + |M_h_c[C_c]| + |M_phaccoa_c[C_c]|'
-- id: R_IOR3
+  equation: coa[c] + (2) fdox[c] + phpyr[c] <=> co2_c[c] + (2) fdred[c] + h_c[c]
+    + phaccoa[c]
+- id: IOR3
   name: IOR3
   genes: (MA1022 or MA1727 or MA1982) and (MA1023 or MA1726)
-  equation: '|M_34hpp_c[C_c]| + |M_coa_c[C_c]| + (2) |M_fdox_c[C_c]| <=> |M_co2_c[C_c]|
-    + (2) |M_fdred_c[C_c]| + |M_h_c[C_c]| + |M_hphaccoa_c[C_c]|'
-- id: R_IPDDI3x
+  equation: 34hpp[c] + coa[c] + (2) fdox[c] <=> co2_c[c] + (2) fdred[c] + h_c[c]
+    + hphaccoa[c]
+- id: IPDDI3x
   name: IPDDI3x
   genes: MA0604
-  equation: '|M_f420_2_c[C_c]| + (2) |M_h_c[C_c]| + |M_ipdp_c[C_c]| + |M_nadh_c[C_c]|
-    => |M_dmpp_c[C_c]| + |M_f420_2h2_c[C_c]| + |M_nad_c[C_c]|'
-- id: R_IPDDI3y
+  equation: f420_2[c] + (2) h_c[c] + ipdp[c] + nadh[c] => dmpp[c] + f420_2h2[c] +
+    nad[c]
+- id: IPDDI3y
   name: IPDDI3y
   genes: MA0604
-  equation: '|M_f420_2_c[C_c]| + (2) |M_h_c[C_c]| + |M_ipdp_c[C_c]| + |M_nadph_c[C_c]|
-    => |M_dmpp_c[C_c]| + |M_f420_2h2_c[C_c]| + |M_nadp_c[C_c]|'
-- id: R_IPDPH
+  equation: f420_2[c] + (2) h_c[c] + ipdp[c] + nadph[c] => dmpp[c] + f420_2h2[c]
+    + nadp[c]
+- id: IPDPH
   name: IPDPH
-  equation: '|M_h2o_c[C_c]| + |M_ipdp_c[C_c]| <=> |M_m3hdp_c[C_c]|'
-- id: R_IPMD
+  equation: h2o_c[c] + ipdp[c] <=> m3hdp[c]
+- id: IPMD
   name: IPMD
   genes: MA0201 or MA3748
-  equation: '|M_3c2hmp_c[C_c]| + |M_nad_c[C_c]| <=> |M_3c4mop_c[C_c]| + |M_h_c[C_c]|
-    + |M_nadh_c[C_c]|'
-- id: R_IPPK
+  equation: 3c2hmp[c] + nad[c] <=> 3c4mop[c] + h_c[c] + nadh[c]
+- id: IPPK
   name: IPPK
   genes: MA0603
-  equation: '|M_atp_c[C_c]| + |M_ipp_c[C_c]| => |M_adp_c[C_c]| + |M_ipdp_c[C_c]|'
-- id: R_IPPMIa
+  equation: atp[c] + ipp[c] => adp[c] + ipdp[c]
+- id: IPPMIa
   name: IPPMIa
   genes: (MA0202 or MA1223) and (MA1393 or MA0642 or MA4415)
-  equation: '|M_3c2hmp_c[C_c]| <=> |M_2ippm_c[C_c]| + |M_h2o_c[C_c]|'
-- id: R_IPPMIb
+  equation: 3c2hmp[c] <=> 2ippm[c] + h2o_c[c]
+- id: IPPMIb
   name: IPPMIb
   genes: (MA0202 or MA1223) and (MA1393 or MA0642 or MA4415)
-  equation: '|M_2ippm_c[C_c]| + |M_h2o_c[C_c]| <=> |M_3c3hmp_c[C_c]|'
-- id: R_IPPS
+  equation: 2ippm[c] + h2o_c[c] <=> 3c3hmp[c]
+- id: IPPS
   name: IPPS
   genes: MA4615
-  equation: '|M_3mob_c[C_c]| + |M_accoa_c[C_c]| + |M_h2o_c[C_c]| => |M_3c3hmp_c[C_c]|
-    + |M_coa_c[C_c]| + |M_h_c[C_c]|'
-- id: R_KARA1
+  equation: 3mob[c] + accoa[c] + h2o_c[c] => 3c3hmp[c] + coa[c] + h_c[c]
+- id: KARA1
   name: KARA1
   genes: MA3790
-  equation: '|M_23dhmb_c[C_c]| + |M_nadp_c[C_c]| <=> |M_alac_S_c[C_c]| + |M_h_c[C_c]|
-    + |M_nadph_c[C_c]|'
-- id: R_KARA2
+  equation: 23dhmb[c] + nadp[c] <=> alac_S_c[c] + h_c[c] + nadph[c]
+- id: KARA2
   name: KARA2
   genes: MA3790
-  equation: '|M_2ahbut_c[C_c]| + |M_h_c[C_c]| + |M_nadph_c[C_c]| <=> |M_23dhmp_c[C_c]|
-    + |M_nadp_c[C_c]|'
-- id: R_KCCt
+  equation: 2ahbut[c] + h_c[c] + nadph[c] <=> 23dhmp[c] + nadp[c]
+- id: KCCt
   name: KCCt
   genes: MA4506
-  equation: '|M_cl_c[C_c]| + |M_k_c[C_c]| => |M_cl_e[C_e]| + |M_k_e[C_e]|'
-- id: R_Kt2r
+  equation: cl_c[c] + k_c[c] => cl_e[e] + k_e[e]
+- id: Kt2r
   name: Kt2r
   genes: MA1527 or MA1550 or MA2034 or MA2218 or MA2448 or MA3398
-  equation: '|M_h_e[C_e]| + |M_k_e[C_e]| <=> |M_h_c[C_c]| + |M_k_c[C_c]|'
-- id: R_LCAD
+  equation: h_e[e] + k_e[e] <=> h_c[c] + k_c[c]
+- id: LCAD
   name: LCAD
   genes: MA2860 or MA4086
-  equation: '|M_h2o_c[C_c]| + |M_lald_L_c[C_c]| + |M_nad_c[C_c]| => (2) |M_h_c[C_c]|
-    + |M_lac_L_c[C_c]| + |M_nadh_c[C_c]|'
-- id: R_LCYSTAT
+  equation: h2o_c[c] + lald_L[c] + nad[c] => (2) h_c[c] + lac_L[c] + nadh[c]
+- id: LCYSTAT
   name: LCYSTAT
   genes: MA0636 or MA1385 or MA1819
-  equation: '|M_Lcyst_c[C_c]| + |M_akg_c[C_c]| <=> |M_3spyr_c[C_c]| + |M_glu_L_c[C_c]|'
-- id: R_LCYSTS
+  equation: Lcyst[c] + akg[c] <=> 3spyr[c] + glu_L_c[c]
+- id: LCYSTS
   name: LCYSTS
   genes: MA3297
-  equation: '|M_h_c[C_c]| + |M_pser_L_c[C_c]| + |M_so3_c[C_c]| => |M_Lcyst_c[C_c]|
-    + |M_pi_c[C_c]|'
-- id: R_LEUTA
+  equation: h_c[c] + pser_L[c] + so3[c] => Lcyst[c] + pi_c[c]
+- id: LEUTA
   name: LEUTA
   genes: MA4349
-  equation: '|M_akg_c[C_c]| + |M_leu_L_c[C_c]| <=> |M_4mop_c[C_c]| + |M_glu_L_c[C_c]|'
-- id: R_LEUTRS
+  equation: akg[c] + leu_L_c[c] <=> 4mop[c] + glu_L_c[c]
+- id: LEUTRS
   name: LEUTRS
   genes: MA1611
-  equation: '|M_atp_c[C_c]| + |M_leu_L_c[C_c]| + |M_trnaleu_c[C_c]| => |M_amp_c[C_c]|
-    + |M_leutrna_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_LEUt2r
+  equation: atp[c] + leu_L_c[c] + trnaleu[c] => amp[c] + leutrna[c] + ppi[c]
+- id: LEUt2r
   name: LEUt2r
   genes: MA3437 and MA3438
-  equation: '|M_h_e[C_e]| + |M_leu_L_e[C_e]| <=> |M_h_c[C_c]| + |M_leu_L_c[C_c]|'
-- id: R_LPFPLT
+  equation: h_e[e] + leu_L_e[e] <=> h_c[c] + leu_L_c[c]
+- id: LPFPLT
   name: LPFPLT
   genes: MA0714
-  equation: '|M_ddhrb_c[C_c]| + |M_lppg_c[C_c]| => |M_f420_0_c[C_c]| + |M_gmp_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_LPPGS
+  equation: ddhrb[c] + lppg[c] => f420_0[c] + gmp[c] + h_c[c]
+- id: LPPGS
   name: LPPGS
   genes: MA1488
-  equation: '|M_2plac_L_c[C_c]| + |M_gtp_c[C_c]| + |M_h_c[C_c]| => |M_lppg_c[C_c]|
-    + |M_ppi_c[C_c]|'
-- id: R_LYSAM
+  equation: 2plac_L[c] + gtp[c] + h_c[c] => lppg[c] + ppi[c]
+- id: LYSAM
   name: LYSAM
   genes: MA3979
-  equation: '|M_lys_L_c[C_c]| <=> |M_36dahx_c[C_c]|'
-- id: R_LYSTRS
+  equation: lys_L_c[c] <=> 36dahx[c]
+- id: LYSTRS
   name: LYSTRS
   genes: MA0534 or MA0760
-  equation: '|M_atp_c[C_c]| + |M_lys_L_c[C_c]| + |M_trnalys_c[C_c]| => |M_amp_c[C_c]|
-    + |M_lystrna_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_LYSt3r
+  equation: atp[c] + lys_L_c[c] + trnalys[c] => amp[c] + lystrna[c] + ppi[c]
+- id: LYSt3r
   name: LYSt3r
   genes: MA2108
-  equation: '|M_h_e[C_e]| + |M_lys_L_c[C_c]| <=> |M_h_c[C_c]| + |M_lys_L_e[C_e]|'
-- id: R_MAN1PT
+  equation: h_e[e] + lys_L_c[c] <=> h_c[c] + lys_L_e[e]
+- id: MAN1PT
   name: MAN1PT
   genes: MA3140
-  equation: '|M_gtp_c[C_c]| + |M_h_c[C_c]| + |M_man1p_c[C_c]| => |M_gdpmann_c[C_c]|
-    + |M_ppi_c[C_c]|'
-- id: R_MAN1PT2r
+  equation: gtp[c] + h_c[c] + man1p[c] => gdpmann[c] + ppi[c]
+- id: MAN1PT2r
   name: MAN1PT2r
   genes: MA3781
-  equation: '|M_gdp_c[C_c]| + |M_h_c[C_c]| + |M_man1p_c[C_c]| => |M_gdpmann_c[C_c]|
-    + |M_pi_c[C_c]|'
-- id: R_MAN6PI
+  equation: gdp[c] + h_c[c] + man1p[c] => gdpmann[c] + pi_c[c]
+- id: MAN6PI
   name: MAN6PI
   genes: MA3781
-  equation: '|M_man6p_c[C_c]| <=> |M_f6p_c[C_c]|'
-- id: R_MCMMT
+  equation: man6p[c] <=> f6p[c]
+- id: MCMMT
   name: MCMMT
   genes: (MA0455 or MA1616 or MA4392) and (MA0456 or MA1617 or MA4391) and MA4379
     and (MA0150 or MA0849 or MA4360)
-  equation: '|M_5hbc_red_c[C_c]| + |M_h_c[C_c]| + |M_meoh_c[C_c]| => |M_h2o_c[C_c]|
-    + |M_m5hbc_c[C_c]|'
-- id: R_MCR
+  equation: 5hbc_red[c] + h_c[c] + meoh_c[c] => h2o_c[c] + m5hbc[c]
+- id: MCR
   name: MCR
   genes: MA4546 and MA4547 and MA4548 and MA4549 and MA4550
-  equation: '|M_cob_c[C_c]| + |M_mcom_c[C_c]| => |M_ch4_c[C_c]| + |M_hsfd_c[C_c]|'
-- id: R_MDH
+  equation: cob[c] + mcom[c] => ch4_c[c] + hsfd[c]
+- id: MDH
   name: MDH
   genes: MA0819
-  equation: '|M_mal_L_c[C_c]| + |M_nad_c[C_c]| <=> |M_h_c[C_c]| + |M_nadh_c[C_c]|
-    + |M_oaa_c[C_c]|'
-- id: R_MDHy
+  equation: mal_L[c] + nad[c] <=> h_c[c] + nadh[c] + oaa[c]
+- id: MDHy
   name: MDHy
   genes: MA0819
-  equation: '|M_mal_L_c[C_c]| + |M_nadp_c[C_c]| <=> |M_h_c[C_c]| + |M_nadph_c[C_c]|
-    + |M_oaa_c[C_c]|'
-- id: R_ME1_rev
+  equation: mal_L[c] + nadp[c] <=> h_c[c] + nadph[c] + oaa[c]
+- id: ME1_rev
   name: ME1_rev
   genes: MA1735
-  equation: '|M_mal_L_c[C_c]| + |M_nad_c[C_c]| <=> |M_co2_c[C_c]| + |M_nadh_c[C_c]|
-    + |M_pyr_c[C_c]|'
-- id: R_ME2
+  equation: mal_L[c] + nad[c] <=> co2_c[c] + nadh[c] + pyr_c[c]
+- id: ME2
   name: ME2
   genes: MA1735
-  equation: '|M_mal_L_c[C_c]| + |M_nadp_c[C_c]| <=> |M_co2_c[C_c]| + |M_nadph_c[C_c]|
-    + |M_pyr_c[C_c]|'
-- id: R_MEOHt2
+  equation: mal_L[c] + nadp[c] <=> co2_c[c] + nadph[c] + pyr_c[c]
+- id: MEOHt2
   name: MEOHt2
-  equation: '|M_meoh_e[C_e]| <=> |M_meoh_c[C_c]|'
-- id: R_METAT
+  equation: meoh_e[e] <=> meoh_c[c]
+- id: METAT
   name: METAT
   genes: MA0216 or MA0962
-  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_met_L_c[C_c]| => |M_amet_c[C_c]|
-    + |M_pi_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_METGL
+  equation: atp[c] + h2o_c[c] + met_L[c] => amet[c] + pi_c[c] + ppi[c]
+- id: METGL
   name: METGL
   genes: MA2532
-  equation: '|M_h2o_c[C_c]| + |M_met_L_c[C_c]| => |M_2obut_c[C_c]| + |M_ch4s_c[C_c]|
-    + |M_nh4_c[C_c]|'
-- id: R_METS
+  equation: h2o_c[c] + met_L[c] => 2obut[c] + ch4s_c[c] + nh4_c[c]
+- id: METS
   name: METS
   genes: MA0053 or MA0054 or MA3549
-  equation: '|M_5mthf_c[C_c]| + |M_hcys_L_c[C_c]| => |M_met_L_c[C_c]| + |M_thf_c[C_c]|'
-- id: R_METSOXR2
+  equation: 5mthf[c] + hcys_L[c] => met_L[c] + thf[c]
+- id: METSOXR2
   name: METSOXR2
   genes: MA1431
-  equation: '|M_metsox_R_L_c[C_c]| + |M_trdrd_c[C_c]| => |M_h2o_c[C_c]| + |M_trdox_c[C_c]|'
-- id: R_METTRS
+  equation: metsox_R_L[c] + trdrd[c] => h2o_c[c] + trdox[c]
+- id: METTRS
   name: METTRS
   genes: MA4046
-  equation: '|M_atp_c[C_c]| + |M_met_L_c[C_c]| + |M_trnamet_c[C_c]| => |M_amp_c[C_c]|
-    + |M_mettrna_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_MEVK1
+  equation: atp[c] + met_L[c] + trnamet[c] => amp[c] + mettrna[c] + ppi[c]
+- id: MEVK1
   name: MEVK1
   genes: MA0602
-  equation: '|M_atp_c[C_c]| + |M_mev_R_c[C_c]| => |M_5pmev_c[C_c]| + |M_adp_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_MFRBS
+  equation: atp[c] + mev_R[c] => 5pmev[c] + adp[c] + h_c[c]
+- id: MFRBS
   name: MFRBS
-  equation: '|M_4gggaepmamfr_c[C_c]| + |M_glu_L_c[C_c]| => |M_h2o_c[C_c]| + |M_mfr_b__c[C_c]|'
-- id: R_MFRS1
+  equation: 4gggaepmamfr[c] + glu_L_c[c] => h2o_c[c] + mfr_b_[c]
+- id: MFRS1
   name: MFRS1
-  equation: '|M_dhap_c[C_c]| + |M_h2o_c[C_c]| + |M_pep_c[C_c]| => |M_mfrbi1_c[C_c]|'
-- id: R_MFRS10
+  equation: dhap[c] + h2o_c[c] + pep[c] => mfrbi1[c]
+- id: MFRS10
   name: MFRS10
-  equation: '|M_4gaepmamfr_c[C_c]| + |M_glu_L_c[C_c]| => |M_4ggaepmamfr_c[C_c]| +
-    |M_h2o_c[C_c]|'
-- id: R_MFRS11
+  equation: 4gaepmamfr[c] + glu_L_c[c] => 4ggaepmamfr[c] + h2o_c[c]
+- id: MFRS11
   name: MFRS11
-  equation: '|M_4ggaepmamfr_c[C_c]| + |M_glu_L_c[C_c]| => |M_4gggaepmamfr_c[C_c]|
-    + |M_h2o_c[C_c]|'
-- id: R_MFRS2
+  equation: 4ggaepmamfr[c] + glu_L_c[c] => 4gggaepmamfr[c] + h2o_c[c]
+- id: MFRS2
   name: MFRS2
-  equation: '|M_mfrbi1_c[C_c]| => |M_mfrbi2_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_MFRS3
+  equation: mfrbi1[c] => mfrbi2[c] + pi_c[c]
+- id: MFRS3
   name: MFRS3
-  equation: '|M_mfrbi2_c[C_c]| => |M_h2o_c[C_c]| + |M_mfrbi3_c[C_c]|'
-- id: R_MFRS4
+  equation: mfrbi2[c] => h2o_c[c] + mfrbi3[c]
+- id: MFRS4
   name: MFRS4
-  equation: '|M_mfrbi3_c[C_c]| => |M_mfrbi4_c[C_c]|'
-- id: R_MFRS5
+  equation: mfrbi3[c] => mfrbi4[c]
+- id: MFRS5
   name: MFRS5
-  equation: '|M_mfrbi4_c[C_c]| => |M_24sf_c[C_c]| + |M_h2o_c[C_c]|'
-- id: R_MFRS6
+  equation: mfrbi4[c] => 24sf[c] + h2o_c[c]
+- id: MFRS6
   name: MFRS6
-  equation: '|M_24sf_c[C_c]| + |M_atp_c[C_c]| + |M_h_c[C_c]| + |M_nadh_c[C_c]| =>
-    |M_2frald_c[C_c]| + |M_adp_c[C_c]| + |M_nad_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_MFRS7
+  equation: 24sf[c] + atp[c] + h_c[c] + nadh[c] => 2frald[c] + adp[c] + nad[c] +
+    pi_c[c]
+- id: MFRS7
   name: MFRS7
-  equation: '|M_2frald_c[C_c]| + |M_glu_L_c[C_c]| => |M_2mafr_c[C_c]| + |M_akg_c[C_c]|'
-- id: R_MFRS8
+  equation: 2frald[c] + glu_L_c[c] => 2mafr[c] + akg[c]
+- id: MFRS8
   name: MFRS8
-  equation: '|M_2mafr_c[C_c]| + |M_tym_c[C_c]| => |M_aepmamfr_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_MFRS9
+  equation: 2mafr[c] + tym[c] => aepmamfr[c] + pi_c[c]
+- id: MFRS9
   name: MFRS9
-  equation: '|M_aepmamfr_c[C_c]| + |M_glu_L_c[C_c]| => |M_4gaepmamfr_c[C_c]| + |M_h2o_c[C_c]|'
-- id: R_MG2abc
+  equation: aepmamfr[c] + glu_L_c[c] => 4gaepmamfr[c] + h2o_c[c]
+- id: MG2abc
   name: MG2abc
   genes: MA1721
-  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_mg2_e[C_e]| => |M_adp_c[C_c]| +
-    |M_h_c[C_c]| + |M_mg2_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_MGSA2
+  equation: atp[c] + h2o_c[c] + mg2_e[e] => adp[c] + h_c[c] + mg2_c[c] + pi_c[c]
+- id: MGSA2
   name: MGSA2
   genes: MA4607
-  equation: '|M_g3p_c[C_c]| => |M_mthgxl_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_MGt5
+  equation: g3p[c] => mthgxl[c] + pi_c[c]
+- id: MGt5
   name: MGt5
   genes: MA1721
-  equation: '|M_mg2_c[C_c]| <=> |M_mg2_e[C_e]|'
-- id: R_MHPGLUT
+  equation: mg2_c[c] <=> mg2_e[e]
+- id: MHPGLUT
   name: MHPGLUT
   genes: MA0053 or MA0054 or MA3549
-  equation: '|M_hcys_L_c[C_c]| + |M_mhpglu_c[C_c]| => |M_hpglu_c[C_c]| + |M_met_L_c[C_c]|'
-- id: R_MHPGLUT2
+  equation: hcys_L[c] + mhpglu[c] => hpglu[c] + met_L[c]
+- id: MHPGLUT2
   name: MHPGLUT2
   genes: MA0053 or MA0054 or MA3549
-  equation: '|M_ahcys_c[C_c]| + |M_h_c[C_c]| + |M_mhpglu_c[C_c]| => |M_amet_c[C_c]|
-    + |M_hpglu_c[C_c]|'
-- id: R_MI3PP
+  equation: ahcys[c] + h_c[c] + mhpglu[c] => amet[c] + hpglu[c]
+- id: MI3PP
   name: MI3PP
   genes: MA3344
-  equation: '|M_h2o_c[C_c]| + |M_mi3p_D_c[C_c]| => |M_inost_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_MI3PS
+  equation: h2o_c[c] + mi3p_D[c] => inost[c] + pi_c[c]
+- id: MI3PS
   name: MI3PS
   genes: MA0075 or MA2253
-  equation: '|M_g6p_c[C_c]| => |M_mi3p_D_c[C_c]|'
-- id: R_MMAMT
+  equation: g6p[c] => mi3p_D[c]
+- id: MMAMT
   name: MMAMT
   genes: (MA0144 or MA2972) and (MA0145 or MA2971) and MA0146 and (MA0150 or MA0849
     or MA4360)
-  equation: '|M_5hbc_red_c[C_c]| + |M_h_c[C_c]| + |M_mma_c[C_c]| => |M_m5hbc_c[C_c]|
-    + |M_nh4_c[C_c]|'
-- id: R_MMAt
+  equation: 5hbc_red[c] + h_c[c] + mma_c[c] => m5hbc[c] + nh4_c[c]
+- id: MMAt
   name: MMAt
   genes: MA0143
-  equation: '|M_h_e[C_e]| + |M_mma_e[C_e]| <=> |M_h_c[C_c]| + |M_mma_c[C_c]|'
-- id: R_MNabc
+  equation: h_e[e] + mma_e[e] <=> h_c[c] + mma_c[c]
+- id: MNabc
   name: MNabc
   genes: MA0023 and MA0024 and MA0025
-  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_mn2_e[C_e]| => |M_adp_c[C_c]| +
-    |M_h_c[C_c]| + |M_mn2_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_MOBDabc
+  equation: atp[c] + h2o_c[c] + mn2_e[e] => adp[c] + h_c[c] + mn2_c[c] + pi_c[c]
+- id: MOBDabc
   name: MOBDabc
   genes: (MA0280 and MA0281 and MA0282) or (MA0323 and MA0324 and MA0325) or (MA1235
     and MA1236 and MA1237) or (MA2280 and MA2281 and MA2282)
-  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_mobd_e[C_e]| => |M_adp_c[C_c]|
-    + |M_h_c[C_c]| + |M_mobd_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_MOHMT
+  equation: atp[c] + h2o_c[c] + mobd_e[e] => adp[c] + h_c[c] + mobd_c[c] + pi_c[c]
+- id: MOHMT
   name: MOHMT
-  equation: '|M_3mob_c[C_c]| + |M_h2o_c[C_c]| + |M_mlthf_c[C_c]| => |M_2dhp_c[C_c]|
-    + |M_thf_c[C_c]|'
-- id: R_MSS
+  equation: 3mob[c] + h2o_c[c] + mlthf[c] => 2dhp[c] + thf[c]
+- id: MSS
   name: MSS
-  equation: '|M_h2s_c[C_c]| + |M_m5hbc_c[C_c]| => |M_5hbc_red_c[C_c]| + |M_ch4s_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_MTAP
+  equation: h2s_c[c] + m5hbc[c] => 5hbc_red[c] + ch4s_c[c] + h_c[c]
+- id: MTAP
   name: MTAP
   genes: MA1409
-  equation: '|M_5mta_c[C_c]| + |M_pi_c[C_c]| => |M_5mdr1p_c[C_c]| + |M_ade_c[C_c]|'
-- id: R_MTCMMT
+  equation: 5mta[c] + pi_c[c] => 5mdr1p[c] + ade[c]
+- id: MTCMMT
   name: MTCMMT
   genes: (MA0859 or MA4384 or MA4558) and (MA0150 or MA0849 or MA4360)
-  equation: '|M_5hbc_red_c[C_c]| + |M_dms_c[C_c]| + |M_h_c[C_c]| <=> |M_ch4s_c[C_c]|
-    + |M_m5hbc_c[C_c]|'
-- id: R_MTHFC
+  equation: 5hbc_red[c] + dms_c[c] + h_c[c] <=> ch4s_c[c] + m5hbc[c]
+- id: MTHFC
   name: MTHFC
   genes: MA3519
-  equation: '|M_h2o_c[C_c]| + |M_methf_c[C_c]| <=> |M_10fthf_c[C_c]|'
-- id: R_MTHFD2i
+  equation: h2o_c[c] + methf[c] <=> 10fthf[c]
+- id: MTHFD2i
   name: MTHFD2i
   genes: MA3519
-  equation: '|M_mlthf_c[C_c]| + |M_nad_c[C_c]| <=> |M_h_c[C_c]| + |M_methf_c[C_c]|
-    + |M_nadh_c[C_c]|'
-- id: R_MTHFR2
+  equation: mlthf[c] + nad[c] <=> h_c[c] + methf[c] + nadh[c]
+- id: MTHFR2
   name: MTHFR2
   genes: MA3514
-  equation: '|M_h_c[C_c]| + |M_mlthf_c[C_c]| + |M_nadh_c[C_c]| => |M_5mthf_c[C_c]|
-    + |M_nad_c[C_c]|'
-- id: R_MTHFR3
+  equation: h_c[c] + mlthf[c] + nadh[c] => 5mthf[c] + nad[c]
+- id: MTHFR3
   name: MTHFR3
   genes: MA3514
-  equation: '|M_h_c[C_c]| + |M_mlthf_c[C_c]| + |M_nadph_c[C_c]| => |M_5mthf_c[C_c]|
-    + |M_nadp_c[C_c]|'
-- id: R_MTRI
+  equation: h_c[c] + mlthf[c] + nadph[c] => 5mthf[c] + nadp[c]
+- id: MTRI
   name: MTRI
   genes: MA0076
-  equation: '|M_5mdr1p_c[C_c]| <=> |M_5mdru1p_c[C_c]|'
-- id: R_MTR_BYPASS
+  equation: 5mdr1p[c] <=> 5mdru1p[c]
+- id: MTR_BYPASS
   name: MTR_BYPASS
-  equation: '|M_5hbc_red_c[C_c]| + |M_h_c[C_c]| + |M_mh4spt_c[C_c]| => |M_h4spt_c[C_c]|
-    + |M_m5hbc_c[C_c]|'
-- id: R_MTSPC
+  equation: 5hbc_red[c] + h_c[c] + mh4spt[c] => h4spt[c] + m5hbc[c]
+- id: MTSPC
   name: MTSPC
   genes: MA1710
-  equation: '|M_formh4spt_c[C_c]| + |M_h_c[C_c]| <=> |M_h2o_c[C_c]| + |M_menylh4spt_c[C_c]|'
-- id: R_MTSPCMMT
+  equation: formh4spt[c] + h_c[c] <=> h2o_c[c] + menylh4spt[c]
+- id: MTSPCMMT
   name: MTSPCMMT
   genes: (MA0150 or MA0849 or MA4360) and MA0269 and MA0270 and MA0271 and MA0272
     and MA0273 and MA0274 and MA0275 and MA0276
-  equation: '|M_5hbc_red_c[C_c]| + |M_h_c[C_c]| + |M_mh4spt_c[C_c]| + (2) |M_na1_c[C_c]|
-    <=> |M_h4spt_c[C_c]| + |M_m5hbc_c[C_c]| + (2) |M_na1_e[C_e]|'
-- id: R_N2tr
+  equation: 5hbc_red[c] + h_c[c] + mh4spt[c] + (2) na1_c[c] <=> h4spt[c] + m5hbc[c]
+    + (2) na1_e[e]
+- id: N2tr
   name: N2tr
-  equation: '|M_n2_e[C_e]| <=> |M_n2_c[C_c]|'
-- id: R_NACUP
+  equation: n2_e[e] <=> n2_c[c]
+- id: NACUP
   name: NACUP
-  equation: '|M_nac_e[C_e]| => |M_nac_c[C_c]|'
-- id: R_NADDP
+  equation: nac_e[e] => nac_c[c]
+- id: NADDP
   name: NADDP
   genes: MA1439
-  equation: '|M_h2o_c[C_c]| + |M_nad_c[C_c]| => |M_amp_c[C_c]| + (2) |M_h_c[C_c]|
-    + |M_nmn_c[C_c]|'
-- id: R_NADK
+  equation: h2o_c[c] + nad[c] => amp[c] + (2) h_c[c] + nmn[c]
+- id: NADK
   name: NADK
   genes: MA3343
-  equation: '|M_atp_c[C_c]| + |M_nad_c[C_c]| => |M_adp_c[C_c]| + |M_h_c[C_c]| + |M_nadp_c[C_c]|'
-- id: R_NADS1
+  equation: atp[c] + nad[c] => adp[c] + h_c[c] + nadp[c]
+- id: NADS1
   name: NADS1
   genes: MA1030 or MA3526 or MA3715
-  equation: '|M_atp_c[C_c]| + |M_dnad_c[C_c]| + |M_nh4_c[C_c]| => |M_amp_c[C_c]|
-    + |M_h_c[C_c]| + |M_nad_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_NADS2
+  equation: atp[c] + dnad[c] + nh4_c[c] => amp[c] + h_c[c] + nad[c] + ppi[c]
+- id: NADS2
   name: NADS2
   genes: MA1030 or MA3526 or MA3715
-  equation: '|M_atp_c[C_c]| + |M_dnad_c[C_c]| + |M_gln_L_c[C_c]| + |M_h2o_c[C_c]|
-    => |M_amp_c[C_c]| + |M_glu_L_c[C_c]| + |M_h_c[C_c]| + |M_nad_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_NAPRTr
+  equation: atp[c] + dnad[c] + gln_L[c] + h2o_c[c] => amp[c] + glu_L_c[c] + h_c[c]
+    + nad[c] + ppi[c]
+- id: NAPRTr
   name: NAPRTr
   genes: MA2533
-  equation: '|M_nicrnt_c[C_c]| + |M_ppi_c[C_c]| <=> |M_h_c[C_c]| + |M_nac_c[C_c]|
-    + |M_prpp_c[C_c]|'
-- id: R_NAt3_1
+  equation: nicrnt[c] + ppi[c] <=> h_c[c] + nac_c[c] + prpp[c]
+- id: NAt3_1
   name: NAt3_1
   genes: (MA4566 and MA4567 and MA4568 and MA4569 and MA4570 and MA4572 and MA4665)
     or MA2633
-  equation: '|M_h_e[C_e]| + |M_na1_c[C_c]| <=> |M_h_c[C_c]| + |M_na1_e[C_e]|'
-- id: R_NBAHH
+  equation: h_e[e] + na1_c[c] <=> h_c[c] + na1_e[e]
+- id: NBAHH
   name: NBAHH
   genes: MA2653
-  equation: '|M_carn_c[C_c]| + |M_h2o_c[C_c]| <=> |M_ala_B_c[C_c]| + |M_h_c[C_c]|
-    + |M_his_L_c[C_c]|'
-- id: R_NCCt
+  equation: carn[c] + h2o_c[c] <=> ala_B[c] + h_c[c] + his_L[c]
+- id: NCCt
   name: NCCt
   genes: MA4506
-  equation: '|M_cl_c[C_c]| + |M_na1_e[C_e]| => |M_cl_e[C_e]| + |M_na1_c[C_c]|'
-- id: R_NDPK1
+  equation: cl_c[c] + na1_e[e] => cl_e[e] + na1_c[c]
+- id: NDPK1
   name: NDPK1
   genes: MA1524
-  equation: '|M_atp_c[C_c]| + |M_gdp_c[C_c]| <=> |M_adp_c[C_c]| + |M_gtp_c[C_c]|'
-- id: R_NDPK10
+  equation: atp[c] + gdp[c] <=> adp[c] + gtp[c]
+- id: NDPK10
   name: NDPK10
   genes: MA1524
-  equation: '|M_atp_c[C_c]| + |M_didp_c[C_c]| <=> |M_adp_c[C_c]| + |M_ditp_c[C_c]|'
-- id: R_NDPK2
+  equation: atp[c] + didp[c] <=> adp[c] + ditp[c]
+- id: NDPK2
   name: NDPK2
   genes: MA1524
-  equation: '|M_atp_c[C_c]| + |M_udp_c[C_c]| <=> |M_adp_c[C_c]| + |M_utp_c[C_c]|'
-- id: R_NDPK3
+  equation: atp[c] + udp[c] <=> adp[c] + utp[c]
+- id: NDPK3
   name: NDPK3
   genes: MA1524
-  equation: '|M_atp_c[C_c]| + |M_cdp_c[C_c]| <=> |M_adp_c[C_c]| + |M_ctp_c[C_c]|'
-- id: R_NDPK4
+  equation: atp[c] + cdp[c] <=> adp[c] + ctp[c]
+- id: NDPK4
   name: NDPK4
   genes: MA1524
-  equation: '|M_atp_c[C_c]| + |M_dtdp_c[C_c]| <=> |M_adp_c[C_c]| + |M_dttp_c[C_c]|'
-- id: R_NDPK5
+  equation: atp[c] + dtdp[c] <=> adp[c] + dttp[c]
+- id: NDPK5
   name: NDPK5
   genes: MA1524
-  equation: '|M_atp_c[C_c]| + |M_dgdp_c[C_c]| <=> |M_adp_c[C_c]| + |M_dgtp_c[C_c]|'
-- id: R_NDPK6
+  equation: atp[c] + dgdp[c] <=> adp[c] + dgtp[c]
+- id: NDPK6
   name: NDPK6
   genes: MA1524
-  equation: '|M_atp_c[C_c]| + |M_dudp_c[C_c]| <=> |M_adp_c[C_c]| + |M_dutp_c[C_c]|'
-- id: R_NDPK7
+  equation: atp[c] + dudp[c] <=> adp[c] + dutp[c]
+- id: NDPK7
   name: NDPK7
   genes: MA1524
-  equation: '|M_atp_c[C_c]| + |M_dcdp_c[C_c]| <=> |M_adp_c[C_c]| + |M_dctp_c[C_c]|'
-- id: R_NDPK8
+  equation: atp[c] + dcdp[c] <=> adp[c] + dctp[c]
+- id: NDPK8
   name: NDPK8
   genes: MA1524
-  equation: '|M_atp_c[C_c]| + |M_dadp_c[C_c]| <=> |M_adp_c[C_c]| + |M_datp_c[C_c]|'
-- id: R_NDPK9
+  equation: atp[c] + dadp[c] <=> adp[c] + datp[c]
+- id: NDPK9
   name: NDPK9
   genes: MA1524
-  equation: '|M_atp_c[C_c]| + |M_idp_c[C_c]| <=> |M_adp_c[C_c]| + |M_itp_c[C_c]|'
-- id: R_NH4t
+  equation: atp[c] + idp[c] <=> adp[c] + itp[c]
+- id: NH4t
   name: NH4t
   genes: (MA3917 or MA3918) and MA4207
-  equation: '|M_nh4_e[C_e]| <=> |M_nh4_c[C_c]|'
-- id: R_NIT_n1p4
+  equation: nh4_e[e] <=> nh4_c[c]
+- id: NIT_n1p4
   name: NIT_n1p4
   genes: (MA1208 and MA1209 and MA1210) or ((MA1205 or MA1213 or MA1633 or MA2032
     or MA3627 or MA3895) and (MA1212 or MA1214 or MA3896) and (MA1211 or MA1215 or
     MA3897) and MA3898 and MA3899 and MA4195 and MA3900 and MA3901 and (MA2717 or
     MA3265)) or (MA1217 and MA1216 and MA1218 and (MA1219 or MA1631) and (MA1220
     or MA1632))
-  equation: (16) |M_atp_c[C_c]| + (8) |M_fdred_c[C_c]| + (16) |M_h2o_c[C_c]| + |M_n2_c[C_c]|
-    => (16) |M_adp_c[C_c]| + (8) |M_fdox_c[C_c]| + |M_h2_c[C_c]| + (6) |M_h_c[C_c]|
-    + (2) |M_nh4_c[C_c]| + (16) |M_pi_c[C_c]|
-- id: R_NIabc
+  equation: (16) atp[c] + (8) fdred[c] + (16) h2o_c[c] + n2_c[c] => (16) adp[c] +
+    (8) fdox[c] + h2_c[c] + (6) h_c[c] + (2) nh4_c[c] + (16) pi_c[c]
+- id: NIabc
   name: NIabc
   genes: MA3455 and (MA3456 or MA3457) and (MA3458 or MA4673)
-  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_ni2_e[C_e]| => |M_adp_c[C_c]| +
-    |M_h_c[C_c]| + |M_ni2_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_NIt5
+  equation: atp[c] + h2o_c[c] + ni2_e[e] => adp[c] + h_c[c] + ni2_c[c] + pi_c[c]
+- id: NIt5
   name: NIt5
   genes: MA1721
-  equation: '|M_ni2_c[C_c]| <=> |M_ni2_e[C_e]|'
-- id: R_NMNAT
+  equation: ni2_c[c] <=> ni2_e[e]
+- id: NMNAT
   name: NMNAT
   genes: MA3731
-  equation: '|M_atp_c[C_c]| + |M_h_c[C_c]| + |M_nmn_c[C_c]| <=> |M_nad_c[C_c]| +
-    |M_ppi_c[C_c]|'
-- id: R_NMNHYD
+  equation: atp[c] + h_c[c] + nmn[c] <=> nad[c] + ppi[c]
+- id: NMNHYD
   name: NMNHYD
   genes: MA0104
-  equation: '|M_h2o_c[C_c]| + |M_nmn_c[C_c]| => |M_pi_c[C_c]| + |M_rnam_c[C_c]|'
-- id: R_NN5HBPRT
+  equation: h2o_c[c] + nmn[c] => pi_c[c] + rnam[c]
+- id: NN5HBPRT
   name: NN5HBPRT
-  equation: '|M_5hbzid_c[C_c]| + |M_nicrnt_c[C_c]| => |M_5pr5hbz_c[C_c]| + |M_h_c[C_c]|
-    + |M_nac_c[C_c]|'
-- id: R_NNAT
+  equation: 5hbzid[c] + nicrnt[c] => 5pr5hbz[c] + h_c[c] + nac_c[c]
+- id: NNAT
   name: NNAT
   genes: MA3731
-  equation: '|M_atp_c[C_c]| + |M_h_c[C_c]| + |M_nicrnt_c[C_c]| => |M_dnad_c[C_c]|
-    + |M_ppi_c[C_c]|'
-- id: R_NNDPR
+  equation: atp[c] + h_c[c] + nicrnt[c] => dnad[c] + ppi[c]
+- id: NNDPR
   name: NNDPR
   genes: MA0322 or MA0955
-  equation: (2) |M_h_c[C_c]| + |M_prpp_c[C_c]| + |M_quln_c[C_c]| => |M_co2_c[C_c]|
-    + |M_nicrnt_c[C_c]| + |M_ppi_c[C_c]|
-- id: R_NT5C
+  equation: (2) h_c[c] + prpp[c] + quln[c] => co2_c[c] + nicrnt[c] + ppi[c]
+- id: NT5C
   name: NT5C
   genes: MA0104
-  equation: '|M_h2o_c[C_c]| + |M_nicrnt_c[C_c]| <=> |M_nicrns_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_NTD1
+  equation: h2o_c[c] + nicrnt[c] <=> nicrns[c] + pi_c[c]
+- id: NTD1
   name: NTD1
   genes: MA0104
-  equation: '|M_dump_c[C_c]| + |M_h2o_c[C_c]| => |M_duri_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_NTD10
+  equation: dump[c] + h2o_c[c] => duri[c] + pi_c[c]
+- id: NTD10
   name: NTD10
   genes: MA0104
-  equation: '|M_h2o_c[C_c]| + |M_xmp_c[C_c]| => |M_pi_c[C_c]| + |M_xtsn_c[C_c]|'
-- id: R_NTD11
+  equation: h2o_c[c] + xmp[c] => pi_c[c] + xtsn[c]
+- id: NTD11
   name: NTD11
   genes: MA0104
-  equation: '|M_h2o_c[C_c]| + |M_imp_c[C_c]| => |M_ins_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_NTD2
+  equation: h2o_c[c] + imp[c] => ins[c] + pi_c[c]
+- id: NTD2
   name: NTD2
   genes: MA0104
-  equation: '|M_h2o_c[C_c]| + |M_ump_c[C_c]| => |M_pi_c[C_c]| + |M_uri_c[C_c]|'
-- id: R_NTD3
+  equation: h2o_c[c] + ump[c] => pi_c[c] + uri[c]
+- id: NTD3
   name: NTD3
   genes: MA0104
-  equation: '|M_dcmp_c[C_c]| + |M_h2o_c[C_c]| => |M_dcyt_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_NTD4
+  equation: dcmp[c] + h2o_c[c] => dcyt[c] + pi_c[c]
+- id: NTD4
   name: NTD4
   genes: MA0104
-  equation: '|M_cmp_c[C_c]| + |M_h2o_c[C_c]| => |M_cytd_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_NTD5
+  equation: cmp[c] + h2o_c[c] => cytd[c] + pi_c[c]
+- id: NTD5
   name: NTD5
   genes: MA0104
-  equation: '|M_dtmp_c[C_c]| + |M_h2o_c[C_c]| => |M_pi_c[C_c]| + |M_thymd_c[C_c]|'
-- id: R_NTD6
+  equation: dtmp[c] + h2o_c[c] => pi_c[c] + thymd[c]
+- id: NTD6
   name: NTD6
   genes: MA0104
-  equation: '|M_damp_c[C_c]| + |M_h2o_c[C_c]| <=> |M_dad_2_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_NTD7
+  equation: damp[c] + h2o_c[c] <=> dad_2[c] + pi_c[c]
+- id: NTD7
   name: NTD7
   genes: MA0104
-  equation: '|M_amp_c[C_c]| + |M_h2o_c[C_c]| => |M_adn_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_NTD8
+  equation: amp[c] + h2o_c[c] => adn[c] + pi_c[c]
+- id: NTD8
   name: NTD8
   genes: MA0104
-  equation: '|M_dgmp_c[C_c]| + |M_h2o_c[C_c]| <=> |M_dgsn_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_NTD9
+  equation: dgmp[c] + h2o_c[c] <=> dgsn[c] + pi_c[c]
+- id: NTD9
   name: NTD9
   genes: MA0104
-  equation: '|M_gmp_c[C_c]| + |M_h2o_c[C_c]| => |M_gsn_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_NTP1
+  equation: gmp[c] + h2o_c[c] => gsn[c] + pi_c[c]
+- id: NTP1
   name: NTP1
   genes: MA3706
-  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| => |M_adp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_NTP2
+  equation: atp[c] + h2o_c[c] => adp[c] + h_c[c] + pi_c[c]
+- id: NTP2
   name: NTP2
   genes: MA3706
-  equation: '|M_datp_c[C_c]| + |M_h2o_c[C_c]| => |M_dadp_c[C_c]| + |M_h_c[C_c]| +
-    |M_pi_c[C_c]|'
-- id: R_NTP3
+  equation: datp[c] + h2o_c[c] => dadp[c] + h_c[c] + pi_c[c]
+- id: NTP3
   name: NTP3
   genes: MA3706
-  equation: '|M_gtp_c[C_c]| + |M_h2o_c[C_c]| => |M_gdp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_NTP4
+  equation: gtp[c] + h2o_c[c] => gdp[c] + h_c[c] + pi_c[c]
+- id: NTP4
   name: NTP4
   genes: MA3706
-  equation: '|M_dgtp_c[C_c]| + |M_h2o_c[C_c]| => |M_dgdp_c[C_c]| + |M_h_c[C_c]| +
-    |M_pi_c[C_c]|'
-- id: R_NTP5
+  equation: dgtp[c] + h2o_c[c] => dgdp[c] + h_c[c] + pi_c[c]
+- id: NTP5
   name: NTP5
   genes: MA3706
-  equation: '|M_ctp_c[C_c]| + |M_h2o_c[C_c]| => |M_cdp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_NTP6
+  equation: ctp[c] + h2o_c[c] => cdp[c] + h_c[c] + pi_c[c]
+- id: NTP6
   name: NTP6
   genes: MA3706
-  equation: '|M_dctp_c[C_c]| + |M_h2o_c[C_c]| => |M_dcdp_c[C_c]| + |M_h_c[C_c]| +
-    |M_pi_c[C_c]|'
-- id: R_NTP7
+  equation: dctp[c] + h2o_c[c] => dcdp[c] + h_c[c] + pi_c[c]
+- id: NTP7
   name: NTP7
   genes: MA3706
-  equation: '|M_h2o_c[C_c]| + |M_utp_c[C_c]| => |M_h_c[C_c]| + |M_pi_c[C_c]| + |M_udp_c[C_c]|'
-- id: R_NTP8
+  equation: h2o_c[c] + utp[c] => h_c[c] + pi_c[c] + udp[c]
+- id: NTP8
   name: NTP8
   genes: MA3706
-  equation: '|M_dutp_c[C_c]| + |M_h2o_c[C_c]| => |M_dudp_c[C_c]| + |M_h_c[C_c]| +
-    |M_pi_c[C_c]|'
-- id: R_NTP9
+  equation: dutp[c] + h2o_c[c] => dudp[c] + h_c[c] + pi_c[c]
+- id: NTP9
   name: NTP9
   genes: MA3706
-  equation: '|M_dttp_c[C_c]| + |M_h2o_c[C_c]| => |M_dtdp_c[C_c]| + |M_h_c[C_c]| +
-    |M_pi_c[C_c]|'
-- id: R_NTPP11
+  equation: dttp[c] + h2o_c[c] => dtdp[c] + h_c[c] + pi_c[c]
+- id: NTPP11
   name: NTPP11
   genes: MA3706
-  equation: '|M_h2o_c[C_c]| + |M_xtp_c[C_c]| => |M_h_c[C_c]| + |M_ppi_c[C_c]| + |M_xmp_c[C_c]|'
-- id: R_NTPTP1
+  equation: h2o_c[c] + xtp[c] => h_c[c] + ppi[c] + xmp[c]
+- id: NTPTP1
   name: NTPTP1
   genes: MA0713
-  equation: '|M_dgtp_c[C_c]| + |M_h2o_c[C_c]| => |M_dgsn_c[C_c]| + |M_pppi_c[C_c]|'
-- id: R_NTRIR2x
+  equation: dgtp[c] + h2o_c[c] => dgsn[c] + pppi[c]
+- id: NTRIR2x
   name: NTRIR2x
   genes: MA0685 or MA3167
-  equation: (5) |M_h_c[C_c]| + (3) |M_nadh_c[C_c]| + |M_no2_c[C_c]| => (2) |M_h2o_c[C_c]|
-    + (3) |M_nad_c[C_c]| + |M_nh4_c[C_c]|
-- id: R_NTRIR2y
+  equation: (5) h_c[c] + (3) nadh[c] + no2[c] => (2) h2o_c[c] + (3) nad[c] + nh4_c[c]
+- id: NTRIR2y
   name: NTRIR2y
   genes: MA0685 or MA3167
-  equation: (5) |M_h_c[C_c]| + (3) |M_nadh_c[C_c]| + |M_no2_c[C_c]| => (2) |M_h2o_c[C_c]|
-    + (3) |M_nad_c[C_c]| + |M_nh4_c[C_c]|
-- id: R_NaKt_1
+  equation: (5) h_c[c] + (3) nadh[c] + no2[c] => (2) h2o_c[c] + (3) nad[c] + nh4_c[c]
+- id: NaKt_1
   name: NaKt_1
   genes: MA4378
-  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_k_e[C_e]| + |M_na1_c[C_c]| => |M_adp_c[C_c]|
-    + |M_h_c[C_c]| + |M_k_c[C_c]| + |M_na1_e[C_e]| + |M_pi_c[C_c]|'
-- id: R_Naabc
+  equation: atp[c] + h2o_c[c] + k_e[e] + na1_c[c] => adp[c] + h_c[c] + k_c[c] + na1_e[e]
+    + pi_c[c]
+- id: Naabc
   name: Naabc
   genes: MA2433 and MA2434 and MA2435 and MA2436 and MA2437 and MA2438 and MA2439
     and MA2440 and MA2441
-  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_na1_c[C_c]| => |M_adp_c[C_c]| +
-    |M_h_c[C_c]| + |M_na1_e[C_e]| + |M_pi_c[C_c]|'
-- id: R_OCBT
+  equation: atp[c] + h2o_c[c] + na1_c[c] => adp[c] + h_c[c] + na1_e[e] + pi_c[c]
+- id: OCBT
   name: OCBT
   genes: MA3310
-  equation: '|M_cbp_c[C_c]| + |M_orn_c[C_c]| <=> |M_citr_L_c[C_c]| + |M_h_c[C_c]|
-    + |M_pi_c[C_c]|'
-- id: R_OCTDPSYN
+  equation: cbp[c] + orn[c] <=> citr_L[c] + h_c[c] + pi_c[c]
+- id: OCTDPSYN
   name: OCTDPSYN
   genes: MA4150
-  equation: '|M_hepdp_c[C_c]| + |M_ipdp_c[C_c]| => |M_octdp_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_OMCDC
+  equation: hepdp[c] + ipdp[c] => octdp[c] + ppi[c]
+- id: OMCDC
   name: OMCDC
-  equation: '|M_3c4mop_c[C_c]| + |M_h_c[C_c]| => |M_4mop_c[C_c]| + |M_co2_c[C_c]|'
-- id: R_OMPDC
+  equation: 3c4mop[c] + h_c[c] => 4mop[c] + co2_c[c]
+- id: OMPDC
   name: OMPDC
   genes: MA0969
-  equation: '|M_h_c[C_c]| + |M_orot5p_c[C_c]| => |M_co2_c[C_c]| + |M_ump_c[C_c]|'
-- id: R_OORr
+  equation: h_c[c] + orot5p[c] => co2_c[c] + ump[c]
+- id: OORr
   name: OORr
   genes: MA3075 and MA3076
-  equation: '|M_akg_c[C_c]| + |M_coa_c[C_c]| + (2) |M_fdox_c[C_c]| <=> |M_co2_c[C_c]|
-    + (2) |M_fdred_c[C_c]| + |M_h_c[C_c]| + |M_succoa_c[C_c]|'
-- id: R_OPAH
+  equation: akg[c] + coa[c] + (2) fdox[c] <=> co2_c[c] + (2) fdred[c] + h_c[c] +
+    succoa[c]
+- id: OPAH
   name: OPAH
   genes: MA2300
-  equation: '|M_5oxpro_c[C_c]| + |M_atp_c[C_c]| + (2) |M_h2o_c[C_c]| <=> |M_adp_c[C_c]|
-    + |M_glu_L_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_ORNCD
+  equation: 5oxpro[c] + atp[c] + (2) h2o_c[c] <=> adp[c] + glu_L_c[c] + h_c[c] +
+    pi_c[c]
+- id: ORNCD
   name: ORNCD
   genes: MA3252
-  equation: '|M_orn_c[C_c]| => |M_nh4_c[C_c]| + |M_pro_L_c[C_c]|'
-- id: R_ORNDC
+  equation: orn[c] => nh4_c[c] + pro_L_c[c]
+- id: ORNDC
   name: ORNDC
   genes: MA2728
-  equation: '|M_h_c[C_c]| + |M_orn_c[C_c]| => |M_co2_c[C_c]| + |M_ptrc_c[C_c]|'
-- id: R_ORNTAC
+  equation: h_c[c] + orn[c] => co2_c[c] + ptrc[c]
+- id: ORNTAC
   name: ORNTAC
   genes: MA3564
-  equation: '|M_acorn_c[C_c]| + |M_glu_L_c[C_c]| <=> |M_acglu_c[C_c]| + |M_orn_c[C_c]|'
-- id: R_ORPT
+  equation: acorn[c] + glu_L_c[c] <=> acglu[c] + orn[c]
+- id: ORPT
   name: ORPT
   genes: MA0919 or MA2520 or MA3307
-  equation: '|M_orot5p_c[C_c]| + |M_ppi_c[C_c]| <=> |M_orot_c[C_c]| + |M_prpp_c[C_c]|'
-- id: R_OSUCCL
+  equation: orot5p[c] + ppi[c] <=> orot[c] + prpp[c]
+- id: OSUCCL
   name: OSUCCL
   genes: MA4265
-  equation: '|M_h_c[C_c]| + |M_osuc_c[C_c]| => |M_akg_c[C_c]| + |M_co2_c[C_c]|'
-- id: R_OXADC
+  equation: h_c[c] + osuc[c] => akg[c] + co2_c[c]
+- id: OXADC
   name: OXADC
   genes: MA2076
-  equation: '|M_h_c[C_c]| + |M_oxa_c[C_c]| => |M_co2_c[C_c]| + |M_for_c[C_c]|'
-- id: R_P5CRx
+  equation: h_c[c] + oxa[c] => co2_c[c] + for_c[c]
+- id: P5CRx
   name: P5CRx
   genes: MA0152 or MA4102
-  equation: '|M_nad_c[C_c]| + |M_pro_L_c[C_c]| <=> |M_1pyr5c_c[C_c]| + (2) |M_h_c[C_c]|
-    + |M_nadh_c[C_c]|'
-- id: R_P5CRy
+  equation: nad[c] + pro_L_c[c] <=> 1pyr5c[c] + (2) h_c[c] + nadh[c]
+- id: P5CRy
   name: P5CRy
   genes: MA0152 or MA4102
-  equation: '|M_nadp_c[C_c]| + |M_pro_L_c[C_c]| <=> |M_1pyr5c_c[C_c]| + (2) |M_h_c[C_c]|
-    + |M_nadph_c[C_c]|'
-- id: R_PACCOAL
+  equation: nadp[c] + pro_L_c[c] <=> 1pyr5c[c] + (2) h_c[c] + nadph[c]
+- id: PACCOAL
   name: PACCOAL
   genes: MA2244 or MA3853
-  equation: '|M_atp_c[C_c]| + |M_coa_c[C_c]| + |M_pac_c[C_c]| => |M_amp_c[C_c]| +
-    |M_phaccoa_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_PACCOAL2
+  equation: atp[c] + coa[c] + pac_c[c] => amp[c] + phaccoa[c] + ppi[c]
+- id: PACCOAL2
   name: PACCOAL2
   genes: MA2244 or MA3853
-  equation: '|M_4hphac_c[C_c]| + |M_atp_c[C_c]| + |M_coa_c[C_c]| => |M_amp_c[C_c]|
-    + |M_hphaccoa_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_PACCOAL3
+  equation: 4hphac_c[c] + atp[c] + coa[c] => amp[c] + hphaccoa[c] + ppi[c]
+- id: PACCOAL3
   name: PACCOAL3
   genes: MA2244 or MA3853
-  equation: '|M_atp_c[C_c]| + |M_coa_c[C_c]| + |M_ind3ac_c[C_c]| => |M_amp_c[C_c]|
-    + |M_indaccoa_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_PACt2r
+  equation: atp[c] + coa[c] + ind3ac_c[c] => amp[c] + indaccoa[c] + ppi[c]
+- id: PACt2r
   name: PACt2r
-  equation: '|M_h_e[C_e]| + |M_pac_e[C_e]| <=> |M_h_c[C_c]| + |M_pac_c[C_c]|'
-- id: R_PAPSR
+  equation: h_e[e] + pac_e[e] <=> h_c[c] + pac_c[c]
+- id: PAPSR
   name: PAPSR
   genes: MA2894
-  equation: '|M_paps_c[C_c]| + |M_trdrd_c[C_c]| => (2) |M_h_c[C_c]| + |M_pap_c[C_c]|
-    + |M_so3_c[C_c]| + |M_trdox_c[C_c]|'
-- id: R_PC
+  equation: paps[c] + trdrd[c] => (2) h_c[c] + pap[c] + so3[c] + trdox[c]
+- id: PC
   name: PC
   genes: MA0674 and MA0675
-  equation: '|M_atp_c[C_c]| + |M_hco3_c[C_c]| + |M_pyr_c[C_c]| => |M_adp_c[C_c]|
-    + |M_h_c[C_c]| + |M_oaa_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_PFK__adp
+  equation: atp[c] + hco3_c[c] + pyr_c[c] => adp[c] + h_c[c] + oaa[c] + pi_c[c]
+- id: PFK__adp
   name: PFK__adp_
   genes: MA3563
-  equation: '|M_adp_c[C_c]| + |M_f6p_c[C_c]| => |M_amp_c[C_c]| + |M_fdp_c[C_c]| +
-    |M_h_c[C_c]|'
-- id: R_PGAMS
+  equation: adp[c] + f6p[c] => amp[c] + fdp[c] + h_c[c]
+- id: PGAMS
   name: PGAMS
-  equation: '|M_uacgam_c[C_c]| => |M_h_c[C_c]| + |M_polyacgal_c[C_c]| + |M_udp_c[C_c]|'
-- id: R_PGAMT
+  equation: uacgam[c] => h_c[c] + polyacgal[c] + udp[c]
+- id: PGAMT
   name: PGAMT
   genes: MA3024
-  equation: '|M_gam6p_c[C_c]| <=> |M_gam1p_c[C_c]|'
-- id: R_PGCD
+  equation: gam6p[c] <=> gam1p[c]
+- id: PGCD
   name: PGCD
   genes: MA0592
-  equation: '|M_3pg_c[C_c]| + |M_nad_c[C_c]| <=> |M_3php_c[C_c]| + |M_h_c[C_c]| +
-    |M_nadh_c[C_c]|'
-- id: R_PGI
+  equation: 3pg[c] + nad[c] <=> 3php[c] + h_c[c] + nadh[c]
+- id: PGI
   name: PGI
   genes: MA0821
-  equation: '|M_g6p_c[C_c]| <=> |M_f6p_c[C_c]|'
-- id: R_PGK
+  equation: g6p[c] <=> f6p[c]
+- id: PGK
   name: PGK
   genes: MA2669 or MA3592
-  equation: '|M_3pg_c[C_c]| + |M_atp_c[C_c]| <=> |M_13dpg_c[C_c]| + |M_adp_c[C_c]|'
-- id: R_PGLCURS
+  equation: 3pg[c] + atp[c] <=> 13dpg[c] + adp[c]
+- id: PGLCURS
   name: PGLCURS
-  equation: '|M_udpglcur_c[C_c]| => |M_h_c[C_c]| + |M_polyglcur_c[C_c]| + |M_udp_c[C_c]|'
-- id: R_PGLYCP
+  equation: udpglcur[c] => h_c[c] + polyglcur[c] + udp[c]
+- id: PGLYCP
   name: PGLYCP
   genes: MA3544
-  equation: '|M_2pglyc_c[C_c]| + |M_h2o_c[C_c]| => |M_glyclt_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_PGM
+  equation: 2pglyc[c] + h2o_c[c] => glyclt[c] + pi_c[c]
+- id: PGM
   name: PGM
   genes: MA0132 or MA2400 or MA2671 or MA4007
-  equation: '|M_2pg_c[C_c]| <=> |M_3pg_c[C_c]|'
-- id: R_PGMT
+  equation: 2pg[c] <=> 3pg[c]
+- id: PGMT
   name: PGMT
   genes: MA0451 or MA2665
-  equation: '|M_g1p_c[C_c]| <=> |M_g6p_c[C_c]|'
-- id: R_PHEMES
+  equation: g1p[c] <=> g6p[c]
+- id: PHEMES
   name: PHEMES
-  equation: '|M_ddcdscl_c[C_c]| + |M_fe2_c[C_c]| + (3) |M_nad_c[C_c]| => (2) |M_ac_c[C_c]|
-    + (2) |M_co2_c[C_c]| + (4) |M_h_c[C_c]| + (3) |M_nadh_c[C_c]| + |M_pheme_c[C_c]|'
-- id: R_PHETA1
+  equation: ddcdscl[c] + fe2_c[c] + (3) nad[c] => (2) ac_c[c] + (2) co2_c[c] + (4)
+    h_c[c] + (3) nadh[c] + pheme[c]
+- id: PHETA1
   name: PHETA1
   genes: MA0636 or MA1385 or MA1819
-  equation: '|M_akg_c[C_c]| + |M_phe_L_c[C_c]| <=> |M_glu_L_c[C_c]| + |M_phpyr_c[C_c]|'
-- id: R_PHETRS
+  equation: akg[c] + phe_L[c] <=> glu_L_c[c] + phpyr[c]
+- id: PHETRS
   name: PHETRS
   genes: MA0171 and MA1956
-  equation: '|M_atp_c[C_c]| + |M_phe_L_c[C_c]| + |M_trnaphe_c[C_c]| => |M_amp_c[C_c]|
-    + |M_phetrna_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_PIabc
+  equation: atp[c] + phe_L[c] + trnaphe[c] => amp[c] + phetrna[c] + ppi[c]
+- id: PIabc
   name: PIabc
   genes: (MA0887 and MA0888 and MA0889 and MA0890) or (MA3093 and MA3094 and MA3095)
-  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_pi_e[C_e]| => |M_adp_c[C_c]| +
-    |M_h_c[C_c]| + (2) |M_pi_c[C_c]|'
-- id: R_PIt
+  equation: atp[c] + h2o_c[c] + pi_e[e] => adp[c] + h_c[c] + (2) pi_c[c]
+- id: PIt
   name: PIt
   genes: MA2935 or MA3014
-  equation: '|M_h_e[C_e]| + |M_pi_e[C_e]| => |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_PMANM
+  equation: h_e[e] + pi_e[e] => h_c[c] + pi_c[c]
+- id: PMANM
   name: PMANM
   genes: MA0241 or MA2665
-  equation: '|M_man6p_c[C_c]| <=> |M_man1p_c[C_c]|'
-- id: R_PMDPHT
+  equation: man6p[c] <=> man1p[c]
+- id: PMDPHT
   name: PMDPHT
-  equation: '|M_5aprbu_c[C_c]| + |M_h2o_c[C_c]| => |M_4r5au_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_PMPK
+  equation: 5aprbu[c] + h2o_c[c] => 4r5au[c] + pi_c[c]
+- id: PMPK
   name: PMPK
   genes: MA3197
-  equation: '|M_4ampm_c[C_c]| + |M_atp_c[C_c]| <=> |M_2mahmp_c[C_c]| + |M_adp_c[C_c]|'
-- id: R_PMVD
+  equation: 4ampm[c] + atp[c] <=> 2mahmp[c] + adp[c]
+- id: PMVD
   name: PMVD
   genes: MA0601
-  equation: '|M_5pmev_c[C_c]| + |M_h_c[C_c]| => |M_co2_c[C_c]| + |M_h2o_c[C_c]| +
-    |M_ipp_c[C_c]|'
-- id: R_PNTOt2
+  equation: 5pmev[c] + h_c[c] => co2_c[c] + h2o_c[c] + ipp[c]
+- id: PNTOt2
   name: PNTOt2
-  equation: '|M_h_e[C_e]| + |M_pnto_R_e[C_e]| <=> |M_h_c[C_c]| + |M_pnto_R_c[C_c]|'
-- id: R_POK
+  equation: h_e[e] + pnto_R_e[e] <=> h_c[c] + pnto_R_c[c]
+- id: POK
   name: POK
   genes: MA1278
-  equation: '|M_atp_c[C_c]| + |M_pant_R_c[C_c]| => |M_adp_c[C_c]| + |M_h_c[C_c]|
-    + |M_ppant_R_c[C_c]|'
-- id: R_POR2
+  equation: atp[c] + pant_R[c] => adp[c] + h_c[c] + ppant_R[c]
+- id: POR2
   name: POR2
   genes: MA0032 and (MA0031 or MA2407) and MA0033 and MA0034
-  equation: '|M_accoa_c[C_c]| + |M_co2_c[C_c]| + (2) |M_fdred_c[C_c]| + |M_h_c[C_c]|
-    <=> |M_coa_c[C_c]| + (2) |M_fdox_c[C_c]| + |M_pyr_c[C_c]|'
-- id: R_POR3
+  equation: accoa[c] + co2_c[c] + (2) fdred[c] + h_c[c] <=> coa[c] + (2) fdox[c]
+    + pyr_c[c]
+- id: POR3
   name: POR3
   genes: (MA0032 and (MA0031 or MA2407) and MA0033 and MA0034) or (MA2909 and MA2910
     and MA2911)
-  equation: '|M_co2_c[C_c]| + (2) |M_fdred_c[C_c]| + |M_h_c[C_c]| + |M_ppcoa_c[C_c]|
-    <=> |M_2obut_c[C_c]| + |M_coa_c[C_c]| + (2) |M_fdox_c[C_c]|'
-- id: R_PPA
+  equation: co2_c[c] + (2) fdred[c] + h_c[c] + ppcoa[c] <=> 2obut[c] + coa[c] + (2)
+    fdox[c]
+- id: PPA
   name: PPA
   genes: MA2676
-  equation: '|M_h2o_c[C_c]| + |M_ppi_c[C_c]| => |M_h_c[C_c]| + (2) |M_pi_c[C_c]|'
-- id: R_PPA2
+  equation: h2o_c[c] + ppi[c] => h_c[c] + (2) pi_c[c]
+- id: PPA2
   name: PPA2
   genes: MA0083 or MA2351
-  equation: '|M_h2o_c[C_c]| + |M_pppi_c[C_c]| => |M_h_c[C_c]| + |M_pi_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_PPAKr
+  equation: h2o_c[c] + pppi[c] => h_c[c] + pi_c[c] + ppi[c]
+- id: PPAKr
   name: PPAKr
   genes: MA3606
-  equation: '|M_adp_c[C_c]| + |M_ppap_c[C_c]| <=> |M_atp_c[C_c]| + |M_ppa_c[C_c]|'
-- id: R_PPA_1
+  equation: adp[c] + ppap[c] <=> atp[c] + ppa[c]
+- id: PPA_1
   name: PPA_1
   genes: MA3880
-  equation: '|M_h2o_c[C_c]| + |M_ppi_c[C_c]| => |M_h_e[C_e]| + (2) |M_pi_c[C_c]|'
-- id: R_PPA_3
+  equation: h2o_c[c] + ppi[c] => h_e[e] + (2) pi_c[c]
+- id: PPA_3
   name: PPA_3
   genes: MA3879
-  equation: '|M_h2o_c[C_c]| + |M_na1_c[C_c]| + |M_ppi_c[C_c]| => |M_h_c[C_c]| + |M_na1_e[C_e]|
-    + (2) |M_pi_c[C_c]|'
-- id: R_PPBNGS
+  equation: h2o_c[c] + na1_c[c] + ppi[c] => h_c[c] + na1_e[e] + (2) pi_c[c]
+- id: PPBNGS
   name: PPBNGS
   genes: MA0578
-  equation: (2) |M_5aop_c[C_c]| => (2) |M_h2o_c[C_c]| + |M_h_c[C_c]| + |M_ppbng_c[C_c]|
-- id: R_PPC
+  equation: (2) 5aop[c] => (2) h2o_c[c] + h_c[c] + ppbng[c]
+- id: PPC
   name: PPC
   genes: MA2690
-  equation: '|M_co2_c[C_c]| + |M_h2o_c[C_c]| + |M_pep_c[C_c]| => |M_h_c[C_c]| + |M_oaa_c[C_c]|
-    + |M_pi_c[C_c]|'
-- id: R_PPCDC
+  equation: co2_c[c] + h2o_c[c] + pep[c] => h_c[c] + oaa[c] + pi_c[c]
+- id: PPCDC
   name: PPCDC
   genes: MA1280
-  equation: '|M_4ppcys_c[C_c]| + |M_h_c[C_c]| => |M_co2_c[C_c]| + |M_pan4p_c[C_c]|'
-- id: R_PPDK
+  equation: 4ppcys[c] + h_c[c] => co2_c[c] + pan4p[c]
+- id: PPDK
   name: PPDK
   genes: MA0608
-  equation: '|M_atp_c[C_c]| + |M_pi_c[C_c]| + |M_pyr_c[C_c]| => |M_amp_c[C_c]| +
-    |M_h_c[C_c]| + |M_pep_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_PPK2
+  equation: atp[c] + pi_c[c] + pyr_c[c] => amp[c] + h_c[c] + pep[c] + ppi[c]
+- id: PPK2
   name: PPK2
   genes: MA0081
-  equation: '|M_atp_c[C_c]| + |M_ppi_c[C_c]| => |M_adp_c[C_c]| + |M_pppi_c[C_c]|'
-- id: R_PPKr
+  equation: atp[c] + ppi[c] => adp[c] + pppi[c]
+- id: PPKr
   name: PPKr
   genes: MA0081
-  equation: '|M_atp_c[C_c]| + |M_pi_c[C_c]| <=> |M_adp_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_PPNCL2
+  equation: atp[c] + pi_c[c] <=> adp[c] + ppi[c]
+- id: PPNCL2
   name: PPNCL2
   genes: MA1280
-  equation: '|M_4ppan_c[C_c]| + |M_ctp_c[C_c]| + |M_cys_L_c[C_c]| => |M_4ppcys_c[C_c]|
-    + |M_cmp_c[C_c]| + |M_h_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_PPND
+  equation: 4ppan[c] + ctp[c] + cys_L_c[c] => 4ppcys[c] + cmp[c] + h_c[c] + ppi[c]
+- id: PPND
   name: PPND
   genes: MA4595
-  equation: '|M_nad_c[C_c]| + |M_pphn_c[C_c]| => |M_34hpp_c[C_c]| + |M_co2_c[C_c]|
-    + |M_nadh_c[C_c]|'
-- id: R_PPNDH
+  equation: nad[c] + pphn[c] => 34hpp[c] + co2_c[c] + nadh[c]
+- id: PPNDH
   name: PPNDH
   genes: MA3150
-  equation: '|M_h_c[C_c]| + |M_pphn_c[C_c]| => |M_co2_c[C_c]| + |M_h2o_c[C_c]| +
-    |M_phpyr_c[C_c]|'
-- id: R_PPS
+  equation: h_c[c] + pphn[c] => co2_c[c] + h2o_c[c] + phpyr[c]
+- id: PPS
   name: PPS
   genes: MA2458 or MA2667 or MA3408
-  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_pyr_c[C_c]| => |M_amp_c[C_c]| +
-    (2) |M_h_c[C_c]| + |M_pep_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_PPTS
+  equation: atp[c] + h2o_c[c] + pyr_c[c] => amp[c] + (2) h_c[c] + pep[c] + pi_c[c]
+- id: PPTS
   name: PPTS
   genes: MA1278
-  equation: '|M_ala_B_c[C_c]| + |M_atp_c[C_c]| + |M_ppant_R_c[C_c]| => |M_4ppan_c[C_c]|
-    + |M_amp_c[C_c]| + |M_h_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_PRAGSr
+  equation: ala_B[c] + atp[c] + ppant_R[c] => 4ppan[c] + amp[c] + h_c[c] + ppi[c]
+- id: PRAGSr
   name: PRAGSr
   genes: MA3309
-  equation: '|M_atp_c[C_c]| + |M_gly_c[C_c]| + |M_pram_c[C_c]| => |M_adp_c[C_c]|
-    + |M_gar_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_PRAIS
+  equation: atp[c] + gly_c[c] + pram[c] => adp[c] + gar[c] + h_c[c] + pi_c[c]
+- id: PRAIS
   name: PRAIS
   genes: MA0130
-  equation: '|M_atp_c[C_c]| + |M_fpram_c[C_c]| <=> |M_adp_c[C_c]| + |M_air_c[C_c]|
-    + (2) |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_PRAIi
+  equation: atp[c] + fpram[c] <=> adp[c] + air[c] + (2) h_c[c] + pi_c[c]
+- id: PRAIi
   name: PRAIi
   genes: MA2988
-  equation: '|M_pran_c[C_c]| <=> |M_2cpr5p_c[C_c]|'
-- id: R_PRAMPC
+  equation: pran[c] <=> 2cpr5p[c]
+- id: PRAMPC
   name: PRAMPC
   genes: MA0908
-  equation: '|M_h2o_c[C_c]| + |M_prbamp_c[C_c]| <=> |M_prfp_c[C_c]|'
-- id: R_PRASCS
+  equation: h2o_c[c] + prbamp[c] <=> prfp[c]
+- id: PRASCS
   name: PRASCS
   genes: MA4063
-  equation: '|M_5aizc_c[C_c]| + |M_asp_L_c[C_c]| + |M_atp_c[C_c]| <=> |M_25aics_c[C_c]|
-    + |M_adp_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_PRATPP
+  equation: 5aizc[c] + asp_L[c] + atp[c] <=> 25aics[c] + adp[c] + h_c[c] + pi_c[c]
+- id: PRATPP
   name: PRATPP
   genes: MA1392
-  equation: '|M_h2o_c[C_c]| + |M_prbatp_c[C_c]| => |M_h_c[C_c]| + |M_ppi_c[C_c]|
-    + |M_prbamp_c[C_c]|'
-- id: R_PRE2DC
+  equation: h2o_c[c] + prbatp[c] => h_c[c] + ppi[c] + prbamp[c]
+- id: PRE2DC
   name: PRE2DC
-  equation: '|M_dscl_c[C_c]| + (2) |M_h_c[C_c]| => (2) |M_co2_c[C_c]| + |M_ddcdscl_c[C_c]|'
-- id: R_PRFGS
+  equation: dscl[c] + (2) h_c[c] => (2) co2_c[c] + ddcdscl[c]
+- id: PRFGS
   name: PRFGS
   genes: (MA1963 or MA1964) and MA4055
-  equation: '|M_atp_c[C_c]| + |M_fgam_c[C_c]| + |M_gln_L_c[C_c]| + |M_h2o_c[C_c]|
-    => |M_adp_c[C_c]| + |M_fpram_c[C_c]| + |M_glu_L_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_PRMICIi
+  equation: atp[c] + fgam[c] + gln_L[c] + h2o_c[c] => adp[c] + fpram[c] + glu_L_c[c]
+    + h_c[c] + pi_c[c]
+- id: PRMICIi
   name: PRMICIi
   genes: MA0218 or MA4435
-  equation: '|M_prfp_c[C_c]| <=> |M_prlp_c[C_c]|'
-- id: R_PROTRS
+  equation: prfp[c] <=> prlp[c]
+- id: PROTRS
   name: PROTRS
   genes: MA3886
-  equation: '|M_atp_c[C_c]| + |M_pro_L_c[C_c]| + |M_trnapro_c[C_c]| => |M_amp_c[C_c]|
-    + |M_ppi_c[C_c]| + |M_protrna_c[C_c]|'
-- id: R_PROabc
+  equation: atp[c] + pro_L_c[c] + trnapro[c] => amp[c] + ppi[c] + protrna[c]
+- id: PROabc
   name: PROabc
   genes: MA2145 and MA2146 and MA2147
-  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_pro_L_e[C_e]| => |M_adp_c[C_c]|
-    + |M_h_c[C_c]| + |M_pi_c[C_c]| + |M_pro_L_c[C_c]|'
-- id: R_PROt4
+  equation: atp[c] + h2o_c[c] + pro_L_e[e] => adp[c] + h_c[c] + pi_c[c] + pro_L_c[c]
+- id: PROt4
   name: PROt4
   genes: MA0279 or MA1316
-  equation: '|M_na1_e[C_e]| + |M_pro_L_e[C_e]| => |M_na1_c[C_c]| + |M_pro_L_c[C_c]|'
-- id: R_PRPPP
+  equation: na1_e[e] + pro_L_e[e] => na1_c[c] + pro_L_c[c]
+- id: PRPPP
   name: PRPPP
   genes: MA2851
-  equation: '|M_h2o_c[C_c]| + |M_prpp_c[C_c]| => |M_h_c[C_c]| + |M_pi_c[C_c]| + |M_r15bp_c[C_c]|'
-- id: R_PRPPS
+  equation: h2o_c[c] + prpp[c] => h_c[c] + pi_c[c] + r15bp[c]
+- id: PRPPS
   name: PRPPS
   genes: MA1167
-  equation: '|M_atp_c[C_c]| + |M_r5p_c[C_c]| <=> |M_amp_c[C_c]| + |M_h_c[C_c]| +
-    |M_prpp_c[C_c]|'
-- id: R_PSCVT
+  equation: atp[c] + r5p[c] <=> amp[c] + h_c[c] + prpp[c]
+- id: PSCVT
   name: PSCVT
   genes: MA4544
-  equation: '|M_pep_c[C_c]| + |M_skm5p_c[C_c]| <=> |M_3psme_c[C_c]| + |M_pi_c[C_c]|'
-- id: R_PSERT
+  equation: pep[c] + skm5p[c] <=> 3psme[c] + pi_c[c]
+- id: PSERT
   name: PSERT
   genes: MA2304
-  equation: '|M_akg_c[C_c]| + |M_pser_L_c[C_c]| <=> |M_3php_c[C_c]| + |M_glu_L_c[C_c]|'
-- id: R_PSP_L
+  equation: akg[c] + pser_L[c] <=> 3php[c] + glu_L_c[c]
+- id: PSP_L
   name: PSP_L
   genes: MA0678 or MA4428 or MA4429
-  equation: '|M_h2o_c[C_c]| + |M_pser_L_c[C_c]| => |M_pi_c[C_c]| + |M_ser_L_c[C_c]|'
-- id: R_PTAr
+  equation: h2o_c[c] + pser_L[c] => pi_c[c] + ser_L[c]
+- id: PTAr
   name: PTAr
   genes: MA3607
-  equation: '|M_accoa_c[C_c]| + |M_pi_c[C_c]| <=> |M_actp_c[C_c]| + |M_coa_c[C_c]|'
-- id: R_PTHPS
+  equation: accoa[c] + pi_c[c] <=> actp[c] + coa[c]
+- id: PTHPS
   name: PTHPS
   genes: MA0956 or MA4196
-  equation: '|M_ahdt_c[C_c]| => |M_6pthp_c[C_c]| + |M_pppi_c[C_c]|'
-- id: R_PTPATi
+  equation: ahdt[c] => 6pthp[c] + pppi[c]
+- id: PTPATi
   name: PTPATi
   genes: MA3546
-  equation: '|M_atp_c[C_c]| + |M_h_c[C_c]| + |M_pan4p_c[C_c]| <=> |M_dpcoa_c[C_c]|
-    + |M_ppi_c[C_c]|'
-- id: R_PYDXS
+  equation: atp[c] + h_c[c] + pan4p[c] <=> dpcoa[c] + ppi[c]
+- id: PYDXS
   name: PYDXS
   genes: MA1566 and MA1567
-  equation: '|M_g3p_c[C_c]| + |M_gln_L_c[C_c]| + |M_r5p_c[C_c]| => |M_glu_L_c[C_c]|
-    + (3) |M_h2o_c[C_c]| + |M_h_c[C_c]| + |M_pi_c[C_c]| + |M_pydx5p_c[C_c]|'
-- id: R_PYK
+  equation: g3p[c] + gln_L[c] + r5p[c] => glu_L_c[c] + (3) h2o_c[c] + h_c[c] + pi_c[c]
+    + pydx5p[c]
+- id: PYK
   name: PYK
   genes: MA3890
-  equation: '|M_adp_c[C_c]| + |M_h_c[C_c]| + |M_pep_c[C_c]| => |M_atp_c[C_c]| + |M_pyr_c[C_c]|'
-- id: R_PYRDC
+  equation: adp[c] + h_c[c] + pep[c] => atp[c] + pyr_c[c]
+- id: PYRDC
   name: PYRDC
   genes: MA0594
-  equation: '|M_h_c[C_c]| + |M_pyr_c[C_c]| => |M_acald_c[C_c]| + |M_co2_c[C_c]|'
-- id: R_PYRFALDC
+  equation: h_c[c] + pyr_c[c] => acald[c] + co2_c[c]
+- id: PYRFALDC
   name: PYRFALDC
   genes: MA3791 and MA3792
-  equation: '|M_fald_c[C_c]| + |M_h_c[C_c]| + |M_pyr_c[C_c]| => |M_acetol_c[C_c]|
-    + |M_co2_c[C_c]|'
-- id: R_PYRS_1
+  equation: fald[c] + h_c[c] + pyr_c[c] => acetol[c] + co2_c[c]
+- id: PYRS_1
   name: PYRS-1
   genes: MA0154
-  equation: '|M_1pyr5c_c[C_c]| + |M_amet_c[C_c]| => |M_1pyr4m5c_c[C_c]| + |M_ahcys_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_PYRS_2
+  equation: 1pyr5c[c] + amet[c] => 1pyr4m5c[c] + ahcys[c] + h_c[c]
+- id: PYRS_2
   name: PYRS-2
   genes: MA0153
-  equation: '|M_1pyr4m5c_c[C_c]| + |M_atp_c[C_c]| + |M_lys_L_c[C_c]| => |M_adp_c[C_c]|
-    + |M_h_c[C_c]| + |M_pi_c[C_c]| + |M_pyr_L_c[C_c]|'
-- id: R_PYRTHMPPTRX
+  equation: 1pyr4m5c[c] + atp[c] + lys_L_c[c] => adp[c] + h_c[c] + pi_c[c] + pyr_L[c]
+- id: PYRTHMPPTRX
   name: PYRTHMPPTRX
   genes: (MA1354 or MA1958 or MA3792) and MA3791
-  equation: '|M_h_c[C_c]| + |M_pyr_c[C_c]| + |M_thmpp_c[C_c]| => |M_co2_c[C_c]| +
-    |M_he2thpp_c[C_c]|'
-- id: R_PYRTRS
+  equation: h_c[c] + pyr_c[c] + thmpp[c] => co2_c[c] + he2thpp[c]
+- id: PYRTRS
   name: PYRTRS
   genes: MA0155
-  equation: '|M_atp_c[C_c]| + |M_pyr_L_c[C_c]| + |M_trnaala_c[C_c]| => |M_amp_c[C_c]|
-    + |M_ppi_c[C_c]| + |M_pyrtrna_c[C_c]|'
-- id: R_PYRt2
+  equation: atp[c] + pyr_L[c] + trnaala[c] => amp[c] + ppi[c] + pyrtrna[c]
+- id: PYRt2
   name: PYRt2
-  equation: '|M_h_e[C_e]| + |M_pyr_e[C_e]| <=> |M_h_c[C_c]| + |M_pyr_c[C_c]|'
-- id: R_QULNS
+  equation: h_e[e] + pyr_e[e] <=> h_c[c] + pyr_c[c]
+- id: QULNS
   name: QULNS
   genes: MA0959
-  equation: '|M_dhap_c[C_c]| + |M_iasp_c[C_c]| => (2) |M_h2o_c[C_c]| + |M_h_c[C_c]|
-    + |M_pi_c[C_c]| + |M_quln_c[C_c]|'
-- id: R_R00430
+  equation: dhap[c] + iasp[c] => (2) h2o_c[c] + h_c[c] + pi_c[c] + quln[c]
+- id: R00430
   name: R00430
   genes: MA3890
-  equation: '|M_gdp_c[C_c]| + |M_h_c[C_c]| + |M_pep_c[C_c]| => |M_gtp_c[C_c]| + |M_pyr_c[C_c]|'
-- id: R_R01411
+  equation: gdp[c] + h_c[c] + pep[c] => gtp[c] + pyr_c[c]
+- id: R01411
   name: R01411
   genes: MA2559
-  equation: '|M_5mcyt_c[C_c]| + |M_h2o_c[C_c]| + |M_h_c[C_c]| <=> |M_nh4_c[C_c]|
-    + |M_thym_c[C_c]|'
-- id: R_R01986
+  equation: 5mcyt[c] + h2o_c[c] + h_c[c] <=> nh4_c[c] + thym[c]
+- id: R01986
   name: R01986
   genes: MA2860
-  equation: '|M_4abutn_c[C_c]| + |M_h2o_c[C_c]| + |M_nadp_c[C_c]| => |M_4abut_c[C_c]|
-    + (2) |M_h_c[C_c]| + |M_nadph_c[C_c]|'
-- id: R_R02549
+  equation: 4abutn[c] + h2o_c[c] + nadp[c] => 4abut[c] + (2) h_c[c] + nadph[c]
+- id: R02549
   name: R02549
   genes: MA2860
-  equation: '|M_4abutn_c[C_c]| + |M_h2o_c[C_c]| + |M_nad_c[C_c]| => |M_4abut_c[C_c]|
-    + (2) |M_h_c[C_c]| + |M_nadh_c[C_c]|'
-- id: R_R03896
+  equation: 4abutn[c] + h2o_c[c] + nad[c] => 4abut[c] + (2) h_c[c] + nadh[c]
+- id: R03896
   name: R03896
   genes: (MA0202 or MA1223) and MA1393
-  equation: '|M_r2mmal_c[C_c]| <=> |M_citrac_c[C_c]| + |M_h2o_c[C_c]|'
-- id: R_R04215
+  equation: r2mmal[c] <=> citrac[c] + h2o_c[c]
+- id: R04215
   name: R04215
   genes: MA3766
-  equation: '|M_ctp_c[C_c]| + |M_glnam_c[C_c]| <=> |M_glnamcmp_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_R05680
+  equation: ctp[c] + glnam[c] <=> glnamcmp[c] + ppi[c]
+- id: R05680
   name: R05680
   genes: MA3686
-  equation: '|M_glyc1p_c[C_c]| + |M_nadp_c[C_c]| => |M_dhap_c[C_c]| + |M_h_c[C_c]|
-    + |M_nadph_c[C_c]|'
-- id: R_R07405
+  equation: glyc1p[c] + nadp[c] => dhap[c] + h_c[c] + nadph[c]
+- id: R07405
   name: R07405
   genes: MA1376
-  equation: '|M_5c5pdriaz_c[C_c]| <=> |M_5aizc_c[C_c]|'
-- id: R_R08576
+  equation: 5c5pdriaz[c] <=> 5aizc[c]
+- id: R08576
   name: R08576
   genes: MA0090
-  equation: '|M_atp_c[C_c]| + |M_pser_L_c[C_c]| + |M_trnacys_c[C_c]| => |M_amp_c[C_c]|
-    + |M_cystrna_pser__c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_R2MMALSYN
+  equation: atp[c] + pser_L[c] + trnacys[c] => amp[c] + cystrna_pser_[c] + ppi[c]
+- id: R2MMALSYN
   name: R2MMALSYN
   genes: MA3793
-  equation: '|M_accoa_c[C_c]| + |M_h2o_c[C_c]| + |M_pyr_c[C_c]| => |M_coa_c[C_c]|
-    + |M_h_c[C_c]| + |M_r2mmal_c[C_c]|'
-- id: R_RBFSa
+  equation: accoa[c] + h2o_c[c] + pyr_c[c] => coa[c] + h_c[c] + r2mmal[c]
+- id: RBFSa
   name: RBFSa
   genes: MA1817 and MA1818
-  equation: '|M_4r5au_c[C_c]| + |M_db4p_c[C_c]| <=> |M_dmlz_c[C_c]| + (2) |M_h2o_c[C_c]|
-    + |M_pi_c[C_c]|'
-- id: R_RBFSb
+  equation: 4r5au[c] + db4p[c] <=> dmlz[c] + (2) h2o_c[c] + pi_c[c]
+- id: RBFSb
   name: RBFSb
   genes: MA1817 and MA1818
-  equation: (2) |M_dmlz_c[C_c]| => |M_4r5au_c[C_c]| + |M_ribflv_c[C_c]|
-- id: R_RBK
+  equation: (2) dmlz[c] => 4r5au[c] + ribflv_c[c]
+- id: RBK
   name: RBK
   genes: MA1373
-  equation: '|M_atp_c[C_c]| + |M_rib_D_c[C_c]| => |M_adp_c[C_c]| + |M_h_c[C_c]| +
-    |M_r5p_c[C_c]|'
-- id: R_RBPC
+  equation: atp[c] + rib_D[c] => adp[c] + h_c[c] + r5p[c]
+- id: RBPC
   name: RBPC
   genes: MA4555
-  equation: '|M_co2_c[C_c]| + |M_h2o_c[C_c]| + |M_rb15bp_c[C_c]| <=> (2) |M_3pg_c[C_c]|
-    + (2) |M_h_c[C_c]|'
-- id: R_RBPI
+  equation: co2_c[c] + h2o_c[c] + rb15bp[c] <=> (2) 3pg[c] + (2) h_c[c]
+- id: RBPI
   name: RBPI
   genes: MA2851
-  equation: '|M_r15bp_c[C_c]| <=> |M_rb15bp_c[C_c]|'
-- id: R_RH2CD
+  equation: r15bp[c] <=> rb15bp[c]
+- id: RH2CD
   name: RH2CD
   genes: MA3085 and MA3751
-  equation: '|M_Rh2cit_c[C_c]| <=> |M_h2acon_C_c[C_c]| + |M_h2o_c[C_c]|'
-- id: R_RH3CD
+  equation: Rh2cit[c] <=> h2acon_C[c] + h2o_c[c]
+- id: RH3CD
   name: RH3CD
   genes: MA3085 and MA3751
-  equation: '|M_Rh3cit_c[C_c]| <=> |M_h2o_c[C_c]| + |M_h3acon_C_c[C_c]|'
-- id: R_RIBFLVt2
+  equation: Rh3cit[c] <=> h2o_c[c] + h3acon_C[c]
+- id: RIBFLVt2
   name: RIBFLVt2
-  equation: '|M_h_e[C_e]| + |M_ribflv_e[C_e]| <=> |M_h_c[C_c]| + |M_ribflv_c[C_c]|'
-- id: R_RNDR1
+  equation: h_e[e] + ribflv_e[e] <=> h_c[c] + ribflv_c[c]
+- id: RNDR1
   name: RNDR1
   genes: MA1665
-  equation: '|M_adp_c[C_c]| + |M_trdrd_c[C_c]| => |M_dadp_c[C_c]| + |M_h2o_c[C_c]|
-    + |M_trdox_c[C_c]|'
-- id: R_RNDR2
+  equation: adp[c] + trdrd[c] => dadp[c] + h2o_c[c] + trdox[c]
+- id: RNDR2
   name: RNDR2
   genes: MA1665
-  equation: '|M_gdp_c[C_c]| + |M_trdrd_c[C_c]| => |M_dgdp_c[C_c]| + |M_h2o_c[C_c]|
-    + |M_trdox_c[C_c]|'
-- id: R_RNDR3
+  equation: gdp[c] + trdrd[c] => dgdp[c] + h2o_c[c] + trdox[c]
+- id: RNDR3
   name: RNDR3
   genes: MA1665
-  equation: '|M_cdp_c[C_c]| + |M_trdrd_c[C_c]| => |M_dcdp_c[C_c]| + |M_h2o_c[C_c]|
-    + |M_trdox_c[C_c]|'
-- id: R_RNDR4
+  equation: cdp[c] + trdrd[c] => dcdp[c] + h2o_c[c] + trdox[c]
+- id: RNDR4
   name: RNDR4
   genes: MA1665
-  equation: '|M_trdrd_c[C_c]| + |M_udp_c[C_c]| => |M_dudp_c[C_c]| + |M_h2o_c[C_c]|
-    + |M_trdox_c[C_c]|'
-- id: R_RNF
+  equation: trdrd[c] + udp[c] => dudp[c] + h2o_c[c] + trdox[c]
+- id: RNF
   name: RNF
   genes: MA0658 and MA0659 and MA0660 and MA0661 and MA0662 and MA0663 and MA0664
     and MA0665
-  equation: (2) |M_fdred_c[C_c]| + (2) |M_h_c[C_c]| + |M_mphen_c[C_c]| + (3) |M_na1_c[C_c]|
-    => (2) |M_fdox_c[C_c]| + |M_mphenh2_c[C_c]| + (3) |M_na1_e[C_e]|
-- id: R_RNTR1
+  equation: (2) fdred[c] + (2) h_c[c] + mphen[c] + (3) na1_c[c] => (2) fdox[c] +
+    mphenh2[c] + (3) na1_e[e]
+- id: RNTR1
   name: RNTR1
   genes: MA0072
-  equation: '|M_atp_c[C_c]| + |M_trdrd_c[C_c]| => |M_datp_c[C_c]| + |M_h2o_c[C_c]|
-    + |M_trdox_c[C_c]|'
-- id: R_RNTR2
+  equation: atp[c] + trdrd[c] => datp[c] + h2o_c[c] + trdox[c]
+- id: RNTR2
   name: RNTR2
   genes: MA0072
-  equation: '|M_gtp_c[C_c]| + |M_trdrd_c[C_c]| => |M_dgtp_c[C_c]| + |M_h2o_c[C_c]|
-    + |M_trdox_c[C_c]|'
-- id: R_RNTR3
+  equation: gtp[c] + trdrd[c] => dgtp[c] + h2o_c[c] + trdox[c]
+- id: RNTR3
   name: RNTR3
   genes: MA0072
-  equation: '|M_ctp_c[C_c]| + |M_trdrd_c[C_c]| => |M_dctp_c[C_c]| + |M_h2o_c[C_c]|
-    + |M_trdox_c[C_c]|'
-- id: R_RNTR4
+  equation: ctp[c] + trdrd[c] => dctp[c] + h2o_c[c] + trdox[c]
+- id: RNTR4
   name: RNTR4
   genes: MA0072
-  equation: '|M_trdrd_c[C_c]| + |M_utp_c[C_c]| => |M_dutp_c[C_c]| + |M_h2o_c[C_c]|
-    + |M_trdox_c[C_c]|'
-- id: R_RPI
+  equation: trdrd[c] + utp[c] => dutp[c] + h2o_c[c] + trdox[c]
+- id: RPI
   name: RPI
   genes: MA1683
-  equation: '|M_r5p_c[C_c]| <=> |M_ru5p_D_c[C_c]|'
-- id: R_RU5PS
+  equation: r5p[c] <=> ru5p_D[c]
+- id: RU5PS
   name: RU5PS
   genes: MA4608
-  equation: '|M_fald_c[C_c]| + |M_ru5p_D_c[C_c]| <=> |M_ah6p_D_c[C_c]|'
-- id: R_RZ5PP2
+  equation: fald[c] + ru5p_D[c] <=> ah6p_D[c]
+- id: RZ5PP2
   name: RZ5PP2
   genes: MA0940
-  equation: '|M_5pr5hbz_c[C_c]| + |M_h2o_c[C_c]| => |M_pi_c[C_c]| + |M_r5hbzi_c[C_c]|'
-- id: R_SADT2
+  equation: 5pr5hbz[c] + h2o_c[c] => pi_c[c] + r5hbzi[c]
+- id: SADT2
   name: SADT2
   genes: MA3680
-  equation: '|M_atp_c[C_c]| + |M_gtp_c[C_c]| + |M_h2o_c[C_c]| + |M_so4_c[C_c]| =>
-    |M_aps_c[C_c]| + |M_gdp_c[C_c]| + |M_pi_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_SDPTA
+  equation: atp[c] + gtp[c] + h2o_c[c] + so4_c[c] => aps[c] + gdp[c] + pi_c[c] +
+    ppi[c]
+- id: SDPTA
   name: SDPTA
   genes: MA0119
-  equation: '|M_akg_c[C_c]| + |M_sl26da_c[C_c]| <=> |M_glu_L_c[C_c]| + |M_sl2a6o_c[C_c]|'
-- id: R_SECS
+  equation: akg[c] + sl26da[c] <=> glu_L_c[c] + sl2a6o[c]
+- id: SECS
   name: SECS
-  equation: '|M_2tcc_c[C_c]| + |M_h_c[C_c]| + |M_nadh_c[C_c]| => |M_nad_c[C_c]| +
-    |M_sec_c[C_c]|'
-- id: R_SERAT
+  equation: 2tcc[c] + h_c[c] + nadh[c] => nad[c] + sec[c]
+- id: SERAT
   name: SERAT
   genes: MA2721 or MA3442
-  equation: '|M_accoa_c[C_c]| + |M_ser_L_c[C_c]| <=> |M_acser_c[C_c]| + |M_coa_c[C_c]|'
-- id: R_SERTRS
+  equation: accoa[c] + ser_L[c] <=> acser[c] + coa[c]
+- id: SERTRS
   name: SERTRS
   genes: MA4048
-  equation: '|M_atp_c[C_c]| + |M_ser_L_c[C_c]| + |M_trnaser_c[C_c]| => |M_amp_c[C_c]|
-    + |M_ppi_c[C_c]| + |M_sertrna_c[C_c]|'
-- id: R_SHCD
+  equation: atp[c] + ser_L[c] + trnaser[c] => amp[c] + ppi[c] + sertrna[c]
+- id: SHCD
   name: SHCD
   genes: MA3085 and MA3751
-  equation: '|M_Shcit_c[C_c]| <=> |M_h2o_c[C_c]| + |M_hacon_C_c[C_c]|'
-- id: R_SHCHCC
+  equation: Shcit[c] <=> h2o_c[c] + hacon_C[c]
+- id: SHCHCC
   name: SHCHCC
   genes: MA3631
-  equation: '|M_cobalt2_c[C_c]| + |M_dscl_c[C_c]| => |M_copre2_c[C_c]| + (3) |M_h_c[C_c]|'
-- id: R_SHCHD2
+  equation: cobalt2_c[c] + dscl[c] => copre2[c] + (3) h_c[c]
+- id: SHCHD2
   name: SHCHD2
   genes: MA0576
-  equation: '|M_dscl_c[C_c]| + |M_nad_c[C_c]| <=> |M_nadh_c[C_c]| + |M_scl_c[C_c]|'
-- id: R_SHCHF
+  equation: dscl[c] + nad[c] <=> nadh[c] + scl[c]
+- id: SHCHF
   name: SHCHF
   genes: MA0576
-  equation: '|M_fe2_c[C_c]| + |M_scl_c[C_c]| <=> (4) |M_h_c[C_c]| + |M_sheme_c[C_c]|'
-- id: R_SHK3Dr
+  equation: fe2_c[c] + scl[c] <=> (4) h_c[c] + sheme[c]
+- id: SHK3Dr
   name: SHK3Dr
   genes: MA4594
-  equation: '|M_nadp_c[C_c]| + |M_skm_c[C_c]| <=> |M_3dhsk_c[C_c]| + |M_h_c[C_c]|
-    + |M_nadph_c[C_c]|'
-- id: R_SHKK
+  equation: nadp[c] + skm[c] <=> 3dhsk[c] + h_c[c] + nadph[c]
+- id: SHKK
   name: SHKK
   genes: MA1378 or MA3237
-  equation: '|M_atp_c[C_c]| + |M_skm_c[C_c]| <=> |M_adp_c[C_c]| + |M_h_c[C_c]| +
-    |M_skm5p_c[C_c]|'
-- id: R_SHSL2r
+  equation: atp[c] + skm[c] <=> adp[c] + h_c[c] + skm5p[c]
+- id: SHSL2r
   name: SHSL2r
   genes: MA2715
-  equation: '|M_h2s_c[C_c]| + |M_suchms_c[C_c]| <=> |M_h_c[C_c]| + |M_hcys_L_c[C_c]|
-    + |M_succ_c[C_c]|'
-- id: R_SMTZS
+  equation: h2s_c[c] + suchms[c] <=> h_c[c] + hcys_L[c] + succ[c]
+- id: SMTZS
   name: SMTZS
-  equation: '|M_2saa_c[C_c]| + |M_cys_L_c[C_c]| => |M_2tcc_c[C_c]| + |M_h2o_c[C_c]|'
-- id: R_SO4t2
+  equation: 2saa[c] + cys_L_c[c] => 2tcc[c] + h2o_c[c]
+- id: SO4t2
   name: SO4t2
   genes: MA1999
-  equation: '|M_h_e[C_e]| + |M_so4_e[C_e]| <=> |M_h_c[C_c]| + |M_so4_c[C_c]|'
-- id: R_SPDC
+  equation: h_e[e] + so4_e[e] <=> h_c[c] + so4_c[c]
+- id: SPDC
   name: SPDC
   genes: MA3298
-  equation: '|M_3spyr_c[C_c]| + |M_h_c[C_c]| => |M_2saa_c[C_c]| + |M_co2_c[C_c]|'
-- id: R_SPODM
+  equation: 3spyr[c] + h_c[c] => 2saa[c] + co2_c[c]
+- id: SPODM
   name: SPODM
   genes: MA2422
-  equation: (2) |M_h_c[C_c]| + (2) |M_o2__c[C_c]| => |M_h2o2_c[C_c]| + |M_o2_c[C_c]|
-- id: R_SSALx
+  equation: (2) h_c[c] + (2) o2_[c] => h2o2[c] + o2[c]
+- id: SSALx
   name: SSALx
   genes: MA0705 or MA1355
-  equation: '|M_h2o_c[C_c]| + |M_nad_c[C_c]| + |M_sucsal_c[C_c]| => (2) |M_h_c[C_c]|
-    + |M_nadh_c[C_c]| + |M_succ_c[C_c]|'
-- id: R_SSALy
+  equation: h2o_c[c] + nad[c] + sucsal[c] => (2) h_c[c] + nadh[c] + succ[c]
+- id: SSALy
   name: SSALy
   genes: MA0705 or MA1355
-  equation: '|M_h2o_c[C_c]| + |M_nadp_c[C_c]| + |M_sucsal_c[C_c]| => (2) |M_h_c[C_c]|
-    + |M_nadph_c[C_c]| + |M_succ_c[C_c]|'
-- id: R_SULR2
+  equation: h2o_c[c] + nadp[c] + sucsal[c] => (2) h_c[c] + nadph[c] + succ[c]
+- id: SULR2
   name: SULR2
   genes: MA3439 or MA4520
-  equation: (3) |M_f420_2_c[C_c]| + (3) |M_h2o_c[C_c]| + |M_h2s_c[C_c]| + |M_h_c[C_c]|
-    <=> (3) |M_f420_2h2_c[C_c]| + |M_so3_c[C_c]|
-- id: R_SULabc
+  equation: (3) f420_2[c] + (3) h2o_c[c] + h2s_c[c] + h_c[c] <=> (3) f420_2h2[c]
+    + so3[c]
+- id: SULabc
   name: SULabc
   genes: (MA0280 and MA0281 and MA0282) or (MA0323 and MA0324 and MA0325) or (MA1235
     and MA1236 and MA1237) or (MA2280 and MA2281 and MA2282)
-  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_so4_e[C_e]| => |M_adp_c[C_c]| +
-    |M_h_c[C_c]| + |M_pi_c[C_c]| + |M_so4_c[C_c]|'
-- id: R_TDP
+  equation: atp[c] + h2o_c[c] + so4_e[e] => adp[c] + h_c[c] + pi_c[c] + so4_c[c]
+- id: TDP
   name: TDP
   genes: MA3706
-  equation: '|M_h2o_c[C_c]| + |M_thmpp_c[C_c]| => |M_h_c[C_c]| + |M_pi_c[C_c]| +
-    |M_thmmp_c[C_c]|'
-- id: R_TDPDRE
+  equation: h2o_c[c] + thmpp[c] => h_c[c] + pi_c[c] + thmmp[c]
+- id: TDPDRE
   name: TDPDRE
   genes: MA1909 or MA3780
-  equation: '|M_dtdp4d6dg_c[C_c]| => |M_dtdp4d6dm_c[C_c]|'
-- id: R_TDPDRR
+  equation: dtdp4d6dg[c] => dtdp4d6dm[c]
+- id: TDPDRR
   name: TDPDRR
   genes: MA3778
-  equation: '|M_dtdp4d6dm_c[C_c]| + |M_h_c[C_c]| + |M_nadph_c[C_c]| => |M_dtdprmn_c[C_c]|
-    + |M_nadp_c[C_c]|'
-- id: R_TDPGDH
+  equation: dtdp4d6dm[c] + h_c[c] + nadph[c] => dtdprmn[c] + nadp[c]
+- id: TDPGDH
   name: TDPGDH
   genes: MA2186 or MA3779
-  equation: '|M_dtdpglu_c[C_c]| => |M_dtdp4d6dg_c[C_c]| + |M_h2o_c[C_c]|'
-- id: R_THACH
+  equation: dtdpglu[c] => dtdp4d6dg[c] + h2o_c[c]
+- id: THACH
   name: THACH
-  equation: '|M_h2o_c[C_c]| + |M_hacon_T_c[C_c]| <=> |M_Shcit_c[C_c]|'
-- id: R_THMabc
+  equation: h2o_c[c] + hacon_T[c] <=> Shcit[c]
+- id: THMabc
   name: THMabc
-  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_thm_e[C_e]| => |M_adp_c[C_c]| +
-    |M_h_c[C_c]| + |M_pi_c[C_c]| + |M_thm_c[C_c]|'
-- id: R_THRA2i
+  equation: atp[c] + h2o_c[c] + thm_e[e] => adp[c] + h_c[c] + pi_c[c] + thm_c[c]
+- id: THRA2i
   name: THRA2i
   genes: MA3520
-  equation: '|M_athr_L_c[C_c]| => |M_acald_c[C_c]| + |M_gly_c[C_c]|'
-- id: R_THRAr
+  equation: athr_L[c] => acald[c] + gly_c[c]
+- id: THRAr
   name: THRAr
   genes: MA3520
-  equation: '|M_thr_L_c[C_c]| <=> |M_acald_c[C_c]| + |M_gly_c[C_c]|'
-- id: R_THRPD
+  equation: thr_L[c] <=> acald[c] + gly_c[c]
+- id: THRPD
   name: THRPD
   genes: MA0941
-  equation: '|M_h_c[C_c]| + |M_thrp_c[C_c]| => |M_applp_c[C_c]| + |M_co2_c[C_c]|'
-- id: R_THRPS
+  equation: h_c[c] + thrp[c] => applp[c] + co2_c[c]
+- id: THRPS
   name: THRPS
-  equation: '|M_atp_c[C_c]| + |M_thr_L_c[C_c]| => |M_adp_c[C_c]| + |M_h_c[C_c]| +
-    |M_thrp_c[C_c]|'
-- id: R_THRS
+  equation: atp[c] + thr_L[c] => adp[c] + h_c[c] + thrp[c]
+- id: THRS
   name: THRS
   genes: MA1610
-  equation: '|M_h2o_c[C_c]| + |M_phom_c[C_c]| => |M_pi_c[C_c]| + |M_thr_L_c[C_c]|'
-- id: R_THRTRS
+  equation: h2o_c[c] + phom[c] => pi_c[c] + thr_L[c]
+- id: THRTRS
   name: THRTRS
   genes: MA2896
-  equation: '|M_atp_c[C_c]| + |M_thr_L_c[C_c]| + |M_trnathr_c[C_c]| => |M_amp_c[C_c]|
-    + |M_ppi_c[C_c]| + |M_thrtrna_c[C_c]|'
-- id: R_THZPSN
+  equation: atp[c] + thr_L[c] + trnathr[c] => amp[c] + ppi[c] + thrtrna[c]
+- id: THZPSN
   name: THZPSN
   genes: (MA0236 or MA2718 or MA3264) and MA0255 and MA1466
-  equation: '|M_atp_c[C_c]| + |M_cys_L_c[C_c]| + |M_dxyl5p_c[C_c]| + |M_tyr_L_c[C_c]|
-    => |M_4hba_c[C_c]| + |M_4mpetz_c[C_c]| + |M_ala_L_c[C_c]| + |M_amp_c[C_c]| +
-    |M_co2_c[C_c]| + |M_h2o_c[C_c]| + |M_h_c[C_c]| + |M_ppi_c[C_c]|'
-- id: R_TIH2CD
+  equation:
+    reversible: false
+    left:
+    - id: atp
+      compartment: c
+      value: 1
+    - id: cys_L_c
+      compartment: c
+      value: 1
+    - id: dxyl5p
+      compartment: c
+      value: 1
+    - id: tyr_L
+      compartment: c
+      value: 1
+    right:
+    - id: 4hba
+      compartment: c
+      value: 1
+    - id: 4mpetz
+      compartment: c
+      value: 1
+    - id: ala_L_c
+      compartment: c
+      value: 1
+    - id: amp
+      compartment: c
+      value: 1
+    - id: co2_c
+      compartment: c
+      value: 1
+    - id: h2o_c
+      compartment: c
+      value: 1
+    - id: h_c
+      compartment: c
+      value: 1
+    - id: ppi
+      compartment: c
+      value: 1
+- id: TIH2CD
   name: TIH2CD
   genes: MA3748
-  equation: '|M_nad_c[C_c]| + |M_tih2cit_c[C_c]| => |M_co2_c[C_c]| + |M_nadh_c[C_c]|
-    + |M_ohepa_c[C_c]|'
-- id: R_TIH3CD
+  equation: nad[c] + tih2cit[c] => co2_c[c] + nadh[c] + ohepa[c]
+- id: TIH3CD
   name: TIH3CD
   genes: MA3748
-  equation: '|M_nad_c[C_c]| + |M_tih3cit_c[C_c]| => |M_2ood_c[C_c]| + |M_co2_c[C_c]|
-    + |M_nadh_c[C_c]|'
-- id: R_TIHCD
+  equation: nad[c] + tih3cit[c] => 2ood[c] + co2_c[c] + nadh[c]
+- id: TIHCD
   name: TIHCD
   genes: MA3748
-  equation: '|M_ihcit_T_c[C_c]| + |M_nad_c[C_c]| => |M_co2_c[C_c]| + |M_nadh_c[C_c]|
-    + |M_ohexa_c[C_c]|'
-- id: R_TMAMT
+  equation: ihcit_T[c] + nad[c] => co2_c[c] + nadh[c] + ohexa[c]
+- id: TMAMT
   name: TMAMT
   genes: (MA0150 or MA0849 or MA4360) and (MA0528 or MA0932) and (MA0529 or MA0931)
     and (MA4379 or MA0146)
-  equation: '|M_5hbc_red_c[C_c]| + |M_h_c[C_c]| + |M_tma_c[C_c]| => |M_dma_c[C_c]|
-    + |M_m5hbc_c[C_c]|'
-- id: R_TMAt2
+  equation: 5hbc_red[c] + h_c[c] + tma_c[c] => dma_c[c] + m5hbc[c]
+- id: TMAt2
   name: TMAt2
   genes: MA0530
-  equation: '|M_h_e[C_e]| + |M_tma_e[C_e]| <=> |M_h_c[C_c]| + |M_tma_c[C_c]|'
-- id: R_TMDK1
+  equation: h_e[e] + tma_e[e] <=> h_c[c] + tma_c[c]
+- id: TMDK1
   name: TMDK1
   genes: MA4433
-  equation: '|M_atp_c[C_c]| + |M_thymd_c[C_c]| => |M_adp_c[C_c]| + |M_dtmp_c[C_c]|
-    + |M_h_c[C_c]|'
-- id: R_TMDPP
+  equation: atp[c] + thymd[c] => adp[c] + dtmp[c] + h_c[c]
+- id: TMDPP
   name: TMDPP
   genes: MA3242
-  equation: '|M_pi_c[C_c]| + |M_thymd_c[C_c]| <=> |M_2dr1p_c[C_c]| + |M_thym_c[C_c]|'
-- id: R_TMDS
+  equation: pi_c[c] + thymd[c] <=> 2dr1p[c] + thym[c]
+- id: TMDS
   name: TMDS
   genes: MA4543
-  equation: '|M_dump_c[C_c]| + |M_mlthf_c[C_c]| => |M_dhf_c[C_c]| + |M_dtmp_c[C_c]|'
-- id: R_TMKr
+  equation: dump[c] + mlthf[c] => dhf[c] + dtmp[c]
+- id: TMKr
   name: TMKr
-  equation: '|M_atp_c[C_c]| + |M_thm_c[C_c]| => |M_adp_c[C_c]| + |M_h_c[C_c]| + |M_thmmp_c[C_c]|'
-- id: R_TMPKr
+  equation: atp[c] + thm_c[c] => adp[c] + h_c[c] + thmmp[c]
+- id: TMPKr
   name: TMPKr
   genes: MA0069
-  equation: '|M_atp_c[C_c]| + |M_thmmp_c[C_c]| <=> |M_adp_c[C_c]| + |M_thmpp_c[C_c]|'
-- id: R_TMPPP
+  equation: atp[c] + thmmp[c] <=> adp[c] + thmpp[c]
+- id: TMPPP
   name: TMPPP
   genes: MA2722
-  equation: '|M_2mahmp_c[C_c]| + |M_4mpetz_c[C_c]| + |M_h_c[C_c]| <=> |M_ppi_c[C_c]|
-    + |M_thmmp_c[C_c]|'
-- id: R_TPI
+  equation: 2mahmp[c] + 4mpetz[c] + h_c[c] <=> ppi[c] + thmmp[c]
+- id: TPI
   name: TPI
   genes: MA4607
-  equation: '|M_g3p_c[C_c]| <=> |M_dhap_c[C_c]|'
-- id: R_TRDR
+  equation: g3p[c] <=> dhap[c]
+- id: TRDR
   name: TRDR
   genes: MA1368
-  equation: '|M_h_c[C_c]| + |M_nadph_c[C_c]| + |M_trdox_c[C_c]| <=> |M_nadp_c[C_c]|
-    + |M_trdrd_c[C_c]|'
-- id: R_TRPS1
+  equation: h_c[c] + nadph[c] + trdox[c] <=> nadp[c] + trdrd[c]
+- id: TRPS1
   name: TRPS1
   genes: MA2990 and (MA2991 or MA3198)
-  equation: '|M_3ig3p_c[C_c]| + |M_ser_L_c[C_c]| => |M_g3p_c[C_c]| + |M_h2o_c[C_c]|
-    + |M_trp_L_c[C_c]|'
-- id: R_TRPS2
+  equation: 3ig3p[c] + ser_L[c] => g3p[c] + h2o_c[c] + trp_L_c[c]
+- id: TRPS2
   name: TRPS2
   genes: MA2991 or MA3198
-  equation: '|M_indole_c[C_c]| + |M_ser_L_c[C_c]| => |M_h2o_c[C_c]| + |M_trp_L_c[C_c]|'
-- id: R_TRPS3
+  equation: indole[c] + ser_L[c] => h2o_c[c] + trp_L_c[c]
+- id: TRPS3
   name: TRPS3
   genes: MA2990
-  equation: '|M_3ig3p_c[C_c]| <=> |M_g3p_c[C_c]| + |M_indole_c[C_c]|'
-- id: R_TRPTA
+  equation: 3ig3p[c] <=> g3p[c] + indole[c]
+- id: TRPTA
   name: TRPTA
   genes: MA0925
-  equation: '|M_akg_c[C_c]| + |M_trp_L_c[C_c]| <=> |M_glu_L_c[C_c]| + |M_indpyr_c[C_c]|'
-- id: R_TRPTRS
+  equation: akg[c] + trp_L_c[c] <=> glu_L_c[c] + indpyr[c]
+- id: TRPTRS
   name: TRPTRS
   genes: MA0172
-  equation: '|M_atp_c[C_c]| + |M_trnatrp_c[C_c]| + |M_trp_L_c[C_c]| => |M_amp_c[C_c]|
-    + |M_ppi_c[C_c]| + |M_trptrna_c[C_c]|'
-- id: R_TRPt2r
+  equation: atp[c] + trnatrp[c] + trp_L_c[c] => amp[c] + ppi[c] + trptrna[c]
+- id: TRPt2r
   name: TRPt2r
   genes: MA1417
-  equation: '|M_h_c[C_c]| + |M_trp_L_c[C_c]| <=> |M_h_e[C_e]| + |M_trp_L_e[C_e]|'
-- id: R_TYRCBOX
+  equation: h_c[c] + trp_L_c[c] <=> h_e[e] + trp_L_e[e]
+- id: TYRCBOX
   name: TYRCBOX
   genes: MA0006
-  equation: '|M_h_c[C_c]| + |M_tyr_L_c[C_c]| => |M_co2_c[C_c]| + |M_tym_c[C_c]|'
-- id: R_TYRTA
+  equation: h_c[c] + tyr_L[c] => co2_c[c] + tym[c]
+- id: TYRTA
   name: TYRTA
   genes: MA0636 or MA1385 or MA1819
-  equation: '|M_akg_c[C_c]| + |M_tyr_L_c[C_c]| <=> |M_34hpp_c[C_c]| + |M_glu_L_c[C_c]|'
-- id: R_TYRTRS
+  equation: akg[c] + tyr_L[c] <=> 34hpp[c] + glu_L_c[c]
+- id: TYRTRS
   name: TYRTRS
   genes: MA0815
-  equation: '|M_atp_c[C_c]| + |M_trnatyr_c[C_c]| + |M_tyr_L_c[C_c]| => |M_amp_c[C_c]|
-    + |M_ppi_c[C_c]| + |M_tyrtrna_c[C_c]|'
-- id: R_UAG2EMA
+  equation: atp[c] + trnatyr[c] + tyr_L[c] => amp[c] + ppi[c] + tyrtrna[c]
+- id: UAG2EMA
   name: UAG2EMA
-  equation: '|M_h2o_c[C_c]| + |M_uacgam_c[C_c]| => |M_acmana_c[C_c]| + |M_h_c[C_c]|
-    + |M_udp_c[C_c]|'
-- id: R_UAG4E
+  equation: h2o_c[c] + uacgam[c] => acmana[c] + h_c[c] + udp[c]
+- id: UAG4E
   name: UAG4E
   genes: MA1185 or MA4460 or MA4464
-  equation: '|M_uacgam_c[C_c]| <=> |M_udpacgal_c[C_c]|'
-- id: R_UAGDP
+  equation: uacgam[c] <=> udpacgal[c]
+- id: UAGDP
   name: UAGDP
   genes: MA3025
-  equation: '|M_acgam1p_c[C_c]| + |M_h_c[C_c]| + |M_utp_c[C_c]| => |M_ppi_c[C_c]|
-    + |M_uacgam_c[C_c]|'
-- id: R_UDPG4E
+  equation: acgam1p[c] + h_c[c] + utp[c] => ppi[c] + uacgam[c]
+- id: UDPG4E
   name: UDPG4E
   genes: MA1185 or MA4460 or MA4464
-  equation: '|M_udpg_c[C_c]| <=> |M_udpgal_c[C_c]|'
-- id: R_UDPGDr
+  equation: udpg[c] <=> udpgal[c]
+- id: UDPGDr
   name: UDPGDr
   genes: MA4457
-  equation: '|M_h2o_c[C_c]| + (2) |M_nad_c[C_c]| + |M_udpg_c[C_c]| <=> (3) |M_h_c[C_c]|
-    + (2) |M_nadh_c[C_c]| + |M_udpglcur_c[C_c]|'
-- id: R_UMPK
+  equation: h2o_c[c] + (2) nad[c] + udpg[c] <=> (3) h_c[c] + (2) nadh[c] + udpglcur[c]
+- id: UMPK
   name: UMPK
   genes: MA0372
-  equation: '|M_atp_c[C_c]| + |M_ump_c[C_c]| <=> |M_adp_c[C_c]| + |M_udp_c[C_c]|'
-- id: R_UNK_CBL1DEGt
+  equation: atp[c] + ump[c] <=> adp[c] + udp[c]
+- id: UNK_CBL1DEGt
   name: UNK_CBL1DEGt
-  equation: '|M_unknown_cbl1deg_e[C_e]| <=> |M_unknown_cbl1deg_c[C_c]|'
-- id: R_UNK_RBFDEGt
+  equation: unknown_cbl1deg_e[e] <=> unknown_cbl1deg_c[c]
+- id: UNK_RBFDEGt
   name: UNK_RBFDEGt
-  equation: '|M_unknown_rbfdeg_e[C_e]| <=> |M_unknown_rbfdeg_c[C_c]|'
-- id: R_UPP3MT
+  equation: unknown_rbfdeg_e[e] <=> unknown_rbfdeg_c[c]
+- id: UPP3MT
   name: UPP3MT
   genes: MA3033
-  equation: (2) |M_amet_c[C_c]| + |M_uppg3_c[C_c]| <=> (2) |M_ahcys_c[C_c]| + |M_dscl_c[C_c]|
-    + |M_h_c[C_c]|
-- id: R_UPP3S
+  equation: (2) amet[c] + uppg3[c] <=> (2) ahcys[c] + dscl[c] + h_c[c]
+- id: UPP3S
   name: UPP3S
   genes: MA3034
-  equation: '|M_hmbil_c[C_c]| <=> |M_h2o_c[C_c]| + |M_uppg3_c[C_c]|'
-- id: R_URIDK2r
+  equation: hmbil[c] <=> h2o_c[c] + uppg3[c]
+- id: URIDK2r
   name: URIDK2r
   genes: MA4433
-  equation: '|M_atp_c[C_c]| + |M_dump_c[C_c]| <=> |M_adp_c[C_c]| + |M_dudp_c[C_c]|'
-- id: R_VALTA
+  equation: atp[c] + dump[c] <=> adp[c] + dudp[c]
+- id: VALTA
   name: VALTA
   genes: MA4349
-  equation: '|M_akg_c[C_c]| + |M_val_L_c[C_c]| <=> |M_3mob_c[C_c]| + |M_glu_L_c[C_c]|'
-- id: R_VALTRS
+  equation: akg[c] + val_L_c[c] <=> 3mob[c] + glu_L_c[c]
+- id: VALTRS
   name: VALTRS
   genes: MA3052
-  equation: '|M_atp_c[C_c]| + |M_trnaval_c[C_c]| + |M_val_L_c[C_c]| => |M_amp_c[C_c]|
-    + |M_ppi_c[C_c]| + |M_valtrna_c[C_c]|'
-- id: R_VALt2r
+  equation: atp[c] + trnaval[c] + val_L_c[c] => amp[c] + ppi[c] + valtrna[c]
+- id: VALt2r
   name: VALt2r
   genes: MA3437 and MA3438
-  equation: '|M_h_e[C_e]| + |M_val_L_e[C_e]| <=> |M_h_c[C_c]| + |M_val_L_c[C_c]|'
-- id: R_VOR
+  equation: h_e[e] + val_L_e[e] <=> h_c[c] + val_L_c[c]
+- id: VOR
   name: VOR
   genes: MA2909 and MA2910 and MA2911
-  equation: '|M_3mob_c[C_c]| + |M_coa_c[C_c]| + (2) |M_fdox_c[C_c]| <=> |M_co2_c[C_c]|
-    + (2) |M_fdred_c[C_c]| + |M_h_c[C_c]| + |M_ibcoa_c[C_c]|'
-- id: R_WO4abc
+  equation: 3mob[c] + coa[c] + (2) fdox[c] <=> co2_c[c] + (2) fdred[c] + h_c[c] +
+    ibcoa[c]
+- id: WO4abc
   name: WO4abc
   genes: MA0280 and MA0281 and MA0282
-  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_wo4_e[C_e]| => |M_adp_c[C_c]| +
-    |M_h_c[C_c]| + |M_pi_c[C_c]| + |M_wo4_c[C_c]|'
-- id: R_XPPT
+  equation: atp[c] + h2o_c[c] + wo4_e[e] => adp[c] + h_c[c] + pi_c[c] + wo4_c[c]
+- id: XPPT
   name: XPPT
   genes: MA4581
-  equation: '|M_prpp_c[C_c]| + |M_xan_c[C_c]| => |M_ppi_c[C_c]| + |M_xmp_c[C_c]|'
-- id: R_YUMPS
+  equation: prpp[c] + xan[c] => ppi[c] + xmp[c]
+- id: YUMPS
   name: YUMPS
   genes: MA0208 and MA3271
-  equation: '|M_r5p_c[C_c]| + |M_ura_c[C_c]| <=> |M_h2o_c[C_c]| + |M_psd5p_c[C_c]|'
-- id: R_ZN2t4
+  equation: r5p[c] + ura[c] <=> h2o_c[c] + psd5p[c]
+- id: ZN2t4
   name: ZN2t4
   genes: MA1117
-  equation: '|M_h_e[C_e]| + |M_k_e[C_e]| + |M_zn2_c[C_c]| <=> |M_h_c[C_c]| + |M_k_c[C_c]|
-    + |M_zn2_e[C_e]|'
-- id: R_ZNabc
+  equation: h_e[e] + k_e[e] + zn2_c[c] <=> h_c[c] + k_c[c] + zn2_e[e]
+- id: ZNabc
   name: ZNabc
   genes: MA0023 and MA0024 and MA0025
-  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_zn2_e[C_e]| => |M_adp_c[C_c]| +
-    |M_h_c[C_c]| + |M_pi_c[C_c]| + |M_zn2_c[C_c]|'
-- id: R_Znabc2
+  equation: atp[c] + h2o_c[c] + zn2_e[e] => adp[c] + h_c[c] + pi_c[c] + zn2_c[c]
+- id: Znabc2
   name: Znabc2
   genes: MA0549 or MA3366 or MA3632
-  equation: '|M_atp_c[C_c]| + |M_h2o_c[C_c]| + |M_zn2_c[C_c]| => |M_adp_c[C_c]| +
-    |M_h_c[C_c]| + |M_pi_c[C_c]| + |M_zn2_e[C_e]|'
-- id: R_carb_met
+  equation: atp[c] + h2o_c[c] + zn2_c[c] => adp[c] + h_c[c] + pi_c[c] + zn2_e[e]
+- id: carb_met
   name: carb_met
-  equation: (0.06) |M_galactan_c[C_c]| + (1.27) |M_glycogen_c[C_c]| + (2.49) |M_polyacgal_c[C_c]|
-    + (1.6) |M_polyglcur_c[C_c]| => |M_carb_met_c[C_c]|
-- id: R_dna_met
+  equation: (0.06) galactan[c] + (1.27) glycogen[c] + (2.49) polyacgal[c] + (1.6)
+    polyglcur[c] => carb_met[c]
+- id: dna_met
   name: dna_met
-  equation: (0.58) |M_datp_c[C_c]| + (0.44) |M_dctp_c[C_c]| + (0.44) |M_dgtp_c[C_c]|
-    + (0.59) |M_dttp_c[C_c]| => |M_dna_met_c[C_c]| + (2.05) |M_ppi_c[C_c]|
-- id: R_lipid_met
+  equation: (0.58) datp[c] + (0.44) dctp[c] + (0.44) dgtp[c] + (0.59) dttp[c] =>
+    dna_met[c] + (2.05) ppi[c]
+- id: lipid_met
   name: lipid_met
-  equation: (0.057) |M_3hdpgpe_c[C_c]| + (0.214) |M_3hdpgpg_c[C_c]| + (0.287) |M_3hdpgpi_c[C_c]|
-    + (0.244) |M_3hdpgps_c[C_c]| + (0.005) |M_dpgpe_c[C_c]| + (0.005) |M_dpgpg_c[C_c]|
-    + (0.027) |M_dpgpi_c[C_c]| + (0.011) |M_dpgps_c[C_c]| + (0.148) |M_gdpgpi_c[C_c]|
-    => |M_lipid_met_c[C_c]|
-- id: R_overall
+  equation: (0.057) 3hdpgpe[c] + (0.214) 3hdpgpg[c] + (0.287) 3hdpgpi[c] + (0.244)
+    3hdpgps[c] + (0.005) dpgpe[c] + (0.005) dpgpg[c] + (0.027) dpgpi[c] + (0.011)
+    dpgps[c] + (0.148) gdpgpi[c] => lipid_met[c]
+- id: overall
   name: overall
-  equation: (65) |M_atp_c[C_c]| + (0.01) |M_carb_met_c[C_c]| + (0.04) |M_dna_met_c[C_c]|
-    + (65) |M_h2o_c[C_c]| + (0.05) |M_lipid_met_c[C_c]| + (0.63) |M_protein_met_c[C_c]|
-    + (0.24) |M_rna_met_c[C_c]| + (0.04) |M_trace_met_c[C_c]| => (65) |M_adp_c[C_c]|
-    + |M_biomass_met_c[C_c]| + (65) |M_h_c[C_c]| + (65) |M_pi_c[C_c]|
-- id: R_protein_met
+  equation:
+    reversible: false
+    left:
+    - id: atp
+      compartment: c
+      value: 65
+    - id: carb_met
+      compartment: c
+      value: 0.01
+    - id: dna_met
+      compartment: c
+      value: 0.04
+    - id: h2o_c
+      compartment: c
+      value: 65
+    - id: lipid_met
+      compartment: c
+      value: 0.05
+    - id: protein_met
+      compartment: c
+      value: 0.63
+    - id: rna_met
+      compartment: c
+      value: 0.24
+    - id: trace_met
+      compartment: c
+      value: 0.04
+    right:
+    - id: adp
+      compartment: c
+      value: 65
+    - id: biomass_met_c
+      compartment: c
+      value: 1
+    - id: h_c
+      compartment: c
+      value: 65
+    - id: pi_c
+      compartment: c
+      value: 65
+- id: protein_met
   name: protein_met
-  equation: (0.62) |M_ala_L_c[C_c]| + (0.4) |M_arg_L_c[C_c]| + (0.4) |M_asn_L_c[C_c]|
-    + (0.48) |M_asp_L_c[C_c]| + (0.11) |M_cys_L_c[C_c]| + (0.23) |M_gln_L_c[C_c]|
-    + (0.71) |M_glu_L_c[C_c]| + (0.65) |M_gly_c[C_c]| + (0.15) |M_his_L_c[C_c]| +
-    (0.66) |M_ile_L_c[C_c]| + (0.85) |M_leu_L_c[C_c]| + (0.59) |M_lys_L_c[C_c]| +
-    (0.21) |M_met_L_c[C_c]| + (0.4) |M_phe_L_c[C_c]| + (0.36) |M_pro_L_c[C_c]| +
-    (0.62) |M_ser_L_c[C_c]| + (0.49) |M_thr_L_c[C_c]| + (0.09) |M_trp_L_c[C_c]| +
-    (0.33) |M_tyr_L_c[C_c]| + (0.62) |M_val_L_c[C_c]| => |M_protein_met_c[C_c]|
-- id: R_rna_met
+  equation:
+    reversible: false
+    left:
+    - id: ala_L_c
+      compartment: c
+      value: 0.62
+    - id: arg_L
+      compartment: c
+      value: 0.4
+    - id: asn_L
+      compartment: c
+      value: 0.4
+    - id: asp_L
+      compartment: c
+      value: 0.48
+    - id: cys_L_c
+      compartment: c
+      value: 0.11
+    - id: gln_L
+      compartment: c
+      value: 0.23
+    - id: glu_L_c
+      compartment: c
+      value: 0.71
+    - id: gly_c
+      compartment: c
+      value: 0.65
+    - id: his_L
+      compartment: c
+      value: 0.15
+    - id: ile_L_c
+      compartment: c
+      value: 0.66
+    - id: leu_L_c
+      compartment: c
+      value: 0.85
+    - id: lys_L_c
+      compartment: c
+      value: 0.59
+    - id: met_L
+      compartment: c
+      value: 0.21
+    - id: phe_L
+      compartment: c
+      value: 0.4
+    - id: pro_L_c
+      compartment: c
+      value: 0.36
+    - id: ser_L
+      compartment: c
+      value: 0.62
+    - id: thr_L
+      compartment: c
+      value: 0.49
+    - id: trp_L_c
+      compartment: c
+      value: 0.09
+    - id: tyr_L
+      compartment: c
+      value: 0.33
+    - id: val_L_c
+      compartment: c
+      value: 0.62
+    right:
+    - id: protein_met
+      compartment: c
+      value: 1
+- id: rna_met
   name: rna_met
-  equation: (0.48) |M_atp_c[C_c]| + (0.42) |M_ctp_c[C_c]| + (0.5) |M_gtp_c[C_c]|
-    + (0.6) |M_utp_c[C_c]| => (2) |M_ppi_c[C_c]| + |M_rna_met_c[C_c]|
-- id: R_trace_met
+  equation: (0.48) atp[c] + (0.42) ctp[c] + (0.5) gtp[c] + (0.6) utp[c] => (2) ppi[c]
+    + rna_met[c]
+- id: trace_met
   name: trace_met
-  equation: (0.0009) |M_accoa_c[C_c]| + (0.044) |M_adocblhbi_c[C_c]| + (0.00929)
-    |M_amp_c[C_c]| + (0.00006) |M_coa_c[C_c]| + (0.00464) |M_cob_c[C_c]| + (0.191)
-    |M_com_c[C_c]| + (0.00005) |M_f390a_c[C_c]| + (0.00005) |M_f390g_c[C_c]| + (0.00037)
-    |M_f420_2_c[C_c]| + (0.00028) |M_f420_3_c[C_c]| + (0.00371) |M_f420_4_c[C_c]|
-    + (0.00279) |M_f420_5_c[C_c]| + (0.00009) |M_f420_6_c[C_c]| + (0.00001) |M_f420_7_c[C_c]|
-    + (0.019) |M_f430_c[C_c]| + (0.219) |M_h4spt_c[C_c]| + (0.044) |M_hspmd_c[C_c]|
-    + (0.191) |M_mfr_b__c[C_c]| + (0.0204) |M_nad_c[C_c]| + (0.00093) |M_nadh_c[C_c]|
-    + (0.00093) |M_nadp_c[C_c]| + (0.00371) |M_nadph_c[C_c]| + (0.243) |M_ptrc_c[C_c]|
-    + (0.00003) |M_succoa_c[C_c]| + (0.00093) |M_thf_c[C_c]| => |M_trace_met_c[C_c]|
+  equation:
+    reversible: false
+    left:
+    - id: accoa
+      compartment: c
+      value: 0.0009
+    - id: adocblhbi
+      compartment: c
+      value: 0.044
+    - id: amp
+      compartment: c
+      value: 0.00929
+    - id: coa
+      compartment: c
+      value: 0.00006
+    - id: cob
+      compartment: c
+      value: 0.00464
+    - id: com
+      compartment: c
+      value: 0.191
+    - id: f390a
+      compartment: c
+      value: 0.00005
+    - id: f390g
+      compartment: c
+      value: 0.00005
+    - id: f420_2
+      compartment: c
+      value: 0.00037
+    - id: f420_3
+      compartment: c
+      value: 0.00028
+    - id: f420_4
+      compartment: c
+      value: 0.00371
+    - id: f420_5
+      compartment: c
+      value: 0.00279
+    - id: f420_6
+      compartment: c
+      value: 0.00009
+    - id: f420_7
+      compartment: c
+      value: 0.00001
+    - id: f430
+      compartment: c
+      value: 0.019
+    - id: h4spt
+      compartment: c
+      value: 0.219
+    - id: hspmd
+      compartment: c
+      value: 0.044
+    - id: mfr_b_
+      compartment: c
+      value: 0.191
+    - id: nad
+      compartment: c
+      value: 0.0204
+    - id: nadh
+      compartment: c
+      value: 0.00093
+    - id: nadp
+      compartment: c
+      value: 0.00093
+    - id: nadph
+      compartment: c
+      value: 0.00371
+    - id: ptrc
+      compartment: c
+      value: 0.243
+    - id: succoa
+      compartment: c
+      value: 0.00003
+    - id: thf
+      compartment: c
+      value: 0.00093
+    right:
+    - id: trace_met
+      compartment: c
+      value: 1
