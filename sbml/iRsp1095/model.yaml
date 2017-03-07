@@ -1,11 +1,27 @@
 name: Rhodobacter_sphaeroides_metabolic_model_iRsp1095
-biomass: RXN1391
 default_flux_limit: 1000.0
+extracellular: Extracellular
+compartments:
+- id: Cytosol
+  adjacent_to:
+  - Extracellular
+  - Periplasm
+  name: Cytosol
+- id: Extracellular
+  adjacent_to:
+  - Cytosol
+  - Periplasm
+  name: Extracellular
+- id: Periplasm
+  adjacent_to:
+  - Cytosol
+  - Extracellular
+  name: Periplasm
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml
 limits:
 - include: limits.yaml
