@@ -1,11 +1,35 @@
 name: iMM904
-biomass: R_biomass_SC5_notrace
 default_flux_limit: 999999.0
+extracellular: Extra_organism
+compartments:
+- id: Cytosol
+  adjacent_to:
+  - Golgi_Apparatus
+  - Endoplasmic_Reticulum
+  - Mitochondria
+  - Vacuole
+  - Nucleus
+  - Peroxisome
+  - Extra_organism
+- id: Endoplasmic_Reticulum
+  adjacent_to: Cytosol
+- id: Extra_organism
+  adjacent_to: Cytosol
+- id: Golgi_Apparatus
+  adjacent_to: Cytosol
+- id: Mitochondria
+  adjacent_to: Cytosol
+- id: Nucleus
+  adjacent_to: Cytosol
+- id: Peroxisome
+  adjacent_to: Cytosol
+- id: Vacuole
+  adjacent_to: Cytosol
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml
 limits:
 - include: limits.yaml
