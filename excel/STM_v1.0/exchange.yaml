@@ -1,18 +1,4 @@
-name: Default medium
-compartment: e
 compounds:
-- id: 4hba
-  compartment: c
-  reaction: DM_4HBA
-- id: 5drib
-  compartment: c
-  reaction: DM_5DRIB
-- id: hmfurn
-  compartment: c
-  reaction: DM_HMFURN
-- id: oxam
-  compartment: c
-  reaction: DM_OXAM
 - id: 12ppd-R
   reaction: EX_12ppd_R(e)
 - id: 12ppd-S
@@ -73,12 +59,6 @@ compounds:
   reaction: EX_LalaDgluMdap(e)
 - id: LalaDgluMdapDala
   reaction: EX_LalaDgluMdapDala(e)
-- id: salchs4
-  reaction: EX_SALCHS4(e)
-- id: salchs4fe
-  reaction: EX_SALCHS4FE(e)
-- id: salchsx
-  reaction: EX_SALCHSX(e)
 - id: ac
   reaction: EX_ac(e)
 - id: acac
@@ -329,10 +309,10 @@ compounds:
   reaction: EX_g6p(e)
 - id: gal
   reaction: EX_gal(e)
-- id: gal1p
-  reaction: EX_gal1p(e)
 - id: gal-bD
   reaction: EX_gal_bD(e)
+- id: gal1p
+  reaction: EX_gal1p(e)
 - id: galct-D
   reaction: EX_galct_D(e)
 - id: galctn-D
@@ -373,12 +353,12 @@ compounds:
   reaction: EX_glyb(e)
 - id: glyc
   reaction: EX_glyc(e)
+- id: glyc-R
+  reaction: EX_glyc_R(e)
 - id: glyc2p
   reaction: EX_glyc2p(e)
 - id: glyc3p
   reaction: EX_glyc3p(e)
-- id: glyc-R
-  reaction: EX_glyc_R(e)
 - id: glyclt
   reaction: EX_glyclt(e)
 - id: gmp
@@ -589,6 +569,12 @@ compounds:
   reaction: EX_salchs2(e)
 - id: salchs2fe
   reaction: EX_salchs2fe(e)
+- id: salchs4
+  reaction: EX_SALCHS4(e)
+- id: salchs4fe
+  reaction: EX_SALCHS4FE(e)
+- id: salchsx
+  reaction: EX_SALCHSX(e)
 - id: sbt-D
   reaction: EX_sbt_D(e)
 - id: ser-D
