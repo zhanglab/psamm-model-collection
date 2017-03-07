@@ -1,8 +1,13 @@
 name: Model2008_08_15_12_13_14
-biomass: R_biomass_target
+extracellular: Extraorganism
+compartments:
+- id: Cytosol
+  adjacent_to: Extraorganism
+- id: Extraorganism
+  adjacent_to: Cytosol
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml

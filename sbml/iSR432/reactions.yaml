@@ -1,2706 +1,2872 @@
-- id: R_2HBO
+- id: 2HBO
   name: _2-Hydroxybutyrate:NAD+oxidoreductase
-  equation: '|M_2hb_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_2obut_c[Cytosol]| + |M_h_c[Cytosol]|
-    + |M_nadh_c[Cytosol]|'
+  equation: 2hb_c[Cytosol] + nad_c[Cytosol] <=> 2obut_c[Cytosol] + h_c[Cytosol] +
+    nadh_c[Cytosol]
   subsystem: Propanoate Metabolism
-- id: R_2S6HCCi
+- id: 2S6HCCi
   name: R_2_succinyl_6_hydroxy_2_4_cyclohexadiene_1_carboxylate_synthase
-  equation: '|M_akg_c[Cytosol]| + |M_h_c[Cytosol]| + |M_ichor_c[Cytosol]| => |M_2shchc_c[Cytosol]|
-    + |M_co2_c[Cytosol]| + |M_pyr_c[Cytosol]|'
+  equation: akg_c[Cytosol] + h_c[Cytosol] + ichor_c[Cytosol] => 2shchc_c[Cytosol]
+    + co2_c[Cytosol] + pyr_c[Cytosol]
   subsystem: .
-- id: R_ACALD
+- id: ACALD
   name: acetaldehydedehydrogenase(acetylating)
-  equation: '|M_acald_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_accoa_c[Cytosol]|
-    + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|'
+  equation: acald_c[Cytosol] + coa_c[Cytosol] + nad_c[Cytosol] <=> accoa_c[Cytosol]
+    + h_c[Cytosol] + nadh_c[Cytosol]
   subsystem: pyruvate metabolism
-- id: R_ACBIPGT
+- id: ACBIPGT
   name: Adenosylcobinamidephosphateguanyltransferase
-  equation: '|M_adocbip_c[Cytosol]| + |M_gtp_c[Cytosol]| + |M_h_c[Cytosol]| => |M_agdpcbi_c[Cytosol]|
-    + |M_ppi_c[Cytosol]|'
+  equation: adocbip_c[Cytosol] + gtp_c[Cytosol] + h_c[Cytosol] => agdpcbi_c[Cytosol]
+    + ppi_c[Cytosol]
   subsystem: Cofactor and Prosthetic Group Biosynthesis
-- id: R_ACCOAC
+- id: ACCOAC
   name: R_acetyl_CoA_carboxylase
-  equation: '|M_accoa_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_hco3_c[Cytosol]| => |M_adp_c[Cytosol]|
-    + |M_h_c[Cytosol]| + |M_malcoa_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: accoa_c[Cytosol] + atp_c[Cytosol] + hco3_c[Cytosol] => adp_c[Cytosol]
+    + h_c[Cytosol] + malcoa_c[Cytosol] + pi_c[Cytosol]
   subsystem: .
-- id: R_ACGK
+- id: ACGK
   name: acetylglutamatekinase
-  equation: '|M_acglu_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_acg5p_c[Cytosol]| +
-    |M_adp_c[Cytosol]|'
+  equation: acglu_c[Cytosol] + atp_c[Cytosol] => acg5p_c[Cytosol] + adp_c[Cytosol]
   subsystem: arginine and proline
-- id: R_ACGS
+- id: ACGS
   name: N-acetylglutamatesynthase
-  equation: '|M_accoa_c[Cytosol]| + |M_glu_DASH_L_c[Cytosol]| => |M_acglu_c[Cytosol]|
-    + |M_coa_c[Cytosol]| + |M_h_c[Cytosol]|'
+  equation: accoa_c[Cytosol] + glu-L_c[Cytosol] => acglu_c[Cytosol] + coa_c[Cytosol]
+    + h_c[Cytosol]
   subsystem: arginine and proline
-- id: R_ACHBS
+- id: ACHBS
   name: _2-aceto-2-hydroxybutanoatesynthase
-  equation: '|M_2obut_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pyr_c[Cytosol]| => |M_2ahbut_c[Cytosol]|
-    + |M_co2_c[Cytosol]|'
+  equation: 2obut_c[Cytosol] + h_c[Cytosol] + pyr_c[Cytosol] => 2ahbut_c[Cytosol]
+    + co2_c[Cytosol]
   subsystem: branched-chain amino acids
-- id: R_ACKr
+- id: ACKr
   name: acetatekinase
-  equation: '|M_ac_c[Cytosol]| + |M_atp_c[Cytosol]| <=> |M_actp_c[Cytosol]| + |M_adp_c[Cytosol]|'
+  equation: ac_c[Cytosol] + atp_c[Cytosol] <=> actp_c[Cytosol] + adp_c[Cytosol]
   subsystem: pyruvate metabolism
-- id: R_ACLS
+- id: ACLS
   name: acetolactatesynthase
-  equation: '|M_h_c[Cytosol]| + (2) |M_pyr_c[Cytosol]| => |M_alac_DASH_S_c[Cytosol]|
-    + |M_co2_c[Cytosol]|'
+  equation: h_c[Cytosol] + (2) pyr_c[Cytosol] => alac-S_c[Cytosol] + co2_c[Cytosol]
   subsystem: branched-chain amino acids
-- id: R_ACNAM9PL
+- id: ACNAM9PL
   name: N-Acetylneuraminate9-phosphatepyruvate-lyase(pyruvate-phosphorylating)
-  equation: '|M_acmanap_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_pep_c[Cytosol]| =>
-    |M_acnamp_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: acmanap_c[Cytosol] + h2o_c[Cytosol] + pep_c[Cytosol] => acnamp_c[Cytosol]
+    + pi_c[Cytosol]
   subsystem: Aminosugar Metabolism
-- id: R_ACODA
+- id: ACODA
   name: acetylornithinedeacetylase
-  equation: '|M_acorn_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_ac_c[Cytosol]| + |M_orn_c[Cytosol]|'
+  equation: acorn_c[Cytosol] + h2o_c[Cytosol] => ac_c[Cytosol] + orn_c[Cytosol]
   subsystem: Urea cycle/amino group metabolism
-- id: R_ACONT
+- id: ACONT
   name: aconitase
-  equation: '|M_cit_c[Cytosol]| <=> |M_icit_c[Cytosol]|'
+  equation: cit_c[Cytosol] <=> icit_c[Cytosol]
   subsystem: tca cycle
-- id: R_ACOTA
+- id: ACOTA
   name: acetylornithinetransaminase
-  equation: '|M_acorn_c[Cytosol]| + |M_akg_c[Cytosol]| <=> |M_acg5sa_c[Cytosol]|
-    + |M_glu_DASH_L_c[Cytosol]|'
+  equation: acorn_c[Cytosol] + akg_c[Cytosol] <=> acg5sa_c[Cytosol] + glu-L_c[Cytosol]
   subsystem: arginine and proline
-- id: R_ACS
+- id: ACS
   name: acetyl-CoAsynthetase
-  equation: '|M_ac_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| => |M_accoa_c[Cytosol]|
-    + |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: ac_c[Cytosol] + atp_c[Cytosol] + coa_c[Cytosol] => accoa_c[Cytosol] +
+    amp_c[Cytosol] + ppi_c[Cytosol]
   subsystem: pyruvate metabolism
-- id: R_ACS2
+- id: ACS2
   name: acetyl-CoAsynthase(propionate)
-  equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_ppa_c[Cytosol]| => |M_amp_c[Cytosol]|
-    + |M_ppcoa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + coa_c[Cytosol] + ppa_c[Cytosol] => amp_c[Cytosol] +
+    ppcoa_c[Cytosol] + ppi_c[Cytosol]
   subsystem: Propanoate Metabolism
-- id: R_ACt2r
+- id: ACt2r
   name: acetatereversibletransportviaprotonsymport
-  equation: '|M_ac_e[Extraorganism]| + |M_h_e[Extraorganism]| <=> |M_ac_c[Cytosol]|
-    + |M_h_c[Cytosol]|'
+  equation: ac_e[Extraorganism] + h_e[Extraorganism] <=> ac_c[Cytosol] + h_c[Cytosol]
   subsystem: Transport, Extracellular
-- id: R_ADCL
+- id: ADCL
   name: _4-aminobenzoatesynthase
-  equation: '|M_4adcho_c[Cytosol]| => |M_4abz_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pyr_c[Cytosol]|'
+  equation: 4adcho_c[Cytosol] => 4abz_c[Cytosol] + h_c[Cytosol] + pyr_c[Cytosol]
   subsystem: folate synthesis
-- id: R_ADK1
+- id: ADK1
   name: adenylatekinase
-  equation: '|M_amp_c[Cytosol]| + |M_atp_c[Cytosol]| <=> (2) |M_adp_c[Cytosol]|'
+  equation: amp_c[Cytosol] + atp_c[Cytosol] <=> (2) adp_c[Cytosol]
   subsystem: purine metabolism
-- id: R_ADKd
+- id: ADKd
   name: adenylatekinase(dform)
-  equation: '|M_damp_c[Cytosol]| + |M_datp_c[Cytosol]| <=> (2) |M_dadp_c[Cytosol]|'
+  equation: damp_c[Cytosol] + datp_c[Cytosol] <=> (2) dadp_c[Cytosol]
   subsystem: purine metabolism
-- id: R_ADMDCr
+- id: ADMDCr
   name: Adenosylmethioninedecarboxylase
-  equation: '|M_amet_c[Cytosol]| + |M_h_c[Cytosol]| <=> |M_ametam_c[Cytosol]| + |M_co2_c[Cytosol]|'
+  equation: amet_c[Cytosol] + h_c[Cytosol] <=> ametam_c[Cytosol] + co2_c[Cytosol]
   subsystem: polyamine metabolism
-- id: R_ADNCYC
+- id: ADNCYC
   name: adenylatecyclase
-  equation: '|M_atp_c[Cytosol]| => |M_camp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] => camp_c[Cytosol] + ppi_c[Cytosol]
   subsystem: Nucleotides
-- id: R_ADOCBIK
+- id: ADOCBIK
   name: Adenosylcobinamidekinase
-  equation: '|M_adocbi_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_adocbip_c[Cytosol]|
-    + |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|'
+  equation: adocbi_c[Cytosol] + atp_c[Cytosol] => adocbip_c[Cytosol] + adp_c[Cytosol]
+    + h_c[Cytosol]
   subsystem: Cofactor and Prosthetic Group Biosynthesis
-- id: R_ADOCBLS
+- id: ADOCBLS
   name: Adenosylcobalamin5'-phosphatesynthase
-  equation: '|M_agdpcbi_c[Cytosol]| + |M_rdmbzi_c[Cytosol]| => |M_adocbl_c[Cytosol]|
-    + |M_gmp_c[Cytosol]| + |M_h_c[Cytosol]|'
+  equation: agdpcbi_c[Cytosol] + rdmbzi_c[Cytosol] => adocbl_c[Cytosol] + gmp_c[Cytosol]
+    + h_c[Cytosol]
   subsystem: Cofactor and Prosthetic Group Biosynthesis
-- id: R_ADPRDP
+- id: ADPRDP
   name: ADPribosediphosphatase
-  equation: '|M_adprib_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_amp_c[Cytosol]| + (2)
-    |M_h_c[Cytosol]| + |M_r5p_c[Cytosol]|'
+  equation: adprib_c[Cytosol] + h2o_c[Cytosol] => amp_c[Cytosol] + (2) h_c[Cytosol]
+    + r5p_c[Cytosol]
   subsystem: Nucleotides
-- id: R_ADPT
+- id: ADPT
   name: adeninephosphoribosyltransferase
-  equation: '|M_ade_c[Cytosol]| + |M_prpp_c[Cytosol]| => |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: ade_c[Cytosol] + prpp_c[Cytosol] => amp_c[Cytosol] + ppi_c[Cytosol]
   subsystem: Salvage Pathway
-- id: R_ADSK
+- id: ADSK
   name: adenylyl-sulfatekinase
-  equation: '|M_aps_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
-    + |M_paps_c[Cytosol]|'
+  equation: aps_c[Cytosol] + atp_c[Cytosol] => adp_c[Cytosol] + h_c[Cytosol] + paps_c[Cytosol]
   subsystem: Nucleotides
-- id: R_ADSL1r
+- id: ADSL1r
   name: adenylsuccinatelyase
-  equation: '|M_dcamp_c[Cytosol]| <=> |M_amp_c[Cytosol]| + |M_fum_c[Cytosol]|'
+  equation: dcamp_c[Cytosol] <=> amp_c[Cytosol] + fum_c[Cytosol]
   subsystem: purine metabolism
-- id: R_ADSL2r
+- id: ADSL2r
   name: adenylosuccinatelyase
-  equation: '|M_25aics_c[Cytosol]| <=> |M_aicar_c[Cytosol]| + |M_fum_c[Cytosol]|'
+  equation: 25aics_c[Cytosol] <=> aicar_c[Cytosol] + fum_c[Cytosol]
   subsystem: purine metabolism
-- id: R_ADSS
+- id: ADSS
   name: adenylosuccinatesynthase
-  equation: '|M_asp_DASH_L_c[Cytosol]| + |M_gtp_c[Cytosol]| + |M_imp_c[Cytosol]|
-    => |M_dcamp_c[Cytosol]| + |M_gdp_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: asp-L_c[Cytosol] + gtp_c[Cytosol] + imp_c[Cytosol] => dcamp_c[Cytosol]
+    + gdp_c[Cytosol] + (2) h_c[Cytosol] + pi_c[Cytosol]
   subsystem: purine metabolism
-- id: R_AGDC
+- id: AGDC
   name: N-acetylglucosamine-6-phosphatedeacetylase
-  equation: '|M_acgam6p_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_ac_c[Cytosol]| + |M_gam6p_c[Cytosol]|'
+  equation: acgam6p_c[Cytosol] + h2o_c[Cytosol] => ac_c[Cytosol] + gam6p_c[Cytosol]
   subsystem: Aminosugar Metabolism
-- id: R_AGDC_r
+- id: AGDC_r
   name: N-acetylglucosamine-6-phosphatedeacetylase(reversible)
-  equation: '|M_acgam6p_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_ac_c[Cytosol]| +
-    |M_gam6p_c[Cytosol]|'
+  equation: acgam6p_c[Cytosol] + h2o_c[Cytosol] <=> ac_c[Cytosol] + gam6p_c[Cytosol]
   subsystem: Carbohydrate Metabolism
-- id: R_AGMT
+- id: AGMT
   name: agmatinase
-  equation: '|M_agm_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_ptrc_c[Cytosol]| + |M_urea_c[Cytosol]|'
+  equation: agm_c[Cytosol] + h2o_c[Cytosol] => ptrc_c[Cytosol] + urea_c[Cytosol]
   subsystem: polyamine metabolism
-- id: R_AGPATr_CT
+- id: AGPATr_CT
   name: R_1_acylglycerol_3_phosphate_O_acyltransferase
-  equation: '|M_1ag3p_CT_c[Cytosol]| + (0.051) |M_dcacoa_c[Cytosol]| + (0.022) |M_trdacoa_c[Cytosol]|
-    + (0.023) |M_fa1coa_c[Cytosol]| + (0.0092) |M_tdcoa_c[Cytosol]| + (0.022) |M_ttdcecoa_c[Cytosol]|
-    + (0.323) |M_fa6coa_c[Cytosol]| + (0.2293) |M_pmtcoa_c[Cytosol]| + (0.1334) |M_fa12coa_c[Cytosol]|
-    + (0.1255) |M_hdcoa_c[Cytosol]| + (0.0479) |M_strcoaiso_c[Cytosol]| + (0.0137)
-    |M_strcoa_c[Cytosol]| => |M_12dag3p_CT_c[Cytosol]| + |M_coa_c[Cytosol]|'
+  equation:
+    reversible: false
+    left:
+    - id: 1ag3p_CT_c
+      compartment: Cytosol
+      value: 1
+    - id: dcacoa_c
+      compartment: Cytosol
+      value: 0.051
+    - id: trdacoa_c
+      compartment: Cytosol
+      value: 0.022
+    - id: fa1coa_c
+      compartment: Cytosol
+      value: 0.023
+    - id: tdcoa_c
+      compartment: Cytosol
+      value: 0.0092
+    - id: ttdcecoa_c
+      compartment: Cytosol
+      value: 0.022
+    - id: fa6coa_c
+      compartment: Cytosol
+      value: 0.323
+    - id: pmtcoa_c
+      compartment: Cytosol
+      value: 0.2293
+    - id: fa12coa_c
+      compartment: Cytosol
+      value: 0.1334
+    - id: hdcoa_c
+      compartment: Cytosol
+      value: 0.1255
+    - id: strcoaiso_c
+      compartment: Cytosol
+      value: 0.0479
+    - id: strcoa_c
+      compartment: Cytosol
+      value: 0.0137
+    right:
+    - id: 12dag3p_CT_c
+      compartment: Cytosol
+      value: 1
+    - id: coa_c
+      compartment: Cytosol
+      value: 1
   subsystem: .
-- id: R_AGPR
+- id: AGPR
   name: N-acetyl-g-glutamyl-phosphatereductase
-  equation: '|M_acg5sa_c[Cytosol]| + |M_nadp_c[Cytosol]| + |M_pi_c[Cytosol]| <=>
-    |M_acg5p_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]|'
+  equation: acg5sa_c[Cytosol] + nadp_c[Cytosol] + pi_c[Cytosol] <=> acg5p_c[Cytosol]
+    + h_c[Cytosol] + nadph_c[Cytosol]
   subsystem: arginine and proline
-- id: R_AHC
+- id: AHC
   name: adenosylhomocysteinase
-  equation: '|M_ahcys_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_adn_c[Cytosol]| + |M_hcys_DASH_L_c[Cytosol]|'
+  equation: ahcys_c[Cytosol] + h2o_c[Cytosol] <=> adn_c[Cytosol] + hcys-L_c[Cytosol]
   subsystem: methionine biosynthesis
-- id: R_AHSERL
+- id: AHSERL
   name: O-acetylhomoserine(thiol)-lyase
-  equation: '|M_achms_c[Cytosol]| + |M_ch4s_c[Cytosol]| => |M_ac_c[Cytosol]| + |M_h_c[Cytosol]|
-    + |M_met_DASH_L_c[Cytosol]|'
+  equation: achms_c[Cytosol] + ch4s_c[Cytosol] => ac_c[Cytosol] + h_c[Cytosol] +
+    met-L_c[Cytosol]
   subsystem: Methionine Metabolism
-- id: R_AHSERL2
+- id: AHSERL2
   name: O-acetylhomoserine(thiol)-lyase
-  equation: '|M_achms_c[Cytosol]| + |M_h2s_c[Cytosol]| => |M_ac_c[Cytosol]| + |M_h_c[Cytosol]|
-    + |M_hcys_DASH_L_c[Cytosol]|'
+  equation: achms_c[Cytosol] + h2s_c[Cytosol] => ac_c[Cytosol] + h_c[Cytosol] + hcys-L_c[Cytosol]
   subsystem: Methionine Metabolism
-- id: R_AICART
+- id: AICART
   name: phosphoribosylaminoimidazolecarboxamideformyltransferase
-  equation: '|M_10fthf_c[Cytosol]| + |M_aicar_c[Cytosol]| <=> |M_fprica_c[Cytosol]|
-    + |M_thf_c[Cytosol]|'
+  equation: 10fthf_c[Cytosol] + aicar_c[Cytosol] <=> fprica_c[Cytosol] + thf_c[Cytosol]
   subsystem: purine metabolism
-- id: R_AIRCr
+- id: AIRCr
   name: phosphoribosylaminoimidazolecarboxylase
-  equation: '|M_air_c[Cytosol]| + |M_co2_c[Cytosol]| <=> |M_5aizc_c[Cytosol]| + |M_h_c[Cytosol]|'
+  equation: air_c[Cytosol] + co2_c[Cytosol] <=> 5aizc_c[Cytosol] + h_c[Cytosol]
   subsystem: purine metabolism
-- id: R_AKP1
+- id: AKP1
   name: alkalinephosphatase(Dihydroneopterin)
-  equation: '|M_ahdt_c[Cytosol]| + (3) |M_h2o_c[Cytosol]| => |M_dhnpt_c[Cytosol]|
-    + (2) |M_h_c[Cytosol]| + (3) |M_pi_c[Cytosol]|'
+  equation: ahdt_c[Cytosol] + (3) h2o_c[Cytosol] => dhnpt_c[Cytosol] + (2) h_c[Cytosol]
+    + (3) pi_c[Cytosol]
   subsystem: folate synthesis
-- id: R_ALAALAr
+- id: ALAALAr
   name: D-alanine-D-alanineligase(reversible)
-  equation: (2) |M_ala_DASH_D_c[Cytosol]| + |M_atp_c[Cytosol]| <=> |M_adp_c[Cytosol]|
-    + |M_alaala_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|
+  equation: (2) ala-D_c[Cytosol] + atp_c[Cytosol] <=> adp_c[Cytosol] + alaala_c[Cytosol]
+    + h_c[Cytosol] + pi_c[Cytosol]
   subsystem: cell envelope
-- id: R_ALAR
+- id: ALAR
   name: alanineracemase
-  equation: '|M_ala_DASH_L_c[Cytosol]| <=> |M_ala_DASH_D_c[Cytosol]|'
+  equation: ala-L_c[Cytosol] <=> ala-D_c[Cytosol]
   subsystem: pyruvate metabolism
-- id: R_ALATA_L
+- id: ALATA_L
   name: L-alaninetransaminase
-  equation: '|M_akg_c[Cytosol]| + |M_ala_DASH_L_c[Cytosol]| <=> |M_glu_DASH_L_c[Cytosol]|
-    + |M_pyr_c[Cytosol]|'
+  equation: akg_c[Cytosol] + ala-L_c[Cytosol] <=> glu-L_c[Cytosol] + pyr_c[Cytosol]
   subsystem: Glutamate metabolism
-- id: R_ALATRS
+- id: ALATRS
   name: Alanyl-tRNAsynthetase
-  equation: '|M_ala_DASH_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_trnaala_c[Cytosol]|
-    => |M_alatrna_c[Cytosol]| + |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: ala-L_c[Cytosol] + atp_c[Cytosol] + trnaala_c[Cytosol] => alatrna_c[Cytosol]
+    + amp_c[Cytosol] + ppi_c[Cytosol]
   subsystem: alanine and aspartate metabolism
-- id: R_ALCD2x
+- id: ALCD2x
   name: alcoholdehydrogenase(ethanol)
-  equation: '|M_etoh_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_acald_c[Cytosol]| +
-    |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|'
+  equation: etoh_c[Cytosol] + nad_c[Cytosol] <=> acald_c[Cytosol] + h_c[Cytosol]
+    + nadh_c[Cytosol]
   subsystem: pyruvate metabolism
-- id: R_ALDD2x
+- id: ALDD2x
   name: aldehydedehydrogenase(acetaldehyde,NAD)
-  equation: '|M_acald_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_ac_c[Cytosol]|
-    + (2) |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|'
+  equation: acald_c[Cytosol] + h2o_c[Cytosol] + nad_c[Cytosol] => ac_c[Cytosol] +
+    (2) h_c[Cytosol] + nadh_c[Cytosol]
   subsystem: pyruvate metabolism
-- id: R_AMAA
+- id: AMAA
   name: N-acetylmuramoyl-L-alanineamidase
-  equation: '|M_acmama_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_acmam_c[Cytosol]| +
-    |M_ala_DASH_L_c[Cytosol]|'
+  equation: acmama_c[Cytosol] + h2o_c[Cytosol] => acmam_c[Cytosol] + ala-L_c[Cytosol]
   subsystem: .
-- id: R_AMAOTr
+- id: AMAOTr
   name: adenosylmethionine-8-amino-7-oxononanoatetransaminase
-  equation: '|M_8aonn_c[Cytosol]| + |M_amet_c[Cytosol]| <=> |M_amob_c[Cytosol]| +
-    |M_dann_c[Cytosol]|'
+  equation: 8aonn_c[Cytosol] + amet_c[Cytosol] <=> amob_c[Cytosol] + dann_c[Cytosol]
   subsystem: Pantothenate and CoA Biosynthesis
-- id: R_AMID
+- id: AMID
   name: amidase
-  equation: '|M_4gudbd_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_4gudbutn_c[Cytosol]|
-    + |M_nh4_c[Cytosol]|'
+  equation: 4gudbd_c[Cytosol] + h2o_c[Cytosol] => 4gudbutn_c[Cytosol] + nh4_c[Cytosol]
   subsystem: Arginine and Proline Metabolism
-- id: R_AMID2
+- id: AMID2
   name: amidase
-  equation: '|M_h2o_c[Cytosol]| + |M_pad_c[Cytosol]| => |M_nh4_c[Cytosol]| + |M_pac_c[Cytosol]|'
+  equation: h2o_c[Cytosol] + pad_c[Cytosol] => nh4_c[Cytosol] + pac_c[Cytosol]
   subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
-- id: R_AMID3
+- id: AMID3
   name: amidase
-  equation: '|M_h2o_c[Cytosol]| + |M_iad_c[Cytosol]| => |M_ind3ac_c[Cytosol]| + |M_nh4_c[Cytosol]|'
+  equation: h2o_c[Cytosol] + iad_c[Cytosol] => ind3ac_c[Cytosol] + nh4_c[Cytosol]
   subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
-- id: R_AMID4
+- id: AMID4
   name: amidase
-  equation: '|M_ad_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_ac_c[Cytosol]| + |M_nh4_c[Cytosol]|'
+  equation: ad_c[Cytosol] + h2o_c[Cytosol] => ac_c[Cytosol] + nh4_c[Cytosol]
   subsystem: Others
-- id: R_AMID5
+- id: AMID5
   name: amidase
-  equation: '|M_aa_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_acryl_c[Cytosol]| + |M_nh4_c[Cytosol]|'
+  equation: aa_c[Cytosol] + h2o_c[Cytosol] => acryl_c[Cytosol] + nh4_c[Cytosol]
   subsystem: Others
-- id: R_AMMQT7
+- id: AMMQT7
   name: R_S_adenosylmethione2_demthylmenaquinone_methyltransferase__menaquinone_7_
-  equation: '|M_2dmmq7_c[Cytosol]| + |M_amet_c[Cytosol]| + |M_nadph_c[Cytosol]| =>
-    |M_ahcys_c[Cytosol]| + |M_mql7_c[Cytosol]| + |M_nadp_c[Cytosol]|'
+  equation: 2dmmq7_c[Cytosol] + amet_c[Cytosol] + nadph_c[Cytosol] => ahcys_c[Cytosol]
+    + mql7_c[Cytosol] + nadp_c[Cytosol]
   subsystem: .
-- id: R_ANPRT
+- id: ANPRT
   name: anthranilatephosphoribosyltransferase
-  equation: '|M_anth_c[Cytosol]| + |M_prpp_c[Cytosol]| => |M_ppi_c[Cytosol]| + |M_pran_c[Cytosol]|'
+  equation: anth_c[Cytosol] + prpp_c[Cytosol] => ppi_c[Cytosol] + pran_c[Cytosol]
   subsystem: aromatic amino acid synthesis
-- id: R_ANS
+- id: ANS
   name: anthranilatesynthase
-  equation: '|M_chor_c[Cytosol]| + |M_gln_DASH_L_c[Cytosol]| => |M_anth_c[Cytosol]|
-    + |M_glu_DASH_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pyr_c[Cytosol]|'
+  equation: chor_c[Cytosol] + gln-L_c[Cytosol] => anth_c[Cytosol] + glu-L_c[Cytosol]
+    + h_c[Cytosol] + pyr_c[Cytosol]
   subsystem: aromatic amino acid synthesis
-- id: R_AOXSr
+- id: AOXSr
   name: _8-amino-7-oxononanoatesynthase
-  equation: '|M_ala_DASH_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pmcoa_c[Cytosol]|
-    <=> |M_8aonn_c[Cytosol]| + |M_co2_c[Cytosol]| + |M_coa_c[Cytosol]|'
+  equation: ala-L_c[Cytosol] + h_c[Cytosol] + pmcoa_c[Cytosol] <=> 8aonn_c[Cytosol]
+    + co2_c[Cytosol] + coa_c[Cytosol]
   subsystem: Cofactor and Prosthetic Group Biosynthesis
-- id: R_APRAUR
+- id: APRAUR
   name: _5-amino-6-(5-phosphoribosylamino)uracilreductase
-  equation: '|M_5apru_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| => |M_5aprbu_c[Cytosol]|
-    + |M_nadp_c[Cytosol]|'
+  equation: 5apru_c[Cytosol] + h_c[Cytosol] + nadph_c[Cytosol] => 5aprbu_c[Cytosol]
+    + nadp_c[Cytosol]
   subsystem: riboflavin metabolism
-- id: R_ARBabc
+- id: ARBabc
   name: L-arabinosetransportviaABCsystem
-  equation: '|M_arab_DASH_L_e[Extraorganism]| + |M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]|
-    => |M_adp_c[Cytosol]| + |M_arab_DASH_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: arab-L_e[Extraorganism] + atp_c[Cytosol] + h2o_c[Cytosol] => adp_c[Cytosol]
+    + arab-L_c[Cytosol] + h_c[Cytosol] + pi_c[Cytosol]
   subsystem: Transport, Extracellular
-- id: R_ARGDC
+- id: ARGDC
   name: argininedecarboxylase
-  equation: '|M_arg_DASH_L_c[Cytosol]| + |M_h_c[Cytosol]| => |M_agm_c[Cytosol]| +
-    |M_co2_c[Cytosol]|'
+  equation: arg-L_c[Cytosol] + h_c[Cytosol] => agm_c[Cytosol] + co2_c[Cytosol]
   subsystem: polyamine metabolism
-- id: R_ARGSL
+- id: ARGSL
   name: argininosuccinatelyase
-  equation: '|M_argsuc_c[Cytosol]| <=> |M_arg_DASH_L_c[Cytosol]| + |M_fum_c[Cytosol]|'
+  equation: argsuc_c[Cytosol] <=> arg-L_c[Cytosol] + fum_c[Cytosol]
   subsystem: arginine and proline
-- id: R_ARGSSr
+- id: ARGSSr
   name: argininosuccinatesynthase,reversible
-  equation: '|M_asp_DASH_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_citr_DASH_L_c[Cytosol]|
-    <=> |M_amp_c[Cytosol]| + |M_argsuc_c[Cytosol]| + |M_h_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: asp-L_c[Cytosol] + atp_c[Cytosol] + citr-L_c[Cytosol] <=> amp_c[Cytosol]
+    + argsuc_c[Cytosol] + h_c[Cytosol] + ppi_c[Cytosol]
   subsystem: arginine and proline
-- id: R_ARGTRS
+- id: ARGTRS
   name: Arginyl-tRNAsynthetase
-  equation: '|M_arg_DASH_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_trnaarg_c[Cytosol]|
-    => |M_amp_c[Cytosol]| + |M_argtrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: arg-L_c[Cytosol] + atp_c[Cytosol] + trnaarg_c[Cytosol] => amp_c[Cytosol]
+    + argtrna_c[Cytosol] + ppi_c[Cytosol]
   subsystem: Arginine and Proline Metabolism
-- id: R_ASAD
+- id: ASAD
   name: aspartate-semialdehydedehydrogenase
-  equation: '|M_aspsa_c[Cytosol]| + |M_nadp_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_4pasp_c[Cytosol]|
-    + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]|'
+  equation: aspsa_c[Cytosol] + nadp_c[Cytosol] + pi_c[Cytosol] <=> 4pasp_c[Cytosol]
+    + h_c[Cytosol] + nadph_c[Cytosol]
   subsystem: lysine biosynthesis
-- id: R_ASNS1
+- id: ASNS1
   name: asparaginesynthase(glutamine-hydrolysing)
-  equation: '|M_asp_DASH_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_gln_DASH_L_c[Cytosol]|
-    + |M_h2o_c[Cytosol]| => |M_amp_c[Cytosol]| + |M_asn_DASH_L_c[Cytosol]| + |M_glu_DASH_L_c[Cytosol]|
-    + |M_h_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: asp-L_c[Cytosol] + atp_c[Cytosol] + gln-L_c[Cytosol] + h2o_c[Cytosol]
+    => amp_c[Cytosol] + asn-L_c[Cytosol] + glu-L_c[Cytosol] + h_c[Cytosol] + ppi_c[Cytosol]
   subsystem: alanine and aspartate metabolism
-- id: R_ASNS2
+- id: ASNS2
   name: asparaginesynthetase
-  equation: '|M_asp_DASH_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_nh4_c[Cytosol]|
-    => |M_amp_c[Cytosol]| + |M_asn_DASH_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: asp-L_c[Cytosol] + atp_c[Cytosol] + nh4_c[Cytosol] => amp_c[Cytosol]
+    + asn-L_c[Cytosol] + h_c[Cytosol] + ppi_c[Cytosol]
   subsystem: alanine and aspartate metabolism
-- id: R_ASNTRS
+- id: ASNTRS
   name: Asparaginyl-tRNAsynthetase
-  equation: '|M_asn_DASH_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_trnaasn_c[Cytosol]|
-    => |M_amp_c[Cytosol]| + |M_asntrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: asn-L_c[Cytosol] + atp_c[Cytosol] + trnaasn_c[Cytosol] => amp_c[Cytosol]
+    + asntrna_c[Cytosol] + ppi_c[Cytosol]
   subsystem: alanine and aspartate metabolism
-- id: R_ASP1DC
+- id: ASP1DC
   name: aspartate1-decarboxylase
-  equation: '|M_asp_DASH_L_c[Cytosol]| + |M_h_c[Cytosol]| => |M_ala_DASH_B_c[Cytosol]|
-    + |M_co2_c[Cytosol]|'
+  equation: asp-L_c[Cytosol] + h_c[Cytosol] => ala-B_c[Cytosol] + co2_c[Cytosol]
   subsystem: alanine and aspartate metabolism
-- id: R_ASPCT
+- id: ASPCT
   name: aspartatecarbamoyltransferase
-  equation: '|M_asp_DASH_L_c[Cytosol]| + |M_cbp_c[Cytosol]| => |M_cbasp_c[Cytosol]|
-    + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: asp-L_c[Cytosol] + cbp_c[Cytosol] => cbasp_c[Cytosol] + h_c[Cytosol]
+    + pi_c[Cytosol]
   subsystem: pyrimidine metabolism
-- id: R_ASPKi
+- id: ASPKi
   name: aspartatekinase,irreversible
-  equation: '|M_asp_DASH_L_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_4pasp_c[Cytosol]|
-    + |M_adp_c[Cytosol]|'
+  equation: asp-L_c[Cytosol] + atp_c[Cytosol] => 4pasp_c[Cytosol] + adp_c[Cytosol]
   subsystem: lysine biosynthesis
-- id: R_ASPO5
+- id: ASPO5
   name: L-aspartateoxidase
-  equation: '|M_asp_DASH_L_c[Cytosol]| + |M_fum_c[Cytosol]| => |M_iasp_c[Cytosol]|
-    + |M_succ_c[Cytosol]|'
+  equation: asp-L_c[Cytosol] + fum_c[Cytosol] => iasp_c[Cytosol] + succ_c[Cytosol]
   subsystem: nad and nadp biosynthesis
-- id: R_ASPTA
+- id: ASPTA
   name: aspartatetransaminase
-  equation: '|M_akg_c[Cytosol]| + |M_asp_DASH_L_c[Cytosol]| <=> |M_glu_DASH_L_c[Cytosol]|
-    + |M_oaa_c[Cytosol]|'
+  equation: akg_c[Cytosol] + asp-L_c[Cytosol] <=> glu-L_c[Cytosol] + oaa_c[Cytosol]
   subsystem: alanine and aspartate metabolism
-- id: R_ASPTRS
+- id: ASPTRS
   name: Aspartyl-tRNAsynthetase
-  equation: '|M_asp_DASH_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_trnaasp_c[Cytosol]|
-    => |M_amp_c[Cytosol]| + |M_asptrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: asp-L_c[Cytosol] + atp_c[Cytosol] + trnaasp_c[Cytosol] => amp_c[Cytosol]
+    + asptrna_c[Cytosol] + ppi_c[Cytosol]
   subsystem: alanine and aspartate metabolism
-- id: R_ATPPRT
+- id: ATPPRT
   name: ATPphosphoribosyltransferase
-  equation: '|M_atp_c[Cytosol]| + |M_prpp_c[Cytosol]| => |M_ppi_c[Cytosol]| + |M_prbatp_c[Cytosol]|'
+  equation: atp_c[Cytosol] + prpp_c[Cytosol] => ppi_c[Cytosol] + prbatp_c[Cytosol]
   subsystem: histidine metabolism
-- id: R_ATPS4r
+- id: ATPS4r
   name: ATPsynthase(fourprotonsforoneATP)
-  equation: '|M_adp_c[Cytosol]| + (4) |M_h_e[Extraorganism]| + |M_pi_c[Cytosol]|
-    <=> |M_atp_c[Cytosol]| + (3) |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]|'
+  equation: adp_c[Cytosol] + (4) h_e[Extraorganism] + pi_c[Cytosol] <=> atp_c[Cytosol]
+    + (3) h_c[Cytosol] + h2o_c[Cytosol]
   subsystem: Oxidative Phosphorylation
-- id: R_BACCL
+- id: BACCL
   name: biotin-[acetyl-CoA-carboxylase]ligase
-  equation: '|M_atp_c[Cytosol]| + |M_btn_c[Cytosol]| + |M_h_c[Cytosol]| => |M_btamp_c[Cytosol]|
-    + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + btn_c[Cytosol] + h_c[Cytosol] => btamp_c[Cytosol] +
+    ppi_c[Cytosol]
   subsystem: Biotin Metabolism
-- id: R_BTS2
+- id: BTS2
   name: biotinsynthase(ala-Lproducing)
-  equation: '|M_cys_DASH_L_c[Cytosol]| + |M_dtbt_c[Cytosol]| <=> |M_ala_DASH_L_c[Cytosol]|
-    + |M_btn_c[Cytosol]| + (2) |M_h_c[Cytosol]|'
+  equation: cys-L_c[Cytosol] + dtbt_c[Cytosol] <=> ala-L_c[Cytosol] + btn_c[Cytosol]
+    + (2) h_c[Cytosol]
   subsystem: Cofactor and Prosthetic Group Biosynthesis
-- id: R_BTS3r
+- id: BTS3r
   name: biotinsynthase
-  equation: '|M_dtbt_c[Cytosol]| + (2) |M_s_c[Cytosol]| <=> |M_btn_c[Cytosol]| +
-    |M_h2s_c[Cytosol]|'
+  equation: dtbt_c[Cytosol] + (2) s_c[Cytosol] <=> btn_c[Cytosol] + h2s_c[Cytosol]
   subsystem: Vitamins and Cofactor Biosynthesis
-- id: R_BTSr
+- id: BTSr
   name: biotinsynthase
-  equation: '|M_dtbt_c[Cytosol]| + |M_s_c[Cytosol]| <=> |M_btn_c[Cytosol]| + (2)
-    |M_h_c[Cytosol]|'
+  equation: dtbt_c[Cytosol] + s_c[Cytosol] <=> btn_c[Cytosol] + (2) h_c[Cytosol]
   subsystem: Pantothenate and CoA Biosynthesis
-- id: R_CA2abc
+- id: CA2abc
   name: calciumtransportviaABCsystem
-  equation: '|M_atp_c[Cytosol]| + |M_ca2_e[Extraorganism]| + |M_h2o_c[Cytosol]| =>
-    |M_adp_c[Cytosol]| + |M_ca2_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + ca2_e[Extraorganism] + h2o_c[Cytosol] => adp_c[Cytosol]
+    + ca2_c[Cytosol] + h_c[Cytosol] + pi_c[Cytosol]
   subsystem: Transport
-- id: R_CBIAT
+- id: CBIAT
   name: Cobinamideadenyltransferase
-  equation: '|M_atp_c[Cytosol]| + |M_cbi_c[Cytosol]| + |M_h_c[Cytosol]| <=> |M_adocbi_c[Cytosol]|
-    + |M_pppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + cbi_c[Cytosol] + h_c[Cytosol] <=> adocbi_c[Cytosol]
+    + pppi_c[Cytosol]
   subsystem: Vitamins and Cofactor Biosynthesis
-- id: R_CBPS
+- id: CBPS
   name: carbamoyl-phosphatesynthase(glutamine-hydrolysing)
-  equation: (2) |M_atp_c[Cytosol]| + |M_gln_DASH_L_c[Cytosol]| + |M_h2o_c[Cytosol]|
-    + |M_hco3_c[Cytosol]| => (2) |M_adp_c[Cytosol]| + |M_cbp_c[Cytosol]| + |M_glu_DASH_L_c[Cytosol]|
-    + (2) |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|
+  equation: (2) atp_c[Cytosol] + gln-L_c[Cytosol] + h2o_c[Cytosol] + hco3_c[Cytosol]
+    => (2) adp_c[Cytosol] + cbp_c[Cytosol] + glu-L_c[Cytosol] + (2) h_c[Cytosol]
+    + pi_c[Cytosol]
   subsystem: pyrimidine metabolism
-- id: R_CDGPT_CT
+- id: CDGPT_CT
   name: R_CDPdiacylglycerolsn_glycerol_3_phosphate_3_phosphatidyltransferase
-  equation: '|M_cdpdag_CT_c[Cytosol]| + |M_glyc3p_c[Cytosol]| => |M_cmp_c[Cytosol]|
-    + |M_h_c[Cytosol]| + |M_pglyp_CT_c[Cytosol]|'
+  equation: cdpdag_CT_c[Cytosol] + glyc3p_c[Cytosol] => cmp_c[Cytosol] + h_c[Cytosol]
+    + pglyp_CT_c[Cytosol]
   subsystem: .
-- id: R_CDPDSP_CT
+- id: CDPDSP_CT
   name: R_CDPdiacylglycerol_serine_O_phosphatidyltransferase
-  equation: '|M_cdpdag_CT_c[Cytosol]| + |M_ser_DASH_L_c[Cytosol]| => |M_cmp_c[Cytosol]|
-    + |M_h_c[Cytosol]| + |M_ps_CT_c[Cytosol]|'
+  equation: cdpdag_CT_c[Cytosol] + ser-L_c[Cytosol] => cmp_c[Cytosol] + h_c[Cytosol]
+    + ps_CT_c[Cytosol]
   subsystem: .
-- id: R_CDPGDH
+- id: CDPGDH
   name: CDP-glucose46dehydratase
-  equation: '|M_cdpglu_c[Cytosol]| => |M_cdpddglu_c[Cytosol]| + |M_h2o_c[Cytosol]|'
+  equation: cdpglu_c[Cytosol] => cdpddglu_c[Cytosol] + h2o_c[Cytosol]
   subsystem: Sugar Metabolism
-- id: R_CDPMEK
+- id: CDPMEK
   name: _4-(cytidine5'-diphospho)-2-C-methyl-D-erythritolkinase
-  equation: '|M_4c2me_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_2p4c2me_c[Cytosol]|
-    + |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|'
+  equation: 4c2me_c[Cytosol] + atp_c[Cytosol] => 2p4c2me_c[Cytosol] + adp_c[Cytosol]
+    + h_c[Cytosol]
   subsystem: Cofactor and Prosthetic Group Biosynthesis
-- id: R_CHORM
+- id: CHORM
   name: chorismatemutase
-  equation: '|M_chor_c[Cytosol]| => |M_pphn_c[Cytosol]|'
+  equation: chor_c[Cytosol] => pphn_c[Cytosol]
   subsystem: aromatic amino acid synthesis
-- id: R_CHORS
+- id: CHORS
   name: chorismatesynthase
-  equation: '|M_3psme_c[Cytosol]| => |M_chor_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: 3psme_c[Cytosol] => chor_c[Cytosol] + pi_c[Cytosol]
   subsystem: chorismate synthesis
-- id: R_CHTBNASE
+- id: CHTBNASE
   name: beta-N-acetylhexosaminidase
-  equation: '|M_ctobiose_c[Cytosol]| + |M_h2o_c[Cytosol]| => (2) |M_acgam_c[Cytosol]|'
+  equation: ctobiose_c[Cytosol] + h2o_c[Cytosol] => (2) acgam_c[Cytosol]
   subsystem: Aminosugars Metabolism
-- id: R_CHTNASE
+- id: CHTNASE
   name: chitinase
-  equation: '|M_chtn_c[Cytosol]| + (2) |M_h2o_c[Cytosol]| => (3) |M_acgam_c[Cytosol]|'
+  equation: chtn_c[Cytosol] + (2) h2o_c[Cytosol] => (3) acgam_c[Cytosol]
   subsystem: Aminosugar Metabolism
-- id: R_CHTNASE1
+- id: CHTNASE1
   name: chitinase,ptl
-  equation: (2) |M_chtn_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_ctobiose_c[Cytosol]|
+  equation: (2) chtn_c[Cytosol] + h2o_c[Cytosol] => ctobiose_c[Cytosol]
   subsystem: Aminosugar Metabolism
-- id: R_CITt2r
+- id: CITt2r
   name: citratereversibletransportviasymport
-  equation: '|M_cit_e[Extraorganism]| + |M_h_e[Extraorganism]| <=> |M_cit_c[Cytosol]|
-    + |M_h_c[Cytosol]|'
+  equation: cit_e[Extraorganism] + h_e[Extraorganism] <=> cit_c[Cytosol] + h_c[Cytosol]
   subsystem: Transport, Extracellular
-- id: R_CLPNS2_CT
+- id: CLPNS2_CT
   name: R_cardiolipin_synthase
-  equation: (2) |M_pgly_CT_c[Cytosol]| => |M_cdlp_CT_c[Cytosol]| + |M_glyc_c[Cytosol]|
+  equation: (2) pgly_CT_c[Cytosol] => cdlp_CT_c[Cytosol] + glyc_c[Cytosol]
   subsystem: .
-- id: R_CMPSAS
+- id: CMPSAS
   name: CMPsialicacidsynthase
-  equation: '|M_acnam_c[Cytosol]| + |M_ctp_c[Cytosol]| => |M_cmpacna_c[Cytosol]|
-    + |M_ppi_c[Cytosol]|'
+  equation: acnam_c[Cytosol] + ctp_c[Cytosol] => cmpacna_c[Cytosol] + ppi_c[Cytosol]
   subsystem: Aminosugar Metabolism
-- id: R_CO2t
+- id: CO2t
   name: CO2transporterviadiffusion
-  equation: '|M_co2_e[Extraorganism]| <=> |M_co2_c[Cytosol]|'
+  equation: co2_e[Extraorganism] <=> co2_c[Cytosol]
   subsystem: Transport, Extracellular
-- id: R_CODH2
+- id: CODH2
   name: carbonmonoxidedehydrogenase/acetyl-CoAsynthase2
-  equation: '|M_co_c[Cytosol]| + (2) |M_fdox_c[Cytosol]| + |M_h2o_c[Cytosol]| =>
-    |M_co2_c[Cytosol]| + (2) |M_fdred_c[Cytosol]| + (2) |M_h_c[Cytosol]|'
+  equation: co_c[Cytosol] + (2) fdox_c[Cytosol] + h2o_c[Cytosol] => co2_c[Cytosol]
+    + (2) fdred_c[Cytosol] + (2) h_c[Cytosol]
   subsystem: Methanogenesis
-- id: R_CODHr
+- id: CODHr
   name: carbonmonoxidedehydrogenase/acetyl-CoAsynthase
-  equation: '|M_accoa_c[Cytosol]| + (2) |M_fdox_c[Cytosol]| + |M_h2o_c[Cytosol]|
-    + |M_h4spt_c[Cytosol]| <=> |M_co2_c[Cytosol]| + |M_coa_c[Cytosol]| + (2) |M_fdred_c[Cytosol]|
-    + (2) |M_h_c[Cytosol]| + |M_mh4spt_c[Cytosol]|'
+  equation: accoa_c[Cytosol] + (2) fdox_c[Cytosol] + h2o_c[Cytosol] + h4spt_c[Cytosol]
+    <=> co2_c[Cytosol] + coa_c[Cytosol] + (2) fdred_c[Cytosol] + (2) h_c[Cytosol]
+    + mh4spt_c[Cytosol]
   subsystem: Methanogenesis
-- id: R_CS
+- id: CS
   name: citratesynthase
-  equation: '|M_accoa_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_oaa_c[Cytosol]| => |M_cit_c[Cytosol]|
-    + |M_coa_c[Cytosol]| + |M_h_c[Cytosol]|'
+  equation: accoa_c[Cytosol] + h2o_c[Cytosol] + oaa_c[Cytosol] => cit_c[Cytosol]
+    + coa_c[Cytosol] + h_c[Cytosol]
   subsystem: tca cycle
-- id: R_CTPS1
+- id: CTPS1
   name: CTPsynthase(NH3)
-  equation: '|M_atp_c[Cytosol]| + |M_nh4_c[Cytosol]| + |M_utp_c[Cytosol]| => |M_adp_c[Cytosol]|
-    + |M_ctp_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + nh4_c[Cytosol] + utp_c[Cytosol] => adp_c[Cytosol] +
+    ctp_c[Cytosol] + (2) h_c[Cytosol] + pi_c[Cytosol]
   subsystem: pyrimidine metabolism
-- id: R_CYSS
+- id: CYSS
   name: cysteinesynthase
-  equation: '|M_acser_c[Cytosol]| + |M_h2s_c[Cytosol]| => |M_ac_c[Cytosol]| + |M_cys_DASH_L_c[Cytosol]|
-    + |M_h_c[Cytosol]|'
+  equation: acser_c[Cytosol] + h2s_c[Cytosol] => ac_c[Cytosol] + cys-L_c[Cytosol]
+    + h_c[Cytosol]
   subsystem: cysteine biosynthesis
-- id: R_CYSTGL
+- id: CYSTGL
   name: cystathionineg-lyase
-  equation: '|M_cyst_DASH_L_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_2obut_c[Cytosol]|
-    + |M_cys_DASH_L_c[Cytosol]| + |M_nh4_c[Cytosol]|'
+  equation: cyst-L_c[Cytosol] + h2o_c[Cytosol] => 2obut_c[Cytosol] + cys-L_c[Cytosol]
+    + nh4_c[Cytosol]
   subsystem: cysteine biosynthesis
-- id: R_CYSTL
+- id: CYSTL
   name: cystathionineb-lyase
-  equation: '|M_cyst_DASH_L_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_hcys_DASH_L_c[Cytosol]|
-    + |M_nh4_c[Cytosol]| + |M_pyr_c[Cytosol]|'
+  equation: cyst-L_c[Cytosol] + h2o_c[Cytosol] => hcys-L_c[Cytosol] + nh4_c[Cytosol]
+    + pyr_c[Cytosol]
   subsystem: Methionine Metabolism
-- id: R_CYSTRS
+- id: CYSTRS
   name: Cysteinyl-tRNAsynthetase
-  equation: '|M_atp_c[Cytosol]| + |M_cys_DASH_L_c[Cytosol]| + |M_trnacys_c[Cytosol]|
-    => |M_amp_c[Cytosol]| + |M_cystrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + cys-L_c[Cytosol] + trnacys_c[Cytosol] => amp_c[Cytosol]
+    + cystrna_c[Cytosol] + ppi_c[Cytosol]
   subsystem: Cysteine Metabolism
-- id: R_CYSTS
+- id: CYSTS
   name: cystathioninebeta-synthase
-  equation: '|M_hcys_DASH_L_c[Cytosol]| + |M_ser_DASH_L_c[Cytosol]| => |M_cyst_DASH_L_c[Cytosol]|
-    + |M_h2o_c[Cytosol]|'
+  equation: hcys-L_c[Cytosol] + ser-L_c[Cytosol] => cyst-L_c[Cytosol] + h2o_c[Cytosol]
   subsystem: cysteine biosynthesis
-- id: R_CYTD
+- id: CYTD
   name: cytidinedeaminase
-  equation: '|M_cytd_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_nh4_c[Cytosol]|
-    + |M_uri_c[Cytosol]|'
+  equation: cytd_c[Cytosol] + h_c[Cytosol] + h2o_c[Cytosol] => nh4_c[Cytosol] + uri_c[Cytosol]
   subsystem: Pyrimidine Catabolism
-- id: R_CYTDK1
+- id: CYTDK1
   name: cytidinekinase(ATP)
-  equation: '|M_atp_c[Cytosol]| + |M_cytd_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_cmp_c[Cytosol]|
-    + |M_h_c[Cytosol]|'
+  equation: atp_c[Cytosol] + cytd_c[Cytosol] => adp_c[Cytosol] + cmp_c[Cytosol] +
+    h_c[Cytosol]
   subsystem: Nucleotides
-- id: R_CYTDK2
+- id: CYTDK2
   name: cytidinekinase(GTP)
-  equation: '|M_cytd_c[Cytosol]| + |M_gtp_c[Cytosol]| => |M_cmp_c[Cytosol]| + |M_gdp_c[Cytosol]|
-    + |M_h_c[Cytosol]|'
+  equation: cytd_c[Cytosol] + gtp_c[Cytosol] => cmp_c[Cytosol] + gdp_c[Cytosol] +
+    h_c[Cytosol]
   subsystem: Nucleotide Salvage Pathway
-- id: R_CYTK1
+- id: CYTK1
   name: cytidylatekinase(CMP)
-  equation: '|M_atp_c[Cytosol]| + |M_cmp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_cdp_c[Cytosol]|'
+  equation: atp_c[Cytosol] + cmp_c[Cytosol] <=> adp_c[Cytosol] + cdp_c[Cytosol]
   subsystem: pyrimidine metabolism
-- id: R_CYTK10
+- id: CYTK10
   name: cytidylatekinase(CMP,dGTP)
-  equation: '|M_cmp_c[Cytosol]| + |M_dgtp_c[Cytosol]| <=> |M_cdp_c[Cytosol]| + |M_dgdp_c[Cytosol]|'
+  equation: cmp_c[Cytosol] + dgtp_c[Cytosol] <=> cdp_c[Cytosol] + dgdp_c[Cytosol]
   subsystem: Nucleotides
-- id: R_CYTK11
+- id: CYTK11
   name: cytidylatekinase(dCMP,dGTP)
-  equation: '|M_dcmp_c[Cytosol]| + |M_dgtp_c[Cytosol]| <=> |M_dcdp_c[Cytosol]| +
-    |M_dgdp_c[Cytosol]|'
+  equation: dcmp_c[Cytosol] + dgtp_c[Cytosol] <=> dcdp_c[Cytosol] + dgdp_c[Cytosol]
   subsystem: Nucleotides
-- id: R_CYTK12
+- id: CYTK12
   name: cytidylatekinase(dCMP,dCTP)
-  equation: '|M_dcmp_c[Cytosol]| + |M_dctp_c[Cytosol]| <=> (2) |M_dcdp_c[Cytosol]|'
+  equation: dcmp_c[Cytosol] + dctp_c[Cytosol] <=> (2) dcdp_c[Cytosol]
   subsystem: Nucleotides
-- id: R_CYTK13
+- id: CYTK13
   name: cytidylatekinase(dCMP,dATP)
-  equation: '|M_datp_c[Cytosol]| + |M_dcmp_c[Cytosol]| <=> |M_dadp_c[Cytosol]| +
-    |M_dcdp_c[Cytosol]|'
+  equation: datp_c[Cytosol] + dcmp_c[Cytosol] <=> dadp_c[Cytosol] + dcdp_c[Cytosol]
   subsystem: Nucleotides
-- id: R_CYTK14
+- id: CYTK14
   name: cytidylatekinase(dCMP,UTP)
-  equation: '|M_dcmp_c[Cytosol]| + |M_utp_c[Cytosol]| <=> |M_dcdp_c[Cytosol]| + |M_udp_c[Cytosol]|'
+  equation: dcmp_c[Cytosol] + utp_c[Cytosol] <=> dcdp_c[Cytosol] + udp_c[Cytosol]
   subsystem: Nucleotides
-- id: R_CYTK2
+- id: CYTK2
   name: cytidylatekinase(dCMP)
-  equation: '|M_atp_c[Cytosol]| + |M_dcmp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dcdp_c[Cytosol]|'
+  equation: atp_c[Cytosol] + dcmp_c[Cytosol] <=> adp_c[Cytosol] + dcdp_c[Cytosol]
   subsystem: pyrimidine metabolism
-- id: R_CYTK3
+- id: CYTK3
   name: cytidylatekinase(CMP)(GTP)
-  equation: '|M_cmp_c[Cytosol]| + |M_gtp_c[Cytosol]| <=> |M_cdp_c[Cytosol]| + |M_gdp_c[Cytosol]|'
+  equation: cmp_c[Cytosol] + gtp_c[Cytosol] <=> cdp_c[Cytosol] + gdp_c[Cytosol]
   subsystem: Nucleotides
-- id: R_CYTK4
+- id: CYTK4
   name: cytidylatekinase(dCMP)(GTP)
-  equation: '|M_dcmp_c[Cytosol]| + |M_gtp_c[Cytosol]| <=> |M_dcdp_c[Cytosol]| + |M_gdp_c[Cytosol]|'
+  equation: dcmp_c[Cytosol] + gtp_c[Cytosol] <=> dcdp_c[Cytosol] + gdp_c[Cytosol]
   subsystem: Nucleotides
-- id: R_CYTK5
+- id: CYTK5
   name: cytidylatekinase(dCMP)
-  equation: '|M_ctp_c[Cytosol]| + |M_dcmp_c[Cytosol]| <=> |M_cdp_c[Cytosol]| + |M_dcdp_c[Cytosol]|'
+  equation: ctp_c[Cytosol] + dcmp_c[Cytosol] <=> cdp_c[Cytosol] + dcdp_c[Cytosol]
   subsystem: Nucleotides
-- id: R_CYTK6
+- id: CYTK6
   name: cytidylatekinase(CMP,CTP)
-  equation: '|M_cmp_c[Cytosol]| + |M_ctp_c[Cytosol]| <=> (2) |M_cdp_c[Cytosol]|'
+  equation: cmp_c[Cytosol] + ctp_c[Cytosol] <=> (2) cdp_c[Cytosol]
   subsystem: Nucleotides
-- id: R_CYTK7
+- id: CYTK7
   name: cytidylatekinase(CMP,UTP)
-  equation: '|M_cmp_c[Cytosol]| + |M_utp_c[Cytosol]| <=> |M_cdp_c[Cytosol]| + |M_udp_c[Cytosol]|'
+  equation: cmp_c[Cytosol] + utp_c[Cytosol] <=> cdp_c[Cytosol] + udp_c[Cytosol]
   subsystem: Nucleotides
-- id: R_CYTK8
+- id: CYTK8
   name: cytidylatekinase(CMP,dATP)
-  equation: '|M_cmp_c[Cytosol]| + |M_datp_c[Cytosol]| <=> |M_cdp_c[Cytosol]| + |M_dadp_c[Cytosol]|'
+  equation: cmp_c[Cytosol] + datp_c[Cytosol] <=> cdp_c[Cytosol] + dadp_c[Cytosol]
   subsystem: Nucleotides
-- id: R_CYTK9
+- id: CYTK9
   name: cytidylatekinase(CMP,dCTP)
-  equation: '|M_cmp_c[Cytosol]| + |M_dctp_c[Cytosol]| <=> |M_cdp_c[Cytosol]| + |M_dcdp_c[Cytosol]|'
+  equation: cmp_c[Cytosol] + dctp_c[Cytosol] <=> cdp_c[Cytosol] + dcdp_c[Cytosol]
   subsystem: Nucleotides
-- id: R_Cut1
+- id: Cut1
   name: CopperexportviaATPase
-  equation: '|M_atp_c[Cytosol]| + |M_cu2_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_adp_c[Cytosol]|
-    + |M_cu2_e[Extraorganism]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + cu2_c[Cytosol] + h2o_c[Cytosol] => adp_c[Cytosol] +
+    cu2_e[Extraorganism] + h_c[Cytosol] + pi_c[Cytosol]
   subsystem: Transport
-- id: R_DAGK_CT
+- id: DAGK_CT
   name: R_diacylglycerol_kinase
-  equation: '|M_12dgr_CT_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_12dag3p_CT_c[Cytosol]|
-    + |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|'
+  equation: 12dgr_CT_c[Cytosol] + atp_c[Cytosol] => 12dag3p_CT_c[Cytosol] + adp_c[Cytosol]
+    + h_c[Cytosol]
   subsystem: .
-- id: R_DAPDC
+- id: DAPDC
   name: diaminopimelatedecarboxylase
-  equation: '|M_26dap_DASH_M_c[Cytosol]| + |M_h_c[Cytosol]| => |M_co2_c[Cytosol]|
-    + |M_lys_DASH_L_c[Cytosol]|'
+  equation: 26dap-M_c[Cytosol] + h_c[Cytosol] => co2_c[Cytosol] + lys-L_c[Cytosol]
   subsystem: lysine biosynthesis
-- id: R_DAPDH
+- id: DAPDH
   name: diaminopimelatedehydrogenase
-  equation: (2) |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| + |M_nh4_c[Cytosol]| + |M_thdp_c[Cytosol]|
-    => |M_26dap_DASH_M_c[Cytosol]| + |M_nadp_c[Cytosol]|
+  equation: (2) h_c[Cytosol] + nadph_c[Cytosol] + nh4_c[Cytosol] + thdp_c[Cytosol]
+    => 26dap-M_c[Cytosol] + nadp_c[Cytosol]
   subsystem: lysine biosynthesis
-- id: R_DAPE
+- id: DAPE
   name: diaminopimelateepimerase
-  equation: '|M_26dap_DASH_LL_c[Cytosol]| <=> |M_26dap_DASH_M_c[Cytosol]|'
+  equation: 26dap-LL_c[Cytosol] <=> 26dap-M_c[Cytosol]
   subsystem: Threonine and Lysine Metabolism
-- id: R_DB4PS
+- id: DB4PS
   name: _3,4-Dihydroxy-2-butanone-4-phosphatesynthase
-  equation: '|M_ru5p_DASH_D_c[Cytosol]| => |M_db4p_c[Cytosol]| + |M_for_c[Cytosol]|
-    + |M_h_c[Cytosol]|'
+  equation: ru5p-D_c[Cytosol] => db4p_c[Cytosol] + for_c[Cytosol] + h_c[Cytosol]
   subsystem: riboflavin metabolism
-- id: R_DBTSr
+- id: DBTSr
   name: dethiobiotinsynthase
-  equation: '|M_atp_c[Cytosol]| + |M_co2_c[Cytosol]| + |M_dann_c[Cytosol]| <=> |M_adp_c[Cytosol]|
-    + |M_dtbt_c[Cytosol]| + (3) |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + co2_c[Cytosol] + dann_c[Cytosol] <=> adp_c[Cytosol]
+    + dtbt_c[Cytosol] + (3) h_c[Cytosol] + pi_c[Cytosol]
   subsystem: Pantothenate and CoA Biosynthesis
-- id: R_DCMPDA
+- id: DCMPDA
   name: dCMPdeaminase
-  equation: '|M_dcmp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_dump_c[Cytosol]|
-    + |M_nh4_c[Cytosol]|'
+  equation: dcmp_c[Cytosol] + h_c[Cytosol] + h2o_c[Cytosol] <=> dump_c[Cytosol] +
+    nh4_c[Cytosol]
   subsystem: Pyrimidine Catabolism
-- id: R_DCTPD2
+- id: DCTPD2
   name: dCTPdeaminase
-  equation: '|M_ctp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_nh4_c[Cytosol]|
-    + |M_utp_c[Cytosol]|'
+  equation: ctp_c[Cytosol] + h_c[Cytosol] + h2o_c[Cytosol] => nh4_c[Cytosol] + utp_c[Cytosol]
   subsystem: N - others
-- id: R_DDPA
+- id: DDPA
   name: _3-deoxy-D-arabino-heptulosonate7-phosphatesynthetase
-  equation: '|M_e4p_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_pep_c[Cytosol]| => |M_2dda7p_c[Cytosol]|
-    + |M_pi_c[Cytosol]|'
+  equation: e4p_c[Cytosol] + h2o_c[Cytosol] + pep_c[Cytosol] => 2dda7p_c[Cytosol]
+    + pi_c[Cytosol]
   subsystem: chorismate synthesis
-- id: R_DDPGA
+- id: DDPGA
   name: _2-dehydro-3-deoxy-phosphogluconatealdolase
-  equation: '|M_4h2oglt_c[Cytosol]| <=> |M_glx_c[Cytosol]| + |M_pyr_c[Cytosol]|'
+  equation: 4h2oglt_c[Cytosol] <=> glx_c[Cytosol] + pyr_c[Cytosol]
   subsystem: Glyoxylate Biosynthesis 7
-- id: R_DGK1
+- id: DGK1
   name: deoxyguanylatekinase(dGMP:ATP)
-  equation: '|M_atp_c[Cytosol]| + |M_dgmp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dgdp_c[Cytosol]|'
+  equation: atp_c[Cytosol] + dgmp_c[Cytosol] <=> adp_c[Cytosol] + dgdp_c[Cytosol]
   subsystem: purine metabolism
-- id: R_DHAD1
+- id: DHAD1
   name: dihydroxy-aciddehydratase(2,3-dihydroxy-3-methylbutanoate)
-  equation: '|M_23dhmb_c[Cytosol]| => |M_3mob_c[Cytosol]| + |M_h2o_c[Cytosol]|'
+  equation: 23dhmb_c[Cytosol] => 3mob_c[Cytosol] + h2o_c[Cytosol]
   subsystem: branched-chain amino acids
-- id: R_DHAD2
+- id: DHAD2
   name: Dihydroxy-aciddehydratase(2,3-dihydroxy-3-methylpentanoate)
-  equation: '|M_23dhmp_c[Cytosol]| => |M_3mop_c[Cytosol]| + |M_h2o_c[Cytosol]|'
+  equation: 23dhmp_c[Cytosol] => 3mop_c[Cytosol] + h2o_c[Cytosol]
   subsystem: branched-chain amino acids
-- id: R_DHDPRy
+- id: DHDPRy
   name: dihydrodipicolinatereductase(NADPH)
-  equation: '|M_23dhdp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| => |M_nadp_c[Cytosol]|
-    + |M_thdp_c[Cytosol]|'
+  equation: 23dhdp_c[Cytosol] + h_c[Cytosol] + nadph_c[Cytosol] => nadp_c[Cytosol]
+    + thdp_c[Cytosol]
   subsystem: lysine biosynthesis
-- id: R_DHDPS
+- id: DHDPS
   name: dihydrodipicolinatesynthase
-  equation: '|M_aspsa_c[Cytosol]| + |M_pyr_c[Cytosol]| => |M_23dhdp_c[Cytosol]| +
-    |M_h_c[Cytosol]| + (2) |M_h2o_c[Cytosol]|'
+  equation: aspsa_c[Cytosol] + pyr_c[Cytosol] => 23dhdp_c[Cytosol] + h_c[Cytosol]
+    + (2) h2o_c[Cytosol]
   subsystem: lysine biosynthesis
-- id: R_DHFR
+- id: DHFR
   name: dihydrofolatereductase
-  equation: '|M_dhf_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| <=> |M_nadp_c[Cytosol]|
-    + |M_thf_c[Cytosol]|'
+  equation: dhf_c[Cytosol] + h_c[Cytosol] + nadph_c[Cytosol] <=> nadp_c[Cytosol]
+    + thf_c[Cytosol]
   subsystem: folate synthesis
-- id: R_DHFS
+- id: DHFS
   name: dihydrofolatesynthase
-  equation: '|M_atp_c[Cytosol]| + |M_dhpt_c[Cytosol]| + |M_glu_DASH_L_c[Cytosol]|
-    => |M_adp_c[Cytosol]| + |M_dhf_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + dhpt_c[Cytosol] + glu-L_c[Cytosol] => adp_c[Cytosol]
+    + dhf_c[Cytosol] + pi_c[Cytosol]
   subsystem: folate synthesis
-- id: R_DHNAOT7
+- id: DHNAOT7
   name: R_1_4_dihydroxy_2_naphthoate_octaprenyltransferase
-  equation: '|M_dhna_c[Cytosol]| + |M_hepdp_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_2dmmq7_c[Cytosol]|
-    + |M_co2_c[Cytosol]| + |M_nadh_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: dhna_c[Cytosol] + hepdp_c[Cytosol] + nad_c[Cytosol] => 2dmmq7_c[Cytosol]
+    + co2_c[Cytosol] + nadh_c[Cytosol] + ppi_c[Cytosol]
   subsystem: .
-- id: R_DHNPA
+- id: DHNPA
   name: dihydroneopterinaldolase
-  equation: '|M_dhnpt_c[Cytosol]| => |M_2ahhmp_c[Cytosol]| + |M_gcald_c[Cytosol]|
-    + |M_h_c[Cytosol]|'
+  equation: dhnpt_c[Cytosol] => 2ahhmp_c[Cytosol] + gcald_c[Cytosol] + h_c[Cytosol]
   subsystem: folate synthesis
-- id: R_DHORD2
+- id: DHORD2
   name: dihydooroticaciddehydrogenase(quinone8)
-  equation: '|M_dhor_DASH_S_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_orot_c[Cytosol]|
-    + |M_nadh_c[Cytosol]| + |M_h_c[Cytosol]|'
+  equation: dhor-S_c[Cytosol] + nad_c[Cytosol] => orot_c[Cytosol] + nadh_c[Cytosol]
+    + h_c[Cytosol]
   subsystem: pyrimidine metabolism
-- id: R_DHORTS
+- id: DHORTS
   name: dihydroorotase
-  equation: '|M_dhor_DASH_S_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_cbasp_c[Cytosol]|
-    + |M_h_c[Cytosol]|'
+  equation: dhor-S_c[Cytosol] + h2o_c[Cytosol] <=> cbasp_c[Cytosol] + h_c[Cytosol]
   subsystem: pyrimidine metabolism
-- id: R_DHPPDA
+- id: DHPPDA
   name: diaminohydroxyphosphoribosylaminopyrimidinedeaminase
-  equation: '|M_25dhpp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_5apru_c[Cytosol]|
-    + |M_nh4_c[Cytosol]|'
+  equation: 25dhpp_c[Cytosol] + h_c[Cytosol] + h2o_c[Cytosol] => 5apru_c[Cytosol]
+    + nh4_c[Cytosol]
   subsystem: riboflavin metabolism
-- id: R_DHPS
+- id: DHPS
   name: dihydropteroatesynthase
-  equation: '|M_2ahhmp_c[Cytosol]| + |M_4abz_c[Cytosol]| => |M_dhpt_c[Cytosol]| +
-    |M_h2o_c[Cytosol]|'
+  equation: 2ahhmp_c[Cytosol] + 4abz_c[Cytosol] => dhpt_c[Cytosol] + h2o_c[Cytosol]
   subsystem: folate synthesis
-- id: R_DHQD
+- id: DHQD
   name: _3-dehydroquinatedehydratase
-  equation: '|M_3dhq_c[Cytosol]| <=> |M_3dhsk_c[Cytosol]| + |M_h2o_c[Cytosol]|'
+  equation: 3dhq_c[Cytosol] <=> 3dhsk_c[Cytosol] + h2o_c[Cytosol]
   subsystem: chorismate synthesis
-- id: R_DHQS
+- id: DHQS
   name: _3-dehydroquinatesynthase
-  equation: '|M_2dda7p_c[Cytosol]| => |M_3dhq_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: 2dda7p_c[Cytosol] => 3dhq_c[Cytosol] + pi_c[Cytosol]
   subsystem: chorismate synthesis
-- id: R_DMATT
+- id: DMATT
   name: R_dimethylallyltranstransferase
-  equation: '|M_dmpp_c[Cytosol]| + |M_ipdp_c[Cytosol]| => |M_grdp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: dmpp_c[Cytosol] + ipdp_c[Cytosol] => grdp_c[Cytosol] + ppi_c[Cytosol]
   subsystem: .
-- id: R_DPCOAK
+- id: DPCOAK
   name: dephospho-CoAkinase
-  equation: '|M_atp_c[Cytosol]| + |M_dpcoa_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_coa_c[Cytosol]|
-    + |M_h_c[Cytosol]|'
+  equation: atp_c[Cytosol] + dpcoa_c[Cytosol] => adp_c[Cytosol] + coa_c[Cytosol]
+    + h_c[Cytosol]
   subsystem: coenzyme a biosynthesis
-- id: R_DRPA
+- id: DRPA
   name: deoxyribose-phosphatealdolase
-  equation: '|M_2dr5p_c[Cytosol]| => |M_acald_c[Cytosol]| + |M_g3p_c[Cytosol]|'
+  equation: 2dr5p_c[Cytosol] => acald_c[Cytosol] + g3p_c[Cytosol]
   subsystem: Pentose Phosphate Pathway
-- id: R_DTMPK
+- id: DTMPK
   name: dTMPkinase
-  equation: '|M_atp_c[Cytosol]| + |M_dtmp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dtdp_c[Cytosol]|'
+  equation: atp_c[Cytosol] + dtmp_c[Cytosol] <=> adp_c[Cytosol] + dtdp_c[Cytosol]
   subsystem: pyrimidine metabolism
-- id: R_DUTPDP
+- id: DUTPDP
   name: dUTPdiphosphatase
-  equation: '|M_dutp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dump_c[Cytosol]| + |M_h_c[Cytosol]|
-    + |M_ppi_c[Cytosol]|'
+  equation: dutp_c[Cytosol] + h2o_c[Cytosol] => dump_c[Cytosol] + h_c[Cytosol] +
+    ppi_c[Cytosol]
   subsystem: pyrimidine metabolism
-- id: R_DXPRIi
+- id: DXPRIi
   name: _1-deoxy-D-xylulosereductoisomerase
-  equation: '|M_dxyl5p_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| => |M_2me4p_c[Cytosol]|
-    + |M_nadp_c[Cytosol]|'
+  equation: dxyl5p_c[Cytosol] + h_c[Cytosol] + nadph_c[Cytosol] => 2me4p_c[Cytosol]
+    + nadp_c[Cytosol]
   subsystem: Cofactor and Prosthetic Group Biosynthesis
-- id: R_DXPS
+- id: DXPS
   name: _1-deoxy-D-xylulose5-phosphatesynthase
-  equation: '|M_g3p_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pyr_c[Cytosol]| => |M_co2_c[Cytosol]|
-    + |M_dxyl5p_c[Cytosol]|'
+  equation: g3p_c[Cytosol] + h_c[Cytosol] + pyr_c[Cytosol] => co2_c[Cytosol] + dxyl5p_c[Cytosol]
   subsystem: Cofactor and Prosthetic Group Biosynthesis
-- id: R_EHGLAT
+- id: EHGLAT
   name: L-erythro-4-Hydroxyglutamate:2-oxoglutarateaminotransferase
-  equation: '|M_akg_c[Cytosol]| + |M_e4hglu_c[Cytosol]| => |M_4h2oglt_c[Cytosol]|
-    + |M_glu_DASH_L_c[Cytosol]|'
+  equation: akg_c[Cytosol] + e4hglu_c[Cytosol] => 4h2oglt_c[Cytosol] + glu-L_c[Cytosol]
   subsystem: Arginine and Proline Metabolism
-- id: R_ENO
+- id: ENO
   name: enolase
-  equation: '|M_2pg_c[Cytosol]| <=> |M_h2o_c[Cytosol]| + |M_pep_c[Cytosol]|'
+  equation: 2pg_c[Cytosol] <=> h2o_c[Cytosol] + pep_c[Cytosol]
   subsystem: glycolysis
-- id: R_ETOHt2r
+- id: ESC_co2_e
+  name: . escape flux
+  equation: co2_e[Extraorganism] =>
+  subsystem: EscapeFlux
+- id: ESC_h2o_e
+  name: . escape flux
+  equation: h2o_e[Extraorganism] =>
+  subsystem: EscapeFlux
+- id: ETOHt2r
   name: ethanolreversibletransportviaprotonsymport
-  equation: '|M_etoh_e[Extraorganism]| + |M_h_e[Extraorganism]| <=> |M_etoh_c[Cytosol]|
-    + |M_h_c[Cytosol]|'
+  equation: etoh_e[Extraorganism] + h_e[Extraorganism] <=> etoh_c[Cytosol] + h_c[Cytosol]
   subsystem: Transport, Extracellular
-- id: R_FACOAL100
+- id: FACOAL100
   name: R_fatty_acid__CoA_ligase__Iso_C100_
-  equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_dca_c[Cytosol]| <=> |M_amp_c[Cytosol]|
-    + |M_dcacoa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + coa_c[Cytosol] + dca_c[Cytosol] <=> amp_c[Cytosol] +
+    dcacoa_c[Cytosol] + ppi_c[Cytosol]
   subsystem: .
-- id: R_FACOAL130
+- id: FACOAL130
   name: R_fatty_acid__CoA_ligase__Iso_C130_
-  equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_trdca_c[Cytosol]| <=> |M_amp_c[Cytosol]|
-    + |M_trdacoa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + coa_c[Cytosol] + trdca_c[Cytosol] <=> amp_c[Cytosol]
+    + trdacoa_c[Cytosol] + ppi_c[Cytosol]
   subsystem: .
-- id: R_FACOAL140
+- id: FACOAL140
   name: R_fatty_acid__CoA_ligase__tetradecanoate_
-  equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_ttdca_c[Cytosol]| <=> |M_amp_c[Cytosol]|
-    + |M_ppi_c[Cytosol]| + |M_tdcoa_c[Cytosol]|'
+  equation: atp_c[Cytosol] + coa_c[Cytosol] + ttdca_c[Cytosol] <=> amp_c[Cytosol]
+    + ppi_c[Cytosol] + tdcoa_c[Cytosol]
   subsystem: .
-- id: R_FACOAL140_ISO_
+- id: FACOAL140_ISO_
   name: R_fatty_acid__CoA_ligase__Iso_C140_
-  equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_fa1_c[Cytosol]| <=> |M_amp_c[Cytosol]|
-    + |M_fa1coa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + coa_c[Cytosol] + fa1_c[Cytosol] <=> amp_c[Cytosol] +
+    fa1coa_c[Cytosol] + ppi_c[Cytosol]
   subsystem: .
-- id: R_FACOAL141
+- id: FACOAL141
   name: R_fatty_acid__CoA_ligase__tetradecenoate_
-  equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_ttdce_c[Cytosol]| <=> |M_amp_c[Cytosol]|
-    + |M_ttdcecoa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + coa_c[Cytosol] + ttdce_c[Cytosol] <=> amp_c[Cytosol]
+    + ttdcecoa_c[Cytosol] + ppi_c[Cytosol]
   subsystem: .
-- id: R_FACOAL150_ISO_
+- id: FACOAL150_ISO_
   name: R_fatty_acid__CoA_ligase__Iso_C150_
-  equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_fa3_c[Cytosol]| <=> |M_amp_c[Cytosol]|
-    + |M_fa3coa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + coa_c[Cytosol] + fa3_c[Cytosol] <=> amp_c[Cytosol] +
+    fa3coa_c[Cytosol] + ppi_c[Cytosol]
   subsystem: .
-- id: R_FACOAL150_anteiso_
+- id: FACOAL150_anteiso_
   name: R_fatty_acid__CoA_ligase__anteiso_C150_
-  equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_fa4_c[Cytosol]| <=> |M_amp_c[Cytosol]|
-    + |M_fa4coa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + coa_c[Cytosol] + fa4_c[Cytosol] <=> amp_c[Cytosol] +
+    fa4coa_c[Cytosol] + ppi_c[Cytosol]
   subsystem: .
-- id: R_FACOAL160
+- id: FACOAL160
   name: R_fatty_acid__CoA_ligase__hexadecanoate_
-  equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_hdca_c[Cytosol]| <=> |M_amp_c[Cytosol]|
-    + |M_pmtcoa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + coa_c[Cytosol] + hdca_c[Cytosol] <=> amp_c[Cytosol]
+    + pmtcoa_c[Cytosol] + ppi_c[Cytosol]
   subsystem: .
-- id: R_FACOAL160_ISO_
+- id: FACOAL160_ISO_
   name: R_fatty_acid__CoA_ligase__Iso_C160_
-  equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_fa6_c[Cytosol]| <=> |M_amp_c[Cytosol]|
-    + |M_fa6coa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + coa_c[Cytosol] + fa6_c[Cytosol] <=> amp_c[Cytosol] +
+    fa6coa_c[Cytosol] + ppi_c[Cytosol]
   subsystem: .
-- id: R_FACOAL161
+- id: FACOAL161
   name: R_fatty_acid__CoA_ligase__hexadecenoate_
-  equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_hdcea_c[Cytosol]| <=> |M_amp_c[Cytosol]|
-    + |M_hdcoa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + coa_c[Cytosol] + hdcea_c[Cytosol] <=> amp_c[Cytosol]
+    + hdcoa_c[Cytosol] + ppi_c[Cytosol]
   subsystem: .
-- id: R_FACOAL161_ISO_
+- id: FACOAL161_ISO_
   name: R_fatty_acid__CoA_ligase__Iso_C161_
-  equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_fa5_c[Cytosol]| <=> |M_amp_c[Cytosol]|
-    + |M_fa5coa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + coa_c[Cytosol] + fa5_c[Cytosol] <=> amp_c[Cytosol] +
+    fa5coa_c[Cytosol] + ppi_c[Cytosol]
   subsystem: .
-- id: R_FACOAL170_ISO_
+- id: FACOAL170_ISO_
   name: R_fatty_acid__CoA_ligase__Iso_C170_
-  equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_fa11_c[Cytosol]| <=> |M_amp_c[Cytosol]|
-    + |M_fa11coa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + coa_c[Cytosol] + fa11_c[Cytosol] <=> amp_c[Cytosol]
+    + fa11coa_c[Cytosol] + ppi_c[Cytosol]
   subsystem: .
-- id: R_FACOAL170_anteiso_
+- id: FACOAL170_anteiso_
   name: R_fatty_acid__CoA_ligase__anteiso_C170_
-  equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_fa12_c[Cytosol]| <=> |M_amp_c[Cytosol]|
-    + |M_fa12coa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + coa_c[Cytosol] + fa12_c[Cytosol] <=> amp_c[Cytosol]
+    + fa12coa_c[Cytosol] + ppi_c[Cytosol]
   subsystem: .
-- id: R_FACOAL171_ISO_
+- id: FACOAL171_ISO_
   name: R_fatty_acid__CoA_ligase__Iso_C171_
-  equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_fa9_c[Cytosol]| <=> |M_amp_c[Cytosol]|
-    + |M_fa9coa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + coa_c[Cytosol] + fa9_c[Cytosol] <=> amp_c[Cytosol] +
+    fa9coa_c[Cytosol] + ppi_c[Cytosol]
   subsystem: .
-- id: R_FACOAL171_anteiso_
+- id: FACOAL171_anteiso_
   name: R_fatty_acid__CoA_ligase__anteiso_C171_
-  equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_fa10_c[Cytosol]| <=> |M_amp_c[Cytosol]|
-    + |M_fa10coa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + coa_c[Cytosol] + fa10_c[Cytosol] <=> amp_c[Cytosol]
+    + fa10coa_c[Cytosol] + ppi_c[Cytosol]
   subsystem: .
-- id: R_FACOAL180
+- id: FACOAL180
   name: R_fatty_acid__CoA_ligase__octadecanoate_
-  equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_ocdca_c[Cytosol]| <=> |M_amp_c[Cytosol]|
-    + |M_ppi_c[Cytosol]| + |M_strcoa_c[Cytosol]|'
+  equation: atp_c[Cytosol] + coa_c[Cytosol] + ocdca_c[Cytosol] <=> amp_c[Cytosol]
+    + ppi_c[Cytosol] + strcoa_c[Cytosol]
   subsystem: .
-- id: R_FACOAL180_ISO_
+- id: FACOAL180_ISO_
   name: R_fatty_acid__CoA_ligase__Iso_C180_
-  equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_ocdcaiso_c[Cytosol]| <=>
-    |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_strcoaiso_c[Cytosol]|'
+  equation: atp_c[Cytosol] + coa_c[Cytosol] + ocdcaiso_c[Cytosol] <=> amp_c[Cytosol]
+    + ppi_c[Cytosol] + strcoaiso_c[Cytosol]
   subsystem: .
-- id: R_FACOAL181
+- id: FACOAL181
   name: R_fatty_acid__CoA_ligase__octadecenoate_
-  equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_ocdcea_c[Cytosol]| <=>
-    |M_amp_c[Cytosol]| + |M_odecoa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + coa_c[Cytosol] + ocdcea_c[Cytosol] <=> amp_c[Cytosol]
+    + odecoa_c[Cytosol] + ppi_c[Cytosol]
   subsystem: .
-- id: R_FBA
+- id: FBA
   name: fructose-bisphosphatealdolase
-  equation: '|M_fdp_c[Cytosol]| <=> |M_dhap_c[Cytosol]| + |M_g3p_c[Cytosol]|'
+  equation: fdp_c[Cytosol] <=> dhap_c[Cytosol] + g3p_c[Cytosol]
   subsystem: glycolysis
-- id: R_FDH
+- id: FDH
   name: formatedehydrogenase
-  equation: '|M_for_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_nadh_c[Cytosol]|'
+  equation: for_c[Cytosol] + nad_c[Cytosol] => co2_c[Cytosol] + nadh_c[Cytosol]
   subsystem: pyruvate metabolism
-- id: R_FDXHASE
+- id: FDXHASE
   name: ferredoxinhydrogenase
-  equation: (2) |M_fdred_c[Cytosol]| + (2) |M_h_c[Cytosol]| <=> |M_h2_c[Cytosol]|
-    + (2) |M_fdox_c[Cytosol]|
+  equation: (2) fdred_c[Cytosol] + (2) h_c[Cytosol] <=> h2_c[Cytosol] + (2) fdox_c[Cytosol]
   subsystem: Other
-- id: R_FE3abc
+- id: FE3abc
   name: iron(III)transportviaABCsystem
-  equation: '|M_atp_c[Cytosol]| + |M_fe3_e[Extraorganism]| + |M_h2o_c[Cytosol]| =>
-    |M_adp_c[Cytosol]| + |M_fe3_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + fe3_e[Extraorganism] + h2o_c[Cytosol] => adp_c[Cytosol]
+    + fe3_c[Cytosol] + h_c[Cytosol] + pi_c[Cytosol]
   subsystem: Transport
-- id: R_FMETTRS
+- id: FMETTRS
   name: Methionyl-tRNAformyltransferase
-  equation: '|M_10fthf_c[Cytosol]| + |M_mettrna_c[Cytosol]| => |M_fmettrna_c[Cytosol]|
-    + |M_h_c[Cytosol]| + |M_thf_c[Cytosol]|'
+  equation: 10fthf_c[Cytosol] + mettrna_c[Cytosol] => fmettrna_c[Cytosol] + h_c[Cytosol]
+    + thf_c[Cytosol]
   subsystem: Methionine Metabolism
-- id: R_FMNAT
+- id: FMNAT
   name: FMNadenylyltransferase
-  equation: '|M_atp_c[Cytosol]| + |M_fmn_c[Cytosol]| + |M_h_c[Cytosol]| => |M_fad_c[Cytosol]|
-    + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + fmn_c[Cytosol] + h_c[Cytosol] => fad_c[Cytosol] + ppi_c[Cytosol]
   subsystem: riboflavin metabolism
-- id: R_FOLD3
+- id: FOLD3
   name: dihydropteroatesynthase
-  equation: '|M_2ahhmd_c[Cytosol]| + |M_4abz_c[Cytosol]| => |M_dhpt_c[Cytosol]| +
-    |M_ppi_c[Cytosol]|'
+  equation: 2ahhmd_c[Cytosol] + 4abz_c[Cytosol] => dhpt_c[Cytosol] + ppi_c[Cytosol]
   subsystem: folate synthesis
-- id: R_FORt3
+- id: FORt3
   name: formatetransportoutviaprotonantiport
-  equation: '|M_for_c[Cytosol]| + |M_h_e[Extraorganism]| => |M_for_e[Extraorganism]|
-    + |M_h_c[Cytosol]|'
+  equation: for_c[Cytosol] + h_e[Extraorganism] => for_e[Extraorganism] + h_c[Cytosol]
   subsystem: .
-- id: R_FRTT
+- id: FRTT
   name: R_farnesyltranstransferase
-  equation: '|M_frdp_c[Cytosol]| + |M_ipdp_c[Cytosol]| => |M_ggdp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: frdp_c[Cytosol] + ipdp_c[Cytosol] => ggdp_c[Cytosol] + ppi_c[Cytosol]
   subsystem: .
-- id: R_FTHFCL
+- id: FTHFCL
   name: _5-formethyltetrahydrofolatecyclo-ligase
-  equation: '|M_5fthf_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_methf_c[Cytosol]|
-    + |M_pi_c[Cytosol]|'
+  equation: 5fthf_c[Cytosol] + atp_c[Cytosol] => adp_c[Cytosol] + methf_c[Cytosol]
+    + pi_c[Cytosol]
   subsystem: one carbon pool by folate
-- id: R_FTHFL
+- id: FTHFL
   name: formate-tetrahydrofolateligase
-  equation: '|M_atp_c[Cytosol]| + |M_for_c[Cytosol]| + |M_thf_c[Cytosol]| <=> |M_10fthf_c[Cytosol]|
-    + |M_adp_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + for_c[Cytosol] + thf_c[Cytosol] <=> 10fthf_c[Cytosol]
+    + adp_c[Cytosol] + pi_c[Cytosol]
   subsystem: one carbon pool by folate
-- id: R_FUM
+- id: FUM
   name: fumarase
-  equation: '|M_fum_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_mal_DASH_L_c[Cytosol]|'
+  equation: fum_c[Cytosol] + h2o_c[Cytosol] <=> mal-L_c[Cytosol]
   subsystem: tca cycle
-- id: R_G1PACT
+- id: G1PACT
   name: glucosamine-1-phosphateN-acetyltransferase
-  equation: '|M_accoa_c[Cytosol]| + |M_gam1p_c[Cytosol]| => |M_acgam1p_c[Cytosol]|
-    + |M_coa_c[Cytosol]| + |M_h_c[Cytosol]|'
+  equation: accoa_c[Cytosol] + gam1p_c[Cytosol] => acgam1p_c[Cytosol] + coa_c[Cytosol]
+    + h_c[Cytosol]
   subsystem: cell envelope
-- id: R_G1PCTR
+- id: G1PCTR
   name: glucose-1-phosphatecytidylyltransferase
-  equation: '|M_ctp_c[Cytosol]| + |M_g1p_c[Cytosol]| + |M_h_c[Cytosol]| <=> |M_cdpglu_c[Cytosol]|
-    + |M_ppi_c[Cytosol]|'
+  equation: ctp_c[Cytosol] + g1p_c[Cytosol] + h_c[Cytosol] <=> cdpglu_c[Cytosol]
+    + ppi_c[Cytosol]
   subsystem: Sugar Metabolism
-- id: R_G1PTT
+- id: G1PTT
   name: glucose-1-phosphatethymidylyltransferase
-  equation: '|M_dttp_c[Cytosol]| + |M_g1p_c[Cytosol]| + |M_h_c[Cytosol]| <=> |M_dtdpglu_c[Cytosol]|
-    + |M_ppi_c[Cytosol]|'
+  equation: dttp_c[Cytosol] + g1p_c[Cytosol] + h_c[Cytosol] <=> dtdpglu_c[Cytosol]
+    + ppi_c[Cytosol]
   subsystem: Nucleotide Sugar Metabolism
-- id: R_G1SATi
+- id: G1SATi
   name: glutamate-1-semialdehydeaminotransferase
-  equation: '|M_glu1sa_c[Cytosol]| => |M_5aop_c[Cytosol]|'
+  equation: glu1sa_c[Cytosol] => 5aop_c[Cytosol]
   subsystem: Cofactor and Prosthetic Group Biosynthesis
-- id: R_G3PCT
+- id: G3PCT
   name: R_glycerol_3_phosphate_cytidylyltransferase
-  equation: '|M_ctp_c[Cytosol]| + |M_glyc3p_c[Cytosol]| + |M_h_c[Cytosol]| => |M_cdpglyc_c[Cytosol]|
-    + |M_ppi_c[Cytosol]|'
+  equation: ctp_c[Cytosol] + glyc3p_c[Cytosol] + h_c[Cytosol] => cdpglyc_c[Cytosol]
+    + ppi_c[Cytosol]
   subsystem: .
-- id: R_G3PD1
+- id: G3PD1
   name: glycerol-3-phosphatedehydrogenase(NAD)
-  equation: '|M_glyc3p_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_dhap_c[Cytosol]| +
-    |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|'
+  equation: glyc3p_c[Cytosol] + nad_c[Cytosol] <=> dhap_c[Cytosol] + h_c[Cytosol]
+    + nadh_c[Cytosol]
   subsystem: glycerol and glycerol-3-p uptake and utilization
-- id: R_G3PD2
+- id: G3PD2
   name: glycerol-3-phosphatedehydrogenase(NADP)
-  equation: '|M_glyc3p_c[Cytosol]| + |M_nadp_c[Cytosol]| <=> |M_dhap_c[Cytosol]|
-    + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]|'
+  equation: glyc3p_c[Cytosol] + nadp_c[Cytosol] <=> dhap_c[Cytosol] + h_c[Cytosol]
+    + nadph_c[Cytosol]
   subsystem: glycerol and glycerol-3-p uptake and utilization
-- id: R_G3POA_CT
+- id: G3POA_CT
   name: R_glycerol_3_phosphate_O_acyltransferase
-  equation: '|M_glyc3p_c[Cytosol]| + (0.051) |M_dcacoa_c[Cytosol]| + (0.022) |M_trdacoa_c[Cytosol]|
-    + (0.023) |M_fa1coa_c[Cytosol]| + (0.0092) |M_tdcoa_c[Cytosol]| + (0.022) |M_ttdcecoa_c[Cytosol]|
-    + (0.323) |M_fa6coa_c[Cytosol]| + (0.2293) |M_pmtcoa_c[Cytosol]| + (0.1334) |M_fa12coa_c[Cytosol]|
-    + (0.1255) |M_hdcoa_c[Cytosol]| + (0.0479) |M_strcoaiso_c[Cytosol]| + (0.0137)
-    |M_strcoa_c[Cytosol]| => |M_1ag3p_CT_c[Cytosol]| + |M_coa_c[Cytosol]|'
+  equation:
+    reversible: false
+    left:
+    - id: glyc3p_c
+      compartment: Cytosol
+      value: 1
+    - id: dcacoa_c
+      compartment: Cytosol
+      value: 0.051
+    - id: trdacoa_c
+      compartment: Cytosol
+      value: 0.022
+    - id: fa1coa_c
+      compartment: Cytosol
+      value: 0.023
+    - id: tdcoa_c
+      compartment: Cytosol
+      value: 0.0092
+    - id: ttdcecoa_c
+      compartment: Cytosol
+      value: 0.022
+    - id: fa6coa_c
+      compartment: Cytosol
+      value: 0.323
+    - id: pmtcoa_c
+      compartment: Cytosol
+      value: 0.2293
+    - id: fa12coa_c
+      compartment: Cytosol
+      value: 0.1334
+    - id: hdcoa_c
+      compartment: Cytosol
+      value: 0.1255
+    - id: strcoaiso_c
+      compartment: Cytosol
+      value: 0.0479
+    - id: strcoa_c
+      compartment: Cytosol
+      value: 0.0137
+    right:
+    - id: 1ag3p_CT_c
+      compartment: Cytosol
+      value: 1
+    - id: coa_c
+      compartment: Cytosol
+      value: 1
   subsystem: .
-- id: R_G5SADr
+- id: G5SADr
   name: L-glutamate5-semialdehydedehydratase,reversible
-  equation: '|M_glu5sa_c[Cytosol]| <=> |M_1pyr5c_c[Cytosol]| + |M_h_c[Cytosol]| +
-    |M_h2o_c[Cytosol]|'
+  equation: glu5sa_c[Cytosol] <=> 1pyr5c_c[Cytosol] + h_c[Cytosol] + h2o_c[Cytosol]
   subsystem: proline synthesis
-- id: R_G5SD
+- id: G5SD
   name: glutamate-5-semialdehydedehydrogenase
-  equation: '|M_glu5p_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| => |M_glu5sa_c[Cytosol]|
-    + |M_nadp_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: glu5p_c[Cytosol] + h_c[Cytosol] + nadph_c[Cytosol] => glu5sa_c[Cytosol]
+    + nadp_c[Cytosol] + pi_c[Cytosol]
   subsystem: proline synthesis
-- id: R_GALU
+- id: GALU
   name: UTP-glucose-1-phosphateuridylyltransferase
-  equation: '|M_g1p_c[Cytosol]| + |M_h_c[Cytosol]| + |M_utp_c[Cytosol]| <=> |M_ppi_c[Cytosol]|
-    + |M_udpg_c[Cytosol]|'
+  equation: g1p_c[Cytosol] + h_c[Cytosol] + utp_c[Cytosol] <=> ppi_c[Cytosol] + udpg_c[Cytosol]
   subsystem: sugar metabolism
-- id: R_GALabc
+- id: GALabc
   name: D-galactosetransportviaABCsystem
-  equation: '|M_atp_c[Cytosol]| + |M_gal_e[Extraorganism]| + |M_h2o_c[Cytosol]| =>
-    |M_adp_c[Cytosol]| + |M_gal_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + gal_e[Extraorganism] + h2o_c[Cytosol] => adp_c[Cytosol]
+    + gal_c[Cytosol] + h_c[Cytosol] + pi_c[Cytosol]
   subsystem: Transport, Extracellular
-- id: R_GAPD
+- id: GAPD
   name: glyceraldehyde-3-phosphatedehydrogenase
-  equation: '|M_g3p_c[Cytosol]| + |M_nad_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_13dpg_c[Cytosol]|
-    + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|'
+  equation: g3p_c[Cytosol] + nad_c[Cytosol] + pi_c[Cytosol] <=> 13dpg_c[Cytosol]
+    + h_c[Cytosol] + nadh_c[Cytosol]
   subsystem: glycolysis
-- id: R_GARFTi
+- id: GARFTi
   name: phosphoribosylglycinamideformyltransferase,irreversible
-  equation: '|M_10fthf_c[Cytosol]| + |M_gar_c[Cytosol]| => |M_fgam_c[Cytosol]| +
-    |M_h_c[Cytosol]| + |M_thf_c[Cytosol]|'
+  equation: 10fthf_c[Cytosol] + gar_c[Cytosol] => fgam_c[Cytosol] + h_c[Cytosol]
+    + thf_c[Cytosol]
   subsystem: purine metabolism
-- id: R_GBEZ
+- id: GBEZ
   name: _1,4-alpha-glucanbranchingenzyme
-  equation: '|M_14glun_c[Cytosol]| => |M_glycogen_c[Cytosol]| + |M_h2o_c[Cytosol]|'
+  equation: 14glun_c[Cytosol] => glycogen_c[Cytosol] + h2o_c[Cytosol]
   subsystem: glycogen metabolism
-- id: R_GCALDt
+- id: GCALDt
   name: Glycoaldehydyereversibletransport
-  equation: '|M_gcald_e[Extraorganism]| <=> |M_gcald_c[Cytosol]|'
+  equation: gcald_e[Extraorganism] <=> gcald_c[Cytosol]
   subsystem: Transport, Extracellular
-- id: R_GF6PTA
+- id: GF6PTA
   name: glutamine-fructose-6-phosphatetransaminase
-  equation: '|M_f6p_c[Cytosol]| + |M_gln_DASH_L_c[Cytosol]| => |M_gam6p_c[Cytosol]|
-    + |M_glu_DASH_L_c[Cytosol]|'
+  equation: f6p_c[Cytosol] + gln-L_c[Cytosol] => gam6p_c[Cytosol] + glu-L_c[Cytosol]
   subsystem: cell envelope
-- id: R_GGTT
+- id: GGTT
   name: R_geranylgeranyltranstransferase
-  equation: '|M_ggdp_c[Cytosol]| + |M_ipdp_c[Cytosol]| => |M_pendp_c[Cytosol]| +
-    |M_ppi_c[Cytosol]|'
+  equation: ggdp_c[Cytosol] + ipdp_c[Cytosol] => pendp_c[Cytosol] + ppi_c[Cytosol]
   subsystem: .
-- id: R_GHMT2r
+- id: GHMT2r
   name: glycinehydroxymethyltransferase,reversible
-  equation: '|M_ser_DASH_L_c[Cytosol]| + |M_thf_c[Cytosol]| <=> |M_gly_c[Cytosol]|
-    + |M_h2o_c[Cytosol]| + |M_mlthf_c[Cytosol]|'
+  equation: ser-L_c[Cytosol] + thf_c[Cytosol] <=> gly_c[Cytosol] + h2o_c[Cytosol]
+    + mlthf_c[Cytosol]
   subsystem: glycine_serine_threonine metabolism
-- id: R_GK1
+- id: GK1
   name: guanylatekinase(GMP:ATP)
-  equation: '|M_atp_c[Cytosol]| + |M_gmp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_gdp_c[Cytosol]|'
+  equation: atp_c[Cytosol] + gmp_c[Cytosol] <=> adp_c[Cytosol] + gdp_c[Cytosol]
   subsystem: purine metabolism
-- id: R_GLCP
+- id: GLCP
   name: glycogenphosphorylase
-  equation: '|M_glycogen_c[Cytosol]| + |M_pi_c[Cytosol]| => |M_g1p_c[Cytosol]|'
+  equation: glycogen_c[Cytosol] + pi_c[Cytosol] => g1p_c[Cytosol]
   subsystem: glycogen metabolism
-- id: R_GLCS1
+- id: GLCS1
   name: glycogensynthase(ADPGlc)
-  equation: '|M_adpglc_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_glycogen_c[Cytosol]|
-    + |M_h_c[Cytosol]|'
+  equation: adpglc_c[Cytosol] => adp_c[Cytosol] + glycogen_c[Cytosol] + h_c[Cytosol]
   subsystem: glycogen metabolism
-- id: R_GLCt1
+- id: GLCt1
   name: glucose transport (uniport)
-  equation: '|M_glc_DASH_D_e[Extraorganism]| + |M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]|
-    => |M_glc_DASH_D_c[Cytosol]| + |M_adp_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_h_c[Cytosol]|'
+  equation: glc-D_e[Extraorganism] + atp_c[Cytosol] + h2o_c[Cytosol] => glc-D_c[Cytosol]
+    + adp_c[Cytosol] + pi_c[Cytosol] + h_c[Cytosol]
   subsystem: Transport, Extracellular
-- id: R_GLGC
+- id: GLGC
   name: glucose-1-phosphateadenylyltransferase
-  equation: '|M_atp_c[Cytosol]| + |M_g1p_c[Cytosol]| + |M_h_c[Cytosol]| => |M_adpglc_c[Cytosol]|
-    + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + g1p_c[Cytosol] + h_c[Cytosol] => adpglc_c[Cytosol] +
+    ppi_c[Cytosol]
   subsystem: glycogen metabolism
-- id: R_GLNS
+- id: GLNS
   name: glutaminesynthetase
-  equation: '|M_atp_c[Cytosol]| + |M_glu_DASH_L_c[Cytosol]| + |M_nh4_c[Cytosol]|
-    => |M_adp_c[Cytosol]| + |M_gln_DASH_L_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + glu-L_c[Cytosol] + nh4_c[Cytosol] => adp_c[Cytosol]
+    + gln-L_c[Cytosol] + h_c[Cytosol] + pi_c[Cytosol]
   subsystem: glutamate metabolism
-- id: R_GLNTRS
+- id: GLNTRS
   name: Glutaminyl-tRNAsynthetase
-  equation: '|M_atp_c[Cytosol]| + |M_gln_DASH_L_c[Cytosol]| + |M_trnagln_c[Cytosol]|
-    => |M_amp_c[Cytosol]| + |M_glntrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + gln-L_c[Cytosol] + trnagln_c[Cytosol] => amp_c[Cytosol]
+    + glntrna_c[Cytosol] + ppi_c[Cytosol]
   subsystem: Glutamine Metabolism
-- id: R_GLU5K
+- id: GLU5K
   name: glutamate5-kinase
-  equation: '|M_atp_c[Cytosol]| + |M_glu_DASH_L_c[Cytosol]| => |M_adp_c[Cytosol]|
-    + |M_glu5p_c[Cytosol]|'
+  equation: atp_c[Cytosol] + glu-L_c[Cytosol] => adp_c[Cytosol] + glu5p_c[Cytosol]
   subsystem: proline synthesis
-- id: R_GLUDy
+- id: GLUDy
   name: glutamatedehydrogenase(NADP)
-  equation: '|M_glu_DASH_L_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_nadp_c[Cytosol]|
-    <=> |M_akg_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| + |M_nh4_c[Cytosol]|'
+  equation: glu-L_c[Cytosol] + h2o_c[Cytosol] + nadp_c[Cytosol] <=> akg_c[Cytosol]
+    + h_c[Cytosol] + nadph_c[Cytosol] + nh4_c[Cytosol]
   subsystem: glutamate metabolism
-- id: R_GLUPRT
+- id: GLUPRT
   name: glutaminephosphoribosyldiphosphateamidotransferase
-  equation: '|M_gln_DASH_L_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_prpp_c[Cytosol]|
-    => |M_glu_DASH_L_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_pram_c[Cytosol]|'
+  equation: gln-L_c[Cytosol] + h2o_c[Cytosol] + prpp_c[Cytosol] => glu-L_c[Cytosol]
+    + ppi_c[Cytosol] + pram_c[Cytosol]
   subsystem: purine metabolism
-- id: R_GLUR
+- id: GLUR
   name: glutamateracemase
-  equation: '|M_glu_DASH_D_c[Cytosol]| <=> |M_glu_DASH_L_c[Cytosol]|'
+  equation: glu-D_c[Cytosol] <=> glu-L_c[Cytosol]
   subsystem: cell envelope
-- id: R_GLUSy
+- id: GLUSy
   name: glutamatesynthase(NADPH)
-  equation: '|M_akg_c[Cytosol]| + |M_gln_DASH_L_c[Cytosol]| + |M_h_c[Cytosol]| +
-    |M_nadph_c[Cytosol]| => (2) |M_glu_DASH_L_c[Cytosol]| + |M_nadp_c[Cytosol]|'
+  equation: akg_c[Cytosol] + gln-L_c[Cytosol] + h_c[Cytosol] + nadph_c[Cytosol] =>
+    (2) glu-L_c[Cytosol] + nadp_c[Cytosol]
   subsystem: glutamate metabolism
-- id: R_GLUTRR
+- id: GLUTRR
   name: glutamyl-tRNAreductase
-  equation: '|M_glutrna_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| =>
-    |M_glu1sa_c[Cytosol]| + |M_nadp_c[Cytosol]| + |M_trnaglu_c[Cytosol]|'
+  equation: glutrna_c[Cytosol] + h_c[Cytosol] + nadph_c[Cytosol] => glu1sa_c[Cytosol]
+    + nadp_c[Cytosol] + trnaglu_c[Cytosol]
   subsystem: Cofactor and Prosthetic Group Biosynthesis
-- id: R_GLUTRS
+- id: GLUTRS
   name: Glutamyl-tRNAsynthetase
-  equation: '|M_atp_c[Cytosol]| + |M_glu_DASH_L_c[Cytosol]| + |M_trnaglu_c[Cytosol]|
-    => |M_amp_c[Cytosol]| + |M_glutrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + glu-L_c[Cytosol] + trnaglu_c[Cytosol] => amp_c[Cytosol]
+    + glutrna_c[Cytosol] + ppi_c[Cytosol]
   subsystem: Glutamine Metabolism
-- id: R_GLYAT
+- id: GLYAT
   name: glycineC-acetyltransferase
-  equation: '|M_accoa_c[Cytosol]| + |M_gly_c[Cytosol]| <=> |M_2aobut_c[Cytosol]|
-    + |M_coa_c[Cytosol]|'
+  equation: accoa_c[Cytosol] + gly_c[Cytosol] <=> 2aobut_c[Cytosol] + coa_c[Cytosol]
   subsystem: Glycine and Serine Metabolism
-- id: R_GLYCK
+- id: GLYCK
   name: glyceratekinase
-  equation: '|M_atp_c[Cytosol]| + |M_glyc_DASH_R_c[Cytosol]| => |M_3pg_c[Cytosol]|
-    + |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|'
+  equation: atp_c[Cytosol] + glyc-R_c[Cytosol] => 3pg_c[Cytosol] + adp_c[Cytosol]
+    + h_c[Cytosol]
   subsystem: Glyoxylate Metabolism
-- id: R_GLYK
+- id: GLYK
   name: glycerolkinase
-  equation: '|M_atp_c[Cytosol]| + |M_glyc_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_glyc3p_c[Cytosol]|
-    + |M_h_c[Cytosol]|'
+  equation: atp_c[Cytosol] + glyc_c[Cytosol] => adp_c[Cytosol] + glyc3p_c[Cytosol]
+    + h_c[Cytosol]
   subsystem: glycerol and glycerol-3-p uptake and utilization
-- id: R_GLYTRS
+- id: GLYTRS
   name: Glycyl-tRNAsynthetase
-  equation: '|M_atp_c[Cytosol]| + |M_gly_c[Cytosol]| + |M_trnagly_c[Cytosol]| =>
-    |M_amp_c[Cytosol]| + |M_glytrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + gly_c[Cytosol] + trnagly_c[Cytosol] => amp_c[Cytosol]
+    + glytrna_c[Cytosol] + ppi_c[Cytosol]
   subsystem: Glycine and Serine Metabolism
-- id: R_GMPS
+- id: GMPS
   name: GMPsynthase
-  equation: '|M_atp_c[Cytosol]| + |M_nh4_c[Cytosol]| + |M_xmp_c[Cytosol]| => |M_amp_c[Cytosol]|
-    + |M_gmp_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + nh4_c[Cytosol] + xmp_c[Cytosol] => amp_c[Cytosol] +
+    gmp_c[Cytosol] + (2) h_c[Cytosol] + ppi_c[Cytosol]
   subsystem: purine metabolism
-- id: R_GMPS2
+- id: GMPS2
   name: GMPsynthase
-  equation: '|M_atp_c[Cytosol]| + |M_gln_DASH_L_c[Cytosol]| + |M_h2o_c[Cytosol]|
-    + |M_xmp_c[Cytosol]| => |M_amp_c[Cytosol]| + |M_glu_DASH_L_c[Cytosol]| + |M_gmp_c[Cytosol]|
-    + (2) |M_h_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + gln-L_c[Cytosol] + h2o_c[Cytosol] + xmp_c[Cytosol] =>
+    amp_c[Cytosol] + glu-L_c[Cytosol] + gmp_c[Cytosol] + (2) h_c[Cytosol] + ppi_c[Cytosol]
   subsystem: Nucleotides
-- id: R_GNMT
+- id: GNMT
   name: glycineN-methyltransferase
-  equation: '|M_amet_c[Cytosol]| + |M_gly_c[Cytosol]| => |M_ahcys_c[Cytosol]| + |M_h_c[Cytosol]|
-    + |M_sarcs_c[Cytosol]|'
+  equation: amet_c[Cytosol] + gly_c[Cytosol] => ahcys_c[Cytosol] + h_c[Cytosol] +
+    sarcs_c[Cytosol]
   subsystem: methionine biosynthesis
-- id: R_GRTT
+- id: GRTT
   name: R_geranyltranstransferase
-  equation: '|M_grdp_c[Cytosol]| + |M_ipdp_c[Cytosol]| => |M_frdp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: grdp_c[Cytosol] + ipdp_c[Cytosol] => frdp_c[Cytosol] + ppi_c[Cytosol]
   subsystem: .
-- id: R_GTPCI
+- id: GTPCI
   name: GTPcyclohydrolaseI
-  equation: '|M_gtp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_ahdt_c[Cytosol]| + |M_for_c[Cytosol]|
-    + |M_h_c[Cytosol]|'
+  equation: gtp_c[Cytosol] + h2o_c[Cytosol] => ahdt_c[Cytosol] + for_c[Cytosol] +
+    h_c[Cytosol]
   subsystem: folate synthesis
-- id: R_GTPCII
+- id: GTPCII
   name: GTPcyclohydrolaseII
-  equation: '|M_gtp_c[Cytosol]| + (3) |M_h2o_c[Cytosol]| => |M_25dhpp_c[Cytosol]|
-    + |M_for_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: gtp_c[Cytosol] + (3) h2o_c[Cytosol] => 25dhpp_c[Cytosol] + for_c[Cytosol]
+    + (2) h_c[Cytosol] + ppi_c[Cytosol]
   subsystem: riboflavin metabolism
-- id: R_GTPDPK
+- id: GTPDPK
   name: GTPdiphosphokinase
-  equation: '|M_atp_c[Cytosol]| + |M_gtp_c[Cytosol]| => |M_amp_c[Cytosol]| + |M_gdptp_c[Cytosol]|
-    + |M_h_c[Cytosol]|'
+  equation: atp_c[Cytosol] + gtp_c[Cytosol] => amp_c[Cytosol] + gdptp_c[Cytosol]
+    + h_c[Cytosol]
   subsystem: Purine and Pyrimidine Biosynthesis
-- id: R_GUAD
+- id: GUAD
   name: guaninedeaminase
-  equation: '|M_gua_c[Cytosol]| + |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_nh4_c[Cytosol]|
-    + |M_xan_c[Cytosol]|'
+  equation: gua_c[Cytosol] + h_c[Cytosol] + h2o_c[Cytosol] => nh4_c[Cytosol] + xan_c[Cytosol]
   subsystem: Purine Catabolism
-- id: R_H2CO3D
+- id: H2CO3D
   name: carboxylicaciddissociation
-  equation: '|M_co2_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_h2co3_c[Cytosol]|'
+  equation: co2_c[Cytosol] + h2o_c[Cytosol] <=> h2co3_c[Cytosol]
   subsystem: Miscellaneous
-- id: R_H2CO3D2
+- id: H2CO3D2
   name: carboxylicaciddissociation
-  equation: '|M_h_c[Cytosol]| + |M_hco3_c[Cytosol]| <=> |M_h2co3_c[Cytosol]|'
+  equation: h_c[Cytosol] + hco3_c[Cytosol] <=> h2co3_c[Cytosol]
   subsystem: Miscellaneous
-- id: R_H2Ot
+- id: H2Ot
   name: H2Otransportviadiffusion
-  equation: '|M_h2o_e[Extraorganism]| <=> |M_h2o_c[Cytosol]|'
+  equation: h2o_e[Extraorganism] <=> h2o_c[Cytosol]
   subsystem: transport
-- id: R_H2St
+- id: H2St
   name: h2stransport(diffusion)
-  equation: '|M_h2s_e[Extraorganism]| <=> |M_h2s_c[Cytosol]|'
+  equation: h2s_e[Extraorganism] <=> h2s_c[Cytosol]
   subsystem: Transport
-- id: R_HEX1
+- id: HEX1
   name: hexokinase(D-glucose:ATP)
-  equation: '|M_atp_c[Cytosol]| + |M_glc_DASH_D_c[Cytosol]| => |M_adp_c[Cytosol]|
-    + |M_g6p_c[Cytosol]| + |M_h_c[Cytosol]|'
+  equation: atp_c[Cytosol] + glc-D_c[Cytosol] => adp_c[Cytosol] + g6p_c[Cytosol]
+    + h_c[Cytosol]
   subsystem: glycolysis
-- id: R_HEX7
+- id: HEX7
   name: hexokinase(D-fructose:ATP)
-  equation: '|M_atp_c[Cytosol]| + |M_fru_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_f6p_c[Cytosol]|
-    + |M_h_c[Cytosol]|'
+  equation: atp_c[Cytosol] + fru_c[Cytosol] => adp_c[Cytosol] + f6p_c[Cytosol] +
+    h_c[Cytosol]
   subsystem: sugar metabolism
-- id: R_HEXTT
+- id: HEXTT
   name: R_trans_hexaprenyltranstransferase
-  equation: '|M_hexdp_c[Cytosol]| + |M_ipdp_c[Cytosol]| => |M_hepdp_c[Cytosol]| +
-    |M_ppi_c[Cytosol]|'
+  equation: hexdp_c[Cytosol] + ipdp_c[Cytosol] => hepdp_c[Cytosol] + ppi_c[Cytosol]
   subsystem: .
-- id: R_HISDC
+- id: HISDC
   name: histidinedecarboxylase
-  equation: '|M_h_c[Cytosol]| + |M_his_DASH_L_c[Cytosol]| => |M_co2_c[Cytosol]| +
-    |M_hista_c[Cytosol]|'
+  equation: h_c[Cytosol] + his-L_c[Cytosol] => co2_c[Cytosol] + hista_c[Cytosol]
   subsystem: Histidine Metabolism
-- id: R_HISTD
+- id: HISTD
   name: histidinoldehydrogenase
-  equation: '|M_h2o_c[Cytosol]| + |M_histd_c[Cytosol]| + (2) |M_nad_c[Cytosol]| =>
-    (3) |M_h_c[Cytosol]| + |M_his_DASH_L_c[Cytosol]| + (2) |M_nadh_c[Cytosol]|'
+  equation: h2o_c[Cytosol] + histd_c[Cytosol] + (2) nad_c[Cytosol] => (3) h_c[Cytosol]
+    + his-L_c[Cytosol] + (2) nadh_c[Cytosol]
   subsystem: histidine metabolism
-- id: R_HISTP
+- id: HISTP
   name: histidinol-phosphatase
-  equation: '|M_h2o_c[Cytosol]| + |M_hisp_c[Cytosol]| => |M_histd_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: h2o_c[Cytosol] + hisp_c[Cytosol] => histd_c[Cytosol] + pi_c[Cytosol]
   subsystem: histidine metabolism
-- id: R_HISTRS
+- id: HISTRS
   name: Histidyl-tRNAsynthetase
-  equation: '|M_atp_c[Cytosol]| + |M_his_DASH_L_c[Cytosol]| + |M_trnahis_c[Cytosol]|
-    => |M_amp_c[Cytosol]| + |M_histrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + his-L_c[Cytosol] + trnahis_c[Cytosol] => amp_c[Cytosol]
+    + histrna_c[Cytosol] + ppi_c[Cytosol]
   subsystem: Histidine Metabolism
-- id: R_HMBS
+- id: HMBS
   name: hydroxymethylbilanesynthase
-  equation: '|M_h2o_c[Cytosol]| + (4) |M_ppbng_c[Cytosol]| => |M_hmbil_c[Cytosol]|
-    + (4) |M_nh4_c[Cytosol]|'
+  equation: h2o_c[Cytosol] + (4) ppbng_c[Cytosol] => hmbil_c[Cytosol] + (4) nh4_c[Cytosol]
   subsystem: Heme Biosynthesis
-- id: R_HPPK
+- id: HPPK
   name: _2-amino-4-hydroxy-6-hydroxymethyldihydropteridinediphosphokinase
-  equation: '|M_2ahhmp_c[Cytosol]| + |M_atp_c[Cytosol]| => |M_2ahhmd_c[Cytosol]|
-    + |M_amp_c[Cytosol]| + |M_h_c[Cytosol]|'
+  equation: 2ahhmp_c[Cytosol] + atp_c[Cytosol] => 2ahhmd_c[Cytosol] + amp_c[Cytosol]
+    + h_c[Cytosol]
   subsystem: folate synthesis
-- id: R_HSDxi
+- id: HSDxi
   name: homoserinedehydrogenase(NADH),irreversible
-  equation: '|M_aspsa_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| => |M_hom_DASH_L_c[Cytosol]|
-    + |M_nad_c[Cytosol]|'
+  equation: aspsa_c[Cytosol] + h_c[Cytosol] + nadh_c[Cytosol] => hom-L_c[Cytosol]
+    + nad_c[Cytosol]
   subsystem: Glycine and Serine Metabolism
-- id: R_HSDy
+- id: HSDy
   name: homoserinedehydrogenase(NADPH)
-  equation: '|M_hom_DASH_L_c[Cytosol]| + |M_nadp_c[Cytosol]| <=> |M_aspsa_c[Cytosol]|
-    + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]|'
+  equation: hom-L_c[Cytosol] + nadp_c[Cytosol] <=> aspsa_c[Cytosol] + h_c[Cytosol]
+    + nadph_c[Cytosol]
   subsystem: methionine biosynthesis
-- id: R_HSDyi
+- id: HSDyi
   name: homoserinedehydrogenase(NADP),irreversible
-  equation: '|M_aspsa_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| => |M_hom_DASH_L_c[Cytosol]|
-    + |M_nadp_c[Cytosol]|'
+  equation: aspsa_c[Cytosol] + h_c[Cytosol] + nadph_c[Cytosol] => hom-L_c[Cytosol]
+    + nadp_c[Cytosol]
   subsystem: Glycine and Serine Metabolism
-- id: R_HSK
+- id: HSK
   name: homoserinekinase
-  equation: '|M_atp_c[Cytosol]| + |M_hom_DASH_L_c[Cytosol]| => |M_adp_c[Cytosol]|
-    + |M_h_c[Cytosol]| + |M_phom_c[Cytosol]|'
+  equation: atp_c[Cytosol] + hom-L_c[Cytosol] => adp_c[Cytosol] + h_c[Cytosol] +
+    phom_c[Cytosol]
   subsystem: glycine_serine_threonine metabolism
-- id: R_HSST
+- id: HSST
   name: homoserineO-succinyltransferase
-  equation: '|M_hom_DASH_L_c[Cytosol]| + |M_succoa_c[Cytosol]| => |M_coa_c[Cytosol]|
-    + |M_suchms_c[Cytosol]|'
+  equation: hom-L_c[Cytosol] + succoa_c[Cytosol] => coa_c[Cytosol] + suchms_c[Cytosol]
   subsystem: methionine biosynthesis
-- id: R_HSTPT
+- id: HSTPT
   name: histidinol-phosphatetransaminase
-  equation: '|M_glu_DASH_L_c[Cytosol]| + |M_imacp_c[Cytosol]| => |M_akg_c[Cytosol]|
-    + |M_hisp_c[Cytosol]|'
+  equation: glu-L_c[Cytosol] + imacp_c[Cytosol] => akg_c[Cytosol] + hisp_c[Cytosol]
   subsystem: histidine metabolism
-- id: R_HXPRT
+- id: HXPRT
   name: hypoxanthinephosphoribosyltransferase(Hypoxanthine)
-  equation: '|M_hxan_c[Cytosol]| + |M_prpp_c[Cytosol]| => |M_imp_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: hxan_c[Cytosol] + prpp_c[Cytosol] => imp_c[Cytosol] + ppi_c[Cytosol]
   subsystem: purine metabolism
-- id: R_ICDHyr
+- id: ICDHyr
   name: isocitratedehydrogenase(NADP)
-  equation: '|M_icit_c[Cytosol]| + |M_nadp_c[Cytosol]| <=> |M_akg_c[Cytosol]| + |M_co2_c[Cytosol]|
-    + |M_nadph_c[Cytosol]|'
+  equation: icit_c[Cytosol] + nadp_c[Cytosol] <=> akg_c[Cytosol] + co2_c[Cytosol]
+    + nadph_c[Cytosol]
   subsystem: tca cycle
-- id: R_ICHORS
+- id: ICHORS
   name: R_isochorismate_synthase
-  equation: '|M_chor_c[Cytosol]| <=> |M_ichor_c[Cytosol]|'
+  equation: chor_c[Cytosol] <=> ichor_c[Cytosol]
   subsystem: .
-- id: R_IG3PS
+- id: IG3PS
   name: Imidazole-glycerol-3-phosphatesynthase
-  equation: '|M_gln_DASH_L_c[Cytosol]| + |M_prlp_c[Cytosol]| => |M_aicar_c[Cytosol]|
-    + |M_eig3p_c[Cytosol]| + |M_glu_DASH_L_c[Cytosol]| + |M_h_c[Cytosol]|'
+  equation: gln-L_c[Cytosol] + prlp_c[Cytosol] => aicar_c[Cytosol] + eig3p_c[Cytosol]
+    + glu-L_c[Cytosol] + h_c[Cytosol]
   subsystem: histidine metabolism
-- id: R_IGPDH
+- id: IGPDH
   name: imidazoleglycerol-phosphatedehydratase
-  equation: '|M_eig3p_c[Cytosol]| => |M_h2o_c[Cytosol]| + |M_imacp_c[Cytosol]|'
+  equation: eig3p_c[Cytosol] => h2o_c[Cytosol] + imacp_c[Cytosol]
   subsystem: histidine metabolism
-- id: R_IGPS
+- id: IGPS
   name: indole-3-glycerol-phosphatesynthase
-  equation: '|M_2cpr5p_c[Cytosol]| + |M_h_c[Cytosol]| => |M_3ig3p_c[Cytosol]| + |M_co2_c[Cytosol]|
-    + |M_h2o_c[Cytosol]|'
+  equation: 2cpr5p_c[Cytosol] + h_c[Cytosol] => 3ig3p_c[Cytosol] + co2_c[Cytosol]
+    + h2o_c[Cytosol]
   subsystem: aromatic amino acid synthesis
-- id: R_ILETA
+- id: ILETA
   name: isoleucinetransaminase
-  equation: '|M_akg_c[Cytosol]| + |M_ile_DASH_L_c[Cytosol]| <=> |M_3mop_c[Cytosol]|
-    + |M_glu_DASH_L_c[Cytosol]|'
+  equation: akg_c[Cytosol] + ile-L_c[Cytosol] <=> 3mop_c[Cytosol] + glu-L_c[Cytosol]
   subsystem: branched-chain amino acids
-- id: R_ILETRS
+- id: ILETRS
   name: Isoleucyl-tRNAsynthetase
-  equation: '|M_atp_c[Cytosol]| + |M_ile_DASH_L_c[Cytosol]| + |M_trnaile_c[Cytosol]|
-    => |M_amp_c[Cytosol]| + |M_iletrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + ile-L_c[Cytosol] + trnaile_c[Cytosol] => amp_c[Cytosol]
+    + iletrna_c[Cytosol] + ppi_c[Cytosol]
   subsystem: Valine, Leucine, and Isoleucine Metabolism
-- id: R_ILEt2r
+- id: ILEt2r
   name: L-isoleucinereversibletransportviaprotonsymport
-  equation: '|M_h_e[Extraorganism]| + |M_ile_DASH_L_e[Extraorganism]| <=> |M_h_c[Cytosol]|
-    + |M_ile_DASH_L_c[Cytosol]|'
+  equation: h_e[Extraorganism] + ile-L_e[Extraorganism] <=> h_c[Cytosol] + ile-L_c[Cytosol]
   subsystem: Transport, Extracellular
-- id: R_IMPC
+- id: IMPC
   name: IMPcyclohydrolase
-  equation: '|M_h2o_c[Cytosol]| + |M_imp_c[Cytosol]| <=> |M_fprica_c[Cytosol]|'
+  equation: h2o_c[Cytosol] + imp_c[Cytosol] <=> fprica_c[Cytosol]
   subsystem: purine metabolism
-- id: R_IMPD
+- id: IMPD
   name: IMPdehydrogenase
-  equation: '|M_h2o_c[Cytosol]| + |M_imp_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_h_c[Cytosol]|
-    + |M_nadh_c[Cytosol]| + |M_xmp_c[Cytosol]|'
+  equation: h2o_c[Cytosol] + imp_c[Cytosol] + nad_c[Cytosol] => h_c[Cytosol] + nadh_c[Cytosol]
+    + xmp_c[Cytosol]
   subsystem: purine metabolism
-- id: R_IOR
+- id: IOR
   name: indolepyruvateferredoxinoxidoreductase
-  equation: '|M_coa_c[Cytosol]| + (2) |M_fdox_c[Cytosol]| + |M_indpyr_c[Cytosol]|
-    <=> |M_co2_c[Cytosol]| + (2) |M_fdred_c[Cytosol]| + |M_h_c[Cytosol]| + |M_indaccoa_c[Cytosol]|'
+  equation: coa_c[Cytosol] + (2) fdox_c[Cytosol] + indpyr_c[Cytosol] <=> co2_c[Cytosol]
+    + (2) fdred_c[Cytosol] + h_c[Cytosol] + indaccoa_c[Cytosol]
   subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
-- id: R_IOR2
+- id: IOR2
   name: indolepyruvateferredoxinoxidoreductase(phenylpyvurate)
-  equation: '|M_coa_c[Cytosol]| + (2) |M_fdox_c[Cytosol]| + |M_phpyr_c[Cytosol]|
-    <=> |M_co2_c[Cytosol]| + (2) |M_fdred_c[Cytosol]| + |M_h_c[Cytosol]| + |M_phaccoa_c[Cytosol]|'
+  equation: coa_c[Cytosol] + (2) fdox_c[Cytosol] + phpyr_c[Cytosol] <=> co2_c[Cytosol]
+    + (2) fdred_c[Cytosol] + h_c[Cytosol] + phaccoa_c[Cytosol]
   subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
-- id: R_IOR3
+- id: IOR3
   name: indolepyruvateferredoxinoxidoreductase(hydroxyphenylpyvurate)
-  equation: '|M_34hpp_c[Cytosol]| + |M_coa_c[Cytosol]| + (2) |M_fdox_c[Cytosol]|
-    <=> |M_co2_c[Cytosol]| + (2) |M_fdred_c[Cytosol]| + |M_h_c[Cytosol]| + |M_hphaccoa_c[Cytosol]|'
+  equation: 34hpp_c[Cytosol] + coa_c[Cytosol] + (2) fdox_c[Cytosol] <=> co2_c[Cytosol]
+    + (2) fdred_c[Cytosol] + h_c[Cytosol] + hphaccoa_c[Cytosol]
   subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
-- id: R_IPDDI
+- id: IPDDI
   name: isopentenyl-diphosphateD-isomerase
-  equation: '|M_ipdp_c[Cytosol]| <=> |M_dmpp_c[Cytosol]|'
+  equation: ipdp_c[Cytosol] <=> dmpp_c[Cytosol]
   subsystem: Sterol Biosynthesis
-- id: R_IPDPS
+- id: IPDPS
   name: _1-hydroxy-2-methyl-2-(E)-butenyl4-diphosphatereductase(ipdp)
-  equation: '|M_h_c[Cytosol]| + |M_h2mb4p_c[Cytosol]| + |M_nadh_c[Cytosol]| => |M_h2o_c[Cytosol]|
-    + |M_ipdp_c[Cytosol]| + |M_nad_c[Cytosol]|'
+  equation: h_c[Cytosol] + h2mb4p_c[Cytosol] + nadh_c[Cytosol] => h2o_c[Cytosol]
+    + ipdp_c[Cytosol] + nad_c[Cytosol]
   subsystem: Cofactor and Prosthetic Group Biosynthesis
-- id: R_IPMD
+- id: IPMD
   name: _3-isopropylmalatedehydrogenase
-  equation: '|M_3c2hmp_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_3c4mop_c[Cytosol]|
-    + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|'
+  equation: 3c2hmp_c[Cytosol] + nad_c[Cytosol] => 3c4mop_c[Cytosol] + h_c[Cytosol]
+    + nadh_c[Cytosol]
   subsystem: branched-chain amino acids
-- id: R_IPPMIa
+- id: IPPMIa
   name: _3-isopropylmalatedehydratase
-  equation: '|M_3c2hmp_c[Cytosol]| <=> |M_2ippm_c[Cytosol]| + |M_h2o_c[Cytosol]|'
+  equation: 3c2hmp_c[Cytosol] <=> 2ippm_c[Cytosol] + h2o_c[Cytosol]
   subsystem: branched-chain amino acids
-- id: R_IPPMIb
+- id: IPPMIb
   name: _2-isopropylmalatehydratase
-  equation: '|M_2ippm_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_3c3hmp_c[Cytosol]|'
+  equation: 2ippm_c[Cytosol] + h2o_c[Cytosol] <=> 3c3hmp_c[Cytosol]
   subsystem: branched-chain amino acids
-- id: R_IPPS
+- id: IPPS
   name: _2-isopropylmalatesynthase
-  equation: '|M_3mob_c[Cytosol]| + |M_accoa_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_3c3hmp_c[Cytosol]|
-    + |M_coa_c[Cytosol]| + |M_h_c[Cytosol]|'
+  equation: 3mob_c[Cytosol] + accoa_c[Cytosol] + h2o_c[Cytosol] => 3c3hmp_c[Cytosol]
+    + coa_c[Cytosol] + h_c[Cytosol]
   subsystem: branched-chain amino acids
-- id: R_KARA1
+- id: KARA1
   name: ketol-acidreductoisomerase(2,3-dihydroxy-3-methylbutanoate)
-  equation: '|M_23dhmb_c[Cytosol]| + |M_nadp_c[Cytosol]| <=> |M_alac_DASH_S_c[Cytosol]|
-    + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]|'
+  equation: 23dhmb_c[Cytosol] + nadp_c[Cytosol] <=> alac-S_c[Cytosol] + h_c[Cytosol]
+    + nadph_c[Cytosol]
   subsystem: branched-chain amino acids
-- id: R_KARA2
+- id: KARA2
   name: ketol-acidreductoisomerase(2-Acetolactate)
-  equation: '|M_2ahbut_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| <=>
-    |M_23dhmp_c[Cytosol]| + |M_nadp_c[Cytosol]|'
+  equation: 2ahbut_c[Cytosol] + h_c[Cytosol] + nadph_c[Cytosol] <=> 23dhmp_c[Cytosol]
+    + nadp_c[Cytosol]
   subsystem: branched-chain amino acids
-- id: R_KAS1
+- id: KAS1
   name: R_b_ketoacyl_synthetase__Iso_C140_
-  equation: (14) |M_h_c[Cytosol]| + |M_ibcoa_c[Cytosol]| + (5) |M_malcoa_c[Cytosol]|
-    + (10) |M_nadph_c[Cytosol]| => (5) |M_co2_c[Cytosol]| + (6) |M_coa_c[Cytosol]|
-    + |M_fa1_c[Cytosol]| + (4) |M_h2o_c[Cytosol]| + (10) |M_nadp_c[Cytosol]|
+  equation: (14) h_c[Cytosol] + ibcoa_c[Cytosol] + (5) malcoa_c[Cytosol] + (10) nadph_c[Cytosol]
+    => (5) co2_c[Cytosol] + (6) coa_c[Cytosol] + fa1_c[Cytosol] + (4) h2o_c[Cytosol]
+    + (10) nadp_c[Cytosol]
   subsystem: .
-- id: R_KAS10
+- id: KAS10
   name: R_b_ketoacyl_synthetase__Anteiso_C171_
-  equation: '|M_2mbcoa_c[Cytosol]| + (16) |M_h_c[Cytosol]| + (6) |M_malcoa_c[Cytosol]|
-    + (11) |M_nadph_c[Cytosol]| => (6) |M_co2_c[Cytosol]| + (7) |M_coa_c[Cytosol]|
-    + |M_fa10_c[Cytosol]| + (5) |M_h2o_c[Cytosol]| + (11) |M_nadp_c[Cytosol]|'
+  equation: 2mbcoa_c[Cytosol] + (16) h_c[Cytosol] + (6) malcoa_c[Cytosol] + (11)
+    nadph_c[Cytosol] => (6) co2_c[Cytosol] + (7) coa_c[Cytosol] + fa10_c[Cytosol]
+    + (5) h2o_c[Cytosol] + (11) nadp_c[Cytosol]
   subsystem: .
-- id: R_KAS100iso
+- id: KAS100iso
   name: R_b_ketoacyl_synthetase__branched(iso)_C100
-  equation: (8) |M_h_c[Cytosol]| + |M_ibcoa_c[Cytosol]| + (3) |M_malcoa_c[Cytosol]|
-    + (6) |M_nadph_c[Cytosol]| => (3) |M_co2_c[Cytosol]| + (4) |M_coa_c[Cytosol]|
-    + |M_dca_c[Cytosol]| + (2) |M_h2o_c[Cytosol]| + (6) |M_nadp_c[Cytosol]|
+  equation: (8) h_c[Cytosol] + ibcoa_c[Cytosol] + (3) malcoa_c[Cytosol] + (6) nadph_c[Cytosol]
+    => (3) co2_c[Cytosol] + (4) coa_c[Cytosol] + dca_c[Cytosol] + (2) h2o_c[Cytosol]
+    + (6) nadp_c[Cytosol]
   subsystem: .
-- id: R_KAS11
+- id: KAS11
   name: R_b_ketoacyl_synthetase__Iso_C170_
-  equation: (17) |M_h_c[Cytosol]| + |M_ivcoa_c[Cytosol]| + (6) |M_malcoa_c[Cytosol]|
-    + (12) |M_nadph_c[Cytosol]| => (6) |M_co2_c[Cytosol]| + (7) |M_coa_c[Cytosol]|
-    + |M_fa11_c[Cytosol]| + (5) |M_h2o_c[Cytosol]| + (12) |M_nadp_c[Cytosol]|
+  equation: (17) h_c[Cytosol] + ivcoa_c[Cytosol] + (6) malcoa_c[Cytosol] + (12) nadph_c[Cytosol]
+    => (6) co2_c[Cytosol] + (7) coa_c[Cytosol] + fa11_c[Cytosol] + (5) h2o_c[Cytosol]
+    + (12) nadp_c[Cytosol]
   subsystem: .
-- id: R_KAS12
+- id: KAS12
   name: R_b_ketoacyl_synthetase__Anteiso_C170_
-  equation: '|M_2mbcoa_c[Cytosol]| + (17) |M_h_c[Cytosol]| + (6) |M_malcoa_c[Cytosol]|
-    + (12) |M_nadph_c[Cytosol]| => (6) |M_co2_c[Cytosol]| + (7) |M_coa_c[Cytosol]|
-    + |M_fa12_c[Cytosol]| + (5) |M_h2o_c[Cytosol]| + (12) |M_nadp_c[Cytosol]|'
+  equation: 2mbcoa_c[Cytosol] + (17) h_c[Cytosol] + (6) malcoa_c[Cytosol] + (12)
+    nadph_c[Cytosol] => (6) co2_c[Cytosol] + (7) coa_c[Cytosol] + fa12_c[Cytosol]
+    + (5) h2o_c[Cytosol] + (12) nadp_c[Cytosol]
   subsystem: .
-- id: R_KAS13
+- id: KAS13
   name: R_b_ketoacyl_synthetase__n_C180_
-  equation: '|M_accoa_c[Cytosol]| + (23) |M_h_c[Cytosol]| + (8) |M_malcoa_c[Cytosol]|
-    + (16) |M_nadph_c[Cytosol]| => (8) |M_co2_c[Cytosol]| + (9) |M_coa_c[Cytosol]|
-    + (7) |M_h2o_c[Cytosol]| + (16) |M_nadp_c[Cytosol]| + |M_ocdca_c[Cytosol]|'
+  equation: accoa_c[Cytosol] + (23) h_c[Cytosol] + (8) malcoa_c[Cytosol] + (16) nadph_c[Cytosol]
+    => (8) co2_c[Cytosol] + (9) coa_c[Cytosol] + (7) h2o_c[Cytosol] + (16) nadp_c[Cytosol]
+    + ocdca_c[Cytosol]
   subsystem: .
-- id: R_KAS130iso
+- id: KAS130iso
   name: R_b_ketoacyl_synthetase__branched(iso)_C130
-  equation: (11) |M_h_c[Cytosol]| + |M_ivcoa_c[Cytosol]| + (4) |M_malcoa_c[Cytosol]|
-    + (8) |M_nadph_c[Cytosol]| => (4) |M_co2_c[Cytosol]| + (5) |M_coa_c[Cytosol]|
-    + |M_trdca_c[Cytosol]| + (3) |M_h2o_c[Cytosol]| + (8) |M_nadp_c[Cytosol]|
+  equation: (11) h_c[Cytosol] + ivcoa_c[Cytosol] + (4) malcoa_c[Cytosol] + (8) nadph_c[Cytosol]
+    => (4) co2_c[Cytosol] + (5) coa_c[Cytosol] + trdca_c[Cytosol] + (3) h2o_c[Cytosol]
+    + (8) nadp_c[Cytosol]
   subsystem: .
-- id: R_KAS141
+- id: KAS141
   name: R_b_ketoacyl_synthetase__n_C141_
-  equation: '|M_accoa_c[Cytosol]| + (16) |M_h_c[Cytosol]| + (6) |M_malcoa_c[Cytosol]|
-    + (11) |M_nadph_c[Cytosol]| => (6) |M_co2_c[Cytosol]| + (7) |M_coa_c[Cytosol]|
-    + (5) |M_h2o_c[Cytosol]| + (11) |M_nadp_c[Cytosol]| + |M_ttdce_c[Cytosol]|'
+  equation: accoa_c[Cytosol] + (16) h_c[Cytosol] + (6) malcoa_c[Cytosol] + (11) nadph_c[Cytosol]
+    => (6) co2_c[Cytosol] + (7) coa_c[Cytosol] + (5) h2o_c[Cytosol] + (11) nadp_c[Cytosol]
+    + ttdce_c[Cytosol]
   subsystem: .
-- id: R_KAS17
+- id: KAS17
   name: R_b_ketoacyl_synthetase__n_C181_
-  equation: '|M_accoa_c[Cytosol]| + (22) |M_h_c[Cytosol]| + (8) |M_malcoa_c[Cytosol]|
-    + (15) |M_nadph_c[Cytosol]| => (8) |M_co2_c[Cytosol]| + (9) |M_coa_c[Cytosol]|
-    + (7) |M_h2o_c[Cytosol]| + (15) |M_nadp_c[Cytosol]| + |M_ocdcea_c[Cytosol]|'
+  equation: accoa_c[Cytosol] + (22) h_c[Cytosol] + (8) malcoa_c[Cytosol] + (15) nadph_c[Cytosol]
+    => (8) co2_c[Cytosol] + (9) coa_c[Cytosol] + (7) h2o_c[Cytosol] + (15) nadp_c[Cytosol]
+    + ocdcea_c[Cytosol]
   subsystem: .
-- id: R_KAS180iso
+- id: KAS180iso
   name: R_b_ketoacyl_synthetase__Iso_C180_
-  equation: (20) |M_h_c[Cytosol]| + |M_ibcoa_c[Cytosol]| + (7) |M_malcoa_c[Cytosol]|
-    + (14) |M_nadph_c[Cytosol]| => (7) |M_co2_c[Cytosol]| + (8) |M_coa_c[Cytosol]|
-    + |M_ocdcaiso_c[Cytosol]| + (6) |M_h2o_c[Cytosol]| + (14) |M_nadp_c[Cytosol]|
+  equation: (20) h_c[Cytosol] + ibcoa_c[Cytosol] + (7) malcoa_c[Cytosol] + (14) nadph_c[Cytosol]
+    => (7) co2_c[Cytosol] + (8) coa_c[Cytosol] + ocdcaiso_c[Cytosol] + (6) h2o_c[Cytosol]
+    + (14) nadp_c[Cytosol]
   subsystem: .
-- id: R_KAS2
+- id: KAS2
   name: R_b_ketoacyl_synthetase__n_C140_
-  equation: '|M_accoa_c[Cytosol]| + (17) |M_h_c[Cytosol]| + (6) |M_malcoa_c[Cytosol]|
-    + (12) |M_nadph_c[Cytosol]| => (6) |M_co2_c[Cytosol]| + (7) |M_coa_c[Cytosol]|
-    + (5) |M_h2o_c[Cytosol]| + (12) |M_nadp_c[Cytosol]| + |M_ttdca_c[Cytosol]|'
+  equation: accoa_c[Cytosol] + (17) h_c[Cytosol] + (6) malcoa_c[Cytosol] + (12) nadph_c[Cytosol]
+    => (6) co2_c[Cytosol] + (7) coa_c[Cytosol] + (5) h2o_c[Cytosol] + (12) nadp_c[Cytosol]
+    + ttdca_c[Cytosol]
   subsystem: .
-- id: R_KAS3
+- id: KAS3
   name: R_b_ketoacyl_synthetase__Iso_C150_
-  equation: (14) |M_h_c[Cytosol]| + |M_ivcoa_c[Cytosol]| + (5) |M_malcoa_c[Cytosol]|
-    + (10) |M_nadph_c[Cytosol]| => (5) |M_co2_c[Cytosol]| + (6) |M_coa_c[Cytosol]|
-    + |M_fa3_c[Cytosol]| + (4) |M_h2o_c[Cytosol]| + (10) |M_nadp_c[Cytosol]|
+  equation: (14) h_c[Cytosol] + ivcoa_c[Cytosol] + (5) malcoa_c[Cytosol] + (10) nadph_c[Cytosol]
+    => (5) co2_c[Cytosol] + (6) coa_c[Cytosol] + fa3_c[Cytosol] + (4) h2o_c[Cytosol]
+    + (10) nadp_c[Cytosol]
   subsystem: .
-- id: R_KAS4
+- id: KAS4
   name: R_b_ketoacyl_synthetase__Anteiso_C150_
-  equation: '|M_2mbcoa_c[Cytosol]| + (14) |M_h_c[Cytosol]| + (5) |M_malcoa_c[Cytosol]|
-    + (10) |M_nadph_c[Cytosol]| => (5) |M_co2_c[Cytosol]| + (6) |M_coa_c[Cytosol]|
-    + |M_fa4_c[Cytosol]| + (4) |M_h2o_c[Cytosol]| + (10) |M_nadp_c[Cytosol]|'
+  equation: 2mbcoa_c[Cytosol] + (14) h_c[Cytosol] + (5) malcoa_c[Cytosol] + (10)
+    nadph_c[Cytosol] => (5) co2_c[Cytosol] + (6) coa_c[Cytosol] + fa4_c[Cytosol]
+    + (4) h2o_c[Cytosol] + (10) nadp_c[Cytosol]
   subsystem: .
-- id: R_KAS5
+- id: KAS5
   name: R_b_ketoacyl_synthetase__Iso_C161_
-  equation: (16) |M_h_c[Cytosol]| + |M_ibcoa_c[Cytosol]| + (6) |M_malcoa_c[Cytosol]|
-    + (11) |M_nadph_c[Cytosol]| => (6) |M_co2_c[Cytosol]| + (7) |M_coa_c[Cytosol]|
-    + |M_fa5_c[Cytosol]| + (5) |M_h2o_c[Cytosol]| + (11) |M_nadp_c[Cytosol]|
+  equation: (16) h_c[Cytosol] + ibcoa_c[Cytosol] + (6) malcoa_c[Cytosol] + (11) nadph_c[Cytosol]
+    => (6) co2_c[Cytosol] + (7) coa_c[Cytosol] + fa5_c[Cytosol] + (5) h2o_c[Cytosol]
+    + (11) nadp_c[Cytosol]
   subsystem: .
-- id: R_KAS6
+- id: KAS6
   name: R_b_ketoacyl_synthetase__Iso_C160_
-  equation: (17) |M_h_c[Cytosol]| + |M_ibcoa_c[Cytosol]| + (6) |M_malcoa_c[Cytosol]|
-    + (12) |M_nadph_c[Cytosol]| => (6) |M_co2_c[Cytosol]| + (7) |M_coa_c[Cytosol]|
-    + |M_fa6_c[Cytosol]| + (5) |M_h2o_c[Cytosol]| + (12) |M_nadp_c[Cytosol]|
+  equation: (17) h_c[Cytosol] + ibcoa_c[Cytosol] + (6) malcoa_c[Cytosol] + (12) nadph_c[Cytosol]
+    => (6) co2_c[Cytosol] + (7) coa_c[Cytosol] + fa6_c[Cytosol] + (5) h2o_c[Cytosol]
+    + (12) nadp_c[Cytosol]
   subsystem: .
-- id: R_KAS7
+- id: KAS7
   name: R_b_ketoacyl_synthetase__n_C161_
-  equation: '|M_accoa_c[Cytosol]| + (19) |M_h_c[Cytosol]| + (7) |M_malcoa_c[Cytosol]|
-    + (13) |M_nadph_c[Cytosol]| => (7) |M_co2_c[Cytosol]| + (8) |M_coa_c[Cytosol]|
-    + (6) |M_h2o_c[Cytosol]| + |M_hdcea_c[Cytosol]| + (13) |M_nadp_c[Cytosol]|'
+  equation: accoa_c[Cytosol] + (19) h_c[Cytosol] + (7) malcoa_c[Cytosol] + (13) nadph_c[Cytosol]
+    => (7) co2_c[Cytosol] + (8) coa_c[Cytosol] + (6) h2o_c[Cytosol] + hdcea_c[Cytosol]
+    + (13) nadp_c[Cytosol]
   subsystem: .
-- id: R_KAS8
+- id: KAS8
   name: R_b_ketoacyl_synthetase__palmitate__n_C160_
-  equation: '|M_accoa_c[Cytosol]| + (20) |M_h_c[Cytosol]| + (7) |M_malcoa_c[Cytosol]|
-    + (14) |M_nadph_c[Cytosol]| => (7) |M_co2_c[Cytosol]| + (8) |M_coa_c[Cytosol]|
-    + (6) |M_h2o_c[Cytosol]| + |M_hdca_c[Cytosol]| + (14) |M_nadp_c[Cytosol]|'
+  equation: accoa_c[Cytosol] + (20) h_c[Cytosol] + (7) malcoa_c[Cytosol] + (14) nadph_c[Cytosol]
+    => (7) co2_c[Cytosol] + (8) coa_c[Cytosol] + (6) h2o_c[Cytosol] + hdca_c[Cytosol]
+    + (14) nadp_c[Cytosol]
   subsystem: .
-- id: R_KAS9
+- id: KAS9
   name: R_b_ketoacyl_synthetase__Iso_C171_
-  equation: (16) |M_h_c[Cytosol]| + |M_ivcoa_c[Cytosol]| + (6) |M_malcoa_c[Cytosol]|
-    + (11) |M_nadph_c[Cytosol]| => (6) |M_co2_c[Cytosol]| + (7) |M_coa_c[Cytosol]|
-    + |M_fa9_c[Cytosol]| + (5) |M_h2o_c[Cytosol]| + (11) |M_nadp_c[Cytosol]|
+  equation: (16) h_c[Cytosol] + ivcoa_c[Cytosol] + (6) malcoa_c[Cytosol] + (11) nadph_c[Cytosol]
+    => (6) co2_c[Cytosol] + (7) coa_c[Cytosol] + fa9_c[Cytosol] + (5) h2o_c[Cytosol]
+    + (11) nadp_c[Cytosol]
   subsystem: .
-- id: R_Kabc
+- id: Kabc
   name: PotassiumABCtransporter
-  equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_k_e[Extraorganism]| =>
-    |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_k_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + h2o_c[Cytosol] + k_e[Extraorganism] => adp_c[Cytosol]
+    + h_c[Cytosol] + k_c[Cytosol] + pi_c[Cytosol]
   subsystem: Transport, Extracellular
-- id: R_LACZ
+- id: LACZ
   name: b-galactosidase
-  equation: '|M_h2o_c[Cytosol]| + |M_lcts_c[Cytosol]| => |M_gal_c[Cytosol]| + |M_glc_DASH_D_c[Cytosol]|'
+  equation: h2o_c[Cytosol] + lcts_c[Cytosol] => gal_c[Cytosol] + glc-D_c[Cytosol]
   subsystem: sugar metabolism
-- id: R_LDH_L
+- id: LDH_L
   name: L-lactatedehydrogenase
-  equation: '|M_lac_DASH_L_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_h_c[Cytosol]|
-    + |M_nadh_c[Cytosol]| + |M_pyr_c[Cytosol]|'
+  equation: lac-L_c[Cytosol] + nad_c[Cytosol] <=> h_c[Cytosol] + nadh_c[Cytosol]
+    + pyr_c[Cytosol]
   subsystem: pyruvate metabolism
-- id: R_LEUTAi
+- id: LEUTAi
   name: leucinetransaminase(irreversible)
-  equation: '|M_4mop_c[Cytosol]| + |M_glu_DASH_L_c[Cytosol]| => |M_akg_c[Cytosol]|
-    + |M_leu_DASH_L_c[Cytosol]|'
+  equation: 4mop_c[Cytosol] + glu-L_c[Cytosol] => akg_c[Cytosol] + leu-L_c[Cytosol]
   subsystem: branched-chain amino acids
-- id: R_LEUTRS
+- id: LEUTRS
   name: Leucyl-tRNAsynthetase
-  equation: '|M_atp_c[Cytosol]| + |M_leu_DASH_L_c[Cytosol]| + |M_trnaleu_c[Cytosol]|
-    => |M_amp_c[Cytosol]| + |M_leutrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + leu-L_c[Cytosol] + trnaleu_c[Cytosol] => amp_c[Cytosol]
+    + leutrna_c[Cytosol] + ppi_c[Cytosol]
   subsystem: Valine, Leucine, and Isoleucine Metabolism
-- id: R_LEUt2r
+- id: LEUt2r
   name: L-leucinereversibletransportviaprotonsymport
-  equation: '|M_h_e[Extraorganism]| + |M_leu_DASH_L_e[Extraorganism]| <=> |M_h_c[Cytosol]|
-    + |M_leu_DASH_L_c[Cytosol]|'
+  equation: h_e[Extraorganism] + leu-L_e[Extraorganism] <=> h_c[Cytosol] + leu-L_c[Cytosol]
   subsystem: Transport, Extracellular
-- id: R_LIPO1S24_CT
+- id: LIPO1S24_CT
   name: R_lipoteichoic_acid_synthesis__n24___linked__glucose_substituted
-  equation: (24) |M_cdpglyc_c[Cytosol]| + |M_d12dg_CT_c[Cytosol]| + (24) |M_udpg_c[Cytosol]|
-    => (24) |M_cmp_c[Cytosol]| + (48) |M_h_c[Cytosol]| + |M_lipo1_24_CT_c[Cytosol]|
-    + (24) |M_udp_c[Cytosol]|
+  equation: (24) cdpglyc_c[Cytosol] + d12dg_CT_c[Cytosol] + (24) udpg_c[Cytosol]
+    => (24) cmp_c[Cytosol] + (48) h_c[Cytosol] + lipo1_24_CT_c[Cytosol] + (24) udp_c[Cytosol]
   subsystem: .
-- id: R_LIPO2S24_CT
+- id: LIPO2S24_CT
   name: R_lipoteichoic_acid_synthesis__n24___linked__N_acetylglucosamine_substituted
-  equation: (24) |M_cdpglyc_c[Cytosol]| + |M_d12dg_CT_c[Cytosol]| + (24) |M_uacgam_c[Cytosol]|
-    => (24) |M_cmp_c[Cytosol]| + (48) |M_h_c[Cytosol]| + |M_lipo2_24_CT_c[Cytosol]|
-    + (24) |M_udp_c[Cytosol]|
+  equation: (24) cdpglyc_c[Cytosol] + d12dg_CT_c[Cytosol] + (24) uacgam_c[Cytosol]
+    => (24) cmp_c[Cytosol] + (48) h_c[Cytosol] + lipo2_24_CT_c[Cytosol] + (24) udp_c[Cytosol]
   subsystem: .
-- id: R_LIPO3S24_CT
+- id: LIPO3S24_CT
   name: R_lipoteichoic_acid_synthesis__n24___unliked__D_alanine_substituted
-  equation: (24) |M_ala_DASH_D_c[Cytosol]| + (24) |M_atp_c[Cytosol]| + (24) |M_cdpglyc_c[Cytosol]|
-    + |M_d12dg_CT_c[Cytosol]| + (24) |M_h2o_c[Cytosol]| => (24) |M_amp_c[Cytosol]|
-    + (24) |M_cmp_c[Cytosol]| + (48) |M_h_c[Cytosol]| + |M_lipo3_24_CT_c[Cytosol]|
-    + (24) |M_ppi_c[Cytosol]|
+  equation: (24) ala-D_c[Cytosol] + (24) atp_c[Cytosol] + (24) cdpglyc_c[Cytosol]
+    + d12dg_CT_c[Cytosol] + (24) h2o_c[Cytosol] => (24) amp_c[Cytosol] + (24) cmp_c[Cytosol]
+    + (48) h_c[Cytosol] + lipo3_24_CT_c[Cytosol] + (24) ppi_c[Cytosol]
   subsystem: .
-- id: R_LIPO4S24_CT
+- id: LIPO4S24_CT
   name: R_lipoteichoic_acid_synthesis__n24___linked__unsubstituted
-  equation: (24) |M_cdpglyc_c[Cytosol]| + |M_d12dg_CT_c[Cytosol]| => (24) |M_cmp_c[Cytosol]|
-    + (24) |M_h_c[Cytosol]| + |M_lipo4_24_CT_c[Cytosol]|
+  equation: (24) cdpglyc_c[Cytosol] + d12dg_CT_c[Cytosol] => (24) cmp_c[Cytosol]
+    + (24) h_c[Cytosol] + lipo4_24_CT_c[Cytosol]
   subsystem: .
-- id: R_LYSLG_CT
+- id: LYSLG_CT
   name: R_lysylphosphatidylglycerol_synthesis
-  equation: '|M_atp_c[Cytosol]| + |M_lys_DASH_L_c[Cytosol]| + |M_pgly_CT_c[Cytosol]|
-    => |M_amp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_lysylpgly_CT_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + lys-L_c[Cytosol] + pgly_CT_c[Cytosol] => amp_c[Cytosol]
+    + h_c[Cytosol] + lysylpgly_CT_c[Cytosol] + ppi_c[Cytosol]
   subsystem: .
-- id: R_LYSTRS
+- id: LYSTRS
   name: Lysyl-tRNAsynthetase
-  equation: '|M_atp_c[Cytosol]| + |M_lys_DASH_L_c[Cytosol]| + |M_trnalys_c[Cytosol]|
-    => |M_amp_c[Cytosol]| + |M_lystrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + lys-L_c[Cytosol] + trnalys_c[Cytosol] => amp_c[Cytosol]
+    + lystrna_c[Cytosol] + ppi_c[Cytosol]
   subsystem: Threonine and Lysine Metabolism
-- id: R_MAN6PI
+- id: MAN6PI
   name: mannose-6-phosphateisomerase
-  equation: '|M_man6p_c[Cytosol]| <=> |M_f6p_c[Cytosol]|'
+  equation: man6p_c[Cytosol] <=> f6p_c[Cytosol]
   subsystem: Fructose and Mannose Metabolism
-- id: R_MCITS
+- id: MCITS
   name: _2-methylcitratesynthase
-  equation: '|M_h2o_c[Cytosol]| + |M_oaa_c[Cytosol]| + |M_ppcoa_c[Cytosol]| => |M_2mcit_c[Cytosol]|
-    + |M_coa_c[Cytosol]| + |M_h_c[Cytosol]|'
+  equation: h2o_c[Cytosol] + oaa_c[Cytosol] + ppcoa_c[Cytosol] => 2mcit_c[Cytosol]
+    + coa_c[Cytosol] + h_c[Cytosol]
   subsystem: Propanoate Metabolism
-- id: R_MCLOR
+- id: MCLOR
   name: _3-Mercaptolactate:NAD+oxidoreductase
-  equation: '|M_mercplac_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_h_c[Cytosol]| +
-    |M_mercppyr_c[Cytosol]| + |M_nadh_c[Cytosol]|'
+  equation: mercplac_c[Cytosol] + nad_c[Cytosol] <=> h_c[Cytosol] + mercppyr_c[Cytosol]
+    + nadh_c[Cytosol]
   subsystem: Cysteine Metabolism
-- id: R_MCOATA
+- id: MCOATA
   name: Malonyl-CoA-ACPtransacylase
-  equation: '|M_ACP_c[Cytosol]| + |M_malcoa_c[Cytosol]| <=> |M_coa_c[Cytosol]| +
-    |M_malACP_c[Cytosol]|'
+  equation: ACP_c[Cytosol] + malcoa_c[Cytosol] <=> coa_c[Cytosol] + malACP_c[Cytosol]
   subsystem: Fatty Acid Metabolism
-- id: R_MDH
+- id: MDH
   name: malatedehydrogenase
-  equation: '|M_mal_DASH_L_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_h_c[Cytosol]|
-    + |M_nadh_c[Cytosol]| + |M_oaa_c[Cytosol]|'
+  equation: mal-L_c[Cytosol] + nad_c[Cytosol] <=> h_c[Cytosol] + nadh_c[Cytosol]
+    + oaa_c[Cytosol]
   subsystem: Citric Acid Cycle
-- id: R_ME1
+- id: ME1
   name: malicenzyme(NAD)
-  equation: '|M_mal_DASH_L_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_co2_c[Cytosol]|
-    + |M_nadh_c[Cytosol]| + |M_pyr_c[Cytosol]|'
+  equation: mal-L_c[Cytosol] + nad_c[Cytosol] => co2_c[Cytosol] + nadh_c[Cytosol]
+    + pyr_c[Cytosol]
   subsystem: Anaplerotic reactions
-- id: R_MECDPDH
+- id: MECDPDH
   name: _2C-methyl-D-erythritol2,4cyclodiphosphatedehydratase
-  equation: '|M_2mecdp_c[Cytosol]| + |M_h_c[Cytosol]| => |M_h2mb4p_c[Cytosol]| +
-    |M_h2o_c[Cytosol]|'
+  equation: 2mecdp_c[Cytosol] + h_c[Cytosol] => h2mb4p_c[Cytosol] + h2o_c[Cytosol]
   subsystem: Cofactor and Prosthetic Group Biosynthesis
-- id: R_MECDPS
+- id: MECDPS
   name: _2-C-methyl-D-erythritol2,4-cyclodiphosphatesynthase
-  equation: '|M_2p4c2me_c[Cytosol]| => |M_2mecdp_c[Cytosol]| + |M_cmp_c[Cytosol]|'
+  equation: 2p4c2me_c[Cytosol] => 2mecdp_c[Cytosol] + cmp_c[Cytosol]
   subsystem: Cofactor and Prosthetic Group Biosynthesis
-- id: R_MEPCT
+- id: MEPCT
   name: _2-C-methyl-D-erythritol4-phosphatecytidylyltransferase
-  equation: '|M_2me4p_c[Cytosol]| + |M_ctp_c[Cytosol]| + |M_h_c[Cytosol]| => |M_4c2me_c[Cytosol]|
-    + |M_ppi_c[Cytosol]|'
+  equation: 2me4p_c[Cytosol] + ctp_c[Cytosol] + h_c[Cytosol] => 4c2me_c[Cytosol]
+    + ppi_c[Cytosol]
   subsystem: Cofactor and Prosthetic Group Biosynthesis
-- id: R_METAT
+- id: METAT
   name: methionineadenosyltransferase
-  equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_met_DASH_L_c[Cytosol]|
-    => |M_amet_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + h2o_c[Cytosol] + met-L_c[Cytosol] => amet_c[Cytosol]
+    + pi_c[Cytosol] + ppi_c[Cytosol]
   subsystem: methionine biosynthesis
-- id: R_METB1r
+- id: METB1r
   name: metb1(rev)
-  equation: '|M_achms_c[Cytosol]| + |M_cys_DASH_L_c[Cytosol]| <=> |M_ac_c[Cytosol]|
-    + |M_cyst_DASH_L_c[Cytosol]| + |M_h_c[Cytosol]|'
+  equation: achms_c[Cytosol] + cys-L_c[Cytosol] <=> ac_c[Cytosol] + cyst-L_c[Cytosol]
+    + h_c[Cytosol]
   subsystem: Methionine Metabolism
-- id: R_METS
+- id: METS
   name: methioninesynthase
-  equation: '|M_5mthf_c[Cytosol]| + |M_hcys_DASH_L_c[Cytosol]| => |M_h_c[Cytosol]|
-    + |M_met_DASH_L_c[Cytosol]| + |M_thf_c[Cytosol]|'
+  equation: 5mthf_c[Cytosol] + hcys-L_c[Cytosol] => h_c[Cytosol] + met-L_c[Cytosol]
+    + thf_c[Cytosol]
   subsystem: methionine biosynthesis
-- id: R_METTRS
+- id: METTRS
   name: methionyl-tRNAsynthetase
-  equation: '|M_atp_c[Cytosol]| + |M_met_DASH_L_c[Cytosol]| + |M_trnamet_c[Cytosol]|
-    => |M_amp_c[Cytosol]| + |M_mettrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + met-L_c[Cytosol] + trnamet_c[Cytosol] => amp_c[Cytosol]
+    + mettrna_c[Cytosol] + ppi_c[Cytosol]
   subsystem: Methionine Metabolism
-- id: R_METabc
+- id: METabc
   name: L-methioninetransportviaABCsystem
-  equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_met_DASH_L_e[Extraorganism]|
-    => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_met_DASH_L_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + h2o_c[Cytosol] + met-L_e[Extraorganism] => adp_c[Cytosol]
+    + h_c[Cytosol] + met-L_c[Cytosol] + pi_c[Cytosol]
   subsystem: transport
-- id: R_MGSA
+- id: MGSA
   name: methylglyoxalsynthase
-  equation: '|M_dhap_c[Cytosol]| => |M_mthgxl_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: dhap_c[Cytosol] => mthgxl_c[Cytosol] + pi_c[Cytosol]
   subsystem: Pyruvate Metabolism
-- id: R_MGt5
+- id: MGt5
   name: magnesiumtransportin/outviapermease(noH+)
-  equation: '|M_mg2_c[Cytosol]| <=> |M_mg2_e[Extraorganism]|'
+  equation: mg2_c[Cytosol] <=> mg2_e[Extraorganism]
   subsystem: Transport
-- id: R_MMCD
+- id: MMCD
   name: Methylmalonyl-CoAdecarboxylase
-  equation: '|M_h_c[Cytosol]| + |M_mmcoa_DASH_S_c[Cytosol]| => |M_co2_c[Cytosol]|
-    + |M_ppcoa_c[Cytosol]|'
+  equation: h_c[Cytosol] + mmcoa-S_c[Cytosol] => co2_c[Cytosol] + ppcoa_c[Cytosol]
   subsystem: Valine, Leucine, and Isoleucine Metabolism
-- id: R_MME
+- id: MME
   name: methylmalonyl-CoAepimerase
-  equation: '|M_mmcoa_DASH_R_c[Cytosol]| <=> |M_mmcoa_DASH_S_c[Cytosol]|'
+  equation: mmcoa-R_c[Cytosol] <=> mmcoa-S_c[Cytosol]
   subsystem: Alternate Carbon Metabolism
-- id: R_MOHMT
+- id: MOHMT
   name: _3-methyl-2-oxobutanoatehydroxymethyltransferase
-  equation: '|M_3mob_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_mlthf_c[Cytosol]| => |M_2dhp_c[Cytosol]|
-    + |M_thf_c[Cytosol]|'
+  equation: 3mob_c[Cytosol] + h2o_c[Cytosol] + mlthf_c[Cytosol] => 2dhp_c[Cytosol]
+    + thf_c[Cytosol]
   subsystem: Pantothenate and CoA Biosynthesis
-- id: R_MTAP
+- id: MTAP
   name: _5'-methylthioadenosinephosphorylase
-  equation: '|M_5mta_c[Cytosol]| + |M_pi_c[Cytosol]| => |M_5mdr1p_c[Cytosol]| + |M_ade_c[Cytosol]|'
+  equation: 5mta_c[Cytosol] + pi_c[Cytosol] => 5mdr1p_c[Cytosol] + ade_c[Cytosol]
   subsystem: arginine and proline
-- id: R_MTHFC
+- id: MTHFC
   name: methenyltetrahydrofolatecyclohydrolase
-  equation: '|M_h2o_c[Cytosol]| + |M_methf_c[Cytosol]| <=> |M_10fthf_c[Cytosol]|
-    + |M_h_c[Cytosol]|'
+  equation: h2o_c[Cytosol] + methf_c[Cytosol] <=> 10fthf_c[Cytosol] + h_c[Cytosol]
   subsystem: one carbon pool by folate
-- id: R_MTHFD
+- id: MTHFD
   name: methylenetetrahydrofolatedehydrogenase(NADP)
-  equation: '|M_mlthf_c[Cytosol]| + |M_nadp_c[Cytosol]| <=> |M_methf_c[Cytosol]|
-    + |M_nadph_c[Cytosol]|'
+  equation: mlthf_c[Cytosol] + nadp_c[Cytosol] <=> methf_c[Cytosol] + nadph_c[Cytosol]
   subsystem: one carbon pool by folate
-- id: R_MTHFR3
+- id: MTHFR3
   name: _5,10-methylenetetrahydrofolatereductase(NADPH)
-  equation: (2) |M_h_c[Cytosol]| + |M_mlthf_c[Cytosol]| + |M_nadph_c[Cytosol]| =>
-    |M_5mthf_c[Cytosol]| + |M_nadp_c[Cytosol]|
+  equation: (2) h_c[Cytosol] + mlthf_c[Cytosol] + nadph_c[Cytosol] => 5mthf_c[Cytosol]
+    + nadp_c[Cytosol]
   subsystem: one carbon pool by folate
-- id: R_MTRI
+- id: MTRI
   name: _5-methylthioribose-1-phosphateisomerase
-  equation: '|M_5mdr1p_c[Cytosol]| <=> |M_5mdru1p_c[Cytosol]|'
+  equation: 5mdr1p_c[Cytosol] <=> 5mdru1p_c[Cytosol]
   subsystem: arginine and proline
-- id: R_NADH5
+- id: NADH5
   name: NADHdehydrogenase(ubiquinone-8)
-  equation: '|M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| + |M_q8_c[Cytosol]| => |M_nad_c[Cytosol]|
-    + |M_q8h2_c[Cytosol]|'
+  equation: h_c[Cytosol] + nadh_c[Cytosol] + q8_c[Cytosol] => nad_c[Cytosol] + q8h2_c[Cytosol]
   subsystem: Oxidative Phosphorylation
-- id: R_NADK
+- id: NADK
   name: NADkinase
-  equation: '|M_atp_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
-    + |M_nadp_c[Cytosol]|'
+  equation: atp_c[Cytosol] + nad_c[Cytosol] => adp_c[Cytosol] + h_c[Cytosol] + nadp_c[Cytosol]
   subsystem: nad and nadp biosynthesis
-- id: R_NADS1
+- id: NADS1
   name: NADsynthase(nh3)
-  equation: '|M_atp_c[Cytosol]| + |M_dnad_c[Cytosol]| + |M_nh4_c[Cytosol]| => |M_amp_c[Cytosol]|
-    + |M_h_c[Cytosol]| + |M_nad_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + dnad_c[Cytosol] + nh4_c[Cytosol] => amp_c[Cytosol] +
+    h_c[Cytosol] + nad_c[Cytosol] + ppi_c[Cytosol]
   subsystem: nad and nadp biosynthesis
-- id: R_NAPRT
+- id: NAPRT
   name: NAPRTase
-  equation: '|M_h_c[Cytosol]| + |M_nac_c[Cytosol]| + |M_prpp_c[Cytosol]| => |M_nicrnt_c[Cytosol]|
-    + |M_ppi_c[Cytosol]|'
+  equation: h_c[Cytosol] + nac_c[Cytosol] + prpp_c[Cytosol] => nicrnt_c[Cytosol]
+    + ppi_c[Cytosol]
   subsystem: nad and nadp biosynthesis
-- id: R_NBAHH
+- id: NBAHH
   name: Nalpha-(beta-alanyl)-L-histidinehydrolase
-  equation: '|M_carn_c[Cytosol]| + |M_h2o_c[Cytosol]| <=> |M_ala_DASH_B_c[Cytosol]|
-    + |M_his_DASH_L_c[Cytosol]|'
+  equation: carn_c[Cytosol] + h2o_c[Cytosol] <=> ala-B_c[Cytosol] + his-L_c[Cytosol]
   subsystem: alanine and aspartate metabolism
-- id: R_NDPK1
+- id: NDPK1
   name: nucleoside-diphosphatekinase(ATP:GDP)
-  equation: '|M_atp_c[Cytosol]| + |M_gdp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_gtp_c[Cytosol]|'
+  equation: atp_c[Cytosol] + gdp_c[Cytosol] <=> adp_c[Cytosol] + gtp_c[Cytosol]
   subsystem: purine metabolism
-- id: R_NDPK10
+- id: NDPK10
   name: nucleoside-diphosphatekinase(ATP:dIDP)
-  equation: '|M_atp_c[Cytosol]| + |M_didp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_ditp_c[Cytosol]|'
+  equation: atp_c[Cytosol] + didp_c[Cytosol] <=> adp_c[Cytosol] + ditp_c[Cytosol]
   subsystem: Nucleotides
-- id: R_NDPK2
+- id: NDPK2
   name: nucleoside-diphosphatekinase(ATP:UDP)
-  equation: '|M_atp_c[Cytosol]| + |M_udp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_utp_c[Cytosol]|'
+  equation: atp_c[Cytosol] + udp_c[Cytosol] <=> adp_c[Cytosol] + utp_c[Cytosol]
   subsystem: pyrimidine metabolism
-- id: R_NDPK3
+- id: NDPK3
   name: nucleoside-diphosphatekinase(ATP:CDP)
-  equation: '|M_atp_c[Cytosol]| + |M_cdp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_ctp_c[Cytosol]|'
+  equation: atp_c[Cytosol] + cdp_c[Cytosol] <=> adp_c[Cytosol] + ctp_c[Cytosol]
   subsystem: pyrimidine metabolism
-- id: R_NDPK4
+- id: NDPK4
   name: nucleoside-diphosphatekinase(ATP:dTDP)
-  equation: '|M_atp_c[Cytosol]| + |M_dtdp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dttp_c[Cytosol]|'
+  equation: atp_c[Cytosol] + dtdp_c[Cytosol] <=> adp_c[Cytosol] + dttp_c[Cytosol]
   subsystem: pyrimidine metabolism
-- id: R_NDPK5
+- id: NDPK5
   name: nucleoside-diphosphatekinase(ATP:dGDP)
-  equation: '|M_atp_c[Cytosol]| + |M_dgdp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dgtp_c[Cytosol]|'
+  equation: atp_c[Cytosol] + dgdp_c[Cytosol] <=> adp_c[Cytosol] + dgtp_c[Cytosol]
   subsystem: purine metabolism
-- id: R_NDPK6
+- id: NDPK6
   name: nucleoside-diphosphatekinase(ATP:dUDP)
-  equation: '|M_atp_c[Cytosol]| + |M_dudp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dutp_c[Cytosol]|'
+  equation: atp_c[Cytosol] + dudp_c[Cytosol] <=> adp_c[Cytosol] + dutp_c[Cytosol]
   subsystem: pyrimidine metabolism
-- id: R_NDPK7
+- id: NDPK7
   name: nucleoside-diphosphatekinase(ATP:dCDP)
-  equation: '|M_atp_c[Cytosol]| + |M_dcdp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dctp_c[Cytosol]|'
+  equation: atp_c[Cytosol] + dcdp_c[Cytosol] <=> adp_c[Cytosol] + dctp_c[Cytosol]
   subsystem: pyrimidine metabolism
-- id: R_NDPK8
+- id: NDPK8
   name: nucleoside-diphosphatekinase(ATP:dADP)
-  equation: '|M_atp_c[Cytosol]| + |M_dadp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_datp_c[Cytosol]|'
+  equation: atp_c[Cytosol] + dadp_c[Cytosol] <=> adp_c[Cytosol] + datp_c[Cytosol]
   subsystem: purine metabolism
-- id: R_NDPK9
+- id: NDPK9
   name: nucleoside-diphosphatekinase(ATP:IDP)
-  equation: '|M_atp_c[Cytosol]| + |M_idp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_itp_c[Cytosol]|'
+  equation: atp_c[Cytosol] + idp_c[Cytosol] <=> adp_c[Cytosol] + itp_c[Cytosol]
   subsystem: Nucleotides
-- id: R_NH4t
+- id: NH4t
   name: ammoniareversibletransport
-  equation: '|M_nh4_e[Extraorganism]| <=> |M_nh4_c[Cytosol]|'
+  equation: nh4_e[Extraorganism] <=> nh4_c[Cytosol]
   subsystem: Transport, Extracellular
-- id: R_NIT_n1p4
+- id: NIT_n1p4
   name: nitrogenase
-  equation: (32) |M_atp_c[Cytosol]| + (8) |M_fdred_c[Cytosol]| + (32) |M_h2o_c[Cytosol]|
-    + |M_n2_c[Cytosol]| => (32) |M_adp_c[Cytosol]| + (8) |M_fdox_c[Cytosol]| + (6)
-    |M_h_c[Cytosol]| + |M_h2_c[Cytosol]| + (2) |M_nh4_c[Cytosol]| + (32) |M_pi_c[Cytosol]|
+  equation: (32) atp_c[Cytosol] + (8) fdred_c[Cytosol] + (32) h2o_c[Cytosol] + n2_c[Cytosol]
+    => (32) adp_c[Cytosol] + (8) fdox_c[Cytosol] + (6) h_c[Cytosol] + h2_c[Cytosol]
+    + (2) nh4_c[Cytosol] + (32) pi_c[Cytosol]
   subsystem: Other
-- id: R_NMNATr
+- id: NMNATr
   name: nicotinamide-nucleotideadenylyltransferase
-  equation: '|M_atp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nmn_c[Cytosol]| <=> |M_nad_c[Cytosol]|
-    + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + h_c[Cytosol] + nmn_c[Cytosol] <=> nad_c[Cytosol] + ppi_c[Cytosol]
   subsystem: NAD Metabolism
-- id: R_NMNTP
+- id: NMNTP
   name: nmntp
-  equation: '|M_h_e[Extraorganism]| + |M_nmn_e[Extraorganism]| => |M_h_c[Cytosol]|
-    + |M_nmn_c[Cytosol]|'
+  equation: h_e[Extraorganism] + nmn_e[Extraorganism] => h_c[Cytosol] + nmn_c[Cytosol]
   subsystem: Transport, Extracellular
-- id: R_NNAM
+- id: NNAM
   name: nicotinamidase
-  equation: '|M_h2o_c[Cytosol]| + |M_ncam_c[Cytosol]| => |M_nac_c[Cytosol]| + |M_nh4_c[Cytosol]|'
+  equation: h2o_c[Cytosol] + ncam_c[Cytosol] => nac_c[Cytosol] + nh4_c[Cytosol]
   subsystem: nad and nadp biosynthesis
-- id: R_NNATr
+- id: NNATr
   name: nicotinate-nucleotideadenylyltransferase
-  equation: '|M_atp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nicrnt_c[Cytosol]| <=> |M_dnad_c[Cytosol]|
-    + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + h_c[Cytosol] + nicrnt_c[Cytosol] <=> dnad_c[Cytosol]
+    + ppi_c[Cytosol]
   subsystem: nad and nadp biosynthesis
-- id: R_NNDMBRT
+- id: NNDMBRT
   name: Nicotinate-nucleotidedimethylbenzimidazolephosphoribosyltransferase
-  equation: '|M_dmbzid_c[Cytosol]| + |M_nicrnt_c[Cytosol]| => |M_5prdmbz_c[Cytosol]|
-    + |M_h_c[Cytosol]| + |M_nac_c[Cytosol]|'
+  equation: dmbzid_c[Cytosol] + nicrnt_c[Cytosol] => 5prdmbz_c[Cytosol] + h_c[Cytosol]
+    + nac_c[Cytosol]
   subsystem: Cofactor and Prosthetic Group Biosynthesis
-- id: R_NNDPR
+- id: NNDPR
   name: nicotinate-nucleotidediphosphorylase(carboxylating)
-  equation: (2) |M_h_c[Cytosol]| + |M_prpp_c[Cytosol]| + |M_quln_c[Cytosol]| => |M_co2_c[Cytosol]|
-    + |M_nicrnt_c[Cytosol]| + |M_ppi_c[Cytosol]|
+  equation: (2) h_c[Cytosol] + prpp_c[Cytosol] + quln_c[Cytosol] => co2_c[Cytosol]
+    + nicrnt_c[Cytosol] + ppi_c[Cytosol]
   subsystem: nad and nadp biosynthesis
-- id: R_NPHS
+- id: NPHS
   name: R_naphthoate_synthase
-  equation: '|M_sbzcoa_c[Cytosol]| => |M_coa_c[Cytosol]| + |M_dhna_c[Cytosol]|'
+  equation: sbzcoa_c[Cytosol] => coa_c[Cytosol] + dhna_c[Cytosol]
   subsystem: .
-- id: R_NTP1
+- id: NTP1
   name: nucleoside-triphosphatase(ATP)
-  equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
-    + |M_pi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + h2o_c[Cytosol] => adp_c[Cytosol] + h_c[Cytosol] + pi_c[Cytosol]
   subsystem: Nucleotide Metabolism
-- id: R_NTP2
+- id: NTP2
   name: nucleoside-triphosphatase(dATP)
-  equation: '|M_datp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dadp_c[Cytosol]| + |M_h_c[Cytosol]|
-    + |M_pi_c[Cytosol]|'
+  equation: datp_c[Cytosol] + h2o_c[Cytosol] => dadp_c[Cytosol] + h_c[Cytosol] +
+    pi_c[Cytosol]
   subsystem: Nucleotide Metabolism
-- id: R_NTP3
+- id: NTP3
   name: nucleoside-triphosphatase(GTP)
-  equation: '|M_gtp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_gdp_c[Cytosol]| + |M_h_c[Cytosol]|
-    + |M_pi_c[Cytosol]|'
+  equation: gtp_c[Cytosol] + h2o_c[Cytosol] => gdp_c[Cytosol] + h_c[Cytosol] + pi_c[Cytosol]
   subsystem: Nucleotide Salvage Pathway
-- id: R_NTP3e
+- id: NTP3e
   name: nucleoside-triphosphatase(GTP)
-  equation: '|M_gtp_e[Extraorganism]| + |M_h2o_e[Extraorganism]| => |M_gdp_e[Extraorganism]|
-    + |M_h_e[Extraorganism]| + |M_pi_e[Extraorganism]|'
+  equation: gtp_e[Extraorganism] + h2o_e[Extraorganism] => gdp_e[Extraorganism] +
+    h_e[Extraorganism] + pi_e[Extraorganism]
   subsystem: Nucleotides
-- id: R_NTP4
+- id: NTP4
   name: nucleoside-triphosphatase(dGTP)
-  equation: '|M_dgtp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dgdp_c[Cytosol]| + |M_h_c[Cytosol]|
-    + |M_pi_c[Cytosol]|'
+  equation: dgtp_c[Cytosol] + h2o_c[Cytosol] => dgdp_c[Cytosol] + h_c[Cytosol] +
+    pi_c[Cytosol]
   subsystem: Nucleotide Salvage Pathway
-- id: R_NTP5
+- id: NTP5
   name: nucleoside-triphosphatase(CTP)
-  equation: '|M_ctp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_cdp_c[Cytosol]| + |M_h_c[Cytosol]|
-    + |M_pi_c[Cytosol]|'
+  equation: ctp_c[Cytosol] + h2o_c[Cytosol] => cdp_c[Cytosol] + h_c[Cytosol] + pi_c[Cytosol]
   subsystem: Nucleotide Metabolism
-- id: R_NTP6
+- id: NTP6
   name: nucleoside-triphosphatase(dCTP)
-  equation: '|M_dctp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dcdp_c[Cytosol]| + |M_h_c[Cytosol]|
-    + |M_pi_c[Cytosol]|'
+  equation: dctp_c[Cytosol] + h2o_c[Cytosol] => dcdp_c[Cytosol] + h_c[Cytosol] +
+    pi_c[Cytosol]
   subsystem: Nucleotide Metabolism
-- id: R_NTP7
+- id: NTP7
   name: nucleoside-triphosphatase(UTP)
-  equation: '|M_h2o_c[Cytosol]| + |M_utp_c[Cytosol]| => |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|
-    + |M_udp_c[Cytosol]|'
+  equation: h2o_c[Cytosol] + utp_c[Cytosol] => h_c[Cytosol] + pi_c[Cytosol] + udp_c[Cytosol]
   subsystem: Nucleotide Metabolism
-- id: R_NTP8
+- id: NTP8
   name: nucleoside-triphosphatase(dUTP)
-  equation: '|M_dutp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dudp_c[Cytosol]| + |M_h_c[Cytosol]|
-    + |M_pi_c[Cytosol]|'
+  equation: dutp_c[Cytosol] + h2o_c[Cytosol] => dudp_c[Cytosol] + h_c[Cytosol] +
+    pi_c[Cytosol]
   subsystem: Nucleotide Metabolism
-- id: R_NTP9
+- id: NTP9
   name: nucleoside-triphosphatase(dTTP)
-  equation: '|M_dttp_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_dtdp_c[Cytosol]| + |M_h_c[Cytosol]|
-    + |M_pi_c[Cytosol]|'
+  equation: dttp_c[Cytosol] + h2o_c[Cytosol] => dtdp_c[Cytosol] + h_c[Cytosol] +
+    pi_c[Cytosol]
   subsystem: Nucleotide Metabolism
-- id: R_OAAdecarb
+- id: OAAdecarb
   name: oxaloacetatedecarboxylase
-  equation: '|M_oaa_c[Cytosol]| <=> |M_pyr_c[Cytosol]| + |M_co2_c[Cytosol]|'
+  equation: oaa_c[Cytosol] <=> pyr_c[Cytosol] + co2_c[Cytosol]
   subsystem: pyruvate metabolism
-- id: R_OBTFL
+- id: OBTFL
   name: _2-Oxobutanoateformatelyase
-  equation: '|M_2obut_c[Cytosol]| + |M_coa_c[Cytosol]| => |M_for_c[Cytosol]| + |M_ppcoa_c[Cytosol]|'
+  equation: 2obut_c[Cytosol] + coa_c[Cytosol] => for_c[Cytosol] + ppcoa_c[Cytosol]
   subsystem: Alternate Carbon Metabolism
-- id: R_OCBT
+- id: OCBT
   name: ornithinecarbamoyltransferase
-  equation: '|M_cbp_c[Cytosol]| + |M_orn_c[Cytosol]| <=> |M_citr_DASH_L_c[Cytosol]|
-    + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: cbp_c[Cytosol] + orn_c[Cytosol] <=> citr-L_c[Cytosol] + h_c[Cytosol]
+    + pi_c[Cytosol]
   subsystem: arginine and proline
-- id: R_OHPBAT
+- id: OHPBAT
   name: O-Phospho-4-hydroxy-L-threonine:2-oxoglutarateaminotransferase
-  equation: '|M_glu_DASH_L_c[Cytosol]| + |M_ohpb_c[Cytosol]| <=> |M_akg_c[Cytosol]|
-    + |M_phthr_c[Cytosol]|'
+  equation: glu-L_c[Cytosol] + ohpb_c[Cytosol] <=> akg_c[Cytosol] + phthr_c[Cytosol]
   subsystem: Pyridoxine Metabolism
-- id: R_OIVD1
+- id: OIVD1
   name: R_2_oxoisovalerate_dehydrogenase__acylating_4_methyl_2_oxopentaoate_
-  equation: '|M_4mop_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_nad_c[Cytosol]| <=> |M_co2_c[Cytosol]|
-    + |M_ivcoa_c[Cytosol]| + |M_nadh_c[Cytosol]|'
+  equation: 4mop_c[Cytosol] + coa_c[Cytosol] + nad_c[Cytosol] <=> co2_c[Cytosol]
+    + ivcoa_c[Cytosol] + nadh_c[Cytosol]
   subsystem: .
-- id: R_OIVD2
+- id: OIVD2
   name: R_2_oxoisovalerate_dehydrogenase__acylating_3_methyl_2_oxobutanoate_
-  equation: '|M_3mob_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_co2_c[Cytosol]|
-    + |M_ibcoa_c[Cytosol]| + |M_nadh_c[Cytosol]|'
+  equation: 3mob_c[Cytosol] + coa_c[Cytosol] + nad_c[Cytosol] => co2_c[Cytosol] +
+    ibcoa_c[Cytosol] + nadh_c[Cytosol]
   subsystem: .
-- id: R_OIVD3
+- id: OIVD3
   name: R_2_oxoisovalerate_dehydrogenase__acylating_3_methyl_2_oxopentanoate_
-  equation: '|M_3mop_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_2mbcoa_c[Cytosol]|
-    + |M_co2_c[Cytosol]| + |M_nadh_c[Cytosol]|'
+  equation: 3mop_c[Cytosol] + coa_c[Cytosol] + nad_c[Cytosol] => 2mbcoa_c[Cytosol]
+    + co2_c[Cytosol] + nadh_c[Cytosol]
   subsystem: .
-- id: R_OMCDC
+- id: OMCDC
   name: _2-Oxo-4-methyl-3-carboxypentanoatedecarboxylation
-  equation: '|M_3c4mop_c[Cytosol]| + |M_h_c[Cytosol]| => |M_4mop_c[Cytosol]| + |M_co2_c[Cytosol]|'
+  equation: 3c4mop_c[Cytosol] + h_c[Cytosol] => 4mop_c[Cytosol] + co2_c[Cytosol]
   subsystem: branched-chain amino acids
-- id: R_OMPDC
+- id: OMPDC
   name: orotidine-5'-phosphatedecarboxylase
-  equation: '|M_h_c[Cytosol]| + |M_orot5p_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_ump_c[Cytosol]|'
+  equation: h_c[Cytosol] + orot5p_c[Cytosol] => co2_c[Cytosol] + ump_c[Cytosol]
   subsystem: pyrimidine metabolism
-- id: R_OORr
+- id: OORr
   name: _2-oxoglutaratesynthase(reversible)
-  equation: '|M_akg_c[Cytosol]| + |M_coa_c[Cytosol]| + (2) |M_fdox_c[Cytosol]| <=>
-    |M_co2_c[Cytosol]| + (2) |M_fdred_c[Cytosol]| + |M_h_c[Cytosol]| + |M_succoa_c[Cytosol]|'
+  equation: akg_c[Cytosol] + coa_c[Cytosol] + (2) fdox_c[Cytosol] <=> co2_c[Cytosol]
+    + (2) fdred_c[Cytosol] + h_c[Cytosol] + succoa_c[Cytosol]
   subsystem: tca cycle
-- id: R_ORNTAC
+- id: ORNTAC
   name: ornithinetransacetylase
-  equation: '|M_acorn_c[Cytosol]| + |M_glu_DASH_L_c[Cytosol]| <=> |M_acglu_c[Cytosol]|
-    + |M_orn_c[Cytosol]|'
+  equation: acorn_c[Cytosol] + glu-L_c[Cytosol] <=> acglu_c[Cytosol] + orn_c[Cytosol]
   subsystem: arginine and proline
-- id: R_ORPT
+- id: ORPT
   name: orotatephosphoribosyltransferase
-  equation: '|M_orot5p_c[Cytosol]| + |M_ppi_c[Cytosol]| <=> |M_orot_c[Cytosol]| +
-    |M_prpp_c[Cytosol]|'
+  equation: orot5p_c[Cytosol] + ppi_c[Cytosol] <=> orot_c[Cytosol] + prpp_c[Cytosol]
   subsystem: pyrimidine metabolism
-- id: R_P5CR
+- id: P5CR
   name: pyrroline-5-carboxylatereductase
-  equation: '|M_1pyr5c_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]|
-    => |M_nadp_c[Cytosol]| + |M_pro_DASH_L_c[Cytosol]|'
+  equation: 1pyr5c_c[Cytosol] + (2) h_c[Cytosol] + nadph_c[Cytosol] => nadp_c[Cytosol]
+    + pro-L_c[Cytosol]
   subsystem: Urea cycle/amino group metabolism
-- id: R_P5CRx
+- id: P5CRx
   name: pyrroline-5-carboxylatereductase
-  equation: '|M_1pyr5c_c[Cytosol]| + (2) |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]| =>
-    |M_nad_c[Cytosol]| + |M_pro_DASH_L_c[Cytosol]|'
+  equation: 1pyr5c_c[Cytosol] + (2) h_c[Cytosol] + nadh_c[Cytosol] => nad_c[Cytosol]
+    + pro-L_c[Cytosol]
   subsystem: Urea cycle/amino group metabolism
-- id: R_PABB
+- id: PABB
   name: pabb
-  equation: '|M_chor_c[Cytosol]| + |M_nh4_c[Cytosol]| => |M_4adcho_c[Cytosol]| +
-    |M_h2o_c[Cytosol]|'
+  equation: chor_c[Cytosol] + nh4_c[Cytosol] => 4adcho_c[Cytosol] + h2o_c[Cytosol]
   subsystem: folate synthesis
-- id: R_PACCOAL
+- id: PACCOAL
   name: phenylacetate-CoAligase
-  equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_pac_c[Cytosol]| => |M_amp_c[Cytosol]|
-    + |M_phaccoa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + coa_c[Cytosol] + pac_c[Cytosol] => amp_c[Cytosol] +
+    phaccoa_c[Cytosol] + ppi_c[Cytosol]
   subsystem: Phenylalanine metabolism
-- id: R_PACCOAL2
+- id: PACCOAL2
   name: phenylacetate-CoAligase(hydroxyphenylacetate)
-  equation: '|M_4hphac_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| => |M_amp_c[Cytosol]|
-    + |M_hphaccoa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: 4hphac_c[Cytosol] + atp_c[Cytosol] + coa_c[Cytosol] => amp_c[Cytosol]
+    + hphaccoa_c[Cytosol] + ppi_c[Cytosol]
   subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
-- id: R_PACCOAL3
+- id: PACCOAL3
   name: phenylacetate-CoAligase(indoleacetate)
-  equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_ind3ac_c[Cytosol]| => |M_amp_c[Cytosol]|
-    + |M_indaccoa_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + coa_c[Cytosol] + ind3ac_c[Cytosol] => amp_c[Cytosol]
+    + indaccoa_c[Cytosol] + ppi_c[Cytosol]
   subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
-- id: R_PANTS
+- id: PANTS
   name: pantothenatesynthase
-  equation: '|M_ala_DASH_B_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_pant_DASH_R_c[Cytosol]|
-    => |M_amp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pnto_DASH_R_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: ala-B_c[Cytosol] + atp_c[Cytosol] + pant-R_c[Cytosol] => amp_c[Cytosol]
+    + h_c[Cytosol] + pnto-R_c[Cytosol] + ppi_c[Cytosol]
   subsystem: coenzyme a biosynthesis
-- id: R_PAPPT3
+- id: PAPPT3
   name: phospho-N-acetylmuramoyl-pentapeptide-transferase(meso-2,6-diaminopimelate)
-  equation: '|M_udcpp_c[Cytosol]| + |M_ugmda_c[Cytosol]| => |M_uagmda_c[Cytosol]|
-    + |M_ump_c[Cytosol]|'
+  equation: udcpp_c[Cytosol] + ugmda_c[Cytosol] => uagmda_c[Cytosol] + ump_c[Cytosol]
   subsystem: Cell Envelope Biosynthesis
-- id: R_PAPSR
+- id: PAPSR
   name: phosphoadenylyl-sulfatereductase(thioredoxin)
-  equation: '|M_paps_c[Cytosol]| + |M_trdrd_c[Cytosol]| => (2) |M_h_c[Cytosol]| +
-    |M_pap_c[Cytosol]| + |M_so3_c[Cytosol]| + |M_trdox_c[Cytosol]|'
+  equation: paps_c[Cytosol] + trdrd_c[Cytosol] => (2) h_c[Cytosol] + pap_c[Cytosol]
+    + so3_c[Cytosol] + trdox_c[Cytosol]
   subsystem: Cysteine Metabolism
-- id: R_PAP_CT
+- id: PAP_CT
   name: R_phosphatidic_acid_phosphatase
-  equation: '|M_12dag3p_CT_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_12dgr_CT_c[Cytosol]|
-    + |M_pi_c[Cytosol]|'
+  equation: 12dag3p_CT_c[Cytosol] + h2o_c[Cytosol] => 12dgr_CT_c[Cytosol] + pi_c[Cytosol]
   subsystem: .
-- id: R_PDX5PS
+- id: PDX5PS
   name: Pyridoxine5'-phosphatesynthase
-  equation: '|M_dxyl5p_c[Cytosol]| + |M_nad_c[Cytosol]| + |M_phthr_c[Cytosol]| =>
-    |M_co2_c[Cytosol]| + |M_h_c[Cytosol]| + (2) |M_h2o_c[Cytosol]| + |M_nadh_c[Cytosol]|
-    + |M_pdx5p_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: dxyl5p_c[Cytosol] + nad_c[Cytosol] + phthr_c[Cytosol] => co2_c[Cytosol]
+    + h_c[Cytosol] + (2) h2o_c[Cytosol] + nadh_c[Cytosol] + pdx5p_c[Cytosol] + pi_c[Cytosol]
   subsystem: Cofactor and Prosthetic Group Biosynthesis
-- id: R_PEPCK
+- id: PEPCK
   name: Phosphoenolpyruvatecarboxykinase(GTP)
-  equation: '|M_gtp_c[Cytosol]| + |M_oaa_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_gdp_c[Cytosol]|
-    + |M_pep_c[Cytosol]|'
+  equation: gtp_c[Cytosol] + oaa_c[Cytosol] => co2_c[Cytosol] + gdp_c[Cytosol] +
+    pep_c[Cytosol]
   subsystem: pyruvate metabolism
-- id: R_PFK
+- id: PFK
   name: phosphofructokinase
-  equation: '|M_atp_c[Cytosol]| + |M_f6p_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_fdp_c[Cytosol]|
-    + |M_h_c[Cytosol]|'
+  equation: atp_c[Cytosol] + f6p_c[Cytosol] => adp_c[Cytosol] + fdp_c[Cytosol] +
+    h_c[Cytosol]
   subsystem: glycolysis
-- id: R_PFK_2
+- id: PFK_2
   name: Phosphofructokinase
-  equation: '|M_atp_c[Cytosol]| + |M_tag6p_DASH_D_c[Cytosol]| => |M_adp_c[Cytosol]|
-    + |M_h_c[Cytosol]| + |M_tagdp_DASH_D_c[Cytosol]|'
+  equation: atp_c[Cytosol] + tag6p-D_c[Cytosol] => adp_c[Cytosol] + h_c[Cytosol]
+    + tagdp-D_c[Cytosol]
   subsystem: Glycolysis/Gluconeogenesis
-- id: R_PFL
+- id: PFL
   name: pyruvateformatelyase
-  equation: '|M_coa_c[Cytosol]| + |M_pyr_c[Cytosol]| => |M_accoa_c[Cytosol]| + |M_for_c[Cytosol]|'
+  equation: coa_c[Cytosol] + pyr_c[Cytosol] => accoa_c[Cytosol] + for_c[Cytosol]
   subsystem: pyruvate metabolism
-- id: R_PGAMT
+- id: PGAMT
   name: phosphoglucosaminemutase
-  equation: '|M_gam1p_c[Cytosol]| <=> |M_gam6p_c[Cytosol]|'
+  equation: gam1p_c[Cytosol] <=> gam6p_c[Cytosol]
   subsystem: cell envelope
-- id: R_PGCD
+- id: PGCD
   name: phosphoglyceratedehydrogenase
-  equation: '|M_3pg_c[Cytosol]| + |M_nad_c[Cytosol]| => |M_3php_c[Cytosol]| + |M_h_c[Cytosol]|
-    + |M_nadh_c[Cytosol]|'
+  equation: 3pg_c[Cytosol] + nad_c[Cytosol] => 3php_c[Cytosol] + h_c[Cytosol] + nadh_c[Cytosol]
   subsystem: glycine_serine_threonine metabolism
-- id: R_PGI
+- id: PGI
   name: glucose-6-phosphateisomerase
-  equation: '|M_g6p_c[Cytosol]| <=> |M_f6p_c[Cytosol]|'
+  equation: g6p_c[Cytosol] <=> f6p_c[Cytosol]
   subsystem: glycolysis
-- id: R_PGK
+- id: PGK
   name: phosphoglyceratekinase
-  equation: '|M_3pg_c[Cytosol]| + |M_atp_c[Cytosol]| <=> |M_13dpg_c[Cytosol]| + |M_adp_c[Cytosol]|'
+  equation: 3pg_c[Cytosol] + atp_c[Cytosol] <=> 13dpg_c[Cytosol] + adp_c[Cytosol]
   subsystem: glycolysis
-- id: R_PGLYCP
+- id: PGLYCP
   name: Phosphoglycolatephosphatase
-  equation: '|M_2pglyc_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_glyclt_c[Cytosol]|
-    + |M_pi_c[Cytosol]|'
+  equation: 2pglyc_c[Cytosol] + h2o_c[Cytosol] => glyclt_c[Cytosol] + pi_c[Cytosol]
   subsystem: Glyoxylate and Dicarboxylate Metabolism
-- id: R_PGM
+- id: PGM
   name: phosphoglyceratemutase
-  equation: '|M_2pg_c[Cytosol]| <=> |M_3pg_c[Cytosol]|'
+  equation: 2pg_c[Cytosol] <=> 3pg_c[Cytosol]
   subsystem: glycolysis
-- id: R_PGMT
+- id: PGMT
   name: phosphoglucomutase
-  equation: '|M_g1p_c[Cytosol]| <=> |M_g6p_c[Cytosol]|'
+  equation: g1p_c[Cytosol] <=> g6p_c[Cytosol]
   subsystem: glycolysis
-- id: R_PGPPH_CT
+- id: PGPPH_CT
   name: R_Phosphatidylglycerophosphate_phosphohydrolase
-  equation: '|M_h2o_c[Cytosol]| + |M_pglyp_CT_c[Cytosol]| => |M_pgly_CT_c[Cytosol]|
-    + |M_pi_c[Cytosol]|'
+  equation: h2o_c[Cytosol] + pglyp_CT_c[Cytosol] => pgly_CT_c[Cytosol] + pi_c[Cytosol]
   subsystem: .
-- id: R_PHCYT_CT
+- id: PHCYT_CT
   name: R_phosphatidate_cytidylyltransferase
-  equation: '|M_12dag3p_CT_c[Cytosol]| + |M_ctp_c[Cytosol]| + |M_h_c[Cytosol]| =>
-    |M_cdpdag_CT_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: 12dag3p_CT_c[Cytosol] + ctp_c[Cytosol] + h_c[Cytosol] => cdpdag_CT_c[Cytosol]
+    + ppi_c[Cytosol]
   subsystem: .
-- id: R_PHETA1
+- id: PHETA1
   name: phenylalaninetransaminase
-  equation: '|M_akg_c[Cytosol]| + |M_phe_DASH_L_c[Cytosol]| <=> |M_glu_DASH_L_c[Cytosol]|
-    + |M_phpyr_c[Cytosol]|'
+  equation: akg_c[Cytosol] + phe-L_c[Cytosol] <=> glu-L_c[Cytosol] + phpyr_c[Cytosol]
   subsystem: aromatic amino acid synthesis
-- id: R_PHETRS
+- id: PHETRS
   name: Phenylalanyl-tRNAsynthetase
-  equation: '|M_atp_c[Cytosol]| + |M_phe_DASH_L_c[Cytosol]| + |M_trnaphe_c[Cytosol]|
-    => |M_amp_c[Cytosol]| + |M_phetrna_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + phe-L_c[Cytosol] + trnaphe_c[Cytosol] => amp_c[Cytosol]
+    + phetrna_c[Cytosol] + ppi_c[Cytosol]
   subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
-- id: R_PIabc
+- id: PIabc
   name: phosphatetransportviaABCsystem
-  equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_pi_e[Extraorganism]| =>
-    |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + (2) |M_pi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + h2o_c[Cytosol] + pi_e[Extraorganism] => adp_c[Cytosol]
+    + h_c[Cytosol] + (2) pi_c[Cytosol]
   subsystem: transport
-- id: R_PIt2r
+- id: PIt2r
   name: phosphatereversibletransportviasymport
-  equation: '|M_h_e[Extraorganism]| + |M_pi_e[Extraorganism]| <=> |M_h_c[Cytosol]|
-    + |M_pi_c[Cytosol]|'
+  equation: h_e[Extraorganism] + pi_e[Extraorganism] <=> h_c[Cytosol] + pi_c[Cytosol]
   subsystem: Transport, Extracellular
-- id: R_PMDPHT
+- id: PMDPHT
   name: pyrimidinephosphatase
-  equation: '|M_5aprbu_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_4r5au_c[Cytosol]| +
-    |M_pi_c[Cytosol]|'
+  equation: 5aprbu_c[Cytosol] + h2o_c[Cytosol] => 4r5au_c[Cytosol] + pi_c[Cytosol]
   subsystem: riboflavin metabolism
-- id: R_PNP
+- id: PNP
   name: purine-nucleosidephosphorylase
-  equation: '|M_pi_c[Cytosol]| + |M_rnam_c[Cytosol]| <=> |M_h_c[Cytosol]| + |M_ncam_c[Cytosol]|
-    + |M_r1p_c[Cytosol]|'
+  equation: pi_c[Cytosol] + rnam_c[Cytosol] <=> h_c[Cytosol] + ncam_c[Cytosol] +
+    r1p_c[Cytosol]
   subsystem: NAD Metabolism
-- id: R_PNTK
+- id: PNTK
   name: pantothenatekinase
-  equation: '|M_atp_c[Cytosol]| + |M_pnto_DASH_R_c[Cytosol]| => |M_4ppan_c[Cytosol]|
-    + |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|'
+  equation: atp_c[Cytosol] + pnto-R_c[Cytosol] => 4ppan_c[Cytosol] + adp_c[Cytosol]
+    + h_c[Cytosol]
   subsystem: coenzyme a biosynthesis
-- id: R_PNTOt2
+- id: PNTOt2
   name: Pantothenatereversibletransportviaprotonsymport
-  equation: '|M_h_e[Extraorganism]| + |M_pnto_DASH_R_e[Extraorganism]| <=> |M_h_c[Cytosol]|
-    + |M_pnto_DASH_R_c[Cytosol]|'
+  equation: h_e[Extraorganism] + pnto-R_e[Extraorganism] <=> h_c[Cytosol] + pnto-R_c[Cytosol]
   subsystem: Transport, Extracellular
-- id: R_POR2
+- id: POR2
   name: pyruvatesynthase
-  equation: '|M_coa_c[Cytosol]| + (2) |M_fdox_c[Cytosol]| + |M_pyr_c[Cytosol]| <=>
-    |M_accoa_c[Cytosol]| + |M_co2_c[Cytosol]| + (2) |M_fdred_c[Cytosol]| + |M_h_c[Cytosol]|'
+  equation: coa_c[Cytosol] + (2) fdox_c[Cytosol] + pyr_c[Cytosol] <=> accoa_c[Cytosol]
+    + co2_c[Cytosol] + (2) fdred_c[Cytosol] + h_c[Cytosol]
   subsystem: pyruvate metabolism
-- id: R_POR3
+- id: POR3
   name: pyruvatesynthase
-  equation: '|M_2obut_c[Cytosol]| + |M_coa_c[Cytosol]| + (2) |M_fdox_c[Cytosol]|
-    <=> |M_co2_c[Cytosol]| + (2) |M_fdred_c[Cytosol]| + |M_h_c[Cytosol]| + |M_ppcoa_c[Cytosol]|'
+  equation: 2obut_c[Cytosol] + coa_c[Cytosol] + (2) fdox_c[Cytosol] <=> co2_c[Cytosol]
+    + (2) fdred_c[Cytosol] + h_c[Cytosol] + ppcoa_c[Cytosol]
   subsystem: Central Metabolism
-- id: R_PPA
+- id: PPA
   name: inorganicdiphosphatase
-  equation: '|M_h2o_c[Cytosol]| + |M_ppi_c[Cytosol]| => |M_h_c[Cytosol]| + (2) |M_pi_c[Cytosol]|'
+  equation: h2o_c[Cytosol] + ppi_c[Cytosol] => h_c[Cytosol] + (2) pi_c[Cytosol]
   subsystem: Oxidative Phosphorylation
-- id: R_PPAKr
+- id: PPAKr
   name: Propionatekinase
-  equation: '|M_adp_c[Cytosol]| + |M_ppap_c[Cytosol]| <=> |M_atp_c[Cytosol]| + |M_ppa_c[Cytosol]|'
+  equation: adp_c[Cytosol] + ppap_c[Cytosol] <=> atp_c[Cytosol] + ppa_c[Cytosol]
   subsystem: Alternate Carbon Metabolism
-- id: R_PPBNGS
+- id: PPBNGS
   name: porphobilinogensynthase
-  equation: (2) |M_5aop_c[Cytosol]| => |M_h_c[Cytosol]| + (2) |M_h2o_c[Cytosol]|
-    + |M_ppbng_c[Cytosol]|
+  equation: (2) 5aop_c[Cytosol] => h_c[Cytosol] + (2) h2o_c[Cytosol] + ppbng_c[Cytosol]
   subsystem: Heme Biosynthesis
-- id: R_PPCDC
+- id: PPCDC
   name: phosphopantothenoylcysteinedecarboxylase
-  equation: '|M_4ppcys_c[Cytosol]| + |M_h_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_pan4p_c[Cytosol]|'
+  equation: 4ppcys_c[Cytosol] + h_c[Cytosol] => co2_c[Cytosol] + pan4p_c[Cytosol]
   subsystem: coenzyme a biosynthesis
-- id: R_PPCK
+- id: PPCK
   name: phosphoenolpyruvatecarboxykinase
-  equation: '|M_atp_c[Cytosol]| + |M_oaa_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_co2_c[Cytosol]|
-    + |M_pep_c[Cytosol]|'
+  equation: atp_c[Cytosol] + oaa_c[Cytosol] => adp_c[Cytosol] + co2_c[Cytosol] +
+    pep_c[Cytosol]
   subsystem: pyruvate metabolism
-- id: R_PPCOAC
+- id: PPCOAC
   name: Propionyl-CoAcarboxylase,mitochondrial
-  equation: '|M_atp_c[Cytosol]| + |M_hco3_c[Cytosol]| + |M_ppcoa_c[Cytosol]| => |M_adp_c[Cytosol]|
-    + |M_h_c[Cytosol]| + |M_mmcoa_DASH_S_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + hco3_c[Cytosol] + ppcoa_c[Cytosol] => adp_c[Cytosol]
+    + h_c[Cytosol] + mmcoa-S_c[Cytosol] + pi_c[Cytosol]
   subsystem: Valine, Leucine, and Isoleucine Metabolism
-- id: R_PPDK
+- id: PPDK
   name: Pyruvate,phosphatedikinase.
-  equation: '|M_atp_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_pyr_c[Cytosol]| => |M_amp_c[Cytosol]|
-    + |M_h_c[Cytosol]| + |M_pep_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + pi_c[Cytosol] + pyr_c[Cytosol] => amp_c[Cytosol] + h_c[Cytosol]
+    + pep_c[Cytosol] + ppi_c[Cytosol]
   subsystem: glycolysis
-- id: R_PPM
+- id: PPM
   name: phosphopentomutase
-  equation: '|M_r1p_c[Cytosol]| <=> |M_r5p_c[Cytosol]|'
+  equation: r1p_c[Cytosol] <=> r5p_c[Cytosol]
   subsystem: Pentose Phosphate Pathway
-- id: R_PPM2
+- id: PPM2
   name: phosphopentomutase2(deoxyribose)
-  equation: '|M_2dr1p_c[Cytosol]| <=> |M_2dr5p_c[Cytosol]|'
+  equation: 2dr1p_c[Cytosol] <=> 2dr5p_c[Cytosol]
   subsystem: Alternate Carbon Metabolism
-- id: R_PPNCL3
+- id: PPNCL3
   name: phosphopantothenate-cysteineligase
-  equation: '|M_4ppan_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_cys_DASH_L_c[Cytosol]|
-    => |M_4ppcys_c[Cytosol]| + |M_amp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_ppi_c[Cytosol]|'
+  equation: 4ppan_c[Cytosol] + atp_c[Cytosol] + cys-L_c[Cytosol] => 4ppcys_c[Cytosol]
+    + amp_c[Cytosol] + h_c[Cytosol] + ppi_c[Cytosol]
   subsystem: coenzyme a biosynthesis
-- id: R_PPND
+- id: PPND
   name: prephenatedehydrogenase
-  equation: '|M_nad_c[Cytosol]| + |M_pphn_c[Cytosol]| => |M_34hpp_c[Cytosol]| + |M_co2_c[Cytosol]|
-    + |M_nadh_c[Cytosol]|'
+  equation: nad_c[Cytosol] + pphn_c[Cytosol] => 34hpp_c[Cytosol] + co2_c[Cytosol]
+    + nadh_c[Cytosol]
   subsystem: aromatic amino acid synthesis
-- id: R_PPNDH
+- id: PPNDH
   name: prephenatedehydratase
-  equation: '|M_h_c[Cytosol]| + |M_pphn_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_h2o_c[Cytosol]|
-    + |M_phpyr_c[Cytosol]|'
+  equation: h_c[Cytosol] + pphn_c[Cytosol] => co2_c[Cytosol] + h2o_c[Cytosol] + phpyr_c[Cytosol]
   subsystem: aromatic amino acid synthesis
-- id: R_PPS
+- id: PPS
   name: phosphoenolpyruvatesynthase
-  equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_pyr_c[Cytosol]| => |M_amp_c[Cytosol]|
-    + (2) |M_h_c[Cytosol]| + |M_pep_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + h2o_c[Cytosol] + pyr_c[Cytosol] => amp_c[Cytosol] +
+    (2) h_c[Cytosol] + pep_c[Cytosol] + pi_c[Cytosol]
   subsystem: Glycolysis/Gluconeogenesis
-- id: R_PPTGS_CT
+- id: PPTGS_CT
   name: R_Peptidoglycan_subunit_synthesis
-  equation: '|M_uaagmda_c[Cytosol]| => |M_h_c[Cytosol]| + |M_peptido_CT_c[Cytosol]|
-    + |M_udcpdp_c[Cytosol]|'
+  equation: uaagmda_c[Cytosol] => h_c[Cytosol] + peptido_CT_c[Cytosol] + udcpdp_c[Cytosol]
   subsystem: .
-- id: R_PPTT
+- id: PPTT
   name: R_trans_pentaprenyltranstransferase
-  equation: '|M_ipdp_c[Cytosol]| + |M_pendp_c[Cytosol]| => |M_hexdp_c[Cytosol]| +
-    |M_ppi_c[Cytosol]|'
+  equation: ipdp_c[Cytosol] + pendp_c[Cytosol] => hexdp_c[Cytosol] + ppi_c[Cytosol]
   subsystem: .
-- id: R_PRAGSr
+- id: PRAGSr
   name: phosphoribosylglycinamidesynthase
-  equation: '|M_atp_c[Cytosol]| + |M_gly_c[Cytosol]| + |M_pram_c[Cytosol]| <=> |M_adp_c[Cytosol]|
-    + |M_gar_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + gly_c[Cytosol] + pram_c[Cytosol] <=> adp_c[Cytosol]
+    + gar_c[Cytosol] + h_c[Cytosol] + pi_c[Cytosol]
   subsystem: purine metabolism
-- id: R_PRAI
+- id: PRAI
   name: phosphoribosylanthranilateisomerase
-  equation: '|M_pran_c[Cytosol]| <=> |M_2cpr5p_c[Cytosol]|'
+  equation: pran_c[Cytosol] <=> 2cpr5p_c[Cytosol]
   subsystem: aromatic amino acid synthesis
-- id: R_PRAIS
+- id: PRAIS
   name: phosphoribosylaminoimidazolesynthase
-  equation: '|M_atp_c[Cytosol]| + |M_fpram_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_air_c[Cytosol]|
-    + (2) |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + fpram_c[Cytosol] => adp_c[Cytosol] + air_c[Cytosol]
+    + (2) h_c[Cytosol] + pi_c[Cytosol]
   subsystem: purine metabolism
-- id: R_PRAMPC
+- id: PRAMPC
   name: phosphoribosyl-AMPcyclohydrolase
-  equation: '|M_h2o_c[Cytosol]| + |M_prbamp_c[Cytosol]| => |M_prfp_c[Cytosol]|'
+  equation: h2o_c[Cytosol] + prbamp_c[Cytosol] => prfp_c[Cytosol]
   subsystem: histidine metabolism
-- id: R_PRASCS
+- id: PRASCS
   name: phosphoribosylaminoimidazolesuccinocarboxamidesynthase
-  equation: '|M_5aizc_c[Cytosol]| + |M_asp_DASH_L_c[Cytosol]| + |M_atp_c[Cytosol]|
-    <=> |M_25aics_c[Cytosol]| + |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: 5aizc_c[Cytosol] + asp-L_c[Cytosol] + atp_c[Cytosol] <=> 25aics_c[Cytosol]
+    + adp_c[Cytosol] + h_c[Cytosol] + pi_c[Cytosol]
   subsystem: purine metabolism
-- id: R_PRATPP
+- id: PRATPP
   name: phosphoribosyl-ATPpyrophosphatase
-  equation: '|M_h2o_c[Cytosol]| + |M_prbatp_c[Cytosol]| => |M_h_c[Cytosol]| + |M_ppi_c[Cytosol]|
-    + |M_prbamp_c[Cytosol]|'
+  equation: h2o_c[Cytosol] + prbatp_c[Cytosol] => h_c[Cytosol] + ppi_c[Cytosol] +
+    prbamp_c[Cytosol]
   subsystem: histidine metabolism
-- id: R_PRFGS
+- id: PRFGS
   name: phosphoribosylformylglycinamidinesynthase
-  equation: '|M_atp_c[Cytosol]| + |M_fgam_c[Cytosol]| + |M_gln_DASH_L_c[Cytosol]|
-    + |M_h2o_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_fpram_c[Cytosol]| + |M_glu_DASH_L_c[Cytosol]|
-    + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + fgam_c[Cytosol] + gln-L_c[Cytosol] + h2o_c[Cytosol]
+    => adp_c[Cytosol] + fpram_c[Cytosol] + glu-L_c[Cytosol] + h_c[Cytosol] + pi_c[Cytosol]
   subsystem: purine metabolism
-- id: R_PRMICIi
+- id: PRMICIi
   name: _1-(5-phosphoribosyl)-5-[(5-phosphoribosylamino)methylideneamino)imidazole-4-carboxamideisomerase(irreversible)
-  equation: '|M_prfp_c[Cytosol]| => |M_prlp_c[Cytosol]|'
+  equation: prfp_c[Cytosol] => prlp_c[Cytosol]
   subsystem: histidine metabolism
-- id: R_PRO1x
+- id: PRO1x
   name: prolineoxidase(L-proline,NAD)
-  equation: '|M_nad_c[Cytosol]| + |M_pro_DASH_L_c[Cytosol]| => |M_1pyr5c_c[Cytosol]|
-    + (2) |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|'
+  equation: nad_c[Cytosol] + pro-L_c[Cytosol] => 1pyr5c_c[Cytosol] + (2) h_c[Cytosol]
+    + nadh_c[Cytosol]
   subsystem: Arginine and Proline Metabolism
-- id: R_PROTRS
+- id: PROTRS
   name: Prolyl-tRNAsynthetase
-  equation: '|M_atp_c[Cytosol]| + |M_pro_DASH_L_c[Cytosol]| + |M_trnapro_c[Cytosol]|
-    => |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_protrna_c[Cytosol]|'
+  equation: atp_c[Cytosol] + pro-L_c[Cytosol] + trnapro_c[Cytosol] => amp_c[Cytosol]
+    + ppi_c[Cytosol] + protrna_c[Cytosol]
   subsystem: Arginine and Proline Metabolism
-- id: R_PRPPS
+- id: PRPPS
   name: phosphoribosylpyrophosphatesynthetase
-  equation: '|M_atp_c[Cytosol]| + |M_r5p_c[Cytosol]| <=> |M_amp_c[Cytosol]| + |M_h_c[Cytosol]|
-    + |M_prpp_c[Cytosol]|'
+  equation: atp_c[Cytosol] + r5p_c[Cytosol] <=> amp_c[Cytosol] + h_c[Cytosol] + prpp_c[Cytosol]
   subsystem: pentose phosphate pathway
-- id: R_PSCVTi
+- id: PSCVTi
   name: _3-phosphoshikimate1-carboxyvinyltransferase,irreversible
-  equation: '|M_pep_c[Cytosol]| + |M_skm5p_c[Cytosol]| => |M_3psme_c[Cytosol]| +
-    |M_pi_c[Cytosol]|'
+  equation: pep_c[Cytosol] + skm5p_c[Cytosol] => 3psme_c[Cytosol] + pi_c[Cytosol]
   subsystem: chorismate synthesis
-- id: R_PSDC_CT
+- id: PSDC_CT
   name: R_phosphatidylserine_decarboxylase
-  equation: '|M_ps_CT_c[Cytosol]| => |M_co2_c[Cytosol]| + |M_psetha_CT_c[Cytosol]|'
+  equation: ps_CT_c[Cytosol] => co2_c[Cytosol] + psetha_CT_c[Cytosol]
   subsystem: .
-- id: R_PSERT
+- id: PSERT
   name: phosphoserinetransaminase
-  equation: '|M_3php_c[Cytosol]| + |M_glu_DASH_L_c[Cytosol]| => |M_akg_c[Cytosol]|
-    + |M_pser_DASH_L_c[Cytosol]|'
+  equation: 3php_c[Cytosol] + glu-L_c[Cytosol] => akg_c[Cytosol] + pser-L_c[Cytosol]
   subsystem: glycine_serine_threonine metabolism
-- id: R_PSP_L
+- id: PSP_L
   name: phosphoserinephosphatase(L-serine)
-  equation: '|M_h2o_c[Cytosol]| + |M_pser_DASH_L_c[Cytosol]| => |M_pi_c[Cytosol]|
-    + |M_ser_DASH_L_c[Cytosol]|'
+  equation: h2o_c[Cytosol] + pser-L_c[Cytosol] => pi_c[Cytosol] + ser-L_c[Cytosol]
   subsystem: glycine_serine_threonine metabolism
-- id: R_PTA2
+- id: PTA2
   name: Phosphateacetyltransferase
-  equation: '|M_pi_c[Cytosol]| + |M_ppcoa_c[Cytosol]| => |M_coa_c[Cytosol]| + |M_ppap_c[Cytosol]|'
+  equation: pi_c[Cytosol] + ppcoa_c[Cytosol] => coa_c[Cytosol] + ppap_c[Cytosol]
   subsystem: Alternate Carbon Metabolism
-- id: R_PTAr
+- id: PTAr
   name: phosphotransacetylase
-  equation: '|M_accoa_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_actp_c[Cytosol]| + |M_coa_c[Cytosol]|'
+  equation: accoa_c[Cytosol] + pi_c[Cytosol] <=> actp_c[Cytosol] + coa_c[Cytosol]
   subsystem: pyruvate metabolism
-- id: R_PTHPS
+- id: PTHPS
   name: _6-pyruvoyltetrahydropterinsynthase
-  equation: '|M_ahdt_c[Cytosol]| => |M_6pthp_c[Cytosol]| + |M_pppi_c[Cytosol]|'
+  equation: ahdt_c[Cytosol] => 6pthp_c[Cytosol] + pppi_c[Cytosol]
   subsystem: folate synthesis
-- id: R_PTPATi
+- id: PTPATi
   name: pantetheine-phosphateadenylyltransferase
-  equation: '|M_atp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pan4p_c[Cytosol]| => |M_dpcoa_c[Cytosol]|
-    + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + h_c[Cytosol] + pan4p_c[Cytosol] => dpcoa_c[Cytosol]
+    + ppi_c[Cytosol]
   subsystem: coenzyme a biosynthesis
-- id: R_PTRCabc
+- id: PTRCabc
   name: putrescinetransportviaABCsystem
-  equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_ptrc_e[Extraorganism]|
-    => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_ptrc_c[Cytosol]|'
+  equation: atp_c[Cytosol] + h2o_c[Cytosol] + ptrc_e[Extraorganism] => adp_c[Cytosol]
+    + h_c[Cytosol] + pi_c[Cytosol] + ptrc_c[Cytosol]
   subsystem: transport
-- id: R_PUNP1
+- id: PUNP1
   name: purine-nucleosidephosphorylase(Adenosine)
-  equation: '|M_adn_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_ade_c[Cytosol]| + |M_r1p_c[Cytosol]|'
+  equation: adn_c[Cytosol] + pi_c[Cytosol] <=> ade_c[Cytosol] + r1p_c[Cytosol]
   subsystem: Nucleotides
-- id: R_PUNP3
+- id: PUNP3
   name: purine-nucleosidephosphorylase(Guanosine)
-  equation: '|M_gsn_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_gua_c[Cytosol]| + |M_r1p_c[Cytosol]|'
+  equation: gsn_c[Cytosol] + pi_c[Cytosol] <=> gua_c[Cytosol] + r1p_c[Cytosol]
   subsystem: Purine Catabolism
-- id: R_PUNP4
+- id: PUNP4
   name: purine-nucleosidephosphorylase(Deoxyguanosine)
-  equation: '|M_dgsn_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_2dr1p_c[Cytosol]| + |M_gua_c[Cytosol]|'
+  equation: dgsn_c[Cytosol] + pi_c[Cytosol] <=> 2dr1p_c[Cytosol] + gua_c[Cytosol]
   subsystem: Purine Catabolism
-- id: R_PUNP5
+- id: PUNP5
   name: purine-nucleosidephosphorylase(Inosine)
-  equation: '|M_ins_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_hxan_c[Cytosol]| + |M_r1p_c[Cytosol]|'
+  equation: ins_c[Cytosol] + pi_c[Cytosol] <=> hxan_c[Cytosol] + r1p_c[Cytosol]
   subsystem: Purine Catabolism
-- id: R_PUNP6
+- id: PUNP6
   name: purine-nucleosidephosphorylase(Deoxyinosine)
-  equation: '|M_din_c[Cytosol]| + |M_pi_c[Cytosol]| <=> |M_2dr1p_c[Cytosol]| + |M_hxan_c[Cytosol]|'
+  equation: din_c[Cytosol] + pi_c[Cytosol] <=> 2dr1p_c[Cytosol] + hxan_c[Cytosol]
   subsystem: Purine Catabolism
-- id: R_PUNP7
+- id: PUNP7
   name: purine-nucleosidephosphorylase(Xanthosine)
-  equation: '|M_pi_c[Cytosol]| + |M_xtsn_c[Cytosol]| <=> |M_r1p_c[Cytosol]| + |M_xan_c[Cytosol]|'
+  equation: pi_c[Cytosol] + xtsn_c[Cytosol] <=> r1p_c[Cytosol] + xan_c[Cytosol]
   subsystem: Nucleotides
-- id: R_PYK
+- id: PYK
   name: pyruvatekinase
-  equation: '|M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pep_c[Cytosol]| => |M_atp_c[Cytosol]|
-    + |M_pyr_c[Cytosol]|'
+  equation: adp_c[Cytosol] + h_c[Cytosol] + pep_c[Cytosol] => atp_c[Cytosol] + pyr_c[Cytosol]
   subsystem: glycolysis
-- id: R_PYNP1r
+- id: PYNP1r
   name: pyrimidine-nucleosidephosphorylase(cytosine)
-  equation: '|M_csn_c[Cytosol]| + |M_r1p_c[Cytosol]| <=> |M_cytd_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: csn_c[Cytosol] + r1p_c[Cytosol] <=> cytd_c[Cytosol] + pi_c[Cytosol]
   subsystem: Purine and Pyrimidine Biosynthesis
-- id: R_PYNP2r
+- id: PYNP2r
   name: pyrimidine-nucleosidephosphorylase(uracil)
-  equation: '|M_pi_c[Cytosol]| + |M_uri_c[Cytosol]| <=> |M_r1p_c[Cytosol]| + |M_ura_c[Cytosol]|'
+  equation: pi_c[Cytosol] + uri_c[Cytosol] <=> r1p_c[Cytosol] + ura_c[Cytosol]
   subsystem: Pyrimidine Catabolism
-- id: R_QULNS
+- id: QULNS
   name: quinolinatesynthase
-  equation: '|M_dhap_c[Cytosol]| + |M_iasp_c[Cytosol]| => |M_h_c[Cytosol]| + (2)
-    |M_h2o_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_quln_c[Cytosol]|'
+  equation: dhap_c[Cytosol] + iasp_c[Cytosol] => h_c[Cytosol] + (2) h2o_c[Cytosol]
+    + pi_c[Cytosol] + quln_c[Cytosol]
   subsystem: nad and nadp biosynthesis
-- id: R_RBFK
+- id: RBFK
   name: riboflavinkinase
-  equation: '|M_atp_c[Cytosol]| + |M_ribflv_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_fmn_c[Cytosol]|
-    + |M_h_c[Cytosol]|'
+  equation: atp_c[Cytosol] + ribflv_c[Cytosol] => adp_c[Cytosol] + fmn_c[Cytosol]
+    + h_c[Cytosol]
   subsystem: riboflavin metabolism
-- id: R_RBFSa
+- id: RBFSa
   name: riboflavinsynthase
-  equation: '|M_4r5au_c[Cytosol]| + |M_db4p_c[Cytosol]| => |M_dmlz_c[Cytosol]| +
-    (2) |M_h2o_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: 4r5au_c[Cytosol] + db4p_c[Cytosol] => dmlz_c[Cytosol] + (2) h2o_c[Cytosol]
+    + pi_c[Cytosol]
   subsystem: riboflavin metabolism
-- id: R_RBFSb
+- id: RBFSb
   name: riboflavinsynthase
-  equation: (2) |M_dmlz_c[Cytosol]| => |M_4r5au_c[Cytosol]| + |M_ribflv_c[Cytosol]|
+  equation: (2) dmlz_c[Cytosol] => 4r5au_c[Cytosol] + ribflv_c[Cytosol]
   subsystem: riboflavin metabolism
-- id: R_RIBabc
+- id: RIBabc
   name: D-ribosetransportviaABCsystem
-  equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_rib_DASH_D_e[Extraorganism]|
-    => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_rib_DASH_D_c[Cytosol]|'
+  equation: atp_c[Cytosol] + h2o_c[Cytosol] + rib-D_e[Extraorganism] => adp_c[Cytosol]
+    + h_c[Cytosol] + pi_c[Cytosol] + rib-D_c[Cytosol]
   subsystem: Transport, Extracellular
-- id: R_RNDR1
+- id: RNDR1
   name: ribonucleoside-diphosphatereductase(ADP)
-  equation: '|M_adp_c[Cytosol]| + |M_trdrd_c[Cytosol]| => |M_dadp_c[Cytosol]| + |M_h2o_c[Cytosol]|
-    + |M_trdox_c[Cytosol]|'
+  equation: adp_c[Cytosol] + trdrd_c[Cytosol] => dadp_c[Cytosol] + h2o_c[Cytosol]
+    + trdox_c[Cytosol]
   subsystem: purine metabolism
-- id: R_RNDR2
+- id: RNDR2
   name: ribonucleoside-diphosphatereductase(GDP)
-  equation: '|M_gdp_c[Cytosol]| + |M_trdrd_c[Cytosol]| => |M_dgdp_c[Cytosol]| + |M_h2o_c[Cytosol]|
-    + |M_trdox_c[Cytosol]|'
+  equation: gdp_c[Cytosol] + trdrd_c[Cytosol] => dgdp_c[Cytosol] + h2o_c[Cytosol]
+    + trdox_c[Cytosol]
   subsystem: purine metabolism
-- id: R_RNDR3
+- id: RNDR3
   name: ribonucleoside-diphosphatereductase(CDP)
-  equation: '|M_cdp_c[Cytosol]| + |M_trdrd_c[Cytosol]| => |M_dcdp_c[Cytosol]| + |M_h2o_c[Cytosol]|
-    + |M_trdox_c[Cytosol]|'
+  equation: cdp_c[Cytosol] + trdrd_c[Cytosol] => dcdp_c[Cytosol] + h2o_c[Cytosol]
+    + trdox_c[Cytosol]
   subsystem: pyrimidine metabolism
-- id: R_RNDR4
+- id: RNDR4
   name: ribonucleoside-diphosphatereductase(UDP)
-  equation: '|M_trdrd_c[Cytosol]| + |M_udp_c[Cytosol]| => |M_dudp_c[Cytosol]| + |M_h2o_c[Cytosol]|
-    + |M_trdox_c[Cytosol]|'
+  equation: trdrd_c[Cytosol] + udp_c[Cytosol] => dudp_c[Cytosol] + h2o_c[Cytosol]
+    + trdox_c[Cytosol]
   subsystem: pyrimidine metabolism
-- id: R_RNTR1
+- id: RNTR1
   name: ribonucleoside-triphosphatereductase(ATP)
-  equation: '|M_atp_c[Cytosol]| + |M_trdrd_c[Cytosol]| => |M_datp_c[Cytosol]| + |M_h2o_c[Cytosol]|
-    + |M_trdox_c[Cytosol]|'
+  equation: atp_c[Cytosol] + trdrd_c[Cytosol] => datp_c[Cytosol] + h2o_c[Cytosol]
+    + trdox_c[Cytosol]
   subsystem: Nucleotide Salvage Pathway
-- id: R_RNTR2
+- id: RNTR2
   name: ribonucleoside-triphosphatereductase(GTP)
-  equation: '|M_gtp_c[Cytosol]| + |M_trdrd_c[Cytosol]| => |M_dgtp_c[Cytosol]| + |M_h2o_c[Cytosol]|
-    + |M_trdox_c[Cytosol]|'
+  equation: gtp_c[Cytosol] + trdrd_c[Cytosol] => dgtp_c[Cytosol] + h2o_c[Cytosol]
+    + trdox_c[Cytosol]
   subsystem: Nucleotide Salvage Pathway
-- id: R_RNTR3
+- id: RNTR3
   name: ribonucleoside-triphosphatereductase(CTP)
-  equation: '|M_ctp_c[Cytosol]| + |M_trdrd_c[Cytosol]| => |M_dctp_c[Cytosol]| + |M_h2o_c[Cytosol]|
-    + |M_trdox_c[Cytosol]|'
+  equation: ctp_c[Cytosol] + trdrd_c[Cytosol] => dctp_c[Cytosol] + h2o_c[Cytosol]
+    + trdox_c[Cytosol]
   subsystem: Nucleotide Salvage Pathway
-- id: R_RPE
+- id: RPE
   name: ribulose5-phosphate3-epimerase
-  equation: '|M_ru5p_DASH_D_c[Cytosol]| <=> |M_xu5p_DASH_D_c[Cytosol]|'
+  equation: ru5p-D_c[Cytosol] <=> xu5p-D_c[Cytosol]
   subsystem: pentose phosphate pathway
-- id: R_RPI
+- id: RPI
   name: ribose-5-phosphateisomerase
-  equation: '|M_r5p_c[Cytosol]| <=> |M_ru5p_DASH_D_c[Cytosol]|'
+  equation: r5p_c[Cytosol] <=> ru5p-D_c[Cytosol]
   subsystem: pentose phosphate pathway
-- id: R_RZ5PP
+- id: RZ5PP
   name: alpha-ribazole5-phosphatephosphatase
-  equation: '|M_5prdmbz_c[Cytosol]| + |M_h2o_c[Cytosol]| => |M_pi_c[Cytosol]| + |M_rdmbzi_c[Cytosol]|'
+  equation: 5prdmbz_c[Cytosol] + h2o_c[Cytosol] => pi_c[Cytosol] + rdmbzi_c[Cytosol]
   subsystem: Cofactor and Prosthetic Group Biosynthesis
-- id: R_SADT
+- id: SADT
   name: sulfateadenylyltransferase
-  equation: '|M_atp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_so4_c[Cytosol]| => |M_aps_c[Cytosol]|
-    + |M_ppi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + h_c[Cytosol] + so4_c[Cytosol] => aps_c[Cytosol] + ppi_c[Cytosol]
   subsystem: Nucleotides
-- id: R_SBTD_Dr
+- id: SBTD_Dr
   name: D-sorbitoldehydrogenase(R)
-  equation: '|M_nad_c[Cytosol]| + |M_sbt_DASH_D_c[Cytosol]| <=> |M_fru_c[Cytosol]|
-    + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|'
+  equation: nad_c[Cytosol] + sbt-D_c[Cytosol] <=> fru_c[Cytosol] + h_c[Cytosol] +
+    nadh_c[Cytosol]
   subsystem: Fructose and Mannose Metabolism
-- id: R_SERAT
+- id: SERAT
   name: serineO-acetyltransferase
-  equation: '|M_accoa_c[Cytosol]| + |M_ser_DASH_L_c[Cytosol]| <=> |M_acser_c[Cytosol]|
-    + |M_coa_c[Cytosol]|'
+  equation: accoa_c[Cytosol] + ser-L_c[Cytosol] <=> acser_c[Cytosol] + coa_c[Cytosol]
   subsystem: cysteine biosynthesis
-- id: R_SERTRS
+- id: SERTRS
   name: Seryl-tRNAsynthetase
-  equation: '|M_atp_c[Cytosol]| + |M_ser_DASH_L_c[Cytosol]| + |M_trnaser_c[Cytosol]|
-    => |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_sertrna_c[Cytosol]|'
+  equation: atp_c[Cytosol] + ser-L_c[Cytosol] + trnaser_c[Cytosol] => amp_c[Cytosol]
+    + ppi_c[Cytosol] + sertrna_c[Cytosol]
   subsystem: Glycine and Serine Metabolism
-- id: R_SHK3D
+- id: SHK3D
   name: shikimatedehydrogenase
-  equation: '|M_3dhsk_c[Cytosol]| + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| => |M_nadp_c[Cytosol]|
-    + |M_skm_c[Cytosol]|'
+  equation: 3dhsk_c[Cytosol] + h_c[Cytosol] + nadph_c[Cytosol] => nadp_c[Cytosol]
+    + skm_c[Cytosol]
   subsystem: chorismate synthesis
-- id: R_SHKK
+- id: SHKK
   name: shikimatekinase
-  equation: '|M_atp_c[Cytosol]| + |M_skm_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
-    + |M_skm5p_c[Cytosol]|'
+  equation: atp_c[Cytosol] + skm_c[Cytosol] => adp_c[Cytosol] + h_c[Cytosol] + skm5p_c[Cytosol]
   subsystem: chorismate synthesis
-- id: R_SHSL1r
+- id: SHSL1r
   name: O-succinylhomoserinelyasereversible
-  equation: '|M_cys_DASH_L_c[Cytosol]| + |M_suchms_c[Cytosol]| <=> |M_cyst_DASH_L_c[Cytosol]|
-    + |M_h_c[Cytosol]| + |M_succ_c[Cytosol]|'
+  equation: cys-L_c[Cytosol] + suchms_c[Cytosol] <=> cyst-L_c[Cytosol] + h_c[Cytosol]
+    + succ_c[Cytosol]
   subsystem: Cys Biosynthesis
-- id: R_SHSL2r
+- id: SHSL2r
   name: O-succinylhomoserinelyase(H2S)
-  equation: '|M_h2s_c[Cytosol]| + |M_suchms_c[Cytosol]| <=> |M_h_c[Cytosol]| + |M_hcys_DASH_L_c[Cytosol]|
-    + |M_succ_c[Cytosol]|'
+  equation: h2s_c[Cytosol] + suchms_c[Cytosol] <=> h_c[Cytosol] + hcys-L_c[Cytosol]
+    + succ_c[Cytosol]
   subsystem: methionine biosynthesis
-- id: R_SHSL4r
+- id: SHSL4r
   name: O-succinylhomoserinelyase(elimination),reversible
-  equation: '|M_h2o_c[Cytosol]| + |M_suchms_c[Cytosol]| <=> |M_2obut_c[Cytosol]|
-    + |M_h_c[Cytosol]| + |M_nh4_c[Cytosol]| + |M_succ_c[Cytosol]|'
+  equation: h2o_c[Cytosol] + suchms_c[Cytosol] <=> 2obut_c[Cytosol] + h_c[Cytosol]
+    + nh4_c[Cytosol] + succ_c[Cytosol]
   subsystem: Methionine Metabolism
-- id: R_SLDx
+- id: SLDx
   name: L-sulfolactatedehydrogenase(NAD+)
-  equation: '|M_nad_c[Cytosol]| + |M_sl_DASH_L_c[Cytosol]| <=> |M_3spyr_c[Cytosol]|
-    + |M_h_c[Cytosol]| + |M_nadh_c[Cytosol]|'
+  equation: nad_c[Cytosol] + sl-L_c[Cytosol] <=> 3spyr_c[Cytosol] + h_c[Cytosol]
+    + nadh_c[Cytosol]
   subsystem: Cysteine Metabolism
-- id: R_SLDy
+- id: SLDy
   name: L-sulfolactatedehydrogenase(NADP+)
-  equation: '|M_nadp_c[Cytosol]| + |M_sl_DASH_L_c[Cytosol]| <=> |M_3spyr_c[Cytosol]|
-    + |M_h_c[Cytosol]| + |M_nadph_c[Cytosol]|'
+  equation: nadp_c[Cytosol] + sl-L_c[Cytosol] <=> 3spyr_c[Cytosol] + h_c[Cytosol]
+    + nadph_c[Cytosol]
   subsystem: Vitamins and Cofactor Biosynthesis
-- id: R_SPMDabc
+- id: SPMDabc
   name: spermidinetransportviaABCsystem
-  equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_spmd_e[Extraorganism]|
-    => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_spmd_c[Cytosol]|'
+  equation: atp_c[Cytosol] + h2o_c[Cytosol] + spmd_e[Extraorganism] => adp_c[Cytosol]
+    + h_c[Cytosol] + pi_c[Cytosol] + spmd_c[Cytosol]
   subsystem: transport
-- id: R_SPMS
+- id: SPMS
   name: spermidinesynthase
-  equation: '|M_ametam_c[Cytosol]| + |M_ptrc_c[Cytosol]| => |M_5mta_c[Cytosol]| +
-    |M_h_c[Cytosol]| + |M_spmd_c[Cytosol]|'
+  equation: ametam_c[Cytosol] + ptrc_c[Cytosol] => 5mta_c[Cytosol] + h_c[Cytosol]
+    + spmd_c[Cytosol]
   subsystem: polyamine metabolism
-- id: R_SPODM
+- id: SPODM
   name: superoxidedismutase
-  equation: (2) |M_h_c[Cytosol]| + (2) |M_o2s_c[Cytosol]| => |M_h2o2_c[Cytosol]|
-    + |M_o2_c[Cytosol]|
+  equation: (2) h_c[Cytosol] + (2) o2s_c[Cytosol] => h2o2_c[Cytosol] + o2_c[Cytosol]
   subsystem: ROS Detoxification
-- id: R_SPTi
+- id: SPTi
   name: serine-pyruvateaminotransferase(irreversible),peroxisomal
-  equation: '|M_pyr_c[Cytosol]| + |M_ser_DASH_L_c[Cytosol]| <=> |M_ala_DASH_L_c[Cytosol]|
-    + |M_hpyr_c[Cytosol]|'
+  equation: pyr_c[Cytosol] + ser-L_c[Cytosol] <=> ala-L_c[Cytosol] + hpyr_c[Cytosol]
   subsystem: Glycine, Serine, and Threonine Metabolism
-- id: R_SUCBZL
+- id: SUCBZL
   name: R_o_succinylbenzoate_CoA_ligase
-  equation: '|M_atp_c[Cytosol]| + |M_coa_c[Cytosol]| + |M_sucbz_c[Cytosol]| => |M_amp_c[Cytosol]|
-    + |M_ppi_c[Cytosol]| + |M_sbzcoa_c[Cytosol]|'
+  equation: atp_c[Cytosol] + coa_c[Cytosol] + sucbz_c[Cytosol] => amp_c[Cytosol]
+    + ppi_c[Cytosol] + sbzcoa_c[Cytosol]
   subsystem: .
-- id: R_SUCBZS
+- id: SUCBZS
   name: R_O_succinylbenzoate_CoA_synthase
-  equation: '|M_2shchc_c[Cytosol]| => |M_h2o_c[Cytosol]| + |M_sucbz_c[Cytosol]|'
+  equation: 2shchc_c[Cytosol] => h2o_c[Cytosol] + sucbz_c[Cytosol]
   subsystem: .
-- id: R_SUCCt2r
+- id: SUCCt2r
   name: succinatetransportviaprotonsymport
-  equation: '|M_h_e[Extraorganism]| + |M_succ_e[Extraorganism]| <=> |M_h_c[Cytosol]|
-    + |M_succ_c[Cytosol]|'
+  equation: h_e[Extraorganism] + succ_e[Extraorganism] <=> h_c[Cytosol] + succ_c[Cytosol]
   subsystem: Transport, Extracellular
-- id: R_SULabc
+- id: SULabc
   name: sulfatetransportviaABCsystem
-  equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_so4_e[Extraorganism]| =>
-    |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_so4_c[Cytosol]|'
+  equation: atp_c[Cytosol] + h2o_c[Cytosol] + so4_e[Extraorganism] => adp_c[Cytosol]
+    + h_c[Cytosol] + pi_c[Cytosol] + so4_c[Cytosol]
   subsystem: Transport, Extracellular
-- id: R_TALA
+- id: TALA
   name: transaldolase
-  equation: '|M_g3p_c[Cytosol]| + |M_s7p_c[Cytosol]| <=> |M_e4p_c[Cytosol]| + |M_f6p_c[Cytosol]|'
+  equation: g3p_c[Cytosol] + s7p_c[Cytosol] <=> e4p_c[Cytosol] + f6p_c[Cytosol]
   subsystem: Pentose Phosphate Pathway
-- id: R_TDPDRE
+- id: TDPDRE
   name: dTDP-4-dehydrorhamnose3,5-epimerase
-  equation: '|M_dtdp4d6dg_c[Cytosol]| => |M_dtdp4d6dm_c[Cytosol]|'
+  equation: dtdp4d6dg_c[Cytosol] => dtdp4d6dm_c[Cytosol]
   subsystem: Nucleotide Sugar Metabolism
-- id: R_TDPGDH
+- id: TDPGDH
   name: dTDPglucose4,6-dehydratase
-  equation: '|M_dtdpglu_c[Cytosol]| => |M_dtdp4d6dg_c[Cytosol]| + |M_h2o_c[Cytosol]|'
+  equation: dtdpglu_c[Cytosol] => dtdp4d6dg_c[Cytosol] + h2o_c[Cytosol]
   subsystem: Nucleotide Sugar Metabolism
-- id: R_TECA1S45
+- id: TECA1S45
   name: R_glycerol_teichoic_acid__n45___unlinked__unsubstituted
-  equation: (45) |M_cdpglyc_c[Cytosol]| + |M_uacgam_c[Cytosol]| + |M_uacmam_c[Cytosol]|
-    => (45) |M_cmp_c[Cytosol]| + |M_gtca1_45_CT_c[Cytosol]| + (46) |M_h_c[Cytosol]|
-    + |M_udp_c[Cytosol]| + |M_ump_c[Cytosol]|
+  equation: (45) cdpglyc_c[Cytosol] + uacgam_c[Cytosol] + uacmam_c[Cytosol] => (45)
+    cmp_c[Cytosol] + gtca1_45_CT_c[Cytosol] + (46) h_c[Cytosol] + udp_c[Cytosol]
+    + ump_c[Cytosol]
   subsystem: .
-- id: R_TECA2S45
+- id: TECA2S45
   name: R_glycerol_teichoic_acid__n45___unlinked__D_ala_substituted
-  equation: (45) |M_ala_DASH_D_c[Cytosol]| + (45) |M_atp_c[Cytosol]| + (45) |M_cdpglyc_c[Cytosol]|
-    + (45) |M_h2o_c[Cytosol]| + |M_uacgam_c[Cytosol]| + |M_uacmam_c[Cytosol]| =>
-    (45) |M_amp_c[Cytosol]| + (45) |M_cmp_c[Cytosol]| + |M_gtca2_45_CT_c[Cytosol]|
-    + (91) |M_h_c[Cytosol]| + (45) |M_ppi_c[Cytosol]| + |M_udp_c[Cytosol]| + |M_ump_c[Cytosol]|
+  equation:
+    reversible: false
+    left:
+    - id: ala-D_c
+      compartment: Cytosol
+      value: 45
+    - id: atp_c
+      compartment: Cytosol
+      value: 45
+    - id: cdpglyc_c
+      compartment: Cytosol
+      value: 45
+    - id: h2o_c
+      compartment: Cytosol
+      value: 45
+    - id: uacgam_c
+      compartment: Cytosol
+      value: 1
+    - id: uacmam_c
+      compartment: Cytosol
+      value: 1
+    right:
+    - id: amp_c
+      compartment: Cytosol
+      value: 45
+    - id: cmp_c
+      compartment: Cytosol
+      value: 45
+    - id: gtca2_45_CT_c
+      compartment: Cytosol
+      value: 1
+    - id: h_c
+      compartment: Cytosol
+      value: 91
+    - id: ppi_c
+      compartment: Cytosol
+      value: 45
+    - id: udp_c
+      compartment: Cytosol
+      value: 1
+    - id: ump_c
+      compartment: Cytosol
+      value: 1
   subsystem: .
-- id: R_TECA3S45
+- id: TECA3S45
   name: R_glycerol_teichoic_acid__n45___unlinked__glucose_substituted
-  equation: (45) |M_cdpglyc_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_uacgam_c[Cytosol]|
-    + |M_uacmam_c[Cytosol]| + (45) |M_udpg_c[Cytosol]| => (45) |M_cmp_c[Cytosol]|
-    + |M_gtca3_45_CT_c[Cytosol]| + (91) |M_h_c[Cytosol]| + (46) |M_udp_c[Cytosol]|
-    + |M_ump_c[Cytosol]|
+  equation: (45) cdpglyc_c[Cytosol] + h2o_c[Cytosol] + uacgam_c[Cytosol] + uacmam_c[Cytosol]
+    + (45) udpg_c[Cytosol] => (45) cmp_c[Cytosol] + gtca3_45_CT_c[Cytosol] + (91)
+    h_c[Cytosol] + (46) udp_c[Cytosol] + ump_c[Cytosol]
   subsystem: .
-- id: R_TECA4S_CT
+- id: TECA4S_CT
   name: R_minor_teichoic_acid_synthesis__n30_
-  equation: (30) |M_h2o_c[Cytosol]| + (30) |M_uacgala_c[Cytosol]| + (30) |M_udpg_c[Cytosol]|
-    => (60) |M_h_c[Cytosol]| + |M_tcam_CT_c[Cytosol]| + (30) |M_udp_c[Cytosol]| +
-    (30) |M_ump_c[Cytosol]|
+  equation: (30) h2o_c[Cytosol] + (30) uacgala_c[Cytosol] + (30) udpg_c[Cytosol]
+    => (60) h_c[Cytosol] + tcam_CT_c[Cytosol] + (30) udp_c[Cytosol] + (30) ump_c[Cytosol]
   subsystem: .
-- id: R_TEICH45
+- id: TEICH45
   name: R_teichuronic_acid__n45___unlinked__GalNAc_GlcA_repeated
-  equation: (45) |M_uacgala_c[Cytosol]| + (45) |M_udpglcur_c[Cytosol]| <=> (45) |M_h_c[Cytosol]|
-    + |M_teich_45_CT_c[Cytosol]| + (45) |M_udp_c[Cytosol]| + (45) |M_ump_c[Cytosol]|
+  equation: (45) uacgala_c[Cytosol] + (45) udpglcur_c[Cytosol] <=> (45) h_c[Cytosol]
+    + teich_45_CT_c[Cytosol] + (45) udp_c[Cytosol] + (45) ump_c[Cytosol]
   subsystem: .
-- id: R_THRS
+- id: THRS
   name: threoninesynthase
-  equation: '|M_h2o_c[Cytosol]| + |M_phom_c[Cytosol]| => |M_pi_c[Cytosol]| + |M_thr_DASH_L_c[Cytosol]|'
+  equation: h2o_c[Cytosol] + phom_c[Cytosol] => pi_c[Cytosol] + thr-L_c[Cytosol]
   subsystem: glycine_serine_threonine metabolism
-- id: R_THRTRS
+- id: THRTRS
   name: Threonyl-tRNAsynthetase
-  equation: '|M_atp_c[Cytosol]| + |M_thr_DASH_L_c[Cytosol]| + |M_trnathr_c[Cytosol]|
-    => |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_thrtrna_c[Cytosol]|'
+  equation: atp_c[Cytosol] + thr-L_c[Cytosol] + trnathr_c[Cytosol] => amp_c[Cytosol]
+    + ppi_c[Cytosol] + thrtrna_c[Cytosol]
   subsystem: Threonine and Lysine Metabolism
-- id: R_TKT1
+- id: TKT1
   name: transketolase
-  equation: '|M_r5p_c[Cytosol]| + |M_xu5p_DASH_D_c[Cytosol]| <=> |M_g3p_c[Cytosol]|
-    + |M_s7p_c[Cytosol]|'
+  equation: r5p_c[Cytosol] + xu5p-D_c[Cytosol] <=> g3p_c[Cytosol] + s7p_c[Cytosol]
   subsystem: Pentose Phosphate Pathway
-- id: R_TKT2
+- id: TKT2
   name: transketolase
-  equation: '|M_e4p_c[Cytosol]| + |M_xu5p_DASH_D_c[Cytosol]| <=> |M_f6p_c[Cytosol]|
-    + |M_g3p_c[Cytosol]|'
+  equation: e4p_c[Cytosol] + xu5p-D_c[Cytosol] <=> f6p_c[Cytosol] + g3p_c[Cytosol]
   subsystem: pentose phosphate pathway
-- id: R_TMDK1
+- id: TMDK1
   name: thymidinekinase(ATP:thymidine)
-  equation: '|M_atp_c[Cytosol]| + |M_thymd_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_dtmp_c[Cytosol]|
-    + |M_h_c[Cytosol]|'
+  equation: atp_c[Cytosol] + thymd_c[Cytosol] => adp_c[Cytosol] + dtmp_c[Cytosol]
+    + h_c[Cytosol]
   subsystem: pyrimidine metabolism
-- id: R_TMDPK
+- id: TMDPK
   name: thiaminediphosphokinase
-  equation: '|M_atp_c[Cytosol]| + |M_thm_c[Cytosol]| => |M_amp_c[Cytosol]| + |M_h_c[Cytosol]|
-    + |M_thmpp_c[Cytosol]|'
+  equation: atp_c[Cytosol] + thm_c[Cytosol] => amp_c[Cytosol] + h_c[Cytosol] + thmpp_c[Cytosol]
   subsystem: Thiamine Metabolism
-- id: R_TMDPP
+- id: TMDPP
   name: thymidinephosphorylase
-  equation: '|M_pi_c[Cytosol]| + |M_thymd_c[Cytosol]| <=> |M_2dr1p_c[Cytosol]| +
-    |M_thym_c[Cytosol]|'
+  equation: pi_c[Cytosol] + thymd_c[Cytosol] <=> 2dr1p_c[Cytosol] + thym_c[Cytosol]
   subsystem: Pyrimidine Catabolism
-- id: R_TMDS
+- id: TMDS
   name: thymidylatesynthase
-  equation: '|M_dump_c[Cytosol]| + |M_mlthf_c[Cytosol]| => |M_dhf_c[Cytosol]| + |M_dtmp_c[Cytosol]|'
+  equation: dump_c[Cytosol] + mlthf_c[Cytosol] => dhf_c[Cytosol] + dtmp_c[Cytosol]
   subsystem: pyrimidine metabolism
-- id: R_TMPPP
+- id: TMPPP
   name: thiamine-phosphatediphosphorylase
-  equation: '|M_2mahmp_c[Cytosol]| + |M_4mpetz_c[Cytosol]| + |M_h_c[Cytosol]| =>
-    |M_ppi_c[Cytosol]| + |M_thmmp_c[Cytosol]|'
+  equation: 2mahmp_c[Cytosol] + 4mpetz_c[Cytosol] + h_c[Cytosol] => ppi_c[Cytosol]
+    + thmmp_c[Cytosol]
   subsystem: Thiamine Metabolism
-- id: R_TPI
+- id: TPI
   name: triose-phosphateisomerase
-  equation: '|M_dhap_c[Cytosol]| <=> |M_g3p_c[Cytosol]|'
+  equation: dhap_c[Cytosol] <=> g3p_c[Cytosol]
   subsystem: glycolysis
-- id: R_TRDR
+- id: TRDR
   name: thioredoxinreductase(NADPH)
-  equation: '|M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| + |M_trdox_c[Cytosol]| => |M_nadp_c[Cytosol]|
-    + |M_trdrd_c[Cytosol]|'
+  equation: h_c[Cytosol] + nadph_c[Cytosol] + trdox_c[Cytosol] => nadp_c[Cytosol]
+    + trdrd_c[Cytosol]
   subsystem: pyrimidine metabolism
-- id: R_TRPS1
+- id: TRPS1
   name: tryptophansynthase(indoleglycerolphosphate)
-  equation: '|M_3ig3p_c[Cytosol]| + |M_ser_DASH_L_c[Cytosol]| => |M_g3p_c[Cytosol]|
-    + |M_h2o_c[Cytosol]| + |M_trp_DASH_L_c[Cytosol]|'
+  equation: 3ig3p_c[Cytosol] + ser-L_c[Cytosol] => g3p_c[Cytosol] + h2o_c[Cytosol]
+    + trp-L_c[Cytosol]
   subsystem: aromatic amino acid synthesis
-- id: R_TRPS2
+- id: TRPS2
   name: tryptophansynthase(indole)
-  equation: '|M_indole_c[Cytosol]| + |M_ser_DASH_L_c[Cytosol]| => |M_h2o_c[Cytosol]|
-    + |M_trp_DASH_L_c[Cytosol]|'
+  equation: indole_c[Cytosol] + ser-L_c[Cytosol] => h2o_c[Cytosol] + trp-L_c[Cytosol]
   subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
-- id: R_TRPS3
+- id: TRPS3
   name: tryptophansynthase(indoleglycerolphosphate)
-  equation: '|M_3ig3p_c[Cytosol]| => |M_g3p_c[Cytosol]| + |M_indole_c[Cytosol]|'
+  equation: 3ig3p_c[Cytosol] => g3p_c[Cytosol] + indole_c[Cytosol]
   subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
-- id: R_TRPTRS
+- id: TRPTRS
   name: Tryptophanyl-tRNAsynthetase
-  equation: '|M_atp_c[Cytosol]| + |M_trnatrp_c[Cytosol]| + |M_trp_DASH_L_c[Cytosol]|
-    => |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_trptrna_c[Cytosol]|'
+  equation: atp_c[Cytosol] + trnatrp_c[Cytosol] + trp-L_c[Cytosol] => amp_c[Cytosol]
+    + ppi_c[Cytosol] + trptrna_c[Cytosol]
   subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
-- id: R_TYRTA
+- id: TYRTA
   name: tyrosinetransaminase
-  equation: '|M_akg_c[Cytosol]| + |M_tyr_DASH_L_c[Cytosol]| <=> |M_34hpp_c[Cytosol]|
-    + |M_glu_DASH_L_c[Cytosol]|'
+  equation: akg_c[Cytosol] + tyr-L_c[Cytosol] <=> 34hpp_c[Cytosol] + glu-L_c[Cytosol]
   subsystem: aromatic amino acid synthesis
-- id: R_TYRTRS
+- id: TYRTRS
   name: tyrosyl-tRNAsynthetase
-  equation: '|M_atp_c[Cytosol]| + |M_trnatyr_c[Cytosol]| + |M_tyr_DASH_L_c[Cytosol]|
-    => |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_tyrtrna_c[Cytosol]|'
+  equation: atp_c[Cytosol] + trnatyr_c[Cytosol] + tyr-L_c[Cytosol] => amp_c[Cytosol]
+    + ppi_c[Cytosol] + tyrtrna_c[Cytosol]
   subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
-- id: R_UAAGDS
+- id: UAAGDS
   name: UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimelatesynthetase
-  equation: '|M_26dap_DASH_M_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_uamag_c[Cytosol]|
-    => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_ugmd_c[Cytosol]|'
+  equation: 26dap-M_c[Cytosol] + atp_c[Cytosol] + uamag_c[Cytosol] => adp_c[Cytosol]
+    + h_c[Cytosol] + pi_c[Cytosol] + ugmd_c[Cytosol]
   subsystem: Cell Envelope Biosynthesis
-- id: R_UAG2E
+- id: UAG2E
   name: UDP-N-acetylglucosamine2-epimerase
-  equation: '|M_uacgam_c[Cytosol]| <=> |M_uacmam_c[Cytosol]|'
+  equation: uacgam_c[Cytosol] <=> uacmam_c[Cytosol]
   subsystem: Lipid and Cell Wall Metabolism
-- id: R_UAG2EMA
+- id: UAG2EMA
   name: UDP-N-acetyl-D-glucosamine2-epimerase(Hydrolysis)
-  equation: '|M_h2o_c[Cytosol]| + |M_uacgam_c[Cytosol]| <=> |M_acmana_c[Cytosol]|
-    + |M_h_c[Cytosol]| + |M_udp_c[Cytosol]|'
+  equation: h2o_c[Cytosol] + uacgam_c[Cytosol] <=> acmana_c[Cytosol] + h_c[Cytosol]
+    + udp_c[Cytosol]
   subsystem: Lipid and Cell Wall Metabolism
-- id: R_UAG4E
+- id: UAG4E
   name: R_UDP_N_acetylglucosamine_4_epimerase
-  equation: '|M_uacgam_c[Cytosol]| => |M_uacgala_c[Cytosol]|'
+  equation: uacgam_c[Cytosol] => uacgala_c[Cytosol]
   subsystem: .
-- id: R_UAGCVT
+- id: UAGCVT
   name: UDP-N-acetylglucosamine1-carboxyvinyltransferase
-  equation: '|M_pep_c[Cytosol]| + |M_uacgam_c[Cytosol]| => |M_pi_c[Cytosol]| + |M_uaccg_c[Cytosol]|'
+  equation: pep_c[Cytosol] + uacgam_c[Cytosol] => pi_c[Cytosol] + uaccg_c[Cytosol]
   subsystem: cell envelope
-- id: R_UAGDP
+- id: UAGDP
   name: UDP-N-acetylglucosaminediphosphorylase
-  equation: '|M_acgam1p_c[Cytosol]| + |M_h_c[Cytosol]| + |M_utp_c[Cytosol]| => |M_ppi_c[Cytosol]|
-    + |M_uacgam_c[Cytosol]|'
+  equation: acgam1p_c[Cytosol] + h_c[Cytosol] + utp_c[Cytosol] => ppi_c[Cytosol]
+    + uacgam_c[Cytosol]
   subsystem: cell envelope
-- id: R_UAGPT3
+- id: UAGPT3
   name: R_UDP_N_acetylglucosamine_N_acetylmuramyl__pentapeptide_pyrophosphoryl_undecaprenol_N_acetylglucosamine_transferase
-  equation: '|M_uacgam_c[Cytosol]| + |M_uagmda_c[Cytosol]| => |M_h_c[Cytosol]| +
-    |M_uaagmda_c[Cytosol]| + |M_udp_c[Cytosol]|'
+  equation: uacgam_c[Cytosol] + uagmda_c[Cytosol] => h_c[Cytosol] + uaagmda_c[Cytosol]
+    + udp_c[Cytosol]
   subsystem: .
-- id: R_UAMAGS
+- id: UAMAGS
   name: UDP-N-acetylmuramoyl-L-alanyl-D-glutamatesynthetase
-  equation: '|M_atp_c[Cytosol]| + |M_glu_DASH_D_c[Cytosol]| + |M_uama_c[Cytosol]|
-    => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_uamag_c[Cytosol]|'
+  equation: atp_c[Cytosol] + glu-D_c[Cytosol] + uama_c[Cytosol] => adp_c[Cytosol]
+    + h_c[Cytosol] + pi_c[Cytosol] + uamag_c[Cytosol]
   subsystem: cell envelope
-- id: R_UAMAS
+- id: UAMAS
   name: UDP-N-acetylmuramoyl-L-alaninesynthetase
-  equation: '|M_ala_DASH_L_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_uamr_c[Cytosol]|
-    => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_uama_c[Cytosol]|'
+  equation: ala-L_c[Cytosol] + atp_c[Cytosol] + uamr_c[Cytosol] => adp_c[Cytosol]
+    + h_c[Cytosol] + pi_c[Cytosol] + uama_c[Cytosol]
   subsystem: cell envelope
-- id: R_UAPGR
+- id: UAPGR
   name: UDP-N-acetylenolpyruvoylglucosaminereductase
-  equation: '|M_h_c[Cytosol]| + |M_nadph_c[Cytosol]| + |M_uaccg_c[Cytosol]| => |M_nadp_c[Cytosol]|
-    + |M_uamr_c[Cytosol]|'
+  equation: h_c[Cytosol] + nadph_c[Cytosol] + uaccg_c[Cytosol] => nadp_c[Cytosol]
+    + uamr_c[Cytosol]
   subsystem: cell envelope
-- id: R_UDCPDP
+- id: UDCPDP
   name: undecaprenyl-diphosphatase
-  equation: '|M_h2o_c[Cytosol]| + |M_udcpdp_c[Cytosol]| => |M_h_c[Cytosol]| + |M_pi_c[Cytosol]|
-    + |M_udcpp_c[Cytosol]|'
+  equation: h2o_c[Cytosol] + udcpdp_c[Cytosol] => h_c[Cytosol] + pi_c[Cytosol] +
+    udcpp_c[Cytosol]
   subsystem: Cell Envelope Biosynthesis
-- id: R_UDCPKr
+- id: UDCPKr
   name: undecaprenolkinase(reversible)
-  equation: '|M_atp_c[Cytosol]| + |M_udcp_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
-    + |M_udcpp_c[Cytosol]|'
+  equation: atp_c[Cytosol] + udcp_c[Cytosol] <=> adp_c[Cytosol] + h_c[Cytosol] +
+    udcpp_c[Cytosol]
   subsystem: Carbohydrate Metabolism
-- id: R_UDPDPS
+- id: UDPDPS
   name: undecaprenyl-diphosphatesynthase
-  equation: '|M_decdp_c[Cytosol]| + |M_ipdp_c[Cytosol]| => |M_ppi_c[Cytosol]| + |M_udcpdp_c[Cytosol]|'
+  equation: decdp_c[Cytosol] + ipdp_c[Cytosol] => ppi_c[Cytosol] + udcpdp_c[Cytosol]
   subsystem: .
-- id: R_UDPG4E
+- id: UDPG4E
   name: UDPglucose4-epimerase
-  equation: '|M_udpg_c[Cytosol]| <=> |M_udpgal_c[Cytosol]|'
+  equation: udpg_c[Cytosol] <=> udpgal_c[Cytosol]
   subsystem: sugar metabolism
-- id: R_UDPGDr
+- id: UDPGDr
   name: UDPglucose6-dehydrogenase
-  equation: '|M_h2o_c[Cytosol]| + (2) |M_nad_c[Cytosol]| + |M_udpg_c[Cytosol]| <=>
-    (3) |M_h_c[Cytosol]| + (2) |M_nadh_c[Cytosol]| + |M_udpglcur_c[Cytosol]|'
+  equation: h2o_c[Cytosol] + (2) nad_c[Cytosol] + udpg_c[Cytosol] <=> (3) h_c[Cytosol]
+    + (2) nadh_c[Cytosol] + udpglcur_c[Cytosol]
   subsystem: sugar metabolism
-- id: R_UGMDDS
+- id: UGMDDS
   name: UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanyl-D-alaninesynthetase
-  equation: '|M_alaala_c[Cytosol]| + |M_atp_c[Cytosol]| + |M_ugmd_c[Cytosol]| =>
-    |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_ugmda_c[Cytosol]|'
+  equation: alaala_c[Cytosol] + atp_c[Cytosol] + ugmd_c[Cytosol] => adp_c[Cytosol]
+    + h_c[Cytosol] + pi_c[Cytosol] + ugmda_c[Cytosol]
   subsystem: Cell Envelope Biosynthesis
-- id: R_UGT1_CT
+- id: UGT1_CT
   name: R_UDP_glucosyltransferase__monoglucosyl_
-  equation: '|M_12dgr_CT_c[Cytosol]| + |M_udpg_c[Cytosol]| => |M_h_c[Cytosol]| +
-    |M_m12dg_CT_c[Cytosol]| + |M_udp_c[Cytosol]|'
+  equation: 12dgr_CT_c[Cytosol] + udpg_c[Cytosol] => h_c[Cytosol] + m12dg_CT_c[Cytosol]
+    + udp_c[Cytosol]
   subsystem: .
-- id: R_UGT2_CT
+- id: UGT2_CT
   name: R_UDP_glucosyltransferase__triglucosyl_
-  equation: '|M_12dgr_CT_c[Cytosol]| + (3) |M_udpg_c[Cytosol]| => (3) |M_h_c[Cytosol]|
-    + |M_t12dg_CT_c[Cytosol]| + (3) |M_udp_c[Cytosol]|'
+  equation: 12dgr_CT_c[Cytosol] + (3) udpg_c[Cytosol] => (3) h_c[Cytosol] + t12dg_CT_c[Cytosol]
+    + (3) udp_c[Cytosol]
   subsystem: .
-- id: R_UGT_CT
+- id: UGT_CT
   name: R_UDP_glucosyltransferase__diglucosyl_
-  equation: '|M_12dgr_CT_c[Cytosol]| + (2) |M_udpg_c[Cytosol]| => |M_d12dg_CT_c[Cytosol]|
-    + (2) |M_h_c[Cytosol]| + (2) |M_udp_c[Cytosol]|'
+  equation: 12dgr_CT_c[Cytosol] + (2) udpg_c[Cytosol] => d12dg_CT_c[Cytosol] + (2)
+    h_c[Cytosol] + (2) udp_c[Cytosol]
   subsystem: .
-- id: R_UMPK
+- id: UMPK
   name: UMPkinase
-  equation: '|M_atp_c[Cytosol]| + |M_ump_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_udp_c[Cytosol]|'
+  equation: atp_c[Cytosol] + ump_c[Cytosol] <=> adp_c[Cytosol] + udp_c[Cytosol]
   subsystem: Nucleotides
-- id: R_UMPK2
+- id: UMPK2
   name: UMPkinase(CTP)
-  equation: '|M_ctp_c[Cytosol]| + |M_ump_c[Cytosol]| <=> |M_cdp_c[Cytosol]| + |M_udp_c[Cytosol]|'
+  equation: ctp_c[Cytosol] + ump_c[Cytosol] <=> cdp_c[Cytosol] + udp_c[Cytosol]
   subsystem: Nucleotides
-- id: R_UMPK3
+- id: UMPK3
   name: UMPkinase(UTP)
-  equation: '|M_ump_c[Cytosol]| + |M_utp_c[Cytosol]| <=> (2) |M_udp_c[Cytosol]|'
+  equation: ump_c[Cytosol] + utp_c[Cytosol] <=> (2) udp_c[Cytosol]
   subsystem: Nucleotides
-- id: R_UMPK4
+- id: UMPK4
   name: UMPkinase(GTP)
-  equation: '|M_gtp_c[Cytosol]| + |M_ump_c[Cytosol]| <=> |M_gdp_c[Cytosol]| + |M_udp_c[Cytosol]|'
+  equation: gtp_c[Cytosol] + ump_c[Cytosol] <=> gdp_c[Cytosol] + udp_c[Cytosol]
   subsystem: Nucleotides
-- id: R_UMPK5
+- id: UMPK5
   name: UMPkinase(dATP)
-  equation: '|M_datp_c[Cytosol]| + |M_ump_c[Cytosol]| <=> |M_dadp_c[Cytosol]| + |M_udp_c[Cytosol]|'
+  equation: datp_c[Cytosol] + ump_c[Cytosol] <=> dadp_c[Cytosol] + udp_c[Cytosol]
   subsystem: Nucleotides
-- id: R_UMPK6
+- id: UMPK6
   name: UMPkinase(dCTP)
-  equation: '|M_dctp_c[Cytosol]| + |M_ump_c[Cytosol]| <=> |M_dcdp_c[Cytosol]| + |M_udp_c[Cytosol]|'
+  equation: dctp_c[Cytosol] + ump_c[Cytosol] <=> dcdp_c[Cytosol] + udp_c[Cytosol]
   subsystem: Nucleotides
-- id: R_UMPK7
+- id: UMPK7
   name: UMPkinase(dGTP)
-  equation: '|M_dgtp_c[Cytosol]| + |M_ump_c[Cytosol]| <=> |M_dgdp_c[Cytosol]| + |M_udp_c[Cytosol]|'
+  equation: dgtp_c[Cytosol] + ump_c[Cytosol] <=> dgdp_c[Cytosol] + udp_c[Cytosol]
   subsystem: Nucleotides
-- id: R_UPP3MT
+- id: UPP3MT
   name: uroporphyrinogenmethyltransferase
-  equation: (2) |M_amet_c[Cytosol]| + |M_uppg3_c[Cytosol]| => (2) |M_ahcys_c[Cytosol]|
-    + |M_dscl_c[Cytosol]| + |M_h_c[Cytosol]|
+  equation: (2) amet_c[Cytosol] + uppg3_c[Cytosol] => (2) ahcys_c[Cytosol] + dscl_c[Cytosol]
+    + h_c[Cytosol]
   subsystem: Porphyrin and Chlorophyll Metabolism
-- id: R_UPP3S
+- id: UPP3S
   name: uroporphyrinogen-IIIsynthase
-  equation: '|M_hmbil_c[Cytosol]| => |M_h2o_c[Cytosol]| + |M_uppg3_c[Cytosol]|'
+  equation: hmbil_c[Cytosol] => h2o_c[Cytosol] + uppg3_c[Cytosol]
   subsystem: Heme Biosynthesis
-- id: R_UPPRT
+- id: UPPRT
   name: uracilphosphoribosyltransferase
-  equation: '|M_prpp_c[Cytosol]| + |M_ura_c[Cytosol]| => |M_ppi_c[Cytosol]| + |M_ump_c[Cytosol]|'
+  equation: prpp_c[Cytosol] + ura_c[Cytosol] => ppi_c[Cytosol] + ump_c[Cytosol]
   subsystem: pyrimidine metabolism
-- id: R_URAt2
+- id: URAt2
   name: uraciltransportinviaprotonsymport
-  equation: '|M_h_e[Extraorganism]| + |M_ura_e[Extraorganism]| => |M_h_c[Cytosol]|
-    + |M_ura_c[Cytosol]|'
+  equation: h_e[Extraorganism] + ura_e[Extraorganism] => h_c[Cytosol] + ura_c[Cytosol]
   subsystem: Transport, Extracellular
-- id: R_UREA
+- id: UREA
   name: urease
-  equation: (2) |M_h_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_urea_c[Cytosol]| => |M_co2_c[Cytosol]|
-    + (2) |M_nh4_c[Cytosol]|
+  equation: (2) h_c[Cytosol] + h2o_c[Cytosol] + urea_c[Cytosol] => co2_c[Cytosol]
+    + (2) nh4_c[Cytosol]
   subsystem: urea decomposition
-- id: R_UREAabc
+- id: UREAabc
   name: ureatransportviaABCsystem
-  equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_urea_e[Extraorganism]|
-    => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_urea_c[Cytosol]| + |M_pi_c[Cytosol]|'
+  equation: atp_c[Cytosol] + h2o_c[Cytosol] + urea_e[Extraorganism] => adp_c[Cytosol]
+    + h_c[Cytosol] + urea_c[Cytosol] + pi_c[Cytosol]
   subsystem: transport
-- id: R_URIDK1r
+- id: URIDK1r
   name: uridylatekinase(UMP)
-  equation: '|M_atp_c[Cytosol]| + |M_ump_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_udp_c[Cytosol]|'
+  equation: atp_c[Cytosol] + ump_c[Cytosol] <=> adp_c[Cytosol] + udp_c[Cytosol]
   subsystem: Nucleotide Metabolism
-- id: R_URIDK2r
+- id: URIDK2r
   name: uridylatekinase(dUMP)
-  equation: '|M_atp_c[Cytosol]| + |M_dump_c[Cytosol]| <=> |M_adp_c[Cytosol]| + |M_dudp_c[Cytosol]|'
+  equation: atp_c[Cytosol] + dump_c[Cytosol] <=> adp_c[Cytosol] + dudp_c[Cytosol]
   subsystem: Nucleotide Salvage Pathway
-- id: R_URIK1
+- id: URIK1
   name: uridinekinase(ATP:Uridine)
-  equation: '|M_atp_c[Cytosol]| + |M_uri_c[Cytosol]| => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]|
-    + |M_ump_c[Cytosol]|'
+  equation: atp_c[Cytosol] + uri_c[Cytosol] => adp_c[Cytosol] + h_c[Cytosol] + ump_c[Cytosol]
   subsystem: Pyrimidine Biosynthesis
-- id: R_URIK2
+- id: URIK2
   name: uridinekinase(GTP:Uridine)
-  equation: '|M_gtp_c[Cytosol]| + |M_uri_c[Cytosol]| => |M_gdp_c[Cytosol]| + |M_h_c[Cytosol]|
-    + |M_ump_c[Cytosol]|'
+  equation: gtp_c[Cytosol] + uri_c[Cytosol] => gdp_c[Cytosol] + h_c[Cytosol] + ump_c[Cytosol]
   subsystem: Purine and Pyrimidine Biosynthesis
-- id: R_URIK3
+- id: URIK3
   name: uridinekinase(ITP:Uridine)
-  equation: '|M_itp_c[Cytosol]| + |M_uri_c[Cytosol]| => |M_h_c[Cytosol]| + |M_idp_c[Cytosol]|
-    + |M_ump_c[Cytosol]|'
+  equation: itp_c[Cytosol] + uri_c[Cytosol] => h_c[Cytosol] + idp_c[Cytosol] + ump_c[Cytosol]
   subsystem: Purine and Pyrimidine Biosynthesis
-- id: R_VALTA
+- id: VALTA
   name: valinetransaminase
-  equation: '|M_akg_c[Cytosol]| + |M_val_DASH_L_c[Cytosol]| <=> |M_3mob_c[Cytosol]|
-    + |M_glu_DASH_L_c[Cytosol]|'
+  equation: akg_c[Cytosol] + val-L_c[Cytosol] <=> 3mob_c[Cytosol] + glu-L_c[Cytosol]
   subsystem: branched-chain amino acids
-- id: R_VALTRS
+- id: VALTRS
   name: Valyl-tRNAsynthetase
-  equation: '|M_atp_c[Cytosol]| + |M_trnaval_c[Cytosol]| + |M_val_DASH_L_c[Cytosol]|
-    => |M_amp_c[Cytosol]| + |M_ppi_c[Cytosol]| + |M_valtrna_c[Cytosol]|'
+  equation: atp_c[Cytosol] + trnaval_c[Cytosol] + val-L_c[Cytosol] => amp_c[Cytosol]
+    + ppi_c[Cytosol] + valtrna_c[Cytosol]
   subsystem: Valine, Leucine, and Isoleucine Metabolism
-- id: R_VALt2r
+- id: VALt2r
   name: L-valinereversibletransportviaprotonsymport
-  equation: '|M_h_e[Extraorganism]| + |M_val_DASH_L_e[Extraorganism]| <=> |M_h_c[Cytosol]|
-    + |M_val_DASH_L_c[Cytosol]|'
+  equation: h_e[Extraorganism] + val-L_e[Extraorganism] <=> h_c[Cytosol] + val-L_c[Cytosol]
   subsystem: Transport, Extracellular
-- id: R_XANt2
+- id: XANt2
   name: xanthinetransportinviaprotonsymport
-  equation: '|M_h_e[Extraorganism]| + |M_xan_e[Extraorganism]| => |M_h_c[Cytosol]|
-    + |M_xan_c[Cytosol]|'
+  equation: h_e[Extraorganism] + xan_e[Extraorganism] => h_c[Cytosol] + xan_c[Cytosol]
   subsystem: Putative Transporters
-- id: R_XYLabc
+- id: XYLabc
   name: D-xylosetransportviaABCsystem
-  equation: '|M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]| + |M_xyl_DASH_D_e[Extraorganism]|
-    => |M_adp_c[Cytosol]| + |M_h_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_xyl_DASH_D_c[Cytosol]|'
+  equation: atp_c[Cytosol] + h2o_c[Cytosol] + xyl-D_e[Extraorganism] => adp_c[Cytosol]
+    + h_c[Cytosol] + pi_c[Cytosol] + xyl-D_c[Cytosol]
   subsystem: Transport, Extracellular
-- id: R_YUMPS
+- id: YUMPS
   name: yUMPsynthetase
-  equation: '|M_r5p_c[Cytosol]| + |M_ura_c[Cytosol]| <=> |M_h2o_c[Cytosol]| + |M_psd5p_c[Cytosol]|'
+  equation: r5p_c[Cytosol] + ura_c[Cytosol] <=> h2o_c[Cytosol] + psd5p_c[Cytosol]
   subsystem: Purine and Pyrimidine Biosynthesis
-- id: R_bglua
+- id: bglua
   name: betaglucosidase,cellulose
-  equation: '|M_cellulose_e[Extraorganism]| + |M_h2o_e[Extraorganism]| => |M_glc_DASH_D_e[Extraorganism]|'
+  equation: cellulose_e[Extraorganism] + h2o_e[Extraorganism] => glc-D_e[Extraorganism]
   subsystem: Sugar Metabolism
-- id: R_bglub
+- id: bglub
   name: betaglucosidase
-  equation: '|M_cellobiose_c[Cytosol]| + |M_h2o_c[Cytosol]| => (2) |M_glc_DASH_D_c[Cytosol]|'
+  equation: cellobiose_c[Cytosol] + h2o_c[Cytosol] => (2) glc-D_c[Cytosol]
   subsystem: Sugar Metabolism
-- id: R_biomass_target
+- id: biomass_target
   name: BiomassRxn
-  equation: (0.257980584) |M_ala_DASH_L_c[Cytosol]| + (0.176597196) |M_arg_DASH_L_c[Cytosol]|
-    + (0.218152121) |M_asn_DASH_L_c[Cytosol]| + (0.230278549) |M_asp_DASH_L_c[Cytosol]|
-    + (0.047389692) |M_cys_DASH_L_c[Cytosol]| + (0.308171564) |M_glu_DASH_L_c[Cytosol]|
-    + (0.103857352) |M_gln_DASH_L_c[Cytosol]| + (0.270219364) |M_gly_c[Cytosol]|
-    + (0.057785913) |M_his_DASH_L_c[Cytosol]| + (0.343142715) |M_ile_DASH_L_c[Cytosol]|
-    + (0.350014856) |M_leu_DASH_L_c[Cytosol]| + (0.327413561) |M_lys_DASH_L_c[Cytosol]|
-    + (0.101531685) |M_met_DASH_L_c[Cytosol]| + (0.171391596) |M_phe_DASH_L_c[Cytosol]|
-    + (0.137139492) |M_pro_DASH_L_c[Cytosol]| + (0.244438532) |M_ser_DASH_L_c[Cytosol]|
-    + (0.203965923) |M_thr_DASH_L_c[Cytosol]| + (0.035839999) |M_trp_DASH_L_c[Cytosol]|
-    + (0.170934701) |M_tyr_DASH_L_c[Cytosol]| + (0.287641274) |M_val_DASH_L_c[Cytosol]|
-    + (0.017366666) |M_datp_c[Cytosol]| + (0.009566749) |M_dctp_c[Cytosol]| + (0.009566749)
-    |M_dgtp_c[Cytosol]| + (0.017366666) |M_dttp_c[Cytosol]| + (0.008562798) |M_m12dg_CT_c[Cytosol]|
-    + (0.011044141) |M_d12dg_CT_c[Cytosol]| + (0.006631063) |M_t12dg_CT_c[Cytosol]|
-    + (0.000458142) |M_cdlp_CT_c[Cytosol]| + (0.017672003) |M_pgly_CT_c[Cytosol]|
-    + (0.002174587) |M_lysylpgly_CT_c[Cytosol]| + (0.05622271) |M_psetha_CT_c[Cytosol]|
-    + (0.000683646) |M_lipo1_24_CT_c[Cytosol]| + (0.000612248) |M_lipo2_24_CT_c[Cytosol]|
-    + (0.001816095) |M_lipo3_24_CT_c[Cytosol]| + (0.001467494) |M_lipo4_24_CT_c[Cytosol]|
-    + (0.101806256) |M_peptido_CT_c[Cytosol]| + (0.003618287) |M_gtca1_45_CT_c[Cytosol]|
-    + (0.00234387) |M_gtca2_45_CT_c[Cytosol]| + (0.001816435) |M_gtca3_45_CT_c[Cytosol]|
-    + (0.003119816) |M_tcam_CT_c[Cytosol]| + (0.7063) |M_k_c[Cytosol]| + (0.1017)
-    |M_mg2_c[Cytosol]| + (0.0034) |M_fe3_c[Cytosol]| + (0.0032) |M_ca2_c[Cytosol]|
-    + (0.0009) |M_ppi_c[Cytosol]| + (0.0162) |M_nad_c[Cytosol]| + (0.0047) |M_amp_c[Cytosol]|
-    + (0.001) |M_cmp_c[Cytosol]| + (0.0009) |M_nadp_c[Cytosol]| + (0.0005) |M_gmp_c[Cytosol]|
-    + (0.0003) |M_cdp_c[Cytosol]| + (0.0002) |M_nadph_c[Cytosol]| + (0.0002) |M_gdp_c[Cytosol]|
-    + (0.0415) |M_utp_c[Cytosol]| + (105.0535) |M_atp_c[Cytosol]| + (0.0394) |M_ctp_c[Cytosol]|
-    + (0.0674) |M_gtp_c[Cytosol]| => (105.0535) |M_pi_c[Cytosol]| + (105.0535) |M_h_c[Cytosol]|
-    + (105.0509) |M_adp_c[Cytosol]|
+  equation:
+    reversible: false
+    left:
+    - id: ala-L_c
+      compartment: Cytosol
+      value: 0.257980584
+    - id: arg-L_c
+      compartment: Cytosol
+      value: 0.176597196
+    - id: asn-L_c
+      compartment: Cytosol
+      value: 0.218152121
+    - id: asp-L_c
+      compartment: Cytosol
+      value: 0.230278549
+    - id: cys-L_c
+      compartment: Cytosol
+      value: 0.047389692
+    - id: glu-L_c
+      compartment: Cytosol
+      value: 0.308171564
+    - id: gln-L_c
+      compartment: Cytosol
+      value: 0.103857352
+    - id: gly_c
+      compartment: Cytosol
+      value: 0.270219364
+    - id: his-L_c
+      compartment: Cytosol
+      value: 0.057785913
+    - id: ile-L_c
+      compartment: Cytosol
+      value: 0.343142715
+    - id: leu-L_c
+      compartment: Cytosol
+      value: 0.350014856
+    - id: lys-L_c
+      compartment: Cytosol
+      value: 0.327413561
+    - id: met-L_c
+      compartment: Cytosol
+      value: 0.101531685
+    - id: phe-L_c
+      compartment: Cytosol
+      value: 0.171391596
+    - id: pro-L_c
+      compartment: Cytosol
+      value: 0.137139492
+    - id: ser-L_c
+      compartment: Cytosol
+      value: 0.244438532
+    - id: thr-L_c
+      compartment: Cytosol
+      value: 0.203965923
+    - id: trp-L_c
+      compartment: Cytosol
+      value: 0.035839999
+    - id: tyr-L_c
+      compartment: Cytosol
+      value: 0.170934701
+    - id: val-L_c
+      compartment: Cytosol
+      value: 0.287641274
+    - id: datp_c
+      compartment: Cytosol
+      value: 0.017366666
+    - id: dctp_c
+      compartment: Cytosol
+      value: 0.009566749
+    - id: dgtp_c
+      compartment: Cytosol
+      value: 0.009566749
+    - id: dttp_c
+      compartment: Cytosol
+      value: 0.017366666
+    - id: m12dg_CT_c
+      compartment: Cytosol
+      value: 0.008562798
+    - id: d12dg_CT_c
+      compartment: Cytosol
+      value: 0.011044141
+    - id: t12dg_CT_c
+      compartment: Cytosol
+      value: 0.006631063
+    - id: cdlp_CT_c
+      compartment: Cytosol
+      value: 0.000458142
+    - id: pgly_CT_c
+      compartment: Cytosol
+      value: 0.017672003
+    - id: lysylpgly_CT_c
+      compartment: Cytosol
+      value: 0.002174587
+    - id: psetha_CT_c
+      compartment: Cytosol
+      value: 0.05622271
+    - id: lipo1_24_CT_c
+      compartment: Cytosol
+      value: 0.000683646
+    - id: lipo2_24_CT_c
+      compartment: Cytosol
+      value: 0.000612248
+    - id: lipo3_24_CT_c
+      compartment: Cytosol
+      value: 0.001816095
+    - id: lipo4_24_CT_c
+      compartment: Cytosol
+      value: 0.001467494
+    - id: peptido_CT_c
+      compartment: Cytosol
+      value: 0.101806256
+    - id: gtca1_45_CT_c
+      compartment: Cytosol
+      value: 0.003618287
+    - id: gtca2_45_CT_c
+      compartment: Cytosol
+      value: 0.00234387
+    - id: gtca3_45_CT_c
+      compartment: Cytosol
+      value: 0.001816435
+    - id: tcam_CT_c
+      compartment: Cytosol
+      value: 0.003119816
+    - id: k_c
+      compartment: Cytosol
+      value: 0.7063
+    - id: mg2_c
+      compartment: Cytosol
+      value: 0.1017
+    - id: fe3_c
+      compartment: Cytosol
+      value: 0.0034
+    - id: ca2_c
+      compartment: Cytosol
+      value: 0.0032
+    - id: ppi_c
+      compartment: Cytosol
+      value: 0.0009
+    - id: nad_c
+      compartment: Cytosol
+      value: 0.0162
+    - id: amp_c
+      compartment: Cytosol
+      value: 0.0047
+    - id: cmp_c
+      compartment: Cytosol
+      value: 0.001
+    - id: nadp_c
+      compartment: Cytosol
+      value: 0.0009
+    - id: gmp_c
+      compartment: Cytosol
+      value: 0.0005
+    - id: cdp_c
+      compartment: Cytosol
+      value: 0.0003
+    - id: nadph_c
+      compartment: Cytosol
+      value: 0.0002
+    - id: gdp_c
+      compartment: Cytosol
+      value: 0.0002
+    - id: utp_c
+      compartment: Cytosol
+      value: 0.0415
+    - id: atp_c
+      compartment: Cytosol
+      value: 105.0535
+    - id: ctp_c
+      compartment: Cytosol
+      value: 0.0394
+    - id: gtp_c
+      compartment: Cytosol
+      value: 0.0674
+    right:
+    - id: pi_c
+      compartment: Cytosol
+      value: 105.0535
+    - id: h_c
+      compartment: Cytosol
+      value: 105.0535
+    - id: adp_c
+      compartment: Cytosol
+      value: 105.0509
   subsystem: BiomassObjective
-- id: R_cellobtx
+- id: cellobtx
   name: cellobiosetransport
-  equation: '|M_cellobiose_e[Extraorganism]| + |M_atp_c[Cytosol]| + |M_h2o_c[Cytosol]|
-    => |M_cellobiose_c[Cytosol]| + |M_adp_c[Cytosol]| + |M_pi_c[Cytosol]| + |M_h_c[Cytosol]|'
+  equation: cellobiose_e[Extraorganism] + atp_c[Cytosol] + h2o_c[Cytosol] => cellobiose_c[Cytosol]
+    + adp_c[Cytosol] + pi_c[Cytosol] + h_c[Cytosol]
   subsystem: Transport, Extracellular
-- id: R_cellphos
+- id: cellphos
   name: cellobiosephosphorylase
-  equation: '|M_cellobiose_c[Cytosol]| + |M_pi_c[Cytosol]| => |M_g1p_c[Cytosol]|
-    + |M_glc_DASH_D_c[Cytosol]|'
+  equation: cellobiose_c[Cytosol] + pi_c[Cytosol] => g1p_c[Cytosol] + glc-D_c[Cytosol]
   subsystem: Sugar Metabolism
-- id: R_cellulose
+- id: cellulose
   name: cellulose_breakdown
-  equation: (2) |M_cellulose_e[Extraorganism]| + |M_h2o_e[Extraorganism]| => |M_cellobiose_e[Extraorganism]|
+  equation: (2) cellulose_e[Extraorganism] + h2o_e[Extraorganism] => cellobiose_e[Extraorganism]
   subsystem: Sugar Metabolism
