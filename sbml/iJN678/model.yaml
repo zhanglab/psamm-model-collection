@@ -1,9 +1,28 @@
 name: SBML
-biomass: R_Ec_biomass_SynHetero
 default_flux_limit: 1000.0
+compartments:
+- id: c
+  adjacent_to:
+  - p
+  - u
+  name: Cytosplasm
+- id: e
+  adjacent_to: p
+  name: Extracellular
+- id: p
+  adjacent_to:
+  - u
+  - c
+  - e
+  name: Periplasm
+- id: u
+  adjacent_to:
+  - p
+  - c
+  name: Thylakoid
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml
