@@ -1,11 +1,77 @@
 name: Recon 2 model
-biomass: R_biomass_reaction
 default_flux_limit: 1000.0
+compartments:
+- id: c
+  adjacent_to:
+  - e
+  - g
+  - m
+  - l
+  - n
+  - r
+  - x
+  name: cytoplasm
+- id: e
+  adjacent_to:
+  - c
+  - g
+  - m
+  - l
+  - n
+  - r
+  - x
+  name: extracellular space
+- id: g
+  adjacent_to:
+  - c
+  - r
+  - e
+  - l
+  name: Golgi apparatus
+- id: l
+  adjacent_to:
+  - m
+  - c
+  - r
+  - e
+  - g
+  name: lysosome
+- id: m
+  adjacent_to:
+  - x
+  - c
+  - r
+  - e
+  - l
+  name: mitochondrion
+- id: n
+  adjacent_to:
+  - c
+  - r
+  - e
+  name: nucleus
+- id: r
+  adjacent_to:
+  - c
+  - e
+  - g
+  - m
+  - l
+  - n
+  - x
+  name: endoplasmic reticulum
+- id: x
+  adjacent_to:
+  - e
+  - c
+  - r
+  - m
+  name: peroxisome
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml
 limits:
 - include: limits.yaml
