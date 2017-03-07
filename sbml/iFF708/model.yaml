@@ -1,11 +1,26 @@
 name: S. cerevisiae genome-scale model
-biomass: R_VGRO
 default_flux_limit: 1000.0
+compartments:
+- id: c
+  adjacent_to:
+  - m
+  - e
+  name: Cytosol
+- id: e
+  adjacent_to:
+  - c
+  - m
+  name: Extracellular
+- id: m
+  adjacent_to:
+  - c
+  - e
+  name: Mitochondria
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml
 limits:
 - include: limits.yaml
