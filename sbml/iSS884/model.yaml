@@ -1,9 +1,24 @@
 name: Pichia stipitis
-biomass: R_biomass
 default_flux_limit: 1000.0
+compartments:
+- id: c
+  adjacent_to:
+  - e
+  - m
+  - p
+  name: Cytosol
+- id: e
+  adjacent_to: c
+  name: Extracellular
+- id: m
+  adjacent_to: c
+  name: Mitochondria
+- id: p
+  adjacent_to: c
+  name: Peroxisome
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml
