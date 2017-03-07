@@ -1,9 +1,14 @@
 name: iBsu1103
-biomass: bio00006
 default_flux_limit: 10000.0
+extracellular: Extracellular
+compartments:
+- id: Cytosol
+  adjacent_to: Extracellular
+- id: Extracellular
+  adjacent_to: Cytosol
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml
