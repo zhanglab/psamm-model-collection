@@ -51,7 +51,7 @@
 - id: BIOMASStex
   name: Biomass transport ext
   genes: nf
-  equation: cpd11416[p] <=> cpd11416[e]
+  equation: cpd11416[p] => cpd11416[e]
 - id: Biomass_Auto
   name: Biomassformation under autotrophic condition
   genes: nf
@@ -1141,7 +1141,7 @@
 - id: Biomasstpp
   name: Biomass transport pp
   genes: nf
-  equation: cpd11416[p] <=> cpd11416[c]
+  equation: cpd11416[p] => cpd11416[c]
 - id: CA
   name: Carbonic anhydrase
   genes: slr0051 or slr1347
@@ -1243,10 +1243,6 @@
   name: 'cytochrome oxidase bd (plastocianine-8: 2 protons) (lumen)'
   genes: slr1379 and slr1380
   equation: cpd16503[l] + (0.5) cpd00007[l] => cpd07274[l] + cpd00001[l]
-- id: Copp
-  name: Carbon monoxide transport via diffusion (periplasm to cytosol)
-  genes: nf
-  equation: cpd00204[p] => cpd00204[c]
 - id: Cotpp
   name: Cobalt transport pp
   genes: nf
@@ -1400,11 +1396,11 @@
 - id: GLCP
   name: glycogen phosphorylase
   genes: sll1356 or slr1367
-  equation: cpd00009[c] + cpd00155[c] => cpd00089[c]
+  equation: cpd00009[c] + (5) cpd00155[c] => cpd00089[c] + cpd00001[c]
 - id: GLCP2
   name: glycogen phosphorylase
   genes: sll1356 or slr1367
-  equation: cpd00009[c] + cpd15413[c] => cpd00089[c]
+  equation: cpd00009[c] + (5) cpd15413[c] => cpd00089[c] + cpd00001[c]
 - id: GLCtex
   name: Glucose transport ext
   genes: nf
@@ -1412,7 +1408,7 @@
 - id: GLUttrappp
   name: TRAP system glutamate simport (periplasm)
   genes: (sll1102 and sll1103and sll1104)
-  equation: cpd00067[p] + cpd00023[p] => cpd00067[c] + cpd00023[c]
+  equation: cpd00067[p] + cpd00023[p] <=> cpd00067[c] + cpd00023[c]
 - id: GLYabcpp
   name: glycine transport via ABC system
   genes: slr0559 and sll0146 and slr0949 and slr0467 and slr1881
@@ -1442,6 +1438,9 @@
   name: Galactosyltransferase (n-C18:3)
   genes: slr1508
   equation: cpd00043[c] + cp_DaLGl[c] => cpd00067[c] + cpdMG183[c] + cpd00014[c]
+- id: Glycogentr
+  name: Glycogen transport ext
+  equation: cpd00155[e] <=> cpd00155[c]
 - id: H2ASE_syn
   name: Bidirectional [NiFe] Hydrogenase
   genes: sll1220 and sll1221 and sll1223 and sll1224 and sll1226
@@ -1503,7 +1502,7 @@
 - id: MECDPDH_syn
   name: 2C-methyl-D-erythritol 2,4 cyclodiphosphate dehydratase
   genes: slr2136
-  equation: cpd00005[c] + cpd08301[c] => cpd00001[c] + cpd00006[c] + cpd08615[c]
+  equation: cpd00005[c] + cpfdxr22[c] + cpd08301[c] => cpd00001[c] + cpd00006[c] + cpfdxo22[c] + cpd08615[c]
 - id: MEHLER
   name: Mehler reaction
   genes: sll1521 or sll0550
@@ -1780,11 +1779,6 @@
   name: all-trans-nonaprenyl-diphosphate synthase [geranyl-diphosphate specific]
   genes: slr0611
   equation: cpd00283[c] + (7) cpd00113[c] => cpd02172[c] + (7) cpd00012[c]
-- id: SERabcpp
-  name: L-serine transport via ABC system (periplasm)
-  genes: slr0559 and sll0146 and slr0949 and slr0467 and slr1881
-  equation: cpd00002[c] + cpd00001[c] + cpd00054[p] => cpd00008[c] + cpd00067[c]
-    + cpd00009[c] + cpd00054[c]
 - id: SPMDt2pp
   name: spermidine transport in via proton symport
   genes: nf
@@ -1793,7 +1787,7 @@
   name: sulfoquinovosyltransferase  (n-C18:1)
   genes: slr0384
   equation: cpd00001[c] + c_12dgr181_9[c] + cpd08358[c] => cpd00067[c] + cpd00014[c]
-    + sqdg181[c]
+    + cSQDG181[c]
 - id: SQD2_183
   name: sulfoquinovosyltransferase  (n-C18:3)
   genes: slr0384
@@ -1823,7 +1817,7 @@
   name: Sulfoquinovosyltransferase (n-C18:1)
   genes: slr0384
   equation: cpd00001[c] + cpd15312[c] + cpd08358[c] => cpd00067[c] + cpd00014[c]
-    + cSQDG181[c]
+    + sqdg181_c
 - id: SQVT_182
   name: Sulfoquinovosyltransferase (n-C18:2)
   genes: slr0384
@@ -1838,10 +1832,6 @@
   name: Succinate transport pp
   genes: nf
   equation: cpd00067[p] + cpd00036[p] <=> cpd00067[c] + cpd00036[c]
-- id: SUCD_tca
-  name: succinate dehydrogenase (TCA)
-  genes: sll0823 and sll1625 and slr1233
-  equation: cpd07274[p] + cpd00036[c] => cpd00106[c] + cpd16503[p]
 - id: SUCDpp_syn
   name: succinate dehydrogenase (periplasm)
   genes: sll0823 and sll1625 and slr1233
@@ -1880,11 +1870,13 @@
   genes: slr0447 and slr1200 and slr1201 and sll0764 and sll0374
   equation: cpd00002[c] + cpd00001[c] + cpd00073[p] => cpd00008[c] + cpd00067[c]
     + cpd00009[c] + cpd00073[c]
+- id: hyprxn
+  name: hyprxn
+  equation: cpd01855[c] + cpd00052[c] + (2) cpd00067[c] => cpd08287[c] + cpd00012[c] + cpd00001[c]
 - id: molybtr
   name: Inducible molybdate transport system
   genes: slr1452 and slr1453 and slr1454 and slr1455
-  equation: cpd00001[c] + cpd00002[c] + cpd11574[p] => cpd00008[c] + cpd00009[c]
-    + cpd11574[c] + cpd00067[c]
+  equation: cpd00001[c] + cpd00002[c] + cpd01174[p] => cpd00008[c] + cpd00009[c] + cpd01174[c] + cpd00067[c]
 - id: rxn00001
   name: Pyrophosphate phosphohydrolase
   genes: slr1622
@@ -2130,6 +2122,9 @@
   name: Oxalosuccinate:NADP+ oxidoreductase (decarboxylating)
   genes: slr1289
   equation: cpd00067[c] + cpd03187[c] => cpd00011[c] + cpd00024[c]
+- id: rxn00203
+  name: 2-Oxoglutarate carboxy-lyase
+  equation: cpd00024[c] + cpd00067[c] => cpd00011[c] + cpd00199[c]
 - id: rxn00205
   name: Glutathione:hydrogen-peroxide oxidoreductase
   genes: slr1992 or slr1171
@@ -2502,7 +2497,7 @@
 - id: rxn00517
   name: ITP:pyruvate O2-phosphotransferase
   genes: sll0587 or sll1275
-  equation: cpd00020[c] + cpd00068[c] => cpd00061[c] + cpd00090[c]
+  equation: cpd00061[c] + cpd00090[c] => cpd00020[c] + cpd00068[c]
 - id: rxn00525
   name: L-arogenate:NAD+ oxidoreductase
   genes: slr2081
@@ -2732,7 +2727,7 @@
 - id: rxn00786
   name: D-Fructose-1,6-bisphosphate D-glyceraldehyde-3-phosphate-lyase
   genes: slr0943 or sll0018
-  equation: cpd00290[c] <=> cpd00095[c] + cpd00102[c]
+  equation: cpd00095[c] + cpd00102[c] <=> cpd00290[c]
 - id: rxn00789
   name: 1-(5-Phospho-D-ribosyl)-ATP:pyrophosphate phosphoribosyl-transferase
   genes: sll0900
@@ -2770,10 +2765,6 @@
   name: Glutathione:cystine oxidoreductase
   genes: nf
   equation: (2) cpd00042[c] + cpd00367[c] => (2) cpd00084[c] + cpd00111[c]
-- id: rxn00830
-  name: Isopentenyl-diphosphate delta3-delta2-isomerase
-  genes: sll1556
-  equation: cpd00113[c] <=> cpd00202[c]
 - id: rxn00832
   name: IMP 1,2-hydrolase (decyclizing)
   genes: slr0597
@@ -2886,11 +2877,11 @@
 - id: rxn00931
   name: L-Proline:NADP+ 5-oxidoreductase
   genes: slr0661
-  equation: cpd00006[c] + cpd00129[c] => cpd00005[c] + cpd00067[c] + cpd02431[c]
+  equation: cpd00005[c] + cpd00067[c] + cpd02431[c] => cpd00006[c] + cpd00129[c]
 - id: rxn00941
   name: Nicotinamide-nucleotide:pyrophosphate
   genes: slr0788
-  equation: cpd00012[c] + cpd00355[c] => cpd00067[c] + cpd00103[c] + cpd00133[c]
+  equation: cpd00067[c] + cpd00103[c] + cpd00133[c] <=> cpd00012[c] + cpd00355[c]
 - id: rxn00947
   name: Palmitate:CoA ligase (AMP-forming)
   genes: slr1609
@@ -2904,10 +2895,6 @@
   name: O-Acetyl-L-homoserine acetate-lyase (adding methanethiol)
   genes: nf
   equation: cpd00239[c] + cpd00790[c] => cpd00067[c] + cpd00029[c] + cpd00135[c]
-- id: rxn00966
-  name: chorismate pyruvate-lyase (4-hydroxybenzoate-forming)
-  genes: nf
-  equation: cpd00216[c] => cpd00020[c] + cpd00136[c]
 - id: rxn00967
   name: UDPglucose:4-hydroxybenzoate 4-O-beta-D-glucosyltransferase
   genes: nf
@@ -3048,7 +3035,7 @@
 - id: rxn01184
   name: APS:ATP adenylyltransferase
   genes: sll0509
-  equation: cpd00048[c] + cpd00067[c] + cpd00924[c] => cpd00002[c] + cpd00193[c]
+  equation: cpd00002[c] + cpd00193[c] => cpd00048[c] + cpd00067[c] + cpd00924[c]
 - id: rxn01200
   name: Sedoheptulose-7-phosphate:D-glyceraldehyde-3-phosphate
   genes: sll1070
@@ -3158,7 +3145,7 @@
 - id: rxn01343
   name: ATP:Sedoheptulose 7-phosphate 1-phosphotransferase
   genes: sll1196
-  equation: cpd00002[c] + cpd00238[c] <=> cpd00008[c] + cpd00349[c]
+  equation: cpd00002[c] + cpd00238[c] => cpd00008[c] + cpd00349[c]
 - id: rxn01345
   name: Sedoheptulose 1,7-bisphosphate 1-phosphohydrolase
   genes: slr0952 or slr2094
@@ -3549,10 +3536,6 @@
   name: Hydroxymethylbilane hydro-lyase(cyclizing)
   genes: sll0166
   equation: cpd00755[c] => cpd00001[c] + cpd00774[c]
-- id: rxn02265
-  name: rxn02265
-  genes: nf
-  equation: cpd00755[c] <=> cpd00001[c] + cpd03414[c]
 - id: rxn02275
   name: 4-Guanidinobutanamide amidohydrolase
   genes: sll0828
@@ -3645,7 +3628,7 @@
 - id: rxn02402
   name: Nicotinate-nucleotide:pyrophosphate phosphoribosyltransferase
   genes: slr0936
-  equation: cpd00011[c] + cpd00012[c] + cpd00873[c] => (2) cpd00067[c] + cpd00103[c]
+  equation: cpd00011[c] + cpd00012[c] + cpd00873[c] <=> (2) cpd00067[c] + cpd00103[c]
     + cpd02333[c]
 - id: rxn02465
   name: N-Acetyl-L-glutamate-5-semialdehyde:NADP+ 5-oxidoreductase
@@ -4171,6 +4154,9 @@
   name: L-phenylalanine,tetrahydrobiopterin:oxygen
   genes: nf
   equation: cpd00007[c] + cpd00066[c] + cpd00233[c] => cpd00069[c] + cpd03897[c]
+- id: rxn04996
+  name: Glycogen transport ext
+  equation: cpd08615[c] + cpd00067[c] + cpd00005[c] => cpd00202[c] + cpd00006[c] + cpd00001[c]
 - id: rxn05004
   name: S-adenosyl-L-methionine:gamma-tocopherol 5-O-methyltransferase
   genes: slr0089
@@ -4246,11 +4232,6 @@
   name: TRDR
   genes: slr0600
   equation: cpd00005[c] + cpd00067[c] + cpd11420[c] => cpd00006[c] + cpd11421[c]
-- id: rxn05293
-  name: MECDPDH
-  genes: nf
-  equation: cpd00004[c] + cpd00067[c] + cpd08301[c] => cpd00001[c] + cpd00003[c]
-    + cpd08615[c]
 - id: rxn05322
   name: Butyryl-[acyl-carrier protein]:malonyl-CoA
   genes: slr1051
@@ -4718,10 +4699,6 @@
   name: 3-hydroxyacyl-[acyl-carrier-protein] dehydratase (n-C18:1)
   genes: sll1605¬†
   equation: cpd15370[c] => cpd00001[c] + cpd15568[c]
-- id: rxn07981
-  name: 3-hydroxyacyl-[acyl-carrier-protein] dehydratase (n-C4:0)
-  genes: sll1605¬†
-  equation: cpd11836[c] => cpd00001[c] + cpd11465[c]
 - id: rxn07987
   name: 3-oxoacyl-[acyl-carrier-protein] reductase (n-C12:1)
   genes: slr0886
@@ -4738,10 +4715,6 @@
   name: 3-oxoacyl-[acyl-carrier-protein] reductase (n-C18:1)
   genes: slr0886
   equation: cpd00005[c] + cpd00067[c] + cpd15376[c] => cpd00006[c] + cpd15370[c]
-- id: rxn07994
-  name: 3-oxoacyl-[acyl-carrier-protein] reductase (n-C4:0)
-  genes: slr0886
-  equation: cpd00005[c] + cpd00067[c] + cpd11488[c] <=> cpd00006[c] + cpd11836[c]
 - id: rxn07997
   name: 3-oxoacyl-[acyl-carrier-protein] synthase (n-C12:1)
   genes: sll1069 or slr1332
@@ -4845,10 +4818,6 @@
   name: L-arginine transport via diffusion (extracellular to periplasm)
   genes: nf
   equation: cpd00051[e] <=> cpd00051[p]
-- id: rxn08164
-  name: arsenite transport via diffusion (extracellular to periplasm)
-  genes: nf
-  equation: cpd04098[e] <=> cpd04098[p]
 - id: rxn08171
   name: arsenate reductase
   genes: sll5104 and slr0946
@@ -5575,10 +5544,6 @@
   genes: sll1440
   equation: (2) cpd00001[c] + (0.5) cpd00007[c] + cpd00013[c] + cpd00215[c] <=> (2)
     cpd00025[c] + cpd00419[c]
-- id: rxn09693
-  name: Biotin uptake
-  genes: nf
-  equation: cpd00067[e] + cpd00104[e] <=> cpd00067[c] + cpd00104[c]
 - id: rxn09753
   name: fumarate reductase, cytosolic/mitochondrial
   genes: sll0823 and sll1625 and slr1233
@@ -5691,7 +5656,7 @@
 - id: rxn10481
   name: Copper transport via ABC system
   genes: slr1950¬†
-  equation: cpd00001[c] + cpd00002[c] + cpd00058[p] => cpd00008[c] + cpd00009[c]
+  equation: cpd00001[c] + cpd00002[c] + cpd00058[e] => cpd00008[c] + cpd00009[c]
     + cpd00058[c] + cpd00067[c]
 - id: rxn10481_l
   name: Copper (Cu+2) ABC transporter (periplasm)
@@ -5775,10 +5740,6 @@
   name: pantothenate kinase
   genes: slr0812
   equation: cpd00002[c] + cpd00644[c] => cpd00008[c] + cpd00067[c] + cpd02201[c]
-- id: rxn12549
-  name: 4-Hydroxybenzoate transport via proton symport
-  genes: nf
-  equation: cpd00067[e] + cpd00136[e] <=> cpd00067[c] + cpd00136[c]
 - id: rxn12770
   name: (3R)-3-Hydroxyacyl-CoA:NADP+ oxidoreductase
   genes: slr1994
@@ -5795,7 +5756,7 @@
 - id: rxn12825
   name: Heme A synthase
   genes: sll1898
-  equation: cpd00001[c] + cpd11313[c] => (4) cpd00067[c] + cpd00028[c]
+  equation: cpd00001[c] + cpd11313[c] => (4) cpd00067[c] + cpd11312[c]
 - id: rxn13643
   name: glycogen synthase (ADPGlc)
   genes: sll0945 or sll1393
@@ -5805,10 +5766,6 @@
   genes: sll0158
   equation: (4) cpd00002[c] + (5) cpd00027[c] => (4) cpd00067[c] + cpd00008[c] +
     (4) cpd00009[c] + (4) cpd00001[c] + cpd00155[c]
-- id: rxn13759
-  name: Arsenite transporter
-  genes: nf
-  equation: cpd00067[e] + cpd01048[e] <=> cpd00067[c] + cpd01048[c]
 - id: rxn13840
   name: (3R)-3-Hydroxypalmitoyl-[acyl-carrier-protein] hydro-lyase
   genes: slr2023
@@ -5821,3 +5778,6 @@
   name: Diffusion transport
   genes: nf
   equation: cpd00169[ca] => cpd00169[c]
+- id: xylcycle
+  name: xylcycle
+  equation: cpd00198[c] + cpd00067[c] + cpd00005[c] => cpd01855[c] + cpd00006[c]
