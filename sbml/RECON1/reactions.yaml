@@ -1051,7 +1051,7 @@
 - id: ALACYSNaEx
   name: ALACYSNaEx
   equation: ala__L[e] + cys__L[c] + na1[e] => ala__L[c] + cys__L[e] + na1[c]
-- id: ALADGLNexR
+- id: ALADexR
   name: ALADGLNexR
   equation: ala__D[e] + gln__L[c] <=> ala__D[c] + gln__L[e]
 - id: ALADGLYexR
@@ -10018,7 +10018,7 @@
   equation: atp[n] + ump[n] <=> adp[n] + udp[n]
 - id: UNK2
   name: UNK2
-  equation: M_2kmb[c] + M_gln__L[c] + (2) M_h_c[c] => M_glu__L[c] + M_met__L[c]
+  equation: 2kmb[c] + gln__L[c] + (2) h[c] => glu__L[c] + met__L[c]
 - id: UNK3
   name: 2-keto-4-methylthiobutyrate transamination
   equation: 2kmb[c] + glu__L[c] => akg[c] + met__L[c]
