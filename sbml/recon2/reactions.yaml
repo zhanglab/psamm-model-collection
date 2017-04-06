@@ -26752,7 +26752,7 @@
 - id: RE2972M
   name: RE2972
   genes: 5297.1 or 5298.1
-  equation: atp_e_m_r_x[m] + CE5101[m] <=> h[m] + adp_m[m] + pail45p_hs[m]
+  equation: atp_e_m_r_x[m] + CE5101[m] <=> (2) h[m] + adp_m[m] + pail45p_hs[m]
   subsystem: Phosphatidylinositol phosphate metabolism
   ec: 2.7.1.67
   authors:
@@ -36423,7 +36423,7 @@
 - id: r0318
   name: Propanoate:CoA ligase (AMP-forming) Propanoate metabolism EC:6.2.1.1 EC:6.2.1.17
   genes: 4524.1 or HG4234-HT4504.1
-  equation: atp_c_g_l_n[c] + h[c] + ppa[c] <=> ppi_c_e_m_r_x[c] + HC01668[c]
+  equation: atp_c_g_l_n[c] + (2) h[c] + ppa[c] <=> ppi_c_e_m_r_x[c] + HC01668[c]
   subsystem: Unassigned
   authors:
   - PMID:10843999,PMID:1924964,PMID:2009071,PMID:2884217,PMID:7341659
@@ -36992,7 +36992,7 @@
 - id: r0466
   name: alpha-Aminobutyryl histidine hydrolase Urea cycle and metabolism of amino
     groups EC:3.4.13.3
-  equation: h2o_c_e_m_r_x[c] + HC00576[c] => 4abut_c_e_m_n[c] + his_L[c]
+  equation: h2o_c_e_m_r_x[c] + HC00576[c] + h[c] => 4abut_c_e_m_n[c] + his_L[c]
   subsystem: Unassigned
   ec: 3.4.13.3
   authors:
