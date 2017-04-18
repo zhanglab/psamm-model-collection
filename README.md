@@ -34,18 +34,24 @@ The collection of models is split into three sections:
   using the
   [PSAMM MATLAB importer](https://github.com/zhanglab/psamm-import-matlab).
 
-Model corrections
+Model Format Curations
 -----------------
 
-|Model|Correction|Commits|
+|Model|Correction(s)|Commit(s)|
 |-----|----------|-------|
-|[iJN746](sbml/iJN746)     | Corrected compound references to cardiolipins in biomass reaction to refer to cardiolipins in the periplasm | [7d68a62](https://github.com/zhanglab/psamm-model-collection/commit/7d68a6236faf5835229971cbc84cc2eab36ca1fa) |
-|[iKF1028](sbml/iKF1028)   | Stoichiometric balance corrections |[8791efa](https://github.com/zhanglab/psamm-model-collection/commit/8791efa58d0b01a06384b03ce11a6fcbc03fe8c3) |
-|[iMA871](sbml/iMA871)     | Add missing exchange reaction for BIOMASS compound and remove duplicate compounds in a number of reactions | [b10e858](https://github.com/zhanglab/psamm-model-collection/commit/b10e85808287982564dcd0cb0b9290104ce39b4f) |
-|[iRsp1095](sbml/iRsp1095) | Changed medium for growth based on medium description in [Imam et al. 2011](https://doi.org/10.1186/1752-0509-5-116) | [3340d7a](https://github.com/zhanglab/psamm-model-collection/commit/3340d7a476485a6e22f77a0561a803b4281d2615) |
-|[iSyn731](sbml/iSyn731)   | Updated to new model from http://www.maranasgroup.com/models.htm downloaded on September 9, 2015 | [ca39f98](https://github.com/zhanglab/psamm-model-collection/commit/ca39f98172275718bdbc369c53015b71aec91e70) |
-|[RECON1](sbml/RECON1)     | Fix stoichiometric consistency | [f72da25](https://github.com/zhanglab/psamm-model-collection/commit/f72da25d9a9e0e6ac319d3ebb566764bb1733cf5) |
-|[RECON2](sbml/recon2)     | Fix stoichiometric consistency | [5671060](https://github.com/zhanglab/psamm-model-collection/commit/5671060606674cec61141f71dbe0d9d545e149dc) |
+|[iJN746](sbml/iJN746)     | Corrected compound references to cardiolipins in biomass reaction to refer to cardiolipins in the periplasm. |[7d68a62](https://github.com/zhanglab/psamm-model-collection/commit/7d68a6236faf5835229971cbc84cc2eab36ca1fa) |
+|[iKF1028](sbml/iKF1028)   | Corrected stoichiometric balances. | [8791efa](https://github.com/zhanglab/psamm-model-collection/commit/8791efa58d0b01a06384b03ce11a6fcbc03fe8c3) |
+|[iMA871](sbml/iMA871)     | 1. Added missing exchange reaction for BIOMASS compound and removed duplicate compounds in a number of reactions. 2. Added biomass reaction definition. | [1. b10e858, ](https://github.com/zhanglab/psamm-model-collection/commit/b10e85808287982564dcd0cb0b9290104ce39b4f) [2. b4249ed](https://github.com/zhanglab/psamm-model-collection/commit/b4249ed9d3a6a973e9b9c0195dfeaa4f6127e353) |
+|[iRsp1095](sbml/iRsp1095) | 1. Changed medium for growth based on medium description in [Imam et al. 2011] (https://doi.org/10.1186/1752-0509-5-116). 2. Made all lower exchange bounds zero. 3. Marked zeromass compounds. 4. Added biomass reaction definition. | [1. 3340d7a, ](https://github.com/zhanglab/psamm-model-collection/commit/3340d7a476485a6e22f77a0561a803b4281d2615) [2. 15f48dc, ](https://github.com/zhanglab/psamm-model-collection/commit/15f48dc29695144da9a7c227a398170a65686e73) [3. 405ee9d, ](https://github.com/zhanglab/psamm-model-collection/commit/405ee9dda1d4e6cc74e339c8e76a788cb5d86656) [4. b4249ed](https://github.com/zhanglab/psamm-model-collection/commit/b4249ed9d3a6a973e9b9c0195dfeaa4f6127e353) |
+|[iSyn731](sbml/iSyn731)   | Updated to new model from http://www.maranasgroup.com/models.htm downloaded on September 9, 2015. | [ca39f98](https://github.com/zhanglab/psamm-model-collection/commit/ca39f98172275718bdbc369c53015b71aec91e70) |
+|[RECON1](sbml/RECON1)     | Fixed stoichiometric consistency. | [f72da25](https://github.com/zhanglab/psamm-model-collection/commit/f72da25d9a9e0e6ac319d3ebb566764bb1733cf5) |
+|[RECON2](sbml/recon2)     | Fixed stoichiometric consistency. | [5671060](https://github.com/zhanglab/psamm-model-collection/commit/5671060606674cec61141f71dbe0d9d545e149dc) |
+|[AORYZAE_COBRA](sbml/AORYZAE_COBRA)     | 1. Allowed essential compounds in medium. 2. Added biomass reaction definition. | [1. 134968f, ](https://github.com/zhanglab/psamm-model-collection/commit/134968fac483e57d9b2c7701e77d276900703728) [2. b4249ed](https://github.com/zhanglab/psamm-model-collection/commit/b4249ed9d3a6a973e9b9c0195dfeaa4f6127e353) |
+|[iCce806](sbml/iCce806)   | 1. Marked zeromass compounds. 2. Added biomass reaction definition. | [1. 405ee9d, ](https://github.com/zhanglab/psamm-model-collection/commit/405ee9dda1d4e6cc74e339c8e76a788cb5d86656) [2. b4249ed](https://github.com/zhanglab/psamm-model-collection/commit/b4249ed9d3a6a973e9b9c0195dfeaa4f6127e353) |
+|[iRC1080](sbml/iRC1080)   | 1. Marked zeromass compounds. 2. Added biomass reaction definition. | [1. 405ee9d, ](https://github.com/zhanglab/psamm-model-collection/commit/405ee9dda1d4e6cc74e339c8e76a788cb5d86656) [2. b4249ed](https://github.com/zhanglab/psamm-model-collection/commit/b4249ed9d3a6a973e9b9c0195dfeaa4f6127e353) |
+|[iFF708](sbml/iFF708)     | Allowed essential compounds in medium. | [f6a6f76](https://github.com/zhanglab/psamm-model-collection/commit/f6a6f76b09b521fa434e2ae09f0477094b32dde6) |
+|[Multiple Models](sbml)   | Marked zeromass compounds in the following four models: iJN678, iRS1563, iRS1597, and iSyn669. | [405ee9d](https://github.com/zhanglab/psamm-model-collection/commit/405ee9dda1d4e6cc74e339c8e76a788cb5d86656) |
+|[Multiple Models](sbml)   | Added biomass reaction definitions in the following seventeen models: AbyMBEL891, PpaMBEL1254, PpuMBEL1071, S_coelicolor, SpoMBEL1693, VvuMBEL943, iAC560, iAI549, iLC915, iMA945, iMM1415, iMO1056, iMR1_799, iPS189, iSR432, iSS884, and mus_musculus. | [b4249ed](https://github.com/zhanglab/psamm-model-collection/commit/b4249ed9d3a6a973e9b9c0195dfeaa4f6127e353) |
 
 Model References
 ----------------
