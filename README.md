@@ -3,10 +3,15 @@ PSAMM model collection
 
 This is a collection of published GEMs that have been converted to the YAML
 format used by [PSAMM](https://github.com/zhanglab/psamm), using the
-[psamm-import tool](https://github.com/zhanglab/psamm-import). These models
-were used for the analysis performed in the following publication and the
-files are kept here as additional documentation and to allow reproduction
-of the analysis:
+[psamm-import tool](https://github.com/zhanglab/psamm-import). These model
+files serve as an easy way for people interested in PSAMM to get started on
+working with these models.
+
+The models in this repository were originally used for the analysis performed
+in the following publication but the files here have been updated since the
+publication to follow more recent conventions of the PSAMM software. To
+access the model files as they were originally used, please use the
+[archived-models branch](https://github.com/zhanglab/psamm-model-collection/tree/archived-models).
 
 ```
 Steffensen JL, Dufault-Thompson K, Zhang Y. PSAMM: A Portable System for the
