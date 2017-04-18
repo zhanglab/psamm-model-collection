@@ -1,29 +1,68 @@
-# Based on SBML model downloaded from http://bigg.ucsd.edu/. The following
-# copyright notice was retained from the SBML file.
-#
-# Copyright © 2015 The Regents of the University of California.
-#
-# Redistribution and use of any part of this model from BiGG Database, with
-# or without modification, are permitted provided that the following
-# conditions are met:
-#
-# - Redistributions of this SBML file must retain the above copyright notice,
-#   this list of conditions and the following disclaimer.
-# - Redistributions in a different form must reproduce the above copyright
-#   notice, this list of conditions and the following disclaimer in the
-#   documentation and/or other materials provided with the distribution.
-#
-# This model is distributed in the hope that it will be useful, but WITHOUT
-# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
-# FITNESS FOR A PARTICULAR PURPOSE.
-#
-# For specific licensing terms about this particular model and regulations of
-# commercial use, see <http://identifiers.org/bigg.model/RECON1>.
-
-name: RECON1
+name: Homo sapiens
+biomass: S6T14g
+default_flux_limit: 999999.0
+compartments:
+- id: c
+  adjacent_to:
+  - e
+  - g
+  - m
+  - l
+  - n
+  - r
+  - x
+  name: cytosol
+- id: e
+  adjacent_to:
+  - c
+  - r
+  - l
+  - g
+  - n
+  name: extracellular space
+- id: g
+  adjacent_to:
+  - c
+  - r
+  - e
+  name: golgi apparatus
+- id: l
+  adjacent_to:
+  - m
+  - c
+  - e
+  name: lysosome
+- id: m
+  adjacent_to:
+  - x
+  - c
+  - r
+  - l
+  name: mitochondria
+- id: n
+  adjacent_to:
+  - c
+  - r
+  - e
+  name: nucleus
+- id: r
+  adjacent_to:
+  - c
+  - e
+  - g
+  - m
+  - n
+  - x
+  name: endoplasmic reticulum
+- id: x
+  adjacent_to:
+  - c
+  - r
+  - m
+  name: peroxisome/glyoxysome
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml

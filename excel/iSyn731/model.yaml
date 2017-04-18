@@ -1,8 +1,34 @@
 name: Synechocystis sp. PCC 6803 iSyn731 (Excel format), Saha et al., 2012
 biomass: Biomass_Hetero
+default: c_1
+compartments:
+- id: c
+  adjacent_to:
+  - c_1
+  - p
+  - ca
+  - e
+  - l
+- id: c_1
+  adjacent_to: c
+- id: ca
+  adjacent_to: c
+- id: e
+  adjacent_to:
+  - p
+  - c
+- id: l
+  adjacent_to:
+  - p
+  - c
+- id: p
+  adjacent_to:
+  - c
+  - e
+  - l
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml

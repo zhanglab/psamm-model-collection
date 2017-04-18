@@ -1,9 +1,48 @@
 name: Pichia pastoris
-biomass: R_r1187
+biomass: r1187
 default_flux_limit: 1000.0
+compartments:
+- id: c
+  adjacent_to:
+  - e
+  - g
+  - m
+  - p
+  - r
+  - v
+  name: Cytoplasm
+- id: e
+  adjacent_to:
+  - p
+  - c
+  name: Extracellular
+- id: g
+  adjacent_to:
+  - c
+  - v
+  name: Golgi apparatus
+- id: m
+  adjacent_to: c
+  name: Mitochondria
+- id: p
+  adjacent_to:
+  - c
+  - e
+  name: Peroxisome
+- id: r
+  adjacent_to:
+  - c
+  - v
+  name: Endoplasmic reticulum
+- id: v
+  adjacent_to:
+  - c
+  - r
+  - g
+  name: Vacuole
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml

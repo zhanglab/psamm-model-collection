@@ -1,11 +1,27 @@
 name: P. putida iJN746
-biomass: R_BiomassKT_TEMP
+biomass: BiomassKT_TEMP
 default_flux_limit: 999999.0
+compartments:
+- id: c
+  adjacent_to:
+  - p
+  - e
+  name: Cytosol
+- id: e
+  adjacent_to:
+  - p
+  - c
+  name: Extraorganism
+- id: p
+  adjacent_to:
+  - c
+  - e
+  name: Periplasm
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml
 limits:
 - include: limits.yaml

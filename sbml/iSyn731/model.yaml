@@ -1,8 +1,35 @@
 name: Synechocystis sp. PCC 6803 iSyn731
-biomass: Biomass_Auto
+biomass: Biomass_Hetero
+compartments:
+- id: c
+  adjacent_to:
+  - p
+  - ca
+  - e
+  - l
+  name: Cytosplasm
+- id: ca
+  adjacent_to: c
+  name: Carboxysome
+- id: e
+  adjacent_to:
+  - p
+  - c
+  name: Extracellular
+- id: l
+  adjacent_to:
+  - p
+  - c
+  name: Thylakoid Lumen
+- id: p
+  adjacent_to:
+  - c
+  - e
+  - l
+  name: Periplasm
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml

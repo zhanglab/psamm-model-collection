@@ -1,9 +1,30 @@
 name: SBML
-biomass: R_EX_Biomass
+biomass: EX_Biomass
 default_flux_limit: 1000.0
+extracellular: c
+compartments:
+- id: c
+  adjacent_to:
+  - x
+  - v
+  - m
+  - p
+  name: Cytoplasm
+- id: m
+  adjacent_to: c
+  name: Mitochondrion
+- id: p
+  adjacent_to: c
+  name: Periplasm
+- id: v
+  adjacent_to: c
+  name: Vacuole
+- id: x
+  adjacent_to: c
+  name: Peroxisome
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml

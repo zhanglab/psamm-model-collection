@@ -1,8 +1,31 @@
 name: iAC560_def_med
-biomass: R_BIOMASS_LM3
+biomass: BIOMASS_LM3
+extracellular: Extracellular_space
+compartments:
+- id: Acidocalcisome
+  adjacent_to: Cytosol
+- id: Cytosol
+  adjacent_to:
+  - Endoplasmic_Reticulum
+  - Mitochondria
+  - Extracellular_space
+  - Glycosome
+  - Acidocalcisome
+  - Nucleus
+- id: Endoplasmic_Reticulum
+  adjacent_to: Cytosol
+- id: Extracellular_space
+  adjacent_to: Cytosol
+- id: Flagellum
+- id: Glycosome
+  adjacent_to: Cytosol
+- id: Mitochondria
+  adjacent_to: Cytosol
+- id: Nucleus
+  adjacent_to: Cytosol
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml

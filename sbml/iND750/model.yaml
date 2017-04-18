@@ -1,9 +1,41 @@
 name: S. cerevisiae iND750
-biomass: R_biomass_SC4_bal
+biomass: biomass_SC4_bal
 default_flux_limit: 999999.0
+compartments:
+- id: c
+  adjacent_to:
+  - e
+  - g
+  - m
+  - n
+  - r
+  - v
+  - x
+  name: Cytosol
+- id: e
+  adjacent_to: c
+  name: Extraorganism
+- id: g
+  adjacent_to: c
+  name: GolgiApparatus
+- id: m
+  adjacent_to: c
+  name: Mitochondria
+- id: n
+  adjacent_to: c
+  name: Nucleus
+- id: r
+  adjacent_to: c
+  name: EndoplasmicReticulum
+- id: v
+  adjacent_to: c
+  name: Vacuole
+- id: x
+  adjacent_to: c
+  name: Peroxisome
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml

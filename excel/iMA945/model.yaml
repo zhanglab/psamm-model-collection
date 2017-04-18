@@ -1,8 +1,21 @@
 name: Salmonella enterica iMA945 (Excel format), AbuOun et al., 2009
 biomass: ST_biomass_core
+compartments:
+- id: c
+  adjacent_to:
+  - p
+  - e
+- id: e
+  adjacent_to:
+  - p
+  - c
+- id: p
+  adjacent_to:
+  - c
+  - e
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml

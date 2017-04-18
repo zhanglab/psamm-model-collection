@@ -1,11 +1,65 @@
 name: iRC1080
-biomass: R_Biomass_Chlamy_hetero
+biomass: Biomass_Chlamy_hetero
 default_flux_limit: 1000.0
+compartments:
+- id: c
+  adjacent_to:
+  - e
+  - g
+  - f
+  - h
+  - m
+  - n
+  - s
+  - u
+  - x
+  name: Cytosol
+- id: e
+  adjacent_to:
+  - h
+  - c
+  - u
+  - s
+  name: Extra-organism
+- id: f
+  adjacent_to: c
+  name: Flagellum
+- id: g
+  adjacent_to: c
+  name: Golgi Apparatus
+- id: h
+  adjacent_to:
+  - u
+  - c
+  - e
+  - s
+  name: Chloroplast
+- id: m
+  adjacent_to: c
+  name: Mitochondria
+- id: n
+  adjacent_to: c
+  name: Nucleus
+- id: s
+  adjacent_to:
+  - h
+  - c
+  - e
+  name: Eyespot
+- id: u
+  adjacent_to:
+  - h
+  - c
+  - e
+  name: Thylakoid Lumen
+- id: x
+  adjacent_to: c
+  name: Glyoxysome
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml
 limits:
 - include: limits.yaml

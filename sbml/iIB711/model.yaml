@@ -1,9 +1,13 @@
 name: Streptomyces coelicolor genome-scale model
-biomass: R_r0793
+biomass: r0793
 default_flux_limit: 1000.0
+extracellular: c
+compartments:
+- id: c
+  name: Cytosol
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml

@@ -1,8 +1,20 @@
 name: model
-biomass: R_PA_Biomass6_DM
+biomass: PA_Biomass6_DM
+default_flux_limit: 1000.0
+compartments:
+- id: c
+  adjacent_to: e
+  name: cytosol
+- id: e
+  adjacent_to: c
+  name: extracellular
+- id: p
+  name: periplasm
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml
+limits:
+- include: limits.yaml

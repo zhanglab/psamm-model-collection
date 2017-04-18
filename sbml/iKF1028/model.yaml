@@ -1,11 +1,17 @@
 name: bcj
 biomass: EX_C9323
 default_flux_limit: 999999.0
+extracellular: Extra_organism
+compartments:
+- id: Cytosol
+  adjacent_to: Extra_organism
+- id: Extra_organism
+  adjacent_to: Cytosol
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml
 limits:
 - include: limits.yaml

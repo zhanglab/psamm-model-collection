@@ -1,8 +1,11 @@
 name: HyunUkKim2010_VvuMBEL943_MetabolicModeling
 biomass: R806
+extracellular: cell
+compartments:
+- id: cell
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml

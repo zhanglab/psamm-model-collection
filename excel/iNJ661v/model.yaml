@@ -1,8 +1,13 @@
 name: Mycobacterium tuberculosis iNJ661v (Excel format), Fang et al., 2010
 biomass: biomass_Mtb_9_60atp_test_NOF
+compartments:
+- id: c
+  adjacent_to: e
+- id: e
+  adjacent_to: c
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml

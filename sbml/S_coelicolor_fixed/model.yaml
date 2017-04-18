@@ -1,9 +1,17 @@
 name: sco2013
-biomass: R_biomass
+biomass: biomass
 default_flux_limit: 1000.0
+extracellular: null
+compartments:
+- id: c
+  name: cytosol
+- id: e
+  name: extracellular
+- id: p
+  name: periplasm
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml

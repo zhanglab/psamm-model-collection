@@ -1,11 +1,18 @@
 name: M. barkeri iAF692
-biomass: R_Mb_biomass_30
+biomass: Mb_biomass_30
 default_flux_limit: 999999.0
+compartments:
+- id: c
+  adjacent_to: e
+  name: Cytosol
+- id: e
+  adjacent_to: c
+  name: Extraorganism
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml
 limits:
 - include: limits.yaml

@@ -1,8 +1,21 @@
 name: Salmonella enterica STM_v1.0 (Excel format), Thiele et al., 2011
 biomass: biomass_iRR1083_metals
+compartments:
+- id: c
+  adjacent_to:
+  - p
+  - e
+- id: e
+  adjacent_to:
+  - p
+  - c
+- id: p
+  adjacent_to:
+  - c
+  - e
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml

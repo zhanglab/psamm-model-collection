@@ -1,8 +1,13 @@
 name: Cyanothece sp. ATCC 51142 iCce806 (Excel format), Vu et al., 2012
 biomass: CyanoBM (average)
+compartments:
+- id: c
+  adjacent_to: e
+- id: e
+  adjacent_to: c
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml

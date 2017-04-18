@@ -1,11 +1,24 @@
 name: P. falciparum iTH366
-biomass: R_biomass
+biomass: biomass
 default_flux_limit: 999999.0
+extracellular: Extraorganism
+compartments:
+- id: Apicoplast
+  adjacent_to: Cytosol
+- id: Cytosol
+  adjacent_to:
+  - Mitochondria
+  - Apicoplast
+  - Extraorganism
+- id: Extraorganism
+  adjacent_to: Cytosol
+- id: Mitochondria
+  adjacent_to: Cytosol
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml
 limits:
 - include: limits.yaml

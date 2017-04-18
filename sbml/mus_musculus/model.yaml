@@ -1,8 +1,14 @@
 name: Mus musculus GSM
 biomass: BIO028
+extracellular: Cytosol
+compartments:
+- id: Cytosol
+  adjacent_to: Mitochondria
+- id: Mitochondria
+  adjacent_to: Cytosol
 compounds:
 - include: compounds.yaml
 reactions:
 - include: reactions.yaml
-media:
-- include: medium.yaml
+exchange:
+- include: exchange.yaml
