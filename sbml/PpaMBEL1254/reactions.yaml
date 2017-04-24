@@ -57,7 +57,6 @@
   equation: h_c[cell] + nadph_c[cell] + TRDox_c[cell] => nadp_c[cell] + TRDrd_c[cell]
 - id: R00032
   equation: a_13BDglcn_c[cell] + H2O_c[cell] => glcD_c[cell]
-- id: R00033
 - id: R00034
   equation: udpg_c[cell] => a_13BDglcn_c[cell] + h_c[cell] + udp_c[cell]
 - id: R00035
@@ -248,7 +247,6 @@
   equation: cit_m[cell] <=> icit_m[cell]
 - id: R00138
   equation: acg5sa_m[cell] + gluL_m[cell] => acorn_m[cell] + akg_m[cell]
-- id: R00139
 - id: R00140
   equation: acrn_c[cell] => acrn_m[cell]
 - id: R00141
@@ -458,7 +456,6 @@
     + pi_c[cell]
 - id: R00249
   equation: asnL_c[cell] + H2O_c[cell] => aspL_c[cell] + nh4_c[cell]
-- id: R00250
 - id: R00251
   equation: aspL_c[cell] + atp_c[cell] + glnL_c[cell] + H2O_c[cell] => amp_c[cell]
     + asnL_c[cell] + gluL_c[cell] + h_c[cell] + ppi_c[cell]
@@ -874,7 +871,6 @@
   equation: akg_x[cell] + e4hglu_x[cell] => a_4H2Oglt_x[cell] + gluL_x[cell]
 - id: R00443
   equation: a_2pg_c[cell] <=> H2O_c[cell] + pep_c[cell]
-- id: R00444
 - id: R00445
   equation: ergst_c[cell] + udpg_c[cell] => ergst3glc_c[cell] + h_c[cell] + udp_c[cell]
 - id: R00447
@@ -2423,12 +2419,10 @@
   equation: H2O2_n[cell] + TRDrd_n[cell] => (2) H2O_n[cell] + TRDox_n[cell]
 - id: R01146
   equation: H2O2_x[cell] + TRDrd_x[cell] <=> (2) H2O_x[cell] + TRDox_x[cell]
-- id: R01147
 - id: R01148
   equation: => h_c[cell] + thymd_c[cell]
 - id: R01149
   equation: H2O_c[cell] + thmmp_c[cell] => pi_c[cell] + thm_c[cell]
-- id: R01150
 - id: R01151
   equation: thmpp_c[cell] => thmpp_m[cell]
 - id: R01152
@@ -2663,7 +2657,6 @@
   equation: atp_n[cell] + ptd1ino_n[cell] => adp_n[cell] + h_n[cell] + ptd4ino_n[cell]
 - id: R01263
   equation: cdpdag_c[cell] + inost_c[cell] => cmp_c[cell] + h_c[cell] + ptd1ino_c[cell]
-- id: R01264
 - id: R01265
   equation:
     reversible: false
