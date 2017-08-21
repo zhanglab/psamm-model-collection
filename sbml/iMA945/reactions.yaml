@@ -1149,9 +1149,11 @@
 - id: ALPATE160pp
   name: R_apolipoprotein_N_acyltransferase__phosphatidylethanolamine__periplasmUnassigned
   genes: STM0666 and STM1377
+  equation: alpp_p[p] + pe160_p[p] => 2agpe160_p[p] + lpp_p[p]
 - id: ALPATG160pp
   name: R_apolipoprotein_N_acyltransferase__phosphatidylglycerol__periplasm_
   genes: STM0666 and STM1377
+  equation: alpp_p[p] + pg160_p[p] => 2agpg160_p[p] + lpp_p[p]
 - id: ALR2
   name: R_aldose_reductase__methylglyoxal_
   genes: STM3165 or STM0255
