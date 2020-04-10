@@ -1,0 +1,17 @@
+biomass: mpqRxn772
+default_flux_limit: 1000
+compartments:
+- id: c
+  adjacent_to: e
+  name: cytosol
+- id: e
+  adjacent_to: c
+  name: extracellular
+compounds:
+- include: compounds.yaml
+reactions:
+- include: reactions.yaml
+exchange:
+- include: exchange.yaml
+limits:
+- include: limits.yaml
