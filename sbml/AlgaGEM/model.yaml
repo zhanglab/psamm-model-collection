@@ -1,0 +1,53 @@
+biomass: Ex16
+default_flux_limit: 1000
+extracellular: c
+compartments:
+- id: acc
+  adjacent_to:
+  - p
+  - biomass
+  - x
+  name: Accumulation
+- id: biomass
+  adjacent_to:
+  - p
+  - c
+  - acc
+  name: Biomass
+- id: c
+  adjacent_to:
+  - p
+  - m
+  - x
+  - ext
+  - biomass
+  name: Cytosol
+- id: ext
+  adjacent_to: c
+  name: External
+- id: m
+  adjacent_to: c
+  name: Mitochondrion
+- id: p
+  adjacent_to:
+  - acc
+  - c
+  - biomass
+  name: Plastid
+- id: total
+  name: total
+- id: v
+  name: Vacuole
+- id: x
+  adjacent_to:
+  - c
+  - acc
+  name: Peroxisome
+compounds:
+- include: compounds.yaml
+reactions:
+- include: reactions.yaml
+exchange:
+- include: exchange.yaml
+limits:
+- include: limits.yaml
