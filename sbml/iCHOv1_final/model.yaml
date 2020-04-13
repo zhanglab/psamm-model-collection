@@ -1,0 +1,81 @@
+biomass: biomass_cho_producing
+default_flux_limit: 1000
+compartments:
+- id: c
+  adjacent_to:
+  - n
+  - e
+  - l
+  - g
+  - x
+  - m
+  - r
+  name: cytosol
+- id: e
+  adjacent_to:
+  - n
+  - c
+  - l
+  - g
+  - x
+  - m
+  - r
+  name: extracellular space
+- id: g
+  adjacent_to:
+  - l
+  - c
+  - r
+  - e
+  name: golgi apparatus
+- id: im
+  adjacent_to: m
+  name: intermembrane space of the mitochondria
+- id: l
+  adjacent_to:
+  - e
+  - c
+  - g
+  - m
+  - r
+  name: lysosome
+- id: m
+  adjacent_to:
+  - e
+  - c
+  - l
+  - x
+  - im
+  - r
+  name: mitochondria
+- id: n
+  adjacent_to:
+  - c
+  - r
+  - e
+  name: nucleus
+- id: r
+  adjacent_to:
+  - n
+  - e
+  - c
+  - l
+  - g
+  - x
+  - m
+  name: endoplasmic reticulum
+- id: x
+  adjacent_to:
+  - c
+  - m
+  - r
+  - e
+  name: peroxisome
+compounds:
+- include: compounds.yaml
+reactions:
+- include: reactions.yaml
+exchange:
+- include: exchange.yaml
+limits:
+- include: limits.yaml
