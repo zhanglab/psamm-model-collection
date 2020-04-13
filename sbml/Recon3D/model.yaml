@@ -1,0 +1,76 @@
+biomass: BIOMASS_maintenance
+default_flux_limit: 1000
+compartments:
+- id: c
+  adjacent_to:
+  - n
+  - m
+  - x
+  - r
+  - e
+  - l
+  - g
+  name: cytosol
+- id: e
+  adjacent_to:
+  - c
+  - m
+  - x
+  - r
+  - l
+  - g
+  name: extracellular space
+- id: g
+  adjacent_to:
+  - r
+  - l
+  - e
+  - c
+  name: golgi apparatus
+- id: i
+  adjacent_to: m
+  name: inner mitochondrial compartment
+- id: l
+  adjacent_to:
+  - c
+  - m
+  - r
+  - e
+  - g
+  name: lysosome
+- id: m
+  adjacent_to:
+  - c
+  - x
+  - r
+  - e
+  - l
+  - i
+  name: mitochondria
+- id: n
+  adjacent_to: c
+  name: nucleus
+- id: r
+  adjacent_to:
+  - c
+  - m
+  - x
+  - e
+  - l
+  - g
+  name: endoplasmic reticulum
+- id: x
+  adjacent_to:
+  - c
+  - m
+  - e
+  - r
+  name: peroxisome/glyoxysome
+compounds:
+- include: compounds.yaml
+reactions:
+- include: reactions.yaml
+exchange:
+- include: exchange.yaml
+limits:
+- include: limits.yaml
