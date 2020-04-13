@@ -1,0 +1,65 @@
+biomass: Biomass_Nanno_auto
+default_flux_limit: 1000
+compartments:
+- id: c
+  adjacent_to:
+  - m
+  - n
+  - u
+  - x
+  - r
+  - h
+  - g
+  - e
+  name: Cytoplasm
+- id: e
+  adjacent_to:
+  - h
+  - c
+  - u
+  name: Extracellular
+- id: g
+  adjacent_to: c
+  name: Golgi
+- id: h
+  adjacent_to:
+  - m
+  - u
+  - r
+  - c
+  - e
+  name: H
+- id: l
+  adjacent_to: r
+  name: Lysosome
+- id: m
+  adjacent_to:
+  - h
+  - c
+  name: Mitochondrion
+- id: n
+  adjacent_to: c
+  name: Nucleus
+- id: r
+  adjacent_to:
+  - h
+  - l
+  - c
+  name: Endoplasmic_reticulum
+- id: u
+  adjacent_to:
+  - c
+  - h
+  - e
+  name: U
+- id: x
+  adjacent_to: c
+  name: Peroxisome
+compounds:
+- include: compounds.yaml
+reactions:
+- include: reactions.yaml
+exchange:
+- include: exchange.yaml
+limits:
+- include: limits.yaml
