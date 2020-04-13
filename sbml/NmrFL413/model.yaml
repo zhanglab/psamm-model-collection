@@ -1,0 +1,14 @@
+biomass: ADD_BIOMASS
+default_flux_limit: 1000
+extracellular: c
+compartments:
+- id: c
+  name: Cytoplasm
+compounds:
+- include: compounds.yaml
+reactions:
+- include: reactions.yaml
+exchange:
+- include: exchange.yaml
+limits:
+- include: limits.yaml
