@@ -1,0 +1,18 @@
+biomass: 386B_BIOMASS_reaction
+default_flux_limit: 1000
+extracellular: p
+compartments:
+- id: c
+  adjacent_to: p
+  name: cytosol
+- id: p
+  adjacent_to: c
+  name: periplasm
+compounds:
+- include: compounds.yaml
+reactions:
+- include: reactions.yaml
+exchange:
+- include: exchange.yaml
+limits:
+- include: limits.yaml

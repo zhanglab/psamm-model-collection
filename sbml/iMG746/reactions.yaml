@@ -1,0 +1,3916 @@
+- id: 12DCAt
+  name: 1,2-Dichloroethane transport
+  equation: 12dca[e] <=> 12dca[c]
+  subsystem: Transport
+- id: 12DECAD1
+  name: 1,2-Dichloroethane cobalamin declorination 1
+  equation: 5hbc_red[c] + 12dca[c] => cl[c] + cethcblhbi[c]
+  subsystem: Declorination
+- id: 12DECAD2a
+  name: 1,2-Dichloroethane cobalamin declorination 2a
+  equation: h[c] + cethcblhbi[c] => ceth[c] + 5hbc_ox[c]
+  subsystem: Declorination
+- id: 12DECAD2b
+  name: 1,2-Dichloroethane cobalamin declorination 2b
+  equation: cethcblhbi[c] => cl[c] + ethy[c] + 5hbc_ox[c]
+  subsystem: Declorination
+- id: 12DF430D1
+  name: 1,2-Dichloroethane F430 declorination 1
+  equation: f430[c] + fdred[c] + 12dca[c] => cl[c] + fdox[c] + cethf430[c]
+  subsystem: Declorination
+- id: 12DF430D2a
+  name: 1,2-Dichloroethane F430 declorination 2a
+  equation: cethf430[c] => cl[c] + ethy[c] + f430_ox[c]
+  subsystem: Declorination
+- id: 12DF430D2b
+  name: 1,2-Dichloroethane F430 declorination 2b
+  equation: h[c] + cethf430[c] => ceth[c] + f430_ox[c]
+  subsystem: Declorination
+- id: 2H3MOAOX
+  name: (R)-2,3-Dihydroxy-3-methylbutanoate:NADP+ oxidoreductase
+  genes: Mbar_A0220
+  equation: 23dhmb[c] + nadp[c] <=> h[c] + nadph[c] + 2h3moa[c]
+  subsystem: Valine Leucine and Isoleucine Metabolism
+- id: 2MOPRED
+  name: (S)-Methylmalonate semialdehyde:NAD+ oxidoreductase
+  genes: Mbar_A2387
+  equation: h2o[c] + nad[c] + 2mop[c] <=> (2) h[c] + nadh[c] + mmal[c]
+  subsystem: Valine Leucine and Isoleucine Metabolism
+- id: 2OBUTHE2THPPTRX
+  name: (S)-2-Aceto-2-hydroxybutanoate pyruvate-lyase (carboxylating)
+  genes: ( Mbar_A0218 or Mbar_A0428 or Mbar_A0438 or Mbar_A2541 ) and ( Mbar_A0210
+    or Mbar_A0219 )
+  equation: 2obut[c] + he2thpp[c] <=> 2ahbut[c] + thmpp[c]
+  subsystem: Valine Leucine and Isoleucine Metabolism
+- id: 2PLS
+  name: 2 phospho L lactate synthase
+  equation: gtp[c] + lac-L[c] => 2plac-L[c] + gdp[c] + h[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: 3H3MOPI
+  name: (S)-2-Aceto-2-hydroxybutanoate:NADP+ oxidoreductase (isomerizing)
+  genes: Mbar_A0220
+  equation: 3h3mop[c] <=> 2ahbut[c]
+  subsystem: Valine Leucine and Isoleucine Metabolism
+- id: 3H3MOPOX
+  name: (R)-2,3-Dihydroxy-3-methylpentanoate:NADP+ oxidoreductase
+  genes: Mbar_A0220
+  equation: 23dhmp[c] + nadp[c] <=> h[c] + nadph[c] + 3h3mop[c]
+  subsystem: Valine Leucine and Isoleucine Metabolism
+- id: 4ABZt2r
+  name: 4 Aminobenzoate mitochondrial transport via symport
+  equation: 4abz[e] + h[e] <=> 4abz[c] + h[c]
+  subsystem: Transport
+- id: 5HBCOX
+  name: 5-hydroxybenzimidazolylcobamide oxidation
+  equation: (2) h[c] + (2) 5hbc_red[c] => h2[c] + (2) 5hbc[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: 5HBCR
+  name: 5-hydroxybenzimidazolylcobamide reduction
+  genes: Mbar_A0672 or Mbar_A0840 or Mbar_A1055 or Mbar_A3583
+  equation: atp[c] + fdred[c] + h2o[c] + 5hbc[c] => adp[c] + fdox[c] + h[c] + pi[c]
+    + 5hbc_red[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: 5HBCR2
+  name: 5-hydroxybenzimidazolylcobamide oxidized coblat reduction
+  genes: Mbar_A0672 or Mbar_A0840 or Mbar_A1055 or Mbar_A3583
+  equation: atp[c] + fdred[c] + h2o[c] + 5hbc_ox[c] => adp[c] + fdox[c] + h[c] +
+    pi[c] + 5hbc[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: 5HBZIDS
+  name: 5 hydroxybenzimidazole synthase
+  equation: ribflv[c] => 5hbzid[c] + unknown-rbfdeg[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: 7MHS
+  name: 7 mercaptoheptanoate synthase
+  equation: 7ohp[c] + cys-L[c] + h[c] + nadh[c] => 7mhp[c] + nad[c] + ser-L[c]
+  subsystem: Coenzyme B Biosynthesis
+- id: 7MHTS
+  name: 7 mercaptoheptanoylthreonine synthase
+  equation: 7mhp[c] + atp[c] + thr-L[c] => 7mht[c] + adp[c] + h[c] + pi[c]
+  subsystem: Coenzyme B Biosynthesis
+- id: ABTA
+  name: 4 aminobutyrate transaminase
+  genes: Mbar_A2386
+  equation: 4abut[c] + akg[c] => glu-L[c] + sucsal[c]
+  subsystem: Glutamate metabolism
+- id: ACACT1
+  name: acetyl CoA C acetyltransferase
+  genes: Mbar_A0550
+  equation: (2) accoa[c] => aacoa[c] + coa[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: ACBIPGT
+  name: Adenosyl cobinamide phosphate guanyltransferase
+  genes: Mbar_A3457
+  equation: adocbip[c] + gtp[c] + h[c] => agdpcbi[c] + ppi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: ACGK
+  name: acetylglutamate kinase
+  genes: Mbar_A1181
+  equation: acglu[c] + atp[c] => acg5p[c] + adp[c]
+  subsystem: Amino Acid Metabolism
+- id: ACGS
+  name: N acetylglutamate synthase
+  genes: Mbar_A0723 or Mbar_A0587 or Mbar_A2003
+  equation: accoa[c] + glu-L[c] => acglu[c] + coa[c] + h[c]
+  subsystem: Amino Acid Metabolism
+- id: ACKr
+  name: acetate kinase
+  genes: Mbar_A1820
+  equation: ac[c] + atp[c] <=> actp[c] + adp[c]
+  subsystem: Methanogenesis
+- id: ACLDC
+  name: acetolactate decarboxylase
+  genes: Mbar_A2915 or Mbar_A2916
+  equation: alac-S[c] + h[c] => actn-R[c] + co2[c]
+  subsystem: Other
+- id: ACLS
+  name: acetolactate synthase
+  genes: ( Mbar_A0210 or Mbar_A0219 ) and ( Mbar_A0218 or Mbar_A0428 or Mbar_A0438
+    or Mbar_A2541 )
+  equation: h[c] + (2) pyr[c] => alac-S[c] + co2[c]
+  subsystem: Valine Leucine and Isoleucine Metabolism
+- id: ACONMT
+  name: Trans aconitate methyltransferase
+  genes: Mbar_A2906
+  equation: acon-T[c] + amet[c] => aconm[c] + ahcys[c]
+  subsystem: Central Metabolism
+- id: ACONTa
+  name: citrate hydro-lyase (cis-aconitate-forming)
+  genes: Mbar_A0714 or ( Mbar_A0244 and Mbar_A1961 )
+  equation: cit[c] <=> h2o[c] + acon-C[c]
+  subsystem: Citric Acid Cycle
+- id: ACONTb
+  name: isocitrate hydro-lyase (cis-aconitate-forming)
+  genes: Mbar_A0714 or ( Mbar_A0244 and Mbar_A1961 )
+  equation: icit[c] <=> h2o[c] + acon-C[c]
+  subsystem: Citric Acid Cycle
+- id: ACOTA
+  name: acetylornithine transaminase
+  genes: Mbar_A0871 or Mbar_A2386 or Mbar_A3279
+  equation: acorn[c] + akg[c] <=> acg5sa[c] + glu-L[c]
+  subsystem: Amino Acid Metabolism
+- id: ACP1(FMN)
+  name: 'acid phosphatase FMN '
+  genes: Mbar_A1192
+  equation: fmn[c] + h2o[c] => pi[c] + ribflv[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: ACSERHS
+  name: O3-Acetyl-L-serine acetate-lyase (adding hydrogen sulfide)
+  genes: Mbar_A2422 or Mbar_A2427
+  equation: acser[c] + trdrd[c] + tsul[c] => ac[c] + cys-L[c] + h[c] + so3[c] + trdox[c]
+  subsystem: Amino Acid Metabolism
+- id: ACTNt2r
+  name: ' R acetoin transport via proton symport'
+  equation: actn-R[e] + h[e] <=> actn-R[c] + h[c]
+  subsystem: Transport
+- id: ACYP
+  name: acylphosphatase
+  genes: Mbar_A3282
+  equation: 13dpg[c] + h2o[c] => 3pg[c] + h[c] + pi[c]
+  subsystem: GlycolysisGluconeogenesis
+- id: ACYP_2
+  name: 'acylphosphatase 2 '
+  genes: Mbar_A3282
+  equation: actp[c] + h2o[c] => ac[c] + h[c] + pi[c]
+  subsystem: Central Metabolism
+- id: ACt3r
+  name: Acetate carbonate antiporter
+  equation: ac[e] + hco3[c] <=> ac[c] + hco3[e]
+  subsystem: Transport
+- id: ADCBHBIR
+  name: Adenosylcobalamin-HBI reductase
+  equation: adocblhbi[c] + h2o[c] => adn[c] + h[c] + 5hbc_red[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: ADCPS1
+  name: adenosylcobyric acid:(R)-1-aminopropan-2-ol ligase (ADP-forming)
+  genes: Mbar_A3454
+  equation: adcobhex[c] + appl[c] + atp[c] <=> adocbi[c] + adp[c] + h[c] + pi[c]
+  subsystem: Other
+- id: ADCPS2
+  name: adenosylcobinamide phosphate synthase
+  genes: Mbar_A3454
+  equation: adcobhex[c] + applp[c] + atp[c] => adocbip[c] + adp[c] + h[c] + pi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: ADCYRS
+  name: 'adenosylcobyric acid synthase glutamine hydrolysing '
+  genes: Mbar_A3191
+  equation: adcobdam[c] + (4) atp[c] + (4) gln-L[c] + (4) h2o[c] => adcobhex[c] +
+    (4) adp[c] + (4) glu-L[c] + (4) h[c] + (4) pi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: ADD
+  name: adenine deaminase
+  genes: Mbar_A3342
+  equation: ade[c] + h2o[c] + h[c] => hxan[c] + nh4[c]
+  subsystem: Nucleotide Metabolism
+- id: ADK1
+  name: adenylate kinase
+  genes: Mbar_A0086
+  equation: amp[c] + atp[c] <=> (2) adp[c]
+  subsystem: Nucleotide Metabolism
+- id: ADK2
+  name: 'adenylate kinase Inorganic triphosphate '
+  genes: Mbar_A0086
+  equation: amp[c] + pppi[c] <=> adp[c] + ppi[c]
+  subsystem: Nucleotide Metabolism
+- id: ADK3
+  name: 'adentylate kinase GTP '
+  genes: Mbar_A0086
+  equation: amp[c] + gtp[c] <=> adp[c] + gdp[c]
+  subsystem: Nucleotide Metabolism
+- id: ADK4
+  name: 'adentylate kinase ITP '
+  genes: Mbar_A0086
+  equation: amp[c] + itp[c] <=> adp[c] + idp[c]
+  subsystem: Nucleotide Metabolism
+- id: ADKd
+  name: 'adenylate kinase d form '
+  genes: Mbar_A0086
+  equation: damp[c] + datp[c] <=> (2) dadp[c]
+  subsystem: Nucleotide Metabolism
+- id: ADNCYC
+  name: adenylate cyclase
+  genes: Mbar_A0548
+  equation: atp[c] => camp[c] + ppi[c]
+  subsystem: Nucleotide Metabolism
+- id: ADNK1
+  name: adenosine kinase
+  genes: Mbar_A0086
+  equation: adn[c] + atp[c] => adp[c] + amp[c] + h[c]
+  subsystem: Nucleotide Metabolism
+- id: ADOCBIAH
+  name: Adenosyl cobinamide amidohydrolase
+  genes: Mbar_A3636
+  equation: adocbi[c] + h2o[c] => adcobhex[c] + appl[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: ADOCBLS2
+  name: Adenosylcobalamin 5 phosphate synthase
+  genes: Mbar_A3456
+  equation: agdpcbi[c] + r5hbzi[c] => adocblhbi[c] + gmp[c] + h[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: ADPRDP
+  name: ADPribose hydrolase
+  genes: Mbar_A0887
+  equation: h2o[c] + adprib[c] => amp[c] + (2) h[c] + r5p[c]
+  subsystem: Central Metabolism
+- id: ADPT
+  name: adenine phosphoribosyltransferase
+  genes: Mbar_A1633
+  equation: ade[c] + prpp[c] => amp[c] + ppi[c]
+  subsystem: Nucleotide Metabolism
+- id: ADSK
+  name: adenylyl-sulfate kinase
+  genes: Mbar_A0634
+  equation: atp[c] + aps[c] => adp[c] + h[c] + paps[c]
+  subsystem: Cysteine Metabolism
+- id: ADSL1
+  name: adenylosuccinate lyase
+  genes: Mbar_A0673
+  equation: dcamp[c] => amp[c] + fum[c]
+  subsystem: Alanine and Aspartate Metabolism
+- id: ADSL2
+  name: adenylosuccinate lyase
+  genes: Mbar_A0673
+  equation: 25aics[c] => aicar[c] + fum[c]
+  subsystem: Nucleotide Metabolism
+- id: ADSS
+  name: adenylosuccinate synthase
+  genes: Mbar_A0403
+  equation: asp-L[c] + gtp[c] + imp[c] => dcamp[c] + gdp[c] + (2) h[c] + pi[c]
+  subsystem: Alanine and Aspartate Metabolism
+- id: AGAIAGT
+  name: archaeatidylinositol N acetylglucosaminyltransferase
+  genes: Mbar_A1731
+  equation: dpgpi[c] + uacgam[c] => agdpgpi[c] + h[c] + udp[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: AGAID
+  name: N acetylglucosaminylarchaeatidylinositol deacetylase
+  genes: Mbar_A0408
+  equation: agdpgpi[c] + h2o[c] => ac[c] + gdpgpi[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: AGMT
+  name: agmatinase
+  genes: Mbar_A0694
+  equation: agm[c] + h2o[c] => ptrc[c] + urea[c]
+  subsystem: Arginine and Proline Metabolism
+- id: AGPR
+  name: N acetyl g glutamyl phosphate reductase
+  genes: Mbar_A2001
+  equation: acg5sa[c] + nadp[c] + pi[c] <=> acg5p[c] + h[c] + nadph[c]
+  subsystem: Amino Acid Metabolism
+- id: AH6PI
+  name: Arabino-3-hexulose-6-P Isomerase
+  genes: Mbar_A3132
+  equation: ah6p-D[c] <=> f6p[c]
+  subsystem: Central Metabolism
+- id: AHC
+  name: adenosylhomocysteinase
+  genes: Mbar_A3251
+  equation: ahcys[c] + h2o[c] <=> adn[c] + hcys-L[c]
+  subsystem: Methionine Metabolism
+- id: AHGDx
+  name: ' S alpha hydroxyglutarate dehydrogenase'
+  equation: S2hglut[c] + nad[c] <=> akg[c] + h[c] + nadh[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: AHMMPS
+  name: 4 amino 5 hydroxymethyl 2 methylpyrimidine synthetase
+  genes: Mbar_A0597 or Mbar_A2129
+  equation: air[c] + (2) h[c] + nadh[c] => 4ahmmp[c] + gcald[c] + nad[c] + pi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: AHSERL2
+  name: O acetylhomoserine thiol lyase
+  genes: Mbar_A2427
+  equation: achms[c] + h2s[c] => ac[c] + h[c] + hcys-L[c]
+  subsystem: Methionine Metabolism
+- id: AHXDH
+  name: 6 aminohexanoate dimer hydrolase
+  genes: Mbar_A1202
+  equation: 6ax6ax[c] + h2o[c] => (2) 6ax[c]
+  subsystem: Other
+- id: AICART
+  name: phosphoribosylaminoimidazolecarboxamide formyltransferase
+  genes: Mbar_A0571
+  equation: 10fthf[c] + aicar[c] <=> fprica[c] + thf[c]
+  subsystem: Nucleotide Metabolism
+- id: AIRC2
+  name: phosphoribosylaminoimidazole carboxylase
+  genes: Mbar_A3125 or Mbar_A0762 or Mbar_A3291
+  equation: air[c] + atp[c] + hco3[c] => 5caiz[c] + adp[c] + h[c] + pi[c]
+  subsystem: Nucleotide Metabolism
+- id: AIRC3
+  name: 'phosphoribosylaminoimidazole carboxylase mutase rxn '
+  genes: Mbar_A3125 or Mbar_A0762 or Mbar_A3291
+  equation: 5aizc[c] <=> 5caiz[c]
+  subsystem: Nucleotide Metabolism
+- id: AKACAL
+  name: alpha ketoadipateCoA ligase
+  genes: Mbar_A0942 or Mbar_A2192
+  equation: accoa[c] + h2o[c] + ohexa[c] => Rh2cit[c] + coa[c] + h[c]
+  subsystem: Coenzyme B Biosynthesis
+- id: AKGCAL
+  name: alpha ketoglutarateCoA ligase
+  genes: Mbar_A0942 or Mbar_A2192
+  equation: accoa[c] + akg[c] => coa[c] + h[c] + hacon-T[c]
+  subsystem: Coenzyme B Biosynthesis
+- id: AKP1
+  name: 'alkaline phosphatase Dihydroneopterin '
+  genes: Mbar_A1231
+  equation: ahdt[c] + (3) h2o[c] => dhnpt[c] + (2) h[c] + (3) pi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: AKPCAL
+  name: alpha ketopimelateCoA ligase
+  genes: Mbar_A0942 or Mbar_A2192
+  equation: accoa[c] + h2o[c] + ohepa[c] => Rh3cit[c] + coa[c] + h[c]
+  subsystem: Coenzyme B Biosynthesis
+- id: AKSCAL
+  name: alpha ketosubmerateCoA ligase
+  equation: 2ood[c] + accoa[c] + h2o[c] => glyc-R[c] + pmcoa[c]
+  subsystem: Coenzyme B Biosynthesis
+- id: AKSDC
+  name: alpha ketosubmerate decarboxylase
+  equation: 2ood[c] + h[c] => 7ohp[c] + co2[c]
+  subsystem: Coenzyme B Biosynthesis
+- id: ALACCBX
+  name: 2-Acetolactate pyruvate-lyase (carboxylating)
+  genes: ( Mbar_A0428 or Mbar_A0438 or Mbar_A2541 ) and ( Mbar_A0210 or Mbar_A0219
+    )
+  equation: pyr[c] + he2thpp[c] => alac-S[c] + thmpp[c]
+  subsystem: Valine Leucine and Isoleucine Metabolism
+- id: ALACt2r
+  name: acetolactate reversible transport via proton symport
+  equation: alac-S[e] + h[e] <=> alac-S[c] + h[c]
+  subsystem: Transport
+- id: ALATA_L
+  name: L alanine transaminase
+  genes: Mbar_A2080 or Mbar_A1137
+  equation: akg[c] + ala-L[c] <=> glu-L[c] + pyr[c]
+  subsystem: Alanine and Aspartate Metabolism
+- id: ALATRS
+  name: Alanyl tRNA synthetase
+  genes: Mbar_A1361 or Mbar_A2092
+  equation: ala-L[c] + atp[c] + trnaala[c] => alatrna[c] + amp[c] + ppi[c]
+  subsystem: Alanine and Aspartate Metabolism
+- id: ALAt4r
+  name: Alanine Sodium symporter
+  genes: Mbar_A2656
+  equation: ala-L[e] + na1[e] <=> ala-L[c] + na1[c]
+  subsystem: Transport
+- id: ALCD19y
+  name: Glycerol:NADP+ oxidoreductase
+  genes: Mbar_A0771 or Mbar_A2344
+  equation: glyald[c] + h[c] + nadph[c] => glyc[c] + nadp[c]
+  subsystem: Central Metabolism
+- id: ALCD1y
+  name: alcohol dehydrogenase (methanol)
+  genes: Mbar_A0771
+  equation: meoh[c] + nadp[c] <=> fald[c] + h[c] + nadph[c]
+  subsystem: Methanogenesis
+- id: ALCD20y
+  name: 'alcohol dehydrogenase 2 propanol  NADP '
+  genes: Mbar_A0771 or Mbar_A2344
+  equation: 2ppoh[c] + nadp[c] <=> acetone[c] + h[c] + nadph[c]
+  subsystem: Central Metabolism
+- id: ALCD22_L(f420)
+  name: Alcohol dehydrogenase (L-lactaldehyde by F420)
+  equation: f420-2h2[c] + mthgxl[c] <=> f420-2[c] + h[c] + lald-L[c]
+  subsystem: Central Metabolism
+- id: ALCD2y
+  name: 'alcohol dehydrogenase ethanol NADP '
+  genes: Mbar_A0771 or Mbar_A2344
+  equation: etoh[c] + nadp[c] <=> acald[c] + h[c] + nadph[c]
+  subsystem: Central Metabolism
+- id: ALDD1
+  name: 'aldehyde dehydrogenase formaldehyde NAD '
+  genes: Mbar_A0774 and Mbar_A0775
+  equation: fald[c] + h2o[c] + nad[c] => for[c] + (2) h[c] + nadh[c]
+  subsystem: Central Metabolism
+- id: ALDD2x
+  name: 'aldehyde dehydrogenase acetaldehyde NAD '
+  genes: Mbar_A2387
+  equation: acald[c] + h2o[c] + nad[c] => ac[c] + (2) h[c] + nadh[c]
+  subsystem: Central Metabolism
+- id: ALDD31
+  name: Aminoacetaldehyde oxidation
+  genes: Mbar_A2387
+  equation: h2o[c] + nad[c] + aacald[c] => gly[c] + (2) h[c] + nadh[c]
+  subsystem: Other
+- id: ALKP
+  name: alkaline phosphatase
+  genes: Mbar_A1231
+  equation: dhap[c] + h2o[c] => dha[c] + pi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: ALR2(f420)
+  name: Acetol oxidation
+  genes: Mbar_A0763 or Mbar_A2639 or Mbar_A3350
+  equation: f420-2h2[c] + mthgxl[c] <=> f420-2[c] + h[c] + acetol[c]
+  subsystem: Central Metabolism
+- id: AMAOTr
+  name: adenosylmethionine 8 amino 7 oxononanoate transaminase
+  equation: 8aonn[c] + amet[c] <=> amob[c] + dann[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: AMPMS2
+  name: 4-amino-2-methyl-5-phosphomethylpyrimidine synthetase
+  genes: Mbar_A0597 or Mbar_A2129
+  equation: air[c] + h2o[c] + nad[c] => 4ampm[c] + (2) for[c] + (3) h[c] + nadh[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: AMPTASECG
+  name: L-cysteinylglycine dipeptidase
+  genes: Mbar_A2053
+  equation: h2o[c] + cgly[c] => cys-L[c] + gly[c]
+  subsystem: Amino Acid Metabolism
+- id: ANPRT
+  name: anthranilate phosphoribosyltransferase
+  genes: Mbar_A3624
+  equation: anth[c] + prpp[c] => ppi[c] + pran[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: ANS
+  name: anthranilate synthase
+  genes: Mbar_A3626 and Mbar_A3627
+  equation: chor[c] + gln-L[c] => anth[c] + glu-L[c] + h[c] + pyr[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: ANS2
+  name: chorismate pyruvate-lyase (amino-accepting; anthranilate-forming)
+  genes: Mbar_A3626 and Mbar_A3627
+  equation: chor[c] + nh4[c] => anth[c] + h2o[c] + h[c] + pyr[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: AOXSr
+  name: 8 amino 7 oxononanoate synthase
+  equation: ala-L[c] + h[c] + pmcoa[c] <=> 8aonn[c] + co2[c] + coa[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: APPLP
+  name: aminopropanol phosphorylase
+  genes: Mbar_A3455
+  equation: appl[c] + atp[c] => adp[c] + applp[c] + h[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: ARGDC
+  name: arginine decarboxylase
+  genes: Mbar_A2039 or Mbar_A2492
+  equation: arg-L[c] + h[c] => agm[c] + co2[c]
+  subsystem: Glutamate metabolism
+- id: ARGDr
+  name: arginine deiminase
+  genes: Mbar_A1693
+  equation: arg-L[c] + h2o[c] <=> citr-L[c] + nh4[c]
+  subsystem: Arginine and Proline Metabolism
+- id: ARGSL
+  name: argininosuccinate lyase
+  genes: Mbar_A0004
+  equation: argsuc[c] <=> arg-L[c] + fum[c]
+  subsystem: Alanine and Aspartate Metabolism
+- id: ARGSS
+  name: argininosuccinate synthase
+  genes: Mbar_A2373
+  equation: asp-L[c] + atp[c] + citr-L[c] => amp[c] + argsuc[c] + h[c] + ppi[c]
+  subsystem: Alanine and Aspartate Metabolism
+- id: ARGTRS
+  name: Arginyl tRNA synthetase
+  genes: Mbar_A1008
+  equation: arg-L[c] + atp[c] + trnaarg[c] => amp[c] + argtrna[c] + ppi[c]
+  subsystem: Arginine and Proline Metabolism
+- id: ASADi
+  name: aspartate semialdehyde dehydrogenase irreversible
+  genes: Mbar_A0760
+  equation: 4pasp[c] + h[c] + nadph[c] => aspsa[c] + nadp[c] + pi[c]
+  subsystem: Alanine and Aspartate Metabolism
+- id: ASD
+  name: archaetidylserine decarboxylase
+  genes: Mbar_A0875
+  equation: dpgps[c] + h[c] => co2[c] + dpgpe[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: ASNN
+  name: L asparaginase
+  genes: Mbar_A0003
+  equation: asn-L[c] + h2o[c] => asp-L[c] + nh4[c]
+  subsystem: Alanine and Aspartate Metabolism
+- id: ASNS1
+  name: 'asparagine synthase glutamine hydrolysing '
+  genes: Mbar_A2257
+  equation: asp-L[c] + atp[c] + gln-L[c] + h2o[c] => amp[c] + asn-L[c] + glu-L[c]
+    + h[c] + ppi[c]
+  subsystem: Alanine and Aspartate Metabolism
+- id: ASNTRS2-1
+  name: Asparaginyl-tRNA synthetase 2 (correction pathway part 1)
+  genes: Mbar_A3173
+  equation: asp-L[c] + atp[c] + trnaasn[c] => amp[c] + ppi[c] + asntrna(asp)[c]
+  subsystem: Other
+- id: ASNTRS2-2
+  name: Asparaginyl-tRNA synthetase 2 (correction pathway part 2)
+  genes: Mbar_A0882 and Mbar_A0883 and Mbar_A0884
+  equation: atp[c] + gln-L[c] + h2o[c] + asntrna(asp)[c] => adp[c] + glu-L[c] + h[c]
+    + pi[c] + asntrna[c]
+  subsystem: Other
+- id: ASP1DC
+  name: aspartate 1 decarboxylase
+  genes: Mbar_A2744
+  equation: asp-L[c] + h[c] => ala-B[c] + co2[c]
+  subsystem: Alanine and Aspartate Metabolism
+- id: ASPCT
+  name: aspartate carbamoyltransferase
+  genes: ( Mbar_A1167 and Mbar_A1168 )
+  equation: asp-L[c] + cbp[c] => cbasp[c] + h[c] + pi[c]
+  subsystem: Alanine and Aspartate Metabolism
+- id: ASPKi
+  name: aspartate kinase irreversible
+  genes: Mbar_A0861
+  equation: asp-L[c] + atp[c] => 4pasp[c] + adp[c]
+  subsystem: Alanine and Aspartate Metabolism
+- id: ASPO2x
+  name: L-aspartate:NAD+ oxidoreductase
+  genes: Mbar_A1866
+  equation: asp-L[c] + nad[c] => h[c] + iasp[c] + nadh[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: ASPO2y
+  name: L-aspartate:NADP+ oxidoreductase (deaminating)
+  genes: Mbar_A1866
+  equation: asp-L[c] + nadp[c] => h[c] + iasp[c] + nadph[c]
+  subsystem: Other
+- id: ASPTA
+  name: aspartate transaminase
+  genes: Mbar_A1546 or Mbar_A2080 or Mbar_A2083 or Mbar_A3113
+  equation: akg[c] + asp-L[c] <=> glu-L[c] + oaa[c]
+  subsystem: Alanine and Aspartate Metabolism
+- id: ASPTRS
+  name: Aspartyl tRNA synthetase
+  genes: Mbar_A3173
+  equation: asp-L[c] + atp[c] + trnaasp[c] => amp[c] + asptrna[c] + ppi[c]
+  subsystem: Alanine and Aspartate Metabolism
+- id: ATGH
+  name: archaetidylglycerol hydrogenase
+  genes: Mbar_A1602 or Mbar_A1603 or Mbar_A1604
+  equation: dggpg[c] + (8) h[c] + (8) nadph[c] => dpgpg[c] + (8) nadp[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: ATIH
+  name: archaetidylinositol hydrogenase
+  genes: Mbar_A1602 or Mbar_A1603 or Mbar_A1604
+  equation: dggpi[c] + (8) h[c] + (8) nadph[c] => dpgpi[c] + (8) nadp[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: ATPFORTRX
+  name: 5-formaminoimidazole-4-carboxamide-1-beta-D-ribofuranosyl
+  genes: Mbar_A0288 or Mbar_A1334
+  equation: aicar[c] + atp[c] + for[c] <=> adp[c] + fprica[c] + pi[c]
+  subsystem: Nucleotide Metabolism
+- id: ATPHs
+  name: ATP amine hydrolysis (spontaneous)
+  equation: atp[c] + h2o[c] + h[c] => itp[c] + nh4[c]
+  subsystem: Nucleotide Metabolism
+- id: ATPM
+  name: ATP maintenance requirement
+  equation: atp[c] + h2o[c] => adp[c] + h[c] + pi[c]
+  subsystem: Other
+- id: ATPPRT
+  name: ATP phosphoribosyltransferase
+  genes: Mbar_A1312
+  equation: atp[c] + prpp[c] => ppi[c] + prbatp[c]
+  subsystem: Histidine Metabolism
+- id: ATPS1
+  name: H exporting ATPase
+  genes: Mbar_A2777 or Mbar_A2778
+  equation: atp[c] + h2o[c] + h[c] => adp[c] + (2) h[e] + pi[c]
+  subsystem: Transport
+- id: ATPS4r
+  name: 'ATP synthase four protons for one ATP '
+  genes: Mbar_A0384 and Mbar_A0385 and Mbar_A0389 and ( Mbar_A0391 or Mbar_A0379
+    ) and Mbar_A0386 and ( Mbar_A0378 or Mbar_A0390 ) and Mbar_A0387 and Mbar_A0392
+    and Mbar_A0388
+  equation: adp[c] + (4) h[e] + pi[c] <=> atp[c] + h2o[c] + (3) h[c]
+  subsystem: Methanogenesis
+- id: ATRZCH
+  name: atrazine chlorohydrolase
+  genes: Mbar_A3252
+  equation: atrz[c] + h2o[c] => cl[c] + h[c] + hatrz[c]
+  subsystem: Other
+- id: ATSH
+  name: archaetidylserine hydrogenase
+  genes: Mbar_A1602 or Mbar_A1603 or Mbar_A1604
+  equation: dgggps[c] + (8) h[c] + (8) nadph[c] => dpgps[c] + (8) nadp[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: BACCL
+  name: biotin acetyl CoA carboxylase ligase
+  genes: Mbar_A1588
+  equation: atp[c] + btn[c] + h[c] => btamp[c] + ppi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: BLAT
+  name: beta lysine acetyltransferase
+  genes: Mbar_A0671
+  equation: 36dahx[c] + accoa[c] => coa[c] + h[c] + nabl[c]
+  subsystem: Threonine and Lysine Metabolism
+- id: BRFAPS
+  name: beta ribofuranosylaminobenzene 5 phosphate synthase
+  genes: Mbar_A0806 or Mbar_A1222
+  equation: 4abz[c] + h[c] + prpp[c] => Brfap[c] + co2[c] + ppi[c]
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: BSPRR
+  name: Biotin synthase protein regeneration reaction
+  equation: (2) fdox[c] + (2) fe2[c] + (2) h2s[c] + btnp[c] => (2) fdred[c] + (4)
+    h[c] + btnp-s2[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: BTNabc
+  name: biotin transport (ABC)
+  genes: Mbar_A0583 and ( Mbar_A0584 or Mbar_A0585 ) and Mbar_A0586
+  equation: atp[c] + btn[e] + h2o[c] => adp[c] + btn[c] + h[c] + pi[c]
+  subsystem: Transport
+- id: BTNt2i
+  name: Biotin uptake
+  genes: Mbar_A0586
+  equation: btn[e] + h[e] => btn[c] + h[c]
+  subsystem: Transport
+- id: BTS5
+  name: Biotin synthetase
+  equation: dtbt[c] + (2) fdox[c] + btnp-s2[c] => btn[c] + (2) fdred[c] + (2) fe2[c]
+    + h2s[c] + btnp[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: BUP2
+  name: beta-ureidopropionase (D-3-amino-isobutanoate forming)
+  genes: Mbar_A2044
+  equation: 3uib[c] + h2o[c] + (2) h[c] => co2[c] + nh4[c] + 3aib-D[c]
+  subsystem: Other
+- id: CA2abc
+  name: calcium transport via ABC system
+  genes: Mbar_A0500 or Mbar_A0406
+  equation: atp[c] + ca2[e] + h2o[c] => adp[c] + ca2[c] + h[c] + pi[c]
+  subsystem: Transport
+- id: CAT
+  name: catalase
+  genes: Mbar_A0814
+  equation: (2) h2o2[c] => (2) h2o[c] + o2[c]
+  subsystem: Other
+- id: CAt6
+  name: calcium sodium antiporter
+  genes: Mbar_A2093 or Mbar_A2253
+  equation: ca2[c] + na1[e] <=> ca2[e] + na1[c]
+  subsystem: Transport
+- id: CBIAT
+  name: Cobinamide adenyltransferase
+  genes: Mbar_A1365
+  equation: atp[c] + cbi[c] + h[c] <=> adocbi[c] + pppi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: CBIabc
+  name: Cobinamide transport via ABC system
+  genes: Mbar_A2260 and Mbar_A2261 and Mbar_A2262
+  equation: atp[c] + cbi[e] + h2o[c] => adp[c] + cbi[c] + h[c] + pi[c]
+  subsystem: Transport
+- id: CBL1HBIabc
+  name: Cob 1 alamin HBI transport via ABC system
+  genes: Mbar_A2260 and Mbar_A2261 and Mbar_A2262
+  equation: atp[c] + cbl1hbi[e] + h2o[c] => adp[c] + cbl1hbi[c] + h[c] + pi[c]
+  subsystem: Transport
+- id: CBL1abc
+  name: Cob 1 alamin transport via ABC system
+  genes: Mbar_A2260 and Mbar_A2261 and Mbar_A2262
+  equation: atp[c] + cbl1[e] + h2o[c] => adp[c] + cbl1[c] + h[c] + pi[c]
+  subsystem: Transport
+- id: CBLAT2
+  name: cob I alamin HBI adenosyltransferase
+  genes: Mbar_A1365
+  equation: atp[c] + cbl1hbi[c] + h[c] => adocblhbi[c] + pppi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: CBLD
+  name: cob I alamin degradation
+  equation: cbl1[c] + h2o[c] => cbi[c] + h[c] + unknown-cbl1deg[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: CBPS
+  name: 'carbamoyl phosphate synthase glutamine hydrolysing '
+  genes: Mbar_A2374 and Mbar_A2375
+  equation: (2) atp[c] + gln-L[c] + h2o[c] + hco3[c] => (2) adp[c] + cbp[c] + glu-L[c]
+    + (2) h[c] + pi[c]
+  subsystem: Glutamate metabolism
+- id: CD2abc1
+  name: cadmium transport out via ABC system
+  genes: Mbar_A0343 or Mbar_A3337 or Mbar_A3446
+  equation: atp[c] + cd2[c] + h2o[c] => adp[c] + cd2[e] + h[c] + pi[c]
+  subsystem: Transport
+- id: CD2abc2
+  name: cadmium transport in via ABC system
+  genes: Mbar_A0343 or Mbar_A3337 or Mbar_A3446
+  equation: atp[c] + cd2[e] + h2o[c] => adp[c] + cd2[c] + h[c] + pi[c]
+  subsystem: Transport
+- id: CD2t4
+  name: Cadmium Hydrogen-Potassium antiporter
+  genes: Mbar_A3267
+  equation: cd2[c] + h[e] + k[e] <=> cd2[e] + h[c] + k[c]
+  subsystem: Transport
+- id: CDGGGPP3
+  name: 'CDP alcohol phosphatidyltransferase glycerol 1 phosphate '
+  genes: Mbar_A1250
+  equation: cdgggp[c] + glyc1p[c] => cmp[c] + dggpgp[c] + h[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: CDGGGPP4
+  name: 'CDP alcohol phosphatidyltransferase glycerol 1 phosphate  hydroxy '
+  genes: Mbar_A1250
+  equation: 3hcdgggp[c] + glyc1p[c] => 3hdggpgp[c] + cmp[c] + h[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: CDGGGS
+  name: CDP 2 3 di O geranylgeranyl sn glycerol synthase
+  genes: Mbar_A1936
+  equation: ctp[c] + dgggp[c] + h[c] => cdgggp[c] + ppi[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: CDGGGS2
+  name: CDP 2 O 3 hydroxy geranyl 3 O geranyl sn glycerol synthase
+  genes: Mbar_A1936
+  equation: 3hdgggp[c] + ctp[c] + h[c] => 3hcdgggp[c] + ppi[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: CDGGGSAT
+  name: CDP 2 3 di O geranylgeranyl sn glyceroserine O archaetidyltransferase
+  genes: Mbar_A0874
+  equation: cdgggp[c] + ser-L[c] => cmp[c] + dgggps[c] + h[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: CDGGGSAT2
+  name: CDP 2 O 3 hydroxy geranyl 3 O geranyl sn glyceroserine O archaetidyltransferase
+  genes: Mbar_A0874
+  equation: 3hcdgggp[c] + ser-L[c] => 3hdgggps[c] + cmp[c] + h[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: CDGGIPT
+  name: CDP digeranyl sn glycero myo inositol 3 phosphatidyltransferase
+  genes: Mbar_A1498
+  equation: cdgggp[c] + inost[c] => cmp[c] + dggpi[c] + h[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: CDGGIPT2
+  name: 'CDP digeranyl sn glycero myo inositol 3 phosphatidyltransferase 3 hydroxy '
+  genes: Mbar_A1498
+  equation: 3hcdgggp[c] + inost[c] => 3hdggpi[c] + cmp[c] + h[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: CEF430D1
+  name: Chloroethane F430 declorination 1
+  equation: f430[c] + fdred[c] + ceth[c] => cl[c] + fdox[c] + ethf430[c]
+  subsystem: Declorination
+- id: CEF430D2
+  name: Chloroethane F430 declorination 2
+  equation: h[c] + ethf430[c] => f430_ox[c] + eth[c]
+  subsystem: Declorination
+- id: CETHt
+  name: Chloroethane transport
+  equation: ceth[e] <=> ceth[c]
+  subsystem: Transport
+- id: CF3Ha
+  name: 'coenzyme F390 hydrolase ATP '
+  equation: f390a[c] + h2o[c] => amp[c] + f420-2[c] + (2) h[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: CF3Hg
+  name: 'coenzyme F390 hydrolase GTP '
+  equation: f390g[c] + h2o[c] => f420-2[c] + gmp[c] + h[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: CF3Sa
+  name: 'coenzyme F390 synthetase ATP '
+  genes: Mbar_A0508
+  equation: atp[c] + f420-2[c] + h[c] => f390a[c] + ppi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: CF3Sg
+  name: 'coenzyme F390 synthetase GTP '
+  genes: Mbar_A0508
+  equation: f420-2[c] + gtp[c] => f390g[c] + ppi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: CH2ACH
+  name: cis homo 2aconitate hydrolase
+  genes: Mbar_A0714 or ( Mbar_A0244 and Mbar_A1961 )
+  equation: h2acon-C[c] + h2o[c] <=> tih2cit[c]
+  subsystem: Coenzyme B Biosynthesis
+- id: CH3ACH
+  name: cis homo 3aconitate hydrolase
+  genes: Mbar_A0714 or ( Mbar_A0244 and Mbar_A1961 )
+  equation: h2o[c] + h3acon-C[c] <=> tih3cit[c]
+  subsystem: Coenzyme B Biosynthesis
+- id: CH4St
+  name: Methanethiol Transport
+  equation: ch4s[e] <=> ch4s[c]
+  subsystem: Transport
+- id: CH4t
+  name: Methane Transport
+  equation: ch4[e] <=> ch4[c]
+  subsystem: Transport
+- id: CHACH
+  name: cis homoaconitate hydrolase
+  genes: Mbar_A0714 or ( Mbar_A0244 and Mbar_A1961 )
+  equation: h2o[c] + hacon-C[c] <=> ihcit-T[c]
+  subsystem: Coenzyme B Biosynthesis
+- id: CHORM
+  name: chorismate mutase
+  genes: Mbar_A3126
+  equation: chor[c] => pphn[c]
+  subsystem: Amino Acid Metabolism
+- id: CHORS
+  name: chorismate synthase
+  genes: Mbar_A1438
+  equation: 3psme[c] => chor[c] + pi[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: CHRPL
+  name: Chorismate pyruvate lyase
+  genes: Mbar_A3626 and Mbar_A3627
+  equation: chor[c] => pyr[c] + 4hbz[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: CM5HBCMT
+  name: 'Co-methyl-Co-5-hydroxybenzimidazolylcob(I)amide: coenzyme M methyltransferase'
+  genes: ( Mbar_A1054 or Mbar_A3639 ) or ( Mbar_A0841 or Mbar_A1688 ) or ( Mbar_A1258
+    or Mbar_A0410 or Mbar_A1713 or Mbar_A2073 ) or Mbar_A3585
+  equation: com[c] + m5hbc[c] => h[c] + mcom[c] + 5hbc_red[c]
+  subsystem: Methanogenesis
+- id: CMLDC
+  name: 4 carboxymuconolactone decarboxylase
+  genes: Mbar_A0700 or Mbar_A1720 or Mbar_A3671
+  equation: 2c25dho[c] + h[c] => 5odhf2a[c] + co2[c]
+  subsystem: Other
+- id: CO2t
+  name: CO2 transporter via diffusion
+  equation: co2[e] <=> co2[c]
+  subsystem: Transport
+- id: COBALTt5
+  name: 'cobalt transport inout via permease no H '
+  genes: Mbar_A2983 or Mbar_A2809 or Mbar_A2810
+  equation: cobalt2[c] <=> cobalt2[e]
+  subsystem: Transport
+- id: COBS
+  name: coenzyme b synthatse
+  genes: Mbar_A0806
+  equation: 7mht[c] + atp[c] => adp[c] + cob[c] + h[c]
+  subsystem: Coenzyme B Biosynthesis
+- id: COCHL
+  name: cobaltochelatase
+  genes: Mbar_A0797 or Mbar_A1771 or Mbar_A1795 or Mbar_A2144 or Mbar_A3731
+  equation: atp[c] + cobalt2[c] + h2o[c] + hgbam[c] => adp[c] + co2dam[c] + (4) h[c]
+    + pi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: CODH2
+  name: carbon monoxide dehydrogenase acetyl CoA synthase 2
+  genes: ( Mbar_A0204 or Mbar_A0434 ) and ( Mbar_A0203 or Mbar_A0433 ) and ( Mbar_A0202
+    or Mbar_A0432 ) and ( Mbar_A0200 or Mbar_A0430 ) and ( Mbar_A0199 or Mbar_A0429
+    ) and ( Mbar_A3525 or Mbar_A3717 ) and Mbar_A3526
+  equation: co[c] + (2) fdox[c] + h2o[c] => co2[c] + (2) fdred[c] + (2) h[c]
+  subsystem: Methanogenesis
+- id: CODHr
+  name: carbon monoxide dehydrogenase acetyl CoA synthase
+  genes: ( Mbar_A0204 or Mbar_A0434 ) and ( Mbar_A0203 or Mbar_A0433 ) and ( Mbar_A0202
+    or Mbar_A0432 ) and ( Mbar_A0200 or Mbar_A0430 ) and ( Mbar_A0199 or Mbar_A0429
+    ) and ( Mbar_A3525 or Mbar_A3717 ) and Mbar_A3526
+  equation: accoa[c] + (2) fdox[c] + h2o[c] + h4spt[c] <=> co2[c] + coa[c] + (2)
+    fdred[c] + (2) h[c] + mh4spt[c]
+  subsystem: Methanogenesis
+- id: COMS
+  name: coenzyme M synthase
+  equation: h2o[c] + sec[c] => com[c] + nh4[c] + pyr[c]
+  subsystem: Coenzyme M Biosynthesis
+- id: COt
+  name: CO transporter via diffusion
+  equation: co[c] <=> co[e]
+  subsystem: Transport
+- id: CPC2MT
+  name: precorrin 2 C20 methyltransferase
+  genes: Mbar_A0626
+  equation: amet[c] + copre2[c] => ahcys[c] + copre3[c] + h[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: CPC3MT
+  name: precorrin 3B C17 methyltransferase
+  genes: Mbar_A0629
+  equation: amet[c] + copre3[c] => ahcys[c] + copre4[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: CPC4MT
+  name: precorrin 4 C11 methyltransferase
+  genes: Mbar_A0627
+  equation: amet[c] + copre4[c] => ahcys[c] + copre5[c] + h[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: CPC5MT
+  name: precorrin 5 C1 methyltransferase
+  genes: Mbar_A1493
+  equation: amet[c] + copre5[c] + h2o[c] => acald[c] + ahcys[c] + copre6[c] + (2)
+    h[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: CPC6MT
+  name: 'precorrin 6Y C5 15 methyltransferase decarboxylating '
+  genes: Mbar_A0625 or Mbar_A1492
+  equation: (2) amet[c] + codhpre6[c] => (2) ahcys[c] + co2[c] + copre8[c] + (2)
+    h[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: CPC6R
+  name: precorrin 6A reductase
+  equation: copre6[c] + (2) h[c] + nadph[c] => codhpre6[c] + nadp[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: CPC8MM
+  name: precorrin 8X methylmutase
+  genes: Mbar_A0630
+  equation: copre8[c] + h[c] <=> cobya[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: CS
+  name: citrate synthase
+  genes: Mbar_A0715
+  equation: accoa[c] + h2o[c] + oaa[c] => cit[c] + coa[c] + h[c]
+  subsystem: Citric Acid Cycle
+- id: CSND
+  name: Cytosine deaminase
+  genes: Mbar_A3003
+  equation: csn[c] + h2o[c] + h[c] => nh4[c] + ura[c]
+  subsystem: Nucleotide Metabolism
+- id: CTPRIBFLVTX
+  name: CTP:riboflavin 5'-phosphotransferase
+  genes: Mbar_A1523
+  equation: ctp[c] + ribflv[c] <=> cdp[c] + fmn[c] + h[c]
+  subsystem: Central Metabolism
+- id: CTPS1
+  name: 'CTP synthase NH3 '
+  genes: Mbar_A3518
+  equation: atp[c] + nh4[c] + utp[c] <=> adp[c] + ctp[c] + (2) h[c] + pi[c]
+  subsystem: Nucleotide Metabolism
+- id: CTPS2
+  name: 'CTP synthase glutamine '
+  genes: Mbar_A3518
+  equation: atp[c] + gln-L[c] + h2o[c] + utp[c] => adp[c] + ctp[c] + glu-L[c] + (2)
+    h[c] + pi[c]
+  subsystem: Nucleotide Metabolism
+- id: CYRDAAT
+  name: cob I yrinic acid a c diamide adenosyltransferase
+  genes: Mbar_A1365
+  equation: atp[c] + co1dam[c] + h[c] => adcobdam[c] + pppi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: CYRDAR
+  name: cob II yrinic acid a c diamide reductase
+  equation: (2) co2dam[c] + nadh[c] => (2) co1dam[c] + h[c] + nad[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: CYRDAS
+  name: 'Cob II yrinate a c diamide synthase glutamine hydrolysing '
+  genes: Mbar_A0348 or Mbar_A1187 or Mbar_A2158
+  equation: (2) atp[c] + cobya[c] + (2) gln-L[c] + h2o[c] => (2) adp[c] + co2dam[c]
+    + (2) glu-L[c] + h[c] + ppi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: CYSDS
+  name: Cysteine Desulfhydrase
+  genes: Mbar_A3023
+  equation: cys-L[c] + h2o[c] => h2s[c] + nh4[c] + pyr[c]
+  subsystem: Cysteine Metabolism
+- id: CYSSr
+  name: 'cysteine synthase reversible '
+  genes: Mbar_A2422
+  equation: acser[c] + h2s[c] <=> ac[c] + cys-L[c] + h[c]
+  subsystem: Cysteine Metabolism
+- id: CYSTRS
+  name: Cysteinyl tRNA synthetase
+  genes: Mbar_A1653
+  equation: atp[c] + cys-L[c] + trnacys[c] => amp[c] + cystrna[c] + ppi[c]
+  subsystem: Cysteine Metabolism
+- id: CYSt2r
+  name: L cysteine reversible transport via proton symport
+  equation: cys-L[e] + h[e] <=> cys-L[c] + h[c]
+  subsystem: Transport
+- id: CYTDK1
+  name: cytidine kinase (ATP)
+  genes: Mbar_A2903
+  equation: atp[c] + cytd[c] => adp[c] + cmp[c] + h[c]
+  subsystem: Nucleotide Metabolism
+- id: CYTK1
+  name: 'cytidylate kinase CMP '
+  genes: Mbar_A0083
+  equation: atp[c] + cmp[c] <=> adp[c] + cdp[c]
+  subsystem: Nucleotide Metabolism
+- id: CYTK2
+  name: 'cytidylate kinase dCMP '
+  genes: Mbar_A0083
+  equation: atp[c] + dcmp[c] <=> adp[c] + dcdp[c]
+  subsystem: Nucleotide Metabolism
+- id: CYTK5
+  name: cytidylate kinase (dCMP)
+  genes: Mbar_A0083
+  equation: ctp[c] + dcmp[c] <=> cdp[c] + dcdp[c]
+  subsystem: Nucleotide Metabolism
+- id: Clt
+  name: chlorideion transport out via diffusion
+  genes: Mbar_A1823 or Mbar_A2221
+  equation: cl[e] <=> cl[c]
+  subsystem: Transport
+- id: Coabc
+  name: Cobalt transport via ABC system
+  genes: ( Mbar_A0584 or Mbar_A0585 or Mbar_A1219 or Mbar_A2149 ) and ( Mbar_A0583
+    or Mbar_A1216 or Mbar_A1218 or Mbar_A2145 or Mbar_A2148 ) and ( Mbar_A0565 or
+    Mbar_A1217 or Mbar_A2146 )
+  equation: atp[c] + cobalt2[e] + h2o[c] => adp[c] + cobalt2[c] + h[c] + pi[c]
+  subsystem: Transport
+- id: Cuabc
+  name: Copper transport via ABC system
+  genes: Mbar_A0708
+  equation: atp[c] + cu2[e] + h2o[c] => adp[c] + cu2[c] + h[c] + pi[c]
+  subsystem: Transport
+- id: Cut1
+  name: Copper export via ATPase
+  genes: Mbar_A0818 or Mbar_A1889 )
+  equation: atp[c] + cu2[c] + h2o[c] => adp[c] + cu2[e] + h[c] + pi[c]
+  subsystem: Transport
+- id: DADK
+  name: deoxyadenylate kinase
+  genes: Mbar_A0086
+  equation: atp[c] + damp[c] <=> adp[c] + dadp[c]
+  subsystem: Nucleotide Metabolism
+- id: DAPDC
+  name: diaminopimelate decarboxylase
+  genes: Mbar_A1641
+  equation: 26dap-M[c] + h[c] => co2[c] + lys-L[c]
+  subsystem: Threonine and Lysine Metabolism
+- id: DAPE
+  name: diaminopimelate epimerase
+  equation: 26dap-LL[c] <=> 26dap-M[c]
+  subsystem: Threonine and Lysine Metabolism
+- id: DAPNH4T
+  name: LL-diaminopimelate aminotransferase
+  genes: Mbar_A2605
+  equation: glu-L[c] + h2o[c] + thdp[c] => akg[c] + 26dap-LL[c]
+  subsystem: Threonine and Lysine Metabolism
+- id: DATPHs
+  name: dATP amine hydrolysis (spontaneous)
+  equation: datp[c] + h2o[c] + h[c] => nh4[c] + ditp[c]
+  subsystem: Nucleotide Metabolism
+- id: DB4PS
+  name: 3 4 Dihydroxy 2 butanone 4 phosphate synthase
+  genes: Mbar_A1524
+  equation: ru5p-D[c] => db4p[c] + for[c] + h[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: DBTSr
+  name: dethiobiotin synthase
+  equation: atp[c] + co2[c] + dann[c] <=> adp[c] + dtbt[c] + (3) h[c] + pi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: DCMPDA
+  name: dCMP deaminase
+  genes: Mbar_A0853
+  equation: dcmp[c] + h2o[c] + h[c] <=> dump[c] + nh4[c]
+  subsystem: Nucleotide Metabolism
+- id: DCTPD
+  name: dCTP deaminase
+  genes: ( Mbar_A0489 or Mbar_A1048 ) and Mbar_A0752
+  equation: dctp[c] + h2o[c] + h[c] => dutp[c] + nh4[c]
+  subsystem: Nucleotide Metabolism
+- id: DGGGPS
+  name: digeranylgeranylglyceryl phosphate synthase
+  genes: Mbar_A1863
+  equation: ggdp[c] + gggp[c] => dgggp[c] + ppi[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: DGGGPS2
+  name: 2 O 3 hydroxy geranyl 3 O geranyl sn glycerol synthase
+  genes: Mbar_A1863
+  equation: 3hggdp[c] + gggp[c] => 3hdgggp[c] + ppi[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: DGGPGP
+  name: digeranyl sn glycerol 1 phospho 3 sn glycerol phosphatase
+  genes: Mbar_A3582
+  equation: dggpgp[c] + h2o[c] => dggpg[c] + pi[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: DGGPGP2
+  name: 'digeranyl sn glycerol 1 phospho 3 sn glycerol phosphatase hydroxy '
+  genes: Mbar_A3582
+  equation: 3hdggpgp[c] + h2o[c] => 3hdggpg[c] + pi[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: DGLYOX
+  name: D-Glyceraldehyde:NAD+ oxidoreductase
+  genes: Mbar_A2387
+  equation: glyald[c] + h2o[c] + nad[c] => glyc-R[c] + (2) h[c] + nadh[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: DHAD1
+  name: 'dihydroxy acid dehydratase 2 3 dihydroxy 3 methylbutanoate '
+  genes: Mbar_A2069 or Mbar_A2284
+  equation: 23dhmb[c] => 3mob[c] + h2o[c]
+  subsystem: Valine Leucine and Isoleucine Metabolism
+- id: DHAD2
+  name: 'Dihydroxy acid dehydratase 2 3 dihydroxy 3 methylpentanoate '
+  genes: Mbar_A2069 or Mbar_A2284
+  equation: 23dhmp[c] => 3mop[c] + h2o[c]
+  subsystem: Valine Leucine and Isoleucine Metabolism
+- id: DHDPRx
+  name: dihydrodipicolinate reductase NADH
+  genes: Mbar_A1151
+  equation: 23dhdp[c] + h[c] + nadh[c] => nad[c] + thdp[c]
+  subsystem: Threonine and Lysine Metabolism
+- id: DHDPRy
+  name: 'dihydrodipicolinate reductase NADPH '
+  genes: Mbar_A1151
+  equation: 23dhdp[c] + h[c] + nadph[c] => nadp[c] + thdp[c]
+  subsystem: Threonine and Lysine Metabolism
+- id: DHDPS
+  name: dihydrodipicolinate synthase
+  genes: Mbar_A1150
+  equation: aspsa[c] + pyr[c] <=> 23dhdp[c] + (2) h2o[c]
+  subsystem: Threonine and Lysine Metabolism
+- id: DHFR
+  name: dihydrofolate reductase
+  equation: dhf[c] + h[c] + nadph[c] <=> nadp[c] + thf[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: DHFS
+  name: dihydrofolate synthase
+  equation: atp[c] + dhpt[c] + glu-L[c] => adp[c] + dhf[c] + h[c] + pi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: DHNPA2
+  name: dihydroneopterin aldolase
+  equation: dhnpt[c] => 6hmhpt[c] + gcald[c] + h[c]
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: DHORD7
+  name: 'dihydroorotic acid dehydrogenase f420 '
+  genes: Mbar_A1466 and Mbar_A1467
+  equation: dhor-S[c] + f420-2[c] + h[c] <=> f420-2h2[c] + orot[c]
+  subsystem: Nucleotide Metabolism
+- id: DHORTS
+  name: dihydroorotase
+  genes: Mbar_A1783
+  equation: dhor-S[c] + h2o[c] <=> cbasp[c] + h[c]
+  subsystem: Nucleotide Metabolism
+- id: DHPCPH
+  name: 7 8 dihydronepterin 2 3 cyclicphosphate hydrolase
+  equation: dhp23cp[c] + h2o[c] => dhpmp[c] + h[c]
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: DHPM1
+  name: 'dihydropyrimidinase 5 6 dihydrouracil '
+  genes: Mbar_A0141 or Mbar_A1067 or Mbar_A1068 or Mbar_A2490 or Mbar_A2491
+  equation: 56dura[c] + h2o[c] => cala[c] + h[c]
+  subsystem: Other
+- id: DHPM2
+  name: 'dihydropyrimidinase dihydrothymine '
+  genes: Mbar_A0141 or Mbar_A1067 or Mbar_A1068 or Mbar_A2490 or Mbar_A2491
+  equation: 56dthm[c] + h2o[c] => 3uib[c] + h[c]
+  subsystem: Other
+- id: DHPS2
+  name: dihydropteroate synthase
+  genes: Mbar_A2459 or Mbar_A2314
+  equation: 4abz[c] + 6hmhptpp[c] + h[c] => dhpt[c] + ppi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: DHPS3
+  name: '7 8 dihydropteroate synthase methanopterin '
+  genes: Mbar_A1077 or Mbar_A2125
+  equation: 6hmhptpp[c] + Brfap[c] + h[c] => dhrfap[c] + ppi[c]
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: DHQD
+  name: 3 dehydroquinate dehydratase
+  genes: Mbar_A0922
+  equation: 3dhq[c] <=> 3dhsk[c] + h2o[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: DHQS2
+  name: 3 dehydroquinate synthase
+  genes: Mbar_A0921
+  equation: dohdu[c] => 3dhq[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: DIPS
+  name: diphthine synthase
+  genes: Mbar_A2900
+  equation: amet[c] + caphis[c] => ahcys[c] + cmaphis[c] + h[c]
+  subsystem: Amino Acid Metabolism
+- id: DKFPASPL
+  name: 6-deoxy-5-ketomannitol 1-phosphate:L-aspartate semialdehyde ligase
+  genes: Mbar_A0753 or Mbar_A0920
+  equation: aspsa[c] + dkfp[c] + h[c] + nadh[c] => dohau[c] + g3p[c] + nad[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: DKFPS2
+  name: 6 deoxy 5 ketofructose 1 phosphate synthase 2 (from fdp)
+  genes: Mbar_A0176 or Mbar_A2224
+  equation: fdp[c] + mthgxl[c] <=> dkfp[c] + g3p[c]
+  subsystem: Central Metabolism
+- id: DKFPS3
+  name: 6 deoxy 5 ketofructose 1 phosphate synthase 3 (from f1p)
+  genes: Mbar_A0176 or Mbar_A2224
+  equation: f1p[c] + mthgxl[c] <=> dkfp[c] + glyald[c]
+  subsystem: Central Metabolism
+- id: DMAMT
+  name: Dimethylamine methyltransferase
+  genes: ( Mbar_A0841 or Mbar_A1688 ) and ( Mbar_A1506 or Mbar_A3605 ) and ( Mbar_A1501
+    or Mbar_A3604 )
+  equation: dma[c] + h[c] + 5hbc_red[c] => mma[c] + m5hbc[c]
+  subsystem: Methanogenesis
+- id: DMATT
+  name: dimethylallyltranstransferase
+  genes: Mbar_A1417
+  equation: dmpp[c] + ipdp[c] => grdp[c] + ppi[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: DMATT2
+  name: 'dimethylallyltranstransferase 3 hydroxy '
+  genes: Mbar_A1417
+  equation: ipdp[c] + m3hdp[c] => 3hgrdp[c] + ppi[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: DMAt
+  name: Dimethylamine symport
+  genes: Mbar_A0847 or Mbar_A0848
+  equation: dma[e] + h[e] <=> dma[c] + h[c]
+  subsystem: Transport
+- id: DMHDRFS
+  name: 7 8 didemethyl 8 hydroxy 5 deazariboflavin synthetase
+  genes: Mbar_A3415 and ( Mbar_A3416 or Mbar_A3417 )
+  equation: 34hpp[c] + 4r5au[c] + h2o[c] + (2) nadp[c] => ddhrb[c] + (3) h[c] + (2)
+    nadph[c] + nh4[c] + oxa[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: DMSt
+  name: Dimethyl sulfide Transport
+  equation: dms[e] <=> dms[c]
+  subsystem: Transport
+- id: DNADDP
+  name: Deamino-NAD+ nucleotidohydrolase
+  genes: Mbar_A2829
+  equation: dnad[c] + h2o[c] => amp[c] + (2) h[c] + nicrnt[c]
+  subsystem: Nucleotide Metabolism
+- id: DNMPPA
+  name: Dihydroneopterin monophosphate dephosphorylase
+  equation: dhpmp[c] + h2o[c] => dhnpt[c] + pi[c]
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: DOHDUS
+  name: 3 7 dideoxy D threo hepto 2 6 diulosonate synthase
+  genes: Mbar_A0921
+  equation: dohau[c] + h2o[c] + nad[c] => dohdu[c] + h[c] + nadh[c] + nh4[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: DPCOAK
+  name: dephospho CoA kinase
+  genes: Mbar_A0975
+  equation: atp[c] + dpcoa[c] => adp[c] + coa[c] + h[c]
+  subsystem: Coenzyme A Biosynthesis
+- id: DPR
+  name: 2 dehydropantoate 2 reductase
+  equation: 2dhp[c] + h[c] + nadph[c] => nadp[c] + pant-R[c]
+  subsystem: Coenzyme A Biosynthesis
+- id: DRBK
+  name: Deoxyribokinase
+  genes: Mbar_A2903
+  equation: atp[c] + drib[c] => adp[c] + h[c] + 2dr5p[c]
+  subsystem: Other
+- id: DROPPRx
+  name: 2 5 diamino 6 ribosylamino 4 3H pyrimidinone 5 phosphate reductase
+  genes: ( Mbar_A0489 or Mbar_A1048 ) and Mbar_A0752
+  equation: 25dhpp[c] + h[c] + nadh[c] => 25dthpp[c] + nad[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: DROPPRy
+  name: '2 5 diamino 6 ribosylamino 4 3H pyrimidinone 5 phosphate reductase nadph '
+  genes: ( Mbar_A0489 or Mbar_A1048 ) and Mbar_A0752
+  equation: 25dhpp[c] + h[c] + nadph[c] => 25dthpp[c] + nadp[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: DRTPPD
+  name: 2 5 diamino 6 ribitylamino 4 3H pyrimidinone 5 phosphate deaminase
+  genes: ( Mbar_A0489 or Mbar_A1048 ) and Mbar_A0752
+  equation: 25dthpp[c] + h2o[c] + h[c] => 5aprbu[c] + nh4[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: DTMPK
+  name: dTMP kinase
+  genes: Mbar_A1098
+  equation: atp[c] + dtmp[c] <=> adp[c] + dtdp[c]
+  subsystem: Nucleotide Metabolism
+- id: DURIPP
+  name: deoxyuridine phosphorylase
+  genes: Mbar_A3188
+  equation: duri[c] + pi[c] <=> 2dr1p[c] + ura[c]
+  subsystem: Nucleotide Metabolism
+- id: DUTPDP
+  name: dUTP nucleotidohydrolase
+  genes: ( Mbar_A0489 or Mbar_A1048 ) and Mbar_A0752
+  equation: dutp[c] + h2o[c] => dump[c] + h[c] + ppi[c]
+  subsystem: Nucleotide Metabolism
+- id: ECHH_20
+  name: Ech Hydrogenase
+  genes: Mbar_A0152 and Mbar_A0151 and ( Mbar_A0150 or Mbar_A2455 ) and Mbar_A0149
+    and Mbar_A0148 and Mbar_A0147
+  equation: (2) fdred[c] + (4) h[c] <=> (2) fdox[c] + h2[c] + (2) h[e]
+  subsystem: Methanogenesis
+- id: ENO
+  name: enolase
+  genes: Mbar_A2850
+  equation: 2pg[c] <=> h2o[c] + pep[c]
+  subsystem: GlycolysisGluconeogenesis
+- id: ETHAt6
+  name: ethanolamine transport inout via proton symport
+  genes: Mbar_A0847 or Mbar_A0848
+  equation: etha[e] + h[e] <=> etha[c] + h[c]
+  subsystem: Transport
+- id: ETHYt
+  name: Ethylene transport
+  equation: ethy[e] <=> ethy[c]
+  subsystem: Transport
+- id: ETHt
+  name: Ethane transport
+  equation: eth[e] <=> eth[c]
+  subsystem: Transport
+- id: F430R
+  name: F430 reduction
+  equation: fdred[c] + f430_ox[c] => f430[c] + fdox[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: F430S1
+  name: 'coenzyme F430 precursor synthase 1 aminase '
+  genes: Mbar_A1776
+  equation: (2) atp[c] + dscl[c] + (2) gln-L[c] + (2) h2o[c] + ni2[c] => (2) adp[c]
+    + f430p1[c] + (2) glu-L[c] + (4) h[c] + (2) pi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: F430S2
+  name: 'coenzyme F430 precursor synthase 2 reduction '
+  equation: f430p1[c] + h[c] + nadh[c] => f430p2[c] + nad[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: F430S3
+  name: 'coenzyme F430 precursor synthase 3 reduction '
+  equation: f430p2[c] + h[c] + nadh[c] => f430p3[c] + nad[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: F430S4
+  name: 'coenzyme F430 precursor synthase 4 cyclization '
+  equation: f430p3[c] => sf430a[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: F430S5
+  name: 'coenzyme F430 precursor synthase 5 cyclization '
+  equation: h[c] + sf430a[c] => f430[c] + h2o[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: F4D
+  name: F420 Deydrogenase
+  genes: Mbar_A3412 and Mbar_A3411 and Mbar_A3410 and Mbar_A3409 and Mbar_A0255 and
+    Mbar_A3408 and Mbar_A3407 and ( Mbar_A3406 and Mbar_A3405 ) and Mbar_A3404 and
+    Mbar_A3403 and Mbar_A3402 and Mbar_A3401 and Mbar_A3400
+  equation: f420-2h2[c] + h[c] + mphen[c] => f420-2[c] + (2) h[e] + mphenh2[c]
+  subsystem: Methanogenesis
+- id: F4H2O
+  name: F420H2 oxidase
+  genes: Mbar_A2179 or Mbar_A3353
+  equation: (2) f420-2h2[c] + o2[c] => (2) f420-2[c] + (2) h2o[c] + (2) h[c]
+  subsystem: Other
+- id: F4MTSPD
+  name: coenzyme F420 dependent N 5 N 10 methenyltetrahydrosarcinapterin dehydrogenase
+  genes: Mbar_A1095
+  equation: f420-2h2[c] + menylh4spt[c] <=> f420-2[c] + (2) h[c] + mleneh4spt[c]
+  subsystem: Methanogenesis
+- id: F4MTSPR
+  name: coenzyme F420 dependent N 5 N 10 methenyltetrahydrosarcinapterin reductase
+  genes: Mbar_A0254
+  equation: f420-2h2[c] + mleneh4spt[c] <=> f420-2[c] + h[c] + mh4spt[c]
+  subsystem: Methanogenesis
+- id: F4NH
+  name: F420 nonreducing Hydrogenase
+  genes: ( Mbar_A1839 or Mbar_A1845 ) and ( Mbar_A1841 or Mbar_A1847 ) and ( Mbar_A1840
+    or Mbar_A1846 )
+  equation: h2[e] + (2) h[c] + mphen[c] <=> (2) h[e] + mphenh2[c]
+  subsystem: Methanogenesis
+- id: F4RH
+  name: F420 Reducing Hydrogenase
+  genes: Mbar_A0452 and Mbar_A0449 and Mbar_A0451 and Mbar_A0450
+  equation: f420-2h2[c] <=> f420-2[c] + h2[c] + h[c]
+  subsystem: Methanogenesis
+- id: FAE
+  name: N5,N10-methylene-5,6,7,8-tetrahydromethanopterin synthesis (formaldehyde)
+  genes: Mbar_A2060
+  equation: fald[c] + h4spt[c] => h2o[c] + mleneh4spt[c]
+  subsystem: Methanogenesis
+- id: FAPH
+  name: 2-amino-5-formylamino-6-ribosylamino-4-(3H)-pyrimidinone 5'-monophosphate
+    hydrolase
+  equation: h2o[c] + fapy[c] => 25dhpp[c] + for[c] + h[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: FBA
+  name: fructose bisphosphate aldolase
+  genes: Mbar_A0753 or Mbar_A0920
+  equation: fdp[c] <=> dhap[c] + g3p[c]
+  subsystem: GlycolysisGluconeogenesis
+- id: FBA2
+  name: D Fructose 1 phosphate D glyceraldehyde 3 phosphate lyase
+  genes: Mbar_A0753 or Mbar_A0920
+  equation: f1p[c] <=> dhap[c] + glyald[c]
+  subsystem: Central Metabolism
+- id: FBP
+  name: fructose bisphosphatase
+  genes: Mbar_A1836
+  equation: fdp[c] + h2o[c] => f6p[c] + pi[c]
+  subsystem: GlycolysisGluconeogenesis
+- id: FBP2
+  name: Fructose 1 phosphate synthase
+  equation: fdp[c] + h2o[c] => f1p[c] + pi[c]
+  subsystem: Central Metabolism
+- id: FCLPA
+  name: L fuculose 1 phosphate aldolase
+  genes: Mbar_A1249
+  equation: fc1p[c] <=> dhap[c] + lald-L[c]
+  subsystem: Central Metabolism
+- id: FE2abc
+  name: iron II transport via ABC system
+  genes: ( Mbar_A0297 or Mbar_A0509 or Mbar_A1172 ) and ( Mbar_A0510 or Mbar_A1173
+    ) and ( Mbar_A0513 or Mbar_A0998 or Mbar_A1174 or Mbar_A1286 )
+  equation: atp[c] + fe2[e] + h2o[c] => adp[c] + fe2[c] + h[c] + pi[c]
+  subsystem: Transport
+- id: FE3abc
+  name: iron III transport via ABC system
+  genes: ( Mbar_A2262 or Mbar_A2394 or Mbar_A2397 ) and ( Mbar_A2261 or Mbar_A2393
+    or Mbar_A2398 ) and ( Mbar_A2263 or Mbar_A2264 or Mbar_A2271 or Mbar_A2395 or
+    Mbar_A2396 )
+  equation: atp[c] + fe3[e] + h2o[c] => adp[c] + fe3[c] + h[c] + pi[c]
+  subsystem: Transport
+- id: FEDCabc
+  name: iron III dicitrate transport via ABC system
+  genes: ( Mbar_A1868 or Mbar_A2735 ) and ( Mbar_A1869 or Mbar_A2733 ) and ( Mbar_A1870
+    or Mbar_A2734 or Mbar_A0466 ) and ( Mbar_A1871 or Mbar_A0467 ) and ( Mbar_A1872
+    or Mbar_A0465 )
+  equation: atp[c] + (2) cit[e] + fe3[e] + h2o[c] => adp[c] + (2) cit[c] + fe3[c]
+    + h[c] + pi[c]
+  subsystem: Transport
+- id: FMETTRS
+  name: Methionyl tRNA formyltransferase
+  genes: Mbar_A0915
+  equation: 10fthf[c] + mettrna[c] => fmettrna[c] + h[c] + thf[c]
+  subsystem: Methionine Metabolism
+- id: FMFD_b_
+  name: 'formylmethanofuran dehydrogenase b '
+  genes: Mbar_A1287 and Mbar_A1288 and Mbar_A1289 and Mbar_A1290 and Mbar_A1291 and
+    Mbar_A1292 and Mbar_A2923 and ( Mbar_A2922 or Mbar_A1763 or Mbar_A1560 ) and
+    Mbar_A1762 and Mbar_A2588 and Mbar_A2921 and Mbar_A0795
+  equation: co2[c] + (2) fdred[c] + h[c] + mfr(b)[c] <=> (2) fdox[c] + formmfr(b)[c]
+    + h2o[c]
+  subsystem: Methanogenesis
+- id: FMFTSPFT_b_
+  name: 'formylmethanofuranH4SPT N formyltransferase b '
+  genes: Mbar_A0980
+  equation: formmfr(b)[c] + h4spt[c] + h[c] <=> formh4spt[c] + mfr(b)[c]
+  subsystem: Methanogenesis
+- id: FMNAT
+  name: Flavin adenine dinucleotide synthase
+  genes: Mbar_A2084
+  equation: atp[c] + fmn[c] + h[c] => ppi[c] + fad[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: FMNAT_CTP_
+  name: Flavin cytosine dinucleotide synthase
+  genes: Mbar_A2084
+  equation: ctp[c] + fmn[c] + h[c] => ppi[c] + fcd[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: FMNAT_GTP_
+  name: Flavin guanosine dinucleotide synthase
+  genes: Mbar_A2084
+  equation: fmn[c] + gtp[c] + h[c] => ppi[c] + fgd[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: FOLR2
+  name: folate reductase
+  equation: fol[c] + (2) h[c] + nadph[c] => dhf[c] + nadp[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: FOLt
+  name: folate transport via proton simport
+  equation: fol[e] + h[e] <=> fol[c] + h[c]
+  subsystem: Transport
+- id: FORt
+  name: Formate transporter
+  equation: for[c] <=> for[e]
+  subsystem: Transport
+- id: FRTT
+  name: farnesyltranstransferase
+  genes: Mbar_A0263 or Mbar_A1074 or Mbar_A2346
+  equation: frdp[c] + ipdp[c] => ggdp[c] + ppi[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: FRTT2
+  name: 'farnesyltranstransferase 3 hyroxy '
+  genes: Mbar_A0263 or Mbar_A1074 or Mbar_A2346
+  equation: 3hfrdp[c] + ipdp[c] => 3hggdp[c] + ppi[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: FUM
+  name: fumarase
+  genes: Mbar_A0425 or ( Mbar_A2417 and Mbar_A2418 )
+  equation: fum[c] + h2o[c] <=> mal-L[c]
+  subsystem: Citric Acid Cycle
+- id: G1PACT
+  name: glucosamine 1 phosphate N acetyltransferase
+  genes: Mbar_A2020 or Mbar_A2023
+  equation: accoa[c] + gam1p[c] => acgam1p[c] + coa[c] + h[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: G1PDH
+  name: 'glycerol 1 phosphate dehydrogenase NAD '
+  genes: Mbar_A0291
+  equation: dhap[c] + h[c] + nadh[c] <=> glyc1p[c] + nad[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: G1PTT
+  name: glucose 1 phosphate thymidylyltransferase
+  genes: Mbar_A0233 or Mbar_A2023
+  equation: dttp[c] + g1p[c] + h[c] => dtdpglu[c] + ppi[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: G1SATi
+  name: glutamate 1 semialdehyde aminotransferase
+  genes: Mbar_A1464
+  equation: glu1sa[c] => 5aop[c] + h[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: G5SADr
+  name: L glutamate 5 semialdehyde dehydratase reversible
+  equation: glu5sa[c] <=> 1pyr5c[c] + h2o[c] + h[c]
+  subsystem: Proline Biosynthesis
+- id: G5SD2
+  name: glutamate 5 semialdehyde dehydrogenase
+  genes: Mbar_A0482
+  equation: glu5p[c] + h[c] + nadh[c] => glu5sa[c] + nad[c] + pi[c]
+  subsystem: Proline Biosynthesis
+- id: GALT
+  name: galactose 1 phosphate uridylyltransferase
+  genes: Mbar_A0295
+  equation: gal1p[c] + h[c] + utp[c] <=> ppi[c] + udpgal[c]
+  subsystem: Central Metabolism
+- id: GALTNS
+  name: galactan synthase UDPGla
+  equation: udpgal[c] => h[c] + udp[c] + galactan[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: GALUi
+  name: 'UTP glucose 1 phosphate uridylyltransferase irreversible '
+  genes: Mbar_A1121 or Mbar_A2905
+  equation: g1p[c] + h[c] + utp[c] => ppi[c] + udpg[c]
+  subsystem: Central Metabolism
+- id: GAPD
+  name: glyceraldehyde 3 phosphate dehydrogenase
+  genes: Mbar_A2189 or Mbar_A3564
+  equation: g3p[c] + nad[c] + pi[c] <=> 13dpg[c] + h[c] + nadh[c]
+  subsystem: GlycolysisGluconeogenesis
+- id: GAPD(nadp)
+  name: 'glyceraldehyde 3 phosphate dehydrogenase NAD P   phosphorylating '
+  genes: Mbar_A2189 or Mbar_A3564
+  equation: g3p[c] + nadp[c] + pi[c] <=> 13dpg[c] + h[c] + nadph[c]
+  subsystem: GlycolysisGluconeogenesis
+- id: GARFT
+  name: phosphoribosylglycinamide formyltransferase
+  genes: Mbar_A1295 or Mbar_A2317
+  equation: 10fthf[c] + gar[c] <=> fgam[c] + h[c] + thf[c]
+  subsystem: Nucleotide Metabolism
+- id: GCALDDr
+  name: Glycolaldehyde dehydrogenase
+  genes: Mbar_A2387
+  equation: gcald[c] + h2o[c] + nad[c] <=> glyclt[c] + (2) h[c] + nadh[c]
+  subsystem: Central Metabolism
+- id: GCALDt
+  name: Glycoaldehydye reversible transport
+  equation: gcald[e] <=> gcald[c]
+  subsystem: Transport
+- id: GCC
+  name: dihydrolipoylprotein:NAD+ oxidoreductase
+  genes: Mbar_A2696
+  equation: nad[c] + dhlpro[c] => h[c] + nadh[c] + lpro[c]
+  subsystem: Other
+- id: GDMANE
+  name: GDP 4 dehydro 6 deoxy D mannose epimerase
+  genes: Mbar_A0037 or Mbar_A0035
+  equation: gdpddman[c] => gdpofuc[c]
+  subsystem: Central Metabolism
+- id: GF4GL_0
+  name: gamma F420 0gamma L glutamate ligase
+  genes: Mbar_A0855 or Mbar_A2311
+  equation: f420-0[c] + glu-L[c] + gtp[c] => f420-1[c] + gdp[c] + h[c] + pi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: GF4GL_1
+  name: gamma F420 1gamma L glutamate ligase
+  genes: Mbar_A0855 or Mbar_A2311
+  equation: f420-1[c] + glu-L[c] + gtp[c] => f420-2[c] + gdp[c] + h[c] + pi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: GF4GL_2
+  name: gamma F420 2gamma L glutamate ligase
+  genes: Mbar_A0855 or Mbar_A2311
+  equation: f420-2[c] + glu-L[c] + gtp[c] => f420-3[c] + gdp[c] + h[c] + pi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: GF4GL_3
+  name: gamma F420 3gamma L glutamate ligase
+  genes: Mbar_A0855 or Mbar_A2311
+  equation: f420-3[c] + glu-L[c] + gtp[c] => f420-4[c] + gdp[c] + h[c] + pi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: GF4GL_4
+  name: gamma F420 4gamma L glutamate ligase
+  genes: Mbar_A0855 or Mbar_A2311
+  equation: f420-4[c] + glu-L[c] + gtp[c] => f420-5[c] + gdp[c] + h[c] + pi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: GF4GL_5
+  name: gamma F420 5gamma L glutamate ligase
+  genes: Mbar_A0855 or Mbar_A2311
+  equation: f420-5[c] + glu-L[c] + gtp[c] => f420-6[c] + gdp[c] + h[c] + pi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: GF4GL_6
+  name: gamma F420 6gamma L glutamate ligase
+  genes: Mbar_A0855 or Mbar_A2311
+  equation: f420-6[c] + glu-L[c] + gtp[c] => f420-7[c] + gdp[c] + h[c] + pi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: GF6PTA
+  name: glutamine fructose 6 phosphate transaminase
+  genes: Mbar_A2022
+  equation: f6p[c] + gln-L[c] => gam6p[c] + glu-L[c]
+  subsystem: Glutamate metabolism
+- id: GGDPRED
+  name: geranylgeranyl reductase
+  genes: Mbar_A3422
+  equation: ggdp[c] + (3) h[c] + (3) nadph[c] => (3) nadp[c] + phydp[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: GGGPS
+  name: geranylgeranylglyceryl phosphate synthase
+  genes: Mbar_A0675
+  equation: ggdp[c] + glyc1p[c] => gggp[c] + ppi[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: GHMT2
+  name: glycine hydroxymethyltransferase
+  genes: Mbar_A2316
+  equation: ser-L[c] + thf[c] => gly[c] + h2o[c] + mlthf[c]
+  subsystem: Glycine and Serine Metabolism
+- id: GK1
+  name: 'guanylate kinase GMPATP '
+  equation: atp[c] + gmp[c] <=> adp[c] + gdp[c]
+  subsystem: Nucleotide Metabolism
+- id: GK__adp_
+  name: ADP specific glucokinase
+  genes: Mbar_A2004 or Mbar_A2005
+  equation: adp[c] + glc-D[c] => amp[c] + g6p[c] + h[c]
+  subsystem: GlycolysisGluconeogenesis
+- id: GLCGSD
+  name: glucan 1 4 alpha glucosidase
+  genes: Mbar_A0540 or Mbar_A1916
+  equation: glycogen[c] + h2o[c] => glc-D[c]
+  subsystem: Central Metabolism
+- id: GLCNt2r
+  name: D gluconate transport via proton symport reversible
+  equation: glcn[e] + h[e] <=> glcn[c] + h[c]
+  subsystem: Transport
+- id: GLCP
+  name: glycogen phosphorylase
+  genes: Mbar_A1369 or Mbar_A3653 or Mbar_A3640 or Mbar_A2997
+  equation: glycogen[c] + pi[c] => g1p[c]
+  subsystem: Central Metabolism
+- id: GLCS2
+  name: 'glycogen synthase UDPGlc '
+  genes: Mbar_A0296
+  equation: udpg[c] => glycogen[c] + h[c] + udp[c]
+  subsystem: Central Metabolism
+- id: GLNS
+  name: glutamine synthetase
+  genes: Mbar_A0666 or Mbar_A2180
+  equation: atp[c] + glu-L[c] + nh4[c] <=> adp[c] + gln-L[c] + h[c] + pi[c]
+  subsystem: Glutamine Metabolism
+- id: GLNTRAT
+  name: glutamyl tRNA Gln amidotransferase
+  genes: Mbar_A0882 and Mbar_A0883 and Mbar_A0884 and Mbar_A2389
+  equation: atp[c] + gln-L[c] + glutrna(gln)[c] + h2o[c] => adp[c] + glntrna[c] +
+    glu-L[c] + h[c] + pi[c]
+  subsystem: Glutamine Metabolism
+- id: GLU5K
+  name: glutamate 5 kinase
+  genes: Mbar_A0481
+  equation: atp[c] + glu-L[c] => adp[c] + glu5p[c]
+  subsystem: Amino Acid Metabolism
+- id: GLUDC
+  name: Glutamate Decarboxylase
+  genes: Mbar_A2744
+  equation: glu-L[c] + h[c] => 4abut[c] + co2[c]
+  subsystem: Glutamate metabolism
+- id: GLUDx
+  name: Glutamate Dehydrogenase (NAD)
+  genes: Mbar_A2938
+  equation: glu-L[c] + h2o[c] + nad[c] <=> akg[c] + h[c] + nadh[c] + nh4[c]
+  subsystem: Glutamate Metabolism
+- id: GLUDy
+  name: Glutamate Dehydrogenase (NADP)
+  genes: Mbar_A2938
+  equation: glu-L[c] + h2o[c] + nadp[c] <=> akg[c] + h[c] + nadph[c] + nh4[c]
+  subsystem: Glutamate Metabolism
+- id: GLUPRT
+  name: glutamine phosphoribosyldiphosphate amidotransferase
+  genes: Mbar_A3498
+  equation: gln-L[c] + h2o[c] + prpp[c] => glu-L[c] + ppi[c] + pram[c]
+  subsystem: Glutamate metabolism
+- id: GLUS_F420_
+  name: 'glutamate synthase F420 '
+  genes: Mbar_A0662 and Mbar_A0663 and Mbar_A0664 and Mbar_A0665
+  equation: akg[c] + f420-2h2[c] + gln-L[c] => f420-2[c] + (2) glu-L[c] + h[c]
+  subsystem: Glutamate Metabolism
+- id: GLUTRR
+  name: glutamyl tRNA reductase
+  genes: Mbar_A1462
+  equation: glutrna[c] + (2) h[c] + nadph[c] => glu1sa[c] + nadp[c] + trnaglu[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: GLUTRS
+  name: Glutamyl tRNA synthetase
+  genes: Mbar_A1470
+  equation: atp[c] + glu-L[c] + trnaglu[c] => amp[c] + glutrna[c] + ppi[c]
+  subsystem: Glutamine Metabolism
+- id: GLUTRS_Gln_
+  name: 'Glutamyl tRNA synthetase Gln '
+  genes: Mbar_A1470
+  equation: atp[c] + glu-L[c] + trnagln[c] => amp[c] + glutrna(gln)[c] + ppi[c]
+  subsystem: Glutamine Metabolism
+- id: GLUt2r
+  name: L glutamate transport via proton symport reversible
+  equation: glu-L[e] + h[e] <=> glu-L[c] + h[c]
+  subsystem: Transport
+- id: GLXO1
+  name: glyoxylate oxioreductase
+  genes: Mbar_A2387
+  equation: h2o[c] + nad[c] + glx[c] <=> (2) h[c] + nadh[c] + oxa[c]
+  subsystem: Other
+- id: GLYALDOX
+  name: glyceraldehyde ferredoxin oxidoreductase
+  genes: Mbar_A0696
+  equation: (2) fdox[c] + glyald[c] + h2o[c] => (2) fdred[c] + glyc-R[c] + (3) h[c]
+  subsystem: Central Metabolism
+- id: GLYALDt
+  name: Glyceraldehyde facilitated diffusion
+  genes: Mbar_A2042
+  equation: glyald[e] <=> glyald[c]
+  subsystem: Transport
+- id: GLYBabc
+  name: Glycine betaine transport via ABC system
+  genes: Mbar_A2376 and Mbar_A2377 and Mbar_A2378
+  equation: atp[c] + glyb[e] + h2o[c] => adp[c] + glyb[c] + h[c] + pi[c]
+  subsystem: Transport
+- id: GLYCDx
+  name: Glycerol dehydrogenase
+  genes: Mbar_A1432
+  equation: glyc[c] + nad[c] => dha[c] + h[c] + nadh[c]
+  subsystem: Central Metabolism
+- id: GLYCt
+  name: glycerol transport via channel
+  genes: Mbar_A2042
+  equation: glyc[c] <=> glyc[e]
+  subsystem: Transport
+- id: GLYTRS
+  name: Glycyl tRNA synthetase
+  genes: Mbar_A1209
+  equation: atp[c] + gly[c] + trnagly[c] => amp[c] + glytrna[c] + ppi[c]
+  subsystem: Glycine and Serine Metabolism
+- id: GLYt4r
+  name: glycine reversible transport via sodium symport
+  genes: Mbar_A2656
+  equation: gly[e] + na1[e] <=> gly[c] + na1[c]
+  subsystem: Transport
+- id: GMAND
+  name: GDP D mannose dehydratase
+  genes: Mbar_A0034
+  equation: gdpmann[c] => gdpddman[c] + h2o[c]
+  subsystem: Central Metabolism
+- id: GMPS
+  name: GMP synthase
+  genes: Mbar_A0919 and Mbar_A1178
+  equation: atp[c] + nh4[c] + xmp[c] => amp[c] + gmp[c] + (2) h[c] + ppi[c]
+  subsystem: Nucleotide Metabolism
+- id: GMPS2
+  name: GMP synthase
+  genes: Mbar_A0919 and Mbar_A1178
+  equation: atp[c] + gln-L[c] + h2o[c] + xmp[c] => amp[c] + glu-L[c] + gmp[c] + (2)
+    h[c] + ppi[c]
+  subsystem: Glutamine Metabolism
+- id: GOFUCR
+  name: GDP 4 oxo L fucose reductase
+  genes: Mbar_A0035 or Mbar_A0037
+  equation: gdpofuc[c] + h[c] + nadph[c] => gdpfuc[c] + nadp[c]
+  subsystem: Central Metabolism
+- id: GRTT
+  name: geranyltranstransferase
+  genes: Mbar_A0263 or Mbar_A1074 or Mbar_A1417 or Mbar_A2346
+  equation: grdp[c] + ipdp[c] => frdp[c] + ppi[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: GRTT2
+  name: 'geranyltranstransferase 3 hydroxy '
+  genes: Mbar_A0263 or Mbar_A1074 or Mbar_A1417 or Mbar_A2346
+  equation: 3hgrdp[c] + ipdp[c] => 3hfrdp[c] + ppi[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: GSNK
+  name: Guanosine phosphorylation
+  genes: Mbar_A2903
+  equation: atp[c] + gsn[c] => adp[c] + gmp[c] + h[c]
+  subsystem: Nucleotide Metabolism
+- id: GTHOr
+  name: glutathione oxidoreductase
+  genes: Mbar_A0570 or Mbar_A3561
+  equation: gthox[c] + h[c] + nadph[c] <=> (2) gthrd[c] + nadp[c]
+  subsystem: Glutamate metabolism
+- id: GTPCHIII
+  name: GTP cyclohydrolase III
+  equation: gtp[c] + (3) h2o[c] => (2) h[c] + (2) pi[c] + fapy[c]
+  subsystem: Nucleotide Metabolism
+- id: GTPCHIV
+  name: GTP cyclohydrolase IV
+  genes: Mbar_A1183
+  equation: gtp[c] + h2o[c] => dhp23cp[c] + for[c] + ppi[c]
+  subsystem: Nucleotide Metabolism
+- id: GTPHs
+  name: GTP amine hydrolysis (spontaneous)
+  equation: gtp[c] + h2o[c] + h[c] => nh4[c] + xtp[c]
+  subsystem: Nucleotide Metabolism
+- id: GUACYC
+  name: GTP diphosphate-lyase (cyclizing; 3',5'-cyclic-GMP-forming)
+  genes: Mbar_A0548
+  equation: gtp[c] => ppi[c] + 35cgmp[c]
+  subsystem: Nucleotide Metabolism
+- id: GUAD
+  name: guanine deaminase
+  genes: Mbar_A3252
+  equation: gua[c] + h2o[c] + h[c] => nh4[c] + xan[c]
+  subsystem: Nucleotide Metabolism
+- id: GUAPRT
+  name: guanine phosphoribosyltransferase
+  genes: Mbar_A0913 or Mbar_A3178
+  equation: gua[c] + prpp[c] => gmp[c] + ppi[c]
+  subsystem: Nucleotide Metabolism
+- id: H2MPTR
+  name: dihydromethanoterin reductase
+  equation: f420-2h2[c] + h2mpt[c] => f420-2[c] + h4mpt[c] + h[c]
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: H2Ot
+  name: H2O transport via diffusion
+  equation: h2o[e] <=> h2o[c]
+  subsystem: Transport
+- id: H2St
+  name: 'h2s transport diffusion '
+  equation: h2s[e] <=> h2s[c]
+  subsystem: Transport
+- id: H2td
+  name: hydrogen transport
+  equation: h2[c] <=> h2[e]
+  subsystem: Transport
+- id: H4MPTGL_atp_
+  name: 'tetrahydromethanopterin glutamate lyase ATP '
+  genes: Mbar_A3203
+  equation: atp[c] + glu-L[c] + h4mpt[c] => adp[c] + h4spt[c] + h[c] + pi[c]
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: H4MPTGL_gtp_
+  name: 'tetrahydromethanopterin glutamate lyase GTP '
+  genes: Mbar_A3203
+  equation: glu-L[c] + gtp[c] + h4mpt[c] => gdp[c] + h4spt[c] + h[c] + pi[c]
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: H4MPTS10
+  name: tetrahydromethanopterin synthesis reaction 10
+  equation: dhadrp[c] + h2o[c] => dhadr[c] + pi[c]
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: H4MPTS11
+  name: tetrahydromethanopterin synthesis reaction 11
+  equation: dhadr[c] + prpp[c] <=> dhadrpr[c] + ppi[c]
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: H4MPTS12
+  name: tetrahydromethanopterin synthesis reaction 12
+  equation: atp[c] + dhadrpr[c] => adp[c] + dhadrdpr[c]
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: H4MPTS13
+  name: tetrahydromethanopterin synthesis reaction 13
+  equation: atp[c] + dhadrdpr[c] => adp[c] + dhadrtpr[c]
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: H4MPTS14
+  name: tetrahydromethanopterin synthesis reaction 14
+  equation: S2hglut[c] + dhadrtpr[c] => dmh2mpt[c] + ppi[c]
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: H4MPTS15
+  name: tetrahydromethanopterin synthesis reaction 15
+  equation: amet[c] + dmh2mpt[c] => ahcys[c] + h[c] + mmh2mpt[c]
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: H4MPTS16
+  name: tetrahydromethanopterin synthesis reaction 16
+  equation: amet[c] + mmh2mpt[c] => ahcys[c] + h2mpt[c] + h[c]
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: H4MPTS9
+  name: tetrahydromethanopterin synthesis reaction 9
+  equation: dhrfap[c] + f420-2h2[c] => dhadrp[c] + f420-2[c] + h[c]
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: HASD
+  name: hydroxyarchaetidylserine decarboxylase
+  genes: Mbar_A0875
+  equation: 3hdpgps[c] + h[c] => 3hdpgpe[c] + co2[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: HATGH
+  name: hydroxyarchaetidylglycerol hydrogenase
+  genes: Mbar_A1602 or Mbar_A1603 or Mbar_A1604
+  equation: 3hdggpg[c] + (7) h[c] + (7) nadph[c] => 3hdpgpg[c] + (7) nadp[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: HATIH
+  name: hydroxyarchaetidylinositol hydrogenase
+  genes: Mbar_A1602 or Mbar_A1603 or Mbar_A1604
+  equation: 3hdggpi[c] + (7) h[c] + (7) nadph[c] => 3hdpgpi[c] + (7) nadp[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: HATSH
+  name: hydroxyarchaetidylserine hydrogenase
+  genes: Mbar_A1602 or Mbar_A1603 or Mbar_A1604
+  equation: 3hdgggps[c] + (7) h[c] + (7) nadph[c] => 3hdpgps[c] + (7) nadp[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: HBZOPT
+  name: all-trans-octaprenyl-diphosphate:4-hydroxybenzoate
+  genes: Mbar_A1863
+  equation: 4hbz[c] + octdp[c] => ppi[c] + 3ophb[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: HCARNHYD
+  name: alpha-Aminobutyryl histidine hydrolase
+  genes: Mbar_A3039
+  equation: 4abut[c] + h[c] + his-L[c] <=> h2o[c] + hcarn[c]
+  subsystem: Nitrogen Metabolism
+- id: HCITS
+  name: homocitrate synthase
+  genes: Mbar_A2268 or Mbar_A2269
+  equation: accoa[c] + akg[c] + h2o[c] => coa[c] + h[c] + hcit[c]
+  subsystem: Threonine and Lysine Metabolism
+- id: HCO3E
+  name: HCO3 equilibration reaction
+  genes: Mbar_A3020
+  equation: co2[c] + h2o[c] <=> h[c] + hco3[c]
+  subsystem: Other
+- id: HDR
+  name: Heterodisulphide reductase
+  genes: Mbar_A1599 and Mbar_A1598
+  equation: (2) h[c] + hsfd[c] + mphenh2[c] => cob[c] + com[c] + (2) h[e] + mphen[c]
+  subsystem: Methanogenesis
+- id: HDRABC
+  name: Cytosolic Heterodisulphide reductase
+  genes: ( Mbar_A1952 or Mbar_A2589 ) and ( Mbar_A1954 or Mbar_A0639 ) and ( Mbar_A1953
+    or Mbar_A0640 ) and Mbar_A2588
+  equation: f420-2[c] + (4) fdred[c] + (5) h[c] + hsfd[c] => cob[c] + com[c] + f420-2h2[c]
+    + (4) fdox[c]
+  subsystem: Methanogenesis
+- id: HETZK
+  name: hydroxyethylthiazole kinase
+  genes: Mbar_A3319
+  equation: 4mhetz[c] + atp[c] => 4mpetz[c] + adp[c] + h[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: HEX7
+  name: 'hexokinase D fructoseATP '
+  genes: Mbar_A2838
+  equation: atp[c] + fru[c] => adp[c] + f6p[c] + h[c]
+  subsystem: Central Metabolism
+- id: HIBD
+  name: 3-Hydroxy-2-methylpropanoate:NAD+ oxidoreductase
+  genes: Mbar_A2468
+  equation: nad[c] + 3hmp[c] <=> h[c] + nadh[c] + 2mop[c]
+  subsystem: Valine Leucine and Isoleucine Metabolism
+- id: HISDC
+  name: histidine decarboxylase
+  genes: Mbar_A2979
+  equation: h[c] + his-L[c] => co2[c] + hista[c]
+  subsystem: Histidine Metabolism
+- id: HISTD
+  name: histidinol dehydrogenase
+  genes: Mbar_A3507
+  equation: h2o[c] + histd[c] + (2) nad[c] => (3) h[c] + his-L[c] + (2) nadh[c]
+  subsystem: Histidine Metabolism
+- id: HISTP
+  name: histidinol phosphatase
+  genes: Mbar_A1310
+  equation: h2o[c] + hisp[c] => histd[c] + pi[c]
+  subsystem: Histidine Metabolism
+- id: HISTRS
+  name: Histidyl tRNA synthetase
+  genes: Mbar_A3452
+  equation: atp[c] + his-L[c] + trnahis[c] => amp[c] + histrna[c] + ppi[c]
+  subsystem: Histidine Metabolism
+- id: HKt
+  name: HK gastricnon gastric P ATPase and ABC ATPase
+  genes: Mbar_A0708
+  equation: atp[c] + h2o[c] + k[e] => adp[c] + h[e] + k[c] + pi[c]
+  subsystem: Transport
+- id: HMBS
+  name: hydroxymethylbilane synthase
+  genes: Mbar_A1465
+  equation: h2o[c] + (4) ppbng[c] => hmbil[c] + (4) nh4[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: HMGCOARi
+  name: 'Hydroxymethylglutaryl CoA reductase ir '
+  genes: Mbar_A1972
+  equation: (2) h[c] + hmgcoa[c] + (2) nadph[c] => coa[c] + mev-R[c] + (2) nadp[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: HMGCOASi
+  name: 'Hydroxymethylglutaryl CoA synthase ir '
+  genes: Mbar_A0551
+  equation: aacoa[c] + accoa[c] + h2o[c] => coa[c] + h[c] + hmgcoa[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: HMPK1
+  name: 'hydroxymethylpyrimidine kinase ATP '
+  genes: Mbar_A3501
+  equation: 4ahmmp[c] + atp[c] => 4ampm[c] + adp[c] + (2) h[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: HPACt2r
+  name: ydroxyphenylacetate transport in via proton symporter
+  equation: 4hphac[e] + h[e] <=> 4hphac[c] + h[c]
+  subsystem: Transport
+- id: HPPK2
+  name: 6 hydroxymethyl dihydropterin pyrophosphokinase
+  equation: 6hmhpt[c] + atp[c] => 6hmhptpp[c] + amp[c] + h[c]
+  subsystem: Tetrahydramethanopterin Biosynthesis
+- id: HPYRRx
+  name: Hydroxypyruvate reductase (NADH)
+  genes: Mbar_A2220
+  equation: h[c] + nadh[c] + hpyr[c] => glyc-R[c] + nad[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: HPYRRy
+  name: Hydroxypyruvate reductase (NADPH)
+  genes: Mbar_A2220
+  equation: h[c] + nadph[c] + hpyr[c] => glyc-R[c] + nadp[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: HSDx
+  name: L-Homoserine:NAD+ oxidoreductase
+  genes: Mbar_A1898
+  equation: hom-L[c] + nad[c] <=> aspsa[c] + h[c] + nadh[c]
+  subsystem: Amino Acid Metabolism
+- id: HSDy
+  name: 'homoserine dehydrogenase NADPH '
+  genes: Mbar_A1898
+  equation: hom-L[c] + nadp[c] <=> aspsa[c] + h[c] + nadph[c]
+  subsystem: Alanine and Aspartate Metabolism
+- id: HSERTA
+  name: homoserine O trans acetylase
+  genes: Mbar_A2428
+  equation: accoa[c] + hom-L[c] <=> achms[c] + coa[c]
+  subsystem: Methionine Metabolism
+- id: HSK
+  name: homoserine kinase
+  equation: atp[c] + hom-L[c] => adp[c] + h[c] + phom[c]
+  subsystem: Threonine and Lysine Metabolism
+- id: HSPMS
+  name: homospermidine synthase
+  genes: Mbar_A2685
+  equation: (2) ptrc[c] => hspmd[c] + nh4[c]
+  subsystem: Central Metabolism
+- id: HSTPT
+  name: histidinol phosphate transaminase
+  genes: Mbar_A0872
+  equation: glu-L[c] + imacp[c] => akg[c] + hisp[c]
+  subsystem: Histidine Metabolism
+- id: HXPRT
+  name: 'hypoxanthine phosphoribosyltransferase Hypoxanthine '
+  genes: Mbar_A0913 or Mbar_A3178
+  equation: hxan[c] + prpp[c] => imp[c] + ppi[c]
+  subsystem: Nucleotide Metabolism
+- id: ICITRED
+  name: Isocitrate:NADP+ oxidoreductase (decarboxylating)
+  genes: Mbar_A0623
+  equation: icit[c] + nadp[c] <=> h[c] + nadph[c] + osuc[c]
+  subsystem: Citric Acid Cycle
+- id: IG3PS
+  name: Imidazole glycerol 3 phosphate synthase
+  genes: Mbar_A1514 and Mbar_A3476
+  equation: gln-L[c] + prlp[c] => aicar[c] + eig3p[c] + glu-L[c] + h[c]
+  subsystem: Histidine Metabolism
+- id: IGPDH
+  name: imidazoleglycerol phosphate dehydratase
+  genes: Mbar_A1310
+  equation: eig3p[c] => h2o[c] + imacp[c]
+  subsystem: Histidine Metabolism
+- id: IGPS
+  name: indole 3 glycerol phosphate synthase
+  genes: Mbar_A3621
+  equation: 2cpr5p[c] + h[c] => 3ig3p[c] + co2[c] + h2o[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: ILETA
+  name: isoleucine transaminase
+  genes: Mbar_A0576
+  equation: akg[c] + ile-L[c] <=> 3mop[c] + glu-L[c]
+  subsystem: Valine Leucine and Isoleucine Metabolism
+- id: ILETRS
+  name: Isoleucyl tRNA synthetase
+  genes: Mbar_A3613
+  equation: atp[c] + ile-L[c] + trnaile[c] => amp[c] + iletrna[c] + ppi[c]
+  subsystem: Valine Leucine and Isoleucine Metabolism
+- id: ILEt2r
+  name: L isoleucine reversible transport via proton symport
+  genes: Mbar_A2616 and Mbar_A2617
+  equation: h[e] + ile-L[e] <=> h[c] + ile-L[c]
+  subsystem: Transport
+- id: IMPC
+  name: IMP cyclohydrolase
+  genes: Mbar_A0571
+  equation: h2o[c] + imp[c] <=> fprica[c]
+  subsystem: Nucleotide Metabolism
+- id: IMPD
+  name: IMP dehydrogenase
+  genes: Mbar_A0967
+  equation: h2o[c] + imp[c] + nad[c] => h[c] + nadh[c] + xmp[c]
+  subsystem: Nucleotide Metabolism
+- id: IND3ACt2r
+  name: indole 3 acetate transport via proton symport
+  equation: h[c] + ind3ac[c] <=> h[e] + ind3ac[e]
+  subsystem: Transport
+- id: INS2D
+  name: inositol 2 dehydrogenase
+  genes: Mbar_A1138
+  equation: inost[c] + nad[c] => 2ins[c] + h[c] + nadh[c]
+  subsystem: Central Metabolism
+- id: INSK
+  name: Inosine phosphorylation
+  genes: Mbar_A2903
+  equation: atp[c] + ins[c] => adp[c] + h[c] + imp[c]
+  subsystem: Nucleotide Metabolism
+- id: IOR
+  name: indolepyruvate ferredoxin oxidoreductase
+  genes: ( Mbar_A0058 or Mbar_A2300 or Mbar_A2988 ) and ( Mbar_A0057 or Mbar_A2987
+    )
+  equation: coa[c] + (2) fdox[c] + indpyr[c] <=> co2[c] + (2) fdred[c] + h[c] + indaccoa[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: IOR2
+  name: 'indolepyruvate ferredoxin oxidoreductase phenylpyvurate '
+  genes: ( Mbar_A0058 or Mbar_A2300 or Mbar_A2988 ) and ( Mbar_A0057 or Mbar_A2987
+    )
+  equation: coa[c] + (2) fdox[c] + phpyr[c] <=> co2[c] + (2) fdred[c] + h[c] + phaccoa[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: IOR3
+  name: 'indolepyruvate ferredoxin oxidoreductase hydroxyphenylpyvurate '
+  genes: ( Mbar_A0058 or Mbar_A2300 or Mbar_A2988 ) and ( Mbar_A0057 or Mbar_A2987
+    )
+  equation: 34hpp[c] + coa[c] + (2) fdox[c] <=> co2[c] + (2) fdred[c] + h[c] + hphaccoa[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: IPDDI3x
+  name: 'isopentenyl diphosphate isomerase type3 '
+  genes: Mbar_A1419
+  equation: f420-2[c] + (2) h[c] + ipdp[c] + nadh[c] => dmpp[c] + f420-2h2[c] + nad[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: IPDDI3y
+  name: 'isopentenyl diphosphate isomerase type3 '
+  genes: Mbar_A1419
+  equation: f420-2[c] + (2) h[c] + ipdp[c] + nadph[c] => dmpp[c] + f420-2h2[c] +
+    nadp[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: IPDPH
+  name: Isopentenyl diphosphate hydrolase
+  equation: h2o[c] + ipdp[c] <=> m3hdp[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: IPMD
+  name: 3 isopropylmalate dehydrogenase
+  genes: Mbar_A1339
+  equation: 3c2hmp[c] + nad[c] => 3c4mop[c] + h[c] + nadh[c]
+  subsystem: Valine Leucine and Isoleucine Metabolism
+- id: IPPK
+  name: Isopentenyl kinase
+  genes: Mbar_A1420
+  equation: atp[c] + ipp[c] => adp[c] + ipdp[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: IPPMIa
+  name: 3 isopropylmalate dehydratase
+  genes: ( Mbar_A0244 or Mbar_A1338 or Mbar_A2270 ) and ( Mbar_A1961 or Mbar_A2167
+    )
+  equation: 3c2hmp[c] <=> 2ippm[c] + h2o[c]
+  subsystem: Valine Leucine and Isoleucine Metabolism
+- id: IPPMIb
+  name: 2 isopropylmalate hydratase
+  genes: ( Mbar_A0244 or Mbar_A1338 or Mbar_A2270 ) and ( Mbar_A1961 or Mbar_A2167
+    )
+  equation: 2ippm[c] + h2o[c] <=> 3c3hmp[c]
+  subsystem: Valine Leucine and Isoleucine Metabolism
+- id: IPPS
+  name: 2 isopropylmalate synthase
+  genes: Mbar_A0942 or Mbar_A2192 or Mbar_A0624
+  equation: 3mob[c] + accoa[c] + h2o[c] => 3c3hmp[c] + coa[c] + h[c]
+  subsystem: Valine Leucine and Isoleucine Metabolism
+- id: KARA1
+  name: 'ketol acid reductoisomerase 2 3 dihydroxy 3 methylbutanoate '
+  genes: Mbar_A0220
+  equation: 23dhmb[c] + nadp[c] <=> alac-S[c] + h[c] + nadph[c]
+  subsystem: Valine Leucine and Isoleucine Metabolism
+- id: Kt2r
+  name: potassium reversible transport via proton symport
+  genes: ( Mbar_A3423 and Mbar_A3429 ) or ( Mbar_A0669 or Mbar_A1651 ) or ( Mbar_A3424
+    or Mbar_A3430 ) or Mbar_A3491
+  equation: h[e] + k[e] <=> h[c] + k[c]
+  subsystem: Transport
+- id: LCAD
+  name: lactaldehyde dehydrogenase
+  genes: Mbar_A0503 or Mbar_A1620 or Mbar_A2542
+  equation: h2o[c] + lald-L[c] + nad[c] <=> (2) h[c] + lac-L[c] + nadh[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: LCYSTAT
+  name: L-Cysteate:2-oxoglutarate aminotransferase
+  genes: Mbar_A1546 or Mbar_A2083 or Mbar_A3113
+  equation: akg[c] + Lcyst[c] <=> 3spyr[c] + glu-L[c]
+  subsystem: Coenzyme M Biosynthesis
+- id: LCYSTS
+  name: L-Cysteate syntahse
+  genes: Mbar_A3541
+  equation: h[c] + pser-L[c] + so3[c] => pi[c] + Lcyst[c]
+  subsystem: Coenzyme M Biosynthesis
+- id: LEUTA
+  name: leucine transaminase
+  genes: Mbar_A0576
+  equation: akg[c] + leu-L[c] <=> 4mop[c] + glu-L[c]
+  subsystem: Valine Leucine and Isoleucine Metabolism
+- id: LEUTRS
+  name: Leucyl tRNA synthetase
+  genes: Mbar_A2048
+  equation: atp[c] + leu-L[c] + trnaleu[c] => amp[c] + leutrna[c] + ppi[c]
+  subsystem: Valine Leucine and Isoleucine Metabolism
+- id: LEUt2r
+  name: L leucine reversible transport via proton symport
+  genes: Mbar_A2616 and Mbar_A2617
+  equation: h[e] + leu-L[e] <=> h[c] + leu-L[c]
+  subsystem: Transport
+- id: LPFPLT
+  name: LPPGFo 2 phospho L lactate transferase
+  genes: Mbar_A1631
+  equation: ddhrb[c] + lppg[c] => f420-0[c] + gmp[c] + h[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: LPPGS
+  name: LPPG synthetase
+  genes: Mbar_A3457
+  equation: 2plac-L[c] + gtp[c] + h[c] => lppg[c] + ppi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: LYSAM
+  name: lysine 2 3 aminomutase
+  genes: Mbar_A0670
+  equation: lys-L[c] <=> 36dahx[c]
+  subsystem: Threonine and Lysine Metabolism
+- id: LYSTRS
+  name: Lysyl tRNA synthetase
+  genes: Mbar_A1507 or Mbar_A1667
+  equation: atp[c] + lys-L[c] + trnalys[c] => amp[c] + lystrna[c] + ppi[c]
+  subsystem: Threonine and Lysine Metabolism
+- id: LYSt3r
+  name: L lysine transport out via proton antiport reversible
+  genes: Mbar_A3244 or Mbar_A1393
+  equation: h[e] + lys-L[c] <=> h[c] + lys-L[e]
+  subsystem: Transport
+- id: MAN1PT
+  name: GTP:alpha-D-mannose-1-phosphate guanylyltransferase
+  genes: Mbar_A0229 or Mbar_A1937
+  equation: gtp[c] + h[c] + man1p[c] => gdpmann[c] + ppi[c]
+  subsystem: Central Metabolism
+- id: MAN1PT2r
+  name: mannose 1 phosphate guanylyltransferase GDP reversible
+  genes: Mbar_A0229 or Mbar_A1937
+  equation: gdp[c] + h[c] + man1p[c] <=> gdpmann[c] + pi[c]
+  subsystem: Central Metabolism
+- id: MAN6PI
+  name: mannose 6 phosphate isomerase
+  genes: Mbar_A3140
+  equation: man6p[c] <=> f6p[c]
+  subsystem: Central Metabolism
+- id: MCMMT
+  name: methanol:5-hydroxybenzimidazolylcobamide Co-methyltransferase
+  genes: ( Mbar_A0741 or Mbar_A1064 or Mbar_A3638 ) and ( Mbar_A0740 or Mbar_A1063
+    or Mbar_A3637 ) and ( Mbar_A1054 or Mbar_A3639 )
+  equation: h[c] + meoh[c] + 5hbc_red[c] => h2o[c] + m5hbc[c]
+  subsystem: Methanogenesis
+- id: MCR
+  name: Methyl coenzyme M reductase
+  genes: Mbar_A0893 and Mbar_A0894 and Mbar_A0895 and Mbar_A0896 and Mbar_A0897
+  equation: cob[c] + mcom[c] => ch4[c] + hsfd[c]
+  subsystem: Methanogenesis
+- id: MDH
+  name: malate dehydrogenase
+  genes: Mbar_A1748
+  equation: mal-L[c] + nad[c] <=> h[c] + nadh[c] + oaa[c]
+  subsystem: Citric Acid Cycle
+- id: MDHy
+  name: 'malate dehydrogenase NADP '
+  genes: Mbar_A1748
+  equation: mal-L[c] + nadp[c] <=> h[c] + nadph[c] + oaa[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: ME1_rev
+  name: malic enzyme
+  genes: Mbar_A3045
+  equation: mal-L[c] + nad[c] <=> co2[c] + nadh[c] + pyr[c]
+  subsystem: Central Metabolism
+- id: MEOHt2
+  name: Methanol diffusion
+  equation: meoh[e] <=> meoh[c]
+  subsystem: Transport
+- id: METAT
+  name: methionine adenosyltransferase
+  genes: Mbar_A1313 or Mbar_A1862
+  equation: atp[c] + h2o[c] + met-L[c] => amet[c] + pi[c] + ppi[c]
+  subsystem: Methionine Metabolism
+- id: METGL
+  name: methionine g lyase
+  genes: Mbar_A3023
+  equation: h2o[c] + met-L[c] => 2obut[c] + ch4s[c] + nh4[c]
+  subsystem: Methionine Metabolism
+- id: METS
+  name: methionine synthase
+  genes: Mbar_A1022 or Mbar_A1023
+  equation: 5mthf[c] + hcys-L[c] => met-L[c] + thf[c]
+  subsystem: Methionine Metabolism
+- id: METTRS
+  name: Methionyl tRNA synthetase
+  genes: Mbar_A0543
+  equation: atp[c] + met-L[c] + trnamet[c] => amp[c] + mettrna[c] + ppi[c]
+  subsystem: Methionine Metabolism
+- id: MEVK1
+  name: 'mevalonate kinase atp '
+  genes: Mbar_A1421
+  equation: atp[c] + mev-R[c] => 5pmev[c] + adp[c] + h[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: MFRBS
+  name: Methanofuran B biosynthesis
+  equation: glu-L[c] + 4gggaepmamfr[c] => h2o[c] + mfr(b)[c]
+  subsystem: Methanofuran B Biosynthesis
+- id: MFRS1
+  name: Methanofuran intermediate 1 biosynthesis
+  equation: dhap[c] + h2o[c] + pep[c] => mfrbi1[c]
+  subsystem: Methanofuran B Biosynthesis
+- id: MFRS10
+  name: 4-[N-L-glutamyl-)-p-(aminoethyl)phenoxy-methyl]-2-(aminomethyl)furan glutamate
+    extention
+  equation: glu-L[c] + 4gaepmamfr[c] <=> h2o[c] + 4ggaepmamfr[c]
+  subsystem: Methanofuran B Biosynthesis
+- id: MFRS11
+  name: 4-[N-L-glutamyl-L-glutamyl-)-p-(aminoethyl)phenoxy-methyl]-2-(aminomethyl)furan
+    glutamate extention
+  equation: glu-L[c] + 4ggaepmamfr[c] => h2o[c] + 4gggaepmamfr[c]
+  subsystem: Methanofuran B Biosynthesis
+- id: MFRS2
+  name: Methanofuran intermediate 1 kinase
+  equation: mfrbi1[c] => pi[c] + mfrbi2[c]
+  subsystem: Methanofuran B Biosynthesis
+- id: MFRS3
+  name: Methanofuran intermediate 2 dehydration
+  equation: mfrbi2[c] => h2o[c] + mfrbi3[c]
+  subsystem: Methanofuran B Biosynthesis
+- id: MFRS4
+  name: Methanofuran intermediate 3 isomerization
+  equation: mfrbi3[c] => mfrbi4[c]
+  subsystem: Methanofuran B Biosynthesis
+- id: MFRS5
+  name: Methanofuran intermediate 4 dehydration
+  equation: mfrbi4[c] => h2o[c] + 24sf[c]
+  subsystem: Methanofuran B Biosynthesis
+- id: MFRS6
+  name: 2,4-substituted-furan reduction (nad)
+  equation: atp[c] + h[c] + nadh[c] + 24sf[c] => adp[c] + nad[c] + pi[c] + 2frald[c]
+  subsystem: Methanofuran B Biosynthesis
+- id: MFRS7
+  name: 2-furaldehyde transaminase
+  equation: glu-L[c] + 2frald[c] => akg[c] + 2mafr[c]
+  subsystem: Methanofuran B Biosynthesis
+- id: MFRS8
+  name: p-(aminoethyl)phenoxy-methyl-2-(aminomethyl)furan biosynthesis
+  equation: tym[c] + 2mafr[c] => pi[c] + aepmamfr[c]
+  subsystem: Methanofuran B Biosynthesis
+- id: MFRS9
+  name: p-(aminoethyl)phenoxy-methyl-2-(aminomethyl)furan glutamate extention
+  equation: glu-L[c] + aepmamfr[c] <=> h2o[c] + 4gaepmamfr[c]
+  subsystem: Methanofuran B Biosynthesis
+- id: MG2abc
+  name: magnesium transport via ABC system
+  genes: Mbar_A2103
+  equation: atp[c] + h2o[c] + mg2[e] => adp[c] + h[c] + mg2[c] + pi[c]
+  subsystem: Transport
+- id: MGSA2
+  name: 6 deoxy 5 ketofructose 1 phosphate synthase 3 (from f1p)
+  genes: Mbar_A0934
+  equation: g3p[c] => pi[c] + mthgxl[c]
+  subsystem: Central Metabolism
+- id: MGt5
+  name: 'magnesium transport inout via permease no H '
+  genes: Mbar_A2983 or Mbar_A2809 or Mbar_A2810
+  equation: mg2[c] <=> mg2[e]
+  subsystem: Transport
+- id: MHPGLUT2
+  name: 5-methyltetrahydropteroyltriglutamate methyltransferase
+  genes: Mbar_A1022 or Mbar_A1023
+  equation: ahcys[c] + h[c] + mhpglu[c] => amet[c] + hpglu[c]
+  subsystem: Other
+- id: MI3PP
+  name: myo-inositol 3-phosphatase
+  genes: Mbar_A2190
+  equation: h2o[c] + mi3p-D[c] => inost[c] + pi[c]
+  subsystem: Central Metabolism
+- id: MI3PS
+  name: 1D-myo-inositol-3-phosphate lyase (isomerizing)
+  genes: Mbar_A1040
+  equation: g6p[c] <=> mi3p-D[c]
+  subsystem: Other
+- id: MMAMT
+  name: Monomethylamine methyltransferase
+  genes: ( Mbar_A0841 or Mbar_A1688 ) and ( Mbar_A0843 or Mbar_A0846 or Mbar_A3633
+    ) and ( Mbar_A0842 or Mbar_A0845 or Mbar_A3634 )
+  equation: h[c] + mma[c] + 5hbc_red[c] => nh4[c] + m5hbc[c]
+  subsystem: Methanogenesis
+- id: MMAt
+  name: Monomethylamine symport
+  genes: Mbar_A0847 or Mbar_A0848
+  equation: h[e] + mma[e] <=> h[c] + mma[c]
+  subsystem: Transport
+- id: MNabc
+  name: manganese transport via ABC system
+  genes: Mbar_A0993 and Mbar_A0996 and Mbar_A0995
+  equation: atp[c] + h2o[c] + mn2[e] => adp[c] + h[c] + mn2[c] + pi[c]
+  subsystem: Transport
+- id: MOBDabc
+  name: molybdate transport via ABC system
+  genes: ( Mbar_A1557 or Mbar_A2559 or Mbar_A1306 ) and ( Mbar_A2560 or Mbar_A1558
+    or Mbar_A1307 ) and ( Mbar_A1305 or Mbar_A1556 ) and Mbar_A1559
+  equation: atp[c] + h2o[c] + mobd[e] => adp[c] + h[c] + mobd[c] + pi[c]
+  subsystem: Transport
+- id: MOHMT
+  name: 3 methyl 2 oxobutanoate hydroxymethyltransferase
+  equation: 3mob[c] + h2o[c] + mlthf[c] => 2dhp[c] + thf[c]
+  subsystem: Coenzyme A Biosynthesis
+- id: MTAP
+  name: 5 methylthioadenosine phosphorylase
+  genes: Mbar_A3594
+  equation: 5mta[c] + pi[c] => 5mdr1p[c] + ade[c]
+  subsystem: Nucleotide Metabolism
+- id: MTCMMT2
+  name: 'Methylthiol: coenzyme M methyltransferase'
+  genes: Mbar_A3585 and Mbar_A3584
+  equation: cob[c] + com[c] + dms[c] => ch4[c] + ch4s[c] + hsfd[c]
+  subsystem: Methanogenesis
+- id: MTHFC
+  name: methenyltetrahydrofolate cyclohydrolase
+  genes: Mbar_A2315
+  equation: h2o[c] + methf[c] <=> 10fthf[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: MTHFD2i
+  name: 'methylenetetrahydrofolate dehydrogenase NAD '
+  genes: Mbar_A2315
+  equation: mlthf[c] + nad[c] => h[c] + methf[c] + nadh[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: MTHFR2
+  name: 5,10-methylenetetrahydrofolate reductase (NADH)
+  genes: Mbar_A2312
+  equation: h[c] + mlthf[c] + nadh[c] => 5mthf[c] + nad[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: MTHFR3
+  name: '5 10 methylenetetrahydrofolatereductase NADPH '
+  genes: Mbar_A2312
+  equation: h[c] + mlthf[c] + nadph[c] => 5mthf[c] + nadp[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: MTRI
+  name: 5-Methylthio-5-deoxy-D-ribose-1-phosphate ketol-isomerase
+  genes: Mbar_A1041
+  equation: 5mdr1p[c] => 5mdru1p[c]
+  subsystem: Nucleotide Metabolism
+- id: MTSPC
+  name: Methenyl H4SPt cyclohydrolase
+  genes: Mbar_A2233
+  equation: formh4spt[c] + h[c] <=> h2o[c] + menylh4spt[c]
+  subsystem: Methanogenesis
+- id: MTSPCMMT
+  name: 'Methyl-H4SPT: coenzyme M methyltransferase'
+  genes: ( Mbar_A1258 or Mbar_A0410 or Mbar_A1713 or Mbar_A2073 ) and Mbar_A1259
+    and Mbar_A1260 and Mbar_A1261 and Mbar_A1262 and Mbar_A1257 and Mbar_A1256 and
+    ( Mbar_A1255 or Mbar_A2072 )
+  equation: h[c] + mh4spt[c] + (2) na1[c] + 5hbc_red[c] <=> h4spt[c] + (2) na1[e]
+    + m5hbc[c]
+  subsystem: Methanogenesis
+- id: Mb_biomass_65
+  name: Mb Biomass function
+  equation:
+    reversible: false
+    left:
+    - id: 3hdpgpe
+      compartment: c
+      value: 0.002664
+    - id: 3hdpgpg
+      compartment: c
+      value: 0.009966
+    - id: 3hdpgpi
+      compartment: c
+      value: 0.013321
+    - id: 3hdpgps
+      compartment: c
+      value: 0.011347
+    - id: accoa
+      compartment: c
+      value: 0.0001
+    - id: adocblhbi
+      compartment: c
+      value: 0.004713
+    - id: ala-L
+      compartment: c
+      value: 0.554639
+    - id: amp
+      compartment: c
+      value: 0.000987
+    - id: arg-L
+      compartment: c
+      value: 0.319404
+    - id: asn-L
+      compartment: c
+      value: 0.260299
+    - id: asp-L
+      compartment: c
+      value: 0.260299
+    - id: atp
+      compartment: c
+      value: 65.18215
+    - id: coa
+      compartment: c
+      value: 0.000006
+    - id: cob
+      compartment: c
+      value: 0.000501
+    - id: com
+      compartment: c
+      value: 0.020656
+    - id: ctp
+      compartment: c
+      value: 0.13607
+    - id: cys-L
+      compartment: c
+      value: 0.09887
+    - id: datp
+      compartment: c
+      value: 0.032661
+    - id: dctp
+      compartment: c
+      value: 0.021215
+    - id: dgtp
+      compartment: c
+      value: 0.021215
+    - id: dpgpe
+      compartment: c
+      value: 0.000691
+    - id: dpgpg
+      compartment: c
+      value: 0.000691
+    - id: dpgpi
+      compartment: c
+      value: 0.002664
+    - id: dpgps
+      compartment: c
+      value: 0.001283
+    - id: dttp
+      compartment: c
+      value: 0.032661
+    - id: f390a
+      compartment: c
+      value: 0.000005
+    - id: f390g
+      compartment: c
+      value: 0.000005
+    - id: f420-2
+      compartment: c
+      value: 0.00004
+    - id: f420-3
+      compartment: c
+      value: 0.00003
+    - id: f420-4
+      compartment: c
+      value: 0.000401
+    - id: f420-5
+      compartment: c
+      value: 0.000301
+    - id: f420-6
+      compartment: c
+      value: 0.00001
+    - id: f420-7
+      compartment: c
+      value: 0.000001
+    - id: f430
+      compartment: c
+      value: 0.002005
+    - id: gdpgpi
+      compartment: c
+      value: 0.015985
+    - id: gln-L
+      compartment: c
+      value: 0.284177
+    - id: glu-L
+      compartment: c
+      value: 0.284177
+    - id: gly
+      compartment: c
+      value: 0.661502
+    - id: glycogen
+      compartment: c
+      value: 0.012681
+    - id: gtp
+      compartment: c
+      value: 0.219251
+    - id: h2o
+      compartment: c
+      value: 59.224884
+    - id: h4spt
+      compartment: c
+      value: 0.023664
+    - id: his-L
+      compartment: c
+      value: 0.102324
+    - id: hspmd
+      compartment: c
+      value: 0.004638
+    - id: ile-L
+      compartment: c
+      value: 0.313681
+    - id: leu-L
+      compartment: c
+      value: 0.486456
+    - id: lys-L
+      compartment: c
+      value: 0.370516
+    - id: met-L
+      compartment: c
+      value: 0.165967
+    - id: mfr(b)
+      compartment: c
+      value: 0.02
+    - id: nad
+      compartment: c
+      value: 0.002206
+    - id: nadh
+      compartment: c
+      value: 0.0001
+    - id: nadp
+      compartment: c
+      value: 0.0001
+    - id: nadph
+      compartment: c
+      value: 0.000401
+    - id: phe-L
+      compartment: c
+      value: 0.20001
+    - id: pro-L
+      compartment: c
+      value: 0.238689
+    - id: ptrc
+      compartment: c
+      value: 0.025852
+    - id: ser-L
+      compartment: c
+      value: 0.232966
+    - id: succoa
+      compartment: c
+      value: 0.000003
+    - id: thf
+      compartment: c
+      value: 0.0001
+    - id: thr-L
+      compartment: c
+      value: 0.273915
+    - id: trp-L
+      compartment: c
+      value: 0.061374
+    - id: tyr-L
+      compartment: c
+      value: 0.148897
+    - id: utp
+      compartment: c
+      value: 0.146924
+    - id: val-L
+      compartment: c
+      value: 0.456953
+    - id: galactan
+      compartment: c
+      value: 0.000576
+    - id: polyacgal
+      compartment: c
+      value: 0.024837
+    - id: polyglcur
+      compartment: c
+      value: 0.015919
+    right:
+    - id: adp
+      compartment: c
+      value: 64.998027
+    - id: h
+      compartment: c
+      value: 64.998195
+    - id: pi
+      compartment: c
+      value: 65
+    - id: ppi
+      compartment: c
+      value: 0.788198
+  subsystem: Exchange
+- id: N2tr
+  name: Nitrogen exchange diffusion
+  equation: n2[e] <=> n2[c]
+  subsystem: Transport
+- id: NACUP
+  name: Nicotinic acid uptake
+  equation: nac[e] => nac[c]
+  subsystem: Transport
+- id: NADDP
+  name: NAD+ phosphohydrolase
+  genes: Mbar_A2829
+  equation: h2o[c] + nad[c] => amp[c] + (2) h[c] + nmn[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: NADK
+  name: NAD kinase
+  genes: Mbar_A2191
+  equation: atp[c] + nad[c] => adp[c] + h[c] + nadp[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: NADS1
+  name: 'NAD synthase nh3 '
+  genes: Mbar_A0269 or Mbar_A2320
+  equation: atp[c] + dnad[c] + nh4[c] => amp[c] + h[c] + nad[c] + ppi[c]
+  subsystem: Glutamine Metabolism
+- id: NADS2
+  name: 'NAD synthase glutamine hydrolysing '
+  genes: Mbar_A0269 or Mbar_A2320
+  equation: atp[c] + dnad[c] + gln-L[c] + h2o[c] => amp[c] + glu-L[c] + h[c] + nad[c]
+    + ppi[c]
+  subsystem: Glutamine Metabolism
+- id: NAPRTr
+  name: 'NAPRTase rev '
+  genes: Mbar_A3022
+  equation: h[c] + nac[c] + prpp[c] <=> nicrnt[c] + ppi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: NAt3_1
+  name: 'sodium proton antiporter HNA is 11 '
+  genes: Mbar_A3265 or Mbar_A3078 or Mbar_A3070 or Mbar_A0499
+  equation: h[e] + (2) na1[c] <=> h[c] + (2) na1[e]
+  subsystem: Transport
+- id: NBAHH
+  name: Nalpha beta alanyl L histidine hydrolase
+  genes: Mbar_A3039
+  equation: carn[c] + h2o[c] <=> ala-B[c] + h[c] + his-L[c]
+  subsystem: Histidine Metabolism
+- id: NDPK1
+  name: 'nucleoside diphosphate kinase ATPGDP '
+  genes: Mbar_A3385
+  equation: atp[c] + gdp[c] <=> adp[c] + gtp[c]
+  subsystem: Nucleotide Metabolism
+- id: NDPK10
+  name: ATP:dIDP phosphotransferase
+  genes: Mbar_A3385
+  equation: atp[c] + didp[c] <=> adp[c] + ditp[c]
+  subsystem: Nucleotide Metabolism
+- id: NDPK2
+  name: 'nucleoside diphosphate kinase ATPUDP '
+  genes: Mbar_A3385
+  equation: atp[c] + udp[c] <=> adp[c] + utp[c]
+  subsystem: Nucleotide Metabolism
+- id: NDPK3
+  name: 'nucleoside diphosphate kinase ATPCDP '
+  genes: Mbar_A3385
+  equation: atp[c] + cdp[c] <=> adp[c] + ctp[c]
+  subsystem: Nucleotide Metabolism
+- id: NDPK4
+  name: 'nucleoside diphosphate kinase ATPdTDP '
+  genes: Mbar_A3385
+  equation: atp[c] + dtdp[c] <=> adp[c] + dttp[c]
+  subsystem: Nucleotide Metabolism
+- id: NDPK5
+  name: 'nucleoside diphosphate kinase ATPdGDP '
+  genes: Mbar_A3385
+  equation: atp[c] + dgdp[c] <=> adp[c] + dgtp[c]
+  subsystem: Nucleotide Metabolism
+- id: NDPK6
+  name: 'nucleoside diphosphate kinase ATPdUDP '
+  genes: Mbar_A3385
+  equation: atp[c] + dudp[c] <=> adp[c] + dutp[c]
+  subsystem: Nucleotide Metabolism
+- id: NDPK7
+  name: 'nucleoside diphosphate kinase ATPdCDP '
+  genes: Mbar_A3385
+  equation: atp[c] + dcdp[c] <=> adp[c] + dctp[c]
+  subsystem: Nucleotide Metabolism
+- id: NDPK8
+  name: 'nucleoside diphosphate kinase ATPdADP '
+  genes: Mbar_A3385
+  equation: atp[c] + dadp[c] <=> adp[c] + datp[c]
+  subsystem: Nucleotide Metabolism
+- id: NDPK9
+  name: 'nucleoside diphosphate kinase ATPIDP '
+  genes: Mbar_A3385
+  equation: atp[c] + idp[c] <=> adp[c] + itp[c]
+  subsystem: Nucleotide Metabolism
+- id: NH4t
+  name: ammonia reversible transport
+  genes: Mbar_A0157 or Mbar_A0158 or Mbar_A3175
+  equation: nh4[e] <=> nh4[c]
+  subsystem: Transport
+- id: NIT_n1p4
+  name: nitrogenase
+  genes: ( ( Mbar_A1551 and Mbar_A1552 and Mbar_A1553 ) or ( Mbar_A2276 and Mbar_A2277
+    and Mbar_A2278 and Mbar_A2281 ) or ( Mbar_A0167 and Mbar_A0168 and Mbar_A0171
+    ) )
+  equation: (32) atp[c] + (8) fdred[c] + (32) h2o[c] + n2[c] => (32) adp[c] + (8)
+    fdox[c] + h2[c] + (22) h[c] + (2) nh4[c] + (32) pi[c]
+  subsystem: Other
+- id: NIabc
+  name: nickel transport via ABC system
+  genes: Mbar_A0473 and Mbar_A0469 and Mbar_A0470 and Mbar_A0471 and Mbar_A0472
+  equation: atp[c] + h2o[c] + ni2[e] => adp[c] + h[c] + ni2[c] + pi[c]
+  subsystem: Transport
+- id: NIt5
+  name: 'nickel transport inout via permease no H '
+  genes: Mbar_A2983
+  equation: ni2[c] <=> ni2[e]
+  subsystem: Transport
+- id: NMNAT
+  name: nicotinamide nucleotide adenylyltransferase
+  genes: Mbar_A0256
+  equation: atp[c] + h[c] + nmn[c] => nad[c] + ppi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: NMNHYD
+  name: Nicotinamide ribonucleotide phosphohydrolase
+  genes: Mbar_A1192
+  equation: h2o[c] + nmn[c] <=> pi[c] + rnam[c]
+  subsystem: Other
+- id: NN5HBPRT
+  name: Nicotinate nucleotide 5 hydroxybenzimidazole phosphoribosyltransferase
+  equation: 5hbzid[c] + nicrnt[c] => 5pr5hbz[c] + h[c] + nac[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: NNAT
+  name: nicotinate nucleotide adenylyltransferase
+  genes: Mbar_A0256
+  equation: atp[c] + h[c] + nicrnt[c] => dnad[c] + ppi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: NNDPR
+  name: 'nicotinate nucleotide diphosphorylase carboxylating '
+  genes: Mbar_A1304 or Mbar_A1867
+  equation: (2) h[c] + prpp[c] + quln[c] => co2[c] + nicrnt[c] + ppi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: NT5C
+  name: Nicotinate D-ribonucleotide phosphohydrolase
+  genes: Mbar_A1192
+  equation: h2o[c] + nicrnt[c] <=> pi[c] + nicrns[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: NTD1
+  name: dUMP hydrolase
+  genes: Mbar_A1192
+  equation: dump[c] + h2o[c] => duri[c] + pi[c]
+  subsystem: Nucleotide Metabolism
+- id: NTD10
+  name: Xanthosine 5'-phosphate phosphohydrolase
+  genes: Mbar_A1192
+  equation: h2o[c] + xmp[c] => pi[c] + xtsn[c]
+  subsystem: Nucleotide Metabolism
+- id: NTD11
+  name: Inosine 5'-monophosphate phosphohydrolase
+  genes: Mbar_A1192
+  equation: h2o[c] + imp[c] => pi[c] + ins[c]
+  subsystem: Nucleotide Metabolism
+- id: NTD2
+  name: Uridine 5'-monophosphate phosphohydrolase
+  genes: Mbar_A1192
+  equation: h2o[c] + ump[c] => pi[c] + uri[c]
+  subsystem: Nucleotide Metabolism
+- id: NTD3
+  name: 2'-Deoxycytidine 5'-monophosphate phosphohydrolase
+  genes: Mbar_A1192
+  equation: dcmp[c] + h2o[c] => pi[c] + dcyt[c]
+  subsystem: Nucleotide Metabolism
+- id: NTD4
+  name: Cytidine-5'-monophosphate phosphohydrolase
+  genes: Mbar_A1192
+  equation: cmp[c] + h2o[c] => pi[c] + cytd[c]
+  subsystem: Nucleotide Metabolism
+- id: NTD5
+  name: Thymidylate 5'-phosphohydrolase
+  genes: Mbar_A1192
+  equation: dtmp[c] + h2o[c] => pi[c] + thymd[c]
+  subsystem: Nucleotide Metabolism
+- id: NTD6
+  name: 2'-Deoxyadenosine 5'-monophosphate phosphohydrolase
+  genes: Mbar_A1192
+  equation: damp[c] + h2o[c] <=> pi[c] + dad-2[c]
+  subsystem: Nucleotide Metabolism
+- id: NTD7
+  name: Adenosine 5'-monophosphate phosphohydrolase
+  genes: Mbar_A1192
+  equation: amp[c] + h2o[c] => adn[c] + pi[c]
+  subsystem: Nucleotide Metabolism
+- id: NTD8
+  name: 2'-Deoxyguanosine 5'-monophosphate phosphohydrolase
+  genes: Mbar_A1192
+  equation: h2o[c] + dgmp[c] <=> pi[c] + dgsn[c]
+  subsystem: Nucleotide Metabolism
+- id: NTD9
+  name: Guanosine 5'-monophosphate phosphohydrolase
+  genes: Mbar_A1192
+  equation: gmp[c] + h2o[c] => pi[c] + gsn[c]
+  subsystem: Nucleotide Metabolism
+- id: NTP1
+  name: 'nucleoside triphosphatase ATP '
+  genes: Mbar_A0278
+  equation: atp[c] + h2o[c] => adp[c] + h[c] + pi[c]
+  subsystem: Nucleotide Metabolism
+- id: NTP2
+  name: 'nucleoside triphosphatase dATP '
+  genes: Mbar_A0278
+  equation: datp[c] + h2o[c] => dadp[c] + h[c] + pi[c]
+  subsystem: Nucleotide Metabolism
+- id: NTP3
+  name: 'nucleoside triphosphatase GTP '
+  genes: Mbar_A0278
+  equation: gtp[c] + h2o[c] => gdp[c] + h[c] + pi[c]
+  subsystem: Nucleotide Metabolism
+- id: NTP4
+  name: 'nucleoside triphosphatase dGTP '
+  genes: Mbar_A0278
+  equation: dgtp[c] + h2o[c] => dgdp[c] + h[c] + pi[c]
+  subsystem: Nucleotide Metabolism
+- id: NTP5
+  name: 'nucleoside triphosphatase CTP '
+  genes: Mbar_A0278
+  equation: ctp[c] + h2o[c] => cdp[c] + h[c] + pi[c]
+  subsystem: Nucleotide Metabolism
+- id: NTP6
+  name: 'nucleoside triphosphatase dCTP '
+  genes: Mbar_A0278
+  equation: dctp[c] + h2o[c] => dcdp[c] + h[c] + pi[c]
+  subsystem: Nucleotide Metabolism
+- id: NTP7
+  name: 'nucleoside triphosphatase UTP '
+  genes: Mbar_A0278
+  equation: h2o[c] + utp[c] => h[c] + pi[c] + udp[c]
+  subsystem: Nucleotide Metabolism
+- id: NTP8
+  name: 'nucleoside triphosphatase dUTP '
+  genes: Mbar_A0278
+  equation: dutp[c] + h2o[c] => dudp[c] + h[c] + pi[c]
+  subsystem: Nucleotide Metabolism
+- id: NTP9
+  name: 'nucleoside triphosphatase dTTP '
+  genes: Mbar_A0278
+  equation: dttp[c] + h2o[c] => dtdp[c] + h[c] + pi[c]
+  subsystem: Nucleotide Metabolism
+- id: NTPP11
+  name: Nucleoside triphosphate pyrophosphorylase (xtp)
+  genes: Mbar_A0278
+  equation: h2o[c] + xtp[c] => h[c] + ppi[c] + xmp[c]
+  subsystem: Nucleotide Metabolism
+- id: NTRIR2x
+  name: 'nitrite Reductase NADH '
+  genes: Mbar_A1597 or Mbar_A2618
+  equation: (5) h[c] + (3) nadh[c] + no2[c] => (2) h2o[c] + (3) nad[c] + nh4[c]
+  subsystem: Nitrogen Metabolism
+- id: NTRIR2y
+  name: 'nitrite Reductase NADPH '
+  genes: Mbar_A1597 or Mbar_A2618
+  equation: (5) h[c] + (3) nadph[c] + no2[c] => (2) h2o[c] + (3) nadp[c] + nh4[c]
+  subsystem: Nitrogen Metabolism
+- id: NaKt_1
+  name: NaK exchanging ATPase  1
+  genes: Mbar_A1053
+  equation: atp[c] + h2o[c] + k[e] + na1[c] => adp[c] + h[c] + k[c] + na1[e] + pi[c]
+  subsystem: Transport
+- id: Naabc
+  name: Sodium ABC transporter
+  genes: Mbar_A3098 and Mbar_A3099 and Mbar_A3100 and Mbar_A3101 and Mbar_A3102 and
+    Mbar_A3103 and Mbar_A3104 and Mbar_A3105 and Mbar_A3106
+  equation: atp[c] + h2o[c] + na1[c] => adp[c] + h[c] + na1[e] + pi[c]
+  subsystem: Transport
+- id: OCBT
+  name: ornithine carbamoyltransferase
+  genes: Mbar_A3512
+  equation: cbp[c] + orn[c] <=> citr-L[c] + h[c] + pi[c]
+  subsystem: Arginine and Proline Metabolism
+- id: OCTDPSYN
+  name: Heptaprenyl diphosphate extension
+  genes: Mbar_A0394
+  equation: ipdp[c] + hepdp[c] => ppi[c] + octdp[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: OMCDC
+  name: 2 Oxo 4 methyl 3 carboxypentanoate decarboxylation
+  equation: 3c4mop[c] + h[c] => 4mop[c] + co2[c]
+  subsystem: Valine Leucine and Isoleucine Metabolism
+- id: OMPDC
+  name: orotidine 5 phosphate decarboxylase
+  genes: Mbar_A0060
+  equation: h[c] + orot5p[c] => co2[c] + ump[c]
+  subsystem: Nucleotide Metabolism
+- id: OORr
+  name: '2 oxoglutarate synthase reversible '
+  genes: Mbar_A2214 and Mbar_A2215
+  equation: akg[c] + coa[c] + (2) fdox[c] <=> co2[c] + (2) fdred[c] + h[c] + succoa[c]
+  subsystem: Citric Acid Cycle
+- id: OPAH
+  name: '5 Oxoproline amidohydrolase ATP hydrolysing '
+  genes: Mbar_A3345
+  equation: 5oxpro[c] + atp[c] + (2) h2o[c] <=> adp[c] + glu-L[c] + h[c] + pi[c]
+  subsystem: Amino Acid Metabolism
+- id: ORNCD
+  name: ornithine cyclodeaminase
+  genes: Mbar_A3192
+  equation: orn[c] => nh4[c] + pro-L[c]
+  subsystem: Arginine and Proline Metabolism
+- id: ORNDC
+  name: Ornithine Decarboxylase
+  genes: Mbar_A2177
+  equation: h[c] + orn[c] => co2[c] + ptrc[c]
+  subsystem: Arginine and Proline Metabolism
+- id: ORNTAC
+  name: ornithine transacetylase
+  genes: Mbar_A2003
+  equation: acorn[c] + glu-L[c] <=> acglu[c] + orn[c]
+  subsystem: Amino Acid Metabolism
+- id: ORPT
+  name: orotate phosphoribosyltransferase
+  genes: Mbar_A0547 or Mbar_A3471 or Mbar_A3515
+  equation: orot5p[c] + ppi[c] <=> orot[c] + prpp[c]
+  subsystem: Nucleotide Metabolism
+- id: OSUCCL
+  name: Oxalosuccinate carboxy-lyase (2-oxoglutarate-forming)
+  genes: Mbar_A0623
+  equation: h[c] + osuc[c] => akg[c] + co2[c]
+  subsystem: Citric Acid Cycle
+- id: OXADC
+  name: oxalate decarboxylase
+  genes: Mbar_A1827
+  equation: h[c] + oxa[c] => co2[c] + for[c]
+  subsystem: Other
+- id: P5CRx
+  name: pyrroline 5 carboxylate reductase
+  genes: Mbar_A0480
+  equation: 1pyr5c[c] + (2) h[c] + nadh[c] => nad[c] + pro-L[c]
+  subsystem: Arginine and Proline Metabolism
+- id: P5CRy
+  name: L-Proline 5 carboxylate reductase NADP
+  genes: Mbar_A0480
+  equation: 1pyr5c[c] + (2) h[c] + nadph[c] => nadp[c] + pro-L[c]
+  subsystem: Arginine and Proline Metabolism
+- id: PACCOAL
+  name: phenylacetate CoA ligase
+  genes: Mbar_A0211 or Mbar_A2872 or Mbar_A2986
+  equation: atp[c] + coa[c] + pac[c] => amp[c] + phaccoa[c] + ppi[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: PACCOAL2
+  name: 'phenylacetate CoA ligase hydroxyphenylacetate '
+  genes: Mbar_A0211 or Mbar_A2872 or Mbar_A2986
+  equation: 4hphac[c] + atp[c] + coa[c] => amp[c] + hphaccoa[c] + ppi[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: PACCOAL3
+  name: 'phenylacetate CoA ligase indoleacetate '
+  genes: Mbar_A0211 or Mbar_A2872 or Mbar_A2986
+  equation: atp[c] + coa[c] + ind3ac[c] => amp[c] + indaccoa[c] + ppi[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: PACt2r
+  name: phenylacetate transport in via proton symporter
+  equation: h[e] + pac[e] <=> h[c] + pac[c]
+  subsystem: Transport
+- id: PAPSR
+  name: 'phosphoadenylyl sulfate reductase thioredoxin '
+  genes: Mbar_A0559 or Mbar_A2943
+  equation: paps[c] + trdrd[c] => (2) h[c] + pap[c] + so3[c] + trdox[c]
+  subsystem: Cysteine Metabolism
+- id: PC
+  name: pyruvate carboxylase
+  genes: Mbar_A1587 and Mbar_A1586
+  equation: atp[c] + hco3[c] + pyr[c] => adp[c] + h[c] + oaa[c] + pi[c]
+  subsystem: Alanine and Aspartate Metabolism
+- id: PFK__adp_
+  name: ADP specific phosphofructokinase
+  genes: Mbar_A2004 or Mbar_A2005
+  equation: adp[c] + f6p[c] => amp[c] + fdp[c] + h[c]
+  subsystem: GlycolysisGluconeogenesis
+- id: PGAMS
+  name: polyaceyl-D-galactosamine synthase UDPAcgal
+  equation: udpacgal[c] => h[c] + udp[c] + polyacgal[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: PGAMT
+  name: phosphoglucosamine mutase
+  genes: Mbar_A2021
+  equation: gam1p[c] <=> gam6p[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: PGCD
+  name: phosphoglycerate dehydrogenase
+  genes: Mbar_A1431
+  equation: 3pg[c] + nad[c] => 3php[c] + h[c] + nadh[c]
+  subsystem: Glycine and Serine Metabolism
+- id: PGI
+  name: glucose 6 phosphate isomerase
+  genes: Mbar_A1750
+  equation: g6p[c] <=> f6p[c]
+  subsystem: GlycolysisGluconeogenesis
+- id: PGK
+  name: phosphoglycerate kinase
+  genes: Mbar_A1808 or Mbar_A3562
+  equation: 3pg[c] + atp[c] <=> 13dpg[c] + adp[c]
+  subsystem: GlycolysisGluconeogenesis
+- id: PGLCURS
+  name: polyglucuronic acid synthase UDPGlcur
+  equation: udpglcur[c] => udp[c] + polyglcur[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: PGLYCP
+  name: Phosphoglycolate phosphatase
+  genes: Mbar_A2726 or Mbar_A2894
+  equation: 2pglyc[c] + h2o[c] => glyclt[c] + pi[c]
+  subsystem: Central Metabolism
+- id: PGM
+  name: phosphoglycerate mutase
+  genes: Mbar_A0860 or Mbar_A1223 or Mbar_A2222 or Mbar_A2961 or Mbar_A3283
+  equation: 2pg[c] <=> 3pg[c]
+  subsystem: GlycolysisGluconeogenesis
+- id: PGMT
+  name: phosphoglucomutase
+  genes: Mbar_A0192 or Mbar_A0742 or Mbar_A2021
+  equation: g1p[c] <=> g6p[c]
+  subsystem: Central Metabolism
+- id: PHEMES
+  name: Protoheme synthetase
+  equation: fe2[c] + (3) nad[c] + ddcdscl[c] => (2) ac[c] + (2) co2[c] + (4) h[c]
+    + (3) nadh[c] + pheme[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: PHETA1
+  name: phenylalanine transaminase
+  genes: Mbar_A2386 or Mbar_A3133 or Mbar_A3279
+  equation: akg[c] + phe-L[c] <=> glu-L[c] + phpyr[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: PHETRS
+  name: Phenylalanyl tRNA synthetase
+  genes: Mbar_A2752 and ( Mbar_A1375 or Mbar_A1204 )
+  equation: atp[c] + phe-L[c] + trnaphe[c] => amp[c] + phetrna[c] + ppi[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: PIabc
+  name: phosphate transport via ABC system
+  genes: Mbar_A1780 and Mbar_A1781 and Mbar_A1779 and Mbar_A1778
+  equation: atp[c] + h2o[c] + pi[e] => adp[c] + h[c] + (2) pi[c]
+  subsystem: Transport
+- id: PMANM
+  name: phosphomannomutase
+  genes: Mbar_A0721 or Mbar_A2225
+  equation: man1p[c] <=> man6p[c]
+  subsystem: Central Metabolism
+- id: PMDPHT
+  name: pyrimidine phosphatase
+  equation: 5aprbu[c] + h2o[c] => 4r5au[c] + pi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: PMPK
+  name: phosphomethylpyrimidine kinase
+  genes: Mbar_A3501
+  equation: 4ampm[c] + atp[c] => 2mahmp[c] + adp[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: PMVD
+  name: Phosphomevalonate decarboxylase
+  genes: Mbar_A1422
+  equation: 5pmev[c] + h[c] => co2[c] + h2o[c] + ipp[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: PNTOt2
+  name: Pantothenate reversible transport via proton symport
+  equation: h[e] + pnto-R[e] <=> h[c] + pnto-R[c]
+  subsystem: Transport
+- id: POK
+  name: pantothenate synthase (adp-forming)
+  genes: Mbar_A3255
+  equation: atp[c] + pant-R[c] => adp[c] + h[c] + ppant-R[c]
+  subsystem: Coenzyme A Biosynthesis
+- id: POR2
+  name: pyruvate synthase
+  genes: Mbar_A1002 and Mbar_A1000 and Mbar_A1001 and ( Mbar_A3180 or Mbar_A0999
+    )
+  equation: coa[c] + (2) fdox[c] + pyr[c] <=> accoa[c] + co2[c] + (2) fdred[c] +
+    h[c]
+  subsystem: Central Metabolism
+- id: POR3
+  name: pyruvate synthase
+  genes: Mbar_A1002 and Mbar_A1000 and Mbar_A1001 and ( Mbar_A3180 or Mbar_A0999
+    )
+  equation: 2obut[c] + coa[c] + (2) fdox[c] <=> co2[c] + (2) fdred[c] + h[c] + ppcoa[c]
+  subsystem: Central Metabolism
+- id: PPA
+  name: inorganic diphosphatase
+  genes: Mbar_A1481 or Mbar_A3712
+  equation: h2o[c] + ppi[c] => h[c] + (2) pi[c]
+  subsystem: Central Metabolism
+- id: PPAKr
+  name: Propionate kinase
+  genes: Mbar_A1820
+  equation: adp[c] + ppap[c] <=> atp[c] + ppa[c]
+  subsystem: Central Metabolism
+- id: PPA_1
+  name: 'inorganic diphosphatase one proton translocation '
+  genes: Mbar_A0187
+  equation: h2o[c] + ppi[c] => h[e] + (2) pi[c]
+  subsystem: Transport
+- id: PPA_3
+  name: Sodium-translocating pyrophosphatase
+  genes: Mbar_A0186
+  equation: h2o[c] + na1[c] + ppi[c] => h[c] + na1[e] + (2) pi[c]
+  subsystem: Transport
+- id: PPBNGS
+  name: porphobilinogen synthase
+  genes: Mbar_A1463
+  equation: (2) 5aop[c] <=> (2) h2o[c] + h[c] + ppbng[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: PPC
+  name: PEP carboxylase
+  genes: Mbar_A2632
+  equation: co2[c] + h2o[c] + pep[c] => h[c] + oaa[c] + pi[c]
+  subsystem: Citric Acid Cycle
+- id: PPCDC
+  name: phosphopantothenoylcysteine decarboxylase
+  genes: Mbar_A3256
+  equation: 4ppcys[c] + h[c] => co2[c] + pan4p[c]
+  subsystem: Coenzyme A Biosynthesis
+- id: PPDK
+  name: Pyruvate phosphate dikinase
+  genes: Mbar_A1396
+  equation: atp[c] + pi[c] + pyr[c] => amp[c] + h[c] + pep[c] + ppi[c]
+  subsystem: Central Metabolism
+- id: PPK2
+  name: polyphosphate kinase
+  genes: Mbar_A1195
+  equation: atp[c] + ppi[c] => adp[c] + pppi[c]
+  subsystem: Other
+- id: PPKr
+  name: Polyphosphate kinase
+  genes: Mbar_A1195
+  equation: atp[c] + pi[c] <=> adp[c] + ppi[c]
+  subsystem: Nucleotide Metabolism
+- id: PPNCL2
+  name: phosphopantothenate cysteine ligase
+  genes: Mbar_A3256
+  equation: 4ppan[c] + ctp[c] + cys-L[c] => 4ppcys[c] + cmp[c] + h[c] + ppi[c]
+  subsystem: Coenzyme A Biosynthesis
+- id: PPND
+  name: prephenate dehydrogenase
+  genes: Mbar_A0924
+  equation: nad[c] + pphn[c] => 34hpp[c] + co2[c] + nadh[c]
+  subsystem: Amino Acid Metabolism
+- id: PPNDH
+  name: prephenate dehydratase
+  genes: Mbar_A1930
+  equation: h[c] + pphn[c] => co2[c] + h2o[c] + phpyr[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: PPS
+  name: phosphoenolpyruvate synthase
+  genes: Mbar_A2223 or Mbar_A3094 or Mbar_A3264
+  equation: atp[c] + h2o[c] + pyr[c] => amp[c] + (2) h[c] + pep[c] + pi[c]
+  subsystem: GlycolysisGluconeogenesis
+- id: PPTS
+  name: Phosphopantothenate synthetase
+  genes: Mbar_A3254
+  equation: ala-B[c] + atp[c] + ppant-R[c] => 4ppan[c] + amp[c] + h[c] + ppi[c]
+  subsystem: Coenzyme A Biosynthesis
+- id: PRAGSr
+  name: phosphoribosylglycinamide synthase
+  genes: Mbar_A3513
+  equation: atp[c] + gly[c] + pram[c] <=> adp[c] + gar[c] + h[c] + pi[c]
+  subsystem: Nucleotide Metabolism
+- id: PRAIS
+  name: phosphoribosylaminoimidazole synthase
+  genes: Mbar_A0862
+  equation: atp[c] + fpram[c] => adp[c] + air[c] + (2) h[c] + pi[c]
+  subsystem: Nucleotide Metabolism
+- id: PRAIi
+  name: 'phosphoribosylanthranilate isomerase irreversible '
+  genes: Mbar_A3625
+  equation: pran[c] => 2cpr5p[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: PRAMPC
+  name: phosphoribosyl AMP cyclohydrolase
+  genes: Mbar_A3654
+  equation: h2o[c] + prbamp[c] => prfp[c]
+  subsystem: Histidine Metabolism
+- id: PRASCS
+  name: phosphoribosylaminoimidazolesuccinocarboxamide synthase
+  genes: Mbar_A0531
+  equation: 5aizc[c] + asp-L[c] + atp[c] <=> 25aics[c] + adp[c] + h[c] + pi[c]
+  subsystem: Nucleotide Metabolism
+- id: PRATPP
+  name: phosphoribosyl ATP pyrophosphatase
+  genes: Mbar_A2166
+  equation: h2o[c] + prbatp[c] => h[c] + ppi[c] + prbamp[c]
+  subsystem: Histidine Metabolism
+- id: PRE2DC
+  name: Precorrin-2 decarboxylase
+  equation: dscl[c] + (2) h[c] => (2) co2[c] + ddcdscl[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: PRFGS
+  name: phosphoribosylformylglycinamidine synthase
+  genes: Mbar_A2755 or Mbar_A2756 or Mbar_A0536
+  equation: atp[c] + fgam[c] + gln-L[c] + h2o[c] => adp[c] + fpram[c] + glu-L[c]
+    + h[c] + pi[c]
+  subsystem: Nucleotide Metabolism
+- id: PRMICIi
+  name: '1 5 phosphoribosyl 5 5 phosphoribosylamino methylideneamino imidazole 4
+    carboxamide isomerase irreversible '
+  genes: Mbar_A1100 or Mbar_A1311
+  equation: prfp[c] => prlp[c]
+  subsystem: Histidine Metabolism
+- id: PROTRS
+  name: Prolyl tRNA synthetase
+  genes: Mbar_A0179
+  equation: atp[c] + pro-L[c] + trnapro[c] => amp[c] + ppi[c] + protrna[c]
+  subsystem: Arginine and Proline Metabolism
+- id: PROabc
+  name: L proline transport via ABC system
+  genes: Mbar_A2376 and Mbar_A2377 and Mbar_A2378
+  equation: atp[c] + h2o[c] + pro-L[e] => adp[c] + h[c] + pi[c] + pro-L[c]
+  subsystem: Transport
+- id: PROt4
+  name: Sodium-Proline symporter
+  genes: Mbar_A1264 or Mbar_A3721
+  equation: na1[e] + pro-L[e] => na1[c] + pro-L[c]
+  subsystem: Transport
+- id: PRPPP
+  name: phosphoribosylpyrophosphate phosphatase
+  genes: Mbar_A2100
+  equation: h2o[c] + prpp[c] => h[c] + pi[c] + r15bp[c]
+  subsystem: Other
+- id: PRPPS
+  name: phosphoribosylpyrophosphate synthetase
+  genes: Mbar_A0363
+  equation: atp[c] + r5p[c] <=> amp[c] + h[c] + prpp[c]
+  subsystem: Histidine Metabolism
+- id: PSCVT
+  name: 3 phosphoshikimate 1 carboxyvinyltransferase
+  genes: Mbar_A0891
+  equation: pep[c] + skm5p[c] <=> 3psme[c] + pi[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: PSERT
+  name: phosphoserine transaminase
+  genes: Mbar_A1294
+  equation: 3php[c] + glu-L[c] => akg[c] + pser-L[c]
+  subsystem: Glycine and Serine Metabolism
+- id: PSP_L
+  name: 'phosphoserine phosphatase L serine '
+  genes: Mbar_A1093 or Mbar_A1094 or Mbar_A1590
+  equation: h2o[c] + pser-L[c] => pi[c] + ser-L[c]
+  subsystem: Glycine and Serine Metabolism
+- id: PTAr
+  name: phosphotransacetylase
+  genes: Mbar_A1821
+  equation: accoa[c] + pi[c] <=> actp[c] + coa[c]
+  subsystem: Methanogenesis
+- id: PTHPS
+  name: 6 pyruvoyltetrahydropterin synthase
+  genes: Mbar_A0134 or Mbar_A2626
+  equation: ahdt[c] => 6pthp[c] + pppi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: PTPATi
+  name: pantetheine phosphate adenylyltransferase
+  genes: Mbar_A2339
+  equation: atp[c] + h[c] + pan4p[c] => dpcoa[c] + ppi[c]
+  subsystem: Coenzyme A Biosynthesis
+- id: PYDXS
+  name: Pyridoxal 5-phosphate synthase
+  genes: Mbar_A3580 and Mbar_A3581
+  equation: g3p[c] + gln-L[c] + r5p[c] => glu-L[c] + (3) h2o[c] + h[c] + pi[c] +
+    pydx5p[c]
+  subsystem: Central Metabolism
+- id: PYK
+  name: pyruvate kinase
+  genes: Mbar_A0175
+  equation: adp[c] + h[c] + pep[c] => atp[c] + pyr[c]
+  subsystem: GlycolysisGluconeogenesis
+- id: PYRDC
+  name: pyruvate decarboxylase
+  genes: Mbar_A1429
+  equation: h[c] + pyr[c] => acald[c] + co2[c]
+  subsystem: GlycolysisGluconeogenesis
+- id: PYRFALDC
+  name: Hydroxyacetone synthase
+  genes: ( Mbar_A0218 or Mbar_A0428 or Mbar_A0438 or Mbar_A2541 ) and Mbar_A0219
+  equation: fald[c] + h[c] + pyr[c] => co2[c] + acetol[c]
+  subsystem: Central Metabolism
+- id: PYRS-1
+  name: L-Pyrrolysine synthesis 1
+  genes: Mbar_A0838
+  equation: 1pyr5c[c] + amet[c] => ahcys[c] + h[c] + 1pyr4m5c[c]
+  subsystem: Other
+- id: PYRS-2
+  name: L-Pyrrolysine synthesis 2
+  genes: Mbar_A0837
+  equation: atp[c] + lys-L[c] + 1pyr4m5c[c] => adp[c] + h[c] + pi[c] + pyr-L[c]
+  subsystem: Other
+- id: PYRTHMPPTRX
+  name: pyruvate:thiamin diphosphate acetaldehydetransferase
+  genes: Mbar_A0219 and ( Mbar_A0218 or Mbar_A0428 or Mbar_A2541 )
+  equation: h[c] + pyr[c] + thmpp[c] => co2[c] + he2thpp[c]
+  subsystem: Valine Leucine and Isoleucine Metabolism
+- id: PYRTRS
+  name: pyrrolysyl-tRNA synthase
+  genes: Mbar_A0839
+  equation: atp[c] + trnaala[c] + pyr-L[c] => amp[c] + ppi[c] + pyrtrna[c]
+  subsystem: Other
+- id: PYRt2
+  name: pyruvate transport in via proton symport
+  equation: h[e] + pyr[e] => h[c] + pyr[c]
+  subsystem: Transport
+- id: QULNS
+  name: quinolinate synthase
+  genes: Mbar_A1865
+  equation: dhap[c] + iasp[c] => (2) h2o[c] + h[c] + pi[c] + quln[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: R2MMALSYN
+  name: (R)-2-Methylmalate synthetase
+  genes: Mbar_A0217
+  equation: accoa[c] + h2o[c] + pyr[c] <=> coa[c] + h[c] + r2mmal[c]
+  subsystem: Valine Leucine and Isoleucine Metabolism
+- id: RBFSa
+  name: riboflavin synthase
+  genes: Mbar_A2081 and Mbar_A2082
+  equation: 4r5au[c] + db4p[c] => dmlz[c] + (2) h2o[c] + pi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: RBFSb
+  name: riboflavin synthase
+  genes: Mbar_A2081 and Mbar_A2082
+  equation: (2) dmlz[c] => 4r5au[c] + ribflv[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: RBK
+  name: ribokinase
+  genes: Mbar_A2903
+  equation: atp[c] + rib-D[c] => adp[c] + h[c] + r5p[c]
+  subsystem: Central Metabolism
+- id: RBPC
+  name: ribulose bisphosphate carboxylase
+  genes: Mbar_A0902
+  equation: co2[c] + h2o[c] + rb15bp[c] => (2) 3pg[c] + (2) h[c]
+  subsystem: Central Metabolism
+- id: RBPI
+  name: ribose 1 5 bisphosphate isomerase
+  genes: Mbar_A2100
+  equation: r15bp[c] => rb15bp[c]
+  subsystem: Other
+- id: RH2CD
+  name: ' R  homo 2citrate dehydratase'
+  genes: Mbar_A0714 or ( Mbar_A0244 and Mbar_A1961 )
+  equation: Rh2cit[c] <=> h2acon-C[c] + h2o[c]
+  subsystem: Coenzyme B Biosynthesis
+- id: RH3CD
+  name: ' R  homo 3citrate dehydratase'
+  genes: Mbar_A0714 or ( Mbar_A0244 and Mbar_A1961 )
+  equation: Rh3cit[c] <=> h2o[c] + h3acon-C[c]
+  subsystem: Coenzyme B Biosynthesis
+- id: RIBFLVt2
+  name: riboflavin transport in via proton symport
+  equation: h[e] + ribflv[e] => h[c] + ribflv[c]
+  subsystem: Transport
+- id: RNDR1
+  name: 'ribonucleoside diphosphate reductase ADP '
+  genes: Mbar_A3615
+  equation: adp[c] + trdrd[c] => dadp[c] + h2o[c] + trdox[c]
+  subsystem: Nucleotide Metabolism
+- id: RNDR2
+  name: 'ribonucleoside diphosphate reductase GDP '
+  genes: Mbar_A3615
+  equation: gdp[c] + trdrd[c] => dgdp[c] + h2o[c] + trdox[c]
+  subsystem: Nucleotide Metabolism
+- id: RNDR3
+  name: 'ribonucleoside diphosphate reductase CDP '
+  genes: Mbar_A3615
+  equation: cdp[c] + trdrd[c] => dcdp[c] + h2o[c] + trdox[c]
+  subsystem: Nucleotide Metabolism
+- id: RNDR4
+  name: 'ribonucleoside diphosphate reductase UDP '
+  genes: Mbar_A3615
+  equation: trdrd[c] + udp[c] => dudp[c] + h2o[c] + trdox[c]
+  subsystem: Nucleotide Metabolism
+- id: RNTR1
+  name: 'ribonucleoside triphosphate reductase ATP '
+  genes: Mbar_A1037
+  equation: atp[c] + trdrd[c] => datp[c] + h2o[c] + trdox[c]
+  subsystem: Nucleotide Metabolism
+- id: RNTR2
+  name: 'ribonucleoside triphosphate reductase GTP '
+  genes: Mbar_A1037
+  equation: gtp[c] + trdrd[c] => dgtp[c] + h2o[c] + trdox[c]
+  subsystem: Nucleotide Metabolism
+- id: RNTR3
+  name: 'ribonucleoside triphosphate reductase CTP '
+  genes: Mbar_A1037
+  equation: ctp[c] + trdrd[c] => dctp[c] + h2o[c] + trdox[c]
+  subsystem: Nucleotide Metabolism
+- id: RNTR4
+  name: 'ribonucleoside triphosphate reductase UTP '
+  genes: Mbar_A1037
+  equation: trdrd[c] + utp[c] => dutp[c] + h2o[c] + trdox[c]
+  subsystem: Nucleotide Metabolism
+- id: RPI
+  name: ribose 5 phosphate isomerase
+  genes: Mbar_A3172
+  equation: r5p[c] <=> ru5p-D[c]
+  subsystem: Histidine Metabolism
+- id: RU5PS
+  name: Ribulose-5-P Synthetase
+  genes: Mbar_A0935
+  equation: fald[c] + ru5p-D[c] <=> ah6p-D[c]
+  subsystem: Central Metabolism
+- id: RZ5PP2
+  name: alpha ribazole 5 phosphate phosphatase
+  genes: Mbar_A3455
+  equation: 5pr5hbz[c] + h2o[c] => pi[c] + r5hbzi[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: SADT2
+  name: Sulfate adenyltransferase
+  genes: Mbar_A0295
+  equation: atp[c] + gtp[c] + h2o[c] + so4[c] => gdp[c] + pi[c] + ppi[c] + aps[c]
+  subsystem: Cysteine Metabolism
+- id: SDPTA
+  name: N-Succinyl-L-2,6-diaminoheptanedioate:2-oxoglutarate
+  genes: Mbar_A0871
+  equation: akg[c] + sl26da[c] <=> glu-L[c] + sl2a6o[c]
+  subsystem: Other
+- id: SECS
+  name: sulfoethylcysteine synthase
+  equation: 2tcc[c] + h[c] + nadh[c] => nad[c] + sec[c]
+  subsystem: Coenzyme M Biosynthesis
+- id: SERAT
+  name: serine O acetyltransferase
+  genes: Mbar_A0476 or Mbar_A1106 or Mbar_A2421
+  equation: accoa[c] + ser-L[c] <=> acser[c] + coa[c]
+  subsystem: Cysteine Metabolism
+- id: SERTRS
+  name: Seryl tRNA synthetase
+  genes: Mbar_A0541 or Mbar_A2126
+  equation: atp[c] + ser-L[c] + trnaser[c] => amp[c] + ppi[c] + sertrna[c]
+  subsystem: Glycine and Serine Metabolism
+- id: SHCD
+  name: ' S homocitrate dehydratase'
+  genes: ( Mbar_A0244 or Mbar_A1338 or Mbar_A2270 ) and ( Mbar_A1961 or Mbar_A2167
+    )
+  equation: Shcit[c] <=> h2o[c] + hacon-C[c]
+  subsystem: Coenzyme B Biosynthesis
+- id: SHCHCC
+  name: sirohydrochlorin cobaltochelatase
+  genes: Mbar_A0344 or Mbar_A2400
+  equation: cobalt2[c] + dscl[c] => copre2[c] + (3) h[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: SHCHD2
+  name: 'sirohydrochlorin dehydrogenase NAD '
+  genes: Mbar_A1461
+  equation: dscl[c] + nad[c] => nadh[c] + scl[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: SHCHF
+  name: sirohydrochlorin ferrochetalase
+  genes: Mbar_A1461
+  equation: fe2[c] + scl[c] => (4) h[c] + sheme[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: SHK3Dr
+  name: shikimate dehydrogenase
+  genes: Mbar_A0923
+  equation: 3dhsk[c] + h[c] + nadph[c] <=> nadp[c] + skm[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: SHKK
+  name: shikimate kinase
+  genes: Mbar_A3127 or Mbar_A3183
+  equation: atp[c] + skm[c] => adp[c] + h[c] + skm5p[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: SHSL2r
+  name: O-succinylhomoserine lyase (L-cysteine)  2
+  genes: Mbar_A2427
+  equation: h2s[c] + suchms[c] <=> h[c] + hcys-L[c] + succ[c]
+  subsystem: Other
+- id: SMTZS
+  name: sulfomethyl thiazolidine synthase
+  equation: 2saa[c] + cys-L[c] <=> 2tcc[c] + h2o[c]
+  subsystem: Coenzyme M Biosynthesis
+- id: SO3t
+  name: sulfate transport exchange via proton symport
+  equation: h[e] + so3[e] <=> h[c] + so3[c]
+  subsystem: Transport
+- id: SO4t2
+  name: sulfate transport in via proton symport
+  genes: Mbar_A2518
+  equation: h[e] + so4[e] => h[c] + so4[c]
+  subsystem: Transport
+- id: SPDC
+  name: sulfopyruvate decarboxylase
+  genes: Mbar_A3542
+  equation: 3spyr[c] + h[c] => 2saa[c] + co2[c]
+  subsystem: Coenzyme M Biosynthesis
+- id: SPODM
+  name: superoxide dismutase
+  genes: Mbar_A2345 or Mbar_A3589
+  equation: (2) h[c] + (2) o2-[c] => h2o2[c] + o2[c]
+  subsystem: Other
+- id: SSALx
+  name: 'succinate semialdehyde dehydrogenase NAD '
+  genes: Mbar_A0503 or Mbar_A1620 or Mbar_A2542
+  equation: h2o[c] + nad[c] + sucsal[c] => (2) h[c] + nadh[c] + succ[c]
+  subsystem: Glutamate metabolism
+- id: SSALy
+  name: 'succinate semialdehyde dehydrogenase NADP '
+  genes: Mbar_A0503 or Mbar_A1620 or Mbar_A2542
+  equation: h2o[c] + nadp[c] + sucsal[c] => (2) h[c] + nadph[c] + succ[c]
+  subsystem: Glutamate metabolism
+- id: SULR2
+  name: Sulfite reductase
+  genes: Mbar_A1597 or Mbar_A2618
+  equation: (3) f420-2h2[c] + so3[c] <=> (3) f420-2[c] + (3) h2o[c] + h2s[c] + h[c]
+  subsystem: Other
+- id: SULabc
+  name: sulfate transport via ABC system
+  genes: ( Mbar_A1557 or Mbar_A2559 or Mbar_A1306 ) and ( Mbar_A2560 or Mbar_A1558
+    or Mbar_A1307 ) and ( Mbar_A1305 or Mbar_A1556 ) and Mbar_A1559
+  equation: atp[c] + h2o[c] + so4[e] => adp[c] + h[c] + pi[c] + so4[c]
+  subsystem: Transport
+- id: TDP
+  name: Thiamin diphosphate phosphohydrolase
+  genes: Mbar_A0278
+  equation: h2o[c] + thmpp[c] => h[c] + pi[c] + thmmp[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: TDPDRE
+  name: dTDP 4 dehydrorhamnose 3 5 epimerase
+  genes: Mbar_A0230 or Mbar_A1887
+  equation: dtdp4d6dg[c] => dtdp4d6dm[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: TDPDRR
+  name: dTDP 4 dehydrorhamnose reductase
+  genes: Mbar_A0232
+  equation: dtdp4d6dm[c] + h[c] + nadph[c] => dtdprmn[c] + nadp[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: TDPGDH
+  name: dTDPglucose 4 6 dehydratase
+  genes: Mbar_A0036 or Mbar_A0231
+  equation: dtdpglu[c] => dtdp4d6dg[c] + h2o[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: THACH
+  name: trans homoaconitate hydrolase
+  equation: h2o[c] + hacon-T[c] <=> Shcit[c]
+  subsystem: Coenzyme B Biosynthesis
+- id: THMabc
+  name: thiamine transport via ABC system
+  equation: atp[c] + h2o[c] + thm[e] => adp[c] + h[c] + pi[c] + thm[c]
+  subsystem: Transport
+- id: THRAr
+  name: Threonine Aldolase
+  genes: Mbar_A2316
+  equation: thr-L[c] <=> acald[c] + gly[c]
+  subsystem: Threonine and Lysine Metabolism
+- id: THRPD
+  name: threonine phosphate decarboxylase
+  genes: Mbar_A3453
+  equation: h[c] + thrp[c] => applp[c] + co2[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: THRPS
+  name: threonine phosphate synthase
+  equation: atp[c] + thr-L[c] => adp[c] + h[c] + thrp[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: THRS
+  name: threonine synthase
+  genes: Mbar_A2049 or Mbar_A3541
+  equation: h2o[c] + phom[c] => pi[c] + thr-L[c]
+  subsystem: Threonine and Lysine Metabolism
+- id: THRTRS
+  name: Threonyl tRNA synthetase
+  genes: Mbar_A2945
+  equation: atp[c] + thr-L[c] + trnathr[c] => amp[c] + ppi[c] + thrtrna[c]
+  subsystem: Threonine and Lysine Metabolism
+- id: THZPSN
+  name: thiazole phosphate synthesis
+  genes: Mbar_A0010 and Mbar_A1238
+  equation:
+    reversible: false
+    left:
+    - id: atp
+      compartment: c
+      value: 1
+    - id: cys-L
+      compartment: c
+      value: 1
+    - id: dxyl5p
+      compartment: c
+      value: 1
+    - id: tyr-L
+      compartment: c
+      value: 1
+    right:
+    - id: 4hba
+      compartment: c
+      value: 1
+    - id: 4mpetz
+      compartment: c
+      value: 1
+    - id: ala-L
+      compartment: c
+      value: 1
+    - id: amp
+      compartment: c
+      value: 1
+    - id: co2
+      compartment: c
+      value: 1
+    - id: h2o
+      compartment: c
+      value: 1
+    - id: h
+      compartment: c
+      value: 1
+    - id: ppi
+      compartment: c
+      value: 1
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: TIH2CD
+  name: threo iso homo 2citrate dehydrogenase
+  genes: Mbar_A1339
+  equation: nad[c] + tih2cit[c] => co2[c] + nadh[c] + ohepa[c]
+  subsystem: Coenzyme B Biosynthesis
+- id: TIH3CD
+  name: threo iso homo 3citrate dehydrogenase
+  genes: Mbar_A1339
+  equation: nad[c] + tih3cit[c] => 2ood[c] + co2[c] + nadh[c]
+  subsystem: Coenzyme B Biosynthesis
+- id: TIHCD
+  name: threo isohomocitrate dehydrogenase
+  genes: Mbar_A1339
+  equation: ihcit-T[c] + nad[c] => co2[c] + nadh[c] + ohexa[c]
+  subsystem: Coenzyme B Biosynthesis
+- id: TKT2
+  name: transketolase
+  equation: e4p[c] + xu5p-D[c] <=> f6p[c] + g3p[c]
+  subsystem: Central Metabolism
+- id: TMAMT
+  name: Trimethylamine methyltransferase
+  genes: ( ( Mbar_A1054 or Mbar_A3639 ) and Mbar_A1502 and Mbar_A1503 ) or ( ( Mbar_A0841
+    or Mbar_A1688 ) and Mbar_A1502 and Mbar_A1503 )
+  equation: h[c] + tma[c] + 5hbc_red[c] => dma[c] + m5hbc[c]
+  subsystem: Methanogenesis
+- id: TMAt2
+  name: Trimethylamine symport
+  genes: Mbar_A1504
+  equation: h[e] + tma[e] <=> h[c] + tma[c]
+  subsystem: Transport
+- id: TMDK1
+  name: 'thymidine kinase ATPthymidine '
+  genes: Mbar_A1098
+  equation: atp[c] + thymd[c] => adp[c] + dtmp[c] + h[c]
+  subsystem: Nucleotide Metabolism
+- id: TMDPP
+  name: thymidine phosphorylase
+  genes: Mbar_A3188
+  equation: pi[c] + thymd[c] <=> 2dr1p[c] + thym[c]
+  subsystem: Nucleotide Metabolism
+- id: TMDS
+  name: thymidylate synthase
+  genes: Mbar_A0890 or Mbar_A2087
+  equation: dump[c] + mlthf[c] => dhf[c] + dtmp[c]
+  subsystem: Nucleotide Metabolism
+- id: TMKr
+  name: thiamine kinase
+  equation: atp[c] + thm[c] <=> adp[c] + h[c] + thmmp[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: TMPKr
+  name: thiamine phosphate kinase
+  genes: Mbar_A0131 or Mbar_A1035
+  equation: atp[c] + thmmp[c] <=> adp[c] + thmpp[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: TMPPP
+  name: thiamine phosphate diphosphorylase
+  genes: Mbar_A3318
+  equation: 2mahmp[c] + 4mpetz[c] + h[c] => ppi[c] + thmmp[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: TPI
+  name: triose phosphate isomerase
+  genes: Mbar_A0934
+  equation: dhap[c] <=> g3p[c]
+  subsystem: GlycolysisGluconeogenesis
+- id: TRDR
+  name: 'thioredoxin reductase NADPH '
+  genes: Mbar_A0633 or Mbar_A2310 or Mbar_A2898
+  equation: h[c] + nadph[c] + trdox[c] => nadp[c] + trdrd[c]
+  subsystem: Nucleotide Metabolism
+- id: TRPS1
+  name: 'tryptophan synthase indoleglycerol phosphate '
+  genes: Mbar_A3623 and ( Mbar_A3503 or Mbar_A3622 )
+  equation: 3ig3p[c] + ser-L[c] => g3p[c] + h2o[c] + trp-L[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: TRPS2
+  name: 'tryptophan synthase indole '
+  genes: Mbar_A3503 or Mbar_A3622
+  equation: indole[c] + ser-L[c] <=> h2o[c] + trp-L[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: TRPS3
+  name: 'tryptophan synthase indoleglycerol phosphate '
+  genes: Mbar_A3623
+  equation: 3ig3p[c] => g3p[c] + indole[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: TRPTA
+  name: tryptophan transaminase
+  genes: Mbar_A2386 or Mbar_A3133 or Mbar_A3279
+  equation: akg[c] + trp-L[c] <=> glu-L[c] + indpyr[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: TRPTRS
+  name: Tryptophanyl tRNA synthetase
+  genes: Mbar_A1374
+  equation: atp[c] + trnatrp[c] + trp-L[c] => amp[c] + ppi[c] + trptrna[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: TRPt2r
+  name: Tryptophan import via proton symport
+  genes: Mbar_A2825
+  equation: h[c] + trp-L[c] <=> h[e] + trp-L[e]
+  subsystem: Transport
+- id: TSR
+  name: thiosulfate reductase
+  equation: h2[c] + tsul[c] => h2s[c] + so3[c]
+  subsystem: Cysteine Metabolism
+- id: TSULabc
+  name: thiosulfate transport via ABC system
+  genes: ( Mbar_A1557 or Mbar_A2559 or Mbar_A1306 ) and ( Mbar_A2560 or Mbar_A1558
+    or Mbar_A1307 ) and ( Mbar_A1305 or Mbar_A1556 ) and Mbar_A1559
+  equation: atp[c] + h2o[c] + tsul[e] => adp[c] + h[c] + pi[c] + tsul[c]
+  subsystem: Transport
+- id: TYRCBOX
+  name: L-tyrosine carboxy-lyase (tyramine-forming)
+  genes: Mbar_A0977
+  equation: h[c] + tyr-L[c] => co2[c] + tym[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: TYRTA
+  name: tyrosine transaminase
+  genes: Mbar_A2386 or Mbar_A3133 or Mbar_A3279
+  equation: akg[c] + tyr-L[c] <=> 34hpp[c] + glu-L[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: TYRTRS
+  name: tyrosyl tRNA synthetase
+  genes: Mbar_A1745
+  equation: atp[c] + trnatyr[c] + tyr-L[c] => amp[c] + ppi[c] + tyrtrna[c]
+  subsystem: Tyrosine Tryptophan and Phenylalanine Metabolism
+- id: UACMAMO
+  name: UDP-N-acetyl-D-mannosamine oxidoreductase
+  genes: Mbar_A1139
+  equation: h2o[c] + (2) nad[c] + uacmam[c] <=> (3) h[c] + (2) nadh[c] + uacmamu[c]
+  subsystem: Nucleotide Metabolism
+- id: UAG2E
+  name: UDP N acetylglucosamine 2 epimerase
+  genes: Mbar_A0052 or Mbar_A2140
+  equation: uacgam[c] <=> uacmam[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: UAG2EMA
+  name: 'UDP N acetyl D glucosamine 2 epimerase Hydrolysis '
+  genes: Mbar_A0052 or Mbar_A2140
+  equation: h2o[c] + uacgam[c] <=> acmana[c] + h[c] + udp[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: UAG4E
+  name: UDP-N-acetylglucosamine 4-epimerase
+  genes: Mbar_A0021 or Mbar_A0036 or Mbar_A1122
+  equation: uacgam[c] <=> udpacgal[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: UAGCVT
+  name: UDP N acetylglucosamine 1 carboxyvinyltransferase
+  genes: Mbar_A0022
+  equation: pep[c] + uacgam[c] => pi[c] + uaccg[c]
+  subsystem: Central Metabolism
+- id: UAGDP
+  name: UDP N acetylglucosamine diphosphorylase
+  genes: Mbar_A2020 or Mbar_A2023
+  equation: acgam1p[c] + h[c] + utp[c] => ppi[c] + uacgam[c]
+  subsystem: Lipid Cell Wall Metabolism
+- id: UAPGR
+  name: UDP N acetylenolpyruvoylglucosamine reductase
+  genes: Mbar_A0023
+  equation: h[c] + nadph[c] + uaccg[c] => nadp[c] + uamr[c]
+  subsystem: Central Metabolism
+- id: UDPG4E
+  name: UDPglucose 4 epimerase
+  genes: Mbar_A0021 or Mbar_A0036 or Mbar_A1122
+  equation: udpg[c] <=> udpgal[c]
+  subsystem: Central Metabolism
+- id: UDPGDr
+  name: UDPglucose 6 dehydrogenase
+  genes: Mbar_A1120 or Mbar_A1119
+  equation: h2o[c] + (2) nad[c] + udpg[c] <=> (3) h[c] + (2) nadh[c] + udpglcur[c]
+  subsystem: Central Metabolism
+- id: UMPK
+  name: UMP kinase
+  genes: Mbar_A0788 or Mbar_A0083
+  equation: atp[c] + ump[c] <=> adp[c] + udp[c]
+  subsystem: Nucleotide Metabolism
+- id: UNK_CBL1DEGt
+  name: unknown cobalamin degradation product diffusion
+  equation: unknown-cbl1deg[e] <=> unknown-cbl1deg[c]
+  subsystem: Transport
+- id: UNK_RBFDEGt
+  name: unknown riboflavin degradation product diffusion
+  equation: unknown-rbfdeg[e] <=> unknown-rbfdeg[c]
+  subsystem: Transport
+- id: UPP3MT
+  name: uroporphyrinogen methyltransferase
+  genes: Mbar_A1791
+  equation: (2) amet[c] + uppg3[c] => (2) ahcys[c] + dscl[c] + h[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: UPP3S
+  name: uroporphyrinogen III synthase
+  genes: Mbar_A1792
+  equation: hmbil[c] => h2o[c] + uppg3[c]
+  subsystem: Vitamins Cofactor Biosynthesis
+- id: UREAt
+  name: Urea transport via facilitate diffusion
+  genes: Mbar_A2042
+  equation: urea[e] <=> urea[c]
+  subsystem: Transport
+- id: URIDK2r
+  name: 'uridylate kinase dUMP '
+  genes: Mbar_A0788 or Mbar_A0083
+  equation: atp[c] + dump[c] <=> adp[c] + dudp[c]
+  subsystem: Nucleotide Metabolism
+- id: VALTA
+  name: valine transaminase
+  genes: Mbar_A0576
+  equation: akg[c] + val-L[c] <=> 3mob[c] + glu-L[c]
+  subsystem: Valine Leucine and Isoleucine Metabolism
+- id: VALTRS
+  name: Valyl tRNA synthetase
+  genes: Mbar_A1976
+  equation: atp[c] + trnaval[c] + val-L[c] => amp[c] + ppi[c] + valtrna[c]
+  subsystem: Valine Leucine and Isoleucine Metabolism
+- id: VALt2r
+  name: L valine reversible transport via proton symport
+  genes: Mbar_A2616 and Mbar_A2617
+  equation: h[e] + val-L[e] <=> h[c] + val-L[c]
+  subsystem: Transport
+- id: VOR
+  name: 2 oxoisovalerate ferredoxin reductase
+  genes: Mbar_A2175 and Mbar_A2174 and Mbar_A2173
+  equation: 3mob[c] + coa[c] + (2) fdox[c] <=> co2[c] + (2) fdred[c] + h[c] + ibcoa[c]
+  subsystem: Central Metabolism
+- id: XPPT
+  name: xanthine phosphoribosyltransferase
+  genes: Mbar_A0913 or Mbar_A3178
+  equation: prpp[c] + xan[c] => ppi[c] + xmp[c]
+  subsystem: Nucleotide Metabolism
+- id: YUMPS
+  name: yUMP synthetase
+  genes: Mbar_A0082 or Mbar_A1332 or Mbar_A3206
+  equation: r5p[c] + ura[c] <=> h2o[c] + psd5p[c]
+  subsystem: Nucleotide Metabolism
+- id: ZN2t4
+  name: Zinc Hydrogen-Potassium antiporter
+  genes: Mbar_A3267
+  equation: h[e] + k[e] + zn2[c] <=> h[c] + k[c] + zn2[e]
+  subsystem: Transport
+- id: ZNabc
+  name: zinc transport via ABC system
+  genes: Mbar_A0993 and Mbar_A0996 and Mbar_A0995
+  equation: atp[c] + h2o[c] + zn2[e] => adp[c] + h[c] + pi[c] + zn2[c]
+  subsystem: Transport
+- id: Znabc2
+  name: Zinc ABC transporter 2
+  genes: Mbar_A0343 or Mbar_A3337 or Mbar_A3446
+  equation: atp[c] + h2o[c] + zn2[c] => adp[c] + h[c] + pi[c] + zn2[e]
+  subsystem: Transport

@@ -1,0 +1,51 @@
+biomass: Ar0828
+default_flux_limit: 1000
+compartments:
+- id: a
+  adjacent_to: c
+  name: Carboxysome
+- id: c
+  adjacent_to:
+  - k
+  - i
+  - e
+  - t
+  - p
+  - a
+  name: Cytoplasm
+- id: e
+  adjacent_to:
+  - p
+  - k
+  - c
+  name: Extracellular
+- id: i
+  adjacent_to:
+  - p
+  - c
+  name: Cytoplasmic_membrane
+- id: k
+  adjacent_to:
+  - e
+  - t
+  - c
+  name: Thylakoid_membrane
+- id: p
+  adjacent_to:
+  - i
+  - e
+  - c
+  name: Periplasm
+- id: t
+  adjacent_to:
+  - k
+  - c
+  name: Thylakoid_lumen
+compounds:
+- include: compounds.yaml
+reactions:
+- include: reactions.yaml
+exchange:
+- include: exchange.yaml
+limits:
+- include: limits.yaml

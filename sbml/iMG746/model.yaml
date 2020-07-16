@@ -1,0 +1,17 @@
+biomass: Mb_biomass_65
+default_flux_limit: 1000
+compartments:
+- id: c
+  adjacent_to: e
+  name: Cytoplasm
+- id: e
+  adjacent_to: c
+  name: Extracellular
+compounds:
+- include: compounds.yaml
+reactions:
+- include: reactions.yaml
+exchange:
+- include: exchange.yaml
+limits:
+- include: limits.yaml

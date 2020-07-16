@@ -1,0 +1,33 @@
+biomass: 00599
+default_flux_limit: 1000
+extracellular: '00001'
+compartments:
+- id: '00001'
+  adjacent_to:
+  - '00003'
+  - '00002'
+  name: extracellular
+- id: '00002'
+  adjacent_to:
+  - '00001'
+  - '00003'
+  name: mitochondrial
+- id: '00003'
+  adjacent_to:
+  - '00005'
+  - '00001'
+  - '00002'
+  name: cytoplasmic
+- id: '00004'
+  name: plasma_membrane
+- id: '00005'
+  adjacent_to: '00003'
+  name: endoplasmic_reticulum
+compounds:
+- include: compounds.yaml
+reactions:
+- include: reactions.yaml
+exchange:
+- include: exchange.yaml
+limits:
+- include: limits.yaml

@@ -1,0 +1,3757 @@
+- id: ADD_BIOMASS
+  equation:
+    reversible: false
+    left:
+    - id: cpd00003
+      compartment: c
+      value: 0.002317
+    - id: cpd00001
+      compartment: c
+      value: 18.934661
+    - id: cpd00018
+      compartment: c
+      value: 0.001036
+    - id: cpd00062
+      compartment: c
+      value: 0.154307
+    - id: cpd00002
+      compartment: c
+      value: 25.191
+    - id: cpd00033
+      compartment: c
+      value: 0.694744945
+    - id: cpd00052
+      compartment: c
+      value: 0.142908
+    - id: cpd00054
+      compartment: c
+      value: 0.244673749
+    - id: cpd00004
+      compartment: c
+      value: 0.000105
+    - id: cpd00118
+      compartment: c
+      value: 0.027151428
+    - id: cpd00129
+      compartment: c
+      value: 0.250684371
+    - id: cpd00066
+      compartment: c
+      value: 0.21006086
+    - id: cpd00084
+      compartment: c
+      value: 0.103838669
+    - id: cpd00022
+      compartment: c
+      value: 0.000105
+    - id: cpd00132
+      compartment: c
+      value: 0.273379649
+    - id: cpd00041
+      compartment: c
+      value: 0.273379649
+    - id: cpd00078
+      compartment: c
+      value: 0.000003
+    - id: cpd00005
+      compartment: c
+      value: 0.000421
+    - id: cpd00006
+      compartment: c
+      value: 0.000105
+    - id: cpd03802
+      compartment: c
+      value: 0.004870676
+    - id: cpd00087
+      compartment: c
+      value: 0.000105
+    - id: cpd00023
+      compartment: c
+      value: 0.298458449
+    - id: cpd00156
+      compartment: c
+      value: 0.479917041
+    - id: cpd00322
+      compartment: c
+      value: 0.329444239
+    - id: cpd00060
+      compartment: c
+      value: 0.174308025
+    - id: cpd00053
+      compartment: c
+      value: 0.298458449
+    - id: cpd00038
+      compartment: c
+      value: 0.230269
+    - id: cpd00051
+      compartment: c
+      value: 0.335454861
+    - id: cpd00065
+      compartment: c
+      value: 0.064458734
+    - id: cpd00069
+      compartment: c
+      value: 0.156379792
+    - id: cpd00161
+      compartment: c
+      value: 0.287680783
+    - id: cpd00107
+      compartment: c
+      value: 0.510902831
+    - id: cpd00115
+      compartment: c
+      value: 0.034302
+    - id: cpd00119
+      compartment: c
+      value: 0.107465768
+    - id: cpd00166
+      compartment: c
+      value: 0.00495
+    - id: cpd00241
+      compartment: c
+      value: 0.022281
+    - id: cpd00356
+      compartment: c
+      value: 0.022281
+    - id: cpd00357
+      compartment: c
+      value: 0.034302
+    - id: cpd00557
+      compartment: c
+      value: 0.002106
+    - id: cpd00035
+      compartment: c
+      value: 0.582512133
+    - id: cpd00039
+      compartment: c
+      value: 0.389135929
+    - id: cpd00155
+      compartment: c
+      value: 0.035709
+    - id: cpd15866
+      compartment: c
+      value: 0.000042
+    - id: cpd15868
+      compartment: c
+      value: 0.00032
+    - id: cpd15861
+      compartment: c
+      value: 0.00552
+    - id: cpd15860
+      compartment: c
+      value: 0.052161
+    - id: cpd15842
+      compartment: c
+      value: 0.001932
+    right:
+    - id: cpd00009
+      compartment: c
+      value: 25
+    - id: cpd00012
+      compartment: c
+      value: 0.827808
+    - id: cpd00008
+      compartment: c
+      value: 24.998
+    - id: cpd00067
+      compartment: c
+      value: 24.998
+- id: CuP460
+  genes: Nmar_1226
+  equation: (2) cpd00001[c] + cpd00165[c] + (5) PCYm[c] + cpd00418[c] => (2) cpd00075[c]
+    + (5) PCYme[c] + (5) cpd00067_e[c]
+- id: Cytaa3
+  genes: (Nmar_0182 and Nmar_0183 and Nmar_0184 and Nmar_0185)
+  equation: (0.5) cpd00007[c] + (4) cpd00067[c] + (2) PCYe[c] => cpd00001[c] + (2)
+    cpd00067_e[c] + (2) PCY[c]
+- id: Cytbc1
+  genes: (Nmar_1542 and Nmar_1544 and Nmar_1543)
+  equation: cpd00067[c] + cpd11665[c] + (2) PCY[c] => cpd11669[c] + (3) cpd00067_e[c]
+    + (2) PCYe[c]
+- id: H_disp
+  equation: cpd00067_e[c] => cpd00067[c]
+- id: Met1
+  equation: cpd00009[c] + cpd00280[c] => cpd00001[c] + cpd02497[c]
+- id: Met2
+  equation: cpd00038[c] + cpd00159[c] => cpd00067[c] + cpd00031[c] + cpd15809[c]
+- id: Met3
+  equation: cpd00018[c] + cpd00421[c] => cpd00012[c] + cpd00008[c]
+  ec: 2.7.4.3
+- id: N2O-spon
+  equation: cpd00165[c] + cpd00418[c] => cpd00001[c] + cpd00067_e[c] + cpd00659[c]
+- id: NIR
+  genes: (Nmar_1259 and Nmar_1667 and Nmar_1131 and Nmar_1663 and Nmar_1354 and Nmar_1136)
+  equation: cpd00075[c] + cpd00067_e[c] + PCYe[c] => cpd00001[c] + cpd00418[c] +
+    PCY[c]
+- id: QH2-Synt
+  equation: cpd11669[c] + (2) PCYme[c] + (2) cpd00067_e[c] => cpd11665[c] + (2) PCYm[c]
+- id: R00004
+  name: diphosphate phosphohydrolase
+  genes: (Nmar_1175 or Nmar_1231)
+  equation: cpd00001[c] + cpd00012[c] => (2) cpd00009[c]
+  ec: 3.6.1.1
+- id: R00006
+  name: pyruvate:pyruvate acetaldehydetransferase (decarboxylating)
+  genes: (Nmar_1071 and Nmar_1072)
+  equation: (2) cpd00020[c] => cpd00011[c] + cpd00668[c]
+  ec: 2.2.1.6
+- id: R00013
+  name: Glyoxylate carboxy-lyase (dimerizing)
+  equation: (2) cpd00040[c] => cpd00011[c] + cpd00843[c]
+  ec: 4.1.1.47
+- id: R00014
+  name: pyruvate:thiamin diphosphate acetaldehydetransferase (decarboxylating)
+  genes: (Nmar_1072 and Nmar_1071)
+  equation: cpd00020[c] + cpd00056[c] => cpd00011[c] + cpd03049[c]
+  ec: 1.2.4.1; 2.2.1.6; 4.1.1.1
+- id: R00018
+  name: putrescine:putrescine 4-aminobutyltransferase (ammonia-forming)
+  equation: (2) cpd00118[c] => cpd00013[c] + cpd03802[c]
+  ec: 2.5.1.44
+- id: R00036
+  name: 5-aminolevulinate hydro-lyase (adding 5-aminolevulinate and cyclizing; porphobilinogen-forming)
+  genes: Nmar_0509
+  equation: (2) cpd00338[c] => (2) cpd00001[c] + cpd00689[c]
+  ec: 4.2.1.24
+- id: R00042
+  name: diphosphate:acetate phosphotransferase
+  equation: (2) cpd00868[c] + cpd00007[c] => (2) cpd00489[c] + (2) cpd00011[c]
+  ec: 1.2.3.13
+- id: R00066
+  name: 6,7-Dimethyl-8-(1-D-ribityl)lumazine:6,7-dimethyl-8-(1-D-ribityl)
+  genes: Nmar_1617
+  equation: (2) cpd02656[c] => cpd02882[c] + cpd00220[c]
+  ec: 2.5.1.9
+- id: R00078
+  name: Fe(II):oxygenoxidoreductase;Fe2 + :oxygen oxidoreductase
+  genes: Nmar_0573
+  equation: cpd00007[c] + (4) cpd00067[c] + (4) cpd10515[c] => (2) cpd00001[c] +
+    (4) cpd10516[c]
+  ec: 1.16.3.1
+- id: R00081
+  name: Ferrocytochrome-c:oxygen oxidoreductase
+  genes: (Nmar_0183 or Nmar_0184)
+  equation: cpd00007[c] + (4) cpd00067[c] + (4) cpd00110[c] => (2) cpd00001[c] +
+    (4) cpd00109[c]
+  ec: 1.7.2.1; 1.9.3.1
+- id: R00082
+  name: Ferrocytochrome c2:oxygen oxidoreductase
+  genes: (Nmar_0183 and Nmar_0184)
+  equation: cpd00007[c] + (4) cpd11798[c] => (2) cpd00001[c] + (4) cpd11796[c]
+  ec: 1.7.2.1; 1.9.3.1
+- id: R00084
+  name: porphobilinogen:(4-[2-carboxyethyl]-3-[carboxymethyl]pyrrol-2-yl)methyltransferase
+    (hydrolysing)
+  genes: Nmar_0491
+  equation: cpd00001[c] + (4) cpd00689[c] => (4) cpd00013[c] + cpd00755[c]
+  ec: 2.5.1.61
+- id: R00086
+  name: ATP phosphohydrolase
+  genes: (Nmar_1530 and Nmar_1080 and Nmar_1688 and Nmar_1689 and Nmar_1690 and Nmar_1691
+    and Nmar_1692 and Nmar_1693 and Nmar_1700 and Nmar_0483)
+  equation: cpd00001[c] + cpd00002[c] => cpd00009[c] + cpd00008[c]
+  ec: 3.6.1.3; 3.6.1.5; 3.6.1.8; 3.6.1.15
+- id: R00102
+  name: Glycine:ferricytochrome-c oxidoreductase (deaminating)
+  equation: cpd00003[c] + cpd00001[c] => cpd00133[c] + cpd00251[c]
+  ec: 3.2.2.5; 3.2.2.6
+- id: R00103
+  name: glycine:NAD + oxidoreductase (deaminating)
+  equation: cpd00003[c] + cpd00001[c] => cpd00018[c] + cpd00355[c]
+  ec: 3.6.1.9; 3.6.1.22
+- id: R00104
+  name: ATP:NAD + 2'-phosphotransferase
+  genes: (Nmar_0440 or Nmar_0921)
+  equation: cpd00003[c] + cpd00002[c] => cpd00008[c] + cpd00006[c]
+  ec: 2.7.1.23
+- id: R00127
+  name: ATP:AMP phosphotransferase
+  genes: Nmar_0403
+  equation: cpd00018[c] + cpd00002[c] => (2) cpd00008[c]
+  ec: 2.7.4.3
+- id: R00130
+  name: ATP:dephospho-CoA 3'-phosphotransferase
+  equation: cpd00002[c] + cpd00655[c] => cpd00008[c] + cpd00010[c]
+  ec: 2.7.1.24
+- id: R00132
+  equation: cpd00067[c] + cpd00242[c] <=> cpd00011[c] + cpd00001[c]
+- id: R00137
+  name: ATP:nicotinamide-nucleotide adenylyltransferase
+  genes: (Nmar_0960 or Nmar_1732)
+  equation: cpd00355[c] + cpd00002[c] => cpd00003[c] + cpd00012[c]
+  ec: 2.7.7.1; 2.7.7.18
+- id: R00139
+  name: ATP:2'-deoxy-5-hydroxymethylcytidine-5'-diphosphate phosphotransferase
+  genes: Nmar_0228
+  equation: cpd00002[c] + cpd07923[c] => cpd00008[c] + cpd07924[c]
+  ec: 2.7.4.6
+- id: R00145
+  name: alpha-amino acid:NAD + oxidoreductase (deaminating)
+  equation: cpd00003[c] + cpd00001[c] + cpd03077[c] <=> cpd00067[c] + cpd00013[c]
+    + cpd00004[c] + cpd11625[c]
+  ec: 1.4.1.1; 1.4.1.2; 1.4.1.3; 1.4.1.4
+- id: R00148
+  name: ammonia,ubiquinol:oxygen oxidoreductase
+  genes: (Nmar_1500 and Nmar_1503 and Nmar_1502)
+  equation: cpd00007[c] + cpd00013[c] + cpd11665[c] => cpd00001[c] + cpd11669[c]
+    + cpd00165[c]
+- id: R00155
+  name: Glycine:2-oxoglutarate aminotransferase
+  equation: cpd00001[c] + cpd00014[c] => cpd00091[c] + cpd00009[c]
+  ec: 3.6.1.5; 3.6.1.6
+- id: R00156
+  name: ATP:UDP phosphotransferase
+  genes: Nmar_0228
+  equation: cpd00014[c] + cpd00002[c] => cpd00062[c] + cpd00008[c]
+  ec: 2.7.4.6
+- id: R00158
+  name: ATP:UMP phosphotransferase
+  genes: (Nmar_0405 or Nmar_1705)
+  equation: cpd00091[c] + cpd00002[c] => cpd00014[c] + cpd00008[c]
+  ec: 2.7.4.4; 2.7.4.14; 2.7.4.22
+- id: R00161
+  name: ATP:FMN adenylyltransferase
+  equation: cpd00002[c] + cpd00050[c] => cpd00012[c] + cpd00015[c]
+  ec: 2.7.7.2
+- id: R00177
+  name: ATP:L-methionine S-adenosyltransferase
+  genes: Nmar_0085
+  equation: cpd00001[c] + cpd00002[c] + cpd00060[c] => cpd00009[c] + cpd00012[c]
+    + cpd00017[c]
+  ec: 2.5.1.6
+- id: R00178
+  name: NAD + phosphohydrolase
+  equation: cpd00067[c] + cpd00017[c] => cpd00011[c] + cpd00837[c]
+  ec: 4.1.1.50
+- id: R00189
+  name: deamido-NAD + :ammonia ligase (AMP-forming)
+  genes: Nmar_0966
+  equation: cpd00002[c] + cpd00013[c] + cpd00638[c] => cpd00003[c] + cpd00018[c]
+    + cpd00012[c]
+  ec: 6.3.1.5; 6.3.5.1
+- id: R00190
+  name: AMP:diphosphate phospho-D-ribosyltransferase
+  genes: Nmar_1400
+  equation: cpd00128[c] + cpd00103[c] => cpd00018[c] + cpd00012[c]
+  ec: 2.4.2.7; 2.4.2.8
+- id: R00192
+  name: S-Adenosyl-L-homocysteine hydrolase
+  genes: Nmar_0964
+  equation: cpd00001[c] + cpd00019[c] => cpd00182[c] + cpd00135[c]
+  ec: 3.3.1.1
+- id: R00194
+  name: S-Adenosyl-L-homocysteine homocysteinylribohydrolase
+  equation: cpd00001[c] + cpd00019[c] => cpd00128[c] + cpd02227[c]
+  ec: 3.2.2.9
+- id: R00206
+  name: ATP:pyruvate,phosphate phosphotransferase
+  genes: Nmar_0951
+  equation: cpd00009[c] + cpd00002[c] + cpd00020[c] <=> cpd00018[c] + cpd00012[c]
+    + cpd00061[c]
+  ec: 2.7.9.1
+- id: R00214
+  name: (S)-malate:NAD + oxidoreductase (decarboxylating)
+  genes: Nmar_0338
+  equation: cpd00003[c] + cpd00130[c] => cpd00011[c] + cpd00067[c] + cpd00020[c]
+    + cpd00004[c]
+  ec: 1.1.1.38; 1.1.1.39
+- id: R00216
+  name: (S)-Malate:NADP + oxidoreductase(oxaloacetate-decarboxylating)
+  genes: Nmar_0338
+  equation: cpd00006[c] + cpd00130[c] => cpd00011[c] + cpd00067[c] + cpd00020[c]
+    + cpd00005[c]
+  ec: 1.1.1.40
+- id: R00220
+  name: L-serine ammonia-lyase
+  genes: Nmar_0848
+  equation: cpd00054[c] => cpd00020[c] + cpd00013[c]
+  ec: 4.3.1.17; 4.3.1.19
+- id: R00226
+  name: pyruvate:pyruvate acetaldehydetransferase (decarboxylating)
+  genes: (Nmar_1071 and Nmar_1072)
+  equation: cpd00011[c] + cpd00668[c] <=> (2) cpd00020[c]
+  ec: 2.2.1.6
+- id: R00228
+  name: acetaldehyde dehydrogenase (acetylating)
+  genes: Nmar_1608
+  equation: cpd00003[c] + cpd00010[c] + cpd00071[c] <=> cpd00067[c] + cpd00004[c]
+    + cpd00022[c]
+  ec: 1.2.1.10
+- id: R00235
+  name: Acetate:CoA ligase (AMP-forming)
+  genes: (Nmar_0866 or Nmar_0701)
+  equation: cpd00002[c] + cpd00029[c] + cpd00010[c] => cpd00018[c] + cpd00012[c]
+    + cpd00022[c]
+  ec: 6.2.1.1
+- id: R00236
+  name: acetyl adenylate:CoA acetyltransferase
+  genes: (Nmar_0701 or Nmar_0866)
+  equation: cpd00018[c] + cpd00022[c] => cpd00010[c] + cpd03566[c]
+  ec: 6.2.1.1
+- id: R00238
+  name: Acetyl-CoA:acetyl-CoA C-acetyltransferase
+  genes: (Nmar_0841 or Nmar_1631)
+  equation: (2) cpd00022[c] <=> cpd00010[c] + cpd00279[c]
+  ec: 2.3.1.9
+- id: R00243
+  name: L-glutamate:NAD + oxidoreductase (deaminating)
+  genes: Nmar_1312
+  equation: cpd00003[c] + cpd00001[c] + cpd00023[c] <=> cpd00067[c] + cpd00013[c]
+    + cpd00004[c] + cpd00024[c]
+  ec: 1.4.1.2; 1.4.1.3
+- id: R00253
+  name: L-Glutamate:ammonia ligase (ADP-forming)
+  genes: (Nmar_1771 or Nmar_1790)
+  equation: cpd00002[c] + cpd00013[c] + cpd00023[c] => cpd00009[c] + cpd00008[c]
+    + cpd00053[c]
+  ec: 6.3.1.2
+- id: R00256
+  name: L-glutamine amidohydrolase
+  genes: (Nmar_0935 and Nmar_1466 and Nmar_1085 and Nmar_1086)
+  equation: cpd00001[c] + cpd00053[c] => cpd00013[c] + cpd00023[c]
+  ec: 3.5.1.2; 3.5.1.38; 6.3.5.4; 6.3.5.5
+- id: R00258
+  name: L-Alanine:2-oxoglutarate aminotransferase
+  genes: Nmar_0177
+  equation: cpd00024[c] + cpd00035[c] <=> cpd00020[c] + cpd00023[c]
+  ec: 2.6.1.2
+- id: R00260
+  name: glutamate racemase
+  genes: Nmar_0060
+  equation: cpd00023[c] <=> cpd00186[c]
+  ec: 5.1.1.3
+- id: R00267
+  name: Isocitrate:NADP + oxidoreductase (decarboxylating)
+  genes: Nmar_1379
+  equation: cpd00006[c] + cpd00260[c] => cpd00011[c] + cpd00067[c] + cpd00005[c]
+    + cpd00024[c]
+  ec: 1.1.1.42
+- id: R00271
+  name: 2-Hydroxybutane-1,2,4-tricarboxylate 2-oxoglutarate-lyase
+  genes: Nmar_1070
+  equation: cpd00001[c] + cpd00022[c] + cpd00024[c] <=> cpd00010[c] + cpd00919[c]
+  ec: 2.3.3.14
+- id: R00275
+  name: superoxide:superoxide oxidoreductase
+  genes: Nmar_0394
+  equation: (2) cpd00067[c] + (2) cpd00532[c] <=> cpd00007[c] + cpd00025[c]
+  ec: 1.15.1.1
+- id: R00286
+  name: UDP-glucose:NAD + 6-oxidoreductase
+  equation: (2) cpd00003[c] + cpd00001[c] + cpd00026[c] => (2) cpd00067[c] + (2)
+    cpd00004[c] + cpd00144[c]
+  ec: 1.1.1.22
+- id: R00289
+  equation: cpd00062[c] + cpd00089[c] => cpd00012[c] + cpd00026[c]
+  ec: 2.7.7.9
+- id: R00291
+  name: UDPglucose 4-epimerase
+  equation: cpd00026[c] <=> cpd00043[c]
+  ec: 5.1.3.2
+- id: R00310
+  name: protoheme ferro-lyase (protoporphyrin-forming)
+  equation: cpd10515[c] + cpd01476[c] => (2) cpd00008[c] + cpd00028[c]
+  ec: 4.99.1.1
+- id: R00315
+  name: 3'-Phosphoadenylylsulfate nucleotidohydrolase
+  equation: cpd00002[c] + cpd00029[c] => cpd00008[c] + cpd00196[c]
+  ec: 2.7.2.1; 2.7.2.15
+- id: R00316
+  name: ATP:acetate adenylyltransferase
+  genes: (Nmar_0701 or Nmar_0866)
+  equation: cpd00002[c] + cpd00029[c] => cpd00012[c] + cpd03566[c]
+  ec: 6.2.1.1
+- id: R00317
+  name: Acetyl phosphate phosphohydrolase
+  genes: Nmar_0103
+  equation: cpd00001[c] + cpd00196[c] => cpd00009[c] + cpd00029[c]
+  ec: 3.6.1.7
+- id: R00330
+  name: ATP:GDP phosphotransferase
+  genes: Nmar_0228
+  equation: cpd00002[c] + cpd00031[c] => cpd00008[c] + cpd00038[c]
+  ec: 2.7.4.6
+- id: R00331
+  name: ATP:nucleoside-diphosphate phosphotransferase
+  genes: Nmar_0228
+  equation: cpd00002[c] + cpd00354[c] <=> cpd00008[c] + cpd00173[c]
+  ec: 2.7.4.6
+- id: R00332
+  name: ' ATP:GMP phosphotransferase'
+  equation: cpd00002[c] + cpd00126[c] => cpd00008[c] + cpd00031[c]
+  ec: 2.7.4.8
+- id: R00335
+  name: GTP phosphohydrolase
+  equation: cpd00001[c] + cpd00038[c] => cpd00009[c] + cpd00031[c]
+  ec: 3.6.1.5; 3.6.5.1; 3.6.5.2; 3.6.5.3
+- id: R00341
+  name: ATP:oxaloacetate carboxy-lyase (transphosphorylating;phosphoenolpyruvate-forming)
+  genes: Nmar_0392
+  equation: cpd00002[c] + cpd00032[c] => cpd00011[c] + cpd00008[c] + cpd00061[c]
+  ec: 4.1.1.49
+- id: R00342
+  name: (S)-malate:NAD + oxidoreductase
+  genes: (Nmar_0338 or Nmar_0676)
+  equation: cpd00003[c] + cpd00130[c] <=> cpd00067[c] + cpd00004[c] + cpd00032[c]
+  ec: 1.1.1.37; 1.1.1.299
+- id: R00345
+  equation: cpd00009[c] + (2) cpd00067[c] + cpd00032[c] <=> cpd00011[c] + cpd00001[c]
+    + cpd00061[c]
+- id: R00351
+  name: acetyl-CoA:oxaloacetate C-acetyltransferase (thioester-hydrolysing)
+  genes: Nmar_1099
+  equation: cpd00001[c] + cpd00022[c] + cpd00032[c] => cpd00010[c] + cpd00137[c]
+  ec: 2.3.3.1; 2.3.3.3
+- id: R00354
+  name: (3S)-citryl-CoA oxaloacetate-lyase (acetyl-CoA-forming)
+  genes: Nmar_1621
+  equation: cpd00022[c] + cpd00032[c] => cpd00442[c]
+  ec: 4.1.3.34
+- id: R00355
+  name: L-Aspartate:2-oxoglutarate aminotransferase
+  genes: (Nmar_0177 or Nmar_0865 or Nmar_0546)
+  equation: cpd00041[c] + cpd00024[c] <=> cpd00032[c] + cpd00023[c]
+  ec: 2.6.1.1
+- id: R00362
+  name: citrate oxaloacetate-lyase (forming acetate from the pro-S carboxymethyl
+    group of citrate)
+  genes: Nmar_1621
+  equation: cpd00137[c] <=> cpd00029[c] + cpd00032[c]
+  ec: 4.1.3.6
+- id: R00371
+  name: Acetyl-CoA:glycine C-acetyltransferase
+  genes: Nmar_0819
+  equation: cpd00033[c] + cpd00022[c] => cpd00010[c] + cpd02211[c]
+  ec: 2.3.1.29
+- id: R00374
+  name: Uridine triphosphate pyrophosphohydrolase
+  equation: cpd00033[c] + (2) cpd11609[c] => cpd00011[c] + cpd00150[c] + (2) cpd11610[c]
+    + cpd00067[c]
+  ec: 1.4.99.5
+- id: R00375
+  name: DNA-directed DNA polymerase
+  genes: (Nmar_0002 or Nmar_0642 or Nmar_0948 or Nmar_1056 or Nmar_1794)
+  equation: cpd00115[c] <=> cpd00012[c]
+  ec: 2.7.7.7
+- id: R00376
+  name: DNA-directed DNA polymerase
+  genes: (Nmar_0002 or Nmar_0642 or Nmar_0948 or Nmar_1056 or Nmar_1794)
+  equation: cpd00241[c] <=> cpd00012[c]
+  ec: 2.7.7.7
+- id: R00377
+  name: DNA-directed DNA polymerase
+  genes: (Nmar_0002 or Nmar_0642 or Nmar_0948 or Nmar_1056 or Nmar_1794)
+  equation: cpd00356[c] <=> cpd00012[c]
+  ec: 2.7.7.7
+- id: R00378
+  name: DNA-directed DNA polymerase
+  genes: (Nmar_0002 or Nmar_0642 or Nmar_0948 or Nmar_1056 or Nmar_1794)
+  equation: cpd00357[c] <=> cpd00012[c]
+  ec: 2.7.7.7
+- id: R00380
+  name: S-Adenosyl-L-methionine:DNA (cytosine-5-)-methyltransferase
+  genes: Nmar_1473
+  equation: cpd00017[c] + cpd11461[c] => cpd00019[c] + cpd12223[c]
+  ec: 2.1.1.37
+- id: R00405
+  name: Succinate:CoA ligase (ADP-forming)
+  genes: (Nmar_1123 and Nmar_1124)
+  equation: cpd00002[c] + cpd00010[c] + cpd00036[c] <=> cpd00009[c] + cpd00008[c]
+    + cpd00078[c]
+  ec: 6.2.1.5
+- id: R00408
+  name: succinate:FAD oxidoreductase
+  genes: (Nmar_0261 and Nmar_0258)
+  equation: cpd00036[c] + cpd00015[c] <=> cpd00982[c] + cpd00106[c]
+  ec: 1.3.99.1
+- id: R00412
+  name: succinate:acceptor oxidoreductase
+  genes: (Nmar_0258 and Nmar_0261)
+  equation: cpd11609[c] + cpd00036[c] => cpd11610[c] + cpd00106[c]
+  ec: 1.3.99.1
+- id: R00416
+  name: UDP-N-acetylglucosamine diphosphorylase
+  equation: cpd00062[c] + cpd02611[c] => cpd00012[c] + cpd00037[c]
+  ec: 2.7.7.23
+- id: R00424
+  name: GTP 7,8-8,9-dihydrolase
+  genes: Nmar_0038
+  equation: cpd00001[c] + cpd00038[c] <=> cpd02978[c] + cpd00047[c]
+  ec: 3.5.4.16
+- id: R00428
+  name: GTP 7,8-8,9-dihydrolase
+  genes: Nmar_0038
+  equation: cpd00001[c] + cpd00038[c] => cpd03518[c]
+  ec: 3.5.4.16
+- id: R00435
+  name: RNA polymerase
+  genes: (Nmar_0318 or Nmar_0346 or Nmar_0347 or Nmar_0348 or Nmar_0428 or Nmar_1032
+    or Nmar_1235 or Nmar_1236 or Nmar_1383 or Nmar_1757)
+  equation: cpd00002[c] => cpd00012[c] + cpd11613[c]
+  ec: 2.7.7.6; 2.7.7.19; 2.7.7.48
+- id: R00466
+  name: Glyoxylate:oxygen oxidoreductase
+  equation: cpd00007[c] + cpd00001[c] + cpd00040[c] => cpd00025[c] + cpd00180[c]
+  ec: 1.2.3.5
+- id: R00471
+  name: L-Ornithine carboxy-lyase
+  equation: cpd00830[c] <=> cpd00020[c] + cpd00040[c]
+  ec: 4.1.1.3; 4.1.2.14; 4.1.3.16
+- id: R00480
+  name: ATP:L-aspartate 4-phosphotransferase
+  genes: Nmar_1754
+  equation: cpd00002[c] + cpd00041[c] => cpd00008[c] + cpd01977[c]
+  ec: 2.7.2.4
+- id: R00483
+  name: L-aspartate:ammonia ligase (AMP-forming)
+  genes: (Nmar_0935 or Nmar_1466)
+  equation: cpd00002[c] + cpd00013[c] + cpd00041[c] => cpd00018[c] + cpd00012[c]
+    + cpd00132[c]
+  ec: 6.3.1.1; 6.3.5.4
+- id: R00489
+  name: L-aspartate 1-carboxy-lyase (beta-alanine-forming)
+  equation: cpd00041[c] => cpd00011[c] + cpd00085[c]
+  ec: 4.1.1.11; 4.1.1.15
+- id: R00490
+  name: L-aspartate ammonia-lyase (fumarate-forming)
+  genes: Nmar_1260
+  equation: cpd00041[c] => cpd00013[c] + cpd00106[c]
+  ec: 3.5.1.38; 4.3.1.1
+- id: R00494
+  name: glutathione gamma-glutamylaminopeptidase
+  genes: Nmar_1004
+  equation: cpd00001[c] + cpd00042[c] => cpd00023[c] + cpd01017[c]
+  ec: 2.3.2.2
+- id: R00507
+  name: L-Phenylalanine ammonia-lyase
+  equation: cpd00001[c] + cpd00044[c] => cpd00048[c] + cpd00045[c]
+  ec: 3.6.1.9; 3.6.2.2
+- id: R00509
+  name: ATP:adenylylsulfate 3'-phosphotransferase
+  genes: Nmar_0023
+  equation: cpd00002[c] + cpd00193[c] => cpd00008[c] + cpd00044[c]
+  ec: 2.7.1.25
+- id: R00511
+  name: cytidine-5'-monophosphate phosphohydrolase
+  equation: cpd00001[c] + cpd00046[c] => cpd00009[c] + cpd00367[c]
+  ec: 3.1.3.5
+- id: R00512
+  name: ATP:CMP phosphotransferase
+  genes: Nmar_0405
+  equation: cpd00002[c] + cpd00046[c] => cpd00008[c] + cpd00096[c]
+  ec: 2.7.4.14; 2.7.4.25
+- id: R00515
+  name: L-Cysteine:oxygen oxidoreductase
+  equation: cpd00001[c] + cpd00052[c] => cpd00012[c] + cpd00046[c]
+  ec: 3.6.1.8
+- id: R00522
+  name: Oxalate carboxy-lyase
+  equation: cpd00067[c] + cpd00180[c] => cpd00011[c] + cpd00047[c]
+  ec: 4.1.1.2
+- id: R00529
+  name: ATP:sulfate adenylyltransferase
+  genes: Nmar_0050
+  equation: cpd00002[c] + cpd00048[c] => cpd00012[c] + cpd00193[c]
+  ec: 2.7.7.4
+- id: R00539
+  name: Acyl phosphate phosphohydrolase
+  genes: Nmar_0103
+  equation: cpd00001[c] + cpd12031[c] => cpd00009[c] + cpd00049[c]
+  ec: 3.6.1.7
+- id: R00566
+  name: L-arginine carboxy-lyase (agmatine-forming)
+  genes: Nmar_1180
+  equation: cpd00051[c] => cpd00011[c] + cpd00152[c]
+  ec: 4.1.1.19
+- id: R00570
+  name: ATP:CDP phosphotransferase
+  genes: Nmar_0228
+  equation: cpd00002[c] + cpd00096[c] => cpd00008[c] + cpd00052[c]
+  ec: 2.7.4.6
+- id: R00571
+  name: UTP:ammonia ligase (ADP-forming)
+  genes: Nmar_0919
+  equation: cpd00062[c] + cpd00002[c] + cpd00013[c] => cpd00009[c] + cpd00008[c]
+    + cpd00052[c]
+  ec: 6.3.4.2
+- id: R00573
+  name: UTP:L-glutamine amido-ligase (ADP-forming)
+  genes: Nmar_0919
+  equation: cpd00001[c] + cpd00062[c] + cpd00002[c] + cpd00053[c] => cpd00009[c]
+    + cpd00008[c] + cpd00052[c] + cpd00023[c]
+  ec: 6.3.4.2
+- id: R00575
+  name: HCO3-:L-glutamine amido-ligase (ADP-forming, carbamate-phosphorylating)
+  genes: (Nmar_1086 and Nmar_1085)
+  equation: cpd00001[c] + (2) cpd00002[c] + cpd00053[c] + cpd00242[c] => cpd00009[c]
+    + (2) cpd00008[c] + cpd00146[c] + cpd00023[c]
+  ec: 6.3.5.5
+- id: R00578
+  name: L-aspartate:L-glutamine amido-ligase (AMP-forming)
+  genes: (Nmar_0935 or Nmar_1466)
+  equation: cpd00001[c] + cpd00002[c] + cpd00041[c] + cpd00053[c] => cpd00018[c]
+    + cpd00012[c] + cpd00132[c] + cpd00023[c]
+  ec: 6.3.5.4
+- id: R00581
+  name: L-Cysteine hydrogen-sulfide-lyase (adding sulfite)
+  equation: cpd00003[c] + cpd00001[c] + cpd00054[c] <=> cpd00067[c] + cpd00145[c]
+    + cpd00013[c] + cpd00004[c]
+  ec: 1.4.1.7
+- id: R00582
+  name: O-phospho-L-serine phosphohydrolase
+  genes: Nmar_0666
+  equation: cpd00001[c] + cpd00738[c] => cpd00009[c] + cpd00054[c]
+  ec: 3.1.3.3
+- id: R00586
+  name: acetyl-CoA:L-serine O-acetyltransferase
+  equation: cpd00054[c] + cpd00022[c] => cpd00010[c] + cpd00722[c]
+  ec: 2.3.1.30
+- id: R00589
+  equation: cpd00054[c] <=> cpd00550[c]
+  ec: 5.1.1.10; 5.1.1.18
+- id: R00596
+  name: S-adenosyl-L-methionine:tRNA adenine N1-methyltransferase
+  genes: Nmar_0690
+  equation: cpd00017[c] + cpd17469[c] => cpd00019[c] + cpd12482[c]
+  ec: 2.1.1.36
+- id: R00598
+  name: S-Adenosyl-L-methionine:tRNA guanine N2-methyltransferase
+  genes: Nmar_1394
+  equation: cpd00017[c] + cpd11985[c] => cpd00019[c] + cpd12484[c]
+  ec: 2.1.1.32
+- id: R00601
+  name: ATP:acetate phosphotransferase
+  equation: cpd00017[c] + cpd13372[c] => cpd00019[c] + cpd12598[c]
+  ec: 2.1.1.61
+- id: R00615
+  name: Thiamin diphosphate phosphohydrolase
+  genes: Nmar_1530
+  equation: cpd00001[c] + cpd00056[c] => cpd00009[c] + cpd00793[c]
+  ec: 3.6.1.15
+- id: R00617
+  name: ATP:thiamin-phosphate phosphotransferase
+  genes: Nmar_1448
+  equation: cpd00002[c] + cpd00793[c] => cpd00008[c] + cpd00056[c]
+  ec: 2.7.4.16
+- id: R00623
+  name: primary_alcohol:NAD + oxidoreductase
+  genes: (Nmar_0523 or Nmar_1193)
+  equation: cpd00003[c] + cpd00195[c] <=> cpd00067[c] + cpd00004[c] + cpd11616[c]
+  ec: 1.1.1.1; 1.1.1.71
+- id: R00624
+  name: Secondary_alcohol:NAD + oxidoreductase
+  genes: (Nmar_0523 or Nmar_1193)
+  equation: cpd00003[c] + cpd11901[c] <=> cpd00067[c] + cpd00004[c] + cpd11872[c]
+  ec: 1.1.1.1
+- id: R00658
+  name: 2-phospho-D-glycerate hydro-lyase (phosphoenolpyruvate-forming)
+  genes: Nmar_0317
+  equation: cpd00482[c] <=> cpd00001[c] + cpd00061[c]
+  ec: 4.2.1.11
+- id: R00660
+  name: Phosphoenolpyruvate:UDP-N-acetyl-D-glucosamine 1-carboxyvinyl-transferase
+  genes: (Nmar_0078 or Nmar_0858)
+  equation: cpd00061[c] + cpd00037[c] => cpd00009[c] + cpd02820[c]
+  ec: 2.5.1.7
+- id: R00661
+  name: phosphoenolpyruvate 2,3-phosphonomutase
+  genes: Nmar_0160
+  equation: cpd00061[c] <=> cpd01807[c]
+  ec: 5.4.2.9
+- id: R00670
+  name: L-asparagine hydro-lyase (3-cyanoalanine-forming)
+  equation: cpd00064[c] => cpd00011[c] + cpd00118[c]
+  ec: 4.1.1.17
+- id: R00671
+  equation: cpd00064[c] => cpd00013[c] + cpd00129[c]
+  ec: 4.3.1.12
+- id: R00674
+  name: L-serine hydro-lyase (adding indole; L-tryptophan-forming)
+  genes: (Nmar_0916 and Nmar_0915)
+  equation: cpd00001[c] + cpd00065[c] => cpd00054[c] + cpd00359[c]
+  ec: 4.2.1.20; 4.2.1.122
+- id: R00691
+  name: L-arogenate hydro-lyase (decarboxylating; L-phenylalanine-forming)
+  genes: Nmar_1567
+  equation: cpd00616[c] => cpd00011[c] + cpd00001[c] + cpd00066[c]
+  ec: 4.2.1.51; 4.2.1.91
+- id: R00694
+  name: L-Phenylalanine:2-oxoglutarate aminotransferase
+  genes: (Nmar_0546 or Nmar_0865 or Nmar_1557)
+  equation: cpd00066[c] + cpd00024[c] <=> cpd00023[c] + cpd00143[c]
+  ec: 2.6.1.1; 2.6.1.5; 2.6.1.9; 2.6.1.57
+- id: R00697
+  name: D-Glycerate-3-phosphate phosphohydrolase
+  equation: cpd00066[c] => cpd00013[c] + cpd00333[c]
+  ec: 4.3.1.24; 4.3.1.25
+- id: R00703
+  name: (S)-Lactate:NAD + oxidoreductase
+  genes: Nmar_0676
+  equation: cpd00003[c] + cpd00159[c] => cpd00067[c] + cpd00020[c] + cpd00004[c]
+  ec: 1.1.1.27
+- id: R00710
+  name: aldehyde dehydrogenase (acetaldehyde, NAD)
+  genes: Nmar_1608
+  equation: cpd00003[c] + cpd00001[c] + cpd00071[c] => cpd00029[c] + cpd00067[c]
+    + cpd00004[c]
+  ec: 1.2.1.3; 1.2.1.5
+- id: R00713
+  name: succinate-semialdehyde:NAD + oxidoreductase
+  genes: Nmar_1608
+  equation: cpd00003[c] + cpd00001[c] + cpd00199[c] => cpd00067[c] + cpd00004[c]
+    + cpd00036[c]
+  ec: 1.2.1.16; 1.2.1.24
+- id: R00714
+  name: succinate-semialdehyde:NADP + oxidoreductase
+  genes: Nmar_1608
+  equation: cpd00001[c] + cpd00006[c] + cpd00199[c] => cpd00067[c] + cpd00005[c]
+    + cpd00036[c]
+  ec: 1.2.1.16; 1.2.1.79
+- id: R00717
+  name: Glycolate:NAD + oxidoreductase
+  genes: Nmar_0412
+  equation: cpd00003[c] + cpd00139[c] <=> cpd00067[c] + cpd00040[c] + cpd00004[c]
+  ec: 1.1.1.26; 1.1.1.29
+- id: R00722
+  name: ATP:IDP phosphotransferase
+  genes: Nmar_0228
+  equation: cpd00002[c] + cpd00090[c] <=> cpd00008[c] + cpd00068[c]
+  ec: 2.7.4.6
+- id: R00734
+  name: L-tyrosine:2-oxoglutarate aminotransferase
+  genes: (Nmar_0546 or Nmar_0865 or Nmar_1557)
+  equation: cpd00024[c] + cpd00069[c] <=> cpd00868[c] + cpd00023[c]
+  ec: 2.6.1.1; 2.6.1.5; 2.6.1.9; 2.6.1.57
+- id: R00740
+  name: 3-oxopropanoate:NADP + oxidoreductase (CoA-malonylating)
+  equation: cpd00010[c] + cpd00006[c] + cpd00191[c] <=> cpd00067[c] + cpd00005[c]
+    + cpd00070[c]
+  ec: 1.2.1.18; 1.2.1.75; 1.2.1.-
+- id: R00742
+  name: acetyl-CoA:carbon-dioxide ligase (ADP-forming)
+  genes: (Nmar_0272 and Nmar_0273 and Nmar_0274)
+  equation: cpd00002[c] + cpd00067[c] + cpd00022[c] + cpd00242[c] => cpd00009[c]
+    + cpd00008[c] + cpd00070[c]
+  ec: 6.4.1.2
+- id: R00750
+  name: 4-hydroxy-2-oxopentanoate pyruvate-lyase (acetaldehyde-forming)
+  genes: Nmar_0140
+  equation: cpd02258[c] => cpd00020[c] + cpd00071[c]
+  ec: 4.1.3.39
+- id: R00751
+  name: L-threonine acetaldehyde-lyase (glycine-forming)
+  equation: cpd00161[c] => cpd00033[c] + cpd00071[c]
+  ec: 4.1.2.5
+- id: R00754
+  name: ethanol:NAD + oxidoreductase
+  genes: (Nmar_0523 or Nmar_1193)
+  equation: cpd00003[c] + cpd00363[c] <=> cpd00067[c] + cpd00004[c] + cpd00071[c]
+  ec: 1.1.1.1; 1.1.1.71
+- id: R00762
+  name: D-Fructose-1,6-bisphosphate 1-phosphohydrolase
+  genes: Nmar_1035
+  equation: cpd00001[c] + cpd00290[c] => cpd00009[c] + cpd00072[c]
+  ec: 3.1.3.11
+- id: R00765
+  name: D-glucosamine-6-phosphate aminohydrolase (ketol isomerizing)
+  equation: cpd00001[c] + cpd00288[c] => cpd00013[c] + cpd00072[c]
+  ec: 3.5.99.6
+- id: R00766
+  name: UDP-glucose:D-fructose-6-phosphate 2-alpha-D-glucosyltransferase
+  equation: cpd00026[c] + cpd00072[c] => cpd00014[c] + cpd01693[c]
+  ec: 2.4.1.14
+- id: R00768
+  name: L-glutamine:D-fructose-6-phosphate isomerase (deaminating)
+  genes: Nmar_0323
+  equation: cpd00053[c] + cpd00072[c] => cpd00023[c] + cpd00288[c]
+  ec: 2.6.1.16
+- id: R00771
+  name: D-glucose-6-phosphate aldose-ketose-isomerase
+  genes: Nmar_0167
+  equation: cpd00079[c] <=> cpd00072[c]
+  ec: 5.3.1.9
+- id: R00772
+  name: D-mannose-6-phosphate aldose-ketose-isomerase
+  genes: Nmar_0167
+  equation: cpd00235[c] <=> cpd00072[c]
+  ec: 5.3.1.8
+- id: R00805
+  name: sucrose-6F-phosphate phosphohydrolase
+  equation: cpd00001[c] + cpd01693[c] => cpd00009[c] + cpd00076[c]
+  ec: 3.1.3.24
+- id: R00806
+  name: UDP-glucose:D-fructose 2-alpha-D-glucosyltransferase
+  equation: cpd00026[c] + cpd00082[c] => cpd00014[c] + cpd00076[c]
+  ec: 2.4.1.13
+- id: R00833
+  name: (R)-Methylmalonyl-CoA CoA-carbonylmutase
+  genes: (Nmar_0954 or Nmar_0958)
+  equation: cpd00891[c] <=> cpd00078[c]
+  ec: 5.4.99.2
+- id: R00846
+  name: dCDP nucleotidohydrolase
+  equation: cpd00095[c] + cpd00025[c] => cpd00007[c] + cpd00080[c]
+  ec: 1.1.3.21
+- id: R00856
+  name: CTP:sn-glycerol-3-phosphate cytidylyltransferase
+  genes: Nmar_1298
+  equation: cpd00052[c] + cpd00080[c] => cpd00012[c] + cpd00402[c]
+  ec: 2.7.7.39
+- id: R00858
+  name: hydrogen-sulfide:NADP + oxidoreductase
+  genes: Nmar_0679
+  equation: (3) cpd00001[c] + cpd00239[c] + (3) cpd00006[c] <=> (3) cpd00067[c] +
+    cpd00081[c] + (3) cpd00005[c]
+  ec: 1.8.1.2
+- id: R00864
+  equation: cpd00081[c] + cpd00074[c] <=> cpd00268[c]
+  ec: non-enzymatic
+- id: R00875
+  name: D-Glucitol:NAD + 2-oxidoreductase
+  genes: Nmar_1079
+  equation: cpd00003[c] + cpd00588[c] <=> cpd00067[c] + cpd00004[c] + cpd00082[c]
+  ec: 1.1.1.14; 1.1.1.15
+- id: R00885
+  name: GTP:alpha-D-mannose-1-phosphate guanylyltransferase
+  genes: (Nmar_0424 or Nmar_0541)
+  equation: cpd00038[c] + cpd00485[c] => cpd00012[c] + cpd00083[c]
+  ec: 2.7.7.13
+- id: R00888
+  name: GDP-alpha-D-mannose 4,6-hydro-lyase (GDP-4-dehydro-alpha-D-rhamnose-forming)
+  genes: Nmar_0150
+  equation: cpd00083[c] => cpd00001[c] + cpd00900[c]
+  ec: 4.2.1.47
+- id: R00893
+  name: dCTP nucleotidohydrolase
+  equation: cpd00007[c] + cpd00084[c] => cpd00467[c]
+  ec: 1.13.11.20
+- id: R00896
+  name: L-cysteine:2-oxoglutarate aminotransferase
+  genes: (Nmar_0546 or Nmar_0865)
+  equation: cpd00084[c] + cpd00024[c] <=> cpd00023[c] + cpd00706[c]
+  ec: 2.6.1.1
+- id: R00897
+  name: O3-acetyl-L-serine:hydrogen-sulfide 2-amino-2-carboxyethyltransferase
+  genes: Nmar_0670
+  equation: cpd00239[c] + cpd00722[c] => cpd00029[c] + cpd00084[c]
+  ec: 2.5.1.47; 2.5.1.65
+- id: R00899
+  name: L-cysteinylglycine dipeptidase
+  genes: Nmar_0296
+  equation: cpd00001[c] + cpd01017[c] => cpd00033[c] + cpd00084[c]
+  ec: 3.4.11.1; 3.4.11.2; 3.4.11.23; 3.4.13.-
+- id: R00900
+  name: L-cysteine,glutathione:NADP + oxidoreductase (disulfide-forming)
+  genes: Nmar_0672
+  equation: cpd00084[c] + cpd00006[c] + cpd00042[c] <=> cpd00005[c] + cpd12732[c]
+  ec: 1.8.1.9; 1.8.1.10
+- id: R00901
+  name: L-arogenate:2-oxoglutarate aminotransferase
+  equation: cpd00084[c] + cpd00081[c] <=> cpd00239[c] + cpd00395[c]
+  ec: 4.4.1.10
+- id: R00905
+  name: N-Carbamoyl-beta-alanine amidohydrolase
+  equation: cpd00001[c] + cpd01720[c] => cpd00011[c] + cpd00013[c] + cpd00085[c]
+  ec: 3.5.1.6
+- id: R00919
+  name: propanoyl-CoA:NADP + 2-oxidoreductase
+  equation: cpd00086[c] + cpd00006[c] => cpd00067[c] + cpd00005[c] + cpd00663[c]
+  ec: 1.3.1.84; 1.3.1.-
+- id: R00925
+  name: Propanoate:CoA ligase (AMP-forming)
+  genes: (Nmar_0701 or Nmar_0866)
+  equation: cpd00002[c] + cpd00141[c] + cpd00010[c] => cpd00018[c] + cpd00012[c]
+    + cpd00086[c]
+  ec: 6.2.1.1; 6.2.1.17
+- id: R00926
+  name: Propionyladenylate:CoA propionyltransferase
+  genes: (Nmar_0866 or Nmar_0701)
+  equation: cpd00010[c] + cpd03560[c] <=> cpd00018[c] + cpd00086[c]
+  ec: 6.2.1.1; 6.2.1.17
+- id: R00927
+  name: acetyl-CoA:propanoyl-CoA 2-C-acetyltransferase
+  genes: Nmar_1631
+  equation: cpd00022[c] + cpd00086[c] => cpd00010[c] + cpd02124[c]
+  ec: 2.3.1.9; 2.3.1.16
+- id: R00928
+  name: Succinyl-CoA:L-homoserine O-succinyltransferase
+  equation: cpd00022[c] + cpd00141[c] <=> cpd00029[c] + cpd00086[c]
+  ec: 2.8.3.1
+- id: R00939
+  name: 5,6,7,8-Tetrahydrofolate:NADP + oxidoreductase
+  equation: cpd00006[c] + cpd00087[c] => cpd00067[c] + cpd00005[c] + cpd00330[c]
+  ec: 1.5.1.3
+- id: R00944
+  name: 10-Formyltetrahydrofolate amidohydrolase
+  genes: Nmar_0223
+  equation: cpd00001[c] + cpd00201[c] => cpd00087[c] + cpd00047[c]
+  ec: 3.5.1.10
+- id: R00945
+  name: 5,10-Methylenetetrahydrofolate:glycine hydroxymethyltransferase
+  genes: Nmar_1793
+  equation: cpd00054[c] + cpd00087[c] => cpd00001[c] + cpd00033[c] + cpd00125[c]
+  ec: 2.1.2.1
+- id: R00946
+  name: 5-Methyltetrahydrofolate:L-homocysteine S-methyltransferase
+  genes: (Nmar_1267 and Nmar_1268)
+  equation: cpd00135[c] + cpd00345[c] => cpd00087[c] + cpd00060[c]
+  ec: 2.1.1.13
+- id: R00955
+  name: UDP-glucose:alpha-D-galactose-1-phosphate uridylyltransferase
+  genes: Nmar_0538
+  equation: cpd00026[c] + cpd00348[c] <=> cpd00089[c] + cpd00043[c]
+  ec: 2.7.7.12
+- id: R00963
+  name: 5'-nucleotidase (dUMP)
+  equation: cpd00001[c] + cpd00091[c] => cpd00009[c] + cpd00249[c]
+  ec: 3.1.3.5
+- id: R00965
+  name: orotidine-5'-phosphate carboxy-lyase (UMP-forming)
+  genes: Nmar_1418
+  equation: cpd00810[c] => cpd00011[c] + cpd00091[c]
+  ec: 4.1.1.23
+- id: R00978
+  name: 5,6-Dihydrouracil:NADP + oxidoreductase
+  equation: cpd00006[c] + cpd00337[c] => cpd00067[c] + cpd00005[c] + cpd00092[c]
+  ec: 1.3.1.2
+- id: R00985
+  name: chorismate pyruvate-lyase (amino-accepting; anthranilate-forming)
+  genes: (Nmar_0912 and Nmar_0911)
+  equation: cpd00001[c] + cpd00020[c] + cpd00093[c] <=> cpd00013[c] + cpd00216[c]
+  ec: 4.1.3.27
+- id: R00986
+  name: Chorismate pyruvate-lyase (amino-accepting)
+  genes: (Nmar_0912 and Nmar_0911)
+  equation: cpd00053[c] + cpd00216[c] => cpd00020[c] + cpd00023[c] + cpd00093[c]
+  ec: 4.1.3.27
+- id: R00994
+  name: (2R,3S)-3-methylmalate:NAD + oxidoreductase
+  genes: Nmar_1069
+  equation: cpd00003[c] + cpd03593[c] => cpd00011[c] + cpd00067[c] + cpd00004[c]
+    + cpd00094[c]
+  ec: 1.1.1.85
+- id: R00996
+  name: L-threonine ammonia-lyase (2-oxobutanoate-forming)
+  genes: Nmar_0848
+  equation: cpd00161[c] => cpd00013[c] + cpd00094[c]
+  ec: 4.3.1.19
+- id: R01007
+  name: UDP-N-acetyl-D-glucosamine:dolichyl-phosphate N-acetyl-D-glucosamine phosphotransferase
+  genes: Nmar_0244
+  equation: cpd00037[c] + cpd11619[c] => cpd00091[c] + cpd12559[c]
+  ec: 2.7.8.15
+- id: R01009
+  name: GDPmannose:dolichyl-phosphate O-beta-D-mannosyltransferase
+  genes: Nmar_0062
+  equation: cpd00083[c] + cpd11619[c] => cpd00031[c] + cpd12407[c]
+  ec: 2.4.1.83
+- id: R01015
+  name: D-glyceraldehyde-3-phosphate aldose-ketose-isomerase
+  genes: Nmar_0950
+  equation: cpd00102[c] <=> cpd00095[c]
+  ec: 5.3.1.1
+- id: R01049
+  name: ATP:D-ribose-5-phosphate diphosphotransferase
+  genes: Nmar_1774
+  equation: cpd00002[c] + cpd00101[c] => cpd00018[c] + cpd00103[c]
+  ec: 2.7.6.1
+- id: R01054
+  name: ADP-ribose ribophosphohydrolase
+  genes: Nmar_1716
+  equation: cpd00001[c] + cpd00251[c] => cpd00018[c] + cpd00101[c]
+  ec: 3.6.1.13; 3.6.1.21; 3.6.1.53; 3.6.1.-
+- id: R01056
+  name: D-ribose-5-phosphate aldose-ketose-isomerase
+  genes: Nmar_0218
+  equation: cpd00101[c] <=> cpd00171[c]
+  ec: 5.3.1.6
+- id: R01057
+  name: D-Ribose 1,5-phosphomutase
+  genes: Nmar_0224
+  equation: cpd00475[c] <=> cpd00101[c]
+  ec: 5.4.2.2; 5.4.2.7
+- id: R01061
+  name: D-glyceraldehyde-3-phosphate:NAD + oxidoreductase (phosphorylating)
+  genes: Nmar_0831
+  equation: cpd00003[c] + cpd00009[c] + cpd00102[c] <=> cpd00067[c] + cpd00004[c]
+    + cpd00203[c]
+  ec: 1.2.1.12; 1.2.1.59
+- id: R01067
+  name: D-Fructose 6-phosphate:D-glyceraldehyde-3-phosphate glycolaldehyde transferase
+  genes: (Nmar_0299 and Nmar_0300)
+  equation: cpd00072[c] + cpd00102[c] <=> cpd00236[c] + cpd00198[c]
+  ec: 2.2.1.1
+- id: R01068
+  name: D-fructose-1,6-bisphosphate D-glyceraldehyde-3-phosphate-lyase (glycerone-phosphate-forming)
+  genes: (Nmar_0553 or Nmar_1035)
+  equation: cpd00290[c] <=> cpd00095[c] + cpd00102[c]
+  ec: 4.1.2.13
+- id: R01071
+  name: 1-(5-phospho-D-ribosyl)-ATP:diphosphate phospho-alpha-D-ribosyl-transferase
+  genes: Nmar_1559
+  equation: cpd00002[c] + cpd00103[c] => cpd00012[c] + cpd01775[c]
+  ec: 2.4.2.17
+- id: R01072
+  name: 5-phosphoribosylamine:diphosphate phospho-alpha-D-ribosyltransferase (glutamate-amidating)
+  genes: Nmar_0781
+  equation: cpd00001[c] + cpd00103[c] + cpd00053[c] => cpd00012[c] + cpd00023[c]
+    + cpd01982[c]
+  ec: 2.4.2.14
+- id: R01073
+  name: N-(5-Phospho-D-ribosyl)anthranilate:pyrophosphate phosphoribosyl-transferase
+  genes: Nmar_0913
+  equation: cpd00103[c] + cpd00093[c] => cpd00012[c] + cpd02642[c]
+  ec: 2.4.2.18
+- id: R01074
+  name: biotin:CoA ligase (AMP-forming)
+  genes: Nmar_0984
+  equation: cpd00002[c] + cpd00104[c] => cpd00012[c] + cpd03517[c]
+  ec: 6.2.1.11; 6.3.4.9; 6.3.4.10; 6.3.4.11
+- id: R01078
+  name: dethiobiotin:sulfur sulfurtransferase
+  genes: Nmar_0821
+  equation: (2) cpd00067[c] + cpd00074[c] + (2) cpd00017[c] + cpd01311[c] + (2) cpd12713[c]
+    <=> (2) cpd00060[c] + cpd00104[c] + (2) cpd03091[c]
+  ec: 2.8.1.6
+- id: R01082
+  equation: cpd00130[c] <=> cpd00001[c] + cpd00106[c]
+  ec: 4.2.1.2
+- id: R01083
+  name: N6-(1,2-dicarboxyethyl)AMP AMP-lyase (fumarate-forming)
+  genes: Nmar_1455
+  equation: cpd02375[c] <=> cpd00018[c] + cpd00106[c]
+  ec: 4.3.2.2
+- id: R01086
+  name: 2-(Nomega-L-arginino)succinate arginine-lyase (fumarate-forming)
+  genes: Nmar_0263
+  equation: cpd02152[c] => cpd00106[c] + cpd00051[c]
+  ec: 4.3.2.1
+- id: R01090
+  name: L-Leucine:2-oxoglutarate aminotransferase
+  genes: (Nmar_0192 or Nmar_0248)
+  equation: cpd00024[c] + cpd00107[c] <=> cpd00023[c] + cpd00200[c]
+  ec: 2.6.1.6; 2.6.1.42; 2.6.1.67
+- id: R01123
+  name: Isopentenyl-diphosphate delta3-delta2-isomerase
+  genes: Nmar_0313
+  equation: cpd00113[c] <=> cpd00202[c]
+  ec: 5.3.3.2
+- id: R01127
+  name: IMP 1,2-hydrolase (decyclizing)
+  genes: Nmar_0872
+  equation: cpd00001[c] + cpd00114[c] <=> cpd02884[c]
+  ec: 2.1.2.3; 3.5.4.10
+- id: R01130
+  name: IMP:NAD + oxidoreductase
+  genes: Nmar_1569
+  equation: cpd00003[c] + cpd00001[c] + cpd00114[c] <=> cpd00067[c] + cpd00004[c]
+    + cpd00497[c]
+  ec: 1.1.1.205
+- id: R01135
+  name: IMP:L-aspartate ligase (GDP-forming)
+  genes: Nmar_1420
+  equation: cpd00041[c] + cpd00038[c] + cpd00114[c] => cpd00009[c] + cpd00031[c]
+    + cpd02375[c]
+  ec: 6.3.4.4
+- id: R01137
+  name: ATP:dADP phosphotransferase
+  genes: Nmar_0228
+  equation: cpd00002[c] + cpd00177[c] => cpd00008[c] + cpd00115[c]
+  ec: 2.7.4.6
+- id: R01142
+  name: Methane,NADH:oxygen oxidoreductase (hydroxylating)
+  equation: cpd00007[c] + cpd00067[c] + cpd00004[c] + cpd01024[c] => cpd00003[c]
+    + cpd00001[c] + cpd00116[c]
+  ec: 1.14.13.25
+- id: R01157
+  name: Agmatine amidinohydrolase
+  genes: Nmar_0925
+  equation: cpd00001[c] + cpd00152[c] => cpd00118[c] + cpd00073[c]
+  ec: 3.5.3.11
+- id: R01163
+  name: L-histidinal:NAD + oxidoreductase
+  genes: Nmar_1558
+  equation: cpd00003[c] + cpd00001[c] + cpd01324[c] => cpd00067[c] + cpd00004[c]
+    + cpd00119[c]
+  ec: 1.1.1.23
+- id: R01177
+  name: butanoyl-CoA:acetyl-CoA C-butanoyltransferase
+  genes: Nmar_1631
+  equation: cpd00022[c] + cpd00120[c] <=> cpd00010[c] + cpd03123[c]
+  ec: 2.3.1.9; 2.3.1.16
+- id: R01182
+  name: geranylgeranyl reductase
+  equation: cpd00002[c] + cpd00121[c] => cpd00008[c] + cpd00867[c]
+  ec: 2.7.1.64
+- id: R01185
+  name: 1D-myo-inositol 1-phosphate phosphohydrolase
+  genes: Nmar_0268
+  equation: cpd00001[c] + cpd00867[c] => cpd00009[c] + cpd00121[c]
+  ec: 3.1.3.25
+- id: R01186
+  name: 1D-myo-inositol 4-phosphate phosphohydrolase
+  genes: Nmar_0268
+  equation: cpd00001[c] + cpd02230[c] => cpd00009[c] + cpd00121[c]
+  ec: 3.1.3.25
+- id: R01187
+  name: 1D-myo-inositol 3-phosphate phosphohydrolase
+  genes: Nmar_0268
+  equation: cpd00001[c] + cpd02484[c] => cpd00009[c] + cpd00121[c]
+  ec: 3.1.3.25
+- id: R01195
+  name: Ferredoxin:NADP + oxidoreductase
+  genes: (Nmar_0253 or Nmar_0267)
+  equation: cpd00067[c] + cpd00006[c] + (2) cpd11620[c] => cpd00005[c] + (2) cpd11621[c]
+  ec: 1.18.1.2
+- id: R01196
+  name: pyruvate:ferredoxin 2-oxidoreductase (CoA-acetylating)
+  equation: cpd00011[c] + (2) cpd00067[c] + cpd00022[c] + (2) cpd11620[c] => cpd00020[c]
+    + cpd00010[c] + (2) cpd11621[c]
+  ec: 1.2.7.1; 1.2.7.-
+- id: R01197
+  name: 2-oxoglutarate:ferredoxin oxidoreductase (decarboxylating)
+  genes: (Nmar_0413 and Nmar_0414)
+  equation: cpd00010[c] + cpd00024[c] + (2) cpd11621[c] => cpd00011[c] + (2) cpd00067[c]
+    + cpd00078[c] + (2) cpd11620[c]
+  ec: 1.2.7.3
+- id: R01209
+  name: 2,3-Dihydroxy-3-methylbutanoate hydro-lyase
+  genes: Nmar_0886
+  equation: cpd02498[c] <=> cpd00001[c] + cpd00123[c]
+  ec: 4.2.1.9
+- id: R01213
+  name: acetyl-CoA:3-methyl-2-oxobutanoate C-acetyltransferase (thioester-hydrolysing,
+    carboxymethyl-forming)
+  genes: (Nmar_1070 or Nmar_1293)
+  equation: cpd00001[c] + cpd00022[c] + cpd00123[c] => cpd00010[c] + cpd01646[c]
+  ec: 2.3.3.13
+- id: R01214
+  name: L-Valine:2-oxoglutarate aminotransferase
+  genes: (Nmar_0192 or Nmar_0248)
+  equation: cpd00024[c] + cpd00156[c] <=> cpd00023[c] + cpd00123[c]
+  ec: 2.6.1.6; 2.6.1.42
+- id: R01216
+  name: 2-dehydropantoate formaldehyde-lyase (3-methyl-2-oxobutanoate-forming)
+  genes: Nmar_1720
+  equation: cpd00712[c] <=> cpd00123[c] + cpd00055[c]
+  ec: 2.1.2.11; 4.1.2.12
+- id: R01220
+  name: 5,10-methylenetetrahydrofolate:NADP + oxidoreductase
+  genes: Nmar_1117
+  equation: cpd00006[c] + cpd00125[c] <=> cpd00005[c] + cpd00347[c]
+  ec: 1.5.1.5
+- id: R01221
+  name: glycine synthase
+  equation: cpd00003[c] + cpd00033[c] + cpd00087[c] => cpd00011[c] + cpd00067[c]
+    + cpd00013[c] + cpd00004[c] + cpd00125[c]
+  ec: 1.4.4.2; 1.8.1.4; 2.1.2.10
+- id: R01224
+  name: 5-methyltetrahydrofolate:NADP + oxidoreductase
+  equation: cpd00006[c] + cpd00345[c] => cpd00067[c] + cpd00005[c] + cpd00125[c]
+  ec: 1.5.1.20
+- id: R01226
+  name: 5,10-Methylenetetrahydrofolate:3-methyl-2-oxobutanoate hydroxymethyltransferase
+  genes: Nmar_1720
+  equation: cpd00001[c] + cpd00125[c] + cpd00123[c] => cpd00087[c] + cpd00712[c]
+  ec: 2.1.2.11
+- id: R01229
+  name: GMP:diphosphate 5-phospho-alpha-D-ribosyltransferase
+  genes: Nmar_1400
+  equation: cpd00103[c] + cpd00207[c] => cpd00012[c] + cpd00126[c]
+  ec: 2.4.2.7; 2.4.2.8; 2.4.2.22
+- id: R01230
+  name: Xanthosine-5'-phosphate:ammonia ligase (AMP-forming)
+  genes: Nmar_1573
+  equation: cpd00002[c] + cpd00013[c] + cpd00497[c] => cpd00018[c] + cpd00012[c]
+    + cpd00126[c]
+  ec: 6.3.4.1; 6.3.5.2
+- id: R01231
+  name: Xanthosine-5'-phosphate:L-glutamine amido-ligase (AMP-forming)
+  genes: Nmar_1573
+  equation: cpd00001[c] + cpd00002[c] + cpd00053[c] + cpd00497[c] => cpd00018[c]
+    + cpd00012[c] + cpd00023[c] + cpd00126[c]
+  ec: 6.3.5.2
+- id: R01244
+  name: Adenine aminohydrolase
+  genes: Nmar_1578
+  equation: cpd00001[c] + cpd00128[c] => cpd00013[c] + cpd00226[c]
+  ec: 3.5.4.2
+- id: R01262
+  name: glutathione:L-amino-acid 5-glutamyltransferase
+  genes: Nmar_1004
+  equation: cpd00042[c] + cpd11623[c] <=> cpd01017[c] + cpd12381[c]
+  ec: 2.3.2.2
+- id: R01267
+  name: dTDP phosphohydrolase
+  equation: cpd00132[c] <=> cpd00001[c] + cpd01651[c]
+  ec: 4.2.1.65
+- id: R01286
+  name: L-cystathionine L-homocysteine-lyase (deaminating; pyruvate-forming)
+  equation: cpd00001[c] + cpd00424[c] => cpd00020[c] + cpd00013[c] + cpd00135[c]
+  ec: 4.4.1.8
+- id: R01287
+  name: O-acetyl-L-homoserine:hydrogen sulfide S-(3-amino-3-carboxypropyl)transferase
+  equation: cpd00239[c] + cpd00790[c] <=> cpd00029[c] + cpd00135[c]
+  ec: 2.5.1.49
+- id: R01291
+  name: S-(5-deoxy-D-ribos-5-yl)-L-homocysteine homocysteine-lyase [(4S)-4,5-dihydroxypentan-2,3-dione-forming]
+  equation: cpd02227[c] => cpd00135[c] + cpd08638[c]
+  ec: 4.4.1.21
+- id: R01324
+  name: citrate hydro-lyase
+  genes: Nmar_1482
+  equation: cpd00137[c] <=> cpd00260[c]
+  ec: 4.2.1.3
+- id: R01325
+  name: citrate hydro-lyase (cis-aconitate-forming)
+  genes: Nmar_1482
+  equation: cpd00137[c] <=> cpd00001[c] + cpd00331[c]
+  ec: 4.2.1.3; 4.2.1.4
+- id: R01333
+  name: glycolaldehyde:NAD + oxidoreductase
+  equation: cpd00003[c] + cpd00001[c] + cpd00229[c] => cpd00067[c] + cpd00004[c]
+    + cpd00139[c]
+  ec: 1.2.1.21
+- id: R01339
+  equation: cpd11625[c] + cpd00023[c] <=> cpd03077[c] + cpd00024[c]
+- id: R01352
+  equation: cpd00001[c] + cpd01431[c] <=> cpd00067[c] + cpd00049[c] + cpd00100[c]
+- id: R01354
+  name: ATP:propanoate adenylyltransferase
+  genes: (Nmar_0866 or Nmar_0701)
+  equation: cpd00002[c] + cpd00141[c] => cpd00012[c] + cpd03560[c]
+  ec: 6.2.1.1; 6.2.1.17
+- id: R01373
+  name: Prephenate hydro-lyase (decarboxylating)
+  genes: Nmar_1567
+  equation: cpd00219[c] => cpd00011[c] + cpd00001[c] + cpd00143[c]
+  ec: 4.2.1.51; 4.2.1.91
+- id: R01385
+  name: UDPglucuronate 4-epimerase
+  equation: cpd00144[c] => cpd00472[c]
+  ec: 5.1.3.6
+- id: R01388
+  name: D-Glycerate:NAD + 2-oxidoreductase
+  genes: (Nmar_0412 and Nmar_1111)
+  equation: cpd00003[c] + cpd00223[c] <=> cpd00067[c] + cpd00145[c] + cpd00004[c]
+  ec: 1.1.1.26; 1.1.1.29; 1.1.1.81
+- id: R01392
+  name: D-Glycerate:NADP + 2-oxidoreductase
+  genes: Nmar_1111
+  equation: cpd00006[c] + cpd00223[c] <=> cpd00067[c] + cpd00145[c] + cpd00005[c]
+  ec: 1.1.1.79; 1.1.1.81
+- id: R01393
+  name: hydroxypyruvate carboxy-lyase (glycolaldehyde-forming)
+  equation: cpd00145[c] => cpd00011[c] + cpd00229[c]
+  ec: 4.1.1.40
+- id: R01397
+  name: carbamoyl-phosphate:L-aspartate carbamoyltransferase
+  genes: Nmar_1686
+  equation: cpd00146[c] + cpd00041[c] => cpd00009[c] + cpd00343[c]
+  ec: 2.1.3.2
+- id: R01398
+  name: Carbamoyl-phosphate:L-ornithine carbamoyltransferase
+  genes: Nmar_0397
+  equation: cpd00064[c] + cpd00146[c] => cpd00009[c] + cpd00274[c]
+  ec: 2.1.3.3
+- id: R01400
+  name: dUTP nucleotidohydrolase
+  equation: cpd00146[c] <=> cpd12819[c]
+- id: R01402
+  name: S-methyl-5'-thioadenosine:phosphate S-methyl-5-thio-alpha-D-ribosyl-transferase
+  genes: Nmar_1401
+  equation: cpd00128[c] + cpd02574[c] => cpd00009[c] + cpd00147[c]
+  ec: 2.4.2.28
+- id: R01421
+  name: Benzoyl phosphate phosphohydrolase
+  genes: Nmar_0103
+  equation: cpd00001[c] + cpd03713[c] => cpd00009[c] + cpd00153[c]
+  ec: 3.6.1.7
+- id: R01466
+  name: O-phospho-L-homoserine phosphate-lyase (adding water;L-threonine-forming)
+  genes: (Nmar_0833 or Nmar_1549)
+  equation: cpd00001[c] + cpd00809[c] => cpd00009[c] + cpd00161[c]
+  ec: 4.2.3.1
+- id: R01492
+  name: ATP:cob(I)alamin Co-beta-adenosyltransferase
+  genes: Nmar_0078
+  equation: cpd00002[c] + cpd00635[c] => cpd00421[c] + cpd00166[c]
+  ec: 2.5.1.17
+- id: R01512
+  name: ATP:3-phospho-D-glycerate 1-phosphotransferase
+  genes: Nmar_0500
+  equation: cpd00002[c] + cpd00169[c] <=> cpd00008[c] + cpd00203[c]
+  ec: 2.7.2.3
+- id: R01513
+  name: 3-Phospho-D-glycerate:NAD + 2-oxidoreductase
+  genes: Nmar_1258
+  equation: cpd00003[c] + cpd00169[c] <=> cpd00067[c] + cpd00004[c] + cpd02069[c]
+  ec: 1.1.1.95
+- id: R01514
+  name: ATP:(R)-glycerate 3-phosphotransferase
+  genes: Nmar_1111
+  equation: cpd00002[c] + cpd00223[c] => cpd00008[c] + cpd00169[c]
+  ec: 2.7.1.31
+- id: R01515
+  name: 3-Phospho-D-glyceroyl phosphate phosphohydrolase
+  genes: Nmar_0103
+  equation: cpd00001[c] + cpd00203[c] => cpd00009[c] + cpd00169[c]
+  ec: 3.6.1.7
+- id: R01516
+  name: 2,3-bisphospho-D-glycerate 2-phosphohydrolase
+  equation: cpd00001[c] + cpd00853[c] => cpd00009[c] + cpd00169[c]
+  ec: 3.1.3.13
+- id: R01518
+  name: D-phosphoglycerate 2,3-phosphomutase
+  genes: (Nmar_0537 or Nmar_0181)
+  equation: cpd00482[c] <=> cpd00169[c]
+  ec: 5.4.2.1
+- id: R01529
+  name: D-Ribulose-5-phosphate 3-epimerase
+  genes: Nmar_0299
+  equation: cpd00171[c] <=> cpd00198[c]
+  ec: 5.1.3.1
+- id: R01547
+  name: ATP:dAMP phosphotransferase
+  genes: Nmar_0403
+  equation: cpd00002[c] + cpd00294[c] => cpd00008[c] + cpd00177[c]
+  ec: 2.7.4.3; 2.7.4.11
+- id: R01561
+  name: purine-nucleoside phosphorylase (Adenosine)
+  equation: cpd00009[c] + cpd00182[c] => cpd00128[c] + cpd00475[c]
+  ec: 2.4.2.1
+- id: R01625
+  name: CoA:apo-[acyl-carrier-protein] pantetheinephosphotransferase
+  genes: Nmar_0138
+  equation: cpd00010[c] + cpd12370[c] => cpd00045[c] + cpd11493[c]
+  ec: 2.7.8.7; 2.7.8.-
+- id: R01641
+  name: sedoheptulose-7-phosphate:D-glyceraldehyde-3-phosphate glycolaldehyde transferase
+  genes: (Nmar_0300 or Nmar_0299)
+  equation: cpd00102[c] + cpd00238[c] <=> cpd00101[c] + cpd00198[c]
+  ec: 2.2.1.1
+- id: R01652
+  equation: cpd00011[c] + cpd00200[c] => cpd02605[c]
+  ec: 1.1.1.85
+- id: R01655
+  name: 5,10-Methenyltetrahydrofolate 5-hydrolase (decyclizing)
+  genes: Nmar_1117
+  equation: cpd00001[c] + cpd00347[c] <=> cpd00067[c] + cpd00201[c]
+  ec: 3.5.4.9
+- id: R01658
+  name: Dimethylallyl-diphosphate:isopentenyl-diphosphate dimethylallyltranstransferase
+  genes: (Nmar_0312 and Nmar_0287 and Nmar_0312 and Nmar_0312)
+  equation: cpd00113[c] + cpd00202[c] => cpd00012[c] + cpd00283[c]
+  ec: 2.5.1.1
+- id: R01662
+  name: 3-phospho-D-glycerate 1,2-phosphomutase
+  genes: (Nmar_0181 or Nmar_0537)
+  equation: cpd00203[c] <=> cpd00853[c]
+  ec: 5.4.2.1; 5.4.2.4
+- id: R01663
+  name: dCMP aminohydrolase
+  genes: Nmar_0947
+  equation: cpd00001[c] + cpd00206[c] => cpd00013[c] + cpd00299[c]
+  ec: 3.5.4.12
+- id: R01664
+  name: 2'-deoxycytidine 5'-monophosphate phosphohydrolase
+  equation: cpd00001[c] + cpd00206[c] => cpd00009[c] + cpd00654[c]
+  ec: 3.1.3.5
+- id: R01665
+  name: ATP:dCMP phosphotransferase
+  genes: Nmar_0405
+  equation: cpd00002[c] + cpd00206[c] => cpd00008[c] + cpd00533[c]
+  ec: 2.7.4.14; 2.7.4.25
+- id: R01667
+  equation: cpd00001[c] + cpd00533[c] => cpd00009[c] + cpd00206[c]
+  ec: 3.6.1.12
+- id: R01682
+  name: 3-Sulfo-L-alanine carboxy-lyase (taurine-forming)
+  equation: cpd00395[c] => cpd00011[c] + cpd00210[c]
+  ec: 4.1.1.15; 4.1.1.29
+- id: R01687
+  name: (5-L-glutamyl)-peptide:taurine 5-glutamyltransferase
+  genes: Nmar_1004
+  equation: cpd00210[c] + cpd12271[c] <=> cpd11608[c] + cpd03474[c]
+  ec: 2.3.2.2
+- id: R01714
+  name: 5-O-(1-Carboxyvinyl)-3-phosphoshikimate phosphate-lyase (chorismate-forming)
+  genes: Nmar_0547
+  equation: cpd00932[c] => cpd00009[c] + cpd00216[c]
+  ec: 4.2.3.5
+- id: R01715
+  name: Chorismate pyruvatemutase
+  equation: cpd00216[c] <=> cpd00219[c]
+  ec: 5.4.99.5
+- id: R01716
+  name: chorismate:L-glutamine aminotransferase
+  genes: Nmar_0912
+  equation: cpd00053[c] + cpd00216[c] <=> cpd00023[c] + cpd08210[c]
+  ec: 2.6.1.85
+- id: R01724
+  name: nicotinic acid mononucleotide pyrophosphorylase
+  equation: cpd00012[c] + cpd00873[c] => cpd00067[c] + cpd00103[c] + cpd00218[c]
+  ec: 2.4.2.11
+- id: R01728
+  name: Prephenate:NAD + oxidoreductase(decarboxylating)
+  equation: cpd00003[c] + cpd00219[c] => cpd00868[c] + cpd00011[c] + cpd00067[c]
+    + cpd00004[c]
+  ec: 1.3.1.12
+- id: R01731
+  name: 2-methyl-4-amino-5-hydroxymethylpyrimidine-diphosphate:4-methyl-5-(2-phosphoethyl)-thiazole
+    2-methyl-4-aminopyridine-5-methenyltransferase
+  genes: Nmar_0546
+  equation: cpd00032[c] + cpd00616[c] <=> cpd00041[c] + cpd00219[c]
+  ec: 2.6.1.57; 2.6.1.78
+- id: R01745
+  name: (R)-Glycerate:NAD + oxidoreductase
+  equation: cpd00003[c] + cpd00223[c] <=> cpd00067[c] + cpd00004[c] + cpd00843[c]
+  ec: 1.1.1.60
+- id: R01752
+  name: D-Glyceraldehyde:NAD + oxidoreductase
+  equation: cpd00003[c] + cpd00001[c] + cpd00448[c] <=> cpd00067[c] + cpd00004[c]
+    + cpd00223[c]
+  ec: 1.2.1.3
+- id: R01771
+  name: ATP:L-homoserine O-phosphotransferase
+  genes: Nmar_0041
+  equation: cpd00002[c] + cpd00227[c] => cpd00008[c] + cpd00809[c]
+  ec: 2.7.1.39
+- id: R01773
+  name: L-Homoserine:NAD + oxidoreductase
+  genes: Nmar_0696
+  equation: cpd00003[c] + cpd00227[c] <=> cpd00067[c] + cpd00004[c] + cpd00346[c]
+  ec: 1.1.1.3
+- id: R01775
+  name: L-homoserine:NADP + oxidoreductase
+  genes: Nmar_0696
+  equation: cpd00227[c] + cpd00006[c] <=> cpd00067[c] + cpd00005[c] + cpd00346[c]
+  ec: 1.1.1.3
+- id: R01776
+  name: Acetyl-CoA:L-homoserine O-acetyltransferase
+  equation: cpd00022[c] + cpd00227[c] <=> cpd00010[c] + cpd00790[c]
+  ec: 2.3.1.31
+- id: R01777
+  name: O-Succinyl-L-homoserine succinate-lyase (adding cysteine)
+  equation: cpd00078[c] + cpd00227[c] => cpd00010[c] + cpd00822[c]
+  ec: 2.3.1.46
+- id: R01801
+  name: CDP-diacylglycerol:sn-glycerol-3-phosphate 3-phosphatidyltransferase
+  genes: Nmar_0924
+  equation: cpd00080[c] + cpd11427[c] => cpd00046[c] + cpd11454[c]
+  ec: 2.7.8.5
+- id: R01804
+  name: phosphoenolpyruvate:N-acetyl-D-mannosamine C-(1-carboxyvinyl)transferase
+    (phosphate-hydrolysing, 2-carboxy-2-oxoethyl-forming)
+  genes: Nmar_0131
+  equation: cpd00001[c] + cpd00492[c] + cpd00061[c] => cpd00009[c] + cpd00232[c]
+  ec: 2.5.1.56
+- id: R01805
+  name: N-Acetylneuraminate 9-phosphate phosphohydrolase
+  equation: cpd00001[c] + cpd03733[c] => cpd00009[c] + cpd00232[c]
+  ec: 3.1.3.29
+- id: R01818
+  name: D-mannose 6-phosphate 1,6-phosphomutase
+  genes: (Nmar_0224 or Nmar_0541)
+  equation: cpd00235[c] <=> cpd00485[c]
+  ec: 5.4.2.8
+- id: R01819
+  name: D-mannose-6-phosphate aldose-ketose-isomerase
+  genes: Nmar_0167
+  equation: cpd00235[c] <=> cpd00072[c]
+  ec: 5.3.1.8
+- id: R01826
+  name: Phosphoenolpyruvate:D-erythrose-4-phosphate
+  equation: cpd00001[c] + cpd00061[c] + cpd00236[c] <=> cpd00009[c] + cpd00067[c]
+    + cpd02857[c]
+  ec: 2.5.1.54|4.1.2.15
+- id: R01827
+  name: sedoheptulose-7-phosphate:D-glyceraldehyde-3-phosphate glyceronetransferase
+  genes: Nmar_0301
+  equation: cpd00102[c] + cpd00238[c] <=> cpd00072[c] + cpd00236[c]
+  ec: 2.2.1.2
+- id: R01829
+  name: sedoheptulose 1,7-bisphosphate D-glyceraldehyde-3-phosphate-lyase
+  genes: (Nmar_0553 or Nmar_1035)
+  equation: cpd00349[c] <=> cpd00095[c] + cpd00236[c]
+  ec: 4.1.2.13
+- id: R01845
+  name: Sedoheptulose 1,7-bisphosphate 1-phosphohydrolase
+  genes: Nmar_1035
+  equation: cpd00001[c] + cpd00349[c] => cpd00009[c] + cpd00238[c]
+  ec: 3.1.3.11; 3.1.3.37
+- id: R01857
+  name: ATP:dGDP phosphotransferase
+  genes: Nmar_0228
+  equation: cpd00002[c] + cpd00295[c] => cpd00008[c] + cpd00241[c]
+  ec: 2.7.4.6
+- id: R01859
+  name: propanoyl-CoA:carbon-dioxide ligase (ADP-forming)
+  genes: (Nmar_0272 and Nmar_0273 and Nmar_0274)
+  equation: cpd00002[c] + cpd00067[c] + cpd00086[c] + cpd00242[c] => cpd00009[c]
+    + cpd00008[c] + cpd00519[c]
+  ec: 6.4.1.3
+- id: R01867
+  name: (S)-dihydroorotate:fumarate oxidoreductase
+  equation: cpd00007[c] + cpd00282[c] => cpd00025[c] + cpd00247[c]
+  ec: 1.3.98.1
+- id: R01869
+  name: (S)-Dihydroorotate:(acceptor) oxidoreductase
+  genes: (Nmar_1389 and Nmar_1390)
+  equation: cpd00003[c] + cpd00282[c] => cpd00067[c] + cpd00004[c] + cpd00247[c]
+  ec: 1.3.1.14
+- id: R01870
+  name: Orotidine-5'-phosphate:diphosphate phospho-alpha-D-ribosyl-transferase
+  genes: Nmar_0289
+  equation: cpd00103[c] + cpd00247[c] => cpd00012[c] + cpd00810[c]
+  ec: 2.4.2.10
+- id: R01878
+  name: Cytidine aminohydrolase
+  genes: Nmar_1471
+  equation: cpd00001[c] + cpd00367[c] => cpd00013[c] + cpd00249[c]
+  ec: 3.5.4.5
+- id: R01884
+  name: Creatinine amidohydrolase
+  genes: Nmar_0222
+  equation: cpd00001[c] + cpd00585[c] <=> cpd00250[c]
+  ec: 3.5.2.10
+- id: R01900
+  name: isocitrate hydro-lyase (cis-aconitate-forming)
+  genes: Nmar_1482
+  equation: cpd00260[c] <=> cpd00001[c] + cpd00331[c]
+  ec: 4.2.1.3
+- id: R01919
+  name: UDP diphosphohydrolase
+  equation: cpd00118[c] + cpd00264[c] => cpd03802[c] + cpd00726[c]
+  ec: 2.5.1.44; 2.5.1.45
+- id: R01920
+  name: ADP aminohydrolase
+  genes: Nmar_1135
+  equation: cpd00118[c] + cpd00837[c] => cpd00147[c] + cpd00264[c]
+  ec: 2.5.1.16
+- id: R01931
+  name: thiosulfate:cyanide sulfurtranserase
+  genes: Nmar_0441
+  equation: cpd00150[c] + cpd00268[c] <=> cpd00081[c] + cpd01211[c]
+  ec: 2.8.1.1
+- id: R01934
+  name: (1R,2S)-1-hydroxybutane-1,2,4-tricarboxylate:NAD + oxidoreductase
+  equation: cpd00003[c] + cpd03372[c] => cpd00011[c] + cpd00067[c] + cpd00004[c]
+    + cpd00269[c]
+  ec: 1.1.1.87; 1.1.1.286
+- id: R01939
+  name: L-2-Aminoadipate:2-oxoglutarate aminotransferase
+  equation: cpd00024[c] + cpd00705[c] <=> cpd00023[c] + cpd00269[c]
+  ec: 2.6.1.39
+- id: R01954
+  name: L-Citrulline:L-aspartate ligase (AMP-forming)
+  genes: Nmar_1286
+  equation: cpd00002[c] + cpd00041[c] + cpd00274[c] => cpd00018[c] + cpd00012[c]
+    + cpd02152[c]
+  ec: 6.3.4.5
+- id: R01975
+  name: (S)-3-Hydroxybutanoyl-CoA:NAD + oxidoreductase
+  genes: Nmar_1028
+  equation: cpd00003[c] + cpd00842[c] <=> cpd00067[c] + cpd00004[c] + cpd00279[c]
+  ec: 1.1.1.35
+- id: R01978
+  name: acetyl-CoA:acetoacetyl-CoA C-acetyltransferase (thioester-hydrolysing, carboxymethyl-forming)
+  genes: Nmar_0828
+  equation: cpd00001[c] + cpd00022[c] + cpd00279[c] => cpd00010[c] + cpd00292[c]
+  ec: 2.3.3.10
+- id: R01993
+  name: (S)-dihydroorotate amidohydrolase
+  genes: Nmar_0214
+  equation: cpd00001[c] + cpd00282[c] => cpd00343[c]
+  ec: 3.5.2.3
+- id: R02003
+  name: Geranyl-diphosphate:isopentenyl-diphosphate geranyltrans-transferase
+  genes: Nmar_0312
+  equation: cpd00113[c] + cpd00283[c] => cpd00012[c] + cpd00350[c]
+  ec: 2.5.1.10
+- id: R02014
+  name: 2'-Deoxyadenosine 5'-triphosphate:oxydized-thioredoxin 2'-oxidoreductase
+  genes: Nmar_1628
+  equation: cpd00001[c] + cpd00115[c] + cpd11420[c] => cpd00002[c] + cpd11421[c]
+  ec: 1.17.4.2
+- id: R02016
+  name: NADPH:oxidized-thioredoxin oxidoreductase
+  genes: Nmar_0672
+  equation: cpd00006[c] + cpd11421[c] <=> cpd00067[c] + cpd00005[c] + cpd11420[c]
+  ec: 1.8.1.9
+- id: R02017
+  name: 2'-Deoxyadenosine 5'-diphosphate:oxidized-thioredoxin 2'-oxidoreductase
+  genes: Nmar_1627
+  equation: cpd00001[c] + cpd00177[c] + cpd11420[c] => cpd00008[c] + cpd11421[c]
+  ec: 1.17.4.1
+- id: R02018
+  name: 2'-Deoxyuridine 5'-diphosphate:oxidized-thioredoxin 2'-oxidoreductase
+  genes: Nmar_1627
+  equation: cpd00001[c] + cpd11420[c] + cpd00978[c] => cpd00014[c] + cpd11421[c]
+  ec: 1.17.4.1
+- id: R02019
+  name: 2'-Deoxyguanosine 5'-diphosphate:oxidized-thioredoxin 2'-oxidoreductase
+  genes: Nmar_1627
+  equation: cpd00001[c] + cpd00295[c] + cpd11420[c] <=> cpd00031[c] + cpd11421[c]
+  ec: 1.17.4.1
+- id: R02020
+  name: 2'-Deoxyguanosine 5'-triphosphate:oxydized-thioredoxin 2'-oxidoreductase
+  genes: Nmar_1628
+  equation: cpd00001[c] + cpd00241[c] + cpd11420[c] => cpd00038[c] + cpd11421[c]
+  ec: 1.17.4.2
+- id: R02021
+  name: adenosine 3',5'-bisphosphate,sulfite:oxidized-thioredoxin oxidoreductase
+    (3'-phosphoadenosine-5'-phosphosulfate -forming)
+  genes: Nmar_0049
+  equation: cpd00044[c] + cpd11421[c] <=> cpd00018[c] + cpd00009[c] + cpd00081[c]
+    + cpd11420[c]
+  ec: 1.8.4.8
+- id: R02022
+  name: 2'-Deoxyuridine 5'-triphosphate:oxydized-thioredoxin 2'-oxidoreductase
+  genes: Nmar_1628
+  equation: cpd00001[c] + cpd11420[c] + cpd00356[c] => cpd00052[c] + cpd11421[c]
+  ec: 1.17.4.2
+- id: R02023
+  name: 2'-Deoxyuridine 5'-triphosphate:oxydized-thioredoxin 2'-oxidoreductase
+  genes: Nmar_1628
+  equation: cpd00001[c] + cpd00358[c] + cpd11420[c] => cpd00062[c] + cpd11421[c]
+  ec: 1.17.4.2
+- id: R02024
+  name: 2'-Deoxycytidine diphosphate:oxidized-thioredoxin 2'-oxidoreductase
+  genes: Nmar_1627
+  equation: cpd00001[c] + cpd00533[c] + cpd11420[c] => cpd00096[c] + cpd11421[c]
+  ec: 1.17.4.1
+- id: R02058
+  name: acetyl-CoA:D-glucosamine-6-phosphate N-acetyltransferase
+  genes: Nmar_0540
+  equation: cpd00022[c] + cpd00288[c] => cpd00010[c] + cpd00293[c]
+  ec: 2.3.1.4
+- id: R02060
+  name: D-Glucosamine 1-phosphate 1,6-phosphomutase
+  genes: Nmar_0224
+  equation: cpd03671[c] => cpd00288[c]
+  ec: 5.4.2.10
+- id: R02061
+  name: trans,trans-Farnesyl-diphosphate:isopentenyl-diphosphate farnesyltranstransferase
+  genes: Nmar_0312
+  equation: cpd00350[c] + cpd00113[c] => cpd00012[c] + cpd00289[c]
+  ec: 2.5.1.29
+- id: R02063
+  name: L-Aspartate:tRNAAsp ligase (AMP-forming)
+  equation: (3) cpd00067[c] + cpd00289[c] + (3) cpd00005[c] <=> cpd03214[c] + (3)
+    cpd00006[c]
+  ec: 1.3.1.83
+- id: R02081
+  name: (R)-Mevalonate:NAD + oxidoreductase (CoA-acetylating)
+  genes: Nmar_1560
+  equation: (2) cpd00003[c] + cpd00010[c] + cpd00332[c] <=> (2) cpd00067[c] + (2)
+    cpd00004[c] + cpd00292[c]
+  ec: 1.1.1.88
+- id: R02087
+  name: L-Asparagine:tRNA(Asn) ligase (AMP-forming)
+  equation: cpd00293[c] <=> cpd02612[c]
+  ec: 5.1.3.9
+- id: R02092
+  name: L-Glutamate:tRNA(Gln) ligase (AMP-forming)
+  equation: cpd00001[c] + cpd00297[c] => cpd00009[c] + cpd00298[c]
+  ec: 3.6.1.5
+- id: R02093
+  name: ATP:dTDP phosphotransferase
+  genes: Nmar_0228
+  equation: cpd00008[c] + cpd00357[c] => cpd00002[c] + cpd00297[c]
+  ec: 2.7.4.6
+- id: R02094
+  name: ATP:dTMP phosphotransferase
+  genes: Nmar_1707
+  equation: cpd00002[c] + cpd00298[c] => cpd00008[c] + cpd00297[c]
+  ec: 2.7.4.9; 2.7.4.12
+- id: R02098
+  name: ATP:dUMP phosphotransferase
+  genes: Nmar_1707
+  equation: cpd00002[c] + cpd00299[c] => cpd00008[c] + cpd00978[c]
+  ec: 2.7.4.4; 2.7.4.9
+- id: R02100
+  name: Glutaminyl-tRNA synthetase
+  equation: cpd00001[c] + cpd00358[c] => cpd00012[c] + cpd00299[c]
+  ec: 3.6.1.19; 3.6.1.23
+- id: R02102
+  name: 5'-nucleotidase (dUMP)
+  equation: cpd00001[c] + cpd00299[c] => cpd00009[c] + cpd00412[c]
+  ec: 3.1.3.5
+- id: R02124
+  name: retinol:NAD + oxidoreductase
+  genes: (Nmar_0523 or Nmar_1193)
+  equation: cpd00003[c] + cpd00365[c] <=> cpd00067[c] + cpd00004[c] + cpd00304[c]
+  ec: 1.1.1.1; 1.1.1.105
+- id: R02163
+  name: NADH:ubiquinone oxidoreductase
+  genes: (Nmar_0276 and Nmar_0277 and Nmar_0278 and Nmar_0279 and Nmar_0280 and Nmar_0281
+    and Nmar_0282 and Nmar_0283 and Nmar_0284 and Nmar_0285 and Nmar_0286)
+  equation: cpd00003[c] + cpd11665[c] => cpd00004[c] + cpd11669[c] + cpd00067_e[c]
+- id: R02164
+  name: Succinate:ubiquinone oxidoreductase
+  equation: cpd00036[c] + cpd11669[c] => cpd00106[c] + cpd11665[c]
+  ec: 1.3.5.1
+- id: R02199
+  name: L-Isoleucine:2-oxoglutarate aminotransferase
+  genes: (Nmar_0192 or Nmar_0248)
+  equation: cpd00024[c] + cpd00322[c] <=> cpd00023[c] + cpd00508[c]
+  ec: 2.6.1.42
+- id: R02200
+  equation: cpd00156[c] + cpd00508[c] <=> cpd00123[c] + cpd00322[c]
+  ec: 2.6.1.32
+- id: R02237
+  name: 7,8-dihydropteroate:L-glutamate ligase (ADP-forming)
+  equation: cpd00002[c] + cpd00023[c] + cpd00683[c] => cpd00009[c] + cpd00008[c]
+    + cpd00330[c]
+  ec: 6.3.2.12; 6.3.2.17
+- id: R02243
+  name: NADPH:trypanathione oxidoreductase
+  equation: cpd00331[c] => cpd00011[c] + cpd00380[c]
+  ec: 4.1.1.6
+- id: R02245
+  name: ATP:(R)-mevalonate 5-phosphotransferase
+  genes: Nmar_0315
+  equation: cpd00002[c] + cpd00332[c] => cpd00008[c] + cpd00812[c]
+  ec: 2.7.1.36
+- id: R02252
+  name: phenylpropanoate:NAD + delta2-oxidoreductase
+  equation: cpd00003[c] + cpd03343[c] <=> cpd00067[c] + cpd00004[c] + cpd00333[c]
+  ec: 1.3.1.31
+- id: R02269
+  name: 5,6-Dihydrouracil amidohydrolase
+  genes: Nmar_0214
+  equation: cpd00001[c] + cpd00337[c] => cpd01720[c]
+  ec: 3.5.2.2
+- id: R02272
+  name: (S)-4-Amino-5-oxopentanoate 4,5-aminomutase
+  genes: (Nmar_1017 or Nmar_0148 or Nmar_0490)
+  equation: cpd00338[c] <=> cpd02345[c]
+  ec: 5.4.3.8
+- id: R02283
+  name: N2-Acetyl-L-ornithine:2-oxoglutarate aminotransferase
+  genes: Nmar_1291
+  equation: cpd00024[c] + cpd00342[c] <=> cpd00023[c] + cpd00918[c]
+  ec: 2.6.1.11
+- id: R02285
+  name: N-Formimino-L-glutamate formiminohydrolase
+  genes: Nmar_1003
+  equation: cpd00001[c] + cpd00344[c] => cpd00023[c] + cpd00378[c]
+  ec: 3.5.3.8
+- id: R02291
+  name: L-Aspartate-4-semialdehyde:NADP + oxidoreductase (phosphorylating)
+  genes: Nmar_1586
+  equation: cpd00067[c] + cpd00005[c] + cpd01977[c] => cpd00009[c] + cpd00006[c]
+    + cpd00346[c]
+  ec: 1.2.1.11
+- id: R02301
+  name: 5-Formyltetrahydrofolate cyclo-ligase (ADP-forming)
+  genes: Nmar_1118
+  equation: cpd00002[c] + cpd00067[c] + cpd02197[c] => cpd00009[c] + cpd00008[c]
+    + cpd00347[c]
+  ec: 6.3.3.2
+- id: R02319
+  name: NTP phosphohydrolase
+  genes: Nmar_1530
+  equation: cpd00001[c] + cpd00173[c] => cpd00009[c] + cpd00354[c]
+  ec: 3.6.1.15
+- id: R02326
+  name: ATP:dCDP phosphotransferase
+  genes: Nmar_0228
+  equation: cpd00002[c] + cpd00533[c] => cpd00008[c] + cpd00356[c]
+  ec: 2.7.4.6
+- id: R02328
+  name: dTTP:alpha-D-glucose-1-phosphate thymidylyltransferase
+  genes: Nmar_0124
+  equation: cpd00089[c] + cpd00357[c] => cpd00012[c] + cpd00626[c]
+  ec: 2.7.7.24
+- id: R02331
+  name: ATP:dUDP phosphotransferase
+  genes: Nmar_0228
+  equation: cpd00002[c] + cpd00978[c] => cpd00008[c] + cpd00358[c]
+  ec: 2.7.4.6
+- id: R02340
+  name: (1S,2R)-1-C-(indol-3-yl)glycerol 3-phosphate D-glyceraldehyde-3-phosphate-lyase
+  genes: (Nmar_0916 and Nmar_0915)
+  equation: cpd00359[c] + cpd00102[c] => cpd02210[c]
+  ec: 4.1.2.8; 4.2.1.20
+- id: R02404
+  name: Itaconate:CoA ligase (ADP-forming)
+  genes: (Nmar_1123 and Nmar_1124)
+  equation: cpd00002[c] + cpd00010[c] + cpd00380[c] => cpd00009[c] + cpd00008[c]
+    + cpd00416[c]
+  ec: 6.2.1.5
+- id: R02412
+  name: ATP:shikimate 3-phosphotransferase
+  genes: Nmar_0549
+  equation: cpd00002[c] + cpd00383[c] => cpd00008[c] + cpd02030[c]
+  ec: 2.7.1.71
+- id: R02413
+  name: Shikimate:NADP + 3-oxidoreductase
+  genes: Nmar_0550
+  equation: cpd00006[c] + cpd00383[c] <=> cpd00067[c] + cpd00005[c] + cpd01716[c]
+  ec: 1.1.1.25; 1.1.1.282
+- id: R02433
+  name: L-cysteate:2-oxoglutarate aminotransferase
+  genes: (Nmar_0546 or Nmar_0865)
+  equation: cpd00395[c] + cpd00024[c] <=> cpd00023[c] + cpd03285[c]
+  ec: 2.6.1.1
+- id: R02471
+  name: pantoate 4-dehydrogenase
+  genes: Nmar_1718
+  equation: cpd00003[c] + cpd00408[c] <=> cpd00067[c] + cpd00004[c] + cpd00775[c]
+  ec: 1.1.1.106
+- id: R02472
+  name: 2-dehydropantoate 2-reductase
+  genes: Nmar_0959
+  equation: cpd00006[c] + cpd00408[c] => cpd00067[c] + cpd00005[c] + cpd00712[c]
+  ec: 1.1.1.169
+- id: R02485
+  name: deoxycytidine aminohydrolase
+  genes: Nmar_1471
+  equation: cpd00001[c] + cpd00654[c] => cpd00013[c] + cpd00412[c]
+  ec: 3.5.4.5; 3.5.4.14
+- id: R02508
+  equation: cpd00036[c] + cpd00424[c] => cpd00084[c] + cpd00822[c]
+  ec: 2.5.1.48
+- id: R02568
+  name: D-fructose 1-phosphate D-glyceraldehyde-3-phosphate-lyase
+  genes: (Nmar_0553 or Nmar_1035)
+  equation: cpd00802[c] <=> cpd00095[c] + cpd00448[c]
+  ec: 4.1.2.13
+- id: R02585
+  name: Protein-tyrosine-phosphate phosphohydrolase
+  genes: Nmar_1760
+  equation: cpd00001[c] + cpd11820[c] <=> cpd00009[c] + cpd11704[c]
+  ec: 3.1.3.48
+- id: R02619
+  name: 3-sulfino-L-alanine:2-oxoglutarate aminotransferase
+  genes: (Nmar_0546 or Nmar_0865)
+  equation: cpd00467[c] + cpd00024[c] <=> cpd00023[c] + cpd03284[c]
+  ec: 2.6.1.1
+- id: R02634
+  name: UTP:1-Phospho-alpha-D-galacturonate uridylyltransferase
+  equation: cpd00012[c] + cpd00472[c] => cpd00062[c] + cpd02497[c]
+  ec: 2.7.7.-
+- id: R02649
+  name: ATP:N-acetyl-L-glutamate 5-phosphotransferase
+  genes: Nmar_1290
+  equation: cpd00002[c] + cpd00477[c] => cpd00008[c] + cpd02552[c]
+  ec: 2.7.2.8
+- id: R02698
+  name: 4-hydroxyphenylacetate,NADH:oxygen oxidoreductase (3-hydroxylating)
+  genes: Nmar_0207
+  equation: cpd00007[c] + cpd00489[c] + cpd00067[c] + cpd00004[c] => cpd00003[c]
+    + cpd00001[c] + cpd00854[c]
+  ec: 1.14.14.9
+- id: R02706
+  equation: cpd00001[c] + cpd02612[c] => cpd00009[c] + cpd00492[c]
+  ec: 3.1.3.-
+- id: R02722
+  name: L-serine hydro-lyase [adding 1-C-(indol-3-yl)glycerol 3-phosphate
+  genes: (Nmar_0916 and Nmar_0915)
+  equation: cpd00054[c] + cpd02210[c] => cpd00001[c] + cpd00065[c] + cpd00102[c]
+  ec: 4.2.1.20
+- id: R02739
+  name: alpha-D-Glucose 6-phosphate ketol-isomerase
+  genes: Nmar_0167
+  equation: cpd00079[c] <=> cpd00863[c]
+  ec: 5.1.3.15; 5.3.1.9
+- id: R02740
+  name: alpha-D-Glucose 6-phosphate ketol-isomerase
+  genes: Nmar_0167
+  equation: cpd00079[c] <=> cpd00072[c]
+  ec: 5.3.1.9
+- id: R02765
+  name: Methylmalonyl-CoA epimerase
+  genes: Nmar_0953
+  equation: cpd00891[c] <=> cpd00519[c]
+  ec: 5.1.99.1
+- id: R02767
+  name: (3R)-3-Hydroxyacyl-[acyl-carrier-protein]:NADP + oxidoreductase
+  genes: Nmar_0634
+  equation: cpd00006[c] + cpd11836[c] <=> cpd00067[c] + cpd00005[c] + cpd11726[c]
+  ec: 1.1.1.100
+- id: R02853
+  name: D-O-Phosphoserine phosphohydrolase
+  genes: Nmar_0666
+  equation: cpd00001[c] + cpd01665[c] => cpd00009[c] + cpd00550[c]
+  ec: 3.1.3.3
+- id: R02864
+  name: S-Adenosyl-L-methionine:uroporphyrin-III C-methyltransferase
+  genes: Nmar_0511
+  equation: (2) cpd00067[c] + cpd00557[c] <=> cpd03426[c] + cpd10515[c]
+  ec: 4.99.1.4
+- id: R02869
+  name: S-adenosylmethioninamine:spermidine 3-aminopropyltransferase
+  genes: Nmar_1135
+  equation: cpd00264[c] + cpd00837[c] => cpd00147[c] + cpd00558[c]
+  ec: 2.5.1.16; 2.5.1.22
+- id: R02918
+  name: L-Tyrosine:tRNA(Tyr) ligase (AMP-forming)
+  genes: Nmar_1751
+  equation: cpd00002[c] + cpd00069[c] + cpd11751[c] => cpd00018[c] + cpd00012[c]
+    + cpd12194[c]
+  ec: 6.1.1.1
+- id: R02961
+  genes: (Nmar_0606 or Nmar_1319 or Nmar_1499)
+  equation: cpd00017[c] + cpd11755[c] => cpd00019[c] + cpd12308[c]
+  ec: 2.1.1.72
+- id: R03005
+  name: ATP:nicotinamide-nucleotide adenylyltransferase
+  genes: (Nmar_0960 or Nmar_1732)
+  equation: cpd00002[c] + cpd00873[c] => cpd00012[c] + cpd00638[c]
+  ec: 2.7.7.1; 2.7.7.18
+- id: R03012
+  name: L-Histidinol:NAD + oxidoreductase
+  genes: Nmar_1558
+  equation: cpd00003[c] + cpd00641[c] => cpd00067[c] + cpd00004[c] + cpd01324[c]
+  ec: 1.1.1.23
+- id: R03013
+  name: L-histidinol-phosphate phosphohydrolase
+  genes: Nmar_1555
+  equation: cpd00001[c] + cpd00807[c] <=> cpd00009[c] + cpd00641[c]
+  ec: 3.1.3.15
+- id: R03020
+  name: tRNA-uridine uracilmutase
+  genes: (Nmar_0406 or Nmar_1198)
+  equation: cpd11767[c] <=> cpd12182[c]
+  ec: 5.4.99.12
+- id: R03026
+  name: (S)-3-Hydroxybutanoyl-CoA hydro-lyase
+  genes: Nmar_1308
+  equation: cpd00842[c] <=> cpd00001[c] + cpd00650[c]
+  ec: 4.2.1.17; 4.2.1.55
+- id: R03035
+  name: ATP:pantetheine-4'-phosphate adenylyltransferase
+  genes: Nmar_1494
+  equation: cpd00002[c] + cpd00834[c] => cpd00012[c] + cpd00655[c]
+  ec: 2.7.7.3
+- id: R03038
+  name: L-Alanine:tRNA(Ala) ligase (AMP-forming)
+  genes: Nmar_0368
+  equation: cpd00002[c] + cpd00035[c] + cpd11906[c] <=> cpd00018[c] + cpd00012[c]
+    + cpd11770[c]
+  ec: 6.1.1.7
+- id: R03045
+  name: 3-Hydroxypropionyl-CoA hydro-lyase
+  genes: Nmar_1308
+  equation: cpd03375[c] => cpd00001[c] + cpd00663[c]
+  ec: 4.2.1.17; 4.2.1.116
+- id: R03050
+  name: 2-Acetolactate pyruvate-lyase (carboxylating)
+  genes: (Nmar_1072 and Nmar_1071)
+  equation: cpd00668[c] + cpd00056[c] => cpd00020[c] + cpd03049[c]
+  ec: 2.2.1.6
+- id: R03051
+  name: 2,3-Dihydroxy-3-methylbutanoate:NADP + oxidoreductase (isomerizing)
+  genes: Nmar_0959
+  equation: cpd00067[c] + cpd00005[c] + cpd00668[c] <=> cpd00006[c] + cpd02498[c]
+  ec: 1.1.1.86
+- id: R03055
+  name: 5,6-Dihydrothymine amidohydrolase
+  genes: Nmar_0214
+  equation: cpd00001[c] + cpd00673[c] <=> cpd03034[c]
+  ec: 3.5.2.2
+- id: R03066
+  name: 2-amino-4-hydroxy-6-hydroxymethyl-7,8-dihydropteridine:4-aminobenzoate 2-amino-4-hydroxydihydropteridine-6-methenyltransferase
+  genes: Nmar_1570
+  equation: cpd00954[c] + cpd00443[c] => cpd00001[c] + cpd00683[c]
+  ec: 2.5.1.15
+- id: R03067
+  name: 2-amino-4-hydroxy-6-hydroxymethyl-7,8-dihydropteridine-diphosphate:4-aminobenzoate
+    2-amino-4-hydroxydihydropteridine-6-methenyltransferase
+  genes: Nmar_1570
+  equation: cpd00443[c] + cpd02920[c] => cpd00012[c] + cpd00683[c]
+  ec: 2.5.1.15
+- id: R03083
+  name: 2-Dehydro-3-deoxy-D-arabino-heptonate 7-phosphate phosphate-lyase
+  equation: cpd02857[c] => cpd00009[c] + cpd00067[c] + cpd00699[c]
+  ec: '|4.2.3.4|4.6.1.3|'
+- id: R03084
+  name: 3-Dehydroquinate hydro-lyase
+  genes: Nmar_0551
+  equation: cpd00699[c] <=> cpd00001[c] + cpd01716[c]
+  ec: 4.2.1.10
+- id: R03093
+  name: 3-Indoleacetonitrile aminohydrolase
+  genes: (Nmar_0650 or Nmar_1663)
+  equation: (2) cpd00001[c] + cpd01881[c] => cpd00013[c] + cpd00703[c]
+  ec: 3.5.5.1
+- id: R03105
+  name: 3-Mercaptopyruvate:cyanide sulfurtransferase
+  genes: Nmar_0441
+  equation: cpd00081[c] + cpd00706[c] <=> cpd00020[c] + cpd00268[c]
+  ec: 2.8.1.2
+- id: R03106
+  name: 3-mercaptopyruvate:cyanide sulfurtransferase
+  genes: Nmar_0441
+  equation: cpd00150[c] + cpd00706[c] <=> cpd00020[c] + cpd01211[c]
+  ec: 2.8.1.2
+- id: R03132
+  name: O3-acetyl-L-serine acetate-lyase (adding hydrogen sulfide)
+  genes: Nmar_0670
+  equation: cpd00268[c] + cpd00722[c] => cpd00029[c] + cpd03456[c]
+  ec: 2.5.1.47; 2.5.1.48
+- id: R03157
+  name: 3-hydroxypropionyl-CoA synthetase (ADP-forming)
+  genes: Nmar_1309
+  equation: cpd00009[c] + cpd00008[c] + cpd03375[c] => cpd00002[c] + cpd00010[c]
+    + cpd00745[c]
+  ec: 3.1.2.4; 6.2.1.-
+- id: R03165
+  name: Hydroxymethylbilane hydro-lyase(cyclizing)
+  genes: Nmar_0493
+  equation: cpd00755[c] <=> cpd00001[c] + cpd00774[c]
+  ec: 4.2.1.75
+- id: R03173
+  name: 2-Methylbutanoyl-CoA:(acceptor) oxidoreductase
+  equation: cpd11609[c] + cpd00760[c] => cpd11610[c] + cpd02125[c]
+  ec: 1.3.99.12
+- id: R03182
+  name: 7,8-Diaminononanoate:carbon-dioxide cyclo-ligase
+  genes: Nmar_0823
+  equation: cpd00011[c] + cpd00002[c] + cpd00764[c] => cpd00009[c] + cpd00008[c]
+    + cpd01311[c]
+  ec: 6.3.3.3
+- id: R03195
+  name: precorrin-3A,NADH:oxygen oxidoreductase (20-hydroxylating)
+  equation: cpd11609[c] + cpd00774[c] <=> cpd11610[c] + (6) cpd00067[c] + cpd01624[c]
+- id: R03231
+  name: S-Adenosyl-L-methionine:8-amino-7-oxononanoate aminotransferase
+  genes: Nmar_0822
+  equation: cpd00017[c] + cpd00800[c] => cpd00764[c] + cpd02701[c]
+  ec: 2.6.1.62
+- id: R03243
+  name: 5-Amino-2-oxopentanoate:2-oxoglutarate aminotransferase
+  genes: Nmar_1557
+  equation: cpd00024[c] + cpd00807[c] <=> cpd00023[c] + cpd00930[c]
+  ec: 2.6.1.9
+- id: R03269
+  name: N-[(R)-4'-Phosphopantothenoyl]-L-cysteine carboxy-lyase
+  genes: Nmar_1721
+  equation: cpd02666[c] => cpd00011[c] + cpd00834[c]
+  ec: 4.1.1.36
+- id: R03299
+  name: 3-Hydroxyphenylacetate,NADH:oxygen oxidoreductase (3-hydroxylating)
+  genes: Nmar_0207
+  equation: cpd00007[c] + cpd00067[c] + cpd00004[c] + cpd03320[c] => cpd00003[c]
+    + cpd00001[c] + cpd00854[c]
+  ec: 1.14.14.9
+- id: R03319
+  name: alpha-D-Hexose 1-phosphate 1,6-phosphomutase
+  genes: Nmar_0224
+  equation: cpd00862[c] <=> cpd02340[c]
+  ec: 5.4.2.2
+- id: R03321
+  name: beta-D-Glucose 6-phosphate ketol-isomerase
+  genes: Nmar_0167
+  equation: cpd00863[c] <=> cpd00072[c]
+  ec: 5.3.1.9
+- id: R03348
+  name: Nicotinate-nucleotide:pyrophosphate phosphoribosyltransferase (carboxylating)
+  genes: Nmar_1237
+  equation: cpd00103[c] + cpd02333[c] => cpd00011[c] + cpd00012[c] + cpd00873[c]
+  ec: 2.4.2.19
+- id: R03443
+  name: N-acetyl-L-glutamate-5-semialdehyde:NADP + 5-oxidoreductase (phosphrylating)
+  genes: Nmar_1289
+  equation: cpd00067[c] + cpd00005[c] + cpd02552[c] => cpd00009[c] + cpd00006[c]
+    + cpd00918[c]
+  ec: 1.2.1.38
+- id: R03444
+  name: 2-Hydroxybutane-1,2,4-tricarboxylate hydro-lyase
+  equation: cpd00919[c] => cpd00001[c] + cpd02483[c]
+  ec: 4.2.1.114
+- id: R03457
+  name: D-erythro-1-(Imidazol-4-yl)glycerol 3-phosphate hydro-lyase
+  genes: Nmar_1555
+  equation: cpd02843[c] <=> cpd00001[c] + cpd00930[c]
+  ec: 4.2.1.19
+- id: R03458
+  name: 5-amino-6-(5-phosphoribitylamino)uracil:NADP + 1'-oxidoreductase
+  equation: cpd00006[c] + cpd02720[c] <=> cpd00067[c] + cpd00005[c] + cpd00931[c]
+  ec: 1.1.1.193
+- id: R03460
+  name: Phosphoenolpyruvate:3-phosphoshikimate 5-O-(1-carboxyvinyl)-transferase
+  genes: Nmar_0548
+  equation: cpd00061[c] + cpd02030[c] => cpd00009[c] + cpd00932[c]
+  ec: 2.5.1.19
+- id: R03471
+  name: ATP:4-amino-5-hydroxymethyl-2-methylpyrimidine 5-phosphotransferase
+  genes: Nmar_0542
+  equation: cpd00002[c] + cpd00939[c] => cpd00008[c] + cpd02775[c]
+  ec: 2.7.1.49
+- id: R03472
+  name: 5-amino-1-(5-phospho-D-ribosyl)imidazole formate-lyase (decarboxylating,
+    4-amino-2-methyl-5-phosphomethylpyrimidine-forming)
+  genes: Nmar_0543
+  equation: cpd00017[c] + cpd02140[c] => cpd00060[c] + cpd00047[c] + cpd03091[c]
+    + cpd02775[c] + cpd00204[c]
+  ec: 4.1.99.17
+- id: R03503
+  name: 6-hydroxymethyl-dihydropterin pyrophosphokinase
+  equation: cpd00002[c] + cpd00954[c] => cpd00018[c] + cpd02920[c]
+  ec: 2.7.6.3
+- id: R03504
+  name: 2-amino-4-hydroxy-6-(D-erythro-1,2,3-trihydroxypropyl)-7,8-dihydropteridine
+    glycolaldehyde-lyase
+  equation: cpd02961[c] <=> cpd00229[c] + cpd00954[c]
+  ec: 4.1.2.25
+- id: R03508
+  name: 1-(2-Carboxyphenylamino)-1-deoxy-D-ribulose-5-phosphate carboxy-lyase(cyclizing)
+  genes: Nmar_0914
+  equation: cpd00956[c] => cpd00011[c] + cpd00001[c] + cpd02210[c]
+  ec: 4.1.1.48
+- id: R03509
+  name: N-(5-Phospho-beta-D-ribosyl)anthranilate ketol-isomerase
+  genes: Nmar_0914
+  equation: cpd02642[c] => cpd00956[c]
+  ec: 5.3.1.24
+- id: R03530
+  name: ATP:dIDP phosphotransferase
+  genes: Nmar_0228
+  equation: cpd00002[c] + cpd00976[c] <=> cpd00008[c] + cpd00977[c]
+  ec: 2.7.4.6
+- id: R03552
+  name: Acetyl-CoA:histone acetyltransferase
+  genes: Nmar_0579
+  equation: cpd00022[c] + cpd12101[c] <=> cpd00010[c] + cpd11990[c]
+  ec: 2.3.1.48
+- id: R03598
+  genes: Nmar_0497
+  equation: cpd11610[c] + cpd01608[c] <=> cpd11609[c] + cpd00035[c] + cpd01078[c]
+- id: R03599
+  name: L-selenocysteine selenide-lyase (L-alanine-forming)
+  genes: Nmar_0497
+  equation: cpd11610[c] + cpd03389[c] <=> cpd11609[c] + cpd00035[c] + cpd01078[c]
+  ec: 4.4.1.16
+- id: R03601
+  name: O3-Acetyl-L-serine acetate-lyase (adding hydrogen sulfide)
+  genes: Nmar_0670
+  equation: cpd00722[c] + cpd01078[c] => cpd00029[c] + cpd03389[c]
+  ec: 2.5.1.47
+- id: R03632
+  name: ATP:protamine O-phosphotransferase
+  genes: Nmar_1410
+  equation: cpd00002[c] + cpd11900[c] => cpd00008[c] + cpd12167[c]
+  ec: 2.7.11.1
+- id: R03646
+  name: L-Arginine:tRNA(Arg) ligase (AMP-forming)
+  genes: Nmar_0686
+  equation: cpd00002[c] + cpd00051[c] + cpd11907[c] => cpd00018[c] + cpd00012[c]
+    + cpd12036[c]
+  ec: 6.1.1.19
+- id: R03650
+  name: L-Cysteine:tRNA(Cys) ligase (AMP-forming)
+  genes: Nmar_0967
+  equation: cpd00002[c] + cpd00084[c] + cpd11910[c] => cpd00018[c] + cpd00012[c]
+    + cpd12255[c]
+  ec: 6.1.1.16
+- id: R03654
+  name: Glycine:tRNA(Gly) ligase (AMP-forming)
+  genes: Nmar_0063
+  equation: cpd00002[c] + cpd00033[c] + cpd11913[c] => cpd00018[c] + cpd00012[c]
+    + cpd12100[c]
+  ec: 6.1.1.14
+- id: R03655
+  name: L-Histidine:tRNA(His) ligase (AMP-forming)
+  genes: Nmar_0236
+  equation: cpd00002[c] + cpd00119[c] + cpd11914[c] => cpd00018[c] + cpd00012[c]
+    + cpd12228[c]
+  ec: 6.1.1.21
+- id: R03656
+  name: L-Isoleucine:tRNA(Ile) ligase (AMP-forming)
+  genes: Nmar_1120
+  equation: cpd00002[c] + cpd00322[c] + cpd11915[c] => cpd00018[c] + cpd00012[c]
+    + cpd12256[c]
+  ec: 6.1.1.5
+- id: R03657
+  name: L-Leucine:tRNA(Leu) ligase (AMP-forming)
+  genes: Nmar_0367
+  equation: cpd00002[c] + cpd00107[c] + cpd11916[c] => cpd00018[c] + cpd00012[c]
+    + cpd12003[c]
+  ec: 6.1.1.4
+- id: R03658
+  name: L-Lysine:tRNALys ligase (AMP-forming)
+  genes: Nmar_0578
+  equation: cpd00002[c] + cpd00039[c] + cpd11917[c] => cpd00018[c] + cpd00012[c]
+    + cpd01326[c]
+  ec: 6.1.1.6
+- id: R03659
+  name: L-Methionine:tRNAMet ligase (AMP-forming)
+  genes: Nmar_0963
+  equation: cpd00002[c] + cpd00060[c] + cpd11918[c] => cpd00018[c] + cpd00012[c]
+    + cpd12105[c]
+  ec: 6.1.1.10
+- id: R03660
+  name: L-Phenylalanine:tRNA(Ala) ligase (AMP-forming)
+  genes: (Nmar_1488 and Nmar_1489)
+  equation: cpd00002[c] + cpd00066[c] + cpd11919[c] => cpd00018[c] + cpd00012[c]
+    + cpd12335[c]
+  ec: 6.1.1.20
+- id: R03661
+  name: L-Proline:tRNA(Pro) ligase (AMP-forming)
+  genes: Nmar_0658
+  equation: cpd00002[c] + cpd00129[c] + cpd11920[c] => cpd00018[c] + cpd00012[c]
+    + cpd12164[c]
+  ec: 6.1.1.15
+- id: R03662
+  name: L-Serine:tRNA(Ser) ligase (AMP-forming)
+  genes: Nmar_1511
+  equation: cpd00002[c] + cpd00054[c] + cpd11921[c] => cpd00018[c] + cpd00012[c]
+    + cpd12132[c]
+  ec: 6.1.1.11
+- id: R03663
+  name: L-Threonine:tRNA(Thr) ligase (AMP-forming)
+  genes: Nmar_0926
+  equation: cpd00002[c] + cpd00161[c] + cpd11922[c] => cpd00018[c] + cpd00012[c]
+    + cpd12229[c]
+  ec: 6.1.1.3
+- id: R03664
+  name: L-Tryptophan -tRNA(Trp) ligase (AMP-forming)
+  genes: Nmar_1490
+  equation: cpd00002[c] + cpd00065[c] + cpd11923[c] => cpd00018[c] + cpd00012[c]
+    + cpd12336[c]
+  ec: 6.1.1.2
+- id: R03665
+  name: L-Valine:tRNAVal ligase (AMP-forming)
+  genes: Nmar_1477
+  equation: cpd00002[c] + cpd00156[c] + cpd11924[c] => cpd00018[c] + cpd00012[c]
+    + cpd12133[c]
+  ec: 6.1.1.9
+- id: R03758
+  name: L-2-amino-3-oxobutanoate decarboxylation (spontaneous)
+  equation: cpd00011[c] + cpd01298[c] => cpd02211[c]
+  ec: 1.1.1.381
+- id: R03759
+  name: (R)-1-Aminopropan-2-ol:NAD + oxidoreductase
+  equation: cpd00003[c] + cpd02039[c] => cpd00067[c] + cpd00004[c] + cpd01298[c]
+  ec: 1.1.1.75
+- id: R03767
+  name: Acetyl-CoA:gentamicin-C N3-acetyltransferase
+  genes: Nmar_0144
+  equation: cpd00022[c] + cpd11974[c] => cpd00010[c] + cpd12286[c]
+  ec: 2.3.1.60; 2.3.1.81
+- id: R03789
+  name: tRNA-guanosine34:queuine tRNA-D-ribosyltransferase
+  genes: Nmar_1536
+  equation: cpd11985[c] + cpd01029[c] <=> cpd00207[c] + cpd11986[c]
+  ec: 2.4.2.29
+- id: R03867
+  name: (5-Glutamyl)-peptide:amino-acid 5-glutamyltransferase
+  genes: Nmar_1004
+  equation: cpd01465[c] + cpd11612[c] => cpd03540[c] + cpd12298[c]
+  ec: 2.3.2.2
+- id: R03896
+  name: (R)-2-Methylmalate hydro-lyase (2-methylmaleate-forming)
+  genes: (Nmar_0420 and Nmar_0421 and Nmar_0422 and Nmar_0423)
+  equation: cpd01700[c] <=> cpd00001[c] + cpd01502[c]
+  ec: 4.2.1.35
+- id: R03898
+  name: 2-methylmaleate hydratase
+  genes: (Nmar_0420 and Nmar_0421 and Nmar_0422 and Nmar_0423)
+  equation: cpd00001[c] + cpd01502[c] <=> cpd03593[c]
+- id: R03905
+  name: Glu-tRNA(Gln):L-glutamine amido-ligase(ADP-forming)
+  genes: ((Nmar_0099 and Nmar_0100 or (Nmar_0868 and Nmar_0869 and Nmar_0870))
+  equation: cpd00009[c] + cpd00008[c] + cpd00023[c] + cpd12060[c] => cpd00001[c]
+    + cpd00002[c] + cpd00053[c] + cpd12828[c]
+  ec: 6.3.5.7
+- id: R03916
+  name: (5-glutamyl)-peptide:amino-acid 5-glutamyltransferase
+  genes: Nmar_1004
+  equation: cpd00001[c] + cpd12076[c] <=> cpd00023[c] + cpd16496[c]
+  ec: 2.3.2.2
+- id: R03920
+  name: ATP:D-fructose 6-phosphotransferase
+  equation: cpd00002[c] + cpd00082[c] => cpd00008[c] + cpd00072[c]
+  ec: 2.7.1.1; 2.7.1.4
+- id: R03940
+  name: 10-Formyltetrahydrofolate:L-methionyl-tRNA N-formyltransferase
+  genes: Nmar_0134
+  equation: cpd00201[c] + cpd12105[c] <=> cpd00087[c] + cpd12285[c]
+  ec: 2.1.2.9
+- id: R03947
+  name: S-Adenosyl-L-methionine:uroporphyrin-III C-methyltransferase
+  genes: (Nmar_0492 or Nmar_0511)
+  equation: cpd00003[c] + cpd01620[c] => cpd00067[c] + cpd00004[c] + cpd03426[c]
+  ec: 1.3.1.76
+- id: R03948
+  name: S-adenosyl-L-methionine:precorrin-4 C20-methyltransferase
+  genes: Nmar_0058
+  equation: cpd00017[c] + cpd01620[c] => cpd00067[c] + cpd03420[c] + cpd00019[c]
+  ec: 2.1.1.130
+- id: R03950
+  name: uroporphyrinogen methyltransferase
+  genes: Nmar_0492
+  equation: cpd01624[c] + (2) cpd00017[c] => cpd03426[c] + (2) cpd00019[c]
+  ec: 2.1.1.107
+- id: R03966
+  name: 4-oxalocrotonate tautomerase
+  genes: Nmar_1634
+  equation: cpd01644[c] <=> cpd02183[c]
+  ec: 5.3.2.-
+- id: R03968
+  name: 2-Isopropylmalate hydro-lyase
+  genes: ((Nmar_0421 or Nmar_0423) or (Nmar_0420 or Nmar_0422))
+  equation: cpd01646[c] <=> cpd00001[c] + cpd01710[c]
+  ec: 4.2.1.33
+- id: R03970
+  name: gamma-glutamyltranspeptidase
+  genes: Nmar_1004
+  equation: cpd00001[c] + cpd03407[c] => cpd01651[c] + cpd00023[c]
+  ec: 2.3.2.2
+- id: R03971
+  name: gamma-glutamyl-beta-aminopropiononitrile amidohydrolase
+  genes: Nmar_1004
+  equation: cpd00023[c] + cpd03377[c] <=> cpd00001[c] + cpd03646[c]
+  ec: 2.3.2.2
+- id: R04001
+  name: 3-Isopropylmalate hydro-lyase
+  genes: ((Nmar_0420 or Nmar_0422) and (Nmar_0421 or Nmar_0423))
+  equation: cpd02693[c] <=> cpd00001[c] + cpd01710[c]
+  ec: 4.2.1.33
+- id: R04035
+  name: Phosphoribosyl-ATP pyrophosphohydrolase
+  genes: Nmar_1551
+  equation: cpd00001[c] + cpd01775[c] <=> cpd00012[c] + cpd01777[c]
+  ec: 3.6.1.31
+- id: R04037
+  name: 1-(5-phospho-D-ribosyl)-AMP 1,6-hydrolase
+  genes: Nmar_1551
+  equation: cpd00001[c] + cpd01777[c] <=> cpd02979[c]
+  ec: 3.5.4.19
+- id: R04109
+  name: 'L-glutamate-semialdehyde: NADP + oxidoreductase(L-glutamyl-tRNA(Glu)-forming)'
+  genes: (Nmar_0510 or Nmar_0265)
+  equation: cpd00067[c] + cpd00005[c] + cpd12227[c] <=> cpd00006[c] + cpd02345[c]
+    + cpd11912[c]
+  ec: 1.2.1.70
+- id: R04120
+  name: peptide-L-methionine:thioredoxin-disulfide S-oxidoreductase [L-methionine
+    (S)-S-oxide-forming]
+  genes: Nmar_0995
+  equation: cpd00001[c] + cpd11420[c] + cpd12237[c] <=> cpd11421[c] + cpd12420[c]
+  ec: 1.8.4.11
+- id: R04144
+  name: 5-Phospho-D-ribosylamine:glycine ligase (ADP-forming)
+  genes: Nmar_1119
+  equation: cpd00002[c] + cpd00033[c] + cpd01982[c] => cpd00009[c] + cpd00008[c]
+    + cpd02394[c]
+  ec: 6.3.4.13
+- id: R04148
+  name: Nicotinate-nucleotide:dimethylbenzimidazole phospho-D-ribosyltransferase
+  equation: cpd00873[c] + cpd01997[c] => cpd00067[c] + cpd02904[c] + cpd00218[c]
+  ec: 2.4.2.21
+- id: R04158
+  name: geranylgeranyl diphosphate:sn-glyceryl phosphate geranylgeranyltransferase
+  equation: cpd00080[c] + cpd00289[c] => cpd00012[c] + cpd02797[c]
+  ec: 2.5.1.41
+- id: R04159
+  name: (5-L-glutamyl)-peptide:amino-acid 5-glutamyltransferase
+  genes: Nmar_1004
+  equation: cpd12271[c] + cpd11612[c] <=> cpd11608[c] + cpd12298[c]
+  ec: 2.3.2.2
+- id: R04173
+  name: 3-Phosphoserine:2-oxoglutarate aminotransferase
+  equation: cpd00024[c] + cpd00738[c] => cpd00023[c] + cpd02069[c]
+  ec: 2.6.1.52
+- id: R04203
+  name: (2S,3S)-3-hydroxy-2-methylbutanoyl-CoA:NAD + oxidoreductase
+  genes: Nmar_1028
+  equation: cpd00003[c] + cpd02691[c] <=> cpd00067[c] + cpd00004[c] + cpd02124[c]
+  ec: 1.1.1.35; 1.1.1.178
+- id: R04204
+  name: 3-hydroxyacyl-CoA dehydratase (3-hydroxybutanoyl-CoA)
+  genes: Nmar_1308
+  equation: cpd02691[c] => cpd00001[c] + cpd02125[c]
+  ec: 4.2.1.17
+- id: R04206
+  name: 3-Phospho-D-erythronate hydro-lyase
+  genes: Nmar_0317
+  equation: cpd02132[c] <=> cpd00001[c] + cpd02645[c]
+  ec: 4.2.1.11
+- id: R04208
+  name: 2-(Formamido)-N1-(5-phosphoribosyl)acetamidine cyclo-ligase (ADP-forming)
+  genes: Nmar_0582
+  equation: cpd00002[c] + cpd02826[c] => cpd00009[c] + cpd00008[c] + cpd02140[c]
+  ec: 6.3.3.1
+- id: R04212
+  name: Asp-tRNA(Asn):L-glutamine amido-ligase (ADP-forming)
+  genes: (Nmar_0868 and Nmar_0869 and Nmar_0870)
+  equation: cpd00009[c] + cpd00008[c] + cpd00023[c] + cpd12313[c] => cpd00001[c]
+    + cpd00002[c] + cpd00053[c] + cpd12829[c]
+  ec: 6.3.5.6
+- id: R04216
+  name: dolichyl-diphosphooligosaccharide:protein-L-asparagine oligopolysaccharidotransferase
+  genes: Nmar_0075
+  equation: cpd12494[c] + cpd12235[c] <=> cpd11713[c] + cpd13386[c]
+  ec: 2.4.1.119
+- id: R04230
+  name: (R)-4'-Phosphopantothenate:L-cysteine ligase
+  genes: Nmar_1721
+  equation: cpd00002[c] + cpd00084[c] + cpd02201[c] => cpd00018[c] + cpd00012[c]
+    + cpd02666[c]
+  ec: 6.3.2.5
+- id: R04231
+  name: (R)-4'-Phosphopantothenate:L-cysteine ligase
+  genes: Nmar_1721
+  equation: cpd00052[c] + cpd00084[c] + cpd02201[c] => cpd00012[c] + cpd00046[c]
+    + cpd02666[c]
+  ec: 6.3.2.5
+- id: R04238
+  name: Aminoacyl-tRNA aminoacylhydrolase
+  genes: Nmar_1200
+  equation: cpd00001[c] + cpd12414[c] <=> cpd12338[c] + cpd11615[c]
+  ec: 3.1.1.29
+- id: R04273
+  name: Peptidylproline cis-trans-isomerase
+  genes: (Nmar_1730 or Nmar_1740)
+  equation: cpd12390[c] <=> cpd12358[c]
+  ec: 5.2.1.8
+- id: R04274
+  name: RNA-3'-phosphate:RNA ligase (cyclizing, AMP-forming)
+  genes: Nmar_1733
+  equation: cpd00002[c] + cpd12362[c] => cpd00018[c] + cpd00012[c] + cpd12517[c]
+  ec: 6.5.1.4
+- id: R04292
+  name: glycerone phosphate:iminosuccinate alkyltransferase (cyclizing)
+  genes: Nmar_1239
+  equation: (2) cpd00001[c] + cpd00009[c] + cpd02333[c] <=> cpd00095[c] + cpd03470[c]
+  ec: 2.5.1.72
+- id: R04294
+  name: 2'-Deoxyribonucleoside diphosphate:oxidized-thioredoxin 2'-oxidoreductase
+  genes: Nmar_1627
+  equation: cpd00001[c] + cpd11420[c] + cpd02602[c] => cpd11421[c] + cpd12378[c]
+  ec: 1.17.4.1
+- id: R04314
+  name: DNA-6-O-methylguanine:protein-L-cysteine S-methyltransferase
+  genes: Nmar_0388
+  equation: cpd12502[c] + cpd12172[c] <=> cpd12392[c] + cpd13370[c]
+  ec: 2.1.1.63
+- id: R04315
+  name: 2'-Deoxyribonucleoside triphosphate:oxydized-thioredoxin 2'-oxidoreductase
+  genes: Nmar_1628
+  equation: cpd00001[c] + cpd11420[c] + cpd02627[c] <=> cpd11421[c] + cpd02379[c]
+  ec: 1.17.4.2
+- id: R04316
+  name: Acetyl-CoA:ribosomal-protein-L-alanine N-acetyltransferase
+  genes: Nmar_0292
+  equation: cpd00022[c] + cpd12394[c] <=> cpd00010[c] + cpd12524[c]
+  ec: 2.3.1.128
+- id: R04325
+  name: 10-Formyltetrahydrofolate:5'-phosphoribosylglycinamide formyltransferase
+  genes: Nmar_1114
+  equation: cpd00201[c] + cpd02394[c] => cpd00087[c] + cpd02678[c]
+  ec: 2.1.2.2
+- id: R04326
+  name: 5'-Phosphoribosylglycinamide + 5,10-Methenyltetrahydrofolate + H2O <=> 5'-Phosphoribosyl-N-formylglycinamide
+    + Tetrahydrofolate
+  genes: Nmar_1114
+  equation: cpd00001[c] + cpd00347[c] + cpd02394[c] => cpd00087[c] + cpd02678[c]
+  ec: 2.1.2.2
+- id: R04347
+  name: 5-Methyl-5,6,7,8-tetrahydromethanopterin:2-mercaptoethanesulfonate 2-methyltransferas
+  genes: Nmar_1747
+  equation: cpd02737[c] + cpd02246[c] => cpd00895[c] + cpd02438[c]
+  ec: 2.1.1.86
+- id: R04348
+  name: Acetyl-CoA:2-deoxystreptamine-antibiotic N3'-acetyltransferase
+  genes: Nmar_0144
+  equation: cpd00022[c] + cpd12427[c] => cpd00010[c] + cpd12560[c]
+  ec: 2.3.1.81
+- id: R04371
+  name: Homoisocitrate hydro-lyase
+  equation: cpd03372[c] => cpd00001[c] + cpd02483[c]
+  ec: 4.2.1.36; 4.2.1.114
+- id: R04378
+  name: 1-(5'-Phosphoribosyl)-5-amino-4-imidazolecarboxamide:pyrophosphate phosphoribosyltransferase
+  genes: Nmar_1400
+  equation: cpd00103[c] + cpd02506[c] => cpd00012[c] + cpd02851[c]
+  ec: 2.4.2.7
+- id: R04420
+  name: 5-Methylthio-5-deoxy-D-ribose-1-phosphate ketol-isomerase
+  genes: Nmar_0169
+  equation: cpd02574[c] <=> cpd02791[c]
+  ec: 5.3.1.23
+- id: R04426
+  name: (2R,3S)-3-isopropylmalate:NAD + oxidoreductase
+  genes: Nmar_1069
+  equation: cpd00003[c] + cpd02693[c] <=> cpd00067[c] + cpd00004[c] + cpd02605[c]
+  ec: 1.1.1.85
+- id: R04435
+  name: phosphoenolpyruvate:N-acetyl-D-mannosamine-6-phosphate C-(1-carboxyvinyl)transferase
+    (phosphate-hydrolysing, 2-carboxy-2-oxoethyl-forming)
+  genes: Nmar_0131
+  equation: cpd00001[c] + cpd02612[c] + cpd00061[c] => cpd00009[c] + cpd03733[c]
+  ec: 2.5.1.56; 2.5.1.57
+- id: R04439
+  name: (R)-2,3-dihydroxy-3-methylbutanoate:NADP + oxidoreductase (isomerizing)
+  genes: Nmar_0959
+  equation: cpd00006[c] + cpd02498[c] <=> cpd00067[c] + cpd00005[c] + cpd00668[c]
+  ec: 1.1.1.86
+- id: R04440
+  name: (R)-2,3-Dihydroxy-3-methylbutanoate:NADP + oxidoreductase (isomerizing)
+  genes: Nmar_0959
+  equation: cpd00006[c] + cpd02498[c] => cpd00067[c] + cpd00005[c] + cpd02569[c]
+  ec: 1.1.1.86
+- id: R04441
+  name: (R)-2,3-Dihydroxy-3-methylbutanoate hydro-lyase
+  genes: Nmar_0886
+  equation: cpd02498[c] => cpd00001[c] + cpd00123[c]
+  ec: 4.2.1.9
+- id: R04457
+  name: 6,7-Dimethyl-8-(1-D-ribityl)lumazine:6,7-dimethyl-8-(1-D-ribityl)
+  genes: Nmar_1615
+  equation: cpd11225[c] + cpd02882[c] => (2) cpd00001[c] + cpd00009[c] + cpd02656[c]
+  ec: 2.5.1.78
+- id: R04463
+  name: 5'-Phosphoribosylformylglycinamide:L-glutamine amido-ligase (ADP-forming)
+  genes: (Nmar_0777 and Nmar_0780 and Nmar_0779)
+  equation: cpd00001[c] + cpd00002[c] + cpd00053[c] + cpd02678[c] => cpd00009[c]
+    + cpd00008[c] + cpd00023[c] + cpd02826[c]
+  ec: 6.3.5.3
+- id: R04475
+  name: N-Succinyl-L-2,6-diaminoheptanedioate:2-oxoglutarate amino-transferase
+  genes: Nmar_1291
+  equation: cpd00024[c] + cpd02698[c] <=> cpd00023[c] + cpd02724[c]
+  ec: 2.6.1.17
+- id: R04481
+  name: S-Adenosyl-L-methionine:2-(3-carboxy-3-aminopropyl)-L-histidine methyltransferase
+  genes: Nmar_1297
+  equation: cpd00017[c] + cpd02710[c] <=> cpd00019[c] + cpd02858[c]
+  ec: 2.1.1.98
+- id: R04509
+  name: ATP:4-amino-2-methyl-5-phosphomethylpyrimidine phosphotransferase
+  genes: Nmar_0542
+  equation: cpd00002[c] + cpd02775[c] => cpd00008[c] + cpd02894[c]
+  ec: 2.7.4.7
+- id: R04520
+  name: geranylgeranyl diphosphate:sn-3-O-(geranylgeranyl)glycerol 1-phosphate geranylgeranyltransferase
+  equation: cpd00289[c] + cpd02797[c] => cpd00012[c] + cpd02824[c]
+  ec: 2.5.1.42
+- id: R04533
+  name: (3R)-3-Hydroxybutanoyl-[acyl-carrier protein]:NADP + oxidoreductase
+  genes: (Nmar_0634 or Nmar_0173)
+  equation: cpd00006[c] + cpd11478[c] <=> cpd00067[c] + cpd00005[c] + cpd11488[c]
+  ec: 1.1.1.100; 2.3.1.85; 2.3.1.86
+- id: R04534
+  name: (3R)-3-Hydroxydecanoyl-[acyl-carrier-protein]:NADP + oxidoreductase
+  genes: (Nmar_0634 or Nmar_0173)
+  equation: cpd00006[c] + cpd11482[c] <=> cpd00005[c] + cpd11487[c]
+  ec: 1.1.1.100; 2.3.1.85; 2.3.1.86
+- id: R04536
+  name: (3R)-3-Hydroxyoctanoyl-[acyl-carrier-protein]:NADP + oxidoreductase
+  genes: (Nmar_0634 or Nmar_0173)
+  equation: cpd00006[c] + cpd11483[c] <=> cpd00067[c] + cpd00005[c] + cpd11490[c]
+  ec: 1.1.1.100; 2.3.1.85; 2.3.1.86
+- id: R04543
+  name: (3R)-3-Hydroxypalmitoyl-[acyl-carrier-protein]:NADP + oxidoreductase
+  genes: (Nmar_0634 or Nmar_0173)
+  equation: cpd00006[c] + cpd11481[c] <=> cpd00067[c] + cpd00005[c] + cpd11485[c]
+  ec: 1.1.1.100; 2.3.1.85; 2.3.1.86
+- id: R04558
+  name: Imidazole-glycerol-3-phosphate synthase
+  genes: (Nmar_1552 or Nmar_1554)
+  equation: cpd00053[c] + cpd02991[c] => cpd00023[c] + cpd02843[c] + cpd02851[c]
+  ec: 2.4.2.-; 4.1.3.-
+- id: R04559
+  name: 1-(5'-Phosphoribosyl)-5-amino-4-(N-succinocarboxamide)-imidazole AMP-lyase
+  genes: Nmar_1455
+  equation: cpd02921[c] <=> cpd00106[c] + cpd02851[c]
+  ec: 4.3.2.2
+- id: R04562
+  name: Biotin:apo-[acetyl-CoA:carbondioxide ligase (ADP-forming)] ligase (AMP-forming)
+  genes: Nmar_0984
+  equation: cpd00002[c] + cpd00104[c] + cpd12600[c] => cpd00018[c] + cpd00012[c]
+    + cpd12590[c]
+  ec: 6.3.4.15
+- id: R04566
+  name: (3R)-3-Hydroxytetradecanoyl-[acyl-carrier-protein]:NADP + oxidoreductase
+  genes: (Nmar_0634 or Nmar_0173)
+  equation: cpd00006[c] + cpd11484[c] <=> cpd00067[c] + cpd00005[c] + cpd11491[c]
+  ec: 1.1.1.100; 2.3.1.85; 2.3.1.86
+- id: R04591
+  name: 1-(5-Phosphoribosyl)-5-amino-4-carboxyimidazole:L-aspartate ligase (ADP-forming)
+  genes: Nmar_0784
+  equation: cpd00002[c] + cpd00041[c] + cpd02893[c] => cpd00009[c] + cpd00008[c]
+    + cpd02921[c]
+  ec: 6.3.2.6
+- id: R04594
+  name: adenosylcobalamin/alpha-ribazole phosphatase;
+  genes: Nmar_0181
+  equation: cpd00001[c] + cpd02904[c] => cpd00009[c] + cpd00067[c] + cpd03423[c]
+  ec: 3.1.3.73
+- id: R04621
+  name: Dihydroneopterin monophosphate dephosphorylase
+  equation: cpd00009[c] + cpd02961[c] => cpd00001[c] + cpd03521[c]
+  ec: 3.6.1.-
+- id: R04639
+  name: 2-amino-4-hydroxy-6-(erythro-1,2,3-trihydroxypropyl) dihydropteridine triphosphate
+    hydrolase
+  genes: Nmar_0038
+  equation: cpd00001[c] + cpd02978[c] <=> cpd03666[c]
+  ec: 3.5.4.16
+- id: R04640
+  name: N-(5'-phospho-D-ribosylformimino)-5-amino-1- (5''-phospho-D-ribosyl)-4-imidazolecarboxamide
+    ketol-isomerase
+  genes: Nmar_1553
+  equation: cpd02979[c] <=> cpd02991[c]
+  ec: 5.3.1.16
+- id: R04672
+  name: (S)-2-Acetolactate pyruvate-lyase (carboxylating)
+  genes: (Nmar_1071 and Nmar_1072)
+  equation: cpd00668[c] + cpd00056[c] <=> cpd00020[c] + cpd03049[c]
+  ec: 2.2.1.6
+- id: R04673
+  name: (S)-2-Aceto-2-hydroxybutanoate pyruvate-lyase (carboxylating)
+  genes: (Nmar_1072 and Nmar_1071)
+  equation: cpd03049[c] + cpd00094[c] => cpd00056[c] + cpd00498[c]
+  ec: 2.2.1.6
+- id: R04710
+  name: Protein-glycine,dihydroflavodoxin:S-adenosyl-L-methionine oxidoreductase
+    (S-adenosyl-L-methionine cleaving)
+  genes: Nmar_0217
+  equation: cpd00017[c] + cpd12672[c] + cpd12673[c] <=> cpd00060[c] + cpd03091[c]
+    + cpd12674[c] + cpd12697[c]
+  ec: 1.97.1.4
+- id: R04734
+  name: 4a-hydroxytetrahydrobiopterin hydro-lyase
+  genes: Nmar_1468
+  equation: cpd03897[c] <=> cpd00001[c] + cpd00231[c]
+  ec: 4.2.1.96
+- id: R04771
+  name: ATP:L-selenomethione S-adenosyltransferase
+  genes: Nmar_0085
+  equation: cpd00001[c] + cpd00002[c] + cpd03163[c] => cpd00009[c] + cpd00012[c]
+    + cpd03392[c]
+  ec: 2.5.1.6
+- id: R04773
+  name: Selenomethionine:tRNAMet ligase (AMP-forming)
+  genes: Nmar_0963
+  equation: cpd00002[c] + cpd11918[c] + cpd03163[c] => cpd00018[c] + cpd00012[c]
+    + cpd12704[c]
+  ec: 6.1.1.10
+- id: R04780
+  name: beta-D-Fructose 1,6-bisphosphate 1-phosphohydrolase
+  genes: Nmar_1035
+  equation: cpd00001[c] + cpd00290[c] => cpd00009[c] + cpd00072[c]
+  ec: 3.1.3.11
+- id: R04805
+  name: alcohol dehydrogenase (glycerol)
+  genes: (Nmar_0523 or Nmar_1193)
+  equation: cpd00003[c] + cpd03227[c] <=> cpd00067[c] + cpd00004[c] + cpd03228[c]
+  ec: 1.1.1.1
+- id: R04858
+  name: S-adenosyl-L-methionine:DNA (cytosine-5-)-methyltransferase
+  genes: Nmar_1473
+  equation: cpd00017[c] + cpd11763[c] => cpd00019[c] + cpd12223[c]
+  ec: 2.1.1.37
+- id: R04859
+  name: O3-acetyl-L-serine:thiosulfate 2-amino-2-carboxyethyltransferase (reducing,
+    L-cysteine-forming)
+  genes: Nmar_0670
+  equation: cpd00067[c] + cpd00268[c] + cpd00722[c] + cpd11421[c] => cpd00029[c]
+    + cpd00084[c] + cpd00081[c] + cpd11420[c]
+  ec: 2.5.1.47; 2.5.1.49
+- id: R04880
+  name: 3,4-dihydroxyphenylethyleneglycol:NAD + oxidoreductase
+  genes: (Nmar_0523 or Nmar_1193)
+  equation: cpd00003[c] + cpd03306[c] <=> cpd00067[c] + cpd00004[c] + cpd03307[c]
+  ec: 1.1.1.1
+- id: R04928
+  name: ATP:adenylylsulfate 3'-phosphotransferase
+  genes: Nmar_0023
+  equation: cpd00002[c] + cpd03388[c] => cpd00008[c] + cpd03395[c]
+  ec: 2.7.1.25
+- id: R04929
+  name: ATP:selenate adenylyltransferase
+  genes: Nmar_0050
+  equation: cpd00002[c] + cpd03396[c] => cpd00012[c] + cpd03388[c]
+  ec: 2.7.7.4
+- id: R04935
+  name: (5-L-glutamyl)-peptide:Se-Methylselenocysteine 5-glutamyltransferase
+  genes: Nmar_1004
+  equation: cpd12271[c] + cpd03390[c] <=> cpd11608[c] + cpd03394[c]
+  ec: 2.3.2.2
+- id: R04936
+  name: Se-Adenosylselenohomocysteine hydrolase
+  genes: Nmar_0964
+  equation: cpd00001[c] + cpd03393[c] => cpd00182[c] + cpd03397[c]
+  ec: 3.3.1.1
+- id: R04951
+  genes: Nmar_0296
+  equation: cpd00001[c] + cpd16496[c] => cpd00033[c] + cpd12344[c]
+  ec: 3.4.11.1; 3.4.11.2; 3.4.11.23; 3.4.13.-
+- id: R04953
+  name: (3R)-3-Hydroxyhexanoyl-[acyl-carrier-protein]:NADP + oxidoreductase
+  genes: (Nmar_0634 or Nmar_0173)
+  equation: cpd00006[c] + cpd11479[c] <=> cpd00067[c] + cpd00005[c] + cpd11486[c]
+  ec: 1.1.1.100; 2.3.1.85; 2.3.1.86
+- id: R04964
+  name: (3R)-3-Hydroxydodecanoyl-[acyl-carrier-protein]:NADP + oxidoreductase
+  genes: (Nmar_0634 or Nmar_0173)
+  equation: cpd00006[c] + cpd11480[c] <=> cpd00067[c] + cpd00005[c] + cpd11489[c]
+  ec: 1.1.1.100; 2.3.1.85; 2.3.1.86
+- id: R04985
+  name: 4-hydroxy-3-polyprenylbenzoate carboxy-lyase
+  genes: (Nmar_0771 or Nmar_0555)
+  equation: cpd12785[c] => cpd00011[c] + cpd12780[c]
+  ec: 4.1.1.-
+- id: R04986
+  name: 3-octaprenyl-4-hydroxybenzoate carboxy-lyase
+  genes: (Nmar_0771 or Nmar_0555)
+  equation: cpd03443[c] => cpd00011[c] + cpd03444[c]
+  ec: 4.1.1.-
+- id: R04990
+  name: UDP-L-rhamnose:flavonol-3-O-D-glucoside L-rhamnosyltransferase
+  genes: Nmar_1315
+  equation: cpd00017[c] + cpd03447[c] => cpd00019[c] + cpd03448[c]
+  ec: 2.1.1.201
+- id: R04993
+  name: S-adenosyl-L-methione:demethylmenaquinone methyltransferase
+  genes: Nmar_1315
+  equation: cpd00017[c] + cpd11425[c] => cpd00019[c] + cpd11451[c]
+  ec: 2.1.1.163
+- id: R05032
+  name: UDP-N-acetyl-D-glucosamine:undecaprenyl-diphospho-N-acetylmuramoyl-L-alanyl-gamma-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanyl-D-alanine
+    4-beta-N-acetylglucosaminlytransferase
+  genes: Nmar_0194
+  equation: cpd00037[c] + cpd03494[c] => cpd00014[c] + cpd03495[c]
+  ec: 2.4.1.227
+- id: R05046
+  name: formamidopyrimidine nucleoside triphosphate amidohydrolase
+  genes: Nmar_0038
+  equation: cpd00001[c] + cpd03518[c] => cpd00047[c] + cpd03519[c]
+  ec: 3.5.4.16
+- id: R05048
+  name: 2,5-diaminopyrimidine nucleoside triphosphate mutase
+  genes: Nmar_0038
+  equation: cpd03519[c] => cpd03666[c]
+  ec: 3.5.4.16
+- id: R05052
+  name: L-erythro-4-hydroxyglutamate:2-oxoglutarate aminotransferase
+  genes: (Nmar_0546 or Nmar_0865)
+  equation: cpd00024[c] + cpd01974[c] <=> cpd00830[c] + cpd00023[c]
+  ec: 2.6.1.1; 2.6.1.23
+- id: R05068
+  name: (R)-2,3-Dihydroxy-3-methylpentanoate:NADP + oxidoreductase
+  genes: Nmar_0959
+  equation: cpd00006[c] + cpd02535[c] => cpd00067[c] + cpd00005[c] + cpd10162[c]
+  ec: 1.1.1.86
+- id: R05069
+  name: (S)-2-Aceto-2-hydroxybutanoate:NADP + oxidoreductase (isomerizing)
+  genes: Nmar_0959
+  equation: cpd00498[c] <=> cpd10162[c]
+  ec: 1.1.1.86; 5.4.99.3
+- id: R05070
+  name: dihydroxy-acid dehydratase (2,3-dihydroxy-3-methylbutanoate)
+  genes: Nmar_0886
+  equation: cpd02535[c] => cpd00001[c] + cpd00508[c]
+  ec: 4.2.1.9
+- id: R05071
+  name: ketol-acid reductoisomerase (2,3-dihydroxy-3-methylbutanoate)
+  genes: Nmar_0959
+  equation: cpd00668[c] <=> cpd02569[c]
+  ec: 1.1.1.86; 5.4.99.3
+- id: R05086
+  name: O-Phospho-4-hydroxy-L-threonine phospho-lyase (adding water)
+  genes: (Nmar_0833 or Nmar_1549)
+  equation: cpd00001[c] + cpd03607[c] => cpd00009[c] + cpd03608[c]
+  ec: 4.2.3.1
+- id: R05145
+  name: biotin--protein ligase
+  genes: Nmar_0984
+  equation: cpd03517[c] + cpd12847[c] => cpd00018[c] + cpd12848[c]
+  ec: 6.3.4.9; 6.3.4.10; 6.3.4.11; 6.3.4.15
+- id: R05149
+  name: S-Adenosyl-L-methionine:1-precorrin-6Y C5,15-methyltransferase (C-12-decarboxylating)
+  genes: (Nmar_0005 or Nmar_0057)
+  equation: (2) cpd00017[c] + cpd03760[c] => cpd00011[c] + (2) cpd00019[c] + cpd03835[c]
+  ec: 2.1.1.132
+- id: R05150
+  name: precorrin-6Y:NADP + oxidoreductase
+  equation: cpd00006[c] + cpd03760[c] <=> cpd00067[c] + cpd00005[c] + cpd03761[c]
+  ec: 1.3.1.54
+- id: R05177
+  name: precorrin 8X 11,12-methylmutase
+  genes: Nmar_0080
+  equation: cpd03835[c] <=> cpd03832[c]
+  ec: 5.4.1.2
+- id: R05180
+  name: S-adenosyl-L-methionine:precorrin-3B C17-methyltransferase
+  genes: Nmar_1752
+  equation: cpd03833[c] + cpd00017[c] => cpd00019[c] + cpd03834[c]
+  ec: 2.1.1.131
+- id: R05181
+  name: S-adenosyl-L-methionine:precorrin-4 C11 methyltransferase
+  genes: Nmar_0059
+  equation: cpd00017[c] + cpd03834[c] => cpd00019[c] + cpd03839[c]
+  ec: 2.1.1.133
+- id: R05217
+  name: 2,3-bis-(O-phytany)l-sn-glycerol 1-phosphate:NAD + oxidoreductase
+  equation: cpd00007[c] + cpd00067[c] + cpd00004[c] + cpd03420[c] => cpd00003[c]
+    + cpd00001[c] + cpd03833[c]
+  ec: 1.14.13.83
+- id: R05218
+  name: cob(II)yrinic acid-a,c-diamide:FMN oxidoreductase
+  equation: (2) cpd03914[c] + cpd01270[c] <=> (2) cpd00067[c] + (2) cpd03915[c] +
+    cpd00050[c]
+  ec: 1.16.8.1
+- id: R05219
+  name: precorrin-6A synthase (deacetylating);
+  equation: cpd00001[c] + cpd00017[c] + cpd03839[c] => cpd00029[c] + (2) cpd00067[c]
+    + cpd00019[c] + cpd03761[c]
+  ec: 2.1.1.152
+- id: R05220
+  name: ATP:cob(I)yrinic acid-a,c-diamide Cobeta-adenosyltransferase
+  genes: Nmar_0078
+  equation: cpd00002[c] + cpd03915[c] => cpd00421[c] + cpd03916[c]
+  ec: 2.5.1.17
+- id: R05222
+  name: GTP:adenosylcobinamide-phosphate guanylyltransferase
+  equation: cpd00067[c] + cpd00038[c] + cpd03919[c] => cpd00012[c] + cpd03920[c]
+  ec: 2.7.7.62
+- id: R05223
+  name: Adenosylcobalamin 5'-phosphate synthase
+  genes: Nmar_1582
+  equation: cpd00126[c] + cpd00166[c] <=> cpd03920[c] + cpd03423[c]
+  ec: 2.7.8.26
+- id: R05224
+  name: cobyrinic acid a,c-diamide synthase
+  genes: Nmar_0079
+  equation: (2) cpd00001[c] + (2) cpd00002[c] + (2) cpd00053[c] + cpd03832[c] =>
+    (2) cpd00009[c] + (2) cpd00008[c] + (2) cpd00023[c] + cpd03913[c]
+  ec: 6.3.5.9
+- id: R05225
+  name: adenosylcobyric acid synthase (glutamine-hydrolysing)
+  genes: Nmar_1584
+  equation: (4) cpd00001[c] + (4) cpd00002[c] + (4) cpd00053[c] + cpd03916[c] =>
+    (4) cpd00009[c] + (4) cpd00008[c] + (4) cpd00023[c] + cpd03917[c]
+  ec: 6.3.5.10
+- id: R05227
+  equation: cpd00001[c] + cpd00002[c] + cpd00149[c] + cpd03913[c] => cpd00009[c]
+    + cpd00008[c] + (2) cpd00067[c] + cpd03914[c]
+  ec: 6.6.1.2R02472
+- id: R05233
+  name: trans-3-Chloro-2-propene-1-ol:NAD + oxidoreductase
+  genes: (Nmar_0523 or Nmar_1193)
+  equation: cpd00003[c] + cpd04015[c] <=> cpd00067[c] + cpd00004[c] + cpd04017[c]
+  ec: 1.1.1.1
+- id: R05234
+  name: cis-3-chloro-2-propene-1-ol:NAD + oxidoreductase
+  genes: (Nmar_0523 or Nmar_1193)
+  equation: cpd00003[c] + cpd04016[c] <=> cpd00067[c] + cpd00004[c] + cpd15064[c]
+  ec: 1.1.1.1
+- id: R05298
+  name: 4-hydroxy-2-oxohexanoate pyruvate-lyase (propanal-forming)
+  equation: cpd00020[c] + cpd00371[c] <=> cpd04141[c]
+  ec: 4.1.3.39
+- id: R05329
+  name: Spermidine:eIF5A-lysine 4-aminobutyltransferase (propane-1,3-diamine-forming)
+  genes: (Nmar_0648 or Nmar_0928)
+  equation: cpd13044[c] + cpd00264[c] <=> cpd13045[c] + cpd00726[c]
+  ec: 2.5.1.46
+- id: R05332
+  name: glucosamine-1-phosphate N-acetyltransferase
+  equation: cpd00022[c] + cpd03671[c] => cpd00010[c] + cpd02611[c]
+  ec: 2.3.1.157
+- id: R05553
+  name: 4-amino-4-deoxychorismate pyruvate-lyase
+  equation: cpd08210[c] <=> cpd00020[c] + cpd00443[c]
+  ec: 4.1.3.38
+- id: R05555
+  name: CDP-2,3-bis-O-(geranylgeranyl)-sn-glycerol:L-serine 2,3-bis-O-(geranylgeranyl)-sn-glycerol
+    phosphotransferase
+  equation: cpd00350[c] + cpd00113[c] <=> cpd00012[c] + cpd08211[c]
+  ec: 2.5.1.-
+- id: R05577
+  name: L-Aspartate:tRNA(Asp) ligase (AMP-forming)
+  genes: (Nmar_0871 or Nmar_1066)
+  equation: cpd00002[c] + cpd00041[c] + cpd11909[c] => cpd00018[c] + cpd00012[c]
+    + cpd12226[c]
+  ec: 6.1.1.12; 6.1.1.23
+- id: R05578
+  name: L-glutamate:tRNA(Glu) ligase (AMP-forming)
+  genes: Nmar_0311
+  equation: cpd00002[c] + cpd00023[c] + cpd11912[c] => cpd00018[c] + cpd00012[c]
+    + cpd12227[c]
+  ec: 6.1.1.17; 6.1.1.24
+- id: R05617
+  name: all-trans-polyprenyl diphosphate:1,4-dihydroxy-2-naphthoate polyprenyltransferase
+  genes: Nmar_0938
+  equation: cpd02295[c] + cpd02557[c] => cpd00011[c] + cpd00012[c] + cpd11425[c]
+  ec: 2.5.1.74
+- id: R05662
+  name: UDP-N-acetyl-D-glucosamine:N-acetyl-alpha-D-muramyl(oyl-L-Ala-gamma-D-Glu-L-Lys-D-Ala-D-Ala)-diphosphoundecaprenol
+    4-beta-N-acetylglucosaminlytransferase
+  genes: Nmar_0194
+  equation: cpd00037[c] + cpd02948[c] => cpd00014[c] + cpd03491[c]
+  ec: 2.4.1.227
+- id: R05679
+  name: sn-glycerol-1-phosphate:NAD 2-oxidoreductase
+  genes: Nmar_1729
+  equation: cpd00003[c] + cpd00080[c] <=> cpd00067[c] + cpd00004[c] + cpd00095[c]
+  ec: 1.1.1.261
+- id: R05680
+  name: sn-glycerol-1-phosphate:NADP 2-oxidoreductase
+  genes: Nmar_1729
+  equation: cpd00080[c] + cpd00006[c] <=> cpd00067[c] + cpd00095[c] + cpd00005[c]
+  ec: 1.1.1.261
+- id: R05705
+  name: FMNH2:NAD + oxidoreductase
+  genes: Nmar_1737
+  equation: cpd00003[c] + cpd01270[c] <=> cpd00067[c] + cpd00004[c] + cpd00050[c]
+  ec: 1.5.1.39; 1.5.1.41; 1.5.1.42; 1.5.1.-
+- id: R05721
+  name: chloride:oxygen oxidoreductase
+  genes: Nmar_0515
+  equation: cpd00007[c] + cpd00099[c] <=> cpd01054[c]
+  ec: 1.13.11.49
+- id: R05807
+  name: S-adenosylmethioninamine:putrescine 3-aminopropyltransferase
+  equation: cpd03426[c] + cpd00149[c] => (2) cpd00067[c] + cpd08368[c]
+  ec: 4.99.1.3
+- id: R05808
+  name: S-adenosyl-L-methionine:cobalt-factor-II C20-methyltransferase
+  genes: Nmar_0058
+  equation: cpd08368[c] + cpd00017[c] => cpd00019[c] + cpd17535[c]
+  ec: 2.1.1.151
+- id: R05809
+  name: precorrin-3B C17-methyltransferase
+  genes: Nmar_1752
+  equation: cpd00017[c] + cpd08369[c] => cpd00019[c] + cpd08370[c]
+  ec: 2.1.1.131
+- id: R05810
+  name: cobalt-precorrin-4 methyltransferase
+  genes: Nmar_0059
+  equation: cpd00017[c] + cpd08370[c] => cpd00019[c] + cpd08371[c]
+  ec: 2.1.1.133
+- id: R05812
+  name: precorrin-6A reductase
+  genes: Nmar_0057
+  equation: cpd00067[c] + cpd00004[c] + cpd08372[c] => cpd00003[c] + cpd08373[c]
+  ec: 1.3.1.54
+- id: R05813
+  name: precorrin-6Y C5,15-methyltransferase (decarboxylating)
+  genes: Nmar_0005
+  equation: (2) cpd00017[c] + cpd08373[c] => cpd00011[c] + (2) cpd00019[c] + cpd08375[c]
+  ec: 2.1.1.132
+- id: R05814
+  name: precorrin-8 11,12-methylmutase
+  genes: Nmar_0080
+  equation: cpd08375[c] <=> cpd03421[c]
+  ec: 5.4.1.2
+- id: R05815
+  name: cobyrinate:L-glutamine amido-ligase (ADP-forming)
+  genes: Nmar_0079
+  equation: (2) cpd00001[c] + (2) cpd00002[c] + (2) cpd00053[c] + cpd03421[c] =>
+    (2) cpd00009[c] + (2) cpd00008[c] + (2) cpd00023[c] + cpd03914[c]
+  ec: 6.3.5.11
+- id: R05976
+  genes: Nmar_0075
+  equation: cpd12235[c] + G00008[c] <=> cpd11713[c] + G00009[c]
+  ec: 2.4.1.119
+- id: R06137
+  name: Cytosine deaminase
+  genes: (Nmar_1578 or Nmar_1471 or Nmar_0947)
+  equation: cpd00001[c] + cpd12819[c] <=> cpd00013[c] + cpd13399[c]
+  ec: 3.5.4.1; 3.5.4.2; 3.5.4.3; 3.5.4.4
+- id: R06172
+  genes: Nmar_0194
+  equation: cpd00037[c] + G10551[c] <=> cpd00014[c] + G10550[c]
+  ec: 2.4.1.227
+- id: R06447
+  name: (2E,6E)-farnesyl-diphosphate:isopentenyl-diphosphate cistransferase (adding
+    8 isopentenyl units)
+  genes: Nmar_1416
+  equation: (8) cpd00113[c] + cpd08211[c] <=> (8) cpd00012[c] + cpd02229[c]
+  ec: 2.5.1.31
+- id: R06513
+  name: dTDPglucose 4,6-dehydratase
+  genes: Nmar_0125
+  equation: cpd00626[c] <=> cpd00001[c] + cpd00521[c]
+  ec: 4.2.1.46
+- id: R06514
+  name: dTDP-4-dehydro-6-deoxy-alpha-D-glucose 3,5-epimerase
+  genes: Nmar_0145
+  equation: cpd00521[c] <=> cpd00522[c]
+  ec: 5.1.3.13
+- id: R06529
+  name: adenosylcobyric acid:(R)-1-aminopropan-2-yl phosphate ligase
+  genes: Nmar_1583
+  equation: cpd00002[c] + cpd03917[c] + cpd02547[c] => cpd00009[c] + cpd00008[c]
+    + cpd03919[c]
+  ec: 6.3.1.10
+- id: R06530
+  name: L-threonine-O-3-phosphate carboxy-lyase
+  genes: Nmar_1585
+  equation: cpd00067[c] + cpd08928[c] => cpd00011[c] + cpd02547[c]
+  ec: 4.1.1.81
+- id: R06531
+  name: ATP:L-threonine O-phosphotransferase
+  equation: cpd00002[c] + cpd00161[c] => cpd00008[c] + cpd08928[c]
+  ec: 2.7.1.177
+- id: R06590
+  name: sedoheptulose-7-phosphate:D-glyceraldehyde-3-phosphate glycolaldehydetransferase
+  genes: (Nmar_0299 and Nmar_0300)
+  equation: cpd00101[c] + cpd08993[c] <=> cpd00238[c] + cpd08994[c]
+  ec: 2.2.1.1
+- id: R06614
+  name: 3-cyano-L-alanine carboxy-lyase (3-aminopropiononitrile-forming)
+  equation: cpd01651[c] => cpd00011[c] + cpd03377[c]
+  ec: 4.1.1.-
+- id: R06616
+  equation: cpd00033[c] <=> cpd03077[c]
+- id: R06782
+  name: 3-phenylpropanoate,NADH:oxygen oxidoreductase (2,3-hydroxylating)
+  equation: cpd00007[c] + cpd00067[c] + cpd00004[c] + cpd03343[c] => cpd00003[c]
+    + cpd08405[c]
+  ec: 1.14.12.19
+- id: R06783
+  name: trans-cinnamate,NADH:oxygen oxidoreductase (2,3-hydroxylating)
+  equation: cpd00007[c] + cpd00067[c] + cpd00004[c] + cpd00333[c] => cpd00003[c]
+    + cpd09253[c]
+  ec: 1.14.12.19
+- id: R06844
+  equation: cpd00023[c] + cpd09351[c] <=> cpd00024[c] + cpd09352[c]
+  ec: 2.6.1.-
+- id: R06858
+  name: 1,4-dihydroxy-2-naphthoate phytyltransferase
+  genes: Nmar_0938
+  equation: cpd03214[c] + cpd02295[c] => cpd00011[c] + cpd00012[c] + cpd09410[c]
+  ec: 2.5.1.-
+- id: R06859
+  name: demethylphylloquinone methyltransferase
+  genes: Nmar_1315
+  equation: cpd00017[c] + cpd09410[c] <=> cpd00019[c] + cpd01401[c]
+  ec: 2.1.1.163
+- id: R06861
+  name: D-xylulose-5-phosphate:thiamin diphosphate glycolaldehydetransferase
+  genes: (Nmar_0299 and Nmar_0300)
+  equation: cpd00056[c] + cpd00198[c] <=> cpd00102[c] + cpd09421[c]
+  ec: 2.2.1.1; 2.2.1.3
+- id: R06863
+  name: D-sedoheptulose-7-phosphate:thiamin diphosphate glycolaldehydetransferase
+  genes: (Nmar_0299 and Nmar_0300)
+  equation: cpd00056[c] + cpd00238[c] <=> cpd00101[c] + cpd09421[c]
+  ec: 2.2.1.1
+- id: R06917
+  name: 1-hydroxymethylnaphthalene:NAD + oxidoreductase
+  genes: (Nmar_0523 or Nmar_1193)
+  equation: cpd00003[c] + cpd09792[c] <=> cpd00067[c] + cpd00004[c] + cpd09793[c]
+  ec: 1.1.1.1
+- id: R06927
+  name: (2-naphthyl)methanol:NAD + oxidoreductase
+  genes: (Nmar_0523 or Nmar_1193)
+  equation: cpd00003[c] + cpd01859[c] <=> cpd00067[c] + cpd00004[c] + cpd09802[c]
+  ec: 1.1.1.1
+- id: R06974
+  name: glycinamide ribonucleotide transformylase
+  equation: cpd00002[c] + cpd00047[c] + cpd02394[c] => cpd00009[c] + cpd00008[c]
+    + cpd02678[c]
+  ec: 2.1.2.-
+- id: R06975
+  name: 5-formaminoimidazole-4-carboxamide-1-beta-D-ribofuranosyl 5'-monophosphate
+    synthetase
+  genes: (Nmar_0770 or Nmar_0872)
+  equation: cpd00002[c] + cpd00047[c] + cpd02851[c] => cpd00009[c] + cpd00008[c]
+    + cpd02884[c]
+  ec: 6.3.4.-
+- id: R06977
+  name: L-2,4-diaminobutyrate:2-oxoglutarate 4-aminotransferase
+  genes: Nmar_1345
+  equation: cpd00023[c] + cpd00346[c] <=> cpd00024[c] + cpd02095[c]
+  ec: 2.6.1.76
+- id: R06978
+  name: acetyl-CoA:L-2,4-diaminobutanoate N4-acetyltransferase
+  genes: Nmar_1346
+  equation: cpd00022[c] + cpd02095[c] <=> cpd00010[c] + cpd03862[c]
+  ec: 2.3.1.178
+- id: R06979
+  name: Ectoine hydro-lyase
+  genes: Nmar_1344
+  equation: cpd03862[c] <=> cpd00001[c] + cpd03727[c]
+  ec: 4.2.1.108
+- id: R07105
+  name: alcohol dehydrogenase (glycerol)
+  genes: (Nmar_0523 or Nmar_1193)
+  equation: cpd00067[c] + cpd00004[c] + cpd04248[c] <=> cpd00003[c] + cpd00001[c]
+    + cpd04661[c]
+  ec: 1.1.1.1
+- id: R07145
+  name: L-iditol:NAD + 2-oxidoreductase
+  genes: Nmar_1079
+  equation: cpd00003[c] + cpd01066[c] <=> cpd00067[c] + cpd00004[c] + cpd00212[c]
+  ec: 1.1.1.14
+- id: R07164
+  name: L-aspartate:NAD + oxidoreductase (deaminating)
+  genes: Nmar_1240
+  equation: cpd00003[c] + cpd00001[c] + cpd00041[c] <=> cpd00067[c] + cpd00013[c]
+    + cpd00004[c] + cpd00032[c]
+  ec: 1.4.1.21
+- id: R07180
+  genes: Nmar_0560
+  equation: cpd14475[c] + (2) cpd11849[c] <=> cpd00001[c] + cpd00057[c] + cpd14474[c]
+  ec: 1.11.1.15
+- id: R07237
+  name: S-adenosyl-L-methionine:uroporphyrinogen-III C-methyltransferase
+  genes: (Nmar_0492 or Nmar_0511 or Nmar_0669)
+  equation: cpd00774[c] + cpd00017[c] => cpd00019[c] + cpd11206[c]
+  ec: 2.1.1.107
+- id: R07238
+  name: S-adenosyl-L-methionine:precorrin-1 C-methyltransferase
+  genes: (Nmar_0492 or Nmar_0669)
+  equation: cpd00017[c] + cpd11206[c] => cpd00019[c] + cpd01620[c]
+  ec: 2.1.1.107
+- id: R07268
+  name: ATP:cobinamide Cobeta-adenosyltransferase
+  genes: Nmar_0078
+  equation: cpd00002[c] + cpd03422[c] => cpd00421[c] + cpd03918[c]
+  ec: 2.5.1.17
+- id: R07280
+  name: pyrimidine phosphatase
+  equation: cpd00001[c] + cpd02720[c] => cpd00009[c] + cpd02882[c]
+  ec: 3.1.3.-
+- id: R07281
+  name: D-ribulose 5-phosphate formate-lyase (L-3,4-dihydroxybutan-2-one 4-phosphate-forming)
+  genes: Nmar_1616
+  equation: cpd00171[c] => cpd00047[c] + cpd11225[c]
+  ec: 4.1.99.12
+- id: R07302
+  name: adenosylcobyric acid:(R)-1-aminopropan-2-ol ligase (ADP-forming)
+  genes: Nmar_1583
+  equation: cpd00002[c] + cpd03917[c] + cpd02039[c] => cpd00009[c] + cpd00008[c]
+    + cpd03918[c]
+  ec: 6.3.1.10
+- id: R07306
+  name: GTP 8,9-hydrolase (phosphate-forming)
+  genes: Nmar_1614
+  equation: (3) cpd00001[c] + cpd00038[c] <=> (2) cpd00009[c] + cpd11231[c]
+  ec: 3.5.4.29
+- id: R07324
+  name: 1D-myo-inositol-3-phosphate lyase (isomerizing)
+  genes: Nmar_0649
+  equation: cpd00079[c] <=> cpd02484[c]
+  ec: 5.5.1.4
+- id: R07326
+  name: alcohol dehydrogenase (glycerol)
+  genes: (Nmar_0523 or Nmar_1193)
+  equation: cpd00003[c] + cpd00057[c] <=> cpd00067[c] + cpd00004[c] + cpd11616[c]
+  ec: 1.1.1.1; 1.1.1.71
+- id: R07327
+  name: alcohol dehydrogenase (glycerol)
+  genes: (Nmar_0523 or Nmar_1193)
+  equation: cpd00003[c] + cpd00057[c] <=> cpd00067[c] + cpd00004[c] + cpd11872[c]
+  ec: 1.1.1.1
+- id: R07343
+  name: myo-inositol-phosphate phosphohydrolase
+  genes: Nmar_0268
+  equation: cpd00001[c] + cpd14496[c] <=> cpd00009[c] + cpd00121[c]
+  ec: 3.1.3.25
+- id: R07349
+  name: n-alkanal:NAD + 2-oxidoreductase
+  genes: Nmar_1146
+  equation: cpd00003[c] + cpd14502[c] <=> cpd00067[c] + cpd00004[c] + cpd14503[c]
+  ec: 1.3.1.74
+- id: R07353
+  name: 6-(2-Amino-2-carboxyethyl)-7,8-dioxo-7,8-dihydroquinoline-2,4-dicarboxylate:oxygen
+    oxidoreductase (cyclizing)
+  genes: Nmar_0288
+  equation: (3) cpd00007[c] + cpd16330[c] => (2) cpd00001[c] + (2) cpd00025[c] +
+    cpd00097[c]
+  ec: 1.3.3.11
+- id: R07399
+  equation: cpd00001[c] + cpd00020[c] + cpd00022[c] <=> cpd00010[c] + cpd01700[c]
+  ec: 2.3.1.182
+- id: R07404
+  name: 5-amino-1-(5-phospho-D-ribosyl)imidazole:carbon-dioxide ligase (ADP-forming)
+  genes: Nmar_0846
+  equation: cpd00002[c] + cpd00242[c] + cpd02140[c] => cpd00009[c] + cpd00008[c]
+    + cpd11310[c]
+  ec: 6.3.4.18
+- id: R07405
+  name: 5-carboxyamino-1-(5-phospho-D-ribosyl)imidazole carboxymutase
+  genes: Nmar_0847
+  equation: cpd11310[c] <=> cpd02893[c]
+  ec: 5.4.99.18
+- id: R07410
+  name: L-aspartate:NAD + oxidoreductase (deaminating)
+  genes: Nmar_1240
+  equation: cpd00003[c] + cpd00041[c] <=> cpd00067[c] + cpd00004[c] + cpd03470[c]
+  ec: 1.4.1.21
+- id: R07411
+  name: protoheme IX farnesyltransferase
+  genes: (Nmar_1225 or Nmar_1588)
+  equation: cpd00028[c] <=> cpd11313[c]
+  ec: 2.5.1.-
+- id: R07412
+  genes: Nmar_0186
+  equation: cpd11313[c] <=> cpd11312[c]
+- id: R07456
+  name: D-ribulose 5-phosphate,D-glyceraldehyde 3-phosphate pyridoxal 5'-phosphate-lyase
+  genes: (Nmar_1478 and Nmar_1479)
+  equation: cpd00053[c] + cpd00102[c] + cpd00171[c] <=> cpd00023[c] + cpd00016[c]
+- id: R07461
+  equation: cpd14548[c] + cpd14549[c] <=> cpd14550[c]
+- id: R07477
+  name: spermidine:NAD + oxidoreductase
+  genes: (Nmar_0648 or Nmar_0928)
+  equation: cpd00003[c] + cpd00264[c] <=> cpd00067[c] + cpd00004[c] + cpd14584[c]
+  ec: 2.5.1.46
+- id: R07606
+  name: L-methionine:thioredoxin-disulfide S-oxidoreductase
+  genes: Nmar_0995
+  equation: cpd00001[c] + cpd00060[c] + cpd11420[c] <=> cpd11421[c] + cpd14721[c]
+  ec: 1.8.4.11; 1.8.4.13
+- id: R07607
+  name: peptide-methionine:thioredoxin-disulfide S-oxidoreductase
+  genes: Nmar_0697
+  equation: cpd00001[c] + cpd11420[c] + cpd12237[c] <=> cpd11421[c] + cpd14507[c]
+  ec: 1.8.4.12
+- id: R07641
+  name: carbamoyl-phosphate synthase (glutamine-hydrolysing)
+  genes: (Nmar_1085 and Nmar_1086)
+  equation: (2) cpd00002[c] + cpd00013[c] + cpd00242[c] => cpd00009[c] + (2) cpd00008[c]
+    + cpd00146[c]
+  ec: 6.3.5.5
+- id: R07759
+  genes: (Nmar_0173 or Nmar_0634)
+  equation: cpd00067[c] + cpd00005[c] + cpd14935[c] <=> cpd00006[c] + cpd14936[c]
+  ec: 1.1.1.-
+- id: R07763
+  name: 3-oxoacyl-[acyl-carrier-protein] reductase (n-C10:0)
+  genes: Nmar_0634
+  equation: cpd00067[c] + cpd00005[c] + cpd14938[c] <=> cpd00006[c] + cpd14939[c]
+  ec: 1.1.1.100
+- id: R07772
+  name: cobalt-precorrin 5A acylhydrolase
+  genes: Nmar_0082
+  equation: cpd00001[c] + cpd08371[c] => cpd00071[c] + cpd14960[c]
+  ec: 3.7.1.12
+- id: R07773
+  name: S-adenosyl-L-methionine:cobalt-precorrin-5B (C1)-methyltransferase
+  genes: Nmar_0083
+  equation: cpd00017[c] + cpd14960[c] <=> cpd00019[c] + cpd08372[c]
+  ec: 2.1.1.195
+- id: R07774
+  name: S-adenosyl-L-methionine:cobalt-precorrin-6B C15-methyltransferase (C12-decarboxylating)
+  genes: Nmar_0057
+  equation: cpd00017[c] + cpd08373[c] <=> cpd00019[c] + cpd14961[c]
+  ec: 2.1.1.132
+- id: R07775
+  name: S-adenosyl-L-methionine:cobalt-precorrin-7 C5-methyltransferase
+  genes: Nmar_0005
+  equation: cpd00017[c] + cpd14961[c] => cpd00011[c] + cpd00019[c] + cpd08375[c]
+  ec: 2.1.1.196
+- id: R08050
+  name: ectoine hydroxylase
+  genes: Nmar_1343
+  equation: cpd00007[c] + cpd00024[c] + cpd03727[c] => cpd00011[c] + cpd00036[c]
+    + cpd15137[c]
+  ec: 1.14.11.-
+- id: R08193
+  name: N-Acetyl-D-glucosamine 1-phosphate 1,6-phosphomutase
+  equation: cpd00293[c] <=> cpd02611[c]
+  ec: 5.4.2.3
+- id: R08198
+  name: NAD-binding D-isomer specific 2-hydroxyacid dehydrogenase
+  genes: Nmar_1258
+  equation: cpd00003[c] + cpd01709[c] <=> cpd00067[c] + cpd00004[c] + cpd00024[c]
+  ec: 1.1.1.95
+- id: R08218
+  name: S-adenosyl-L-methionine:tRNA 5-methylaminomethyl-2-thiouridine methyltransferase
+  genes: Nmar_1511
+  equation: cpd00002[c] + cpd00054[c] + cpd16440[c] => cpd00018[c] + cpd00012[c]
+    + cpd15565[c]
+  ec: 6.1.1.11
+- id: R08221
+  name: 5'-deoxy-5-fluorocytidine aminohydrolase
+  genes: Nmar_1471
+  equation: cpd00001[c] + cpd16439[c] <=> cpd00013[c] + cpd16329[c]
+  ec: 3.5.4.5
+- id: R08227
+  name: 5,6-dihydro-5-fluorouracil amidohydrolase
+  genes: Nmar_0214
+  equation: cpd00001[c] + cpd16434[c] <=> cpd16435[c]
+  ec: 3.5.2.2
+- id: R08231
+  name: 5-fluorouridine monophosphate:diphosphate phospho-alpha-D-ribosyl-transferase
+  genes: Nmar_0289
+  equation: cpd00103[c] + cpd04810[c] <=> cpd00012[c] + cpd16438[c]
+  ec: 2.4.2.10
+- id: R08240
+  name: 6-thioinosine 5'-monophosphate:NAD + oxidoreductase
+  genes: Nmar_1569
+  equation: cpd00003[c] + cpd00001[c] + cpd02832[c] <=> cpd00067[c] + cpd00004[c]
+    + cpd16422[c]
+  ec: 1.1.1.205
+- id: R08244
+  name: 6-thioxanthine 5'-monophosphate:L-glutamine amido-ligase (AMP-forming)
+  genes: Nmar_1573
+  equation: cpd00001[c] + cpd00002[c] + cpd00053[c] + cpd16422[c] => cpd00018[c]
+    + cpd00012[c] + cpd00023[c] + cpd16423[c]
+  ec: 6.3.5.2
+- id: R08281
+  name: alcophosphamide:NAD + oxidoreductase
+  genes: (Nmar_0523 or Nmar_1193)
+  equation: cpd00067[c] + cpd00004[c] + cpd04806[c] <=> cpd00003[c] + cpd16365[c]
+  ec: 1.1.1.1
+- id: R08306
+  name: 2-phenyl-1,3-propanediol monocarbamate:NAD + oxidoreductase
+  genes: (Nmar_0523 or Nmar_1193)
+  equation: cpd00003[c] + cpd16395[c] <=> cpd00067[c] + cpd00004[c] + cpd16396[c]
+  ec: 1.1.1.1
+- id: R08310
+  name: 4-hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one:NAD + oxidoreductase
+  genes: (Nmar_0523 or Nmar_1193)
+  equation: cpd00003[c] + cpd16401[c] <=> cpd00067[c] + cpd00004[c] + cpd16402[c]
+  ec: 1.1.1.1
+- id: R08360
+  name: tryparedoxin:hydroperoxide oxidoreductase
+  genes: Nmar_0560
+  equation: cpd14475[c] + cpd16464[c] => cpd00001[c] + cpd16465[c] + cpd11848[c]
+  ec: 1.11.1.15; 1.11.1.-
+- id: R08362
+  name: trypanothione:hydroperoxide oxidoreductase
+  genes: Nmar_0560
+  equation: cpd14475[c] + cpd01418[c] => cpd00001[c] + cpd11848[c] + cpd02026[c]
+  ec: 1.11.1.15
+- id: R08363
+  name: 2'-deoxyribonucleoside-diphosphate:tryparedoxin-disulfide 2'-oxidoreductase
+  genes: Nmar_1627
+  equation: cpd00001[c] + cpd02602[c] + cpd16465[c] => cpd12378[c] + cpd16464[c]
+  ec: 1.17.4.1
+- id: R08364
+  name: 2'-deoxyribonucleoside-diphosphate:trypanothione-disulfide 2'-oxidoreductase
+  genes: Nmar_1627
+  equation: cpd00001[c] + cpd02602[c] + cpd02026[c] <=> cpd12378[c] + cpd01418[c]
+  ec: 1.17.4.1
+- id: R08368
+  name: Purine nucleoside:orthophosphate ribosyltransferase
+  equation: cpd00009[c] + cpd01197[c] => cpd00475[c] + cpd00360[c]
+  ec: 2.4.2.1
+- id: R08468
+  genes: Nmar_1297
+  equation: cpd00017[c] + cpd02858[c] <=> cpd00019[c] + cpd16524[c]
+  ec: 2.1.1.98
+- id: R08469
+  name: S-Adenosyl-L-methionine:2-(3-carboxy-3-aminopropyl)-L-histidine methyltransferase
+  genes: Nmar_1297
+  equation: cpd00017[c] + cpd16524[c] <=> cpd00019[c] + cpd11893[c]
+  ec: 2.1.1.98
+- id: R08557
+  name: choline dehydrogenase
+  genes: (Nmar_0523 or Nmar_1193)
+  equation: cpd00003[c] + cpd00098[c] <=> cpd00067[c] + cpd00004[c] + cpd00447[c]
+  ec: 1.1.1.1
+- id: R08574
+  name: CTP:riboflavin 5'-phosphotransferase
+  genes: Nmar_1301
+  equation: cpd00052[c] + cpd00220[c] => cpd00050[c] + cpd00096[c]
+  ec: 2.7.1.161
+- id: R08609
+  equation: cpd00359[c] <=> cpd00703[c]
+  ec: 2.5.1.-
+- id: R08639
+  name: alpha-D-glucose 1,6-phosphomutase
+  genes: Nmar_0224
+  equation: cpd00089[c] <=> cpd00079[c]
+  ec: 5.4.2.2; 5.4.2.5
+- id: R08648
+  name: pyruvate:2-oxobutanoate acetaldehydetransferase (decarboxylating)
+  genes: (Nmar_1071 and Nmar_1072)
+  equation: cpd00020[c] + cpd00094[c] => cpd00011[c] + cpd00498[c]
+  ec: 2.2.1.6
+- id: R08700
+  name: AMP phosphoribohydrolase
+  equation: cpd00002[c] + cpd11767[c] + cpd14548[c] <=> cpd00018[c] + cpd00012[c]
+    + cpd17467[c] + cpd14547[c]
+  ec: 2.8.1.4
+- id: R08701
+  name: Pyruvate:oxygen 2-oxidoreductase (phosphorylating)
+  equation: cpd00033[c] + cpd11610[c] + cpd02197[c] + cpd17467[c] <=> cpd00001[c]
+    + cpd11609[c] + cpd00087[c] + cpd17468[c]
+- id: R08702
+  name: UTP:alpha-D-glucose-1-phosphate uridylyltransferase
+  equation: cpd00007[c] + cpd00001[c] + cpd17468[c] <=> cpd00040[c] + cpd00025[c]
+    + cpd13372[c]
+  ec: 1.5.3.-
+- id: R08716
+  name: cobalt-precorrin 3 dehydrogenase
+  genes: Nmar_1752
+  equation: cpd17535[c] => cpd08369[c]
+- id: R08774
+  name: 2-methoxy-6-polyprenyl-1,4-benzoquinol methylase
+  genes: Nmar_1315
+  equation: cpd00017[c] + cpd17683[c] <=> cpd00019[c] + cpd17684[c]
+  ec: 2.1.1.201
+- id: R08924
+  name: butanoyl-CoA:carbon-dioxide ligase (ADP-forming)
+  equation: cpd00002[c] + cpd00067[c] + cpd00242[c] + cpd00120[c] => cpd00009[c]
+    + cpd00008[c] + cpd18009[c]
+  ec: 6.4.1.3
+- id: R08966
+  name: CTP:2,3-bis-O-(geranylgeranyl)-sn-glycerol-1-phosphate cytidylyltransferase
+  equation: cpd00052[c] + cpd02824[c] => cpd00012[c] + cpd18042[c]
+  ec: 2.7.7.67
+- id: R09083
+  name: 5,6-dimethylbenzimidazole synthase
+  genes: Nmar_1736
+  equation: cpd00007[c] + cpd01270[c] <=> cpd00001[c] + cpd00236[c] + cpd01997[c]
+  ec: 1.14.99.40
+- id: R09099
+  name: 5,10-methylenetetrahydromethanopterin:glycine hydroxymethyltransferase
+  genes: Nmar_1793
+  equation: cpd00054[c] + cpd00895[c] <=> cpd00001[c] + cpd00033[c] + cpd02679[c]
+  ec: 2.1.2.1
+- id: R09248
+  name: (2E,6E)-farnesyl-diphosphate:isopentenyl-diphosphate farnesyltranstransferase
+    (adding 5 isopentenyl units)
+  genes: Nmar_0287
+  equation: cpd00350[c] + (5) cpd00113[c] <=> (5) cpd00012[c] + cpd02557[c]
+  ec: 2.5.1.90
+- id: R09280
+  name: succinate-semialdehyde:NADP + oxidoreductase (CoA-acylating)
+  genes: Nmar_1608
+  equation: cpd00067[c] + cpd00078[c] + cpd00005[c] => cpd00010[c] + cpd00006[c]
+    + cpd00199[c]
+  ec: 1.2.1.76
+- id: R09281
+  name: 4-hydroxybutanoate:NADP + oxidoreductase
+  genes: (Nmar_0161 or Nmar_1110)
+  equation: cpd00006[c] + cpd00728[c] => cpd00067[c] + cpd00005[c] + cpd00199[c]
+  ec: 1.1.1.-
+- id: R09289
+  name: 3-hydroxypropionate:NADP + oxidoreductase
+  genes: Nmar_1110
+  equation: cpd00006[c] + cpd00745[c] => cpd00067[c] + cpd00005[c] + cpd00191[c]
+  ec: 1.1.1.298
+- id: R09374
+  name: 2-amino-5-formylamino-6-(5-phospho-D-ribosylamino)pyrimidin-4(3H)-one amidohydrolase
+  equation: cpd00001[c] + cpd11231[c] => cpd00047[c] + cpd00957[c]
+  ec: 3.5.1.102
+- id: R09375
+  name: 2,5-diamino-6-(5-phospho-D-ribitylamino)pyrimidin-4(3H)-one:NAD + 1'-oxidoreductase
+  genes: Nmar_1612
+  equation: cpd00067[c] + cpd00004[c] + cpd00957[c] => cpd00003[c] + cpd15807[c]
+  ec: 1.1.1.302
+- id: R09377
+  name: 2,5-diamino-6-(5-phospho-D-ribitylamino)pyrimidin-4(3H)-one 2-aminohydrolase
+  equation: cpd00001[c] + cpd15807[c] => cpd00013[c] + cpd02720[c]
+- id: R09379
+  name: 4-phosphopantoate---beta-alanine ligase
+  genes: Nmar_1719
+  equation: cpd00002[c] + cpd00085[c] + cpd00775[c] => cpd00018[c] + cpd00012[c]
+    + cpd02201[c]
+  ec: 6.3.2.36
+- id: R09397
+  name: GTP:2-phospho-L-lactate guanylyltransferase
+  genes: Nmar_0625
+  equation: cpd00038[c] + cpd15809[c] => cpd00012[c] + cpd15889[c]
+  ec: 2.7.7.68
+- id: R09398
+  name: (2S)-lactyl-2-diphospho-5'-guanosine:7,8-didemethyl-8-hydroxy-5-deazariboflavin
+    lactylphosphotransferase
+  genes: Nmar_0626
+  equation: cpd15839[c] + cpd15889[c] => cpd00126[c] + cpd15864[c]
+  ec: 2.7.8.28
+- id: R09518
+  name: methane,quinol:oxygen oxidoreductase
+  genes: Nmar_1502
+  equation: cpd00007[c] + cpd01024[c] + cpd00415[c] => cpd00001[c] + cpd00116[c]
+    + cpd00364[c]
+  ec: 1.14.18.3
+- id: R09775
+  name: LysW:L-2-aminoadipate ligase (ADP-forming)
+  genes: (Nmar_1288 and Nmar_1295)
+  equation: cpd00002[c] + cpd00705[c] + C19885[c] => cpd00009[c] + cpd00008[c] +
+    C19886[c]
+  ec: 6.3.2.-
+- id: R09776
+  name: ATP:LysW-gamma-L-alpha-aminoadipate 6-phosphotransferase
+  genes: Nmar_1290
+  equation: cpd00002[c] + C19886[c] => cpd00008[c] + C19887[c]
+  ec: 2.7.2.-
+- id: R09777
+  name: LysW-gamma-L-alpha-aminoadipate 6-semialdehyde:NADP + 6-oxidoreductase (phosphorylating)
+  genes: Nmar_1289
+  equation: cpd00067[c] + cpd00005[c] + C19887[c] => cpd00009[c] + cpd00006[c] +
+    C19888[c]
+  ec: 1.2.1.-
+- id: R09778
+  name: LysW-gamma-L-lysine:2-oxoglutarate 6-aminotransferase
+  genes: Nmar_1291
+  equation: cpd00023[c] + C19888[c] => cpd00024[c] + C19889[c]
+  ec: 2.6.1.-
+- id: R09779
+  name: LysW-gamma-L-lysine carboxypeptidase
+  genes: Nmar_1296
+  equation: cpd00001[c] + C19889[c] => cpd00039[c] + C19885[c]
+- id: R10088
+  name: D-ribose 5-phosphate,D-glyceraldehyde 3-phosphate pyridoxal 5'-phosphate-lyase
+  genes: Nmar_1479
+  equation: cpd00013[c] + cpd00102[c] + cpd00101[c] => (4) cpd00001[c] + cpd00009[c]
+    + cpd00016[c]
+  ec: 4.3.3.6
+- id: R10093
+  name: ATP:isopentenyl phosphate phosphotransferase
+  genes: Nmar_0314
+  equation: cpd00002[c] + cpd17039[c] <=> cpd00008[c] + cpd00113[c]
+  ec: 2.7.4.26
+- id: R10255
+  name: NAD + glycohydrolase
+  equation: cpd00054[c] + cpd18042[c] => cpd00067[c] + cpd00046[c] + cpd15841[c]
+  ec: 2.7.8.38
+- id: R10325
+  name: 4-hydroxyphenylpyruvate:oxygen oxidoreductase (decarboxylating)
+  equation: (8) cpd00003[c] + C20518[c] => (8) cpd00067[c] + (8) cpd00004[c] + cpd02824[c]
+  ec: 1.3.1.101
+- id: R10326
+  name: 2,3-bis-(O-phytany)l-sn-glycerol 1-phosphate:NADP + oxidoreductase
+  equation: (8) cpd00006[c] + C20518[c] => (8) cpd00067[c] + (8) cpd00005[c] + cpd02824[c]
+  ec: 1.3.1.101
+- id: R10344
+  equation: cpd00001[c] + C20567[c] => cpd03521[c]
+  ec: 3.1.4.56
+- id: R10348
+  equation: cpd00001[c] + cpd00038[c] => cpd00012[c] + cpd00047[c] + C20567[c]
+  ec: 3.5.4.39
+- id: R10409
+  equation: cpd03456[c] + cpd13049[c] <=> cpd00084[c] + cpd00081[c] + cpd13050[c]
+- id: R10561
+  name: ATP:phosphomevalonate carboxy-lyase (adding ATP; isopentenyl-phosphate-forming)
+  equation: cpd00002[c] + cpd00812[c] => cpd00011[c] + cpd00009[c] + cpd00008[c]
+    + cpd17039[c]
+  ec: 4.1.1.99
+- id: R10758
+  name: 4-hydroxybutanoate:CoA ligase (ADP-forming)
+  genes: Nmar_0206
+  equation: cpd00002[c] + cpd00010[c] + cpd00728[c] => cpd00009[c] + cpd00008[c]
+    + cpd07946[c]
+  ec: 6.2.1.-
+- id: R10782
+  name: 4-hydroxybutanoyl-CoA hydro-lyase
+  genes: Nmar_0207
+  equation: cpd07946[c] <=> cpd00001[c] + cpd00650[c]
+  ec: 4.2.1.120
+- id: R10929
+  equation: cpd00002[c] + cpd00023[c] + C19885[c] => cpd00009[c] + cpd00008[c] +
+    C20948[c]
+  ec: 6.3.2.-
+- id: R10930
+  genes: Nmar_1290
+  equation: cpd00002[c] + C20948[c] => cpd00008[c] + C20949[c]
+  ec: 2.7.2.8
+- id: R10931
+  genes: Nmar_1289
+  equation: cpd00067[c] + cpd00005[c] + C20949[c] => cpd00009[c] + cpd00006[c] +
+    C20950[c]
+  ec: 1.2.1.38
+- id: R10932
+  genes: Nmar_1291
+  equation: cpd00023[c] + C20950[c] <=> cpd00024[c] + C20951[c]
+  ec: 2.6.1.11
+- id: R10933
+  genes: Nmar_1296
+  equation: cpd00001[c] + C20951[c] => cpd00064[c] + C19885[c]
+  ec: 3.5.1.-
+- id: Trans_NH4
+  genes: (Nmar_0588 or Nmar_1698)
+  equation: cpd00013_e[c] => cpd00013[c] + cpd00067_e[c]
+- id: add_lipid1
+  equation: (8) cpd00003[c] + cpd15861[c] => (8) cpd00067[c] + (8) cpd00004[c] +
+    cpd15841[c]
+- id: add_lipid2
+  equation: cpd00121[c] + cpd18042[c] => cpd00067[c] + cpd00046[c] + cpd15844[c]
+- id: add_lipid3
+  equation: cpd00080[c] + cpd18042[c] => cpd00067[c] + cpd00046[c] + cpd15843[c]
+- id: nadh_nadph
+  equation: cpd00003[c] + cpd00005[c] <=> cpd00004[c] + cpd00006[c]
+- id: rxn05145
+  genes: (Nmar_0483 and Nmar_0481 and Nmar_0482 and Nmar_0479 and Nmar_0250)
+  equation: cpd00001[c] + cpd00002[c] + cpd00009_e[c] => (2) cpd00009[c] + cpd00008[c]
+    + cpd00067[c]
+- id: rxn05319
+  equation: cpd00001[c] => cpd00001_e[c]
+- id: rxn05467
+  equation: cpd00011_e[c] <=> cpd00011[c]
+- id: rxn05468
+  equation: cpd00007_e[c] <=> cpd00007[c]
+- id: rxn05493
+  equation: cpd00067_e[c] + cpd00024_e[c] => cpd00067[c] + cpd00024[c]
+- id: rxn05616
+  genes: (Nmar_1006 or Nmar_1156 or Nmar_1662 or Nmar_1371 or Nmar_1130)
+  equation: cpd00254[c] <=> cpd00254_e[c]
+- id: rxn05651
+  equation: cpd00067_e[c] + cpd00048_e[c] => cpd00067[c] + cpd00048[c]
+- id: rxn08013
+  name: 5'-deoxyadenosine nuclosidase
+  genes: Nmar_1401
+  equation: cpd00001[c] + cpd03091[c] <=> cpd00128[c] + cpd15380[c]
+  ec: 2.4.2.28
+- id: rxn08966
+  equation: cpd00659[c] => cpd00659_e[c]
+- id: rxn09008
+  equation: cpd00418[c] => cpd00418_e[c]
+- id: rxn10042
+  name: ATP synthase (four protons for one ATP)
+  genes: (Nmar_1688 and Nmar_1689 and Nmar_1690 and Nmar_1691 and Nmar_1692 and Nmar_1693)
+  equation: cpd00009[c] + cpd00008[c] + (4) cpd00067_e[c] => cpd00001[c] + cpd00002[c]
+    + (3) cpd00067[c]
+- id: rxn10441
+  name: archaetidylglycerol hydrogenase
+  equation: (8) cpd00067[c] + (8) cpd00005[c] + cpd15842[c] => (8) cpd00006[c] +
+    cpd15859[c]
+- id: rxn10442
+  name: archaetidylinositol hydrogenase
+  equation: (8) cpd00067[c] + (8) cpd00005[c] + cpd15844[c] => (8) cpd00006[c] +
+    cpd15860[c]
+- id: rxn10474
+  genes: Nmar_1006
+  equation: cpd00149[c] <=> cpd00149_e[c]
+- id: rxn10480
+  equation: cpd00204_e[c] <=> cpd00204[c]
+- id: rxn10487
+  name: digeranyl-sn-glycerol-1-phospho-3'-sn-glycerol phosphatase
+  equation: cpd00001[c] + cpd15843[c] => cpd00009[c] + cpd15842[c]
+- id: rxn10499
+  genes: Nmar_0592
+  equation: cpd00868[c] + cpd00001[c] + (2) cpd00006[c] + cpd02882[c] => (2) cpd00067[c]
+    + cpd00013[c] + (2) cpd00005[c] + cpd00180[c] + cpd15839[c]
+- id: rxn10525
+  name: gamma-F420-0:gamma-L-glutamate ligase
+  genes: Nmar_0667
+  equation: cpd00023[c] + cpd00038[c] + cpd15864[c] <=> cpd00009[c] + cpd00067[c]
+    + cpd00031[c] + cpd15865[c]
+- id: rxn10526
+  name: gamma-F420-1:gamma-L-glutamate ligase
+  genes: Nmar_0667
+  equation: cpd00023[c] + cpd00038[c] + cpd15865[c] <=> cpd00009[c] + cpd00067[c]
+    + cpd00031[c] + cpd15866[c]
+- id: rxn10527
+  name: gamma-F420-2:gamma-L-glutamate ligase
+  equation: cpd00023[c] + cpd00038[c] + cpd15866[c] <=> cpd00009[c] + cpd00067[c]
+    + cpd00031[c] + cpd15868[c]
+- id: rxn10823
+  equation: cpd00075[c] => cpd00075_e[c]
+- id: rxn10826
+  equation: cpd00242_e[c] <=> cpd00242[c]
+- id: rxn10832
+  equation: cpd00010_e[c] => cpd00010[c]
+- id: rxn10963
+  equation: cpd00001[c] + cpd00002[c] + cpd10515_e[c] => cpd00009[c] + cpd00008[c]
+    + cpd00067[c] + cpd10515[c]
+- id: rxn11007
+  name: 5,10-Methylenetetrahydrofolate:dUMP C-methyltransferase
+  equation: cpd00299[c] + cpd00125[c] + cpd01270[c] => cpd00298[c] + cpd00087[c]
+    + cpd00050[c]
+  ec: 2.1.1.45
+- id: rxn13300
+  name: glycogen synthase (UDPGlc)
+  equation: cpd00026[c] => cpd00014[c] + cpd00067[c] + cpd00155[c]
+- id: rxn13892
+  genes: (Nmar_0250 or Nmar_0873 or Nmar_0875)
+  equation: cpd00001[c] + cpd00002[c] + cpd04099_e[c] => cpd00009[c] + cpd00008[c]
+    + cpd00067[c] + cpd04099[c]

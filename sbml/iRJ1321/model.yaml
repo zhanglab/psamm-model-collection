@@ -1,0 +1,27 @@
+name: iRJ1321_auto
+biomass: Biomass_NanoG_auto
+default_flux_limit: 1000
+compartments:
+- id: c
+  adjacent_to:
+  - m
+  - h
+  - e
+  name: Cytoplasm
+- id: e
+  adjacent_to: c
+  name: Extracellular
+- id: h
+  adjacent_to: c
+  name: Chloroplast
+- id: m
+  adjacent_to: c
+  name: Mitochondrion
+compounds:
+- include: compounds.yaml
+reactions:
+- include: reactions.yaml
+exchange:
+- include: exchange.yaml
+limits:
+- include: limits.yaml
