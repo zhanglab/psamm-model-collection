@@ -1,0 +1,41 @@
+biomass: DM_biomass_c
+default_flux_limit: 1000
+compartments:
+- id: c
+  adjacent_to:
+  - m
+  - x
+  - h
+  - e
+  name: Cytoplasm
+- id: e
+  adjacent_to: c
+  name: Extracellular space
+- id: h
+  adjacent_to:
+  - c
+  - m
+  - x
+  - u
+  name: Chloroplast
+- id: m
+  adjacent_to:
+  - c
+  - h
+  name: Mitochondrion
+- id: u
+  adjacent_to: h
+  name: Thylakoid lumen
+- id: x
+  adjacent_to:
+  - c
+  - h
+  name: Peroxisome
+compounds:
+- include: compounds.yaml
+reactions:
+- include: reactions.yaml
+exchange:
+- include: exchange.yaml
+limits:
+- include: limits.yaml

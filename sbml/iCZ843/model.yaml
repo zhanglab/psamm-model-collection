@@ -1,0 +1,43 @@
+biomass: Biomass_Cvu_hetero-
+default_flux_limit: 1000
+compartments:
+- id: c
+  adjacent_to:
+  - h
+  - x
+  - u
+  - m
+  - e
+  name: Cytoplasm
+- id: e
+  adjacent_to:
+  - u
+  - h
+  - c
+  name: Extracellular
+- id: h
+  adjacent_to:
+  - u
+  - c
+  - e
+  name: Chloroplast
+- id: m
+  adjacent_to: c
+  name: Mitochondrion
+- id: u
+  adjacent_to:
+  - h
+  - c
+  - e
+  name: Thylakoid
+- id: x
+  adjacent_to: c
+  name: Glyoxysome
+compounds:
+- include: compounds.yaml
+reactions:
+- include: reactions.yaml
+exchange:
+- include: exchange.yaml
+limits:
+- include: limits.yaml
