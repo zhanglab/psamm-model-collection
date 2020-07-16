@@ -1,0 +1,4673 @@
+- id: mpqRxn001
+  name: phosphoglucomutase (pgm)
+  genes: MPQ_0865 or MPQ_0867
+  equation: G6P[c] <=> G1P[c]
+  subsystem: Carbohydrate metabolism
+  ec: 5.4.2.2
+- id: mpqRxn002
+  name: glucose-6-phosphate isomerase (pgi)
+  genes: MPQ_1344 or MPQ_0389
+  equation: G6P[c] <=> F6P[c]
+  subsystem: Carbohydrate metabolism
+  ec: 5.3.1.9
+- id: mpqRxn003
+  name: glucokinase (glk)
+  genes: MPQ_1349
+  equation: ATP[c] + GLC[c] => G6P[c] + ADP[c] + H[c]
+  subsystem: Carbohydrate metabolism
+  ec: 2.7.1.2
+- id: mpqRxn004
+  name: 'fructose-1,6-bisphosphatase (glpX) '
+  genes: MPQ_1862 or MPQ_2127
+  equation: FDP[c] + H2O[c] => F6P[c] + PI[c]
+  subsystem: Carbohydrate metabolism
+  ec: 3.1.3.11
+- id: mpqRxn005
+  name: fructose-bisphosphate aldolase (fbaB)
+  genes: MPQ_0509
+  equation: FDP[c] <=> T3P2[c] + T3P1[c]
+  subsystem: Carbohydrate metabolism
+  ec: 4.1.2.13
+- id: mpqRxn006
+  name: triosephosphate isomerase (TIM)
+  genes: MPQ_0702
+  equation: T3P1[c] <=> T3P2[c]
+  subsystem: Carbohydrate metabolism
+  ec: 5.3.1.1
+- id: mpqRxn007
+  name: glyceraldehyde 3-phosphate dehydrogenase (gapA)
+  genes: MPQ_0506
+  equation: PI[c] + T3P1[c] + NAD[c] <=> H[c] + 13PDG[c] + NADH[c]
+  subsystem: Carbohydrate metabolism
+  ec: 1.2.1.12
+- id: mpqRxn008
+  name: phosphoglycerate kinase (pgk)
+  genes: MPQ_0507
+  equation: ADP[c] + 13PDG[c] <=> ATP[c] + 3PG[c]
+  subsystem: Carbohydrate metabolism
+  ec: 2.7.2.3
+- id: mpqRxn009
+  name: 2,3-bisphosphoglycerate-independent phosphoglycerate mutase (gpm)
+  genes: MPQ_0576
+  equation: 2PG[c] <=> 3PG[c]
+  subsystem: Carbohydrate metabolism
+  ec: 5.4.2.12
+- id: mpqRxn010
+  name: enolase (eno)
+  genes: MPQ_0512 or MPQ_0897
+  equation: 2PG[c] <=> H2O[c] + PEP[c]
+  subsystem: Carbohydrate metabolism
+  ec: 4.2.1.11
+- id: mpqRxn011
+  name: pyruvate kinase (pyk)
+  genes: MPQ_0508
+  equation: ADP[c] + H[c] + PEP[c] => ATP[c] + PYR[c]
+  subsystem: Carbohydrate metabolism
+  ec: 2.7.1.40
+- id: mpqRxn012
+  name: pyruvate carboxylase (pyc)
+  genes: MPQ_1465 and MPQ_1466
+  equation: ATP[c] + PYR[c] + HCO3[c] => ADP[c] + H[c] + PI[c] + OA[c]
+  subsystem: Carbohydrate metabolism
+  ec: 6.4.1.1
+- id: mpqRxn013
+  name: pyruvate dehydrogenase complex
+  genes: MPQ_0690 and MPQ_0691 and MPQ_0692
+  equation: NAD[c] + PYR[c] + COA[c] => NADH[c] + CO2[c] + ACCOA[c]
+  subsystem: Carbohydrate metabolism
+- id: mpqRxn014
+  name: citrate synthase (gltA)
+  genes: MPQ_0064
+  equation: H2O[c] + OA[c] + ACCOA[c] <=> H[c] + COA[c] + CIT[c]
+  subsystem: Carbohydrate metabolism
+  ec: 2.3.3.16
+- id: mpqRxn015
+  name: aconitate hydratase (acnA)
+  genes: MPQ_1038
+  equation: CIT[c] <=> ICIT[c]
+  subsystem: Carbohydrate metabolism
+  ec: 4.2.1.3
+- id: mpqRxn016
+  name: isocitrate dehydrogenase (icd)
+  genes: MPQ_0615
+  equation: ICIT[c] + NADP[c] <=> CO2[c] + AKG[c] + NADPH[c]
+  subsystem: Carbohydrate metabolism
+  ec: 1.1.1.42
+- id: mpqRxn017
+  name: succinyl-CoA synthetase
+  genes: MPQ_0945 and MPQ_0944
+  equation: ATP[c] + COA[c] + SUCC[c] <=> ADP[c] + PI[c] + SUCCOA[c]
+  subsystem: Carbohydrate metabolism
+  ec: 6.2.1.5
+- id: mpqRxn018
+  name: fumarate hydratase (fumC)
+  genes: MPQ_0871
+  equation: H2O[c] + FUM[c] <=> MAL[c]
+  subsystem: Carbohydrate metabolism
+  ec: 4.2.1.2
+- id: mpqRxn019
+  name: glucose 1-dehydrogenase (gdh)
+  genes: MPQ_2164
+  equation: GLC[c] + PQQ[c] => PQQH2[c] + GLCN15LAC[c]
+  subsystem: Carbohydrate metabolism
+  ec: 1.1.1.118
+- id: mpqRxn020
+  name: glucose-6-phosphate 1-dehydrogenase (zwf)
+  genes: MPQ_1148
+  equation: G6P[c] + NADP[c] => H[c] + NADPH[c] + D6PGL[c]
+  subsystem: Carbohydrate metabolism
+  ec: 1.1.1.49
+- id: mpqRxn021
+  name: glucose-6-phosphate 1-dehydrogenase
+  genes: MPQ_1148
+  equation: G6P[c] + NAD[c] => H[c] + NADH[c] + D6PGL[c]
+  subsystem: Carbohydrate metabolism
+  ec: 1.1.1.49
+- id: mpqRxn022
+  name: 6-phosphogluconolactonase (pgl)
+  genes: MPQ_1150
+  equation: H2O[c] + D6PGL[c] => H[c] + D6PGC[c]
+  subsystem: Carbohydrate metabolism
+  ec: 3.1.1.31
+- id: mpqRxn023
+  name: phosphogluconate dehydrogenase (gnd)
+  genes: MPQ_1149
+  equation: NAD[c] + D6PGC[c] => NADH[c] + CO2[c] + RL5P[c]
+  subsystem: Carbohydrate metabolism
+  ec: 1.1.1.44
+- id: mpqRxn024
+  name: 6-phospho-3-hexuloisomerase (hxlB)
+  genes: MPQ_1560 or MPQ_1561
+  equation: F6P[c] <=> ARAHE6P[c]
+  subsystem: Carbohydrate metabolism
+  ec: 5.3.1.27
+- id: mpqRxn025
+  name: 3-hexulose-6-phosphate synthase (hxlA)
+  genes: MPQ_0281 or MPQ_1561
+  equation: ARAHE6P[c] <=> RL5P[c] + FALD[c]
+  subsystem: Carbohydrate metabolism
+  ec: 4.1.2.43
+- id: mpqRxn026
+  name: transketolase (tktA, tktB)
+  genes: MPQ_0505
+  equation: XUL5P[c] + E4P[c] <=> F6P[c] + T3P1[c]
+  subsystem: Carbohydrate metabolism
+  ec: 2.2.1.1
+- id: mpqRxn027
+  name: transaldolase (talA, talB)
+  genes: MPQ_1562
+  equation: T3P1[c] + S7P[c] <=> F6P[c] + E4P[c]
+  subsystem: Carbohydrate metabolism
+  ec: 2.2.1.2
+- id: mpqRxn028
+  name: transketolase (tktA, tktB)
+  genes: MPQ_0505
+  equation: XUL5P[c] + R5P[c] <=> T3P1[c] + S7P[c]
+  subsystem: Carbohydrate metabolism
+  ec: 2.2.1.1
+- id: mpqRxn029
+  name: ribulose-phosphate 3-epimerase (rpe)
+  genes: MPQ_2463
+  equation: RL5P[c] <=> XUL5P[c]
+  subsystem: Carbohydrate metabolism
+  ec: 5.1.3.1
+- id: mpqRxn030
+  name: ribose 5-phosphate isomerase A (rpiA)
+  genes: MPQ_0175 or MPQ_1201
+  equation: R5P[c] <=> RL5P[c]
+  subsystem: Carbohydrate metabolism
+  ec: 5.3.1.6
+- id: mpqRxn031
+  name: phosphoglucomutase(pgm) / phosphopentomutase(deoB)
+  genes: MPQ_0865 or MPQ_0867
+  equation: R5P[c] <=> R1P[c]
+  subsystem: Carbohydrate metabolism
+  ec: 5.4.2.2
+- id: mpqRxn032
+  name: arabinose 5-phosphate isomerase
+  genes: MPQ_0218
+  equation: RL5P[c] <=> A5P[c]
+  subsystem: Carbohydrate metabolism
+  ec: 5.3.1.13
+- id: mpqRxn033
+  name: 6-phosphogluconate dehydratase (edd)
+  genes: MPQ_1911
+  equation: D6PGC[c] => H2O[c] + KDPG[c]
+  subsystem: Carbohydrate metabolism
+  ec: 4.2.1.12
+- id: mpqRxn034
+  name: 2-dehydro-3-deoxyphosphogluconate aldolase (eda)
+  genes: MPQ_1910
+  equation: KDPG[c] => T3P1[c] + PYR[c]
+  subsystem: Carbohydrate metabolism
+  ec: 4.1.2.14
+- id: mpqRxn035
+  name: UDPglucose 6-dehydrogenase
+  genes: MPQ_1725
+  equation: H2O[c] + (2) NAD[c] + UDPG[c] => (3) H[c] + (2) NADH[c] + UDPGTE[c]
+  subsystem: Carbohydrate metabolism
+  ec: 1.1.1.22
+- id: mpqRxn036
+  name: mannose-6-phosphate isomerase (manA)
+  genes: MPQ_1827
+  equation: F6P[c] <=> MAN6P[c]
+  subsystem: Carbohydrate metabolism
+  ec: 5.3.1.8
+- id: mpqRxn037
+  name: phosphomannomutase (manB)
+  genes: MPQ_0867
+  equation: MAN6P[c] <=> MAN1P[c]
+  subsystem: Carbohydrate metabolism
+  ec: 5.4.2.8
+- id: mpqRxn038
+  name: mannose-1-phosphate guanylyltransferase
+  genes: MPQ_1827
+  equation: H[c] + MAN1P[c] + GTP[c] <=> GDPMAN[c] + PPI[c]
+  subsystem: Carbohydrate metabolism
+  ec: 2.7.7.13
+- id: mpqRxn039
+  name: GDPmannose 4,6-dehydratase(gmd)
+  genes: MPQ_0112 or MPQ_0116
+  equation: GDPMAN[c] => H2O[c] + GDPDDMAN[c]
+  subsystem: Carbohydrate metabolism
+  ec: 4.2.1.47
+- id: mpqRxn040
+  name: fructose-bisphosphate aldolase
+  genes: MPQ_0509
+  equation: F1P[c] <=> T3P2[c] + GLYAL[c]
+  subsystem: Carbohydrate metabolism
+  ec: 4.1.2.13
+- id: mpqRxn041
+  name: 1-phosphofructokinase
+  genes: MPQ_1859
+  equation: ATP[c] + F1P[c] => ADP[c] + H[c] + FDP[c]
+  subsystem: Carbohydrate metabolism
+  ec: 2.7.1.56
+- id: mpqRxn042
+  name: fructokinase(scrK)
+  genes: MPQ_2705
+  equation: ATP[c] + FRU[c] => F6P[c] + ADP[c] + H[c]
+  subsystem: Carbohydrate metabolism
+  ec: 2.7.1.4
+- id: mpqRxn043
+  name: L-sorbose/L-sorbosone dehydrogenase
+  genes: MPQ_0130
+  equation: PQQ[c] + SOR[c] + FERO[c] => PQQH2[c] + SON[c] + FERI[c]
+  subsystem: Carbohydrate metabolism
+  ec: 1.1.99.32
+- id: mpqRxn044
+  name: L-sorbose/L-sorbosone dehydrogenase
+  genes: MPQ_0130
+  equation: H2O[c] + PQQ[c] + FERO[c] + SON[c] => H[c] + PQQH2[c] + FERI[c] + 2KLG[c]
+  subsystem: Carbohydrate metabolism
+  ec: 1.1.99.32
+- id: mpqRxn045
+  name: aldehyde dehydrogenase (NAD+)
+  genes: MPQ_1244
+  equation: (2) H2O[c] + NAD[c] + GLUAC[c] => (3) H[c] + NADH[c] + GLUCARATE[c]
+  subsystem: Carbohydrate metabolism
+  ec: 1.2.1.3
+- id: mpqRxn046
+  name: retinol dehydrogenase
+  genes: MPQ_1149
+  equation: H[c] + NADPH[c] + GALUNT[c] <=> NADP[c] + LGALNT[c]
+  subsystem: Carbohydrate metabolism
+  ec: 1.1.1.-
+- id: mpqRxn047
+  name: L-fuculose phosphate aldolase
+  genes: MPQ_0893
+  equation: FUC1P[c] <=> T3P2[c] + LACAL[c]
+  subsystem: Carbohydrate metabolism
+  ec: 4.1.2.17
+- id: mpqRxn048
+  name: UTP-glucose-1-phosphate uridylyltransferase(galU, galF)
+  genes: MPQ_1824
+  equation: G1P[c] + H[c] + UTP[c] <=> UDPG[c] + PPI[c]
+  subsystem: Carbohydrate metabolism
+  ec: 2.7.7.9
+- id: mpqRxn049
+  name: glucose-1-phosphate adenylyltransferase (glgC)
+  genes: MPQ_1346
+  equation: G1P[c] + ATP[c] + H[c] => PPI[c] + ADPGLC[c]
+  subsystem: Carbohydrate metabolism
+  ec: 2.7.7.27
+- id: mpqRxn050
+  name: glycogen synthase (ADPGlc)
+  genes: MPQ_1512
+  equation: ADPGLC[c] => ADP[c] + H[c] + GLYCOGEN[c]
+  subsystem: Carbohydrate metabolism
+  ec: 2.4.1.21
+- id: mpqRxn051
+  name: starch synthase
+  genes: MPQ_1512
+  equation: ADPGLC[c] + AMYLS1[c] => ADP[c] + H[c] + AMYLS2[c]
+  subsystem: Carbohydrate metabolism
+  ec: 2.4.1.21
+- id: mpqRxn052
+  name: 1,4-alpha-glucan branching enzyme
+  genes: MPQ_1345
+  equation: AMYLS2[c] => STAR[c]
+  subsystem: Carbohydrate metabolism
+  ec: 2.4.1.18
+- id: mpqRxn053
+  name: alpha-amylase
+  genes: MPQ_2504
+  equation: STAR[c] => DEX[c] + STAR1[c]
+  subsystem: Carbohydrate metabolism
+  ec: 3.2.1.1
+- id: mpqRxn054
+  name: starch phosphorylase
+  genes: MPQ_1765
+  equation: PI[c] + STAR[c] => G1P[c] + AMYLS1[c]
+  subsystem: Carbohydrate metabolism
+  ec: 2.4.1.1
+- id: mpqRxn055
+  name: cellulase
+  genes: MPQ_0042
+  equation: CELLOB[e] => H2O[e] + (2) 13GLUCAN[e]
+  subsystem: Carbohydrate metabolism
+  ec: 3.2.1.4
+- id: mpqRxn056
+  name: glucosamine-fructose-6-phosphate aminotransferase (isomerizing) (glmS)
+  genes: MPQ_2755
+  equation: F6P[c] + GLN_c[c] => GLU[c] + GA6P[c]
+  subsystem: Carbohydrate metabolism
+  ec: 2.6.1.16
+- id: mpqRxn057
+  name: phosphomannomutase (glmM)
+  genes: MPQ_1881
+  equation: GA6P[c] <=> GA1P[c]
+  subsystem: Carbohydrate metabolism
+  ec: 5.4.2.10
+- id: mpqRxn058
+  name: glucosamine-1-phosphate N-acetyltransferase
+  genes: MPQ_2756
+  equation: ACCOA[c] + GA1P[c] => H[c] + COA[c] + NAGA1P[c]
+  subsystem: Carbohydrate metabolism
+  ec: 2.3.1.157
+- id: mpqRxn059
+  name: bifunctional UDP-N-acetylglucosamine pyrophosphorylase / Glucosamine-1-phosphate
+    N-acetyltransferase (glmU)
+  genes: MPQ_2756
+  equation: H[c] + UTP[c] + NAGA1P[c] => PPI[c] + UDPNAG[c]
+  subsystem: Carbohydrate metabolism
+  ec: 2.7.7.23
+- id: mpqRxn060
+  name: UDP-N-acetylglucosamine 1-carboxyvinyltransferase (murA)
+  genes: MPQ_0277
+  equation: PEP[c] + UDPNAG[c] => PI[c] + UACCG[c]
+  subsystem: Carbohydrate metabolism
+  ec: 2.5.1.7
+- id: mpqRxn061
+  name: UDP-N-acetyl-D-glucosamine 4-epimerase
+  genes: peg.97 or peg.1762
+  equation: UDPNAG[c] <=> UDPNAGA[c]
+  subsystem: Carbohydrate metabolism
+  ec: 5.1.3.7
+- id: mpqRxn062
+  name: UDPglucose 4-epimerase
+  genes: MPQ_0106 or MPQ_1825 or peg.97 or peg.1762
+  equation: UDPG[c] <=> UDPGAL[c]
+  subsystem: Carbohydrate metabolism
+  ec: 5.1.3.2
+- id: mpqRxn063
+  name: beta-N-acetyl-D-glucosaminidase
+  genes: MPQ_1010
+  equation: H2O[c] + CHIB[c] => (2) NAG[c]
+  subsystem: Carbohydrate metabolism
+  ec: 3.2.1.52
+- id: mpqRxn064
+  name: malate dehydrogenase (oxaloacetate-decarboxylating, NAD+) (maeB)
+  genes: MPQ_2154
+  equation: NADP[c] + MAL[c] => PYR[c] + CO2[c] + NADPH[c]
+  subsystem: Carbohydrate metabolism
+  ec: 1.1.1.40
+- id: mpqRxn065
+  name: pyruvate, water dikinase
+  genes: MPQ_2170
+  equation: ATP[c] + H2O[c] + PYR[c] => (2) H[c] + PI[c] + PEP[c] + AMP[c]
+  subsystem: Carbohydrate metabolism
+  ec: 2.7.9.2
+- id: mpqRxn066
+  name: phosphoenolpyruvate carboxylase
+  genes: MPQ_1509
+  equation: H2O[c] + PEP[c] + CO2[c] => H[c] + PI[c] + OA[c]
+  subsystem: Carbohydrate metabolism
+  ec: 4.1.1.31
+- id: mpqRxn067
+  name: aldehyde dehydrogenase (NAD+)
+  genes: MPQ_1244
+  equation: H2O[c] + NAD[c] + ACAL[c] => (2) H[c] + NADH[c] + AC[c]
+  subsystem: Carbohydrate metabolism
+  ec: 1.2.1.3
+- id: mpqRxn068
+  name: acetyl-CoA synthetase (acs)
+  genes: MPQ_1644
+  equation: ATP[c] + COA[c] + AC[c] => ACCOA[c] + PPI[c] + AMP[c]
+  subsystem: Carbohydrate metabolism
+  ec: 6.2.1.1
+- id: mpqRxn069
+  name: lactoylglutathione lyase (gloA)
+  genes: MPQ_1931
+  equation: RGT[c] + MTHGXL[c] <=> LGT[c]
+  subsystem: Carbohydrate metabolism
+  ec: 4.4.1.5
+- id: mpqRxn070
+  name: hydroxyacylglutathione hydrolase (gloB)
+  genes: MPQ_1526
+  equation: H2O[c] + LGT[c] => H[c] + RGT[c] + LAC[c]
+  subsystem: Carbohydrate metabolism
+  ec: 3.1.2.6
+- id: mpqRxn071
+  name: 2-dehydro-3-deoxyphosphogluconate aldolase / 4-hydroxy-2-oxoglutarate aldolase
+    (eda)
+  genes: MPQ_1910
+  equation: PYR[c] + GLX[c] <=> HYOXGLU[c]
+  subsystem: Carbohydrate metabolism
+  ec: 4.1.3.16
+- id: mpqRxn072
+  name: glycine cleavage system
+  genes: MPQ_0690 or MPQ_2414
+  equation: NADH[c] + CO2[c] + METTHF[c] + NH3[c] <=> NAD[c] + GLY[c] + THF[c]
+  subsystem: Carbohydrate metabolism
+  ec: 1.8.1.4  2.1.2.10
+- id: mpqRxn073
+  name: aldehyde dehydrogenase (glyoxylate, NAD)
+  genes: MPQ_1244
+  equation: H2O[c] + NAD[c] + GLX[c] <=> (2) H[c] + NADH[c] + OXAL[c]
+  subsystem: Carbohydrate metabolism
+  ec: 1.2.1.3
+- id: mpqRxn074
+  name: acetyl-CoA synthetase (acs)
+  genes: MPQ_1644
+  equation: ATP[c] + COA[c] + PROP[c] => PPI[c] + AMP[c] + PROPCOA[c]
+  subsystem: Carbohydrate metabolism
+  ec: 6.2.1.1
+- id: mpqRxn075
+  name: polyhydroxyalkanoate synthase
+  genes: MPQ_0186
+  equation: (3) RHYBC[c] <=> (3) COA[c] + POLHYBU[c]
+  subsystem: Carbohydrate metabolism
+  ec: 2.3.1.-
+- id: mpqRxn076
+  name: acetolactate synthase
+  genes: MPQ_0635 and MPQ_0634
+  equation: H[c] + (2) PYR[c] => CO2[c] + ACLAC[c]
+  subsystem: Carbohydrate metabolism
+  ec: 2.2.1.6
+- id: mpqRxn077
+  name: myo-inositol-1(or 4)-monophosphatase(suhB)
+  genes: MPQ_1846
+  equation: H2O[c] + MI4P[c] => PI[c] + MYOI[c]
+  subsystem: Carbohydrate metabolism
+  ec: 3.1.3.25
+- id: mpqRxn078
+  name: myo-inositol-1(or 4)-monophosphatase(suhB)
+  genes: MPQ_1846
+  equation: H2O[c] + MI3P[c] => PI[c] + MYOI[c]
+  subsystem: Carbohydrate metabolism
+  ec: 3.1.3.25
+- id: mpqRxn079
+  name: myo-inositol-1(or 4)-monophosphatase(suhB)
+  genes: MPQ_1846
+  equation: H2O[c] + MI1P[c] => PI[c] + MYOI[c]
+  subsystem: Carbohydrate metabolism
+  ec: 3.1.3.25
+- id: mpqRxn080
+  name: phosphoglycolate phosphatase
+  genes: MPQ_1677 or MPQ_2462
+  equation: H2O[c] + 2PPG[c] => PI[c] + GLYA[c]
+  subsystem: Carbohydrate metabolism
+  ec: 3.1.3.18
+- id: mpqRxn081
+  name: glyoxalase/bleomycin resistance protein/dioxygenase
+  genes: MPQ_1213 or MPQ_1255 or MPQ_2291
+  equation: H2O[c] + MTHGXL[c] => H[c] + LAC[c]
+  subsystem: Carbohydrate metabolism
+  ec: 4.2.1.130
+- id: mpqRxn082
+  name: alcohol dehydrogenase (ethanol)
+  genes: MPQ_2636 or MPQ_0573
+  equation: NAD[c] + ETOL[c] <=> H[c] + NADH[c] + ACAL[c]
+  subsystem: Carbohydrate metabolism
+  ec: 1.1.1.1
+- id: mpqRxn083
+  name: Aldehyde reductase YahK
+  genes: MPQ_0552
+  equation: NADP[c] + ETOL[c] <=> H[c] + NADPH[c] + ACAL[c]
+  subsystem: Carbohydrate metabolism
+  ec: 1.1.1.2
+- id: mpqRxn084
+  name: 'Quinohemoprotein ethanol dehydrogenase type-1 '
+  genes: MPQ_1388
+  equation: PQQ[c] + ETOL[c] => PQQH2[c] + ACAL[c]
+  subsystem: Carbohydrate metabolism
+  ec: 1.1.9.1
+- id: mpqRxn085
+  name: alcohol dehydrogenase (propanol)
+  genes: MPQ_2636 or MPQ_0573
+  equation: NAD[c] + PPOL[c] <=> H[c] + NADH[c] + PPAL[c]
+  subsystem: Carbohydrate metabolism
+  ec: 1.1.1.1
+- id: mpqRxn086
+  name: succinate dehyrdogenase
+  equation: FADH2[c] + Q8[c] => FAD[c] + Q8H2[c]
+  subsystem: Energy metabolism
+- id: mpqRxn087
+  name: pqq redutase
+  equation: PQQH2[c] + Q8[c] => PQQ[c] + Q8H2[c]
+  subsystem: Energy metabolism
+- id: mpqRxn088
+  name: Electron-transferring-flavoprotein dehydrogenase
+  genes: MPQ_1946
+  equation: FADH2[c] + Q8[c] => H[c] + FAD[c] + Q8H2[c]
+  subsystem: Energy metabolism
+  ec: 1.5.5.1
+- id: mpqRxn089
+  name: NADPH dehydrogenase
+  genes: MPQ_0870
+  equation: H[c] + NADPH[c] + Q8[c] => NADP[c] + Q8H2[c]
+  subsystem: Energy metabolism
+  ec: 1.6.99.1
+- id: mpqRxn090
+  name: malate dehydrogenase
+  genes: MPQ_0010
+  equation: MAL[c] + FAD[c] => OA[c] + FADH2[c]
+  subsystem: Energy metabolism
+  ec: 1.1.5.4
+- id: mpqRxn091
+  name: NADH dehydrogenase (ubiquinone-8 ),
+  genes: MPQ_2302
+  equation: H[c] + NADH[c] + Q8[c] => NAD[c] + Q8H2[c]
+  subsystem: Energy metabolism
+  ec: 1.6.99.3
+- id: mpqRxn092
+  name: ubiquinol-cytochrome c reductase
+  genes: MPQ_0296 and MPQ_0297 and MPQ_0298
+  equation: (2) FERI[c] + Q8H2[c] => (2) FERO[c] + Q8[c] + (2) H[e]
+  subsystem: Energy metabolism
+  ec: 1.10.2.2
+- id: mpqRxn093
+  name: cytochrome bd-I oxidase
+  genes: (MPQ_0556 or MPQ_1443) and (MPQ_0555 or MPQ_1442)
+  equation: (4) H[c] + (2) Q8H2[c] + O2[c] => (2) H2O[c] + (2) Q8[c] + (4) H[e]
+  subsystem: Energy metabolism
+  ec: 1.10.3.-
+- id: mpqRxn094
+  name: cytochrome-c oxidase (H+/e- = 2)
+  genes: MPQ_2093 and MPQ_2092 and MPQ_2090
+  equation: (6) H[c] + (2) FERO[c] + (0.5) O2[c] => H2O[c] + (2) FERI[c] + (4) H[e]
+  subsystem: Energy metabolism
+  ec: 1.9.3.1
+- id: mpqRxn095
+  name: cytochrome-c oxidase
+  genes: MPQ_1283 and MPQ_1286 and MPQ_1287
+  equation: (4) FERO[c] + O2[c] => (2) H2O[c] + (4) FERI[c]
+  subsystem: Energy metabolism
+  ec: 1.9.3.1
+- id: mpqRxn096
+  name: NADH-quinone oxidoreductase (ubiquinone-8 & 4 protons)
+  genes: MPQ_0705 and MPQ_0707 and MPQ_0708 and MPQ_0709 and MPQ_0710 and MPQ_0711
+    and MPQ_0713 and MPQ_0714 and MPQ_0715 and MPQ_0716 and MPQ_0717 and MPQ_0718
+    and MPQ_0719 and MPQ_0720
+  equation: (5) H[c] + NADH[c] + Q8[c] => NAD[c] + Q8H2[c] + (4) H[e]
+  subsystem: Energy metabolism
+  ec: 1.6.5.3
+- id: mpqRxn097
+  name: ATP synthase (four protons for one ATP)
+  genes: MPQ_2760 and MPQ_2758 and MPQ_2759 and MPQ_2761 and MPQ_2757 and MPQ_2764
+    and MPQ_2762
+  equation: ADP[c] + PI[c] + (4) H[e] => ATP[c] + (3) H[c] + H2O[c]
+  subsystem: Energy metabolism
+  ec: 3.6.3.14
+- id: mpqRxn098
+  name: inorganic pyrophosphatase (ppa)
+  genes: MPQ_0513
+  equation: H2O[c] + PPI[c] => H[c] + (2) PI[c]
+  subsystem: Energy metabolism
+  ec: 3.6.1.1
+- id: mpqRxn099
+  name: polyphosphate kinase (ppk)
+  genes: MPQ_0178
+  equation: ATP[c] + PPI[c] <=> ADP[c] + PPPI[c]
+  subsystem: Energy metabolism
+  ec: 2.7.4.1
+- id: mpqRxn100
+  name: polyphosphate kinase (ppk)
+  genes: MPQ_0178
+  equation: ATP[c] + PI[c] => ADP[c] + PPI[c]
+  subsystem: Energy metabolism
+  ec: 2.7.4.1
+- id: mpqRxn101
+  name: alcohol dehydrogenase (methanol)
+  genes: MPQ_2636 or MPQ_0573
+  equation: NAD[c] + METHOL[c] => H[c] + NADH[c] + FALD[c]
+  subsystem: Energy metabolism
+  ec: 1.1.1.1
+- id: mpqRxn102
+  name: catalase
+  genes: MPQ_0554 or MPQ_2149 or MPQ_2614
+  equation: METHOL[c] + H2O2[c] => (2) H2O[c] + FALD[c]
+  subsystem: Energy metabolism
+  ec: 1.11.1.6
+- id: mpqRxn103
+  name: formaldehyde-activating enzyme
+  genes: MPQ_1559
+  equation: FALD[c] + THMPT[c] => H2O[c] + MLTHMPT[c]
+  subsystem: Energy metabolism
+  ec: 4.2.1.147
+- id: mpqRxn104
+  name: methylene-tetrahydromethanopterin dehydrogenase
+  genes: MPQ_1567
+  equation: NADP[c] + MLTHMPT[c] => NADPH[c] + MTHMPT[c]
+  subsystem: Energy metabolism
+  ec: 1.5.1.-
+- id: mpqRxn105
+  name: methenyltetrahydromethanopterin cyclohydrolase
+  genes: MPQ_1565
+  equation: H2O[c] + MTHMPT[c] => H[c] + FTHMPT[c]
+  subsystem: Energy metabolism
+  ec: 3.5.4.27
+- id: mpqRxn106
+  name: 'formyltransferase/hydrolase complex '
+  genes: MPQ_1570 or MPQ_1572
+  equation: H2O[c] + FTHMPT[c] => H[c] + THMPT[c] + FOR[c]
+  subsystem: Energy metabolism
+- id: mpqRxn107
+  name: formylmethanofuran dehydrogenase
+  genes: MPQ_1569 and MPQ_1570 and MPQ_1572
+  equation: H2O[c] + FMFR[c] => H[c] + FOR[c] + MFR[c]
+  subsystem: Energy metabolism
+  ec: 1.2.99.5
+- id: mpqRxn108
+  name: formylmethanofuran dehydrogenase
+  genes: MPQ_1569 and MPQ_1570 and MPQ_1572
+  equation: H2O[c] + NAD[c] + FMFR[c] => NADH[c] + CO2[c] + MFR[c]
+  subsystem: Energy metabolism
+  ec: 1.2.99.5
+- id: mpqRxn109
+  name: formylmethanofuran-tetrahydromethanopterin N-formyltransferase
+  genes: MPQ_1571
+  equation: H[c] + THMPT[c] + FMFR[c] => FTHMPT[c] + MFR[c]
+  subsystem: Energy metabolism
+  ec: 2.3.1.101
+- id: mpqRxn110
+  name: methanol dehydrogenase (cytochrome c)
+  genes: MPQ_0771 and MPQ_0774
+  equation: (2) FERI[c] + METHOL[c] => (2) H[c] + FALD[c] + (2) FERO[c]
+  subsystem: Energy metabolism
+  ec: 1.1.2.7
+- id: mpqRxn111
+  name: methanol dehydrogenase (PQQ)
+  genes: MPQ_1818
+  equation: PQQ[c] + (2) METHOL[c] => PQQH2[c] + (2) FALD[c]
+  subsystem: Energy metabolism
+- id: mpqRxn112
+  name: formate dehydrogenase (NAD+)
+  genes: (MPQ_1249 and MPQ_1247 and MPQ_1246 and MPQ_1245)or MPQ_1667
+  equation: NAD[c] + FOR[c] => NADH[c] + CO2[c]
+  subsystem: Energy metabolism
+  ec: 1.2.1.2
+- id: mpqRxn113
+  name: formamidase
+  genes: MPQ_0731
+  equation: H2O[c] + FORMIE[c] => NH3[c] + FOR[c]
+  subsystem: Energy metabolism
+  ec: 3.5.1.49
+- id: mpqRxn114
+  name: Nitrate reductase (Menaquinol-8)
+  genes: MPQ_0362
+  equation: (2) H[c] + HNO3_c[c] + MQL8[c] => H2O[c] + (2) H[e] + MQN8[c] + HNO2_c[c]
+  subsystem: Energy metabolism
+  ec: 1.7.99.4
+- id: mpqRxn115
+  name: Nitrate reductase (ubiquinol-8)
+  genes: MPQ_0362
+  equation: (2) H[c] + Q8[c] + HNO3_c[c] => H2O[c] + Q8H2[c] + (2) H[e] + HNO2_c[c]
+  subsystem: Energy metabolism
+  ec: 1.7.99.4
+- id: mpqRxn116
+  name: nitrite reductase (NAD(P)H)
+  genes: MPQ_0363 and MPQ_0366
+  equation: (5) H[c] + (3) NADPH[c] + HNO2_c[c] => (2) H2O[c] + (3) NADP[c] + NH3[c]
+  subsystem: Energy metabolism
+  ec: 1.7.1.4
+- id: mpqRxn117
+  name: nitrite reductase (NADH)
+  genes: MPQ_0363 and MPQ_0366
+  equation: (5) H[c] + (3) NADH[c] + HNO2_c[c] => (2) H2O[c] + (3) NAD[c] + NH3[c]
+  subsystem: Energy metabolism
+  ec: 1.7.1.4
+- id: mpqRxn118
+  name: sulfate adenylyltransferase
+  genes: MPQ_1585 and MPQ_1584
+  equation: ATP[c] + H[c] + SLF[c] => PPI[c] + APS[c]
+  subsystem: Energy metabolism
+  ec: 2.7.7.4
+- id: mpqRxn119
+  name: sulfate adenyltransferase
+  genes: MPQ_1585 and MPQ_1584
+  equation: ATP[c] + H2O[c] + GTP[c] + SLF[c] => PI[c] + PPI[c] + APS[c] + GDP[c]
+  subsystem: Energy metabolism
+  ec: 2.7.7.4
+- id: mpqRxn120
+  name: 3'(2'), 5'-bisphosphate nucleotidase
+  genes: MPQ_1400
+  equation: H2O[c] + PAPS[c] => PI[c] + APS[c]
+  subsystem: Energy metabolism
+  ec: 3.1.3.7
+- id: mpqRxn121
+  name: adenylylsulfate kinase
+  equation: ATP[c] + APS[c] => ADP[c] + H[c] + PAPS[c]
+  subsystem: Energy metabolism
+  ec: 2.7.1.25
+- id: mpqRxn122
+  name: phosphoadenosine phosphosulfate reductase
+  genes: MPQ_1583
+  equation: PAPS[c] + TRDRD[c] => H[c] + TRDOX[c] + H2SO3[c] + PAP[c]
+  subsystem: Energy metabolism
+  ec: 1.8.4.8
+- id: mpqRxn123
+  name: sulfite reductase (NADPH)
+  genes: MPQ_1581
+  equation: (4) H[c] + (3) NADPH[c] + H2SO3[c] => (3) H2O[c] + (3) NADP[c] + H2S[c]
+  subsystem: Energy metabolism
+  ec: 1.8.1.2
+- id: mpqRxn124
+  name: hydrogen-sulfide:NADP+ oxidoreductase|sulfite reductase (NADPH2)|hydrogen-sulfide:NADP+
+    oxidoreductase|SULR|sulfitereductase-NADPH2|sulfite reductase (nadph)
+  genes: MPQ_1581
+  equation: (4) H[c] + (3) NADPH[c] + H2SO3[c] => (3) H2O[c] + (3) NADP[c] + H2S[c]
+  subsystem: Energy metabolism
+  ec: 1.8.1.2
+- id: mpqRxn125
+  name: Sulfur:oxygen oxidoreductase
+  genes: MPQ_1651
+  equation: H2O[c] + O2[c] + S[c] => H[c] + H2SO3[c]
+  subsystem: Energy metabolism
+  ec: 1.13.11.18
+- id: mpqRxn126
+  name: acetyl-CoA carboxylase
+  genes: MPQ_0023 and MPQ_0024 and MPQ_1609 and MPQ_1749
+  equation: ATP[c] + HCO3[c] + ACCOA[c] => ADP[c] + H[c] + PI[c] + MALCOA[c]
+  subsystem: Lipid metabolism
+  ec: 6.4.1.2
+- id: mpqRxn127
+  name: 3-oxoacyl-[acyl-carrier-protein] synthase III (fabH)
+  genes: MPQ_1462 or MPQ_2729
+  equation: ACCOA[c] + ACP[c] => COA[c] + ACACP[c]
+  subsystem: Lipid metabolism
+  ec: 2.3.1.180
+- id: mpqRxn128
+  name: '[acyl-carrier-protein] S-malonyltransferase (mdcH)'
+  genes: MPQ_1461
+  equation: MALCOA[c] + ACP[c] <=> COA[c] + MALACP[c]
+  subsystem: Lipid metabolism
+  ec: 2.3.1.39
+- id: mpqRxn129
+  name: ACP acetyltransferase
+  equation: PROPCOA[c] + ACP[c] <=> COA[c] + PROPACP[c]
+  subsystem: Lipid metabolism
+- id: mpqRxn130
+  name: decanoyl-(acyl-carrier protein) synthesis
+  genes: (MPQ_0909 or (MPQ_1270 or MPQ_1458) or (MPQ_1462 or MPQ_2729)) and (MPQ_1460
+    or MPQ_1488 or MPQ_2424) and (MPQ_0908 or MPQ_1473) and MPQ_1531
+  equation: (12) H[c] + (8) NADPH[c] + ACACP[c] + (4) MALACP[c] => (4) H2O[c] + (4)
+    CO2[c] + (8) NADP[c] + (4) ACP[c] + C100ACP[c]
+  subsystem: Lipid metabolism
+  ec: (2.3.1.41;2.3.1.179):1.1.1.100:1.3.1.9:4.2.1.-
+- id: mpqRxn131
+  name: dodecanoyl-(acyl-carrier protein) synthesis
+  genes: (MPQ_0909 or (MPQ_1270 or MPQ_1458)) and (MPQ_1460 or MPQ_1488 or MPQ_2424)
+    and (MPQ_0908 or MPQ_1473) and MPQ_1531
+  equation: (15) H[c] + (10) NADPH[c] + ACACP[c] + (5) MALACP[c] => (5) H2O[c] +
+    (5) CO2[c] + (10) NADP[c] + (5) ACP[c] + C120ACP[c]
+  subsystem: Lipid metabolism
+  ec: (2.3.1.41;2.3.1.179):1.1.1.100:1.3.1.9:4.2.1.-
+- id: mpqRxn132
+  name: myristoyl-(acyl-carrier protein) synthesis
+  genes: (MPQ_0909 or (MPQ_1270 or MPQ_1458)) and (MPQ_1460 or MPQ_1488 or MPQ_2424)
+    and (MPQ_0908 or MPQ_1473) and MPQ_1531
+  equation: (18) H[c] + (12) NADPH[c] + ACACP[c] + (6) MALACP[c] => (6) H2O[c] +
+    (6) CO2[c] + (12) NADP[c] + (6) ACP[c] + C140ACP[c]
+  subsystem: Lipid metabolism
+  ec: (2.3.1.41;2.3.1.179):1.1.1.100:1.3.1.9:4.2.1.-
+- id: mpqRxn133
+  name: hexadecanoyl-(acyl-carrier protein) synthesis
+  genes: (MPQ_0909 or (MPQ_1270 or MPQ_1458)) and (MPQ_1460 or MPQ_1488 or MPQ_2424)
+    and (MPQ_0908 or MPQ_1473) and MPQ_1531
+  equation: (21) H[c] + (14) NADPH[c] + ACACP[c] + (7) MALACP[c] => (7) H2O[c] +
+    (7) CO2[c] + (14) NADP[c] + (7) ACP[c] + C160ACP[c]
+  subsystem: Lipid metabolism
+  ec: (2.3.1.41;2.3.1.179):1.1.1.100:1.3.1.9:4.2.1.-
+- id: mpqRxn134
+  name: stearoyl-(acyl-carrier protein) synthesis
+  genes: (MPQ_0909 or (MPQ_1270 or MPQ_1458)) and (MPQ_1460 or MPQ_1488 or MPQ_2424)
+    and (MPQ_0908 or MPQ_1473) and MPQ_1531
+  equation: (24) H[c] + (16) NADPH[c] + ACACP[c] + (8) MALACP[c] => (8) H2O[c] +
+    (8) CO2[c] + (16) NADP[c] + (8) ACP[c] + C180ACP[c]
+  subsystem: Lipid metabolism
+  ec: (2.3.1.41;2.3.1.179):1.1.1.100:1.3.1.9:4.2.1.-
+- id: mpqRxn135
+  name: pentadecanoyl-(acyl-carrier protein) synthesis
+  genes: (MPQ_0909 or (MPQ_1270 or MPQ_1458)) and (MPQ_1460 or MPQ_1488 or MPQ_2424)
+    and (MPQ_0908 or MPQ_1473) and MPQ_1531
+  equation: (18) H[c] + (12) NADPH[c] + (6) MALACP[c] + PROPACP[c] => (6) H2O[c]
+    + (6) CO2[c] + (12) NADP[c] + (6) ACP[c] + C150ACP[c]
+  subsystem: Lipid metabolism
+  ec: (2.3.1.41;2.3.1.179):1.1.1.100:1.3.1.9:4.2.1.-
+- id: mpqRxn136
+  name: heptadecanoyl-(acyl-carrier protein) synthesis
+  genes: (MPQ_0909 or (MPQ_1270 or MPQ_1458)) and (MPQ_1460 or MPQ_1488 or MPQ_2424)
+    and (MPQ_0908 or MPQ_1473) and MPQ_1531
+  equation: (21) H[c] + (14) NADPH[c] + (7) MALACP[c] + PROPACP[c] => (7) H2O[c]
+    + (7) CO2[c] + (14) NADP[c] + (7) ACP[c] + C170ACP[c]
+  subsystem: Lipid metabolism
+  ec: (2.3.1.41;2.3.1.179):1.1.1.100:1.3.1.9:4.2.1.-
+- id: mpqRxn137
+  name: C190-(acyl-carrier protein) synthesis
+  genes: (MPQ_0909 or (MPQ_1270 or MPQ_1458)) and (MPQ_1460 or MPQ_1488 or MPQ_2424)
+    and (MPQ_0908 or MPQ_1473) and MPQ_1531
+  equation: (24) H[c] + (16) NADPH[c] + (8) MALACP[c] + PROPACP[c] => (8) H2O[c]
+    + (8) CO2[c] + (16) NADP[c] + (8) ACP[c] + C190ACP[c]
+  subsystem: Lipid metabolism
+  ec: (2.3.1.41;2.3.1.179):1.1.1.100:1.3.1.9:4.2.1.-
+- id: mpqRxn138
+  name: 3-oxoacyl-[acyl-carrier-protein] synthase
+  genes: (MPQ_0909 or (MPQ_1270 or MPQ_1458)) and (MPQ_1460 or MPQ_1488 or MPQ_2424)
+  equation: (2) H[c] + NADPH[c] + MALACP[c] + C120ACP[c] => CO2[c] + NADP[c] + ACP[c]
+    + C14HACP[c]
+  subsystem: Lipid metabolism
+  ec: (2.3.1.41;2.3.1.179):1.1.1.100
+- id: mpqRxn139
+  name: delta 7 desaturase
+  genes: MPQ_1379
+  equation: H[c] + NADPH[c] + O2[c] + C160ACP[c] => (2) H2O[c] + NADP[c] + C161ACP[c]
+  subsystem: Lipid metabolism
+  ec: 1.14.19.-
+- id: mpqRxn140
+  name: delta 7 desaturase
+  genes: MPQ_1379
+  equation: H[c] + NADPH[c] + O2[c] + C180ACP[c] => (2) H2O[c] + NADP[c] + C181ACP[c]
+  subsystem: Lipid metabolism
+  ec: 1.14.19.-
+- id: mpqRxn141
+  name: IsoC160ACP
+  equation: C160ACP[c] <=> C160IACP[c]
+  subsystem: Lipid metabolism
+- id: mpqRxn142
+  name: long-chain-fatty-acid--[acyl-carrier-protein] ligase
+  genes: MPQ_2716
+  equation: PI[c] + AMP[c] + C160ACP[c] <=> ATP[c] + ACP[c] + C160_c[c]
+  subsystem: Lipid metabolism
+  ec: 6.2.1.20
+- id: mpqRxn143
+  name: long-chain-fatty-acid--[acyl-carrier-protein] ligase
+  genes: MPQ_2716
+  equation: PI[c] + AMP[c] + C161ACP[c] <=> ATP[c] + ACP[c] + C161[c]
+  subsystem: Lipid metabolism
+  ec: 6.2.1.20
+- id: mpqRxn144
+  name: long-chain-fatty-acid--[acyl-carrier-protein] ligase
+  genes: MPQ_2716
+  equation: PI[c] + AMP[c] + C160IACP[c] <=> ATP[c] + ACP[c] + C160I[c]
+  subsystem: Lipid metabolism
+  ec: 6.2.1.20
+- id: mpqRxn145
+  name: long-chain-fatty-acid--[acyl-carrier-protein] ligase
+  genes: MPQ_2716
+  equation: PI[c] + AMP[c] + C140ACP[c] <=> ATP[c] + ACP[c] + C140_c[c]
+  subsystem: Lipid metabolism
+  ec: 6.2.1.20
+- id: mpqRxn146
+  name: long-chain-fatty-acid--[acyl-carrier-protein] ligase
+  genes: MPQ_2716
+  equation: PI[c] + AMP[c] + C150ACP[c] <=> ATP[c] + ACP[c] + C150[c]
+  subsystem: Lipid metabolism
+  ec: 6.2.1.20
+- id: mpqRxn147
+  name: long-chain-fatty-acid--[acyl-carrier-protein] ligase
+  genes: MPQ_2716
+  equation: PI[c] + AMP[c] + C170ACP[c] <=> ATP[c] + ACP[c] + C170[c]
+  subsystem: Lipid metabolism
+  ec: 6.2.1.20
+- id: mpqRxn148
+  name: long-chain-fatty-acid--[acyl-carrier-protein] ligase
+  genes: MPQ_2716
+  equation: PI[c] + AMP[c] + C181ACP[c] <=> ATP[c] + ACP[c] + C181[c]
+  subsystem: Lipid metabolism
+  ec: 6.2.1.20
+- id: mpqRxn149
+  name: long-chain-fatty-acid--[acyl-carrier-protein] ligase
+  genes: MPQ_2716
+  equation: PI[c] + AMP[c] + C180ACP[c] <=> ATP[c] + ACP[c] + C180_c[c]
+  subsystem: Lipid metabolism
+  ec: 6.2.1.20
+- id: mpqRxn150
+  name: long-chain-fatty-acid--[acyl-carrier-protein] ligase
+  genes: MPQ_2716
+  equation: PI[c] + AMP[c] + C190ACP[c] <=> ATP[c] + ACP[c] + C190[c]
+  subsystem: Lipid metabolism
+  ec: 6.2.1.20
+- id: mpqRxn151
+  name: average fatty acid formation
+  equation: (48) C160_c[c] + (36) C161[c] + C140_c[c] + C150[c] + (12) C170[c] +
+    C181[c] + (2) C180_c[c] <=> (100) FA[c]
+  subsystem: Lipid metabolism
+- id: mpqRxn152
+  name: acyl-carrier protein synthase
+  genes: MPQ_1779
+  equation: COA[c] + APOACP[c] => H[c] + PAP[c] + ACP[c]
+  subsystem: Lipid metabolism
+  ec: 2.7.8.7
+- id: mpqRxn153
+  name: aldehyde dehydrogenase (NAD+)
+  genes: MPQ_1244
+  equation: H2O[c] + NAD[c] + GLYAL[c] => (2) H[c] + NADH[c] + G[c]
+  subsystem: Lipid metabolism
+  ec: 1.2.1.3
+- id: mpqRxn154
+  name: dihydroxyacetone kinase
+  genes: MPQ_1202 and MPQ_1203
+  equation: ATP[c] + GLYN[c] => ADP[c] + H[c] + T3P2[c]
+  subsystem: Lipid metabolism
+  ec: 2.7.1.29
+- id: mpqRxn155
+  name: glycerol-3-phosphate dehydrogenase
+  genes: MPQ_0581
+  equation: H[c] + T3P2[c] + NADH[c] => NAD[c] + GL3P[c]
+  subsystem: Lipid metabolism
+  ec: 1.1.1.94
+- id: mpqRxn156
+  name: glycerol-3-phosphate dehydrogenase
+  genes: MPQ_0581
+  equation: H[c] + T3P2[c] + NADPH[c] => NADP[c] + GL3P[c]
+  subsystem: Lipid metabolism
+  ec: 1.1.1.94
+- id: mpqRxn157
+  name: glycerol-3-phosphate O-acyltransferase
+  genes: MPQ_1463 or MPQ_2322
+  equation: C140ACP[c] + (48) C160ACP[c] + (2) C180ACP[c] + C150ACP[c] + (12) C170ACP[c]
+    + (36) C161ACP[c] + C181ACP[c] + (100) GL3P[c] => (100) ACP[c] + AGLY3P[c]
+  subsystem: Lipid metabolism
+  ec: 2.3.1.15
+- id: mpqRxn158
+  name: 1-acylglycerol-3-phosphate O-acyltransferase
+  genes: MPQ_2080 or MPQ_2224
+  equation: C140ACP[c] + (48) C160ACP[c] + (2) C180ACP[c] + C150ACP[c] + (12) C170ACP[c]
+    + (36) C161ACP[c] + C181ACP[c] + AGLY3P[c] => (100) ACP[c] + PA[c]
+  subsystem: Lipid metabolism
+  ec: 2.3.1.51
+- id: mpqRxn159
+  name: diacylglycerol kinase
+  genes: MPQ_1876
+  equation: (100) ATP[c] + DAGL[c] => (100) ADP[c] + (100) H[c] + PA[c]
+  subsystem: Lipid metabolism
+  ec: 2.7.1.107
+- id: mpqRxn160
+  name: phosphatidate cytidylyltransferase (cdsA)
+  genes: MPQ_1479
+  equation: (100) H[c] + PA[c] + (100) CTP[c] => (100) PPI[c] + CDPDG[c]
+  subsystem: Lipid metabolism
+  ec: 2.7.7.41
+- id: mpqRxn161
+  name: CDP-diacylglycerol-glycerol-3-phosphate 3-phosphatidyltransferase (pgsA)
+  genes: MPQ_1049
+  equation: (100) GL3P[c] + CDPDG[c] => (100) CMP[c] + PGP[c]
+  subsystem: Lipid metabolism
+  ec: 2.7.8.5
+- id: mpqRxn162
+  name: cardiolipin synthase (cls)
+  genes: MPQ_2389
+  equation: CDPDG[c] + PG[c] => (100) CMP[c] + CL[c]
+  subsystem: Lipid metabolism
+  ec: 2.7.8.-
+- id: mpqRxn163
+  name: phosphatidylglycerophosphatase (pgpA)
+  genes: MPQ_2136
+  equation: (100) H2O[c] + PGP[c] => (100) PI[c] + PG[c]
+  subsystem: Lipid metabolism
+  ec: 3.1.3.27
+- id: mpqRxn164
+  name: cardiolipin synthase
+  genes: MPQ_2389
+  equation: (2) PG[c] => CL[c] + (100) GL[c]
+  subsystem: Lipid metabolism
+  ec: 2.7.8.-
+- id: mpqRxn165
+  name: phosphatidylserine synthase
+  genes: MPQ_2184
+  equation: CDPDG[c] + (100) SER_c[c] => (100) CMP[c] + PS[c]
+  subsystem: Lipid metabolism
+  ec: 2.7.8.8
+- id: mpqRxn166
+  name: phosphatidylserine decarboxylase
+  genes: MPQ_0632
+  equation: PS[c] => (100) CO2[c] + PE[c]
+  subsystem: Lipid metabolism
+  ec: 4.1.1.65
+- id: mpqRxn167
+  name: ethanolamine ammonia-lyase (acetaldehyde-forming)
+  genes: MPQ_0997 and MPQ_0998
+  equation: ETHAM[c] => ACAL[c] + NH3[c]
+  subsystem: Lipid metabolism
+  ec: 4.3.1.7
+- id: mpqRxn168
+  name: phosphatidylcholine synthase
+  equation: CDPDG[c] + CHO[c] => H[c] + CMP[c] + PC[c]
+  subsystem: Lipid metabolism
+  ec: 2.7.8.24
+- id: mpqRxn169
+  name: Phosphatidylcholine 1-acylhydrolase;Phospholipase A
+  genes: MPQ_1389
+  equation: H2O[c] + PC[c] => H[c] + FA[c] + LPC[c]
+  subsystem: Lipid metabolism
+  ec: 3.1.1.4
+- id: mpqRxn170
+  name: ethanolamine phosphotransferase
+  equation: (100) CMP[c] + PE[c] <=> (100) CDPETN[c] + 12DISNGL[c]
+  subsystem: Lipid metabolism
+  ec: 2.7.8.1
+- id: mpqRxn171
+  name: Diacylglycerol kinase
+  genes: MPQ_1876
+  equation: (100) ATP[c] + 12DISNGL[c] => (100) ADP[c] + (100) H[c] + PA[c]
+  subsystem: Lipid metabolism
+  ec: 2.7.1.107
+- id: mpqRxn172
+  name: ADPribose diphosphatase (nudF)
+  genes: MPQ_0723
+  equation: H2O[c] + ADPR[c] => (2) H[c] + R5P[c] + AMP[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.6.1.13
+- id: mpqRxn173
+  name: 3'(2'), 5'-bisphosphate nucleotidase
+  genes: MPQ_1400
+  equation: H2O[c] + PAP[c] => PI[c] + AMP[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.1.3.7
+- id: mpqRxn174
+  name: ribose-phosphate pyrophosphokinase (prsA)
+  genes: MPQ_2035
+  equation: ATP[c] + R5P[c] <=> H[c] + AMP[c] + PRPP[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.7.6.1
+- id: mpqRxn175
+  name: amidophosphoribosyltransferase (purF)
+  genes: MPQ_1605
+  equation: H2O[c] + GLN_c[c] + PRPP[c] => PPI[c] + GLU[c] + PRAM[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.4.2.14
+- id: mpqRxn176
+  name: phosphoribosylamine-glycine ligase (purD)
+  genes: MPQ_0396 or MPQ_2500
+  equation: ATP[c] + GLY[c] + PRAM[c] <=> ADP[c] + H[c] + PI[c] + GAR[c]
+  subsystem: Nucleotide metabolism
+  ec: 6.3.4.13
+- id: mpqRxn177
+  name: phosphoribosylglycinamide formyltransferase (purN)
+  genes: MPQ_1742
+  equation: GAR[c] + FTHF[c] <=> H[c] + THF[c] + FGAR[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.1.2.2
+- id: mpqRxn178
+  name: phosphoribosylformylglycinamidine synthase (purL)
+  genes: MPQ_0934
+  equation: ATP[c] + H2O[c] + GLN_c[c] + FGAR[c] => ADP[c] + H[c] + PI[c] + GLU[c]
+    + FGAM[c]
+  subsystem: Nucleotide metabolism
+  ec: 6.3.5.3
+- id: mpqRxn179
+  name: phosphoribosylformylglycinamidine cyclo-ligase (purM)
+  genes: MPQ_0232
+  equation: ATP[c] + FGAM[c] => ADP[c] + H[c] + PI[c] + AIR[c]
+  subsystem: Nucleotide metabolism
+  ec: 6.3.3.1
+- id: mpqRxn180
+  name: 5-(carboxyamino)imidazole ribonucleotide synthase (purK)
+  genes: MPQ_0541
+  equation: ATP[c] + HCO3[c] + AIR[c] <=> ADP[c] + (2) H[c] + PI[c] + N5CAIR[c]
+  subsystem: Nucleotide metabolism
+  ec: 6.3.4.18
+- id: mpqRxn181
+  name: 5-(carboxyamino)imidazole ribonucleotide mutase (purE)
+  genes: MPQ_0540
+  equation: N5CAIR[c] <=> CAIR[c]
+  subsystem: Nucleotide metabolism
+  ec: 5.4.99.18
+- id: mpqRxn182
+  name: phosphoribosylaminoimidazole-succinocarboxamide synthase (purC)
+  genes: MPQ_0511
+  equation: ATP[c] + CAIR[c] + ASP_c[c] <=> ADP[c] + H[c] + PI[c] + SAICAR[c]
+  subsystem: Nucleotide metabolism
+  ec: 6.3.2.6
+- id: mpqRxn183
+  name: adenylosuccinate lyase (purB)
+  genes: MPQ_1032
+  equation: SAICAR[c] <=> FUM[c] + AICAR[c]
+  subsystem: Nucleotide metabolism
+  ec: 4.3.2.2
+- id: mpqRxn184
+  name: adenine phosphoribosyltransferase (apt)
+  genes: MPQ_2393
+  equation: PPI[c] + AICAR[c] <=> PRPP[c] + AICAD[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.4.2.7
+- id: mpqRxn185
+  name: phosphoribosylaminoimidazolecarboxamide formyltransferase (purH)
+  genes: MPQ_0397
+  equation: FTHF[c] + AICAR[c] => THF[c] + PRFICA[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.1.2.3
+- id: mpqRxn186
+  name: phosphoribosylaminoimidazolecarboxamide formyltransferase / IMP cyclohydrolase
+  genes: MPQ_0397
+  equation: PRFICA[c] <=> H2O[c] + IMP[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.5.4.10
+- id: mpqRxn187
+  name: nucleoside-diphosphate kinase (ndk)
+  genes: MPQ_1719
+  equation: ATP[c] + IDP[c] => ADP[c] + ITP[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.7.4.6
+- id: mpqRxn188
+  name: dITP/XTP pyrophosphatase
+  genes: MPQ_0046
+  equation: H2O[c] + ITP[c] => H[c] + PPI[c] + IMP[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.6.1.19
+- id: mpqRxn189
+  name: IMP dehydrogenase (guaB)
+  genes: MPQ_1299
+  equation: H2O[c] + NAD[c] + IMP[c] => H[c] + NADH[c] + XMP[c]
+  subsystem: Nucleotide metabolism
+  ec: 1.1.1.205
+- id: mpqRxn190
+  name: dITP/XTP pyrophosphatase
+  genes: MPQ_0046
+  equation: H2O[c] + XTP[c] => H[c] + PPI[c] + XMP[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.6.1.19
+- id: mpqRxn191
+  name: xanthosine-5'-phosphate:ammonia ligase (AMP-forming)
+  genes: MPQ_1298
+  equation: ATP[c] + NH3[c] + XMP[c] => (2) H[c] + PPI[c] + AMP[c] + GMP[c]
+  subsystem: Nucleotide metabolism
+  ec: 6.3.5.2
+- id: mpqRxn192
+  name: 5'-nucleotidase (XMP)
+  genes: MPQ_1027
+  equation: H2O[c] + XMP[c] => PI[c] + XTSINE[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.1.3.5
+- id: mpqRxn193
+  name: hypoxanthine phosphoribosyltransferase (hpt)
+  genes: MPQ_1723
+  equation: PRPP[c] + XAN_c[c] => PPI[c] + XMP[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.4.2.8
+- id: mpqRxn194
+  name: hypoxanthine phosphoribosyltransferase (hpt)
+  genes: MPQ_1723
+  equation: PRPP[c] + HYXN_c[c] <=> PPI[c] + IMP[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.4.2.8
+- id: mpqRxn195
+  name: 5'-nucleotidase (IMP)
+  genes: MPQ_1027
+  equation: H2O[c] + IMP[c] => PI[c] + INS[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.1.3.5
+- id: mpqRxn196
+  name: 5'-nucleotidase (GMP)
+  genes: MPQ_1027
+  equation: H2O[c] + GMP[c] => PI[c] + GSN[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.1.3.5
+- id: mpqRxn197
+  name: hypoxanthine phosphoribosyltransferase (hpt)
+  genes: MPQ_2393 or MPQ_1723
+  equation: PRPP[c] + GN[c] <=> PPI[c] + GMP[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.4.2.7  2.4.2.8
+- id: mpqRxn198
+  name: guanylate kinase (gmk)
+  genes: MPQ_0051
+  equation: ATP[c] + GMP[c] <=> ADP[c] + GDP[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.7.4.8
+- id: mpqRxn199
+  name: dITP/XTP pyrophosphatase
+  genes: MPQ_0046
+  equation: H2O[c] + GTP[c] => H[c] + PPI[c] + GMP[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.6.1.19
+- id: mpqRxn200
+  name: nucleoside-diphosphate kinase (ndk)
+  genes: MPQ_1719
+  equation: ATP[c] + GDP[c] => ADP[c] + GTP[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.7.4.6
+- id: mpqRxn201
+  name: GTP pyrophosphokinase (relA)
+  genes: MPQ_0053
+  equation: ATP[c] + GTP[c] => AMP[c] + pppGpp[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.7.6.5
+- id: mpqRxn202
+  name: exopolyphosphatase (ppx)
+  genes: MPQ_0177
+  equation: H2O[c] + pppGpp[c] <=> H[c] + PI[c] + ppGpp[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.6.1.11;3.6.1.40
+- id: mpqRxn203
+  name: guanosine-3',5'-bis(diphosphate) 3'-pyrophosphohydrolase(spoT)
+  genes: MPQ_0053
+  equation: H2O[c] + ppGpp[c] => H[c] + PPI[c] + GDP[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.1.7.2
+- id: mpqRxn204
+  name: ribonucleoside-diphosphate reductase
+  genes: (MPQ_1143 or MPQ_2570) and MPQ_1144
+  equation: GDP[c] + TRDRD[c] => H2O[c] + TRDOX[c] + DGDP[c]
+  subsystem: Nucleotide metabolism
+  ec: 1.17.4.1
+- id: mpqRxn205
+  name: nucleoside-diphosphate kinase (ndk)
+  genes: MPQ_1719
+  equation: ATP[c] + DGDP[c] => ADP[c] + DGTP[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.7.4.6
+- id: mpqRxn206
+  name: guanylate kinase(gmk)
+  genes: MPQ_0051
+  equation: ADP[c] + DGDP[c] <=> ATP[c] + DGMP[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.7.4.8
+- id: mpqRxn207
+  name: dITP/XTP pyrophosphatase
+  genes: MPQ_0046
+  equation: H2O[c] + DGTP[c] => H[c] + PPI[c] + DGMP[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.6.1.19
+- id: mpqRxn208
+  name: 5'-nucleotidase (dGMP)
+  genes: MPQ_1027
+  equation: H2O[c] + DGMP[c] => PI[c] + DG_c[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.1.3.5
+- id: mpqRxn209
+  name: dGTPase(dgt)
+  genes: MPQ_2446
+  equation: H2O[c] + DGTP[c] => PPPI[c] + DG_c[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.1.5.1
+- id: mpqRxn210
+  name: adenylosuccinate synthase (purA)
+  genes: MPQ_1686
+  equation: GTP[c] + ASP_c[c] + IMP[c] => (2) H[c] + PI[c] + GDP[c] + ASUC[c]
+  subsystem: Nucleotide metabolism
+  ec: 6.3.4.4
+- id: mpqRxn211
+  name: adenylosuccinate lyase (purB)
+  genes: MPQ_1032
+  equation: ASUC[c] => FUM[c] + AMP[c]
+  subsystem: Nucleotide metabolism
+  ec: 4.3.2.2
+- id: mpqRxn212
+  name: 5'-nucleotidase (IMP)
+  genes: MPQ_1027
+  equation: H2O[c] + AMP[c] => PI[c] + ADN_c[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.1.3.5
+- id: mpqRxn213
+  name: adenosine kinase
+  genes: MPQ_2221
+  equation: ATP[c] + ADN_c[c] <=> ADP[c] + AMP[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.7.1.20
+- id: mpqRxn214
+  name: adenine phosphoribosyltransferase (apt)
+  genes: MPQ_2393
+  equation: PRPP[c] + AD_c[c] <=> PPI[c] + AMP[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.4.2.7
+- id: mpqRxn215
+  name: adenylate kinase
+  genes: MPQ_0600
+  equation: GTP[c] + AMP[c] <=> ADP[c] + GDP[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.7.4.3
+- id: mpqRxn216
+  name: ribonucleoside-diphosphate reductase
+  genes: (MPQ_1143 or MPQ_2570) and MPQ_1144
+  equation: ADP[c] + TRDRD[c] => H2O[c] + TRDOX[c] + DADP[c]
+  subsystem: Nucleotide metabolism
+  ec: 1.17.4.1
+- id: mpqRxn217
+  name: nucleoside-diphosphate kinase (ndk)
+  genes: MPQ_1719
+  equation: ATP[c] + DADP[c] => ADP[c] + DATP[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.7.4.6
+- id: mpqRxn218
+  name: adenylate kinase (adk)
+  genes: MPQ_0600
+  equation: ATP[c] + DAMP[c] <=> ADP[c] + DADP[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.7.4.3
+- id: mpqRxn219
+  name: 5'-nucleotidase (dAMP)
+  genes: MPQ_1027
+  equation: H2O[c] + DAMP[c] => PI[c] + DA_c[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.1.3.5
+- id: mpqRxn220
+  name: urease
+  genes: MPQ_0741 and MPQ_0740 and MPQ_0739
+  equation: (2) H[c] + H2O[c] + UREA[c] => CO2[c] + (2) NH3[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.5.1.5
+- id: mpqRxn221
+  name: nucleoside-diphosphate kinase
+  genes: MPQ_1719
+  equation: ATP[c] + DIDP[c] => ADP[c] + DITP[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.7.4.6
+- id: mpqRxn222
+  name: nucleoside-triphosphate pyrophosphatase (mazG)
+  genes: MPQ_0046
+  equation: H2O[c] + DITP[c] => H[c] + PPI[c] + DIMP[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.6.1.19
+- id: mpqRxn223
+  name: Cyclic pyranopterin monophosphate synthase
+  genes: MPQ_2287
+  equation: GTP[c] => PPI[c] + CPMP[c]
+  subsystem: Nucleotide metabolism
+  ec: 4.1.99.18
+- id: mpqRxn224
+  name: ATP:deoxyadenosine 5'-phosphotransferase
+  genes: peg.2044
+  equation: ATP[c] + DAD5[c] <=> ADP[c] + DAMP[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.7.1.76
+- id: mpqRxn225
+  name: deoxyguanosine kinase
+  genes: MPQ_2117
+  equation: ATP[c] + DG_c[c] <=> ADP[c] + H[c] + DGMP[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.7.1.113
+- id: mpqRxn226
+  name: Bis(5'-nucleosyl)-tetraphosphatase
+  genes: MPQ_2516
+  equation: H2O[c] + BGTP[c] <=> (2) H[c] + GTP[c] + GMP[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.6.1.17
+- id: mpqRxn227
+  name: Adenylate cyclase
+  genes: MPQ_1672
+  equation: ATP[c] => H[c] + PPI[c] + CAMP[c]
+  subsystem: Nucleotide metabolism
+  ec: 4.6.1.1
+- id: mpqRxn228
+  name: carbamoyl-phosphate synthase
+  genes: MPQ_1888 and MPQ_1889
+  equation: (2) ATP[c] + H2O[c] + HCO3[c] + GLN_c[c] => (2) ADP[c] + (2) H[c] + PI[c]
+    + GLU[c] + CAP[c]
+  subsystem: Nucleotide metabolism
+  ec: 6.3.5.5
+- id: mpqRxn229
+  name: aspartate carbamoyltransferase (pyrB)
+  genes: MPQ_0653
+  equation: ASP_c[c] + CAP[c] => H[c] + PI[c] + CAASP[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.1.3.2
+- id: mpqRxn230
+  name: dihydroorotase (pyrC)
+  genes: MPQ_0652 or MPQ_2267
+  equation: H2O[c] + DOROA[c] <=> H[c] + CAASP[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.5.2.3
+- id: mpqRxn231
+  name: dihydroorotate dehydrogenase
+  genes: MPQ_2194
+  equation: Q8[c] + DOROA[c] <=> Q8H2[c] + OROA[c]
+  subsystem: Nucleotide metabolism
+  ec: 1.3.5.2
+- id: mpqRxn232
+  name: orotate phosphoribosyltransferase (pyrE)
+  genes: MPQ_2476
+  equation: PRPP[c] + OROA[c] <=> PPI[c] + OMP_c[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.4.2.10
+- id: mpqRxn233
+  name: orotidine-5'-phosphate decarboxylase (pyrF)
+  genes: MPQ_1156
+  equation: H[c] + OMP_c[c] => CO2[c] + UMP[c]
+  subsystem: Nucleotide metabolism
+  ec: 4.1.1.23
+- id: mpqRxn234
+  name: uridine 5'-monophosphate phosphohydrolase
+  genes: MPQ_1027
+  equation: H2O[c] + UMP[c] => PI[c] + URI[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.1.3.5
+- id: mpqRxn235
+  name: uracil phosphoribosyltransferase (upp)
+  genes: MPQ_0654
+  equation: PPI[c] + UMP[c] <=> PRPP[c] + URA[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.4.2.9
+- id: mpqRxn236
+  name: cytidylate kinase (cmk) / uridylate kinase (pyrH)
+  genes: MPQ_1161 or MPQ_1482
+  equation: ATP[c] + UMP[c] <=> ADP[c] + UDP[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.7.4.14  2.7.4.22
+- id: mpqRxn237
+  name: dITP/XTP pyrophosphatase
+  genes: MPQ_0046
+  equation: H2O[c] + UTP[c] => H[c] + PPI[c] + UMP[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.6.1.19
+- id: mpqRxn238
+  name: nucleoside-diphosphate kinase (ndk)
+  genes: MPQ_1719
+  equation: ATP[c] + UDP[c] <=> ADP[c] + UTP[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.7.4.6
+- id: mpqRxn239
+  name: CTP synthase (pyrG)
+  genes: MPQ_0895
+  equation: ATP[c] + UTP[c] + NH3[c] => ADP[c] + (2) H[c] + PI[c] + CTP[c]
+  subsystem: Nucleotide metabolism
+  ec: 6.3.4.2
+- id: mpqRxn240
+  name: CTP synthase
+  genes: MPQ_0895
+  equation: ATP[c] + H2O[c] + UTP[c] + GLN_c[c] => ADP[c] + (2) H[c] + PI[c] + GLU[c]
+    + CTP[c]
+  subsystem: Nucleotide metabolism
+  ec: 6.3.4.2
+- id: mpqRxn241
+  name: dCTP deaminase (dcd)
+  genes: MPQ_1147
+  equation: H[c] + H2O[c] + CTP[c] => UTP[c] + NH3[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.5.4.13
+- id: mpqRxn242
+  name: nucleoside-diphosphate kinase (ndk)
+  genes: MPQ_1719
+  equation: ATP[c] + CDP[c] => ADP[c] + CTP[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.7.4.6
+- id: mpqRxn243
+  name: 5'-nucleotidase (CMP)
+  genes: MPQ_1027
+  equation: H2O[c] + CMP[c] => PI[c] + CYTD_c[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.1.3.5
+- id: mpqRxn244
+  name: thioredoxin reductase (NADPH) (trxB)
+  genes: MPQ_1257
+  equation: H[c] + NADPH[c] + TRDOX[c] => NADP[c] + TRDRD[c]
+  subsystem: Nucleotide metabolism
+  ec: 1.8.1.9
+- id: mpqRxn245
+  name: ribonucleoside-diphosphate reductase
+  genes: (MPQ_1143 or MPQ_2570) and MPQ_1144
+  equation: TRDRD[c] + CDP[c] => H2O[c] + TRDOX[c] + DCDP[c]
+  subsystem: Nucleotide metabolism
+  ec: 1.17.4.1
+- id: mpqRxn246
+  name: 5'-nucleotidase (dCMP)
+  genes: MPQ_1027
+  equation: H2O[c] + DCMP[c] => PI[c] + DC_c[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.1.3.5
+- id: mpqRxn247
+  name: cytidylate kinase (cmk)
+  genes: MPQ_1161
+  equation: ATP[c] + CMP[c] => ADP[c] + CDP[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.7.4.25
+- id: mpqRxn248
+  name: cytidylate kinase (cmk)
+  genes: MPQ_1161
+  equation: ATP[c] + DCMP[c] => ADP[c] + DCDP[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.7.4.25
+- id: mpqRxn249
+  name: nucleoside-diphosphate kinase (ndk)
+  genes: MPQ_1719
+  equation: ATP[c] + DCDP[c] => ADP[c] + DCTP[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.7.4.6
+- id: mpqRxn250
+  name: dCTP deaminase (dcd)
+  genes: MPQ_1147
+  equation: H[c] + H2O[c] + DCTP[c] => NH3[c] + DUTP[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.5.4.13
+- id: mpqRxn251
+  name: nucleoside-triphosphate pyrophosphatase (mazG)
+  genes: MPQ_0046 or MPQ_0353
+  equation: H2O[c] + DUTP[c] => H[c] + PPI[c] + DUMP[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.6.1.19;3.6.1.23
+- id: mpqRxn252
+  name: uridylate kinase (dUMP)
+  genes: MPQ_1455 or MPQ_1482
+  equation: ATP[c] + DUMP[c] <=> ADP[c] + DUDP[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.7.4.9;2.7.4.22
+- id: mpqRxn253
+  name: ribonucleoside-diphosphate reductase
+  genes: (MPQ_1143 or MPQ_2570) and MPQ_1144
+  equation: TRDRD[c] + UDP[c] => H2O[c] + TRDOX[c] + DUDP[c]
+  subsystem: Nucleotide metabolism
+  ec: 1.17.4.1
+- id: mpqRxn254
+  name: nucleoside-diphosphate kinase (ndk)
+  genes: MPQ_1719
+  equation: ATP[c] + DUDP[c] => ADP[c] + DUTP[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.7.4.6
+- id: mpqRxn255
+  name: 5'-nucleotidase (dTMP)
+  genes: MPQ_1027
+  equation: H2O[c] + DTMP[c] => PI[c] + DT_c[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.1.3.5
+- id: mpqRxn256
+  name: thymidylate kinase (tmk)
+  genes: MPQ_1455
+  equation: ATP[c] + DTMP[c] <=> ADP[c] + DTDP[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.7.4.9
+- id: mpqRxn257
+  name: nucleoside-diphosphate kinase (ndk)
+  genes: MPQ_1719
+  equation: ATP[c] + DTDP[c] => ADP[c] + DTTP[c]
+  subsystem: Nucleotide metabolism
+  ec: 2.7.4.6
+- id: mpqRxn258
+  name: dCMP deaminase (CMP)
+  genes: MPQ_1147
+  equation: H[c] + H2O[c] + CMP[c] => NH3[c] + UMP[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.5.4.13
+- id: mpqRxn259
+  name: 5'-nucleotidase (dUMP)
+  genes: MPQ_1027
+  equation: H2O[c] + DUMP[c] => PI[c] + DU_c[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.1.3.5
+- id: mpqRxn260
+  name: 5'-nucleotidase (dIMP)
+  genes: MPQ_1027
+  equation: H2O[c] + DIMP[c] => PI[c] + DIN_c[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.1.3.5
+- id: mpqRxn261
+  name: dCTP diphosphatase
+  genes: MPQ_0932
+  equation: H2O[c] + DCDP[c] <=> (2) H[c] + PI[c] + DCMP[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.6.1.12
+- id: mpqRxn262
+  name: dCTP diphosphatase
+  genes: MPQ_0932
+  equation: H2O[c] + DCTP[c] => (2) H[c] + PPI[c] + DCMP[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.6.1.12
+- id: mpqRxn263
+  name: NMN amidohydrolase
+  genes: MPQ_2137
+  equation: H2O[c] + NMN[c] => NH3[c] + NAMN[c]
+  subsystem: Nucleotide metabolism
+  ec: 3.5.1.42
+- id: mpqRxn264
+  name: alanine-synthesizing transaminase
+  genes: MPQ_0911
+  equation: AKG[c] + ALA_c[c] <=> PYR[c] + GLU[c]
+  subsystem: Amino acid metabolism
+  ec: 2.6.1.2
+- id: mpqRxn265
+  name: glutamate synthase
+  genes: MPQ_2746 and MPQ_2747
+  equation: H[c] + AKG[c] + NADPH[c] + GLN_c[c] => NADP[c] + (2) GLU[c]
+  subsystem: Amino acid metabolism
+  ec: 1.4.1.13
+- id: mpqRxn266
+  name: glutamine synthetase (glnA)
+  genes: MPQ_0988 or MPQ_2365 or MPQ_2438
+  equation: ATP[c] + GLU[c] + NH3[c] => ADP[c] + H[c] + PI[c] + GLN_c[c]
+  subsystem: Amino acid metabolism
+  ec: 6.3.1.2
+- id: mpqRxn267
+  name: aspartate aminotransferase (aspB)
+  genes: MPQ_1336
+  equation: AKG[c] + ASP_c[c] <=> OA[c] + GLU[c]
+  subsystem: Amino acid metabolism
+  ec: 2.6.1.1
+- id: mpqRxn268
+  name: L-aspartate oxidase (nadB)
+  genes: MPQ_1791
+  equation: H2O[c] + O2[c] + ASP_c[c] => OA[c] + NH3[c] + H2O2[c]
+  subsystem: Amino acid metabolism
+  ec: 1.4.3.16
+- id: mpqRxn269
+  name: asparagine synthase (glutamine-hydrolysing, asnB)
+  equation: ATP[c] + NH3[c] + ASP_c[c] => H[c] + PPI[c] + AMP[c] + ASN_c[c]
+  subsystem: Amino acid metabolism
+  ec: 6.3.5.4
+- id: mpqRxn270
+  name: phosphoserine transaminase (serC)
+  genes: MPQ_1599
+  equation: GLU[c] + PHP[c] <=> AKG[c] + 3PSER[c]
+  subsystem: Amino acid metabolism
+  ec: 2.6.1.52
+- id: mpqRxn271
+  name: phosphoserine phosphatase (serB)
+  genes: MPQ_0943
+  equation: H2O[c] + 3PSER[c] => PI[c] + SER_c[c]
+  subsystem: Amino acid metabolism
+  ec: 3.1.3.3
+- id: mpqRxn272
+  name: L-serine dehydratase (sdaA) or threonine dehydratase (ilvA, tdcB)
+  genes: MPQ_0174
+  equation: SER_c[c] => PYR[c] + NH3[c]
+  subsystem: Amino acid metabolism
+  ec: 4.3.1.19
+- id: mpqRxn273
+  name: tryptophan synthase (trpB)
+  genes: MPQ_1610 and MPQ_1611
+  equation: SER_c[c] + IGP[c] => H2O[c] + T3P1[c] + TRP[c]
+  subsystem: Amino acid metabolism
+  ec: 4.2.1.20
+- id: mpqRxn274
+  name: glycine hydroxymethyltransferase
+  genes: MPQ_0872
+  equation: THF[c] + SER_c[c] <=> H2O[c] + METTHF[c] + GLY[c]
+  subsystem: Amino acid metabolism
+  ec: 2.1.2.1
+- id: mpqRxn275
+  name: sarcosine oxidase
+  genes: MPQ_2367 and MPQ_2369 and MPQ_2366 and MPQ_2368
+  equation: H2O[e] + O2[e] + SARC[e] => FALD[e] + GLY[e] + H2O2[e]
+  subsystem: Amino acid metabolism
+  ec: 1.5.3.1
+- id: mpqRxn276
+  name: aminomethyltransferase (gcvT)
+  genes: MPQ_2414
+  equation: THF[c] + SAP[c] => METTHF[c] + NH3[c] + DIHYDROLIPOYLPROTEIN[c]
+  subsystem: Amino acid metabolism
+  ec: 2.1.2.10
+- id: mpqRxn277
+  name: dihydrolipoamide dehydrogenase (pdhD)
+  genes: MPQ_0690
+  equation: NAD[c] + DIHYDROLIPOYLPROTEIN[c] => H[c] + NADH[c] + LIPOYLPROTEIN[c]
+  subsystem: Amino acid metabolism
+  ec: 1.8.1.4
+- id: mpqRxn278
+  name: aspartate kinase (lysC)
+  genes: MPQ_2142
+  equation: ATP[c] + ASP_c[c] => ADP[c] + BASP[c]
+  subsystem: Amino acid metabolism
+  ec: 2.7.2.4
+- id: mpqRxn279
+  name: aspartate-semialdehyde dehydrogenase (asd)
+  genes: MPQ_1615
+  equation: H[c] + NADPH[c] + BASP[c] => PI[c] + NADP[c] + ASPSA[c]
+  subsystem: Amino acid metabolism
+  ec: 1.2.1.11
+- id: mpqRxn280
+  name: homoserine dehydrogenase
+  genes: MPQ_0912
+  equation: H[c] + NADPH[c] + ASPSA[c] => NADP[c] + HSER[c]
+  subsystem: Amino acid metabolism
+  ec: 1.1.1.3
+- id: mpqRxn281
+  name: homoserine dehydrogenase
+  genes: MPQ_0912
+  equation: H[c] + NADH[c] + ASPSA[c] => NAD[c] + HSER[c]
+  subsystem: Amino acid metabolism
+  ec: 1.1.1.3
+- id: mpqRxn282
+  name: homoserine kinase
+  genes: MPQ_0408
+  equation: ATP[c] + HSER[c] => ADP[c] + H[c] + PHSER[c]
+  subsystem: Amino acid metabolism
+  ec: 2.7.1.39
+- id: mpqRxn283
+  name: threonine synthase ( thrC)
+  genes: MPQ_0913
+  equation: H2O[c] + PHSER[c] => PI[c] + THR[c]
+  subsystem: Amino acid metabolism
+  ec: 4.2.3.1
+- id: mpqRxn284
+  name: threonine dehydratase ( ilvA, tdcB)
+  genes: MPQ_0174
+  equation: THR[c] => NH3[c] + OBUT[c]
+  subsystem: Amino acid metabolism
+  ec: 4.3.1.19
+- id: mpqRxn285
+  name: L-threonine aldolase
+  equation: 4HLT[c] <=> GLY[c] + GLAL[c]
+  subsystem: Amino acid metabolism
+  ec: 4.1.2.-
+- id: mpqRxn286
+  name: 2-ketobutyrate formate-lyase
+  equation: COA[c] + OBUT[c] => PROPCOA[c] + FOR[c]
+  subsystem: Amino acid metabolism
+  ec: 2.3.1.-
+- id: mpqRxn287
+  name: betaine-aldehyde dehydrogenase (betB, gbsA)
+  genes: MPQ_0131
+  equation: H2O[c] + NAD[c] + BETALD[c] => (2) H[c] + NADH[c] + GLYB[c]
+  subsystem: Amino acid metabolism
+  ec: 1.2.1.8
+- id: mpqRxn288
+  name: serine O-acetyltransferase (cysE)
+  genes: MPQ_1848 or MPQ_2106
+  equation: ACCOA[c] + SER_c[c] <=> COA[c] + ASER[c]
+  subsystem: Amino acid metabolism
+  ec: 2.3.1.30
+- id: mpqRxn289
+  name: cysteine synthase A (cysK)
+  genes: MPQ_0680 and MPQ_0977
+  equation: ASER[c] + THJ[c] => H[c] + AC[c] + SULCYS[c]
+  subsystem: Amino acid metabolism
+  ec: 2.5.1.47
+- id: mpqRxn290
+  name: cysteine synthase A (cysK)
+  genes: MPQ_0680 and MPQ_0977
+  equation: H2S[c] + ASER[c] => H[c] + AC[c] + CYS_c[c]
+  subsystem: Amino acid metabolism
+  ec: 2.5.1.47
+- id: mpqRxn291
+  name: aspartate aminotransferase (aspB)
+  genes: MPQ_1336
+  equation: AKG[c] + CYS_c[c] <=> GLU[c] + MPYR[c]
+  subsystem: Amino acid metabolism
+  ec: 2.6.1.1
+- id: mpqRxn292
+  name: cystathionine beta-lyase (metC)
+  genes: MPQ_1504
+  equation: H2O[c] + CYS_c[c] => PYR[c] + NH3[c] + H2S[c]
+  subsystem: Amino acid metabolism
+  ec: 4.4.1.8
+- id: mpqRxn293
+  name: homoserine O-succinyltransferase (metA)
+  equation: SUCCOA[c] + HSER[c] => COA[c] + OSLHSER[c]
+  subsystem: Amino acid metabolism
+  ec: 2.3.1.46
+- id: mpqRxn294
+  name: O-succinylhomoserine sulfhydrylase(metZ)
+  genes: MPQ_1604 or MPQ_1278 or MPQ_0057
+  equation: H2S[c] + OSLHSER[c] => H[c] + SUCC[c] + HCYS[c]
+  subsystem: Amino acid metabolism
+  ec: 2.5.1.-
+- id: mpqRxn295
+  name: homoserine O-acetyltransferase
+  genes: MPQ_2470
+  equation: ACCOA[c] + HSER[c] => COA[c] + OAHSER[c]
+  subsystem: Amino acid metabolism
+  ec: 2.3.1.31
+- id: mpqRxn296
+  name: cystathionine gamma-synthase (metB)
+  genes: MPQ_1954
+  equation: H2S[c] + OAHSER[c] => H[c] + AC[c] + HCYS[c]
+  subsystem: Amino acid metabolism
+  ec: 2.5.1.49
+- id: mpqRxn297
+  name: cystathionine gamma-synthase ( metB)
+  genes: MPQ_1954
+  equation: CYS_c[c] + OSLHSER[c] => H[c] + SUCC[c] + LLCT[c]
+  subsystem: Amino acid metabolism
+  ec: 2.5.1.48
+- id: mpqRxn298
+  name: cystathionine beta-lyase (metC)
+  genes: MPQ_1504
+  equation: H2O[c] + LLCT[c] => PYR[c] + NH3[c] + HCYS[c]
+  subsystem: Amino acid metabolism
+  ec: 4.4.1.8
+- id: mpqRxn299
+  name: 5-methyltetrahydrofolate--homocysteine methyltransferase(metH)
+  genes: MPQ_2522
+  equation: HCYS[c] + MTHF[c] => THF[c] + MET[c]
+  subsystem: Amino acid metabolism
+  ec: 2.1.1.13
+- id: mpqRxn300
+  name: 5-methyltetrahydropteroyltriglutamate--homocysteine methyltransferase
+  genes: MPQ_1141
+  equation: HCYS[c] + MTHPTGLU[c] => MET[c] + THPTGLU[c]
+  subsystem: Amino acid metabolism
+  ec: 2.1.1.14
+- id: mpqRxn301
+  name: S-adenosylmethionine synthetase (metK)
+  genes: MPQ_0187
+  equation: ATP[c] + H2O[c] + MET[c] => PI[c] + PPI[c] + SAM[c]
+  subsystem: Amino acid metabolism
+  ec: 2.5.1.6
+- id: mpqRxn302
+  name: L-methionine R-oxide reductase (trdrd)
+  genes: MPQ_0549 or MPQ_0678
+  equation: H2O[c] + TRDOX[c] + MET[c] <=> TRDRD[c] + METOX[c]
+  subsystem: Amino acid metabolism
+  ec: 1.8.4.11/1.8.4.12
+- id: mpqRxn303
+  name: L-methionine R-oxide (H2O2)
+  genes: MPQ_0549 or MPQ_0678
+  equation: H2O2[c] + MET[c] => H2O[c] + METRO[c]
+  subsystem: Amino acid metabolism
+  ec: 1.8.4.11/1.8.4.12
+- id: mpqRxn304
+  name: S-Adenosyl-L-methionine:DNA (cytosine-5-)-methyltransferase
+  genes: MPQ_2040
+  equation: SAM[c] + CYTS_c[c] <=> H[c] + SAH[c] + 5MC[c]
+  subsystem: Amino acid metabolism
+  ec: 2.1.1.37
+- id: mpqRxn305
+  name: adenosylhomocysteinase
+  genes: MPQ_0189
+  equation: H2O[c] + SAH[c] => ADN_c[c] + HCYS[c]
+  subsystem: Amino acid metabolism
+  ec: 3.3.1.1
+- id: mpqRxn306
+  name: L-methionine R-oxide (H2O2)
+  genes: MPQ_0678 or MPQ_0549
+  equation: H2O2[c] + MET[c] => H2O[c] + METRO[c]
+  subsystem: Amino acid metabolism
+  ec: 1.8.4.11/1.8.4.12
+- id: mpqRxn307
+  name: 2-hydroxy-3-keto-5-methylthiopentenyl-1-phosphate phosphatase (mtnX)
+  genes: MPQ_1274
+  equation: H2O[c] + HYKEMEP[c] => PI[c] + D5MPO[c]
+  subsystem: Amino acid metabolism
+  ec: 3.1.3.87
+- id: mpqRxn308
+  name: spermidine synthase (speE)
+  genes: MPQ_0930
+  equation: DSAM[c] + SPRMD[c] => H[c] + 5MTA[c] + SPRM[c]
+  subsystem: Amino acid metabolism
+  ec: 2.5.1.16
+- id: mpqRxn309
+  name: spermidine synthase (speE)
+  genes: MPQ_0930
+  equation: DSAM[c] + PTRSC[c] => H[c] + SPRMD[c] + 5MTA[c]
+  subsystem: Amino acid metabolism
+  ec: 2.5.1.16
+- id: mpqRxn310
+  name: 5'-methylthioadenosine phosphorylase
+  genes: MPQ_1492
+  equation: PI[c] + 5MTA[c] => AD_c[c] + MTR1P[c]
+  subsystem: Amino acid metabolism
+  ec: 2.4.2.28
+- id: mpqRxn311
+  name: 5-Methylthio-5-deoxy-D-ribose-1-phosphate ketol-isomerase
+  genes: MPQ_0892
+  equation: MTR1P[c] <=> MTRL1P[c]
+  subsystem: Amino acid metabolism
+  ec: 5.3.1.23
+- id: mpqRxn312
+  name: Phosphomethylpyrimidine synthase
+  genes: MPQ_2555
+  equation: AIR[c] + SAM[c] => (3) H[c] + FOR[c] + DAD5[c] + MET[c] + AHMP[c] + CO[c]
+  subsystem: Amino acid metabolism
+  ec: 4.1.99.17
+- id: mpqRxn313
+  name: methyltransferase
+  genes: MPQ_1141
+  equation: H[c] + MTHPTGLU[c] + SAH[c] <=> THPTGLU[c] + SAM[c]
+  subsystem: Amino acid metabolism
+  ec: 2.1.1.-
+- id: mpqRxn314
+  name: aldehyde dehydrogenase (NAD+)
+  genes: MPQ_1244
+  equation: H2O[c] + NAD[c] + MMSA[c] => (2) H[c] + NADH[c] + MMALN[c]
+  subsystem: Amino acid metabolism
+  ec: 1.2.1.3
+- id: mpqRxn315
+  name: 3-isopropylmalate/(R)-2-methylmalate dehydratase
+  genes: MPQ_1619 and MPQ_1617
+  equation: R2MMAL[c] => H2O[c] + MEMA[c]
+  subsystem: Amino acid metabolism
+  ec: 4.2.1.35
+- id: mpqRxn316
+  name: 3-isopropylmalate dehydrogenase
+  genes: MPQ_1616
+  equation: NAD[c] + MEMA[c] => H[c] + NADH[c] + CO2[c] + OBUT[c]
+  subsystem: Amino acid metabolism
+  ec: 1.1.1.85
+- id: mpqRxn317
+  name: acetolactate synthase
+  genes: MPQ_0635 and MPQ_0634
+  equation: H[c] + PYR[c] + OBUT[c] => CO2[c] + ABUT[c]
+  subsystem: Amino acid metabolism
+  ec: 2.2.1.6
+- id: mpqRxn318
+  name: ketol-acid reductoisomerase (ilvC)
+  genes: MPQ_0633
+  equation: ABUT[c] <=> HMOP[c]
+  subsystem: Amino acid metabolism
+  ec: 1.1.1.86
+- id: mpqRxn319
+  name: ketol-acid reductoisomerase (ilvC)
+  genes: MPQ_0633
+  equation: H[c] + NADPH[c] + HMOP[c] <=> NADP[c] + DHMP[c]
+  subsystem: Amino acid metabolism
+  ec: 1.1.1.86
+- id: mpqRxn320
+  name: dihydroxy-acid dehydratase (ilvD)
+  genes: MPQ_0388
+  equation: DHMP[c] => H2O[c] + 3MOP[c]
+  subsystem: Amino acid metabolism
+  ec: 4.2.1.9
+- id: mpqRxn321
+  name: branched-chain amino acid aminotransferase (ilvE)
+  genes: MPQ_2095
+  equation: GLU[c] + 3MOP[c] <=> AKG[c] + ILE[c]
+  subsystem: Amino acid metabolism
+  ec: 2.6.1.42
+- id: mpqRxn322
+  name: ketol-acid reductoisomerase (ilvC)
+  genes: MPQ_0633
+  equation: ACLAC[c] <=> 33HMEOXOBUT[c]
+  subsystem: Amino acid metabolism
+  ec: 1.1.1.86
+- id: mpqRxn323
+  name: NADPH[c] + H[c] + 33HMEOXOBUT[c] <=> NADP[c] + DH3MVA[c]
+  genes: MPQ_0633
+  equation: H[c] + NADPH[c] + 33HMEOXOBUT[c] <=> NADP[c] + DH3MVA[c]
+  subsystem: Amino acid metabolism
+  ec: 1.1.1.86
+- id: mpqRxn324
+  name: dihydroxy-acid dehydratase (ilvD)
+  genes: MPQ_0388
+  equation: DH3MVA[c] => H2O[c] + OMVAL[c]
+  subsystem: Amino acid metabolism
+  ec: 4.2.1.9
+- id: mpqRxn325
+  name: branched-chain amino acid aminotransferase (ilvE)
+  genes: MPQ_2095
+  equation: GLU[c] + OMVAL[c] <=> AKG[c] + VAL[c]
+  subsystem: Amino acid metabolism
+  ec: 2.6.1.42
+- id: mpqRxn326
+  name: valine--pyruvate aminotransferase (avtA)
+  genes: MPQ_0911
+  equation: ALA_c[c] + OMVAL[c] <=> PYR[c] + VAL[c]
+  subsystem: Amino acid metabolism
+  ec: 2.6.1.66
+- id: mpqRxn327
+  name: 2-isopropylmalate synthase (leuA)
+  genes: MPQ_1929 or MPQ_2183
+  equation: H2O[c] + ACCOA[c] + OMVAL[c] => H[c] + COA[c] + IPPMAL[c]
+  subsystem: Amino acid metabolism
+  ec: 2.3.3.13
+- id: mpqRxn328
+  name: 3-isopropylmalate/(R)-2-methylmalate dehydratase (leuC and leuD)
+  genes: MPQ_1619 and MPQ_1617
+  equation: IPPMAL[c] <=> H2O[c] + PPMAL[c]
+  subsystem: Amino acid metabolism
+  ec: 4.2.1.33
+- id: mpqRxn329
+  name: '3-isopropylmalate dehydratase '
+  genes: MPQ_1619 and MPQ_1617
+  equation: H2O[c] + PPMAL[c] <=> CBHCAP[c]
+  subsystem: Amino acid metabolism
+  ec: 4.2.1.33
+- id: mpqRxn330
+  name: 3-isopropylmalate dehydrogenase (leuB)
+  genes: MPQ_1616
+  equation: NAD[c] + CBHCAP[c] => H[c] + NADH[c] + OICAP[c]
+  subsystem: Amino acid metabolism
+  ec: 1.1.1.85
+- id: mpqRxn331
+  name: spontaneous
+  equation: H[c] + OICAP[c] => CO2[c] + 4MOP[c]
+  subsystem: Amino acid metabolism
+- id: mpqRxn332
+  name: branched-chain amino acid aminotransferase (ilvE)
+  genes: MPQ_2095
+  equation: GLU[c] + 4MOP[c] <=> AKG[c] + LEU[c]
+  subsystem: Amino acid metabolism
+  ec: 2.6.1.42
+- id: mpqRxn333
+  name: dihydrodipicolinate synthase (dapA)
+  genes: MPQ_1414 or MPQ_1802
+  equation: PYR[c] + ASPSA[c] => H[c] + (2) H2O[c] + DHDP[c]
+  subsystem: Amino acid metabolism
+  ec: 4.3.3.7
+- id: mpqRxn334
+  name: dihydrodipicolinate reductase (dapB)
+  genes: MPQ_1890
+  equation: H[c] + NADPH[c] + DHDP[c] => NADP[c] + TDHDP[c]
+  subsystem: Amino acid metabolism
+  ec: 1.17.1.8
+- id: mpqRxn335
+  name: 2,3,4,5-tetrahydropyridine-2-carboxylate N-succinyltransferase (dapD)
+  genes: MPQ_0971
+  equation: H2O[c] + SUCCOA[c] + TDHDP[c] => COA[c] + SAOPIM[c]
+  subsystem: Amino acid metabolism
+  ec: 2.3.1.117
+- id: mpqRxn336
+  name: acetylornithine/N-succinyldiaminopimelate aminotransferase (argD)
+  genes: MPQ_1368
+  equation: GLU[c] + SAOPIM[c] => AKG[c] + SDAPIM[c]
+  subsystem: Amino acid metabolism
+  ec: 2.6.1.17
+- id: mpqRxn337
+  name: N-Succinyl-LL-2,6-diaminoheptanedioate amidohydrolase (dapE)
+  genes: MPQ_0969
+  equation: H2O[c] + SDAPIM[c] => SUCC[c] + DAPIM[c]
+  subsystem: Amino acid metabolism
+  ec: 3.5.1.18
+- id: mpqRxn338
+  name: diaminopimelate epimerase (dapF)
+  genes: MPQ_0185
+  equation: DAPIM[c] <=> MDAPIM[c]
+  subsystem: Amino acid metabolism
+  ec: 5.1.1.7
+- id: mpqRxn339
+  name: diaminopimelate decarboxylase (lysA)
+  genes: MPQ_2538
+  equation: H[c] + MDAPIM[c] => CO2[c] + LYS[c]
+  subsystem: Amino acid metabolism
+  ec: 4.1.1.20
+- id: mpqRxn340
+  name: L-Lysine carboxy-lyase
+  genes: peg.895
+  equation: H[c] + LYS[c] => CO2[c] + 15DAP[c]
+  subsystem: Amino acid metabolism
+  ec: 4.1.1.18
+- id: mpqRxn341
+  name: amino-acid N-acetyltransferase (argJ)
+  genes: MPQ_0500 or MPQ_0524
+  equation: ACCOA[c] + GLU[c] => H[c] + COA[c] + NAGLU[c]
+  subsystem: Amino acid metabolism
+  ec: 2.3.1.1
+- id: mpqRxn342
+  name: acetylglutamate kinase (argB)
+  genes: MPQ_0497
+  equation: ATP[c] + NAGLU[c] => ADP[c] + NAGLUP[c]
+  subsystem: Amino acid metabolism
+  ec: 2.7.2.8
+- id: mpqRxn343
+  name: N-acetyl-gamma-glutamyl-phosphate reductase (argC)
+  genes: MPQ_0060
+  equation: H[c] + NADPH[c] + NAGLUP[c] => PI[c] + NADP[c] + NAGLUS[c]
+  subsystem: Amino acid metabolism
+  ec: 1.2.1.38
+- id: mpqRxn344
+  name: acetylornithine aminotransferase (argD)
+  genes: MPQ_1626
+  equation: GLU[c] + NAGLUS[c] <=> AKG[c] + NAORN[c]
+  subsystem: Amino acid metabolism
+  ec: 2.6.1.11
+- id: mpqRxn345
+  name: glutamate N-acetyltransferase (argJ)
+  genes: MPQ_0524
+  equation: GLU[c] + NAORN[c] <=> NAGLU[c] + ORN[c]
+  subsystem: Amino acid metabolism
+  ec: 2.3.1.35
+- id: mpqRxn346
+  name: ornithine carbamoyltransferase (argF, argI)
+  genes: MPQ_1625
+  equation: CAP[c] + ORN[c] <=> H[c] + PI[c] + CITR[c]
+  subsystem: Amino acid metabolism
+  ec: 2.1.3.3
+- id: mpqRxn347
+  name: argininosuccinate synthase (argG)
+  genes: MPQ_1623
+  equation: ATP[c] + ASP_c[c] + CITR[c] => H[c] + PPI[c] + AMP[c] + ARGSUCC[c]
+  subsystem: Amino acid metabolism
+  ec: 6.3.4.5
+- id: mpqRxn348
+  name: argininosuccinate lyase (argH)
+  genes: MPQ_0037
+  equation: ARGSUCC[c] <=> FUM[c] + ARG_c[c]
+  subsystem: Amino acid metabolism
+  ec: 4.3.2.1
+- id: mpqRxn349
+  name: arginase (rocF)
+  equation: H2O[c] + ARG_c[c] => UREA[c] + ORN[c]
+  subsystem: Amino acid metabolism
+  ec: 3.5.3.1
+- id: mpqRxn350
+  name: Urea:carbon-dioxide ligase (ADP-forming)
+  genes: MPQ_0992
+  equation: ATP[c] + HCO3[c] + UREA[c] <=> ADP[c] + H[c] + PI[c] + UREACAR[c]
+  subsystem: Amino acid metabolism
+  ec: 6.3.4.6
+- id: mpqRxn351
+  name: allophanate hydrolase
+  genes: MPQ_0993 or MPQ_0994
+  equation: H2O[c] + UREACAR[c] => H[c] + (2) CO2[c] + (2) NH3[c]
+  subsystem: Amino acid metabolism
+  ec: 3.5.1.54
+- id: mpqRxn352
+  name: arginine decarboxylase/L-arginine carboxylyase
+  genes: MPQ_0924
+  equation: H[c] + ARG_c[c] => CO2[c] + AGMT[c]
+  subsystem: Amino acid metabolism
+  ec: 4.1.1.19
+- id: mpqRxn353
+  name: glutamate 5-kinase (ProB)
+  genes: MPQ_0539
+  equation: ATP[c] + GLU[c] => ADP[c] + GLU5P[c]
+  subsystem: Amino acid metabolism
+  ec: 2.7.2.11
+- id: mpqRxn354
+  name: glutamate-5-semialdehyde dehydrogenase (proA)
+  genes: MPQ_0596
+  equation: H[c] + NADPH[c] + GLU5P[c] => PI[c] + NADP[c] + GLUGSAL[c]
+  subsystem: Amino acid metabolism
+  ec: 1.2.1.41
+- id: mpqRxn355
+  name: spontaneous
+  equation: GLUGSAL[c] <=> H[c] + H2O[c] + P5C[c]
+  subsystem: Amino acid metabolism
+- id: mpqRxn356
+  name: ornithine--oxo-acid transaminase
+  genes: MPQ_1273
+  equation: AKG[c] + ORN[c] => GLU[c] + GLUGSAL[c]
+  subsystem: Amino acid metabolism
+  ec: 2.6.1.13
+- id: mpqRxn357
+  name: pyrroline-5-carboxylate reductase (proC)
+  genes: MPQ_0647
+  equation: (2) H[c] + NADPH[c] + P5C[c] => NADP[c] + PRO_c[c]
+  subsystem: Amino acid metabolism
+  ec: 1.5.1.2
+- id: mpqRxn358
+  name: pyrroline-6-carboxylate reductase (proC)
+  genes: MPQ_0647
+  equation: (2) H[c] + NADH[c] + P5C[c] => NAD[c] + PRO_c[c]
+  subsystem: Amino acid metabolism
+  ec: 1.5.1.2
+- id: mpqRxn359
+  name: pyrroline-5-carboxylate reductase (proC)
+  genes: MPQ_0647
+  equation: (2) H[c] + NADH[c] + PHC[c] => NAD[c] + HPRO[c]
+  subsystem: Amino acid metabolism
+  ec: 1.5.1.2
+- id: mpqRxn360
+  name: pyrroline-6-carboxylate reductase( proC)
+  genes: MPQ_0647
+  equation: (2) H[c] + NADPH[c] + PHC[c] => NADP[c] + HPRO[c]
+  subsystem: Amino acid metabolism
+  ec: 1.5.1.2
+- id: mpqRxn361
+  name: aspartate aminotransferase (aspB)
+  genes: MPQ_1336
+  equation: AKG[c] + E4HGLU[c] => GLU[c] + HYDROXYAKG[c]
+  subsystem: Amino acid metabolism
+  ec: 2.6.1.1
+- id: mpqRxn362
+  name: D-alanine transaminase
+  genes: MPQ_2488
+  equation: OA[c] + E4HGLU[c] => HYDROXYAKG[c] + DASP[c]
+  subsystem: Amino acid metabolism
+  ec: 2.6.1.21
+- id: mpqRxn363
+  name: 2-dehydro-3-deoxyphosphogluconate aldolase / 4-hydroxy-2-oxoglutarate aldolase
+    (eda)
+  equation: HYDROXYAKG[c] => PYR[c] + GLX[c]
+  subsystem: Amino acid metabolism
+  ec: 4.1.3.16 4.1.2.14
+- id: mpqRxn364
+  name: aldehyde dehydrogenase (NAD+)
+  genes: MPQ_1244
+  equation: H2O[c] + NAD[c] + ABAL[c] => (2) H[c] + NADH[c] + GABA[c]
+  subsystem: Amino acid metabolism
+  ec: 1.2.1.3
+- id: mpqRxn365
+  name: aldehyde dehydrogenase (NAD+)
+  genes: MPQ_1244
+  equation: H2O[c] + NADP[c] + ABAL[c] => (2) H[c] + NADPH[c] + GABA[c]
+  subsystem: Amino acid metabolism
+  ec: 1.2.1.3
+- id: mpqRxn366
+  name: creatinine amidohydrolase
+  genes: MPQ_0987
+  equation: H2O[c] + CRTNN[c] <=> CRTN[c]
+  subsystem: Amino acid metabolism
+  ec: 3.5.2.10
+- id: mpqRxn367
+  name: ATP phosphoribosyltransferase (hisG)
+  genes: MPQ_0278
+  equation: PPI[c] + PRBATP[c] <=> ATP[c] + PRPP[c]
+  subsystem: Amino acid metabolism
+  ec: 2.4.2.17
+- id: mpqRxn368
+  name: phosphoribosyl-ATP pyrophosphohydrolase (hisIE)
+  genes: MPQ_0287
+  equation: H2O[c] + PRBATP[c] => H[c] + PPI[c] + PRBAMP[c]
+  subsystem: Amino acid metabolism
+  ec: 3.6.1.31
+- id: mpqRxn369
+  name: phosphoribosyl-AMP cyclohydrolase (hisIE)
+  genes: MPQ_0286
+  equation: H2O[c] + PRBAMP[c] => PRFP[c]
+  subsystem: Amino acid metabolism
+  ec: 3.5.4.19
+- id: mpqRxn370
+  name: phosphoribosylformimino-5-aminoimidazole carboxamide ribotide isomerase (hisA)
+  genes: MPQ_0284 or MPQ_1557
+  equation: PRFP[c] => PRLP[c]
+  subsystem: Amino acid metabolism
+  ec: 5.3.1.16
+- id: mpqRxn371
+  name: glutamine amidotransferase (hisH) and cyclase (hisF)
+  genes: MPQ_0283 and MPQ_0285
+  equation: GLN_c[c] + PRLP[c] => H[c] + GLU[c] + AICAR[c] + DIMGP[c]
+  subsystem: Amino acid metabolism
+- id: mpqRxn372
+  name: imidazoleglycerol-phosphate dehydratase (hisB)
+  genes: MPQ_0282
+  equation: DIMGP[c] => H2O[c] + IMACP[c]
+  subsystem: Amino acid metabolism
+  ec: 4.2.1.19
+- id: mpqRxn373
+  name: histidinol-phosphate aminotransferase (hisC)
+  genes: MPQ_0280 or MPQ_1596
+  equation: GLU[c] + IMACP[c] <=> AKG[c] + HISOLP[c]
+  subsystem: Amino acid metabolism
+  ec: 2.6.1.9
+- id: mpqRxn374
+  name: histidinol-phosphatase
+  equation: H2O[c] + HISOLP[c] => PI[c] + HISOL[c]
+  subsystem: Amino acid metabolism
+  ec: 3.1.3.15
+- id: mpqRxn375
+  name: histidinol dehydrogenase (hisD)
+  genes: MPQ_0279
+  equation: NAD[c] + HISOL[c] => H[c] + NADH[c] + HISTIDINAL[c]
+  subsystem: Amino acid metabolism
+  ec: 1.1.1.23
+- id: mpqRxn376
+  name: histidinol dehydrogenase (hisD)
+  genes: MPQ_0279
+  equation: H2O[c] + NAD[c] + HISTIDINAL[c] => (2) H[c] + NADH[c] + HIS[c]
+  subsystem: Amino acid metabolism
+  ec: 1.1.1.23
+- id: mpqRxn377
+  name: D-alanine transaminase (dat)
+  genes: MPQ_2488
+  equation: PHPYR[c] + DGLU[c] <=> AKG[c] + DPHE[c]
+  subsystem: Amino acid metabolism
+  ec: 2.6.1.21
+- id: mpqRxn378
+  name: D-amino-acid dehydrogenase (dadA)
+  genes: MPQ_1873
+  equation: H2O[c] + NAD[c] + DPHE[c] => H[c] + NADH[c] + NH3[c] + PHPYR[c]
+  subsystem: Amino acid metabolism
+  ec: 1.4.99.1
+- id: mpqRxn379
+  name: 3-deoxy-7-phosphoheptulonate synthase (aroA)
+  genes: MPQ_1000 or MPQ_1595
+  equation: H2O[c] + PEP[c] + E4P[c] => PI[c] + 3DDAH7P[c]
+  subsystem: Amino acid metabolism
+  ec: 2.5.1.54
+- id: mpqRxn380
+  name: 3-dehydroquinate synthase (aroC)
+  genes: MPQ_2447
+  equation: 3DDAH7P[c] => PI[c] + DQT[c]
+  subsystem: Amino acid metabolism
+  ec: 4.2.3.4
+- id: mpqRxn381
+  name: '3-dehydroquinate dehydratase II '
+  genes: MPQ_0025
+  equation: DQT[c] <=> H2O[c] + DHSK[c]
+  subsystem: Amino acid metabolism
+  ec: 4.2.1.10
+- id: mpqRxn382
+  name: shikimate 5-dehydrogenase
+  genes: MPQ_2436
+  equation: H[c] + NADPH[c] + DHSK[c] <=> NADP[c] + SME[c]
+  subsystem: Amino acid metabolism
+  ec: 1.1.1.25
+- id: mpqRxn383
+  name: shikimate kinase (aroK, aroL)
+  genes: MPQ_2448
+  equation: ATP[c] + SME[c] => ADP[c] + H[c] + SME3P[c]
+  subsystem: Amino acid metabolism
+  ec: 2.7.1.71
+- id: mpqRxn384
+  name: 3-phosphoshikimate 1-carboxyvinyltransferase (aroA)
+  genes: MPQ_1163
+  equation: PEP[c] + SME3P[c] <=> PI[c] + 3PSME[c]
+  subsystem: Amino acid metabolism
+  ec: 2.5.1.19
+- id: mpqRxn385
+  name: chorismate synthase (aroC)
+  genes: MPQ_0618
+  equation: 3PSME[c] => PI[c] + CHOR[c]
+  subsystem: Amino acid metabolism
+  ec: 4.2.3.5
+- id: mpqRxn386
+  name: anthranilate synthase (trpE)
+  genes: MPQ_2461 and MPQ_2460
+  equation: GLN_c[c] + CHOR[c] => H[c] + PYR[c] + GLU[c] + AN[c]
+  subsystem: Amino acid metabolism
+  ec: 4.1.3.27
+- id: mpqRxn387
+  name: Chorismate pyruvate-lyase (amino-accepting)|E4.1.3.27A, trpE; anthranilate
+    synthase component I
+  genes: MPQ_2461 and MPQ_2460
+  equation: NH3[c] + CHOR[c] => H[c] + H2O[c] + PYR[c] + AN[c]
+  subsystem: Amino acid metabolism
+  ec: 4.1.3.27
+- id: mpqRxn388
+  name: anthranilate phosphoribosyltransferase (trpD)
+  genes: MPQ_2459
+  equation: PRPP[c] + AN[c] => PPI[c] + NPRAN[c]
+  subsystem: Amino acid metabolism
+  ec: 2.4.2.18
+- id: mpqRxn389
+  name: phosphoribosylanthranilate isomerase (trpF)
+  genes: MPQ_1612
+  equation: NPRAN[c] => CPAD5P[c]
+  subsystem: Amino acid metabolism
+  ec: 5.3.1.24
+- id: mpqRxn390
+  name: indole-3-glycerol-phosphate synthase (trpC)
+  genes: MPQ_2457
+  equation: H[c] + CPAD5P[c] => H2O[c] + CO2[c] + IGP[c]
+  subsystem: Amino acid metabolism
+  ec: 4.1.1.48
+- id: mpqRxn391
+  name: tryptophan synthase (trpB)
+  genes: MPQ_1610 and MPQ_1611
+  equation: IGP[c] <=> T3P1[c] + IND[c]
+  subsystem: Amino acid metabolism
+  ec: 4.2.1.20
+- id: mpqRxn392
+  name: tryptophan synthase (trpB)
+  genes: MPQ_1610 and MPQ_1611
+  equation: SER_c[c] + IND[c] <=> H2O[c] + TRP[c]
+  subsystem: Amino acid metabolism
+  ec: 4.2.1.20
+- id: mpqRxn393
+  name: chorismate mutase (pheB)
+  genes: MPQ_1598
+  equation: CHOR[c] => PHEN[c]
+  subsystem: Amino acid metabolism
+  ec: 5.4.99.5
+- id: mpqRxn394
+  name: prephenate dehydratase (pheA2)
+  genes: MPQ_1598
+  equation: H[c] + PHEN[c] => H2O[c] + CO2[c] + PHPYR[c]
+  subsystem: Amino acid metabolism
+  ec: 4.2.1.51
+- id: mpqRxn395
+  name: histidinol-phosphate aminotransferase (hisC) / aspartate aminotransferase
+    (aspB)
+  genes: MPQ_1336 or (MPQ_0280 or MPQ_1596)
+  equation: GLU[c] + PHPYR[c] <=> AKG[c] + PHE[c]
+  subsystem: Amino acid metabolism
+  ec: 2.6.1.1  2.6.1.9
+- id: mpqRxn396
+  name: prephenate dehydrogenase (tyrA2)
+  genes: MPQ_1164
+  equation: NAD[c] + PHEN[c] => NADH[c] + CO2[c] + 4HPP[c]
+  subsystem: Amino acid metabolism
+  ec: 1.3.1.12
+- id: mpqRxn397
+  name: histidinol-phosphate aminotransferase (hisC)/aspartate aminotransferase (aspB)
+  genes: MPQ_1336 or (MPQ_0280 or MPQ_1596)
+  equation: GLU[c] + 4HPP[c] <=> AKG[c] + TYR[c]
+  subsystem: Amino acid metabolism
+  ec: 2.6.1.1  2.6.1.9
+- id: mpqRxn398
+  name: aromatic-amino-acid transaminase
+  equation: ASP_c[c] + PHEN[c] => OA[c] + AG[c]
+  subsystem: Amino acid metabolism
+  ec: 2.6.1.57
+- id: mpqRxn399
+  name: prephenate dehydratase (pheA2)
+  genes: MPQ_1598
+  equation: H[c] + AG[c] => H2O[c] + CO2[c] + PHE[c]
+  subsystem: Amino acid metabolism
+  ec: 4.2.1.51
+- id: mpqRxn400
+  name: sulfate adenylyltransferase
+  genes: MPQ_1585 and MPQ_1584
+  equation: ATP[c] + (2) H[c] + SELNT[c] => PPI[c] + ASELNT[c]
+  subsystem: Metabolism of other amino acids
+  ec: 2.7.7.4
+- id: mpqRxn401
+  name: adenylylsulfate reductase
+  equation: (2) FERO[c] + ASELNT[c] => (2) FERI[c] + AMP[c] + SELT[c]
+  subsystem: Metabolism of other amino acids
+- id: mpqRxn402
+  name: thioredoxin reductase (NADPH)
+  genes: MPQ_1257
+  equation: (4) H[c] + (3) NADPH[c] + SELT[c] => (3) H2O[c] + (3) NADP[c] + SELD[c]
+  subsystem: Metabolism of other amino acids
+  ec: 1.8.1.9
+- id: mpqRxn403
+  name: cystathionine beta-lyase
+  genes: MPQ_1504
+  equation: H2O[c] + SCYST[c] => PYR[c] + NH3[c] + SHSYS[c]
+  subsystem: Metabolism of other amino acids
+  ec: 4.4.1.8
+- id: mpqRxn404
+  name: methionyl-tRNA synthetase
+  genes: MPQ_1153
+  equation: ATP[c] + MET[c] + MTRNA[c] => PPI[c] + AMP[c] + LMETTRNA[c]
+  subsystem: Metabolism of other amino acids
+  ec: 6.1.1.10
+- id: mpqRxn405
+  name: cysteine desulfurase / selenocysteine lyase
+  genes: MPQ_2104
+  equation: H[c] + FAD[c] + ALA_c[c] + SELD[c] <=> FADH2[c] + SCYS[c]
+  subsystem: Metabolism of other amino acids
+- id: mpqRxn406
+  name: cystathionine gamma-synthase
+  genes: MPQ_1954
+  equation: OSLHSER[c] + SCYS[c] => H[c] + SUCC[c] + SCYST[c]
+  subsystem: Metabolism of other amino acids
+  ec: 2.5.1.48
+- id: mpqRxn407
+  name: 5-methyltetrahydrofolate--homocysteine methyltransferase/5-methyltetrahydropteroyltriglutamate--homocysteine
+    methyltransferase
+  genes: MPQ_1141 or MPQ_2522
+  equation: H[c] + MTHPTGLU[c] + SHSYS[c] => THPTGLU[c] + SEMET[c]
+  subsystem: Metabolism of other amino acids
+- id: mpqRxn408
+  name: glutamate racemase
+  genes: MPQ_2097
+  equation: GLU[c] <=> DGLU[c]
+  subsystem: Metabolism of other amino acids
+  ec: 5.1.1.3
+- id: mpqRxn409
+  name: UDP-N-acetylmuramate--alanine ligase
+  genes: MPQ_0482
+  equation: ATP[c] + ALA_c[c] + UDPNAM[c] => ADP[c] + H[c] + PI[c] + UDPNAMA[c]
+  subsystem: Metabolism of other amino acids
+  ec: 6.3.2.8
+- id: mpqRxn410
+  name: UDP-N-acetylmuramoylalanine--D-glutamate ligase
+  genes: MPQ_0479
+  equation: ATP[c] + DGLU[c] + UDPNAMA[c] => ADP[c] + H[c] + PI[c] + UDPNAMAG[c]
+  subsystem: Metabolism of other amino acids
+  ec: 6.3.2.9
+- id: mpqRxn411
+  name: alanine racemase
+  genes: MPQ_1502
+  equation: ALA_c[c] <=> DALA[c]
+  subsystem: Metabolism of other amino acids
+  ec: 5.1.1.1
+- id: mpqRxn412
+  name: D-amino acid dehydrogenase
+  genes: MPQ_1873
+  equation: H2O[c] + FAD[c] + DALA[c] <=> PYR[c] + NH3[c] + FADH2[c]
+  subsystem: Metabolism of other amino acids
+  ec: 1.4.99.1
+- id: mpqRxn413
+  name: D-alanine transaminase
+  genes: MPQ_2488
+  equation: AKG[c] + DALA[c] <=> PYR[c] + DGLU[c]
+  subsystem: Metabolism of other amino acids
+  ec: 2.6.1.21
+- id: mpqRxn414
+  name: D-AlanineD-Alanine ligase
+  genes: MPQ_0484
+  equation: ATP[c] + (2) DALA[c] => ADP[c] + H[c] + PI[c] + ALAALA[c]
+  subsystem: Metabolism of other amino acids
+  ec: 6.3.2.4
+- id: mpqRxn415
+  name: glutathione peroxidase
+  genes: MPQ_1669
+  equation: (2) RGT[c] + H2O2[c] => (2) H2O[c] + OGT[c]
+  subsystem: Metabolism of other amino acids
+  ec: 1.11.1.9
+- id: mpqRxn416
+  name: glutamate-cysteine ligase
+  genes: MPQ_2529
+  equation: ATP[c] + GLU[c] + CYS_c[c] <=> ADP[c] + H[c] + PI[c] + GC[c]
+  subsystem: Metabolism of other amino acids
+  ec: 6.3.2.2
+- id: mpqRxn417
+  name: L-cysteinylglycine dipeptidase
+  genes: MPQ_0251 and MPQ_0693
+  equation: H2O[c] + CGLY[c] => GLY[c] + CYS_c[c]
+  subsystem: Metabolism of other amino acids
+  ec: 3.4.11.1
+- id: mpqRxn418
+  name: glutathione synthetase
+  genes: MPQ_2530
+  equation: ATP[c] + GLY[c] + GC[c] => ADP[c] + H[c] + PI[c] + RGT[c]
+  subsystem: Metabolism of other amino acids
+  ec: 6.3.2.3
+- id: mpqRxn419
+  name: valine-threnine-methnine tripeptide hydrolysis
+  genes: MPQ_0251 or MPQ_0607 or MPQ_0693 or MPQ_1485 or MPQ_2308 or MPQ_2625
+  equation: (3) H2O[c] + VTM[c] => THR[c] + MET[c] + VAL[c]
+  subsystem: Metabolism of other amino acids
+- id: mpqRxn420
+  name: pqqApeptide N terminus hydrolysis
+  genes: MPQ_0251 or MPQ_0607 or MPQ_0693 or MPQ_1485 or MPQ_2308 or MPQ_2625
+  equation:
+    reversible: false
+    left:
+    - id: H2O
+      compartment: c
+      value: 14
+    - id: PQQAN
+      compartment: c
+      value: 1
+    right:
+    - id: GLU
+      compartment: c
+      value: 2
+    - id: GLY
+      compartment: c
+      value: 1
+    - id: ALA_c
+      compartment: c
+      value: 1
+    - id: TRP
+      compartment: c
+      value: 1
+    - id: THR
+      compartment: c
+      value: 2
+    - id: MET
+      compartment: c
+      value: 2
+    - id: LYS
+      compartment: c
+      value: 1
+    - id: ARG_c
+      compartment: c
+      value: 1
+    - id: PRO_c
+      compartment: c
+      value: 1
+    - id: PHE
+      compartment: c
+      value: 2
+  subsystem: Metabolism of other amino acids
+- id: mpqRxn421
+  name: pqqApeptide C terminus hydrolysis
+  genes: MPQ_0251 or MPQ_0607 or MPQ_0693 or MPQ_1485 or MPQ_2308 or MPQ_2625
+  equation: (4) H2O[c] + PQQAC[c] => ASN_c[c] + CYS_c[c] + VAL[c] + ARG_c[c]
+  subsystem: Metabolism of other amino acids
+- id: mpqRxn422
+  name: aminopeptidase
+  genes: MPQ_1485
+  equation: H2O[c] + METALA[c] <=> ALA_c[c] + MET[c]
+  subsystem: Metabolism of other amino acids
+- id: mpqRxn423
+  name: aminopeptidase
+  genes: MPQ_1485
+  equation: H2O[c] + GLYMET[c] <=> GLY[c] + MET[c]
+  subsystem: Metabolism of other amino acids
+- id: mpqRxn424
+  name: UDP-N-acetylglucosamine acyltransferase
+  genes: MPQ_1472
+  equation: UDPNAG[c] + C14HACP[c] => ACP[c] + UDPG2AA[c]
+  subsystem: Glycan biosynthesis and metabolism
+  ec: 2.3.1.129
+- id: mpqRxn425
+  name: UDP-3-O-[3-hydroxymyristoyl] N?acetylglucosamine deacetylase
+  genes: MPQ_0489
+  equation: H2O[c] + UDPG2AA[c] => AC[c] + UDPG2A[c]
+  subsystem: Glycan biosynthesis and metabolism
+  ec: 3.5.1.108
+- id: mpqRxn426
+  name: UDP-3-O-[3-hydroxymyristoyl] glucosamine N-acyltransferase
+  genes: MPQ_1474
+  equation: C14HACP[c] + UDPG2A[c] => H[c] + ACP[c] + UDPG23A[c]
+  subsystem: Glycan biosynthesis and metabolism
+  ec: 2.3.1.191
+- id: mpqRxn427
+  name: UDP-2,3-diacylglucosamine hydrolase
+  genes: MPQ_2207
+  equation: H2O[c] + UDPG23A[c] => (2) H[c] + UMP[c] + LIPIDX[c]
+  subsystem: Glycan biosynthesis and metabolism
+  ec: 3.6.1.54
+- id: mpqRxn428
+  name: lipid-A-disaccharide synthase
+  genes: MPQ_1471
+  equation: UDPG23A[c] + LIPIDX[c] <=> H[c] + UDP[c] + DISAC1P[c]
+  subsystem: Glycan biosynthesis and metabolism
+  ec: 2.4.1.182
+- id: mpqRxn429
+  name: Tetraacyldisaccharide 4'kinase
+  genes: MPQ_0666
+  equation: ATP[c] + DISAC1P[c] => ADP[c] + H[c] + LIPIDA[c]
+  subsystem: Glycan biosynthesis and metabolism
+  ec: 2.7.1.130
+- id: mpqRxn430
+  name: 2-dehydro-3-deoxyphosphooctonate aldolase (KDO 8-P synthase)
+  genes: MPQ_0896
+  equation: H2O[c] + PEP[c] + A5P[c] => PI[c] + KDO8P[c]
+  subsystem: Glycan biosynthesis and metabolism
+  ec: 2.5.1.55
+- id: mpqRxn431
+  name: 3-deoxy-D-manno-octulosonate 8-phosphate phosphatase
+  genes: MPQ_0217
+  equation: H2O[c] + KDO8P[c] => PI[c] + KDO[c]
+  subsystem: Glycan biosynthesis and metabolism
+  ec: 3.1.3.45
+- id: mpqRxn432
+  name: 3-deoxy-manno-octulosonate cytidylyltransferase
+  genes: MPQ_0668
+  equation: CTP[c] + KDO[c] => PPI[c] + CMPKDO[c]
+  subsystem: Glycan biosynthesis and metabolism
+  ec: 2.7.7.38
+- id: mpqRxn433
+  name: 3-deoxy-D-manno-octulosonic-acid transferase2
+  genes: MPQ_2569
+  equation: LIPIDA[c] + CMPKDO[c] => H[c] + CMP[c] + KDOLIPID4[c]
+  subsystem: Glycan biosynthesis and metabolism
+  ec: 2.4.99.12 2.4.99.13 2.4.99.14 2.4.99.15
+- id: mpqRxn434
+  name: 3-deoxy-D-manno-octulosonic-acid transferase
+  genes: MPQ_2569
+  equation: CMPKDO[c] + KDOLIPID4[c] => H[c] + CMP[c] + K2LIPIV[c]
+  subsystem: Glycan biosynthesis and metabolism
+  ec: 2.4.99.12 2.4.99.13 2.4.99.14 2.4.99.15
+- id: mpqRxn435
+  name: lipid A biosynthesis lauroyl acyltransferase
+  genes: MPQ_0186
+  equation: C120ACP[c] + K2LIPIV[c] => ACP[c] + LK2LIPIV[c]
+  subsystem: Glycan biosynthesis and metabolism
+  ec: 2.3.1.-
+- id: mpqRxn436
+  name: lipid A biosynthesis (KDO)2-(lauroyl)-lipid iva acyltransferase
+  genes: MPQ_0186
+  equation: C140ACP[c] + LK2LIPIV[c] => ACP[c] + K2LIPA[c]
+  subsystem: Glycan biosynthesis and metabolism
+  ec: 2.3.1.-
+- id: mpqRxn437
+  name: sedoheptulose 7-phosphate isomerase
+  genes: MPQ_1901 or MPQ_2271
+  equation: S7P[c] => DGDMH7P[c]
+  subsystem: Glycan biosynthesis and metabolism
+  ec: 5.3.1.28
+- id: mpqRxn438
+  name: D-beta-D-heptose 7-phosphate kinase / D-beta-D-heptose 1-phosphate adenosyltransferase
+  genes: MPQ_1902
+  equation: ATP[c] + DGDMH7P[c] => ADP[c] + H[c] + DGDMH17BP[c]
+  subsystem: Glycan biosynthesis and metabolism
+  ec: 2.7.1.167
+- id: mpqRxn439
+  name: D-glycero-D-manno-heptose 1,7-bisphosphate phosphatase
+  genes: MPQ_2079
+  equation: H2O[c] + DGDMH17BP[c] => PI[c] + DGDMH1P[c]
+  subsystem: Glycan biosynthesis and metabolism
+  ec: 3.1.3.82
+- id: mpqRxn440
+  name: D-beta-D-heptose 7-phosphate kinase / D-beta-D-heptose 1-phosphate adenosyltransferase
+  genes: MPQ_1902
+  equation: ATP[c] + H[c] + DGDMH1P[c] => PPI[c] + ADPDGDMHEP[c]
+  subsystem: Glycan biosynthesis and metabolism
+  ec: 2.7.7.70
+- id: mpqRxn441
+  name: ADP-L-glycero-D-manno-heptose 6-epimerase
+  genes: MPQ_1900
+  equation: ADPDGDMHEP[c] => ADPHEP[c]
+  subsystem: Glycan biosynthesis and metabolism
+  ec: 5.1.3.20
+- id: mpqRxn442
+  name: lipopolysaccharide biosynthesis
+  equation:
+    reversible: false
+    left:
+    - id: UDPG
+      compartment: c
+      value: 2
+    - id: CDPETN
+      compartment: c
+      value: 2
+    - id: CMPKDO
+      compartment: c
+      value: 3
+    - id: K2LIPA
+      compartment: c
+      value: 1
+    - id: ADPHEP
+      compartment: c
+      value: 3
+    right:
+    - id: ADP
+      compartment: c
+      value: 3
+    - id: H
+      compartment: c
+      value: 10
+    - id: CMP
+      compartment: c
+      value: 3
+    - id: UDP
+      compartment: c
+      value: 2
+    - id: CDP
+      compartment: c
+      value: 2
+    - id: LPS_eco
+      compartment: c
+      value: 1
+  subsystem: Glycan biosynthesis and metabolism
+- id: mpqRxn443
+  name: UDP-N-acetylmuramate dehydrogenase (murB)
+  genes: MPQ_0483
+  equation: H[c] + NADPH[c] + UACCG[c] => NADP[c] + UDPNAM[c]
+  subsystem: Glycan biosynthesis and metabolism
+  ec: 1.3.1.98
+- id: mpqRxn444
+  name: UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimelate synthetase
+    (murE)
+  genes: MPQ_0476
+  equation: ATP[c] + MDAPIM[c] + UDPNAMAG[c] => ADP[c] + H[c] + PI[c] + UGMD[c]
+  subsystem: Glycan biosynthesis and metabolism
+  ec: 6.3.2.13
+- id: mpqRxn445
+  name: UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanyl-D-alanine
+    synthetase (murF)
+  genes: peg.457 or peg.458
+  equation: ATP[c] + ALAALA[c] + UGMD[c] => ADP[c] + H[c] + PI[c] + UGMDA[c]
+  subsystem: Glycan biosynthesis and metabolism
+  ec: 6.3.2.10
+- id: mpqRxn446
+  name: phospho-N-acetylmuramoyl-pentapeptide-transferase (mraY)
+  genes: MPQ_0478
+  equation: UGMDA[c] + UDCPP[c] => UMP[c] + UAGMDA[c]
+  subsystem: Glycan biosynthesis and metabolism
+  ec: 2.7.8.13
+- id: mpqRxn447
+  name: UDP-N-acetylglucosamine-N-acetylmuramyl-(pentapeptide) pyrophosphoryl-undecaprenol
+    N-acetylglucosamine transferase (murG)
+  genes: MPQ_0481
+  equation: UDPNAG[c] + UAGMDA[c] => H[c] + UDP[c] + UAAGMDA[c]
+  subsystem: Glycan biosynthesis and metabolism
+  ec: 2.4.1.227
+- id: mpqRxn448
+  name: Peptidoglycan subunit synthesis
+  equation: UAAGMDA[c] => H[c] + PEPG[c] + UDCPDP[c]
+  subsystem: Glycan biosynthesis and metabolism
+- id: mpqRxn449
+  name: peptidoglycan subunit synthesis,
+  equation: UAAGMDA[c] => H[e] + UDCPDP[c] + PEPTIDO_eco[e]
+  subsystem: Glycan biosynthesis and metabolism
+- id: mpqRxn450
+  name: peptidoglyan subunit crosslinking reaction
+  equation: PEPTIDO_eco[e] => DALA[e] + PEPTX[c]
+  subsystem: Glycan biosynthesis and metabolism
+- id: mpqRxn451
+  name: undecaprenyl-diphosphatase (bacA)
+  genes: MPQ_2552
+  equation: H2O[c] + UDCPDP[c] => H[c] + PI[c] + UDCPP[c]
+  subsystem: Glycan biosynthesis and metabolism
+  ec: 3.6.1.27
+- id: mpqRxn452
+  name: undecaprenyl diphosphate synthase
+  genes: MPQ_1480
+  equation: FRDP[c] + (8) IPP[c] <=> (8) PPI[c] + UDCPDP[c]
+  subsystem: Glycan biosynthesis and metabolism
+  ec: 2.5.1.31
+- id: mpqRxn453
+  name: thiamine biosynthesis protein ThiC
+  genes: MPQ_2555
+  equation: H2O[c] + AIR[c] => H[c] + PI[c] + (0.5) O2[c] + GLAL[c] + AHM[c]
+  subsystem: Metabolism of cofactors and vitamins
+- id: mpqRxn454
+  name: hydroxymethylpyrimidine/phosphomethylpyrimidine kinase (thiD)
+  genes: MPQ_1366
+  equation: ATP[c] + AHM[c] => ADP[c] + H[c] + AHMP[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.7.1.49
+- id: mpqRxn455
+  name: hydroxymethylpyrimidine/phosphomethylpyrimidine kinase (thiD)
+  genes: MPQ_1366 or MPQ_2743
+  equation: ATP[c] + AHMP[c] => ADP[c] + 2MAHMP[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.7.4.7
+- id: mpqRxn456
+  name: glycine oxidase (thiO)
+  genes: MPQ_0220
+  equation: GLY[c] => (3) H[c] + IMGLY[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 1.4.3.19
+- id: mpqRxn457
+  name: hydroxyethylthiazole kinase
+  equation: ATP[c] + THZ[c] => ADP[c] + H[c] + THZP[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.7.1.50
+- id: mpqRxn458
+  name: thiamine-phosphate pyrophosphorylase (thiE)
+  genes: MPQ_2744
+  equation: H[c] + 2MAHMP[c] + THZP[c] => PPI[c] + THMP[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.5.1.3
+- id: mpqRxn459
+  name: thiamin monophosphate phosphohydrolase
+  equation: H2O[c] + THMP[c] => PI[c] + THME[c]
+  subsystem: Metabolism of cofactors and vitamins
+- id: mpqRxn460
+  name: thiamine pyrophosphokinase
+  genes: MPQ_2134
+  equation: ATP[c] + THME[c] => H[c] + AMP[c] + THDP[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.7.4.16
+- id: mpqRxn461
+  name: Riboflavin biosynthesis protein ribBA
+  genes: MPQ_1941 or MPQ_1976 or MPQ_0657
+  equation: (3) H2O[c] + GTP[c] => (2) H[c] + PPI[c] + FOR[c] + D6RP5P[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 3.5.4.25
+- id: mpqRxn462
+  name: diaminohydroxyphosphoribosylaminopyrimidine deaminase (ribD)
+  genes: MPQ_0874
+  equation: H[c] + H2O[c] + D6RP5P[c] => NH3[c] + A6RP5P[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 3.5.4.26
+- id: mpqRxn463
+  name: 5-amino-6-(5-phosphoribosylamino)uracil reductase (ribD)
+  genes: MPQ_0874
+  equation: H[c] + NADPH[c] + A6RP5P[c] => NADP[c] + A6RP5P2[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 1.1.1.193
+- id: mpqRxn464
+  name: 5-amino-6-(5-phosphoribitylamino)uracil phosphatase
+  equation: H2O[c] + A6RP5P2[c] => PI[c] + 4R5AU[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 3.1.3.-
+- id: mpqRxn465
+  name: 3,4-dihydroxy 2-butanone 4-phosphate synthase (ribBA)
+  genes: MPQ_0657
+  equation: RL5P[c] => H[c] + FOR[c] + DB4P[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 4.1.99.12
+- id: mpqRxn466
+  name: 6,7-dimethyl-8-ribityllumazine synthase (ribH)
+  genes: MPQ_2210
+  equation: 4R5AU[c] + DB4P[c] => H[c] + (2) H2O[c] + PI[c] + D8RL[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.5.1.78
+- id: mpqRxn467
+  name: riboflavin synthase (ribE)
+  genes: MPQ_0658
+  equation: (2) D8RL[c] => 4R5AU[c] + RIBFLAV[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.5.1.9
+- id: mpqRxn468
+  name: riboflavin kinase / FMN adenylyltransferase (ribF)
+  genes: MPQ_0545
+  equation: ATP[c] + RIBFLAV[c] => ADP[c] + H[c] + FMN[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.7.1.26  2.7.7.2
+- id: mpqRxn469
+  name: FMN reductase
+  genes: MPQ_1964 or MPQ_1995
+  equation: H[c] + NADPH[c] + FMN[c] => NADP[c] + FMNH2[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 1.5.1.38
+- id: mpqRxn470
+  name: riboflavin kinase / FMN adenylyltransferase (ribF)
+  genes: MPQ_0545
+  equation: ATP[c] + H[c] + FMN[c] => PPI[c] + FAD[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.7.7.2
+- id: mpqRxn471
+  name: 5,6-dimethylbenzimidazole synthase
+  genes: MPQ_0158
+  equation: H[c] + NADH[c] + O2[c] + FMNH2[c] => H2O[c] + NAD[c] + E4P[c] + DIMBEN[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 1.14.99.40
+- id: mpqRxn472
+  name: phosphoserine aminotransferase
+  genes: MPQ_1599
+  equation: GLU[c] + OHPB[c] <=> AKG[c] + PHT[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.6.1.52
+- id: mpqRxn473
+  name: threonine synthase
+  genes: MPQ_0913
+  equation: H2O[c] + PHT[c] <=> PI[c] + 4HLT[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 4.2.3.1
+- id: mpqRxn474
+  name: 4-hydroxythreonine-4-phosphate dehydrogenase
+  genes: MPQ_0602
+  equation: NAD[c] + PHT[c] => NADH[c] + CO2[c] + 3A2OP[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 1.1.1.262
+- id: mpqRxn475
+  name: 4-hydroxythreonine-4-phosphate dehydrogenase
+  genes: MPQ_0602
+  equation: NAD[c] + PHT[c] => H[c] + NADH[c] + AOPBUT[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 1.1.1.262
+- id: mpqRxn476
+  name: spontaneous
+  equation: H[c] + AOPBUT[c] <=> CO2[c] + 3A2OP[c]
+  subsystem: Metabolism of cofactors and vitamins
+- id: mpqRxn477
+  name: pyridoxine 5-phosphate synthase
+  genes: MPQ_1780
+  equation: 3A2OP[c] + DX5P[c] => H[c] + (2) H2O[c] + PI[c] + P5P[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.6.99.2
+- id: mpqRxn478
+  name: L-aspartate oxidase
+  genes: MPQ_1791
+  equation: O2[c] + ASP_c[c] => H[c] + H2O2[c] + IMASP[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 1.4.3.16
+- id: mpqRxn479
+  name: quinolinate synthase
+  genes: MPQ_2391
+  equation: T3P2[c] + IMASP[c] => (2) H2O[c] + PI[c] + PYR2CAR[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.5.1.72
+- id: mpqRxn480
+  name: nicotinate-nucleotide pyrophosphorylase (carboxylating)
+  genes: MPQ_0637
+  equation: (2) H[c] + PRPP[c] + PYR2CAR[c] => CO2[c] + PPI[c] + NAMN[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.4.2.19
+- id: mpqRxn481
+  name: 5'-nucleotidase
+  genes: MPQ_1027
+  equation: H2O[c] + NAMN[c] => PI[c] + NAR[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 3.1.3.5
+- id: mpqRxn482
+  name: nicotinate-nucleotide adenylyltransferase (nadD)
+  genes: MPQ_0595
+  equation: ATP[c] + H[c] + NAMN[c] => PPI[c] + DNAD[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.7.7.18
+- id: mpqRxn483
+  name: NAD+ synthase (nadE)
+  genes: MPQ_0947
+  equation: ATP[c] + H2O[c] + GLN_c[c] + DNAD[c] => H[c] + NAD[c] + PPI[c] + GLU[c]
+    + AMP[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 6.3.5.1
+- id: mpqRxn484
+  name: NAD+ kinase
+  genes: MPQ_1894
+  equation: ATP[c] + NAD[c] => ADP[c] + H[c] + NADP[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.7.1.23
+- id: mpqRxn485
+  name: nicotinate-nucleotide adenylyltransferase
+  genes: MPQ_0595
+  equation: ATP[c] + H[c] + NMN[c] <=> NAD[c] + PPI[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.7.7.18
+- id: mpqRxn486
+  name: 5'-nucleotidase (NMN)
+  genes: MPQ_1027
+  equation: H2O[c] + NMN[c] => PI[c] + NAMD[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 3.1.3.5
+- id: mpqRxn487
+  name: 3-methyl-2-oxobutanoate hydroxymethyltransferase
+  genes: MPQ_2118
+  equation: H2O[c] + METTHF[c] + OMVAL[c] => THF[c] + AKP[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.1.2.11
+- id: mpqRxn488
+  name: 2-dehydropantoate 2-reductase (panE, apbA)
+  equation: H[c] + NADPH[c] + AKP[c] => NADP[c] + PANT[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 1.1.1.169
+- id: mpqRxn489
+  name: glutamate decarboxylase (gadB)/aspartate 1-decarboxylase (panD)
+  genes: MPQ_2121
+  equation: H[c] + ASP_c[c] => CO2[c] + bALA[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 4.1.1.11
+- id: mpqRxn490
+  name: pantoate--beta-alanine ligase
+  genes: MPQ_2119
+  equation: ATP[c] + PANT[c] + bALA[c] => H[c] + PPI[c] + AMP[c] + PNTO[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 6.3.2.1
+- id: mpqRxn491
+  name: pantothenate kinase
+  genes: MPQ_0686
+  equation: ATP[c] + PNTO[c] => ADP[c] + H[c] + 4PPNTO[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.7.1.33
+- id: mpqRxn492
+  name: phosphopantothenate-cysteine ligase
+  genes: MPQ_0354
+  equation: CTP[c] + CYS_c[c] + 4PPNTO[c] => H[c] + PPI[c] + CMP[c] + 4PPNCYS[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 6.3.2.5
+- id: mpqRxn493
+  name: phosphopantothenoylcysteine decarboxylase / phosphopantothenate--cysteine
+    ligase
+  genes: MPQ_0354
+  equation: ATP[c] + CYS_c[c] + 4PPNTO[c] => H[c] + PPI[c] + AMP[c] + 4PPNCYS[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 6.3.2.5
+- id: mpqRxn494
+  name: pantetheine kinase
+  genes: MPQ_0686
+  equation: ATP[c] + PTT[c] => ADP[c] + H[c] + 4PPNTE[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.7.1.33
+- id: mpqRxn495
+  name: phosphopantothenoylcysteine decarboxylase
+  genes: MPQ_0354
+  equation: H[c] + 4PPNCYS[c] => CO2[c] + 4PPNTE[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 4.1.1.36
+- id: mpqRxn496
+  name: pantetheine-phosphate adenylyltransferase
+  genes: MPQ_1934
+  equation: ATP[c] + H[c] + 4PPNTE[c] => PPI[c] + DPCOA[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.7.7.3
+- id: mpqRxn497
+  name: dephospho-CoA kinase (coaE)
+  genes: MPQ_0532
+  equation: ATP[c] + DPCOA[c] => ADP[c] + H[c] + COA[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.7.1.24
+- id: mpqRxn498
+  name: malonyl-CoA O-methyltransferase
+  genes: MPQ_0592
+  equation: MALACP[c] + SAM[c] <=> SAH[c] + MMEACP[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.1.1.197
+- id: mpqRxn499
+  name: pimelyl-[acyl-carrier protein] methyl ester biosynthesis
+  genes: (MPQ_0909 or (MPQ_1270 or MPQ_1458) or (MPQ_1462 or MPQ_2729)) and (MPQ_1460
+    or MPQ_1488 or MPQ_2424) and (MPQ_0908 or MPQ_1473) and MPQ_1531
+  equation: (6) H[c] + (4) NADPH[c] + (2) MALACP[c] + MMEACP[c] => (2) H2O[c] + (2)
+    CO2[c] + (4) NADP[c] + (2) ACP[c] + PMEACP[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.3.1.179:1.1.1.100:4.2.1.59:1.3.1.10
+- id: mpqRxn500
+  name: pimelyl-[acyl-carrier protein] methyl ester esterase
+  genes: MPQ_0591
+  equation: H2O[c] + PMEACP[c] <=> METHOL[c] + PIMACP[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 3.1.1.85
+- id: mpqRxn501
+  name: 8-amino-7-oxononanoate synthase
+  genes: MPQ_0590
+  equation: ALA_c[c] + PIMACP[c] => CO2[c] + ACP[c] + AONA[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.3.1.47
+- id: mpqRxn502
+  name: 8-amino-7-oxononanoate synthase
+  genes: MPQ_0590
+  equation: H[c] + ALA_c[c] + PMCOA[c] => COA[c] + CO2[c] + AONA[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.3.1.47
+- id: mpqRxn503
+  name: adenosylmethionine-8-amino-7-oxononanoate transaminase
+  genes: MPQ_0449
+  equation: SAM[c] + AONA[c] <=> AMOB[c] + DANNA[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.6.1.62
+- id: mpqRxn504
+  name: dethiobiotin synthetase
+  genes: MPQ_0593
+  equation: ATP[c] + CO2[c] + DANNA[c] => ADP[c] + (3) H[c] + PI[c] + DTB[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 6.3.3.3
+- id: mpqRxn505
+  name: biotin synthetase
+  genes: MPQ_0589
+  equation: SAM[c] + DTB[c] + RSH[c] => DAD5[c] + MET[c] + BT[c] + RH[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.8.1.6
+- id: mpqRxn506
+  name: Biotin carboxylase
+  genes: MPQ_0023
+  equation: ATP[c] + H2O[c] + CO2[c] + BCCP[c] => ADP[c] + (2) H[c] + PI[c] + CBCCP[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 6.3.4.14
+- id: mpqRxn507
+  name: 2-oxoglutarate carboxylase
+  genes: MPQ_1465
+  equation: ATP[c] + H2O[c] + CO2[c] + AKG[c] => ADP[c] + (2) H[c] + PI[c] + OSUCC[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 6.4.1.7
+- id: mpqRxn508
+  name: biotin--protein ligase
+  genes: MPQ_0685
+  equation: ATP[c] + BT[c] => PPI[c] + BTAMP[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 6.3.4.15
+- id: mpqRxn509
+  name: biotin--protein ligase
+  genes: MPQ_0685
+  equation: BTAMP[c] => AMP[c] + BCCP[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 6.3.4.15
+- id: mpqRxn510
+  name: lipoic acid synthetase
+  genes: MPQ_2491
+  equation: (2) SAM[c] + C80ACP[c] + (2) SULDO[c] <=> (4) H[c] + (2) DAD5[c] + (2)
+    MET[c] + LPACP[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.8.1.8
+- id: mpqRxn511
+  name: GTP cyclohydrolase I
+  genes: MPQ_0621
+  equation: H[c] + H2O[c] + GTP[c] => FPYNTP[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 3.5.4.16
+- id: mpqRxn512
+  name: GTP cyclohydrolase I
+  genes: MPQ_0621
+  equation: H2O[c] + FPYNTP[c] => (2) H[c] + FOR[c] + DIANTP[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 3.5.4.16
+- id: mpqRxn513
+  name: GTP cyclohydrolase I
+  genes: MPQ_0621
+  equation: DIANTP[c] => DIATRPAO[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 3.5.4.16
+- id: mpqRxn514
+  name: GTP cyclohydrolase I
+  genes: MPQ_0621
+  equation: DIATRPAO[c] => H2O[c] + AHDT[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 3.5.4.16
+- id: mpqRxn515
+  name: 2-amino-4-hydroxy-6-(erythro-1,2,3-trihydroxypropyl) dihydropteridine triphosphate
+    lyase
+  genes: MPQ_1518
+  equation: AHDT[c] => PPPI[c] + PYRTETR[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 4.2.3.12
+- id: mpqRxn516
+  name: alkaline phosphatase D (phoD)
+  genes: MPQ_1068
+  equation: (3) H2O[e] + AHDT[e] => (2) H[e] + DHP[e] + (3) PI[e]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 3.1.3.1
+- id: mpqRxn517
+  name: alkaline phosphatase D
+  genes: MPQ_1068
+  equation: H2O[e] + T3P2[e] => PI[e] + GLYN[e]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 3.1.3.1
+- id: mpqRxn518
+  name: dihydroneopterin aldolase
+  genes: MPQ_2323
+  equation: DHP[c] <=> GLAL[c] + AHHMP[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 4.1.2.25
+- id: mpqRxn519
+  name: ATP:2-amino-4-hydroxy-6-hydroxymethyl-7,8-dihydropteridine
+  genes: MPQ_2116
+  equation: ATP[c] + AHHMP[c] => H[c] + AMP[c] + AHHMD[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.7.6.3
+- id: mpqRxn520
+  name: para-aminobenzoate synthetase
+  genes: MPQ_1554
+  equation: GLN_c[c] + CHOR[c] => GLU[c] + ADCHOR[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.6.1.85
+- id: mpqRxn521
+  name: 4-amino-4-deoxychorismate pyruvate-lyase
+  genes: MPQ_1457
+  equation: ADCHOR[c] => H[c] + PYR[c] + PABA[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 4.1.3.38
+- id: mpqRxn522
+  name: 2-Amino-4-hydroxy-6-hydroxymethyl-7,8-dihydropteridine:4-|E2.5.1.15, folP;
+    dihydropteroate synthase
+  genes: MPQ_1882
+  equation: AHHMP[c] + PABA[c] => H2O[c] + DHPT[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.5.1.15
+- id: mpqRxn523
+  name: dihydropteroate synthase
+  genes: MPQ_1882
+  equation: AHHMD[c] + PABA[c] => PPI[c] + DHPT[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.5.1.15
+- id: mpqRxn524
+  name: dihydrofolate synthase / folylpolyglutamate synthase
+  genes: MPQ_1608
+  equation: ATP[c] + GLU[c] + DHPT[c] => ADP[c] + H[c] + PI[c] + DHF[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 6.3.2.12;6.3.2.17
+- id: mpqRxn525
+  name: dihydrofolate reductase
+  genes: MPQ_0922
+  equation: NADP[c] + DHF[c] <=> H[c] + NADPH[c] + FOL[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 1.5.1.3
+- id: mpqRxn526
+  name: dihydrofolate reductase
+  genes: MPQ_0922
+  equation: H[c] + NADPH[c] + DHF[c] <=> NADP[c] + THF[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 1.5.1.3
+- id: mpqRxn527
+  name: folylpolyglutamate synthase (folC)
+  genes: MPQ_1608
+  equation: ATP[c] + GLU[c] + THF[c] => ADP[c] + H[c] + PI[c] + THFGLU[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 6.3.2.17
+- id: mpqRxn528
+  name: folylpolyglutamate synthase
+  genes: MPQ_1608
+  equation: ATP[c] + GLU[c] + THFGLU[c] <=> ADP[c] + PI[c] + THFGLU3[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 6.3.2.17
+- id: mpqRxn529
+  name: phosphoribosylglycinamide formyltransferase 1 (purN)
+  genes: MPQ_1742
+  equation: H2O[c] + GAR[c] + METHF[c] => (2) H[c] + THF[c] + FGAR[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.1.2.2
+- id: mpqRxn530
+  name: Formate:tetrahydrofolate ligase (ADP-forming)
+  genes: MPQ_0498
+  equation: ATP[c] + THF[c] + FOR[c] => ADP[c] + PI[c] + FTHF[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 6.3.4.3
+- id: mpqRxn531
+  name: formyltetrahydrofolate deformylase
+  genes: MPQ_2539 or peg.2453
+  equation: H2O[c] + FTHF[c] <=> H[c] + THF[c] + FOR[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 3.5.1.10
+- id: mpqRxn532
+  name: 5-methyltetrahydrofolate--homocysteine methyltransferase
+  genes: MPQ_0196
+  equation: FTHF[c] + LMETTRNA[c] => H[c] + THF[c] + FOFMET[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.1.2.9
+- id: mpqRxn533
+  name: methylenetetrahydrofolate dehydrogenase (NADP+) / methenyltetrahydrofolate
+    cyclohydrolase
+  genes: MPQ_0082
+  equation: H[c] + FTHF[c] <=> H2O[c] + METHF[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 3.5.4.9
+- id: mpqRxn534
+  name: aminomethyltransferase (gcvT)
+  genes: MPQ_2414
+  equation: H2O[c] + METHF[c] => H[c] + 5FTHF[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.1.2.10
+- id: mpqRxn535
+  name: methylenetetrahydrofolate dehydrogenase (NADP+)
+  genes: MPQ_0082
+  equation: NADPH[c] + METHF[c] <=> NADP[c] + METTHF[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 1.5.1.5
+- id: mpqRxn536
+  name: ' methylenetetrahydrofolate reductase (NADPH)'
+  genes: MPQ_0191 or peg.180
+  equation: H[c] + NADPH[c] + METTHF[c] => NADP[c] + MTHF[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 1.5.1.20
+- id: mpqRxn537
+  name: 5,10-methylenetetrahydrofolate reductase (NADH)
+  genes: MPQ_0191 or peg.180
+  equation: H[c] + NADH[c] + METTHF[c] => NAD[c] + MTHF[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 1.5.1.20
+- id: mpqRxn538
+  name: thymidylate synthase (thyA)
+  genes: MPQ_0914
+  equation: METTHF[c] + DUMP[c] <=> DTMP[c] + DHF[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.1.1.45
+- id: mpqRxn539
+  name: 5-methyltetrahydrofolate--homocysteine methyltransferase
+  genes: MPQ_2522
+  equation: HCYS[c] + MTHF[c] => THF[c] + MET[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.1.1.13
+- id: mpqRxn540
+  name: glutamyl-tRNA synthetase
+  genes: MPQ_1693
+  equation: ATP[c] + H[c] + GLU[c] + ETRNA[c] => PPI[c] + AMP[c] + LGLUTRNA[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 6.1.1.17
+- id: mpqRxn541
+  name: glutamyl-tRNA reductase
+  genes: MPQ_2464
+  equation: H[c] + NADPH[c] + LGLUTRNA[c] => NADP[c] + ETRNA[c] + S4AMOXOPE[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 1.2.1.70
+- id: mpqRxn542
+  name: glutamate-1-semialdehyde 2,1-aminomutase
+  genes: MPQ_2745
+  equation: S4AMOXOPE[c] => AMIEVUL[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 5.4.3.8
+- id: mpqRxn543
+  name: porphobilinogen synthase (hemB)
+  genes: MPQ_2456
+  equation: (2) AMIEVUL[c] => H[c] + (2) H2O[c] + PPBG[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 4.2.1.24
+- id: mpqRxn544
+  name: hydroxymethylbilane synthase (hemC)
+  genes: MPQ_0034
+  equation: H2O[c] + (4) PPBG[c] => (4) NH3[c] + HMTB[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.5.1.61
+- id: mpqRxn545
+  name: spontaneous
+  equation: (8) H[c] + HMTB[c] => H2O[c] + UDPGI[c]
+  subsystem: Metabolism of cofactors and vitamins
+- id: mpqRxn546
+  name: uroporphyrinogen III decarboxylase
+  genes: MPQ_2748
+  equation: UDPGI[c] => (4) H[c] + (4) CO2[c] + CPGI[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 4.1.1.37
+- id: mpqRxn547
+  name: uroporphyrinogen-III synthase
+  genes: MPQ_0033
+  equation: HMTB[c] => H2O[c] + UPGIII[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 4.2.1.75
+- id: mpqRxn548
+  name: uroporphyrinogen decarboxylase
+  genes: MPQ_2748
+  equation: (4) H[c] + UPGIII[c] => (4) CO2[c] + CPGIII[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 4.1.1.37
+- id: mpqRxn549
+  name: coproporphyrinogen III oxidase
+  genes: MPQ_0394
+  equation: (2) H[c] + O2[c] + CPGIII[c] => (2) H2O[c] + (2) CO2[c] + PPGIX[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 1.3.3.3
+- id: mpqRxn550
+  name: oxygen-independent coproporphyrinogen III oxidase
+  genes: MPQ_0044 or MPQ_0868
+  equation: (2) SAM[c] + CPGIII[c] => (2) CO2[c] + (2) DAD5[c] + (2) MET[c] + PPGIX[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 1.3.99.22
+- id: mpqRxn551
+  name: Multicopper oxidase MmcO
+  genes: MPQ_1180 or MPQ_2086
+  equation: (4) H[c] + O2[c] + (4) FE2[c] => (2) H2O[c] + (4) FE3[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 1.16.3.1
+- id: mpqRxn552
+  name: ferrochelatase
+  genes: MPQ_1899
+  equation: FE2[c] + PPRIX[c] => (2) H[c] + HEME[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 4.99.1.1
+- id: mpqRxn553
+  name: protoheme IX farnesyltransferase
+  genes: MPQ_1278
+  equation: H2O[c] + FRDP[c] + HEME[c] <=> PPI[c] + HEMEO[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.5.1.-
+- id: mpqRxn554
+  name: Heme A synthase
+  genes: MPQ_1279
+  equation: H2O[c] + HEMEO[c] => (4) H[c] + HEMEA[c]
+  subsystem: Metabolism of cofactors and vitamins
+- id: mpqRxn555
+  name: uroporphyrinogen methyltransferase
+  genes: MPQ_0032 or MPQ_2064 or MPQ_0367
+  equation: (2) SAM[c] + UPGIII[c] => H[c] + (2) SAH[c] + PRE2[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.1.1.107
+- id: mpqRxn556
+  name: S-Adenosyl-L-methionine:uroporphyrin-III C-methyltransferase
+  genes: MPQ_2064 or peg.352 or peg.1991
+  equation: NAD[c] + PRE2[c] => (2) H[c] + NADH[c] + SHCR[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 1.3.1.76
+- id: mpqRxn557
+  name: sirohydrochlorin ferrochelatase
+  genes: MPQ_2064 or peg.352 or peg.1991
+  equation: FE2[c] + SHCR[c] <=> (2) H[c] + SIHM[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 4.99.1.4
+- id: mpqRxn558
+  name: Cobyrinic acid A,C-diamide synthase
+  genes: MPQ_0162
+  equation: (2) ATP[c] + (2) H2O[c] + (2) GLN_c[c] + HYBY[c] => (2) ADP[c] + (2)
+    H[c] + (2) PI[c] + (2) GLU[c] + HYBYDA[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 6.3.5.9
+- id: mpqRxn559
+  name: colbalt chelatase(complex)
+  genes: MPQ_0161
+  equation: ATP[c] + H2O[c] + HYBYDA[c] + COBALT2_c[c] => ADP[c] + (3) H[c] + PI[c]
+    + COB2DIDE[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 6.6.1.2
+- id: mpqRxn560
+  name: cob(I)alamin adenosyltransferase
+  genes: MPQ_0163 or MPQ_2098
+  equation: ATP[c] + COB1DIDE[c] => (2) H[c] + PPPI[c] + ADCODIE[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.5.1.17
+- id: mpqRxn561
+  name: adenosylcobyric acid synthase
+  genes: MPQ_0151
+  equation: (4) ATP[c] + (4) H2O[c] + (4) GLN_c[c] + ADCODIE[c] => (4) ADP[c] + (4)
+    H[c] + (4) PI[c] + (4) GLU[c] + ADCOHEX[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 6.3.5.10
+- id: mpqRxn562
+  name: adenosylcobyric acid:(R)-1-aminopropan-2-ol ligase (ADP-forming)
+  genes: MPQ_0150 or MPQ_2541
+  equation: ATP[c] + ADCOHEX[c] + RAMOL[c] => ADP[c] + H[c] + PI[c] + ADOCBI[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 6.3.1.10
+- id: mpqRxn563
+  name: 'cob(I)yrinic acid a,c-diamide adenosyltransferase '
+  genes: MPQ_0163 or MPQ_2098
+  equation: ATP[c] + CBI[c] => PPI[c] + ADOCBI[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.5.1.17
+- id: mpqRxn564
+  name: L-threonine-O-3-phosphate carboxy-lyase
+  genes: MPQ_0149
+  equation: H[c] + THR3P[c] <=> CO2[c] + AMIP[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 4.1.1.81
+- id: mpqRxn565
+  name: adenosylcobyric acid:(R)-1-aminopropan-2-yl phosphate ligase
+  genes: MPQ_0150 or MPQ_2541
+  equation: ATP[c] + ADCOHEX[c] + AMIP[c] => ADP[c] + H[c] + PI[c] + ADOCBIP[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 6.3.1.10
+- id: mpqRxn566
+  name: adenosylcobinamide kinase
+  genes: MPQ_0153
+  equation: GTP[c] + ADOCBI[c] => H[c] + GDP[c] + ADOCBIP[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.7.1.156
+- id: mpqRxn567
+  name: adenosylcobinamide kinase
+  genes: MPQ_0153
+  equation: ATP[c] + ADOCBI[c] => ADP[c] + H[c] + ADOCBIP[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.7.1.156
+- id: mpqRxn568
+  name: adenosylcobinamide kinase
+  genes: MPQ_0153
+  equation: H[c] + GTP[c] + ADOCBIP[c] => PPI[c] + AGDPCBI[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.7.7.62
+- id: mpqRxn569
+  name: Nicotinate-nucleotide:dimethylbenzimidazole|E2.4.2.21, cobU, cobT; nicotinate-nucleotide--dimethylbenzimidazole
+    phosphoribosyltransferase
+  genes: MPQ_0144
+  equation: NAMN[c] + DIMBEN[c] => H[c] + NICA[c] + RI5P[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.4.2.21
+- id: mpqRxn570
+  name: alpha-ribazole 5-phosphate phosphatase|cobC2, cobC, phpB; alpha-ribazole
+    phosphatase
+  genes: MPQ_0146
+  equation: H2O[c] + RI5P[c] => PI[c] + RIBAZ[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 3.1.3.73
+- id: mpqRxn571
+  name: adenosylcobalamin (5'-phosphate) synthase
+  genes: MPQ_0145
+  equation: AGDPCBI[c] + RIBAZ[c] => GMP[c] + COBCE[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.7.8.26
+- id: mpqRxn572
+  name: chorismate--pyruvate lyase
+  genes: MPQ_0056
+  equation: CHOR[c] <=> PYR[c] + 4HBZ[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 4.1.3.40
+- id: mpqRxn573
+  name: 4-hydroxybenzoate octaprenyltransferase (ubiA)
+  genes: MPQ_0057
+  equation: 4HBZ[c] + OPP[c] => PPI[c] + N4HBZ[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.5.1.-
+- id: mpqRxn574
+  name: 3-octaprenyl-4-hydroxybenzoate carboxy-lyase
+  equation: H[c] + N4HBZ[c] => CO2[c] + 2NPPP[c]
+  subsystem: Metabolism of cofactors and vitamins
+- id: mpqRxn575
+  name: ubiquinone biosynthesis protein (ubiB)
+  genes: MPQ_0464 or MPQ_2023
+  equation: H[c] + NADPH[c] + O2[c] + 2NPPP[c] => H2O[c] + NADP[c] + 2N6H[c]
+  subsystem: Metabolism of cofactors and vitamins
+- id: mpqRxn576
+  name: 3-demethylubiquinone-9 3-methyltransferase (ubiG)
+  genes: MPQ_1678
+  equation: SAM[c] + 2N6H[c] => H[c] + SAH[c] + 2NPMP[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.1.1.64 2.1.1.222
+- id: mpqRxn577
+  name: 2-octaprenyl-6-methoxyphenol hydroxylase (ubiH)
+  genes: MPQ_0608
+  equation: NADPH[c] + O2[c] + 2NPMP[c] => H[c] + H2O[c] + NADP[c] + 2NPMB[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 1.14.13.-
+- id: mpqRxn578
+  name: 2-octaprenyl-6-methoxy-1,4-benzoquinone methylase (ubiE)
+  genes: MPQ_2021
+  equation: SAM[c] + 2NPMB[c] => H[c] + SAH[c] + 2NPMMB[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.1.1.163 2.1.1.201
+- id: mpqRxn579
+  name: ubiquinone biosynthesis monooxygenase Coq7
+  genes: MPQ_0457
+  equation: H[c] + NADPH[c] + O2[c] + 2NPMMB[c] => H2O[c] + NADP[c] + 2OP3M5H6M14BQ[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 1.14.13.-
+- id: mpqRxn580
+  name: 3-demethylubiquinone-9 3-methyltransferase (ubiG)
+  genes: MPQ_1678
+  equation: SAM[c] + 2OP3M5H6M14BQ[c] => H[c] + Q8[c] + SAH[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.1.1.64
+- id: mpqRxn581
+  name: ubiquinone/menaquinone biosynthesis methyltransferase
+  genes: MPQ_2021
+  equation: SAM[c] + DMKH[c] => H[c] + MQL8[c] + SAH[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.1.1.163
+- id: mpqRxn582
+  name: ubiquinone/menaquinone biosynthesis methyltransferase
+  genes: MPQ_2021
+  equation: SAM[c] + 2P14NQ[c] => H[c] + SAH[c] + PQ[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.1.1.163
+- id: mpqRxn583
+  name: ferredoxin-NADP+ reductase
+  genes: MPQ_1439 or MPQ_1942
+  equation: H[c] + (2) RFER[c] => NADP[c] + (2) OFER[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 1.18.1.2
+- id: mpqRxn584
+  name: cysteine desulfurase
+  genes: MPQ_1850 or MPQ_1851 or MPQ_2104
+  equation: H[c] + CYS_c[c] + RH[c] <=> ALA_c[c] + RSH[c]
+  subsystem: Metabolism of cofactors and vitamins
+  ec: 2.8.1.7
+- id: mpqRxn585
+  name: glucose-1-phosphate thymidylyltransferase
+  genes: MPQ_1521
+  equation: G1P[c] + H[c] + DTTP[c] => PPI[c] + DTDPGLC[c]
+  subsystem: Biosynthesis of other secondary metabolites
+  ec: 2.7.7.24
+- id: mpqRxn586
+  name: dTDPglucose 4,6-hydro-lyase,
+  genes: MPQ_1522
+  equation: DTDPGLC[c] <=> H2O[c] + DTDPDDG[c]
+  subsystem: Biosynthesis of other secondary metabolites
+  ec: 4.2.1.46
+- id: mpqRxn587
+  name: dTDP-4-dehydro-6-deoxy-D-glucose 3,5-epimerase,
+  genes: MPQ_1520
+  equation: DTDPDDG[c] <=> DTDPDDM[c]
+  subsystem: Biosynthesis of other secondary metabolites
+  ec: 5.1.3.13
+- id: mpqRxn588
+  name: dTDP-4-dehydrorhamnose reductase
+  genes: MPQ_1519
+  equation: H[c] + NADPH[c] + DTDPDDM[c] <=> NADP[c] + DTDPDM[c]
+  subsystem: Biosynthesis of other secondary metabolites
+  ec: 1.1.1.133
+- id: mpqRxn589
+  name: 1-deoxy-D-xylulose-5-phosphate synthase (dxs)
+  genes: MPQ_0622
+  equation: H[c] + T3P1[c] + PYR[c] => CO2[c] + DX5P[c]
+  subsystem: Metabolism of terpenoids and polyketides
+  ec: 2.2.1.7
+- id: mpqRxn590
+  name: 1-deoxy-D-xylulose-5-phosphate reductoisomerase
+  genes: MPQ_1478
+  equation: H[c] + NADPH[c] + DX5P[c] <=> NADP[c] + 2ME4P[c]
+  subsystem: Metabolism of terpenoids and polyketides
+  ec: 1.1.1.267
+- id: mpqRxn591
+  name: 2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase
+  genes: MPQ_1250
+  equation: H[c] + CTP[c] + 2ME4P[c] => PPI[c] + 4C2ME[c]
+  subsystem: Metabolism of terpenoids and polyketides
+  ec: 2.7.7.60
+- id: mpqRxn592
+  name: 4-diphosphocytidyl-2-C-methyl-D-erythritol kinase
+  genes: MPQ_2033
+  equation: ATP[c] + 4C2ME[c] => ADP[c] + H[c] + 2P4C2ME[c]
+  subsystem: Metabolism of terpenoids and polyketides
+  ec: 2.7.1.148
+- id: mpqRxn593
+  name: 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase
+  genes: MPQ_1251
+  equation: 2P4C2ME[c] => CMP[c] + 2MECDP[c]
+  subsystem: Metabolism of terpenoids and polyketides
+  ec: 4.6.1.12
+- id: mpqRxn594
+  name: (E)-4-hydroxy-3-methylbut-2-enyl-diphosphate synthase
+  genes: MPQ_1715
+  equation: NADH[c] + 2MECDP[c] => H2O[c] + NAD[c] + H2MB4P[c]
+  subsystem: Metabolism of terpenoids and polyketides
+  ec: 1.17.7.1
+- id: mpqRxn595
+  name: 4-hydroxy-3-methylbut-2-enyl diphosphate reductase
+  genes: MPQ_2542
+  equation: NADH[c] + H2MB4P[c] => H2O[c] + NAD[c] + IPP[c]
+  subsystem: Metabolism of terpenoids and polyketides
+  ec: 1.17.1.2
+- id: mpqRxn596
+  name: 4-hydroxy-3-methylbut-2-enyl diphosphate reductase
+  genes: MPQ_2542
+  equation: NADH[c] + H2MB4P[c] => H2O[c] + NAD[c] + DMPP[c]
+  subsystem: Metabolism of terpenoids and polyketides
+  ec: 1.17.1.2
+- id: mpqRxn597
+  name: 4-hydroxy-3-methylbut-2-enyl diphosphate reductase
+  genes: MPQ_2542
+  equation: H[c] + NADPH[c] + H2MB4P[c] => H2O[c] + NADP[c] + IPP[c]
+  subsystem: Metabolism of terpenoids and polyketides
+  ec: 1.17.1.2
+- id: mpqRxn598
+  name: 4-hydroxy-3-methylbut-2-enyl diphosphate reductase
+  genes: MPQ_2542
+  equation: H[c] + NADPH[c] + H2MB4P[c] => H2O[c] + NADP[c] + DMPP[c]
+  subsystem: Metabolism of terpenoids and polyketides
+  ec: 1.17.1.2
+- id: mpqRxn599
+  name: geranylgeranyl diphosphate synthase, type II
+  genes: MPQ_0623
+  equation: IPP[c] + DMPP[c] => PPI[c] + GRDP[c]
+  subsystem: Metabolism of terpenoids and polyketides
+  ec: 2.5.1.1
+- id: mpqRxn600
+  name: geranylgeranyl diphosphate synthase, type II
+  genes: MPQ_0623
+  equation: IPP[c] + GRDP[c] => PPI[c] + FRDP[c]
+  subsystem: Metabolism of terpenoids and polyketides
+  ec: 2.5.1.10
+- id: mpqRxn601
+  name: octaprenyl-diphosphate synthase
+  genes: MPQ_0535
+  equation: FRDP[c] + (5) IPP[c] => (5) PPI[c] + OPP[c]
+  subsystem: Metabolism of terpenoids and polyketides
+  ec: 2.5.1.90
+- id: mpqRxn602
+  name: sulfate ABC transport system
+  genes: (MPQ_2101 or MPQ_2107) and MPQ_2109 and MPQ_2110 and MPQ_2111
+  equation: ATP[c] + H2O[c] + SLF[e] => ADP[c] + H[c] + PI[c] + SLF[c]
+  subsystem: Transporting system
+- id: mpqRxn603
+  name: nitrate transport system
+  genes: MPQ_0372 and MPQ_0371 and MPQ_0370
+  equation: ATP[c] + H2O[c] + HNO3_e[e] => ADP[c] + H[c] + PI[c] + HNO3_c[c]
+  subsystem: Transporting system
+- id: mpqRxn604
+  name: nitrite transport system
+  genes: MPQ_0372 and MPQ_0371 and MPQ_0370
+  equation: ATP[c] + H2O[c] + HNO2_e[e] => ADP[c] + H[c] + PI[c] + HNO2_c[c]
+  subsystem: Transporting system
+- id: mpqRxn605
+  name: sulfonate transport system
+  genes: (MPQ_0125 or MPQ_0126) and MPQ_0120 and MPQ_0121
+  equation: ATP[c] + H2O[c] + SULFONATE[e] => ADP[c] + H[c] + PI[c] + SULFONATE[c]
+  subsystem: Transporting system
+- id: mpqRxn606
+  name: molybdate transport system
+  genes: MPQ_2284 and MPQ_2283 and MPQ_2282
+  equation: ATP[c] + H2O[c] + MOLYBDATE[e] => ADP[c] + H[c] + PI[c] + MOLYBDATE[c]
+  subsystem: Transporting system
+- id: mpqRxn607
+  name: phosphate ABC transport system
+  genes: MPQ_1869 and MPQ_1870 and MPQ_1871 and MPQ_1872
+  equation: ATP[c] + H2O[c] + PI[e] => ADP[c] + H[c] + (2) PI[c]
+  subsystem: Transporting system
+  ec: TC-3.A.1.7
+- id: mpqRxn608
+  name: branched-chain amino acid transport system (val)
+  genes: MPQ_1958 and MPQ_1960 and MPQ_1959 and MPQ_1961 and MPQ_1957
+  equation: ATP[c] + H2O[c] + VAL[e] => ADP[c] + H[c] + PI[c] + VAL[c]
+  subsystem: Transporting system
+  ec: 3.A.1.4.5
+- id: mpqRxn609
+  name: branched-chain amino acid transport system (leu)
+  genes: MPQ_1958 and MPQ_1960 and MPQ_1959 and MPQ_1961 and MPQ_1957
+  equation: ATP[c] + H2O[c] + LEU[e] => ADP[c] + H[c] + PI[c] + LEU[c]
+  subsystem: Transporting system
+  ec: 3.A.1.4.5
+- id: mpqRxn610
+  name: branched-chain amino acid transport system (ile)
+  genes: MPQ_1958 and MPQ_1960 and MPQ_1959 and MPQ_1961 and MPQ_1957
+  equation: ATP[c] + H2O[c] + ILE[e] => ADP[c] + H[c] + PI[c] + ILE[c]
+  subsystem: Transporting system
+  ec: 3.A.1.4.5
+- id: mpqRxn611
+  name: branched-chain amino acid transport system (thr)
+  genes: MPQ_1958 and MPQ_1960 and MPQ_1959 and MPQ_1961 and MPQ_1957
+  equation: ATP[c] + H2O[c] + THR[e] => ADP[c] + H[c] + PI[c] + THR[c]
+  subsystem: Transporting system
+  ec: 3.A.1.4.5
+- id: mpqRxn612
+  name: branched-chain amino acid transport system (his)
+  genes: MPQ_1958 and MPQ_1960 and MPQ_1959 and MPQ_1961 and MPQ_1957
+  equation: ATP[c] + H2O[c] + HIS[e] => ADP[c] + H[c] + PI[c] + HIS[c]
+  subsystem: Transporting system
+  ec: 3.A.1.4.5
+- id: mpqRxn613
+  name: Taurine-ABC transport
+  genes: peg.2489 and (MPQ_0117 or MPQ_0120) and (MPQ_0125 or MPQ_0126) and MPQ_0121
+  equation: ATP[c] + H2O[c] + TAUR[e] => ADP[c] + H[c] + PI[c] + TAUR[c]
+  subsystem: Transporting system
+  ec: 3.A.1.17
+- id: mpqRxn614
+  name: Urea transport via facilitate diffusion
+  genes: MPQ_0733 and MPQ_0734 and MPQ_0735 and MPQ_0736 and MPQ_0737
+  equation: UREA[e] <=> UREA[c]
+  subsystem: Transporting system
+- id: mpqRxn615
+  name: iron ABC transport system
+  genes: (MPQ_0154 or MPQ_2067) and MPQ_2068 and MPQ_2069
+  equation: ATP[c] + H2O[c] + FE2[e] => ADP[c] + H[c] + PI[c] + FE2[c]
+  subsystem: Transporting system
+- id: mpqRxn616
+  name: sulfate transport in via proton symport
+  genes: MPQ_2548
+  equation: H[e] + SLF[e] <=> H[c] + SLF[c]
+  subsystem: Transporting system
+  ec: TC-2.A.53
+- id: mpqRxn617
+  name: PTS system, glucose-specific IIA component
+  genes: MPQ_0207 or MPQ_1858
+  equation: PEP[c] + GLC[e] => G6P[c] + PYR[c]
+  subsystem: Transporting system
+- id: mpqRxn618
+  name: D-glucosamine transport via PEP:Pyr PTS
+  genes: MPQ_0207 or MPQ_1858
+  equation: PEP[c] + GLCN[e] <=> PYR[c] + GA6P[c]
+  subsystem: Transporting system
+- id: mpqRxn619
+  name: mannitol transport via PEP:Pyr PTS
+  genes: MPQ_0207 or MPQ_1858
+  equation: PEP[c] + MNT[e] => PYR[c] + MNT1P_c[c]
+  subsystem: Transporting system
+- id: mpqRxn620
+  name: D-fructose transport via PEP:Pyr PTS
+  genes: MPQ_0207 or MPQ_1858
+  equation: PEP[c] + FRU[e] => PYR[c] + F1P[c]
+  subsystem: Transporting system
+- id: mpqRxn621
+  name: trehalose transport via PEP:Pyr PTS
+  genes: MPQ_0207 or MPQ_1858
+  equation: PEP[c] + TRE[e] => PYR[c] + TRE6P_c[c]
+  subsystem: Transporting system
+  ec: 2.7.1.69
+- id: mpqRxn622
+  name: D-mannose transport via PEP:Pyr PTS
+  genes: MPQ_0207 or MPQ_1858
+  equation: PEP[c] + MAN[e] => PYR[c] + MAN6P[c]
+  subsystem: Transporting system
+- id: mpqRxn623
+  name: sucrose transport via PEP:Pyr PTS
+  genes: MPQ_0207 or MPQ_1858
+  equation: PEP[c] + SUC[e] => PYR[c] + SUC6P[c]
+  subsystem: Transporting system
+- id: mpqRxn624
+  name: N-Acetyl-D-glucosamine transport via PEP:Pyr PTS
+  genes: MPQ_0207 or MPQ_1858
+  equation: PEP[e] + NAG[e] <=> PYR[c] + NAG6P[c]
+  subsystem: Transporting system
+- id: mpqRxn625
+  name: arbutin transport via PEP:Pyr PTS
+  genes: MPQ_0207 or MPQ_1858
+  equation: PEP[e] + URSIN[e] <=> PYR[c] + ARBUTIN6P[c]
+  subsystem: Transporting system
+- id: mpqRxn626
+  name: manganese transport in via proton symport
+  genes: MPQ_0501 or MPQ_2005
+  equation: H[e] + MN2[e] => H[c] + MN2[c]
+  subsystem: Transporting system
+  ec: TC-2.A.55
+- id: mpqRxn627
+  name: D-galactose transport in via proton symport
+  genes: MPQ_2125
+  equation: H[e] + GAL[e] <=> H[c] + GAL[c]
+  subsystem: Transporting system
+- id: mpqRxn628
+  name: Octadecanoate transport via proton symport
+  genes: MPQ_1239
+  equation: H[e] + C180_e[e] <=> H[c] + C180_c[c]
+  subsystem: Transporting system
+- id: mpqRxn629
+  name: Ammonia transport via diffusion
+  genes: MPQ_0521 or MPQ_1216 or MPQ_2528
+  equation: NH3[e] <=> NH3[c]
+  subsystem: Transporting system
+- id: mpqRxn630
+  name: D-xylose transport in via proton symport
+  genes: MPQ_2125
+  equation: H[e] + XYL_e[e] <=> H[c] + XYL_c[c]
+  subsystem: Transporting system
+- id: mpqRxn631
+  name: ethanolamine transport in/out via proton symport
+  genes: MPQ_0996
+  equation: H[e] + ETHAM[e] <=> H[c] + ETHAM[c]
+  subsystem: Transporting system
+  ec: TC-2.A.3.5
+- id: mpqRxn632
+  name: L-arabinose transport via proton symport
+  genes: MPQ_2125
+  equation: H[e] + LARAB_e[e] <=> H[c] + LARAB_c[c]
+  subsystem: Transporting system
+- id: mpqRxn633
+  name: magnesium transport in/out via permease (no H+)
+  genes: MPQ_0679
+  equation: MG_c[c] <=> MG_e[e]
+  subsystem: Transporting system
+  ec: TC-1.A.35
+- id: mpqRxn634
+  name: Hexadecanoate transport via proton symport
+  genes: MPQ_1239
+  equation: H[e] + C160_e[e] <=> H[c] + C160_c[c]
+  subsystem: Transporting system
+- id: mpqRxn635
+  name: Cyanate transport via proton symport
+  genes: MPQ_2572
+  equation: H[e] + HCNO[e] <=> H[c] + HCNO[c]
+  subsystem: Transporting system
+- id: mpqRxn636
+  name: nitrate transport in via proton symport
+  genes: MPQ_0365
+  equation: H[e] + HNO3_e[e] <=> H[c] + HNO3_c[c]
+  subsystem: Transporting system
+- id: mpqRxn637
+  name: nitrite transport in via proton symport
+  genes: MPQ_0365
+  equation: H[e] + HNO2_e[e] <=> H[c] + HNO2_c[c]
+  subsystem: Transporting system
+- id: mpqRxn638
+  name: cobalt transport in/out via permease (no H+)
+  genes: MPQ_0679
+  equation: CO2[c] <=> CO2[e]
+  subsystem: Transporting system
+- id: mpqRxn639
+  name: Tetradecanoate transport via proton symport
+  genes: MPQ_1239
+  equation: H[e] + C140_e[e] <=> H[c] + C140_c[c]
+  subsystem: Transporting system
+- id: mpqRxn640
+  name: formate transporter
+  equation: H[e] + FOR[e] <=> H[c] + FOR[c]
+  subsystem: Transporting system
+- id: mpqRxn641
+  name: O2 transport via diffusion
+  equation: O2[e] <=> O2[c]
+  subsystem: Transporting system
+- id: mpqRxn642
+  name: ethanol transport
+  equation: ETOL[e] <=> ETOL[c]
+  subsystem: Transporting system
+- id: mpqRxn643
+  name: methol transport
+  equation: METHOL[e] <=> METHOL[c]
+  subsystem: Transporting system
+- id: mpqRxn644
+  name: transport of 2-Amino-4-hydroxy-6-(erythro-1,2,3-trihydroxypropyl)dihydropteridine
+    triphosphate
+  equation: AHDT[e] <=> AHDT[c]
+  subsystem: Transporting system
+- id: mpqRxn645
+  name: transport of 7,8-Dihydroneopterin
+  equation: DHP[e] <=> DHP[c]
+  subsystem: Transporting system
+- id: mpqRxn646
+  name: transport of formaldehyde
+  equation: FALD[e] <=> FALD[c]
+  subsystem: Transporting system
+- id: mpqRxn647
+  name: transport of iron(2+)
+  equation: FE2[e] <=> FE2[c]
+  subsystem: Transporting system
+- id: mpqRxn648
+  name: transport of D-fructose
+  equation: FRU[e] <=> FRU[c]
+  subsystem: Transporting system
+- id: mpqRxn649
+  name: transport of D-Glucosamine(e)
+  equation: GLCN[e] <=> GLCN[c]
+  subsystem: Transporting system
+- id: mpqRxn650
+  name: transport of glycerone
+  equation: GLYN[e] <=> GLYN[c]
+  subsystem: Transporting system
+- id: mpqRxn651
+  name: transport of water
+  equation: H2O[e] <=> H2O[c]
+  subsystem: Transporting system
+- id: mpqRxn652
+  name: transport of hydrogen peroxide
+  equation: H2O2[e] <=> H2O2[c]
+  subsystem: Transporting system
+- id: mpqRxn653
+  name: transport of L-isoleucine
+  equation: ILE[e] <=> ILE[c]
+  subsystem: Transporting system
+- id: mpqRxn654
+  name: transport of L-leucine
+  equation: LEU[e] <=> LEU[c]
+  subsystem: Transporting system
+- id: mpqRxn655
+  name: transport of D-mannopyranose
+  equation: MAN[e] <=> MAN[c]
+  subsystem: Transporting system
+- id: mpqRxn656
+  name: transport of manganese
+  equation: MN2[e] <=> MN2[c]
+  subsystem: Transporting system
+- id: mpqRxn657
+  name: transport of D-mannitol
+  equation: MNT[e] <=> MNT[c]
+  subsystem: Transporting system
+- id: mpqRxn658
+  name: transport of molybdate
+  equation: MOLYBDATE[e] <=> MOLYBDATE[c]
+  subsystem: Transporting system
+- id: mpqRxn659
+  name: transport of N-acetyl-D-glucosamine
+  equation: NAG[e] <=> NAG[c]
+  subsystem: Transporting system
+- id: mpqRxn660
+  name: transport of phosphoenolpyruvate
+  equation: PEP[e] <=> PEP[c]
+  subsystem: Transporting system
+- id: mpqRxn661
+  name: transport of phosphate(3-)
+  equation: PI[e] <=> PI[c]
+  subsystem: Transporting system
+- id: mpqRxn662
+  name: transport of sarcosine
+  equation: SARC[e] <=> SARC[c]
+  subsystem: Transporting system
+- id: mpqRxn663
+  name: transport of S-adenosyl-L-methionine
+  equation: SAM[e] <=> SAM[c]
+  subsystem: Transporting system
+- id: mpqRxn664
+  name: transport of sucrose
+  equation: SUC[e] <=> SUC[c]
+  subsystem: Transporting system
+- id: mpqRxn665
+  name: transport of sulfonate
+  equation: SULFONATE[e] <=> SULFONATE[c]
+  subsystem: Transporting system
+- id: mpqRxn666
+  name: transport of glycerone phosphate
+  equation: T3P2[e] <=> T3P2[c]
+  subsystem: Transporting system
+- id: mpqRxn667
+  name: transport of alpha,alpha-trehalose
+  equation: TRE[e] <=> TRE[c]
+  subsystem: Transporting system
+- id: mpqRxn668
+  name: transport of Ursin
+  equation: URSIN[e] <=> URSIN[c]
+  subsystem: Transporting system
+- id: mpqRxn669
+  name: transport of D-glucaric acid
+  equation: GLUCARATE[e] <=> GLUCARATE[c]
+  subsystem: Transporting system
+- id: mpqRxn670
+  name: transport of hexanal
+  equation: HEAL[e] <=> HEAL[c]
+  subsystem: Transporting system
+- id: mpqRxn671
+  name: transport of Heme A
+  equation: HEMEA[e] <=> HEMEA[c]
+  subsystem: Transporting system
+- id: mpqRxn672
+  name: transport of trans-4-hydroxy-L-proline
+  equation: HPRO[e] <=> HPRO[c]
+  subsystem: Transporting system
+- id: mpqRxn673
+  name: transport of (R)-lactic acid
+  equation: LAC[e] <=> LAC[c]
+  subsystem: Transporting system
+- id: mpqRxn674
+  name: transport of lipoylprotein
+  equation: LIPOYLPROTEIN[e] <=> LIPOYLPROTEIN[c]
+  subsystem: Transporting system
+- id: mpqRxn675
+  name: transport of Methylmalonate
+  equation: MMALN[e] <=> MMALN[c]
+  subsystem: Transporting system
+- id: mpqRxn676
+  name: transport of D-Mannitol 1-phosphate
+  equation: MNT1P_e[e] <=> MNT1P_c[c]
+  subsystem: Transporting system
+- id: mpqRxn677
+  name: transport of myo-inositol
+  equation: MYOI[e] <=> MYOI[c]
+  subsystem: Transporting system
+- id: mpqRxn678
+  name: transport of N-ribosylnicotinamide
+  equation: NAMD[e] <=> NAMD[c]
+  subsystem: Transporting system
+- id: mpqRxn679
+  name: transport of D-ribosylnicotinic acid
+  equation: NAR[e] <=> NAR[c]
+  subsystem: Transporting system
+- id: mpqRxn680
+  name: transport of glutathione disulfide
+  equation: OGT[e] <=> OGT[c]
+  subsystem: Transporting system
+- id: mpqRxn681
+  name: transport of pyridoxine 5'-phosphate
+  equation: P5P[e] <=> P5P[c]
+  subsystem: Transporting system
+- id: mpqRxn682
+  name: pyrroloquinoline quinone transport
+  equation: PQQ[e] <=> PQQ[c]
+  subsystem: Transporting system
+- id: mpqRxn683
+  name: transport of protoporphyrinogen
+  equation: PPGIX[e] <=> PPGIX[c]
+  subsystem: Transporting system
+- id: mpqRxn684
+  name: transport of 5-formamido-1-(5-phospho-D-ribosyl)imidazole-4-carboxamide
+  equation: PRFICA[e] <=> PRFICA[c]
+  subsystem: Transporting system
+- id: mpqRxn685
+  name: transport of Spermine
+  equation: SPRM[e] <=> SPRM[c]
+  subsystem: Transporting system
+- id: mpqRxn686
+  name: transport of Sucrose 6-phosphate
+  equation: SUC6P[e] <=> SUC6P[c]
+  subsystem: Transporting system
+- id: mpqRxn687
+  name: transport of S-Sulfo-L-cysteine
+  equation: SULCYS[e] <=> SULCYS[c]
+  subsystem: Transporting system
+- id: mpqRxn688
+  name: transport of thiamine(1+) monophosphate
+  equation: THMP[e] <=> THMP[c]
+  subsystem: Transporting system
+- id: mpqRxn689
+  name: transport of tetrahydropteroyltri-L-glutamic acid
+  equation: THPTGLU[e] <=> THPTGLU[c]
+  subsystem: Transporting system
+- id: mpqRxn690
+  name: transport of alpha,alpha-trehalose 6-phosphate
+  equation: TRE6P_e[e] <=> TRE6P_c[c]
+  subsystem: Transporting system
+- id: mpqRxn691
+  name: transport of UDP-glucuronate
+  equation: UDPGTE[e] <=> UDPGTE[c]
+  subsystem: Transporting system
+- id: mpqRxn692
+  name: transport of xanthosine
+  equation: XTSINE[e] <=> XTSINE[c]
+  subsystem: Transporting system
+- id: mpqRxn693
+  name: transport of Glycolaldehyde
+  equation: GLAL[e] <=> GLAL[c]
+  subsystem: Transporting system
+- id: mpqRxn694
+  name: transport of S-Adenosyl-4-methylthio-2-oxobutanoate
+  equation: AMOB[e] <=> AMOB[c]
+  subsystem: Transporting system
+- id: mpqRxn695
+  name: transport of biotin
+  equation: BT[e] <=> BT[c]
+  subsystem: Transporting system
+- id: mpqRxn696
+  name: GLUt2
+  genes: MPQ_0236
+  equation: H[e] + GLU[e] <=> H[c] + GLU[c]
+  subsystem: Transporting system
+- id: mpqRxn697
+  name: 'glycine transport '
+  genes: MPQ_0392
+  equation: H[e] + GLY[e] <=> H[c] + GLY[c]
+  subsystem: Transporting system
+- id: mpqRxn698
+  name: D-serine/D-alanine/glycine transporter
+  genes: MPQ_0392
+  equation: H[e] + DALA[e] <=> H[c] + DALA[c]
+  subsystem: Transporting system
+- id: mpqRxn699
+  name: D-serine/D-alanine/glycine transporter
+  genes: MPQ_0392
+  equation: H[e] + DSER_e[e] <=> H[c] + DSER_c[c]
+  subsystem: Transporting system
+- id: mpqRxn700
+  name: sodium/glutamine symporter
+  genes: MPQ_0393
+  equation: NA_e[e] + GLN_e[e] <=> GLN_c[c] + NA_c[c]
+  subsystem: Transporting system
+- id: mpqRxn701
+  name: transport of cysteine
+  genes: MPQ_0392
+  equation: H[e] + CYS_e[e] <=> H[c] + CYS_c[c]
+  subsystem: Transporting system
+- id: mpqRxn702
+  name: L-asparagine transport in via proton symport
+  genes: MPQ_0392
+  equation: H[e] + ASN_e[e] <=> H[c] + ASN_c[c]
+  subsystem: Transporting system
+- id: mpqRxn703
+  name: L-arginine transport in via proton symport
+  genes: MPQ_0392
+  equation: H[e] + ARG_e[e] <=> H[c] + ARG_c[c]
+  subsystem: Transporting system
+- id: mpqRxn704
+  name: L-proline transport in via proton symport
+  genes: MPQ_0401
+  equation: H[e] + PRO_e[e] <=> H[c] + PRO_c[c]
+  subsystem: Transporting system
+- id: mpqRxn705
+  name: L-threonine transport in via proton symport
+  genes: MPQ_0392
+  equation: H[e] + THR[e] <=> H[c] + THR[c]
+  subsystem: Transporting system
+- id: mpqRxn706
+  name: L-serine transport in via proton symport
+  genes: MPQ_0392
+  equation: H[e] + SER_e[e] <=> H[c] + SER_c[c]
+  subsystem: Transporting system
+  ec: TC-2.A.42
+- id: mpqRxn707
+  name: alanine:cation symporter
+  genes: MPQ_0393
+  equation: H[e] + ALA_e[e] <=> H[c] + ALA_c[c]
+  subsystem: Transporting system
+- id: mpqRxn708
+  name: L-Aspartate transport in via proton symport
+  genes: MPQ_0392
+  equation: H[e] + ASP_e[e] <=> H[c] + ASP_c[c]
+  subsystem: Transporting system
+- id: mpqRxn709
+  name: sodium/glutamine symporter
+  genes: MPQ_0393
+  equation: H[e] + GLN_e[e] <=> H[c] + GLN_c[c]
+  subsystem: Transporting system
+- id: mpqRxn710
+  name: Cadmium, cobalt and zinc/H(+)-K(+) antiporter
+  genes: MPQ_1046
+  equation: H[e] + ZN_c[c] + K_e[e] => H[c] + ZN_e[e] + K_c[c]
+  subsystem: Transporting system
+- id: mpqRxn711
+  name: Cadmium, cobalt and zinc/H(+)-K(+) antiporter
+  genes: MPQ_1046
+  equation: H[e] + COBALT2_c[c] + K_e[e] => H[c] + K_c[c] + COBALT2_e[e]
+  subsystem: Transporting system
+- id: mpqRxn712
+  name: Cadmium, cobalt and zinc/H(+)-K(+) antiporter
+  genes: MPQ_1046
+  equation: H[e] + K_e[e] + CD2[c] => H[c] + K_c[c] + CD2[e]
+  subsystem: Transporting system
+- id: mpqRxn713
+  name: Deoxyadenosine transport
+  equation: H[e] + DA_e[e] <=> H[c] + DA_c[c]
+  subsystem: Transporting system
+- id: mpqRxn714
+  name: Xanthine ion-coupled transport
+  equation: H[e] + XAN_e[e] <=> H[c] + XAN_c[c]
+  subsystem: Transporting system
+  ec: TC-2.A.40
+- id: mpqRxn715
+  name: Cytidine ion-coupled transport
+  equation: H[e] + CYTD_e[e] <=> H[c] + CYTD_c[c]
+  subsystem: Transporting system
+- id: mpqRxn716
+  name: Uridine ion-coupled transport
+  equation: H[e] + URI[e] <=> H[c] + URI[c]
+  subsystem: Transporting system
+- id: mpqRxn717
+  name: deoxyuridine transport in via proton symport
+  equation: H[e] + DU_e[e] <=> H[c] + DU_c[c]
+  subsystem: Transporting system
+- id: mpqRxn718
+  name: deoxyinosine transport in via proton symport
+  equation: H[e] + DIN_e[e] <=> H[c] + DIN_c[c]
+  subsystem: Transporting system
+- id: mpqRxn719
+  name: Thymidine ion-coupled transport
+  equation: H[e] + DT_e[e] <=> H[c] + DT_c[c]
+  subsystem: Transporting system
+- id: mpqRxn720
+  name: adenosine transport
+  equation: H[e] + ADN_e[e] <=> H[c] + ADN_c[c]
+  subsystem: Transporting system
+- id: mpqRxn721
+  name: guanine transport in via proton symport
+  equation: H[e] + GN[e] <=> H[c] + GN[c]
+  subsystem: Transporting system
+- id: mpqRxn722
+  name: Inosine transport
+  equation: H[e] + INS[e] <=> H[c] + INS[c]
+  subsystem: Transporting system
+- id: mpqRxn723
+  name: deoxyguanosine transport in via proton symport
+  equation: H[e] + DG_e[e] <=> H[c] + DG_c[c]
+  subsystem: Transporting system
+- id: mpqRxn724
+  name: Deoxycytidine ion-coupled transport
+  equation: H[e] + DC_e[e] <=> H[c] + DC_c[c]
+  subsystem: Transporting system
+- id: mpqRxn725
+  name: UMP transport in via proton symport
+  equation: H[e] + UMP[e] <=> H[c] + UMP[c]
+  subsystem: Transporting system
+- id: mpqRxn726
+  name: Orotidine 5'-phosphate transporter
+  equation: OMP_e[e] <=> OMP_c[c]
+  subsystem: Transporting system
+- id: mpqRxn727
+  name: purine-cytosine permease
+  equation: H[e] + CYTS_e[e] => H[c] + CYTS_c[c]
+  subsystem: Transporting system
+- id: mpqRxn728
+  name: thymine transport
+  equation: H[e] + THY[e] <=> H[c] + THY[c]
+  subsystem: Transporting system
+- id: mpqRxn729
+  name: transport adenine
+  equation: AD_e[e] <=> AD_c[c]
+  subsystem: Transporting system
+- id: mpqRxn730
+  name: transport guanosine
+  equation: GSN[e] <=> GSN[c]
+  subsystem: Transporting system
+- id: mpqRxn731
+  name: Hypoxanthine ion-coupled transport
+  equation: H[e] + HYXN_e[e] <=> H[c] + HYXN_c[c]
+  subsystem: Transporting system
+- id: mpqRxn732
+  name: Nicotinic acid uptake
+  equation: NICA[e] <=> NICA[c]
+  subsystem: Transporting system
+- id: mpqRxn733
+  name: thiamin transport
+  equation: THDP[e] <=> THDP[c]
+  subsystem: Transporting system
+- id: mpqRxn734
+  name: exopolysaccharides transport
+  genes: MPQ_1839
+  equation: EPS[c] <=> EPS[e]
+  subsystem: Transporting system
+- id: mpqRxn735
+  name: pyruvate tranport
+  equation: PYR[e] <=> PYR[c]
+  subsystem: Transporting system
+- id: mpqRxn736
+  name: pqqC
+  genes: MPQ_1591
+  equation: (3) O2[c] + ACDHD[c] <=> H[c] + (2) H2O[c] + PQQ[c] + H2O2[c]
+  subsystem: Unassigned reaction
+  ec: 1.3.3.11
+- id: mpqRxn737
+  name: pqq biosynthesis
+  equation: Q8[c] + ACHHD[c] => Q8H2[c] + ACDHD[c]
+  subsystem: Unassigned reaction
+  ec: 1.1.99.-
+- id: mpqRxn738
+  name: pqq biosynthesis
+  equation: O2[c] + ACTHD[c] => ACHHD[c]
+  subsystem: Unassigned reaction
+- id: mpqRxn739
+  name: spontaneous
+  equation: AACOPD[c] => H[c] + H2O[c] + ACTHD[c]
+  subsystem: Unassigned reaction
+- id: mpqRxn740
+  name: spontaneous
+  equation: AACHPD[c] => AACOPD[c]
+  subsystem: Unassigned reaction
+- id: mpqRxn741
+  name: pqqF
+  equation: (4) H2O[c] + PQQAP[c] => VTM[c] + PQQAN[c] + PQQAC[c] + AACHPD[c]
+  subsystem: Unassigned reaction
+- id: mpqRxn742
+  name: pqqE
+  genes: MPQ_1589
+  equation: FAD[c] + PQQA[c] => FADH2[c] + PQQAP[c]
+  subsystem: Unassigned reaction
+- id: mpqRxn743
+  name: synthesis of PQQa peptide
+  genes: MPQ_0020 or MPQ_1593 or MPQ_2697 or MPQ_2702 or MPQ_2719
+  equation:
+    reversible: false
+    left:
+    - id: GLU
+      compartment: c
+      value: 3
+    - id: GLY
+      compartment: c
+      value: 1
+    - id: ALA_c
+      compartment: c
+      value: 1
+    - id: ASN_c
+      compartment: c
+      value: 1
+    - id: TRP
+      compartment: c
+      value: 1
+    - id: THR
+      compartment: c
+      value: 3
+    - id: CYS_c
+      compartment: c
+      value: 1
+    - id: MET
+      compartment: c
+      value: 3
+    - id: VAL
+      compartment: c
+      value: 2
+    - id: LYS
+      compartment: c
+      value: 1
+    - id: ARG_c
+      compartment: c
+      value: 2
+    - id: PRO_c
+      compartment: c
+      value: 1
+    - id: PHE
+      compartment: c
+      value: 2
+    - id: TYR
+      compartment: c
+      value: 1
+    right:
+    - id: H2O
+      compartment: c
+      value: 22
+    - id: PQQA
+      compartment: c
+      value: 1
+  subsystem: Unassigned reaction
+- id: mpqRxn744
+  name: molybdenum cofactor biosynthesis protein
+  genes: MPQ_2287 or MPQ_0222
+  equation: H2O[c] + GTP[c] => H[c] + PPI[c] + PRECZ[c]
+  subsystem: Unassigned reaction
+- id: mpqRxn745
+  name: catalase
+  genes: MPQ_0554 or MPQ_2149 or MPQ_2614
+  equation: (2) H2O2[c] => (2) H2O[c] + O2[c]
+  subsystem: Unassigned reaction
+  ec: 1.11.1.6
+- id: mpqRxn746
+  name: carbonic anhydrase (cynT)
+  genes: MPQ_0585 or peg.565 or peg.493
+  equation: H[c] + HCO3[c] <=> H2O[c] + CO2[c]
+  subsystem: Unassigned reaction
+  ec: 4.2.1.1
+- id: mpqRxn747
+  name: FMNH2-dependent monooxygenase (butanesulfonate)
+  genes: MPQ_0141 or MPQ_1972
+  equation: O2[c] + FMNH2[c] + BUTSUL[c] => H2O[c] + H2SO3[c] + FMN[c] + BUTAL[c]
+  subsystem: Unassigned reaction
+  ec: 1.14.14.5
+- id: mpqRxn748
+  name: FMNH2-dependent monooxygenase
+  genes: MPQ_0141 or MPQ_1972
+  equation: O2[c] + FMNH2[c] + HYETHS[c] => H[c] + H2O[c] + H2SO3[c] + GLAL[c] +
+    FMN[c]
+  subsystem: Unassigned reaction
+  ec: 1.14.14.5
+- id: mpqRxn749
+  name: FMNH2-dependent monooxygenase (ethanesulfonate)
+  genes: MPQ_0141 or MPQ_1972
+  equation: O2[c] + FMNH2[c] + ETSUL[c] => H2O[c] + ACAL[c] + H2SO3[c] + FMN[c]
+  subsystem: Unassigned reaction
+  ec: 1.14.14.5
+- id: mpqRxn750
+  name: FMN-dependent monooxygenase (hexanesulfonate)
+  genes: MPQ_0141 or MPQ_1972
+  equation: O2[c] + FMNH2[c] + HEXSUL[c] => H[c] + H2O[c] + H2SO3[c] + FMN[c] + HEAL[c]
+  subsystem: Unassigned reaction
+  ec: 1.14.14.5
+- id: mpqRxn751
+  name: FMNH2-dependent monooxygenase (methanesulfonate)
+  genes: MPQ_0141 or MPQ_1972
+  equation: O2[c] + FMNH2[c] + METSA[c] => H[c] + H2O[c] + FALD[c] + H2SO3[c] + FMN[c]
+  subsystem: Unassigned reaction
+  ec: 1.14.14.5
+- id: mpqRxn752
+  name: FMNH2-dependent monooxygenase (sulfoacetate)
+  genes: MPQ_0141 or MPQ_1972
+  equation: O2[c] + FMNH2[c] + SULA[c] => H[c] + H2O[c] + GLX[c] + H2SO3[c] + FMN[c]
+  subsystem: Unassigned reaction
+  ec: 1.14.14.5
+- id: mpqRxn753
+  name: hydrogen peroxide reductase (thioredoxin)
+  genes: MPQ_2274 or peg.993 or peg.2197
+  equation: H2O2[c] + TRDRD[c] => (2) H2O[c] + TRDOX[c]
+  subsystem: Unassigned reaction
+- id: mpqRxn754
+  name: N-acetylmuramoyl-L-alanine amidase sle1
+  genes: MPQ_0240 or MPQ_1361
+  equation: H2O[c] + NACMA[c] <=> ALA_c[c] + MURNAC[c]
+  subsystem: Unassigned reaction
+  ec: 3.5.1.28
+- id: mpqRxn755
+  name: N-methylamino acid oxidase, demethylase
+  equation: H2O[c] + O2[c] + N5MG[c] => FALD[c] + GLU[c] + H2O2[c]
+  subsystem: Unassigned reaction
+  ec: 1.5.3.2
+- id: mpqRxn756
+  name: glutamate--methylamine ligase
+  equation: ATP[c] + GLU[c] + EAM[c] => ADP[c] + H[c] + PI[c] + N5EG[c]
+  subsystem: Unassigned reaction
+  ec: 6.3.4.12
+- id: mpqRxn757
+  name: 5-(hydroxymethyl)furfural oxidase
+  genes: MPQ_0130
+  equation: (2) H2O[c] + (3) O2[c] + HMF[c] => (2) H[c] + (3) H2O2[c] + FDCA[c]
+  subsystem: Unassigned reaction
+  ec: 1.1.3.47
+- id: mpqRxn758
+  name: exopolysaccharides biosynthesis
+  genes: MPQ_1828 and MPQ_1831 and MPQ_1832
+  equation: (3) UDPG[c] + GDPMAN[c] + (3) UDPGAL[c] <=> EPS[c]
+  subsystem: Unassigned reaction
+- id: mpqRxn759
+  name: catalase
+  genes: MPQ_0554 or MPQ_2149 or MPQ_2614
+  equation: ETOL[c] + H2O2[c] => (2) H2O[c] + ACAL[c]
+  subsystem: Unassigned reaction
+  ec: 1.11.1.6
+- id: mpqRxn760
+  name: serine decarboxylase
+  equation: H[c] + SER_c[c] => CO2[c] + ETHAM[c]
+  subsystem: Unassigned reaction
+  ec: 4.1.1.-
+- id: mpqRxn761
+  name: ethanolamine N-methyltransferase
+  equation: ETHAM[c] + SAM[c] => H[c] + SAH[c] + MMETHAM[c]
+  subsystem: Unassigned reaction
+  ec: 2.1.1.-
+- id: mpqRxn762
+  name: ethanolamine N-methyltransferase
+  equation: SAM[c] + MMETHAM[c] => H[c] + SAH[c] + DMETHAM[c]
+  subsystem: Unassigned reaction
+  ec: 2.1.1.-
+- id: mpqRxn763
+  name: N-dimethylethanolamine N-methyltransferase
+  equation: SAM[c] + DMETHAM[c] => H[c] + CHO[c] + SAH[c]
+  subsystem: Unassigned reaction
+  ec: 2.1.1.-
+- id: mpqRxn764
+  name: 5-methylthioadenosine/S-adenosylhomocysteine deaminase (MTA/SAH deaminase)
+  genes: MPQ_1679
+  equation: H2O[c] + SAH[c] <=> NH3[c] + SIH[c]
+  subsystem: Unassigned reaction
+  ec: 3.5.4.28
+- id: mpqRxn765
+  name: undecaprenyl-phosphate glucose phosphotransferase
+  genes: MPQ_1844
+  equation: UDPG[c] + UDCPP[c] => UMP[c] + UCDG[c]
+  subsystem: Unassigned reaction
+  ec: 2.7.8.31
+- id: mpqRxn766
+  name: superoxide dismutase
+  genes: MPQ_0182 or MPQ_1043
+  equation: (2) H[c] + (2) O2S[c] => O2[c] + H2O2[c]
+  subsystem: Unassigned reaction
+  ec: 1.15.1.1
+- id: mpqRxn767
+  name: maintenance
+  equation: ATP[c] + H2O[c] => ADP[c] + H[c] + PI[c]
+  subsystem: Unassigned reaction
+- id: mpqRxn768
+  name: Pyruvate synthase
+  equation: PYR[c] + COA[c] + FAD[c] <=> H[c] + CO2[c] + ACCOA[c] + FADH2[c]
+  subsystem: Unassigned reaction
+  ec: 1.2.7.1
+- id: mpqRxn769
+  name: sink reaction of 5-(2-Hydroxyethyl)-4-methylthiazole
+  equation: THZ[c] <=>
+  subsystem: Unassigned reaction
+- id: mpqRxn770
+  name: sink reaction of ACP
+  equation: ACP[c] <=>
+  subsystem: Unassigned reaction
+- id: mpqRxn771
+  name: sink reaction of RSH
+  equation: RSH[c] <=>
+  subsystem: Unassigned reaction
+- id: mpqRxn772
+  name: biomass equation
+  equation:
+    reversible: false
+    left:
+    - id: ATP
+      compartment: c
+      value: 59.3164
+    - id: H2O
+      compartment: c
+      value: 59.1541
+    - id: NAD
+      compartment: c
+      value: 0.0044
+    - id: COA
+      compartment: c
+      value: 0.0038
+    - id: ACCOA
+      compartment: c
+      value: 0.0036
+    - id: NADP
+      compartment: c
+      value: 0.0039
+    - id: PQQ
+      compartment: c
+      value: 0.0088
+    - id: GTP
+      compartment: c
+      value: 0.1962
+    - id: UTP
+      compartment: c
+      value: 0.1356
+    - id: GLYCOGEN
+      compartment: c
+      value: 0.1557
+    - id: GLN_c
+      compartment: c
+      value: 0.2326
+    - id: GLU
+      compartment: c
+      value: 0.2888
+    - id: GLY
+      compartment: c
+      value: 0.3711
+    - id: THF
+      compartment: c
+      value: 0.0065
+    - id: Q8
+      compartment: c
+      value: 0.004
+    - id: FAD
+      compartment: c
+      value: 0.0037
+    - id: CTP
+      compartment: c
+      value: 0.1475
+    - id: PG
+      compartment: c
+      value: 0.0282
+    - id: CL
+      compartment: c
+      value: 0.0028
+    - id: SER_c
+      compartment: c
+      value: 0.2987
+    - id: PE
+      compartment: c
+      value: 0.0801
+    - id: LPC
+      compartment: c
+      value: 0.0037
+    - id: ASP_c
+      compartment: c
+      value: 0.269
+    - id: DGTP
+      compartment: c
+      value: 0.0305
+    - id: DATP
+      compartment: c
+      value: 0.022
+    - id: DCTP
+      compartment: c
+      value: 0.0305
+    - id: DTTP
+      compartment: c
+      value: 0.0189
+    - id: ALA_c
+      compartment: c
+      value: 0.5399
+    - id: ASN_c
+      compartment: c
+      value: 0.1753
+    - id: TRP
+      compartment: c
+      value: 0.0667
+    - id: THR
+      compartment: c
+      value: 0.2633
+    - id: CYS_c
+      compartment: c
+      value: 0.0284
+    - id: MET
+      compartment: c
+      value: 0.1374
+    - id: ILE
+      compartment: c
+      value: 0.2852
+    - id: VAL
+      compartment: c
+      value: 0.3539
+    - id: LEU
+      compartment: c
+      value: 0.5458
+    - id: LYS
+      compartment: c
+      value: 0.2185
+    - id: ARG_c
+      compartment: c
+      value: 0.2861
+    - id: PRO_c
+      compartment: c
+      value: 0.2347
+    - id: HIS
+      compartment: c
+      value: 0.1231
+    - id: PHE
+      compartment: c
+      value: 0.1851
+    - id: TYR
+      compartment: c
+      value: 0.142
+    - id: LPS_eco
+      compartment: c
+      value: 0.0089
+    - id: PEPTX
+      compartment: c
+      value: 0.0255
+    - id: THDP
+      compartment: c
+      value: 0.0069
+    - id: BT
+      compartment: c
+      value: 0.0119
+    right:
+    - id: ADP
+      compartment: c
+      value: 59.1541
+    - id: H
+      compartment: c
+      value: 59.1541
+    - id: PI
+      compartment: c
+      value: 59.1541
+    - id: PPI
+      compartment: c
+      value: 0.7435
+  subsystem: Unassigned reaction
