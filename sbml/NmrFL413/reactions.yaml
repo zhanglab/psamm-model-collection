@@ -159,17 +159,17 @@
 - id: CuP460
   genes: Nmar_1226
   equation: (2) cpd00001[c] + cpd00165[c] + (5) PCYm[c] + cpd00418[c] => (2) cpd00075[c]
-    + (5) PCYme[c] + (5) cpd00067_e[c]
+    + (5) PCYm[e] + (5) cpd00067[e]
 - id: Cytaa3
   genes: (Nmar_0182 and Nmar_0183 and Nmar_0184 and Nmar_0185)
-  equation: (0.5) cpd00007[c] + (4) cpd00067[c] + (2) PCYe[c] => cpd00001[c] + (2)
-    cpd00067_e[c] + (2) PCY[c]
+  equation: (0.5) cpd00007[c] + (4) cpd00067[c] + (2) PCY[e] => cpd00001[c] + (2)
+    cpd00067[e] + (2) PCY[c]
 - id: Cytbc1
   genes: (Nmar_1542 and Nmar_1544 and Nmar_1543)
-  equation: cpd00067[c] + cpd11665[c] + (2) PCY[c] => cpd11669[c] + (3) cpd00067_e[c]
-    + (2) PCYe[c]
+  equation: cpd00067[c] + cpd11665[c] + (2) PCY[c] => cpd11669[c] + (3) cpd00067[e]
+    + (2) PCY[e]
 - id: H_disp
-  equation: cpd00067_e[c] => cpd00067[c]
+  equation: cpd00067[e] => cpd00067[c]
 - id: Met1
   equation: cpd00009[c] + cpd00280[c] => cpd00001[c] + cpd02497[c]
 - id: Met2
@@ -178,13 +178,13 @@
   equation: cpd00018[c] + cpd00421[c] => cpd00012[c] + cpd00008[c]
   ec: 2.7.4.3
 - id: N2O-spon
-  equation: cpd00165[c] + cpd00418[c] => cpd00001[c] + cpd00067_e[c] + cpd00659[c]
+  equation: cpd00165[c] + cpd00418[c] => cpd00001[c] + cpd00067[e] + cpd00659[c]
 - id: NIR
   genes: (Nmar_1259 and Nmar_1667 and Nmar_1131 and Nmar_1663 and Nmar_1354 and Nmar_1136)
-  equation: cpd00075[c] + cpd00067_e[c] + PCYe[c] => cpd00001[c] + cpd00418[c] +
+  equation: cpd00075[c] + cpd00067[e] + PCY[e] => cpd00001[c] + cpd00418[c] +
     PCY[c]
 - id: QH2-Synt
-  equation: cpd11669[c] + (2) PCYme[c] + (2) cpd00067_e[c] => cpd11665[c] + (2) PCYm[c]
+  equation: cpd11669[c] + (2) PCYm[e] + (2) cpd00067[e] => cpd11665[c] + (2) PCYm[c]
 - id: R00004
   name: diphosphate phosphohydrolase
   genes: (Nmar_1175 or Nmar_1231)
@@ -1787,7 +1787,7 @@
   name: NADH:ubiquinone oxidoreductase
   genes: (Nmar_0276 and Nmar_0277 and Nmar_0278 and Nmar_0279 and Nmar_0280 and Nmar_0281
     and Nmar_0282 and Nmar_0283 and Nmar_0284 and Nmar_0285 and Nmar_0286)
-  equation: cpd00003[c] + cpd11665[c] => cpd00004[c] + cpd11669[c] + cpd00067_e[c]
+  equation: cpd00003[c] + cpd11665[c] => cpd00004[c] + cpd11669[c] + cpd00067[e]
 - id: R02164
   name: Succinate:ubiquinone oxidoreductase
   equation: cpd00036[c] + cpd11669[c] => cpd00106[c] + cpd11665[c]
@@ -2354,7 +2354,7 @@
   equation: cpd00001[c] + cpd01502[c] <=> cpd03593[c]
 - id: R03905
   name: Glu-tRNA(Gln):L-glutamine amido-ligase(ADP-forming)
-  genes: ((Nmar_0099 and Nmar_0100 or (Nmar_0868 and Nmar_0869 and Nmar_0870))
+  genes: (Nmar_0099 and Nmar_0100 or (Nmar_0868 and Nmar_0869 and Nmar_0870))
   equation: cpd00009[c] + cpd00008[c] + cpd00023[c] + cpd12060[c] => cpd00001[c]
     + cpd00002[c] + cpd00053[c] + cpd12828[c]
   ec: 6.3.5.7
@@ -3659,7 +3659,7 @@
   ec: 3.5.1.-
 - id: Trans_NH4
   genes: (Nmar_0588 or Nmar_1698)
-  equation: cpd00013_e[c] => cpd00013[c] + cpd00067_e[c]
+  equation: cpd00013[e] => cpd00013[c] + cpd00067[e]
 - id: add_lipid1
   equation: (8) cpd00003[c] + cpd15861[c] => (8) cpd00067[c] + (8) cpd00004[c] +
     cpd15841[c]
@@ -3671,34 +3671,34 @@
   equation: cpd00003[c] + cpd00005[c] <=> cpd00004[c] + cpd00006[c]
 - id: rxn05145
   genes: (Nmar_0483 and Nmar_0481 and Nmar_0482 and Nmar_0479 and Nmar_0250)
-  equation: cpd00001[c] + cpd00002[c] + cpd00009_e[c] => (2) cpd00009[c] + cpd00008[c]
+  equation: cpd00001[c] + cpd00002[c] + cpd00009[e] => (2) cpd00009[c] + cpd00008[c]
     + cpd00067[c]
 - id: rxn05319
-  equation: cpd00001[c] => cpd00001_e[c]
+  equation: cpd00001[c] => cpd00001[e]
 - id: rxn05467
-  equation: cpd00011_e[c] <=> cpd00011[c]
+  equation: cpd00011[e] <=> cpd00011[c]
 - id: rxn05468
-  equation: cpd00007_e[c] <=> cpd00007[c]
+  equation: cpd00007[e] <=> cpd00007[c]
 - id: rxn05493
-  equation: cpd00067_e[c] + cpd00024_e[c] => cpd00067[c] + cpd00024[c]
+  equation: cpd00067[e] + cpd00024[e] => cpd00067[c] + cpd00024[c]
 - id: rxn05616
   genes: (Nmar_1006 or Nmar_1156 or Nmar_1662 or Nmar_1371 or Nmar_1130)
-  equation: cpd00254[c] <=> cpd00254_e[c]
+  equation: cpd00254[c] <=> cpd00254[e]
 - id: rxn05651
-  equation: cpd00067_e[c] + cpd00048_e[c] => cpd00067[c] + cpd00048[c]
+  equation: cpd00067[e] + cpd00048[e] => cpd00067[c] + cpd00048[c]
 - id: rxn08013
   name: 5'-deoxyadenosine nuclosidase
   genes: Nmar_1401
   equation: cpd00001[c] + cpd03091[c] <=> cpd00128[c] + cpd15380[c]
   ec: 2.4.2.28
 - id: rxn08966
-  equation: cpd00659[c] => cpd00659_e[c]
+  equation: cpd00659[c] => cpd00659[e]
 - id: rxn09008
-  equation: cpd00418[c] => cpd00418_e[c]
+  equation: cpd00418[c] => cpd00418[e]
 - id: rxn10042
   name: ATP synthase (four protons for one ATP)
   genes: (Nmar_1688 and Nmar_1689 and Nmar_1690 and Nmar_1691 and Nmar_1692 and Nmar_1693)
-  equation: cpd00009[c] + cpd00008[c] + (4) cpd00067_e[c] => cpd00001[c] + cpd00002[c]
+  equation: cpd00009[c] + cpd00008[c] + (4) cpd00067[e] => cpd00001[c] + cpd00002[c]
     + (3) cpd00067[c]
 - id: rxn10441
   name: archaetidylglycerol hydrogenase
@@ -3710,9 +3710,9 @@
     cpd15860[c]
 - id: rxn10474
   genes: Nmar_1006
-  equation: cpd00149[c] <=> cpd00149_e[c]
+  equation: cpd00149[c] <=> cpd00149[e]
 - id: rxn10480
-  equation: cpd00204_e[c] <=> cpd00204[c]
+  equation: cpd00204[e] <=> cpd00204[c]
 - id: rxn10487
   name: digeranyl-sn-glycerol-1-phospho-3'-sn-glycerol phosphatase
   equation: cpd00001[c] + cpd15843[c] => cpd00009[c] + cpd15842[c]
@@ -3735,13 +3735,13 @@
   equation: cpd00023[c] + cpd00038[c] + cpd15866[c] <=> cpd00009[c] + cpd00067[c]
     + cpd00031[c] + cpd15868[c]
 - id: rxn10823
-  equation: cpd00075[c] => cpd00075_e[c]
+  equation: cpd00075[c] => cpd00075[e]
 - id: rxn10826
-  equation: cpd00242_e[c] <=> cpd00242[c]
+  equation: cpd00242[e] <=> cpd00242[c]
 - id: rxn10832
-  equation: cpd00010_e[c] => cpd00010[c]
+  equation: cpd00010[e] => cpd00010[c]
 - id: rxn10963
-  equation: cpd00001[c] + cpd00002[c] + cpd10515_e[c] => cpd00009[c] + cpd00008[c]
+  equation: cpd00001[c] + cpd00002[c] + cpd10515[e] => cpd00009[c] + cpd00008[c]
     + cpd00067[c] + cpd10515[c]
 - id: rxn11007
   name: 5,10-Methylenetetrahydrofolate:dUMP C-methyltransferase
@@ -3753,5 +3753,5 @@
   equation: cpd00026[c] => cpd00014[c] + cpd00067[c] + cpd00155[c]
 - id: rxn13892
   genes: (Nmar_0250 or Nmar_0873 or Nmar_0875)
-  equation: cpd00001[c] + cpd00002[c] + cpd04099_e[c] => cpd00009[c] + cpd00008[c]
+  equation: cpd00001[c] + cpd00002[c] + cpd04099[e] => cpd00009[c] + cpd00008[c]
     + cpd00067[c] + cpd04099[c]
