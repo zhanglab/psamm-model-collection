@@ -2805,14 +2805,14 @@
   name: Thermotoga maritima glycolipid 1 formation
   # equation: dcaACP[c] + (2) glc_D[c] + glyc[c] + (2) palmACP[c] => (3) ACP[c] + TM_GL1[c]
   #   + (2) h2o[c]
-  equation: dcaACP[c] + (2) udpg[c] + glyc[c] + (2) palmACP[c] --> (2) udp[c] + (3) ACP[c] + TM_GL1[c] + (2) h[c]
+  equation: dcaACP[c] + (2) udpg[c] + glyc[c] + (2) palmACP[c] => (2) udp[c] + (3) ACP[c] + TM_GL1[c] + (2) h[c]
   subsystem: Glycolipid Synthesis
   pmid: 1576165
 - id: TM_GL2
   name: Thermotoga maritima glycolipid 2 formation
   # equation: (2) glc_D[c] + glyc[c] + (2) palmACP[c] => (2) ACP[c] + TM_GL2[c] + (2)
   #   h2o[c]
-  equation: (2) udpg[c] + glyc[c] + (2) palmACP[c] --> (2) udp[c] + (2) ACP[c] + TM_GL2[c] + (2) h[c]
+  equation: (2) udpg[c] + glyc[c] + (2) palmACP[c] => (2) udp[c] + (2) ACP[c] + TM_GL2[c] + (2) h[c]
   subsystem: Glycolipid Synthesis
   pmid: 1576165
 - id: TPI
