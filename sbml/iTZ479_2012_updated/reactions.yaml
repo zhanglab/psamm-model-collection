@@ -345,9 +345,11 @@
   subsystem: Biotin Biosynthesis
 - id: BGLA
   name: beta-glucosidase
-  genes: TM_0025 or TM_0076
+  # genes: TM_0025 or TM_0076
+  genes: TM_0025
   equation: cellb[c] + h2o[c] => (2) glc_D[c]
   subsystem: Carbohydrate Metabolism
+  pmid: 18378602
 - id: BGLA1
   name: 6-phospho-beta-glucosidase
   genes: TM_1281
@@ -360,9 +362,10 @@
   subsystem: Biotin Biosynthesis
 - id: BUTK
   name: butyrate kinase
-  genes: TM_1754
+  genes: (TM_1754 or TM_1756)
   equation: atp[c] + but[c] => adp[c] + butpi[c]
   subsystem: Butanoate Metabolism
+  pmid: 19201797
 - id: BiomassEcoli_TM
   name: Biomass Thermotoga - values taken from iJR904
   equation:
@@ -562,10 +565,13 @@
   subsystem: Cellulose Metabolism
 - id: CELLBabc
   name: Cellobiose transport via ATP transporter
-  genes: (TM_0031 and TM_0030 and TM_0029 and TM_0028 and TM_0027) or (TM_1226 and
+  # genes: (TM_0031 and TM_0030 and TM_0029 and TM_0028 and TM_0027) or (TM_1226 and
+  #   TM_1222 and TM_1221 and TM_1220 and TM_1219)
+  genes: (TM_0031 and TM_0030 and TM_0029 and TM_0028 and TM_0027) or (TM_1223 and
     TM_1222 and TM_1221 and TM_1220 and TM_1219)
   equation: atp[c] + h2o[c] + cellb[e] => adp[c] + cellb[c] + h[c] + pi[c]
   subsystem: Transport
+  pmid: 22760628
 - id: CELabc
   name: oligo-cellulose transport via ABC system
   genes: TM_1226 and TM_1222 and TM_1221 and TM_1220 and TM_1219
@@ -1237,14 +1243,18 @@
   subsystem: tRNA Metabolism
 - id: GLS
   name: glucan hydrolysis by beta-1,4- and beta-1,3 glucosidase
-  genes: TM_0024 or TM_0025 or TM_0076 or TM_1524
+  # genes: TM_0024 or TM_0025 or TM_0076 or TM_1524
+  genes: TM_0024 or TM_0025 or TM_1524
   equation: glucan4[c] + (3) h2o[c] => (4) glc_D[c]
   subsystem: Glucan Metabolism
+  pmid: 18378602
 - id: GLS2
   name: glucan hydrolysis by beta-1,4- and beta-1,3 glucosidase
-  genes: TM_1524 or TM_0025 or TM_0076 or TM_0024
+  # genes: TM_1524 or TM_0025 or TM_0076 or TM_0024
+  genes: TM_0024 or TM_0025 or TM_1524
   equation: glucan6[c] + (5) h2o[c] => (6) glc_D[c]
   subsystem: Glucan Metabolism
+  pmid: 18378602
 - id: GLS2e
   name: glucan hydrolysis by beta-1,4- and beta-1,3 glucosidase
   genes: TM_0305 or TM_1525
@@ -1513,11 +1523,12 @@
   genes: TM_0206
   equation: hxan[c] + prpp[c] => imp[c] + ppi[c]
   subsystem: Purine Metabolism
-- id: HYDFDi
-  name: Official Name Ferredoxin hydrogenase
-  genes: TM_1426 and TM_1425 and TM_1424
-  equation: fdxr_4_2[c] + (2) h[c] => fdxo_4_2[c] + h2[c]
-  subsystem: Energy Metabolism
+# - id: HYDFDi
+#   name: Official Name Ferredoxin hydrogenase
+#   genes: TM_1426 and TM_1425 and TM_1424
+#   equation: fdxr_4_2[c] + (2) h[c] => fdxo_4_2[c] + h2[c]
+#   subsystem: Energy Metabolism
+#   comment: comment it out based on the 2012 paper (pmid:22760628), which evidence is from the literature (pmid:19411328)
 - id: ICDHyr
   name: isocitrate dehydrogenase (NADP)
   genes: TM_1148
@@ -1558,11 +1569,12 @@
   genes: TM_1249
   equation: h2o[c] + imp[c] <=> fprica[c]
   subsystem: Purine Biosynthesis
-- id: IMPCT
-  name: CTP:Inositol-1-phosphate cytidylyltransferase
-  genes: TM_1418
-  equation: ctp[c] + h[c] + mi1p_D[c] => cdp_inost[c] + ppi[c]
-  subsystem: Inositol Phosphate Metabolism
+# - id: IMPCT
+#   name: CTP:Inositol-1-phosphate cytidylyltransferase
+#   genes: TM_1418
+#   equation: ctp[c] + h[c] + mi1p_D[c] => cdp_inost[c] + ppi[c]
+#   subsystem: Inositol Phosphate Metabolism
+#   comment: comment it out based on the 2012 paper (pmid:22760628), which evidence is from the literature (pmid:17526717)
 - id: IMPD
   name: IMP dehydrogenase
   genes: TM_1347
@@ -1670,9 +1682,11 @@
   subsystem: Transport
 - id: LMN2
   name: laminaribiase
-  genes: TM_0025 or TM_0076
+  # genes: TM_0025 or TM_0076
+  genes: TM_0025
   equation: h2o[c] + lmn2[c] => (2) glc_D[c]
   subsystem: Laminarine Metabolism
+  pmid: 18378602
 - id: LMN2abc
   name: Laminoribiose transport via ABC-transporter
   genes: (TM_0031 and TM_0030 and TM_0029 and TM_0028 and TM_0027) or (TM_1204 and
@@ -1810,9 +1824,10 @@
   subsystem: Methionine Metabolism
 - id: METS
   name: methionine synthase
-  genes: TM_0268 or TM_0269
+  genes: ((TM_0268 or TM_0269) or TM_1286)
   equation: 5mthf[c] + hcys_L[c] => h[c] + met_L[c] + thf[c]
   subsystem: Methionine Metabolism
+  pmid: 18296644
 - id: METTRS
   name: Methionyl-tRNA synthetase
   genes: TM_1085
@@ -1828,16 +1843,18 @@
   genes: TM_1161 or TM_0561
   equation: mg2[c] <=> mg2[e]
   subsystem: Transport
-- id: MI1PP
-  name: myo-inositol 1-phosphatase
-  genes: TM_1415
-  equation: h2o[c] + mi1p_D[c] => inost[c] + pi[c]
-  subsystem: Inositol Phosphate Metabolism
-- id: MI1PS
-  name: myo-Inositol-1-phosphate synthase
-  genes: TM_1419
-  equation: g6p[c] => mi1p_D[c]
-  subsystem: Inositol Phosphate Metabolism
+# - id: MI1PP
+#   name: myo-inositol 1-phosphatase
+#   genes: TM_1415
+#   equation: h2o[c] + mi1p_D[c] => inost[c] + pi[c]
+#   subsystem: Inositol Phosphate Metabolism
+#   comment: comment it out based on the 2012 paper (pmid:22760628), which evidence is from the literature (pmid:17526717)
+# - id: MI1PS
+#   name: myo-Inositol-1-phosphate synthase
+#   genes: TM_1419
+#   equation: g6p[c] => mi1p_D[c]
+#   subsystem: Inositol Phosphate Metabolism
+#   comment: comment it out based on the 2012 paper (pmid:22760628), which evidence is from the literature (pmid:17526717)
 - id: MLTG1
   name: Maltodextrin glucosidase (maltotriose)
   genes: TM_1835 or TM_1438
@@ -1850,8 +1867,10 @@
   subsystem: Maltose Metabolism
 - id: MNLDH2
   name: mannitol dehydrogenase (fructose)
+  genes: TM_0298
   equation: mnl[c] + nad[c] => fru[c] + h[c] + nadh[c]
   subsystem: Mannitol Metabolism
+  pmid: 18719905
 - id: MNLDHr
   name: mannitol dehydrogenase
   genes: TM_0298
@@ -1912,26 +1931,29 @@
   genes: TM_1733
   equation: atp[c] + nad[c] => adp[c] + h[c] + nadp[c]
   subsystem: NAD Metabolism
-- id: NADPDH1
-  name: NADPH:flavin oxidoreductase
-  genes: TM_0428 and TM_0427
-  equation: fad[c] + (3) h[c] + nadph[c] <=> fadh2[c] + nadp[c] + (2) h[e]
-  subsystem: Energy Metabolism
+# - id: NADPDH1
+#   name: NADPH:flavin oxidoreductase
+#   genes: TM_0428 and TM_0427
+#   equation: fad[c] + (3) h[c] + nadph[c] <=> fadh2[c] + nadp[c] + (2) h[e]
+#   subsystem: Energy Metabolism
+#   comment: comment it out based on the 2012 paper (pmid:22760628), which evidence is from the literature (pmid:9075622, 20675474)
 - id: NADS1
   name: NAD synthase (nh3)
   genes: TM_0645 or TM_1253
   equation: atp[c] + dnad[c] + nh4[c] => amp[c] + h[c] + nad[c] + ppi[c]
   subsystem: NAD Metabolism
-- id: NAD_H2
-  name: NAD-linked hydrogenase
-  genes: TM_1426 and TM_1425 and TM_1424
-  equation: h[c] + nadh[c] <=> h2[c] + nad[c]
-  subsystem: Energy Metabolism
+# - id: NAD_H2
+#   name: NAD-linked hydrogenase
+#   genes: TM_1426 and TM_1425 and TM_1424
+#   equation: h[c] + nadh[c] <=> h2[c] + nad[c]
+#   subsystem: Energy Metabolism
+#   comment: comment it out based on the 2012 paper (pmid:22760628), which evidence is from the literature (pmid:19411328)
 - id: NAti
   name: sodium transport (uniport)
-  genes: TM_1088 and TM_1089
+  # genes: TM_1088 and TM_1089
   equation: na1[e] => na1[c]
   subsystem: Transport
+  pmid: 19168617
 - id: NDPK2
   name: nucleoside-diphosphate kinase (ATP:UDP)
   equation: atp[c] + udp[c] <=> adp[c] + utp[c]
@@ -2274,11 +2296,12 @@
   genes: TM_0587 or TM_0913
   equation: h2o[c] + ppi[c] => h[c] + (2) pi[c]
   subsystem: Energy Metabolism
-- id: PPA_1
-  name: inorganic diphosphatase (one proton translocation)
-  genes: TM_0174
-  equation: h2o[c] + ppi[c] => (2) pi[c] + h[e]
-  subsystem: Energy Metabolism
+# - id: PPA_1
+#   name: inorganic diphosphatase (one proton translocation)
+#   genes: TM_0174
+#   equation: h2o[c] + ppi[c] => (2) pi[c] + h[e]
+#   subsystem: Energy Metabolism
+#   comment: comment it out based on the 2012 paper (pmid:22760628), which evidence is from the literature (pmid:17605473)
 - id: PPCDC
   name: phosphopantothenoylcysteine decarboxylase
   genes: TM_1687
@@ -2440,11 +2463,12 @@
   genes: TM_1653
   equation: csn[c] + r1p[c] => cytd[c] + pi[c]
   subsystem: Pyrimidine Metabolism
-- id: P_DIPS
-  name: Phospho-di-inositol-1-phosphate synthase
-  genes: TM_1418
-  equation: cdp_inost[c] + inost[c] => cmp[c] + dip_d_d[c] + h[c]
-  subsystem: Inositol Phosphate Metabolism
+# - id: P_DIPS
+#   name: Phospho-di-inositol-1-phosphate synthase
+#   genes: TM_1418
+#   equation: cdp_inost[c] + inost[c] => cmp[c] + dip_d_d[c] + h[c]
+#   subsystem: Inositol Phosphate Metabolism
+#   comment: comment it out based on the 2012 paper (pmid:22760628), which evidence is from the literature (pmid:17526717)
 - id: QULNS
   name: quinolinate synthase
   genes: TM_1644
@@ -2462,9 +2486,11 @@
   subsystem: Raffinose Metabolism
 - id: RBFK
   name: riboflavin kinase
-  genes: TM_0857
+  # genes: TM_0857
+  genes: TM_0379
   equation: atp[c] + ribflv[c] => adp[c] + fmn[c] + h[c]
   subsystem: Riboflavin Metabolism
+  pmid: 15468322
 - id: RBFSa
   name: riboflavin synthase
   genes: TM_1827 and TM_1825
@@ -2626,12 +2652,14 @@
   subsystem: Glycine and Serine Metabolism
 - id: SUCD1
   name: succinate dehydrogenase
-  genes: TM_0428 and TM_0427
+  # genes: TM_0428 and TM_0427
+  genes: TM_0428 or TM_0427
   equation: fad[c] + succ[c] <=> fadh2[c] + fum[c]
   subsystem: Citric Acid Cycle
 - id: SUCD3
   name: succinate dehydrogenase cytochrome b
-  genes: TM_0428 and TM_0427
+  # genes: TM_0428 and TM_0427
+  genes: TM_0428 or TM_0427
   equation: fadh2[c] + q[c] <=> fad[c] + qh2[c]
   subsystem: Energy Metabolism
 - id: SUCOAS
@@ -2775,14 +2803,18 @@
   subsystem: Thiamine Biosynthesis
 - id: TM_GL1
   name: Thermotoga maritima glycolipid 1 formation
-  equation: dcaACP[c] + (2) glc_D[c] + glyc[c] + (2) palmACP[c] => (3) ACP[c] + TM_GL1[c]
-    + (2) h2o[c]
+  # equation: dcaACP[c] + (2) glc_D[c] + glyc[c] + (2) palmACP[c] => (3) ACP[c] + TM_GL1[c]
+  #   + (2) h2o[c]
+  equation: dcaACP[c] + (2) udpg[c] + glyc[c] + (2) palmACP[c] --> (2) udp[c] + (3) ACP[c] + TM_GL1[c] + (2) h[c]
   subsystem: Glycolipid Synthesis
+  pmid: 1576165
 - id: TM_GL2
   name: Thermotoga maritima glycolipid 2 formation
-  equation: (2) glc_D[c] + glyc[c] + (2) palmACP[c] => (2) ACP[c] + TM_GL2[c] + (2)
-    h2o[c]
+  # equation: (2) glc_D[c] + glyc[c] + (2) palmACP[c] => (2) ACP[c] + TM_GL2[c] + (2)
+  #   h2o[c]
+  equation: (2) udpg[c] + glyc[c] + (2) palmACP[c] --> (2) udp[c] + (2) ACP[c] + TM_GL2[c] + (2) h[c]
   subsystem: Glycolipid Synthesis
+  pmid: 1576165
 - id: TPI
   name: triose-phosphate isomerase
   genes: TM_0689
@@ -2989,19 +3021,25 @@
   subsystem: Alternate Carbon Metabolism
 - id: XYLOS1
   name: exo-xylosidase
-  genes: TM_0025 or TM_0076
+  # genes: TM_0025 or TM_0076
+  genes: TM_0025
   equation: (3) h2o[c] + xyl4[c] <=> (4) xyl_D[c]
   subsystem: Xylan Metabolism
+  pmid: 18378602
 - id: XYLOS2
   name: exo-xylosidase
-  genes: TM_0025 or TM_0076
+  # genes: TM_0025 or TM_0076
+  genes: TM_0025
   equation: (2) h2o[c] + xyl3[c] <=> (3) xyl_D[c]
   subsystem: Xylan Metabolism
+  pmid: 18378602
 - id: XYLOS3
   name: exo-xylosidase
-  genes: TM_0025 or TM_0076
+  # genes: TM_0025 or TM_0076
+  genes: TM_0025
   equation: h2o[c] + xylb[c] <=> (2) xyl_D[c]
   subsystem: Xylan Metabolism
+  pmid: 18378602
 - id: XYLabc
   name: D-xylose transport via ABC system
   genes: (TM_0112 and TM_0114 and TM_0115) or (TM_0071 and TM_0072 and TM_0073 and
@@ -3033,3 +3071,64 @@
 - id: sink_pap_c
   name: sink pap(c)
   equation: pap[c] <=>
+- id: ADA
+  genes: TM_0936
+  equation: adn[c] + h[c] + h2o[c] => ins[c] + nh4[c]
+  pmid: 17603473
+  comment: added to 2012 updated version
+- id: EX_k(e)
+  equation: k[e] <=>
+  pmid: 19168617
+  comment: added to 2012 updated version
+- id: EX_oxa(e)
+  equation: oxa[e] <=>
+  pmid: 18399627
+  comment: added to 2012 updated version
+- id: HYDFDN
+  genes: TM_1426 and TM_1425 and TM_1424
+  equation: fdxr_4_2[c] + (3) h[c] + nadh[c] => fdxo_4_2[c] + (2) h2[c] + nad[c]
+  pmid: 19411328
+  comment: added to 2012 updated version
+- id: IMP
+  genes: TM_1415
+  equation: h2o[c] + pdip_d_d[c] => dip_d_d[c] + pi[c]
+  pmid: 17526717
+  comment: added to 2012 updated version
+- id: IMPCT2
+  genes: TM_1418
+  equation: ctp[c] + h[c] + mi1p_L[c] => cdp_inost[c] + ppi[c]
+  pmid: 17526717
+  comment: added to 2012 updated version
+- id: Kt1
+  genes: TM_1088 and TM_1089
+  equation: k[e] => k[c]
+  pmid: 19168617
+  comment: added to 2012 updated version
+- id: MI1PS2
+  genes: TM_1419
+  equation: g6p[c] => mi1p_L[c]
+  pmid: 17526717
+  comment: added to 2012 updated version
+- id: OXADC
+  genes: TM_1287
+  equation: h[c] + oxa[c] => co2[c] + for[c]
+  pmid: 18399627
+  comment: added to 2012 updated version
+- id: OXAt
+  equation: h[e] + oxa[e] => h[c] + oxa[c]
+  pmid: 18399627, 15339805
+  comment: added to 2012 updated version
+- id: PDIPS
+  genes: TM_1418
+  equation: cdp_inost[c] + mi1p_L[c] => cmp[c] + h[c] + pdip_d_d[c]
+  pmid: 17526717
+  comment: added to 2012 updated version
+- id: PPANA
+  genes: TM_0174
+  equation: h2o[c] + na1[c] + ppi[c] => h[c] + (2) pi[c] + na1[e]
+  pmid: 17605473
+  comment: added to 2012 updated version
+- id: EDD
+  equation: 6pgc[c] => 2ddg6p[c] + h2o[c]
+  pmid: 9075622
+  comment: added to 2012 updated version
